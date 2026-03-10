@@ -16,20 +16,9 @@ main.cpp
         SDK/PUBGM_ShadowTrackerExtra_functions.cpp
 )
 
-target_compile_options(mono PRIVATE
-    -Wno-error=format-security
-    -fvisibility=hidden
-    -ffunction-sections
-    -fdata-sections
-    -w
-    -fno-rtti
-    -fno-exceptions
-    -fpermissive
-    -Werror
-    -s
-    -std=c++17
-    -Wno-error=c++11-narrowing
-    -fms-extensions
+target_link_options(mono PRIVATE
+    -Wl,--gc-sections
+    -Wl,--strip-all
 )
 
 target_include_directories(mono PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
