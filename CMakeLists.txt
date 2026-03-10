@@ -32,11 +32,5 @@ target_compile_options(mono PRIVATE
     -fms-extensions
 )
 
-# Linker flags
-target_link_options(mono PRIVATE
-    -Wl,--gc-sections
-    -Wl,--strip-all
-)
-
 target_include_directories(mono PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(mono z log android EGL GLESv3)
