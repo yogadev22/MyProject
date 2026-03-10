@@ -1,0 +1,51 @@
+#pragma once
+
+// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+
+namespace SDK
+{
+//---------------------By BangJO---------------------------
+//Classes
+//---------------------By BangJO---------------------------
+
+// Class QRCodeUtility.VideoThumbnailGenerator
+// 0x0000 (0x0028 - 0x0028)
+class UVideoThumbnailGenerator : public UBlueprintFunctionLibrary
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = nullptr;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class QRCodeUtility.VideoThumbnailGenerator");
+		return pStaticClass;
+	}
+
+
+	static void GenerateVideoThumbnailAsync(const struct FString& videoPath, int thumbnailSize, const struct FScriptDelegate& OnThumbnailGenerated);
+};
+
+
+// Class QRCodeUtility.ZXingScanner
+// 0x0000 (0x0028 - 0x0028)
+class UZXingScanner : public UBlueprintFunctionLibrary
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = nullptr;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class QRCodeUtility.ZXingScanner");
+		return pStaticClass;
+	}
+
+
+	static class UTexture2D* Encode(const struct FString& Text);
+	static bool Decode(class UTexture2D* Texture, const struct FVector4& InRect, struct FZXingScanResult* OutResult);
+};
+
+
+}
+
