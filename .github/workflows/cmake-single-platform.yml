@@ -1,46 +1,40 @@
-name: Android CMake Build
+name: Android CMake
 
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
-
-env:
-  BUILD_TYPE: Release
-  ANDROID_ABI: arm64-v8a
-  ANDROID_PLATFORM: android-21
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
     - name: Install Ninja
       run: sudo apt-get update && sudo apt-get install -y ninja-build
 
-    - name: Setup Android NDK
-      uses: nttld/setup-ndk@v1
+    - name: Cache Android NDK
+      uses: actions/cache@v4
       with:
-        ndk-version: r26d
+        path: ~/android-ndk
+        key: ndk-r26d
 
-    - name: Configure CMake
+    - name: Download NDK
       run: |
-        cmake -B build \
+        if [ ! -d "$HOME/android-ndk" ]; then
+          wget https://dl.google.com/android/repository/android-ndk-r26d-linux.zip
+          unzip android-ndk-r26d-linux.zip
+          mv android-ndk-r26d $HOME/android-ndk
+        fi
+
+    - name: Configure
+      run: |
+        cmake -B build -S main/jni \
         -G Ninja \
-        -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} \
-        -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake \
-        -DANDROID_ABI=${{env.ANDROID_ABI}} \
-        -DANDROID_PLATFORM=${{env.ANDROID_PLATFORM}}
+        -DCMAKE_TOOLCHAIN_FILE=$HOME/android-ndk/build/cmake/android.toolchain.cmake \
+        -DANDROID_ABI=arm64-v8a \
+        -DANDROID_PLATFORM=android-21
 
     - name: Build
       run: cmake --build build
-
-    - name: Upload Build
-      uses: actions/upload-artifact@v4
-      with:
-        name: build-output
-        path: build
