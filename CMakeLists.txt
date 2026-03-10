@@ -2,9 +2,10 @@ cmake_minimum_required(VERSION 3.10)
 
 project(yogs)
 
-file(GLOB anjay "*.cpp" "imgui/*.cpp" "patch/*.cpp" "And64InlineHook/*.cpp")
+file(GLOB anjay "imgui/*.cpp" "patch/*.cpp" "And64InlineHook/*.cpp")
 
 add_library(mono SHARED ${anjay}
+main.cpp
         imgui/backends/imgui_impl_android.cpp 
         imgui/backends/imgui_impl_opengl3.cpp
         SDK/PUBGM_Basic.cpp
