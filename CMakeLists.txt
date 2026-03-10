@@ -16,5 +16,5 @@ main.cpp
         SDK/PUBGM_ShadowTrackerExtra_functions.cpp
 )
 
-target_include_directories(mono PRIVATE $(CMAKE_CURRENT_SOURCE_DIR))
+target_include_directories(mono PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(mono z log android EGL GLESv3)
