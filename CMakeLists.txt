@@ -4,7 +4,7 @@ project(yogs)
 
 file(GLOB anjay "*.cpp" "imgui/*.cpp" "patch/*.cpp" "And64InlineHook/*.cpp")
 
-add_library(mono SHARED $(anjay) 
+add_library(mono SHARED ${anjay}
         imgui/backends/imgui_impl_android.cpp 
         imgui/backends/imgui_impl_opengl3.cpp
         SDK/PUBGM_Basic.cpp
