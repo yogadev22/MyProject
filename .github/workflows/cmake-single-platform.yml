@@ -51,5 +51,5 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-         name: cmake-build
-         path: build
+         name: lib
+         path: build/*.so
