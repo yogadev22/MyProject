@@ -37,16 +37,19 @@ jobs:
     - name: Configure
       run: |
         if [ ! -f build/CMakeCache.txt ]; then
-        cmake -B build -G Ninja \
+        mkdir build
+        cd build
+        cmake .. -G Ninja \
         -DCMAKE_TOOLCHAIN_FILE=$HOME/android-ndk-r26d/build/cmake/android.toolchain.cmake \
         -DANDROID_ABI=arm64-v8a \
         -DANDROID_PLATFORM=android-21 \
-        -DCMAKE_BUILD_TYPE=Release \
         -DANDROID_STL=c++_static
         fi
 
     - name: Build
-      run: cmake --build build
+      run: |
+        cd build
+        ninja
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
