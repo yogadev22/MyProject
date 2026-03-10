@@ -14,19 +14,10 @@ jobs:
     - name: Install Ninja
       run: sudo apt-get update && sudo apt-get install -y ninja-build
 
-    - name: Cache Android NDK
-      uses: actions/cache@v4
+    - name: Setup Android NDK
+      uses: nttld/setup-ndk@v1
       with:
-        path: ~/android-ndk
-        key: ndk-r26d
-
-    - name: Download NDK
-      run: |
-        if [ ! -d "$HOME/android-ndk" ]; then
-          wget https://dl.google.com/android/repository/android-ndk-r26d-linux.zip
-          unzip android-ndk-r26d-linux.zip
-          mv android-ndk-r26d $HOME/android-ndk
-        fi
+        ndk-version: r26d
 
     - name: Configure
       run: |
