@@ -16,7 +16,7 @@ main.cpp
         SDK/PUBGM_ShadowTrackerExtra_functions.cpp
 )
 
-target_compile_options(native-lib PRIVATE
+target_compile_options(mono PRIVATE
     -O2
     -fvisibility=hidden
     -ffunction-sections
