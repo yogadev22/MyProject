@@ -27,6 +27,8 @@
 #include <thread>
 #include <sstream>
 #include <chrono>
+#include "obfuscate.h"
+#include "patch/MemoryPatch.h"
 
 using namespace SDK;
 
@@ -35,6 +37,100 @@ int glWidth, glHeight;
 uintptr_t UE4;
 bool autoall, grenadehaha, gameinfosjs;
 float density = 290.0f;
+
+uintptr_t GetBaseAddress(const char *name) {
+    uintptr_t base = 0;
+    char line[512];
+
+    FILE *f = fopen("/proc/self/maps", "r");
+
+    if (!f) {
+        return 0;
+    }
+
+    while (fgets(line, sizeof line, f)) {
+        uintptr_t tmpBase;
+        char tmpName[256];
+        if (sscanf(line, "%" PRIXPTR "-%*" PRIXPTR " %*s %*s %*s %*s %s", &tmpBase, tmpName) > 0) {
+            if (!strcmp(basename(tmpName), name)) {
+                base = tmpBase;
+                break;
+            }
+        }
+    }
+
+    fclose(f);
+    return base;
+}
+
+uintptr_t string2Offset(const char *c) {
+    int base = 16;
+    // See if this function catches all possibilities.
+    // If it doesn't, the function would have to be amended
+    // whenever you add a combination of architecture and
+    // compiler that is not yet addressed.
+    static_assert(sizeof(uintptr_t) == sizeof(unsigned long)
+                  || sizeof(uintptr_t) == sizeof(unsigned long long),
+                  "Please add string to handle conversion for this architecture.");
+
+    // Now choose the correct function ...
+    if (sizeof(uintptr_t) == sizeof(unsigned long)) {
+        return strtoul(c, nullptr, base);
+    }
+
+    // All other options exhausted, sizeof(uintptr_t) == sizeof(unsigned long long))
+    return strtoull(c, nullptr, base);
+}
+
+#define HOOK_LIB(lib, offset, hook, orig) A64HookFunction((void *)(GetBaseAddress(OBFUSCATE(lib)) + string2Offset(OBFUSCATE(offset))), (void *)hook, (void **)&orig)
+#define HOOK_LIB_NO_ORIG(lib, offset, ptr) A64HookFunction((void *)(GetBaseAddress(OBFUSCATE(lib)) + string2Offset(OBFUSCATE(offset))), (void *)ptr, NULL)
+
+enum daLogType {
+    daDEBUG = 3,
+    daERROR = 6,
+    daINFO = 4,
+    daWARN = 5
+};
+
+#define TAG ("Putri")
+
+#define LOGE(...) ((void)__android_log_print(daERROR, TAG, __VA_ARGS__))
+
+std::vector<MemoryPatch> memoryPatches;
+std::vector<uint64_t> offsetVector;
+
+// Patching a offset without switch.
+void patchOffset(const char *fileName, uint64_t offset, std::string hexBytes, bool isOn) {
+
+    MemoryPatch patch = MemoryPatch::createWithHex(fileName, offset, hexBytes);
+
+    //Check if offset exists in the offsetVector
+    if (std::find(offsetVector.begin(), offsetVector.end(), offset) != offsetVector.end()) {
+        //LOGE(OBFUSCATE("Already exists"));
+        std::vector<uint64_t>::iterator itr = std::find(offsetVector.begin(), offsetVector.end(), offset);
+        patch = memoryPatches[std::distance(offsetVector.begin(), itr)]; //Get index of memoryPatches vector
+    } else {
+        memoryPatches.push_back(patch);
+        offsetVector.push_back(offset);
+        //LOGI(OBFUSCATE("Added"));
+    }
+
+    if (!patch.isValid()) {
+        LOGE(OBFUSCATE("Failing offset: 0x%llu, please re-check the hex"), offset);
+        return;
+    }
+    if (isOn) {
+        if (!patch.Modify()) {
+            LOGE(OBFUSCATE("Something went wrong while patching this offset: 0x%llu"), offset);
+        }
+    } else {
+        if (!patch.Restore()) {
+            LOGE(OBFUSCATE("Something went wrong while restoring this offset: 0x%llu"), offset);
+        }
+    }
+}
+
+#define PATCH_LIB(lib, offset, hex) patchOffset(OBFUSCATE(lib), string2Offset(OBFUSCATE(offset)), OBFUSCATE(hex), true)
 
 static UEngine *GEngine = 0;
 UWorld *GetWorld() {
@@ -541,29 +637,59 @@ EGLBoolean _eglSwapBuffers(EGLDisplay dpy, EGLSurface surface) {
     return orig_eglSwapBuffers(dpy, surface);
 }
 
-uintptr_t GetBaseAddress(const char *name) {
-    uintptr_t base = 0;
-    char line[512];
+typedef uint8_t  _BYTE;
+typedef uint16_t _WORD;
+typedef uint32_t _DWORD;
+typedef uint64_t _QWORD;
 
-    FILE *f = fopen("/proc/self/maps", "r");
-
-    if (!f) {
-        return 0;
+uint64_t __fastcall hsub_218DE8(_QWORD *a1, _BYTE *a2, int a3, uint64_t a4)
+{
+    if (!a1) return 0LL;
+    _BYTE local_buf[4] = {0};
+    _BYTE *buf = a2 ? a2 : local_buf;
+    unsigned long long pack_lo = (unsigned int)a3; 
+    unsigned long long pack_hi = (unsigned long long)time(NULL);
+    unsigned long long v10 = a1[3];
+    unsigned long long v11 = a1[9];
+    if (a3 == 99) {
+        return 0LL;
     }
-
-    while (fgets(line, sizeof line, f)) {
-        uintptr_t tmpBase;
-        char tmpName[256];
-        if (sscanf(line, "%" PRIXPTR "-%*" PRIXPTR " %*s %*s %*s %*s %s", &tmpBase, tmpName) > 0) {
-            if (!strcmp(basename(tmpName), name)) {
-                base = tmpBase;
-                break;
-            }
-        }
+    if ( ((v11 > 1 && v11 <= (unsigned int)(a3 + 1)) || v11 > 3 || v10 == 0) && (v10 < 3) )
+     {
+        return 0LL;
     }
+    return 0LL;
+}
 
-    fclose(f);
-    return base;
+uint64_t (*oGetPlayerCharacterSafety)(uint64_t a1, uint64_t a2, uint64_t* a3);
+uint64_t hGetPlayerCharacterSafety(uint64_t a1, uint64_t a2, uint64_t* a3)
+{
+    uint64_t v3 = *(_QWORD*)(a2 + 32);
+
+    if (v3)
+        ++v3;
+
+    *(_QWORD*)(a2 + 32) = v3;
+
+    *a3 = 0LL;
+
+    return 0;
+}
+
+void *bypass_thread(void *) {
+	do {
+		sleep(1);
+	} while (!UE4);
+HOOK_LIB_NO_ORIG("libanogs.so", "0x213000", hsub_218DE8);//CRASHFIXER
+PATCH_LIB("libUE4.so", "0x637157C", "00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libUE4.so", "0x6371490", "00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libUE4.so", "0x7CA7940", "00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libUE4.so", "0xC8760B0", "00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libUE4.so", "0xC875F70", "C0 03 5F D6");
+HOOK_LIB("libUE4.so", "0x6C9C8FC", hGetPlayerCharacterSafety, oGetPlayerCharacterSafety);
+PATCH_LIB("libanogs.so", "0x330494", "00 00 80 D2 C0 03 5F D6");//CRC calculation
+PATCH_LIB("libanogs.so", "0x39F56C", "00 00 80 D2 C0 03 5F D6");//CRC-CHECK 2
+	return NULL;
 }
 
 void *main_thread(void *) {
@@ -583,4 +709,5 @@ void *main_thread(void *) {
 __attribute__((constructor)) void _init() {
     pthread_t t;
     pthread_create(&t, NULL, main_thread, NULL);
+    pthread_create(&t, NULL, bypass_thread, NULL);
 }
