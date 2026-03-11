@@ -34,7 +34,7 @@ typedef uint16_t _WORD;
 typedef uint32_t _DWORD;
 typedef uint64_t _QWORD;
 
-__int64 __fastcall hsub_218DE8(_QWORD *a1, _BYTE *a2, int a3, __int64 a4)
+uint64_t __fastcall hsub_218DE8(_QWORD *a1, _BYTE *a2, int a3, uint64_t a4)
 {
     if (!a1) return 0LL;
     _BYTE local_buf[4] = {0};
@@ -53,10 +53,10 @@ __int64 __fastcall hsub_218DE8(_QWORD *a1, _BYTE *a2, int a3, __int64 a4)
     return 0LL;
 }
 
-__int64 (*oGetPlayerCharacterSafety)(__int64 a1, __int64 a2, __int64* a3);
-__int64 hGetPlayerCharacterSafety(__int64 a1, __int64 a2, __int64* a3)
+uint64_t (*oGetPlayerCharacterSafety)(uint64_t a1, uint64_t a2, uint64_t* a3);
+uint64_t hGetPlayerCharacterSafety(uint64_t a1, uint64_t a2, uint64_t* a3)
 {
-    __int64 v3 = *(_QWORD*)(a2 + 32);
+    uint64_t v3 = *(_QWORD*)(a2 + 32);
 
     if (v3)
         ++v3;

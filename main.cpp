@@ -12,8 +12,8 @@
 #include <iostream>
 #include <dlfcn.h>
 #include "imgui/imgui.h"
-#include "imgui/backends/imgui_impl_android.h"
-#include "imgui/backends/imgui_impl_opengl3.h"
+#include "imgui/imgui_impl_android.h"
+#include "imgui/imgui_impl_opengl3.h"
 #include "obfuscate.h"
 #include "SDK.hpp"
 #include <cstring>
