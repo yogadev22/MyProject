@@ -1,0 +1,54 @@
+#pragma once
+
+// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+
+namespace SDK
+{
+//---------------------By BangJO---------------------------
+//Classes
+//---------------------By BangJO---------------------------
+
+// Class PixUIRHI.PxRHIImage
+// 0x0000 (0x0028 - 0x0028)
+class UPxRHIImage : public UObject
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = nullptr;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class PixUIRHI.PxRHIImage");
+		return pStaticClass;
+	}
+
+
+	class UObject* GetHandleObject();
+};
+
+
+// Class PixUIRHI.PxRHIMgr
+// 0x0000 (0x0028 - 0x0028)
+class UPxRHIMgr : public UObject
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = nullptr;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class PixUIRHI.PxRHIMgr");
+		return pStaticClass;
+	}
+
+
+	static bool RHIImageUpdate(class UPxRHIMgr* pPxRHIImage);
+	static class UPxRHIMgr* RHIImageFindByObject(class UObject* pCoreObject);
+	static bool RHIImageDestroy(class UPxRHIMgr* pPxRHIImage);
+	static class UPxRHIImage* RHIImageCreate();
+	static class UPxRHIMgr* Get();
+};
+
+
+}
+
