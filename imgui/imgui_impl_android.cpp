@@ -20,7 +20,7 @@
 // (minor and older changes stripped away, please see git history for details)
 //  2021-03-04: Initial version.
 
-#include "../imgui.h"
+#include "imgui.h"
 #include "imgui_impl_android.h"
 #include <ctime>
 #include <map>
