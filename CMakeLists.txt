@@ -16,6 +16,8 @@ add_library(mono SHARED
 
 target_compile_options(mono PRIVATE
     -O2
+    -w
+    -Wno-everything
     -fvisibility=hidden
     -ffunction-sections
     -fdata-sections
@@ -26,6 +28,7 @@ target_compile_options(mono PRIVATE
 target_link_options(mono PRIVATE
     -Wl,--gc-sections
     -Wl,--strip-all
+    -w
 )
 
 target_include_directories(mono PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
