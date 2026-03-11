@@ -90,9 +90,11 @@ void DrawESP(ImDrawList *draw) {
 	auto World = GetWorld();
 	if (World) {
         auto NetDriver = World->NetDriver;
-        auto ServerConnection = NetDriver->ServerConnection;
-		if (NetDriver && ServerConnection) {
-    		localController = (ASTExtraPlayerController *)ServerConnection->PlayerController;
+		if (NetDriver) {
+            auto ServerConnection = NetDriver->ServerConnection;
+            if (ServerConnection) {
+                localController = (ASTExtraPlayerController *)ServerConnection->PlayerController;
+            }
 		}
 	}
 	
