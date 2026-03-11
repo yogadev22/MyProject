@@ -3,6 +3,7 @@
 #include <list>
 #include <vector>
 #include <string.h>
+#include <android/log.h>
 #include <pthread.h>
 #include <thread>
 #include <cstring>
