@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class ScriptPlugin.NetInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.NetInterface");
 		return pStaticClass;
@@ -36,7 +36,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.LuaContext");
 		return pStaticClass;
@@ -54,7 +54,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptProfiler");
 		return pStaticClass;
@@ -72,7 +72,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.LuaStateWrapper");
 		return pStaticClass;
@@ -91,7 +91,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptBlueprint");
 		return pStaticClass;
@@ -101,17 +101,17 @@ public:
 
 
 // Class ScriptPlugin.ScriptBlueprintGeneratedClass
-// 0x0030 (0x0340 - 0x0310)
+// 0x0030 (0x0378 - 0x0348)
 class UScriptBlueprintGeneratedClass : public UBlueprintGeneratedClass
 {
 public:
-	TArray<unsigned char>                              ByteCode;                                                 // 0x0310(0x0010) (ZeroConstructor)
-	struct FString                                     SourceCode;                                               // 0x0320(0x0010) (ZeroConstructor)
-	TArray<class UProperty*>                           ScriptProperties;                                         // 0x0330(0x0010) (ZeroConstructor)
+	TArray<unsigned char>                              ByteCode;                                                 // 0x0348(0x0010) (ZeroConstructor)
+	struct FString                                     SourceCode;                                               // 0x0358(0x0010) (ZeroConstructor)
+	TArray<class UProperty*>                           ScriptProperties;                                         // 0x0368(0x0010) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptBlueprintGeneratedClass");
 		return pStaticClass;
@@ -129,7 +129,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptContext");
 		return pStaticClass;
@@ -150,7 +150,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptContextComponent");
 		return pStaticClass;
@@ -176,7 +176,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptHelperNetInterface");
 		return pStaticClass;
@@ -198,7 +198,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptPluginComponent");
 		return pStaticClass;
@@ -221,7 +221,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.ScriptTestActor");
 		return pStaticClass;
@@ -240,7 +240,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ScriptPlugin.LuaClassBaseObj");
 		return pStaticClass;

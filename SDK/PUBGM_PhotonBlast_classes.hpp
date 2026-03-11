@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class PhotonBlast.PhotonReplicationStaticMeshComponent
 // 0x00E0 (0x0C10 - 0x0B30)
@@ -27,7 +27,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonReplicationStaticMeshComponent");
 		return pStaticClass;
@@ -56,7 +56,7 @@ public:
 	unsigned char                                      SynchronizeChunkData : 1;                                 // 0x0C1C(0x0001) (Edit)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0C1D(0x0003) MISSED OFFSET
 	class UPhotonDestructibleMesh*                     PhotonDestructibleMesh;                                   // 0x0C20(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionEnabled>                FragmentsCollisionEnabled;                                // 0x0C28(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     FragmentsCollisionEnabled;                                // 0x0C28(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x7];                                       // 0x0C29(0x0007) MISSED OFFSET
 	struct FName                                       FragmentsCollisionProfileName;                            // 0x0C30(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      InitialVisible : 1;                                       // 0x0C38(0x0001) (Edit)
@@ -71,7 +71,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonDestructibleMeshComponent");
 		return pStaticClass;
@@ -121,7 +121,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonReplicationInstancedStaticMeshComponent");
 		return pStaticClass;
@@ -149,7 +149,7 @@ public:
 	struct FPhotonDestructibleImpactParam              ImpactParam;                                              // 0x0D64(0x0008) (Edit)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0D6C(0x0004) MISSED OFFSET
 	class UPhotonDestructibleMesh*                     PhotonDestructibleMesh;                                   // 0x0D70(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionEnabled>                FragmentsCollisionEnabled;                                // 0x0D78(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     FragmentsCollisionEnabled;                                // 0x0D78(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x7];                                       // 0x0D79(0x0007) MISSED OFFSET
 	struct FName                                       FragmentsCollisionProfileName;                            // 0x0D80(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	TArray<struct FPhotonDestructibleFragmentStateData> HideInstanceReplicationData;                              // 0x0D88(0x0010) (Net, ZeroConstructor)
@@ -161,7 +161,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonInstancedDestructibleMeshComponent");
 		return pStaticClass;
@@ -217,7 +217,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonHierarchicalInstancedDestructibleMeshComponent");
 		return pStaticClass;
@@ -240,7 +240,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonDestructibleMeshActor");
 		return pStaticClass;
@@ -262,7 +262,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.ClusterReplicationVolume");
 		return pStaticClass;
@@ -281,7 +281,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.ClusterReplicationSelectVolume");
 		return pStaticClass;
@@ -290,22 +290,62 @@ public:
 };
 
 
+// Class PhotonBlast.MovieScenePhotonDestructibleSection
+// 0x0230 (0x02E0 - 0x00B0)
+class UMovieScenePhotonDestructibleSection : public UMovieSceneSection
+{
+public:
+	struct FIntegralCurve                              PhotonDestructibleKeys;                                   // 0x00B0(0x0070)
+	struct FRichCurve                                  TimeSpeedCurve;                                           // 0x0120(0x0070)
+	struct FRichCurve                                  SpreadSpeedCurve;                                         // 0x0190(0x0070)
+	struct FRichCurve                                  VelocitySpeedCurve;                                       // 0x0200(0x0070)
+	struct FRichCurve                                  RotationSpeedCurve;                                       // 0x0270(0x0070)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class PhotonBlast.MovieScenePhotonDestructibleSection");
+		return pStaticClass;
+	}
+
+};
+
+
+// Class PhotonBlast.MovieScenePhotonDestructibleTrack
+// 0x0010 (0x0068 - 0x0058)
+class UMovieScenePhotonDestructibleTrack : public UMovieSceneNameableTrack
+{
+public:
+	TArray<class UMovieSceneSection*>                  PhotonDestructibleSections;                               // 0x0058(0x0010) (ExportObject, ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class PhotonBlast.MovieScenePhotonDestructibleTrack");
+		return pStaticClass;
+	}
+
+};
+
+
 // Class PhotonBlast.PhotonDestructibleMesh
-// 0x00E0 (0x0348 - 0x0268)
+// 0x0180 (0x03E8 - 0x0268)
 class UPhotonDestructibleMesh : public UStaticMesh
 {
 public:
 	class UPhotonFracturedMesh*                        FracturedMesh;                                            // 0x0268(0x0008) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPhotonDestructibleAction>        DestructibleAction;                                       // 0x0270(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPhotonDestructibleAction>             DestructibleAction;                                       // 0x0270(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UseDefaultParameter : 1;                                  // 0x0271(0x0001) (Edit)
-	TEnumAsByte<enum EPhotonCollisionType>             FragmentCollisonType;                                     // 0x0272(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1];                                       // 0x0273(0x0001) MISSED OFFSET
-	struct FPhotonDestructibleMeshPhysicsDetachData    PhysicsDetachData;                                        // 0x0274(0x0028) (Edit)
-	unsigned char                                      UnknownData01[0xAC];                                      // 0x029C(0x00AC) MISSED OFFSET
+	TEnumAsByte<EPhotonCollisionType>                  FragmentCollisonType;                                     // 0x0272(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x5];                                       // 0x0273(0x0005) MISSED OFFSET
+	struct FPhotonDestructibleMeshPhysicsDetachData    PhysicsDetachData;                                        // 0x0278(0x00C0) (Edit)
+	unsigned char                                      UnknownData01[0xB0];                                      // 0x0338(0x00B0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonDestructibleMesh");
 		return pStaticClass;
@@ -322,7 +362,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.DestructionSubsystem");
 		return pStaticClass;
@@ -344,7 +384,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonFracturedMesh");
 		return pStaticClass;
@@ -361,7 +401,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonFracturedMeshSettings");
 		return pStaticClass;
@@ -378,7 +418,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonFEdgeData");
 		return pStaticClass;
@@ -404,7 +444,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonFracturedFragmentInfo");
 		return pStaticClass;
@@ -424,7 +464,7 @@ public:
 	class UClass*                                      EffectActorClass;                                         // 0x0D88(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	TArray<struct FPhotonInstanceImpactData>           InstanceImpactData;                                       // 0x0D90(0x0010) (Net, ZeroConstructor)
 	float                                              InstanceMaxHp;                                            // 0x0DA0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEffectType>                      EffectType;                                               // 0x0DA4(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEffectType>                           EffectType;                                               // 0x0DA4(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0DA5(0x0003) MISSED OFFSET
 	float                                              EffectDurationTime;                                       // 0x0DA8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0DAC(0x0004) MISSED OFFSET
@@ -448,7 +488,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent");
 		return pStaticClass;
@@ -477,25 +517,25 @@ public:
 
 
 // Class PhotonBlast.PhotonReplicationSkeletalMeshComponent
-// 0x00E0 (0x12B0 - 0x11D0)
+// 0x00E0 (0x12C0 - 0x11E0)
 class UPhotonReplicationSkeletalMeshComponent : public USkeletalMeshComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x58];                                      // 0x11D0(0x0058) MISSED OFFSET
-	int                                                ClusterUniqueID;                                          // 0x1228(0x0004) (Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData)
-	bool                                               bCanMove;                                                 // 0x122C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	EAOIEntityType                                     AOIEntityType;                                            // 0x122D(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	EClusterEntityState                                AOIEntityState;                                           // 0x122E(0x0001) (Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData)
-	unsigned char                                      ClusterReplicationOpen : 1;                               // 0x122F(0x0001) (Edit, BlueprintVisible)
-	class UDestructionSubsystem*                       SubsystemPtr;                                             // 0x1230(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x1238(0x0008) MISSED OFFSET
-	struct FLuaNetSerialization                        LuaNetSerialization;                                      // 0x1240(0x0050) (Net)
-	struct FString                                     LuaFilePath;                                              // 0x1290(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	unsigned char                                      UnknownData02[0x10];                                      // 0x12A0(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x58];                                      // 0x11E0(0x0058) MISSED OFFSET
+	int                                                ClusterUniqueID;                                          // 0x1238(0x0004) (Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData)
+	bool                                               bCanMove;                                                 // 0x123C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	EAOIEntityType                                     AOIEntityType;                                            // 0x123D(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	EClusterEntityState                                AOIEntityState;                                           // 0x123E(0x0001) (Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData)
+	unsigned char                                      ClusterReplicationOpen : 1;                               // 0x123F(0x0001) (Edit, BlueprintVisible)
+	class UDestructionSubsystem*                       SubsystemPtr;                                             // 0x1240(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x1248(0x0008) MISSED OFFSET
+	struct FLuaNetSerialization                        LuaNetSerialization;                                      // 0x1250(0x0050) (Net)
+	struct FString                                     LuaFilePath;                                              // 0x12A0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	unsigned char                                      UnknownData02[0x10];                                      // 0x12B0(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonReplicationSkeletalMeshComponent");
 		return pStaticClass;
@@ -522,7 +562,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonStaticeMeshActor");
 		return pStaticClass;
@@ -540,7 +580,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.ReusableStaticMeshActor");
 		return pStaticClass;
@@ -561,7 +601,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.ReusableSkeletalMeshActor");
 		return pStaticClass;
@@ -582,7 +622,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.ReusableDestructibleMeshActor");
 		return pStaticClass;
@@ -601,7 +641,7 @@ class UPhotonStaticMeshComponent : public UStaticMeshComponent
 public:
 	class UStaticMesh*                                 EffectStaticMesh;                                         // 0x0B30(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	float                                              InstanceMaxHp;                                            // 0x0B38(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEffectType>                      EffectType;                                               // 0x0B3C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEffectType>                           EffectType;                                               // 0x0B3C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0B3D(0x0003) MISSED OFFSET
 	float                                              EffectDurationTime;                                       // 0x0B40(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0B44(0x0004) MISSED OFFSET
@@ -613,7 +653,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonBlast.PhotonStaticMeshComponent");
 		return pStaticClass;

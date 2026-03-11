@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function KantanChartsDatasource.KantanCartesianDatasourceInterface.GetSeriesName
 // (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
@@ -16,7 +16,7 @@ namespace SDK
 
 struct FText UKantanCartesianDatasourceInterface::GetSeriesName(int SeriesIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCartesianDatasourceInterface.GetSeriesName");
 
@@ -43,7 +43,7 @@ struct FText UKantanCartesianDatasourceInterface::GetSeriesName(int SeriesIdx)
 
 struct FName UKantanCartesianDatasourceInterface::GetSeriesId(int CatIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCartesianDatasourceInterface.GetSeriesId");
 
@@ -70,7 +70,7 @@ struct FName UKantanCartesianDatasourceInterface::GetSeriesId(int CatIdx)
 
 TArray<struct FKantanCartesianDatapoint> UKantanCartesianDatasourceInterface::GetSeriesDatapoints(int SeriesIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCartesianDatasourceInterface.GetSeriesDatapoints");
 
@@ -96,7 +96,7 @@ TArray<struct FKantanCartesianDatapoint> UKantanCartesianDatasourceInterface::Ge
 
 int UKantanCartesianDatasourceInterface::GetNumSeries()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCartesianDatasourceInterface.GetNumSeries");
 
@@ -121,7 +121,7 @@ int UKantanCartesianDatasourceInterface::GetNumSeries()
 
 int UKantanCategoryDatasourceInterface::GetNumCategories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCategoryDatasourceInterface.GetNumCategories");
 
@@ -147,7 +147,7 @@ int UKantanCategoryDatasourceInterface::GetNumCategories()
 
 float UKantanCategoryDatasourceInterface::GetCategoryValue(int CatIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCategoryDatasourceInterface.GetCategoryValue");
 
@@ -174,7 +174,7 @@ float UKantanCategoryDatasourceInterface::GetCategoryValue(int CatIdx)
 
 struct FText UKantanCategoryDatasourceInterface::GetCategoryName(int CatIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCategoryDatasourceInterface.GetCategoryName");
 
@@ -201,7 +201,7 @@ struct FText UKantanCategoryDatasourceInterface::GetCategoryName(int CatIdx)
 
 struct FName UKantanCategoryDatasourceInterface::GetCategoryId(int CatIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanCategoryDatasourceInterface.GetCategoryId");
 
@@ -227,7 +227,7 @@ struct FName UKantanCategoryDatasourceInterface::GetCategoryId(int CatIdx)
 
 class UKantanSimpleCartesianDatasource* UKantanSimpleCartesianDatasource::NewSimpleCartesianDatasource()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCartesianDatasource.NewSimpleCartesianDatasource");
 
@@ -253,7 +253,7 @@ class UKantanSimpleCartesianDatasource* UKantanSimpleCartesianDatasource::NewSim
 
 void UKantanSimpleCartesianDatasource::BP_RemoveSeries(const struct FName& ID, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCartesianDatasource.BP_RemoveSeries");
 
@@ -278,7 +278,7 @@ void UKantanSimpleCartesianDatasource::BP_RemoveSeries(const struct FName& ID, b
 
 void UKantanSimpleCartesianDatasource::BP_RemoveAllSeries()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCartesianDatasource.BP_RemoveAllSeries");
 
@@ -303,7 +303,7 @@ void UKantanSimpleCartesianDatasource::BP_RemoveAllSeries()
 
 void UKantanSimpleCartesianDatasource::BP_AddSeriesWithId(const struct FName& ID, const struct FText& Name, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCartesianDatasource.BP_AddSeriesWithId");
 
@@ -332,7 +332,7 @@ void UKantanSimpleCartesianDatasource::BP_AddSeriesWithId(const struct FName& ID
 
 void UKantanSimpleCartesianDatasource::BP_AddSeries(const struct FText& Name, struct FName* SeriesId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCartesianDatasource.BP_AddSeries");
 
@@ -361,7 +361,7 @@ void UKantanSimpleCartesianDatasource::BP_AddSeries(const struct FText& Name, st
 
 void UKantanSimpleCartesianDatasource::BP_AddDatapoint(const struct FName& SeriesId, const struct FVector2D& Point, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCartesianDatasource.BP_AddDatapoint");
 
@@ -389,7 +389,7 @@ void UKantanSimpleCartesianDatasource::BP_AddDatapoint(const struct FName& Serie
 
 class UKantanSimpleCategoryDatasource* UKantanSimpleCategoryDatasource::NewSimpleCategoryDatasource()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCategoryDatasource.NewSimpleCategoryDatasource");
 
@@ -416,7 +416,7 @@ class UKantanSimpleCategoryDatasource* UKantanSimpleCategoryDatasource::NewSimpl
 
 void UKantanSimpleCategoryDatasource::BP_UpdateCategoryValue(const struct FName& ID, float Value, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCategoryDatasource.BP_UpdateCategoryValue");
 
@@ -445,7 +445,7 @@ void UKantanSimpleCategoryDatasource::BP_UpdateCategoryValue(const struct FName&
 
 void UKantanSimpleCategoryDatasource::BP_RemoveCategory(const struct FName& ID, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCategoryDatasource.BP_RemoveCategory");
 
@@ -470,7 +470,7 @@ void UKantanSimpleCategoryDatasource::BP_RemoveCategory(const struct FName& ID, 
 
 void UKantanSimpleCategoryDatasource::BP_RemoveAllCategories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCategoryDatasource.BP_RemoveAllCategories");
 
@@ -495,7 +495,7 @@ void UKantanSimpleCategoryDatasource::BP_RemoveAllCategories()
 
 void UKantanSimpleCategoryDatasource::BP_AddCategoryWithId(const struct FName& ID, const struct FText& Name, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCategoryDatasource.BP_AddCategoryWithId");
 
@@ -524,7 +524,7 @@ void UKantanSimpleCategoryDatasource::BP_AddCategoryWithId(const struct FName& I
 
 void UKantanSimpleCategoryDatasource::BP_AddCategory(const struct FText& Name, struct FName* CatId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsDatasource.KantanSimpleCategoryDatasource.BP_AddCategory");
 

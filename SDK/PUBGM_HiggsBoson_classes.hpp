@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class HiggsBoson.BaziState
 // 0x0168 (0x0190 - 0x0028)
@@ -17,7 +17,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.BaziState");
 		return pStaticClass;
@@ -44,7 +44,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.ClientGlueHiaSystem");
 		return pStaticClass;
@@ -99,7 +99,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.FuzzyObject");
 		return pStaticClass;
@@ -137,7 +137,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.SCoronaClientData");
 		return pStaticClass;
@@ -155,7 +155,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.ClientAmaUbaSubsystem");
 		return pStaticClass;
@@ -178,7 +178,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.MakeWoe");
 		return pStaticClass;
@@ -196,7 +196,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.FullCoverMarginIntervalCharacterTickerInterval");
 		return pStaticClass;
@@ -222,7 +222,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.FullCoverMarginIntervalCharacterTicker");
 		return pStaticClass;
@@ -239,7 +239,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.CamoyoHelper");
 		return pStaticClass;
@@ -253,7 +253,7 @@ public:
 
 
 // Class HiggsBoson.HiggsBosonComponent
-// 0x0F18 (0x1150 - 0x0238)
+// 0x0F10 (0x1148 - 0x0238)
 class UHiggsBosonComponent : public ULuaActorComponent
 {
 public:
@@ -305,21 +305,18 @@ public:
 	int                                                MaxCountOfPlayerHistoryLocationToDetectCamouflage;        // 0x10C8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData15[0xC];                                       // 0x10CC(0x000C) MISSED OFFSET
 	float                                              MinDistanceToDetectCamouflage;                            // 0x10D8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData16[0x8];                                       // 0x10DC(0x0008) MISSED OFFSET
-	float                                              LastAbnormalJumpTime;                                     // 0x10E4(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              LastAbnormalJumpVelocity;                                 // 0x10E8(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData17[0x24];                                      // 0x10EC(0x0024) MISSED OFFSET
-	float                                              OfflineMoveThreshold;                                     // 0x1110(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              OfflineMoveValidScale;                                    // 0x1114(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              LongTimeNoReceiveScale;                                   // 0x1118(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                MinOfflineCount;                                          // 0x111C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                MaxOfflineCount;                                          // 0x1120(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               bOfflineMoveReady;                                        // 0x1124(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData18[0x2B];                                      // 0x1125(0x002B) MISSED OFFSET
+	unsigned char                                      UnknownData16[0x2C];                                      // 0x10DC(0x002C) MISSED OFFSET
+	float                                              OfflineMoveThreshold;                                     // 0x1108(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              OfflineMoveValidScale;                                    // 0x110C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              LongTimeNoReceiveScale;                                   // 0x1110(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                MinOfflineCount;                                          // 0x1114(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                MaxOfflineCount;                                          // 0x1118(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               bOfflineMoveReady;                                        // 0x111C(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData17[0x2B];                                      // 0x111D(0x002B) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.HiggsBosonComponent");
 		return pStaticClass;
@@ -357,7 +354,6 @@ public:
 	void OnClientAdjustPosition(const struct FVector& NewLoc, ECharacterMoveDragReason Reason);
 	void OnCapboReturn(int BoCapC, int InBoType, TArray<unsigned char> RetData);
 	void OnBulletImpactEvent(class AActor* InCauser, const struct FHitResult& InImpactResult);
-	void LuaNotifySecurityAbnormalJump(float Time, float Velocity);
 	bool IsCharacterOwnerWerewolf();
 	bool IsCharacterOwnerButcher();
 	void HandleClientReconnect();
@@ -394,7 +390,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.MarginIntervalCharacterTickerPlayerInfo");
 		return pStaticClass;
@@ -416,7 +412,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.MarginIntervalCharacterTicker");
 		return pStaticClass;
@@ -436,7 +432,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.SecurityAvatarSystem");
 		return pStaticClass;
@@ -460,7 +456,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.SecurityImprisonComp");
 		return pStaticClass;
@@ -482,7 +478,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.TickAsTimer");
 		return pStaticClass;
@@ -502,7 +498,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HiggsBoson.TimeIntervalPawnStateHistorySystem");
 		return pStaticClass;

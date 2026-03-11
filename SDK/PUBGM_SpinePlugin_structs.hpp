@@ -1,19 +1,19 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct SpinePlugin.SpineAnimationStateMixData
 // 0x0028
 struct FSpineAnimationStateMixData
 {
-	struct FString                                     from;                                                     // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	struct FString                                     to;                                                       // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	struct FString                                     From;                                                     // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	struct FString                                     To;                                                       // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	float                                              MIX;                                                      // 0x0020(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
 };

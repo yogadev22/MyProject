@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function AWSHelper.AWSHelperBlueprintLibrary.UploadFile
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
@@ -20,7 +20,7 @@ namespace SDK
 
 void UAWSHelperBlueprintLibrary::UploadFile(class UAWSHelper* CosHelper, const struct FString& FromFilePath, const struct FString& ToURL, const struct FString& NoneMatchHeader, const struct FScriptDelegate& OnComplete, const struct FScriptDelegate& OnProgress)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSHelperBlueprintLibrary.UploadFile");
 
@@ -54,7 +54,7 @@ void UAWSHelperBlueprintLibrary::UploadFile(class UAWSHelper* CosHelper, const s
 
 void UAWSHelperBlueprintLibrary::UploadBinary(class UAWSHelper* CosHelper, TArray<unsigned char> FromBinaries, const struct FString& ToURL, const struct FString& NoneMatchHeader, const struct FScriptDelegate& OnComplete, const struct FScriptDelegate& OnProgress)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSHelperBlueprintLibrary.UploadBinary");
 
@@ -87,7 +87,7 @@ void UAWSHelperBlueprintLibrary::UploadBinary(class UAWSHelper* CosHelper, TArra
 
 void UAWSHelperBlueprintLibrary::DownloadFile(class UAWSHelper* CosHelper, const struct FString& FromURL, const struct FString& ToFilePath, const struct FScriptDelegate& OnComplete, const struct FScriptDelegate& OnProgress)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSHelperBlueprintLibrary.DownloadFile");
 
@@ -118,7 +118,7 @@ void UAWSHelperBlueprintLibrary::DownloadFile(class UAWSHelper* CosHelper, const
 
 void UAWSHelperBlueprintLibrary::DownloadBinary(class UAWSHelper* CosHelper, const struct FString& FromURL, const struct FScriptDelegate& OnComplete, const struct FScriptDelegate& OnProgress)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSHelperBlueprintLibrary.DownloadBinary");
 
@@ -145,7 +145,7 @@ void UAWSHelperBlueprintLibrary::DownloadBinary(class UAWSHelper* CosHelper, con
 
 void UAWSHelperBlueprintLibrary::DestroyAWSHelper(class UAWSHelper* AWSHelper)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSHelperBlueprintLibrary.DestroyAWSHelper");
 
@@ -169,7 +169,7 @@ void UAWSHelperBlueprintLibrary::DestroyAWSHelper(class UAWSHelper* AWSHelper)
 
 class UAWSHelper* UAWSHelperBlueprintLibrary::ConstructAWSHelper()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSHelperBlueprintLibrary.ConstructAWSHelper");
 
@@ -194,7 +194,7 @@ class UAWSHelper* UAWSHelperBlueprintLibrary::ConstructAWSHelper()
 
 bool UAWSResponse::IsOK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSResponse.IsOK");
 
@@ -219,7 +219,7 @@ bool UAWSResponse::IsOK()
 
 int UAWSResponse::GetResponseCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSResponse.GetResponseCode");
 
@@ -244,7 +244,7 @@ int UAWSResponse::GetResponseCode()
 
 struct FString UAWSResponse::GetRequestURL()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSResponse.GetRequestURL");
 
@@ -269,7 +269,7 @@ struct FString UAWSResponse::GetRequestURL()
 
 struct FString UAWSResponse::GetErrorMessage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSResponse.GetErrorMessage");
 
@@ -294,7 +294,7 @@ struct FString UAWSResponse::GetErrorMessage()
 
 struct FString UAWSResponse::GetErrorCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSResponse.GetErrorCode");
 
@@ -319,7 +319,7 @@ struct FString UAWSResponse::GetErrorCode()
 
 struct FString UAWSResponse::GetContentAsString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSResponse.GetContentAsString");
 
@@ -344,7 +344,7 @@ struct FString UAWSResponse::GetContentAsString()
 
 TArray<unsigned char> UAWSResponse::GetContent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AWSHelper.AWSResponse.GetContent");
 

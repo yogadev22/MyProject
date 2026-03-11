@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum Addons.EEndSpecialMoveReason
 enum class EEndSpecialMoveReason : uint8_t
@@ -92,6 +92,17 @@ enum class EGhostBalloonMoveState : uint8_t
 	EGhostBalloonMoveState__Float  = 2,
 	EGhostBalloonMoveState__Burst  = 3,
 	EGhostBalloonMoveState__EGhostBalloonMoveState_MAX = 4
+};
+
+
+// Enum Addons.EJumpPackMoveState
+enum class EJumpPackMoveState : uint8_t
+{
+	EJumpPackMoveState__None       = 0,
+	EJumpPackMoveState__Boost      = 1,
+	EJumpPackMoveState__Descending = 2,
+	EJumpPackMoveState__Landing    = 3,
+	EJumpPackMoveState__EJumpPackMoveState_MAX = 4
 };
 
 
@@ -366,6 +377,20 @@ enum class EOffsetRootBoneMode : uint8_t
 	EOffsetRootBoneMode__Release   = 3,
 	EOffsetRootBoneMode__None      = 4,
 	EOffsetRootBoneMode__EOffsetRootBoneMode_MAX = 5
+};
+
+
+// Enum Addons.EAxisLockType
+enum class EAxisLockType : uint8_t
+{
+	EAxisLockType__None            = 0,
+	EAxisLockType__X               = 1,
+	EAxisLockType__Y               = 2,
+	EAxisLockType__Z               = 3,
+	EAxisLockType__XY              = 4,
+	EAxisLockType__XZ              = 5,
+	EAxisLockType__YZ              = 6,
+	EAxisLockType__EAxisLockType_MAX = 7
 };
 
 
@@ -692,6 +717,17 @@ enum class ECreateSkillItemType : uint8_t
 	ECreateSkillItemType__AssociateActorDistance = 3,
 	ECreateSkillItemType__HeightDifferenceCheck = 4,
 	ECreateSkillItemType__ECreateSkillItemType_MAX = 5
+};
+
+
+// Enum Addons.EUploadAPIResponse
+enum class EUploadAPIResponse : uint8_t
+{
+	EUploadAPIResponse__EUploadAPIResponse_Success = 0,
+	EUploadAPIResponse__EUploadAPIResponse_NotSuccessful = 1,
+	EUploadAPIResponse__EUploadAPIResponse_ResponseInvalid = 2,
+	EUploadAPIResponse__EUploadAPIResponse_NotOK = 3,
+	EUploadAPIResponse__EUploadAPIResponse_MAX = 4
 };
 
 
@@ -1296,9 +1332,9 @@ enum class EVineHookPitch : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct Addons.CopyPropertyData
 // 0x0010
@@ -1308,13 +1344,28 @@ struct FCopyPropertyData
 };
 
 // ScriptStruct Addons.BioVehicleAnimInstanceProxy
-// 0x0070 (0x05F0 - 0x0580)
+// 0x0070 (0x0640 - 0x05D0)
 struct FBioVehicleAnimInstanceProxy : public FAnimInstanceProxy
 {
-	class UAnimInstance*                               SourceAnimInstance;                                       // 0x0578(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	TArray<struct FName>                               SourceInstancePropertyNames;                              // 0x0580(0x0010) (ZeroConstructor, Transient)
-	TArray<class UProperty*>                           SourceInstanceProperty;                                   // 0x0590(0x0010) (ZeroConstructor, Transient)
-	TMap<class UAnimInstance*, struct FCopyPropertyData> DestInstancePropertyMap;                                  // 0x05A0(0x0050) (ZeroConstructor, Transient)
+	class UAnimInstance*                               SourceAnimInstance;                                       // 0x05C8(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	TArray<struct FName>                               SourceInstancePropertyNames;                              // 0x05D0(0x0010) (ZeroConstructor, Transient)
+	TArray<class UProperty*>                           SourceInstanceProperty;                                   // 0x05E0(0x0010) (ZeroConstructor, Transient)
+	TMap<class UAnimInstance*, struct FCopyPropertyData> DestInstancePropertyMap;                                  // 0x05F0(0x0050) (ZeroConstructor, Transient)
+};
+
+// ScriptStruct Addons.BioVehicleBlowUpData
+// 0x0034
+struct FBioVehicleBlowUpData
+{
+	float                                              TimeStamp;                                                // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                InternalBlowUpID;                                         // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               bIsBeingBlew;                                             // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bBTPaused;                                                // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x000A(0x0002) MISSED OFFSET
+	struct FVector                                     SelfLocationWhenLaunchHappened;                           // 0x000C(0x000C) (IsPlainOldData)
+	struct FVector                                     LaunchVelocity;                                           // 0x0018(0x000C) (IsPlainOldData)
+	TWeakObjectPtr<class AActor>                       HitActor;                                                 // 0x0024(0x0008) (ZeroConstructor, IsPlainOldData)
+	TWeakObjectPtr<class UPrimitiveComponent>          HitComponent;                                             // 0x002C(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // ScriptStruct Addons.FootStepEffect
@@ -1403,6 +1454,16 @@ struct FAvatarMergerAsyncTempData
 	TMap<class UMaterial*, class UMaterialInstanceDynamic*> CreateForAsyncThreadMaterialMap;                          // 0x00C0(0x0050) (ZeroConstructor, Transient)
 	class UMaterialInstanceDynamic*                    CreateForAsyncThreadBasicMaterial;                        // 0x0110(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0118(0x0008) MISSED OFFSET
+};
+
+// ScriptStruct Addons.RotationAxisInheritance
+// 0x0004
+struct FRotationAxisInheritance
+{
+	unsigned char                                      bInheritPitch : 1;                                        // 0x0000(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      bInheritYaw : 1;                                          // 0x0000(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      bInheritRoll : 1;                                         // 0x0000(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 };
 
 // ScriptStruct Addons.BeamEmitterData
@@ -1586,7 +1647,7 @@ struct FRepBirdCage
 // 0x0010
 struct FBlanketDanceData
 {
-	TEnumAsByte<enum EBlanketDanceState>               BlanketDanceState;                                        // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlanketDanceState>                    BlanketDanceState;                                        // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class ASTExtraBaseCharacter*                       LookAtCharacter;                                          // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
 };
@@ -1681,7 +1742,7 @@ struct FIKExcludedBone
 // 0x0128
 struct FBuffNodeBlackboardSetting
 {
-	TEnumAsByte<enum EUAEBlackboardType>               Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUAEBlackboardType>                    Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Addons.BuffNodeBlackboardSetting.Execute_Object
 	unsigned char                                      UnknownData02[0x28];                                      // 0x0030(0x0028) UNKNOWN PROPERTY: SoftClassProperty Addons.BuffNodeBlackboardSetting.Execute_Class
@@ -1898,7 +1959,7 @@ struct FLadderMoveData
 	bool                                               bOnLadder;                                                // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class ALadderActor*                                Ladder;                                                   // 0x0008(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ELadderMoveType>                  LadderMoveType;                                           // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELadderMoveType>                       LadderMoveType;                                           // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      LadderStep;                                               // 0x0011(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x0012(0x0006) MISSED OFFSET
 };
@@ -1948,7 +2009,7 @@ struct FMirrorFindReplaceExpression
 {
 	struct FName                                       FindExpression;                                           // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FName                                       ReplaceExpression;                                        // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMirrorFindReplaceMethod>         FindReplaceMethod;                                        // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMirrorFindReplaceMethod>              FindReplaceMethod;                                        // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
@@ -1982,14 +2043,6 @@ struct FHitDymaicParams
 	bool                                               bDetectPhysVehicle;                                       // 0x002D(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x002E(0x0002) MISSED OFFSET
 	class AActor*                                      OwnedActor;                                               // 0x0030(0x0008) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct Addons.MultipleJumpInfo
-// 0x0008
-struct FMultipleJumpInfo
-{
-	float                                              JumpZVelocity;                                            // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              JumpZVelocityThreshold;                                   // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Addons.CreateSkillItemInfo
@@ -2157,9 +2210,9 @@ struct FPickTargetParam
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	float                                              TraceDistance;                                            // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bSingleChannel;                                           // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                TraceChannel;                                             // 0x0009(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     TraceChannel;                                             // 0x0009(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x000A(0x0006) MISSED OFFSET
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	bool                                               bCheckActorVisible;                                       // 0x0020(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
 };
@@ -2180,7 +2233,7 @@ struct FPickTargetScreenParam
 	struct FVector2D                                   ScreenCrosshairBox;                                       // 0x0000(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
 	float                                              DetectionRadius;                                          // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bCustomFilter;                                            // 0x000C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                TraceChannel;                                             // 0x000D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     TraceChannel;                                             // 0x000D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bCheckActorVisible;                                       // 0x000E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bCheckComponentVisible;                                   // 0x000F(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bOnlyDetectCharacters;                                    // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -2194,7 +2247,7 @@ struct FBuildCheckParam
 {
 	float                                              FloatErrorTolerance;                                      // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        BlockingChannels;                                         // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             BlockingChannels;                                         // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	TArray<class UClass*>                              FilterActors;                                             // 0x0018(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	struct FVector                                     BoxExtent;                                                // 0x0028(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	float                                              MaxCheckPlaceHeight;                                      // 0x0034(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -2238,7 +2291,7 @@ struct FRecordData
 // 0x0028
 struct FTextureLODBiasOverrideInfo
 {
-	TEnumAsByte<enum ETextureGroup>                    Group;                                                    // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextureGroup>                         Group;                                                    // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<int>                                        OverrideLODBias;                                          // 0x0008(0x0010) (ZeroConstructor)
 	unsigned char                                      UnknownData01[0x10];                                      // 0x0018(0x0010) MISSED OFFSET
@@ -2340,38 +2393,40 @@ struct FBuffAttachmentItem
 };
 
 // ScriptStruct Addons.BACustomDamageData
-// 0x0018
+// 0x0030
 struct FBACustomDamageData
 {
 	float                                              ExtraDamageScale;                                         // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bMultiplyOnLayer;                                         // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableAllDamage;                                         // 0x0005(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
-	TArray<TEnumAsByte<enum EWeaponTypeNew>>           ValidWeaponTypeMap;                                       // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
+	struct FString                                     ExtraDamageScaleFormula;                                  // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	bool                                               bMultiplyOnLayer;                                         // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableAllDamage;                                         // 0x0019(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x001A(0x0006) MISSED OFFSET
+	TArray<TEnumAsByte<EWeaponTypeNew>>                ValidWeaponTypeMap;                                       // 0x0020(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct Addons.BACustomDistDamageData
-// 0x0008 (0x0020 - 0x0018)
+// 0x0008 (0x0038 - 0x0030)
 struct FBACustomDistDamageData : public FBACustomDamageData
 {
-	float                                              minDist;                                                  // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              MaxDist;                                                  // 0x001C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              minDist;                                                  // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              MaxDist;                                                  // 0x0034(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Addons.BACustomHpDamageData
-// 0x0008 (0x0020 - 0x0018)
+// 0x0008 (0x0038 - 0x0030)
 struct FBACustomHpDamageData : public FBACustomDamageData
 {
-	float                                              MinHpPer;                                                 // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              MaxHpPer;                                                 // 0x001C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              MinHpPer;                                                 // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              MaxHpPer;                                                 // 0x0034(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Addons.BACustomTypeDamageData
-// 0x0020 (0x0038 - 0x0018)
+// 0x0020 (0x0050 - 0x0030)
 struct FBACustomTypeDamageData : public FBACustomDamageData
 {
-	TArray<int>                                        ResIDArray;                                               // 0x0018(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TArray<struct FName>                               TagArray;                                                 // 0x0028(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<int>                                        ResIDArray;                                               // 0x0030(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<struct FName>                               TagArray;                                                 // 0x0040(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct Addons.PropSkillExplodeParam
@@ -2410,6 +2465,20 @@ struct FBuffAttrModifierItem
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
 };
 
+// ScriptStruct Addons.JumpStepInfo
+// 0x0004
+struct FJumpStepInfo
+{
+	float                                              JumpZVelocity;                                            // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct Addons.MultipleJumpInfo
+// 0x0010
+struct FMultipleJumpInfo
+{
+	TArray<struct FJumpStepInfo>                       JumpSteps;                                                // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+};
+
 // ScriptStruct Addons.PostEventParams
 // 0x0080
 struct FPostEventParams
@@ -2437,7 +2506,7 @@ struct FReplaceAvatarMaterialParams
 };
 
 // ScriptStruct Addons.BuffSpawnActorItem
-// 0x0060
+// 0x0078
 struct FBuffSpawnActorItem
 {
 	unsigned char                                      UnknownData00[0x28];                                      // 0x0000(0x0028) UNKNOWN PROPERTY: SoftClassProperty Addons.BuffSpawnActorItem.ActorClass
@@ -2445,17 +2514,22 @@ struct FBuffSpawnActorItem
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
 	struct FName                                       SocketName;                                               // 0x0030(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	EBuffTargetSocketType                              TargetType;                                               // 0x0038(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0039(0x0003) MISSED OFFSET
+	bool                                               bUseSharedTarget;                                         // 0x0039(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x2];                                       // 0x003A(0x0002) MISSED OFFSET
 	struct FVector                                     RelLocation;                                              // 0x003C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	struct FRotator                                    Rotator;                                                  // 0x0048(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	EBuffEnabledRole                                   EnableRole;                                               // 0x0054(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsDestroyOnBuffEnd;                                       // 0x0055(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x2];                                       // 0x0056(0x0002) MISSED OFFSET
-	float                                              NotEndDestroyLifeTime;                                    // 0x0058(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAttachMesh;                                              // 0x005C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bDSUpdateMesh;                                            // 0x005D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bRecordCauser;                                            // 0x005E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x1];                                       // 0x005F(0x0001) MISSED OFFSET
+	bool                                               bUseGroundNormal;                                         // 0x0048(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x0049(0x0003) MISSED OFFSET
+	struct FVector                                     GroundOffset;                                             // 0x004C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FRotator                                    Rotator;                                                  // 0x0058(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	EBuffEnabledRole                                   EnableRole;                                               // 0x0064(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsDestroyOnBuffEnd;                                       // 0x0065(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x2];                                       // 0x0066(0x0002) MISSED OFFSET
+	float                                              LifeTime;                                                 // 0x0068(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              NotEndDestroyLifeTime;                                    // 0x006C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bAttachMesh;                                              // 0x0070(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bDSUpdateMesh;                                            // 0x0071(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bRecordCauser;                                            // 0x0072(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x5];                                       // 0x0073(0x0005) MISSED OFFSET
 };
 
 // ScriptStruct Addons.BAWeaponAttrModifyConfig
@@ -2749,8 +2823,8 @@ struct FIngoreSkillArray
 // 0x0002
 struct FCollisionChannelResModify
 {
-	TEnumAsByte<enum ECollisionChannel>                CollisionChannel;                                         // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionResponse>               ModifyResponse;                                           // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CollisionChannel;                                         // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionResponse>                    ModifyResponse;                                           // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Addons.MoveSpeedCurve
@@ -2773,7 +2847,7 @@ struct FPlayMontageAsyncloadParams
 // 0x01A8
 struct FWeaponStateToAnimPair
 {
-	TEnumAsByte<enum EWeaponTypeNew>                   WeaponTypeNew;                                            // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponTypeNew>                        WeaponTypeNew;                                            // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FSkillPoseMontageData                       PoseMontageData;                                          // 0x0008(0x00D0) (Edit)
 	struct FSkillPoseMontageData                       FPPPoseMontageData;                                       // 0x00D8(0x00D0) (Edit)
@@ -2904,7 +2978,7 @@ struct FSpawnMonsterConfig
 	float                                              LineTraceHeight;                                          // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              CapsuleCheckRadius;                                       // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              CapsuleCheckHalfHeight;                                   // 0x001C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // 0x0020(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // 0x0020(0x0010) (Edit, ZeroConstructor)
 	float                                              NineGridSearchRadius;                                     // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                NineGridSearchFloor;                                      // 0x0034(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bSearchRandom;                                            // 0x0038(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
@@ -2924,7 +2998,7 @@ struct FSkillAction_SpawnProjectileCreateData
 // 0x0010
 struct FUAESkillCheckItemInfo
 {
-	TEnumAsByte<enum EOperatorType>                    OperatorType;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EOperatorType>                         OperatorType;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                NeedItemNum;                                              // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                ItemId;                                                   // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -2935,8 +3009,8 @@ struct FUAESkillCheckItemInfo
 // 0x0002
 struct FCharPoseSwitch
 {
-	TEnumAsByte<enum ECharacterPoseType>               from;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               to;                                                       // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    From;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    To;                                                       // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Addons.UTSkillAppearance_ParticleSystem_Item
@@ -3038,8 +3112,61 @@ struct FVehicleLODLimit
 // 0x00A0
 struct FSeatMountMontageSetting
 {
-	TMap<TEnumAsByte<enum EMountFromDirection>, struct FMountMontagePair> MountMontageParis;                                        // 0x0000(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
-	TMap<TEnumAsByte<enum EMountFromDirection>, struct FMountMontagePair> DisMountMontageParis;                                     // 0x0050(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TMap<TEnumAsByte<EMountFromDirection>, struct FMountMontagePair> MountMontageParis;                                        // 0x0000(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TMap<TEnumAsByte<EMountFromDirection>, struct FMountMontagePair> DisMountMontageParis;                                     // 0x0050(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
+};
+
+// ScriptStruct Addons.NitroPowerConfig
+// 0x0040
+struct FNitroPowerConfig
+{
+	class UCurveFloat*                                 NitroForceCurve;                                          // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UCurveFloat*                                 NitroForceSpeedRatio;                                     // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UCurveVector*                                DriftOmegaAccelCurve;                                     // 0x0010(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UCurveVector*                                DriftRecoveryCurve;                                       // 0x0018(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UCurveVector*                                DriftSpeedCurve;                                          // 0x0020(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UCurveFloat*                                 DriftAccelCurve;                                          // 0x0028(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UCurveFloat*                                 DriftAccelScaleCurve;                                     // 0x0030(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UCurveFloat*                                 DriftDecelCurve;                                          // 0x0038(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+};
+
+// ScriptStruct Addons.NitroBioConfig
+// 0x0010
+struct FNitroBioConfig
+{
+	float                                              NitroMaxWalkSpeed;                                        // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
+	class UCurveFloat*                                 NitroAccelCurve;                                          // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+};
+
+// ScriptStruct Addons.AttachedMeshConfig
+// 0x0038
+struct FAttachedMeshConfig
+{
+	bool                                               bEnable;                                                  // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	struct FName                                       SocketName;                                               // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FVector                                     RelativeLoc;                                              // 0x0010(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	struct FRotator                                    RelativeRot;                                              // 0x001C(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	struct FVector                                     RelativeScale;                                            // 0x0028(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct Addons.NitroVisualConfig
+// 0x0010
+struct FNitroVisualConfig
+{
+	TArray<struct FAttachedMeshConfig>                 MeshTransforms;                                           // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+};
+
+// ScriptStruct Addons.NitroBoostState
+// 0x000C
+struct FNitroBoostState
+{
+	bool                                               bIsNitroBoosting;                                         // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	float                                              StartTimestamp;                                           // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int                                                BoostCount;                                               // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 };
 
 // ScriptStruct Addons.PitchHookCheck
@@ -3061,7 +3188,7 @@ struct FBuildConstructCheck
 	float                                              FloatErrorTolerance;                                      // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bAngleDetect;                                             // 0x000C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x000D(0x0003) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        BlockingChannels;                                         // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             BlockingChannels;                                         // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	TArray<class UClass*>                              FilterActors;                                             // 0x0020(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	float                                              ConstructingDistance;                                     // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     BoxExtent;                                                // 0x0034(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
@@ -3176,7 +3303,7 @@ struct FAnimNode_AIRuntimeAnimDataToPose : public FAnimNode_SkeletalControlBase
 	unsigned char                                      UnknownData00[0x50];                                      // 0x0078(0x0050) MISSED OFFSET
 	class ACharacter*                                  OwnerCharacter;                                           // 0x00C8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FAIGCRuntimeBodyAnimFrameData               AIRuntimeBodyAnimFrameData;                               // 0x00D0(0x00A0) (Edit, BlueprintVisible)
-	TEnumAsByte<enum EBoneControlSpace>                TransformSpace;                                           // 0x0170(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     TransformSpace;                                           // 0x0170(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseSpecifiedBones;                                       // 0x0171(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x0172(0x0006) MISSED OFFSET
 	struct FSpecifiedBones                             SpecifiedBones;                                           // 0x0178(0x0050) (Edit)
@@ -3204,7 +3331,7 @@ struct FAnimNode_ApplyLimits : public FAnimNode_SkeletalControlBase
 struct FAnimNode_CCDIK : public FAnimNode_SkeletalControlBase
 {
 	struct FVector                                     EffectorLocation;                                         // 0x0078(0x000C) (Edit, IsPlainOldData)
-	TEnumAsByte<enum EBoneControlSpace>                EffectorLocationSpace;                                    // 0x0084(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     EffectorLocationSpace;                                    // 0x0084(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0xB];                                       // 0x0085(0x000B) MISSED OFFSET
 	struct FBoneSocketTarget                           EffectorTarget;                                           // 0x0090(0x0060) (Edit)
 	struct FBoneReference                              TipBone;                                                  // 0x00F0(0x0018) (Edit)
@@ -3230,7 +3357,7 @@ struct FAnimNode_CloseToWall : public FAnimNode_SkeletalControlBase
 {
 	struct FBoneReference                              RootBone;                                                 // 0x0078(0x0018) (Edit)
 	TArray<struct FBoneReference>                      TraceBones;                                               // 0x0090(0x0010) (Edit, ZeroConstructor)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        ObjectTypesToTrace;                                       // 0x00A0(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             ObjectTypesToTrace;                                       // 0x00A0(0x0010) (Edit, ZeroConstructor)
 	float                                              TraceSphereRadius;                                        // 0x00B0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              TraceForwardOffset;                                       // 0x00B4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              TraceBackwardOffset;                                      // 0x00B8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -3291,7 +3418,7 @@ struct FAnimNode_FourLeggedIK : public FAnimNode_SkeletalControlBase
 	class UCurveFloat*                                 SlopePitchAdaptedCurve;                                   // 0x0098(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              SlopePitchAdditive;                                       // 0x00A0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x00A4(0x0004) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        ObjectTypesToTrace;                                       // 0x00A8(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<TEnumAsByte<ECollisionChannel>>             ObjectTypesToTrace;                                       // 0x00A8(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	float                                              TraceUpOffset;                                            // 0x00B8(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              TraceDownOffset;                                          // 0x00BC(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              TraceSphereRadius;                                        // 0x00C0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -3348,7 +3475,7 @@ struct FIKBodyInertia
 // 0x0028
 struct FFootIKCollision
 {
-	TEnumAsByte<enum ECollisionChannel>                CollisionChannel;                                         // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CollisionChannel;                                         // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               TraceComplex;                                             // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0002(0x0002) MISSED OFFSET
 	float                                              RayCastUp;                                                // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -3405,7 +3532,7 @@ struct FAnimNode_HumanoidLeggedIK : public FAnimNode_SkeletalControlBase
 	bool                                               bEnableLegAdaption;                                       // 0x0101(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableFootAdaption;                                      // 0x0102(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x5];                                       // 0x0103(0x0005) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        ObjectTypesToTrace;                                       // 0x0108(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             ObjectTypesToTrace;                                       // 0x0108(0x0010) (Edit, ZeroConstructor)
 	float                                              FootTraceUpOffset;                                        // 0x0118(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              FootTraceDownOffset;                                      // 0x011C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              FootTraceSphereRadius;                                    // 0x0120(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -3467,7 +3594,7 @@ struct FAnimNode_LayeredBoneBlendWithoutExclusive : public FAnimNode_Base
 	unsigned char                                      UnknownData00[0x18];                                      // 0x0068(0x0018) MISSED OFFSET
 	TArray<float>                                      BlendWeights;                                             // 0x0080(0x0010) (Edit, BlueprintVisible, EditFixedSize, ZeroConstructor)
 	bool                                               bMeshSpaceRotationBlend;                                  // 0x0090(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECurveBlendOption>                CurveBlendOption;                                         // 0x0091(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECurveBlendOption>                     CurveBlendOption;                                         // 0x0091(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bBlendRootMotionBasedOnRootBone;                          // 0x0092(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bHasRelevantPoses;                                        // 0x0093(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0094(0x0004) MISSED OFFSET
@@ -3489,7 +3616,7 @@ struct FAnimNode_MirrorPose : public FAnimNode_Base
 };
 
 // ScriptStruct Addons.AnimNode_OffsetRootBone
-// 0x00D8 (0x0110 - 0x0038)
+// 0x00E8 (0x0120 - 0x0038)
 struct FAnimNode_OffsetRootBone : public FAnimNode_Base
 {
 	struct FPoseLink                                   Source;                                                   // 0x0038(0x0018) (Edit, BlueprintVisible)
@@ -3498,12 +3625,14 @@ struct FAnimNode_OffsetRootBone : public FAnimNode_Base
 	float                                              MaxTransitionError;                                       // 0x0058(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bOnlySimulateYaw;                                         // 0x005C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseAssetRootMotion;                                      // 0x005D(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	EOffsetRootBoneMode                                RotationMode;                                             // 0x005E(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	EOffsetRootBoneMode                                TranslationMode;                                          // 0x005F(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FQuat                                       InputSimulatedRotation;                                   // 0x0060(0x0010) (Edit, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x90];                                      // 0x0070(0x0090) MISSED OFFSET
-	class UWorld*                                      CachedWorldContext;                                       // 0x0100(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0108(0x0008) MISSED OFFSET
+	bool                                               bIgnoreComponentScale;                                    // 0x005E(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	EOffsetRootBoneMode                                RotationMode;                                             // 0x005F(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	EOffsetRootBoneMode                                TranslationMode;                                          // 0x0060(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0xF];                                       // 0x0061(0x000F) MISSED OFFSET
+	struct FQuat                                       InputSimulatedRotation;                                   // 0x0070(0x0010) (Edit, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x90];                                      // 0x0080(0x0090) MISSED OFFSET
+	class UWorld*                                      CachedWorldContext;                                       // 0x0110(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x0118(0x0008) MISSED OFFSET
 };
 
 // ScriptStruct Addons.AnimNode_PoseDelay
@@ -3514,7 +3643,7 @@ struct FAnimNode_PoseDelay : public FAnimNode_Base
 	bool                                               bEnable;                                                  // 0x0050(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
 	class UAnimSequence*                               DefaultSequence;                                          // 0x0058(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              DelayTime;                                                // 0x0060(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              delayTime;                                                // 0x0060(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0064(0x0004) MISSED OFFSET
 	struct FAnimNode_SequencePlayer                    SequencePlayerNode;                                       // 0x0068(0x0070)
 	unsigned char                                      UnknownData02[0x20];                                      // 0x00D8(0x0020) MISSED OFFSET
@@ -3714,7 +3843,7 @@ struct FIKSmoothing
 // 0x0020
 struct FIKPoleVector
 {
-	TEnumAsByte<enum EPoleVectorModeEnum>              Mode;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPoleVectorModeEnum>                   Mode;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	struct FVector                                     Position;                                                 // 0x0004(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
 	struct FName                                       BoneName;                                                 // 0x0010(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -3728,10 +3857,10 @@ struct FIKEffector
 {
 	struct FName                                       BoneName;                                                 // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	struct FVector                                     Position;                                                 // 0x0008(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EEffectorSpaceEnum>               PositionSpace;                                            // 0x0014(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEffectorSpaceEnum>                    PositionSpace;                                            // 0x0014(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
 	struct FRotator                                    Rotation;                                                 // 0x0018(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EEffectorSpaceEnum>               RotationSpace;                                            // 0x0024(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEffectorSpaceEnum>                    RotationSpace;                                            // 0x0024(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0025(0x0003) MISSED OFFSET
 	float                                              PullWeight;                                               // 0x0028(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               NormalizePulling;                                         // 0x002C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -3883,14 +4012,14 @@ struct FAnimNode_TwoLeggedIK : public FAnimNode_SkeletalControlBase
 	float                                              RootPositionLerpSpeed;                                    // 0x00A4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              RootMaxHeightOffset;                                      // 0x00A8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x00AC(0x0004) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        SlopeAdaption_ObjectTypesToQuery;                         // 0x00B0(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             SlopeAdaption_ObjectTypesToQuery;                         // 0x00B0(0x0010) (Edit, ZeroConstructor)
 	bool                                               bEnableSlopeAdaption;                                     // 0x00C0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x7];                                       // 0x00C1(0x0007) MISSED OFFSET
 	struct FBoneReference                              SpineRoot;                                                // 0x00C8(0x0018) (Edit)
 	struct FBoneReference                              TailRoot;                                                 // 0x00E0(0x0018) (Edit)
 	float                                              SlopeMaxPitchOffset;                                      // 0x00F8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              SlopeRotationLerpSpeed;                                   // 0x00FC(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        FootAdaption_ObjectTypesToQuery;                          // 0x0100(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             FootAdaption_ObjectTypesToQuery;                          // 0x0100(0x0010) (Edit, ZeroConstructor)
 	bool                                               bEnableFootPositionAdaption;                              // 0x0110(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableFootRotationAdaption;                              // 0x0111(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x6];                                       // 0x0112(0x0006) MISSED OFFSET
@@ -4090,10 +4219,11 @@ struct FAddMapMarkInstanceStruct
 };
 
 // ScriptStruct Addons.SkillActionMemory_AddRemoveBuff
-// 0x0004
+// 0x000C
 struct FSkillActionMemory_AddRemoveBuff
 {
 	int                                                ActionID;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	TWeakObjectPtr<class AActor>                       Target;                                                   // 0x0004(0x0008) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Addons.SAAllowPawnStateInstanceStruct

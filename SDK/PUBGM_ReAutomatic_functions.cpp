@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function ReAutomatic.AutomaticCommonHelper.IsClassOf
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -17,7 +17,7 @@ namespace SDK
 
 bool UAutomaticCommonHelper::IsClassOf(class UObject* Object, class UClass* Class)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticCommonHelper.IsClassOf");
 
@@ -44,7 +44,7 @@ bool UAutomaticCommonHelper::IsClassOf(class UObject* Object, class UClass* Clas
 
 struct FString UAutomaticPlatformHelper::GetDeviceName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticPlatformHelper.GetDeviceName");
 
@@ -71,7 +71,7 @@ struct FString UAutomaticPlatformHelper::GetDeviceName()
 
 bool UAutomaticUIHelper::IsWidgetVisibleWithUICondition(const struct FFindUICondition& Condition, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticUIHelper.IsWidgetVisibleWithUICondition");
 
@@ -99,7 +99,7 @@ bool UAutomaticUIHelper::IsWidgetVisibleWithUICondition(const struct FFindUICond
 
 bool UAutomaticUIHelper::IsWidgetVisible(class UWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticUIHelper.IsWidgetVisible");
 
@@ -127,7 +127,7 @@ bool UAutomaticUIHelper::IsWidgetVisible(class UWidget* Widget)
 
 bool UAutomaticUIHelper::IsWidgetTextMatchRegex(class UWidget* Widget, const struct FString& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticUIHelper.IsWidgetTextMatchRegex");
 
@@ -156,7 +156,7 @@ bool UAutomaticUIHelper::IsWidgetTextMatchRegex(class UWidget* Widget, const str
 
 bool UAutomaticUIHelper::IsWidgetMatchType(class UWidget* Widget, EUIType Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticUIHelper.IsWidgetMatchType");
 
@@ -185,7 +185,7 @@ bool UAutomaticUIHelper::IsWidgetMatchType(class UWidget* Widget, EUIType Type)
 
 class UWidget* UAutomaticUIHelper::FindWidgetObjectWithUICondition(const struct FFindUICondition& Condition, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticUIHelper.FindWidgetObjectWithUICondition");
 
@@ -214,7 +214,7 @@ class UWidget* UAutomaticUIHelper::FindWidgetObjectWithUICondition(const struct 
 
 class UWidget* UAutomaticUIHelper::FindUWidgetObject(const struct FString& Name, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ReAutomatic.AutomaticUIHelper.FindUWidgetObject");
 

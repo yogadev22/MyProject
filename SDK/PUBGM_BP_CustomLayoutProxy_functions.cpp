@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function BP_CustomLayoutProxy.BP_CustomLayoutProxy_C.AddLayoutDetailCache
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -16,7 +16,7 @@ namespace SDK
 
 void UBP_CustomLayoutProxy_C::AddLayoutDetailCache(bool Invalid, struct FBP_STRUCT_UIElemLayoutDetail* BPStruct)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BP_CustomLayoutProxy.BP_CustomLayoutProxy_C.AddLayoutDetailCache");
 

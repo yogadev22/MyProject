@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function LevelSequence.LevelSequenceActor.SetSequence
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetSequence");
 
@@ -39,7 +39,7 @@ void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 
 void ALevelSequenceActor::SetEventReceivers(TArray<class AActor*> AdditionalReceivers)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetEventReceivers");
 
@@ -65,7 +65,7 @@ void ALevelSequenceActor::SetEventReceivers(TArray<class AActor*> AdditionalRece
 
 void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBinding");
 
@@ -89,7 +89,7 @@ void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Bi
 
 void ALevelSequenceActor::SetAllMovieSceneSectionsToKeepState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetAllMovieSceneSectionsToKeepState");
 
@@ -110,7 +110,7 @@ void ALevelSequenceActor::SetAllMovieSceneSectionsToKeepState()
 
 void ALevelSequenceActor::ResetBindings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBindings");
 
@@ -133,7 +133,7 @@ void ALevelSequenceActor::ResetBindings()
 
 void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& Binding)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBinding");
 
@@ -158,7 +158,7 @@ void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& 
 
 void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBinding");
 
@@ -181,7 +181,7 @@ void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID&
 
 void ALevelSequenceActor::ReceiveInitailizePlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ReceiveInitailizePlayer");
 
@@ -205,7 +205,7 @@ void ALevelSequenceActor::ReceiveInitailizePlayer()
 
 class ULevelSequence* ALevelSequenceActor::GetSequence(bool bLoad, bool bInitializePlayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequence");
 
@@ -233,7 +233,7 @@ class ULevelSequence* ALevelSequenceActor::GetSequence(bool bLoad, bool bInitial
 
 struct FMovieSceneObjectBindingID ALevelSequenceActor::GetPossessableByName(const struct FString& NameKeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetPossessableByName");
 
@@ -261,7 +261,7 @@ struct FMovieSceneObjectBindingID ALevelSequenceActor::GetPossessableByName(cons
 
 void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBinding");
 
@@ -287,7 +287,7 @@ void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Bi
 
 void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.SetSettings");
 
@@ -310,7 +310,7 @@ void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 
 class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass");
 
@@ -335,7 +335,7 @@ class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 
 void ULevelSequencePlayer::SetCanUpdateCameraCut(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.SetCanUpdateCameraCut");
 
@@ -363,7 +363,7 @@ void ULevelSequencePlayer::SetCanUpdateCameraCut(bool bEnable)
 
 class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer");
 

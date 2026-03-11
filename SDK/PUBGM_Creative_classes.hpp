@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Creative.AIGCAudioManager
 // 0x0050 (0x01B8 - 0x0168)
@@ -17,30 +17,32 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.AIGCAudioManager");
 		return pStaticClass;
 	}
 
 
+	uint64_t WemCutByAssetKey(uint64_t AssetKey, int StartTime, int EndTime);
 	uint32_t SeekOnEvent(class UAkAudioEvent* Event, class AActor* Actor, int in_iPosition, bool bStopWhenOwnerDestroyed, uint64_t AssetKey, uint32_t* PlayingID);
 	static class UAIGCAudioManager* Get(class UObject* WorldContext);
+	int AllocateTempAssetKey();
 };
 
 
 // Class Creative.CameraDeviceSpringArmComponent
-// 0x0010 (0x0D20 - 0x0D10)
+// 0x0010 (0x0D50 - 0x0D40)
 class UCameraDeviceSpringArmComponent : public UCustomSpringArmComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0D10(0x0008) MISSED OFFSET
-	float                                              DebugAngle;                                               // 0x0D18(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0D1C(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0D40(0x0008) MISSED OFFSET
+	float                                              DebugAngle;                                               // 0x0D48(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0D4C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CameraDeviceSpringArmComponent");
 		return pStaticClass;
@@ -62,7 +64,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreateBackpackRepActor");
 		return pStaticClass;
@@ -124,7 +126,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeAbilitySystemComponent");
 		return pStaticClass;
@@ -177,7 +179,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeActorInteractionComponent");
 		return pStaticClass;
@@ -188,6 +190,7 @@ public:
 	void SetCrossHairTransformObjInstanceID(const struct FString& InstanceID);
 	void SetCrossHairSelectedObjInstanceID(const struct FString& InstanceID);
 	void SetCrossHairPickActor(class AActor* PickActor);
+	void SectorCheckImplement(float CheckDistance, float CheckAngle);
 	float GetSectorCheckIntervalCfg();
 	float GetSectorCheckDistance();
 	float GetSectorCheckAngle();
@@ -197,6 +200,7 @@ public:
 	float GetCrossHairPickDistanceCfg();
 	float GetCrossHairCheckIntervalCfg();
 	float GetCrossHairCheckDistanceCfg();
+	void CrossHairCheckImplement(float Distance);
 	void ClearCanEditParamsObjs();
 	void AddCanEditObject(class UObject* uCanEditObject, float Angle, float Distance);
 };
@@ -210,7 +214,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeManagerBase");
 		return pStaticClass;
@@ -234,7 +238,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeAdaptiveSchedulManager");
 		return pStaticClass;
@@ -260,22 +264,24 @@ public:
 
 
 // Class Creative.CreativeAnimInstance
-// 0x0020 (0x0CE0 - 0x0CC0)
+// 0x0030 (0x0CB0 - 0x0C80)
 class UCreativeAnimInstance : public USTExtraAnimInstanceBase
 {
 public:
-	struct FVector                                     C_ActualMoveVelocity;                                     // 0x0CC0(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	float                                              C_FlyMaxSpeed;                                            // 0x0CCC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SkillFlying;                                            // 0x0CD0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0CD1(0x0003) MISSED OFFSET
-	float                                              RootAimYaw;                                               // 0x0CD4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              C_AimOffsetAdditiveAlpha;                                 // 0x0CD8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bIsProne;                                                 // 0x0CDC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0CDD(0x0003) MISSED OFFSET
+	bool                                               bFlyBuilding;                                             // 0x0C80(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0C81(0x0003) MISSED OFFSET
+	struct FVector                                     C_ActualMoveVelocity;                                     // 0x0C84(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              C_FlyMaxSpeed;                                            // 0x0C90(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SkillFlying;                                            // 0x0C94(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0C95(0x0003) MISSED OFFSET
+	float                                              RootAimYaw;                                               // 0x0C98(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              C_AimOffsetAdditiveAlpha;                                 // 0x0C9C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsProne;                                                 // 0x0CA0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0xF];                                       // 0x0CA1(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeAnimInstance");
 		return pStaticClass;
@@ -297,7 +303,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeLuaSignalObjectBase");
 		return pStaticClass;
@@ -329,7 +335,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeApiObject");
 		return pStaticClass;
@@ -354,7 +360,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeAssetManager");
 		return pStaticClass;
@@ -379,12 +385,35 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeAudioApiObject");
 		return pStaticClass;
 	}
 
+};
+
+
+// Class Creative.CreativeAudioBlueprintFunctionLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UCreativeAudioBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Creative.CreativeAudioBlueprintFunctionLibrary");
+		return pStaticClass;
+	}
+
+
+	static bool SaveWemToConvert(TArray<unsigned char> WemData, const struct FString& SavePath);
+	static void RegisterWwiseBaseDir(const struct FString& BaseDir);
+	static float GetWavLength(TArray<unsigned char> WavData);
+	static float GetMp3Length(TArray<unsigned char> Mp3Data);
+	static void GetAudioWaveform(uint32_t WemMediaID, float SampleInterval, const struct FScriptDelegate& Callback);
 };
 
 
@@ -396,7 +425,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeAutoGenComponent");
 		return pStaticClass;
@@ -416,7 +445,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeBackpackUtils");
 		return pStaticClass;
@@ -437,7 +466,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeBaseWidget");
 		return pStaticClass;
@@ -457,7 +486,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeBinaryDataManager");
 		return pStaticClass;
@@ -515,7 +544,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeBlockyLuaManager");
 		return pStaticClass;
@@ -588,7 +617,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeBlueprintLibrary");
 		return pStaticClass;
@@ -597,6 +626,8 @@ public:
 
 	static bool ZSTDDecompressData(TArray<unsigned char> CompressedData, TArray<unsigned char>* DecompressedData);
 	static bool ZSTDCompressData(TArray<unsigned char> UncompressedData, int CompressionLevel, TArray<unsigned char>* CompressedData);
+	static struct FString WindowsReadFileSummary(const struct FString& FilePath, TArray<struct FString> Properties);
+	static struct FString WindowsPickFile(const struct FString& filter);
 	static struct FVector2D WidgetAbsoluteSizeToLocalSize(class UWidget* Widget, const struct FVector2D& AbsoluteSize);
 	static void UObjSnapshot(class UWorld* MyWorld);
 	static struct FTransform TransformRevert(const struct FTransform& TransformB, struct FTransform* TransformRelative);
@@ -607,19 +638,20 @@ public:
 	static TArray<unsigned char> TextureToJPEG(class UTexture2D* Texture);
 	struct FString TakeSnapshot(class UWidget* WindowWidget, int X1, int Y1, int x2, int y2, const struct FString& Filename, bool bUseCrop, bool bFillRect);
 	static bool SynchronizePropertiesWidget(class UWidget* TargetWidget);
-	static bool SphereOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents);
-	static bool SphereOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors);
+	static bool SphereOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents);
+	static bool SphereOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors);
 	static bool ShouldCreatePhysicsState(class UPrimitiveComponent* Component);
 	static float SetWorldGravityZ(float GravityZ, class UObject* WorldContext);
 	static void SetWidgetVisiblePass(class UWidget* Widget, bool bVisiblePass);
-	static void SetStaticMeshMobility(class UStaticMeshComponent* StaticMeshComponent, TEnumAsByte<enum EComponentMobility> NewMobility);
+	static void SetStaticMeshMobility(class UStaticMeshComponent* StaticMeshComponent, TEnumAsByte<EComponentMobility> NewMobility);
 	static void SetSpeedOverLimit(class AActor* Actor);
 	static void SetRelativeCamRotation(class APlayerController* PlayerController, class USceneComponent* Component);
 	static void SetParticleCullingDistance(class UParticleSystemComponent* ParticleSystemComponent, float Distance);
 	static void SetInstanceValue(class UObject* WorldContextObject, const struct FString& InstanceID, const struct FString& Key, const struct FString& Value);
 	static void SetCommandLineValue(const struct FString& Key, const struct FString& NewValue);
-	static void SetCollisionMobility(class UShapeComponent* Component, TEnumAsByte<enum EComponentMobility> NewMobility);
+	static void SetCollisionMobility(class UShapeComponent* Component, TEnumAsByte<EComponentMobility> NewMobility);
 	static void SaveStringToFile(const struct FString& String, const struct FString& Filename);
+	static void SaveRawStringToFile(TArray<unsigned char> Content, const struct FString& FilePath);
 	static void SaveAssetStringToFile(const struct FString& String, const struct FString& Filename);
 	struct FRotator RotatorCrossInverse(const struct FRotator& Rot1, const struct FRotator& Rot2);
 	struct FRotator RotatorCross(const struct FRotator& Rot1, const struct FRotator& Rot2);
@@ -631,19 +663,21 @@ public:
 	static struct FString ProjectSavedDir();
 	static struct FString ProjectContentDir();
 	static void PopulateParticleProperties(class UParticleSystemComponent* ParticleSystemComponent);
-	static void MoveComponentToNoLatent(class USceneComponent* Component, const struct FVector& TargetRelativeLocation, const struct FRotator& TargetRelativeRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<enum EMoveComponentAction> MoveAction);
-	static void MoveComponentTo(class USceneComponent* Component, const struct FVector& WorldLocation, const struct FRotator& WorldRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<enum EMoveComponentAction> MoveAction);
+	static void MoveComponentToNoLatent(class USceneComponent* Component, const struct FVector& TargetRelativeLocation, const struct FRotator& TargetRelativeRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<EMoveComponentAction> MoveAction);
+	static void MoveComponentTo(class USceneComponent* Component, const struct FVector& WorldLocation, const struct FRotator& WorldRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<EMoveComponentAction> MoveAction);
 	static void MinAreaRectangle(class UObject* WorldContextObject, TArray<struct FVector> InPoints, const struct FVector& SampleSurfaceNormal, bool bDebugDraw, struct FRotator* OutRectRotation, float* OutRectLengthX, float* OutRectLengthY, struct FVector* OutRectCenter, TArray<int>* PolyVertIndices);
 	static struct FString MD5HashByteArray(TArray<unsigned char> inArray);
 	static struct FString MD5HashAnsiString(const struct FString& str);
 	static bool Lz4DecompressData(TArray<unsigned char> CompressedData, TArray<unsigned char>* DecompressedData);
 	static bool Lz4CompressData(TArray<unsigned char> UncompressedData, TArray<unsigned char>* CompressedData);
+	static TArray<unsigned char> LoadRawFileToString(const struct FString& FilePath);
 	static struct FString LoadFileToStringByFullPath(const struct FString& FullPathName);
 	static TArray<unsigned char> LoadFileToArrayByFullPath(const struct FString& FullPathName);
 	static struct FString LoadAssetFileToString(const struct FString& Filename);
 	static class USceneComponent* LineTraceTouchComponent(const struct FVector2D& TouchPos, class APlayerController* PlayerController, TArray<class AActor*> IgnoreActors, struct FVector* TouchHitLoc);
 	static int LineTraceTouchAxis(const struct FVector2D& TouchPos, class APlayerController* PlayerController, TArray<class AActor*> IgnoreActors, struct FVector* TouchHitLoc);
 	static struct FString LineTraceInstance(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<class AActor*> IgnoreActors);
+	static bool IsWindows();
 	static bool IsPointWithinRotatedBounds(const struct FVector& BoxCenter, const struct FVector& BoxExtent, float YawDegrees, const struct FVector& Point);
 	static bool IsPointInVolume(class AVolume* Volume, const struct FVector& Position);
 	static bool IsPhysicsStateCreated(class UPrimitiveComponent* Component);
@@ -654,11 +688,13 @@ public:
 	static bool IsLLMEnabled();
 	static bool IsCreativeMode(class UWorld* World);
 	static bool IsBoxOverlapWithRotatedBox(const struct FVector& StaticBoxCenter, const struct FVector& StaticBoxExtent, const struct FVector& RotatedBoxCenter, const struct FVector& RotatedBoxExtent, float RotatedBoxYaw);
+	static TArray<struct FString> IsAABBVisible(TArray<struct FBox> TargetBoxs, TArray<struct FString> InstanceIDs, const struct FVector& FarPlanePoint, const struct FVector& CameraForward, TArray<float>* PlanesParams);
 	static void IgnoreClientMovementErrorChecksAndCorrection(class ACharacter* Charcter, bool bIsIgnore);
 	static int HideEnvironmentalActorsInSceneCapture(class USceneCaptureComponent2D* SceneCapture, class ADirectionalLight* LightToKeep, bool bHideSkyBox, bool bHideEnvironmentLights, bool bHideAtmosphere);
 	void GetWidgetRect(class UWidget* Widget, int* X1, int* Y1, int* x2, int* y2);
 	static struct FString GetUrlValue(class UObject* WorldContext, const struct FString& Key);
 	static struct FString GetUObjAssetPath(class UObject* Level);
+	static struct FString GetUClassName(class UClass* UClass);
 	static bool GetSyncDataIsEqual(struct FNetAvatarSyncData* SyncDataFirst, struct FNetAvatarSyncData* SyncDataSecond);
 	int GetRTValidMaxArea(class UTextureRenderTarget2D* TextureTarget);
 	static int GetReplicateAddDataArrayVaildNum(class UObject* WorldContextObject, const struct FReplicateAddDataArray& ReplicateAddDataArray, int StartIndex);
@@ -666,9 +702,11 @@ public:
 	static float GetPlatformSeconds();
 	static void GetObjectScreenPos(class UObject* WorldContextObject, const struct FString& InstanceID, struct FVector2D* Pos);
 	static TMap<struct FString, class UObject*> GetObjectMap(class UObject* WorldContextObject);
+	static TArray<class UClass*> GetObjectInheritanceChain(class UObject* Object);
 	static float GetMinFovForAABB(const struct FVector& CameraLocation, const struct FRotator& CameraRotation, TArray<struct FVector> AABBVertices, float AspectRatio);
 	static float GetLastInteractionElapsedTime();
 	static void GetInstanceSpaceBoundingBox(const struct FString& InstanceID, float Yaw, class UCreativeAbilitySystemComponent* Component);
+	static struct FVector2D GetImageSize(TArray<unsigned char> ImageBuffer, int Format);
 	static void GetGroupInstanceSpaceBoundingBox(const struct FString& GroupID, TArray<struct FString> ChildrenIds, TMap<struct FString, struct FTransform> ChildrenTransforms, float Yaw, class UCreativeAbilitySystemComponent* Component);
 	static class UWorld* GetGameWorld(class UObject* WorldContextObject);
 	static struct FString GetGameTypeAsString(ECreativeModeGameType GameType);
@@ -681,13 +719,16 @@ public:
 	static bool GetContentPatchData(TArray<unsigned char> OldData, TArray<unsigned char> DiffData, TArray<unsigned char>* outNewData);
 	static bool GetContentDiffData(TArray<unsigned char> OldData, TArray<unsigned char> NewData, TArray<unsigned char>* outDiffData);
 	static struct FString GetCommandLineValue(const struct FString& Key);
+	static TArray<class UClass*> GetClassInheritanceChain(class UClass* UClass);
 	static struct FVector GetCharacterSocketPos(class ACharacter* Character, const struct FName& SocketName);
+	static TArray<struct FVector4> GetCameraFrustumPlane(class UObject* WorldContext);
 	static void GetBoundingBoxOfInstances(class UObject* WorldContext, TArray<struct FString> Ids, float Yaw, struct FVector* Center, struct FVector* BoxExtent);
 	static void GetBoundingBoxOfActors(TArray<class AActor*> Actors, float Yaw, struct FVector* Center, struct FVector* BoxExtent);
 	static struct FString GetBigUObject(int MaxN);
 	struct FString GetBigLuaValue(class UObject* WorldContext);
 	static TArray<struct FString> GetAllInstanceInScreenBox(class UObject* WorldContext, const struct FVector2D& Start, const struct FVector2D& End, int CheckDistance, int CountLimit);
 	static TArray<struct FString> GetAllInstanceInBox(class UObject* WorldContext, const struct FVector& Center, const struct FVector& Extent, const struct FRotator& Rotator);
+	static TArray<struct FOverlapResult> GetActorsInCameraFrustumByLayer(class UWorld* World, const struct FVector& Origin, const struct FRotator& CameraRot, float MaxDistance, float AngleWidth, float AngleHeight, int NumLayers, TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes, bool bDrawDebug, const struct FColor& DebugColor, float DebugLifeTime);
 	static void GetActorMeshBoundsByTag(class AActor* Actor, const struct FString& IgnoreTag, const struct FString& IncludeTag, struct FVector* Origin, struct FVector* BoxExtent);
 	static uint32_t GenerateUIntGuid();
 	static TArray<int> GenerateMemoryArray(int SizeInMB);
@@ -704,18 +745,19 @@ public:
 	static void DestroyUObject(class UObject* Object);
 	static struct FString DestroyInstance(class UObject* WorldContextObject, const struct FString& InstanceID);
 	TArray<unsigned char> DecryptFromBase64(const struct FString& inString);
+	static void DarwCameraFrustumDebugLine(class UObject* WorldContext, const struct FVector& FarPlanePoint, const struct FVector& CameraForward, float Duration, TArray<float>* PlanesParams);
 	static struct FCreativeInstanceDataContent CreativeInstanceDataContent(TArray<unsigned char> DataContent);
-	static struct FCreativeMovingAudio CreateCreativeMovingAudio(class AActor* Actor, int Sequence, int ConfigId, bool bShowMark, int Duration, float Volume);
+	static struct FCreativeMovingAudio CreateCreativeMovingAudio(class AActor* Actor, int Sequence, uint64_t ConfigId, bool bShowMark, int Duration, float Volume);
 	static struct FRotator ConvertForwardToRotator(const struct FVector& Forward);
 	void ClearGrassByMaskTexture(class UObject* WorldContextObject, class UTexture2D* MaskTexture, const struct FVector2D& WorldStart, const struct FVector2D& WorldEnd);
 	static bool CheckWidgetsOverlap(class UWidget* Widget1, class UWidget* Widget2);
-	static void CharacterPlayCreativeDynamicMontage(class ASTExtraCharacter* CharacterOwner, class UAnimSequenceBase* Asset, float BlendInTime, float BlendOutTime, float InPlayRate, int LoopCount, bool bIsLoop, float InTimeToStartMontageAt, const struct FName& SlotNodeName);
+	static void CharacterPlayCreativeDynamicMontage(class ACharacter* CharacterOwner, class UAnimSequenceBase* Asset, float BlendInTime, float BlendOutTime, float InPlayRate, int LoopCount, bool bIsLoop, float InTimeToStartMontageAt, const struct FName& SlotNodeName);
 	static bool CaptureWidget(class UObject* WorldContext, class UClass* WidgetClass, struct FString* Path, int* X, int* Y, bool* FlipY);
-	static bool BoxOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents);
+	static bool BoxOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents);
 	static bool BoxOverlapComponents(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<int> ObjectTypes, class UClass* CompClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComps);
-	static bool BoxOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors);
+	static bool BoxOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors);
 	static bool BoxOverlapActors(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<int> ObjectTypes, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors);
-	static bool BlueprintSuggestProjectileVelocity(class UObject* WorldContextObject, TArray<class AActor*> ActorsToIgnore, const struct FVector& StartLocation, const struct FVector& EndLocation, float LaunchSpeed, float OverrideGravityZ, TEnumAsByte<enum ESuggestProjVelocityTraceOption> TraceOption, float CollisionRadius, bool bFavorHighArc, bool bDrawDebug, float Tolerance, struct FVector* TossVelocity);
+	static bool BlueprintSuggestProjectileVelocity(class UObject* WorldContextObject, TArray<class AActor*> ActorsToIgnore, const struct FVector& StartLocation, const struct FVector& EndLocation, float LaunchSpeed, float OverrideGravityZ, TEnumAsByte<ESuggestProjVelocityTraceOption> TraceOption, float CollisionRadius, bool bFavorHighArc, bool bDrawDebug, float Tolerance, struct FVector* TossVelocity);
 	static class AActor* BeginDeferredActorSpawnWithName(class UObject* WorldContextObject, class UClass* ActorClass, const struct FTransform& SpawnTransform, const struct FName& Name, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, class AActor* Owner);
 	static void AttachOutlineBox(class AActor* AttachedActor, float Yaw, class AActor* OutlineBox);
 	static void AttachInstanceOutlineBox(const struct FString& AttachedId, bool bGridEnable, float Yaw, class AActor* OutlineBox);
@@ -741,7 +783,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeLuaSpectatorPawn");
 		return pStaticClass;
@@ -776,7 +818,7 @@ public:
 	struct FVector                                     SocketOffset;                                             // 0x0624(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FRotator                                    RotatorOffset;                                            // 0x0630(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	TWeakObjectPtr<class AActor>                       FollowTarget;                                             // 0x063C(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EViewTargetBlendFunction>         BlendFunction;                                            // 0x0644(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EViewTargetBlendFunction>              BlendFunction;                                            // 0x0644(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x3];                                       // 0x0645(0x0003) MISSED OFFSET
 	struct FRotator                                    ActorStartRot;                                            // 0x0648(0x000C) (BlueprintVisible, IsPlainOldData)
 	struct FRotator                                    ActorTargetRot;                                           // 0x0654(0x000C) (BlueprintVisible, IsPlainOldData)
@@ -797,7 +839,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeCameraDeviceActor");
 		return pStaticClass;
@@ -833,7 +875,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeCameraGetter");
 		return pStaticClass;
@@ -856,7 +898,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeCustomCameraComponent");
 		return pStaticClass;
@@ -878,7 +920,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeCustomParameterManager");
 		return pStaticClass;
@@ -903,7 +945,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeCustomPrefabComponent");
 		return pStaticClass;
@@ -924,7 +966,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeDestructibleMeshActor");
 		return pStaticClass;
@@ -951,7 +993,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeDestructibleMeshBatchActor");
 		return pStaticClass;
@@ -980,7 +1022,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeDropItemCurveAnimComponent");
 		return pStaticClass;
@@ -1009,7 +1051,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeLiteComponent");
 		return pStaticClass;
@@ -1032,7 +1074,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameModeBaseComponent");
 		return pStaticClass;
@@ -1055,7 +1097,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeEditorModeComponent");
 		return pStaticClass;
@@ -1083,7 +1125,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeEditorObject");
 		return pStaticClass;
@@ -1124,7 +1166,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameStateBaseComponent");
 		return pStaticClass;
@@ -1146,7 +1188,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeEditorStateComponent");
 		return pStaticClass;
@@ -1163,7 +1205,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeEventObject");
 		return pStaticClass;
@@ -1183,7 +1225,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeGameAPIObject");
 		return pStaticClass;
@@ -1196,25 +1238,26 @@ public:
 
 
 // Class Creative.CreativeModeGameMode
-// 0x0190 (0x2560 - 0x23D0)
+// 0x0190 (0x2558 - 0x23C8)
 class ACreativeModeGameMode : public ABattleRoyaleGameModeTeam
 {
 public:
-	class UCreativeModeGameModeBaseComponent*          CurrentModeComponent;                                     // 0x23D0(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	TArray<class UClass*>                              GameModeComponentClassArray;                              // 0x23D8(0x0010) (ZeroConstructor, Transient)
-	class UClass*                                      GameModeComponentClass;                                   // 0x23E8(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TMap<struct FString, struct FGameModeParam>        MapPlaneRouteConfigs;                                     // 0x23F0(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
-	TMap<struct FString, struct FString>               MapVehicleClassPathConfigs;                               // 0x2440(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
-	ECreativeModeGameType                              EditorStartupGameType;                                    // 0x2490(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1];                                       // 0x2491(0x0001) MISSED OFFSET
-	bool                                               bIsCreativeWoW;                                           // 0x2492(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x5];                                       // 0x2493(0x0005) MISSED OFFSET
-	struct FGameModeLiteComponentTickFunction          LiteComponentActorTick;                                   // 0x2498(0x00B8) (Edit, DisableEditOnInstance)
-	TArray<class ULiteComponent*>                      LiteComponents;                                           // 0x2550(0x0010) (ZeroConstructor, Transient)
+	class UCreativeModeGameModeBaseComponent*          CurrentModeComponent;                                     // 0x23C8(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	TArray<class UClass*>                              GameModeComponentClassArray;                              // 0x23D0(0x0010) (ZeroConstructor, Transient)
+	class UClass*                                      GameModeComponentClass;                                   // 0x23E0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TMap<struct FString, struct FGameModeParam>        MapPlaneRouteConfigs;                                     // 0x23E8(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TMap<struct FString, struct FString>               MapVehicleClassPathConfigs;                               // 0x2438(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
+	ECreativeModeGameType                              EditorStartupGameType;                                    // 0x2488(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x1];                                       // 0x2489(0x0001) MISSED OFFSET
+	bool                                               bIsCreativeWoW;                                           // 0x248A(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int8_t                                             FindPlayerStartOverrideFlag;                              // 0x248B(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x248C(0x0004) MISSED OFFSET
+	struct FGameModeLiteComponentTickFunction          LiteComponentActorTick;                                   // 0x2490(0x00B8) (Edit, DisableEditOnInstance)
+	TArray<class ULiteComponent*>                      LiteComponents;                                           // 0x2548(0x0010) (ZeroConstructor, Transient)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameMode");
 		return pStaticClass;
@@ -1254,7 +1297,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameModeComponent");
 		return pStaticClass;
@@ -1278,7 +1321,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameObject");
 		return pStaticClass;
@@ -1320,7 +1363,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeGameParameterManager");
 		return pStaticClass;
@@ -1343,31 +1386,37 @@ public:
 
 
 // Class Creative.CreativeModeGameState
-// 0x0128 (0x16C8 - 0x15A0)
+// 0x0140 (0x1710 - 0x15D0)
 class ACreativeModeGameState : public ASTExtraGameStateBase
 {
 public:
-	unsigned char                                      UnknownData00[0x2];                                       // 0x15A0(0x0002) MISSED OFFSET
-	unsigned char                                      bIsCreativeMode : 1;                                      // 0x15A2(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly)
-	ECreativeModeGameType                              CurrentGameType;                                          // 0x15A3(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	ECreativeModeGameType                              InitializeGameType;                                       // 0x15A4(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x15A5(0x0003) MISSED OFFSET
-	int                                                CreativeModID;                                            // 0x15A8(0x0004) (Net, ZeroConstructor, IsPlainOldData)
-	int                                                CreativeModTemplateId;                                    // 0x15AC(0x0004) (Net, ZeroConstructor, IsPlainOldData)
-	class UCreativeModeGameStateBaseComponent*         CurrentStateComponent;                                    // 0x15B0(0x0008) (Net, ZeroConstructor, Transient, IsPlainOldData)
-	class UCreativeModeGameStateBaseComponent*         LastStateComponent;                                       // 0x15B8(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	TArray<class UClass*>                              GameStateComponentClassArray;                             // 0x15C0(0x0010) (ZeroConstructor, Transient)
-	class UClass*                                      GameStateComponentClass;                                  // 0x15D0(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               bIsCreativeWoW;                                           // 0x15D8(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               bIsAIUseDynamicBehaviorTaskNode;                          // 0x15D9(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x16];                                      // 0x15DA(0x0016) MISSED OFFSET
-	TArray<struct FExtendedBlockySlotString>           BlockySlotStrings;                                        // 0x15F0(0x0010) (Net, ZeroConstructor, Transient)
-	struct FGameStateLiteComponentTickFunction         LiteComponentActorTick;                                   // 0x1600(0x00B8) (Edit, DisableEditOnInstance)
-	TArray<class ULiteComponent*>                      LiteComponents;                                           // 0x16B8(0x0010) (ZeroConstructor, Transient)
+	int                                                EditorBindTemplateID;                                     // 0x15D0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x15D4(0x0002) MISSED OFFSET
+	unsigned char                                      bIsCreativeMode : 1;                                      // 0x15D6(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly)
+	ECreativeModeGameType                              CurrentGameType;                                          // 0x15D7(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	ECreativeModeGameType                              CurrentGameTypeReplicated;                                // 0x15D8(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
+	ECreativeModeGameType                              InitializeGameType;                                       // 0x15D9(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x15DA(0x0002) MISSED OFFSET
+	int                                                CreativeModID;                                            // 0x15DC(0x0004) (Net, ZeroConstructor, IsPlainOldData)
+	int                                                CreativeModTemplateId;                                    // 0x15E0(0x0004) (Net, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x15E4(0x0004) MISSED OFFSET
+	class UCreativeModeGameStateBaseComponent*         CurrentStateComponent;                                    // 0x15E8(0x0008) (Net, ZeroConstructor, Transient, IsPlainOldData)
+	class UCreativeModeGameStateBaseComponent*         WaitCurrentStateComponent;                                // 0x15F0(0x0008) (ZeroConstructor, IsPlainOldData)
+	bool                                               CurrentStateComponentTest;                                // 0x15F8(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7];                                       // 0x15F9(0x0007) MISSED OFFSET
+	class UCreativeModeGameStateBaseComponent*         LastStateComponent;                                       // 0x1600(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	TArray<class UClass*>                              GameStateComponentClassArray;                             // 0x1608(0x0010) (ZeroConstructor, Transient)
+	class UClass*                                      GameStateComponentClass;                                  // 0x1618(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bIsCreativeWoW;                                           // 0x1620(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bIsAIUseDynamicBehaviorTaskNode;                          // 0x1621(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x16];                                      // 0x1622(0x0016) MISSED OFFSET
+	TArray<struct FExtendedBlockySlotString>           BlockySlotStrings;                                        // 0x1638(0x0010) (Net, ZeroConstructor, Transient)
+	struct FGameStateLiteComponentTickFunction         LiteComponentActorTick;                                   // 0x1648(0x00B8) (Edit, DisableEditOnInstance)
+	TArray<class ULiteComponent*>                      LiteComponents;                                           // 0x1700(0x0010) (ZeroConstructor, Transient)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameState");
 		return pStaticClass;
@@ -1387,9 +1436,11 @@ public:
 	void OnViewportSizeChanged(const struct FVector2D& OldViewportSize, const struct FVector2D& NewViewportSize);
 	void OnRep_InitializeGameType(ECreativeModeGameType LastInitializeGameType);
 	void OnRep_CurrentStateComponent(class UCreativeModeGameStateBaseComponent* LastComponent);
+	void OnRep_CurrentGameTypeReplicated(ECreativeModeGameType LastCurrentGameTypeReplicated);
 	void OnRep_CreativeModTemplateId(int LastCreativeModTemplateId);
 	void OnRep_CreativeModID(int LastCreativeModID);
 	void OnRep_BlockySlotStrings(TArray<struct FExtendedBlockySlotString>* BlockySlotStrings);
+	void OnCurrentStateComponentChanged(class UCreativeModeGameStateBaseComponent* LastComponent);
 	void OnClientRecordingStateChange(EClientRecordingType Type);
 	bool IsOfficialGame();
 	bool IsEditorMode();
@@ -1402,6 +1453,7 @@ public:
 	ECreativeModeGameType GetInitializeGameType();
 	TArray<struct FString> GetDisableDistanceLevelsOutsideBox(float X, float Y, int W, int L, float RotationAngle, bool bUseFilter);
 	class UCreativeModeGameStateBaseComponent* GetCurrentStateComponent();
+	ECreativeModeGameType GetCurrentGameTypeReplicated();
 	ECreativeModeGameType GetCurrentGameType();
 	int GetCurCreativeType();
 	struct FString GetCurCreativeModResList();
@@ -1411,6 +1463,7 @@ public:
 	int GetCreativeModID();
 	class ULiteComponent* FindLiteComponentByClass(class UClass* ComponentClass);
 	bool FilterLevelByName(const struct FName& LevelName);
+	void ClientSetCurrentStateComponent(class UCreativeModeGameStateBaseComponent* CurStateComponent);
 	void ClearInstance();
 	void ClearAndReImportInstance();
 	bool CanShowDropEffectByItemID(int ItemId);
@@ -1431,7 +1484,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameStateComponent");
 		return pStaticClass;
@@ -1454,7 +1507,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeGlobalApiObject");
 		return pStaticClass;
@@ -1507,7 +1560,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeGridLevelsManager");
 		return pStaticClass;
@@ -1570,7 +1623,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeGroupManager");
 		return pStaticClass;
@@ -1582,17 +1635,18 @@ public:
 
 
 // Class Creative.CreativeGuideComponent
-// 0x0070 (0x0A80 - 0x0A10)
+// 0x0080 (0x0A90 - 0x0A10)
 class UCreativeGuideComponent : public USplineComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x50];                                      // 0x0A10(0x0050) MISSED OFFSET
-	struct FString                                     LuaFilePath;                                              // 0x0A60(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	TArray<class USplineMeshComponent*>                SplineMeshes;                                             // 0x0A70(0x0010) (ExportObject, ZeroConstructor, Transient)
+	unsigned char                                      UnknownData00[0x58];                                      // 0x0A10(0x0058) MISSED OFFSET
+	struct FString                                     LuaFilePath;                                              // 0x0A68(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	TArray<class USplineMeshComponent*>                SplineMeshes;                                             // 0x0A78(0x0010) (ExportObject, ZeroConstructor, Transient)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0A88(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeGuideComponent");
 		return pStaticClass;
@@ -1613,7 +1667,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeGuideMeshComponent");
 		return pStaticClass;
@@ -1637,7 +1691,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeInGameManagerCenter");
 		return pStaticClass;
@@ -1698,7 +1752,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeInstanceManager");
 		return pStaticClass;
@@ -1773,7 +1827,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeInstanceStaticMeshComponent");
 		return pStaticClass;
@@ -1799,7 +1853,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeIntegralMechanismComponent");
 		return pStaticClass;
@@ -1824,7 +1878,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeIntegralMechanismLiteComponent");
 		return pStaticClass;
@@ -1849,7 +1903,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeItemGeneratorComponent");
 		return pStaticClass;
@@ -1872,7 +1926,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeLoadManager");
 		return pStaticClass;
@@ -1899,7 +1953,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeLuaCodeManager");
 		return pStaticClass;
@@ -1929,7 +1983,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeLuaEntityManager");
 		return pStaticClass;
@@ -1963,7 +2017,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeLuaSignalManager");
 		return pStaticClass;
@@ -1990,7 +2044,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeLuaTraitManager");
 		return pStaticClass;
@@ -2013,7 +2067,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeLuaVMManager");
 		return pStaticClass;
@@ -2043,7 +2097,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeManagerCenterInterface");
 		return pStaticClass;
@@ -2060,7 +2114,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeModDataCheckManager");
 		return pStaticClass;
@@ -2091,7 +2145,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeChatBubbleUI");
 		return pStaticClass;
@@ -2114,7 +2168,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGlobalManagerCenter");
 		return pStaticClass;
@@ -2136,7 +2190,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeStaticMeshBatchActor");
 		return pStaticClass;
@@ -2155,7 +2209,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeTouchWidget");
 		return pStaticClass;
@@ -2182,7 +2236,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.TaskProgressItem");
 		return pStaticClass;
@@ -2214,7 +2268,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.StageRuntimeState");
 		return pStaticClass;
@@ -2250,7 +2304,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.TaskInstance");
 		return pStaticClass;
@@ -2286,7 +2340,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeGameTaskManager");
 		return pStaticClass;
@@ -2313,7 +2367,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeNavigationManager");
 		return pStaticClass;
@@ -2368,7 +2422,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeObjectEditAxisActor");
 		return pStaticClass;
@@ -2396,7 +2450,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeObjectFuncComponent");
 		return pStaticClass;
@@ -2413,7 +2467,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeObjectInterface");
 		return pStaticClass;
@@ -2449,7 +2503,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeObjectLocalAxisActor");
 		return pStaticClass;
@@ -2482,7 +2536,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeObjectManager");
 		return pStaticClass;
@@ -2532,7 +2586,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeObjectStateManager");
 		return pStaticClass;
@@ -2553,7 +2607,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeOccupationAreaLiteComponent");
 		return pStaticClass;
@@ -2567,7 +2621,7 @@ public:
 class UCreativeOctreeSyncManager : public UCreativeModeManagerBase
 {
 public:
-	TEnumAsByte<enum ECollisionChannel>                CollisionChannel;                                         // 0x0168(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CollisionChannel;                                         // 0x0168(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0169(0x0003) MISSED OFFSET
 	float                                              BackwardOffset;                                           // 0x016C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bRootPositionInitialized;                                 // 0x0170(0x0001) (ZeroConstructor, IsPlainOldData)
@@ -2588,7 +2642,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeOctreeSyncManager");
 		return pStaticClass;
@@ -2626,7 +2680,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeOfflineBuildManager");
 		return pStaticClass;
@@ -2644,8 +2698,8 @@ public:
 class UCreativeOverlapCheckComponent : public ULuaActorComponent
 {
 public:
-	struct FScriptDelegate                             OnBeginOverlapDelegate;                                   // 0x0238(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnEndOverlapDelegate;                                     // 0x0248(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnBeginOverlapDelegate;                                   // 0x0238(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnEndOverlapDelegate;                                     // 0x0248(0x0010) (ZeroConstructor, InstancedReference)
 	TArray<class UClass*>                              OverlapClassFilters;                                      // 0x0258(0x0010) (ZeroConstructor)
 	class UPrimitiveComponent*                         OverlapCheckComponent;                                    // 0x0268(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 	TArray<class AActor*>                              InAreaActors;                                             // 0x0270(0x0010) (ZeroConstructor)
@@ -2660,7 +2714,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeOverlapCheckComponent");
 		return pStaticClass;
@@ -2688,7 +2742,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePerfManager");
 		return pStaticClass;
@@ -2721,7 +2775,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePhotonDestructibleMeshComponent");
 		return pStaticClass;
@@ -2756,7 +2810,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent");
 		return pStaticClass;
@@ -2794,7 +2848,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePhotonInstancedDestructibleMeshComponent");
 		return pStaticClass;
@@ -2826,15 +2880,15 @@ public:
 	TMap<struct FString, class UCreativePhysicsComponent*> InstancePhysicsComponentMap;                              // 0x0580(0x0050) (ExportObject, ZeroConstructor)
 	unsigned char                                      UnknownData01[0x6C];                                      // 0x05D0(0x006C) MISSED OFFSET
 	int                                                TickRegisterMaxNum;                                       // 0x063C(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FScriptDelegate                             MeshLoadSuccessDelegate;                                  // 0x0640(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             MeshLoadSuccessByPathDelegate;                            // 0x0650(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             MeshLoadSuccessDelegate;                                  // 0x0640(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             MeshLoadSuccessByPathDelegate;                            // 0x0650(0x0010) (ZeroConstructor, InstancedReference)
 	TMap<struct FString, struct FPhysicsComponentData> ComponentTempData;                                        // 0x0660(0x0050) (ZeroConstructor)
 	int                                                ReplicateLimit;                                           // 0x06B0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0xC];                                       // 0x06B4(0x000C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePhysicsBatchActor");
 		return pStaticClass;
@@ -2842,9 +2896,9 @@ public:
 
 
 	void UpdatePhysicsComponentMaterial(struct FString* ComponentID, struct FString* MaterialPath);
-	void UpdatePhysicsComponent(const struct FTransform& Transform, TEnumAsByte<enum ECollisionEnabled> CollisionEnabled, struct FString* ComponentID);
+	void UpdatePhysicsComponent(const struct FTransform& Transform, TEnumAsByte<ECollisionEnabled> CollisionEnabled, struct FString* ComponentID);
 	bool UnRegisterPhysicsComponent(struct FString* ComponentID);
-	void SetPhysicsComponentEnabled(TEnumAsByte<enum ECollisionEnabled> CollisionEnabled, struct FString* ComponentID);
+	void SetPhysicsComponentEnabled(TEnumAsByte<ECollisionEnabled> CollisionEnabled, struct FString* ComponentID);
 	void RegisterPhysicsComponentByMesh(const struct FString& InstanceID, const struct FString& ComponentID, const struct FTransform& Transform, const struct FString& MeshPath, const struct FName& CollisionProfileName);
 	void OnLoadMeshSuccessByPath(class UObject* Obj, const struct FString& ComponentID);
 	void OnLoadMeshSuccess(class UObject* Obj, const struct FString& ComponentID);
@@ -2860,17 +2914,17 @@ public:
 class UCreativePhysicsComponent : public UMeshComponent
 {
 public:
-	class UBodySetup*                                  BodySetup;                                                // 0x0980(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UStaticMesh*                                 InStaticMesh;                                             // 0x0988(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FString                                     InstanceID;                                               // 0x0990(0x0010) (ZeroConstructor)
-	struct FName                                       CollisionProfileName;                                     // 0x09A0(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x30];                                      // 0x09A8(0x0030) MISSED OFFSET
-	struct FScriptDelegate                             MatLoadSuccessDelegate;                                   // 0x09D8(0x0016) (ZeroConstructor, InstancedReference)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x09E8(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0980(0x0008) MISSED OFFSET
+	class UBodySetup*                                  BodySetup;                                                // 0x0988(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UStaticMesh*                                 InStaticMesh;                                             // 0x0990(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FString                                     InstanceID;                                               // 0x0998(0x0010) (ZeroConstructor)
+	struct FName                                       CollisionProfileName;                                     // 0x09A8(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x30];                                      // 0x09B0(0x0030) MISSED OFFSET
+	struct FScriptDelegate                             MatLoadSuccessDelegate;                                   // 0x09E0(0x0010) (ZeroConstructor, InstancedReference)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePhysicsComponent");
 		return pStaticClass;
@@ -2900,7 +2954,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePhysicsManager");
 		return pStaticClass;
@@ -2933,7 +2987,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePlayerAPIObject");
 		return pStaticClass;
@@ -2963,7 +3017,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModePlayerState");
 		return pStaticClass;
@@ -2985,7 +3039,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePoolInterface");
 		return pStaticClass;
@@ -3015,7 +3069,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativePoolManager");
 		return pStaticClass;
@@ -3044,7 +3098,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeRaceCheckPointComponent");
 		return pStaticClass;
@@ -3061,7 +3115,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeRaceCheckPointLiteComponent");
 		return pStaticClass;
@@ -3071,21 +3125,21 @@ public:
 
 
 // Class Creative.CreativeRuntimePlayerBattleDataObject
-// 0x0300 (0x0870 - 0x0570)
+// 0x0308 (0x0878 - 0x0570)
 class ACreativeRuntimePlayerBattleDataObject : public ALuaActor
 {
 public:
-	struct FRuntimePlayerBattleDataInfo                DefaultPlayerBattleDataInfo;                              // 0x0570(0x0068)
-	struct FRuntimeTeamGameOutcomeConditionInfo        DefaultTeamGameOutcomeCondition;                          // 0x05D8(0x001C)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x05F4(0x0004) MISSED OFFSET
-	struct FRuntimeCacheRoundBattleDataInfoContainer   RuntimeOldCacheRoundBattleDataContainer;                  // 0x05F8(0x00C8) (Net, Transient)
-	struct FRuntimeBattleDataInfoContainer             RuntimeCurRoundBattleDataInfoContainer;                   // 0x06C0(0x00C8) (Net, Transient)
-	struct FRuntimeTeamGameOutcomeConditionContainer   RuntimeTeamGameOutcomeConditionContainer;                 // 0x0788(0x00C8) (Net, Transient)
-	struct FRuntimeCacheRoundBattleDataInfo            DefaultCacheRoundBattleDataInfo;                          // 0x0850(0x0020)
+	struct FRuntimePlayerBattleDataInfo                DefaultPlayerBattleDataInfo;                              // 0x0570(0x0070)
+	struct FRuntimeTeamGameOutcomeConditionInfo        DefaultTeamGameOutcomeCondition;                          // 0x05E0(0x001C)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x05FC(0x0004) MISSED OFFSET
+	struct FRuntimeCacheRoundBattleDataInfoContainer   RuntimeOldCacheRoundBattleDataContainer;                  // 0x0600(0x00C8) (Net, Transient)
+	struct FRuntimeBattleDataInfoContainer             RuntimeCurRoundBattleDataInfoContainer;                   // 0x06C8(0x00C8) (Net, Transient)
+	struct FRuntimeTeamGameOutcomeConditionContainer   RuntimeTeamGameOutcomeConditionContainer;                 // 0x0790(0x00C8) (Net, Transient)
+	struct FRuntimeCacheRoundBattleDataInfo            DefaultCacheRoundBattleDataInfo;                          // 0x0858(0x0020)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeRuntimePlayerBattleDataObject");
 		return pStaticClass;
@@ -3107,6 +3161,33 @@ public:
 };
 
 
+// Class Creative.CreativeSceneDetectLib
+// 0x0000 (0x0028 - 0x0028)
+class UCreativeSceneDetectLib : public UBlueprintFunctionLibrary
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Creative.CreativeSceneDetectLib");
+		return pStaticClass;
+	}
+
+
+	static float CreativeGetStackDistanceFromMeshes(TArray<class UMeshComponent*> MeshComponents, const struct FVector& Direction);
+	static float CreativeGetStackDistance(class UStaticMesh* Mesh, const struct FVector& Direction, const struct FVector& Scale);
+	static struct FVector CreativeGetFurthestPointFromMeshes(TArray<class UMeshComponent*> MeshComponents, const struct FVector& Direction);
+	static struct FVector CreativeGetFurthestPoint(class AActor* TargetActor, class USceneComponent* TargetComp, const struct FVector& Direction);
+	static TArray<struct FVector> CreativeFindPlacementPoints(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& HalfExtent, const struct FVector& Direction, int Count, float MaxDistance);
+	static struct FCreativeSpaceResult CreativeDetectSpaceAdvanced(class UObject* WorldContextObject, const struct FVector& Source, const struct FVector& Direction, float MaxDistance, float MaxBoxExtent, const struct FCreativeDetectSpaceOptions& Options);
+	static struct FCreativeSpaceResult CreativeDetectSpace(class UObject* WorldContextObject, const struct FVector& Source, const struct FVector& Direction, float MaxDistance, float MaxBoxExtent);
+	static struct FVector CreativeCalculateSnapLocationFromMeshes(const struct FVector& Curr, TArray<class UMeshComponent*> MeshComponents, const struct FVector& Direction, const struct FVector& HookPoint);
+	static struct FVector CreativeCalculateSnapLocation(class AActor* TargetActor, class USceneComponent* TargetComp, const struct FVector& Direction, const struct FVector& HookPoint);
+};
+
+
 // Class Creative.CreativeSceneQueryManager
 // 0x0118 (0x0280 - 0x0168)
 class UCreativeSceneQueryManager : public UCreativeModeManagerBase
@@ -3117,7 +3198,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeSceneQueryManager");
 		return pStaticClass;
@@ -3146,7 +3227,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeScreenCaptureWidget");
 		return pStaticClass;
@@ -3166,7 +3247,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeModeSoftComponentManager");
 		return pStaticClass;
@@ -3193,7 +3274,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.SoftStaticMeshComponent");
 		return pStaticClass;
@@ -3218,7 +3299,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeSoftStaticMeshComponent");
 		return pStaticClass;
@@ -3238,7 +3319,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeSpawnManager");
 		return pStaticClass;
@@ -3250,10 +3331,10 @@ public:
 	class AActor* SpawnAIPlayer(int ConfigId, const struct FTransform& Transform, int TeamID, int Campid, int ParamsID);
 	void OnUnitSpawned(class AActor* NewUnit, ESpecType SpecType);
 	void OnDeadWithCategory(ESpecType Category, class AActor* DeadCharacter);
-	void HandleTowerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
-	void HandleMonsterDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
-	void HandleHumanBotDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
-	void HandleAIPlayerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
+	void HandleTowerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason);
+	void HandleMonsterDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason);
+	void HandleHumanBotDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason);
+	void HandleAIPlayerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason);
 	static class UCreativeSpawnManager* Get(class UObject* WorldContext);
 };
 
@@ -3267,7 +3348,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeStaticMeshComponent");
 		return pStaticClass;
@@ -3303,7 +3384,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeStreamingManager");
 		return pStaticClass;
@@ -3334,7 +3415,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeTaskComponent");
 		return pStaticClass;
@@ -3374,7 +3455,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeTimerApiObject");
 		return pStaticClass;
@@ -3394,7 +3475,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeTriggerAreaActor");
 		return pStaticClass;
@@ -3418,7 +3499,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeWebSocketManager");
 		return pStaticClass;
@@ -3446,7 +3527,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeWidgetComponent");
 		return pStaticClass;
@@ -3468,7 +3549,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeWidgetObject");
 		return pStaticClass;
@@ -3498,7 +3579,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeWorldSubSystem");
 		return pStaticClass;
@@ -3528,7 +3609,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeWoWInactiveCheckComponent");
 		return pStaticClass;
@@ -3554,7 +3635,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CreativeWoWManager");
 		return pStaticClass;
@@ -3579,7 +3660,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetUtilityObject");
 		return pStaticClass;
@@ -3613,7 +3694,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetDeserializer");
 		return pStaticClass;
@@ -3634,7 +3715,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetAnimDeserializer");
 		return pStaticClass;
@@ -3653,7 +3734,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetCacheManager");
 		return pStaticClass;
@@ -3670,12 +3751,84 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetDownloader");
 		return pStaticClass;
 	}
 
+};
+
+
+// Class Creative.CustomAssetImageDeserializer
+// 0x0000 (0x0120 - 0x0120)
+class UCustomAssetImageDeserializer : public UCustomAssetDeserializer
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Creative.CustomAssetImageDeserializer");
+		return pStaticClass;
+	}
+
+
+	bool IsValidData(TArray<unsigned char> InBytes);
+};
+
+
+// Class Creative.CustomImageDataWrapper
+// 0x0058 (0x0080 - 0x0028)
+class UCustomImageDataWrapper : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x58];                                      // 0x0028(0x0058) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Creative.CustomImageDataWrapper");
+		return pStaticClass;
+	}
+
+
+	static struct FString MakeUniqueName(class UObject* WorldContextObject);
+	static class UObject* GetImageWrapperOuter();
+};
+
+
+// Class Creative.CustomAssetImageManager
+// 0x0050 (0x0100 - 0x00B0)
+class UCustomAssetImageManager : public UCustomAssetUtilityObject
+{
+public:
+	TMap<uint64_t, class UTexture2D*>                  TextureRef;                                               // 0x00B0(0x0050) (ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Creative.CustomAssetImageManager");
+		return pStaticClass;
+	}
+
+
+	void RemoveTextureRef(uint64_t HashID);
+	static TEnumAsByte<EPixelFormat> ReadPixelFormat(class UTexture2D* Target);
+	static struct FImageSummary ReadImageSummary(TArray<unsigned char> ImageData);
+	static TArray<unsigned char> ReadImageRGBA(TArray<unsigned char> ImageData);
+	static void LuaUpdateTextureResource2(class UTexture2D* Target, int TexGroup, int Width, int Height, int MipIndex, int PixelFormat, TArray<unsigned char> TexData);
+	static class UTexture2D* LuaReserveTexture2(int PixelFormat, int TexGroup, class UTexture2D* OtherTex);
+	static class UTexture2D* LuaReserveTexture(int PixelFormat, int TexGroup, int Width, int Height);
+	static bool IsValidImageSummary(const struct FImageSummary& Summary);
+	static TEnumAsByte<EPixelFormat> GetPixelFormat(int PixelFormat);
+	static void GetPixelBlockSize(int PixelFormat, int* SizeX, int* SizeY);
+	static struct FString GetObjectPath(class UObject* Object);
+	static int GetHeaderSize(TEnumAsByte<EPixelFormat> Format);
+	void AddTextureRef(uint64_t HashID, class UTexture2D* Tex);
 };
 
 
@@ -3691,7 +3844,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetManager");
 		return pStaticClass;
@@ -3702,9 +3855,11 @@ public:
 	bool ReceiveIsDedicatedServer();
 	void PrintAliveCustomAssets();
 	bool ParseCustomAssetKeyHashID(uint64_t HashID, unsigned char ExpectedHashIDTag, unsigned char* OutCustomAssetType, uint32_t* OutUniqueId);
+	uint32_t GetHashByString(const struct FString& CustomAssetKey);
 	struct FString GetCustomAssetPathName(class UObject* CustomAsset);
 	class UObject* GetCustomAssetOuter();
 	class UObject* GetCustomAssetObjectFromTrackedMap(const struct FString& BytesMD5);
+	struct FString GetCurPlatformSuffixType();
 	uint64_t GenerateHashIDByCustomAssetKey(const struct FString& CustomAssetKey, unsigned char CustomAssetType, unsigned char HashIDTag);
 	void CustomAssetMgrConditionalBeginDestroy();
 	void CleanupStaleCustomAssets();
@@ -3714,29 +3869,29 @@ public:
 
 
 // Class Creative.CustomAssetMountStateComponent
-// 0x0128 (0x0360 - 0x0238)
+// 0x0120 (0x0358 - 0x0238)
 class UCustomAssetMountStateComponent : public ULuaActorComponent
 {
 public:
 	struct FCustomAssetMountStatusInfoContainer        ReplicatedCustomAssetMountStatusInfoContainer;            // 0x0238(0x00C8) (Net, Transient)
 	int                                                SingleSerializeNum;                                       // 0x0300(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0304(0x0004) MISSED OFFSET
-	struct FCustomAssetMountStatusInfo                 EntryMountStatusInfo;                                     // 0x0308(0x0058)
+	struct FCustomAssetMountStatusInfo                 EntryMountStatusInfo;                                     // 0x0308(0x0050)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetMountStateComponent");
 		return pStaticClass;
 	}
 
 
-	bool RemoveMountStatusInfo(unsigned char AssetType, uint32_t AssetSize, const struct FString& SHA256);
+	bool RemoveMountStatusInfo(struct FString* AssetKey);
 	bool ReceiveIsDedicatedServer();
 	bool ReceiveHasAuthority();
-	bool ChangeMountStatusInfo(unsigned char AssetType, uint32_t AssetSize, const struct FString& SHA256, EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys);
-	bool AddMountStatusInfo(unsigned char AssetType, uint32_t AssetSize, const struct FString& SHA256, EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys, uint32_t MountedByPlayerKey, TArray<unsigned char> MappingInfoContent);
+	bool ChangeMountStatusInfo(EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys, struct FString* AssetKey);
+	bool AddMountStatusInfo(EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys, uint32_t MountedByPlayerKey, TArray<unsigned char> MappingInfoContent, struct FString* AssetKey);
 };
 
 
@@ -3750,7 +3905,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetPlatformBuilder");
 		return pStaticClass;
@@ -3762,6 +3917,25 @@ public:
 };
 
 
+// Class Creative.CustomAssetStaticMeshDeserializer
+// 0x0000 (0x0120 - 0x0120)
+class UCustomAssetStaticMeshDeserializer : public UCustomAssetDeserializer
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Creative.CustomAssetStaticMeshDeserializer");
+		return pStaticClass;
+	}
+
+
+	bool IsValidData(TArray<unsigned char> InBytes);
+};
+
+
 // Class Creative.CustomAssetUploader
 // 0x0000 (0x00B0 - 0x00B0)
 class UCustomAssetUploader : public UCustomAssetUtilityObject
@@ -3770,7 +3944,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.CustomAssetUploader");
 		return pStaticClass;
@@ -3789,7 +3963,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.DancerDeviceActor");
 		return pStaticClass;
@@ -3810,7 +3984,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.DTPacketPool");
 		return pStaticClass;
@@ -3847,7 +4021,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.DataTransferComponent");
 		return pStaticClass;
@@ -3876,7 +4050,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.GameModeStateActive_CreativeMode");
 		return pStaticClass;
@@ -3893,7 +4067,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.GameModeStateFighting_CreativeMode");
 		return pStaticClass;
@@ -3913,7 +4087,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.GameModeStateFinished_CreativeMode");
 		return pStaticClass;
@@ -3930,7 +4104,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.GameModeStateReady_CreativeMode");
 		return pStaticClass;
@@ -3947,7 +4121,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.GameProcessEventObject");
 		return pStaticClass;
@@ -4005,7 +4179,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.PaintScoreManager");
 		return pStaticClass;
@@ -4069,7 +4243,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.PlayerListenerEventObject");
 		return pStaticClass;
@@ -4090,7 +4264,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.PlayerAttachedToVehicleEventObject");
 		return pStaticClass;
@@ -4115,7 +4289,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.PlayerAttachedProxy");
 		return pStaticClass;
@@ -4145,7 +4319,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Creative.ShowAllPlayerManagerActor");
 		return pStaticClass;

@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function ClientNet.HDmpveNet.SetTickNetMsgMaxTime
 struct UHDmpveNet_SetTickNetMsgMaxTime_Params
@@ -932,6 +932,20 @@ struct UIMSDKHelper_BindApple_Params
 {
 };
 
+// Function ClientNet.MockGameSvrClientNet.LoginMockGameSvr
+struct UMockGameSvrClientNet_LoginMockGameSvr_Params
+{
+	struct FString                                     UID;                                                      // (Parm, ZeroConstructor)
+	struct FString                                     PlayerName;                                               // (Parm, ZeroConstructor)
+	int                                                ModeID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function ClientNet.StoreGameHelper.UnlockGPAchievement
+struct UStoreGameHelper_UnlockGPAchievement_Params
+{
+	struct FString                                     InAchievement;                                            // (Parm, ZeroConstructor)
+};
+
 // Function ClientNet.StoreGameHelper.UnInitialize
 struct UStoreGameHelper_UnInitialize_Params
 {
@@ -968,6 +982,11 @@ struct UStoreGameHelper_ReportAchievement_Params
 {
 	struct FString                                     InIdentifier;                                             // (Parm, ZeroConstructor)
 	double                                             percent;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function ClientNet.StoreGameHelper.LoginGPManual
+struct UStoreGameHelper_LoginGPManual_Params
+{
 };
 
 // Function ClientNet.StoreGameHelper.LoadReceivedChallenges
@@ -1015,6 +1034,18 @@ struct UStoreGameHelper_IssueChallengeWithArchivement_Params
 // Function ClientNet.StoreGameHelper.Initialize
 struct UStoreGameHelper_Initialize_Params
 {
+};
+
+// Function ClientNet.StoreGameHelper.InitGP
+struct UStoreGameHelper_InitGP_Params
+{
+};
+
+// Function ClientNet.StoreGameHelper.IncreaseGPAchievement
+struct UStoreGameHelper_IncreaseGPAchievement_Params
+{
+	struct FString                                     InAchievement;                                            // (Parm, ZeroConstructor)
+	int                                                InStep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ClientNet.StoreGameHelper.Get

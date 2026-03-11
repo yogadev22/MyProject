@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Pandora.BulletScreen.Stop
 // (Final, Native, Public, BlueprintCallable)
 
 void UBulletScreen::Stop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.BulletScreen.Stop");
 
@@ -34,7 +34,7 @@ void UBulletScreen::Stop()
 
 void UBulletScreen::Start()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.BulletScreen.Start");
 
@@ -55,7 +55,7 @@ void UBulletScreen::Start()
 
 void UBulletScreen::Resume()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.BulletScreen.Resume");
 
@@ -76,7 +76,7 @@ void UBulletScreen::Resume()
 
 void UBulletScreen::Pause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.BulletScreen.Pause");
 
@@ -99,7 +99,7 @@ void UBulletScreen::Pause()
 
 void UBulletScreen::AddBullets(TArray<struct FString> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.BulletScreen.AddBullets");
 
@@ -123,7 +123,7 @@ void UBulletScreen::AddBullets(TArray<struct FString> Content)
 
 void UBulletScreen::AddBullet(const struct FString& Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.BulletScreen.AddBullet");
 
@@ -148,7 +148,7 @@ void UBulletScreen::AddBullet(const struct FString& Content)
 
 void UGameletSDKDelegateHandler::ExecOnViewCreated(class UUserWidget* Widget, const struct FString& WinInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.GameletSDKDelegateHandler.ExecOnViewCreated");
 
@@ -174,7 +174,7 @@ void UGameletSDKDelegateHandler::ExecOnViewCreated(class UUserWidget* Widget, co
 
 void UGameletSDKDelegateHandler::ExecOnViewAboutToDestroy(class UUserWidget* Widget, const struct FString& WinInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.GameletSDKDelegateHandler.ExecOnViewAboutToDestroy");
 
@@ -200,7 +200,7 @@ void UGameletSDKDelegateHandler::ExecOnViewAboutToDestroy(class UUserWidget* Wid
 
 int UGameletSDKDelegateHandler::ExecOnSDKMessage(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.GameletSDKDelegateHandler.ExecOnSDKMessage");
 
@@ -226,7 +226,7 @@ int UGameletSDKDelegateHandler::ExecOnSDKMessage(const struct FString& Msg)
 
 int UGameletSDKDelegateHandler::ExecOnRefreshUserdata()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.GameletSDKDelegateHandler.ExecOnRefreshUserdata");
 
@@ -251,7 +251,7 @@ int UGameletSDKDelegateHandler::ExecOnRefreshUserdata()
 
 void UPLatentDelegate::OnLatentCallback(int threadRef)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLatentDelegate.OnLatentCallback");
 
@@ -277,7 +277,7 @@ void UPLatentDelegate::OnLatentCallback(int threadRef)
 
 struct FPLuaBPVar APLuaActor::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaActor.CallLuaMember");
 
@@ -306,7 +306,7 @@ struct FPLuaBPVar APLuaActor::CallLuaMember(const struct FString& FunctionName, 
 
 struct FPLuaBPVar APLuaPawn::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaPawn.CallLuaMember");
 
@@ -335,7 +335,7 @@ struct FPLuaBPVar APLuaPawn::CallLuaMember(const struct FString& FunctionName, T
 
 struct FPLuaBPVar APLuaCharacter::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaCharacter.CallLuaMember");
 
@@ -364,7 +364,7 @@ struct FPLuaBPVar APLuaCharacter::CallLuaMember(const struct FString& FunctionNa
 
 struct FPLuaBPVar APLuaController::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaController.CallLuaMember");
 
@@ -393,7 +393,7 @@ struct FPLuaBPVar APLuaController::CallLuaMember(const struct FString& FunctionN
 
 struct FPLuaBPVar APLuaPlayerController::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaPlayerController.CallLuaMember");
 
@@ -422,7 +422,7 @@ struct FPLuaBPVar APLuaPlayerController::CallLuaMember(const struct FString& Fun
 
 struct FPLuaBPVar UPLuaActorComponent::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaActorComponent.CallLuaMember");
 
@@ -451,7 +451,7 @@ struct FPLuaBPVar UPLuaActorComponent::CallLuaMember(const struct FString& Funct
 
 struct FPLuaBPVar APLuaGameModeBase::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaGameModeBase.CallLuaMember");
 
@@ -480,7 +480,7 @@ struct FPLuaBPVar APLuaGameModeBase::CallLuaMember(const struct FString& Functio
 
 struct FPLuaBPVar APLuaHUD::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaHUD.CallLuaMember");
 
@@ -509,7 +509,7 @@ struct FPLuaBPVar APLuaHUD::CallLuaMember(const struct FString& FunctionName, TA
 
 struct FString UPLuaBlueprintLibrary::GetStringFromVar(const struct FPLuaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.GetStringFromVar");
 
@@ -538,7 +538,7 @@ struct FString UPLuaBlueprintLibrary::GetStringFromVar(const struct FPLuaBPVar& 
 
 class UObject* UPLuaBlueprintLibrary::GetObjectFromVar(const struct FPLuaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.GetObjectFromVar");
 
@@ -567,7 +567,7 @@ class UObject* UPLuaBlueprintLibrary::GetObjectFromVar(const struct FPLuaBPVar& 
 
 float UPLuaBlueprintLibrary::GetNumberFromVar(const struct FPLuaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.GetNumberFromVar");
 
@@ -596,7 +596,7 @@ float UPLuaBlueprintLibrary::GetNumberFromVar(const struct FPLuaBPVar& Value, in
 
 int UPLuaBlueprintLibrary::GetIntFromVar(const struct FPLuaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.GetIntFromVar");
 
@@ -625,7 +625,7 @@ int UPLuaBlueprintLibrary::GetIntFromVar(const struct FPLuaBPVar& Value, int Ind
 
 bool UPLuaBlueprintLibrary::GetBoolFromVar(const struct FPLuaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.GetBoolFromVar");
 
@@ -653,7 +653,7 @@ bool UPLuaBlueprintLibrary::GetBoolFromVar(const struct FPLuaBPVar& Value, int I
 
 struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromString(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.CreateVarFromString");
 
@@ -681,7 +681,7 @@ struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromString(const struct FStrin
 
 struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromObject(class UObject* WorldContextObject, class UObject* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.CreateVarFromObject");
 
@@ -709,7 +709,7 @@ struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromObject(class UObject* Worl
 
 struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromNumber(float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.CreateVarFromNumber");
 
@@ -736,7 +736,7 @@ struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromNumber(float Value)
 
 struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromInt(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.CreateVarFromInt");
 
@@ -763,7 +763,7 @@ struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromInt(int Value)
 
 struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromBool(bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.CreateVarFromBool");
 
@@ -793,7 +793,7 @@ struct FPLuaBPVar UPLuaBlueprintLibrary::CreateVarFromBool(bool Value)
 
 struct FPLuaBPVar UPLuaBlueprintLibrary::CallToLuaWithArgs(class UObject* WorldContextObject, const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args, const struct FString& StateName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.CallToLuaWithArgs");
 
@@ -825,7 +825,7 @@ struct FPLuaBPVar UPLuaBlueprintLibrary::CallToLuaWithArgs(class UObject* WorldC
 
 struct FPLuaBPVar UPLuaBlueprintLibrary::CallToLua(class UObject* WorldContextObject, const struct FString& FunctionName, const struct FString& StateName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaBlueprintLibrary.CallToLua");
 
@@ -851,7 +851,7 @@ struct FPLuaBPVar UPLuaBlueprintLibrary::CallToLua(class UObject* WorldContextOb
 
 void UPLuaDelegate::EventTrigger()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaDelegate.EventTrigger");
 
@@ -876,7 +876,7 @@ void UPLuaDelegate::EventTrigger()
 
 struct FPLuaBPVar UPLuaUserWidget::CallLuaMember(const struct FString& FunctionName, TArray<struct FPLuaBPVar> Args)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PLuaUserWidget.CallLuaMember");
 
@@ -905,7 +905,7 @@ struct FPLuaBPVar UPLuaUserWidget::CallLuaMember(const struct FString& FunctionN
 
 void UPPixUILogAdapter::OnPixUILog(int InLogType, int InLogLevel, const struct FString& InLogContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PPixUILogAdapter.OnPixUILog");
 
@@ -931,7 +931,7 @@ void UPPixUILogAdapter::OnPixUILog(int InLogType, int InLogLevel, const struct F
 
 void UPRichText::SetText(const struct FText& InText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PRichText.SetText");
 
@@ -955,7 +955,7 @@ void UPRichText::SetText(const struct FText& InText)
 
 struct FText UPRichText::GetText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.PRichText.GetText");
 
@@ -978,7 +978,7 @@ struct FText UPRichText::GetText()
 
 void UWaterfallScrollView::ScrollToStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.WaterfallScrollView.ScrollToStart");
 
@@ -1001,7 +1001,7 @@ void UWaterfallScrollView::ScrollToStart()
 
 void UWaterfallScrollView::RefreshLayout(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.WaterfallScrollView.RefreshLayout");
 
@@ -1023,7 +1023,7 @@ void UWaterfallScrollView::RefreshLayout(int Index)
 
 void UWaterfallScrollView::Fill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.WaterfallScrollView.Fill");
 
@@ -1044,7 +1044,7 @@ void UWaterfallScrollView::Fill()
 
 void UWaterfallScrollView::Clear()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Pandora.WaterfallScrollView.Clear");
 

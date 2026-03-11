@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function TApm.TApmHelper.ValidateDevice
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 struct FString UTApmHelper::ValidateDevice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.ValidateDevice");
 
@@ -41,7 +41,7 @@ struct FString UTApmHelper::ValidateDevice()
 
 void UTApmHelper::UpdateGameStatusToVmp(int Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.UpdateGameStatusToVmp");
 
@@ -66,7 +66,7 @@ void UTApmHelper::UpdateGameStatusToVmp(int Key, const struct FString& Value)
 
 void UTApmHelper::SetVersionIden(const struct FString& versionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.SetVersionIden");
 
@@ -90,7 +90,7 @@ void UTApmHelper::SetVersionIden(const struct FString& versionName)
 
 void UTApmHelper::SetUserId(const struct FString& userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.SetUserId");
 
@@ -114,7 +114,7 @@ void UTApmHelper::SetUserId(const struct FString& userID)
 
 void UTApmHelper::SetTragetFrameRate(int Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.SetTragetFrameRate");
 
@@ -138,7 +138,7 @@ void UTApmHelper::SetTragetFrameRate(int Target)
 
 void UTApmHelper::SetQuality(int Quality)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.SetQuality");
 
@@ -160,7 +160,7 @@ void UTApmHelper::SetQuality(int Quality)
 
 void UTApmHelper::SetPssManualMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.SetPssManualMode");
 
@@ -183,7 +183,7 @@ void UTApmHelper::SetPssManualMode()
 
 void UTApmHelper::SetLocale(const struct FString& Locale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.SetLocale");
 
@@ -207,7 +207,7 @@ void UTApmHelper::SetLocale(const struct FString& Locale)
 
 void UTApmHelper::SetDeviceLevel(int DeviceLevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.SetDeviceLevel");
 
@@ -231,7 +231,7 @@ void UTApmHelper::SetDeviceLevel(int DeviceLevel)
 
 void UTApmHelper::setAffinityForThread(int tid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.setAffinityForThread");
 
@@ -257,7 +257,7 @@ void UTApmHelper::setAffinityForThread(int tid)
 
 void UTApmHelper::requestResourceGuarantee(int Condition, int LoadType, int applyType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.requestResourceGuarantee");
 
@@ -281,7 +281,7 @@ void UTApmHelper::requestResourceGuarantee(int Condition, int LoadType, int appl
 
 void UTApmHelper::RequestPssSample()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.RequestPssSample");
 
@@ -302,7 +302,7 @@ void UTApmHelper::RequestPssSample()
 
 void UTApmHelper::ReleaseStepEventContext()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.ReleaseStepEventContext");
 
@@ -326,7 +326,7 @@ void UTApmHelper::ReleaseStepEventContext()
 
 void UTApmHelper::RegisterRomCallBackMeta(const struct FString& OpenID, const struct FString& ZoneID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.RegisterRomCallBackMeta");
 
@@ -352,7 +352,7 @@ void UTApmHelper::RegisterRomCallBackMeta(const struct FString& OpenID, const st
 
 void UTApmHelper::PutKVS(const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PutKVS");
 
@@ -378,7 +378,7 @@ void UTApmHelper::PutKVS(const struct FString& Key, const struct FString& Value)
 
 void UTApmHelper::PutKVI(const struct FString& Key, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PutKVI");
 
@@ -404,7 +404,7 @@ void UTApmHelper::PutKVI(const struct FString& Key, int Value)
 
 void UTApmHelper::PutKVD(const struct FString& Key, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PutKVD");
 
@@ -431,7 +431,7 @@ void UTApmHelper::PutKVD(const struct FString& Key, float Value)
 
 void UTApmHelper::PostValueS(const struct FString& catgory, const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostValueS");
 
@@ -461,7 +461,7 @@ void UTApmHelper::PostValueS(const struct FString& catgory, const struct FString
 
 void UTApmHelper::PostValueI3(const struct FString& catgory, const struct FString& Key, int A, int B, int C)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostValueI3");
 
@@ -492,7 +492,7 @@ void UTApmHelper::PostValueI3(const struct FString& catgory, const struct FStrin
 
 void UTApmHelper::PostValueI2(const struct FString& catgory, const struct FString& Key, int A, int B)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostValueI2");
 
@@ -521,7 +521,7 @@ void UTApmHelper::PostValueI2(const struct FString& catgory, const struct FStrin
 
 void UTApmHelper::PostValueI1(const struct FString& catgory, const struct FString& Key, int A)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostValueI1");
 
@@ -551,7 +551,7 @@ void UTApmHelper::PostValueI1(const struct FString& catgory, const struct FStrin
 
 void UTApmHelper::PostValueF3(const struct FString& catgory, const struct FString& Key, float A, float B, float C)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostValueF3");
 
@@ -582,7 +582,7 @@ void UTApmHelper::PostValueF3(const struct FString& catgory, const struct FStrin
 
 void UTApmHelper::PostValueF2(const struct FString& catgory, const struct FString& Key, float A, float B)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostValueF2");
 
@@ -611,7 +611,7 @@ void UTApmHelper::PostValueF2(const struct FString& catgory, const struct FStrin
 
 void UTApmHelper::PostValueF1(const struct FString& catgory, const struct FString& Key, float A)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostValueF1");
 
@@ -642,7 +642,7 @@ void UTApmHelper::PostValueF1(const struct FString& catgory, const struct FStrin
 
 void UTApmHelper::PostTrackState(float X, float Y, float Z, float Pitch, float Yaw, float Roll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostTrackState");
 
@@ -674,7 +674,7 @@ void UTApmHelper::PostTrackState(float X, float Y, float Z, float Pitch, float Y
 
 void UTApmHelper::PostStreamEvent(int stepId, int status, int code, const struct FString& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostStreamEvent");
 
@@ -706,7 +706,7 @@ void UTApmHelper::PostStreamEvent(int stepId, int status, int code, const struct
 
 void UTApmHelper::PostStepEvent(const struct FString& eventCategory, int stepId, int status, int code, const struct FString& Msg, const struct FString& extraKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostStepEvent");
 
@@ -735,7 +735,7 @@ void UTApmHelper::PostStepEvent(const struct FString& eventCategory, int stepId,
 
 void UTApmHelper::PostNTL(int latency)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostNTL");
 
@@ -761,7 +761,7 @@ void UTApmHelper::PostNTL(int latency)
 
 void UTApmHelper::PostLargeValueS(const struct FString& catgory, const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostLargeValueS");
 
@@ -787,7 +787,7 @@ void UTApmHelper::PostLargeValueS(const struct FString& catgory, const struct FS
 
 void UTApmHelper::PostLagStatus(float Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostLagStatus");
 
@@ -812,7 +812,7 @@ void UTApmHelper::PostLagStatus(float Distance)
 
 void UTApmHelper::PostGameStatusToTGPASS(const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostGameStatusToTGPASS");
 
@@ -838,7 +838,7 @@ void UTApmHelper::PostGameStatusToTGPASS(const struct FString& Key, const struct
 
 void UTApmHelper::PostGameStatusToTGPASMap(const struct FString& Key, TMap<struct FString, struct FString> mapData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostGameStatusToTGPASMap");
 
@@ -864,7 +864,7 @@ void UTApmHelper::PostGameStatusToTGPASMap(const struct FString& Key, TMap<struc
 
 void UTApmHelper::PostGameStatusToTGPAIS(int Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostGameStatusToTGPAIS");
 
@@ -889,7 +889,7 @@ void UTApmHelper::PostGameStatusToTGPAIS(int Key, const struct FString& Value)
 
 void UTApmHelper::PostFrame(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostFrame");
 
@@ -915,7 +915,7 @@ void UTApmHelper::PostFrame(float DeltaTime)
 
 void UTApmHelper::PostEvent(int Key, const struct FString& Info, bool savetolocal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.PostEvent");
 
@@ -939,7 +939,7 @@ void UTApmHelper::PostEvent(int Key, const struct FString& Info, bool savetoloca
 
 void UTApmHelper::MarkLevelLoadCompleted()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.MarkLevelLoadCompleted");
 
@@ -963,7 +963,7 @@ void UTApmHelper::MarkLevelLoadCompleted()
 
 void UTApmHelper::MarkLevelLoad(const struct FString& SceneName, int Quality)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.MarkLevelLoad");
 
@@ -986,7 +986,7 @@ void UTApmHelper::MarkLevelLoad(const struct FString& SceneName, int Quality)
 
 void UTApmHelper::MarkLevelFin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.MarkLevelFin");
 
@@ -1007,7 +1007,7 @@ void UTApmHelper::MarkLevelFin()
 
 void UTApmHelper::MarkHideLoadingUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.MarkHideLoadingUI");
 
@@ -1028,7 +1028,7 @@ void UTApmHelper::MarkHideLoadingUI()
 
 void UTApmHelper::MarkAppFinishLaunch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.MarkAppFinishLaunch");
 
@@ -1051,7 +1051,7 @@ void UTApmHelper::MarkAppFinishLaunch()
 
 void UTApmHelper::LinkLastStepEventSession(const struct FString& eventCategory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.LinkLastStepEventSession");
 
@@ -1073,7 +1073,7 @@ void UTApmHelper::LinkLastStepEventSession(const struct FString& eventCategory)
 
 void UTApmHelper::InitTGPA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.InitTGPA");
 
@@ -1094,7 +1094,7 @@ void UTApmHelper::InitTGPA()
 
 void UTApmHelper::InitStepEventContext()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.InitStepEventContext");
 
@@ -1117,7 +1117,7 @@ void UTApmHelper::InitStepEventContext()
 
 struct FString UTApmHelper::GetOptCfgStr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.GetOptCfgStr");
 
@@ -1144,7 +1144,7 @@ struct FString UTApmHelper::GetOptCfgStr()
 
 int UTApmHelper::GetDeviceLevelByQcc(const struct FString& ConfigName, const struct FString& GPUFamily)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.GetDeviceLevelByQcc");
 
@@ -1171,7 +1171,7 @@ int UTApmHelper::GetDeviceLevelByQcc(const struct FString& ConfigName, const str
 
 int UTApmHelper::GetDeviceLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.GetDeviceLevel");
 
@@ -1198,7 +1198,7 @@ int UTApmHelper::GetDeviceLevel()
 
 struct FString UTApmHelper::GetDataFromTGPA(const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.GetDataFromTGPA");
 
@@ -1223,7 +1223,7 @@ struct FString UTApmHelper::GetDataFromTGPA(const struct FString& Key, const str
 
 void UTApmHelper::EndTupleWrap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.EndTupleWrap");
 
@@ -1244,7 +1244,7 @@ void UTApmHelper::EndTupleWrap()
 
 void UTApmHelper::EndTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.EndTag");
 
@@ -1265,7 +1265,7 @@ void UTApmHelper::EndTag()
 
 void UTApmHelper::EndExclude()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.EndExclude");
 
@@ -1286,7 +1286,7 @@ void UTApmHelper::EndExclude()
 
 void UTApmHelper::EnableDebugMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.EnableDebugMode");
 
@@ -1309,7 +1309,7 @@ void UTApmHelper::EnableDebugMode()
 
 void UTApmHelper::DumpEvent(const struct FString& dumpfile)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.DumpEvent");
 
@@ -1333,7 +1333,7 @@ void UTApmHelper::DumpEvent(const struct FString& dumpfile)
 
 void UTApmHelper::cancelAffinityForThread(int tid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.cancelAffinityForThread");
 
@@ -1357,7 +1357,7 @@ void UTApmHelper::cancelAffinityForThread(int tid)
 
 void UTApmHelper::BeginTupleWrap(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.BeginTupleWrap");
 
@@ -1379,7 +1379,7 @@ void UTApmHelper::BeginTupleWrap(const struct FString& Key)
 
 void UTApmHelper::BeginExclude()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.BeginExclude");
 
@@ -1402,7 +1402,7 @@ void UTApmHelper::BeginExclude()
 
 void UTApmHelper::AddTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmHelper.AddTag");
 
@@ -1426,7 +1426,7 @@ void UTApmHelper::AddTag(const struct FString& TagName)
 
 void UTApmSceneMarker::SetEnable(bool Enabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmSceneMarker.SetEnable");
 
@@ -1450,7 +1450,7 @@ void UTApmSceneMarker::SetEnable(bool Enabled)
 
 void UTApmSceneMarker::MarkOPScene(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmSceneMarker.MarkOPScene");
 
@@ -1474,7 +1474,7 @@ void UTApmSceneMarker::MarkOPScene(int ID)
 
 void UTApmSceneMarker::MarkFlowScene(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmSceneMarker.MarkFlowScene");
 
@@ -1498,7 +1498,7 @@ void UTApmSceneMarker::MarkFlowScene(int ID)
 
 void UTApmSceneMarker::CancelOPScene(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TApm.TApmSceneMarker.CancelOPScene");
 

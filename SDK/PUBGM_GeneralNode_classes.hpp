@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class GeneralNode.GNNode
 // 0x0000 (0x0028 - 0x0028)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GeneralNode.GNNode");
 		return pStaticClass;
@@ -45,7 +45,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GeneralNode.GNAction");
 		return pStaticClass;
@@ -62,7 +62,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GeneralNode.GNCondition");
 		return pStaticClass;
@@ -79,7 +79,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GeneralNode.GNTargetPicker");
 		return pStaticClass;
@@ -99,7 +99,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GeneralNode.GNSharedDelegate");
 		return pStaticClass;
@@ -111,7 +111,7 @@ public:
 
 
 // Class GeneralNode.GNSubsystem
-// 0x0190 (0x01C0 - 0x0030)
+// 0x01E0 (0x0210 - 0x0030)
 class UGNSubsystem : public UBattleSubsystem
 {
 public:
@@ -120,10 +120,11 @@ public:
 	TMap<int, struct FGNActionInstance>                ActionInstances;                                          // 0x00D0(0x0050) (ZeroConstructor)
 	TMap<struct FGNSharedDelegateWrap, class UGNSharedDelegate*> DelegateMap;                                              // 0x0120(0x0050) (ZeroConstructor)
 	TMap<struct FGNMultiSharedDelegateWrap, class UGNSharedDelegate*> MultiDelegateMap;                                         // 0x0170(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x50];                                      // 0x01C0(0x0050) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GeneralNode.GNSubsystem");
 		return pStaticClass;
@@ -140,7 +141,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GeneralNode.GNTargetFilter");
 		return pStaticClass;

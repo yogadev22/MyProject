@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class UIParticleSystem2.ParticleSystemWidget2
 // 0x0038 (0x0138 - 0x0100)
@@ -14,7 +14,7 @@ class UParticleSystemWidget2 : public UWidget
 {
 public:
 	class UObject*                                     ParticleSystemTemplate;                                   // 0x0100(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUIMeshProjectionMethod>          ProjectionMethod;                                         // 0x0108(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUIMeshProjectionMethod>               ProjectionMethod;                                         // 0x0108(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0109(0x0003) MISSED OFFSET
 	float                                              FieldOfView;                                              // 0x010C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              DistanceToCamera;                                         // 0x0110(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -28,7 +28,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UIParticleSystem2.ParticleSystemWidget2");
 		return pStaticClass;
@@ -52,7 +52,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UIParticleSystem2.UIParticleSystemComponent");
 		return pStaticClass;
@@ -62,15 +62,15 @@ public:
 
 
 // Class UIParticleSystem2.UINiagaraComponent
-// 0x0010 (0x0B00 - 0x0AF0)
+// 0x0020 (0x0B10 - 0x0AF0)
 class UUINiagaraComponent : public UNiagaraComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0AF0(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0AF0(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UIParticleSystem2.UINiagaraComponent");
 		return pStaticClass;

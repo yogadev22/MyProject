@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PhotonBlast.PhotonReplicationStaticMeshComponent.UnRegistLuaTick
 // (Final, Native, Public, BlueprintCallable)
 
 void UPhotonReplicationStaticMeshComponent::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.UnRegistLuaTick");
 
@@ -34,7 +34,7 @@ void UPhotonReplicationStaticMeshComponent::UnRegistLuaTick()
 
 void UPhotonReplicationStaticMeshComponent::UnRegisterFromCluster()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.UnRegisterFromCluster");
 
@@ -57,7 +57,7 @@ void UPhotonReplicationStaticMeshComponent::UnRegisterFromCluster()
 
 void UPhotonReplicationStaticMeshComponent::SetMoveable(bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.SetMoveable");
 
@@ -81,7 +81,7 @@ void UPhotonReplicationStaticMeshComponent::SetMoveable(bool Value)
 
 void UPhotonReplicationStaticMeshComponent::SetClusterUniqueID(int InClusterID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.SetClusterUniqueID");
 
@@ -105,7 +105,7 @@ void UPhotonReplicationStaticMeshComponent::SetClusterUniqueID(int InClusterID)
 
 void UPhotonReplicationStaticMeshComponent::SetClusterEntityState(EClusterEntityState EntityState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.SetClusterEntityState");
 
@@ -129,7 +129,7 @@ void UPhotonReplicationStaticMeshComponent::SetClusterEntityState(EClusterEntity
 
 void UPhotonReplicationStaticMeshComponent::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.RegistLuaTick");
 
@@ -151,7 +151,7 @@ void UPhotonReplicationStaticMeshComponent::RegistLuaTick(float TickInterval)
 
 void UPhotonReplicationStaticMeshComponent::RegisterToCluster()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.RegisterToCluster");
 
@@ -174,7 +174,7 @@ void UPhotonReplicationStaticMeshComponent::RegisterToCluster()
 
 void UPhotonReplicationStaticMeshComponent::MarkPropDirty(int PropIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationStaticMeshComponent.MarkPropDirty");
 
@@ -198,7 +198,7 @@ void UPhotonReplicationStaticMeshComponent::MarkPropDirty(int PropIndex)
 
 void UPhotonDestructibleMeshComponent::SetupFragmentsMaxHp(float HP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.SetupFragmentsMaxHp");
 
@@ -222,7 +222,7 @@ void UPhotonDestructibleMeshComponent::SetupFragmentsMaxHp(float HP)
 
 void UPhotonDestructibleMeshComponent::SetServerDamagedDelegate(const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.SetServerDamagedDelegate");
 
@@ -247,7 +247,7 @@ void UPhotonDestructibleMeshComponent::SetServerDamagedDelegate(const struct FSc
 
 void UPhotonDestructibleMeshComponent::SetFracturedMesh(class UPhotonDestructibleMesh* InFracturedMesh, bool Force)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.SetFracturedMesh");
 
@@ -276,7 +276,7 @@ void UPhotonDestructibleMeshComponent::SetFracturedMesh(class UPhotonDestructibl
 
 void UPhotonDestructibleMeshComponent::Server_OnComponentHitAction(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.Server_OnComponentHitAction");
 
@@ -309,7 +309,7 @@ void UPhotonDestructibleMeshComponent::Server_OnComponentHitAction(class UPrimit
 
 bool UPhotonDestructibleMeshComponent::Server_DamageFragmentsByRadius(const struct FVector4& WorldImpactVelocityAndRotateStrength, const struct FVector4& WorldImpactPointAndSpreadStrength, float HP, float Radius, bool Attenuation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.Server_DamageFragmentsByRadius");
 
@@ -343,7 +343,7 @@ bool UPhotonDestructibleMeshComponent::Server_DamageFragmentsByRadius(const stru
 
 bool UPhotonDestructibleMeshComponent::Server_DamageFragmentsByHp(TArray<int> FragmentsIndex, TArray<float> HP, const struct FVector4& WorldImpactPointAndSpreadStrength, const struct FVector4& WorldImpactVelocityAndRotateSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.Server_DamageFragmentsByHp");
 
@@ -370,7 +370,7 @@ bool UPhotonDestructibleMeshComponent::Server_DamageFragmentsByHp(TArray<int> Fr
 
 void UPhotonDestructibleMeshComponent::OnRep_SlideData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.OnRep_SlideData");
 
@@ -391,7 +391,7 @@ void UPhotonDestructibleMeshComponent::OnRep_SlideData()
 
 void UPhotonDestructibleMeshComponent::OnRep_ImpactData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.OnRep_ImpactData");
 
@@ -412,7 +412,7 @@ void UPhotonDestructibleMeshComponent::OnRep_ImpactData()
 
 void UPhotonDestructibleMeshComponent::OnRep_FragmentsState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.OnRep_FragmentsState");
 
@@ -436,7 +436,7 @@ void UPhotonDestructibleMeshComponent::OnRep_FragmentsState()
 
 bool UPhotonDestructibleMeshComponent::IsFragmentCanDestroy(int FragmentItemIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.IsFragmentCanDestroy");
 
@@ -463,7 +463,7 @@ bool UPhotonDestructibleMeshComponent::IsFragmentCanDestroy(int FragmentItemInde
 
 bool UPhotonDestructibleMeshComponent::IsFragmentCanBeDamaged(int FragmentItemIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.IsFragmentCanBeDamaged");
 
@@ -489,7 +489,7 @@ bool UPhotonDestructibleMeshComponent::IsFragmentCanBeDamaged(int FragmentItemIn
 
 class UPhotonDestructibleMesh* UPhotonDestructibleMeshComponent::GetPhotonDestructibleMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetPhotonDestructibleMesh");
 
@@ -517,7 +517,7 @@ class UPhotonDestructibleMesh* UPhotonDestructibleMeshComponent::GetPhotonDestru
 
 bool UPhotonDestructibleMeshComponent::GetFragmentTransform(int FragmentIndex, bool WorldSpace, struct FTransform* OutTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFragmentTransform");
 
@@ -549,7 +549,7 @@ bool UPhotonDestructibleMeshComponent::GetFragmentTransform(int FragmentIndex, b
 
 bool UPhotonDestructibleMeshComponent::GetFragmentsWorldPosition(int FragmentIndex, struct FVector* FragmentPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFragmentsWorldPosition");
 
@@ -580,7 +580,7 @@ bool UPhotonDestructibleMeshComponent::GetFragmentsWorldPosition(int FragmentInd
 
 bool UPhotonDestructibleMeshComponent::GetFragmentsNotDamaged(bool IsReturnNotDestroyedFragments, TArray<int>* Fragments)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFragmentsNotDamaged");
 
@@ -610,7 +610,7 @@ bool UPhotonDestructibleMeshComponent::GetFragmentsNotDamaged(bool IsReturnNotDe
 
 bool UPhotonDestructibleMeshComponent::GetFragmentsDamaged(TArray<int>* Fragments)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFragmentsDamaged");
 
@@ -643,7 +643,7 @@ bool UPhotonDestructibleMeshComponent::GetFragmentsDamaged(TArray<int>* Fragment
 
 bool UPhotonDestructibleMeshComponent::GetFragmentsByRadius(const struct FVector& HitPoint, float Radius, int DamageType, TArray<int>* FragmentsIndex, TArray<float>* ImpactDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFragmentsByRadius");
 
@@ -676,7 +676,7 @@ bool UPhotonDestructibleMeshComponent::GetFragmentsByRadius(const struct FVector
 
 int UPhotonDestructibleMeshComponent::GetFragmentItemCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFragmentItemCount");
 
@@ -704,7 +704,7 @@ int UPhotonDestructibleMeshComponent::GetFragmentItemCount()
 
 bool UPhotonDestructibleMeshComponent::GetFragmentBounds(int FragmentIndex, bool WorldSpace, struct FBox* OutBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFragmentBounds");
 
@@ -734,7 +734,7 @@ bool UPhotonDestructibleMeshComponent::GetFragmentBounds(int FragmentIndex, bool
 
 class UPhotonFracturedMesh* UPhotonDestructibleMeshComponent::GetFracturedMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.GetFracturedMesh");
 
@@ -760,7 +760,7 @@ class UPhotonFracturedMesh* UPhotonDestructibleMeshComponent::GetFracturedMesh()
 
 void UPhotonDestructibleMeshComponent::ClientDamageAndInitalFragments(TArray<int> DamagedFragmentItemIndex, TArray<int> InitialFragmentItemIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonDestructibleMeshComponent.ClientDamageAndInitalFragments");
 
@@ -783,7 +783,7 @@ void UPhotonDestructibleMeshComponent::ClientDamageAndInitalFragments(TArray<int
 
 void UPhotonReplicationInstancedStaticMeshComponent::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.UnRegistLuaTick");
 
@@ -804,7 +804,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::UnRegistLuaTick()
 
 void UPhotonReplicationInstancedStaticMeshComponent::UnRegisterFromCluster()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.UnRegisterFromCluster");
 
@@ -827,7 +827,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::UnRegisterFromCluster()
 
 void UPhotonReplicationInstancedStaticMeshComponent::SetMoveable(bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.SetMoveable");
 
@@ -851,7 +851,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::SetMoveable(bool Value)
 
 void UPhotonReplicationInstancedStaticMeshComponent::SetClusterUniqueID(int InClusterID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.SetClusterUniqueID");
 
@@ -875,7 +875,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::SetClusterUniqueID(int InCl
 
 void UPhotonReplicationInstancedStaticMeshComponent::SetClusterEntityState(EClusterEntityState EntityState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.SetClusterEntityState");
 
@@ -899,7 +899,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::SetClusterEntityState(EClus
 
 void UPhotonReplicationInstancedStaticMeshComponent::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.RegistLuaTick");
 
@@ -921,7 +921,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::RegistLuaTick(float TickInt
 
 void UPhotonReplicationInstancedStaticMeshComponent::RegisterToCluster()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.RegisterToCluster");
 
@@ -944,7 +944,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::RegisterToCluster()
 
 void UPhotonReplicationInstancedStaticMeshComponent::MarkPropDirty(int PropIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationInstancedStaticMeshComponent.MarkPropDirty");
 
@@ -968,7 +968,7 @@ void UPhotonReplicationInstancedStaticMeshComponent::MarkPropDirty(int PropIndex
 
 void UPhotonInstancedDestructibleMeshComponent::SetupFragmentsMaxHp(float HP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.SetupFragmentsMaxHp");
 
@@ -992,7 +992,7 @@ void UPhotonInstancedDestructibleMeshComponent::SetupFragmentsMaxHp(float HP)
 
 void UPhotonInstancedDestructibleMeshComponent::SetServerDamagedDelegate(const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.SetServerDamagedDelegate");
 
@@ -1016,7 +1016,7 @@ void UPhotonInstancedDestructibleMeshComponent::SetServerDamagedDelegate(const s
 
 void UPhotonInstancedDestructibleMeshComponent::SetPhysMaterialOverride(class UPhysicalMaterial* NewPhysMaterial)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.SetPhysMaterialOverride");
 
@@ -1041,7 +1041,7 @@ void UPhotonInstancedDestructibleMeshComponent::SetPhysMaterialOverride(class UP
 
 void UPhotonInstancedDestructibleMeshComponent::SetFracturedMesh(class UPhotonDestructibleMesh* InFracturedMesh, bool Force)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.SetFracturedMesh");
 
@@ -1070,7 +1070,7 @@ void UPhotonInstancedDestructibleMeshComponent::SetFracturedMesh(class UPhotonDe
 
 void UPhotonInstancedDestructibleMeshComponent::Server_OnComponentHitAction(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.Server_OnComponentHitAction");
 
@@ -1103,7 +1103,7 @@ void UPhotonInstancedDestructibleMeshComponent::Server_OnComponentHitAction(clas
 
 bool UPhotonInstancedDestructibleMeshComponent::Server_DamageFragmentsByRadius(const struct FVector4& WorldImpactVelocity, const struct FVector4& WorldHitPointAndSpreadSpeed, float HP, float Radius, bool Attenuation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.Server_DamageFragmentsByRadius");
 
@@ -1135,7 +1135,7 @@ bool UPhotonInstancedDestructibleMeshComponent::Server_DamageFragmentsByRadius(c
 
 TArray<int> UPhotonInstancedDestructibleMeshComponent::ReplaceAllInstances(TArray<struct FTransform> InstanceTransforms, bool bShouldReturnIndices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.ReplaceAllInstances");
 
@@ -1160,7 +1160,7 @@ TArray<int> UPhotonInstancedDestructibleMeshComponent::ReplaceAllInstances(TArra
 
 void UPhotonInstancedDestructibleMeshComponent::OnRep_ImpactData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.OnRep_ImpactData");
 
@@ -1181,7 +1181,7 @@ void UPhotonInstancedDestructibleMeshComponent::OnRep_ImpactData()
 
 void UPhotonInstancedDestructibleMeshComponent::OnRep_FragmentsState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.OnRep_FragmentsState");
 
@@ -1206,7 +1206,7 @@ void UPhotonInstancedDestructibleMeshComponent::OnRep_FragmentsState()
 
 bool UPhotonInstancedDestructibleMeshComponent::IsFragmentCanDestroy(int InstanceIndex, int FragmentItemIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.IsFragmentCanDestroy");
 
@@ -1233,7 +1233,7 @@ bool UPhotonInstancedDestructibleMeshComponent::IsFragmentCanDestroy(int Instanc
 
 class UPhotonDestructibleMesh* UPhotonInstancedDestructibleMeshComponent::GetPhotonDestructibleMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetPhotonDestructibleMesh");
 
@@ -1261,7 +1261,7 @@ class UPhotonDestructibleMesh* UPhotonInstancedDestructibleMeshComponent::GetPho
 
 TArray<int> UPhotonInstancedDestructibleMeshComponent::GetInstancesOverlappingSphere(const struct FVector& Center, float Radius, bool bSphereInWorldSpace)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetInstancesOverlappingSphere");
 
@@ -1289,7 +1289,7 @@ TArray<int> UPhotonInstancedDestructibleMeshComponent::GetInstancesOverlappingSp
 
 int UPhotonInstancedDestructibleMeshComponent::GetInstanceItemCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetInstanceItemCount");
 
@@ -1318,7 +1318,7 @@ int UPhotonInstancedDestructibleMeshComponent::GetInstanceItemCount()
 
 bool UPhotonInstancedDestructibleMeshComponent::GetFragmentTransform(int InstanceIndex, int FragmentIndex, bool WorldSpace, struct FTransform* OutTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetFragmentTransform");
 
@@ -1352,7 +1352,7 @@ bool UPhotonInstancedDestructibleMeshComponent::GetFragmentTransform(int Instanc
 
 bool UPhotonInstancedDestructibleMeshComponent::GetFragmentsWorldPosition(int InstanceIndex, int FragmentIndex, struct FVector* FragmentPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetFragmentsWorldPosition");
 
@@ -1385,7 +1385,7 @@ bool UPhotonInstancedDestructibleMeshComponent::GetFragmentsWorldPosition(int In
 
 bool UPhotonInstancedDestructibleMeshComponent::GetFragmentsNotDamaged(int InstanceIndex, bool IsReturnNotDestroyedFragments, TArray<int>* FragmentsNoDamaged)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetFragmentsNotDamaged");
 
@@ -1417,7 +1417,7 @@ bool UPhotonInstancedDestructibleMeshComponent::GetFragmentsNotDamaged(int Insta
 
 bool UPhotonInstancedDestructibleMeshComponent::GetFragmentsDamaged(int InstanceIndex, TArray<int>* FragmentsDamaged)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetFragmentsDamaged");
 
@@ -1446,7 +1446,7 @@ bool UPhotonInstancedDestructibleMeshComponent::GetFragmentsDamaged(int Instance
 
 int UPhotonInstancedDestructibleMeshComponent::GetFragmentItemCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetFragmentItemCount");
 
@@ -1475,7 +1475,7 @@ int UPhotonInstancedDestructibleMeshComponent::GetFragmentItemCount()
 
 bool UPhotonInstancedDestructibleMeshComponent::GetFragmentBounds(int InstanceIndex, int FragmentIndex, bool WorldSpace, struct FBox* OutBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetFragmentBounds");
 
@@ -1506,7 +1506,7 @@ bool UPhotonInstancedDestructibleMeshComponent::GetFragmentBounds(int InstanceIn
 
 class UPhotonFracturedMesh* UPhotonInstancedDestructibleMeshComponent::GetFracturedMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.GetFracturedMesh");
 
@@ -1532,7 +1532,7 @@ class UPhotonFracturedMesh* UPhotonInstancedDestructibleMeshComponent::GetFractu
 
 int UPhotonInstancedDestructibleMeshComponent::AddInstanceWorldSpace(const struct FTransform& WorldTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.AddInstanceWorldSpace");
 
@@ -1561,7 +1561,7 @@ int UPhotonInstancedDestructibleMeshComponent::AddInstanceWorldSpace(const struc
 
 TArray<int> UPhotonInstancedDestructibleMeshComponent::AddInstances(TArray<struct FTransform> InstanceTransforms, bool bShouldReturnIndices, bool bMarkRenderStateDirty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.AddInstances");
 
@@ -1590,7 +1590,7 @@ TArray<int> UPhotonInstancedDestructibleMeshComponent::AddInstances(TArray<struc
 
 int UPhotonInstancedDestructibleMeshComponent::AddInstance(const struct FTransform& InstanceTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonInstancedDestructibleMeshComponent.AddInstance");
 
@@ -1618,7 +1618,7 @@ int UPhotonInstancedDestructibleMeshComponent::AddInstance(const struct FTransfo
 
 bool UPhotonHierarchicalInstancedDestructibleMeshComponent::ShowInstances(TArray<int> InstanceIndices, TArray<struct FTransform> InstanceTransforms)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedDestructibleMeshComponent.ShowInstances");
 
@@ -1646,7 +1646,7 @@ bool UPhotonHierarchicalInstancedDestructibleMeshComponent::ShowInstances(TArray
 
 bool UPhotonHierarchicalInstancedDestructibleMeshComponent::RemoveInstances(TArray<int> InstancesToRemove)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedDestructibleMeshComponent.RemoveInstances");
 
@@ -1672,7 +1672,7 @@ bool UPhotonHierarchicalInstancedDestructibleMeshComponent::RemoveInstances(TArr
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::UpdatePickupAndDeadBoxInRange(const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.UpdatePickupAndDeadBoxInRange");
 
@@ -1696,7 +1696,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::UpdatePickupAndDeadBoxInRa
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::SetFracturedMesh(class UPhotonDestructibleMesh* InPhotonDestructibleMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.SetFracturedMesh");
 
@@ -1721,7 +1721,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::SetFracturedMesh(class UPh
 
 bool UPhotonHierarchicalInstancedStaticMeshComponent::ServerGetInstanceIndexsNotDamaged(TArray<int>* InstancesNoDamaged)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.ServerGetInstanceIndexsNotDamaged");
 
@@ -1750,7 +1750,7 @@ bool UPhotonHierarchicalInstancedStaticMeshComponent::ServerGetInstanceIndexsNot
 
 bool UPhotonHierarchicalInstancedStaticMeshComponent::ServerGetInstanceIndexsDamaged(TArray<int>* InstancesDamaged)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.ServerGetInstanceIndexsDamaged");
 
@@ -1782,7 +1782,7 @@ bool UPhotonHierarchicalInstancedStaticMeshComponent::ServerGetInstanceIndexsDam
 
 bool UPhotonHierarchicalInstancedStaticMeshComponent::Server_InstanceByHp(TArray<int> InstancedIndex, TArray<float> DamagesHp, const struct FVector& WorldImpactVelocity, EDestructionDamageType DamageType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.Server_InstanceByHp");
 
@@ -1816,7 +1816,7 @@ bool UPhotonHierarchicalInstancedStaticMeshComponent::Server_InstanceByHp(TArray
 
 bool UPhotonHierarchicalInstancedStaticMeshComponent::Server_InstanceAndWorldVelocityByHp(TArray<int> InstancedIndex, TArray<float> DamagesHp, const struct FVector& WorldImpactPoint, EDestructionDamageType DamageType, float Strength)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.Server_InstanceAndWorldVelocityByHp");
 
@@ -1850,7 +1850,7 @@ bool UPhotonHierarchicalInstancedStaticMeshComponent::Server_InstanceAndWorldVel
 
 bool UPhotonHierarchicalInstancedStaticMeshComponent::Server_DamageFragmentsByRadius(const struct FVector& WorldImpactVelocity, const struct FVector& WorldHitPointAndSpreadSpeed, float HP, float Radius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.Server_DamageFragmentsByRadius");
 
@@ -1883,7 +1883,7 @@ bool UPhotonHierarchicalInstancedStaticMeshComponent::Server_DamageFragmentsByRa
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::OnTriggerServerEvent__DelegateSignature(class ASTExtraVehicleBase* VehicleActor, class UPrimitiveComponent* HitComp, class UPhotonHierarchicalInstancedStaticMeshComponent* MeshComponent, const struct FVector& DesPos, int TriggerIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.OnTriggerServerEvent__DelegateSignature");
 
@@ -1912,7 +1912,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::OnTriggerServerEvent__Dele
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::OnTriggeredByComp(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FTriggerEvent& TriggerEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.OnTriggeredByComp");
 
@@ -1942,7 +1942,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::OnTriggeredByComp(class AA
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::OnTriggerClientEvent__DelegateSignature(class ASTExtraVehicleBase* VehicleActor, class UPrimitiveComponent* HitComp, class UPhotonHierarchicalInstancedStaticMeshComponent* MeshComponent, const struct FVector& DesPos, int TriggerIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.OnTriggerClientEvent__DelegateSignature");
 
@@ -1967,7 +1967,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::OnTriggerClientEvent__Dele
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::OnRep_ImpactData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.OnRep_ImpactData");
 
@@ -1992,7 +1992,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::OnRep_ImpactData()
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::OnLocalVehicleHit(TArray<int> InstanceIndex, const struct FVector4& WorldImpactPointAndSpreadSpeed, const struct FVector4& WorldImpactVelocityAndRotateSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.OnLocalVehicleHit");
 
@@ -2018,7 +2018,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::OnLocalVehicleHit(TArray<i
 
 class UPhotonDestructibleMesh* UPhotonHierarchicalInstancedStaticMeshComponent::GetPhotonDestructibleMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.GetPhotonDestructibleMesh");
 
@@ -2047,7 +2047,7 @@ class UPhotonDestructibleMesh* UPhotonHierarchicalInstancedStaticMeshComponent::
 
 bool UPhotonHierarchicalInstancedStaticMeshComponent::GetInstanceByRadius(const struct FVector& HitPoint, float Radius, EDestructionDamageType DamageType, TArray<int>* InstancedIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.GetInstanceByRadius");
 
@@ -2078,7 +2078,7 @@ bool UPhotonHierarchicalInstancedStaticMeshComponent::GetInstanceByRadius(const 
 
 class UPhotonFracturedMesh* UPhotonHierarchicalInstancedStaticMeshComponent::GetFracturedMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.GetFracturedMesh");
 
@@ -2104,7 +2104,7 @@ class UPhotonFracturedMesh* UPhotonHierarchicalInstancedStaticMeshComponent::Get
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::GenerateEffectInstanceWorldSpace(TArray<int> InstanceIndex, TArray<struct FVector> WorldImpactVelocityAndRotateSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.GenerateEffectInstanceWorldSpace");
 
@@ -2130,7 +2130,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::GenerateEffectInstanceWorl
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::GenerateEffectInstanceLocalSpace(TArray<int> InstanceIndex, TArray<struct FVector> LocalImpactVelocityAndRotateSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.GenerateEffectInstanceLocalSpace");
 
@@ -2155,7 +2155,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::GenerateEffectInstanceLoca
 
 void UPhotonHierarchicalInstancedStaticMeshComponent::ClientCorrectVehicleHit(TArray<int> InstanceIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonHierarchicalInstancedStaticMeshComponent.ClientCorrectVehicleHit");
 
@@ -2177,7 +2177,7 @@ void UPhotonHierarchicalInstancedStaticMeshComponent::ClientCorrectVehicleHit(TA
 
 void UPhotonReplicationSkeletalMeshComponent::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.UnRegistLuaTick");
 
@@ -2198,7 +2198,7 @@ void UPhotonReplicationSkeletalMeshComponent::UnRegistLuaTick()
 
 void UPhotonReplicationSkeletalMeshComponent::UnRegisterFromCluster()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.UnRegisterFromCluster");
 
@@ -2221,7 +2221,7 @@ void UPhotonReplicationSkeletalMeshComponent::UnRegisterFromCluster()
 
 void UPhotonReplicationSkeletalMeshComponent::SetMoveable(bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.SetMoveable");
 
@@ -2245,7 +2245,7 @@ void UPhotonReplicationSkeletalMeshComponent::SetMoveable(bool Value)
 
 void UPhotonReplicationSkeletalMeshComponent::SetClusterUniqueID(int InClusterID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.SetClusterUniqueID");
 
@@ -2269,7 +2269,7 @@ void UPhotonReplicationSkeletalMeshComponent::SetClusterUniqueID(int InClusterID
 
 void UPhotonReplicationSkeletalMeshComponent::SetClusterEntityState(EClusterEntityState EntityState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.SetClusterEntityState");
 
@@ -2293,7 +2293,7 @@ void UPhotonReplicationSkeletalMeshComponent::SetClusterEntityState(EClusterEnti
 
 void UPhotonReplicationSkeletalMeshComponent::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.RegistLuaTick");
 
@@ -2315,7 +2315,7 @@ void UPhotonReplicationSkeletalMeshComponent::RegistLuaTick(float TickInterval)
 
 void UPhotonReplicationSkeletalMeshComponent::RegisterToCluster()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.RegisterToCluster");
 
@@ -2338,7 +2338,7 @@ void UPhotonReplicationSkeletalMeshComponent::RegisterToCluster()
 
 void UPhotonReplicationSkeletalMeshComponent::MarkPropDirty(int PropIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonReplicationSkeletalMeshComponent.MarkPropDirty");
 
@@ -2360,7 +2360,7 @@ void UPhotonReplicationSkeletalMeshComponent::MarkPropDirty(int PropIndex)
 
 void AReusableStaticMeshActor::OnSpawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.ReusableStaticMeshActor.OnSpawn");
 
@@ -2381,7 +2381,7 @@ void AReusableStaticMeshActor::OnSpawn()
 
 void AReusableStaticMeshActor::OnRecycle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.ReusableStaticMeshActor.OnRecycle");
 
@@ -2402,7 +2402,7 @@ void AReusableStaticMeshActor::OnRecycle()
 
 void AReusableSkeletalMeshActor::OnSpawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.ReusableSkeletalMeshActor.OnSpawn");
 
@@ -2423,7 +2423,7 @@ void AReusableSkeletalMeshActor::OnSpawn()
 
 void AReusableSkeletalMeshActor::OnRecycle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.ReusableSkeletalMeshActor.OnRecycle");
 
@@ -2444,7 +2444,7 @@ void AReusableSkeletalMeshActor::OnRecycle()
 
 void AReusableDestructibleMeshActor::OnSpawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.ReusableDestructibleMeshActor.OnSpawn");
 
@@ -2465,7 +2465,7 @@ void AReusableDestructibleMeshActor::OnSpawn()
 
 void AReusableDestructibleMeshActor::OnRecycle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.ReusableDestructibleMeshActor.OnRecycle");
 
@@ -2488,7 +2488,7 @@ void AReusableDestructibleMeshActor::OnRecycle()
 
 void UPhotonStaticMeshComponent::SetFracturedMesh(class UPhotonDestructibleMesh* InPhotonDestructibleMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonStaticMeshComponent.SetFracturedMesh");
 
@@ -2512,7 +2512,7 @@ void UPhotonStaticMeshComponent::SetFracturedMesh(class UPhotonDestructibleMesh*
 
 class UPhotonDestructibleMesh* UPhotonStaticMeshComponent::GetPhotonDestructibleMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonStaticMeshComponent.GetPhotonDestructibleMesh");
 
@@ -2537,7 +2537,7 @@ class UPhotonDestructibleMesh* UPhotonStaticMeshComponent::GetPhotonDestructible
 
 class UPhotonFracturedMesh* UPhotonStaticMeshComponent::GetFracturedMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonBlast.PhotonStaticMeshComponent.GetFracturedMesh");
 

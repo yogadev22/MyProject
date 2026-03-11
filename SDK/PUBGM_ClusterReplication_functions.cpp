@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function ClusterReplication.ClusterReplicationSubsystem.SetAutoClearCache
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UClusterReplicationSubsystem::SetAutoClearCache(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClusterReplication.ClusterReplicationSubsystem.SetAutoClearCache");
 
@@ -39,7 +39,7 @@ void UClusterReplicationSubsystem::SetAutoClearCache(bool Val)
 
 void UClusterReplicationSubsystem::SetAutoCache(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClusterReplication.ClusterReplicationSubsystem.SetAutoCache");
 
@@ -61,7 +61,7 @@ void UClusterReplicationSubsystem::SetAutoCache(bool Val)
 
 void UClusterReplicationSubsystem::RemoveAllCachedObjectData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClusterReplication.ClusterReplicationSubsystem.RemoveAllCachedObjectData");
 

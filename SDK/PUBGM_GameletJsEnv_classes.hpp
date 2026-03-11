@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class GameletJsEnv.GameletDynamicDelegateProxy
 // 0x0048 (0x0070 - 0x0028)
@@ -17,7 +17,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletDynamicDelegateProxy");
 		return pStaticClass;
@@ -36,7 +36,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletExtensionMethods");
 		return pStaticClass;
@@ -46,15 +46,15 @@ public:
 
 
 // Class GameletJsEnv.GameletJSGeneratedClass
-// 0x0060 (0x0370 - 0x0310)
+// 0x0060 (0x03A8 - 0x0348)
 class UGameletJSGeneratedClass : public UBlueprintGeneratedClass
 {
 public:
-	unsigned char                                      UnknownData00[0x60];                                      // 0x0310(0x0060) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x60];                                      // 0x0348(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletJSGeneratedClass");
 		return pStaticClass;
@@ -72,7 +72,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletJSGeneratedFunction");
 		return pStaticClass;
@@ -82,15 +82,15 @@ public:
 
 
 // Class GameletJsEnv.GameletJSWidgetGeneratedClass
-// 0x0060 (0x03E0 - 0x0380)
+// 0x0060 (0x0418 - 0x03B8)
 class UGameletJSWidgetGeneratedClass : public UWidgetBlueprintGeneratedClass
 {
 public:
-	unsigned char                                      UnknownData00[0x60];                                      // 0x0380(0x0060) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x60];                                      // 0x03B8(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletJSWidgetGeneratedClass");
 		return pStaticClass;
@@ -107,7 +107,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletTypeScriptBlueprint");
 		return pStaticClass;
@@ -117,17 +117,17 @@ public:
 
 
 // Class GameletJsEnv.GameletTypeScriptGeneratedClass
-// 0x00A0 (0x03B0 - 0x0310)
+// 0x00A0 (0x03E8 - 0x0348)
 class UGameletTypeScriptGeneratedClass : public UBlueprintGeneratedClass
 {
 public:
-	unsigned char                                      UnknownData00[0x99];                                      // 0x0310(0x0099) MISSED OFFSET
-	bool                                               HasConstructor;                                           // 0x03A9(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x6];                                       // 0x03AA(0x0006) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x99];                                      // 0x0348(0x0099) MISSED OFFSET
+	bool                                               HasConstructor;                                           // 0x03E1(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x03E2(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletTypeScriptGeneratedClass");
 		return pStaticClass;
@@ -144,7 +144,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class GameletJsEnv.GameletTypeScriptObject");
 		return pStaticClass;

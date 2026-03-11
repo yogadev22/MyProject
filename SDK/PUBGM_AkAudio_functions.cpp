@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function AkAudio.AkAcousticPortal.OpenPortal
 // (Final, Native, Public, BlueprintCallable)
 
 void AAkAcousticPortal::OpenPortal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAcousticPortal.OpenPortal");
 
@@ -36,7 +36,7 @@ void AAkAcousticPortal::OpenPortal()
 
 EAkAcousticPortalState AAkAcousticPortal::GetCurrentState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAcousticPortal.GetCurrentState");
 
@@ -59,7 +59,7 @@ EAkAcousticPortalState AAkAcousticPortal::GetCurrentState()
 
 void AAkAcousticPortal::ClosePortal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAcousticPortal.ClosePortal");
 
@@ -80,7 +80,7 @@ void AAkAcousticPortal::ClosePortal()
 
 void AAkAmbientSound::StopAmbientSound()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAmbientSound.StopAmbientSound");
 
@@ -101,7 +101,7 @@ void AAkAmbientSound::StopAmbientSound()
 
 void AAkAmbientSound::StartAmbientSound()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAmbientSound.StartAmbientSound");
 
@@ -125,7 +125,7 @@ void AAkAmbientSound::StartAmbientSound()
 
 void UAkAreaCheckComponent::UnRegistAKAreaVolume(class AActor* AreaVolume, ECustomAKAreaType AreaType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAreaCheckComponent.UnRegistAKAreaVolume");
 
@@ -151,7 +151,7 @@ void UAkAreaCheckComponent::UnRegistAKAreaVolume(class AActor* AreaVolume, ECust
 
 void UAkAreaCheckComponent::RegistAKAreaVolume(class AActor* AreaVolume, ECustomAKAreaType AreaType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAreaCheckComponent.RegistAKAreaVolume");
 
@@ -177,7 +177,7 @@ void UAkAreaCheckComponent::RegistAKAreaVolume(class AActor* AreaVolume, ECustom
 
 bool UAkAreaCheckComponent::CheckVoiceAvailable(const struct FVector& VoicePostion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAreaCheckComponent.CheckVoiceAvailable");
 
@@ -204,7 +204,7 @@ bool UAkAreaCheckComponent::CheckVoiceAvailable(const struct FVector& VoicePosti
 
 bool AAkAreaCheckVolume::IsInsideVolume(const struct FVector& OrignPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAreaCheckVolume.IsInsideVolume");
 
@@ -230,7 +230,7 @@ bool AAkAreaCheckVolume::IsInsideVolume(const struct FVector& OrignPosition)
 
 ECustomAKAreaType AAkAreaCheckVolume::GetAKAreaType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAreaCheckVolume.GetAKAreaType");
 
@@ -253,7 +253,7 @@ ECustomAKAreaType AAkAreaCheckVolume::GetAKAreaType()
 
 void UAkAudioDeviceSettings::InitConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioDeviceSettings.InitConfig");
 
@@ -276,7 +276,7 @@ void UAkAudioDeviceSettings::InitConfig()
 
 void UAkAudioMonitor::UpdateAkComponentInfo(TMap<struct FString, struct FAkCombinedInfo>* OutList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.UpdateAkComponentInfo");
 
@@ -302,7 +302,7 @@ void UAkAudioMonitor::UpdateAkComponentInfo(TMap<struct FString, struct FAkCombi
 
 void UAkAudioMonitor::Update(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.Update");
 
@@ -326,7 +326,7 @@ void UAkAudioMonitor::Update(float DeltaTime)
 
 void UAkAudioMonitor::SetUpdateInterval(float NewUpdateInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.SetUpdateInterval");
 
@@ -352,7 +352,7 @@ void UAkAudioMonitor::SetUpdateInterval(float NewUpdateInterval)
 
 void UAkAudioMonitor::SetMonitorFlag(unsigned char TotalPlayCount, unsigned char ObjectPlayCount, TArray<unsigned char>* InFlags)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.SetMonitorFlag");
 
@@ -383,7 +383,7 @@ void UAkAudioMonitor::SetMonitorFlag(unsigned char TotalPlayCount, unsigned char
 
 void UAkAudioMonitor::OnReportError(const struct FString& FunctionName, unsigned char ErrorAkCode, uint64_t NumericParam, const struct FString& StrParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.OnReportError");
 
@@ -411,7 +411,7 @@ void UAkAudioMonitor::OnReportError(const struct FString& FunctionName, unsigned
 
 void UAkAudioMonitor::OnAkAudioEventTrigger(const struct FString& Name, int code)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.OnAkAudioEventTrigger");
 
@@ -438,7 +438,7 @@ void UAkAudioMonitor::OnAkAudioEventTrigger(const struct FString& Name, int code
 
 void UAkAudioMonitor::OnAkAudioBankTrigger(bool bUnload, const struct FString& BankName, int8_t RefCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.OnAkAudioBankTrigger");
 
@@ -464,7 +464,7 @@ void UAkAudioMonitor::OnAkAudioBankTrigger(bool bUnload, const struct FString& B
 
 bool UAkAudioMonitor::IsMonitorInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.IsMonitorInit");
 
@@ -491,7 +491,7 @@ bool UAkAudioMonitor::IsMonitorInit()
 
 bool UAkAudioMonitor::IsAkOutOfAttenuation(class UAkComponent* AkComp, float Attenuation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.IsAkOutOfAttenuation");
 
@@ -516,7 +516,7 @@ bool UAkAudioMonitor::IsAkOutOfAttenuation(class UAkComponent* AkComp, float Att
 
 void UAkAudioMonitor::InitMonitorDataPtr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.InitMonitorDataPtr");
 
@@ -539,7 +539,7 @@ void UAkAudioMonitor::InitMonitorDataPtr()
 
 TArray<uint16_t> UAkAudioMonitor::GetTotalPlayRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetTotalPlayRecord");
 
@@ -566,7 +566,7 @@ TArray<uint16_t> UAkAudioMonitor::GetTotalPlayRecord()
 
 struct FString UAkAudioMonitor::GetSwitchValue(class UAkComponent* Component, const struct FString& SwitchName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetSwitchValue");
 
@@ -594,7 +594,7 @@ struct FString UAkAudioMonitor::GetSwitchValue(class UAkComponent* Component, co
 
 TArray<struct FString> UAkAudioMonitor::GetSwitchNames(class UAkComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetSwitchNames");
 
@@ -622,7 +622,7 @@ TArray<struct FString> UAkAudioMonitor::GetSwitchNames(class UAkComponent* Compo
 
 float UAkAudioMonitor::GetRTPCValueByID(class UAkComponent* Component, uint32_t RTPCID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetRTPCValueByID");
 
@@ -651,7 +651,7 @@ float UAkAudioMonitor::GetRTPCValueByID(class UAkComponent* Component, uint32_t 
 
 float UAkAudioMonitor::GetRTPCValue(class UAkComponent* Component, const struct FString& RTPCName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetRTPCValue");
 
@@ -679,7 +679,7 @@ float UAkAudioMonitor::GetRTPCValue(class UAkComponent* Component, const struct 
 
 TArray<struct FString> UAkAudioMonitor::GetRTPCNames(class UAkComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetRTPCNames");
 
@@ -706,7 +706,7 @@ TArray<struct FString> UAkAudioMonitor::GetRTPCNames(class UAkComponent* Compone
 
 TArray<uint32_t> UAkAudioMonitor::GetRTPCIDs(class UAkComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetRTPCIDs");
 
@@ -732,7 +732,7 @@ TArray<uint32_t> UAkAudioMonitor::GetRTPCIDs(class UAkComponent* Component)
 
 TMap<unsigned char, struct FAKErrorInfo> UAkAudioMonitor::GetReportErrorRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetReportErrorRecord");
 
@@ -758,7 +758,7 @@ TMap<unsigned char, struct FAKErrorInfo> UAkAudioMonitor::GetReportErrorRecord()
 
 struct FVector UAkAudioMonitor::GetPostion(class UAkComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetPostion");
 
@@ -785,7 +785,7 @@ struct FVector UAkAudioMonitor::GetPostion(class UAkComponent* Component)
 
 TArray<int> UAkAudioMonitor::GetPlayingID(class UAkComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetPlayingID");
 
@@ -813,7 +813,7 @@ TArray<int> UAkAudioMonitor::GetPlayingID(class UAkComponent* Component)
 
 struct FString UAkAudioMonitor::GetPlayEventName(class UAkComponent* Component, int PlayID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetPlayEventName");
 
@@ -840,7 +840,7 @@ struct FString UAkAudioMonitor::GetPlayEventName(class UAkComponent* Component, 
 
 TMap<struct FString, unsigned char> UAkAudioMonitor::GetObjectPlayRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetObjectPlayRecord");
 
@@ -866,7 +866,7 @@ TMap<struct FString, unsigned char> UAkAudioMonitor::GetObjectPlayRecord()
 
 struct FString UAkAudioMonitor::GetObjectNameByObjectID(uint64_t ObjectID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetObjectNameByObjectID");
 
@@ -892,7 +892,7 @@ struct FString UAkAudioMonitor::GetObjectNameByObjectID(uint64_t ObjectID)
 
 class UAkAudioMonitorData* UAkAudioMonitor::GetMonitorDataPtr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetMonitorDataPtr");
 
@@ -918,7 +918,7 @@ class UAkAudioMonitorData* UAkAudioMonitor::GetMonitorDataPtr()
 
 struct FString UAkAudioMonitor::GetGlobalSwitchValue(const struct FString& SwitchName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetGlobalSwitchValue");
 
@@ -944,7 +944,7 @@ struct FString UAkAudioMonitor::GetGlobalSwitchValue(const struct FString& Switc
 
 TArray<struct FString> UAkAudioMonitor::GetGlobalSwitchNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetGlobalSwitchNames");
 
@@ -970,7 +970,7 @@ TArray<struct FString> UAkAudioMonitor::GetGlobalSwitchNames()
 
 float UAkAudioMonitor::GetGlobalRTPCValue(const struct FString& RTPCName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetGlobalRTPCValue");
 
@@ -996,7 +996,7 @@ float UAkAudioMonitor::GetGlobalRTPCValue(const struct FString& RTPCName)
 
 TArray<struct FString> UAkAudioMonitor::GetGlobalRTPCNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetGlobalRTPCNames");
 
@@ -1021,7 +1021,7 @@ TArray<struct FString> UAkAudioMonitor::GetGlobalRTPCNames()
 
 void UAkAudioMonitor::GetEventList(TArray<struct FString>* OutRes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetEventList");
 
@@ -1049,7 +1049,7 @@ void UAkAudioMonitor::GetEventList(TArray<struct FString>* OutRes)
 
 class UAkAudioEvent* UAkAudioMonitor::GetEventInMemoryByName(TArray<class UAkAudioEvent*> AllAk, const struct FString& AkName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetEventInMemoryByName");
 
@@ -1076,7 +1076,7 @@ class UAkAudioEvent* UAkAudioMonitor::GetEventInMemoryByName(TArray<class UAkAud
 
 TMap<uint32_t, struct FAKErrorInfo> UAkAudioMonitor::GetDetailErrorCodeRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetDetailErrorCodeRecord");
 
@@ -1101,7 +1101,7 @@ TMap<uint32_t, struct FAKErrorInfo> UAkAudioMonitor::GetDetailErrorCodeRecord()
 
 void UAkAudioMonitor::GetBankRefList(TMap<struct FString, int8_t>* OutRes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetBankRefList");
 
@@ -1128,7 +1128,7 @@ void UAkAudioMonitor::GetBankRefList(TMap<struct FString, int8_t>* OutRes)
 
 TArray<struct FName> UAkAudioMonitor::GetAllEventNameInMemory(class UObject* WorldContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetAllEventNameInMemory");
 
@@ -1155,7 +1155,7 @@ TArray<struct FName> UAkAudioMonitor::GetAllEventNameInMemory(class UObject* Wor
 
 void UAkAudioMonitor::GetAllEventInMemory(class UObject* WorldContent, TArray<class UAkAudioEvent*>* AllAk)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetAllEventInMemory");
 
@@ -1183,7 +1183,7 @@ void UAkAudioMonitor::GetAllEventInMemory(class UObject* WorldContent, TArray<cl
 
 void UAkAudioMonitor::GetAllAkComponentFormDevice(TArray<class UAkComponent*>* AkList, TArray<class UAkComponent*>* recycledAkList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetAllAkComponentFormDevice");
 
@@ -1211,7 +1211,7 @@ void UAkAudioMonitor::GetAllAkComponentFormDevice(TArray<class UAkComponent*>* A
 
 int UAkAudioMonitor::GetActiveObjCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetActiveObjCount");
 
@@ -1236,7 +1236,7 @@ int UAkAudioMonitor::GetActiveObjCount()
 
 int UAkAudioMonitor::GetActiveEventCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetActiveEventCount");
 
@@ -1261,7 +1261,7 @@ int UAkAudioMonitor::GetActiveEventCount()
 
 int UAkAudioMonitor::GetActiveBankCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitor.GetActiveBankCount");
 
@@ -1287,7 +1287,7 @@ int UAkAudioMonitor::GetActiveBankCount()
 
 void UAkAudioMonitorData::UpdateEventList(bool bStop, const struct FString& InEventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitorData.UpdateEventList");
 
@@ -1314,7 +1314,7 @@ void UAkAudioMonitorData::UpdateEventList(bool bStop, const struct FString& InEv
 
 void UAkAudioMonitorData::UpdateBankRefList(bool bUnload, const struct FString& BankName, int8_t RefCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitorData.UpdateBankRefList");
 
@@ -1340,7 +1340,7 @@ void UAkAudioMonitorData::UpdateBankRefList(bool bUnload, const struct FString& 
 
 void UAkAudioMonitorData::UpdateAkComponentInfo(TMap<struct FString, struct FAkCombinedInfo>* OutList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitorData.UpdateAkComponentInfo");
 
@@ -1368,7 +1368,7 @@ void UAkAudioMonitorData::UpdateAkComponentInfo(TMap<struct FString, struct FAkC
 
 void UAkAudioMonitorData::SetMonitorFlagInternal(unsigned char TotalPlayCount, unsigned char ObjectPlayCount, TArray<unsigned char>* InFlags)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitorData.SetMonitorFlagInternal");
 
@@ -1399,7 +1399,7 @@ void UAkAudioMonitorData::SetMonitorFlagInternal(unsigned char TotalPlayCount, u
 
 void UAkAudioMonitorData::OnReportErrorInternal(const struct FString& FunctionName, unsigned char ErrorAkCode, uint64_t NumericParam, const struct FString& StrParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitorData.OnReportErrorInternal");
 
@@ -1424,7 +1424,7 @@ void UAkAudioMonitorData::OnReportErrorInternal(const struct FString& FunctionNa
 
 void UAkAudioMonitorData::Initialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioMonitorData.Initialize");
 
@@ -1445,7 +1445,7 @@ void UAkAudioMonitorData::Initialize()
 
 void UAkAudioVisualComponent::StartOfflineTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioVisualComponent.StartOfflineTime");
 
@@ -1466,7 +1466,7 @@ void UAkAudioVisualComponent::StartOfflineTime()
 
 void UAkAudioVisualComponent::ResetOfflineTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioVisualComponent.ResetOfflineTime");
 
@@ -1489,7 +1489,7 @@ void UAkAudioVisualComponent::ResetOfflineTime()
 
 void UAkAudioVisualComponent::OnTickVisualInfo(TArray<float> VisualInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioVisualComponent.OnTickVisualInfo");
 
@@ -1512,7 +1512,7 @@ void UAkAudioVisualComponent::OnTickVisualInfo(TArray<float> VisualInfo)
 
 void UAkAudioVisualComponent::OnTickOfflineVisualInfo(const struct FAudioOfflineVisualBeatData& VisualInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioVisualComponent.OnTickOfflineVisualInfo");
 
@@ -1535,7 +1535,7 @@ void UAkAudioVisualComponent::OnTickOfflineVisualInfo(const struct FAudioOffline
 
 void UAkAudioVisualComponent::InitOfflineDataWithBeatTime(TArray<float> Datas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioVisualComponent.InitOfflineDataWithBeatTime");
 
@@ -1559,7 +1559,7 @@ void UAkAudioVisualComponent::InitOfflineDataWithBeatTime(TArray<float> Datas)
 
 void UAkAudioVisualComponent::InitOfflineData(TArray<struct FAudioOfflineVisualBeatData> Datas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioVisualComponent.InitOfflineData");
 
@@ -1584,7 +1584,7 @@ void UAkAudioVisualComponent::InitOfflineData(TArray<struct FAudioOfflineVisualB
 
 bool UAkAudioVisualComponent::GetCurrentBeat(struct FAudioOfflineVisualBeatData* Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkAudioVisualComponent.GetCurrentBeat");
 
@@ -1612,7 +1612,7 @@ bool UAkAudioVisualComponent::GetCurrentBeat(struct FAudioOfflineVisualBeatData*
 
 void UAkComponent::UseReverbVolumes(bool inUseReverbVolumes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.UseReverbVolumes");
 
@@ -1644,7 +1644,7 @@ void UAkComponent::UseReverbVolumes(bool inUseReverbVolumes)
 
 void UAkComponent::UseEarlyReflections(class UAkAuxBus* AuxBus, bool Left, bool Right, bool floor, bool Ceiling, bool Back, bool Front, bool SpotReflectors, const struct FString& AuxBusName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.UseEarlyReflections");
 
@@ -1669,6 +1669,27 @@ void UAkComponent::UseEarlyReflections(class UAkAuxBus* AuxBus, bool Left, bool 
 }
 
 
+// Function AkAudio.AkComponent.UpdateGameObjectPosition
+// (Final, Native, Public)
+
+void UAkComponent::UpdateGameObjectPosition()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.UpdateGameObjectPosition");
+
+	UAkComponent_UpdateGameObjectPosition_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function AkAudio.AkComponent.TriggerEventWithRangedEmitter
 // (Final, Native, Public)
 // Parameters:
@@ -1676,7 +1697,7 @@ void UAkComponent::UseEarlyReflections(class UAkAuxBus* AuxBus, bool Left, bool 
 
 void UAkComponent::TriggerEventWithRangedEmitter(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.TriggerEventWithRangedEmitter");
 
@@ -1700,7 +1721,7 @@ void UAkComponent::TriggerEventWithRangedEmitter(bool bEnable)
 
 void UAkComponent::StopPlayingID(int StopEventID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.StopPlayingID");
 
@@ -1722,7 +1743,7 @@ void UAkComponent::StopPlayingID(int StopEventID)
 
 void UAkComponent::StopEventInRange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.StopEventInRange");
 
@@ -1743,7 +1764,7 @@ void UAkComponent::StopEventInRange()
 
 void UAkComponent::Stop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.Stop");
 
@@ -1768,7 +1789,7 @@ void UAkComponent::Stop()
 
 int UAkComponent::SetSwitch(const struct FString& SwitchGroup, const struct FString& SwitchState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetSwitch");
 
@@ -1795,7 +1816,7 @@ int UAkComponent::SetSwitch(const struct FString& SwitchGroup, const struct FStr
 
 void UAkComponent::SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed");
 
@@ -1820,7 +1841,7 @@ void UAkComponent::SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed)
 
 void UAkComponent::SetRTPCValueGlobally(const struct FString& RTPC, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetRTPCValueGlobally");
 
@@ -1847,7 +1868,7 @@ void UAkComponent::SetRTPCValueGlobally(const struct FString& RTPC, float Value)
 
 void UAkComponent::SetRTPCValue(const struct FString& RTPC, float Value, int InterpolationTimeMs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetRTPCValue");
 
@@ -1873,7 +1894,7 @@ void UAkComponent::SetRTPCValue(const struct FString& RTPC, float Value, int Int
 
 void UAkComponent::SetOutputBusVolume(float BusVolume)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetOutputBusVolume");
 
@@ -1897,7 +1918,7 @@ void UAkComponent::SetOutputBusVolume(float BusVolume)
 
 void UAkComponent::SetListeners(TArray<class UAkComponent*> Listeners)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetListeners");
 
@@ -1921,7 +1942,7 @@ void UAkComponent::SetListeners(TArray<class UAkComponent*> Listeners)
 
 void UAkComponent::SetEarlyReflectionOrder(int NewEarlyReflectionOrder)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetEarlyReflectionOrder");
 
@@ -1945,7 +1966,7 @@ void UAkComponent::SetEarlyReflectionOrder(int NewEarlyReflectionOrder)
 
 void UAkComponent::SetAutoDestroy(bool in_AutoDestroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetAutoDestroy");
 
@@ -1969,7 +1990,7 @@ void UAkComponent::SetAutoDestroy(bool in_AutoDestroy)
 
 void UAkComponent::SetAttenuationScalingFactor(float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetAttenuationScalingFactor");
 
@@ -1995,7 +2016,7 @@ void UAkComponent::SetAttenuationScalingFactor(float Value)
 
 int UAkComponent::SeekOnEvent(const struct FString& in_EventName, int in_iPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SeekOnEvent");
 
@@ -2022,7 +2043,7 @@ int UAkComponent::SeekOnEvent(const struct FString& in_EventName, int in_iPositi
 
 void UAkComponent::PostTrigger(const struct FString& Trigger)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostTrigger");
 
@@ -2047,7 +2068,7 @@ void UAkComponent::PostTrigger(const struct FString& Trigger)
 
 void UAkComponent::PostEventInRange(class UAkAudioEvent* AkEvent, float RangeSquare)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostEventInRange");
 
@@ -2070,7 +2091,7 @@ void UAkComponent::PostEventInRange(class UAkAudioEvent* AkEvent, float RangeSqu
 
 void UAkComponent::PostAssociatedAkEventInRage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAssociatedAkEventInRage");
 
@@ -2093,7 +2114,7 @@ void UAkComponent::PostAssociatedAkEventInRage()
 
 int UAkComponent::PostAssociatedAkEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAssociatedAkEvent");
 
@@ -2119,7 +2140,7 @@ int UAkComponent::PostAssociatedAkEvent()
 
 int UAkComponent::PostAkEventByName(const struct FString& in_EventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAkEventByName");
 
@@ -2147,7 +2168,7 @@ int UAkComponent::PostAkEventByName(const struct FString& in_EventName)
 
 int UAkComponent::PostAkEvent(class UAkAudioEvent* AkEvent, const struct FString& in_EventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAkEvent");
 
@@ -2174,7 +2195,7 @@ int UAkComponent::PostAkEvent(class UAkAudioEvent* AkEvent, const struct FString
 
 float UAkComponent::GetAttenuationRadius()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.GetAttenuationRadius");
 
@@ -2199,7 +2220,7 @@ float UAkComponent::GetAttenuationRadius()
 
 void UAkComponent::GetAkGameObjectName(struct FString* Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.GetAkGameObjectName");
 
@@ -2223,7 +2244,7 @@ void UAkComponent::GetAkGameObjectName(struct FString* Name)
 
 void UAkGameplayStatics::WakeupFromSuspend()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.WakeupFromSuspend");
 
@@ -2247,7 +2268,7 @@ void UAkGameplayStatics::WakeupFromSuspend()
 
 void UAkGameplayStatics::UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.UseReverbVolumes");
 
@@ -2281,7 +2302,7 @@ void UAkGameplayStatics::UseReverbVolumes(bool inUseReverbVolumes, class AActor*
 
 void UAkGameplayStatics::UseEarlyReflections(class AActor* Actor, class UAkAuxBus* AuxBus, bool Left, bool Right, bool floor, bool Ceiling, bool Back, bool Front, bool SpotReflectors, const struct FString& AuxBusName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.UseEarlyReflections");
 
@@ -2314,7 +2335,7 @@ void UAkGameplayStatics::UseEarlyReflections(class AActor* Actor, class UAkAuxBu
 
 void UAkGameplayStatics::UnloadBankByName(const struct FString& BankName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.UnloadBankByName");
 
@@ -2339,7 +2360,7 @@ void UAkGameplayStatics::UnloadBankByName(const struct FString& BankName)
 
 void UAkGameplayStatics::UnloadBank(class UAkAudioBank* Bank, const struct FString& BankName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.UnloadBank");
 
@@ -2362,7 +2383,7 @@ void UAkGameplayStatics::UnloadBank(class UAkAudioBank* Bank, const struct FStri
 
 void UAkGameplayStatics::Suspend()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.Suspend");
 
@@ -2383,7 +2404,7 @@ void UAkGameplayStatics::Suspend()
 
 void UAkGameplayStatics::StopProfilerCapture()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StopProfilerCapture");
 
@@ -2406,7 +2427,7 @@ void UAkGameplayStatics::StopProfilerCapture()
 
 void UAkGameplayStatics::StopPlayingID(int PlayingID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StopPlayingID");
 
@@ -2428,7 +2449,7 @@ void UAkGameplayStatics::StopPlayingID(int PlayingID)
 
 void UAkGameplayStatics::StopOutputCapture()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StopOutputCapture");
 
@@ -2451,7 +2472,7 @@ void UAkGameplayStatics::StopOutputCapture()
 
 void UAkGameplayStatics::StopAllAmbientSounds(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StopAllAmbientSounds");
 
@@ -2473,7 +2494,7 @@ void UAkGameplayStatics::StopAllAmbientSounds(class UObject* WorldContextObject)
 
 void UAkGameplayStatics::StopAll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StopAll");
 
@@ -2496,7 +2517,7 @@ void UAkGameplayStatics::StopAll()
 
 void UAkGameplayStatics::StopAkEventByID(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StopAkEventByID");
 
@@ -2520,7 +2541,7 @@ void UAkGameplayStatics::StopAkEventByID(int ID)
 
 void UAkGameplayStatics::StopActor(class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StopActor");
 
@@ -2544,7 +2565,7 @@ void UAkGameplayStatics::StopActor(class AActor* Actor)
 
 void UAkGameplayStatics::StartProfilerCapture(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StartProfilerCapture");
 
@@ -2568,7 +2589,7 @@ void UAkGameplayStatics::StartProfilerCapture(const struct FString& Filename)
 
 void UAkGameplayStatics::StartOutputCapture(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StartOutputCapture");
 
@@ -2592,7 +2613,7 @@ void UAkGameplayStatics::StartOutputCapture(const struct FString& Filename)
 
 void UAkGameplayStatics::StartAllAmbientSounds(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.StartAllAmbientSounds");
 
@@ -2625,7 +2646,7 @@ void UAkGameplayStatics::StartAllAmbientSounds(class UObject* WorldContextObject
 
 class UAkComponent* UAkGameplayStatics::SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class UAkAuxBus* EarlyReflectionsBus, const struct FVector& Location, const struct FRotator& Orientation, bool AutoPost, const struct FString& EventName, const struct FString& EarlyReflectionsBusName, bool AutoDestroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation");
 
@@ -2659,7 +2680,7 @@ class UAkComponent* UAkGameplayStatics::SpawnAkComponentAtLocation(class UObject
 
 void UAkGameplayStatics::ShowAKComponentPosition(bool _IsShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.ShowAKComponentPosition");
 
@@ -2685,7 +2706,7 @@ void UAkGameplayStatics::ShowAKComponentPosition(bool _IsShow)
 
 bool UAkGameplayStatics::ShouldPostEvent(class UObject* WorldContext, const struct FVector& VoicePosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.ShouldPostEvent");
 
@@ -2713,7 +2734,7 @@ bool UAkGameplayStatics::ShouldPostEvent(class UObject* WorldContext, const stru
 
 void UAkGameplayStatics::SetSwitchWithDummyActor(const struct FName& SwitchGroup, const struct FName& SwitchState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetSwitchWithDummyActor");
 
@@ -2740,7 +2761,7 @@ void UAkGameplayStatics::SetSwitchWithDummyActor(const struct FName& SwitchGroup
 
 void UAkGameplayStatics::SetSwitch(const struct FName& SwitchGroup, const struct FName& SwitchState, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetSwitch");
 
@@ -2768,7 +2789,7 @@ void UAkGameplayStatics::SetSwitch(const struct FName& SwitchGroup, const struct
 
 int UAkGameplayStatics::SetState(const struct FName& StateGroup, const struct FName& State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetState");
 
@@ -2798,7 +2819,7 @@ int UAkGameplayStatics::SetState(const struct FName& StateGroup, const struct FN
 
 void UAkGameplayStatics::SetRTPCValue(const struct FName& RTPC, float Value, int InterpolationTimeMs, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetRTPCValue");
 
@@ -2825,7 +2846,7 @@ void UAkGameplayStatics::SetRTPCValue(const struct FName& RTPC, float Value, int
 
 void UAkGameplayStatics::SetRegionIpMute(bool bMuted)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetRegionIpMute");
 
@@ -2849,7 +2870,7 @@ void UAkGameplayStatics::SetRegionIpMute(bool bMuted)
 
 void UAkGameplayStatics::SetPanningRule(EPanningRule PanRule)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetPanningRule");
 
@@ -2874,7 +2895,7 @@ void UAkGameplayStatics::SetPanningRule(EPanningRule PanRule)
 
 void UAkGameplayStatics::SetOutputBusVolume(float BusVolume, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetOutputBusVolume");
 
@@ -2899,7 +2920,7 @@ void UAkGameplayStatics::SetOutputBusVolume(float BusVolume, class AActor* Actor
 
 void UAkGameplayStatics::SetOcclusionScalingFactor(float ScalingFactor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetOcclusionScalingFactor");
 
@@ -2924,7 +2945,7 @@ void UAkGameplayStatics::SetOcclusionScalingFactor(float ScalingFactor)
 
 void UAkGameplayStatics::SetOcclusionRefreshInterval(float RefreshInterval, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetOcclusionRefreshInterval");
 
@@ -2950,7 +2971,7 @@ void UAkGameplayStatics::SetOcclusionRefreshInterval(float RefreshInterval, clas
 
 void UAkGameplayStatics::SetMultiplePositions(TArray<struct FTransform> InTransforms, class UAkComponent* AkComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetMultiplePositions");
 
@@ -2976,7 +2997,7 @@ void UAkGameplayStatics::SetMultiplePositions(TArray<struct FTransform> InTransf
 
 void UAkGameplayStatics::SetBusConfig(const struct FString& BusName, EAkChannelConfiguration ChannelConfiguration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SetBusConfig");
 
@@ -3006,7 +3027,7 @@ void UAkGameplayStatics::SetBusConfig(const struct FString& BusName, EAkChannelC
 
 int UAkGameplayStatics::SeekOnEvent(class UAkAudioEvent* in_pAkEvent, class AActor* in_pActor, int in_iPosition, const struct FString& EventName, bool in_bSeekToNearestMarker)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.SeekOnEvent");
 
@@ -3034,7 +3055,7 @@ int UAkGameplayStatics::SeekOnEvent(class UAkAudioEvent* in_pAkEvent, class AAct
 
 void UAkGameplayStatics::RefreshModDirectories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.RefreshModDirectories");
 
@@ -3058,7 +3079,7 @@ void UAkGameplayStatics::RefreshModDirectories()
 
 void UAkGameplayStatics::PostTrigger(const struct FName& Trigger, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostTrigger");
 
@@ -3088,7 +3109,7 @@ void UAkGameplayStatics::PostTrigger(const struct FName& Trigger, class AActor* 
 
 int UAkGameplayStatics::PostEventWithVolume(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, const struct FString& EventName, float Volume)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventWithVolume");
 
@@ -3121,7 +3142,7 @@ int UAkGameplayStatics::PostEventWithVolume(class UAkAudioEvent* AkEvent, class 
 
 int UAkGameplayStatics::PostEventWithDummyActor(class UAkAudioEvent* AkEvent, const struct FString& EventName, class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventWithDummyActor");
 
@@ -3152,7 +3173,7 @@ int UAkGameplayStatics::PostEventWithDummyActor(class UAkAudioEvent* AkEvent, co
 
 class UAkComponent* UAkGameplayStatics::PostEventInRange(class UAkAudioEvent* AkEvent, class AActor* Actor, float RangeSquare)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventInRange");
 
@@ -3182,7 +3203,7 @@ class UAkComponent* UAkGameplayStatics::PostEventInRange(class UAkAudioEvent* Ak
 
 void UAkGameplayStatics::PostEventByName(const struct FString& EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventByName");
 
@@ -3213,7 +3234,7 @@ void UAkGameplayStatics::PostEventByName(const struct FString& EventName, class 
 
 int UAkGameplayStatics::PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, const struct FName& AttachPointName, bool bStopWhenAttachedToDestroyed, const struct FString& EventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventAttached");
 
@@ -3249,7 +3270,7 @@ int UAkGameplayStatics::PostEventAttached(class UAkAudioEvent* AkEvent, class AA
 
 int UAkGameplayStatics::PostEventAtLocationWithVolume(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const struct FString& EventName, class UObject* WorldContextObject, float Volume)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventAtLocationWithVolume");
 
@@ -3283,7 +3304,7 @@ int UAkGameplayStatics::PostEventAtLocationWithVolume(class UAkAudioEvent* AkEve
 
 void UAkGameplayStatics::PostEventAtLocationByName(const struct FString& EventName, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventAtLocationByName");
 
@@ -3315,7 +3336,7 @@ void UAkGameplayStatics::PostEventAtLocationByName(const struct FString& EventNa
 
 int UAkGameplayStatics::PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const struct FString& EventName, class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEventAtLocation");
 
@@ -3349,7 +3370,7 @@ int UAkGameplayStatics::PostEventAtLocation(class UAkAudioEvent* AkEvent, const 
 
 int UAkGameplayStatics::PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, const struct FString& EventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.PostEvent");
 
@@ -3379,7 +3400,7 @@ int UAkGameplayStatics::PostEvent(class UAkAudioEvent* AkEvent, class AActor* Ac
 
 void UAkGameplayStatics::MuteListener(class APlayerController* Controller, int WindowID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.MuteListener");
 
@@ -3402,7 +3423,7 @@ void UAkGameplayStatics::MuteListener(class APlayerController* Controller, int W
 
 void UAkGameplayStatics::LoadInitBank()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.LoadInitBank");
 
@@ -3426,7 +3447,7 @@ void UAkGameplayStatics::LoadInitBank()
 
 void UAkGameplayStatics::LoadBanks(TArray<class UAkAudioBank*> SoundBanks, bool SynchronizeSoundBanks)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.LoadBanks");
 
@@ -3451,7 +3472,7 @@ void UAkGameplayStatics::LoadBanks(TArray<class UAkAudioBank*> SoundBanks, bool 
 
 void UAkGameplayStatics::LoadBankByName(const struct FString& BankName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.LoadBankByName");
 
@@ -3476,7 +3497,7 @@ void UAkGameplayStatics::LoadBankByName(const struct FString& BankName)
 
 void UAkGameplayStatics::LoadBank(class UAkAudioBank* Bank, const struct FString& BankName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.LoadBank");
 
@@ -3502,7 +3523,7 @@ void UAkGameplayStatics::LoadBank(class UAkAudioBank* Bank, const struct FString
 
 bool UAkGameplayStatics::IsGame(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.IsGame");
 
@@ -3528,7 +3549,7 @@ bool UAkGameplayStatics::IsGame(class UObject* WorldContextObject)
 
 bool UAkGameplayStatics::IsEditor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.IsEditor");
 
@@ -3554,7 +3575,7 @@ bool UAkGameplayStatics::IsEditor()
 
 int UAkGameplayStatics::GetSourcePlayPosition(int AkEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.GetSourcePlayPosition");
 
@@ -3580,7 +3601,7 @@ int UAkGameplayStatics::GetSourcePlayPosition(int AkEvent)
 
 float UAkGameplayStatics::GetOcclusionScalingFactor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.GetOcclusionScalingFactor");
 
@@ -3607,7 +3628,7 @@ float UAkGameplayStatics::GetOcclusionScalingFactor()
 
 bool UAkGameplayStatics::GetDefaultListenerLocation(class UObject* WorldContextObject, struct FVector* OutLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.GetDefaultListenerLocation");
 
@@ -3635,12 +3656,12 @@ bool UAkGameplayStatics::GetDefaultListenerLocation(class UObject* WorldContextO
 // class USceneComponent*         AttachToComponent              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // struct FName                   AttachPointName                (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 Location                       (Parm, IsPlainOldData)
-// TEnumAsByte<enum EAttachLocation> LocationType                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EAttachLocation>   LocationType                   (Parm, ZeroConstructor, IsPlainOldData)
 // class UAkComponent*            ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
-class UAkComponent* UAkGameplayStatics::GetAkComponent(class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<enum EAttachLocation> LocationType)
+class UAkComponent* UAkGameplayStatics::GetAkComponent(class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<EAttachLocation> LocationType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.GetAkComponent");
 
@@ -3667,7 +3688,7 @@ class UAkComponent* UAkGameplayStatics::GetAkComponent(class USceneComponent* At
 
 void UAkGameplayStatics::ClearBanks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.ClearBanks");
 
@@ -3692,7 +3713,7 @@ void UAkGameplayStatics::ClearBanks()
 
 void UAkGameplayStatics::AKSetRTPCValue(const struct FString& RTPC, float Value, bool in_bBypassInternalValueInterpolation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.AKSetRTPCValue");
 
@@ -3718,7 +3739,7 @@ void UAkGameplayStatics::AKSetRTPCValue(const struct FString& RTPC, float Value,
 
 void UAkGameplayStatics::AddOutputCaptureMarker(const struct FString& MarkerText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.AddOutputCaptureMarker");
 
@@ -3742,7 +3763,7 @@ void UAkGameplayStatics::AddOutputCaptureMarker(const struct FString& MarkerText
 
 void UAkGameplayStatics::AddModDirectory(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkGameplayStatics.AddModDirectory");
 
@@ -3764,7 +3785,7 @@ void UAkGameplayStatics::AddModDirectory(const struct FString& Path)
 
 void UAkRoomComponent::RemoveSpatialAudioRoom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkRoomComponent.RemoveSpatialAudioRoom");
 
@@ -3785,7 +3806,7 @@ void UAkRoomComponent::RemoveSpatialAudioRoom()
 
 void UAkRoomComponent::AddSpatialAudioRoom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkRoomComponent.AddSpatialAudioRoom");
 
@@ -3806,7 +3827,7 @@ void UAkRoomComponent::AddSpatialAudioRoom()
 
 void UAkSurfaceReflectorSetComponent::UpdateSurfaceReflectorSet()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet");
 
@@ -3827,7 +3848,7 @@ void UAkSurfaceReflectorSetComponent::UpdateSurfaceReflectorSet()
 
 void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet");
 
@@ -3848,7 +3869,7 @@ void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet()
 
 void UAkSurfaceReflectorSetComponent::RemoveSurfaceReflectorSet()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet");
 
@@ -3871,7 +3892,7 @@ void UAkSurfaceReflectorSetComponent::RemoveSurfaceReflectorSet()
 
 void UAudioOfflineVisual::StartBeatOffset(float Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioOfflineVisual.StartBeatOffset");
 
@@ -3893,7 +3914,7 @@ void UAudioOfflineVisual::StartBeatOffset(float Offset)
 
 void UAudioOfflineVisual::StartBeat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioOfflineVisual.StartBeat");
 
@@ -3914,7 +3935,7 @@ void UAudioOfflineVisual::StartBeat()
 
 void UAudioOfflineVisual::ResetBeatTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioOfflineVisual.ResetBeatTime");
 
@@ -3937,7 +3958,7 @@ void UAudioOfflineVisual::ResetBeatTime()
 
 void UAudioOfflineVisual::InitWithBeatTime(TArray<float> Datas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioOfflineVisual.InitWithBeatTime");
 
@@ -3961,7 +3982,7 @@ void UAudioOfflineVisual::InitWithBeatTime(TArray<float> Datas)
 
 void UAudioOfflineVisual::Init(TArray<struct FAudioOfflineVisualBeatData> Datas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioOfflineVisual.Init");
 
@@ -3987,7 +4008,7 @@ void UAudioOfflineVisual::Init(TArray<struct FAudioOfflineVisualBeatData> Datas)
 
 bool UAudioOfflineVisual::GetCurrentBeatByCustomTime(float InBeatSecondTime, struct FAudioOfflineVisualBeatData* Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioOfflineVisual.GetCurrentBeatByCustomTime");
 
@@ -4017,7 +4038,7 @@ bool UAudioOfflineVisual::GetCurrentBeatByCustomTime(float InBeatSecondTime, str
 
 bool UAudioOfflineVisual::GetCurrentBeat(struct FAudioOfflineVisualBeatData* Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioOfflineVisual.GetCurrentBeat");
 
@@ -4045,7 +4066,7 @@ bool UAudioOfflineVisual::GetCurrentBeat(struct FAudioOfflineVisualBeatData* Res
 
 bool UAudioVisual::TryInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.TryInit");
 
@@ -4068,7 +4089,7 @@ bool UAudioVisual::TryInit()
 
 void UAudioVisual::Reset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.Reset");
 
@@ -4091,7 +4112,7 @@ void UAudioVisual::Reset()
 
 bool UAudioVisual::IsInited()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.IsInited");
 
@@ -4116,7 +4137,7 @@ bool UAudioVisual::IsInited()
 
 float UAudioVisual::GetRMS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.GetRMS");
 
@@ -4141,7 +4162,7 @@ float UAudioVisual::GetRMS()
 
 float UAudioVisual::GetInstantEnergy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.GetInstantEnergy");
 
@@ -4167,7 +4188,7 @@ float UAudioVisual::GetInstantEnergy()
 
 float UAudioVisual::GetFrequencyVol(EFrequencyRange freqRange)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.GetFrequencyVol");
 
@@ -4197,7 +4218,7 @@ float UAudioVisual::GetFrequencyVol(EFrequencyRange freqRange)
 
 int UAudioVisual::GetFrequencyDataWithBin(EFrequencyRange freqRange, int nBin, bool bAbsolute, TArray<float>* pFreqData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.GetFrequencyDataWithBin");
 
@@ -4230,7 +4251,7 @@ int UAudioVisual::GetFrequencyDataWithBin(EFrequencyRange freqRange, int nBin, b
 
 int UAudioVisual::GetFrequencyData(EFrequencyRange freqRange, TArray<float>* pFreqData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.GetFrequencyData");
 
@@ -4262,7 +4283,7 @@ int UAudioVisual::GetFrequencyData(EFrequencyRange freqRange, TArray<float>* pFr
 
 int UAudioVisual::GetAudioSamplesWithBin(int nBin, bool bAbsolute, TArray<float>* pAudioData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.GetAudioSamplesWithBin");
 
@@ -4293,7 +4314,7 @@ int UAudioVisual::GetAudioSamplesWithBin(int nBin, bool bAbsolute, TArray<float>
 
 int UAudioVisual::GetAudioSamples(TArray<float>* pAudioData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisual.GetAudioSamples");
 
@@ -4322,7 +4343,7 @@ int UAudioVisual::GetAudioSamples(TArray<float>* pAudioData)
 
 class UAudioVisual* UAudioVisualBlueprintLibrary::GetAudioVisual(class UObject* Outer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisualBlueprintLibrary.GetAudioVisual");
 
@@ -4349,7 +4370,7 @@ class UAudioVisual* UAudioVisualBlueprintLibrary::GetAudioVisual(class UObject* 
 
 class UAudioOfflineVisual* UAudioVisualBlueprintLibrary::GetAudioOfflineVisual(class UObject* Outer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AkAudio.AudioVisualBlueprintLibrary.GetAudioOfflineVisual");
 

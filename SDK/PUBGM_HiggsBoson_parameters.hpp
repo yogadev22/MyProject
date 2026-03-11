@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function HiggsBoson.BaziState.OnControllerReconnected
 struct UBaziState_OnControllerReconnected_Params
@@ -674,13 +674,6 @@ struct UHiggsBosonComponent_OnBulletImpactEvent_Params
 {
 	class AActor*                                      InCauser;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  InImpactResult;                                           // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-};
-
-// Function HiggsBoson.HiggsBosonComponent.LuaNotifySecurityAbnormalJump
-struct UHiggsBosonComponent_LuaNotifySecurityAbnormalJump_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Velocity;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function HiggsBoson.HiggsBosonComponent.IsCharacterOwnerWerewolf

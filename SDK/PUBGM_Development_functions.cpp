@@ -1,19 +1,471 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+
+// Function Development.ActorClickPickerWidget.SetPickerEnabled
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorClickPickerWidget::SetPickerEnabled(bool bEnable)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorClickPickerWidget.SetPickerEnabled");
+
+	UActorClickPickerWidget_SetPickerEnabled_Params params;
+	params.bEnable = bEnable;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorClickPickerWidget.SetOwnerTab
+// (Final, Native, Public)
+// Parameters:
+// class UActorInspectorTab*      InOwnerTab                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorClickPickerWidget::SetOwnerTab(class UActorInspectorTab* InOwnerTab)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorClickPickerWidget.SetOwnerTab");
+
+	UActorClickPickerWidget_SetOwnerTab_Params params;
+	params.InOwnerTab = InOwnerTab;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorClickPickerWidget.IsPickerEnabled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UActorClickPickerWidget::IsPickerEnabled()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorClickPickerWidget.IsPickerEnabled");
+
+	UActorClickPickerWidget_IsPickerEnabled_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.SetTargetObject
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 InObject                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorPropertyMonitorWidget::SetTargetObject(class UObject* InObject)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.SetTargetObject");
+
+	UActorPropertyMonitorWidget_SetTargetObject_Params params;
+	params.InObject = InObject;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.SetTargetActor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorPropertyMonitorWidget::SetTargetActor(class AActor* InActor)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.SetTargetActor");
+
+	UActorPropertyMonitorWidget_SetTargetActor_Params params;
+	params.InActor = InActor;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.SetPropertyNames
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<struct FString>         PropertyNames                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void UActorPropertyMonitorWidget::SetPropertyNames(TArray<struct FString> PropertyNames)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.SetPropertyNames");
+
+	UActorPropertyMonitorWidget_SetPropertyNames_Params params;
+	params.PropertyNames = PropertyNames;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.SearchProperties
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SearchKeyword                  (Parm, ZeroConstructor)
+
+void UActorPropertyMonitorWidget::SearchProperties(const struct FString& SearchKeyword)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.SearchProperties");
+
+	UActorPropertyMonitorWidget_SearchProperties_Params params;
+	params.SearchKeyword = SearchKeyword;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.RefreshPropertyValues
+// (Final, Native, Public, BlueprintCallable)
+
+void UActorPropertyMonitorWidget::RefreshPropertyValues()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.RefreshPropertyValues");
+
+	UActorPropertyMonitorWidget_RefreshPropertyValues_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnSearchTextChanged
+// (Final, Native, Protected, HasOutParms)
+// Parameters:
+// struct FText                   Text                           (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UActorPropertyMonitorWidget::OnSearchTextChanged(const struct FText& Text)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnSearchTextChanged");
+
+	UActorPropertyMonitorWidget_OnSearchTextChanged_Params params;
+	params.Text = Text;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnScaleChanged
+// (Final, Native, Protected)
+// Parameters:
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorPropertyMonitorWidget::OnScaleChanged(float Value)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnScaleChanged");
+
+	UActorPropertyMonitorWidget_OnScaleChanged_Params params;
+	params.Value = Value;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnPropertyValueCommittedInternal
+// (Final, Native, Protected, HasOutParms)
+// Parameters:
+// struct FText                   Text                           (ConstParm, Parm, OutParm, ReferenceParm)
+// TEnumAsByte<ETextCommit>       CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorPropertyMonitorWidget::OnPropertyValueCommittedInternal(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnPropertyValueCommittedInternal");
+
+	UActorPropertyMonitorWidget_OnPropertyValueCommittedInternal_Params params;
+	params.Text = Text;
+	params.CommitMethod = CommitMethod;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnPropertyValueCommitted
+// (Final, Native, Protected, HasOutParms)
+// Parameters:
+// struct FText                   Text                           (ConstParm, Parm, OutParm, ReferenceParm)
+// TEnumAsByte<ETextCommit>       CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 PropertyName                   (Parm, ZeroConstructor)
+
+void UActorPropertyMonitorWidget::OnPropertyValueCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod, const struct FString& PropertyName)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnPropertyValueCommitted");
+
+	UActorPropertyMonitorWidget_OnPropertyValueCommitted_Params params;
+	params.Text = Text;
+	params.CommitMethod = CommitMethod;
+	params.PropertyName = PropertyName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnPropertyNameButtonClicked
+// (Final, Native, Protected)
+
+void UActorPropertyMonitorWidget::OnPropertyNameButtonClicked()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnPropertyNameButtonClicked");
+
+	UActorPropertyMonitorWidget_OnPropertyNameButtonClicked_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnOpacityChanged
+// (Final, Native, Protected)
+// Parameters:
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorPropertyMonitorWidget::OnOpacityChanged(float Value)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnOpacityChanged");
+
+	UActorPropertyMonitorWidget_OnOpacityChanged_Params params;
+	params.Value = Value;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnDragButtonReleased
+// (Final, Native, Protected)
+
+void UActorPropertyMonitorWidget::OnDragButtonReleased()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnDragButtonReleased");
+
+	UActorPropertyMonitorWidget_OnDragButtonReleased_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnDragButtonPressed
+// (Final, Native, Protected)
+
+void UActorPropertyMonitorWidget::OnDragButtonPressed()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnDragButtonPressed");
+
+	UActorPropertyMonitorWidget_OnDragButtonPressed_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnComponentSelectionChanged
+// (Final, Native, Protected)
+// Parameters:
+// struct FString                 SelectedItem                   (Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorPropertyMonitorWidget::OnComponentSelectionChanged(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnComponentSelectionChanged");
+
+	UActorPropertyMonitorWidget_OnComponentSelectionChanged_Params params;
+	params.SelectedItem = SelectedItem;
+	params.SelectionType = SelectionType;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnClickListenerButtonClicked
+// (Final, Native, Protected)
+
+void UActorPropertyMonitorWidget::OnClickListenerButtonClicked()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnClickListenerButtonClicked");
+
+	UActorPropertyMonitorWidget_OnClickListenerButtonClicked_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ActorPropertyMonitorWidget.OnAttachedActorSelectionChanged
+// (Final, Native, Protected)
+// Parameters:
+// struct FString                 SelectedItem                   (Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+
+void UActorPropertyMonitorWidget::OnAttachedActorSelectionChanged(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ActorPropertyMonitorWidget.OnAttachedActorSelectionChanged");
+
+	UActorPropertyMonitorWidget_OnAttachedActorSelectionChanged_Params params;
+	params.SelectedItem = SelectedItem;
+	params.SelectionType = SelectionType;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
 
 // Function Development.CloudGMHandle.InitCloudGM
 // (Final, Native, Public, BlueprintCallable)
 
 void UCloudGMHandle::InitCloudGM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.CloudGMHandle.InitCloudGM");
 
@@ -34,11 +486,258 @@ void UCloudGMHandle::InitCloudGM()
 
 void UCloudGMHandle::DestroyCloudGM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.CloudGMHandle.DestroyCloudGM");
 
 	UCloudGMHandle_DestroyCloudGM_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiFeatureWidget.SetFeatureVisible
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bVisible                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UImGuiFeatureWidget::SetFeatureVisible(bool bVisible)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.SetFeatureVisible");
+
+	UImGuiFeatureWidget_SetFeatureVisible_Params params;
+	params.bVisible = bVisible;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiFeatureWidget.SetFeatureEnabled
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bEnabled                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UImGuiFeatureWidget::SetFeatureEnabled(bool bEnabled)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.SetFeatureEnabled");
+
+	UImGuiFeatureWidget_SetFeatureEnabled_Params params;
+	params.bEnabled = bEnabled;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiFeatureWidget.IsFeatureVisible
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UImGuiFeatureWidget::IsFeatureVisible()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.IsFeatureVisible");
+
+	UImGuiFeatureWidget_IsFeatureVisible_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiFeatureWidget.IsFeatureEnabled
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UImGuiFeatureWidget::IsFeatureEnabled()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.IsFeatureEnabled");
+
+	UImGuiFeatureWidget_IsFeatureEnabled_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiFeatureWidget.GetOwnerWindow
+// (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AImGuiWindowBase*        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AImGuiWindowBase* UImGuiFeatureWidget::GetOwnerWindow()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.GetOwnerWindow");
+
+	UImGuiFeatureWidget_GetOwnerWindow_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiFeatureWidget.GetOwnerTab
+// (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UImGuiTabBase*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiTabBase* UImGuiFeatureWidget::GetOwnerTab()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.GetOwnerTab");
+
+	UImGuiFeatureWidget_GetOwnerTab_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiFeatureWidget.GetOwner
+// (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UObject*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UObject* UImGuiFeatureWidget::GetOwner()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.GetOwner");
+
+	UImGuiFeatureWidget_GetOwner_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiFeatureWidget.GetFeatureName
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UImGuiFeatureWidget::GetFeatureName()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.GetFeatureName");
+
+	UImGuiFeatureWidget_GetFeatureName_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiFeatureWidget.GetFeatureID
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+struct FName UImGuiFeatureWidget::GetFeatureID()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiFeatureWidget.GetFeatureID");
+
+	UImGuiFeatureWidget_GetFeatureID_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.DebugNameDisplayFeature.AddExcludedActorClass
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  ActorClass                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void UDebugNameDisplayFeature::AddExcludedActorClass(class UClass* ActorClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.DebugNameDisplayFeature.AddExcludedActorClass");
+
+	UDebugNameDisplayFeature_AddExcludedActorClass_Params params;
+	params.ActorClass = ActorClass;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -59,7 +758,7 @@ void UCloudGMHandle::DestroyCloudGM()
 
 void UGMCheatAI::TeleportAIToLoc(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.TeleportAIToLoc");
 
@@ -87,7 +786,7 @@ void UGMCheatAI::TeleportAIToLoc(float X, float Y, float Z)
 
 void UGMCheatAI::SpawnAITeam(int Num, int AITeamID, unsigned char Difficulty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.SpawnAITeam");
 
@@ -117,7 +816,7 @@ void UGMCheatAI::SpawnAITeam(int Num, int AITeamID, unsigned char Difficulty)
 
 void UGMCheatAI::SpawnAIPosi(int ID, int AITeamID, float PosiX, float PosiY, float PosiZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.SpawnAIPosi");
 
@@ -146,7 +845,7 @@ void UGMCheatAI::SpawnAIPosi(int ID, int AITeamID, float PosiX, float PosiY, flo
 
 void UGMCheatAI::SpawnAI(int Num, bool bSpawnAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.SpawnAI");
 
@@ -169,7 +868,7 @@ void UGMCheatAI::SpawnAI(int Num, bool bSpawnAll)
 
 void UGMCheatAI::RecordReviveTowerInDSReplay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.RecordReviveTowerInDSReplay");
 
@@ -195,7 +894,7 @@ void UGMCheatAI::RecordReviveTowerInDSReplay()
 
 void UGMCheatAI::MoveToAIWithClassName(const struct FString& AIClassName, float XOffset, float YOffset, float ZOffset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.MoveToAIWithClassName");
 
@@ -222,7 +921,7 @@ void UGMCheatAI::MoveToAIWithClassName(const struct FString& AIClassName, float 
 
 void UGMCheatAI::MoveToAIByDropItem(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.MoveToAIByDropItem");
 
@@ -244,7 +943,7 @@ void UGMCheatAI::MoveToAIByDropItem(int ItemId)
 
 void UGMCheatAI::MoveToAI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.MoveToAI");
 
@@ -268,7 +967,7 @@ void UGMCheatAI::MoveToAI()
 
 void UGMCheatAI::LogAIItemCount(int ItemId, float Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.LogAIItemCount");
 
@@ -293,7 +992,7 @@ void UGMCheatAI::LogAIItemCount(int ItemId, float Distance)
 
 void UGMCheatAI::FindAIDropItem(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.FindAIDropItem");
 
@@ -317,7 +1016,7 @@ void UGMCheatAI::FindAIDropItem(int ItemId)
 
 void UGMCheatAI::ChangeAIBehaviorTree(int TreeIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.ChangeAIBehaviorTree");
 
@@ -343,7 +1042,7 @@ void UGMCheatAI::ChangeAIBehaviorTree(int TreeIndex)
 
 void UGMCheatAI::AddAIItem(int ID, int Count, float Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAI.AddAIItem");
 
@@ -370,7 +1069,7 @@ void UGMCheatAI::AddAIItem(int ID, int Count, float Distance)
 
 void UGMCheatAnimation::TestAnimation(int Param1, bool Param2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAnimation.TestAnimation");
 
@@ -393,7 +1092,7 @@ void UGMCheatAnimation::TestAnimation(int Param1, bool Param2)
 
 void UGMCheatAnimation::DumpCharacterAnimBPVars()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAnimation.DumpCharacterAnimBPVars");
 
@@ -416,7 +1115,7 @@ void UGMCheatAnimation::DumpCharacterAnimBPVars()
 
 void UGMCheatAvatar::UseLocalWeaponDIYData(bool bFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.UseLocalWeaponDIYData");
 
@@ -438,7 +1137,7 @@ void UGMCheatAvatar::UseLocalWeaponDIYData(bool bFlag)
 
 void UGMCheatAvatar::UseLocalVehicleAvatar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.UseLocalVehicleAvatar");
 
@@ -461,7 +1160,7 @@ void UGMCheatAvatar::UseLocalVehicleAvatar()
 
 void UGMCheatAvatar::SetWeaponPendantShow(bool bShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetWeaponPendantShow");
 
@@ -486,7 +1185,7 @@ void UGMCheatAvatar::SetWeaponPendantShow(bool bShow)
 
 void UGMCheatAvatar::SetVehicleAvatar(int VehicleShapeType, int VehicleSkin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetVehicleAvatar");
 
@@ -511,7 +1210,7 @@ void UGMCheatAvatar::SetVehicleAvatar(int VehicleShapeType, int VehicleSkin)
 
 void UGMCheatAvatar::SetPlayerTeamBodyInstMask(int Mask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetPlayerTeamBodyInstMask");
 
@@ -535,7 +1234,7 @@ void UGMCheatAvatar::SetPlayerTeamBodyInstMask(int Mask)
 
 void UGMCheatAvatar::SetPlayerBodyInstMask(int Mask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetPlayerBodyInstMask");
 
@@ -560,7 +1259,7 @@ void UGMCheatAvatar::SetPlayerBodyInstMask(int Mask)
 
 void UGMCheatAvatar::SetGrenadeAvatar(int SubType, int EquipmentSkin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetGrenadeAvatar");
 
@@ -586,7 +1285,7 @@ void UGMCheatAvatar::SetGrenadeAvatar(int SubType, int EquipmentSkin)
 
 void UGMCheatAvatar::SetEquipmentAvatar(int EquipmentAvatarType, int EquipmentSkin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetEquipmentAvatar");
 
@@ -611,7 +1310,7 @@ void UGMCheatAvatar::SetEquipmentAvatar(int EquipmentAvatarType, int EquipmentSk
 
 void UGMCheatAvatar::SetEnableWingAvatar(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetEnableWingAvatar");
 
@@ -635,7 +1334,7 @@ void UGMCheatAvatar::SetEnableWingAvatar(bool Val)
 
 void UGMCheatAvatar::SetDownloadInBattle(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetDownloadInBattle");
 
@@ -659,7 +1358,7 @@ void UGMCheatAvatar::SetDownloadInBattle(bool bEnable)
 
 void UGMCheatAvatar::SetAvatarDownloadInBattle(bool bEnableDownload)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.SetAvatarDownloadInBattle");
 
@@ -681,7 +1380,7 @@ void UGMCheatAvatar::SetAvatarDownloadInBattle(bool bEnableDownload)
 
 void UGMCheatAvatar::PrintMainCharAllAvatar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.PrintMainCharAllAvatar");
 
@@ -702,7 +1401,7 @@ void UGMCheatAvatar::PrintMainCharAllAvatar()
 
 void UGMCheatAvatar::PrintAllStaticBufferSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.PrintAllStaticBufferSize");
 
@@ -726,7 +1425,7 @@ void UGMCheatAvatar::PrintAllStaticBufferSize()
 
 void UGMCheatAvatar::DeleteVehicleAdvanceAvatar_Style(int VehicleSkin, int VehicleStyle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.DeleteVehicleAdvanceAvatar_Style");
 
@@ -752,7 +1451,7 @@ void UGMCheatAvatar::DeleteVehicleAdvanceAvatar_Style(int VehicleSkin, int Vehic
 
 void UGMCheatAvatar::DeleteVehicleAdvanceAvatar(int VehicleSkin, int ModelID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.DeleteVehicleAdvanceAvatar");
 
@@ -775,7 +1474,7 @@ void UGMCheatAvatar::DeleteVehicleAdvanceAvatar(int VehicleSkin, int ModelID)
 
 void UGMCheatAvatar::DebugWorldPlayerAvatarInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.DebugWorldPlayerAvatarInfo");
 
@@ -798,7 +1497,7 @@ void UGMCheatAvatar::DebugWorldPlayerAvatarInfo()
 
 void UGMCheatAvatar::DebugChangeWearIndex(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.DebugChangeWearIndex");
 
@@ -820,7 +1519,7 @@ void UGMCheatAvatar::DebugChangeWearIndex(int Index)
 
 void UGMCheatAvatar::ClearItemPathNotExistlist()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.ClearItemPathNotExistlist");
 
@@ -841,7 +1540,7 @@ void UGMCheatAvatar::ClearItemPathNotExistlist()
 
 void UGMCheatAvatar::ClearItemHandleNotExistlist()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.ClearItemHandleNotExistlist");
 
@@ -864,7 +1563,7 @@ void UGMCheatAvatar::ClearItemHandleNotExistlist()
 
 void UGMCheatAvatar::ClearCharacterAvatarHandlePool(bool bSelf)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.ClearCharacterAvatarHandlePool");
 
@@ -891,7 +1590,7 @@ void UGMCheatAvatar::ClearCharacterAvatarHandlePool(bool bSelf)
 
 void UGMCheatAvatar::ChangeBattleAvatar(int HeadAvatarID, int HairAvatarID, int InGender, int PutOffAvatar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.ChangeBattleAvatar");
 
@@ -919,7 +1618,7 @@ void UGMCheatAvatar::ChangeBattleAvatar(int HeadAvatarID, int HairAvatarID, int 
 
 void UGMCheatAvatar::AddWeaponPendantItem(int WeaponId, int pendantID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddWeaponPendantItem");
 
@@ -945,7 +1644,7 @@ void UGMCheatAvatar::AddWeaponPendantItem(int WeaponId, int pendantID)
 
 void UGMCheatAvatar::AddWeaponDIYPlan(int AvatarID, int DIYPlanID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddWeaponDIYPlan");
 
@@ -970,7 +1669,7 @@ void UGMCheatAvatar::AddWeaponDIYPlan(int AvatarID, int DIYPlanID)
 
 void UGMCheatAvatar::AddWeaponAvatar(int WeaponSkin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddWeaponAvatar");
 
@@ -995,7 +1694,7 @@ void UGMCheatAvatar::AddWeaponAvatar(int WeaponSkin)
 
 void UGMCheatAvatar::AddWeaponAttachmentAvatarSimple(int WeaponId, int WeaponAttachmentSkin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddWeaponAttachmentAvatarSimple");
 
@@ -1021,7 +1720,7 @@ void UGMCheatAvatar::AddWeaponAttachmentAvatarSimple(int WeaponId, int WeaponAtt
 
 void UGMCheatAvatar::AddWeaponAttachmentAvatar(int WeaponId, int WeaponAttachmentSkin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddWeaponAttachmentAvatar");
 
@@ -1046,7 +1745,7 @@ void UGMCheatAvatar::AddWeaponAttachmentAvatar(int WeaponId, int WeaponAttachmen
 
 void UGMCheatAvatar::AddVehicleAvatar(int VehicleSkin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddVehicleAvatar");
 
@@ -1071,7 +1770,7 @@ void UGMCheatAvatar::AddVehicleAvatar(int VehicleSkin)
 
 void UGMCheatAvatar::AddVehicleAdvanceAvatar_Style(int VehicleSkin, int VehicleStyle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddVehicleAdvanceAvatar_Style");
 
@@ -1100,7 +1799,7 @@ void UGMCheatAvatar::AddVehicleAdvanceAvatar_Style(int VehicleSkin, int VehicleS
 
 void UGMCheatAvatar::AddVehicleAdvanceAvatar(int VehicleSkin, int ModelID, int ColorID, int PatternID, int ParticleID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddVehicleAdvanceAvatar");
 
@@ -1128,7 +1827,7 @@ void UGMCheatAvatar::AddVehicleAdvanceAvatar(int VehicleSkin, int ModelID, int C
 
 void UGMCheatAvatar::AddItemPathNotExistlist(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddItemPathNotExistlist");
 
@@ -1152,7 +1851,7 @@ void UGMCheatAvatar::AddItemPathNotExistlist(int ItemId)
 
 void UGMCheatAvatar::AddItemHandleNotExistlist(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatAvatar.AddItemHandleNotExistlist");
 
@@ -1176,7 +1875,7 @@ void UGMCheatAvatar::AddItemHandleNotExistlist(int ItemId)
 
 void UGMCheatBackpack::UseItem(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.UseItem");
 
@@ -1200,7 +1899,7 @@ void UGMCheatBackpack::UseItem(int ID)
 
 void UGMCheatBackpack::FlushItem(int onlyStatic)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.FlushItem");
 
@@ -1224,7 +1923,7 @@ void UGMCheatBackpack::FlushItem(int onlyStatic)
 
 void UGMCheatBackpack::DropItemsWithType(int TypeItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.DropItemsWithType");
 
@@ -1248,7 +1947,7 @@ void UGMCheatBackpack::DropItemsWithType(int TypeItem)
 
 void UGMCheatBackpack::DropItem(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.DropItem");
 
@@ -1270,11 +1969,32 @@ void UGMCheatBackpack::DropItem(int ID)
 
 void UGMCheatBackpack::DropAllItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.DropAllItem");
 
 	UGMCheatBackpack_DropAllItem_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.GMCheatBackpack.DestroyPickUpActors
+// (Final, Exec, Native, Public)
+
+void UGMCheatBackpack::DestroyPickUpActors()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.DestroyPickUpActors");
+
+	UGMCheatBackpack_DestroyPickUpActors_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -1291,7 +2011,7 @@ void UGMCheatBackpack::DropAllItem()
 
 void UGMCheatBackpack::ClearBackpack()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.ClearBackpack");
 
@@ -1315,7 +2035,7 @@ void UGMCheatBackpack::ClearBackpack()
 
 void UGMCheatBackpack::BatchAddItemsString(TArray<struct FString> ItemDetailArray, bool bClearBackpack)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.BatchAddItemsString");
 
@@ -1341,7 +2061,7 @@ void UGMCheatBackpack::BatchAddItemsString(TArray<struct FString> ItemDetailArra
 
 void UGMCheatBackpack::BatchAddItemsFromFile(const struct FString& Filename, bool bClearBackpack)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.BatchAddItemsFromFile");
 
@@ -1366,7 +2086,7 @@ void UGMCheatBackpack::BatchAddItemsFromFile(const struct FString& Filename, boo
 
 void UGMCheatBackpack::AddItemString(const struct FString& ItemDetail)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.AddItemString");
 
@@ -1392,7 +2112,7 @@ void UGMCheatBackpack::AddItemString(const struct FString& ItemDetail)
 
 void UGMCheatBackpack::AddItemNew(const struct FString& ID, int Count, int PickupType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.AddItemNew");
 
@@ -1420,7 +2140,7 @@ void UGMCheatBackpack::AddItemNew(const struct FString& ID, int Count, int Picku
 
 void UGMCheatBackpack::AddItem(int ID, int Count, int PickupType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.AddItem");
 
@@ -1449,7 +2169,7 @@ void UGMCheatBackpack::AddItem(int ID, int Count, int PickupType)
 
 void UGMCheatBackpack::AddAvatarItem(int ID, int Color, int Pattern, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatBackpack.AddAvatarItem");
 
@@ -1476,7 +2196,7 @@ void UGMCheatBackpack::AddAvatarItem(int ID, int Color, int Pattern, int Num)
 
 void UGMCheatCharacter::ToggleUserCmdDeltaSendAck(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ToggleUserCmdDeltaSendAck");
 
@@ -1500,7 +2220,7 @@ void UGMCheatCharacter::ToggleUserCmdDeltaSendAck(bool Val)
 
 void UGMCheatCharacter::ToggleUserCmdDeltaFlag(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ToggleUserCmdDeltaFlag");
 
@@ -1524,7 +2244,7 @@ void UGMCheatCharacter::ToggleUserCmdDeltaFlag(bool Val)
 
 void UGMCheatCharacter::ToggleUserCmdDeltaCheckSum(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ToggleUserCmdDeltaCheckSum");
 
@@ -1548,7 +2268,7 @@ void UGMCheatCharacter::ToggleUserCmdDeltaCheckSum(bool Val)
 
 void UGMCheatCharacter::ToggleUserCmdDelta(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ToggleUserCmdDelta");
 
@@ -1572,7 +2292,7 @@ void UGMCheatCharacter::ToggleUserCmdDelta(bool Val)
 
 void UGMCheatCharacter::ToggleServerAcknowledgePossession(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ToggleServerAcknowledgePossession");
 
@@ -1596,7 +2316,7 @@ void UGMCheatCharacter::ToggleServerAcknowledgePossession(bool Val)
 
 void UGMCheatCharacter::ToggleCheatLocation(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ToggleCheatLocation");
 
@@ -1621,7 +2341,7 @@ void UGMCheatCharacter::ToggleCheatLocation(bool Val)
 
 void UGMCheatCharacter::TestLowProbCircle(bool UseLowProb, int LoopCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.TestLowProbCircle");
 
@@ -1646,7 +2366,7 @@ void UGMCheatCharacter::TestLowProbCircle(bool UseLowProb, int LoopCount)
 
 void UGMCheatCharacter::TestLaunchFly(float Speed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.TestLaunchFly");
 
@@ -1668,7 +2388,7 @@ void UGMCheatCharacter::TestLaunchFly(float Speed)
 
 void UGMCheatCharacter::TestAutoMoveToShootingMachine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.TestAutoMoveToShootingMachine");
 
@@ -1693,7 +2413,7 @@ void UGMCheatCharacter::TestAutoMoveToShootingMachine()
 
 void UGMCheatCharacter::TestAutoMoveToLocation(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.TestAutoMoveToLocation");
 
@@ -1719,7 +2439,7 @@ void UGMCheatCharacter::TestAutoMoveToLocation(float X, float Y, float Z)
 
 void UGMCheatCharacter::TestAutoMoveToCharacter(const struct FString& TargetPlayerUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.TestAutoMoveToCharacter");
 
@@ -1741,7 +2461,7 @@ void UGMCheatCharacter::TestAutoMoveToCharacter(const struct FString& TargetPlay
 
 void UGMCheatCharacter::TeamNoAlwaysRelevant()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.TeamNoAlwaysRelevant");
 
@@ -1762,7 +2482,7 @@ void UGMCheatCharacter::TeamNoAlwaysRelevant()
 
 void UGMCheatCharacter::SwitchViewTarget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SwitchViewTarget");
 
@@ -1786,7 +2506,7 @@ void UGMCheatCharacter::SwitchViewTarget()
 
 void UGMCheatCharacter::StartAirDropSpecified(float X, float Y)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.StartAirDropSpecified");
 
@@ -1813,7 +2533,7 @@ void UGMCheatCharacter::StartAirDropSpecified(float X, float Y)
 
 void UGMCheatCharacter::StartAirDropBackupEnter(float X, float Y, int MaxPlaneNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.StartAirDropBackupEnter");
 
@@ -1839,7 +2559,7 @@ void UGMCheatCharacter::StartAirDropBackupEnter(float X, float Y, int MaxPlaneNu
 
 void UGMCheatCharacter::StartAirDrop(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.StartAirDrop");
 
@@ -1865,7 +2585,7 @@ void UGMCheatCharacter::StartAirDrop(int Index)
 
 void UGMCheatCharacter::StartAirAttackSpecified(float X, float Y, float Radius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.StartAirAttackSpecified");
 
@@ -1891,7 +2611,7 @@ void UGMCheatCharacter::StartAirAttackSpecified(float X, float Y, float Radius)
 
 void UGMCheatCharacter::StartAirAttack(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.StartAirAttack");
 
@@ -1913,7 +2633,7 @@ void UGMCheatCharacter::StartAirAttack(int Index)
 
 void UGMCheatCharacter::ShowWeaponRecordInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ShowWeaponRecordInfo");
 
@@ -1934,7 +2654,7 @@ void UGMCheatCharacter::ShowWeaponRecordInfo()
 
 void UGMCheatCharacter::ShowVaultEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ShowVaultEnable");
 
@@ -1955,7 +2675,7 @@ void UGMCheatCharacter::ShowVaultEnable()
 
 void UGMCheatCharacter::ShowResultWeaponRecordInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ShowResultWeaponRecordInfo");
 
@@ -1976,7 +2696,7 @@ void UGMCheatCharacter::ShowResultWeaponRecordInfo()
 
 void UGMCheatCharacter::ShowAllRoles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ShowAllRoles");
 
@@ -1999,7 +2719,7 @@ void UGMCheatCharacter::ShowAllRoles()
 
 void UGMCheatCharacter::SetTimeSpeedFactor(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetTimeSpeedFactor");
 
@@ -2023,7 +2743,7 @@ void UGMCheatCharacter::SetTimeSpeedFactor(float Val)
 
 void UGMCheatCharacter::SetTimeSpeedCheck(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetTimeSpeedCheck");
 
@@ -2047,7 +2767,7 @@ void UGMCheatCharacter::SetTimeSpeedCheck(bool Val)
 
 void UGMCheatCharacter::SetSpeed(float Modifier)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetSpeed");
 
@@ -2071,7 +2791,7 @@ void UGMCheatCharacter::SetSpeed(float Modifier)
 
 void UGMCheatCharacter::SetMaxHealth(float HP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetMaxHealth");
 
@@ -2098,7 +2818,7 @@ void UGMCheatCharacter::SetMaxHealth(float HP)
 
 void UGMCheatCharacter::SetLowProbCircle(float X, float Y, float R, float Prob)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetLowProbCircle");
 
@@ -2127,7 +2847,7 @@ void UGMCheatCharacter::SetLowProbCircle(float X, float Y, float R, float Prob)
 
 void UGMCheatCharacter::SetCustomJumpPoint(float JmpX, float JmpY, float JmpRadius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetCustomJumpPoint");
 
@@ -2153,7 +2873,7 @@ void UGMCheatCharacter::SetCustomJumpPoint(float JmpX, float JmpY, float JmpRadi
 
 void UGMCheatCharacter::SetCircleCenter(const struct FString& PointString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetCircleCenter");
 
@@ -2179,7 +2899,7 @@ void UGMCheatCharacter::SetCircleCenter(const struct FString& PointString)
 
 void UGMCheatCharacter::SetCirCenterFixed(bool Enable, float X, float Y)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetCirCenterFixed");
 
@@ -2205,7 +2925,7 @@ void UGMCheatCharacter::SetCirCenterFixed(bool Enable, float X, float Y)
 
 void UGMCheatCharacter::SetAirDropEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetAirDropEnable");
 
@@ -2229,7 +2949,7 @@ void UGMCheatCharacter::SetAirDropEnable(bool Enable)
 
 void UGMCheatCharacter::SetAirAttackEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.SetAirAttackEnable");
 
@@ -2253,7 +2973,7 @@ void UGMCheatCharacter::SetAirAttackEnable(bool Enable)
 
 void UGMCheatCharacter::Set2x2ForceCircleLastR(float R)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.Set2x2ForceCircleLastR");
 
@@ -2279,7 +2999,7 @@ void UGMCheatCharacter::Set2x2ForceCircleLastR(float R)
 
 void UGMCheatCharacter::Set2x2ForceCircle(float X, float Y, float R)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.Set2x2ForceCircle");
 
@@ -2307,7 +3027,7 @@ void UGMCheatCharacter::Set2x2ForceCircle(float X, float Y, float R)
 
 void UGMCheatCharacter::Set2x2CircleCenter(int Index, float X, float Y)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.Set2x2CircleCenter");
 
@@ -2338,7 +3058,7 @@ void UGMCheatCharacter::Set2x2CircleCenter(int Index, float X, float Y)
 
 void UGMCheatCharacter::Set2x2Circle3Center(float X1, float Y1, float x2, float y2, float X3, float y3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.Set2x2Circle3Center");
 
@@ -2367,7 +3087,7 @@ void UGMCheatCharacter::Set2x2Circle3Center(float X1, float Y1, float x2, float 
 
 void UGMCheatCharacter::PrintMovementLog(int PrintLog)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.PrintMovementLog");
 
@@ -2389,7 +3109,7 @@ void UGMCheatCharacter::PrintMovementLog(int PrintLog)
 
 void UGMCheatCharacter::PrintDownCollision()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.PrintDownCollision");
 
@@ -2413,7 +3133,7 @@ void UGMCheatCharacter::PrintDownCollision()
 
 void UGMCheatCharacter::MoveToXY(float X, float Y)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.MoveToXY");
 
@@ -2438,7 +3158,7 @@ void UGMCheatCharacter::MoveToXY(float X, float Y)
 
 void UGMCheatCharacter::MoveToVehicle(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.MoveToVehicle");
 
@@ -2462,7 +3182,7 @@ void UGMCheatCharacter::MoveToVehicle(int ItemId)
 
 void UGMCheatCharacter::MoveToS(const struct FString& VectorString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.MoveToS");
 
@@ -2486,7 +3206,7 @@ void UGMCheatCharacter::MoveToS(const struct FString& VectorString)
 
 void UGMCheatCharacter::MoveToNearestVehicle(float IgnoreDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.MoveToNearestVehicle");
 
@@ -2510,7 +3230,7 @@ void UGMCheatCharacter::MoveToNearestVehicle(float IgnoreDistance)
 
 void UGMCheatCharacter::MoveToItem(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.MoveToItem");
 
@@ -2536,7 +3256,7 @@ void UGMCheatCharacter::MoveToItem(int ItemId)
 
 void UGMCheatCharacter::MoveTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.MoveTo");
 
@@ -2562,7 +3282,7 @@ void UGMCheatCharacter::MoveTo(float X, float Y, float Z)
 
 void UGMCheatCharacter::ModifyStreamingDistance(int Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ModifyStreamingDistance");
 
@@ -2586,7 +3306,7 @@ void UGMCheatCharacter::ModifyStreamingDistance(int Distance)
 
 void UGMCheatCharacter::KillSomeOne(const struct FString& InPlayerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.KillSomeOne");
 
@@ -2608,7 +3328,7 @@ void UGMCheatCharacter::KillSomeOne(const struct FString& InPlayerName)
 
 void UGMCheatCharacter::KillAll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.KillAll");
 
@@ -2631,33 +3351,12 @@ void UGMCheatCharacter::KillAll()
 
 void UGMCheatCharacter::Kill(int GivenNumber)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.Kill");
 
 	UGMCheatCharacter_Kill_Params params;
 	params.GivenNumber = GivenNumber;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Development.GMCheatCharacter.GMTestZengzuo
-// (Final, Exec, Native, Public)
-
-void UGMCheatCharacter::GMTestZengzuo()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.GMTestZengzuo");
-
-	UGMCheatCharacter_GMTestZengzuo_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -2676,7 +3375,7 @@ void UGMCheatCharacter::GMTestZengzuo()
 
 void UGMCheatCharacter::GMSetCampId(int CamID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.GMSetCampId");
 
@@ -2698,7 +3397,7 @@ void UGMCheatCharacter::GMSetCampId(int CamID)
 
 void UGMCheatCharacter::GetGameScreenSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.GetGameScreenSize");
 
@@ -2721,7 +3420,7 @@ void UGMCheatCharacter::GetGameScreenSize()
 
 void UGMCheatCharacter::ExecFollowTeammate(const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.ExecFollowTeammate");
 
@@ -2743,7 +3442,7 @@ void UGMCheatCharacter::ExecFollowTeammate(const struct FString& Name)
 
 void UGMCheatCharacter::DebugSprint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.DebugSprint");
 
@@ -2764,7 +3463,7 @@ void UGMCheatCharacter::DebugSprint()
 
 void UGMCheatCharacter::DebugPhysicsAsset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatCharacter.DebugPhysicsAsset");
 
@@ -2787,7 +3486,7 @@ void UGMCheatCharacter::DebugPhysicsAsset()
 
 void UGMCheatDump::DumpWeaponsToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpWeaponsToFile");
 
@@ -2811,7 +3510,7 @@ void UGMCheatDump::DumpWeaponsToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpVehicleToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpVehicleToFile");
 
@@ -2835,7 +3534,7 @@ void UGMCheatDump::DumpVehicleToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpVehicleAnimInstanceToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpVehicleAnimInstanceToFile");
 
@@ -2857,7 +3556,7 @@ void UGMCheatDump::DumpVehicleAnimInstanceToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpVehicleAnimInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpVehicleAnimInstance");
 
@@ -2878,7 +3577,7 @@ void UGMCheatDump::DumpVehicleAnimInstance()
 
 void UGMCheatDump::DumpVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpVehicle");
 
@@ -2901,7 +3600,7 @@ void UGMCheatDump::DumpVehicle()
 
 void UGMCheatDump::DumpSimulatedCharacterAnimInstanceToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpSimulatedCharacterAnimInstanceToFile");
 
@@ -2923,7 +3622,7 @@ void UGMCheatDump::DumpSimulatedCharacterAnimInstanceToFile(const struct FString
 
 void UGMCheatDump::DumpSimulatedCharacterAnimInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpSimulatedCharacterAnimInstance");
 
@@ -2947,7 +3646,7 @@ void UGMCheatDump::DumpSimulatedCharacterAnimInstance()
 
 void UGMCheatDump::DumpReticleTargetActorToFile(const struct FString& Filename, bool bPrintFunc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpReticleTargetActorToFile");
 
@@ -2972,7 +3671,7 @@ void UGMCheatDump::DumpReticleTargetActorToFile(const struct FString& Filename, 
 
 void UGMCheatDump::DumpReticleTargetActor(bool bPrintFunc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpReticleTargetActor");
 
@@ -2994,7 +3693,7 @@ void UGMCheatDump::DumpReticleTargetActor(bool bPrintFunc)
 
 void UGMCheatDump::DumpPlayerSkillInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpPlayerSkillInfo");
 
@@ -3017,7 +3716,7 @@ void UGMCheatDump::DumpPlayerSkillInfo()
 
 void UGMCheatDump::DumpPlayerInfoToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpPlayerInfoToFile");
 
@@ -3041,7 +3740,7 @@ void UGMCheatDump::DumpPlayerInfoToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpPlayerControllerToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpPlayerControllerToFile");
 
@@ -3063,7 +3762,7 @@ void UGMCheatDump::DumpPlayerControllerToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpPlayerController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpPlayerController");
 
@@ -3086,7 +3785,7 @@ void UGMCheatDump::DumpPlayerController()
 
 void UGMCheatDump::DumpPlayerCameraManagerToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpPlayerCameraManagerToFile");
 
@@ -3110,7 +3809,7 @@ void UGMCheatDump::DumpPlayerCameraManagerToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpObservingCharacterToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpObservingCharacterToFile");
 
@@ -3132,7 +3831,7 @@ void UGMCheatDump::DumpObservingCharacterToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpObservingCharacter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpObservingCharacter");
 
@@ -3155,7 +3854,7 @@ void UGMCheatDump::DumpObservingCharacter()
 
 void UGMCheatDump::DumpObjectProperties(const struct FString& ObjectName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpObjectProperties");
 
@@ -3179,7 +3878,7 @@ void UGMCheatDump::DumpObjectProperties(const struct FString& ObjectName)
 
 void UGMCheatDump::DumpCharacterToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpCharacterToFile");
 
@@ -3203,7 +3902,7 @@ void UGMCheatDump::DumpCharacterToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpCharacterAnimInstanceToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpCharacterAnimInstanceToFile");
 
@@ -3225,7 +3924,7 @@ void UGMCheatDump::DumpCharacterAnimInstanceToFile(const struct FString& Filenam
 
 void UGMCheatDump::DumpCharacterAnimInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpCharacterAnimInstance");
 
@@ -3246,7 +3945,7 @@ void UGMCheatDump::DumpCharacterAnimInstance()
 
 void UGMCheatDump::DumpCharacter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpCharacter");
 
@@ -3269,7 +3968,7 @@ void UGMCheatDump::DumpCharacter()
 
 void UGMCheatDump::DumpAllVehiclesToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllVehiclesToFile");
 
@@ -3291,7 +3990,7 @@ void UGMCheatDump::DumpAllVehiclesToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpAllVehicles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllVehicles");
 
@@ -3314,7 +4013,7 @@ void UGMCheatDump::DumpAllVehicles()
 
 void UGMCheatDump::DumpAllSkillActorsInfoToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllSkillActorsInfoToFile");
 
@@ -3336,7 +4035,7 @@ void UGMCheatDump::DumpAllSkillActorsInfoToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpAllSkillActorsInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllSkillActorsInfo");
 
@@ -3359,7 +4058,7 @@ void UGMCheatDump::DumpAllSkillActorsInfo()
 
 void UGMCheatDump::DumpAllPlayerControllerToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllPlayerControllerToFile");
 
@@ -3381,7 +4080,7 @@ void UGMCheatDump::DumpAllPlayerControllerToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpAllPlayerController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllPlayerController");
 
@@ -3405,7 +4104,7 @@ void UGMCheatDump::DumpAllPlayerController()
 
 void UGMCheatDump::DumpAllCustomActorsInfoToFile(class UClass* DesiredClass, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllCustomActorsInfoToFile");
 
@@ -3430,7 +4129,7 @@ void UGMCheatDump::DumpAllCustomActorsInfoToFile(class UClass* DesiredClass, con
 
 void UGMCheatDump::DumpAllCustomActorsInfo(class UClass* DesiredClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllCustomActorsInfo");
 
@@ -3454,7 +4153,7 @@ void UGMCheatDump::DumpAllCustomActorsInfo(class UClass* DesiredClass)
 
 void UGMCheatDump::DumpAllCharactersToFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllCharactersToFile");
 
@@ -3476,7 +4175,7 @@ void UGMCheatDump::DumpAllCharactersToFile(const struct FString& Filename)
 
 void UGMCheatDump::DumpAllCharacters()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatDump.DumpAllCharacters");
 
@@ -3497,7 +4196,7 @@ void UGMCheatDump::DumpAllCharacters()
 
 void UGMCheatGameFlow::StartReadyCountDown()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatGameFlow.StartReadyCountDown");
 
@@ -3520,7 +4219,7 @@ void UGMCheatGameFlow::StartReadyCountDown()
 
 void UGMCheatGameFlow::SetStateLeftTime(int LeftTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatGameFlow.SetStateLeftTime");
 
@@ -3542,7 +4241,7 @@ void UGMCheatGameFlow::SetStateLeftTime(int LeftTime)
 
 void UGMCheatGameFlow::GotoFlying()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatGameFlow.GotoFlying");
 
@@ -3563,7 +4262,7 @@ void UGMCheatGameFlow::GotoFlying()
 
 void UGMCheatGameFlow::GameModeGotoNextState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatGameFlow.GameModeGotoNextState");
 
@@ -3584,7 +4283,7 @@ void UGMCheatGameFlow::GameModeGotoNextState()
 
 void UGMCheatGameFlow::GameModeGotoFightingState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatGameFlow.GameModeGotoFightingState");
 
@@ -3607,7 +4306,7 @@ void UGMCheatGameFlow::GameModeGotoFightingState()
 
 void UGMCheatGameFlow::DsLuaGM(const struct FString& CmdString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatGameFlow.DsLuaGM");
 
@@ -3631,7 +4330,7 @@ void UGMCheatGameFlow::DsLuaGM(const struct FString& CmdString)
 
 void UGMCheatGameFlow::DsLuaDoString(const struct FString& LuaString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatGameFlow.DsLuaDoString");
 
@@ -3653,7 +4352,7 @@ void UGMCheatGameFlow::DsLuaDoString(const struct FString& LuaString)
 
 void UGMCheatHiggs::TriggerActorChannelErrorDelegate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.TriggerActorChannelErrorDelegate");
 
@@ -3676,7 +4375,7 @@ void UGMCheatHiggs::TriggerActorChannelErrorDelegate()
 
 void UGMCheatHiggs::TestSpawnStaticmesh(int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.TestSpawnStaticmesh");
 
@@ -3701,7 +4400,7 @@ void UGMCheatHiggs::TestSpawnStaticmesh(int Count)
 
 void UGMCheatHiggs::TestGMCheatHiggs(int Param1, bool Param2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.TestGMCheatHiggs");
 
@@ -3727,7 +4426,7 @@ void UGMCheatHiggs::TestGMCheatHiggs(int Param1, bool Param2)
 
 void UGMCheatHiggs::TestGlueHia(int GlueType, int GlueValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.TestGlueHia");
 
@@ -3752,7 +4451,7 @@ void UGMCheatHiggs::TestGlueHia(int GlueType, int GlueValue)
 
 void UGMCheatHiggs::StatCPU(int Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.StatCPU");
 
@@ -3776,7 +4475,7 @@ void UGMCheatHiggs::StatCPU(int Enable)
 
 void UGMCheatHiggs::SetOpenSecurityAlert(bool bOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.SetOpenSecurityAlert");
 
@@ -3799,7 +4498,7 @@ void UGMCheatHiggs::SetOpenSecurityAlert(bool bOpen)
 
 void UGMCheatHiggs::OnFinishAsyncLoadResource(const struct FSoftObjectPath& SoftObjectPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.OnFinishAsyncLoadResource");
 
@@ -3823,7 +4522,7 @@ void UGMCheatHiggs::OnFinishAsyncLoadResource(const struct FSoftObjectPath& Soft
 
 void UGMCheatHiggs::HiggsTestSyncLoad(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.HiggsTestSyncLoad");
 
@@ -3845,7 +4544,7 @@ void UGMCheatHiggs::HiggsTestSyncLoad(const struct FString& Path)
 
 void UGMCheatHiggs::HiggsTestForbitMove()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.HiggsTestForbitMove");
 
@@ -3868,7 +4567,7 @@ void UGMCheatHiggs::HiggsTestForbitMove()
 
 void UGMCheatHiggs::HiggsTestAsyncLoad(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.HiggsTestAsyncLoad");
 
@@ -3890,7 +4589,7 @@ void UGMCheatHiggs::HiggsTestAsyncLoad(const struct FString& Path)
 
 void UGMCheatHiggs::DebugReplaySampleLocAndRot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHiggs.DebugReplaySampleLocAndRot");
 
@@ -3911,7 +4610,7 @@ void UGMCheatHiggs::DebugReplaySampleLocAndRot()
 
 void UGMCheatHUD::ResetHUDDebugFunction()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHUD.ResetHUDDebugFunction");
 
@@ -3934,7 +4633,7 @@ void UGMCheatHUD::ResetHUDDebugFunction()
 
 void UGMCheatHUD::RemoveHUDDebugFunction(const struct FString& FuncName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHUD.RemoveHUDDebugFunction");
 
@@ -3959,7 +4658,7 @@ void UGMCheatHUD::RemoveHUDDebugFunction(const struct FString& FuncName)
 
 void UGMCheatHUD::EnableHUDDebug(bool bEnable, const struct FString& FuncName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHUD.EnableHUDDebug");
 
@@ -3985,7 +4684,7 @@ void UGMCheatHUD::EnableHUDDebug(bool bEnable, const struct FString& FuncName)
 
 void UGMCheatHUD::AddHUDDebugFunction(const struct FString& FuncName, bool bReset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatHUD.AddHUDDebugFunction");
 
@@ -4013,7 +4712,7 @@ void UGMCheatHUD::AddHUDDebugFunction(const struct FString& FuncName, bool bRese
 
 void UGMCheatLevel::SpawnActorWithPath(const struct FString& Path, float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.SpawnActorWithPath");
 
@@ -4040,7 +4739,7 @@ void UGMCheatLevel::SpawnActorWithPath(const struct FString& Path, float X, floa
 
 void UGMCheatLevel::ShutDownVehicleGenerate(bool IsOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.ShutDownVehicleGenerate");
 
@@ -4064,7 +4763,7 @@ void UGMCheatLevel::ShutDownVehicleGenerate(bool IsOpen)
 
 void UGMCheatLevel::ShutDownPickUpGenerate(bool IsOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.ShutDownPickUpGenerate");
 
@@ -4088,7 +4787,7 @@ void UGMCheatLevel::ShutDownPickUpGenerate(bool IsOpen)
 
 void UGMCheatLevel::ShutDownItemGenerate(bool IsOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.ShutDownItemGenerate");
 
@@ -4110,7 +4809,7 @@ void UGMCheatLevel::ShutDownItemGenerate(bool IsOpen)
 
 void UGMCheatLevel::ShowNavOperator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.ShowNavOperator");
 
@@ -4133,7 +4832,7 @@ void UGMCheatLevel::ShowNavOperator()
 
 void UGMCheatLevel::SetServerLevelLoadingMode(bool bNewLoadAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.SetServerLevelLoadingMode");
 
@@ -4157,7 +4856,7 @@ void UGMCheatLevel::SetServerLevelLoadingMode(bool bNewLoadAll)
 
 void UGMCheatLevel::SetPlaneEnabled(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.SetPlaneEnabled");
 
@@ -4184,7 +4883,7 @@ void UGMCheatLevel::SetPlaneEnabled(bool InEnable)
 
 void UGMCheatLevel::SetCustomFlightRoute(float StartX, float StartY, float EndX, float EndY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.SetCustomFlightRoute");
 
@@ -4209,7 +4908,7 @@ void UGMCheatLevel::SetCustomFlightRoute(float StartX, float StartY, float EndX,
 
 void UGMCheatLevel::RemoveAllDoors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.RemoveAllDoors");
 
@@ -4230,7 +4929,7 @@ void UGMCheatLevel::RemoveAllDoors()
 
 void UGMCheatLevel::PrintAllPickupWarpper()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.PrintAllPickupWarpper");
 
@@ -4251,7 +4950,7 @@ void UGMCheatLevel::PrintAllPickupWarpper()
 
 void UGMCheatLevel::LocalProfileFootprint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.LocalProfileFootprint");
 
@@ -4274,7 +4973,7 @@ void UGMCheatLevel::LocalProfileFootprint()
 
 void UGMCheatLevel::LoadAllLand(bool bLoadAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.LoadAllLand");
 
@@ -4298,7 +4997,7 @@ void UGMCheatLevel::LoadAllLand(bool bLoadAll)
 
 void UGMCheatLevel::GotoDoubleCircleEdge(float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GotoDoubleCircleEdge");
 
@@ -4320,7 +5019,7 @@ void UGMCheatLevel::GotoDoubleCircleEdge(float Z)
 
 void UGMCheatLevel::GMSetBoolPoisonCircle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMSetBoolPoisonCircle");
 
@@ -4341,7 +5040,7 @@ void UGMCheatLevel::GMSetBoolPoisonCircle()
 
 void UGMCheatLevel::GMSetBoolAirDrop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMSetBoolAirDrop");
 
@@ -4362,7 +5061,7 @@ void UGMCheatLevel::GMSetBoolAirDrop()
 
 void UGMCheatLevel::GMSetBoolAirAttack()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMSetBoolAirAttack");
 
@@ -4383,7 +5082,7 @@ void UGMCheatLevel::GMSetBoolAirAttack()
 
 void UGMCheatLevel::GMSetBoolAI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMSetBoolAI");
 
@@ -4404,7 +5103,7 @@ void UGMCheatLevel::GMSetBoolAI()
 
 void UGMCheatLevel::GMEnableRandom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMEnableRandom");
 
@@ -4425,7 +5124,7 @@ void UGMCheatLevel::GMEnableRandom()
 
 void UGMCheatLevel::GMEnableAllComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMEnableAllComponent");
 
@@ -4446,7 +5145,7 @@ void UGMCheatLevel::GMEnableAllComponent()
 
 void UGMCheatLevel::GMDisableRandom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMDisableRandom");
 
@@ -4467,7 +5166,7 @@ void UGMCheatLevel::GMDisableRandom()
 
 void UGMCheatLevel::GMDisableAllComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMDisableAllComponent");
 
@@ -4492,7 +5191,7 @@ void UGMCheatLevel::GMDisableAllComponent()
 
 void UGMCheatLevel::GMBeginCircle(int CurIndex, float PosX, float PosY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GMBeginCircle");
 
@@ -4518,7 +5217,7 @@ void UGMCheatLevel::GMBeginCircle(int CurIndex, float PosX, float PosY)
 
 struct FVector UGMCheatLevel::GetCurrentLevelOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.GetCurrentLevelOffset");
 
@@ -4541,7 +5240,7 @@ struct FVector UGMCheatLevel::GetCurrentLevelOffset()
 
 void UGMCheatLevel::EnableMyLandscapeDraw()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.EnableMyLandscapeDraw");
 
@@ -4562,7 +5261,7 @@ void UGMCheatLevel::EnableMyLandscapeDraw()
 
 void UGMCheatLevel::DisableMyLandscapeDraw()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.DisableMyLandscapeDraw");
 
@@ -4589,7 +5288,7 @@ void UGMCheatLevel::DisableMyLandscapeDraw()
 
 void UGMCheatLevel::DebugAirDropPickInfo(float DrawTime, float BoxDrawSize, float BoxDrawLineLength, float ListWrapperDrawSize, float ListWrapperDrawLineLength)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatLevel.DebugAirDropPickInfo");
 
@@ -4615,7 +5314,7 @@ void UGMCheatLevel::DebugAirDropPickInfo(float DrawTime, float BoxDrawSize, floa
 
 void UGMCheatManager::WatchReport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.WatchReport");
 
@@ -4640,7 +5339,7 @@ void UGMCheatManager::WatchReport()
 
 void UGMCheatManager::VehicleTowardTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.VehicleTowardTo");
 
@@ -4664,7 +5363,7 @@ void UGMCheatManager::VehicleTowardTo(float X, float Y, float Z)
 
 void UGMCheatManager::VehicleSpotLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.VehicleSpotLog");
 
@@ -4689,7 +5388,7 @@ void UGMCheatManager::VehicleSpotLog()
 
 void UGMCheatManager::VehicleMoveTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.VehicleMoveTo");
 
@@ -4720,7 +5419,7 @@ void UGMCheatManager::VehicleMoveTo(float X, float Y, float Z)
 
 void UGMCheatManager::VehicleMoveAndTowardTo(float X, float Y, float Z, float X1, float Y1, float Z1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.VehicleMoveAndTowardTo");
 
@@ -4752,7 +5451,7 @@ void UGMCheatManager::VehicleMoveAndTowardTo(float X, float Y, float Z, float X1
 
 void UGMCheatManager::UpdateTrainingRank(int TrainingType, int Level, int Top1wScore, int Score)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.UpdateTrainingRank");
 
@@ -4777,7 +5476,7 @@ void UGMCheatManager::UpdateTrainingRank(int TrainingType, int Level, int Top1wS
 
 void UGMCheatManager::ToggleSpringMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ToggleSpringMode");
 
@@ -4798,7 +5497,7 @@ void UGMCheatManager::ToggleSpringMode()
 
 void UGMCheatManager::ToggleSpringDebug()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ToggleSpringDebug");
 
@@ -4819,7 +5518,7 @@ void UGMCheatManager::ToggleSpringDebug()
 
 void UGMCheatManager::TogglePawnInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TogglePawnInfo");
 
@@ -4842,7 +5541,7 @@ void UGMCheatManager::TogglePawnInfo()
 
 void UGMCheatManager::TestStringSHA1(const struct FString& InStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestStringSHA1");
 
@@ -4864,7 +5563,7 @@ void UGMCheatManager::TestStringSHA1(const struct FString& InStr)
 
 void UGMCheatManager::TestReplayStreamerLastError()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestReplayStreamerLastError");
 
@@ -4887,7 +5586,7 @@ void UGMCheatManager::TestReplayStreamerLastError()
 
 void UGMCheatManager::TestPlayerLostEvent(int LostEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestPlayerLostEvent");
 
@@ -4909,7 +5608,7 @@ void UGMCheatManager::TestPlayerLostEvent(int LostEvent)
 
 void UGMCheatManager::TestPlayerBattleResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestPlayerBattleResult");
 
@@ -4930,7 +5629,7 @@ void UGMCheatManager::TestPlayerBattleResult()
 
 void UGMCheatManager::TestNetworkLost()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestNetworkLost");
 
@@ -4955,7 +5654,7 @@ void UGMCheatManager::TestNetworkLost()
 
 void UGMCheatManager::TestLineTrace(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestLineTrace");
 
@@ -4984,7 +5683,7 @@ void UGMCheatManager::TestLineTrace(float X, float Y, float Z)
 
 void UGMCheatManager::TestKillInfoPanel(int WeaponId, int Relationship, int WeaponAvatarID, int ClothID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestKillInfoPanel");
 
@@ -5012,7 +5711,7 @@ void UGMCheatManager::TestKillInfoPanel(int WeaponId, int Relationship, int Weap
 
 void UGMCheatManager::TestGameplayDataRecord(int UID, int RecordType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestGameplayDataRecord");
 
@@ -5037,7 +5736,7 @@ void UGMCheatManager::TestGameplayDataRecord(int UID, int RecordType)
 
 void UGMCheatManager::TestEnableRegionsLongDistanceSleep(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestEnableRegionsLongDistanceSleep");
 
@@ -5059,7 +5758,7 @@ void UGMCheatManager::TestEnableRegionsLongDistanceSleep(bool bEnable)
 
 void UGMCheatManager::TestDeactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestDeactivate");
 
@@ -5080,7 +5779,7 @@ void UGMCheatManager::TestDeactivate()
 
 void UGMCheatManager::TestCrash()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TestCrash");
 
@@ -5103,7 +5802,7 @@ void UGMCheatManager::TestCrash()
 
 void UGMCheatManager::TeleportToVehicleAI(int InIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TeleportToVehicleAI");
 
@@ -5129,7 +5828,7 @@ void UGMCheatManager::TeleportToVehicleAI(int InIndex)
 
 void UGMCheatManager::TeleportToPVEMonster(int ChapterID, int LevelID, int WaveID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TeleportToPVEMonster");
 
@@ -5157,7 +5856,7 @@ void UGMCheatManager::TeleportToPVEMonster(int ChapterID, int LevelID, int WaveI
 
 void UGMCheatManager::TeleportTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TeleportTo");
 
@@ -5183,7 +5882,7 @@ void UGMCheatManager::TeleportTo(float X, float Y, float Z)
 
 void UGMCheatManager::TeleportNearestVehicleAIToPercentOfPath(float InPercent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.TeleportNearestVehicleAIToPercentOfPath");
 
@@ -5208,7 +5907,7 @@ void UGMCheatManager::TeleportNearestVehicleAIToPercentOfPath(float InPercent)
 
 void UGMCheatManager::SwitchSocialIsland(int LandId, float Delay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SwitchSocialIsland");
 
@@ -5231,7 +5930,7 @@ void UGMCheatManager::SwitchSocialIsland(int LandId, float Delay)
 
 void UGMCheatManager::SwitchShowUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SwitchShowUI");
 
@@ -5252,7 +5951,7 @@ void UGMCheatManager::SwitchShowUI()
 
 void UGMCheatManager::SuperGMKillDS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SuperGMKillDS");
 
@@ -5275,7 +5974,7 @@ void UGMCheatManager::SuperGMKillDS()
 
 void UGMCheatManager::StopAllMonsterDSAnim(bool bStop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.StopAllMonsterDSAnim");
 
@@ -5297,7 +5996,7 @@ void UGMCheatManager::StopAllMonsterDSAnim(bool bStop)
 
 void UGMCheatManager::StatVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.StatVehicle");
 
@@ -5320,7 +6019,7 @@ void UGMCheatManager::StatVehicle()
 
 void UGMCheatManager::StarTPerforPlatTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.StarTPerforPlatTag");
 
@@ -5349,7 +6048,7 @@ void UGMCheatManager::StarTPerforPlatTag(const struct FString& TagName)
 
 void UGMCheatManager::SpawnVehicleWithPathAtPoint(const struct FString& Path, bool AroundMe, float X, float Y, float Z, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnVehicleWithPathAtPoint");
 
@@ -5379,7 +6078,7 @@ void UGMCheatManager::SpawnVehicleWithPathAtPoint(const struct FString& Path, bo
 
 void UGMCheatManager::SpawnTrainingAIAroundMe(int Num, int Range)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnTrainingAIAroundMe");
 
@@ -5407,7 +6106,7 @@ void UGMCheatManager::SpawnTrainingAIAroundMe(int Num, int Range)
 
 void UGMCheatManager::SpawnMonsterAround(int MonsterID, float Radius, int Num, bool bStopAI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnMonsterAround");
 
@@ -5434,7 +6133,7 @@ void UGMCheatManager::SpawnMonsterAround(int MonsterID, float Radius, int Num, b
 
 void UGMCheatManager::SpawnItemBySpotDefaultTag(const struct FString& DefaultTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnItemBySpotDefaultTag");
 
@@ -5458,7 +6157,7 @@ void UGMCheatManager::SpawnItemBySpotDefaultTag(const struct FString& DefaultTag
 
 void UGMCheatManager::SpawnGameFeatureActor(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnGameFeatureActor");
 
@@ -5484,7 +6183,7 @@ void UGMCheatManager::SpawnGameFeatureActor(const struct FString& Path)
 
 void UGMCheatManager::SpawnFakePlayer(int Num, bool bWithPet, bool bStopAI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnFakePlayer");
 
@@ -5508,7 +6207,7 @@ void UGMCheatManager::SpawnFakePlayer(int Num, bool bWithPet, bool bStopAI)
 
 void UGMCheatManager::SpawnDecal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnDecal");
 
@@ -5531,7 +6230,7 @@ void UGMCheatManager::SpawnDecal()
 
 void UGMCheatManager::SpawnBotForTest(int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnBotForTest");
 
@@ -5559,7 +6258,7 @@ void UGMCheatManager::SpawnBotForTest(int Num)
 
 void UGMCheatManager::SpawnAIAroundMe(int Num, float Range, bool HasWeapon, bool HasAvator, bool HasBackpack)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SpawnAIAroundMe");
 
@@ -5589,7 +6288,7 @@ void UGMCheatManager::SpawnAIAroundMe(int Num, float Range, bool HasWeapon, bool
 
 void UGMCheatManager::ShowScrollMsg(uint32_t MsgID, const struct FString& Param1, const struct FString& Param2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ShowScrollMsg");
 
@@ -5615,7 +6314,7 @@ void UGMCheatManager::ShowScrollMsg(uint32_t MsgID, const struct FString& Param1
 
 void UGMCheatManager::ShowPet(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ShowPet");
 
@@ -5642,7 +6341,7 @@ void UGMCheatManager::ShowPet(bool Enable)
 
 void UGMCheatManager::ShowOBMultiKillTips(const struct FString& PlayerName, int TeamID, int PlayerKillNum, int TeamKillNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ShowOBMultiKillTips");
 
@@ -5670,7 +6369,7 @@ void UGMCheatManager::ShowOBMultiKillTips(const struct FString& PlayerName, int 
 
 void UGMCheatManager::ShowHideGuide(int GuideID, bool bShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ShowHideGuide");
 
@@ -5695,7 +6394,7 @@ void UGMCheatManager::ShowHideGuide(int GuideID, bool bShow)
 
 void UGMCheatManager::ShowAllPlayersMarkIncludeAI(float VisDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ShowAllPlayersMarkIncludeAI");
 
@@ -5719,7 +6418,7 @@ void UGMCheatManager::ShowAllPlayersMarkIncludeAI(float VisDistance)
 
 void UGMCheatManager::ShowAKComponentPosition(bool _IsShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ShowAKComponentPosition");
 
@@ -5743,7 +6442,7 @@ void UGMCheatManager::ShowAKComponentPosition(bool _IsShow)
 
 void UGMCheatManager::SetWeatherPlaySpeed(float FSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetWeatherPlaySpeed");
 
@@ -5767,7 +6466,7 @@ void UGMCheatManager::SetWeatherPlaySpeed(float FSpeed)
 
 void UGMCheatManager::SetViewFPP(bool IsFPP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetViewFPP");
 
@@ -5791,7 +6490,7 @@ void UGMCheatManager::SetViewFPP(bool IsFPP)
 
 void UGMCheatManager::SetTouchMoveLog(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetTouchMoveLog");
 
@@ -5815,7 +6514,7 @@ void UGMCheatManager::SetTouchMoveLog(bool Enable)
 
 void UGMCheatManager::SetTouchMoveDelay(int DelayFrame)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetTouchMoveDelay");
 
@@ -5839,7 +6538,7 @@ void UGMCheatManager::SetTouchMoveDelay(int DelayFrame)
 
 void UGMCheatManager::SetSpringArm(unsigned char armFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetSpringArm");
 
@@ -5863,7 +6562,7 @@ void UGMCheatManager::SetSpringArm(unsigned char armFlag)
 
 void UGMCheatManager::SetSkillDup(int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetSkillDup");
 
@@ -5887,7 +6586,7 @@ void UGMCheatManager::SetSkillDup(int Count)
 
 void UGMCheatManager::SetRateScore(float RankScore)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetRateScore");
 
@@ -5911,7 +6610,7 @@ void UGMCheatManager::SetRateScore(float RankScore)
 
 void UGMCheatManager::SetNetSpeed(int NewSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetNetSpeed");
 
@@ -5935,7 +6634,7 @@ void UGMCheatManager::SetNetSpeed(int NewSpeed)
 
 void UGMCheatManager::SetNeckUp(float UpAngle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetNeckUp");
 
@@ -5959,7 +6658,7 @@ void UGMCheatManager::SetNeckUp(float UpAngle)
 
 void UGMCheatManager::SetNeckSpeed(float Speed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetNeckSpeed");
 
@@ -5983,7 +6682,7 @@ void UGMCheatManager::SetNeckSpeed(float Speed)
 
 void UGMCheatManager::SetNeckRight(float RightAngle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetNeckRight");
 
@@ -6007,7 +6706,7 @@ void UGMCheatManager::SetNeckRight(float RightAngle)
 
 void UGMCheatManager::SetNeckMax(float MaxAngle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetNeckMax");
 
@@ -6031,7 +6730,7 @@ void UGMCheatManager::SetNeckMax(float MaxAngle)
 
 void UGMCheatManager::SetNeckLeft(float LeftAngle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetNeckLeft");
 
@@ -6057,7 +6756,7 @@ void UGMCheatManager::SetNeckLeft(float LeftAngle)
 
 void UGMCheatManager::SetMonsterNumMultiple(int ChapterID, int LevelID, int DiffcultPerc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetMonsterNumMultiple");
 
@@ -6083,7 +6782,7 @@ void UGMCheatManager::SetMonsterNumMultiple(int ChapterID, int LevelID, int Diff
 
 void UGMCheatManager::SetMonsterNB(bool MonsterNB)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetMonsterNB");
 
@@ -6107,7 +6806,7 @@ void UGMCheatManager::SetMonsterNB(bool MonsterNB)
 
 void UGMCheatManager::SetMonsterHatred(float Hatred)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetMonsterHatred");
 
@@ -6129,7 +6828,7 @@ void UGMCheatManager::SetMonsterHatred(float Hatred)
 
 void UGMCheatManager::SetMaxFpsFromDevice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetMaxFpsFromDevice");
 
@@ -6152,7 +6851,7 @@ void UGMCheatManager::SetMaxFpsFromDevice()
 
 void UGMCheatManager::SetIsRender(bool IsRender)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetIsRender");
 
@@ -6176,7 +6875,7 @@ void UGMCheatManager::SetIsRender(bool IsRender)
 
 void UGMCheatManager::SetInactiveClearEnable(bool bNewActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetInactiveClearEnable");
 
@@ -6200,7 +6899,7 @@ void UGMCheatManager::SetInactiveClearEnable(bool bNewActive)
 
 void UGMCheatManager::SetHignPerformance(bool SetOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetHignPerformance");
 
@@ -6224,7 +6923,7 @@ void UGMCheatManager::SetHignPerformance(bool SetOpen)
 
 void UGMCheatManager::SetGVMemberID(int memberID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetGVMemberID");
 
@@ -6249,7 +6948,7 @@ void UGMCheatManager::SetGVMemberID(int memberID)
 
 void UGMCheatManager::SetFestivalAirDrop(bool bFestival, const struct FString& BoxMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetFestivalAirDrop");
 
@@ -6274,7 +6973,7 @@ void UGMCheatManager::SetFestivalAirDrop(bool bFestival, const struct FString& B
 
 void UGMCheatManager::SetFestivaGrenade(bool bFestival)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetFestivaGrenade");
 
@@ -6299,7 +6998,7 @@ void UGMCheatManager::SetFestivaGrenade(bool bFestival)
 
 void UGMCheatManager::SetDynamicWeather(int WeatherType, int EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetDynamicWeather");
 
@@ -6325,7 +7024,7 @@ void UGMCheatManager::SetDynamicWeather(int WeatherType, int EventType)
 
 void UGMCheatManager::SetDsSwitch(int InKey, const struct FString& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetDsSwitch");
 
@@ -6348,7 +7047,7 @@ void UGMCheatManager::SetDsSwitch(int InKey, const struct FString& InValue)
 
 void UGMCheatManager::SetDeliver()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetDeliver");
 
@@ -6372,7 +7071,7 @@ void UGMCheatManager::SetDeliver()
 
 void UGMCheatManager::SetDearDeathReduce(int Index, float ReduceFactor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetDearDeathReduce");
 
@@ -6397,7 +7096,7 @@ void UGMCheatManager::SetDearDeathReduce(int Index, float ReduceFactor)
 
 void UGMCheatManager::SetClearIslandEnable(bool bNewActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetClearIslandEnable");
 
@@ -6421,7 +7120,7 @@ void UGMCheatManager::SetClearIslandEnable(bool bNewActive)
 
 void UGMCheatManager::SetCameraLagEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetCameraLagEnable");
 
@@ -6445,7 +7144,7 @@ void UGMCheatManager::SetCameraLagEnable(bool Enable)
 
 void UGMCheatManager::SetCacheInputNum(int CacheNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetCacheInputNum");
 
@@ -6469,7 +7168,7 @@ void UGMCheatManager::SetCacheInputNum(int CacheNum)
 
 void UGMCheatManager::SetAnimEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetAnimEnable");
 
@@ -6493,7 +7192,7 @@ void UGMCheatManager::SetAnimEnable(bool Enable)
 
 void UGMCheatManager::SetAnimDebugInfo(bool debugAnimInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetAnimDebugInfo");
 
@@ -6517,7 +7216,7 @@ void UGMCheatManager::SetAnimDebugInfo(bool debugAnimInfo)
 
 void UGMCheatManager::SetAnimDebugGroup(bool debugAnimGroup)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetAnimDebugGroup");
 
@@ -6541,7 +7240,7 @@ void UGMCheatManager::SetAnimDebugGroup(bool debugAnimGroup)
 
 void UGMCheatManager::SetAllMonsterHp(int HP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.SetAllMonsterHp");
 
@@ -6565,7 +7264,7 @@ void UGMCheatManager::SetAllMonsterHp(int HP)
 
 void UGMCheatManager::ServerCMD(const struct FString& Cmd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ServerCMD");
 
@@ -6587,7 +7286,7 @@ void UGMCheatManager::ServerCMD(const struct FString& Cmd)
 
 void UGMCheatManager::ResumeAllLevelSequenceActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ResumeAllLevelSequenceActors");
 
@@ -6611,7 +7310,7 @@ void UGMCheatManager::ResumeAllLevelSequenceActors()
 
 void UGMCheatManager::ReplayRecoverReconnect(const struct FString& IP, const struct FString& Port)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ReplayRecoverReconnect");
 
@@ -6636,7 +7335,7 @@ void UGMCheatManager::ReplayRecoverReconnect(const struct FString& IP, const str
 
 void UGMCheatManager::ReplayRecoverGenerateDSCheckpoint(const struct FString& InReplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ReplayRecoverGenerateDSCheckpoint");
 
@@ -6661,7 +7360,7 @@ void UGMCheatManager::ReplayRecoverGenerateDSCheckpoint(const struct FString& In
 
 void UGMCheatManager::RenderTargetCompressTest(class UTexture* pTexture, const struct FVector& Posoffset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.RenderTargetCompressTest");
 
@@ -6686,7 +7385,7 @@ void UGMCheatManager::RenderTargetCompressTest(class UTexture* pTexture, const s
 
 void UGMCheatManager::RemoveTimeSwitch(int TimeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.RemoveTimeSwitch");
 
@@ -6708,7 +7407,7 @@ void UGMCheatManager::RemoveTimeSwitch(int TimeID)
 
 void UGMCheatManager::RefreshReconnectUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.RefreshReconnectUI");
 
@@ -6736,7 +7435,7 @@ void UGMCheatManager::RefreshReconnectUI()
 
 void UGMCheatManager::PVESpawnMonsterByPos(int MonsterID, int Num, float Radius, float PosX, float PosY, float PosZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVESpawnMonsterByPos");
 
@@ -6768,7 +7467,7 @@ void UGMCheatManager::PVESpawnMonsterByPos(int MonsterID, int Num, float Radius,
 
 void UGMCheatManager::PVESpawnMonsterByDistance(int MonsterID, int Num, float Radius, float FrontDist)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVESpawnMonsterByDistance");
 
@@ -6796,7 +7495,7 @@ void UGMCheatManager::PVESpawnMonsterByDistance(int MonsterID, int Num, float Ra
 
 void UGMCheatManager::PVESpawnMonster(int MonsterID, bool StopAI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVESpawnMonster");
 
@@ -6821,7 +7520,7 @@ void UGMCheatManager::PVESpawnMonster(int MonsterID, bool StopAI)
 
 void UGMCheatManager::PVESetTestMonster(class AActor* InMonster)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVESetTestMonster");
 
@@ -6843,7 +7542,7 @@ void UGMCheatManager::PVESetTestMonster(class AActor* InMonster)
 
 void UGMCheatManager::PVEResetMonsterTable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEResetMonsterTable");
 
@@ -6864,7 +7563,7 @@ void UGMCheatManager::PVEResetMonsterTable()
 
 void UGMCheatManager::PVEPrintMonsterCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEPrintMonsterCount");
 
@@ -6887,7 +7586,7 @@ void UGMCheatManager::PVEPrintMonsterCount()
 
 void UGMCheatManager::PVEPrintAllAnim(bool bPrintAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEPrintAllAnim");
 
@@ -6912,7 +7611,7 @@ void UGMCheatManager::PVEPrintAllAnim(bool bPrintAll)
 
 void UGMCheatManager::PVEPlayerTriggerSkill(int SkillID, int EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEPlayerTriggerSkill");
 
@@ -6938,7 +7637,7 @@ void UGMCheatManager::PVEPlayerTriggerSkill(int SkillID, int EventType)
 
 void UGMCheatManager::PVEPlayerStopSkill(int SkillID, int StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEPlayerStopSkill");
 
@@ -6964,7 +7663,7 @@ void UGMCheatManager::PVEPlayerStopSkill(int SkillID, int StopReason)
 
 void UGMCheatManager::PVEMonsterTriggerSkill(int SkillID, int EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEMonsterTriggerSkill");
 
@@ -6990,7 +7689,7 @@ void UGMCheatManager::PVEMonsterTriggerSkill(int SkillID, int EventType)
 
 void UGMCheatManager::PVEMonsterStopSkill(int SkillID, int StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEMonsterStopSkill");
 
@@ -7018,7 +7717,7 @@ void UGMCheatManager::PVEMonsterStopSkill(int SkillID, int StopReason)
 
 void UGMCheatManager::PVEMonsterRemoveBuffByID(int BuffID, int LayerCount, int CauserSkillID, bool CauseByPlayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEMonsterRemoveBuffByID");
 
@@ -7048,7 +7747,7 @@ void UGMCheatManager::PVEMonsterRemoveBuffByID(int BuffID, int LayerCount, int C
 
 void UGMCheatManager::PVEMonsterAddBuffByID(int BuffID, int LayerCount, int CauserSkillID, bool CauseByPlayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVEMonsterAddBuffByID");
 
@@ -7075,7 +7774,7 @@ void UGMCheatManager::PVEMonsterAddBuffByID(int BuffID, int LayerCount, int Caus
 
 void UGMCheatManager::PVECloseMonsterLimit(bool bCloseMonsterLimit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PVECloseMonsterLimit");
 
@@ -7101,7 +7800,7 @@ void UGMCheatManager::PVECloseMonsterLimit(bool bCloseMonsterLimit)
 
 void UGMCheatManager::PrintScreenDebug(int Key, float TimeToDisplay, const struct FString& DebugMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PrintScreenDebug");
 
@@ -7125,7 +7824,7 @@ void UGMCheatManager::PrintScreenDebug(int Key, float TimeToDisplay, const struc
 
 void UGMCheatManager::PrintRegionObjectList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PrintRegionObjectList");
 
@@ -7146,7 +7845,7 @@ void UGMCheatManager::PrintRegionObjectList()
 
 void UGMCheatManager::PrintPool()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PrintPool");
 
@@ -7167,7 +7866,7 @@ void UGMCheatManager::PrintPool()
 
 void UGMCheatManager::PrintHP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PrintHP");
 
@@ -7188,7 +7887,7 @@ void UGMCheatManager::PrintHP()
 
 void UGMCheatManager::PrintAllAnim()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PrintAllAnim");
 
@@ -7211,7 +7910,7 @@ void UGMCheatManager::PrintAllAnim()
 
 void UGMCheatManager::PrintAllActorLocationByClassName(const struct FString& InClassName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PrintAllActorLocationByClassName");
 
@@ -7235,7 +7934,7 @@ void UGMCheatManager::PrintAllActorLocationByClassName(const struct FString& InC
 
 void UGMCheatManager::PlayBornIslandSequence(bool bPlay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PlayBornIslandSequence");
 
@@ -7259,7 +7958,7 @@ void UGMCheatManager::PlayBornIslandSequence(bool bPlay)
 
 void UGMCheatManager::PauseAnim(bool bPause)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PauseAnim");
 
@@ -7281,7 +7980,7 @@ void UGMCheatManager::PauseAnim(bool bPause)
 
 void UGMCheatManager::PauseAllLevelSequenceActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PauseAllLevelSequenceActors");
 
@@ -7304,7 +8003,7 @@ void UGMCheatManager::PauseAllLevelSequenceActors()
 
 void UGMCheatManager::PacketSimulationLag(int InSimulationLag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.PacketSimulationLag");
 
@@ -7326,7 +8025,7 @@ void UGMCheatManager::PacketSimulationLag(int InSimulationLag)
 
 void UGMCheatManager::OpenHitTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.OpenHitTest");
 
@@ -7351,7 +8050,7 @@ void UGMCheatManager::OpenHitTest()
 
 void UGMCheatManager::OpenFixationFreeFallVelocity(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.OpenFixationFreeFallVelocity");
 
@@ -7377,7 +8076,7 @@ void UGMCheatManager::OpenFixationFreeFallVelocity(float X, float Y, float Z)
 
 void UGMCheatManager::NotifyGameModeParamsChanged(int NewDuration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.NotifyGameModeParamsChanged");
 
@@ -7401,7 +8100,7 @@ void UGMCheatManager::NotifyGameModeParamsChanged(int NewDuration)
 
 void UGMCheatManager::NativeSimulateAction(int SimActionType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.NativeSimulateAction");
 
@@ -7428,7 +8127,7 @@ void UGMCheatManager::NativeSimulateAction(int SimActionType)
 
 void UGMCheatManager::MoveSnake(bool bEnable, float moveInternal, float ForwardRate, float RightRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.MoveSnake");
 
@@ -7456,7 +8155,7 @@ void UGMCheatManager::MoveSnake(bool bEnable, float moveInternal, float ForwardR
 
 void UGMCheatManager::ModifyVehicleSyncServerData(float MinCorrectionInterval, float AllowMaxDiatanceSqAtServer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ModifyVehicleSyncServerData");
 
@@ -7479,7 +8178,7 @@ void UGMCheatManager::ModifyVehicleSyncServerData(float MinCorrectionInterval, f
 
 void UGMCheatManager::ModifyVehicleSyncClientData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ModifyVehicleSyncClientData");
 
@@ -7503,7 +8202,7 @@ void UGMCheatManager::ModifyVehicleSyncClientData()
 
 void UGMCheatManager::ModifyVehicleBuoyancy(float MeshDensity, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ModifyVehicleBuoyancy");
 
@@ -7528,7 +8227,7 @@ void UGMCheatManager::ModifyVehicleBuoyancy(float MeshDensity, int Index)
 
 void UGMCheatManager::MaxSimulationIterations(int V)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.MaxSimulationIterations");
 
@@ -7550,7 +8249,7 @@ void UGMCheatManager::MaxSimulationIterations(int V)
 
 void UGMCheatManager::MarkAPMLevelFinish()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.MarkAPMLevelFinish");
 
@@ -7574,7 +8273,7 @@ void UGMCheatManager::MarkAPMLevelFinish()
 
 void UGMCheatManager::MainCityConnectToDS(const struct FString& IP, const struct FString& Port)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.MainCityConnectToDS");
 
@@ -7597,7 +8296,7 @@ void UGMCheatManager::MainCityConnectToDS(const struct FString& IP, const struct
 
 void UGMCheatManager::LogNetWorkParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.LogNetWorkParams");
 
@@ -7621,7 +8320,7 @@ void UGMCheatManager::LogNetWorkParams()
 
 void UGMCheatManager::LogicAreaTest(int AreaType, const struct FString& str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.LogicAreaTest");
 
@@ -7644,7 +8343,7 @@ void UGMCheatManager::LogicAreaTest(int AreaType, const struct FString& str)
 
 void UGMCheatManager::LogAllBuffInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.LogAllBuffInfo");
 
@@ -7665,7 +8364,7 @@ void UGMCheatManager::LogAllBuffInfo()
 
 void UGMCheatManager::LogAllActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.LogAllActors");
 
@@ -7688,7 +8387,7 @@ void UGMCheatManager::LogAllActors()
 
 void UGMCheatManager::LocalConnectToLobbySrv(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.LocalConnectToLobbySrv");
 
@@ -7710,7 +8409,7 @@ void UGMCheatManager::LocalConnectToLobbySrv(const struct FString& URL)
 
 void UGMCheatManager::KillAllPVEBot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.KillAllPVEBot");
 
@@ -7731,7 +8430,7 @@ void UGMCheatManager::KillAllPVEBot()
 
 void UGMCheatManager::KillAllPlayers()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.KillAllPlayers");
 
@@ -7756,7 +8455,7 @@ void UGMCheatManager::KillAllPlayers()
 
 void UGMCheatManager::JankOpt_Spawn20AIBlockVolume(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.JankOpt_Spawn20AIBlockVolume");
 
@@ -7780,7 +8479,7 @@ void UGMCheatManager::JankOpt_Spawn20AIBlockVolume(float X, float Y, float Z)
 
 void UGMCheatManager::ItemSpotLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ItemSpotLog");
 
@@ -7801,7 +8500,7 @@ void UGMCheatManager::ItemSpotLog()
 
 void UGMCheatManager::InGameAndroidBack()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.InGameAndroidBack");
 
@@ -7822,7 +8521,7 @@ void UGMCheatManager::InGameAndroidBack()
 
 void UGMCheatManager::GotoSpectatingDirectly()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GotoSpectatingDirectly");
 
@@ -7843,7 +8542,7 @@ void UGMCheatManager::GotoSpectatingDirectly()
 
 void UGMCheatManager::GotoSpectating()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GotoSpectating");
 
@@ -7866,7 +8565,7 @@ void UGMCheatManager::GotoSpectating()
 
 void UGMCheatManager::GotoSpecificWeather(int WeatherIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GotoSpecificWeather");
 
@@ -7890,7 +8589,7 @@ void UGMCheatManager::GotoSpecificWeather(int WeatherIdx)
 
 void UGMCheatManager::GMWayPointEvent(int EventID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMWayPointEvent");
 
@@ -7914,7 +8613,7 @@ void UGMCheatManager::GMWayPointEvent(int EventID)
 
 void UGMCheatManager::GMUseGunCollision(bool bIsUse)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMUseGunCollision");
 
@@ -7936,7 +8635,7 @@ void UGMCheatManager::GMUseGunCollision(bool bIsUse)
 
 void UGMCheatManager::GMSuicideCurVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSuicideCurVehicle");
 
@@ -7957,7 +8656,7 @@ void UGMCheatManager::GMSuicideCurVehicle()
 
 void UGMCheatManager::GMSuicide()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSuicide");
 
@@ -7981,7 +8680,7 @@ void UGMCheatManager::GMSuicide()
 
 void UGMCheatManager::GMStopAI(bool bStop, uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMStopAI");
 
@@ -7999,33 +8698,12 @@ void UGMCheatManager::GMStopAI(bool bStop, uint32_t InPlayerKey)
 }
 
 
-// Function Development.GMCheatManager.GMSpeedUp
-// (Final, Exec, Native, Public, BlueprintCallable)
-
-void UGMCheatManager::GMSpeedUp()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpeedUp");
-
-	UGMCheatManager_GMSpeedUp_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
 // Function Development.GMCheatManager.GMSpawnSociallandSubVehicle01
 // (Final, Exec, Native, Public)
 
 void UGMCheatManager::GMSpawnSociallandSubVehicle01()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnSociallandSubVehicle01");
 
@@ -8059,7 +8737,7 @@ void UGMCheatManager::GMSpawnSociallandSubVehicle01()
 
 void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundPointWithAvatarList(uint32_t DataOffset, uint32_t AINum, float X, float Y, float Z, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet, bool bWithEqui, bool bWithWeapon, struct FString* AvatarList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnSocialLandPlayerAIAroundPointWithAvatarList");
 
@@ -8106,7 +8784,7 @@ void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundPointWithAvatarList(uint32_
 
 void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundPoint(uint32_t DataOffset, uint32_t AINum, float X, float Y, float Z, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet, bool bWithEqui, bool bWithWeapon)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnSocialLandPlayerAIAroundPoint");
 
@@ -8147,7 +8825,7 @@ void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundPoint(uint32_t DataOffset, 
 
 void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundMeWithAvatar(uint32_t AINum, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet, bool bWithEqui, bool bWithWeapon, struct FString* AvatarList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnSocialLandPlayerAIAroundMeWithAvatar");
 
@@ -8186,7 +8864,7 @@ void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundMeWithAvatar(uint32_t AINum
 
 void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundMe(uint32_t AINum, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet, bool bWithEqui, bool bWithWeapon)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnSocialLandPlayerAIAroundMe");
 
@@ -8214,7 +8892,7 @@ void UGMCheatManager::GMSpawnSocialLandPlayerAIAroundMe(uint32_t AINum, float fR
 
 void UGMCheatManager::GMSpawnSmartBearerTestPlane()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnSmartBearerTestPlane");
 
@@ -8244,7 +8922,7 @@ void UGMCheatManager::GMSpawnSmartBearerTestPlane()
 
 void UGMCheatManager::GMSpawnSingleSocialLandPlayerAI(uint32_t DataOffset, float X, float Y, float Z, bool bActiveAI, bool IsAIInvincible, bool bWithPet, bool bWithEqui)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnSingleSocialLandPlayerAI");
 
@@ -8282,7 +8960,7 @@ void UGMCheatManager::GMSpawnSingleSocialLandPlayerAI(uint32_t DataOffset, float
 
 void UGMCheatManager::GMSpawnPlayerAIAroundPointDownloadable(uint32_t iNum, float X, float Y, float Z, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnPlayerAIAroundPointDownloadable");
 
@@ -8320,7 +8998,7 @@ void UGMCheatManager::GMSpawnPlayerAIAroundPointDownloadable(uint32_t iNum, floa
 
 void UGMCheatManager::GMSpawnPlayerAIAroundPoint(uint32_t iNum, float X, float Y, float Z, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnPlayerAIAroundPoint");
 
@@ -8355,7 +9033,7 @@ void UGMCheatManager::GMSpawnPlayerAIAroundPoint(uint32_t iNum, float X, float Y
 
 void UGMCheatManager::GMSpawnPlayerAIAroundMeDownloadable(uint32_t iNum, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnPlayerAIAroundMeDownloadable");
 
@@ -8387,7 +9065,7 @@ void UGMCheatManager::GMSpawnPlayerAIAroundMeDownloadable(uint32_t iNum, float f
 
 void UGMCheatManager::GMSpawnPlayerAIAroundMe(uint32_t iNum, float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnPlayerAIAroundMe");
 
@@ -8418,7 +9096,7 @@ void UGMCheatManager::GMSpawnPlayerAIAroundMe(uint32_t iNum, float fRadius, bool
 
 void UGMCheatManager::GMSpawnPickup(int SpawnNum, int PickupTypes, int Direction, float SpawnDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnPickup");
 
@@ -8449,7 +9127,7 @@ void UGMCheatManager::GMSpawnPickup(int SpawnNum, int PickupTypes, int Direction
 
 void UGMCheatManager::GMSpawnParticle(const struct FString& AssetPath, float X, float Y, float Z, float Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnParticle");
 
@@ -8477,7 +9155,7 @@ void UGMCheatManager::GMSpawnParticle(const struct FString& AssetPath, float X, 
 
 void UGMCheatManager::GMSpawnAutoTestAI(int NameExtraID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnAutoTestAI");
 
@@ -8513,7 +9191,7 @@ void UGMCheatManager::GMSpawnAutoTestAI(int NameExtraID)
 
 class AActor* UGMCheatManager::GMSpawnAIWithIDAndLoc(int AIID, float SpawnLocX, float SpawnLocY, float SpawnLocZ, float Radius, int TeamID, int ItemID1, int ItemNum1, int ItemID2, int ItemNum2, int ItemID3, int ItemNum3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnAIWithIDAndLoc");
 
@@ -8548,7 +9226,7 @@ class AActor* UGMCheatManager::GMSpawnAIWithIDAndLoc(int AIID, float SpawnLocX, 
 
 void UGMCheatManager::GMSpawnAIOnAIPoint3()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnAIOnAIPoint3");
 
@@ -8569,7 +9247,7 @@ void UGMCheatManager::GMSpawnAIOnAIPoint3()
 
 void UGMCheatManager::GMSpawnAIOnAIPoint2()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnAIOnAIPoint2");
 
@@ -8590,7 +9268,7 @@ void UGMCheatManager::GMSpawnAIOnAIPoint2()
 
 void UGMCheatManager::GMSpawnAIOnAIPoint1()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSpawnAIOnAIPoint1");
 
@@ -8615,7 +9293,7 @@ void UGMCheatManager::GMSpawnAIOnAIPoint1()
 
 void UGMCheatManager::GMSocialSetRotation(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSocialSetRotation");
 
@@ -8639,7 +9317,7 @@ void UGMCheatManager::GMSocialSetRotation(float X, float Y, float Z)
 
 void UGMCheatManager::GMSociallandPlayerMoveToTestPoint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSociallandPlayerMoveToTestPoint");
 
@@ -8660,7 +9338,7 @@ void UGMCheatManager::GMSociallandPlayerMoveToTestPoint()
 
 void UGMCheatManager::GMSociallandPlayerMoveToAISpawnPoint1()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSociallandPlayerMoveToAISpawnPoint1");
 
@@ -8684,7 +9362,7 @@ void UGMCheatManager::GMSociallandPlayerMoveToAISpawnPoint1()
 
 void UGMCheatManager::GMSociallandChangeItemFromStr(const struct FString& ItemString, const struct FString& EquimentItemString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSociallandChangeItemFromStr");
 
@@ -8709,7 +9387,7 @@ void UGMCheatManager::GMSociallandChangeItemFromStr(const struct FString& ItemSt
 
 void UGMCheatManager::GMShowHitFeedback(bool bCombatHitFeedbackEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMShowHitFeedback");
 
@@ -8733,7 +9411,7 @@ void UGMCheatManager::GMShowHitFeedback(bool bCombatHitFeedbackEnable)
 
 void UGMCheatManager::GMSetSpeed(float WalkSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetSpeed");
 
@@ -8757,7 +9435,7 @@ void UGMCheatManager::GMSetSpeed(float WalkSpeed)
 
 void UGMCheatManager::GMSetServerLevelLoadingMode(bool bNewLoadAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetServerLevelLoadingMode");
 
@@ -8781,7 +9459,7 @@ void UGMCheatManager::GMSetServerLevelLoadingMode(bool bNewLoadAll)
 
 void UGMCheatManager::GMSetPawnNull(bool bIsNull)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetPawnNull");
 
@@ -8805,7 +9483,7 @@ void UGMCheatManager::GMSetPawnNull(bool bIsNull)
 
 void UGMCheatManager::GMSetMLAIModifyDamage(int InIsModify)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetMLAIModifyDamage");
 
@@ -8829,7 +9507,7 @@ void UGMCheatManager::GMSetMLAIModifyDamage(int InIsModify)
 
 void UGMCheatManager::GMSetMaxAINum(int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetMaxAINum");
 
@@ -8853,7 +9531,7 @@ void UGMCheatManager::GMSetMaxAINum(int Num)
 
 void UGMCheatManager::GMSetJoystickEightDirection(bool IsNeedEightDirection)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetJoystickEightDirection");
 
@@ -8878,7 +9556,7 @@ void UGMCheatManager::GMSetJoystickEightDirection(bool IsNeedEightDirection)
 
 void UGMCheatManager::GMSetJoystickActivatedRange(bool IsNeedActivatedRange, float ActivatedRange)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetJoystickActivatedRange");
 
@@ -8903,7 +9581,7 @@ void UGMCheatManager::GMSetJoystickActivatedRange(bool IsNeedActivatedRange, flo
 
 void UGMCheatManager::GMSetHealth(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetHealth");
 
@@ -8927,7 +9605,7 @@ void UGMCheatManager::GMSetHealth(float Val)
 
 void UGMCheatManager::GMSetDeliveryToMLAI(int InIsDeliveryToMLAI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetDeliveryToMLAI");
 
@@ -8951,7 +9629,7 @@ void UGMCheatManager::GMSetDeliveryToMLAI(int InIsDeliveryToMLAI)
 
 void UGMCheatManager::GMSetCullDistance(bool bCullDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetCullDistance");
 
@@ -8976,7 +9654,7 @@ void UGMCheatManager::GMSetCullDistance(bool bCullDistance)
 
 void UGMCheatManager::GMSetCircleTime(float cdTime, float LastTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSetCircleTime");
 
@@ -9002,7 +9680,7 @@ void UGMCheatManager::GMSetCircleTime(float cdTime, float LastTime)
 
 void UGMCheatManager::GMSelectorWayPoint(const struct FName& NameOfAIWayPointSelector, int GMPathIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMSelectorWayPoint");
 
@@ -9025,7 +9703,7 @@ void UGMCheatManager::GMSelectorWayPoint(const struct FName& NameOfAIWayPointSel
 
 void UGMCheatManager::GMRevivePlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMRevivePlayer");
 
@@ -9048,7 +9726,7 @@ void UGMCheatManager::GMRevivePlayer()
 
 void UGMCheatManager::GMRainCount(float Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMRainCount");
 
@@ -9072,7 +9750,7 @@ void UGMCheatManager::GMRainCount(float Count)
 
 void UGMCheatManager::GMIOSFrameRateLock(int FrameRateLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMIOSFrameRateLock");
 
@@ -9096,7 +9774,7 @@ void UGMCheatManager::GMIOSFrameRateLock(int FrameRateLock)
 
 void UGMCheatManager::GMInvincible(bool bInvincible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMInvincible");
 
@@ -9118,7 +9796,7 @@ void UGMCheatManager::GMInvincible(bool bInvincible)
 
 void UGMCheatManager::GMIncreaseHealth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMIncreaseHealth");
 
@@ -9144,7 +9822,7 @@ void UGMCheatManager::GMIncreaseHealth()
 
 void UGMCheatManager::GMGatherAllPlayerAIAroundMe(float fRadius, bool bActiveAI, bool IsAIInvincible, bool bWithPet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMGatherAllPlayerAIAroundMe");
 
@@ -9169,7 +9847,7 @@ void UGMCheatManager::GMGatherAllPlayerAIAroundMe(float fRadius, bool bActiveAI,
 
 void UGMCheatManager::GMForceSuicide()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMForceSuicide");
 
@@ -9192,7 +9870,7 @@ void UGMCheatManager::GMForceSuicide()
 
 void UGMCheatManager::GMForceNullNetwork(int bForce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMForceNullNetwork");
 
@@ -9222,7 +9900,7 @@ void UGMCheatManager::GMForceNullNetwork(int bForce)
 
 void UGMCheatManager::GMDrawLine(float X1, float Y1, float Z1, float x2, float y2, float Z2, float LifeTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMDrawLine");
 
@@ -9259,7 +9937,7 @@ void UGMCheatManager::GMDrawLine(float X1, float Y1, float Z1, float x2, float y
 
 void UGMCheatManager::GMDrawDirLine(float StartX, float StartY, float StartZ, float DirX, float DirY, float DirZ, float Length, float LifeTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMDrawDirLine");
 
@@ -9295,7 +9973,7 @@ void UGMCheatManager::GMDrawDirLine(float StartX, float StartY, float StartZ, fl
 
 void UGMCheatManager::GMDrawDebugSphere2(float X, float Y, float Z, float Radius, int Segments, float LifeTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMDrawDebugSphere2");
 
@@ -9326,7 +10004,7 @@ void UGMCheatManager::GMDrawDebugSphere2(float X, float Y, float Z, float Radius
 
 void UGMCheatManager::GMDrawDebugSphere(float Radius, int Segments, float LifeTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMDrawDebugSphere");
 
@@ -9354,7 +10032,7 @@ void UGMCheatManager::GMDrawDebugSphere(float Radius, int Segments, float LifeTi
 
 void UGMCheatManager::GMDrawCone(float Degrees, float LifeTime, int LineNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMDrawCone");
 
@@ -9378,7 +10056,7 @@ void UGMCheatManager::GMDrawCone(float Degrees, float LifeTime, int LineNum)
 
 void UGMCheatManager::GMDecreaseHealth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMDecreaseHealth");
 
@@ -9402,7 +10080,7 @@ void UGMCheatManager::GMDecreaseHealth()
 
 void UGMCheatManager::GMChangeAIAype(int Type, uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMChangeAIAype");
 
@@ -9429,7 +10107,7 @@ void UGMCheatManager::GMChangeAIAype(int Type, uint32_t InPlayerKey)
 
 void UGMCheatManager::GMAutoTestChangeItem(uint32_t PlayerKey, const struct FString& ItemString, const struct FString& EquimentItemString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMAutoTestChangeItem");
 
@@ -9453,7 +10131,7 @@ void UGMCheatManager::GMAutoTestChangeItem(uint32_t PlayerKey, const struct FStr
 
 void UGMCheatManager::GMAIFire()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMAIFire");
 
@@ -9478,7 +10156,7 @@ void UGMCheatManager::GMAIFire()
 
 void UGMCheatManager::GMAddItemForAI(int ItemId, int Count, uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMAddItemForAI");
 
@@ -9505,7 +10183,7 @@ void UGMCheatManager::GMAddItemForAI(int ItemId, int Count, uint32_t InPlayerKey
 
 void UGMCheatManager::GMActiveRenderDynamicStyle(bool bSet, int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMActiveRenderDynamicStyle");
 
@@ -9528,7 +10206,7 @@ void UGMCheatManager::GMActiveRenderDynamicStyle(bool bSet, int Type)
 
 void UGMCheatManager::GMActiveAI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GMActiveAI");
 
@@ -9551,7 +10229,7 @@ void UGMCheatManager::GMActiveAI()
 
 void UGMCheatManager::GetObjectRef(uint64_t ObjectAddr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GetObjectRef");
 
@@ -9575,7 +10253,7 @@ void UGMCheatManager::GetObjectRef(uint64_t ObjectAddr)
 
 void UGMCheatManager::GetGVMemberID(int memberID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GetGVMemberID");
 
@@ -9597,7 +10275,7 @@ void UGMCheatManager::GetGVMemberID(int memberID)
 
 void UGMCheatManager::GetGold()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GetGold");
 
@@ -9622,7 +10300,7 @@ void UGMCheatManager::GetGold()
 
 void UGMCheatManager::GenerateMonsterWave(int ChapterID, int LevelID, int WaveID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.GenerateMonsterWave");
 
@@ -9646,7 +10324,7 @@ void UGMCheatManager::GenerateMonsterWave(int ChapterID, int LevelID, int WaveID
 
 void UGMCheatManager::ForceStopDynamicWeatherChange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ForceStopDynamicWeatherChange");
 
@@ -9667,7 +10345,7 @@ void UGMCheatManager::ForceStopDynamicWeatherChange()
 
 void UGMCheatManager::ForceStartNextDynamicWeatherChange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ForceStartNextDynamicWeatherChange");
 
@@ -9690,7 +10368,7 @@ void UGMCheatManager::ForceStartNextDynamicWeatherChange()
 
 void UGMCheatManager::ForceKickoutAllPlayers(int LandId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ForceKickoutAllPlayers");
 
@@ -9712,7 +10390,7 @@ void UGMCheatManager::ForceKickoutAllPlayers(int LandId)
 
 void UGMCheatManager::ForceGC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ForceGC");
 
@@ -9733,7 +10411,7 @@ void UGMCheatManager::ForceGC()
 
 void UGMCheatManager::ForceEndInputForAppWillDeactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ForceEndInputForAppWillDeactivate");
 
@@ -9754,7 +10432,7 @@ void UGMCheatManager::ForceEndInputForAppWillDeactivate()
 
 void UGMCheatManager::FireSpawnAirplane()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.FireSpawnAirplane");
 
@@ -9778,7 +10456,7 @@ void UGMCheatManager::FireSpawnAirplane()
 
 void UGMCheatManager::FireReviveTeammate(int RespawnStartID, bool bJump)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.FireReviveTeammate");
 
@@ -9803,7 +10481,7 @@ void UGMCheatManager::FireReviveTeammate(int RespawnStartID, bool bJump)
 
 void UGMCheatManager::FallKill(int FallType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.FallKill");
 
@@ -9827,7 +10505,7 @@ void UGMCheatManager::FallKill(int FallType)
 
 void UGMCheatManager::EquipHelmetAndBodyArmor(int Lev)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EquipHelmetAndBodyArmor");
 
@@ -9852,7 +10530,7 @@ void UGMCheatManager::EquipHelmetAndBodyArmor(int Lev)
 
 void UGMCheatManager::EnterPVELevel(int ChapterID, int LevelID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EnterPVELevel");
 
@@ -9878,7 +10556,7 @@ void UGMCheatManager::EnterPVELevel(int ChapterID, int LevelID)
 
 void UGMCheatManager::EnterPawnState(EPawnState InState, bool IsEnter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EnterPawnState");
 
@@ -9901,7 +10579,7 @@ void UGMCheatManager::EnterPawnState(EPawnState InState, bool IsEnter)
 
 void UGMCheatManager::EndAPMTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EndAPMTag");
 
@@ -9924,7 +10602,7 @@ void UGMCheatManager::EndAPMTag()
 
 void UGMCheatManager::EnablePool(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EnablePool");
 
@@ -9948,7 +10626,7 @@ void UGMCheatManager::EnablePool(bool bEnable)
 
 void UGMCheatManager::EnableHitBox(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EnableHitBox");
 
@@ -9970,7 +10648,7 @@ void UGMCheatManager::EnableHitBox(bool bEnable)
 
 void UGMCheatManager::EnableFuzzyInformation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EnableFuzzyInformation");
 
@@ -9994,7 +10672,7 @@ void UGMCheatManager::EnableFuzzyInformation()
 
 void UGMCheatManager::EnableDSAnim(const struct FString& MonsterName, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.EnableDSAnim");
 
@@ -10017,7 +10695,7 @@ void UGMCheatManager::EnableDSAnim(const struct FString& MonsterName, bool bEnab
 
 void UGMCheatManager::DumpSmartBearerManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpSmartBearerManager");
 
@@ -10038,7 +10716,7 @@ void UGMCheatManager::DumpSmartBearerManager()
 
 void UGMCheatManager::DumpPlayerStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpPlayerStart");
 
@@ -10061,7 +10739,7 @@ void UGMCheatManager::DumpPlayerStart()
 
 void UGMCheatManager::DumpObjectNetProperties(class UObject* InObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpObjectNetProperties");
 
@@ -10085,7 +10763,7 @@ void UGMCheatManager::DumpObjectNetProperties(class UObject* InObj)
 
 void UGMCheatManager::DumpMoveLog(bool bDump)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpMoveLog");
 
@@ -10107,7 +10785,7 @@ void UGMCheatManager::DumpMoveLog(bool bDump)
 
 void UGMCheatManager::DumpLevels()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpLevels");
 
@@ -10128,7 +10806,7 @@ void UGMCheatManager::DumpLevels()
 
 void UGMCheatManager::DumpDSNetConsiderList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpDSNetConsiderList");
 
@@ -10149,7 +10827,7 @@ void UGMCheatManager::DumpDSNetConsiderList()
 
 void UGMCheatManager::DumpCharacterRelevant()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpCharacterRelevant");
 
@@ -10170,7 +10848,7 @@ void UGMCheatManager::DumpCharacterRelevant()
 
 void UGMCheatManager::DumpAnimLayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpAnimLayer");
 
@@ -10191,7 +10869,7 @@ void UGMCheatManager::DumpAnimLayer()
 
 void UGMCheatManager::DumpAIOcclusion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DumpAIOcclusion");
 
@@ -10212,7 +10890,7 @@ void UGMCheatManager::DumpAIOcclusion()
 
 void UGMCheatManager::DSReconnectEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DSReconnectEvent");
 
@@ -10233,7 +10911,7 @@ void UGMCheatManager::DSReconnectEvent()
 
 void UGMCheatManager::DSConnectLostEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DSConnectLostEvent");
 
@@ -10254,7 +10932,7 @@ void UGMCheatManager::DSConnectLostEvent()
 
 void UGMCheatManager::DismissIsland()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DismissIsland");
 
@@ -10282,7 +10960,7 @@ void UGMCheatManager::DismissIsland()
 
 void UGMCheatManager::DetectUnderGround(float X1, float Y1, float Z1, float x2, float y2, float Z2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DetectUnderGround");
 
@@ -10311,7 +10989,7 @@ void UGMCheatManager::DetectUnderGround(float X1, float Y1, float Z1, float x2, 
 
 void UGMCheatManager::DestroyVehicleWithPath(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DestroyVehicleWithPath");
 
@@ -10333,7 +11011,7 @@ void UGMCheatManager::DestroyVehicleWithPath(const struct FString& Path)
 
 void UGMCheatManager::DebugUnderWaterEffect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugUnderWaterEffect");
 
@@ -10356,7 +11034,7 @@ void UGMCheatManager::DebugUnderWaterEffect()
 
 void UGMCheatManager::DebugStopEMote(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugStopEMote");
 
@@ -10378,7 +11056,7 @@ void UGMCheatManager::DebugStopEMote(int Index)
 
 void UGMCheatManager::DebugStopCapture()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugStopCapture");
 
@@ -10401,7 +11079,7 @@ void UGMCheatManager::DebugStopCapture()
 
 void UGMCheatManager::DebugStartEMote(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugStartEMote");
 
@@ -10425,7 +11103,7 @@ void UGMCheatManager::DebugStartEMote(int Index)
 
 void UGMCheatManager::DebugSpringArm(bool bDebug)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugSpringArm");
 
@@ -10447,7 +11125,7 @@ void UGMCheatManager::DebugSpringArm(bool bDebug)
 
 void UGMCheatManager::DebugSpeed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugSpeed");
 
@@ -10470,7 +11148,7 @@ void UGMCheatManager::DebugSpeed()
 
 void UGMCheatManager::DebugSetChangeWearCoolDownTime(float Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugSetChangeWearCoolDownTime");
 
@@ -10497,7 +11175,7 @@ void UGMCheatManager::DebugSetChangeWearCoolDownTime(float Time)
 
 void UGMCheatManager::DebugRoomCustomParams(int FirstCircleDelayTime, int FirstCircleAppearTime, int FirstWhiteCircleRadiusMultiplicator, int BlueCircleDamageMultiplicator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugRoomCustomParams");
 
@@ -10524,7 +11202,7 @@ void UGMCheatManager::DebugRoomCustomParams(int FirstCircleDelayTime, int FirstC
 
 void UGMCheatManager::DebugPoseState(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugPoseState");
 
@@ -10546,7 +11224,7 @@ void UGMCheatManager::DebugPoseState(bool bEnable)
 
 void UGMCheatManager::DebugMove()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugMove");
 
@@ -10567,7 +11245,7 @@ void UGMCheatManager::DebugMove()
 
 void UGMCheatManager::DebugLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugLocation");
 
@@ -10588,7 +11266,7 @@ void UGMCheatManager::DebugLocation()
 
 void UGMCheatManager::DebugLevelsInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugLevelsInfo");
 
@@ -10609,7 +11287,7 @@ void UGMCheatManager::DebugLevelsInfo()
 
 void UGMCheatManager::DebugFixedParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugFixedParams");
 
@@ -10630,7 +11308,7 @@ void UGMCheatManager::DebugFixedParams()
 
 void UGMCheatManager::DebugFindFloorResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugFindFloorResult");
 
@@ -10651,7 +11329,7 @@ void UGMCheatManager::DebugFindFloorResult()
 
 void UGMCheatManager::DebugCamera()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugCamera");
 
@@ -10672,7 +11350,7 @@ void UGMCheatManager::DebugCamera()
 
 void UGMCheatManager::DebugAttach()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugAttach");
 
@@ -10693,7 +11371,7 @@ void UGMCheatManager::DebugAttach()
 
 void UGMCheatManager::DebugAnimList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.DebugAnimList");
 
@@ -10717,7 +11395,7 @@ void UGMCheatManager::DebugAnimList()
 
 void UGMCheatManager::ClientSetSpeed(float Times, bool bGMSetSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ClientSetSpeed");
 
@@ -10740,7 +11418,7 @@ void UGMCheatManager::ClientSetSpeed(float Times, bool bGMSetSpeed)
 
 void UGMCheatManager::ClearTestMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ClearTestMesh");
 
@@ -10761,7 +11439,7 @@ void UGMCheatManager::ClearTestMesh()
 
 void UGMCheatManager::ClearScreenDebug()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ClearScreenDebug");
 
@@ -10782,7 +11460,7 @@ void UGMCheatManager::ClearScreenDebug()
 
 void UGMCheatManager::ClearNoDriverVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ClearNoDriverVehicle");
 
@@ -10805,7 +11483,7 @@ void UGMCheatManager::ClearNoDriverVehicle()
 
 void UGMCheatManager::ClearAnimLayer(int AnimLayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ClearAnimLayer");
 
@@ -10827,7 +11505,7 @@ void UGMCheatManager::ClearAnimLayer(int AnimLayer)
 
 void UGMCheatManager::ClearAllTlog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ClearAllTlog");
 
@@ -10848,7 +11526,7 @@ void UGMCheatManager::ClearAllTlog()
 
 void UGMCheatManager::CheatBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.CheatBeginPlay");
 
@@ -10871,7 +11549,7 @@ void UGMCheatManager::CheatBeginPlay()
 
 void UGMCheatManager::ChatTest(struct FString* Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ChatTest");
 
@@ -10895,7 +11573,7 @@ void UGMCheatManager::ChatTest(struct FString* Content)
 
 void UGMCheatManager::ChangeViewTarget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ChangeViewTarget");
 
@@ -10918,7 +11596,7 @@ void UGMCheatManager::ChangeViewTarget()
 
 void UGMCheatManager::ChangeMonsterWalkMode(int Mode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ChangeMonsterWalkMode");
 
@@ -10946,7 +11624,7 @@ void UGMCheatManager::ChangeMonsterWalkMode(int Mode)
 
 void UGMCheatManager::ChangeAllTimeDuration(int NewEndStateTime, int NewStartShowLifeTime, int NewMinimumAliveTime, int NewMinimumPlayerNum, int NewSpecialLifeTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ChangeAllTimeDuration");
 
@@ -10974,7 +11652,7 @@ void UGMCheatManager::ChangeAllTimeDuration(int NewEndStateTime, int NewStartSho
 
 void UGMCheatManager::ChangeAIDamageRate(float InRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ChangeAIDamageRate");
 
@@ -10998,7 +11676,7 @@ void UGMCheatManager::ChangeAIDamageRate(float InRate)
 
 void UGMCheatManager::ChangeAIAttackPlayerDamageRate(float InRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ChangeAIAttackPlayerDamageRate");
 
@@ -11023,7 +11701,7 @@ void UGMCheatManager::ChangeAIAttackPlayerDamageRate(float InRate)
 
 void UGMCheatManager::CastUIMsg(const struct FString& Msg, const struct FString& module)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.CastUIMsg");
 
@@ -11046,7 +11724,7 @@ void UGMCheatManager::CastUIMsg(const struct FString& Msg, const struct FString&
 
 void UGMCheatManager::CallOnReconnect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.CallOnReconnect");
 
@@ -11070,7 +11748,7 @@ void UGMCheatManager::CallOnReconnect()
 
 void UGMCheatManager::CallLuaTableFunction(const struct FString& tableName, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.CallLuaTableFunction");
 
@@ -11095,7 +11773,7 @@ void UGMCheatManager::CallLuaTableFunction(const struct FString& tableName, cons
 
 void UGMCheatManager::CallGMLua(const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.CallGMLua");
 
@@ -11119,7 +11797,7 @@ void UGMCheatManager::CallGMLua(const struct FString& FunctionName)
 
 void UGMCheatManager::CallGameModeLuaOverrideFunction(struct FString* FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.CallGameModeLuaOverrideFunction");
 
@@ -11145,7 +11823,7 @@ void UGMCheatManager::CallGameModeLuaOverrideFunction(struct FString* FunctionNa
 
 void UGMCheatManager::CallGameModeLuaFunction(struct FString* FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.CallGameModeLuaFunction");
 
@@ -11171,7 +11849,7 @@ void UGMCheatManager::CallGameModeLuaFunction(struct FString* FunctionName)
 
 void UGMCheatManager::BuildingCollide(bool InCollide)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.BuildingCollide");
 
@@ -11196,7 +11874,7 @@ void UGMCheatManager::BuildingCollide(bool InCollide)
 
 void UGMCheatManager::AutoShoveling(bool bEnable, float AutoShvelingSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AutoShoveling");
 
@@ -11221,7 +11899,7 @@ void UGMCheatManager::AutoShoveling(bool bEnable, float AutoShvelingSeconds)
 
 void UGMCheatManager::AutoSetPlayerLocation(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AutoSetPlayerLocation");
 
@@ -11245,7 +11923,7 @@ void UGMCheatManager::AutoSetPlayerLocation(bool bEnable)
 
 void UGMCheatManager::AnimDebugUseSkipMapForDistanceFactor(bool bFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugUseSkipMapForDistanceFactor");
 
@@ -11269,7 +11947,7 @@ void UGMCheatManager::AnimDebugUseSkipMapForDistanceFactor(bool bFlag)
 
 void UGMCheatManager::AnimDebugUseLodMap(bool bUseLodMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugUseLodMap");
 
@@ -11293,7 +11971,7 @@ void UGMCheatManager::AnimDebugUseLodMap(bool bUseLodMap)
 
 void UGMCheatManager::AnimDebugUpdateFlag(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugUpdateFlag");
 
@@ -11317,7 +11995,7 @@ void UGMCheatManager::AnimDebugUpdateFlag(int Type)
 
 void UGMCheatManager::AnimDebugNonRenderedRate(int UpdateRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugNonRenderedRate");
 
@@ -11341,7 +12019,7 @@ void UGMCheatManager::AnimDebugNonRenderedRate(int UpdateRate)
 
 void UGMCheatManager::AnimDebugNonRenderedMinDist(float minDist)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugNonRenderedMinDist");
 
@@ -11365,7 +12043,7 @@ void UGMCheatManager::AnimDebugNonRenderedMinDist(float minDist)
 
 void UGMCheatManager::AnimDebugNonRenderedMaxDist(float MaxDist)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugNonRenderedMaxDist");
 
@@ -11389,7 +12067,7 @@ void UGMCheatManager::AnimDebugNonRenderedMaxDist(float MaxDist)
 
 void UGMCheatManager::AnimDebugLodSkipMap(TMap<int, int> SkipMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugLodSkipMap");
 
@@ -11413,7 +12091,7 @@ void UGMCheatManager::AnimDebugLodSkipMap(TMap<int, int> SkipMap)
 
 void UGMCheatManager::AnimDebugEnable(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugEnable");
 
@@ -11437,7 +12115,7 @@ void UGMCheatManager::AnimDebugEnable(bool bEnable)
 
 void UGMCheatManager::AnimDebugBaseDistFactor(TArray<float> BaseDistFactor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AnimDebugBaseDistFactor");
 
@@ -11464,7 +12142,7 @@ void UGMCheatManager::AnimDebugBaseDistFactor(TArray<float> BaseDistFactor)
 
 void UGMCheatManager::AirDropByClassPath(float X, float Y, float Z, const struct FString& ClassPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AirDropByClassPath");
 
@@ -11489,7 +12167,7 @@ void UGMCheatManager::AirDropByClassPath(float X, float Y, float Z, const struct
 
 void UGMCheatManager::AILog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AILog");
 
@@ -11516,7 +12194,7 @@ void UGMCheatManager::AILog()
 
 void UGMCheatManager::AddWonderfulPeriod(int Type, float StartTime, float EndTime, int AdditionalData, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AddWonderfulPeriod");
 
@@ -11544,7 +12222,7 @@ void UGMCheatManager::AddWonderfulPeriod(int Type, float StartTime, float EndTim
 
 void UGMCheatManager::AddTimeSwitch(int TimeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AddTimeSwitch");
 
@@ -11572,7 +12250,7 @@ void UGMCheatManager::AddTimeSwitch(int TimeID)
 
 void UGMCheatManager::AddTestTouchInput(int FingerIndex, float X, float Y, float Force, bool bIsStart)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AddTestTouchInput");
 
@@ -11600,7 +12278,7 @@ void UGMCheatManager::AddTestTouchInput(int FingerIndex, float X, float Y, float
 
 void UGMCheatManager::AddScore(int Score)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AddScore");
 
@@ -11622,7 +12300,7 @@ void UGMCheatManager::AddScore(int Score)
 
 void UGMCheatManager::AddAllTestRes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.AddAllTestRes");
 
@@ -11645,7 +12323,7 @@ void UGMCheatManager::AddAllTestRes()
 
 void UGMCheatManager::ActiveCurCamera(bool bActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatManager.ActiveCurCamera");
 
@@ -11667,7 +12345,7 @@ void UGMCheatManager::ActiveCurCamera(bool bActive)
 
 void UGMCheatMod::TriggerHunterRevival()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.TriggerHunterRevival");
 
@@ -11690,7 +12368,7 @@ void UGMCheatMod::TriggerHunterRevival()
 
 void UGMCheatMod::SetUAETriggerEnable(bool IsEnbale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.SetUAETriggerEnable");
 
@@ -11714,7 +12392,7 @@ void UGMCheatMod::SetUAETriggerEnable(bool IsEnbale)
 
 void UGMCheatMod::SetInfectResetPlayerInterTime(float InterTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.SetInfectResetPlayerInterTime");
 
@@ -11738,7 +12416,7 @@ void UGMCheatMod::SetInfectResetPlayerInterTime(float InterTime)
 
 void UGMCheatMod::OnBuyRevivalTeammate(int TeammateIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.OnBuyRevivalTeammate");
 
@@ -11760,7 +12438,7 @@ void UGMCheatMod::OnBuyRevivalTeammate(int TeammateIndex)
 
 void UGMCheatMod::OnBuyRevivalSign()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.OnBuyRevivalSign");
 
@@ -11781,7 +12459,7 @@ void UGMCheatMod::OnBuyRevivalSign()
 
 void UGMCheatMod::InfectionEndRound()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.InfectionEndRound");
 
@@ -11802,7 +12480,7 @@ void UGMCheatMod::InfectionEndRound()
 
 void UGMCheatMod::GetGameResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.GetGameResult");
 
@@ -11825,7 +12503,7 @@ void UGMCheatMod::GetGameResult()
 
 void UGMCheatMod::DebugEnableFerrisWheelTick(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.DebugEnableFerrisWheelTick");
 
@@ -11847,7 +12525,7 @@ void UGMCheatMod::DebugEnableFerrisWheelTick(bool bEnable)
 
 void UGMCheatMod::ClearBossBornPoint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.ClearBossBornPoint");
 
@@ -11870,7 +12548,7 @@ void UGMCheatMod::ClearBossBornPoint()
 
 void UGMCheatMod::ChangePVELevel(int Lv)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.ChangePVELevel");
 
@@ -11894,7 +12572,7 @@ void UGMCheatMod::ChangePVELevel(int Lv)
 
 void UGMCheatMod::CallZombieFlowAirDrop(int ZombieID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.CallZombieFlowAirDrop");
 
@@ -11918,7 +12596,7 @@ void UGMCheatMod::CallZombieFlowAirDrop(int ZombieID)
 
 void UGMCheatMod::CallZombieAirDrop(int ZombieID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.CallZombieAirDrop");
 
@@ -11943,7 +12621,7 @@ void UGMCheatMod::CallZombieAirDrop(int ZombieID)
 
 void UGMCheatMod::AddBossBornPoint(float BornX, float BornY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatMod.AddBossBornPoint");
 
@@ -11968,7 +12646,7 @@ void UGMCheatMod::AddBossBornPoint(float BornX, float BornY)
 
 void UGMCheatOther::UnLoadAllCollision(bool Unload)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.UnLoadAllCollision");
 
@@ -11992,7 +12670,7 @@ void UGMCheatOther::UnLoadAllCollision(bool Unload)
 
 void UGMCheatOther::ShutDownBroadcastFatalDamage(bool IsOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.ShutDownBroadcastFatalDamage");
 
@@ -12016,7 +12694,7 @@ void UGMCheatOther::ShutDownBroadcastFatalDamage(bool IsOpen)
 
 void UGMCheatOther::ShowHideLandscapeComponent(bool bShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.ShowHideLandscapeComponent");
 
@@ -12040,7 +12718,7 @@ void UGMCheatOther::ShowHideLandscapeComponent(bool bShow)
 
 void UGMCheatOther::SetSingleThreadUpdateAnim(bool InIsSingleThread)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.SetSingleThreadUpdateAnim");
 
@@ -12064,7 +12742,7 @@ void UGMCheatOther::SetSingleThreadUpdateAnim(bool InIsSingleThread)
 
 void UGMCheatOther::SetIsShowBlood(bool InIsShowBlood)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.SetIsShowBlood");
 
@@ -12086,7 +12764,7 @@ void UGMCheatOther::SetIsShowBlood(bool InIsShowBlood)
 
 void UGMCheatOther::RetrievePlayerBattleResultData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.RetrievePlayerBattleResultData");
 
@@ -12109,7 +12787,7 @@ void UGMCheatOther::RetrievePlayerBattleResultData()
 
 void UGMCheatOther::RemoveDSOptimGrayPublishFlags(int InFlagIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.RemoveDSOptimGrayPublishFlags");
 
@@ -12131,7 +12809,7 @@ void UGMCheatOther::RemoveDSOptimGrayPublishFlags(int InFlagIndex)
 
 void UGMCheatOther::RecoverStatusAfterReconnecting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.RecoverStatusAfterReconnecting");
 
@@ -12152,7 +12830,7 @@ void UGMCheatOther::RecoverStatusAfterReconnecting()
 
 void UGMCheatOther::ObserveWhoKilledMe()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.ObserveWhoKilledMe");
 
@@ -12173,7 +12851,7 @@ void UGMCheatOther::ObserveWhoKilledMe()
 
 void UGMCheatOther::GMTestSpectateRPC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.GMTestSpectateRPC");
 
@@ -12196,7 +12874,7 @@ void UGMCheatOther::GMTestSpectateRPC()
 
 void UGMCheatOther::GMTestSpectateException(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.GMTestSpectateException");
 
@@ -12220,7 +12898,7 @@ void UGMCheatOther::GMTestSpectateException(int Type)
 
 void UGMCheatOther::GMTestExternalData(TArray<unsigned char> InData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.GMTestExternalData");
 
@@ -12244,7 +12922,7 @@ void UGMCheatOther::GMTestExternalData(TArray<unsigned char> InData)
 
 void UGMCheatOther::GMTeleport(const struct FName& Teleporter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.GMTeleport");
 
@@ -12270,7 +12948,7 @@ void UGMCheatOther::GMTeleport(const struct FName& Teleporter)
 
 void UGMCheatOther::GMSetScalarParam(const struct FString& Name, const struct FString& ShaderName, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.GMSetScalarParam");
 
@@ -12294,7 +12972,7 @@ void UGMCheatOther::GMSetScalarParam(const struct FString& Name, const struct FS
 
 void UGMCheatOther::GMSendDailyTaskReport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.GMSendDailyTaskReport");
 
@@ -12315,7 +12993,7 @@ void UGMCheatOther::GMSendDailyTaskReport()
 
 void UGMCheatOther::GMBroastSyncTaskInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.GMBroastSyncTaskInfo");
 
@@ -12336,7 +13014,7 @@ void UGMCheatOther::GMBroastSyncTaskInfo()
 
 void UGMCheatOther::EmptyLandscapeActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.EmptyLandscapeActor");
 
@@ -12359,7 +13037,7 @@ void UGMCheatOther::EmptyLandscapeActor()
 
 void UGMCheatOther::DumpGUIDCache(int DriverIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.DumpGUIDCache");
 
@@ -12381,7 +13059,7 @@ void UGMCheatOther::DumpGUIDCache(int DriverIndex)
 
 void UGMCheatOther::DumpActiveObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.DumpActiveObject");
 
@@ -12404,7 +13082,7 @@ void UGMCheatOther::DumpActiveObject()
 
 void UGMCheatOther::DebugEnableDrawSearchLine(int bEnabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.DebugEnableDrawSearchLine");
 
@@ -12428,7 +13106,7 @@ void UGMCheatOther::DebugEnableDrawSearchLine(int bEnabled)
 
 void UGMCheatOther::CanSeeAllUI(bool bUIVisibility)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.CanSeeAllUI");
 
@@ -12450,7 +13128,7 @@ void UGMCheatOther::CanSeeAllUI(bool bUIVisibility)
 
 void UGMCheatOther::AutoSelectTeammateToView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.AutoSelectTeammateToView");
 
@@ -12473,7 +13151,7 @@ void UGMCheatOther::AutoSelectTeammateToView()
 
 void UGMCheatOther::AddDSOptimGrayPublishFlags(int InFlagIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatOther.AddDSOptimGrayPublishFlags");
 
@@ -12498,7 +13176,7 @@ void UGMCheatOther::AddDSOptimGrayPublishFlags(int InFlagIndex)
 
 void UGMCheatSkill::TryDeleteOneSkill(int SkillID, bool bImmediately)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.TryDeleteOneSkill");
 
@@ -12525,7 +13203,7 @@ void UGMCheatSkill::TryDeleteOneSkill(int SkillID, bool bImmediately)
 
 void UGMCheatSkill::TryAddOneSkill(int SkillID, bool bActive, int ButtonSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.TryAddOneSkill");
 
@@ -12552,7 +13230,7 @@ void UGMCheatSkill::TryAddOneSkill(int SkillID, bool bActive, int ButtonSlot)
 
 void UGMCheatSkill::TriggerSkillWithID(int SkillID, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.TriggerSkillWithID");
 
@@ -12577,7 +13255,7 @@ void UGMCheatSkill::TriggerSkillWithID(int SkillID, bool bEnable)
 
 void UGMCheatSkill::StartSkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.StartSkill");
 
@@ -12599,7 +13277,7 @@ void UGMCheatSkill::StartSkill(int SkillID)
 
 void UGMCheatSkill::StartMainSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.StartMainSkill");
 
@@ -12623,7 +13301,7 @@ void UGMCheatSkill::StartMainSkill()
 
 void UGMCheatSkill::SetSkillSkinID(int SkillID, int SkillSkinID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.SetSkillSkinID");
 
@@ -12649,7 +13327,7 @@ void UGMCheatSkill::SetSkillSkinID(int SkillID, int SkillSkinID)
 
 void UGMCheatSkill::SetSkillLevel(int SkillID, int SkillLevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.SetSkillLevel");
 
@@ -12676,7 +13354,7 @@ void UGMCheatSkill::SetSkillLevel(int SkillID, int SkillLevel)
 
 void UGMCheatSkill::SetSkillCDTimeScale(int SkillID, float Scale, int ScaleType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.SetSkillCDTimeScale");
 
@@ -12705,7 +13383,7 @@ void UGMCheatSkill::SetSkillCDTimeScale(int SkillID, float Scale, int ScaleType)
 
 void UGMCheatSkill::SetSkillCDIndexTimeScale(int SkillID, int SkillCDIndex, float Scale, int ScaleType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.SetSkillCDIndexTimeScale");
 
@@ -12732,7 +13410,7 @@ void UGMCheatSkill::SetSkillCDIndexTimeScale(int SkillID, int SkillCDIndex, floa
 
 void UGMCheatSkill::SetAllSkillCDTimeScale(float Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.SetAllSkillCDTimeScale");
 
@@ -12756,7 +13434,7 @@ void UGMCheatSkill::SetAllSkillCDTimeScale(float Scale)
 
 void UGMCheatSkill::RemoveVehicleBuffBySkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.RemoveVehicleBuffBySkill");
 
@@ -12780,7 +13458,7 @@ void UGMCheatSkill::RemoveVehicleBuffBySkill(int SkillID)
 
 void UGMCheatSkill::RemoveVehicleBuff(int BuffID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.RemoveVehicleBuff");
 
@@ -12806,7 +13484,7 @@ void UGMCheatSkill::RemoveVehicleBuff(int BuffID)
 
 void UGMCheatSkill::RemoveBuffBySkill(int SkillID, int IsPlayer, int LayerCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.RemoveBuffBySkill");
 
@@ -12834,7 +13512,7 @@ void UGMCheatSkill::RemoveBuffBySkill(int SkillID, int IsPlayer, int LayerCount)
 
 void UGMCheatSkill::RemoveBuff(int BuffID, int IsPlayer, int BuffLayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.RemoveBuff");
 
@@ -12858,7 +13536,7 @@ void UGMCheatSkill::RemoveBuff(int BuffID, int IsPlayer, int BuffLayer)
 
 void UGMCheatSkill::ReloadPVETable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.ReloadPVETable");
 
@@ -12881,7 +13559,7 @@ void UGMCheatSkill::ReloadPVETable()
 
 void UGMCheatSkill::EnableSkillCD(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.EnableSkillCD");
 
@@ -12905,7 +13583,7 @@ void UGMCheatSkill::EnableSkillCD(bool bEnable)
 
 void UGMCheatSkill::DynamicRemoveSkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.DynamicRemoveSkill");
 
@@ -12929,7 +13607,7 @@ void UGMCheatSkill::DynamicRemoveSkill(int SkillID)
 
 void UGMCheatSkill::DynamicAddSkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.DynamicAddSkill");
 
@@ -12951,7 +13629,7 @@ void UGMCheatSkill::DynamicAddSkill(int SkillID)
 
 void UGMCheatSkill::DumpSkills()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.DumpSkills");
 
@@ -12974,7 +13652,7 @@ void UGMCheatSkill::DumpSkills()
 
 void UGMCheatSkill::AddVehicleBuffBySkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.AddVehicleBuffBySkill");
 
@@ -12998,7 +13676,7 @@ void UGMCheatSkill::AddVehicleBuffBySkill(int SkillID)
 
 void UGMCheatSkill::AddVehicleBuff(int BuffID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.AddVehicleBuff");
 
@@ -13023,7 +13701,7 @@ void UGMCheatSkill::AddVehicleBuff(int BuffID)
 
 void UGMCheatSkill::AddSkillToken(int SkillID, bool bAdd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.AddSkillToken");
 
@@ -13049,7 +13727,7 @@ void UGMCheatSkill::AddSkillToken(int SkillID, bool bAdd)
 
 void UGMCheatSkill::AddBuffBySkill(int SkillID, int IsPlayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.AddBuffBySkill");
 
@@ -13075,7 +13753,7 @@ void UGMCheatSkill::AddBuffBySkill(int SkillID, int IsPlayer)
 
 void UGMCheatSkill::AddBuff(int BuffID, int IsPlayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatSkill.AddBuff");
 
@@ -13100,7 +13778,7 @@ void UGMCheatSkill::AddBuff(int BuffID, int IsPlayer)
 
 void UGMCheatVehicle::VW_Seat(int change)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.VW_Seat");
 
@@ -13126,7 +13804,7 @@ void UGMCheatVehicle::VW_Seat(int change)
 
 void UGMCheatVehicle::VehicleResetTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.VehicleResetTo");
 
@@ -13154,7 +13832,7 @@ void UGMCheatVehicle::VehicleResetTo(float X, float Y, float Z)
 
 void UGMCheatVehicle::VehicleMoveTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.VehicleMoveTo");
 
@@ -13180,7 +13858,7 @@ void UGMCheatVehicle::VehicleMoveTo(float X, float Y, float Z)
 
 void UGMCheatVehicle::ToggleVehicleSync(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ToggleVehicleSync");
 
@@ -13205,7 +13883,7 @@ void UGMCheatVehicle::ToggleVehicleSync(bool Val)
 
 void UGMCheatVehicle::TeleportAndEnterVehicleWithPath(const struct FString& Path, int SeatID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.TeleportAndEnterVehicleWithPath");
 
@@ -13234,7 +13912,7 @@ void UGMCheatVehicle::TeleportAndEnterVehicleWithPath(const struct FString& Path
 
 void UGMCheatVehicle::SpawnVehicleWithPathAndLoc(const struct FString& Path, float X, float Y, float Z, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.SpawnVehicleWithPathAndLoc");
 
@@ -13263,7 +13941,7 @@ void UGMCheatVehicle::SpawnVehicleWithPathAndLoc(const struct FString& Path, flo
 
 void UGMCheatVehicle::SpawnVehicleWithPath(const struct FString& Path, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.SpawnVehicleWithPath");
 
@@ -13286,7 +13964,7 @@ void UGMCheatVehicle::SpawnVehicleWithPath(const struct FString& Path, int Num)
 
 void UGMCheatVehicle::SpawnVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.SpawnVehicle");
 
@@ -13309,7 +13987,7 @@ void UGMCheatVehicle::SpawnVehicle()
 
 void UGMCheatVehicle::SpawnAllVehicle(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.SpawnAllVehicle");
 
@@ -13335,7 +14013,7 @@ void UGMCheatVehicle::SpawnAllVehicle(const struct FString& Path)
 
 void UGMCheatVehicle::SetSnowBoradRotationInAir(float Pitch, float Yaw, float Roll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.SetSnowBoradRotationInAir");
 
@@ -13361,7 +14039,7 @@ void UGMCheatVehicle::SetSnowBoradRotationInAir(float Pitch, float Yaw, float Ro
 
 void UGMCheatVehicle::SetFuelByPercent(float percent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.SetFuelByPercent");
 
@@ -13383,7 +14061,7 @@ void UGMCheatVehicle::SetFuelByPercent(float percent)
 
 void UGMCheatVehicle::ResetVehicleEngine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ResetVehicleEngine");
 
@@ -13404,7 +14082,7 @@ void UGMCheatVehicle::ResetVehicleEngine()
 
 void UGMCheatVehicle::ReqLeaveVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ReqLeaveVehicle");
 
@@ -13427,7 +14105,7 @@ void UGMCheatVehicle::ReqLeaveVehicle()
 
 void UGMCheatVehicle::ReqExchangeVehicleCharacter(int Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ReqExchangeVehicleCharacter");
 
@@ -13451,7 +14129,7 @@ void UGMCheatVehicle::ReqExchangeVehicleCharacter(int Param)
 
 void UGMCheatVehicle::ReqEnterVehicle(float dis)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ReqEnterVehicle");
 
@@ -13473,7 +14151,7 @@ void UGMCheatVehicle::ReqEnterVehicle(float dis)
 
 void UGMCheatVehicle::ReqEnterSnowBoard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ReqEnterSnowBoard");
 
@@ -13496,7 +14174,7 @@ void UGMCheatVehicle::ReqEnterSnowBoard()
 
 void UGMCheatVehicle::ReplaceVehicleWithPath(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ReplaceVehicleWithPath");
 
@@ -13518,7 +14196,7 @@ void UGMCheatVehicle::ReplaceVehicleWithPath(const struct FString& Path)
 
 void UGMCheatVehicle::ReplaceVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.ReplaceVehicle");
 
@@ -13542,7 +14220,7 @@ void UGMCheatVehicle::ReplaceVehicle()
 
 void UGMCheatVehicle::MakeVehicleFly(int IsFly, bool bIsUp)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.MakeVehicleFly");
 
@@ -13565,7 +14243,7 @@ void UGMCheatVehicle::MakeVehicleFly(int IsFly, bool bIsUp)
 
 void UGMCheatVehicle::KillAllEnermyVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatVehicle.KillAllEnermyVehicle");
 
@@ -13586,7 +14264,7 @@ void UGMCheatVehicle::KillAllEnermyVehicle()
 
 void UGMCheatWeapon::ToggleShootVertify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.ToggleShootVertify");
 
@@ -13609,7 +14287,7 @@ void UGMCheatWeapon::ToggleShootVertify()
 
 void UGMCheatWeapon::ShowWeaponDirection(int Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.ShowWeaponDirection");
 
@@ -13631,7 +14309,7 @@ void UGMCheatWeapon::ShowWeaponDirection(int Time)
 
 void UGMCheatWeapon::ShowBulletInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.ShowBulletInfo");
 
@@ -13655,7 +14333,7 @@ void UGMCheatWeapon::ShowBulletInfo()
 
 void UGMCheatWeapon::SetWeaponAttrValue(const struct FString& AttrName, float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.SetWeaponAttrValue");
 
@@ -13680,7 +14358,7 @@ void UGMCheatWeapon::SetWeaponAttrValue(const struct FString& AttrName, float Va
 
 void UGMCheatWeapon::SetWeaponAttrReloadTable(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.SetWeaponAttrReloadTable");
 
@@ -13704,7 +14382,7 @@ void UGMCheatWeapon::SetWeaponAttrReloadTable(const struct FString& tableName)
 
 void UGMCheatWeapon::SetShootPveVertify(bool IsVertify)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.SetShootPveVertify");
 
@@ -13728,7 +14406,7 @@ void UGMCheatWeapon::SetShootPveVertify(bool IsVertify)
 
 void UGMCheatWeapon::SetShootPveDebug(bool DebugShootPve)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.SetShootPveDebug");
 
@@ -13752,7 +14430,7 @@ void UGMCheatWeapon::SetShootPveDebug(bool DebugShootPve)
 
 void UGMCheatWeapon::SetBaseImpactDamageEntity(float Damage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.SetBaseImpactDamageEntity");
 
@@ -13774,7 +14452,7 @@ void UGMCheatWeapon::SetBaseImpactDamageEntity(float Damage)
 
 void UGMCheatWeapon::ScopeOut()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.ScopeOut");
 
@@ -13795,7 +14473,7 @@ void UGMCheatWeapon::ScopeOut()
 
 void UGMCheatWeapon::ScopeIn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.ScopeIn");
 
@@ -13816,7 +14494,7 @@ void UGMCheatWeapon::ScopeIn()
 
 void UGMCheatWeapon::PrintWeaponAllState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.PrintWeaponAllState");
 
@@ -13839,7 +14517,7 @@ void UGMCheatWeapon::PrintWeaponAllState()
 
 void UGMCheatWeapon::GMSwitchWeaponSpeedScale(float SwitchScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.GMSwitchWeaponSpeedScale");
 
@@ -13863,7 +14541,7 @@ void UGMCheatWeapon::GMSwitchWeaponSpeedScale(float SwitchScale)
 
 void UGMCheatWeapon::GMSetReportWeaponNum(int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.GMSetReportWeaponNum");
 
@@ -13887,7 +14565,7 @@ void UGMCheatWeapon::GMSetReportWeaponNum(int Num)
 
 void UGMCheatWeapon::EnableCurrentWeaponInfiniteBullets(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.EnableCurrentWeaponInfiniteBullets");
 
@@ -13909,7 +14587,7 @@ void UGMCheatWeapon::EnableCurrentWeaponInfiniteBullets(bool bEnable)
 
 void UGMCheatWeapon::DrawDebugWeaponCrossHair()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.DrawDebugWeaponCrossHair");
 
@@ -13930,7 +14608,7 @@ void UGMCheatWeapon::DrawDebugWeaponCrossHair()
 
 void UGMCheatWeapon::DestroyMyWeapons()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.DestroyMyWeapons");
 
@@ -13953,7 +14631,7 @@ void UGMCheatWeapon::DestroyMyWeapons()
 
 void UGMCheatWeapon::DebugEnableBulletImpact(int bEnabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.DebugEnableBulletImpact");
 
@@ -13977,7 +14655,7 @@ void UGMCheatWeapon::DebugEnableBulletImpact(int bEnabled)
 
 void UGMCheatWeapon::CreateAutoShootTimer(float Interval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.CreateAutoShootTimer");
 
@@ -13999,7 +14677,7 @@ void UGMCheatWeapon::CreateAutoShootTimer(float Interval)
 
 void UGMCheatWeapon::CollectAllPlayerWeaponPosInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.CollectAllPlayerWeaponPosInfo");
 
@@ -14022,7 +14700,7 @@ void UGMCheatWeapon::CollectAllPlayerWeaponPosInfo()
 
 void UGMCheatWeapon::ChangeWeaponFunction(int NewWeaponFunction)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.ChangeWeaponFunction");
 
@@ -14048,7 +14726,7 @@ void UGMCheatWeapon::ChangeWeaponFunction(int NewWeaponFunction)
 
 void UGMCheatWeapon::ChangeShootWeaponStrValue(const struct FString& StrName, const struct FString& KeyName, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.ChangeShootWeaponStrValue");
 
@@ -14075,7 +14753,7 @@ void UGMCheatWeapon::ChangeShootWeaponStrValue(const struct FString& StrName, co
 
 void UGMCheatWeapon::AutoShootNearestEnemy(float Interval, float Duration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.AutoShootNearestEnemy");
 
@@ -14100,7 +14778,7 @@ void UGMCheatWeapon::AutoShootNearestEnemy(float Interval, float Duration)
 
 void UGMCheatWeapon::AutoShoot(float Interval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.AutoShoot");
 
@@ -14122,11 +14800,864 @@ void UGMCheatWeapon::AutoShoot(float Interval)
 
 void UGMCheatWeapon::AimForAutoShoot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.GMCheatWeapon.AimForAutoShoot");
 
 	UGMCheatWeapon_AimForAutoShoot_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.ToggleWindow
+// (Final, Native, Public, BlueprintCallable)
+
+void AImGuiWindowBase::ToggleWindow()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.ToggleWindow");
+
+	AImGuiWindowBase_ToggleWindow_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.ShowWindowWithTabs
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<class UClass*>          TabClasses                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void AImGuiWindowBase::ShowWindowWithTabs(TArray<class UClass*> TabClasses)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.ShowWindowWithTabs");
+
+	AImGuiWindowBase_ShowWindowWithTabs_Params params;
+	params.TabClasses = TabClasses;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.ShowWindow
+// (Final, Native, Public, BlueprintCallable)
+
+void AImGuiWindowBase::ShowWindow()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.ShowWindow");
+
+	AImGuiWindowBase_ShowWindow_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.SetWindowAlpha
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                          Alpha                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void AImGuiWindowBase::SetWindowAlpha(float Alpha)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.SetWindowAlpha");
+
+	AImGuiWindowBase_SetWindowAlpha_Params params;
+	params.Alpha = Alpha;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.RemoveTab
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   TabID                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void AImGuiWindowBase::RemoveTab(const struct FName& TabID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.RemoveTab");
+
+	AImGuiWindowBase_RemoveTab_Params params;
+	params.TabID = TabID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.RemoveFeature
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   FeatureID                      (Parm, ZeroConstructor, IsPlainOldData)
+
+void AImGuiWindowBase::RemoveFeature(const struct FName& FeatureID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.RemoveFeature");
+
+	AImGuiWindowBase_RemoveFeature_Params params;
+	params.FeatureID = FeatureID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.IsWindowVisible
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool AImGuiWindowBase::IsWindowVisible()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.IsWindowVisible");
+
+	AImGuiWindowBase_IsWindowVisible_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.HideWindow
+// (Final, Native, Public, BlueprintCallable)
+
+void AImGuiWindowBase::HideWindow()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.HideWindow");
+
+	AImGuiWindowBase_HideWindow_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.GetWindowAlpha
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float AImGuiWindowBase::GetWindowAlpha()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.GetWindowAlpha");
+
+	AImGuiWindowBase_GetWindowAlpha_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.GetTabByID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   TabID                          (Parm, ZeroConstructor, IsPlainOldData)
+// class UImGuiTabBase*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiTabBase* AImGuiWindowBase::GetTabByID(const struct FName& TabID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.GetTabByID");
+
+	AImGuiWindowBase_GetTabByID_Params params;
+	params.TabID = TabID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.GetFeatureByID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   FeatureID                      (Parm, ZeroConstructor, IsPlainOldData)
+// class UImGuiFeatureWidget*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiFeatureWidget* AImGuiWindowBase::GetFeatureByID(const struct FName& FeatureID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.GetFeatureByID");
+
+	AImGuiWindowBase_GetFeatureByID_Params params;
+	params.FeatureID = FeatureID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.GetAllTabs
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<class UImGuiTabBase*>   ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm)
+
+TArray<class UImGuiTabBase*> AImGuiWindowBase::GetAllTabs()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.GetAllTabs");
+
+	AImGuiWindowBase_GetAllTabs_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.GetAllFeatures
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<class UImGuiFeatureWidget*> ReturnValue                    (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm)
+
+TArray<class UImGuiFeatureWidget*> AImGuiWindowBase::GetAllFeatures()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.GetAllFeatures");
+
+	AImGuiWindowBase_GetAllFeatures_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.GetActiveTab
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UImGuiTabBase*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiTabBase* AImGuiWindowBase::GetActiveTab()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.GetActiveTab");
+
+	AImGuiWindowBase_GetActiveTab_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.AddTabWithLuaPath
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  TabClass                       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 InLuaFilePath                  (Parm, ZeroConstructor)
+// class UImGuiTabBase*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiTabBase* AImGuiWindowBase::AddTabWithLuaPath(class UClass* TabClass, const struct FString& InLuaFilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddTabWithLuaPath");
+
+	AImGuiWindowBase_AddTabWithLuaPath_Params params;
+	params.TabClass = TabClass;
+	params.InLuaFilePath = InLuaFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.AddTabInstance
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UImGuiTabBase*           Tab                            (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 InLuaFilePath                  (Parm, ZeroConstructor)
+
+void AImGuiWindowBase::AddTabInstance(class UImGuiTabBase* Tab, const struct FString& InLuaFilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddTabInstance");
+
+	AImGuiWindowBase_AddTabInstance_Params params;
+	params.Tab = Tab;
+	params.InLuaFilePath = InLuaFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.AddTab
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  TabClass                       (Parm, ZeroConstructor, IsPlainOldData)
+// class UImGuiTabBase*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiTabBase* AImGuiWindowBase::AddTab(class UClass* TabClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddTab");
+
+	AImGuiWindowBase_AddTab_Params params;
+	params.TabClass = TabClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.AddLuaTab
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 InLuaFilePath                  (Parm, ZeroConstructor)
+// class UImGuiTabBase*           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiTabBase* AImGuiWindowBase::AddLuaTab(const struct FString& InLuaFilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddLuaTab");
+
+	AImGuiWindowBase_AddLuaTab_Params params;
+	params.InLuaFilePath = InLuaFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.AddLuaFeature
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 InLuaFilePath                  (Parm, ZeroConstructor)
+// class UImGuiFeatureWidget*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiFeatureWidget* AImGuiWindowBase::AddLuaFeature(const struct FString& InLuaFilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddLuaFeature");
+
+	AImGuiWindowBase_AddLuaFeature_Params params;
+	params.InLuaFilePath = InLuaFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.AddFeatureWithLuaPath
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  FeatureClass                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 InLuaFilePath                  (Parm, ZeroConstructor)
+// class UImGuiFeatureWidget*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiFeatureWidget* AImGuiWindowBase::AddFeatureWithLuaPath(class UClass* FeatureClass, const struct FString& InLuaFilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddFeatureWithLuaPath");
+
+	AImGuiWindowBase_AddFeatureWithLuaPath_Params params;
+	params.FeatureClass = FeatureClass;
+	params.InLuaFilePath = InLuaFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.AddFeatureInstance
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UImGuiFeatureWidget*     Feature                        (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 InLuaFilePath                  (Parm, ZeroConstructor)
+
+void AImGuiWindowBase::AddFeatureInstance(class UImGuiFeatureWidget* Feature, const struct FString& InLuaFilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddFeatureInstance");
+
+	AImGuiWindowBase_AddFeatureInstance_Params params;
+	params.Feature = Feature;
+	params.InLuaFilePath = InLuaFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowBase.AddFeature
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  FeatureClass                   (Parm, ZeroConstructor, IsPlainOldData)
+// class UImGuiFeatureWidget*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiFeatureWidget* AImGuiWindowBase::AddFeature(class UClass* FeatureClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.AddFeature");
+
+	AImGuiWindowBase_AddFeature_Params params;
+	params.FeatureClass = FeatureClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowBase.ActivateTab
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FName                   TabID                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void AImGuiWindowBase::ActivateTab(const struct FName& TabID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowBase.ActivateTab");
+
+	AImGuiWindowBase_ActivateTab_Params params;
+	params.TabID = TabID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowManager.ToggleWindow
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  WindowClass                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UImGuiWindowManager::ToggleWindow(class UClass* WindowClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.ToggleWindow");
+
+	UImGuiWindowManager_ToggleWindow_Params params;
+	params.WindowClass = WindowClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowManager.ShowWindowWithTabs
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class UClass*                  WindowClass                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UClass*>          TabClasses                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void UImGuiWindowManager::ShowWindowWithTabs(class UClass* WindowClass, TArray<class UClass*> TabClasses)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.ShowWindowWithTabs");
+
+	UImGuiWindowManager_ShowWindowWithTabs_Params params;
+	params.WindowClass = WindowClass;
+	params.TabClasses = TabClasses;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowManager.ShowWindow
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  WindowClass                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UImGuiWindowManager::ShowWindow(class UClass* WindowClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.ShowWindow");
+
+	UImGuiWindowManager_ShowWindow_Params params;
+	params.WindowClass = WindowClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowManager.HideWindow
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  WindowClass                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UImGuiWindowManager::HideWindow(class UClass* WindowClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.HideWindow");
+
+	UImGuiWindowManager_HideWindow_Params params;
+	params.WindowClass = WindowClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowManager.HideAllWindows
+// (Final, Native, Public, BlueprintCallable)
+
+void UImGuiWindowManager::HideAllWindows()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.HideAllWindows");
+
+	UImGuiWindowManager_HideAllWindows_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Development.ImGuiWindowManager.HasWindow
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UClass*                  WindowClass                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UImGuiWindowManager::HasWindow(class UClass* WindowClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.HasWindow");
+
+	UImGuiWindowManager_HasWindow_Params params;
+	params.WindowClass = WindowClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowManager.GetWindow
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UClass*                  WindowClass                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class AImGuiWindowBase*        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AImGuiWindowBase* UImGuiWindowManager::GetWindow(class UClass* WindowClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.GetWindow");
+
+	UImGuiWindowManager_GetWindow_Params params;
+	params.WindowClass = WindowClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowManager.GetOrCreateWindow
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                  WindowClass                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class AImGuiWindowBase*        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AImGuiWindowBase* UImGuiWindowManager::GetOrCreateWindow(class UClass* WindowClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.GetOrCreateWindow");
+
+	UImGuiWindowManager_GetOrCreateWindow_Params params;
+	params.WindowClass = WindowClass;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowManager.GetAllWindows
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<class AImGuiWindowBase*> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<class AImGuiWindowBase*> UImGuiWindowManager::GetAllWindows()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.GetAllWindows");
+
+	UImGuiWindowManager_GetAllWindows_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowManager.Get
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class UImGuiWindowManager*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UImGuiWindowManager* UImGuiWindowManager::Get(class UObject* WorldContextObject)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.Get");
+
+	UImGuiWindowManager_Get_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Development.ImGuiWindowManager.DestroyAllWindows
+// (Final, Native, Public, BlueprintCallable)
+
+void UImGuiWindowManager::DestroyAllWindows()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Development.ImGuiWindowManager.DestroyAllWindows");
+
+	UImGuiWindowManager_DestroyAllWindows_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -14143,7 +15674,7 @@ void UGMCheatWeapon::AimForAutoShoot()
 
 void AMemLeakTestGameMode::ForceGC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.MemLeakTestGameMode.ForceGC");
 
@@ -14168,7 +15699,7 @@ void AMemLeakTestGameMode::ForceGC()
 
 void UQPSBPLibrary::SwitchUIWidgetShowFromUserWidget(const struct FName& ContainName, const struct FString& UserWidgetName, const struct FString& WidgetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.QPSBPLibrary.SwitchUIWidgetShowFromUserWidget");
 
@@ -14195,7 +15726,7 @@ void UQPSBPLibrary::SwitchUIWidgetShowFromUserWidget(const struct FName& Contain
 
 void UQPSBPLibrary::SwitchUIWidgetShow(const struct FName& ContainName, const struct FString& WidgetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.QPSBPLibrary.SwitchUIWidgetShow");
 
@@ -14220,7 +15751,7 @@ void UQPSBPLibrary::SwitchUIWidgetShow(const struct FName& ContainName, const st
 
 void UQPSBPLibrary::SwitchUIContainsShow(const struct FName& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.QPSBPLibrary.SwitchUIContainsShow");
 
@@ -14244,7 +15775,7 @@ void UQPSBPLibrary::SwitchUIContainsShow(const struct FName& Name)
 
 bool UQPSBPLibrary::IsPublishVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.QPSBPLibrary.IsPublishVersion");
 
@@ -14269,7 +15800,7 @@ bool UQPSBPLibrary::IsPublishVersion()
 
 int UQPSBPLibrary::GetHZBValue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.QPSBPLibrary.GetHZBValue");
 
@@ -14294,7 +15825,7 @@ int UQPSBPLibrary::GetHZBValue()
 
 float UQPSBPLibrary::GetDistanceCullingFactor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Development.QPSBPLibrary.GetDistanceCullingFactor");
 

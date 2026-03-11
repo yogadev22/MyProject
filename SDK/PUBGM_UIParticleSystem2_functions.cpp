@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UIParticleSystem2.ParticleSystemWidget2.SetParticleSystem
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UParticleSystemWidget2::SetParticleSystem(class UParticleSystem* ParticleSystem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UIParticleSystem2.ParticleSystemWidget2.SetParticleSystem");
 
@@ -39,7 +39,7 @@ void UParticleSystemWidget2::SetParticleSystem(class UParticleSystem* ParticleSy
 
 void UParticleSystemWidget2::SetNiagaraSystem(class UNiagaraSystem* ParticleSystem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UIParticleSystem2.ParticleSystemWidget2.SetNiagaraSystem");
 
@@ -63,7 +63,7 @@ void UParticleSystemWidget2::SetNiagaraSystem(class UNiagaraSystem* ParticleSyst
 
 void UParticleSystemWidget2::SetActivate(bool bIsActivate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UIParticleSystem2.ParticleSystemWidget2.SetActivate");
 
@@ -87,7 +87,7 @@ void UParticleSystemWidget2::SetActivate(bool bIsActivate)
 
 class UParticleSystemComponent* UParticleSystemWidget2::GetParticleComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UIParticleSystem2.ParticleSystemWidget2.GetParticleComponent");
 
@@ -112,7 +112,7 @@ class UParticleSystemComponent* UParticleSystemWidget2::GetParticleComponent()
 
 class UNiagaraComponent* UParticleSystemWidget2::GetNiagaraComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UIParticleSystem2.ParticleSystemWidget2.GetNiagaraComponent");
 

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum BlockyLuaCore.EBlockyToolButtonType
 enum class EBlockyToolButtonType : uint8_t
@@ -356,9 +356,9 @@ enum class EBlockyVarInitType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct BlockyLuaCore.BlockParam
 // 0x0030
@@ -418,7 +418,7 @@ struct FCustomConfigString
 {
 	struct FGuid                                       ID;                                                       // 0x0000(0x0010) (IsPlainOldData)
 	struct FString                                     Name;                                                     // 0x0010(0x0010) (ZeroConstructor)
-	TEnumAsByte<enum ECustomBlockType>                 Type;                                                     // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECustomBlockType>                      Type;                                                     // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
 };
 
@@ -594,7 +594,7 @@ struct FMsgData
 // 0x0028
 struct FNamedVarData
 {
-	TEnumAsByte<enum EBlockyAccessType>                Access;                                                   // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlockyAccessType>                     Access;                                                   // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class UVarDefiner*                                 Definer;                                                  // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
 	bool                                               bIsArray;                                                 // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)

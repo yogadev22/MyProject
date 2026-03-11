@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function AIModule.AIController.UseBlackboard
 struct AAIController_UseBlackboard_Params
@@ -74,7 +74,7 @@ struct AAIController_MoveToLocation_Params
 	bool                                               bCanStrafe;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bAllowPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPathFollowingRequestResult>      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EPathFollowingRequestResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.MoveToActor
@@ -87,7 +87,7 @@ struct AAIController_MoveToActor_Params
 	bool                                               bCanStrafe;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bAllowPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPathFollowingRequestResult>      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EPathFollowingRequestResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.K2_SetFocus
@@ -122,7 +122,7 @@ struct AAIController_GetPathFollowingComponent_Params
 // Function AIModule.AIController.GetMoveStatus
 struct AAIController_GetMoveStatus_Params
 {
-	TEnumAsByte<enum EPathFollowingStatus>             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EPathFollowingStatus>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetImmediateMoveDestination
@@ -355,7 +355,7 @@ struct UPathFollowingComponent_GetPathDestination_Params
 // Function AIModule.PathFollowingComponent.GetPathActionType
 struct UPathFollowingComponent_GetPathActionType_Params
 {
-	TEnumAsByte<enum EPathFollowingAction>             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EPathFollowingAction>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering
@@ -413,7 +413,7 @@ struct UBehaviorTreeComponent_AddCooldownTagDuration_Params
 struct UAIAsyncTaskBlueprintProxy_OnMoveCompleted_Params
 {
 	struct FAIRequestID                                RequestID;                                                // (Parm)
-	TEnumAsByte<enum EPathFollowingResult>             MovementResult;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPathFollowingResult>                  MovementResult;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation
@@ -523,7 +523,7 @@ struct UAIPerceptionComponent_RequestStimuliListenerUpdate_Params
 struct UAIPerceptionComponent_OnOwnerEndPlay_Params
 {
 	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors
@@ -609,7 +609,7 @@ struct UAIPerceptionSystem_RegisterPerceptionStimuliSource_Params
 struct UAIPerceptionSystem_OnPerceptionStimuliSourceEndPlay_Params
 {
 	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus
@@ -721,8 +721,8 @@ struct UAITask_MoveTo_AIMoveTo_Params
 	struct FVector                                     GoalLocation;                                             // (Parm, IsPlainOldData)
 	class AActor*                                      GoalActor;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              AcceptanceRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAIOptionFlag>                    StopOnOverlap;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAIOptionFlag>                    AcceptPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAIOptionFlag>                         StopOnOverlap;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAIOptionFlag>                         AcceptPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUsePathfinding;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bLockAILogic;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseContinuosGoalTracking;                                // (Parm, ZeroConstructor, IsPlainOldData)
@@ -796,14 +796,14 @@ struct UBTDecorator_BlueprintBase_ReceiveExecutionFinishAI_Params
 {
 	class AAIController*                               OwnerController;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBTNodeResult>                    NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBTNodeResult>                         NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish
 struct UBTDecorator_BlueprintBase_ReceiveExecutionFinish_Params
 {
 	class AActor*                                      OwnerActor;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBTNodeResult>                    NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBTNodeResult>                         NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI
@@ -1265,7 +1265,7 @@ struct UEnvQueryInstanceBlueprintWrapper_GetItemScore_Params
 struct UEnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature_Params
 {
 	class UEnvQueryInstanceBlueprintWrapper*           QueryInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEnvQueryStatus>                  QueryStatus;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEnvQueryStatus>                       QueryStatus;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.EnvQueryManager.RunEQSQuery
@@ -1274,7 +1274,7 @@ struct UEnvQueryManager_RunEQSQuery_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class UEnvQuery*                                   QueryTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	class UObject*                                     Querier;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEnvQueryRunMode>                 RunMode;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEnvQueryRunMode>                      RunMode;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      WrapperClass;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class UEnvQueryInstanceBlueprintWrapper*           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -1356,13 +1356,13 @@ struct UNavLocalGridManager_AddLocalNavigationGridForBox_Params
 // Function AIModule.PawnAction.GetActionPriority
 struct UPawnAction_GetActionPriority_Params
 {
-	TEnumAsByte<enum EAIRequestPriority>               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EAIRequestPriority>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.PawnAction.Finish
 struct UPawnAction_Finish_Params
 {
-	TEnumAsByte<enum EPawnActionResult>                WithResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPawnActionResult>                     WithResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.PawnAction.CreateActionInstance
@@ -1402,14 +1402,14 @@ struct UPawnAction_BlueprintBase_ActionPause_Params
 struct UPawnAction_BlueprintBase_ActionFinished_Params
 {
 	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPawnActionResult>                WithResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPawnActionResult>                     WithResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.PawnActionsComponent.K2_PushAction
 struct UPawnActionsComponent_K2_PushAction_Params
 {
 	class UPawnAction*                                 NewAction;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAIRequestPriority>               Priority;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAIRequestPriority>                    Priority;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	class UObject*                                     Instigator;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -1419,7 +1419,7 @@ struct UPawnActionsComponent_K2_PerformAction_Params
 {
 	class APawn*                                       Pawn;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	class UPawnAction*                                 Action;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAIRequestPriority>               Priority;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAIRequestPriority>                    Priority;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -1427,14 +1427,14 @@ struct UPawnActionsComponent_K2_PerformAction_Params
 struct UPawnActionsComponent_K2_ForceAbortAction_Params
 {
 	class UPawnAction*                                 ActionToAbort;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPawnActionAbortState>            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EPawnActionAbortState>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.PawnActionsComponent.K2_AbortAction
 struct UPawnActionsComponent_K2_AbortAction_Params
 {
 	class UPawnAction*                                 ActionToAbort;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPawnActionAbortState>            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EPawnActionAbortState>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled

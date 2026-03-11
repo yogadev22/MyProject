@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Client.AppBaseConfig
 // 0x0128 (0x0150 - 0x0028)
@@ -40,7 +40,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.AppBaseConfig");
 		return pStaticClass;
@@ -59,7 +59,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.AsyncLoadHelper");
 		return pStaticClass;
@@ -87,7 +87,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.AsyncLoadWidgetBlueprint");
 		return pStaticClass;
@@ -112,7 +112,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.AsyncTaskCDNDownloader");
 		return pStaticClass;
@@ -134,7 +134,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.AsyncTaskDownloader");
 		return pStaticClass;
@@ -153,7 +153,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BattleScriptHelper");
 		return pStaticClass;
@@ -182,7 +182,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BattlePlayer");
 		return pStaticClass;
@@ -201,7 +201,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BattleAIPlayer");
 		return pStaticClass;
@@ -229,7 +229,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BattleUtils");
 		return pStaticClass;
@@ -267,7 +267,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BattleWindowMgr");
 		return pStaticClass;
@@ -294,7 +294,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BattleWindowMgrLuaUtils");
 		return pStaticClass;
@@ -312,7 +312,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BugReporter");
 		return pStaticClass;
@@ -337,7 +337,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BuildConfig");
 		return pStaticClass;
@@ -354,7 +354,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.BusinessHelper");
 		return pStaticClass;
@@ -426,7 +426,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.IntlHelper");
 		return pStaticClass;
@@ -490,7 +490,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.TestHUD");
 		return pStaticClass;
@@ -523,7 +523,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.CDNUpdate");
 		return pStaticClass;
@@ -567,7 +567,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.CentauriManager");
 		return pStaticClass;
@@ -614,7 +614,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ClientNetInterface");
 		return pStaticClass;
@@ -631,7 +631,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.CommonItemBase");
 		return pStaticClass;
@@ -648,7 +648,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.CompressTextureHelper");
 		return pStaticClass;
@@ -675,7 +675,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.CustomLayoutProxy");
 		return pStaticClass;
@@ -714,7 +714,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.CustomLayoutSaveGame");
 		return pStaticClass;
@@ -741,7 +741,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.CustomPanel");
 		return pStaticClass;
@@ -760,7 +760,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.DataTunnel");
 		return pStaticClass;
@@ -777,7 +777,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.DragDropTextBox");
 		return pStaticClass;
@@ -787,15 +787,16 @@ public:
 
 
 // Class Client.DynamicCustomIndexer
-// 0x0050 (0x0080 - 0x0030)
+// 0x00A0 (0x00D0 - 0x0030)
 class UDynamicCustomIndexer : public UDataAsset
 {
 public:
 	TMap<struct FString, struct FDynamicCustomInfo>    InfoMap;                                                  // 0x0030(0x0050) (Edit, ZeroConstructor)
+	TMap<int, struct FAnchorData>                      DefaultLayoutData;                                        // 0x0080(0x0050) (Edit, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.DynamicCustomIndexer");
 		return pStaticClass;
@@ -803,7 +804,7 @@ public:
 
 
 	static class UDynamicCustomIndexer* GetIndexer(const struct FString& Path);
-	TMap<int, class UUAECustomizePanel*> CreateDynamicCustomWidgets(TArray<int> InCustomTypeList, TArray<class UCanvasPanel*> Containers, TMap<int, class UUAECustomizePanel*>* CustomPanelMap);
+	TMap<int, class UUAECustomizePanel*> CreateDynamicCustomWidgets(TArray<int> InCustomTypeList, class UCanvasPanel* Container, bool bIgnoreDPIScale, TMap<int, class UUAECustomizePanel*>* CustomPanelMap);
 };
 
 
@@ -815,7 +816,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GameBackendUtils");
 		return pStaticClass;
@@ -834,7 +835,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GameBackendHUD");
 		return pStaticClass;
@@ -861,7 +862,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GameBusinessManager");
 		return pStaticClass;
@@ -1044,15 +1045,15 @@ public:
 	struct FString                                     BattleUtilsClassName;                                     // 0x0AE8(0x0010) (ZeroConstructor, Config)
 	class UBattleUtils*                                BattleUtils;                                              // 0x0AF8(0x0008) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData31[0x8];                                       // 0x0B00(0x0008) MISSED OFFSET
-	struct FScriptDelegate                             OnImagePickDetectEvent;                                   // 0x0B08(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnVideoPickEvent;                                         // 0x0B18(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnPermissionResultEvent;                                  // 0x0B28(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnImagePickDetectEvent;                                   // 0x0B08(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnVideoPickEvent;                                         // 0x0B18(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnPermissionResultEvent;                                  // 0x0B28(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnDeviceRotationChangedEvent;                             // 0x0B38(0x0010) (ZeroConstructor, InstancedReference)
 	struct FString                                     CurrentMapName;                                           // 0x0B48(0x0010) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GameFrontendHUD");
 		return pStaticClass;
@@ -1173,7 +1174,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GameFrontendUtils");
 		return pStaticClass;
@@ -1192,7 +1193,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GameJoyInterface");
 		return pStaticClass;
@@ -1238,7 +1239,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GDolphinUpdater");
 		return pStaticClass;
@@ -1279,7 +1280,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.AvatarItemDownloadPuffer");
 		return pStaticClass;
@@ -1292,51 +1293,51 @@ public:
 
 
 // Class Client.GCPufferDownloader
-// 0x0428 (0x0450 - 0x0028)
+// 0x0438 (0x0460 - 0x0028)
 class UGCPufferDownloader : public UObject
 {
 public:
-	unsigned char                                      UnknownData00[0x2C8];                                     // 0x0028(0x02C8) MISSED OFFSET
-	bool                                               Disable;                                                  // 0x02F0(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x97];                                      // 0x02F1(0x0097) MISSED OFFSET
-	struct FString                                     DownloadDir;                                              // 0x0388(0x0010) (ZeroConstructor, Config)
-	struct FString                                     PufferTmpDir;                                             // 0x0398(0x0010) (ZeroConstructor, Config)
-	uint32_t                                           CleanFlagVer;                                             // 0x03A8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x03AC(0x0004) MISSED OFFSET
-	TArray<struct FString>                             CleanFileNamePattern;                                     // 0x03B0(0x0010) (ZeroConstructor, Config)
-	bool                                               PreFetchPakEnable;                                        // 0x03C0(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               PreFetchFileClearEnable;                                  // 0x03C1(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               PreFetchConvertEnable;                                    // 0x03C2(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x5];                                       // 0x03C3(0x0005) MISSED OFFSET
-	TArray<struct FString>                             PreFetchPakNames;                                         // 0x03C8(0x0010) (ZeroConstructor, Config)
-	uint32_t                                           PreFetchReserveredDiskSpace;                              // 0x03D8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               PreFetchODPak_Enable;                                     // 0x03DC(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x03DD(0x0003) MISSED OFFSET
-	int                                                PreFetchODPaks_MaxNum;                                    // 0x03E0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                PreFetchODPaks_BatchSize;                                 // 0x03E4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                PreFetchODPaks_FetchedNum;                                // 0x03E8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                PreFetchODPaks_FetchedIndex;                              // 0x03EC(0x0004) (ZeroConstructor, IsPlainOldData)
-	TArray<struct FString>                             PreFetchODPaks_Filenames;                                 // 0x03F0(0x0010) (ZeroConstructor, Config)
-	bool                                               AllowIOSBGDownload;                                       // 0x0400(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               AllowIOSBGDownloadPush;                                   // 0x0401(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               DisableJPKRBGDownloadNightPush;                           // 0x0402(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x1];                                       // 0x0403(0x0001) MISSED OFFSET
-	int                                                DisableJPKRBGDownloadNightPushAfterHour;                  // 0x0404(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                DisableJPKRBGDownloadNightPushBeforeHour;                 // 0x0408(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                IOSBGDownloadPushDelaySeconds;                            // 0x040C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               DisableBGDownloadNotification;                            // 0x0410(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x3];                                       // 0x0411(0x0003) MISSED OFFSET
-	int                                                OptiHttpConfig_uEnableAverageShardingStrategy;            // 0x0414(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                OptiHttpConfig_uAverageShardingSize;                      // 0x0418(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                OptiHttpConfig_uEnableDynamicExpansionMaxTask;            // 0x041C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              PreFetchODPaks_StartTime;                                 // 0x0420(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData07[0x4];                                       // 0x0424(0x0004) MISSED OFFSET
-	struct FString                                     PreFetchODPaks_ConfigName;                                // 0x0428(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData08[0x18];                                      // 0x0438(0x0018) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x2D8];                                     // 0x0028(0x02D8) MISSED OFFSET
+	bool                                               Disable;                                                  // 0x0300(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x97];                                      // 0x0301(0x0097) MISSED OFFSET
+	struct FString                                     DownloadDir;                                              // 0x0398(0x0010) (ZeroConstructor, Config)
+	struct FString                                     PufferTmpDir;                                             // 0x03A8(0x0010) (ZeroConstructor, Config)
+	uint32_t                                           CleanFlagVer;                                             // 0x03B8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x03BC(0x0004) MISSED OFFSET
+	TArray<struct FString>                             CleanFileNamePattern;                                     // 0x03C0(0x0010) (ZeroConstructor, Config)
+	bool                                               PreFetchPakEnable;                                        // 0x03D0(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               PreFetchFileClearEnable;                                  // 0x03D1(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               PreFetchConvertEnable;                                    // 0x03D2(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x5];                                       // 0x03D3(0x0005) MISSED OFFSET
+	TArray<struct FString>                             PreFetchPakNames;                                         // 0x03D8(0x0010) (ZeroConstructor, Config)
+	uint32_t                                           PreFetchReserveredDiskSpace;                              // 0x03E8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               PreFetchODPak_Enable;                                     // 0x03EC(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x03ED(0x0003) MISSED OFFSET
+	int                                                PreFetchODPaks_MaxNum;                                    // 0x03F0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                PreFetchODPaks_BatchSize;                                 // 0x03F4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                PreFetchODPaks_FetchedNum;                                // 0x03F8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                PreFetchODPaks_FetchedIndex;                              // 0x03FC(0x0004) (ZeroConstructor, IsPlainOldData)
+	TArray<struct FString>                             PreFetchODPaks_Filenames;                                 // 0x0400(0x0010) (ZeroConstructor, Config)
+	bool                                               AllowIOSBGDownload;                                       // 0x0410(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               AllowIOSBGDownloadPush;                                   // 0x0411(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               DisableJPKRBGDownloadNightPush;                           // 0x0412(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x1];                                       // 0x0413(0x0001) MISSED OFFSET
+	int                                                DisableJPKRBGDownloadNightPushAfterHour;                  // 0x0414(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                DisableJPKRBGDownloadNightPushBeforeHour;                 // 0x0418(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                IOSBGDownloadPushDelaySeconds;                            // 0x041C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               DisableBGDownloadNotification;                            // 0x0420(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData06[0x3];                                       // 0x0421(0x0003) MISSED OFFSET
+	int                                                OptiHttpConfig_uEnableAverageShardingStrategy;            // 0x0424(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                OptiHttpConfig_uAverageShardingSize;                      // 0x0428(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                OptiHttpConfig_uEnableDynamicExpansionMaxTask;            // 0x042C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              PreFetchODPaks_StartTime;                                 // 0x0430(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData07[0x4];                                       // 0x0434(0x0004) MISSED OFFSET
+	struct FString                                     PreFetchODPaks_ConfigName;                                // 0x0438(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData08[0x18];                                      // 0x0448(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GCPufferDownloader");
 		return pStaticClass;
@@ -1372,8 +1373,8 @@ public:
 	bool PreFetchODPakFiles(bool Start);
 	void OnItemDownloadedInFighting(const struct FString& PackHash, const struct FString& ErrorCode);
 	void OnHashGenerateFinished(int outterTaskID, const struct FString& hashCode);
-	int MoveFileTo(const struct FString& Filename, const struct FString& from, const struct FString& to);
-	int MoveFile(const struct FString& from, const struct FString& to);
+	int MoveFileTo(const struct FString& Filename, const struct FString& From, const struct FString& To);
+	int MoveFile(const struct FString& From, const struct FString& To);
 	int MergeBinDiffPak(int outterTaskID, const struct FString& PakFilenameOld, const struct FString& PakFilenameDiff, const struct FString& PakFilenameNew, bool fast);
 	bool IsODPaks(const struct FString& FilePath);
 	bool IsODFileExists(const struct FString& Path);
@@ -1414,7 +1415,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.GMLogShare");
 		return pStaticClass;
@@ -1435,7 +1436,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.IMSDKNotice");
 		return pStaticClass;
@@ -1459,7 +1460,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.HttpWrapper");
 		return pStaticClass;
@@ -1500,7 +1501,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ImageDownloader");
 		return pStaticClass;
@@ -1523,7 +1524,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ImageDownloadUtil");
 		return pStaticClass;
@@ -1553,7 +1554,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.InGameUIManager");
 		return pStaticClass;
@@ -1593,7 +1594,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.IntlSDKComplianceHelper");
 		return pStaticClass;
@@ -1606,7 +1607,7 @@ public:
 	void SetEUAgreeStatus(int AgreeStatus);
 	void SetAdulthood(int AgeStatus);
 	void SendVoiceControlEmail(const struct FString& InEmail, const struct FString& InUserName);
-	void SendEmail(const struct FString& InEmail, const struct FString& UserName);
+	void SendEmail(const struct FString& InEmail, const struct FString& UserName, int InScene);
 	void QueryUserStatus();
 	void QueryIsEEA(const struct FString& InRegion);
 	void QueryConfig();
@@ -1629,7 +1630,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LaggingReporter");
 		return pStaticClass;
@@ -1647,7 +1648,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LiveBroadcast");
 		return pStaticClass;
@@ -1671,7 +1672,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LoadTexture");
 		return pStaticClass;
@@ -1691,7 +1692,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LobbyChatSecurity");
 		return pStaticClass;
@@ -1715,14 +1716,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LobbyDecalBakingComponent");
 		return pStaticClass;
 	}
 
 
-	void SwitchDecalParam(int from, int to);
+	void SwitchDecalParam(int From, int To);
 	bool SavePng(class USceneCaptureComponent2D* SceneCapComp, const struct FString& ImagePath, const struct FLinearColor& ClearColor);
 	void ReplaceOneDecalParam(class UStaticMeshComponent* MeshComp, int Index, class UDecalBakingParameterComponent* DecalParamComponent);
 	void Init();
@@ -1742,7 +1743,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LobbyMatChgActor");
 		return pStaticClass;
@@ -1761,7 +1762,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LobbyModelUtils");
 		return pStaticClass;
@@ -1802,7 +1803,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LobbySceneCaptureActor");
 		return pStaticClass;
@@ -1823,7 +1824,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LuaBlueprintLibrary");
 		return pStaticClass;
@@ -1858,7 +1859,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LuaBlueprintMgr");
 		return pStaticClass;
@@ -1881,7 +1882,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LuaBluepirntSys");
 		return pStaticClass;
@@ -1904,7 +1905,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.LuaClassObj");
 		return pStaticClass;
@@ -1958,7 +1959,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.MaskBox");
 		return pStaticClass;
@@ -1990,7 +1991,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.MaskImage");
 		return pStaticClass;
@@ -2014,7 +2015,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.NewButton");
 		return pStaticClass;
@@ -2044,7 +2045,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.PandoraV2Helper");
 		return pStaticClass;
@@ -2077,7 +2078,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.PlatformAppraise");
 		return pStaticClass;
@@ -2094,7 +2095,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.PublishAreaMgr");
 		return pStaticClass;
@@ -2119,7 +2120,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.SavedFileUtil");
 		return pStaticClass;
@@ -2149,7 +2150,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ScatterPlot");
 		return pStaticClass;
@@ -2173,14 +2174,14 @@ class UScreenInput : public UObject
 {
 public:
 	struct FScriptMulticastDelegate                    OnScreenTouch;                                            // 0x0028(0x0010) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnMouseButtonUp;                                          // 0x0038(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnMouseButtonDown;                                        // 0x0048(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnMotionDetected;                                         // 0x0058(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnMouseButtonUp;                                          // 0x0038(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnMouseButtonDown;                                        // 0x0048(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnMotionDetected;                                         // 0x0058(0x0010) (ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData00[0x18];                                      // 0x0068(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ScreenInput");
 		return pStaticClass;
@@ -2203,7 +2204,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ScreenshotMaker");
 		return pStaticClass;
@@ -2241,15 +2242,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ScriptHelperClient");
 		return pStaticClass;
 	}
 
 
-	static struct FString ZLIBDecompress(const struct FString& CompressedData, int CompressedSize, int UnCompressedSize, bool IsHEX);
-	static int ZLIBCompress_LuaState();
 	static void WakeupFromSuspendSound();
 	static int VPNTearDown();
 	static int VPNSetUserInfo(const struct FString& InUserId, const struct FString& InUserToken, const struct FString& InAppId);
@@ -2452,13 +2451,13 @@ public:
 	static void SetAllFontStyle();
 	static void SetActivePufferTick(class UGameFrontendHUD* GameFrontendHUD, bool ActivePufferTick);
 	static void SetAccountRegion(const struct FString& Region);
-	static void SendRetriveBeginnerFinisheGuideReq(class UGameFrontendHUD* GameFrontendHUD);
 	static void SendRecordFinishedGuideReq(class UGameFrontendHUD* GameFrontendHUD, const struct FString& TipsID);
 	static void SendPlayEmote(class UGameFrontendHUD* GameFrontendHUD, int EmoteIndex);
 	static void SendLobbyChat(class UGameFrontendHUD* GameFrontendHUD, const struct FString& gid, const struct FString& Content);
 	static void SendDirtyToFilter(class UGameFrontendHUD* GameFrontendHUD, const struct FString& dirtyString, const struct FString& prefixString, int UID);
 	static void SendClientLog(class UGameFrontendHUD* GameFrontendHUD, const struct FString& ErrorReason, const struct FString& errorDescription, bool pullAll);
 	static void ScheduleLocalNotificationAtTime(int Year, int Month, int Day, int Hour, int Minute, int Second, bool LocalTime, const struct FString& Title, const struct FString& Body, const struct FString& Action, int NotificationID);
+	static void SaveToSharedPreferences(const struct FString& Key, const struct FString& Value);
 	static void SaveStringToIntermediateFile(const struct FString& String, const struct FString& Filename);
 	static void SaveStringToFileWithEncoding(const struct FString& String, const struct FString& Filename, int EncodingOptions);
 	static void SaveStringToFile(const struct FString& String, const struct FString& Filename);
@@ -2473,6 +2472,7 @@ public:
 	static bool SaveArrayToFile(TArray<unsigned char> Content, const struct FString& Filename);
 	static void SaveAOSMemMapsInfo();
 	static void RunTestCreateLobbyActor();
+	static void RunFileLockHelper();
 	static uint64_t RunCvmTestCases();
 	static struct FString RunConsoleCommondAndGetString(const struct FString& commond);
 	static void RunConsoleCommond(const struct FString& commond);
@@ -2528,6 +2528,7 @@ public:
 	static void ReadManagedTickMapSwitchers();
 	static void QuitFightChat(class UGameFrontendHUD* GameFrontendHUD);
 	static void QuickLogin(int refreshTokenBeforeExpDays, TScriptInterface<class UClientNetInterface>* ClientNetInterface);
+	static struct FString ProjectUserDir();
 	static struct FString ProjectSavedDir();
 	static struct FString ProjectDir();
 	static struct FString ProjectContentDir();
@@ -2536,8 +2537,12 @@ public:
 	static void PrintUAEDataTableManagerMemDetail();
 	static void PostGameStatusToTMFPSMap(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Key, TMap<struct FString, struct FString>* mapData);
 	static void PlayHapticsFile(const struct FString& FilePath, int Duration, const struct FScriptDelegate& Callback);
+	static void PerfReportSetLabel(struct FString* str);
+	static void PerfReportAddNote(struct FString* str);
 	static void OpenWebviewInGameProcess(const struct FString& URL, int Left, int Top, int Right, int Bottom);
 	static void OpenURLInSDK(const struct FString& InURL, bool InVisibleToolbar, bool InSystemWebBrowser, bool InFullScreen, const struct FString& ExtraJson);
+	static void OpenSystemStorage();
+	static void OpenSystemSettings();
 	static bool OpenShaderCodeLibrary(const struct FString& Path, const struct FString& VersionNum, bool bForceOpen);
 	static void OpenH5FromCache(class UGameFrontendHUD* GameFrontendHUD, const struct FString& ModuleName, const struct FString& Language, int netType, int Top, int Left, int Right, const struct FString& ViewParam);
 	void OnWebViewCacheInfoDelegate__DelegateSignature(int code);
@@ -2566,11 +2571,13 @@ public:
 	static bool MountPakFile(const struct FString& InPakFilename, const struct FString& Key);
 	static void MessageBoxExt(const struct FString& Caption, const struct FString& Text);
 	static void MemOption(int Option);
-	static bool MediaCopyFromPakToLocal(const struct FString& from, bool bForce);
+	static bool MediaCopyFromPakToLocal(const struct FString& From, bool bForce);
 	static int MD5LuaString_LuaState();
 	static struct FString MD5HashAnsiString(const struct FString& str);
 	static void ManualSleep(float Seconds);
+	static int LuaSnapShot_LuaState();
 	static struct FString LuaLoadFileToString(const struct FString& InFileName);
+	static int LowMemoryInGB();
 	static void LogoutAllDevices(TScriptInterface<class UClientNetInterface>* ClientNetInterface);
 	static void Logout(TScriptInterface<class UClientNetInterface>* ClientNetInterface);
 	static void LoginWithExtraInfo(uint32_t Channel, const struct FString& InExtraJson, bool SkipLocalCacheCheck, TScriptInterface<class UClientNetInterface>* ClientNetInterface);
@@ -2584,6 +2591,7 @@ public:
 	static bool LoadSOFromOBB();
 	static struct FSavFileData LoadSavFileAsByteArray(const struct FString& Filename);
 	static int LoadSavFile_LuaState();
+	static TArray<struct FString> LoadSavedFileToStringArray(const struct FString& Filename);
 	static struct FString LoadIntermediateFileToString(const struct FString& Filename);
 	static void LoadH5FromCache(class UGameFrontendHUD* GameFrontendHUD, const struct FString& ModuleName, const struct FString& Language, int netType, int Top, int Left, int Right, const struct FString& ViewParam);
 	static struct FString LoadFileToStringByFullPath(const struct FString& FullPathName);
@@ -2672,6 +2680,7 @@ public:
 	static bool IsDeviceOverheat();
 	static bool IsDeviceHWSupportVulkan();
 	static bool IsDevelopment();
+	static bool IsCPUArchMisMatch();
 	static bool IsConnected(TScriptInterface<class UClientNetInterface>* ClientNetInterface);
 	static bool IsCloudVersion();
 	static bool IsCEVersion();
@@ -2763,6 +2772,7 @@ public:
 	static int GetScreenHight();
 	static int GetScreenHeightForWebview();
 	static int GetScreenDensity();
+	static struct FString GetRootDir();
 	static int GetRingMode();
 	static struct FString GetRemarkNameByGIDWithObj(class UObject* Obj, const struct FString& gid, const struct FString& PlayerName);
 	static struct FString GetRemarkNameByGID(class UGameFrontendHUD* GameFrontendHUD, const struct FString& gid, const struct FString& PlayerName);
@@ -2791,6 +2801,7 @@ public:
 	static TArray<struct FString> GetODPaksFileUseTime(const struct FString& DumpFilename);
 	static struct FString GetODPakName(const struct FString& Path);
 	static int GetObjectArrayNum();
+	static struct FString GetObbFilePath();
 	static TArray<int> GetNotchSize();
 	static struct FString GetNetWorkType();
 	static struct FString GetNativeVersion();
@@ -2828,11 +2839,13 @@ public:
 	static struct FString GetGameStatus(class UGameFrontendHUD* GameFrontendHUD);
 	static struct FString GetGameModeID(class UGameFrontendHUD* GameFrontendHUD);
 	static struct FString GetGameMasterGUID();
+	static struct FString GetFromSharedPreferences(const struct FString& Key, const struct FString& DefaultValue);
 	static int64_t GetFrameCounter();
 	static float GetFPS();
 	static bool GetForceVulkanAvailable();
 	static struct FString GetFocusedSlateName();
 	static struct FString GetFireBaseFCMToken();
+	static int64_t GetFileSizeOutsideSandbox(const struct FString& FilePath);
 	static int64_t GetFileSizeOnDiskBytes(const struct FString& FilePath);
 	static uint32_t GetFileSizeOnDisk(const struct FString& FilePath);
 	static uint64_t GetFileSizeCompressed(class UGameFrontendHUD* GameFrontendHUD, const struct FString& FilePath);
@@ -2847,6 +2860,7 @@ public:
 	static int GetDSConnectionState();
 	static struct FString GetDSConnectionIP();
 	static struct FString GetDownLoadLanguageName();
+	static struct FString GetDownloadDirPath();
 	static struct FString GetDeviceXID();
 	static int GetDeviceQualityLevel();
 	static struct FString GetDevicePlatformName();
@@ -2863,6 +2877,9 @@ public:
 	static int GetCurrentLanguage_LuaState();
 	static int GetCurrentChannel(class UGameFrontendHUD* GameFrontendHUD);
 	static struct FString GetCpuType();
+	static int GetCPUMaxFrequency();
+	static int GetCPUCoreCount();
+	static uint64_t GetCPUClockCycles();
 	static struct FString GetConfigString(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName);
 	static int GetConfigInt(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName);
 	static bool GetConfigBool(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName);
@@ -2876,6 +2893,8 @@ public:
 	static struct FString GetBattleKey(const struct FString& svr_pub_key, const struct FString& cli_pri_key);
 	static struct FString GetAreaIPNo();
 	static struct FString GetAppVersion();
+	static int64_t GetAppStartupTrackerCurrentTime();
+	static int64_t GetAppStartupStageTime(struct FString* str);
 	static struct FString GetAppMountHandleInfo();
 	static struct FString GetApplicationVersion();
 	static struct FString GetAOSSHOP();
@@ -2937,6 +2956,8 @@ public:
 	static class UClass* FindClassByPath(const struct FString& ObjectPath);
 	static void FileSystemTesting(uint32_t Count);
 	static int FetchFileFromPAK(const struct FString& InFilePathInPak, const struct FString& InLocalFilePath, bool Override);
+	static void ExportLocalUsage_3(const struct FString& DumpFilePath, struct FString* DestDir);
+	static void ExportLocalUsage(const struct FString& DumpFilePath);
 	static void ExitGameForSafety();
 	static void ExitGame();
 	static void ExeMemoryWarningHandle();
@@ -2950,7 +2971,9 @@ public:
 	static void EnableUrlCheck(bool bShouldEnable);
 	static void EnableTxtCheck();
 	static bool EnableSubMountPoint();
+	static bool EnableShaderGroupAsync(const struct FString& GroupNames);
 	static bool EnableShaderGroup(const struct FString& GroupName);
+	static float EnableShaderFinishPersent();
 	static void EnableReportVoiceSdkEvent(class UGameFrontendHUD* GameFrontendHUD, bool InitVoiceSdkComponentReportEnable, bool VoiceSdkJoinRoomReportEnable, bool VoiceSdkQuitRoomReportEnable, bool VoiceSdkJoinLbsRoomReportEnable, bool VoiceSdkQuitLbsRoomReportEnable, bool VoiceSdkOnJoinTeamRoomReportEnable, bool VoiceSdkOnJoinLbsRoomReportEnable);
 	static void EnableNativeDump(int EnableDump);
 	static bool EnableMergeVirtual();
@@ -2968,6 +2991,7 @@ public:
 	static struct FString DumpPackageMemInfo(TArray<struct FString>* AssetList);
 	static void DumpOpenReadCollect(class UGameFrontendHUD* GameFrontendHUD, const struct FString& DumpFilename);
 	static void DumpLogFile(bool backup);
+	static void DumpConsoleVariables();
 	static bool DoesPackageExist(const struct FString& Filename);
 	static void Disconnect(TScriptInterface<class UClientNetInterface>* ClientNetInterface);
 	static void DisableSysCache();
@@ -2975,6 +2999,7 @@ public:
 	static void DisableAOSForceAnsiMalloc();
 	static void DisableAndroidHardwareAcceleration();
 	static void DirectToSetting();
+	static void DirectToMemoryManagement();
 	static void DestroyConnector(TScriptInterface<class UClientNetInterface>* ClientNetInterface);
 	static bool DeleteFile(const struct FString& fullPath);
 	static void DeleteDirectory(const struct FString& FilePath);
@@ -2984,6 +3009,7 @@ public:
 	static struct FString CSCGetStatInfo();
 	static class UTexture2D* CreateQRCodeTexture(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Text);
 	static void CreateHapticsEngine(const struct FScriptDelegate& Callback);
+	static void CrashSightReportLogInfo(const struct FString& MsgType, const struct FString& Info);
 	static void CrashSetAppVersion(const struct FString& Version, TScriptInterface<class UClientNetInterface>* ClientNetInterface);
 	static void CrashPutUserData(const struct FString& Key, const struct FString& Value, TScriptInterface<class UClientNetInterface>* ClientNetInterface);
 	static void CrashPostExceptionFull(int Category, const struct FString& Name, const struct FString& Msg, const struct FString& stack, TScriptInterface<class UClientNetInterface>* ClientNetInterface);
@@ -3029,6 +3055,7 @@ public:
 	static void ClearAllLocalNotifications();
 	static void ClearAllAudioBanks();
 	static void CheckRegisterGestureConflictWithZoom();
+	static int CheckMetalLibraryUncompressed();
 	static int CheckMemorySymbolSource();
 	static bool CheckLocalPakContentHash(const struct FString& Filename);
 	static bool CheckLocalizationExist();
@@ -3080,7 +3107,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ScriptHelperEngine");
 		return pStaticClass;
@@ -3114,7 +3141,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.SDKCallbackHelper");
 		return pStaticClass;
@@ -3143,7 +3170,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.SettingCustomPanel");
 		return pStaticClass;
@@ -3157,7 +3184,6 @@ public:
 	bool RestoreInBound();
 	void ResetMaxScale();
 	bool IsSquareFlashEffectAssetName(const struct FString& InAssetName);
-	bool IsOffsetInBoundary(const struct FVector2D& Offset);
 	bool IsInvisible();
 	bool IsCircleFlashEffectAssetName(const struct FString& InAssetName);
 	class UWidget* GetWidgetByType(class UWidget* RootWidget, class UClass* WidgetType);
@@ -3192,7 +3218,7 @@ public:
 	unsigned char                                      UnknownData01[0x50];                                      // 0x0180(0x0050) MISSED OFFSET
 	struct FString                                     CachedSaveGameName;                                       // 0x01D0(0x0010) (ZeroConstructor, Config)
 	TArray<struct FCustomSettingSaveGame>              CustomSettingSaveGames;                                   // 0x01E0(0x0010) (ZeroConstructor)
-	struct FScriptDelegate                             GetUserSettingsDelegate;                                  // 0x01F0(0x0016) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             GetUserSettingsDelegate;                                  // 0x01F0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
 	class UEffectSettingMgr*                           EffectSettingMgrInstace;                                  // 0x0200(0x0008) (ZeroConstructor, IsPlainOldData)
 	class USaveGame*                                   UserSettings;                                             // 0x0208(0x0008) (ZeroConstructor, IsPlainOldData)
 	class USaveGame*                                   UserSettingsShadowData;                                   // 0x0210(0x0008) (ZeroConstructor, IsPlainOldData)
@@ -3210,7 +3236,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.SettingSubsystem");
 		return pStaticClass;
@@ -3259,7 +3285,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.SoundTools");
 		return pStaticClass;
@@ -3285,7 +3311,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.STExtraClientUtils");
 		return pStaticClass;
@@ -3309,7 +3335,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.STExtraClientUIBPUtils");
 		return pStaticClass;
@@ -3329,7 +3355,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.TPerfPlat");
 		return pStaticClass;
@@ -3350,16 +3376,16 @@ class UTranslator : public UObject
 public:
 	struct FString                                     SubscriptionKey;                                          // 0x0028(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config)
 	struct FString                                     StoredAccessToken;                                        // 0x0038(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	struct FScriptDelegate                             OnGetAccessTokenDelegate;                                 // 0x0048(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnDetectDelegate;                                         // 0x0058(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnTranslateDelegate;                                      // 0x0068(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnGetAccessTokenDelegate;                                 // 0x0048(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnDetectDelegate;                                         // 0x0058(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnTranslateDelegate;                                      // 0x0068(0x0010) (ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData00[0x80];                                      // 0x0078(0x0080) MISSED OFFSET
 	class UGameFrontendHUD*                            GameFrontendHUD;                                          // 0x00F8(0x0008) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x20];                                      // 0x0100(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.Translator");
 		return pStaticClass;
@@ -3376,7 +3402,7 @@ public:
 	void OnGetAccessToken__DelegateSignature(bool IsSuccess, const struct FString& Token);
 	void OnGetAccessToken(bool Success, const struct FString& Data);
 	void OnDetectV2(bool Success, const struct FString& Data);
-	void OnDetect__DelegateSignature(bool IsSuccess, const struct FString& from, const struct FString& to);
+	void OnDetect__DelegateSignature(bool IsSuccess, const struct FString& From, const struct FString& To);
 	void OnDetect(bool Success, const struct FString& Data);
 	bool HasTranslating();
 	void GetAccessToken(bool bForceGet, const struct FString& URL, const struct FString& Verb, TMap<struct FString, struct FString> Headers, const struct FString& Content);
@@ -3397,7 +3423,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.TssManager");
 		return pStaticClass;
@@ -3423,7 +3449,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.UAEClientGameMode");
 		return pStaticClass;
@@ -3440,7 +3466,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.UAELobbyGameMode");
 		return pStaticClass;
@@ -3457,7 +3483,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.UAELobbyPlayerController");
 		return pStaticClass;
@@ -3467,7 +3493,7 @@ public:
 
 
 // Class Client.UTRichTextBlock
-// 0x0A08 (0x0B08 - 0x0100)
+// 0x0A10 (0x0B10 - 0x0100)
 class UUTRichTextBlock : public UWidget
 {
 public:
@@ -3475,30 +3501,32 @@ public:
 	struct FScriptMulticastDelegate                    OnHyperlinkClicked;                                       // 0x0108(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FString                                     ContentText;                                              // 0x0118(0x0010) (Edit, ZeroConstructor)
 	unsigned char                                      UnknownData01[0x10];                                      // 0x0128(0x0010) MISSED OFFSET
-	struct FSlateFontInfo                              Font;                                                     // 0x0138(0x0058) (Edit, BlueprintVisible, BlueprintReadOnly)
-	bool                                               bSupportHyLink;                                           // 0x0190(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bSupportImage;                                            // 0x0191(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2];                                       // 0x0192(0x0002) MISSED OFFSET
-	struct FLinearColor                                TextColor;                                                // 0x0194(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	TEnumAsByte<enum ETextJustify>                     Justification;                                            // 0x01A4(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETextVerticalJustify>             TextVerticalJustification;                                // 0x01A5(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               AutoWrapText;                                             // 0x01A6(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x1];                                       // 0x01A7(0x0001) MISSED OFFSET
-	struct FScrollBarStyle                             ScrollBarStyle;                                           // 0x01A8(0x0680) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	struct FMargin                                     HScrollBarPadding;                                        // 0x0828(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
-	struct FMargin                                     VScrollBarPadding;                                        // 0x0838(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
-	float                                              WrapTextAt;                                               // 0x0848(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	struct FMargin                                     Margin;                                                   // 0x084C(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	float                                              LineHeightPercentage;                                     // 0x085C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	struct FString                                     HyperlinkDecoratorTag;                                    // 0x0860(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	struct FString                                     HyperlinkCallBackFunctionName;                            // 0x0870(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	struct FString                                     HyperlinkCallBackTableName;                               // 0x0880(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	unsigned char                                      UnknownData04[0x270];                                     // 0x0890(0x0270) MISSED OFFSET
-	class UGameFrontendHUD*                            GameFrontendHUD;                                          // 0x0B00(0x0008) (ZeroConstructor, IsPlainOldData)
+	bool                                               AutoCapitalizeText;                                       // 0x0138(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0139(0x0007) MISSED OFFSET
+	struct FSlateFontInfo                              Font;                                                     // 0x0140(0x0058) (Edit, BlueprintVisible, BlueprintReadOnly)
+	bool                                               bSupportHyLink;                                           // 0x0198(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bSupportImage;                                            // 0x0199(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x2];                                       // 0x019A(0x0002) MISSED OFFSET
+	struct FLinearColor                                TextColor;                                                // 0x019C(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
+	TEnumAsByte<ETextJustify>                          Justification;                                            // 0x01AC(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextVerticalJustify>                  TextVerticalJustification;                                // 0x01AD(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               AutoWrapText;                                             // 0x01AE(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x1];                                       // 0x01AF(0x0001) MISSED OFFSET
+	struct FScrollBarStyle                             ScrollBarStyle;                                           // 0x01B0(0x0680) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FMargin                                     HScrollBarPadding;                                        // 0x0830(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
+	struct FMargin                                     VScrollBarPadding;                                        // 0x0840(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
+	float                                              WrapTextAt;                                               // 0x0850(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	struct FMargin                                     Margin;                                                   // 0x0854(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
+	float                                              LineHeightPercentage;                                     // 0x0864(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	struct FString                                     HyperlinkDecoratorTag;                                    // 0x0868(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	struct FString                                     HyperlinkCallBackFunctionName;                            // 0x0878(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	struct FString                                     HyperlinkCallBackTableName;                               // 0x0888(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	unsigned char                                      UnknownData05[0x270];                                     // 0x0898(0x0270) MISSED OFFSET
+	class UGameFrontendHUD*                            GameFrontendHUD;                                          // 0x0B08(0x0008) (ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.UTRichTextBlock");
 		return pStaticClass;
@@ -3526,8 +3554,8 @@ public:
 	struct FButtonStyle                                WidgetStyle;                                              // 0x0120(0x0338) (Edit, BlueprintVisible)
 	struct FLinearColor                                ColorAndOpacity;                                          // 0x0458(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
 	struct FLinearColor                                BackgroundColor;                                          // 0x0468(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	TEnumAsByte<enum EButtonClickMethod>               ClickMethod;                                              // 0x0478(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EButtonTouchMethod>               TouchMethod;                                              // 0x0479(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EButtonClickMethod>                    ClickMethod;                                              // 0x0478(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EButtonTouchMethod>                    TouchMethod;                                              // 0x0479(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	bool                                               IsFocusable;                                              // 0x047A(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	bool                                               IsPassMouseEvent;                                         // 0x047B(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x047C(0x0004) MISSED OFFSET
@@ -3537,7 +3565,7 @@ public:
 	struct FScriptMulticastDelegate                    OnButtonReleased;                                         // 0x04B0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnButtonHovered;                                          // 0x04C0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnButtonUnhovered;                                        // 0x04D0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             OnMouseButtonDownEvent;                                   // 0x04E0(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnMouseButtonDownEvent;                                   // 0x04E0(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData01[0x10];                                      // 0x04F0(0x0010) MISSED OFFSET
 	struct FScriptMulticastDelegate                    OnClicked;                                                // 0x0500(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnPressed;                                                // 0x0510(0x0010) (ZeroConstructor, InstancedReference)
@@ -3547,17 +3575,17 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.AEVarButton");
 		return pStaticClass;
 	}
 
 
-	void SetTouchMethod(TEnumAsByte<enum EButtonTouchMethod> InTouchMethod);
+	void SetTouchMethod(TEnumAsByte<EButtonTouchMethod> InTouchMethod);
 	void SetStyle(const struct FButtonStyle& InStyle);
 	void SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity);
-	void SetClickMethod(TEnumAsByte<enum EButtonClickMethod> InClickMethod);
+	void SetClickMethod(TEnumAsByte<EButtonClickMethod> InClickMethod);
 	void SetBackgroundColor(const struct FLinearColor& InBackgroundColor);
 	bool IsPressed();
 };
@@ -3593,13 +3621,14 @@ public:
 	int                                                ItemPoolMaxNum;                                           // 0x0CBC(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                TopSpaceReserved;                                         // 0x0CC0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                BottomSpaceReserved;                                      // 0x0CC4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x38];                                      // 0x0CC8(0x0038) MISSED OFFSET
+	float                                              BottomMargin;                                             // 0x0CC8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x34];                                      // 0x0CCC(0x0034) MISSED OFFSET
 	class UClass*                                      CurItemClass;                                             // 0x0D00(0x0008) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x210];                                     // 0x0D08(0x0210) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ReuseFallC");
 		return pStaticClass;
@@ -3612,6 +3641,7 @@ public:
 	void SetItemSize(int __Idx, float __Size);
 	void SetItemFullStyle(int idx);
 	bool SetCurItemClass(const struct FString& StrName);
+	void SetBottomMargin(float Val);
 	void ScrollToStart();
 	void ScrollToEnd();
 	void ResetCurItemClassToDefault();
@@ -3677,7 +3707,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ReuseListC");
 		return pStaticClass;
@@ -3743,7 +3773,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ReusePageC");
 		return pStaticClass;
@@ -3785,7 +3815,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.UDPPingCollector");
 		return pStaticClass;
@@ -3815,7 +3845,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.ViberateEngine");
 		return pStaticClass;
@@ -3908,7 +3938,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.VibrateSystemManager");
 		return pStaticClass;
@@ -3967,78 +3997,80 @@ public:
 
 
 // Class Client.VoiceSDKInterface
-// 0x0498 (0x04C0 - 0x0028)
+// 0x04B8 (0x04E0 - 0x0028)
 class UVoiceSDKInterface : public UObject
 {
 public:
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
 	int                                                lbsRoomMemberID;                                          // 0x0030(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x1C];                                      // 0x0034(0x001C) MISSED OFFSET
-	struct FScriptDelegate                             OnSTTReportCallback;                                      // 0x0050(0x0016) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnRSTSCallback;                                           // 0x0060(0x0016) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnRSTSSpeechToTextCallback;                               // 0x0070(0x0016) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnRSTSSubtitleCallback;                                   // 0x0080(0x0016) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnRSTSSubtitleASRStartCallback;                           // 0x0090(0x0016) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnSessionForAIInfoCallback;                               // 0x00A0(0x0016) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
-	unsigned char                                      UnknownData02[0x10];                                      // 0x00B0(0x0010) MISSED OFFSET
-	struct FString                                     ServerInfo;                                               // 0x00C0(0x0010) (ZeroConstructor, Config)
-	uint32_t                                           openVoiceSDKLog;                                          // 0x00D0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           MicVolumeMUFactor;                                        // 0x00D4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           SpeekerVolumeMUFactor;                                    // 0x00D8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	int                                                RoomOperationTimeout;                                     // 0x00DC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	class UGameFrontendHUD*                            GameFrontendHUD;                                          // 0x00E0(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x70];                                      // 0x00E8(0x0070) MISSED OFFSET
-	struct FScriptDelegate                             OpenMicFail;                                              // 0x0158(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OpenMicSuccess;                                           // 0x0168(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             CloseMicFail;                                             // 0x0178(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             BeforeOperation;                                          // 0x0188(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             CloseMicSuccess;                                          // 0x0198(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OpenSpeakerFail;                                          // 0x01A8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OpenSpeakerSuccess;                                       // 0x01B8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             CloseSpeakerFail;                                         // 0x01C8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             CloseSpeakerSuccess;                                      // 0x01D8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             JoinRoomFail;                                             // 0x01E8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             JoinRoomNotify;                                           // 0x01F8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             QuitRoomNotify;                                           // 0x0208(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             JoinLbsRoomNotify;                                        // 0x0218(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             QuitLbsRoomNotify;                                        // 0x0228(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             RoomStatusUpdatedNotify;                                  // 0x0238(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             SetAppInfoSuccess;                                        // 0x0248(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             SetAppInfoFail;                                           // 0x0258(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             GetReconnectInfo;                                         // 0x0268(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             ImSpeakingNotify;                                         // 0x0278(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             TestMicFail;                                              // 0x0288(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             TestMicSuccess;                                           // 0x0298(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             QuitRoomFail;                                             // 0x02A8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             DownLoadFileNotify;                                       // 0x02B8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             UploadFileNotify;                                         // 0x02C8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             KwsNotify;                                                // 0x02D8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             ApplyMessageKeyNotify;                                    // 0x02E8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             MemberIsSpeakingNotify;                                   // 0x02F8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             LbsMemberIsSpeakingNotify;                                // 0x0308(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnMuteSwitchResult;                                       // 0x0318(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             ReportVoiceTimeToServer;                                  // 0x0328(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             RecordSuccess;                                            // 0x0338(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             RecordFail;                                               // 0x0348(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             UploadSuccess;                                            // 0x0358(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             UploadFail;                                               // 0x0368(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             EnableRoomMicrophone;                                     // 0x0378(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             ExitInfectionGameMode;                                    // 0x0388(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             JoinInfectionGameMode;                                    // 0x0398(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             RequestPrivacyInSetting;                                  // 0x03A8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnReportPlayerCallback;                                   // 0x03B8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnVoiceSDKEvent;                                          // 0x03C8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             BeforeVoiceSDKInitDelegate;                               // 0x03D8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             AfterVoiceSDKInitDelegate;                                // 0x03E8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             AudioRouteChangedAfterSpeakerDelegate;                    // 0x03F8(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             AudioSessionInterruptedDelegate;                          // 0x0408(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnRoomMemeberInfoDelegate;                                // 0x0418(0x0016) (ZeroConstructor, InstancedReference)
-	unsigned char                                      UnknownData04[0x88];                                      // 0x0428(0x0088) MISSED OFFSET
-	struct FScriptDelegate                             OnDeliverDataCallback;                                    // 0x04B0(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnSTTReportCallback;                                      // 0x0050(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnRSTSCallback;                                           // 0x0060(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnRSTSSpeechToTextCallback;                               // 0x0070(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnRSTSSubtitleCallback;                                   // 0x0080(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnRSTSSubtitleASRStartCallback;                           // 0x0090(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnSessionForAIInfoCallback;                               // 0x00A0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnEnableMagicVoiceCallback;                               // 0x00B0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnEnableRecvMagicVoiceCallback;                           // 0x00C0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference)
+	unsigned char                                      UnknownData02[0x10];                                      // 0x00D0(0x0010) MISSED OFFSET
+	struct FString                                     ServerInfo;                                               // 0x00E0(0x0010) (ZeroConstructor, Config)
+	uint32_t                                           openVoiceSDKLog;                                          // 0x00F0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           MicVolumeMUFactor;                                        // 0x00F4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           SpeekerVolumeMUFactor;                                    // 0x00F8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	int                                                RoomOperationTimeout;                                     // 0x00FC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	class UGameFrontendHUD*                            GameFrontendHUD;                                          // 0x0100(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x70];                                      // 0x0108(0x0070) MISSED OFFSET
+	struct FScriptDelegate                             OpenMicFail;                                              // 0x0178(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OpenMicSuccess;                                           // 0x0188(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CloseMicFail;                                             // 0x0198(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             BeforeOperation;                                          // 0x01A8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CloseMicSuccess;                                          // 0x01B8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OpenSpeakerFail;                                          // 0x01C8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OpenSpeakerSuccess;                                       // 0x01D8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CloseSpeakerFail;                                         // 0x01E8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CloseSpeakerSuccess;                                      // 0x01F8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             JoinRoomFail;                                             // 0x0208(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             JoinRoomNotify;                                           // 0x0218(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             QuitRoomNotify;                                           // 0x0228(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             JoinLbsRoomNotify;                                        // 0x0238(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             QuitLbsRoomNotify;                                        // 0x0248(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             RoomStatusUpdatedNotify;                                  // 0x0258(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             SetAppInfoSuccess;                                        // 0x0268(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             SetAppInfoFail;                                           // 0x0278(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             GetReconnectInfo;                                         // 0x0288(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             ImSpeakingNotify;                                         // 0x0298(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             TestMicFail;                                              // 0x02A8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             TestMicSuccess;                                           // 0x02B8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             QuitRoomFail;                                             // 0x02C8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DownLoadFileNotify;                                       // 0x02D8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             UploadFileNotify;                                         // 0x02E8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             KwsNotify;                                                // 0x02F8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             ApplyMessageKeyNotify;                                    // 0x0308(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             MemberIsSpeakingNotify;                                   // 0x0318(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             LbsMemberIsSpeakingNotify;                                // 0x0328(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnMuteSwitchResult;                                       // 0x0338(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             ReportVoiceTimeToServer;                                  // 0x0348(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             RecordSuccess;                                            // 0x0358(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             RecordFail;                                               // 0x0368(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             UploadSuccess;                                            // 0x0378(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             UploadFail;                                               // 0x0388(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             EnableRoomMicrophone;                                     // 0x0398(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             ExitInfectionGameMode;                                    // 0x03A8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             JoinInfectionGameMode;                                    // 0x03B8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             RequestPrivacyInSetting;                                  // 0x03C8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnReportPlayerCallback;                                   // 0x03D8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnVoiceSDKEvent;                                          // 0x03E8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             BeforeVoiceSDKInitDelegate;                               // 0x03F8(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             AfterVoiceSDKInitDelegate;                                // 0x0408(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             AudioRouteChangedAfterSpeakerDelegate;                    // 0x0418(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             AudioSessionInterruptedDelegate;                          // 0x0428(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnRoomMemeberInfoDelegate;                                // 0x0438(0x0010) (ZeroConstructor, InstancedReference)
+	unsigned char                                      UnknownData04[0x88];                                      // 0x0448(0x0088) MISSED OFFSET
+	struct FScriptDelegate                             OnDeliverDataCallback;                                    // 0x04D0(0x0010) (ZeroConstructor, InstancedReference)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.VoiceSDKInterface");
 		return pStaticClass;
@@ -4080,6 +4112,7 @@ public:
 	int SetMode(int InGVMode);
 	void SetMicphoneVolum(float Value);
 	void SetMicphoneStatus(bool flag);
+	int SetMagicVoiceMsgType(const struct FString& InMagicType);
 	void SetLbsVoiceRadius(float Radius);
 	void SetLbsRoomEnableStatus(bool flag);
 	int SetKwsModelPath(const struct FString& KwsPath);
@@ -4089,6 +4122,7 @@ public:
 	int SetAppInfo(const struct FString& InAppId, const struct FString& InAppKey, const struct FString& InOpenid);
 	void SetAllVoiceStatus(bool flag);
 	void RSTSStopRecording();
+	int RSTSStartRecording(int InSrcLang, TArray<int> InTargetLangs, int InTargetLangCnt, int InTransType, int InTimeoutMS, const struct FString& InRecordFilePath, const struct FString& InSrcLangStr);
 	int RSTSSpeechToText(int InSrcLang, const struct FString& InExtraInfo);
 	void ResetWhenLogOut();
 	bool ReportPlayers(const struct FString& InExtraInfo, TArray<struct FString> InOpenids);
@@ -4161,7 +4195,9 @@ public:
 	int EnableRoomSpeaker(const struct FString& InRoomName, bool InEnable);
 	int EnableReportForAbroad(bool InIsWholeRoundaudit);
 	bool EnableReportALLAbroad(bool InEnable, bool InWithEncryption, int InTimeout);
+	int EnableRecvMagicVoice(bool InEnable);
 	int EnableMultiRoom(bool InEnable);
+	int EnableMagicVoice(const struct FString& InMagicType, bool InEnable);
 	void EnableLog(bool InEnable);
 	int EnableKws(bool bEnable);
 	int EnableCivilFile(bool Enable);
@@ -4197,7 +4233,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.WeaponDIYCaptureActor");
 		return pStaticClass;
@@ -4219,7 +4255,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.WINSDKFBWebLogin");
 		return pStaticClass;
@@ -4244,7 +4280,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Client.WINWebSocketServer");
 		return pStaticClass;

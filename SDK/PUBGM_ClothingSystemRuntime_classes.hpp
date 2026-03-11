@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class ClothingSystemRuntime.ClothingAssetCustomData
 // 0x0000 (0x0028 - 0x0028)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClothingSystemRuntime.ClothingAssetCustomData");
 		return pStaticClass;
@@ -26,23 +26,23 @@ public:
 
 
 // Class ClothingSystemRuntime.ClothingAsset
-// 0x0148 (0x0190 - 0x0048)
+// 0x0150 (0x0198 - 0x0048)
 class UClothingAsset : public UClothingAssetBase
 {
 public:
 	class UPhysicsAsset*                               PhysicsAsset;                                             // 0x0048(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FClothConfig                                ClothConfig;                                              // 0x0050(0x00F0) (Edit)
-	TArray<struct FClothLODData>                       LODData;                                                  // 0x0140(0x0010) (ZeroConstructor)
-	TArray<int>                                        LodMap;                                                   // 0x0150(0x0010) (ZeroConstructor)
-	TArray<struct FName>                               UsedBoneNames;                                            // 0x0160(0x0010) (ZeroConstructor)
-	TArray<int>                                        UsedBoneIndices;                                          // 0x0170(0x0010) (ZeroConstructor)
-	int                                                ReferenceBoneIndex;                                       // 0x0180(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0184(0x0004) MISSED OFFSET
-	class UClothingAssetCustomData*                    CustomData;                                               // 0x0188(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FClothConfig                                ClothConfig;                                              // 0x0050(0x00F8) (Edit)
+	TArray<struct FClothLODData>                       LODData;                                                  // 0x0148(0x0010) (ZeroConstructor)
+	TArray<int>                                        LodMap;                                                   // 0x0158(0x0010) (ZeroConstructor)
+	TArray<struct FName>                               UsedBoneNames;                                            // 0x0168(0x0010) (ZeroConstructor)
+	TArray<int>                                        UsedBoneIndices;                                          // 0x0178(0x0010) (ZeroConstructor)
+	int                                                ReferenceBoneIndex;                                       // 0x0188(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x018C(0x0004) MISSED OFFSET
+	class UClothingAssetCustomData*                    CustomData;                                               // 0x0190(0x0008) (ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClothingSystemRuntime.ClothingAsset");
 		return pStaticClass;
@@ -59,7 +59,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClothingSystemRuntime.ClothingSimulationFactoryNv");
 		return pStaticClass;

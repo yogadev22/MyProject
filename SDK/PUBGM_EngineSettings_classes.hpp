@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class EngineSettings.ConsoleSettings
 // 0x0048 (0x0070 - 0x0028)
@@ -29,7 +29,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class EngineSettings.ConsoleSettings");
 		return pStaticClass;
@@ -47,8 +47,8 @@ public:
 	struct FString                                     LocalMapOptions;                                          // 0x0040(0x0010) (Edit, ZeroConstructor, Config)
 	struct FSoftObjectPath                             TransitionMap;                                            // 0x0050(0x0018) (Edit, Config)
 	bool                                               bUseSplitscreen;                                          // 0x0068(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
-	TEnumAsByte<enum ETwoPlayerSplitScreenType>        TwoPlayerSplitscreenLayout;                               // 0x0069(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
-	TEnumAsByte<enum EThreePlayerSplitScreenType>      ThreePlayerSplitscreenLayout;                             // 0x006A(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
+	TEnumAsByte<ETwoPlayerSplitScreenType>             TwoPlayerSplitscreenLayout;                               // 0x0069(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
+	TEnumAsByte<EThreePlayerSplitScreenType>           ThreePlayerSplitscreenLayout;                             // 0x006A(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
 	bool                                               bOffsetPlayerGamepadIds;                                  // 0x006B(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x006C(0x0004) MISSED OFFSET
 	struct FSoftClassPath                              GameInstanceClass;                                        // 0x0070(0x0018) (Edit, Config, NoClear)
@@ -61,7 +61,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class EngineSettings.GameMapsSettings");
 		return pStaticClass;
@@ -91,7 +91,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class EngineSettings.GameNetworkManagerSettings");
 		return pStaticClass;
@@ -112,7 +112,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class EngineSettings.GameSessionSettings");
 		return pStaticClass;
@@ -129,7 +129,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class EngineSettings.GeneralEngineSettings");
 		return pStaticClass;
@@ -168,7 +168,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class EngineSettings.GeneralProjectSettings");
 		return pStaticClass;
@@ -188,7 +188,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class EngineSettings.HudSettings");
 		return pStaticClass;

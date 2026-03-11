@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UgcLua.CreativeLuaVM.Step
 // (Final, Native, Public, BlueprintCallable)
 
 void UCreativeLuaVM::Step()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.Step");
 
@@ -36,7 +36,7 @@ void UCreativeLuaVM::Step()
 
 void UCreativeLuaVM::SetPerformanceLog(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.SetPerformanceLog");
 
@@ -60,7 +60,7 @@ void UCreativeLuaVM::SetPerformanceLog(bool bEnable)
 
 void UCreativeLuaVM::SetNowRC(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.SetNowRC");
 
@@ -84,7 +84,7 @@ void UCreativeLuaVM::SetNowRC(int idx)
 
 void UCreativeLuaVM::SetCodeOutputDelegate(const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.SetCodeOutputDelegate");
 
@@ -108,7 +108,7 @@ void UCreativeLuaVM::SetCodeOutputDelegate(const struct FScriptDelegate& InDeleg
 
 void UCreativeLuaVM::SetCodeFinishDelegate(const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.SetCodeFinishDelegate");
 
@@ -130,7 +130,7 @@ void UCreativeLuaVM::SetCodeFinishDelegate(const struct FScriptDelegate& InDeleg
 
 void UCreativeLuaVM::Reset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.Reset");
 
@@ -151,7 +151,7 @@ void UCreativeLuaVM::Reset()
 
 void UCreativeLuaVM::RequireMain()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.RequireMain");
 
@@ -175,7 +175,7 @@ void UCreativeLuaVM::RequireMain()
 
 void UCreativeLuaVM::RegisterLuaFunctions(const struct FString& ModuleName, TArray<struct FString> OpenFunctions)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.RegisterLuaFunctions");
 
@@ -202,7 +202,7 @@ void UCreativeLuaVM::RegisterLuaFunctions(const struct FString& ModuleName, TArr
 
 void UCreativeLuaVM::RegisterLuaAPIStringValue(const struct FString& ModuleName, const struct FString& Name, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.RegisterLuaAPIStringValue");
 
@@ -230,7 +230,7 @@ void UCreativeLuaVM::RegisterLuaAPIStringValue(const struct FString& ModuleName,
 
 void UCreativeLuaVM::RegisterLuaAPINumberValue(const struct FString& ModuleName, const struct FString& Name, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.RegisterLuaAPINumberValue");
 
@@ -258,7 +258,7 @@ void UCreativeLuaVM::RegisterLuaAPINumberValue(const struct FString& ModuleName,
 
 void UCreativeLuaVM::RegisterLuaAPIBoolValue(const struct FString& ModuleName, const struct FString& Name, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.RegisterLuaAPIBoolValue");
 
@@ -282,7 +282,7 @@ void UCreativeLuaVM::RegisterLuaAPIBoolValue(const struct FString& ModuleName, c
 
 void UCreativeLuaVM::RefreshLastCommentInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.RefreshLastCommentInfo");
 
@@ -303,7 +303,7 @@ void UCreativeLuaVM::RefreshLastCommentInfo()
 
 void UCreativeLuaVM::PostInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.PostInit");
 
@@ -326,7 +326,7 @@ void UCreativeLuaVM::PostInit()
 
 void UCreativeLuaVM::LogBlockExecuteTime(const struct FString& blockId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.LogBlockExecuteTime");
 
@@ -351,7 +351,7 @@ void UCreativeLuaVM::LogBlockExecuteTime(const struct FString& blockId)
 
 void UCreativeLuaVM::KillJob(int JobId, bool bReset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.KillJob");
 
@@ -376,7 +376,7 @@ void UCreativeLuaVM::KillJob(int JobId, bool bReset)
 
 void UCreativeLuaVM::InitEditMods(TArray<struct FString>* mods)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.InitEditMods");
 
@@ -402,7 +402,7 @@ void UCreativeLuaVM::InitEditMods(TArray<struct FString>* mods)
 
 void UCreativeLuaVM::Init(int MemLimit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.Init");
 
@@ -426,7 +426,7 @@ void UCreativeLuaVM::Init(int MemLimit)
 
 int UCreativeLuaVM::GetNowRC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.GetNowRC");
 
@@ -451,7 +451,7 @@ int UCreativeLuaVM::GetNowRC()
 
 int UCreativeLuaVM::GetMemoryUsed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.GetMemoryUsed");
 
@@ -476,7 +476,7 @@ int UCreativeLuaVM::GetMemoryUsed()
 
 struct FString UCreativeLuaVM::GetLastCommentInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.GetLastCommentInfo");
 
@@ -501,7 +501,7 @@ struct FString UCreativeLuaVM::GetLastCommentInfo()
 
 void UCreativeLuaVM::FreezeGameTime(bool bCond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.FreezeGameTime");
 
@@ -526,7 +526,7 @@ void UCreativeLuaVM::FreezeGameTime(bool bCond)
 
 void UCreativeLuaVM::ExtractCurrentCode(int* CodeIdx, struct FString* code)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.ExtractCurrentCode");
 
@@ -552,7 +552,7 @@ void UCreativeLuaVM::ExtractCurrentCode(int* CodeIdx, struct FString* code)
 
 void UCreativeLuaVM::ExeCodeUntilSuspended()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.ExeCodeUntilSuspended");
 
@@ -577,7 +577,7 @@ void UCreativeLuaVM::ExeCodeUntilSuspended()
 
 int UCreativeLuaVM::EnqueueCode(struct FString* RuntimeCode, int* CodeUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.EnqueueCode");
 
@@ -607,7 +607,7 @@ int UCreativeLuaVM::EnqueueCode(struct FString* RuntimeCode, int* CodeUID)
 
 struct FString UCreativeLuaVM::DescribeLuaThread()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.DescribeLuaThread");
 
@@ -630,7 +630,7 @@ struct FString UCreativeLuaVM::DescribeLuaThread()
 
 void UCreativeLuaVM::Close()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.Close");
 
@@ -653,7 +653,7 @@ void UCreativeLuaVM::Close()
 
 void UCreativeLuaVM::AllowRequire(bool bAllow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeLuaVM.AllowRequire");
 
@@ -678,7 +678,7 @@ void UCreativeLuaVM::AllowRequire(bool bAllow)
 
 class UObject* UCreativeEntityInterface::UUID2UObject(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeEntityInterface.UUID2UObject");
 
@@ -709,7 +709,7 @@ class UObject* UCreativeEntityInterface::UUID2UObject(int64_t* UUID)
 
 bool UCreativeEntityInterface::UUID2Type(int64_t* UUID, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeEntityInterface.UUID2Type");
 
@@ -742,7 +742,7 @@ bool UCreativeEntityInterface::UUID2Type(int64_t* UUID, EEntityType* Type, unsig
 
 uint32_t UCreativeEntityInterface::UUID2Key(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeEntityInterface.UUID2Key");
 
@@ -770,7 +770,7 @@ uint32_t UCreativeEntityInterface::UUID2Key(int64_t* UUID)
 
 void UCreativeEntityInterface::RemoveUUID(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeEntityInterface.RemoveUUID");
 
@@ -797,7 +797,7 @@ void UCreativeEntityInterface::RemoveUUID(int64_t* UUID)
 
 int64_t UCreativeEntityInterface::GetInstanceObjectUUID(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeEntityInterface.GetInstanceObjectUUID");
 
@@ -828,7 +828,7 @@ int64_t UCreativeEntityInterface::GetInstanceObjectUUID(int64_t* UUID)
 
 int64_t UCreativeEntityInterface::CreateEntityIfNotExistsFromUObject(class UObject* Object, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeEntityInterface.CreateEntityIfNotExistsFromUObject");
 
@@ -862,7 +862,7 @@ int64_t UCreativeEntityInterface::CreateEntityIfNotExistsFromUObject(class UObje
 
 int64_t UCreativeEntityInterface::CreateEntityIfNotExistsFromKey(uint32_t* Key, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UgcLua.CreativeEntityInterface.CreateEntityIfNotExistsFromKey");
 

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetImagePixelSize
 // (Static, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
@@ -18,7 +18,7 @@ namespace SDK
 
 void UGlobalUIFunctionLibrary_C::GetImagePixelSize(const struct FString& sPath, class UObject* __WorldContext, int* Width, int* Height)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetImagePixelSize");
 
@@ -49,7 +49,7 @@ void UGlobalUIFunctionLibrary_C::GetImagePixelSize(const struct FString& sPath, 
 
 void UGlobalUIFunctionLibrary_C::GetLobbyCorpsIcon(int IconID, class UObject* __WorldContext, class UTexture2D** Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetLobbyCorpsIcon");
 
@@ -77,7 +77,7 @@ void UGlobalUIFunctionLibrary_C::GetLobbyCorpsIcon(int IconID, class UObject* __
 
 void UGlobalUIFunctionLibrary_C::IsAsyncSetTexture(class UObject* __WorldContext, bool* IsAsync)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.IsAsyncSetTexture");
 
@@ -103,7 +103,7 @@ void UGlobalUIFunctionLibrary_C::IsAsyncSetTexture(class UObject* __WorldContext
 
 void UGlobalUIFunctionLibrary_C::SetArenaWeaponLightProperty(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetArenaWeaponLightProperty");
 
@@ -126,7 +126,7 @@ void UGlobalUIFunctionLibrary_C::SetArenaWeaponLightProperty(class UObject* __Wo
 
 void UGlobalUIFunctionLibrary_C::SetLobbyDefaultLightProperty(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetLobbyDefaultLightProperty");
 
@@ -150,7 +150,7 @@ void UGlobalUIFunctionLibrary_C::SetLobbyDefaultLightProperty(class UObject* __W
 
 void UGlobalUIFunctionLibrary_C::SwitchLobbyMeshBg(int BgIdx, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SwitchLobbyMeshBg");
 
@@ -177,7 +177,7 @@ void UGlobalUIFunctionLibrary_C::SwitchLobbyMeshBg(int BgIdx, class UObject* __W
 
 void UGlobalUIFunctionLibrary_C::AddOrUpdateBlendable(class UCameraComponent* CameraComponent, class UMaterialInstanceDynamic* MIDynamic, float BlendWeight, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.AddOrUpdateBlendable");
 
@@ -203,7 +203,7 @@ void UGlobalUIFunctionLibrary_C::AddOrUpdateBlendable(class UCameraComponent* Ca
 
 void UGlobalUIFunctionLibrary_C::ProcessAndroidBack(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.ProcessAndroidBack");
 
@@ -228,7 +228,7 @@ void UGlobalUIFunctionLibrary_C::ProcessAndroidBack(class UObject* __WorldContex
 
 void UGlobalUIFunctionLibrary_C::SetSpecialIconWithSprite2DMatchSize(class UImage* Widget, const struct FString& specialIconPath, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetSpecialIconWithSprite2DMatchSize");
 
@@ -255,7 +255,7 @@ void UGlobalUIFunctionLibrary_C::SetSpecialIconWithSprite2DMatchSize(class UImag
 
 void UGlobalUIFunctionLibrary_C::GetItemTableRow(int ID, class UObject* __WorldContext, struct FBP_STRUCT_Item_type* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetItemTableRow");
 
@@ -284,7 +284,7 @@ void UGlobalUIFunctionLibrary_C::GetItemTableRow(int ID, class UObject* __WorldC
 
 void UGlobalUIFunctionLibrary_C::SecondsToMMSS(int Seconds, class UObject* __WorldContext, struct FString* FormatTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SecondsToMMSS");
 
@@ -311,7 +311,7 @@ void UGlobalUIFunctionLibrary_C::SecondsToMMSS(int Seconds, class UObject* __Wor
 
 void UGlobalUIFunctionLibrary_C::PlaySoundPopup(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.PlaySoundPopup");
 
@@ -334,7 +334,7 @@ void UGlobalUIFunctionLibrary_C::PlaySoundPopup(class UObject* __WorldContext)
 
 void UGlobalUIFunctionLibrary_C::PlaySoundTab(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.PlaySoundTab");
 
@@ -359,7 +359,7 @@ void UGlobalUIFunctionLibrary_C::PlaySoundTab(class UObject* __WorldContext)
 
 void UGlobalUIFunctionLibrary_C::GetUIRectOffset(class UObject* __WorldContext, int* Left, int* Right)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetUIRectOffset");
 
@@ -390,7 +390,7 @@ void UGlobalUIFunctionLibrary_C::GetUIRectOffset(class UObject* __WorldContext, 
 
 void UGlobalUIFunctionLibrary_C::IsConfigGameModeSubType(EGameModeSubType InSubType, class UObject* Context, class UObject* __WorldContext, bool* res)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.IsConfigGameModeSubType");
 
@@ -421,7 +421,7 @@ void UGlobalUIFunctionLibrary_C::IsConfigGameModeSubType(EGameModeSubType InSubT
 
 void UGlobalUIFunctionLibrary_C::IsConfigGameModeType(EGameModeType InGameModeType, class UObject* Context, class UObject* __WorldContext, bool* res)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.IsConfigGameModeType");
 
@@ -451,7 +451,7 @@ void UGlobalUIFunctionLibrary_C::IsConfigGameModeType(EGameModeType InGameModeTy
 
 void UGlobalUIFunctionLibrary_C::GetGlobalLuaUI(class UObject* WorldContextObject, class UObject* __WorldContext, class UGlobalLuaWidget_C** AsGlobal_Lua_Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetGlobalLuaUI");
 
@@ -483,7 +483,7 @@ void UGlobalUIFunctionLibrary_C::GetGlobalLuaUI(class UObject* WorldContextObjec
 
 void UGlobalUIFunctionLibrary_C::GetVector4(float X, float Y, float W, float H, class UObject* __WorldContext, struct FVector4* Vector)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetVector4");
 
@@ -515,7 +515,7 @@ void UGlobalUIFunctionLibrary_C::GetVector4(float X, float Y, float W, float H, 
 
 void UGlobalUIFunctionLibrary_C::InitAmmoDropBox(class UMeshComponent* MeshComponent, int LOD, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.InitAmmoDropBox");
 
@@ -542,7 +542,7 @@ void UGlobalUIFunctionLibrary_C::InitAmmoDropBox(class UMeshComponent* MeshCompo
 
 struct FString UGlobalUIFunctionLibrary_C::GetRankIntegralBigIcon(const struct FString& Icon, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetRankIntegralBigIcon");
 
@@ -570,7 +570,7 @@ struct FString UGlobalUIFunctionLibrary_C::GetRankIntegralBigIcon(const struct F
 
 struct FString UGlobalUIFunctionLibrary_C::GetRankIntegralSmallIcon(const struct FString& Icon, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetRankIntegralSmallIcon");
 
@@ -598,7 +598,7 @@ struct FString UGlobalUIFunctionLibrary_C::GetRankIntegralSmallIcon(const struct
 
 struct FString UGlobalUIFunctionLibrary_C::GetRankIntegralSubIcon(const struct FString& Icon, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetRankIntegralSubIcon");
 
@@ -633,7 +633,7 @@ struct FString UGlobalUIFunctionLibrary_C::GetRankIntegralSubIcon(const struct F
 
 void UGlobalUIFunctionLibrary_C::SetRankInteral(const struct FBP_STRUCT_RankIntegralLevel_type& RankIntegralLevelInfo, class UImage* ImageIcon, class UTextBlock* TextBlock_Rank, class UCanvasPanel* Canvas_Panel_Star, class UImage* Image_Star, class UTextBlock* TextBlock_Star, bool isSegmentStarOpen, class UImage* Image_Quality, class UImage* vx_Image_Quality, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetRankInteral");
 
@@ -667,7 +667,7 @@ void UGlobalUIFunctionLibrary_C::SetRankInteral(const struct FBP_STRUCT_RankInte
 
 void UGlobalUIFunctionLibrary_C::SetImageFromPath(class UImage* Image, const struct FString& IconPath, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetImageFromPath");
 
@@ -695,7 +695,7 @@ void UGlobalUIFunctionLibrary_C::SetImageFromPath(class UImage* Image, const str
 
 void UGlobalUIFunctionLibrary_C::GetBrushFromSprite(const struct FSlateBrush& Brush, const struct FString& Path, class UObject* __WorldContext, struct FSlateBrush* Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetBrushFromSprite");
 
@@ -725,7 +725,7 @@ void UGlobalUIFunctionLibrary_C::GetBrushFromSprite(const struct FSlateBrush& Br
 
 void UGlobalUIFunctionLibrary_C::LoadSprite(class UImage* Image, const struct FString& IconPath, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.LoadSprite");
 
@@ -752,7 +752,7 @@ void UGlobalUIFunctionLibrary_C::LoadSprite(class UImage* Image, const struct FS
 
 void UGlobalUIFunctionLibrary_C::GetXieQualityPath(int Quality, class UObject* __WorldContext, struct FString* Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetXieQualityPath");
 
@@ -781,7 +781,7 @@ void UGlobalUIFunctionLibrary_C::GetXieQualityPath(int Quality, class UObject* _
 
 void UGlobalUIFunctionLibrary_C::GetBgQualityPath(int Quality, class UObject* __WorldContext, struct FString* Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetBgQualityPath");
 
@@ -810,7 +810,7 @@ void UGlobalUIFunctionLibrary_C::GetBgQualityPath(int Quality, class UObject* __
 
 void UGlobalUIFunctionLibrary_C::GetQualityPath(int Quality, class UObject* __WorldContext, struct FString* Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetQualityPath");
 
@@ -839,7 +839,7 @@ void UGlobalUIFunctionLibrary_C::GetQualityPath(int Quality, class UObject* __Wo
 
 void UGlobalUIFunctionLibrary_C::SetCornerQuality(class UImage* Image, int Quality, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetCornerQuality");
 
@@ -866,7 +866,7 @@ void UGlobalUIFunctionLibrary_C::SetCornerQuality(class UImage* Image, int Quali
 
 void UGlobalUIFunctionLibrary_C::GetPingColor(float ms, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetPingColor");
 
@@ -897,7 +897,7 @@ void UGlobalUIFunctionLibrary_C::GetPingColor(float ms, class UObject* __WorldCo
 
 void UGlobalUIFunctionLibrary_C::SetImgWithPath(class UImage* ImgRef, const struct FString& imgPath, bool IsMatchSize, class UObject* __WorldContext, bool* Success)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetImgWithPath");
 
@@ -930,7 +930,7 @@ void UGlobalUIFunctionLibrary_C::SetImgWithPath(class UImage* ImgRef, const stru
 
 void UGlobalUIFunctionLibrary_C::GetItemName(const struct FString& Name, int Length, bool chineseSensity, class UObject* __WorldContext, struct FString* OutName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetItemName");
 
@@ -961,7 +961,7 @@ void UGlobalUIFunctionLibrary_C::GetItemName(const struct FString& Name, int Len
 
 void UGlobalUIFunctionLibrary_C::UpdateImageByPath(class UImage* Image, const struct FString& Path, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.UpdateImageByPath");
 
@@ -988,7 +988,7 @@ void UGlobalUIFunctionLibrary_C::UpdateImageByPath(class UImage* Image, const st
 
 void UGlobalUIFunctionLibrary_C::UpdateImageTint(class UImage* Image, const struct FLinearColor& Color, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.UpdateImageTint");
 
@@ -1016,7 +1016,7 @@ void UGlobalUIFunctionLibrary_C::UpdateImageTint(class UImage* Image, const stru
 
 void UGlobalUIFunctionLibrary_C::ChangeBrushColor(const struct FSlateBrush& Brush, const struct FLinearColor& Color, class UObject* __WorldContext, struct FSlateBrush* NewBrush)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.ChangeBrushColor");
 
@@ -1045,7 +1045,7 @@ void UGlobalUIFunctionLibrary_C::ChangeBrushColor(const struct FSlateBrush& Brus
 
 void UGlobalUIFunctionLibrary_C::GetCameraMod(class UObject* __WorldContext, int* Mod)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetCameraMod");
 
@@ -1071,7 +1071,7 @@ void UGlobalUIFunctionLibrary_C::GetCameraMod(class UObject* __WorldContext, int
 
 void UGlobalUIFunctionLibrary_C::SetHumanLightProperty(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetHumanLightProperty");
 
@@ -1094,7 +1094,7 @@ void UGlobalUIFunctionLibrary_C::SetHumanLightProperty(class UObject* __WorldCon
 
 void UGlobalUIFunctionLibrary_C::SetWeaponLightProperty(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetWeaponLightProperty");
 
@@ -1121,7 +1121,7 @@ void UGlobalUIFunctionLibrary_C::SetWeaponLightProperty(class UObject* __WorldCo
 
 void UGlobalUIFunctionLibrary_C::SetSceneSkyLightProperty(const struct FString& lightName, const struct FTransform& Trans, float Intensity, const struct FLinearColor& Color, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetSceneSkyLightProperty");
 
@@ -1149,7 +1149,7 @@ void UGlobalUIFunctionLibrary_C::SetSceneSkyLightProperty(const struct FString& 
 
 void UGlobalUIFunctionLibrary_C::SetAndroidKeyIsValid(bool bValid, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetAndroidKeyIsValid");
 
@@ -1175,7 +1175,7 @@ void UGlobalUIFunctionLibrary_C::SetAndroidKeyIsValid(bool bValid, class UObject
 
 void UGlobalUIFunctionLibrary_C::numToTimeStrFormat(int timeNum, class UObject* __WorldContext, struct FString* TimeStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.numToTimeStrFormat");
 
@@ -1204,7 +1204,7 @@ void UGlobalUIFunctionLibrary_C::numToTimeStrFormat(int timeNum, class UObject* 
 
 void UGlobalUIFunctionLibrary_C::numToTimeStr(int timeNum, class UObject* __WorldContext, struct FString* TimeStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.numToTimeStr");
 
@@ -1233,7 +1233,7 @@ void UGlobalUIFunctionLibrary_C::numToTimeStr(int timeNum, class UObject* __Worl
 
 void UGlobalUIFunctionLibrary_C::UpdateNationImage(class UImage* Image, const struct FString& RoleNation, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.UpdateNationImage");
 
@@ -1264,7 +1264,7 @@ void UGlobalUIFunctionLibrary_C::UpdateNationImage(class UImage* Image, const st
 
 void UGlobalUIFunctionLibrary_C::SetScenePointLightProperty(const struct FString& lightName, const struct FTransform& targetTrans, float Intensity, const struct FLinearColor& Color, int inverseSquareFalloff, float Radius, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetScenePointLightProperty");
 
@@ -1297,7 +1297,7 @@ void UGlobalUIFunctionLibrary_C::SetScenePointLightProperty(const struct FString
 
 void UGlobalUIFunctionLibrary_C::SetSceneDirectionalLightProperty(const struct FString& lightName, const struct FTransform& targetTrans, float Intensity, const struct FLinearColor& Color, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetSceneDirectionalLightProperty");
 
@@ -1325,7 +1325,7 @@ void UGlobalUIFunctionLibrary_C::SetSceneDirectionalLightProperty(const struct F
 
 void UGlobalUIFunctionLibrary_C::GetLobbyGlobalBp(class UObject* __WorldContext, class UGlobal_Bp_C** AsGlobal_Bp)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetLobbyGlobalBp");
 
@@ -1353,7 +1353,7 @@ void UGlobalUIFunctionLibrary_C::GetLobbyGlobalBp(class UObject* __WorldContext,
 
 void UGlobalUIFunctionLibrary_C::GetLobbyFrameTexture(int frameLevel, class UObject* __WorldContext, class UTexture2D** Output)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetLobbyFrameTexture");
 
@@ -1382,7 +1382,7 @@ void UGlobalUIFunctionLibrary_C::GetLobbyFrameTexture(int frameLevel, class UObj
 
 void UGlobalUIFunctionLibrary_C::GetNationInfo(const struct FString& NationCode, class UObject* __WorldContext, struct FBP_STRUCT_RegionConfig_type* NationInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetNationInfo");
 
@@ -1411,7 +1411,7 @@ void UGlobalUIFunctionLibrary_C::GetNationInfo(const struct FString& NationCode,
 
 void UGlobalUIFunctionLibrary_C::SetImageWithSpriteRes(const struct FString& ResPath, class UImage* Image, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SetImageWithSpriteRes");
 
@@ -1438,7 +1438,7 @@ void UGlobalUIFunctionLibrary_C::SetImageWithSpriteRes(const struct FString& Res
 
 void UGlobalUIFunctionLibrary_C::GetNationSwitch(const struct FString& Name, class UObject* __WorldContext, bool* Ret)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetNationSwitch");
 
@@ -1467,7 +1467,7 @@ void UGlobalUIFunctionLibrary_C::GetNationSwitch(const struct FString& Name, cla
 
 void UGlobalUIFunctionLibrary_C::CheckIfMenuOpen(int MenuId, class UObject* __WorldContext, bool* Ret)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.CheckIfMenuOpen");
 
@@ -1498,7 +1498,7 @@ void UGlobalUIFunctionLibrary_C::CheckIfMenuOpen(int MenuId, class UObject* __Wo
 
 void UGlobalUIFunctionLibrary_C::GetItemTimeS(int res_id, int FirstTimeNum, class UObject* __WorldContext, struct FString* time_s, bool* is_have_limit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetItemTimeS");
 
@@ -1532,7 +1532,7 @@ void UGlobalUIFunctionLibrary_C::GetItemTimeS(int res_id, int FirstTimeNum, clas
 
 void UGlobalUIFunctionLibrary_C::ShowItemTipsByButton(int ItemId, class UButton* Button, int validHours, bool isShowCloseBtn, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.ShowItemTipsByButton");
 
@@ -1559,7 +1559,7 @@ void UGlobalUIFunctionLibrary_C::ShowItemTipsByButton(int ItemId, class UButton*
 
 void UGlobalUIFunctionLibrary_C::CloseItemTips(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.CloseItemTips");
 
@@ -1585,7 +1585,7 @@ void UGlobalUIFunctionLibrary_C::CloseItemTips(class UObject* __WorldContext)
 
 void UGlobalUIFunctionLibrary_C::CreateUAEUserWidget(class UClass* Class, class UUAEUserWidget* Parent, class UObject* __WorldContext, class UUAEUserWidget** Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.CreateUAEUserWidget");
 
@@ -1613,7 +1613,7 @@ void UGlobalUIFunctionLibrary_C::CreateUAEUserWidget(class UClass* Class, class 
 
 void UGlobalUIFunctionLibrary_C::PlaySoundCloseButton(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.PlaySoundCloseButton");
 
@@ -1638,7 +1638,7 @@ void UGlobalUIFunctionLibrary_C::PlaySoundCloseButton(class UObject* __WorldCont
 
 void UGlobalUIFunctionLibrary_C::ShowEffect(bool IsShow, class UObject* __WorldContext, TArray<class UWidget*>* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.ShowEffect");
 
@@ -1667,7 +1667,7 @@ void UGlobalUIFunctionLibrary_C::ShowEffect(bool IsShow, class UObject* __WorldC
 
 void UGlobalUIFunctionLibrary_C::IsWidgetVisible(class UWidget* Widget, class UObject* __WorldContext, bool* Visible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.IsWidgetVisible");
 
@@ -1694,7 +1694,7 @@ void UGlobalUIFunctionLibrary_C::IsWidgetVisible(class UWidget* Widget, class UO
 
 void UGlobalUIFunctionLibrary_C::PlaySoundClickButton(class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.PlaySoundClickButton");
 
@@ -1719,7 +1719,7 @@ void UGlobalUIFunctionLibrary_C::PlaySoundClickButton(class UObject* __WorldCont
 
 void UGlobalUIFunctionLibrary_C::SendBAReport(int ButtonType, int Reason, class UObject* __WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.SendBAReport");
 
@@ -1746,7 +1746,7 @@ void UGlobalUIFunctionLibrary_C::SendBAReport(int ButtonType, int Reason, class 
 
 void UGlobalUIFunctionLibrary_C::IsWhiteSpace(const struct FString& Text, class UObject* __WorldContext, bool* Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.IsWhiteSpace");
 
@@ -1776,7 +1776,7 @@ void UGlobalUIFunctionLibrary_C::IsWhiteSpace(const struct FString& Text, class 
 
 void UGlobalUIFunctionLibrary_C::GetTextLength(const struct FString& Text, bool chineseSensity, class UObject* __WorldContext, int* Length)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetTextLength");
 
@@ -1808,7 +1808,7 @@ void UGlobalUIFunctionLibrary_C::GetTextLength(const struct FString& Text, bool 
 
 void UGlobalUIFunctionLibrary_C::BoolToVisible(bool Visible, bool collapse, bool isButton, class UObject* __WorldContext, ESlateVisibility* Visibility)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.BoolToVisible");
 
@@ -1839,7 +1839,7 @@ void UGlobalUIFunctionLibrary_C::BoolToVisible(bool Visible, bool collapse, bool
 
 void UGlobalUIFunctionLibrary_C::IsEnglish(const struct FString& Text, class UObject* __WorldContext, bool* Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.IsEnglish");
 
@@ -1867,7 +1867,7 @@ void UGlobalUIFunctionLibrary_C::IsEnglish(const struct FString& Text, class UOb
 
 void UGlobalUIFunctionLibrary_C::GetGlobalData(class UObject* __WorldContext, class Abp_global_C** globalObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetGlobalData");
 
@@ -1898,7 +1898,7 @@ void UGlobalUIFunctionLibrary_C::GetGlobalData(class UObject* __WorldContext, cl
 
 void UGlobalUIFunctionLibrary_C::GetLocalizeString(int ID, const struct FString& string1, const struct FString& string2, const struct FString& string3, class UObject* __WorldContext, struct FString* TextValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GlobalUIFunctionLibrary.GlobalUIFunctionLibrary_C.GetLocalizeString");
 

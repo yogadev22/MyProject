@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class CoreUObject.Object
 // 0x0028
@@ -31,69 +31,20 @@ public:
 	std::string GetFullName() const;
 
 	template<typename T>
-        static std::vector<T*> GetAllObjectsOfType(UClass* Class, bool filterDefualts)
-        {
-            std::vector<T*> ret;
-            for (int i = 0; i < GetGlobalObjects().Num(); ++i)
-            {
-                auto object = GetGlobalObjects().GetByIndex(i);
-
-                if (object == 0)
-                {
-                    continue;
-                }
-
-                if (object->IsA(Class))
-                {
-                    if (filterDefualts)
-                    {
-                        if (object->GetName().find("Default__") != std::string::npos) {
-                            continue;
-                        }
-                    }
-                    ret.push_back((T*)object);
-                }
-            }
-            return ret;
-		}
-        template<typename T>
-        static T* GetDefaultObjectFromArray(UClass* Class)
-        {
-            for (int i = 0; i < GetGlobalObjects().Num(); ++i)
-            {
-                auto object = GetGlobalObjects().GetByIndex(i);
-
-                if (object == 0)
-                {
-                    continue;
-                }
-
-                if (object->IsA(Class))
-                {
-                    if (object->GetName().find("Default__") != std::string::npos) 
-                    {
-                        return (T*)object;
-                    }
-                }
-            }
-            return nullptr;
-		}
-		
-	template<typename T>
 	static T* FindObject(const std::string& name)
 	{
 		for (int i = 0; i < GetGlobalObjects().Num(); ++i)
 		{
 			auto object = GetGlobalObjects().GetByIndex(i);
-
-			if (object == 0)
+	
+			if (object == nullptr)
 			{
 				continue;
 			}
-
+	
 			if (object->GetFullName() == name)
 			{
-				return (T*)object;
+				return static_cast<T*>(object);
 			}
 		}
 		return nullptr;
@@ -107,7 +58,7 @@ public:
 	template<typename T>
 	static T* GetObjectCasted(std::size_t index)
 	{
-		return (T*)GetGlobalObjects().GetByIndex(index);
+		return static_cast<T*>(GetGlobalObjects().GetByIndex(index));
 	}
 
 	 inline void ProcessEvent(class UFunction* function, void* parms)
@@ -119,7 +70,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Object");
 		return pStaticClass;
@@ -138,7 +89,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Interface");
 		return pStaticClass;
@@ -156,7 +107,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.GCObjectReferencer");
 		return pStaticClass;
@@ -174,7 +125,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.TextBuffer");
 		return pStaticClass;
@@ -192,7 +143,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Field");
 		return pStaticClass;
@@ -214,7 +165,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Struct");
 		return pStaticClass;
@@ -232,7 +183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.ScriptStruct");
 		return pStaticClass;
@@ -250,7 +201,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Package");
 		return pStaticClass;
@@ -260,26 +211,20 @@ public:
 
 
 // Class CoreUObject.Class
-// 0x01A8 (0x0230 - 0x0088)
+// 0x01E0 (0x0268 - 0x0088)
 class UClass : public UStruct
 {
 public:
-	unsigned char                                      UnknownData00[0x1A8];                                     // 0x0088(0x01A8) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x1E0];                                     // 0x0088(0x01E0) MISSED OFFSET
 
-	template<typename T>
-        inline T* GetDefaultObject()
-        {
-            return UObject::GetDefaultObjectFromArray<T>(this);
-        }
-        
-        inline UObject* GetDefaultObject()
-        {
-            return UObject::GetDefaultObjectFromArray<UObject>(this);
-		}
+	inline UObject* GetDefaultObject(bool bCreateIfNeeded = true)
+	{
+		return GetVFunction<UObject* (*)(UClass*, bool)>(this, 114)(this, bCreateIfNeeded);
+	}
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Class");
 		return pStaticClass;
@@ -304,7 +249,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Function");
 		return pStaticClass;
@@ -321,7 +266,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.DelegateFunction");
 		return pStaticClass;
@@ -331,15 +276,15 @@ public:
 
 
 // Class CoreUObject.DynamicClass
-// 0x0068 (0x0298 - 0x0230)
+// 0x0068 (0x02D0 - 0x0268)
 class UDynamicClass : public UClass
 {
 public:
-	unsigned char                                      UnknownData00[0x68];                                      // 0x0230(0x0068) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x68];                                      // 0x0268(0x0068) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.DynamicClass");
 		return pStaticClass;
@@ -357,7 +302,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.PackageMap");
 		return pStaticClass;
@@ -375,7 +320,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Enum");
 		return pStaticClass;
@@ -393,7 +338,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Property");
 		return pStaticClass;
@@ -411,7 +356,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.EnumProperty");
 		return pStaticClass;
@@ -421,15 +366,15 @@ public:
 
 
 // Class CoreUObject.LinkerPlaceholderClass
-// 0x01A0 (0x03D0 - 0x0230)
+// 0x01A0 (0x0408 - 0x0268)
 class ULinkerPlaceholderClass : public UClass
 {
 public:
-	unsigned char                                      UnknownData00[0x1A0];                                     // 0x0230(0x01A0) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x1A0];                                     // 0x0268(0x01A0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.LinkerPlaceholderClass");
 		return pStaticClass;
@@ -447,7 +392,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.LinkerPlaceholderExportObject");
 		return pStaticClass;
@@ -465,7 +410,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.LinkerPlaceholderFunction");
 		return pStaticClass;
@@ -483,7 +428,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.MetaData");
 		return pStaticClass;
@@ -501,7 +446,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.ObjectRedirector");
 		return pStaticClass;
@@ -519,7 +464,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.ArrayProperty");
 		return pStaticClass;
@@ -537,7 +482,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.ObjectPropertyBase");
 		return pStaticClass;
@@ -555,7 +500,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.BoolProperty");
 		return pStaticClass;
@@ -572,7 +517,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.NumericProperty");
 		return pStaticClass;
@@ -590,7 +535,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.ByteProperty");
 		return pStaticClass;
@@ -607,7 +552,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.ObjectProperty");
 		return pStaticClass;
@@ -625,7 +570,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.ClassProperty");
 		return pStaticClass;
@@ -643,7 +588,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.DelegateProperty");
 		return pStaticClass;
@@ -660,7 +605,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.DoubleProperty");
 		return pStaticClass;
@@ -677,7 +622,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.FloatProperty");
 		return pStaticClass;
@@ -694,7 +639,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.IntProperty");
 		return pStaticClass;
@@ -711,7 +656,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Int16Property");
 		return pStaticClass;
@@ -728,7 +673,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Int64Property");
 		return pStaticClass;
@@ -745,7 +690,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.Int8Property");
 		return pStaticClass;
@@ -763,7 +708,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.InterfaceProperty");
 		return pStaticClass;
@@ -780,7 +725,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.LazyObjectProperty");
 		return pStaticClass;
@@ -798,7 +743,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.MapProperty");
 		return pStaticClass;
@@ -816,7 +761,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.MulticastDelegateProperty");
 		return pStaticClass;
@@ -833,7 +778,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.NameProperty");
 		return pStaticClass;
@@ -851,7 +796,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.SetProperty");
 		return pStaticClass;
@@ -868,7 +813,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.SoftObjectProperty");
 		return pStaticClass;
@@ -886,7 +831,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.SoftClassProperty");
 		return pStaticClass;
@@ -903,7 +848,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.StrProperty");
 		return pStaticClass;
@@ -921,7 +866,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.StructProperty");
 		return pStaticClass;
@@ -938,7 +883,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.UInt16Property");
 		return pStaticClass;
@@ -955,7 +900,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.UInt32Property");
 		return pStaticClass;
@@ -972,7 +917,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.UInt64Property");
 		return pStaticClass;
@@ -989,7 +934,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.WeakObjectProperty");
 		return pStaticClass;
@@ -1006,7 +951,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CoreUObject.TextProperty");
 		return pStaticClass;

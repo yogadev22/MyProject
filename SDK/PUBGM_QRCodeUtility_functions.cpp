@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function QRCodeUtility.VideoThumbnailGenerator.GenerateVideoThumbnailAsync
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
@@ -17,7 +17,7 @@ namespace SDK
 
 void UVideoThumbnailGenerator::GenerateVideoThumbnailAsync(const struct FString& videoPath, int thumbnailSize, const struct FScriptDelegate& OnThumbnailGenerated)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QRCodeUtility.VideoThumbnailGenerator.GenerateVideoThumbnailAsync");
 
@@ -44,7 +44,7 @@ void UVideoThumbnailGenerator::GenerateVideoThumbnailAsync(const struct FString&
 
 class UTexture2D* UZXingScanner::Encode(const struct FString& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QRCodeUtility.ZXingScanner.Encode");
 
@@ -73,7 +73,7 @@ class UTexture2D* UZXingScanner::Encode(const struct FString& Text)
 
 bool UZXingScanner::Decode(class UTexture2D* Texture, const struct FVector4& InRect, struct FZXingScanResult* OutResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QRCodeUtility.ZXingScanner.Decode");
 

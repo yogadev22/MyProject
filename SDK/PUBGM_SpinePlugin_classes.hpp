@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class SpinePlugin.SpineAtlasAsset
 // 0x0030 (0x0058 - 0x0028)
@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineAtlasAsset");
 		return pStaticClass;
@@ -44,7 +44,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineBoneDriverComponent");
 		return pStaticClass;
@@ -70,7 +70,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineBoneFollowerComponent");
 		return pStaticClass;
@@ -94,7 +94,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.TrackEntry");
 		return pStaticClass;
@@ -149,7 +149,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineSkeletonComponent");
 		return pStaticClass;
@@ -202,7 +202,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineSkeletonAnimationComponent");
 		return pStaticClass;
@@ -242,7 +242,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineSkeletonDataAsset");
 		return pStaticClass;
@@ -252,32 +252,31 @@ public:
 
 
 // Class SpinePlugin.SpineSkeletonRendererComponent
-// 0x03C0 (0x0DA0 - 0x09E0)
+// 0x03B0 (0x0DA0 - 0x09F0)
 class USpineSkeletonRendererComponent : public UProceduralMeshComponent
 {
 public:
-	class UMaterialInterface*                          NormalBlendMaterial;                                      // 0x09E0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UMaterialInterface*                          AdditiveBlendMaterial;                                    // 0x09E8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UMaterialInterface*                          MultiplyBlendMaterial;                                    // 0x09F0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UMaterialInterface*                          ScreenBlendMaterial;                                      // 0x09F8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TArray<class UMaterialInstanceDynamic*>            atlasNormalBlendMaterials;                                // 0x0A00(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      UnknownData00[0x50];                                      // 0x0A10(0x0050) MISSED OFFSET
-	TArray<class UMaterialInstanceDynamic*>            atlasAdditiveBlendMaterials;                              // 0x0A60(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      UnknownData01[0x50];                                      // 0x0A70(0x0050) MISSED OFFSET
-	TArray<class UMaterialInstanceDynamic*>            atlasMultiplyBlendMaterials;                              // 0x0AC0(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      UnknownData02[0x50];                                      // 0x0AD0(0x0050) MISSED OFFSET
-	TArray<class UMaterialInstanceDynamic*>            atlasScreenBlendMaterials;                                // 0x0B20(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      UnknownData03[0x50];                                      // 0x0B30(0x0050) MISSED OFFSET
-	float                                              DepthOffset;                                              // 0x0B80(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x4];                                       // 0x0B84(0x0004) MISSED OFFSET
-	struct FName                                       TextureParameterName;                                     // 0x0B88(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FLinearColor                                Color;                                                    // 0x0B90(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
-	bool                                               bCreateCollision;                                         // 0x0BA0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x1FF];                                     // 0x0BA1(0x01FF) MISSED OFFSET
+	class UMaterialInterface*                          AdditiveBlendMaterial;                                    // 0x09F0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          MultiplyBlendMaterial;                                    // 0x09F8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          ScreenBlendMaterial;                                      // 0x0A00(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TArray<class UMaterialInstanceDynamic*>            atlasNormalBlendMaterials;                                // 0x0A08(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      UnknownData00[0x50];                                      // 0x0A18(0x0050) MISSED OFFSET
+	TArray<class UMaterialInstanceDynamic*>            atlasAdditiveBlendMaterials;                              // 0x0A68(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      UnknownData01[0x50];                                      // 0x0A78(0x0050) MISSED OFFSET
+	TArray<class UMaterialInstanceDynamic*>            atlasMultiplyBlendMaterials;                              // 0x0AC8(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      UnknownData02[0x50];                                      // 0x0AD8(0x0050) MISSED OFFSET
+	TArray<class UMaterialInstanceDynamic*>            atlasScreenBlendMaterials;                                // 0x0B28(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      UnknownData03[0x50];                                      // 0x0B38(0x0050) MISSED OFFSET
+	float                                              DepthOffset;                                              // 0x0B88(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x4];                                       // 0x0B8C(0x0004) MISSED OFFSET
+	struct FName                                       TextureParameterName;                                     // 0x0B90(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FLinearColor                                Color;                                                    // 0x0B98(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
+	bool                                               bCreateCollision;                                         // 0x0BA8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x1F7];                                     // 0x0BA9(0x01F7) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineSkeletonRendererComponent");
 		return pStaticClass;
@@ -332,7 +331,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpinePlugin.SpineWidget");
 		return pStaticClass;

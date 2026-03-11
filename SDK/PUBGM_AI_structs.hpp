@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum AI.EAISoundCollectType
 enum class EAISoundCollectType : uint8_t
@@ -154,6 +154,20 @@ enum class EAISearchEnemyType : uint8_t
 	EAISearchEnemyType__Random     = 1,
 	EAISearchEnemyType__Farthest   = 2,
 	EAISearchEnemyType__EAISearchEnemyType_MAX = 3
+};
+
+
+// Enum AI.EAISearchEnemyRule
+enum class EAISearchEnemyRule : uint8_t
+{
+	EAISearchEnemyRule__SingleRule_Hatred = 0,
+	EAISearchEnemyRule__SingleRule_Random = 1,
+	EAISearchEnemyRule__SingleRule_Nearest = 2,
+	EAISearchEnemyRule__SingleRule_Farthest = 3,
+	EAISearchEnemyRule__SingleRule_MostHP = 4,
+	EAISearchEnemyRule__SingleRule_PoorHP = 5,
+	EAISearchEnemyRule__SingleRule_BlackboardValue = 6,
+	EAISearchEnemyRule__SingleRule_MAX = 7
 };
 
 
@@ -449,6 +463,16 @@ enum class EMLAIJumpingPhase : uint8_t
 };
 
 
+// Enum AI.EDiffListIDTag
+enum class EDiffListIDTag : uint8_t
+{
+	EDiffListIDTag__NoDiff         = 0,
+	EDiffListIDTag__General        = 1,
+	EDiffListIDTag__GeneralDiff    = 2,
+	EDiffListIDTag__EDiffListIDTag_MAX = 3
+};
+
+
 // Enum AI.EStatePlayerType
 enum class EStatePlayerType : uint8_t
 {
@@ -479,26 +503,6 @@ enum class ENearItemType : uint8_t
 };
 
 
-// Enum AI.EDiffListIDTag
-enum class EDiffListIDTag : uint8_t
-{
-	EDiffListIDTag__NoDiff         = 0,
-	EDiffListIDTag__General        = 1,
-	EDiffListIDTag__GeneralDiff    = 2,
-	EDiffListIDTag__CCSMLAI        = 3,
-	EDiffListIDTag__CCSMLAIDiff    = 4,
-	EDiffListIDTag__CCSInPool      = 5,
-	EDiffListIDTag__CCSInPoolDiff  = 6,
-	EDiffListIDTag__CCSNearbyPlayer = 7,
-	EDiffListIDTag__CCSNearbyPlayerDiff = 8,
-	EDiffListIDTag__CCSBTAI        = 9,
-	EDiffListIDTag__CCSBTAIDiff    = 10,
-	EDiffListIDTag__CCSPlayer      = 11,
-	EDiffListIDTag__CCSPlayerDiff  = 12,
-	EDiffListIDTag__EDiffListIDTag_MAX = 13
-};
-
-
 // Enum AI.ESpecialZoneType
 enum class ESpecialZoneType : uint8_t
 {
@@ -510,19 +514,22 @@ enum class ESpecialZoneType : uint8_t
 };
 
 
-
-//---------------------By BangJO---------------------------
-//Script Structs
-//---------------------By BangJO---------------------------
-
-// ScriptStruct AI.TLogAIShootInfo
-// 0x000C
-struct FTLogAIShootInfo
+// Enum AI.EVehicleSpecialState
+enum class EVehicleSpecialState : uint8_t
 {
-	int                                                TargetDistance;                                           // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                TargetType;                                               // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                WeaponId;                                                 // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
+	EVehicleSpecialState__BeCatched = 0,
+	EVehicleSpecialState__HoverVHMagnetStatus = 1,
+	EVehicleSpecialState__HasNitroBoostAbility = 2,
+	EVehicleSpecialState__IsNitroBoosting = 3,
+	EVehicleSpecialState__CanNitroBoost = 4,
+	EVehicleSpecialState__EVehicleSpecialState_MAX = 5
 };
+
+
+
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+//Script Structs
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct AI.ChildDynamicItem
 // 0x0020
@@ -540,6 +547,21 @@ struct FAIStateInfoBase
 {
 	uint64_t                                           UnChanged;                                                // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
 	TArray<struct FString>                             IgnoreNames;                                              // 0x0008(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.UniqueStateInfo
+// 0x0008 (0x0020 - 0x0018)
+struct FUniqueStateInfo : public FAIStateInfoBase
+{
+	uint64_t                                           diff_mark_id;                                             // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct AI.AIAttribute
+// 0x0008 (0x0028 - 0x0020)
+struct FAIAttribute : public FUniqueStateInfo
+{
+	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Value;                                                    // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct AI.AIStateXYZ
@@ -570,24 +592,197 @@ struct FCacheSoundState
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.UniqueStateInfo
+// ScriptStruct AI.DamageSource
+// 0x0018 (0x0030 - 0x0018)
+struct FDamageSource : public FAIStateInfoBase
+{
+	struct FAIStateXYZ                                 damage_source;                                            // 0x0018(0x000C)
+	int                                                damage_type;                                              // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                damage_weapon_type;                                       // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           damage_source_id;                                         // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct AI.ItemStateData
+// 0x0030 (0x0050 - 0x0020)
+struct FItemStateData : public FUniqueStateInfo
+{
+	int                                                Type;                                                     // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Category;                                                 // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                ID;                                                       // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                UID;                                                      // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Durability;                                               // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Position;                                                 // 0x0034(0x000C)
+	uint32_t                                           player_id;                                                // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
+	uint64_t                                           unique_id;                                                // 0x0048(0x0008) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct AI.CacheNearbyItemState
+// 0x0020
+struct FCacheNearbyItemState
+{
+	TArray<struct FItemStateData>                      States;                                                   // 0x0000(0x0010) (ZeroConstructor)
+	struct FVector                                     Position;                                                 // 0x0010(0x000C) (IsPlainOldData)
+	bool                                               IsDirty;                                                  // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
+};
+
+// ScriptStruct AI.ProgressBarState
+// 0x0010 (0x0028 - 0x0018)
+struct FProgressBarState : public FAIStateInfoBase
+{
+	int                                                Type;                                                     // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              remain_time;                                              // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           targetid;                                                 // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.AIDamageInfo
+// 0x0018 (0x0030 - 0x0018)
+struct FAIDamageInfo : public FAIStateInfoBase
+{
+	uint32_t                                           PlayerKey;                                                // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Damage;                                                   // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                damage_type;                                              // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                damage_weapon_type;                                       // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           damage_part;                                              // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              damage_before_cal_armor;                                  // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct AI.AIPlayerInteractInfo
+// 0x0040 (0x0058 - 0x0018)
+struct FAIPlayerInteractInfo : public FAIStateInfoBase
+{
+	TArray<struct FAIDamageInfo>                       active_damage;                                            // 0x0018(0x0010) (ZeroConstructor)
+	TArray<struct FAIDamageInfo>                       passive_damage;                                           // 0x0028(0x0010) (ZeroConstructor)
+	TArray<uint32_t>                                   kill_list;                                                // 0x0038(0x0010) (ZeroConstructor)
+	TArray<uint32_t>                                   knock_down_list;                                          // 0x0048(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.SingleDestroyBulletProbInfo
+// 0x0010 (0x0028 - 0x0018)
+struct FSingleDestroyBulletProbInfo : public FAIStateInfoBase
+{
+	float                                              max_destroy_time_float;                                   // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                max_destroy_num;                                          // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              destroy_cd_float;                                         // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              destroy_bullet_prob;                                      // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct AI.AIDestroyBulletProbInfo
+// 0x0080 (0x00A0 - 0x0020)
+struct FAIDestroyBulletProbInfo : public FUniqueStateInfo
+{
+	int                                                bullet_id;                                                // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              low_hp_threshold;                                         // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FSingleDestroyBulletProbInfo                low_hp_destroy_bullet_info;                               // 0x0028(0x0028)
+	struct FSingleDestroyBulletProbInfo                high_hp_destroy_bullet_info;                              // 0x0050(0x0028)
+	struct FSingleDestroyBulletProbInfo                fatal_Damage_destroy_bullet_info;                         // 0x0078(0x0028)
+};
+
+// ScriptStruct AI.AIHeardSound
+// 0x0010 (0x0028 - 0x0018)
+struct FAIHeardSound : public FAIStateInfoBase
+{
+	TArray<struct FSoundState>                         heard_sound;                                              // 0x0018(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.AIPlayerHitInfo
+// 0x0018 (0x0030 - 0x0018)
+struct FAIPlayerHitInfo : public FAIStateInfoBase
+{
+	int                                                fire_count;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                hit_count;                                                // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                hit_head_count;                                           // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                hit_count_filter;                                         // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                hit_head_filter;                                          // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.AIStateConfig
 // 0x0008 (0x0020 - 0x0018)
-struct FUniqueStateInfo : public FAIStateInfoBase
+struct FAIStateConfig : public FAIStateInfoBase
 {
-	uint64_t                                           diff_mark_id;                                             // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
+	int                                                Level;                                                    // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Style;                                                    // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
-// ScriptStruct AI.AIAttribute
-// 0x0008 (0x0028 - 0x0020)
-struct FAIAttribute : public FUniqueStateInfo
+// ScriptStruct AI.DamageRate
+// 0x0008 (0x0020 - 0x0018)
+struct FDamageRate : public FAIStateInfoBase
 {
-	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Value;                                                    // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              HP;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Rate;                                                     // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
-// ScriptStruct AI.AIPlayerStateBaseMod
+// ScriptStruct AI.DamageRateInfo
+// 0x0028 (0x0040 - 0x0018)
+struct FDamageRateInfo : public FAIStateInfoBase
+{
+	TArray<struct FDamageRate>                         damage_rate_map;                                          // 0x0018(0x0010) (ZeroConstructor)
+	TArray<struct FDamageRate>                         revive_damage_rate_map;                                   // 0x0028(0x0010) (ZeroConstructor)
+	float                                              near_death_damage_rate;                                   // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.AIBulletHole
+// 0x0020 (0x0038 - 0x0018)
+struct FAIBulletHole : public FAIStateInfoBase
+{
+	struct FAIStateXYZ                                 hole_pos;                                                 // 0x0018(0x000C)
+	struct FAIStateXYZ                                 hole_source_pos;                                          // 0x0024(0x000C)
+	uint32_t                                           hole_source_id;                                           // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.MLBaseAIStateInfo
+// 0x0110 (0x0130 - 0x0020)
+struct FMLBaseAIStateInfo : public FUniqueStateInfo
+{
+	struct FAIHeardSound                               Sound;                                                    // 0x0020(0x0028)
+	struct FProgressBarState                           progress_bar;                                             // 0x0048(0x0028)
+	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x0070(0x0030)
+	struct FAIStateConfig                              Config;                                                   // 0x00A0(0x0020)
+	struct FDamageRateInfo                             damage_rate_info;                                         // 0x00C0(0x0040)
+	TArray<struct FAIDestroyBulletProbInfo>            destroy_bullet_prob_info;                                 // 0x0100(0x0010) (ZeroConstructor)
+	TArray<struct FDamageSource>                       all_damage_source;                                        // 0x0110(0x0010) (ZeroConstructor)
+	TArray<struct FAIBulletHole>                       all_bullet_hole;                                          // 0x0120(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffAIDestroyBulletProbInfoList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffAIDestroyBulletProbInfoList : public FAIStateInfoBase
+{
+	TArray<struct FAIDestroyBulletProbInfo>            Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffMLBaseAIStateInfo
+// 0x0138 (0x0158 - 0x0020)
+struct FDiffMLBaseAIStateInfo : public FUniqueStateInfo
+{
+	struct FAIHeardSound                               Sound;                                                    // 0x0020(0x0028)
+	struct FProgressBarState                           progress_bar;                                             // 0x0048(0x0028)
+	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x0070(0x0030)
+	struct FAIStateConfig                              Config;                                                   // 0x00A0(0x0020)
+	struct FDamageRateInfo                             damage_rate_info;                                         // 0x00C0(0x0040)
+	struct FDiffAIDestroyBulletProbInfoList            destroy_bullet_prob_info;                                 // 0x0100(0x0038)
+	TArray<struct FAIBulletHole>                       all_bullet_hole;                                          // 0x0138(0x0010) (ZeroConstructor)
+	TArray<struct FDamageSource>                       all_damage_source;                                        // 0x0148(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffMLBaseAllPlayersInfo
+// 0x00F0 (0x0108 - 0x0018)
+struct FDiffMLBaseAllPlayersInfo : public FAIStateInfoBase
+{
+	TMap<uint32_t, struct FMLBaseAIStateInfo>          AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDiffMLBaseAIStateInfo>      AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMLBaseAIStateInfo>          DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+};
+
+// ScriptStruct AI.BaseModAIPlayerState
 // 0x0128 (0x0140 - 0x0018)
-struct FAIPlayerStateBaseMod : public FAIStateInfoBase
+struct FBaseModAIPlayerState : public FAIStateInfoBase
 {
 	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
@@ -683,10 +878,10 @@ struct FAIWeaponStateInfo : public FUniqueStateInfo
 };
 
 // ScriptStruct AI.AIPlayerWeapon
-// 0x0010
-struct FAIPlayerWeapon
+// 0x0010 (0x0028 - 0x0018)
+struct FAIPlayerWeapon : public FAIStateInfoBase
 {
-	TArray<struct FAIWeaponStateInfo>                  player_weapon;                                            // 0x0000(0x0010) (ZeroConstructor)
+	TArray<struct FAIWeaponStateInfo>                  player_weapon;                                            // 0x0018(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct AI.AIBackpackItem
@@ -700,10 +895,10 @@ struct FAIBackpackItem : public FUniqueStateInfo
 };
 
 // ScriptStruct AI.AIPlayerBackpack
-// 0x0010
-struct FAIPlayerBackpack
+// 0x0010 (0x0028 - 0x0018)
+struct FAIPlayerBackpack : public FAIStateInfoBase
 {
-	TArray<struct FAIBackpackItem>                     backpack_item;                                            // 0x0000(0x0010) (ZeroConstructor)
+	TArray<struct FAIBackpackItem>                     backpack_item;                                            // 0x0018(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct AI.AIEquipmentInfo
@@ -717,178 +912,10 @@ struct FAIEquipmentInfo : public FUniqueStateInfo
 };
 
 // ScriptStruct AI.AIPlayerEquipment
-// 0x0010
-struct FAIPlayerEquipment
-{
-	TArray<struct FAIEquipmentInfo>                    equipment_item;                                           // 0x0000(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIDamageInfo
-// 0x0018 (0x0030 - 0x0018)
-struct FAIDamageInfo : public FAIStateInfoBase
-{
-	uint32_t                                           PlayerKey;                                                // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Damage;                                                   // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                damage_type;                                              // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                damage_weapon_type;                                       // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           damage_part;                                              // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              damage_before_cal_armor;                                  // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.AIPlayerInteractInfo
-// 0x0040 (0x0058 - 0x0018)
-struct FAIPlayerInteractInfo : public FAIStateInfoBase
-{
-	TArray<struct FAIDamageInfo>                       active_damage;                                            // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FAIDamageInfo>                       passive_damage;                                           // 0x0028(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   kill_list;                                                // 0x0038(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   knock_down_list;                                          // 0x0048(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIHeardSound
-// 0x0010
-struct FAIHeardSound
-{
-	TArray<struct FSoundState>                         heard_sound;                                              // 0x0000(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIDamageSources
-// 0x0030 (0x0048 - 0x0018)
-struct FAIDamageSources : public FAIStateInfoBase
-{
-	TArray<struct FAIStateXYZ>                         damage_source;                                            // 0x0018(0x0010) (ZeroConstructor)
-	TArray<int>                                        damage_type;                                              // 0x0028(0x0010) (ZeroConstructor)
-	TArray<int>                                        damage_weapon_type;                                       // 0x0038(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DamageSource
-// 0x0018 (0x0030 - 0x0018)
-struct FDamageSource : public FAIStateInfoBase
-{
-	struct FAIStateXYZ                                 damage_source;                                            // 0x0018(0x000C)
-	int                                                damage_type;                                              // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                damage_weapon_type;                                       // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           damage_source_id;                                         // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DiffStateInfoBase
-// 0x0000 (0x0018 - 0x0018)
-struct FDiffStateInfoBase : public FAIStateInfoBase
-{
-
-};
-
-// ScriptStruct AI.ProgressBarState
 // 0x0010 (0x0028 - 0x0018)
-struct FProgressBarState : public FDiffStateInfoBase
+struct FAIPlayerEquipment : public FAIStateInfoBase
 {
-	int                                                Type;                                                     // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              remain_time;                                              // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           targetid;                                                 // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.AISimplifyStateBaseMod
-// 0x0020 (0x0038 - 0x0018)
-struct FAISimplifyStateBaseMod : public FAIStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               has_smoke;                                                // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1B];                                      // 0x001D(0x001B) MISSED OFFSET
-};
-
-// ScriptStruct AI.AINearbyPlayerBaseMod
-// 0x0038 (0x0058 - 0x0020)
-struct FAINearbyPlayerBaseMod : public FUniqueStateInfo
-{
-	struct FAISimplifyStateBaseMod                     State;                                                    // 0x0020(0x0038)
-};
-
-// ScriptStruct AI.ItemStateData
-// 0x0030 (0x0050 - 0x0020)
-struct FItemStateData : public FUniqueStateInfo
-{
-	int                                                Type;                                                     // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Category;                                                 // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                ID;                                                       // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                UID;                                                      // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Durability;                                               // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Position;                                                 // 0x0034(0x000C)
-	uint32_t                                           player_id;                                                // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
-	uint64_t                                           unique_id;                                                // 0x0048(0x0008) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.AINearbyThrown
-// 0x0028 (0x0048 - 0x0020)
-struct FAINearbyThrown : public FUniqueStateInfo
-{
-	int                                                Type;                                                     // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Position;                                                 // 0x0024(0x000C)
-	float                                              remain_time;                                              // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              explode_time;                                             // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_own;                                                   // 0x0038(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_held;                                                  // 0x0039(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x003A(0x0002) MISSED OFFSET
-	uint32_t                                           actorid;                                                  // 0x003C(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           sourceid;                                                 // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.AIPlayerHitInfo
-// 0x0018 (0x0030 - 0x0018)
-struct FAIPlayerHitInfo : public FAIStateInfoBase
-{
-	int                                                fire_count;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                hit_count;                                                // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                hit_head_count;                                           // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                hit_count_filter;                                         // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                hit_head_filter;                                          // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.AIBulletHoles
-// 0x0020 (0x0038 - 0x0018)
-struct FAIBulletHoles : public FAIStateInfoBase
-{
-	TArray<struct FAIStateXYZ>                         hole_pos;                                                 // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateXYZ>                         hole_source_pos;                                          // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIBulletHole
-// 0x0020 (0x0038 - 0x0018)
-struct FAIBulletHole : public FAIStateInfoBase
-{
-	struct FAIStateXYZ                                 hole_pos;                                                 // 0x0018(0x000C)
-	struct FAIStateXYZ                                 hole_source_pos;                                          // 0x0024(0x000C)
-	uint32_t                                           hole_source_id;                                           // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.AIStateConfig
-// 0x0008 (0x0020 - 0x0018)
-struct FAIStateConfig : public FAIStateInfoBase
-{
-	int                                                Level;                                                    // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Style;                                                    // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DamageRate
-// 0x0008 (0x0020 - 0x0018)
-struct FDamageRate : public FAIStateInfoBase
-{
-	float                                              HP;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Rate;                                                     // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DamageRateInfo
-// 0x0028 (0x0040 - 0x0018)
-struct FDamageRateInfo : public FAIStateInfoBase
-{
-	TArray<struct FDamageRate>                         damage_rate_map;                                          // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FDamageRate>                         revive_damage_rate_map;                                   // 0x0028(0x0010) (ZeroConstructor)
-	float                                              near_death_damage_rate;                                   // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
+	TArray<struct FAIEquipmentInfo>                    equipment_item;                                           // 0x0018(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct AI.ChatMsgInfo
@@ -922,88 +949,44 @@ struct FMapMarkInfo : public FAIStateInfoBase
 };
 
 // ScriptStruct AI.AIAvatarInfo
-// 0x0008
-struct FAIAvatarInfo
-{
-	int                                                slot_id;                                                  // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                item_id;                                                  // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.SingleDestroyBulletProbInfo
-// 0x0010 (0x0028 - 0x0018)
-struct FSingleDestroyBulletProbInfo : public FAIStateInfoBase
-{
-	float                                              max_destroy_time_float;                                   // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                max_destroy_num;                                          // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              destroy_cd_float;                                         // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              destroy_bullet_prob;                                      // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.AIDestroyBulletProbInfo
-// 0x0080 (0x00A0 - 0x0020)
-struct FAIDestroyBulletProbInfo : public FUniqueStateInfo
-{
-	int                                                bullet_id;                                                // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              low_hp_threshold;                                         // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FSingleDestroyBulletProbInfo                low_hp_destroy_bullet_info;                               // 0x0028(0x0028)
-	struct FSingleDestroyBulletProbInfo                high_hp_destroy_bullet_info;                              // 0x0050(0x0028)
-	struct FSingleDestroyBulletProbInfo                fatal_Damage_destroy_bullet_info;                         // 0x0078(0x0028)
-};
-
-// ScriptStruct AI.AIStateInfoBaseMod
-// 0x0448 (0x0468 - 0x0020)
-struct FAIStateInfoBaseMod : public FUniqueStateInfo
-{
-	struct FAIPlayerStateBaseMod                       State;                                                    // 0x0020(0x0140)
-	struct FCameraState                                Camera;                                                   // 0x0160(0x0040)
-	struct FAIPlayerWeapon                             Weapon;                                                   // 0x01A0(0x0010)
-	struct FAIPlayerBackpack                           BackPack;                                                 // 0x01B0(0x0010)
-	struct FAIPlayerEquipment                          equipment;                                                // 0x01C0(0x0010)
-	uint32_t                                           Key;                                                      // 0x01D0(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x01D4(0x0004) MISSED OFFSET
-	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x01D8(0x0058)
-	struct FAIHeardSound                               Sound;                                                    // 0x0230(0x0010)
-	struct FAIDamageSources                            damage_sources;                                           // 0x0240(0x0048)
-	TArray<struct FDamageSource>                       all_damage_source;                                        // 0x0288(0x0010) (ZeroConstructor)
-	struct FProgressBarState                           progress_bar;                                             // 0x0298(0x0028)
-	TArray<struct FAINearbyPlayerBaseMod>              nearby_player;                                            // 0x02C0(0x0010) (ZeroConstructor)
-	TArray<struct FItemStateData>                      nearby_item;                                              // 0x02D0(0x0010) (ZeroConstructor)
-	TArray<struct FAINearbyThrown>                     nearby_thrown;                                            // 0x02E0(0x0010) (ZeroConstructor)
-	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x02F0(0x0030)
-	struct FAIBulletHoles                              bullet_holes;                                             // 0x0320(0x0038)
-	TArray<struct FAIBulletHole>                       all_bullet_hole;                                          // 0x0358(0x0010) (ZeroConstructor)
-	uint32_t                                           ai_style;                                                 // 0x0368(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x036C(0x0004) MISSED OFFSET
-	struct FAIStateConfig                              Config;                                                   // 0x0370(0x0020)
-	unsigned char                                      UnknownData02[0x28];                                      // 0x0390(0x0028) MISSED OFFSET
-	TArray<uint64_t>                                   nearby_item_index;                                        // 0x03B8(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   nearby_thrown_index;                                      // 0x03C8(0x0010) (ZeroConstructor)
-	struct FDamageRateInfo                             damage_rate_info;                                         // 0x03D8(0x0040)
-	TArray<struct FChatMsgInfo>                        chatmsg_info_list;                                        // 0x0418(0x0010) (ZeroConstructor)
-	TArray<struct FSignMsgInfo>                        signmsg_info_list;                                        // 0x0428(0x0010) (ZeroConstructor)
-	TArray<struct FMapMarkInfo>                        mapmark_info_list;                                        // 0x0438(0x0010) (ZeroConstructor)
-	TArray<struct FAIAvatarInfo>                       avatar_info;                                              // 0x0448(0x0010) (ZeroConstructor)
-	TArray<struct FAIDestroyBulletProbInfo>            destroy_bullet_prob_info;                                 // 0x0458(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffUniqueStateInfo
 // 0x0008 (0x0020 - 0x0018)
-struct FDiffUniqueStateInfo : public FDiffStateInfoBase
+struct FAIAvatarInfo : public FAIStateInfoBase
 {
-	uint64_t                                           diff_mark_id;                                             // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
+	int                                                slot_id;                                                  // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                item_id;                                                  // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
-// ScriptStruct AI.DiffAIAttributesGeneral
+// ScriptStruct AI.BaseModAIStateInfo
+// 0x02A0 (0x02C0 - 0x0020)
+struct FBaseModAIStateInfo : public FUniqueStateInfo
+{
+	struct FBaseModAIPlayerState                       State;                                                    // 0x0020(0x0140)
+	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x0160(0x0058)
+	struct FCameraState                                Camera;                                                   // 0x01B8(0x0040)
+	struct FAIPlayerWeapon                             Weapon;                                                   // 0x01F8(0x0028)
+	struct FAIPlayerBackpack                           BackPack;                                                 // 0x0220(0x0028)
+	struct FAIPlayerEquipment                          equipment;                                                // 0x0248(0x0028)
+	uint32_t                                           Key;                                                      // 0x0270(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           ai_style;                                                 // 0x0274(0x0004) (ZeroConstructor, IsPlainOldData)
+	TArray<struct FChatMsgInfo>                        chatmsg_info_list;                                        // 0x0278(0x0010) (ZeroConstructor)
+	TArray<struct FSignMsgInfo>                        signmsg_info_list;                                        // 0x0288(0x0010) (ZeroConstructor)
+	TArray<struct FMapMarkInfo>                        mapmark_info_list;                                        // 0x0298(0x0010) (ZeroConstructor)
+	TArray<struct FAIAvatarInfo>                       avatar_info;                                              // 0x02A8(0x0010) (ZeroConstructor)
+	uint32_t                                           ai_provider;                                              // 0x02B8(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x02BC(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.DiffAIAttributeList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffAIAttributesGeneral : public FDiffStateInfoBase
+struct FDiffAIAttributeList : public FAIStateInfoBase
 {
 	TArray<struct FAIAttribute>                        Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIPlayerStateBaseModGeneral
+// ScriptStruct AI.DiffBaseModAIPlayerState
 // 0x0140 (0x0158 - 0x0018)
-struct FDiffAIPlayerStateBaseModGeneral : public FAIStateInfoBase
+struct FDiffBaseModAIPlayerState : public FAIStateInfoBase
 {
 	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
@@ -1051,7 +1034,7 @@ struct FDiffAIPlayerStateBaseModGeneral : public FAIStateInfoBase
 	int                                                zone_id;                                                  // 0x00C8(0x0004) (ZeroConstructor, IsPlainOldData)
 	bool                                               in_delivery_pool;                                         // 0x00CC(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData06[0x3];                                       // 0x00CD(0x0003) MISSED OFFSET
-	struct FDiffAIAttributesGeneral                    Attributes;                                               // 0x00D0(0x0038)
+	struct FDiffAIAttributeList                        Attributes;                                               // 0x00D0(0x0038)
 	int                                                ai_kill_count;                                            // 0x0108(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                Gender;                                                   // 0x010C(0x0004) (ZeroConstructor, IsPlainOldData)
 	struct FString                                     OpenID;                                                   // 0x0110(0x0010) (ZeroConstructor)
@@ -1069,1005 +1052,61 @@ struct FDiffAIPlayerStateBaseModGeneral : public FAIStateInfoBase
 	int                                                received_fatal_destroy_bullet_num;                        // 0x0154(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
-// ScriptStruct AI.DiffAIWeaponStateInfoGeneral
+// ScriptStruct AI.DiffAIWeaponStateInfoList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffAIWeaponStateInfoGeneral : public FDiffStateInfoBase
+struct FDiffAIWeaponStateInfoList : public FAIStateInfoBase
 {
 	TArray<struct FAIWeaponStateInfo>                  Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIPlayerWeaponGeneral
+// ScriptStruct AI.DiffAIPlayerWeapon
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffAIPlayerWeaponGeneral : public FDiffStateInfoBase
+struct FDiffAIPlayerWeapon : public FAIStateInfoBase
 {
-	struct FDiffAIWeaponStateInfoGeneral               player_weapon;                                            // 0x0018(0x0038)
+	struct FDiffAIWeaponStateInfoList                  player_weapon;                                            // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffAIBackpackItemGeneral
+// ScriptStruct AI.DiffAIBackpackItemList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffAIBackpackItemGeneral : public FDiffStateInfoBase
+struct FDiffAIBackpackItemList : public FAIStateInfoBase
 {
 	TArray<struct FAIBackpackItem>                     Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIPlayerBackpackGeneral
+// ScriptStruct AI.DiffAIPlayerBackpack
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffAIPlayerBackpackGeneral : public FDiffStateInfoBase
+struct FDiffAIPlayerBackpack : public FAIStateInfoBase
 {
-	struct FDiffAIBackpackItemGeneral                  backpack_item;                                            // 0x0018(0x0038)
+	struct FDiffAIBackpackItemList                     backpack_item;                                            // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffAIEquipmentInfoGeneral
+// ScriptStruct AI.DiffAIEquipmentInfoList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffAIEquipmentInfoGeneral : public FDiffStateInfoBase
+struct FDiffAIEquipmentInfoList : public FAIStateInfoBase
 {
 	TArray<struct FAIEquipmentInfo>                    Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIPlayerEquipmentGeneral
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffAIPlayerEquipmentGeneral : public FDiffStateInfoBase
-{
-	struct FDiffAIEquipmentInfoGeneral                 equipment_item;                                           // 0x0018(0x0038)
-};
-
-// ScriptStruct AI.DiffAINearbyPlayersBaseModGeneral
-// 0x0060 (0x0078 - 0x0018)
-struct FDiffAINearbyPlayersBaseModGeneral : public FDiffStateInfoBase
-{
-	TMap<uint32_t, struct FAINearbyPlayerBaseMod>      Values;                                                   // 0x0018(0x0050) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0068(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffItemStateDatasGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffItemStateDatasGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FItemStateData>                      Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAINearbyThrownGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAINearbyThrownGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FAINearbyThrown>                     Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIDestroyBulletProbInfoListGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIDestroyBulletProbInfoListGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FAIDestroyBulletProbInfo>            Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIStateInfoBaseModGeneral
-// 0x05B8 (0x05D8 - 0x0020)
-struct FDiffAIStateInfoBaseModGeneral : public FDiffUniqueStateInfo
-{
-	struct FDiffAIPlayerStateBaseModGeneral            State;                                                    // 0x0020(0x0158)
-	struct FAIHeardSound                               Sound;                                                    // 0x0178(0x0010)
-	struct FAIDamageSources                            damage_sources;                                           // 0x0188(0x0048)
-	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x01D0(0x0058)
-	struct FCameraState                                Camera;                                                   // 0x0228(0x0040)
-	struct FDiffAIPlayerWeaponGeneral                  Weapon;                                                   // 0x0268(0x0050)
-	struct FDiffAIPlayerBackpackGeneral                BackPack;                                                 // 0x02B8(0x0050)
-	struct FDiffAIPlayerEquipmentGeneral               equipment;                                                // 0x0308(0x0050)
-	struct FProgressBarState                           progress_bar;                                             // 0x0358(0x0028)
-	struct FDiffAINearbyPlayersBaseModGeneral          nearby_player;                                            // 0x0380(0x0078)
-	struct FDiffItemStateDatasGeneral                  nearby_item;                                              // 0x03F8(0x0038)
-	TArray<uint64_t>                                   nearby_item_index;                                        // 0x0430(0x0010) (ZeroConstructor)
-	struct FDiffAINearbyThrownGeneral                  nearby_thrown;                                            // 0x0440(0x0038)
-	TArray<uint64_t>                                   nearby_thrown_index;                                      // 0x0478(0x0010) (ZeroConstructor)
-	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x0488(0x0030)
-	uint32_t                                           Key;                                                      // 0x04B8(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x04BC(0x0004) MISSED OFFSET
-	struct FAIBulletHoles                              bullet_holes;                                             // 0x04C0(0x0038)
-	uint32_t                                           ai_style;                                                 // 0x04F8(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x04FC(0x0004) MISSED OFFSET
-	struct FAIStateConfig                              Config;                                                   // 0x0500(0x0020)
-	struct FDamageRateInfo                             damage_rate_info;                                         // 0x0520(0x0040)
-	TArray<struct FChatMsgInfo>                        chatmsg_info_list;                                        // 0x0560(0x0010) (ZeroConstructor)
-	TArray<struct FSignMsgInfo>                        signmsg_info_list;                                        // 0x0570(0x0010) (ZeroConstructor)
-	TArray<struct FMapMarkInfo>                        mapmark_info_list;                                        // 0x0580(0x0010) (ZeroConstructor)
-	TArray<struct FAIAvatarInfo>                       avatar_info;                                              // 0x0590(0x0010) (ZeroConstructor)
-	struct FDiffAIDestroyBulletProbInfoListGeneral     destroy_bullet_prob_info;                                 // 0x05A0(0x0038)
-};
-
-// ScriptStruct AI.DiffStateInfoInt32
-// 0x0004
-struct FDiffStateInfoInt32
-{
-	int                                                Value;                                                    // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DiffStateInfoFloat
-// 0x0004
-struct FDiffStateInfoFloat
-{
-	float                                              Value;                                                    // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DiffStateInfoVector
-// 0x000C
-struct FDiffStateInfoVector
-{
-	struct FDiffStateInfoFloat                         X;                                                        // 0x0000(0x0004)
-	struct FDiffStateInfoFloat                         Y;                                                        // 0x0004(0x0004)
-	struct FDiffStateInfoFloat                         Z;                                                        // 0x0008(0x0004)
-};
-
-// ScriptStruct AI.DiffStateInfoBool
-// 0x0001
-struct FDiffStateInfoBool
-{
-	bool                                               Value;                                                    // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DiffStateInfoUInt64
-// 0x0008
-struct FDiffStateInfoUInt64
-{
-	uint64_t                                           Value;                                                    // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DiffAttribute
-// 0x0008 (0x0020 - 0x0018)
-struct FDiffAttribute : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoFloat                         Value;                                                    // 0x001C(0x0004)
-};
-
-// ScriptStruct AI.DiffAIAttributes
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIAttributes : public FDiffStateInfoBase
-{
-	TArray<struct FDiffAttribute>                      attribute_state;                                          // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIPlayerStateBaseMod
-// 0x00F8 (0x0110 - 0x0018)
-struct FDiffAIPlayerStateBaseMod : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-	uint64_t                                           unique_id;                                                // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoInt32                         team_id;                                                  // 0x0028(0x0004)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x002C(0x000C)
-	struct FDiffStateInfoVector                        Rotation;                                                 // 0x0038(0x000C)
-	struct FDiffStateInfoVector                        Speed;                                                    // 0x0044(0x000C)
-	struct FDiffStateInfoFloat                         HP;                                                       // 0x0050(0x0004)
-	struct FDiffStateInfoFloat                         Energy;                                                   // 0x0054(0x0004)
-	struct FDiffStateInfoFloat                         dying_hp;                                                 // 0x0058(0x0004)
-	struct FDiffStateInfoFloat                         oxygen;                                                   // 0x005C(0x0004)
-	struct FDiffStateInfoInt32                         active_weapon_slot;                                       // 0x0060(0x0004)
-	struct FDiffStateInfoInt32                         weapon_status;                                            // 0x0064(0x0004)
-	struct FDiffStateInfoBool                          is_switching;                                             // 0x0068(0x0001)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0069(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         alive_state;                                              // 0x006C(0x0004)
-	struct FDiffStateInfoInt32                         kill_count;                                               // 0x0070(0x0004)
-	struct FDiffStateInfoInt32                         assist_count;                                             // 0x0074(0x0004)
-	struct FDiffStateInfoInt32                         Damages;                                                  // 0x0078(0x0004)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x007C(0x0004) MISSED OFFSET
-	struct FDiffStateInfoUInt64                        pawn_states;                                              // 0x0080(0x0008)
-	struct FDiffStateInfoBool                          is_left_probe;                                            // 0x0088(0x0001)
-	struct FDiffStateInfoBool                          is_right_probe;                                           // 0x0089(0x0001)
-	struct FDiffStateInfoBool                          is_floating;                                              // 0x008A(0x0001)
-	unsigned char                                      UnknownData03[0x1];                                       // 0x008B(0x0001) MISSED OFFSET
-	struct FDiffStateInfoInt32                         using_skill_id;                                           // 0x008C(0x0004)
-	struct FDiffStateInfoInt32                         skill_phase_index;                                        // 0x0090(0x0004)
-	struct FDiffStateInfoBool                          is_pose_acting;                                           // 0x0094(0x0001)
-	struct FDiffStateInfoBool                          is_picking;                                               // 0x0095(0x0001)
-	unsigned char                                      UnknownData04[0x2];                                       // 0x0096(0x0002) MISSED OFFSET
-	struct FDiffStateInfoInt32                         body_state;                                               // 0x0098(0x0004)
-	struct FDiffStateInfoInt32                         location_state;                                           // 0x009C(0x0004)
-	struct FDiffStateInfoBool                          has_smoke;                                                // 0x00A0(0x0001)
-	unsigned char                                      UnknownData05[0x3];                                       // 0x00A1(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         player_type;                                              // 0x00A4(0x0004)
-	struct FDiffStateInfoInt32                         ai_level;                                                 // 0x00A8(0x0004)
-	unsigned char                                      UnknownData06[0x4];                                       // 0x00AC(0x0004) MISSED OFFSET
-	struct FDiffAIAttributes                           Attributes;                                               // 0x00B0(0x0038)
-	struct FDiffStateInfoBool                          is_lost_connection;                                       // 0x00E8(0x0001)
-	unsigned char                                      UnknownData07[0x3];                                       // 0x00E9(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         ai_kill_count;                                            // 0x00EC(0x0004)
-	struct FDiffStateInfoBool                          in_delivery_pool;                                         // 0x00F0(0x0001)
-	struct FDiffStateInfoBool                          has_gone;                                                 // 0x00F1(0x0001)
-	struct FDiffStateInfoBool                          in_afk;                                                   // 0x00F2(0x0001)
-	unsigned char                                      UnknownData08[0x1];                                       // 0x00F3(0x0001) MISSED OFFSET
-	struct FDiffStateInfoInt32                         emote_id;                                                 // 0x00F4(0x0004)
-	struct FDiffStateInfoBool                          is_move_has_collision;                                    // 0x00F8(0x0001)
-	unsigned char                                      UnknownData09[0x3];                                       // 0x00F9(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         high_hp_destroy_bullet_num;                               // 0x00FC(0x0004)
-	struct FDiffStateInfoInt32                         low_hp_destroy_bullet_num;                                // 0x0100(0x0004)
-	struct FDiffStateInfoInt32                         fatal_damage_destroy_bullet_num;                          // 0x0104(0x0004)
-	struct FDiffStateInfoBool                          is_weapon_near_wall;                                      // 0x0108(0x0001)
-	unsigned char                                      UnknownData10[0x3];                                       // 0x0109(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         received_fatal_destroy_bullet_num;                        // 0x010C(0x0004)
-};
-
-// ScriptStruct AI.DiffCameraState
-// 0x0028 (0x0040 - 0x0018)
-struct FDiffCameraState : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoVector                        Position;                                                 // 0x0018(0x000C)
-	struct FDiffStateInfoVector                        Rotation;                                                 // 0x0024(0x000C)
-	struct FDiffStateInfoVector                        view_position;                                            // 0x0030(0x000C)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIWeaponStateInfo
-// 0x0028 (0x0040 - 0x0018)
-struct FDiffAIWeaponStateInfo : public FDiffStateInfoBase
-{
-	uint32_t                                           slot_id;                                                  // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoInt32                         Category;                                                 // 0x001C(0x0004)
-	struct FDiffStateInfoInt32                         Type;                                                     // 0x0020(0x0004)
-	struct FDiffStateInfoInt32                         Bullet;                                                   // 0x0024(0x0004)
-	struct FDiffStateInfoFloat                         remain_reloading;                                         // 0x0028(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-	TArray<int>                                        attachments;                                              // 0x0030(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIPlayerWeapon
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIPlayerWeapon : public FDiffStateInfoBase
-{
-	TArray<struct FDiffAIWeaponStateInfo>              player_weapon;                                            // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffStateInfoUInt32
-// 0x0004
-struct FDiffStateInfoUInt32
-{
-	uint32_t                                           Value;                                                    // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DiffAIBackpackItem
-// 0x0010 (0x0028 - 0x0018)
-struct FDiffAIBackpackItem : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoInt32                         Category;                                                 // 0x0018(0x0004)
-	uint32_t                                           ID;                                                       // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoUInt32                        Count;                                                    // 0x0020(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffPlayerBackpack
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffPlayerBackpack : public FDiffStateInfoBase
-{
-	TArray<struct FDiffAIBackpackItem>                 backpack_item;                                            // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIEquipmentInfo
-// 0x0010 (0x0028 - 0x0018)
-struct FDiffAIEquipmentInfo : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoInt32                         Category;                                                 // 0x0018(0x0004)
-	uint32_t                                           ID;                                                       // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoFloat                         Durability;                                               // 0x0020(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
-};
-
 // ScriptStruct AI.DiffAIPlayerEquipment
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIPlayerEquipment : public FDiffStateInfoBase
-{
-	TArray<struct FDiffAIEquipmentInfo>                equipment_item;                                           // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffProgressBarState
-// 0x0010 (0x0028 - 0x0018)
-struct FDiffProgressBarState : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoInt32                         Type;                                                     // 0x0018(0x0004)
-	struct FDiffStateInfoFloat                         remain_time;                                              // 0x001C(0x0004)
-	struct FDiffStateInfoUInt32                        targetid;                                                 // 0x0020(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAISimplifyStateBaseMod
-// 0x0008 (0x0020 - 0x0018)
-struct FDiffAISimplifyStateBaseMod : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoBool                          has_smoke;                                                // 0x001C(0x0001)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAINearbyPlayerBaseMod
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAINearbyPlayerBaseMod : public FDiffStateInfoBase
-{
-	struct FDiffAISimplifyStateBaseMod                 State;                                                    // 0x0018(0x0020)
-};
-
-// ScriptStruct AI.DiffAINearbyPlayersBaseMod
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAINearbyPlayersBaseMod : public FDiffStateInfoBase
-{
-	TArray<struct FDiffAINearbyPlayerBaseMod>          Players;                                                  // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffItemStateData
-// 0x0030 (0x0048 - 0x0018)
-struct FDiffItemStateData : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoInt32                         Type;                                                     // 0x0018(0x0004)
-	struct FDiffStateInfoInt32                         Category;                                                 // 0x001C(0x0004)
-	struct FDiffStateInfoUInt32                        ID;                                                       // 0x0020(0x0004)
-	int                                                UID;                                                      // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoFloat                         Durability;                                               // 0x0028(0x0004)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x002C(0x000C)
-	struct FDiffStateInfoUInt32                        player_id;                                                // 0x0038(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
-	struct FDiffStateInfoUInt64                        unique_id;                                                // 0x0040(0x0008)
-};
-
-// ScriptStruct AI.DiffItemStateDatas
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffItemStateDatas : public FDiffStateInfoBase
-{
-	TArray<struct FDiffItemStateData>                  Items;                                                    // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIConfig
-// 0x0008 (0x0020 - 0x0018)
-struct FDiffAIConfig : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoInt32                         Level;                                                    // 0x0018(0x0004)
-	struct FDiffStateInfoInt32                         Style;                                                    // 0x001C(0x0004)
-};
-
-// ScriptStruct AI.DiffSingleDestroyBulletProbInfo
-// 0x0010 (0x0028 - 0x0018)
-struct FDiffSingleDestroyBulletProbInfo : public FAIStateInfoBase
-{
-	struct FDiffStateInfoFloat                         max_destroy_time_float;                                   // 0x0018(0x0004)
-	struct FDiffStateInfoInt32                         max_destroy_num;                                          // 0x001C(0x0004)
-	struct FDiffStateInfoFloat                         destroy_cd_float;                                         // 0x0020(0x0004)
-	struct FDiffStateInfoFloat                         destroy_bullet_prob;                                      // 0x0024(0x0004)
-};
-
-// ScriptStruct AI.DiffAIDestroyBulletProbInfo
-// 0x0080 (0x0098 - 0x0018)
-struct FDiffAIDestroyBulletProbInfo : public FDiffStateInfoBase
-{
-	int                                                bullet_id;                                                // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoFloat                         low_hp_threshold;                                         // 0x001C(0x0004)
-	struct FDiffSingleDestroyBulletProbInfo            low_hp_destroy_bullet_info;                               // 0x0020(0x0028)
-	struct FDiffSingleDestroyBulletProbInfo            high_hp_destroy_bullet_info;                              // 0x0048(0x0028)
-	struct FDiffSingleDestroyBulletProbInfo            fatal_Damage_destroy_bullet_info;                         // 0x0070(0x0028)
-};
-
-// ScriptStruct AI.DiffAIDestroyBulletProbInfos
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIDestroyBulletProbInfos : public FDiffStateInfoBase
-{
-	TArray<struct FDiffAIDestroyBulletProbInfo>        States;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffDamageRate
-// 0x0008 (0x0020 - 0x0018)
-struct FDiffDamageRate : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoFloat                         HP;                                                       // 0x0018(0x0004)
-	struct FDiffStateInfoFloat                         Rate;                                                     // 0x001C(0x0004)
-};
-
-// ScriptStruct AI.DiffDamageRateInfo
-// 0x0028 (0x0040 - 0x0018)
-struct FDiffDamageRateInfo : public FDiffStateInfoBase
-{
-	TArray<struct FDiffDamageRate>                     damage_rate_map;                                          // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FDiffDamageRate>                     revive_damage_rate_map;                                   // 0x0028(0x0010) (ZeroConstructor)
-	struct FDiffStateInfoFloat                         near_death_damage_rate;                                   // 0x0038(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIStateInfoBaseMod
-// 0x0410 (0x0428 - 0x0018)
-struct FDiffAIStateInfoBaseMod : public FDiffStateInfoBase
-{
-	struct FDiffAIPlayerStateBaseMod                   State;                                                    // 0x0018(0x0110)
-	struct FDiffCameraState                            Camera;                                                   // 0x0128(0x0040)
-	struct FDiffAIPlayerWeapon                         Weapon;                                                   // 0x0168(0x0038)
-	struct FDiffPlayerBackpack                         BackPack;                                                 // 0x01A0(0x0038)
-	struct FDiffAIPlayerEquipment                      equipment;                                                // 0x01D8(0x0038)
-	uint32_t                                           Key;                                                      // 0x0210(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0214(0x0004) MISSED OFFSET
-	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x0218(0x0058)
-	struct FAIHeardSound                               Sound;                                                    // 0x0270(0x0010)
-	TArray<struct FDamageSource>                       all_damage_source;                                        // 0x0280(0x0010) (ZeroConstructor)
-	struct FDiffProgressBarState                       progress_bar;                                             // 0x0290(0x0028)
-	struct FDiffAINearbyPlayersBaseMod                 nearby_player;                                            // 0x02B8(0x0038)
-	struct FDiffItemStateDatas                         nearby_item;                                              // 0x02F0(0x0038)
-	TArray<struct FAINearbyThrown>                     nearby_thrown;                                            // 0x0328(0x0010) (ZeroConstructor)
-	TArray<struct FItemStateData>                      nearby_box_item;                                          // 0x0338(0x0010) (ZeroConstructor)
-	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x0348(0x0030)
-	TArray<struct FAIBulletHole>                       all_bullet_hole;                                          // 0x0378(0x0010) (ZeroConstructor)
-	uint32_t                                           ai_style;                                                 // 0x0388(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x038C(0x0004) MISSED OFFSET
-	struct FDiffAIConfig                               Config;                                                   // 0x0390(0x0020)
-	struct FDiffAIDestroyBulletProbInfos               destroy_bullet_prob_info;                                 // 0x03B0(0x0038)
-	struct FDiffDamageRateInfo                         damage_rate_info;                                         // 0x03E8(0x0040)
-};
-
-// ScriptStruct AI.CacheNearbyItemState
-// 0x0020
-struct FCacheNearbyItemState
-{
-	TArray<struct FItemStateData>                      States;                                                   // 0x0000(0x0010) (ZeroConstructor)
-	struct FVector                                     Position;                                                 // 0x0010(0x000C) (IsPlainOldData)
-	bool                                               IsDirty;                                                  // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-};
-
-// ScriptStruct AI.ObstacleState
-// 0x0030 (0x0050 - 0x0020)
-struct FObstacleState : public FUniqueStateInfo
-{
-	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Type;                                                     // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Category;                                                 // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              HP;                                                       // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              max_hp;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Position;                                                 // 0x0034(0x000C)
-	struct FAIStateXYZ                                 Rotation;                                                 // 0x0040(0x000C)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x004C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.AIPlayerStateBRBase
-// 0x0050 (0x0068 - 0x0018)
-struct FAIPlayerStateBRBase : public FAIStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_diving;                                                // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-	int                                                vehicle_role;                                             // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                revival_count;                                            // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_be_spectated;                                          // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
-	int                                                parallel_world_id;                                        // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           related_id;                                               // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                revival_type;                                             // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           parachute_state;                                          // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           plane_id;                                                 // 0x003C(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               can_parachute_jump;                                       // 0x0040(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0041(0x0003) MISSED OFFSET
-	uint32_t                                           follow_state;                                             // 0x0044(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           leader_id;                                                // 0x0048(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           parachute_type;                                           // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                expect_delivery_num;                                      // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                remain_delivery_num;                                      // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 target_position;                                          // 0x0058(0x000C)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0064(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.VehicleDamageInfo
-// 0x0018 (0x0030 - 0x0018)
-struct FVehicleDamageInfo : public FAIStateInfoBase
-{
-	uint32_t                                           vehicle_id;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           PlayerKey;                                                // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Damage;                                                   // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                damage_type;                                              // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_kill;                                                  // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
-};
-
-// ScriptStruct AI.VehicleState
-// 0x00B8 (0x00D8 - 0x0020)
-struct FVehicleState : public FUniqueStateInfo
-{
-	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Position;                                                 // 0x0024(0x000C)
-	struct FAIStateXYZ                                 Rotation;                                                 // 0x0030(0x000C)
-	float                                              HP;                                                       // 0x003C(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              gas;                                                      // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Speed;                                                    // 0x0044(0x000C)
-	uint32_t                                           damaged_num;                                              // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           Category;                                                 // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_reverse;                                               // 0x0058(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               has_player;                                               // 0x0059(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_full;                                                  // 0x005A(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x5];                                       // 0x005B(0x0005) MISSED OFFSET
-	struct FCameraState                                Camera;                                                   // 0x0060(0x0040)
-	int                                                location_state;                                           // 0x00A0(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_attached;                                              // 0x00A4(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x00A5(0x0003) MISSED OFFSET
-	TArray<float>                                      wheels_hp;                                                // 0x00A8(0x0010) (ZeroConstructor)
-	TArray<struct FVehicleDamageInfo>                  damage_info;                                              // 0x00B8(0x0010) (ZeroConstructor)
-	bool                                               is_has_collision;                                         // 0x00C8(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_using_horn;                                            // 0x00C9(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2];                                       // 0x00CA(0x0002) MISSED OFFSET
-	uint32_t                                           born_island_owner_id;                                     // 0x00CC(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           vehicle_avatar_id;                                        // 0x00D0(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           custom_state;                                             // 0x00D4(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.DoorState
-// 0x0020 (0x0040 - 0x0020)
-struct FDoorState : public FUniqueStateInfo
-{
-	struct FAIStateXYZ                                 Position;                                                 // 0x0020(0x000C)
-	int                                                State;                                                    // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           ID;                                                       // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Rotation;                                                 // 0x0034(0x000C)
-};
-
-// ScriptStruct AI.AIRecipients
-// 0x0020 (0x0038 - 0x0018)
-struct FAIRecipients : public FAIStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           team_id;                                                  // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Position;                                                 // 0x0020(0x000C)
-	float                                              HP;                                                       // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           Type;                                                     // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.MonsterState
-// 0x0040 (0x0060 - 0x0020)
-struct FMonsterState : public FUniqueStateInfo
-{
-	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Category;                                                 // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Position;                                                 // 0x0028(0x000C)
-	struct FAIStateXYZ                                 Rotation;                                                 // 0x0034(0x000C)
-	struct FAIStateXYZ                                 Speed;                                                    // 0x0040(0x000C)
-	float                                              HP;                                                       // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              hp_max;                                                   // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                using_skill_id;                                           // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                skill_phase_index;                                        // 0x0058(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x005C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DynamicItem
-// 0x0038 (0x0058 - 0x0020)
-struct FDynamicItem : public FUniqueStateInfo
-{
-	int                                                Category;                                                 // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           ID;                                                       // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Center;                                                   // 0x0028(0x000C)
-	struct FAIStateXYZ                                 Rotation;                                                 // 0x0034(0x000C)
-	float                                              Durability;                                               // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           Custom;                                                   // 0x0044(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Scale;                                                    // 0x0048(0x000C)
-	int                                                parallel_world_id;                                        // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.LandScapeDestroyState
-// 0x0018 (0x0038 - 0x0020)
-struct FLandScapeDestroyState : public FUniqueStateInfo
-{
-	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Location;                                                 // 0x0024(0x000C)
-	int                                                Radius;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Depth;                                                    // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.AIStateInfoBRBase
-// 0x01E8 (0x0208 - 0x0020)
-struct FAIStateInfoBRBase : public FUniqueStateInfo
-{
-	struct FAIPlayerStateBRBase                        State;                                                    // 0x0020(0x0068)
-	struct FVehicleState                               vehicle_state;                                            // 0x0088(0x00D8)
-	TArray<struct FDoorState>                          nearby_door;                                              // 0x0160(0x0010) (ZeroConstructor)
-	TArray<struct FVehicleState>                       nearby_vehicles;                                          // 0x0170(0x0010) (ZeroConstructor)
-	TArray<struct FAIRecipients>                       recipients;                                               // 0x0180(0x0010) (ZeroConstructor)
-	TArray<struct FMonsterState>                       monster_states;                                           // 0x0190(0x0010) (ZeroConstructor)
-	TArray<struct FDynamicItem>                        dynamic_items;                                            // 0x01A0(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   nearby_door_index;                                        // 0x01B0(0x0010) (ZeroConstructor)
-	uint32_t                                           deliver_target_id;                                        // 0x01C0(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x01C4(0x0004) MISSED OFFSET
-	TArray<uint64_t>                                   nearby_vehicles_index;                                    // 0x01C8(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   dynamic_items_index;                                      // 0x01D8(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   monster_states_index;                                     // 0x01E8(0x0010) (ZeroConstructor)
-	TArray<struct FLandScapeDestroyState>              landscape_destroy_info;                                   // 0x01F8(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffDoorStateGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffDoorStateGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FDoorState>                          Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffVehicleStatesGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffVehicleStatesGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FVehicleState>                       Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffDynamicItemStatesGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffDynamicItemStatesGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FDynamicItem>                        Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffMonsterStatesGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffMonsterStatesGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FMonsterState>                       Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIStateInfoBRBaseGeneral
-// 0x0278 (0x0298 - 0x0020)
-struct FDiffAIStateInfoBRBaseGeneral : public FDiffUniqueStateInfo
-{
-	struct FAIPlayerStateBRBase                        State;                                                    // 0x0020(0x0068)
-	struct FDiffDoorStateGeneral                       nearby_door;                                              // 0x0088(0x0038)
-	TArray<uint64_t>                                   nearby_door_index;                                        // 0x00C0(0x0010) (ZeroConstructor)
-	struct FVehicleState                               vehicle_state;                                            // 0x00D0(0x00D8)
-	struct FDiffVehicleStatesGeneral                   nearby_vehicles;                                          // 0x01A8(0x0038)
-	TArray<uint64_t>                                   nearby_vehicles_index;                                    // 0x01E0(0x0010) (ZeroConstructor)
-	uint32_t                                           deliver_target_id;                                        // 0x01F0(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x01F4(0x0004) MISSED OFFSET
-	TArray<struct FAIRecipients>                       recipients;                                               // 0x01F8(0x0010) (ZeroConstructor)
-	struct FDiffDynamicItemStatesGeneral               dynamic_items;                                            // 0x0208(0x0038)
-	TArray<uint64_t>                                   dynamic_items_index;                                      // 0x0240(0x0010) (ZeroConstructor)
-	struct FDiffMonsterStatesGeneral                   monster_states;                                           // 0x0250(0x0038)
-	TArray<uint64_t>                                   monster_states_index;                                     // 0x0288(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIPlayerStateBRBase
-// 0x0048 (0x0060 - 0x0018)
-struct FDiffAIPlayerStateBRBase : public FAIStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoBool                          is_diving;                                                // 0x001C(0x0001)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         vehicle_role;                                             // 0x0020(0x0004)
-	struct FDiffStateInfoInt32                         revival_count;                                            // 0x0024(0x0004)
-	struct FDiffStateInfoBool                          is_be_spectated;                                          // 0x0028(0x0001)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         parallel_world_id;                                        // 0x002C(0x0004)
-	struct FDiffStateInfoUInt32                        related_id;                                               // 0x0030(0x0004)
-	struct FDiffStateInfoInt32                         revival_type;                                             // 0x0034(0x0004)
-	struct FDiffStateInfoUInt32                        plane_id;                                                 // 0x0038(0x0004)
-	struct FDiffStateInfoUInt32                        parachute_state;                                          // 0x003C(0x0004)
-	struct FDiffStateInfoBool                          can_parachute_jump;                                       // 0x0040(0x0001)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0041(0x0003) MISSED OFFSET
-	struct FDiffStateInfoUInt32                        follow_state;                                             // 0x0044(0x0004)
-	struct FDiffStateInfoUInt32                        leader_id;                                                // 0x0048(0x0004)
-	struct FDiffStateInfoUInt32                        parachute_type;                                           // 0x004C(0x0004)
-	struct FDiffStateInfoVector                        target_position;                                          // 0x0050(0x000C)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x005C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffVehicleState
-// 0x0090 (0x00A8 - 0x0018)
-struct FDiffVehicleState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x001C(0x000C)
-	struct FDiffStateInfoVector                        Rotation;                                                 // 0x0028(0x000C)
-	struct FDiffStateInfoFloat                         HP;                                                       // 0x0034(0x0004)
-	struct FDiffStateInfoFloat                         gas;                                                      // 0x0038(0x0004)
-	struct FDiffStateInfoVector                        Speed;                                                    // 0x003C(0x000C)
-	struct FDiffStateInfoUInt32                        damaged_num;                                              // 0x0048(0x0004)
-	struct FDiffStateInfoUInt32                        Category;                                                 // 0x004C(0x0004)
-	struct FDiffStateInfoBool                          is_reverse;                                               // 0x0050(0x0001)
-	struct FDiffStateInfoBool                          has_player;                                               // 0x0051(0x0001)
-	struct FDiffStateInfoBool                          is_full;                                                  // 0x0052(0x0001)
-	unsigned char                                      UnknownData00[0x5];                                       // 0x0053(0x0005) MISSED OFFSET
-	struct FDiffCameraState                            Camera;                                                   // 0x0058(0x0040)
-	struct FDiffStateInfoInt32                         location_state;                                           // 0x0098(0x0004)
-	struct FDiffStateInfoBool                          is_attached;                                              // 0x009C(0x0001)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x009D(0x0003) MISSED OFFSET
-	struct FDiffStateInfoUInt32                        custom_state;                                             // 0x00A0(0x0004)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x00A4(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffVehicleStates
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffVehicleStates : public FDiffStateInfoBase
-{
-	TArray<struct FDiffVehicleState>                   vehicle_states;                                           // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffMonsterState
-// 0x0040 (0x0058 - 0x0018)
-struct FDiffMonsterState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoUInt32                        Category;                                                 // 0x001C(0x0004)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x0020(0x000C)
-	struct FDiffStateInfoVector                        Rotation;                                                 // 0x002C(0x000C)
-	struct FDiffStateInfoVector                        Speed;                                                    // 0x0038(0x000C)
-	struct FDiffStateInfoFloat                         HP;                                                       // 0x0044(0x0004)
-	struct FDiffStateInfoFloat                         hp_max;                                                   // 0x0048(0x0004)
-	struct FDiffStateInfoInt32                         using_skill_id;                                           // 0x004C(0x0004)
-	struct FDiffStateInfoInt32                         skill_phase_index;                                        // 0x0050(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffMonsterStates
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffMonsterStates : public FDiffStateInfoBase
-{
-	TArray<struct FDiffMonsterState>                   States;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffDynamicItem
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffDynamicItem : public FDiffStateInfoBase
+struct FDiffAIPlayerEquipment : public FAIStateInfoBase
 {
-	struct FDiffStateInfoInt32                         Category;                                                 // 0x0018(0x0004)
-	uint32_t                                           ID;                                                       // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoVector                        Center;                                                   // 0x0020(0x000C)
-	struct FDiffStateInfoVector                        Rotation;                                                 // 0x002C(0x000C)
-	struct FDiffStateInfoFloat                         Durability;                                               // 0x0038(0x0004)
-	struct FDiffStateInfoUInt32                        Custom;                                                   // 0x003C(0x0004)
-	struct FDiffStateInfoInt32                         parallel_world_id;                                        // 0x0040(0x0004)
-	struct FDiffStateInfoVector                        Scale;                                                    // 0x0044(0x000C)
+	struct FDiffAIEquipmentInfoList                    equipment_item;                                           // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffDynamicItemStates
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffDynamicItemStates : public FDiffStateInfoBase
-{
-	TArray<struct FDiffDynamicItem>                    dynamic_items;                                            // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffLandScapeDestroyState
-// 0x0018 (0x0030 - 0x0018)
-struct FDiffLandScapeDestroyState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoVector                        Location;                                                 // 0x001C(0x000C)
-	struct FDiffStateInfoInt32                         Radius;                                                   // 0x0028(0x0004)
-	struct FDiffStateInfoInt32                         Depth;                                                    // 0x002C(0x0004)
-};
-
-// ScriptStruct AI.DiffLandScapeDestroyStateInfo
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffLandScapeDestroyStateInfo : public FDiffStateInfoBase
-{
-	TArray<struct FDiffLandScapeDestroyState>          States;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIStateInfoBRBase
-// 0x0208 (0x0220 - 0x0018)
-struct FDiffAIStateInfoBRBase : public FDiffStateInfoBase
-{
-	struct FDiffAIPlayerStateBRBase                    State;                                                    // 0x0018(0x0060)
-	struct FDiffVehicleState                           vehicle_state;                                            // 0x0078(0x00A8)
-	TArray<struct FDoorState>                          nearby_door;                                              // 0x0120(0x0010) (ZeroConstructor)
-	struct FDiffVehicleStates                          nearby_vehicles;                                          // 0x0130(0x0038)
-	TArray<struct FAIRecipients>                       recipients;                                               // 0x0168(0x0010) (ZeroConstructor)
-	struct FDiffMonsterStates                          monster_states;                                           // 0x0178(0x0038)
-	struct FDiffDynamicItemStates                      dynamic_item_states;                                      // 0x01B0(0x0038)
-	struct FDiffLandScapeDestroyStateInfo              landscape_destroy_info;                                   // 0x01E8(0x0038)
-};
-
-// ScriptStruct AI.AIPlayerStateMPBase
-// 0x0020 (0x0038 - 0x0018)
-struct FAIPlayerStateMPBase : public FAIStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_invincible;                                            // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               in_shoveling;                                             // 0x001D(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x001E(0x0002) MISSED OFFSET
-	int                                                death_count;                                              // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              survive_time;                                             // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              kd_ratio;                                                 // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                continue_kill;                                            // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                revenge;                                                  // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                top_spot_end;                                             // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.TeamScoreData
-// 0x0008 (0x0028 - 0x0020)
-struct FTeamScoreData : public FUniqueStateInfo
-{
-	int                                                team_id;                                                  // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                team_score;                                               // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct AI.AIGameStateMPBase
-// 0x0010 (0x0028 - 0x0018)
-struct FAIGameStateMPBase : public FAIStateInfoBase
-{
-	TArray<struct FTeamScoreData>                      team_score_datas;                                         // 0x0018(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIGameModePlayerWeaponSchemeSlotInfo
-// 0x0020 (0x0038 - 0x0018)
-struct FAIGameModePlayerWeaponSchemeSlotInfo : public FAIStateInfoBase
-{
-	int                                                slot_index;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                item_id;                                                  // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Count;                                                    // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
-	TArray<int>                                        attach_list;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIGameModePlayerWeaponSchemeInfo
-// 0x0018 (0x0030 - 0x0018)
-struct FAIGameModePlayerWeaponSchemeInfo : public FAIStateInfoBase
-{
-	int                                                scheme_index;                                             // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               is_locked;                                                // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-	TArray<struct FAIGameModePlayerWeaponSchemeSlotInfo> slot_list;                                                // 0x0020(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DeathMatchAIPlayerEquipment
-// 0x0018 (0x0030 - 0x0018)
-struct FDeathMatchAIPlayerEquipment : public FAIStateInfoBase
-{
-	TArray<struct FAIGameModePlayerWeaponSchemeInfo>   weapon_scheme_info_list;                                  // 0x0018(0x0010) (ZeroConstructor)
-	int                                                cur_weapon_scheme_index;                                  // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.AIStateInfoMPBase
-// 0x0090 (0x00B0 - 0x0020)
-struct FAIStateInfoMPBase : public FUniqueStateInfo
-{
-	struct FAIPlayerStateMPBase                        State;                                                    // 0x0020(0x0038)
-	struct FAIGameStateMPBase                          Game;                                                     // 0x0058(0x0028)
-	struct FDeathMatchAIPlayerEquipment                deathmatch_backpack;                                      // 0x0080(0x0030)
-};
-
-// ScriptStruct AI.DiffGameScoreDatas
-// 0x0020
-struct FDiffGameScoreDatas
-{
-	TArray<struct FTeamScoreData>                      Values;                                                   // 0x0000(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0010(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIGameStateMPBaseGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIGameStateMPBaseGeneral : public FDiffStateInfoBase
-{
-	struct FDiffGameScoreDatas                         team_score_datas;                                         // 0x0018(0x0020)
-};
-
-// ScriptStruct AI.DiffAIStateInfoMPBaseGeneral
-// 0x00A0 (0x00C0 - 0x0020)
-struct FDiffAIStateInfoMPBaseGeneral : public FDiffUniqueStateInfo
-{
-	struct FAIPlayerStateMPBase                        State;                                                    // 0x0020(0x0038)
-	struct FDiffAIGameStateMPBaseGeneral               Game;                                                     // 0x0058(0x0038)
-	struct FDeathMatchAIPlayerEquipment                deathmatch_backpack;                                      // 0x0090(0x0030)
-};
-
-// ScriptStruct AI.AIStateInfoTeamDeath
-// 0x0030 (0x0050 - 0x0020)
-struct FAIStateInfoTeamDeath : public FUniqueStateInfo
-{
-	struct FDeathMatchAIPlayerEquipment                deathmatch_backpack;                                      // 0x0020(0x0030)
-};
-
-// ScriptStruct AI.DiffAIStateInfoTeamDeathGeneral
-// 0x0030 (0x0050 - 0x0020)
-struct FDiffAIStateInfoTeamDeathGeneral : public FDiffUniqueStateInfo
-{
-	struct FDeathMatchAIPlayerEquipment                deathmatch_backpack;                                      // 0x0020(0x0030)
-};
-
-// ScriptStruct AI.MLAIStateInfoBaseMod
-// 0x0178 (0x0198 - 0x0020)
-struct FMLAIStateInfoBaseMod : public FUniqueStateInfo
-{
-	struct FAIHeardSound                               Sound;                                                    // 0x0020(0x0010)
-	struct FAIDamageSources                            damage_sources;                                           // 0x0030(0x0048)
-	struct FProgressBarState                           progress_bar;                                             // 0x0078(0x0028)
-	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x00A0(0x0030)
-	struct FAIStateConfig                              Config;                                                   // 0x00D0(0x0020)
-	struct FDamageRateInfo                             damage_rate_info;                                         // 0x00F0(0x0040)
-	TArray<struct FAIDestroyBulletProbInfo>            destroy_bullet_prob_info;                                 // 0x0130(0x0010) (ZeroConstructor)
-	struct FAIBulletHoles                              bullet_holes;                                             // 0x0140(0x0038)
-	TArray<struct FDamageSource>                       all_damage_source;                                        // 0x0178(0x0010) (ZeroConstructor)
-	TArray<struct FAIBulletHole>                       all_bullet_hole;                                          // 0x0188(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffMLAIStateInfoBaseModGeneral
-// 0x01A0 (0x01C0 - 0x0020)
-struct FDiffMLAIStateInfoBaseModGeneral : public FUniqueStateInfo
-{
-	struct FAIHeardSound                               Sound;                                                    // 0x0020(0x0010)
-	struct FAIDamageSources                            damage_sources;                                           // 0x0030(0x0048)
-	struct FProgressBarState                           progress_bar;                                             // 0x0078(0x0028)
-	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x00A0(0x0030)
-	struct FAIStateConfig                              Config;                                                   // 0x00D0(0x0020)
-	struct FDamageRateInfo                             damage_rate_info;                                         // 0x00F0(0x0040)
-	struct FDiffAIDestroyBulletProbInfoListGeneral     destroy_bullet_prob_info;                                 // 0x0130(0x0038)
-	struct FAIBulletHoles                              bullet_holes;                                             // 0x0168(0x0038)
-	TArray<struct FAIBulletHole>                       all_bullet_hole;                                          // 0x01A0(0x0010) (ZeroConstructor)
-	TArray<struct FDamageSource>                       all_damage_source;                                        // 0x01B0(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAllMLAIInfoBaseModGeneral
-// 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllMLAIInfoBaseModGeneral : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FMLAIStateInfoBaseMod>       AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffMLAIStateInfoBaseModGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAIStateInfoBaseMod>       DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffMLAIStateInfoBaseMod
-// 0x0120 (0x0140 - 0x0020)
-struct FDiffMLAIStateInfoBaseMod : public FUniqueStateInfo
-{
-	struct FAIHeardSound                               Sound;                                                    // 0x0020(0x0010)
-	struct FDiffProgressBarState                       progress_bar;                                             // 0x0030(0x0028)
-	struct FAIPlayerHitInfo                            player_hit_info;                                          // 0x0058(0x0030)
-	struct FDiffAIConfig                               Config;                                                   // 0x0088(0x0020)
-	TArray<struct FDamageSource>                       all_damage_source;                                        // 0x00A8(0x0010) (ZeroConstructor)
-	TArray<struct FAIBulletHole>                       all_bullet_hole;                                          // 0x00B8(0x0010) (ZeroConstructor)
-	struct FDiffAIDestroyBulletProbInfos               destroy_bullet_prob_info;                                 // 0x00C8(0x0038)
-	struct FDiffDamageRateInfo                         damage_rate_info;                                         // 0x0100(0x0040)
-};
-
-// ScriptStruct AI.DiffAllMLAIInfoBaseMod
-// 0x00A0 (0x00B8 - 0x0018)
-struct FDiffAllMLAIInfoBaseMod : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FDiffMLAIStateInfoBaseMod>   diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAIStateInfoBaseMod>       State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIBaseStateInfo
-// 0x0258 (0x0278 - 0x0020)
-struct FAIBaseStateInfo : public FUniqueStateInfo
-{
-	struct FAIPlayerStateBaseMod                       State;                                                    // 0x0020(0x0140)
-	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x0160(0x0058)
-	struct FCameraState                                Camera;                                                   // 0x01B8(0x0040)
-	struct FAIPlayerWeapon                             Weapon;                                                   // 0x01F8(0x0010)
-	struct FAIPlayerBackpack                           BackPack;                                                 // 0x0208(0x0010)
-	struct FAIPlayerEquipment                          equipment;                                                // 0x0218(0x0010)
-	uint32_t                                           Key;                                                      // 0x0228(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           ai_style;                                                 // 0x022C(0x0004) (ZeroConstructor, IsPlainOldData)
-	TArray<struct FChatMsgInfo>                        chatmsg_info_list;                                        // 0x0230(0x0010) (ZeroConstructor)
-	TArray<struct FSignMsgInfo>                        signmsg_info_list;                                        // 0x0240(0x0010) (ZeroConstructor)
-	TArray<struct FMapMarkInfo>                        mapmark_info_list;                                        // 0x0250(0x0010) (ZeroConstructor)
-	TArray<struct FAIAvatarInfo>                       avatar_info;                                              // 0x0260(0x0010) (ZeroConstructor)
-	uint32_t                                           ai_provider;                                              // 0x0270(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0274(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIBaseStateInfoGeneral
+// ScriptStruct AI.DiffBaseModAIStateInfo
 // 0x0330 (0x0350 - 0x0020)
-struct FDiffAIBaseStateInfoGeneral : public FDiffUniqueStateInfo
+struct FDiffBaseModAIStateInfo : public FUniqueStateInfo
 {
-	struct FDiffAIPlayerStateBaseModGeneral            State;                                                    // 0x0020(0x0158)
+	struct FDiffBaseModAIPlayerState                   State;                                                    // 0x0020(0x0158)
 	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x0178(0x0058)
 	struct FCameraState                                Camera;                                                   // 0x01D0(0x0040)
-	struct FDiffAIPlayerWeaponGeneral                  Weapon;                                                   // 0x0210(0x0050)
-	struct FDiffAIPlayerBackpackGeneral                BackPack;                                                 // 0x0260(0x0050)
-	struct FDiffAIPlayerEquipmentGeneral               equipment;                                                // 0x02B0(0x0050)
+	struct FDiffAIPlayerWeapon                         Weapon;                                                   // 0x0210(0x0050)
+	struct FDiffAIPlayerBackpack                       BackPack;                                                 // 0x0260(0x0050)
+	struct FDiffAIPlayerEquipment                      equipment;                                                // 0x02B0(0x0050)
 	uint32_t                                           Key;                                                      // 0x0300(0x0004) (ZeroConstructor, IsPlainOldData)
 	uint32_t                                           ai_style;                                                 // 0x0304(0x0004) (ZeroConstructor, IsPlainOldData)
 	TArray<struct FChatMsgInfo>                        chatmsg_info_list;                                        // 0x0308(0x0010) (ZeroConstructor)
@@ -2078,37 +1117,21 @@ struct FDiffAIBaseStateInfoGeneral : public FDiffUniqueStateInfo
 	unsigned char                                      UnknownData00[0x4];                                       // 0x034C(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.DiffAllPlayerBaseInfoGeneral
+// ScriptStruct AI.DiffBaseModAllPlayersInfo
 // 0x0108 (0x0120 - 0x0018)
-struct FDiffAllPlayerBaseInfoGeneral : public FAIStateInfoBase
+struct FDiffBaseModAllPlayersInfo : public FAIStateInfoBase
 {
 	uint32_t                                           Key;                                                      // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-	TMap<uint32_t, struct FAIBaseStateInfo>            AllAIStateInfo;                                           // 0x0020(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIBaseStateInfoGeneral> AllDiffAIStateInfo;                                       // 0x0070(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBaseStateInfo>            DebugAllAIStateInfo;                                      // 0x00C0(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseModAIStateInfo>         AllAIStateInfo;                                           // 0x0020(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDiffBaseModAIStateInfo>     AllDiffAIStateInfo;                                       // 0x0070(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseModAIStateInfo>         DebugAllAIStateInfo;                                      // 0x00C0(0x0050) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0110(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIBaseStateInfo
-// 0x0260 (0x0278 - 0x0018)
-struct FDiffAIBaseStateInfo : public FDiffStateInfoBase
-{
-	struct FDiffAIPlayerStateBaseMod                   State;                                                    // 0x0018(0x0110)
-	struct FDiffCameraState                            Camera;                                                   // 0x0128(0x0040)
-	struct FDiffAIPlayerWeapon                         Weapon;                                                   // 0x0168(0x0038)
-	struct FDiffPlayerBackpack                         BackPack;                                                 // 0x01A0(0x0038)
-	struct FDiffAIPlayerEquipment                      equipment;                                                // 0x01D8(0x0038)
-	uint32_t                                           Key;                                                      // 0x0210(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           ai_style;                                                 // 0x0214(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x0218(0x0058)
-	uint32_t                                           ai_provider;                                              // 0x0270(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0274(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.AIGameStateBaseMod
+// ScriptStruct AI.BaseModAIGameState
 // 0x0050 (0x0068 - 0x0018)
-struct FAIGameStateBaseMod : public FAIStateInfoBase
+struct FBaseModAIGameState : public FAIStateInfoBase
 {
 	bool                                               is_over;                                                  // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
@@ -2126,6 +1149,23 @@ struct FAIGameStateBaseMod : public FAIStateInfoBase
 	int                                                newbie_score;                                             // 0x005C(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                newbie_match_count;                                       // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x4];                                       // 0x0064(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.SpecialZoneState
+// 0x0058 (0x0078 - 0x0020)
+struct FSpecialZoneState : public FUniqueStateInfo
+{
+	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Center;                                                   // 0x0024(0x000C)
+	float                                              Radius;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Type;                                                     // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Position;                                                 // 0x0038(0x000C)
+	struct FAIStateXYZ                                 Rotation;                                                 // 0x0044(0x000C)
+	int                                                custom_state;                                             // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Scale;                                                    // 0x0054(0x000C)
+	uint32_t                                           extra_state;                                              // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Health;                                                   // 0x0064(0x0004) (ZeroConstructor, IsPlainOldData)
+	TArray<struct FAIAttribute>                        custom_attribute_list;                                    // 0x0068(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct AI.BattleVoiceRoomInfo
@@ -2138,119 +1178,44 @@ struct FBattleVoiceRoomInfo : public FUniqueStateInfo
 	struct FString                                     battle_voice_server_url;                                  // 0x0038(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalGameBaseState
-// 0x0078 (0x0090 - 0x0018)
-struct FGlobalGameBaseState : public FAIStateInfoBase
+// ScriptStruct AI.BaseModGlobalGameState
+// 0x0090 (0x00A8 - 0x0018)
+struct FBaseModGlobalGameState : public FAIStateInfoBase
 {
-	struct FAIGameStateBaseMod                         Game;                                                     // 0x0018(0x0068)
-	TArray<struct FBattleVoiceRoomInfo>                voice_room_list;                                          // 0x0080(0x0010) (ZeroConstructor)
+	struct FBaseModAIGameState                         Game;                                                     // 0x0018(0x0068)
+	TArray<struct FSpecialZoneState>                   special_zones;                                            // 0x0080(0x0010) (ZeroConstructor)
+	TArray<struct FBattleVoiceRoomInfo>                voice_room_list;                                          // 0x0090(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x00A0(0x0008) MISSED OFFSET
 };
 
-// ScriptStruct AI.DiffAIGameStateBaseMod
-// 0x0050 (0x0068 - 0x0018)
-struct FDiffAIGameStateBaseMod : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoBool                          is_over;                                                  // 0x0018(0x0001)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         alive_player_count;                                       // 0x001C(0x0004)
-	struct FDiffStateInfoInt32                         Stage;                                                    // 0x0020(0x0004)
-	struct FDiffStateInfoUInt32                        mode_map;                                                 // 0x0024(0x0004)
-	struct FDiffStateInfoUInt32                        mode_type;                                                // 0x0028(0x0004)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-	struct FString                                     game_ds_version;                                          // 0x0030(0x0010) (ZeroConstructor)
-	struct FDiffStateInfoInt32                         zone_id;                                                  // 0x0040(0x0004)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
-	struct FDiffStateInfoUInt64                        left_time;                                                // 0x0048(0x0008)
-	struct FDiffStateInfoUInt64                        stage_time;                                               // 0x0050(0x0008)
-	struct FDiffStateInfoInt32                         can_jump_sky;                                             // 0x0058(0x0004)
-	struct FDiffStateInfoInt32                         newbie_score;                                             // 0x005C(0x0004)
-	struct FDiffStateInfoInt32                         newbie_match_count;                                       // 0x0060(0x0004)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0064(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffGlobalGameBaseState
-// 0x0068 (0x0080 - 0x0018)
-struct FDiffGlobalGameBaseState : public FAIStateInfoBase
-{
-	struct FDiffAIGameStateBaseMod                     Game;                                                     // 0x0018(0x0068)
-};
-
-// ScriptStruct AI.AIPoolPlayerState
-// 0x0008 (0x0020 - 0x0018)
-struct FAIPoolPlayerState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIPoolStateInfo
-// 0x0028 (0x0040 - 0x0018)
-struct FDiffAIPoolStateInfo : public FDiffStateInfoBase
-{
-	struct FAIPoolPlayerState                          State;                                                    // 0x0018(0x0020)
-	uint32_t                                           Key;                                                      // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAllPlayerBaseInfo
-// 0x0430 (0x0448 - 0x0018)
-struct FDiffAllPlayerBaseInfo : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FDiffAIBaseStateInfo>        diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBaseStateInfo>            State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-	struct FGlobalGameBaseState                        global_state;                                             // 0x00B8(0x0090)
-	struct FDiffGlobalGameBaseState                    diff_global_state;                                        // 0x0148(0x0080)
-	TMap<uint32_t, struct FAIBaseStateInfo>            global_player_states;                                     // 0x01C8(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIBaseStateInfo>        global_player_diff_states;                                // 0x0218(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBaseStateInfo>            in_pool_states;                                           // 0x0268(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIPoolStateInfo>        in_pool_diff_states;                                      // 0x02B8(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBaseStateInfo>            near_player_states;                                       // 0x0308(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIBaseStateInfo>        near_player_diff_states;                                  // 0x0358(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBaseStateInfo>            global_btai_states;                                       // 0x03A8(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIBaseStateInfo>        global_btai_diff_states;                                  // 0x03F8(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIGameStateBaseModGeneral
-// 0x0050 (0x0068 - 0x0018)
-struct FDiffAIGameStateBaseModGeneral : public FDiffStateInfoBase
-{
-	bool                                               is_over;                                                  // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
-	int                                                alive_player_count;                                       // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                Stage;                                                    // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           mode_map;                                                 // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           mode_type;                                                // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-	struct FString                                     game_ds_version;                                          // 0x0030(0x0010) (ZeroConstructor)
-	int                                                zone_id;                                                  // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
-	uint64_t                                           left_time;                                                // 0x0048(0x0008) (ZeroConstructor, IsPlainOldData)
-	uint64_t                                           stage_time;                                               // 0x0050(0x0008) (ZeroConstructor, IsPlainOldData)
-	int                                                can_jump_sky;                                             // 0x0058(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                newbie_score;                                             // 0x005C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                newbie_match_count;                                       // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0064(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffBattleVoiceRoomInfoListGeneral
+// ScriptStruct AI.DiffSpecialZoneStateList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffBattleVoiceRoomInfoListGeneral : public FDiffStateInfoBase
+struct FDiffSpecialZoneStateList : public FAIStateInfoBase
+{
+	TArray<struct FSpecialZoneState>                   Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffBattleVoiceRoomInfoList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffBattleVoiceRoomInfoList : public FAIStateInfoBase
 {
 	TArray<struct FBattleVoiceRoomInfo>                Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffGlobalGameBaseStateGeneral
-// 0x00A0 (0x00B8 - 0x0018)
-struct FDiffGlobalGameBaseStateGeneral : public FAIStateInfoBase
+// ScriptStruct AI.DiffBaseModGlobalGameState
+// 0x00D8 (0x00F0 - 0x0018)
+struct FDiffBaseModGlobalGameState : public FAIStateInfoBase
 {
-	struct FDiffAIGameStateBaseModGeneral              Game;                                                     // 0x0018(0x0068)
-	struct FDiffBattleVoiceRoomInfoListGeneral         voice_room_list;                                          // 0x0080(0x0038)
+	struct FBaseModAIGameState                         Game;                                                     // 0x0018(0x0068)
+	struct FDiffSpecialZoneStateList                   special_zones;                                            // 0x0080(0x0038)
+	struct FDiffBattleVoiceRoomInfoList                voice_room_list;                                          // 0x00B8(0x0038)
 };
 
-// ScriptStruct AI.AIPlayerBRBaseState
+// ScriptStruct AI.BRBaseAIPlayerState
 // 0x0048 (0x0060 - 0x0018)
-struct FAIPlayerBRBaseState : public FAIStateInfoBase
+struct FBRBaseAIPlayerState : public FAIStateInfoBase
 {
 	int                                                expect_delivery_num;                                      // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                remain_delivery_num;                                      // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -2273,54 +1238,36 @@ struct FAIPlayerBRBaseState : public FAIStateInfoBase
 	unsigned char                                      UnknownData03[0x4];                                       // 0x005C(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.AIBRBaseStateInfo
-// 0x0078 (0x0098 - 0x0020)
-struct FAIBRBaseStateInfo : public FUniqueStateInfo
+// ScriptStruct AI.AIRecipients
+// 0x0020 (0x0038 - 0x0018)
+struct FAIRecipients : public FAIStateInfoBase
 {
-	struct FAIPlayerBRBaseState                        State;                                                    // 0x0020(0x0060)
+	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           team_id;                                                  // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Position;                                                 // 0x0020(0x000C)
+	float                                              HP;                                                       // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Type;                                                     // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.BRBaseAIStateInfo
+// 0x0078 (0x0098 - 0x0020)
+struct FBRBaseAIStateInfo : public FUniqueStateInfo
+{
+	struct FBRBaseAIPlayerState                        State;                                                    // 0x0020(0x0060)
 	uint32_t                                           deliver_target_id;                                        // 0x0080(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0084(0x0004) MISSED OFFSET
 	TArray<struct FAIRecipients>                       recipients;                                               // 0x0088(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAllPlayerBRBaseInfoGeneral
-// 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllPlayerBRBaseInfoGeneral : public FAIStateInfoBase
+// ScriptStruct AI.DiffBRBaseAllPlayersInfo
+// 0x0100 (0x0118 - 0x0018)
+struct FDiffBRBaseAllPlayersInfo : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIPlayerBRBaseState
-// 0x0040 (0x0058 - 0x0018)
-struct FDiffAIPlayerBRBaseState : public FAIStateInfoBase
-{
-	struct FDiffStateInfoBool                          is_diving;                                                // 0x0018(0x0001)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         revival_count;                                            // 0x001C(0x0004)
-	struct FDiffStateInfoBool                          is_be_spectated;                                          // 0x0020(0x0001)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0021(0x0003) MISSED OFFSET
-	struct FDiffStateInfoInt32                         parallel_world_id;                                        // 0x0024(0x0004)
-	struct FDiffStateInfoUInt32                        related_id;                                               // 0x0028(0x0004)
-	struct FDiffStateInfoInt32                         revival_type;                                             // 0x002C(0x0004)
-	struct FDiffStateInfoUInt32                        plane_id;                                                 // 0x0030(0x0004)
-	struct FDiffStateInfoUInt32                        parachute_state;                                          // 0x0034(0x0004)
-	struct FDiffStateInfoBool                          can_parachute_jump;                                       // 0x0038(0x0001)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0039(0x0003) MISSED OFFSET
-	struct FDiffStateInfoUInt32                        follow_state;                                             // 0x003C(0x0004)
-	struct FDiffStateInfoUInt32                        leader_id;                                                // 0x0040(0x0004)
-	struct FDiffStateInfoUInt32                        parachute_type;                                           // 0x0044(0x0004)
-	struct FDiffStateInfoVector                        target_position;                                          // 0x0048(0x000C)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIBRBaseStateInfo
-// 0x0068 (0x0080 - 0x0018)
-struct FDiffAIBRBaseStateInfo : public FDiffStateInfoBase
-{
-	struct FDiffAIPlayerBRBaseState                    State;                                                    // 0x0018(0x0058)
-	TArray<struct FAIRecipients>                       recipients;                                               // 0x0070(0x0010) (ZeroConstructor)
+	TMap<uint32_t, struct FBRBaseAIStateInfo>          AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBRBaseAIStateInfo>          AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBRBaseAIStateInfo>          DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0108(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct AI.AirDropBoxState
@@ -2331,22 +1278,6 @@ struct FAirDropBoxState : public FUniqueStateInfo
 	int                                                Type;                                                     // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
 	struct FAIStateXYZ                                 Position;                                                 // 0x0028(0x000C)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.SpecialZoneState
-// 0x0048 (0x0068 - 0x0020)
-struct FSpecialZoneState : public FUniqueStateInfo
-{
-	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Center;                                                   // 0x0024(0x000C)
-	float                                              Radius;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	uint32_t                                           Type;                                                     // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Position;                                                 // 0x0038(0x000C)
-	struct FAIStateXYZ                                 Rotation;                                                 // 0x0044(0x000C)
-	int                                                custom_state;                                             // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FAIStateXYZ                                 Scale;                                                    // 0x0054(0x000C)
-	uint32_t                                           extra_state;                                              // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Health;                                                   // 0x0064(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct AI.SpecialMeshState
@@ -2414,216 +1345,61 @@ struct FGlobalControlInfo : public FAIStateInfoBase
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.GlobalGameBRBaseState
-// 0x00F0 (0x0108 - 0x0018)
-struct FGlobalGameBRBaseState : public FAIStateInfoBase
+// ScriptStruct AI.BRBaseGlobalGameState
+// 0x00D8 (0x00F0 - 0x0018)
+struct FBRBaseGlobalGameState : public FAIStateInfoBase
 {
 	TArray<struct FAirDropBoxState>                    air_drop_box_states;                                      // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FSpecialZoneState>                   special_zones;                                            // 0x0028(0x0010) (ZeroConstructor)
-	TArray<struct FSpecialMeshState>                   special_meshes;                                           // 0x0038(0x0010) (ZeroConstructor)
-	struct FRedZoneState                               red_zone;                                                 // 0x0048(0x0030)
-	struct FSafetyAreaState                            safety_area;                                              // 0x0078(0x0048)
-	TArray<struct FPlaneInfo>                          airplane_list;                                            // 0x00C0(0x0010) (ZeroConstructor)
-	struct FGlobalControlInfo                          control_info;                                             // 0x00D0(0x0020)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x00F0(0x0008) MISSED OFFSET
-	TArray<uint32_t>                                   silent_list;                                              // 0x00F8(0x0010) (ZeroConstructor)
+	TArray<struct FSpecialMeshState>                   special_meshes;                                           // 0x0028(0x0010) (ZeroConstructor)
+	struct FRedZoneState                               red_zone;                                                 // 0x0038(0x0030)
+	struct FSafetyAreaState                            safety_area;                                              // 0x0068(0x0048)
+	TArray<struct FPlaneInfo>                          airplane_list;                                            // 0x00B0(0x0010) (ZeroConstructor)
+	struct FGlobalControlInfo                          control_info;                                             // 0x00C0(0x0020)
+	TArray<uint32_t>                                   silent_list;                                              // 0x00E0(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAirDropBoxState
-// 0x0018 (0x0030 - 0x0018)
-struct FDiffAirDropBoxState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoInt32                         Type;                                                     // 0x001C(0x0004)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x0020(0x000C)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAirDropBoxStates
+// ScriptStruct AI.DiffAirDropBoxStateList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffAirDropBoxStates : public FDiffStateInfoBase
-{
-	TArray<struct FDiffAirDropBoxState>                States;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffSpecialZoneState
-// 0x0048 (0x0060 - 0x0018)
-struct FDiffSpecialZoneState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoVector                        Center;                                                   // 0x001C(0x000C)
-	struct FDiffStateInfoFloat                         Radius;                                                   // 0x0028(0x0004)
-	struct FDiffStateInfoUInt32                        Type;                                                     // 0x002C(0x0004)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x0030(0x000C)
-	struct FDiffStateInfoVector                        Rotation;                                                 // 0x003C(0x000C)
-	struct FDiffStateInfoInt32                         custom_state;                                             // 0x0048(0x0004)
-	struct FDiffStateInfoVector                        Scale;                                                    // 0x004C(0x000C)
-	struct FDiffStateInfoUInt32                        extra_state;                                              // 0x0058(0x0004)
-	struct FDiffStateInfoFloat                         Health;                                                   // 0x005C(0x0004)
-};
-
-// ScriptStruct AI.DiffSpecialZone
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffSpecialZone : public FDiffStateInfoBase
-{
-	TArray<struct FDiffSpecialZoneState>               State;                                                    // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffSpecialMeshState
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffSpecialMeshState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x001C(0x000C)
-	struct FDiffStateInfoVector                        Rotation;                                                 // 0x0028(0x000C)
-	struct FDiffStateInfoInt32                         custom_state;                                             // 0x0034(0x0004)
-};
-
-// ScriptStruct AI.DiffSpecialMesh
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffSpecialMesh : public FDiffStateInfoBase
-{
-	TArray<struct FDiffSpecialMeshState>               State;                                                    // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffRedZoneState
-// 0x0018 (0x0030 - 0x0018)
-struct FDiffRedZoneState : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoVector                        Center;                                                   // 0x0018(0x000C)
-	struct FDiffStateInfoFloat                         Radius;                                                   // 0x0024(0x0004)
-	struct FDiffStateInfoFloat                         remain_time;                                              // 0x0028(0x0004)
-	struct FDiffStateInfoFloat                         start_time;                                               // 0x002C(0x0004)
-};
-
-// ScriptStruct AI.DiffSafetyAreaState
-// 0x0030 (0x0048 - 0x0018)
-struct FDiffSafetyAreaState : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoInt32                         State;                                                    // 0x0018(0x0004)
-	struct FDiffStateInfoVector                        Center;                                                   // 0x001C(0x000C)
-	struct FDiffStateInfoFloat                         Radius;                                                   // 0x0028(0x0004)
-	struct FDiffStateInfoVector                        next_center;                                              // 0x002C(0x000C)
-	struct FDiffStateInfoFloat                         next_radius;                                              // 0x0038(0x0004)
-	struct FDiffStateInfoInt32                         Time;                                                     // 0x003C(0x0004)
-	struct FDiffStateInfoInt32                         total_time;                                               // 0x0040(0x0004)
-	struct FDiffStateInfoInt32                         circle_index;                                             // 0x0044(0x0004)
-};
-
-// ScriptStruct AI.DiffFlightInfo
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffFlightInfo : public FDiffStateInfoBase
-{
-	struct FDiffStateInfoVector                        start_loc;                                                // 0x0018(0x000C)
-	struct FDiffStateInfoVector                        end_loc;                                                  // 0x0024(0x000C)
-	struct FDiffStateInfoVector                        can_jump_loc;                                             // 0x0030(0x000C)
-	struct FDiffStateInfoVector                        force_jump_loc;                                           // 0x003C(0x000C)
-	struct FDiffStateInfoInt32                         player_num;                                               // 0x0048(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x004C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffPlaneInfoState
-// 0x0068 (0x0080 - 0x0018)
-struct FDiffPlaneInfoState : public FDiffStateInfoBase
-{
-	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FDiffStateInfoUInt32                        Type;                                                     // 0x001C(0x0004)
-	struct FDiffStateInfoVector                        Position;                                                 // 0x0020(0x000C)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
-	struct FDiffFlightInfo                             flight_info;                                              // 0x0030(0x0050)
-};
-
-// ScriptStruct AI.DiffPlaneInfo
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffPlaneInfo : public FDiffStateInfoBase
-{
-	TArray<struct FDiffPlaneInfoState>                 States;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffGlobalGameBRBaseState
-// 0x0168 (0x0180 - 0x0018)
-struct FDiffGlobalGameBRBaseState : public FAIStateInfoBase
-{
-	struct FDiffAirDropBoxStates                       air_drop_box_states;                                      // 0x0018(0x0038)
-	struct FDiffSpecialZone                            special_zones;                                            // 0x0050(0x0038)
-	struct FDiffSpecialMesh                            special_meshes;                                           // 0x0088(0x0038)
-	struct FDiffRedZoneState                           red_zone;                                                 // 0x00C0(0x0030)
-	struct FDiffSafetyAreaState                        safety_area;                                              // 0x00F0(0x0048)
-	struct FDiffPlaneInfo                              airplane_list;                                            // 0x0138(0x0038)
-	TArray<uint32_t>                                   silent_list;                                              // 0x0170(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAllPlayerBRBaseInfo
-// 0x0508 (0x0520 - 0x0018)
-struct FDiffAllPlayerBRBaseInfo : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FDiffAIBRBaseStateInfo>      diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-	struct FGlobalGameBRBaseState                      global_state;                                             // 0x00B8(0x0108)
-	struct FDiffGlobalGameBRBaseState                  diff_global_state;                                        // 0x01C0(0x0180)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          global_player_states;                                     // 0x0340(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIBRBaseStateInfo>      global_player_diff_states;                                // 0x0390(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          near_player_states;                                       // 0x03E0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIBRBaseStateInfo>      near_player_diff_states;                                  // 0x0430(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          global_btai_states;                                       // 0x0480(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIBRBaseStateInfo>      global_btai_diff_states;                                  // 0x04D0(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAirDropBoxStatesGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAirDropBoxStatesGeneral : public FDiffStateInfoBase
+struct FDiffAirDropBoxStateList : public FAIStateInfoBase
 {
 	TArray<struct FAirDropBoxState>                    Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffSpecialZoneGeneral
+// ScriptStruct AI.DiffSpecialMeshStateList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffSpecialZoneGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FSpecialZoneState>                   Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffSpecialMeshGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffSpecialMeshGeneral : public FDiffStateInfoBase
+struct FDiffSpecialMeshStateList : public FAIStateInfoBase
 {
 	TArray<struct FSpecialMeshState>                   Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffPlaneInfoGeneral
+// ScriptStruct AI.DiffPlaneInfoList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffPlaneInfoGeneral : public FDiffStateInfoBase
+struct FDiffPlaneInfoList : public FAIStateInfoBase
 {
 	TArray<struct FPlaneInfo>                          Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffGlobalGameBRBaseStateGeneral
-// 0x0188 (0x01A0 - 0x0018)
-struct FDiffGlobalGameBRBaseStateGeneral : public FAIStateInfoBase
+// ScriptStruct AI.DiffBRBaseGlobalGameState
+// 0x0150 (0x0168 - 0x0018)
+struct FDiffBRBaseGlobalGameState : public FAIStateInfoBase
 {
-	struct FDiffAirDropBoxStatesGeneral                air_drop_box_states;                                      // 0x0018(0x0038)
-	struct FDiffSpecialZoneGeneral                     special_zones;                                            // 0x0050(0x0038)
-	struct FDiffSpecialMeshGeneral                     special_meshes;                                           // 0x0088(0x0038)
-	struct FRedZoneState                               red_zone;                                                 // 0x00C0(0x0030)
-	struct FSafetyAreaState                            safety_area;                                              // 0x00F0(0x0048)
-	struct FDiffPlaneInfoGeneral                       airplane_list;                                            // 0x0138(0x0038)
-	struct FGlobalControlInfo                          control_info;                                             // 0x0170(0x0020)
-	TArray<uint32_t>                                   silent_list;                                              // 0x0190(0x0010) (ZeroConstructor)
+	struct FDiffAirDropBoxStateList                    air_drop_box_states;                                      // 0x0018(0x0038)
+	struct FDiffSpecialMeshStateList                   special_meshes;                                           // 0x0050(0x0038)
+	struct FRedZoneState                               red_zone;                                                 // 0x0088(0x0030)
+	struct FSafetyAreaState                            safety_area;                                              // 0x00B8(0x0048)
+	struct FDiffPlaneInfoList                          airplane_list;                                            // 0x0100(0x0038)
+	struct FGlobalControlInfo                          control_info;                                             // 0x0138(0x0020)
+	TArray<uint32_t>                                   silent_list;                                              // 0x0158(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct AI.WeaponType2Range
 // 0x000C
 struct FWeaponType2Range
 {
-	TEnumAsByte<enum EWeaponTypeNew>                   WeaponType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponTypeNew>                        WeaponType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	float                                              Range;                                                    // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              NightRange;                                               // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -2633,7 +1409,7 @@ struct FWeaponType2Range
 // 0x0008
 struct FWeaponTypeToRange
 {
-	TEnumAsByte<enum EWeaponTypeNew>                   WeaponType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponTypeNew>                        WeaponType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	float                                              Range;                                                    // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 };
@@ -2658,7 +1434,7 @@ struct FShapeRangeParam
 // 0x0058
 struct FWeaponTypeToRangeWithPawnState
 {
-	TEnumAsByte<enum EWeaponTypeNew>                   WeaponType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponTypeNew>                        WeaponType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TMap<EPawnState, struct FShapeRangeParam>          StateRange;                                               // 0x0008(0x0050) (Edit, ZeroConstructor)
 };
@@ -2835,134 +1611,115 @@ struct FTriggeredCustomDamageEvent
 	unsigned char                                      UnknownData00[0x4];                                       // 0x00EC(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.AIDynamicItemStateInfo
+// ScriptStruct AI.DynamicItemAIStateInfo
 // 0x0020 (0x0040 - 0x0020)
-struct FAIDynamicItemStateInfo : public FUniqueStateInfo
+struct FDynamicItemAIStateInfo : public FUniqueStateInfo
 {
-	TArray<struct FDynamicItem>                        dynamic_items;                                            // 0x0020(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0020(0x0010) MISSED OFFSET
 	TArray<uint64_t>                                   dynamic_items_index;                                      // 0x0030(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIDynamicItemStateInfoGeneral
-// 0x0048 (0x0068 - 0x0020)
-struct FDiffAIDynamicItemStateInfoGeneral : public FUniqueStateInfo
-{
-	struct FDiffDynamicItemStatesGeneral               dynamic_items;                                            // 0x0020(0x0038)
-	TArray<uint64_t>                                   dynamic_items_index;                                      // 0x0058(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAllPlayerDynamicItemInfoGeneral
+// ScriptStruct AI.DiffDynamicItemAllPlayersInfo
 // 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllPlayerDynamicItemInfoGeneral : public FAIStateInfoBase
+struct FDiffDynamicItemAllPlayersInfo : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FAIDynamicItemStateInfo>     AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIDynamicItemStateInfoGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDynamicItemStateInfo>     DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDynamicItemAIStateInfo>     AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDynamicItemAIStateInfo>     AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDynamicItemAIStateInfo>     DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIDynamicItemStateInfo
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffAIDynamicItemStateInfo : public FAIStateInfoBase
+// ScriptStruct AI.DynamicItem
+// 0x0050 (0x0070 - 0x0020)
+struct FDynamicItem : public FUniqueStateInfo
 {
-	struct FDiffDynamicItemStates                      dynamic_item_states;                                      // 0x0018(0x0038)
+	int                                                Category;                                                 // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           ID;                                                       // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Center;                                                   // 0x0028(0x000C)
+	struct FAIStateXYZ                                 Rotation;                                                 // 0x0034(0x000C)
+	float                                              Durability;                                               // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Custom;                                                   // 0x0044(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Scale;                                                    // 0x0048(0x000C)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
+	TArray<struct FAIAttribute>                        custom_attribute_list;                                    // 0x0058(0x0010) (ZeroConstructor)
+	int                                                parallel_world_id;                                        // 0x0068(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x006C(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.GlobalNearbyDynamicItemInfo
+// ScriptStruct AI.DynamicItemGlobalNearbyInfo
 // 0x0010 (0x0028 - 0x0018)
-struct FGlobalNearbyDynamicItemInfo : public FAIStateInfoBase
+struct FDynamicItemGlobalNearbyInfo : public FAIStateInfoBase
 {
 	TArray<struct FDynamicItem>                        dynamic_items;                                            // 0x0018(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalDynamicItemState
+// ScriptStruct AI.DynamicItemGlobalGameState
 // 0x0028 (0x0040 - 0x0018)
-struct FGlobalDynamicItemState : public FAIStateInfoBase
+struct FDynamicItemGlobalGameState : public FAIStateInfoBase
 {
-	struct FGlobalNearbyDynamicItemInfo                global_nearby_info;                                       // 0x0018(0x0028)
+	struct FDynamicItemGlobalNearbyInfo                global_nearby_info;                                       // 0x0018(0x0028)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyDynamicItemInfo
+// ScriptStruct AI.DiffDynamicItemStateList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffDynamicItemStateList : public FAIStateInfoBase
+{
+	TArray<struct FDynamicItem>                        Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffDynamicItemGlobalNearbyInfo
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyDynamicItemInfo : public FAIStateInfoBase
+struct FDiffDynamicItemGlobalNearbyInfo : public FAIStateInfoBase
 {
-	struct FDiffDynamicItemStates                      dynamic_item_states;                                      // 0x0018(0x0038)
+	struct FDiffDynamicItemStateList                   dynamic_items;                                            // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffGlobalDynamicItemState
+// ScriptStruct AI.DiffDynamicItemGlobalGameState
 // 0x0050 (0x0068 - 0x0018)
-struct FDiffGlobalDynamicItemState : public FAIStateInfoBase
+struct FDiffDynamicItemGlobalGameState : public FAIStateInfoBase
 {
-	struct FDiffGlobalNearbyDynamicItemInfo            global_nearby_info;                                       // 0x0018(0x0050)
+	struct FDiffDynamicItemGlobalNearbyInfo            global_nearby_info;                                       // 0x0018(0x0050)
 };
 
-// ScriptStruct AI.DiffAllPlayerDynamicItemInfo
-// 0x0148 (0x0160 - 0x0018)
-struct FDiffAllPlayerDynamicItemInfo : public FAIStateInfoBase
+// ScriptStruct AI.LandScapeDestroyState
+// 0x0018 (0x0038 - 0x0020)
+struct FLandScapeDestroyState : public FUniqueStateInfo
 {
-	TMap<uint32_t, struct FDiffAIDynamicItemStateInfo> diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDynamicItemStateInfo>     State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-	struct FGlobalDynamicItemState                     global_state;                                             // 0x00B8(0x0040)
-	struct FDiffGlobalDynamicItemState                 diff_global_state;                                        // 0x00F8(0x0068)
+	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Location;                                                 // 0x0024(0x000C)
+	int                                                Radius;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Depth;                                                    // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyDynamicItemInfoGeneral
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyDynamicItemInfoGeneral : public FAIStateInfoBase
-{
-	struct FDiffDynamicItemStatesGeneral               dynamic_items;                                            // 0x0018(0x0038)
-};
-
-// ScriptStruct AI.DiffGlobalDynamicItemStateGeneral
-// 0x0050 (0x0068 - 0x0018)
-struct FDiffGlobalDynamicItemStateGeneral : public FAIStateInfoBase
-{
-	struct FDiffGlobalNearbyDynamicItemInfoGeneral     global_nearby_info;                                       // 0x0018(0x0050)
-};
-
-// ScriptStruct AI.AILandScapeDestroyInfo
+// ScriptStruct AI.LandScapeAIStateInfo
 // 0x0010 (0x0030 - 0x0020)
-struct FAILandScapeDestroyInfo : public FUniqueStateInfo
+struct FLandScapeAIStateInfo : public FUniqueStateInfo
 {
 	TArray<struct FLandScapeDestroyState>              landscape_destroy_info;                                   // 0x0020(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffLandScapeDestroyStateInfoGeneral
-// 0x0020 (0x0040 - 0x0020)
-struct FDiffLandScapeDestroyStateInfoGeneral : public FDiffUniqueStateInfo
+// ScriptStruct AI.DiffLandScapeDestroyStateList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffLandScapeDestroyStateList : public FAIStateInfoBase
 {
-	TArray<struct FLandScapeDestroyState>              Values;                                                   // 0x0020(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   del_item_id;                                              // 0x0030(0x0010) (ZeroConstructor)
+	TArray<struct FLandScapeDestroyState>              Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint32_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAILandScapeDestroyInfoGeneral
-// 0x0040 (0x0060 - 0x0020)
-struct FDiffAILandScapeDestroyInfoGeneral : public FDiffUniqueStateInfo
+// ScriptStruct AI.DiffLandScapeAIStateInfo
+// 0x0038 (0x0058 - 0x0020)
+struct FDiffLandScapeAIStateInfo : public FUniqueStateInfo
 {
-	struct FDiffLandScapeDestroyStateInfoGeneral       landscape_destroy_info;                                   // 0x0020(0x0040)
+	struct FDiffLandScapeDestroyStateList              landscape_destroy_info;                                   // 0x0020(0x0038)
 };
 
-// ScriptStruct AI.DiffAllPlayerLandScapeDestroyInfoGeneral
+// ScriptStruct AI.DiffLandScapeAllPlayerInfo
 // 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllPlayerLandScapeDestroyInfoGeneral : public FAIStateInfoBase
+struct FDiffLandScapeAllPlayerInfo : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FAILandScapeDestroyInfo>     AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAILandScapeDestroyInfoGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAILandScapeDestroyInfo>     DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAILandScapeDestroyInfo
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffAILandScapeDestroyInfo : public FAIStateInfoBase
-{
-	struct FDiffLandScapeDestroyStateInfo              landscape_destroy_info;                                   // 0x0018(0x0038)
-};
-
-// ScriptStruct AI.DiffAllPlayerLandScapeDestroyInfo
-// 0x00A0 (0x00B8 - 0x0018)
-struct FDiffAllPlayerLandScapeDestroyInfo : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FDiffAILandScapeDestroyInfo> diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAILandScapeDestroyInfo>     State;                                                    // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FLandScapeAIStateInfo>       AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDiffLandScapeAIStateInfo>   AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FLandScapeAIStateInfo>       DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
 };
 
 // ScriptStruct AI.LandScapeChange
@@ -2987,321 +1744,292 @@ struct FLandScapeChangeState : public FUniqueStateInfo
 	TArray<struct FLandScapeChange>                    changes;                                                  // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalLandScapeChangeInfo
+// ScriptStruct AI.LandScapeGlobalGameInfo
 // 0x0010 (0x0028 - 0x0018)
-struct FGlobalLandScapeChangeInfo : public FAIStateInfoBase
+struct FLandScapeGlobalGameInfo : public FAIStateInfoBase
 {
 	TArray<struct FLandScapeChangeState>               landscape_change_info;                                    // 0x0018(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffLandScapeChangeStateGeneral
+// ScriptStruct AI.DiffLandScapeChangeStateList
 // 0x0020 (0x0038 - 0x0018)
-struct FDiffLandScapeChangeStateGeneral : public FDiffStateInfoBase
+struct FDiffLandScapeChangeStateList : public FAIStateInfoBase
 {
 	TArray<struct FLandScapeChangeState>               Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffGlobalLandScapeChangeInfoGeneral
+// ScriptStruct AI.DiffLandScapeGlobalGameInfo
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalLandScapeChangeInfoGeneral : public FAIStateInfoBase
+struct FDiffLandScapeGlobalGameInfo : public FAIStateInfoBase
 {
-	struct FDiffLandScapeChangeStateGeneral            landscape_change_info;                                    // 0x0018(0x0038)
+	struct FDiffLandScapeChangeStateList               landscape_change_info;                                    // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.AIDoorStateInfo
+// ScriptStruct AI.NearbyDoorAIStateInfo
 // 0x0020 (0x0040 - 0x0020)
-struct FAIDoorStateInfo : public FUniqueStateInfo
+struct FNearbyDoorAIStateInfo : public FUniqueStateInfo
 {
-	TArray<struct FDoorState>                          nearby_door;                                              // 0x0020(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0020(0x0010) MISSED OFFSET
 	TArray<uint64_t>                                   nearby_door_index;                                        // 0x0030(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIDoorStateInfoGeneral
-// 0x0048 (0x0068 - 0x0020)
-struct FDiffAIDoorStateInfoGeneral : public FUniqueStateInfo
-{
-	struct FDiffDoorStateGeneral                       nearby_door;                                              // 0x0020(0x0038)
-	TArray<uint64_t>                                   nearby_door_index;                                        // 0x0058(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAllPlayerDoorInfoGeneral
+// ScriptStruct AI.DiffNearbyDoorAllPlayersInfo
 // 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllPlayerDoorInfoGeneral : public FAIStateInfoBase
+struct FDiffNearbyDoorAllPlayersInfo : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FAIDoorStateInfo>            AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIDoorStateInfoGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDoorStateInfo>            DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyDoorAIStateInfo>      AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyDoorAIStateInfo>      AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyDoorAIStateInfo>      DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalNearbyDoorInfo
+// ScriptStruct AI.DoorState
+// 0x0020 (0x0040 - 0x0020)
+struct FDoorState : public FUniqueStateInfo
+{
+	struct FAIStateXYZ                                 Position;                                                 // 0x0020(0x000C)
+	int                                                State;                                                    // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           ID;                                                       // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Rotation;                                                 // 0x0034(0x000C)
+};
+
+// ScriptStruct AI.DoorGlobalNearbyInfo
 // 0x0010 (0x0028 - 0x0018)
-struct FGlobalNearbyDoorInfo : public FAIStateInfoBase
+struct FDoorGlobalNearbyInfo : public FAIStateInfoBase
 {
 	TArray<struct FDoorState>                          nearby_door;                                              // 0x0018(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalDoorState
+// ScriptStruct AI.NearbyDoorGlobalGameState
 // 0x0028 (0x0040 - 0x0018)
-struct FGlobalDoorState : public FAIStateInfoBase
+struct FNearbyDoorGlobalGameState : public FAIStateInfoBase
 {
-	struct FGlobalNearbyDoorInfo                       global_nearby_info;                                       // 0x0018(0x0028)
+	struct FDoorGlobalNearbyInfo                       global_nearby_info;                                       // 0x0018(0x0028)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyDoorInfo
+// ScriptStruct AI.DiffDoorStateList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffDoorStateList : public FAIStateInfoBase
+{
+	TArray<struct FDoorState>                          Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffDoorGlobalNearbyInfo
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyDoorInfo : public FAIStateInfoBase
+struct FDiffDoorGlobalNearbyInfo : public FAIStateInfoBase
 {
-	struct FDiffDoorStateGeneral                       nearby_door;                                              // 0x0018(0x0038)
+	struct FDiffDoorStateList                          nearby_door;                                              // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffGlobalDoorState
+// ScriptStruct AI.DiffNearbyDoorGlobalGameState
 // 0x0050 (0x0068 - 0x0018)
-struct FDiffGlobalDoorState : public FAIStateInfoBase
+struct FDiffNearbyDoorGlobalGameState : public FAIStateInfoBase
 {
-	struct FDiffGlobalNearbyDoorInfo                   global_nearby_info;                                       // 0x0018(0x0050)
+	struct FDiffDoorGlobalNearbyInfo                   global_nearby_info;                                       // 0x0018(0x0050)
 };
 
-// ScriptStruct AI.DiffAllPlayerDoorInfo
-// 0x0148 (0x0160 - 0x0018)
-struct FDiffAllPlayerDoorInfo : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FAIDoorStateInfo>            diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDoorStateInfo>            State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-	struct FGlobalDoorState                            global_state;                                             // 0x00B8(0x0040)
-	struct FDiffGlobalDoorState                        diff_global_state;                                        // 0x00F8(0x0068)
-};
-
-// ScriptStruct AI.DiffGlobalNearbyDoorStateGeneral
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyDoorStateGeneral : public FAIStateInfoBase
-{
-	struct FDiffDoorStateGeneral                       nearby_door;                                              // 0x0018(0x0038)
-};
-
-// ScriptStruct AI.DiffGlobalDoorStateGeneral
-// 0x0050 (0x0068 - 0x0018)
-struct FDiffGlobalDoorStateGeneral : public FAIStateInfoBase
-{
-	struct FDiffGlobalNearbyDoorStateGeneral           global_nearby_info;                                       // 0x0018(0x0050)
-};
-
-// ScriptStruct AI.AINearbyMonsterStateInfo
+// ScriptStruct AI.NearbyMonsterAIStateInfo
 // 0x0020 (0x0040 - 0x0020)
-struct FAINearbyMonsterStateInfo : public FUniqueStateInfo
+struct FNearbyMonsterAIStateInfo : public FUniqueStateInfo
 {
-	TArray<struct FMonsterState>                       monster_states;                                           // 0x0020(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0020(0x0010) MISSED OFFSET
 	TArray<uint64_t>                                   monster_states_index;                                     // 0x0030(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAINearbyMonsterStateInfoGeneral
-// 0x0048 (0x0068 - 0x0020)
-struct FDiffAINearbyMonsterStateInfoGeneral : public FUniqueStateInfo
-{
-	struct FDiffMonsterStatesGeneral                   monster_states;                                           // 0x0020(0x0038)
-	TArray<uint64_t>                                   monster_states_index;                                     // 0x0058(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAllPlayerNearbyMonsterGeneral
+// ScriptStruct AI.DiffNearbyMonsterAllPlayersInfo
 // 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllPlayerNearbyMonsterGeneral : public FAIStateInfoBase
+struct FDiffNearbyMonsterAllPlayersInfo : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FAINearbyMonsterStateInfo>   AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAINearbyMonsterStateInfoGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyMonsterStateInfo>   DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyMonsterAIStateInfo>   AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyMonsterAIStateInfo>   AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyMonsterAIStateInfo>   DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAINearbyMonsterStateInfo
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffAINearbyMonsterStateInfo : public FAIStateInfoBase
+// ScriptStruct AI.MonsterState
+// 0x0040 (0x0060 - 0x0020)
+struct FMonsterState : public FUniqueStateInfo
 {
-	struct FDiffMonsterStates                          monster_states;                                           // 0x0018(0x0038)
+	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Category;                                                 // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Position;                                                 // 0x0028(0x000C)
+	struct FAIStateXYZ                                 Rotation;                                                 // 0x0034(0x000C)
+	struct FAIStateXYZ                                 Speed;                                                    // 0x0040(0x000C)
+	float                                              HP;                                                       // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              hp_max;                                                   // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                using_skill_id;                                           // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                skill_phase_index;                                        // 0x0058(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x005C(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.GlobalNearbyMonsterInfo
+// ScriptStruct AI.MonsterGlobalNearbyInfo
 // 0x0010 (0x0028 - 0x0018)
-struct FGlobalNearbyMonsterInfo : public FAIStateInfoBase
+struct FMonsterGlobalNearbyInfo : public FAIStateInfoBase
 {
 	TArray<struct FMonsterState>                       monster_states;                                           // 0x0018(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalMonsterState
+// ScriptStruct AI.NearbyMonsterGlobalGameState
 // 0x0028 (0x0040 - 0x0018)
-struct FGlobalMonsterState : public FAIStateInfoBase
+struct FNearbyMonsterGlobalGameState : public FAIStateInfoBase
 {
-	struct FGlobalNearbyMonsterInfo                    global_nearby_info;                                       // 0x0018(0x0028)
+	struct FMonsterGlobalNearbyInfo                    global_nearby_info;                                       // 0x0018(0x0028)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyMonsterInfo
+// ScriptStruct AI.DiffMonsterStates
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffMonsterStates : public FAIStateInfoBase
+{
+	TArray<struct FMonsterState>                       Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffMonsterGlobalNearbyInfo
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyMonsterInfo : public FAIStateInfoBase
+struct FDiffMonsterGlobalNearbyInfo : public FAIStateInfoBase
 {
 	struct FDiffMonsterStates                          monster_states;                                           // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffGlobalMonsterState
+// ScriptStruct AI.DiffNearbyMonsterGlobalGameState
 // 0x0050 (0x0068 - 0x0018)
-struct FDiffGlobalMonsterState : public FAIStateInfoBase
+struct FDiffNearbyMonsterGlobalGameState : public FAIStateInfoBase
 {
-	struct FDiffGlobalNearbyMonsterInfo                global_nearby_info;                                       // 0x0018(0x0050)
+	struct FDiffMonsterGlobalNearbyInfo                global_nearby_info;                                       // 0x0018(0x0050)
 };
 
-// ScriptStruct AI.DiffAllPlayerNearbyMonsterInfo
-// 0x0148 (0x0160 - 0x0018)
-struct FDiffAllPlayerNearbyMonsterInfo : public FAIStateInfoBase
+// ScriptStruct AI.AISimplifyState
+// 0x0008 (0x0020 - 0x0018)
+struct FAISimplifyState : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FDiffAINearbyMonsterStateInfo> diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyMonsterStateInfo>   State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-	struct FGlobalMonsterState                         global_state;                                             // 0x00B8(0x0040)
-	struct FDiffGlobalMonsterState                     diff_global_state;                                        // 0x00F8(0x0068)
+	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               has_smoke;                                                // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
 };
 
-// ScriptStruct AI.DiffGlobalNearbyMonsterInfoGeneral
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyMonsterInfoGeneral : public FAIStateInfoBase
+// ScriptStruct AI.AINearbyPlayer
+// 0x0020 (0x0040 - 0x0020)
+struct FAINearbyPlayer : public FUniqueStateInfo
 {
-	struct FDiffMonsterStatesGeneral                   monster_states;                                           // 0x0018(0x0038)
+	struct FAISimplifyState                            State;                                                    // 0x0020(0x0020)
 };
 
-// ScriptStruct AI.DiffGlobalMonsterStateGeneral
-// 0x0050 (0x0068 - 0x0018)
-struct FDiffGlobalMonsterStateGeneral : public FAIStateInfoBase
-{
-	struct FDiffGlobalNearbyMonsterInfoGeneral         global_nearby_info;                                       // 0x0018(0x0050)
-};
-
-// ScriptStruct AI.AINearbyPlayerStateInfo
+// ScriptStruct AI.NearbyPlayerAIStateInfo
 // 0x0010 (0x0030 - 0x0020)
-struct FAINearbyPlayerStateInfo : public FUniqueStateInfo
+struct FNearbyPlayerAIStateInfo : public FUniqueStateInfo
 {
-	TArray<struct FAINearbyPlayerBaseMod>              nearby_player;                                            // 0x0020(0x0010) (ZeroConstructor)
+	TArray<struct FAINearbyPlayer>                     nearby_player;                                            // 0x0020(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAINearbyPlayerStateInfoGeneral
-// 0x0078 (0x0098 - 0x0020)
-struct FDiffAINearbyPlayerStateInfoGeneral : public FUniqueStateInfo
-{
-	struct FDiffAINearbyPlayersBaseModGeneral          nearby_player;                                            // 0x0020(0x0078)
-};
-
-// ScriptStruct AI.DiffAllPlayerNearbyPlayerInfoGeneral
-// 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllPlayerNearbyPlayerInfoGeneral : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FAINearbyPlayerStateInfo>    AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAINearbyPlayerStateInfoGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyPlayerStateInfo>    DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAINearbyPlayerStateInfo
-// 0x0038 (0x0058 - 0x0020)
-struct FDiffAINearbyPlayerStateInfo : public FUniqueStateInfo
-{
-	struct FDiffAINearbyPlayersBaseMod                 nearby_player;                                            // 0x0020(0x0038)
-};
-
-// ScriptStruct AI.DiffAllPlayerNearbyPlayerInfo
-// 0x00A0 (0x00B8 - 0x0018)
-struct FDiffAllPlayerNearbyPlayerInfo : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FDiffAINearbyPlayerStateInfo> diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyPlayerStateInfo>    State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.MLAINearbyStateInfoBaseMod
-// 0x0068 (0x0088 - 0x0020)
-struct FMLAINearbyStateInfoBaseMod : public FUniqueStateInfo
-{
-	TArray<struct FItemStateData>                      nearby_item;                                              // 0x0020(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   nearby_item_index;                                        // 0x0030(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData00[0x28];                                      // 0x0040(0x0028) MISSED OFFSET
-	TArray<struct FAINearbyThrown>                     nearby_thrown;                                            // 0x0068(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   nearby_thrown_index;                                      // 0x0078(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffMLAINearbyStateInfoBaseModGeneral
-// 0x0090 (0x00B0 - 0x0020)
-struct FDiffMLAINearbyStateInfoBaseModGeneral : public FUniqueStateInfo
-{
-	struct FDiffItemStateDatasGeneral                  nearby_item;                                              // 0x0020(0x0038)
-	TArray<uint64_t>                                   nearby_item_index;                                        // 0x0058(0x0010) (ZeroConstructor)
-	struct FDiffAINearbyThrownGeneral                  nearby_thrown;                                            // 0x0068(0x0038)
-	TArray<uint64_t>                                   nearby_thrown_index;                                      // 0x00A0(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAllMLAINearbyInfoBaseModGeneral
-// 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllMLAINearbyInfoBaseModGeneral : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FMLAINearbyStateInfoBaseMod> AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffMLAINearbyStateInfoBaseModGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAINearbyStateInfoBaseMod> DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffMLAINearbyStateInfoBaseMod
-// 0x0078 (0x0098 - 0x0020)
-struct FDiffMLAINearbyStateInfoBaseMod : public FUniqueStateInfo
-{
-	struct FDiffItemStateDatas                         nearby_item;                                              // 0x0020(0x0038)
-	TArray<uint64_t>                                   nearby_item_index;                                        // 0x0058(0x0010) (ZeroConstructor)
-	TArray<struct FAINearbyThrown>                     nearby_thrown;                                            // 0x0068(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   nearby_thrown_index;                                      // 0x0078(0x0010) (ZeroConstructor)
-	TArray<struct FItemStateData>                      nearby_box_item;                                          // 0x0088(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.GlobalNearbyInfoBaseMod
+// ScriptStruct AI.DiffAINearbyPlayerList
 // 0x0020 (0x0038 - 0x0018)
-struct FGlobalNearbyInfoBaseMod : public FAIStateInfoBase
+struct FDiffAINearbyPlayerList : public FAIStateInfoBase
+{
+	TArray<struct FAINearbyPlayer>                     Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffNearbyPlayerAIStateInfo
+// 0x0038 (0x0058 - 0x0020)
+struct FDiffNearbyPlayerAIStateInfo : public FUniqueStateInfo
+{
+	struct FDiffAINearbyPlayerList                     nearby_player;                                            // 0x0020(0x0038)
+};
+
+// ScriptStruct AI.DiffNearbyPlayerAllPlayersInfo
+// 0x00F0 (0x0108 - 0x0018)
+struct FDiffNearbyPlayerAllPlayersInfo : public FAIStateInfoBase
+{
+	TMap<uint32_t, struct FNearbyPlayerAIStateInfo>    AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDiffNearbyPlayerAIStateInfo> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyPlayerAIStateInfo>    DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+};
+
+// ScriptStruct AI.BaseNearbyAIStateInfo
+// 0x0068 (0x0088 - 0x0020)
+struct FBaseNearbyAIStateInfo : public FUniqueStateInfo
+{
+	TArray<uint64_t>                                   nearby_item_index;                                        // 0x0020(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   nearby_thrown_index;                                      // 0x0030(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x48];                                      // 0x0040(0x0048) MISSED OFFSET
+};
+
+// ScriptStruct AI.DiffBaseNearbyAllPlayersInfo
+// 0x00F0 (0x0108 - 0x0018)
+struct FDiffBaseNearbyAllPlayersInfo : public FAIStateInfoBase
+{
+	TMap<uint32_t, struct FBaseNearbyAIStateInfo>      AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseNearbyAIStateInfo>      AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseNearbyAIStateInfo>      DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+};
+
+// ScriptStruct AI.AINearbyThrown
+// 0x0028 (0x0048 - 0x0020)
+struct FAINearbyThrown : public FUniqueStateInfo
+{
+	int                                                Type;                                                     // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Position;                                                 // 0x0024(0x000C)
+	float                                              remain_time;                                              // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              explode_time;                                             // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_own;                                                   // 0x0038(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_held;                                                  // 0x0039(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x003A(0x0002) MISSED OFFSET
+	uint32_t                                           actorid;                                                  // 0x003C(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           sourceid;                                                 // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.BaseGlobalNearbyInfo
+// 0x0020 (0x0038 - 0x0018)
+struct FBaseGlobalNearbyInfo : public FAIStateInfoBase
 {
 	TArray<struct FItemStateData>                      nearby_item;                                              // 0x0018(0x0010) (ZeroConstructor)
 	TArray<struct FAINearbyThrown>                     nearby_thrown;                                            // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalNearbyStateBaseMod
+// ScriptStruct AI.NearbyBaseGlobalGameState
 // 0x0038 (0x0050 - 0x0018)
-struct FGlobalNearbyStateBaseMod : public FAIStateInfoBase
+struct FNearbyBaseGlobalGameState : public FAIStateInfoBase
 {
-	struct FGlobalNearbyInfoBaseMod                    global_nearby_info;                                       // 0x0018(0x0038)
+	struct FBaseGlobalNearbyInfo                       global_nearby_info;                                       // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyInfoBaseMod
-// 0x0048 (0x0060 - 0x0018)
-struct FDiffGlobalNearbyInfoBaseMod : public FAIStateInfoBase
+// ScriptStruct AI.DiffItemStateDataList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffItemStateDataList : public FAIStateInfoBase
 {
-	struct FDiffItemStateDatas                         nearby_item;                                              // 0x0018(0x0038)
-	TArray<struct FAINearbyThrown>                     nearby_thrown;                                            // 0x0050(0x0010) (ZeroConstructor)
+	TArray<struct FItemStateData>                      Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyStateBaseMod
-// 0x0060 (0x0078 - 0x0018)
-struct FDiffGlobalNearbyStateBaseMod : public FAIStateInfoBase
+// ScriptStruct AI.DiffAINearbyThrownList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffAINearbyThrownList : public FAIStateInfoBase
 {
-	struct FDiffGlobalNearbyInfoBaseMod                global_nearby_info;                                       // 0x0018(0x0060)
+	TArray<struct FAINearbyThrown>                     Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAllMLAINearbyInfoBaseMod
-// 0x0168 (0x0180 - 0x0018)
-struct FDiffAllMLAINearbyInfoBaseMod : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FDiffMLAINearbyStateInfoBaseMod> diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAINearbyStateInfoBaseMod> State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-	struct FGlobalNearbyStateBaseMod                   global_state;                                             // 0x00B8(0x0050)
-	struct FDiffGlobalNearbyStateBaseMod               diff_global_state;                                        // 0x0108(0x0078)
-};
-
-// ScriptStruct AI.DiffGlobalNearbyInfoBaseModGeneral
+// ScriptStruct AI.DiffBaseGlobalNearbyInfo
 // 0x0070 (0x0088 - 0x0018)
-struct FDiffGlobalNearbyInfoBaseModGeneral : public FAIStateInfoBase
+struct FDiffBaseGlobalNearbyInfo : public FAIStateInfoBase
 {
-	struct FDiffItemStateDatasGeneral                  nearby_item;                                              // 0x0018(0x0038)
-	struct FDiffAINearbyThrownGeneral                  nearby_thrown;                                            // 0x0050(0x0038)
+	struct FDiffItemStateDataList                      nearby_item;                                              // 0x0018(0x0038)
+	struct FDiffAINearbyThrownList                     nearby_thrown;                                            // 0x0050(0x0038)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyStateBaseModGeneral
+// ScriptStruct AI.DiffBaseNearbyGlobalGameState
 // 0x0088 (0x00A0 - 0x0018)
-struct FDiffGlobalNearbyStateBaseModGeneral : public FAIStateInfoBase
+struct FDiffBaseNearbyGlobalGameState : public FAIStateInfoBase
 {
-	struct FDiffGlobalNearbyInfoBaseModGeneral         global_nearby_info;                                       // 0x0018(0x0088)
+	struct FDiffBaseGlobalNearbyInfo                   global_nearby_info;                                       // 0x0018(0x0088)
+};
+
+// ScriptStruct AI.CollectorArray
+// 0x0010
+struct FCollectorArray
+{
+	TArray<class UStateInfoCollectorBase*>             Collectors;                                               // 0x0000(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct AI.DiffListIDMap
@@ -3350,255 +2078,112 @@ struct FBulletHoleRecordInfo : public FBulletHole
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.GlobalNearbyInfoBRBase
-// 0x0040 (0x0058 - 0x0018)
-struct FGlobalNearbyInfoBRBase : public FAIStateInfoBase
-{
-	TArray<struct FDoorState>                          nearby_door;                                              // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FVehicleState>                       nearby_vehicles;                                          // 0x0028(0x0010) (ZeroConstructor)
-	TArray<struct FDynamicItem>                        dynamic_items;                                            // 0x0038(0x0010) (ZeroConstructor)
-	TArray<struct FMonsterState>                       monster_states;                                           // 0x0048(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.GlobalGameStateBRBase
-// 0x0168 (0x0180 - 0x0018)
-struct FGlobalGameStateBRBase : public FAIStateInfoBase
-{
-	TArray<struct FAirDropBoxState>                    air_drop_box_states;                                      // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FSpecialZoneState>                   special_zones;                                            // 0x0028(0x0010) (ZeroConstructor)
-	TArray<struct FSpecialMeshState>                   special_meshes;                                           // 0x0038(0x0010) (ZeroConstructor)
-	struct FRedZoneState                               red_zone;                                                 // 0x0048(0x0030)
-	struct FSafetyAreaState                            safety_area;                                              // 0x0078(0x0048)
-	TArray<struct FPlaneInfo>                          airplane_list;                                            // 0x00C0(0x0010) (ZeroConstructor)
-	struct FGlobalNearbyInfoBRBase                     global_nearby_info;                                       // 0x00D0(0x0058)
-	struct FGlobalControlInfo                          control_info;                                             // 0x0128(0x0020)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0148(0x0008) MISSED OFFSET
-	TArray<struct FAIStateXYZ>                         vehicle_spot_position;                                    // 0x0150(0x0010) (ZeroConstructor)
-	TArray<struct FLandScapeChangeState>               landscape_change_info;                                    // 0x0160(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   silent_list;                                              // 0x0170(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.GlobalGameStateBaseMod
-// 0x00B0 (0x00C8 - 0x0018)
-struct FGlobalGameStateBaseMod : public FAIStateInfoBase
-{
-	struct FAIGameStateBaseMod                         Game;                                                     // 0x0018(0x0068)
-	struct FGlobalNearbyInfoBaseMod                    global_nearby_info;                                       // 0x0080(0x0038)
-	TArray<struct FBattleVoiceRoomInfo>                voice_room_list;                                          // 0x00B8(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffGlobalGameStateBaseMod
-// 0x0068 (0x0080 - 0x0018)
-struct FDiffGlobalGameStateBaseMod : public FAIStateInfoBase
-{
-	struct FDiffAIGameStateBaseMod                     Game;                                                     // 0x0018(0x0068)
-};
-
-// ScriptStruct AI.DiffGlobalGameStateBaseModGeneral
-// 0x0128 (0x0140 - 0x0018)
-struct FDiffGlobalGameStateBaseModGeneral : public FAIStateInfoBase
-{
-	struct FDiffAIGameStateBaseModGeneral              Game;                                                     // 0x0018(0x0068)
-	struct FDiffGlobalNearbyInfoBaseModGeneral         global_nearby_info;                                       // 0x0080(0x0088)
-	struct FDiffBattleVoiceRoomInfoListGeneral         voice_room_list;                                          // 0x0108(0x0038)
-};
-
-// ScriptStruct AI.DiffAllPlayerInfoBaseModGeneral
-// 0x0088 (0x00A0 - 0x0018)
-struct FDiffAllPlayerInfoBaseModGeneral : public FAIStateInfoBase
-{
-	uint32_t                                           Key;                                                      // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-	TArray<struct FAIStateInfoBaseMod>                 AllAIStateInfo;                                           // 0x0020(0x0010) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIStateInfoBaseModGeneral> AllDiffAIStateInfo;                                       // 0x0030(0x0050) (ZeroConstructor)
-	TArray<struct FAIStateInfoBaseMod>                 DebugAllAIStateInfo;                                      // 0x0080(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0090(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffBTAIAndPlayerStateInfoBaseMod
-// 0x0258 (0x0270 - 0x0018)
-struct FDiffBTAIAndPlayerStateInfoBaseMod : public FDiffStateInfoBase
-{
-	struct FDiffAIPlayerStateBaseMod                   State;                                                    // 0x0018(0x0110)
-	struct FDiffCameraState                            Camera;                                                   // 0x0128(0x0040)
-	struct FDiffAIPlayerWeapon                         Weapon;                                                   // 0x0168(0x0038)
-	struct FDiffPlayerBackpack                         BackPack;                                                 // 0x01A0(0x0038)
-	struct FDiffAIPlayerEquipment                      equipment;                                                // 0x01D8(0x0038)
-	uint32_t                                           Key;                                                      // 0x0210(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0214(0x0004) MISSED OFFSET
-	struct FAIPlayerInteractInfo                       player_interact_info;                                     // 0x0218(0x0058)
-};
-
-// ScriptStruct AI.DiffAllPlayerInfoBaseMod
-// 0x01E8 (0x0200 - 0x0018)
-struct FDiffAllPlayerInfoBaseMod : public FAIStateInfoBase
-{
-	TArray<struct FDiffAIStateInfoBaseMod>             diff_states;                                              // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateInfoBaseMod>                 State;                                                    // 0x0028(0x0010) (ZeroConstructor)
-	struct FGlobalGameStateBaseMod                     global_state;                                             // 0x0038(0x00C8)
-	struct FDiffGlobalGameStateBaseMod                 diff_global_state;                                        // 0x0100(0x0080)
-	TArray<struct FAIStateInfoBaseMod>                 global_player_states;                                     // 0x0180(0x0010) (ZeroConstructor)
-	TArray<struct FDiffBTAIAndPlayerStateInfoBaseMod>  global_player_diff_states;                                // 0x0190(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateInfoBaseMod>                 in_pool_states;                                           // 0x01A0(0x0010) (ZeroConstructor)
-	TArray<struct FDiffAIPoolStateInfo>                in_pool_diff_states;                                      // 0x01B0(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateInfoBaseMod>                 near_player_states;                                       // 0x01C0(0x0010) (ZeroConstructor)
-	TArray<struct FDiffBTAIAndPlayerStateInfoBaseMod>  near_player_diff_states;                                  // 0x01D0(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateInfoBaseMod>                 global_btai_states;                                       // 0x01E0(0x0010) (ZeroConstructor)
-	TArray<struct FDiffBTAIAndPlayerStateInfoBaseMod>  global_btai_diff_states;                                  // 0x01F0(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffGlobalGameStateBRBase
-// 0x0168 (0x0180 - 0x0018)
-struct FDiffGlobalGameStateBRBase : public FAIStateInfoBase
-{
-	struct FDiffAirDropBoxStates                       air_drop_box_states;                                      // 0x0018(0x0038)
-	struct FDiffSpecialZone                            special_zones;                                            // 0x0050(0x0038)
-	struct FDiffSpecialMesh                            special_meshes;                                           // 0x0088(0x0038)
-	struct FDiffRedZoneState                           red_zone;                                                 // 0x00C0(0x0030)
-	struct FDiffSafetyAreaState                        safety_area;                                              // 0x00F0(0x0048)
-	struct FDiffPlaneInfo                              airplane_list;                                            // 0x0138(0x0038)
-	TArray<uint32_t>                                   silent_list;                                              // 0x0170(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffGlobalNearbyInfoBRBaseGeneral
-// 0x00E0 (0x00F8 - 0x0018)
-struct FDiffGlobalNearbyInfoBRBaseGeneral : public FAIStateInfoBase
-{
-	struct FDiffDoorStateGeneral                       nearby_door;                                              // 0x0018(0x0038)
-	struct FDiffVehicleStatesGeneral                   nearby_vehicles;                                          // 0x0050(0x0038)
-	struct FDiffDynamicItemStatesGeneral               dynamic_items;                                            // 0x0088(0x0038)
-	struct FDiffMonsterStatesGeneral                   monster_states;                                           // 0x00C0(0x0038)
-};
-
-// ScriptStruct AI.DiffGlobalGameStateBRBaseGeneral
-// 0x02C8 (0x02E0 - 0x0018)
-struct FDiffGlobalGameStateBRBaseGeneral : public FAIStateInfoBase
-{
-	struct FDiffAirDropBoxStatesGeneral                air_drop_box_states;                                      // 0x0018(0x0038)
-	struct FDiffSpecialZoneGeneral                     special_zones;                                            // 0x0050(0x0038)
-	struct FDiffSpecialMeshGeneral                     special_meshes;                                           // 0x0088(0x0038)
-	struct FRedZoneState                               red_zone;                                                 // 0x00C0(0x0030)
-	struct FSafetyAreaState                            safety_area;                                              // 0x00F0(0x0048)
-	struct FDiffPlaneInfoGeneral                       airplane_list;                                            // 0x0138(0x0038)
-	struct FDiffGlobalNearbyInfoBRBaseGeneral          global_nearby_info;                                       // 0x0170(0x00F8)
-	struct FGlobalControlInfo                          control_info;                                             // 0x0268(0x0020)
-	TArray<struct FAIStateXYZ>                         vehicle_spot_position;                                    // 0x0288(0x0010) (ZeroConstructor)
-	struct FDiffLandScapeChangeStateGeneral            landscape_change_info;                                    // 0x0298(0x0038)
-	TArray<uint32_t>                                   silent_list;                                              // 0x02D0(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAllPlayerInfoBRBaseGeneral
-// 0x0080 (0x0098 - 0x0018)
-struct FDiffAllPlayerInfoBRBaseGeneral : public FAIStateInfoBase
-{
-	TArray<struct FAIStateInfoBRBase>                  AllAIStateInfo;                                           // 0x0018(0x0010) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIStateInfoBRBaseGeneral> AllDiffAIStateInfo;                                       // 0x0028(0x0050) (ZeroConstructor)
-	TArray<struct FAIStateInfoBRBase>                  DebugAllAIStateInfo;                                      // 0x0078(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0088(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffBTAIAndPlayerStateInfoBRBase
-// 0x0108 (0x0120 - 0x0018)
-struct FDiffBTAIAndPlayerStateInfoBRBase : public FDiffStateInfoBase
-{
-	struct FDiffAIPlayerStateBRBase                    State;                                                    // 0x0018(0x0060)
-	struct FDiffVehicleState                           vehicle_state;                                            // 0x0078(0x00A8)
-};
-
-// ScriptStruct AI.DiffAllPlayerInfoBRBase
-// 0x0380 (0x0398 - 0x0018)
-struct FDiffAllPlayerInfoBRBase : public FAIStateInfoBase
-{
-	TArray<struct FDiffAIStateInfoBRBase>              diff_states;                                              // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateInfoBRBase>                  State;                                                    // 0x0028(0x0010) (ZeroConstructor)
-	struct FGlobalGameStateBRBase                      global_state;                                             // 0x0038(0x0180)
-	struct FDiffGlobalGameStateBRBase                  diff_global_state;                                        // 0x01B8(0x0180)
-	TArray<struct FAIStateInfoBRBase>                  global_player_states;                                     // 0x0338(0x0010) (ZeroConstructor)
-	TArray<struct FDiffBTAIAndPlayerStateInfoBRBase>   global_player_diff_states;                                // 0x0348(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateInfoBRBase>                  near_player_states;                                       // 0x0358(0x0010) (ZeroConstructor)
-	TArray<struct FDiffBTAIAndPlayerStateInfoBRBase>   near_player_diff_states;                                  // 0x0368(0x0010) (ZeroConstructor)
-	TArray<struct FAIStateInfoBRBase>                  global_btai_states;                                       // 0x0378(0x0010) (ZeroConstructor)
-	TArray<struct FDiffBTAIAndPlayerStateInfoBRBase>   global_btai_diff_states;                                  // 0x0388(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.GlobalGameStateMPBase
-// 0x0028 (0x0040 - 0x0018)
-struct FGlobalGameStateMPBase : public FDiffStateInfoBase
-{
-	struct FAIGameStateMPBase                          Game;                                                     // 0x0018(0x0028)
-};
-
-// ScriptStruct AI.DiffGlobalGameStateMPBaseGeneral
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalGameStateMPBaseGeneral : public FAIStateInfoBase
-{
-	struct FDiffAIGameStateMPBaseGeneral               Game;                                                     // 0x0018(0x0038)
-};
-
-// ScriptStruct AI.DiffAllPlayerInfoMPBaseGeneral
-// 0x0080 (0x0098 - 0x0018)
-struct FDiffAllPlayerInfoMPBaseGeneral : public FAIStateInfoBase
-{
-	TArray<struct FAIStateInfoMPBase>                  AllAIStateInfo;                                           // 0x0018(0x0010) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIStateInfoMPBaseGeneral> AllDiffAIStateInfo;                                       // 0x0028(0x0050) (ZeroConstructor)
-	TArray<struct FAIStateInfoMPBase>                  DebugAllAIStateInfo;                                      // 0x0078(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0088(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIMPStateInfo
-// 0x0068 (0x0088 - 0x0020)
-struct FAIMPStateInfo : public FUniqueStateInfo
-{
-	struct FAIPlayerStateMPBase                        State;                                                    // 0x0020(0x0038)
-	struct FDeathMatchAIPlayerEquipment                deathmatch_backpack;                                      // 0x0058(0x0030)
-};
-
-// ScriptStruct AI.AIPlayerMPState
+// ScriptStruct AI.MPBaseAIPlayerState
 // 0x0020 (0x0038 - 0x0018)
-struct FAIPlayerMPState : public FAIStateInfoBase
+struct FMPBaseAIPlayerState : public FAIStateInfoBase
 {
-	bool                                               is_invincible;                                            // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               in_shoveling;                                             // 0x0019(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x001A(0x0002) MISSED OFFSET
-	int                                                death_count;                                              // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              survive_time;                                             // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              kd_ratio;                                                 // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                continue_kill;                                            // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                revenge;                                                  // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                top_spot_end;                                             // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
+	uint32_t                                           ID;                                                       // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_invincible;                                            // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               in_shoveling;                                             // 0x001D(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x001E(0x0002) MISSED OFFSET
+	int                                                death_count;                                              // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              survive_time;                                             // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              kd_ratio;                                                 // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                continue_kill;                                            // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                revenge;                                                  // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                top_spot_end;                                             // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
-// ScriptStruct AI.DiffAIMPStateInfoGeneral
-// 0x0068 (0x0088 - 0x0020)
-struct FDiffAIMPStateInfoGeneral : public FDiffUniqueStateInfo
+// ScriptStruct AI.AIGameModePlayerWeaponSchemeSlotInfo
+// 0x0020 (0x0038 - 0x0018)
+struct FAIGameModePlayerWeaponSchemeSlotInfo : public FAIStateInfoBase
 {
-	struct FAIPlayerMPState                            State;                                                    // 0x0020(0x0038)
+	int                                                slot_index;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                item_id;                                                  // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                Count;                                                    // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
+	TArray<int>                                        attach_list;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.AIGameModePlayerWeaponSchemeInfo
+// 0x0018 (0x0030 - 0x0018)
+struct FAIGameModePlayerWeaponSchemeInfo : public FAIStateInfoBase
+{
+	int                                                scheme_index;                                             // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_locked;                                                // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
+	TArray<struct FAIGameModePlayerWeaponSchemeSlotInfo> slot_list;                                                // 0x0020(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DeathMatchAIPlayerEquipment
+// 0x0018 (0x0030 - 0x0018)
+struct FDeathMatchAIPlayerEquipment : public FAIStateInfoBase
+{
+	TArray<struct FAIGameModePlayerWeaponSchemeInfo>   weapon_scheme_info_list;                                  // 0x0018(0x0010) (ZeroConstructor)
+	int                                                cur_weapon_scheme_index;                                  // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.MPBaseAIStateInfo
+// 0x0068 (0x0088 - 0x0020)
+struct FMPBaseAIStateInfo : public FUniqueStateInfo
+{
+	struct FMPBaseAIPlayerState                        State;                                                    // 0x0020(0x0038)
 	struct FDeathMatchAIPlayerEquipment                deathmatch_backpack;                                      // 0x0058(0x0030)
 };
 
-// ScriptStruct AI.DiffAllPlayerMPBaseInfoGeneral
+// ScriptStruct AI.DiffMPBaseAllPlayersInfo
 // 0x0100 (0x0118 - 0x0018)
-struct FDiffAllPlayerMPBaseInfoGeneral : public FAIStateInfoBase
+struct FDiffMPBaseAllPlayersInfo : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FAIMPStateInfo>              AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIMPStateInfoGeneral>   AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIMPStateInfo>              DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMPBaseAIStateInfo>          AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMPBaseAIStateInfo>          AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMPBaseAIStateInfo>          DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
 	TArray<uint64_t>                                   del_item_id;                                              // 0x0108(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalGameMPState
-// 0x0028 (0x0040 - 0x0018)
-struct FGlobalGameMPState : public FAIStateInfoBase
+// ScriptStruct AI.TeamScoreData
+// 0x0008 (0x0028 - 0x0020)
+struct FTeamScoreData : public FUniqueStateInfo
 {
-	struct FAIGameStateMPBase                          Game;                                                     // 0x0018(0x0028)
+	int                                                team_id;                                                  // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                team_score;                                               // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
-// ScriptStruct AI.DiffGlobalGameMPBaseStateGeneral
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalGameMPBaseStateGeneral : public FAIStateInfoBase
+// ScriptStruct AI.MPBaseAIGameState
+// 0x0010 (0x0028 - 0x0018)
+struct FMPBaseAIGameState : public FAIStateInfoBase
 {
-	struct FDiffAIGameStateMPBaseGeneral               Game;                                                     // 0x0018(0x0038)
+	TArray<struct FTeamScoreData>                      team_score_datas;                                         // 0x0018(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.MPBaseGlobalGameState
+// 0x0028 (0x0040 - 0x0018)
+struct FMPBaseGlobalGameState : public FAIStateInfoBase
+{
+	struct FMPBaseAIGameState                          Game;                                                     // 0x0018(0x0028)
+};
+
+// ScriptStruct AI.DiffTeamScoreDataList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffTeamScoreDataList : public FAIStateInfoBase
+{
+	TArray<struct FTeamScoreData>                      Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffMPBaseAIGameState
+// 0x0038 (0x0050 - 0x0018)
+struct FDiffMPBaseAIGameState : public FAIStateInfoBase
+{
+	struct FDiffTeamScoreDataList                      team_score_datas;                                         // 0x0018(0x0038)
+};
+
+// ScriptStruct AI.DiffMPBaseGlobalGameState
+// 0x0050 (0x0068 - 0x0018)
+struct FDiffMPBaseGlobalGameState : public FAIStateInfoBase
+{
+	struct FDiffMPBaseAIGameState                      Game;                                                     // 0x0018(0x0050)
 };
 
 // ScriptStruct AI.AIVehicleStateData
@@ -3608,117 +2193,114 @@ struct FAIVehicleStateData
 	unsigned char                                      UnknownData00[0x80];                                      // 0x0000(0x0080) MISSED OFFSET
 };
 
-// ScriptStruct AI.AIPlayerVehicleStateInfo
+// ScriptStruct AI.VehicleAIPlayerState
 // 0x0008 (0x0020 - 0x0018)
-struct FAIPlayerVehicleStateInfo : public FAIStateInfoBase
+struct FVehicleAIPlayerState : public FAIStateInfoBase
 {
 	int                                                vehicle_role;                                             // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.AIVehicleStateInfo
-// 0x0118 (0x0138 - 0x0020)
-struct FAIVehicleStateInfo : public FUniqueStateInfo
+// ScriptStruct AI.VehicleDamageInfo
+// 0x0018 (0x0030 - 0x0018)
+struct FVehicleDamageInfo : public FAIStateInfoBase
 {
-	struct FAIPlayerVehicleStateInfo                   State;                                                    // 0x0020(0x0020)
-	struct FVehicleState                               vehicle_state;                                            // 0x0040(0x00D8)
-	TArray<struct FVehicleState>                       nearby_vehicles;                                          // 0x0118(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   nearby_vehicles_index;                                    // 0x0128(0x0010) (ZeroConstructor)
+	uint32_t                                           vehicle_id;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           PlayerKey;                                                // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Damage;                                                   // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                damage_type;                                              // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_kill;                                                  // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
 };
 
-// ScriptStruct AI.DiffAIVehicleStateInfoGeneral
-// 0x0140 (0x0160 - 0x0020)
-struct FDiffAIVehicleStateInfoGeneral : public FUniqueStateInfo
+// ScriptStruct AI.VehicleState
+// 0x00C8 (0x00E8 - 0x0020)
+struct FVehicleState : public FUniqueStateInfo
 {
-	struct FAIPlayerVehicleStateInfo                   State;                                                    // 0x0020(0x0020)
-	struct FVehicleState                               vehicle_state;                                            // 0x0040(0x00D8)
-	struct FDiffVehicleStatesGeneral                   nearby_vehicles;                                          // 0x0118(0x0038)
-	TArray<uint64_t>                                   nearby_vehicles_index;                                    // 0x0150(0x0010) (ZeroConstructor)
+	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Position;                                                 // 0x0024(0x000C)
+	struct FAIStateXYZ                                 Rotation;                                                 // 0x0030(0x000C)
+	float                                              HP;                                                       // 0x003C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              gas;                                                      // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Speed;                                                    // 0x0044(0x000C)
+	uint32_t                                           damaged_num;                                              // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Category;                                                 // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_reverse;                                               // 0x0058(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               has_player;                                               // 0x0059(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_full;                                                  // 0x005A(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x5];                                       // 0x005B(0x0005) MISSED OFFSET
+	struct FCameraState                                Camera;                                                   // 0x0060(0x0040)
+	int                                                location_state;                                           // 0x00A0(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_attached;                                              // 0x00A4(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x00A5(0x0003) MISSED OFFSET
+	uint32_t                                           special_states;                                           // 0x00A8(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x00AC(0x0004) MISSED OFFSET
+	TArray<float>                                      wheels_hp;                                                // 0x00B0(0x0010) (ZeroConstructor)
+	TArray<struct FVehicleDamageInfo>                  damage_info;                                              // 0x00C0(0x0010) (ZeroConstructor)
+	bool                                               is_has_collision;                                         // 0x00D0(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               is_using_horn;                                            // 0x00D1(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x2];                                       // 0x00D2(0x0002) MISSED OFFSET
+	uint32_t                                           born_island_owner_id;                                     // 0x00D4(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           vehicle_avatar_id;                                        // 0x00D8(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           custom_state;                                             // 0x00DC(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              special_energy;                                           // 0x00E0(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x4];                                       // 0x00E4(0x0004) MISSED OFFSET
 };
 
-// ScriptStruct AI.DiffAllPlayerVehicleInfoGeneral
+// ScriptStruct AI.VehicleAIStateInfo
+// 0x0128 (0x0148 - 0x0020)
+struct FVehicleAIStateInfo : public FUniqueStateInfo
+{
+	struct FVehicleAIPlayerState                       State;                                                    // 0x0020(0x0020)
+	struct FVehicleState                               vehicle_state;                                            // 0x0040(0x00E8)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0128(0x0010) MISSED OFFSET
+	TArray<uint64_t>                                   nearby_vehicles_index;                                    // 0x0138(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffVehicleAllPlayersInfo
 // 0x00F0 (0x0108 - 0x0018)
-struct FDiffAllPlayerVehicleInfoGeneral : public FAIStateInfoBase
+struct FDiffVehicleAllPlayersInfo : public FAIStateInfoBase
 {
-	TMap<uint32_t, struct FAIVehicleStateInfo>         AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIVehicleStateInfoGeneral> AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIVehicleStateInfo>         DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FVehicleAIStateInfo>         AllAIStateInfo;                                           // 0x0018(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FVehicleAIStateInfo>         AllDiffAIStateInfo;                                       // 0x0068(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FVehicleAIStateInfo>         DebugAllAIStateInfo;                                      // 0x00B8(0x0050) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffAIPlayerVehicleStateInfo
-// 0x0008 (0x0020 - 0x0018)
-struct FDiffAIPlayerVehicleStateInfo : public FAIStateInfoBase
-{
-	struct FDiffStateInfoInt32                         vehicle_role;                                             // 0x0018(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIVehicleStateInfo
-// 0x0100 (0x0120 - 0x0020)
-struct FDiffAIVehicleStateInfo : public FUniqueStateInfo
-{
-	struct FDiffAIPlayerVehicleStateInfo               State;                                                    // 0x0020(0x0020)
-	struct FDiffVehicleState                           vehicle_state;                                            // 0x0040(0x00A8)
-	struct FDiffVehicleStates                          nearby_vehicles;                                          // 0x00E8(0x0038)
-};
-
-// ScriptStruct AI.GlobalNearbyVehicleInfo
+// ScriptStruct AI.VehicleGlobalNearbyInfo
 // 0x0010 (0x0028 - 0x0018)
-struct FGlobalNearbyVehicleInfo : public FAIStateInfoBase
+struct FVehicleGlobalNearbyInfo : public FAIStateInfoBase
 {
 	TArray<struct FVehicleState>                       nearby_vehicles;                                          // 0x0018(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.GlobalVehicleState
+// ScriptStruct AI.VehicleGlobalGameState
 // 0x0038 (0x0050 - 0x0018)
-struct FGlobalVehicleState : public FAIStateInfoBase
+struct FVehicleGlobalGameState : public FAIStateInfoBase
 {
-	struct FGlobalNearbyVehicleInfo                    global_nearby_info;                                       // 0x0018(0x0028)
+	struct FVehicleGlobalNearbyInfo                    global_nearby_info;                                       // 0x0018(0x0028)
 	TArray<struct FAIStateXYZ>                         vehicle_spot_position;                                    // 0x0040(0x0010) (ZeroConstructor)
 };
 
-// ScriptStruct AI.DiffGlobalNearbyVehicleState
+// ScriptStruct AI.DiffVehicleStateList
+// 0x0020 (0x0038 - 0x0018)
+struct FDiffVehicleStateList : public FAIStateInfoBase
+{
+	TArray<struct FVehicleState>                       Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
+	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct AI.DiffVehicleGlobalNearbyInfo
 // 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyVehicleState : public FAIStateInfoBase
+struct FDiffVehicleGlobalNearbyInfo : public FAIStateInfoBase
 {
-	struct FDiffVehicleStates                          nearby_vehicles;                                          // 0x0018(0x0038)
+	struct FDiffVehicleStateList                       nearby_vehicles;                                          // 0x0018(0x0038)
 };
 
-// ScriptStruct AI.DiffGlobalVehicleState
-// 0x0050 (0x0068 - 0x0018)
-struct FDiffGlobalVehicleState : public FAIStateInfoBase
-{
-	struct FDiffGlobalNearbyVehicleState               global_nearby_info;                                       // 0x0018(0x0050)
-};
-
-// ScriptStruct AI.DiffAllPlayerVehicleInfo
-// 0x0338 (0x0350 - 0x0018)
-struct FDiffAllPlayerVehicleInfo : public FAIStateInfoBase
-{
-	TMap<uint32_t, struct FDiffAIVehicleStateInfo>     diff_states;                                              // 0x0018(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIVehicleStateInfo>         State;                                                    // 0x0068(0x0050) (ZeroConstructor)
-	struct FGlobalVehicleState                         global_state;                                             // 0x00B8(0x0050)
-	struct FDiffGlobalVehicleState                     diff_global_state;                                        // 0x0108(0x0068)
-	TMap<uint32_t, struct FAIVehicleStateInfo>         global_player_states;                                     // 0x0170(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIVehicleStateInfo>     global_player_diff_states;                                // 0x01C0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIVehicleStateInfo>         near_player_states;                                       // 0x0210(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIVehicleStateInfo>     near_player_diff_states;                                  // 0x0260(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIVehicleStateInfo>         global_btai_states;                                       // 0x02B0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FDiffAIVehicleStateInfo>     global_btai_diff_states;                                  // 0x0300(0x0050) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffGlobalNearbyVehicleStateGeneral
-// 0x0038 (0x0050 - 0x0018)
-struct FDiffGlobalNearbyVehicleStateGeneral : public FAIStateInfoBase
-{
-	struct FDiffVehicleStatesGeneral                   nearby_vehicles;                                          // 0x0018(0x0038)
-};
-
-// ScriptStruct AI.DiffGlobalVehicleStateGeneral
+// ScriptStruct AI.DiffVehicleGlobalGameState
 // 0x0060 (0x0078 - 0x0018)
-struct FDiffGlobalVehicleStateGeneral : public FAIStateInfoBase
+struct FDiffVehicleGlobalGameState : public FAIStateInfoBase
 {
-	struct FDiffGlobalNearbyVehicleStateGeneral        global_nearby_info;                                       // 0x0018(0x0050)
+	struct FDiffVehicleGlobalNearbyInfo                global_nearby_info;                                       // 0x0018(0x0050)
 	TArray<struct FAIStateXYZ>                         vehicle_spot_position;                                    // 0x0068(0x0010) (ZeroConstructor)
 };
 
@@ -3935,6 +2517,56 @@ struct FBTTaskParachuteJumpBaseMemory
 	unsigned char                                      UnknownData00[0x20];                                      // 0x0000(0x0020) MISSED OFFSET
 };
 
+// ScriptStruct AI.DiffDynamicItem
+// 0x0078 (0x0098 - 0x0020)
+struct FDiffDynamicItem : public FUniqueStateInfo
+{
+	int                                                Category;                                                 // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           ID;                                                       // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Center;                                                   // 0x0028(0x000C)
+	struct FAIStateXYZ                                 Rotation;                                                 // 0x0034(0x000C)
+	float                                              Durability;                                               // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Custom;                                                   // 0x0044(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Scale;                                                    // 0x0048(0x000C)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
+	struct FDiffAIAttributeList                        custom_attribute_list;                                    // 0x0058(0x0038)
+	int                                                parallel_world_id;                                        // 0x0090(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0094(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct AI.DiffSpecialZoneState
+// 0x0080 (0x00A0 - 0x0020)
+struct FDiffSpecialZoneState : public FUniqueStateInfo
+{
+	uint32_t                                           ID;                                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Center;                                                   // 0x0024(0x000C)
+	float                                              Radius;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Type;                                                     // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Position;                                                 // 0x0038(0x000C)
+	struct FAIStateXYZ                                 Rotation;                                                 // 0x0044(0x000C)
+	int                                                custom_state;                                             // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FAIStateXYZ                                 Scale;                                                    // 0x0054(0x000C)
+	uint32_t                                           extra_state;                                              // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Health;                                                   // 0x0064(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FDiffAIAttributeList                        custom_attribute_list;                                    // 0x0068(0x0038)
+};
+
+// ScriptStruct AI.GlobalGameStateMPBase
+// 0x0028 (0x0040 - 0x0018)
+struct FGlobalGameStateMPBase : public FAIStateInfoBase
+{
+	struct FMPBaseAIGameState                          Game;                                                     // 0x0018(0x0028)
+};
+
+// ScriptStruct AI.AIDamageSources
+// 0x0030 (0x0048 - 0x0018)
+struct FAIDamageSources : public FAIStateInfoBase
+{
+	TArray<struct FAIStateXYZ>                         damage_source;                                            // 0x0018(0x0010) (ZeroConstructor)
+	TArray<int>                                        damage_type;                                              // 0x0028(0x0010) (ZeroConstructor)
+	TArray<int>                                        damage_weapon_type;                                       // 0x0038(0x0010) (ZeroConstructor)
+};
+
 // ScriptStruct AI.DebugAIParamConfig
 // 0x0018
 struct FDebugAIParamConfig
@@ -3942,14 +2574,6 @@ struct FDebugAIParamConfig
 	int                                                DistMin;                                                  // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                DistMax;                                                  // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 	struct FString                                     NameAndDegree;                                            // 0x0008(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIWinnerState
-// 0x0008 (0x0020 - 0x0018)
-struct FAIWinnerState : public FDiffStateInfoBase
-{
-	int                                                team_id;                                                  // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                player_id;                                                // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct AI.DiffCmd
@@ -3965,134 +2589,11 @@ struct FDiffCmd
 	unsigned char                                      UnknownData00[0x10];                                      // 0x0030(0x0010) MISSED OFFSET
 };
 
-// ScriptStruct AI.DiffStateInfoUInt16
-// 0x0002
-struct FDiffStateInfoUInt16
-{
-	uint16_t                                           Value;                                                    // 0x0000(0x0002) (ZeroConstructor, IsPlainOldData)
-};
-
 // ScriptStruct AI.AIAttribute_CastEnergyWithCount
 // 0x001C
 struct FAIAttribute_CastEnergyWithCount
 {
 	unsigned char                                      UnknownData00[0x1C];                                      // 0x0000(0x001C) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIGameMPStateGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIGameMPStateGeneral : public FDiffStateInfoBase
-{
-	struct FDiffGameScoreDatas                         team_score_datas;                                         // 0x0018(0x0020)
-};
-
-// ScriptStruct AI.DiffGlobalGameMPState
-// 0x0028 (0x0040 - 0x0018)
-struct FDiffGlobalGameMPState : public FDiffStateInfoBase
-{
-	struct FAIGameStateMPBase                          Game;                                                     // 0x0018(0x0028)
-};
-
-// ScriptStruct AI.DiffAIGameMPState
-// 0x0010 (0x0028 - 0x0018)
-struct FDiffAIGameMPState : public FAIStateInfoBase
-{
-	TArray<struct FTeamScoreData>                      team_score_datas;                                         // 0x0018(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.AIGameMPState
-// 0x0010 (0x0028 - 0x0018)
-struct FAIGameMPState : public FAIStateInfoBase
-{
-	TArray<struct FTeamScoreData>                      team_score_datas;                                         // 0x0018(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIPlayerMPState
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIPlayerMPState : public FAIStateInfoBase
-{
-	struct FDiffStateInfoBool                          is_invincible;                                            // 0x0018(0x0001)
-	struct FDiffStateInfoBool                          in_shoveling;                                             // 0x0019(0x0001)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x001A(0x0002) MISSED OFFSET
-	struct FDiffStateInfoInt32                         death_count;                                              // 0x001C(0x0004)
-	struct FDiffStateInfoFloat                         survive_time;                                             // 0x0020(0x0004)
-	struct FDiffStateInfoFloat                         kd_ratio;                                                 // 0x0024(0x0004)
-	struct FDiffStateInfoInt32                         continue_kill;                                            // 0x0028(0x0004)
-	struct FDiffStateInfoInt32                         revenge;                                                  // 0x002C(0x0004)
-	struct FDiffStateInfoInt32                         top_spot_end;                                             // 0x0030(0x0004)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIGameModePlayerWeaponSchemeSlotInfo
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIGameModePlayerWeaponSchemeSlotInfo : public FAIStateInfoBase
-{
-	struct FDiffStateInfoInt32                         slot_index;                                               // 0x0018(0x0004)
-	struct FDiffStateInfoInt32                         item_id;                                                  // 0x001C(0x0004)
-	struct FDiffStateInfoInt32                         Count;                                                    // 0x0020(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
-	TArray<int>                                        attach_list;                                              // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIGameModePlayerWeaponSchemeSlotInfoList
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIGameModePlayerWeaponSchemeSlotInfoList : public FAIStateInfoBase
-{
-	TArray<struct FDiffAIGameModePlayerWeaponSchemeSlotInfo> slot_info;                                                // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffAIGameModePlayerWeaponSchemeInfo
-// 0x0040 (0x0058 - 0x0018)
-struct FDiffAIGameModePlayerWeaponSchemeInfo : public FAIStateInfoBase
-{
-	struct FDiffStateInfoInt32                         scheme_index;                                             // 0x0018(0x0004)
-	struct FDiffStateInfoBool                          is_locked;                                                // 0x001C(0x0001)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-	struct FDiffAIGameModePlayerWeaponSchemeSlotInfoList slot_list;                                                // 0x0020(0x0038)
-};
-
-// ScriptStruct AI.DiffAIGameModePlayerWeaponSchemeInfoList
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffAIGameModePlayerWeaponSchemeInfoList : public FAIStateInfoBase
-{
-	TArray<struct FDiffAIGameModePlayerWeaponSchemeInfo> weapon_scheme_info;                                       // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint32_t>                                   item_state;                                               // 0x0028(0x0010) (ZeroConstructor)
-};
-
-// ScriptStruct AI.DiffDeathMatchAIPlayerEquipment
-// 0x0040 (0x0058 - 0x0018)
-struct FDiffDeathMatchAIPlayerEquipment : public FAIStateInfoBase
-{
-	struct FDiffAIGameModePlayerWeaponSchemeInfoList   weapon_scheme_info_list;                                  // 0x0018(0x0038)
-	struct FDiffStateInfoInt32                         cur_weapon_scheme_index;                                  // 0x0050(0x0004)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
-};
-
-// ScriptStruct AI.DiffAIMPStateInfo
-// 0x0090 (0x00B0 - 0x0020)
-struct FDiffAIMPStateInfo : public FUniqueStateInfo
-{
-	struct FDiffAIPlayerMPState                        State;                                                    // 0x0020(0x0038)
-	struct FDiffDeathMatchAIPlayerEquipment            deathmatch_backpack;                                      // 0x0058(0x0058)
-};
-
-// ScriptStruct AI.DiffGlobalNearbyInfoBRBase
-// 0x00B8 (0x00D0 - 0x0018)
-struct FDiffGlobalNearbyInfoBRBase : public FAIStateInfoBase
-{
-	TArray<struct FDoorState>                          nearby_door;                                              // 0x0018(0x0010) (ZeroConstructor)
-	struct FDiffVehicleStates                          nearby_vehicles;                                          // 0x0028(0x0038)
-	struct FDiffDynamicItemStates                      dynamic_item_states;                                      // 0x0060(0x0038)
-	struct FDiffMonsterStates                          monster_states;                                           // 0x0098(0x0038)
-};
-
-// ScriptStruct AI.DiffObstacleStateGeneral
-// 0x0020 (0x0038 - 0x0018)
-struct FDiffObstacleStateGeneral : public FDiffStateInfoBase
-{
-	TArray<struct FObstacleState>                      Values;                                                   // 0x0018(0x0010) (ZeroConstructor)
-	TArray<uint64_t>                                   del_item_id;                                              // 0x0028(0x0010) (ZeroConstructor)
 };
 
 }

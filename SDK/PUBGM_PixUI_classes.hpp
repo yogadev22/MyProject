@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class PixUI.PixUIBrushWrapper
 // 0x0010 (0x0038 - 0x0028)
@@ -17,7 +17,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIBrushWrapper");
 		return pStaticClass;
@@ -34,7 +34,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIBPLibrary");
 		return pStaticClass;
@@ -66,7 +66,7 @@ public:
 	static void PixUI_SetExternalInterface(const TScriptInterface<class UPixUIExternalInterface>& scriptInterfaceExternal);
 	static void PixUI_SetExtBpCallSupportThrowException(bool bSupportThrowException);
 	static void PixUI_SetDynamicTextureUpdateMode(EPxDynamicTextureUpdateMode eUpdateMode);
-	static void PixUI_SetDynamicTextureFilter(TEnumAsByte<enum ETextureFilter> eTextureFilter);
+	static void PixUI_SetDynamicTextureFilter(TEnumAsByte<ETextureFilter> eTextureFilter);
 	static bool PixUI_SetDynamicLibraryPath(struct FString* strDynamicLibraryPath);
 	static void PixUI_SetDynamicFixFontSize(bool bOpenDynamicFix);
 	static void PixUI_SetDrawEffectNoPixelSnapping(bool bNoPixelSnapping);
@@ -122,7 +122,7 @@ public:
 	static struct FString PixUI_GetFontNameByIndex(int nIndex);
 	static bool PixUI_GetExtBpCallSupportThrowException();
 	static EPxDynamicTextureUpdateMode PixUI_GetDynamicTextureUpdateMode();
-	static TEnumAsByte<enum ETextureFilter> PixUI_GetDynamicTextureFilter();
+	static TEnumAsByte<ETextureFilter> PixUI_GetDynamicTextureFilter();
 	static bool PixUI_GetDrawEffectNoPixelSnapping();
 	static void PixUI_GetDefaultFontSize(int* nOutFontSize);
 	static void PixUI_GetDefaultFont(struct FString* strFontName);
@@ -157,13 +157,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIExternalInterface");
 		return pStaticClass;
 	}
 
 
+	bool OnWidgetUnload(class UWidget* pWidget);
 	class UWidget* OnWidgetLoad(const struct FString& strWidgetPath, const struct FString& strWidgetTag);
 	class UPixUIBrushWrapper* OnSlateBrushLoad(const struct FString& strBrushPath);
 	bool OnFileLoad(const struct FString& StrFilePath, const struct FScriptDelegate& callDelegate);
@@ -176,13 +177,13 @@ public:
 class UPixUIInput : public UObject
 {
 public:
-	struct FScriptDelegate                             DelegateActivateInput;                                    // 0x0028(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             DelegateDeactivateInput;                                  // 0x0038(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateActivateInput;                                    // 0x0028(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateDeactivateInput;                                  // 0x0038(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData00[0x18];                                      // 0x0048(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIInput");
 		return pStaticClass;
@@ -206,12 +207,12 @@ public:
 	struct FScriptMulticastDelegate                    DelegateOnScriptStateInit;                                // 0x0068(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnScriptStateDone;                                // 0x0078(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnInternalError;                                  // 0x0088(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             DelegateOnExternalOpen;                                   // 0x0098(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateOnExternalOpen;                                   // 0x0098(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    DelegateOnExternalClose;                                  // 0x00A8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnMessage;                                        // 0x00B8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnAlert;                                          // 0x00C8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             DelegateOnConfirm;                                        // 0x00D8(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             DelegateOnPrompt;                                         // 0x00E8(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateOnConfirm;                                        // 0x00D8(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateOnPrompt;                                         // 0x00E8(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    DelegateOnAppForeground;                                  // 0x00F8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnAppBackground;                                  // 0x0108(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	int                                                pxLibVersionTag;                                          // 0x0118(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -219,7 +220,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIRenderTarget");
 		return pStaticClass;
@@ -267,7 +268,7 @@ public:
 	struct FScriptMulticastDelegate                    DelegateOnScriptStateInit;                                // 0x0068(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnScriptStateDone;                                // 0x0078(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnInternalError;                                  // 0x0088(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             DelegateOnExternalOpen;                                   // 0x0098(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateOnExternalOpen;                                   // 0x0098(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    DelegateOnExternalClose;                                  // 0x00A8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnMessage;                                        // 0x00B8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnAppForeground;                                  // 0x00C8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
@@ -277,7 +278,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIScriptVM");
 		return pStaticClass;
@@ -317,14 +318,14 @@ public:
 class UPixUIViewPortWidget : public UUserWidget
 {
 public:
-	struct FScriptDelegate                             PixUIWidgetOpenDelegate;                                  // 0x0260(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             PixUIWidgetConfirmDelegate;                               // 0x0270(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             PixUIWidgetPromptDelegate;                                // 0x0280(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             PixUIWidgetOpenDelegate;                                  // 0x0260(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             PixUIWidgetConfirmDelegate;                               // 0x0270(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             PixUIWidgetPromptDelegate;                                // 0x0280(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0290(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIViewPortWidget");
 		return pStaticClass;
@@ -351,7 +352,7 @@ public:
 
 
 // Class PixUI.PixUIWidget
-// 0x0218 (0x0348 - 0x0130)
+// 0x0228 (0x0358 - 0x0130)
 class UPixUIWidget : public UCanvasPanel
 {
 public:
@@ -363,16 +364,16 @@ public:
 	struct FScriptMulticastDelegate                    DelegateOnScriptStateInit;                                // 0x0178(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnScriptStateDone;                                // 0x0188(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnInternalError;                                  // 0x0198(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             DelegateOnExternalOpen;                                   // 0x01A8(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateOnExternalOpen;                                   // 0x01A8(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    DelegateOnExternalClose;                                  // 0x01B8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnMessage;                                        // 0x01C8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnAlert;                                          // 0x01D8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             DelegateOnConfirm;                                        // 0x01E8(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             DelegateOnPrompt;                                         // 0x01F8(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateOnConfirm;                                        // 0x01E8(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateOnPrompt;                                         // 0x01F8(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    DelegateOnTransform;                                      // 0x0208(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnAppForeground;                                  // 0x0218(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    DelegateOnAppBackground;                                  // 0x0228(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             DelegateHookKeyEvent;                                     // 0x0238(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             DelegateHookKeyEvent;                                     // 0x0238(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	int                                                pxLibVersionTag;                                          // 0x0248(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsAsync;                                                 // 0x024C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsCoreLibAsync;                                          // 0x024D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -387,11 +388,11 @@ public:
 	bool                                               bPxSlotTopHit;                                            // 0x0273(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsRetainMode;                                            // 0x0274(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bNoPixelSnapping;                                         // 0x0275(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0xD2];                                      // 0x0276(0x00D2) MISSED OFFSET
+	unsigned char                                      UnknownData02[0xE2];                                      // 0x0276(0x00E2) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PixUIWidget");
 		return pStaticClass;
@@ -450,7 +451,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PxCustomDelegate");
 		return pStaticClass;
@@ -471,7 +472,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PxCustomInterfaceDyImp");
 		return pStaticClass;
@@ -491,7 +492,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PxFileLoad");
 		return pStaticClass;
@@ -511,7 +512,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PxSubLayerWidget");
 		return pStaticClass;
@@ -529,7 +530,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PxSubCtrlWidget");
 		return pStaticClass;
@@ -547,7 +548,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUI.PxSubNodeWidget");
 		return pStaticClass;

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum MovieSceneTracks.MovieScene3DPathSection_Axis
 enum class EMovieScene3DPathSection_Axis : uint8_t
@@ -51,9 +51,9 @@ enum class EParticleKey : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct MovieSceneTracks.MovieSceneTransformMask
 // 0x0004
@@ -81,7 +81,7 @@ struct FMovieSceneCameraShakeSectionData
 {
 	class UClass*                                      ShakeClass;                                               // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              PlayScale;                                                // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECameraAnimPlaySpace>             PlaySpace;                                                // 0x000C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECameraAnimPlaySpace>                  PlaySpace;                                                // 0x000C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x000D(0x0003) MISSED OFFSET
 	struct FRotator                                    UserDefinedPlaySpace;                                     // 0x0010(0x000C) (Edit, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
@@ -273,7 +273,7 @@ struct FMovieSceneAudioSectionTemplateData
 	bool                                               bOverrideAttenuation;                                     // 0x0104(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0105(0x0003) MISSED OFFSET
 	class USoundAttenuation*                           AttenuationSettings;                                      // 0x0108(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FScriptDelegate                             OnQueueSubtitles;                                         // 0x0110(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnQueueSubtitles;                                         // 0x0110(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnAudioFinished;                                          // 0x0120(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnAudioPlaybackPercent;                                   // 0x0130(0x0010) (ZeroConstructor, InstancedReference)
 };

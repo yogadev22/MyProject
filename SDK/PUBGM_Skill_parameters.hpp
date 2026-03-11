@@ -1,20 +1,20 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Skill.UTSkill.VerifyServerSkillData
 struct AUTSkill_VerifyServerSkillData_Params
 {
 	class UUTSkillManagerComponent*                    SkillManagerComponent;                                    // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                InEventType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     InEventType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -36,7 +36,7 @@ struct AUTSkill_ResetSkillCoolDown_Params
 struct AUTSkill_OnEvent_Params
 {
 	class UUTSkillManagerComponent*                    SkillManagerComponent;                                    // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                TheEventType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     TheEventType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                PhaseIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -68,7 +68,7 @@ struct AUTSkill_IsCDOK_Params
 struct AUTSkill_HandleVerifyServerSkillDataFail_Params
 {
 	class UUTSkillManagerComponent*                    SkillManagerComponent;                                    // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                InEventType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     InEventType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Skill.UTSkill.GetSpecificSkillManager
@@ -210,7 +210,7 @@ struct UUTSkillManagerComponent_TriggerSkillWithID_Params
 // Function Skill.UTSkillManagerComponent.TriggerLocalEventWithID
 struct UUTSkillManagerComponent_TriggerLocalEventWithID_Params
 {
-	TEnumAsByte<enum EUTSkillEventType>                SkillEventType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     SkillEventType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -218,7 +218,7 @@ struct UUTSkillManagerComponent_TriggerLocalEventWithID_Params
 // Function Skill.UTSkillManagerComponent.TriggerEventWithID
 struct UUTSkillManagerComponent_TriggerEventWithID_Params
 {
-	TEnumAsByte<enum EUTSkillEventType>                SkillEventType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     SkillEventType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -227,7 +227,7 @@ struct UUTSkillManagerComponent_TriggerEventWithID_Params
 struct UUTSkillManagerComponent_TriggerEvent_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Skill.UTSkillManagerComponent.TraceTarget
@@ -379,7 +379,7 @@ struct UUTSkillManagerComponent_SetAllSkillCDTimeScale_Params
 struct UUTSkillManagerComponent_ServerTriggerEvent_WithParamsAndTssData_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	uint64_t                                           InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<unsigned char>                              Content;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 	TArray<unsigned char>                              TssData;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
@@ -390,7 +390,7 @@ struct UUTSkillManagerComponent_ServerTriggerEvent_WithParamsAndTssData_Params
 struct UUTSkillManagerComponent_ServerTriggerEvent_WithParams_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	uint64_t                                           InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<unsigned char>                              Content;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 	uint64_t                                           PackageIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
@@ -400,7 +400,7 @@ struct UUTSkillManagerComponent_ServerTriggerEvent_WithParams_Params
 struct UUTSkillManagerComponent_ServerTriggerEvent_WithIDAndTssData_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	uint64_t                                           InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<unsigned char>                              TssData;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 	uint64_t                                           PackageIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
@@ -410,7 +410,7 @@ struct UUTSkillManagerComponent_ServerTriggerEvent_WithIDAndTssData_Params
 struct UUTSkillManagerComponent_ServerTriggerEvent_WithID_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	uint64_t                                           InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	uint64_t                                           PackageIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -419,7 +419,7 @@ struct UUTSkillManagerComponent_ServerTriggerEvent_WithID_Params
 struct UUTSkillManagerComponent_ServerTriggerEvent_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Skill.UTSkillManagerComponent.ServerStopSkill
@@ -518,7 +518,7 @@ struct UUTSkillManagerComponent_RecordSkillException_Params
 {
 	class AActor*                                      InActor;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                InSkillID;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ENetRole>                         InRole;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              InRole;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     InNetMode;                                                // (Parm, ZeroConstructor)
 	struct FString                                     InFuncName;                                               // (Parm, ZeroConstructor)
 };
@@ -767,14 +767,14 @@ struct UUTSkillManagerComponent_IsCastingSkill_Params
 struct UUTSkillManagerComponent_HandleTriggerParamsEventFail_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Skill.UTSkillManagerComponent.HandleTriggerParamsEvent
 struct UUTSkillManagerComponent_HandleTriggerParamsEvent_Params
 {
 	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -938,7 +938,7 @@ struct UUTSkillManagerComponent_GetReplacedSkill_Params
 // Function Skill.UTSkillManagerComponent.GetRealOwnerRoleSafety
 struct UUTSkillManagerComponent_GetRealOwnerRoleSafety_Params
 {
-	TEnumAsByte<enum ENetRole>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Skill.UTSkillManagerComponent.GetMutexRelation
@@ -946,7 +946,7 @@ struct UUTSkillManagerComponent_GetMutexRelation_Params
 {
 	class AUTSkill*                                    CurSkill;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	class AUTSkill*                                    NewSkill;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESkillMutexType>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ESkillMutexType>                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Skill.UTSkillManagerComponent.GetLastCastTime
@@ -1072,6 +1072,7 @@ struct UUTSkillManagerComponent_ClientStopOneSkill_Params
 {
 	uint64_t                                           InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bSinglePhaseRep;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	EUTSkillStopReason                                 StopReason;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Skill.UTSkillManagerComponent.ClientStartSkill
@@ -1148,6 +1149,12 @@ struct UUTSkillBaseWidget_GetUAEBlackboard_Params
 struct UUTSkillBaseWidget_GetOwnerSkillManager_Params
 {
 	class UUTSkillManagerComponent*                    ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function Skill.UTSkillBaseWidget.GetOwnerSkillID
+struct UUTSkillBaseWidget_GetOwnerSkillID_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Skill.UTSkillBaseWidget.GetOwnerPawn
@@ -1363,6 +1370,12 @@ struct UUTSkillCondition_GetOwnerSkill_Params
 	class AUTSkill*                                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Skill.UTSkillInterface.IsNeedCheckAutoSkill
+struct UUTSkillInterface_IsNeedCheckAutoSkill_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Skill.UTSkillInterface.HasSkillToken
 struct UUTSkillInterface_HasSkillToken_Params
 {
@@ -1458,7 +1471,7 @@ struct UUTSkillPhase_PickTargets_Params
 struct UUTSkillPhase_OnEvent_Params
 {
 	class UUTSkillManagerComponent*                    SkillManagerComponent;                                    // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                TheEventType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     TheEventType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -1466,7 +1479,7 @@ struct UUTSkillPhase_OnEvent_Params
 struct UUTSkillPhase_OnCustomEvent_Params
 {
 	class UUTSkillManagerComponent*                    SkillManagerComponent;                                    // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                TheEventType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     TheEventType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -1585,7 +1598,7 @@ struct USharedDelegate_EventTrigger_Params
 // Function Skill.SkillTriggerData.GetSkillEventType
 struct USkillTriggerData_GetSkillEventType_Params
 {
-	TEnumAsByte<enum EUTSkillEventType>                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Skill.UTSkillAction_LuaContainer.UpdateActionInContainer
@@ -2213,14 +2226,14 @@ struct UUTSkillNodeBlackboardInterface_GetUAEBlackboard_Params
 // Function Skill.UTSkillNodeBlackboardInterface.AddValueByKeySelector
 struct UUTSkillNodeBlackboardInterface_AddValueByKeySelector_Params
 {
-	TEnumAsByte<enum EUAEBlackboardType>               BBType;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUAEBlackboardType>                    BBType;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FUAEBlackboardKeySelector                   Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function Skill.UTSkillNodeBlackboardInterface.AddValueByKeName
 struct UUTSkillNodeBlackboardInterface_AddValueByKeName_Params
 {
-	TEnumAsByte<enum EUAEBlackboardType>               BBType;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUAEBlackboardType>                    BBType;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       KeyName;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 };
 

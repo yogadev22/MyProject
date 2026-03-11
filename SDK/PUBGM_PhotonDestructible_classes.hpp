@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class PhotonDestructible.PhotonDestructibleSurfaceComponent
 // 0x0070 (0x0BA0 - 0x0B30)
@@ -14,8 +14,8 @@ class UPhotonDestructibleSurfaceComponent : public UStaticMeshComponent
 {
 public:
 	unsigned char                                      UnknownData00[0x10];                                      // 0x0B30(0x0010) MISSED OFFSET
-	TEnumAsByte<enum EFracturedAxis>                   MaskUAxis;                                                // 0x0B40(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFracturedAxis>                   MaskVAxis;                                                // 0x0B41(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFracturedAxis>                        MaskUAxis;                                                // 0x0B40(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFracturedAxis>                        MaskVAxis;                                                // 0x0B41(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x0B42(0x0006) MISSED OFFSET
 	class UTexture2D*                                  MaskTexture2D;                                            // 0x0B48(0x0008) (Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData)
 	struct FPDSurfaceNetData                           SurfaceNetData;                                           // 0x0B50(0x0018) (Net)
@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleSurfaceComponent");
 		return pStaticClass;
@@ -43,8 +43,8 @@ class UPhotonDestructibleInstancedSurfaceComponent : public UHierarchicalInstanc
 {
 public:
 	unsigned char                                      UnknownData00[0x10];                                      // 0x0D70(0x0010) MISSED OFFSET
-	TEnumAsByte<enum EFracturedAxis>                   MaskUAxis;                                                // 0x0D80(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFracturedAxis>                   MaskVAxis;                                                // 0x0D81(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFracturedAxis>                        MaskUAxis;                                                // 0x0D80(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFracturedAxis>                        MaskVAxis;                                                // 0x0D81(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x0D82(0x0006) MISSED OFFSET
 	class UMaterialInterface*                          Texture2DArrayMaterial;                                   // 0x0D88(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	class UMaterialInterface*                          AtlasMaterial;                                            // 0x0D90(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
@@ -54,7 +54,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleInstancedSurfaceComponent");
 		return pStaticClass;
@@ -75,7 +75,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.FEdgeData");
 		return pStaticClass;
@@ -102,7 +102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.FracturedFragmentInfo");
 		return pStaticClass;
@@ -119,7 +119,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.MaterialExpressionObjectLocalPosition");
 		return pStaticClass;
@@ -136,7 +136,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.MaterialExpressionGetPDInstancedSurfaceMask");
 		return pStaticClass;
@@ -154,7 +154,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleAtlasPool");
 		return pStaticClass;
@@ -176,7 +176,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleMgr");
 		return pStaticClass;
@@ -194,7 +194,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructiblePuppet");
 		return pStaticClass;
@@ -215,7 +215,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructiblePuppetContainer");
 		return pStaticClass;
@@ -235,7 +235,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructiblePuppetMgr");
 		return pStaticClass;
@@ -254,7 +254,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructiblePuppetTarget");
 		return pStaticClass;
@@ -273,7 +273,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleSurfaceActor");
 		return pStaticClass;
@@ -292,7 +292,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleInstancedSurfaceActor");
 		return pStaticClass;
@@ -309,7 +309,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleSurfaceActorBase");
 		return pStaticClass;
@@ -326,7 +326,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleInstancedSurfaceActorBase");
 		return pStaticClass;
@@ -343,7 +343,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleSurfaceBase");
 		return pStaticClass;
@@ -361,7 +361,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleSurfaceConfig");
 		return pStaticClass;
@@ -381,7 +381,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleSurfaceMask");
 		return pStaticClass;
@@ -399,7 +399,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleTexture2DArrayManager");
 		return pStaticClass;
@@ -417,7 +417,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PhotonDestructible.PhotonDestructibleTexturePool");
 		return pStaticClass;

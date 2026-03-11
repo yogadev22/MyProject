@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum Client.FCDNDownloaderStateEnum
 enum class EFCDNDownloaderStateEnum : uint8_t
@@ -415,9 +415,9 @@ enum class EButtonClickSoundTypes : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct Client.BattleGameInfo
 // 0x0038
@@ -634,14 +634,14 @@ struct FDynamicWidgetAsyncLoadData
 {
 	struct FString                                     WidgetKey;                                                // 0x0000(0x0010) (ZeroConstructor)
 	struct FDynamicWidgetData                          DynamicWidgetData;                                        // 0x0010(0x0098)
-	struct FScriptDelegate                             Callback;                                                 // 0x00A8(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x00A8(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct Client.LobbyBgMatData
 // 0x0010
 struct FLobbyBgMatData
 {
-	TEnumAsByte<enum ELobbyBgMatType>                  matType;                                                  // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
+	TEnumAsByte<ELobbyBgMatType>                       matType;                                                  // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class UMaterialInstance*                           matPtr;                                                   // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 };
@@ -719,7 +719,7 @@ struct FCustomSettingSaveGame
 struct FAssetAsyncRequest
 {
 	struct FString                                     Path;                                                     // 0x0000(0x0010) (ZeroConstructor)
-	struct FScriptDelegate                             Callback;                                                 // 0x0010(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x0010(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct Client.MetaDataHolder
@@ -1015,7 +1015,7 @@ struct FNoticeInfos
 };
 
 // ScriptStruct Client.UEComplianceResult
-// 0x00A8
+// 0x00E0
 struct FUEComplianceResult
 {
 	int                                                AdultStatus;                                              // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -1037,6 +1037,14 @@ struct FUEComplianceResult
 	struct FString                                     Region;                                                   // 0x0078(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	struct FString                                     RetMsg;                                                   // 0x0088(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	struct FString                                     ExtraJson;                                                // 0x0098(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	int                                                VoiceControlStatus;                                       // 0x00A8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                NeedAdultVerification;                                    // 0x00AC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                AdultVerificationStatus;                                  // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                NeedParentAdultVerification;                              // 0x00B4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                ParentAdultVerificationStatus;                            // 0x00B8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x00BC(0x0004) MISSED OFFSET
+	struct FString                                     AdultVerificationCompleteTS;                              // 0x00C0(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	struct FString                                     ParentAdultVerificationCompleteTS;                        // 0x00D0(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct Client.ArrayLuaBPVar

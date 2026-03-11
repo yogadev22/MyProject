@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class TPlanGame.BackpackComponentTPlan
 // 0x0008 (0x05F0 - 0x05E8)
@@ -18,7 +18,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.BackpackComponentTPlan");
 		return pStaticClass;
@@ -45,7 +45,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.BackpackTPlanUtils");
 		return pStaticClass;
@@ -59,14 +59,14 @@ public:
 
 
 // Class TPlanGame.BackpackBlueprintTPlanUtils
-// 0x0000 (0x0B30 - 0x0B30)
+// 0x0000 (0x0B98 - 0x0B98)
 class UBackpackBlueprintTPlanUtils : public UBackpackBlueprintUtils
 {
 public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.BackpackBlueprintTPlanUtils");
 		return pStaticClass;
@@ -89,7 +89,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.MetroStoreComponent");
 		return pStaticClass;
@@ -114,7 +114,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.TPlanPickupItemUsefulProxy");
 		return pStaticClass;
@@ -124,31 +124,31 @@ public:
 
 
 // Class TPlanGame.XTGameMode
-// 0x0058 (0x2428 - 0x23D0)
+// 0x0058 (0x2420 - 0x23C8)
 class AXTGameMode : public ABattleRoyaleGameModeTeam
 {
 public:
-	TArray<class AActor*>                              OccupiedPlayerStartGroupList;                             // 0x23D0(0x0010) (ZeroConstructor)
-	TArray<class ASTExtraPlayerStartGroup*>            UnOccupiedPlayerStartGroupList;                           // 0x23E0(0x0010) (ZeroConstructor)
-	bool                                               IsResetPlayerStart;                                       // 0x23F0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x23F1(0x0003) MISSED OFFSET
-	float                                              LastCheckAITime;                                          // 0x23F4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	float                                              CheckAIActiveInterval;                                    // 0x23F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	float                                              CheckAIActiveRange;                                       // 0x23FC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	int                                                DogTagID;                                                 // 0x2400(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	int                                                BetrayAIDropID;                                           // 0x2404(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	int                                                BetrayAIDropDot;                                          // 0x2408(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bPreSpawnPlayers;                                         // 0x240C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bEnableEcapedPlayerInTeam;                                // 0x240D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bZombiePVEMode;                                           // 0x240E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bMapLoaded;                                               // 0x240F(0x0001) (ZeroConstructor, IsPlainOldData)
-	int                                                iRandomPolicestationIndex;                                // 0x2410(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x2414(0x0004) MISSED OFFSET
-	TArray<struct FName>                               LoadingPlayerState;                                       // 0x2418(0x0010) (Edit, BlueprintVisible, ZeroConstructor, Config)
+	TArray<class AActor*>                              OccupiedPlayerStartGroupList;                             // 0x23C8(0x0010) (ZeroConstructor)
+	TArray<class ASTExtraPlayerStartGroup*>            UnOccupiedPlayerStartGroupList;                           // 0x23D8(0x0010) (ZeroConstructor)
+	bool                                               IsResetPlayerStart;                                       // 0x23E8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x23E9(0x0003) MISSED OFFSET
+	float                                              LastCheckAITime;                                          // 0x23EC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	float                                              CheckAIActiveInterval;                                    // 0x23F0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	float                                              CheckAIActiveRange;                                       // 0x23F4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	int                                                DogTagID;                                                 // 0x23F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	int                                                BetrayAIDropID;                                           // 0x23FC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	int                                                BetrayAIDropDot;                                          // 0x2400(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bPreSpawnPlayers;                                         // 0x2404(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bEnableEcapedPlayerInTeam;                                // 0x2405(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bZombiePVEMode;                                           // 0x2406(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bMapLoaded;                                               // 0x2407(0x0001) (ZeroConstructor, IsPlainOldData)
+	int                                                iRandomPolicestationIndex;                                // 0x2408(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x240C(0x0004) MISSED OFFSET
+	TArray<struct FName>                               LoadingPlayerState;                                       // 0x2410(0x0010) (Edit, BlueprintVisible, ZeroConstructor, Config)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.XTGameMode");
 		return pStaticClass;
@@ -181,7 +181,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.XTGameModeStateFightingTeam");
 		return pStaticClass;
@@ -198,7 +198,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.XTGameModeStateFinished");
 		return pStaticClass;
@@ -215,7 +215,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.XTGameModeStateReady");
 		return pStaticClass;
@@ -225,17 +225,17 @@ public:
 
 
 // Class TPlanGame.XTGameState
-// 0x0058 (0x15F8 - 0x15A0)
+// 0x0058 (0x1628 - 0x15D0)
 class AXTGameState : public ASTExtraGameStateBase
 {
 public:
-	float                                              LastLeaveTime;                                            // 0x15A0(0x0004) (Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x15A4(0x0004) MISSED OFFSET
-	TMap<int, int>                                     PreciousItemMap;                                          // 0x15A8(0x0050) (ZeroConstructor)
+	float                                              LastLeaveTime;                                            // 0x15D0(0x0004) (Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x15D4(0x0004) MISSED OFFSET
+	TMap<int, int>                                     PreciousItemMap;                                          // 0x15D8(0x0050) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.XTGameState");
 		return pStaticClass;
@@ -269,7 +269,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class TPlanGame.XTPlayerState");
 		return pStaticClass;

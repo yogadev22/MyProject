@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Skill.UTSkill
 // 0x0270 (0x07E0 - 0x0570)
@@ -60,21 +60,21 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkill");
 		return pStaticClass;
 	}
 
 
-	bool VerifyServerSkillData(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> InEventType);
+	bool VerifyServerSkillData(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> InEventType);
 	void StopSkillCoolDown(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex);
 	void ResetSkillCoolDown(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex);
-	bool OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> TheEventType, int PhaseIndex);
+	bool OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> TheEventType, int PhaseIndex);
 	bool JumpToPhase(class UUTSkillManagerComponent* SkillManagerComponent, int PhaseId);
 	bool IsEnableSkillCoolDown(class UUTSkillManagerComponent* SkillManagerComponent);
 	bool IsCDOK(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex);
-	void HandleVerifyServerSkillDataFail(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> InEventType);
+	void HandleVerifyServerSkillDataFail(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> InEventType);
 	class UUTSkillManagerComponent* GetSpecificSkillManager();
 	class UUAEBlackboard* GetSpecificBlackboard();
 	class UUTSkillPhase* GetSkillPhaseByName(const struct FString& PhaseName);
@@ -92,7 +92,7 @@ public:
 
 
 // Class Skill.UTSkillManagerComponent
-// 0x0C80 (0x0EB8 - 0x0238)
+// 0x0C90 (0x0EC8 - 0x0238)
 class UUTSkillManagerComponent : public ULuaActorComponent
 {
 public:
@@ -103,10 +103,7 @@ public:
 	unsigned char                                      UnknownData02[0x8];                                       // 0x02B0(0x0008) MISSED OFFSET
 	bool                                               bEnableSkillCoolDown;                                     // 0x02B8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bGMDirectTriggerSkill;                                    // 0x02B9(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableSkillBlackboradIDSync;                             // 0x02BA(0x0001) (Net, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableSkillNetBytesData;                                 // 0x02BB(0x0001) (Net, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableSkillEncrypt;                                      // 0x02BC(0x0001) (Net, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x02BD(0x0003) MISSED OFFSET
+	unsigned char                                      UnknownData03[0x6];                                       // 0x02BA(0x0006) MISSED OFFSET
 	class AActor*                                      OwnerActor;                                               // 0x02C0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               DestroySkillsOnDie;                                       // 0x02C8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData04[0x7];                                       // 0x02C9(0x0007) MISSED OFFSET
@@ -142,27 +139,28 @@ public:
 	struct FScriptMulticastDelegate                    SkillPhaseChangeEvent;                                    // 0x0968(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    SkillLevelChangeEvent;                                    // 0x0978(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    SkillSkinIDChangeEvent;                                   // 0x0988(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    SkillUpdateCDEvent;                                       // 0x0998(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	TArray<int>                                        PendingRemoveSkillID;                                     // 0x09A8(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData08[0x50];                                      // 0x09B8(0x0050) MISSED OFFSET
-	TArray<struct FUTReplaceSkillData>                 ReplacedSkillDatas;                                       // 0x0A08(0x0010) (BlueprintVisible, Net, ZeroConstructor)
-	TMap<int, struct FSkillDisableKeySet>              DisableSkillTagsMap;                                      // 0x0A18(0x0050) (ZeroConstructor)
-	TMap<int, struct FSkillDisableKeySet>              DisableSkillIDsMap;                                       // 0x0A68(0x0050) (ZeroConstructor)
-	TMap<int, struct FSkillLimitKeySet>                LimitSkillTagsMap;                                        // 0x0AB8(0x0050) (ZeroConstructor)
-	TMap<int, struct FSkillLimitKeySet>                LimitSkillIDMap;                                          // 0x0B08(0x0050) (ZeroConstructor)
-	struct FMultiSkillSynData                          NewSkillSynData;                                          // 0x0B58(0x00F0) (BlueprintVisible, Net)
-	struct FSkillSinglePhaseData                       NewSkillSinglePhaseData;                                  // 0x0C48(0x00F0) (BlueprintVisible, Net)
-	unsigned char                                      UnknownData09[0x8];                                       // 0x0D38(0x0008) MISSED OFFSET
-	TMap<uint64_t, struct FUTSkillSimulateData>        SkillSimulateDataMap;                                     // 0x0D40(0x0050) (ZeroConstructor)
-	unsigned char                                      UnknownData10[0x50];                                      // 0x0D90(0x0050) UNKNOWN PROPERTY: SetProperty Skill.UTSkillManagerComponent.AsyncLoadingSkillInst
-	struct FUTSkillExecQueue                           SkillExecQueue;                                           // 0x0DE0(0x00B0)
-	uint64_t                                           NetClientSimulateInstID;                                  // 0x0E90(0x0008) (Net, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData11[0x10];                                      // 0x0E98(0x0010) MISSED OFFSET
-	struct FScriptMulticastDelegate                    CreativeSkillDelegate;                                    // 0x0EA8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    SkillDoCoolDownEvent;                                     // 0x0998(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    SkillUpdateCDEvent;                                       // 0x09A8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	TArray<int>                                        PendingRemoveSkillID;                                     // 0x09B8(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData08[0x50];                                      // 0x09C8(0x0050) MISSED OFFSET
+	TArray<struct FUTReplaceSkillData>                 ReplacedSkillDatas;                                       // 0x0A18(0x0010) (BlueprintVisible, Net, ZeroConstructor)
+	TMap<int, struct FSkillDisableKeySet>              DisableSkillTagsMap;                                      // 0x0A28(0x0050) (ZeroConstructor)
+	TMap<int, struct FSkillDisableKeySet>              DisableSkillIDsMap;                                       // 0x0A78(0x0050) (ZeroConstructor)
+	TMap<int, struct FSkillLimitKeySet>                LimitSkillTagsMap;                                        // 0x0AC8(0x0050) (ZeroConstructor)
+	TMap<int, struct FSkillLimitKeySet>                LimitSkillIDMap;                                          // 0x0B18(0x0050) (ZeroConstructor)
+	struct FMultiSkillSynData                          NewSkillSynData;                                          // 0x0B68(0x00F0) (BlueprintVisible, Net)
+	struct FSkillSinglePhaseData                       NewSkillSinglePhaseData;                                  // 0x0C58(0x00F0) (BlueprintVisible, Net)
+	unsigned char                                      UnknownData09[0x8];                                       // 0x0D48(0x0008) MISSED OFFSET
+	TMap<uint64_t, struct FUTSkillSimulateData>        SkillSimulateDataMap;                                     // 0x0D50(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData10[0x50];                                      // 0x0DA0(0x0050) UNKNOWN PROPERTY: SetProperty Skill.UTSkillManagerComponent.AsyncLoadingSkillInst
+	struct FUTSkillExecQueue                           SkillExecQueue;                                           // 0x0DF0(0x00B0)
+	uint64_t                                           NetClientSimulateInstID;                                  // 0x0EA0(0x0008) (Net, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData11[0x10];                                      // 0x0EA8(0x0010) MISSED OFFSET
+	struct FScriptMulticastDelegate                    CreativeSkillDelegate;                                    // 0x0EB8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillManagerComponent");
 		return pStaticClass;
@@ -175,9 +173,9 @@ public:
 	void TryAddOneSkill(int SkillID, bool bActive, int ButtonSlot);
 	bool TriggerSkillWithParams(int SkillID, TArray<struct FString> InKeyStrings, bool bEnable);
 	bool TriggerSkillWithID(int SkillID, bool bEnable);
-	bool TriggerLocalEventWithID(TEnumAsByte<enum EUTSkillEventType> SkillEventType, int SkillID);
-	bool TriggerEventWithID(TEnumAsByte<enum EUTSkillEventType> SkillEventType, int SkillID);
-	void TriggerEvent(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType);
+	bool TriggerLocalEventWithID(TEnumAsByte<EUTSkillEventType> SkillEventType, int SkillID);
+	bool TriggerEventWithID(TEnumAsByte<EUTSkillEventType> SkillEventType, int SkillID);
+	void TriggerEvent(int SkillID, TEnumAsByte<EUTSkillEventType> EventType);
 	bool TraceTarget(const struct FVector& StartTrace, const struct FVector& EndTrace, EUTPickerTargetType TargetType, float Radius, class AActor** TargetActor);
 	void SyncOneSkillState(bool RepSkillCD, bool RepSkillActiveState, int RequestID);
 	void StopSkillAll(EUTSkillStopReason StopReason);
@@ -197,11 +195,11 @@ public:
 	bool SetSkillActive(int SkillID, bool bActive, bool bForceSet, int ButtonSlot);
 	void SetAutoSkillID(int InSkillID);
 	void SetAllSkillCDTimeScale(float Scale);
-	void ServerTriggerEvent_WithParamsAndTssData(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, TArray<unsigned char> TssData, uint64_t PackageIndex);
-	void ServerTriggerEvent_WithParams(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, uint64_t PackageIndex);
-	void ServerTriggerEvent_WithIDAndTssData(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> TssData, uint64_t PackageIndex);
-	void ServerTriggerEvent_WithID(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, uint64_t PackageIndex);
-	void ServerTriggerEvent(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType);
+	void ServerTriggerEvent_WithParamsAndTssData(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, TArray<unsigned char> TssData, uint64_t PackageIndex);
+	void ServerTriggerEvent_WithParams(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, uint64_t PackageIndex);
+	void ServerTriggerEvent_WithIDAndTssData(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> TssData, uint64_t PackageIndex);
+	void ServerTriggerEvent_WithID(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, uint64_t PackageIndex);
+	void ServerTriggerEvent(int SkillID, TEnumAsByte<EUTSkillEventType> EventType);
 	void ServerStopSkill(int SkillID, EUTSkillStopReason StopReason);
 	void ServerStopAllSkill(EUTSkillStopReason StopReason);
 	bool ServerStartSkill(int SkillID, bool bAutoCast);
@@ -217,7 +215,7 @@ public:
 	void RemoveAllSkillUIWidget();
 	void RegisterActorBlackBorad(class AActor* InActor, class UUAEBlackboard* RegisterBlackboard);
 	void RefreshSkillRepData();
-	void RecordSkillException(class AActor* InActor, int InSkillID, TEnumAsByte<enum ENetRole> InRole, const struct FString& InNetMode, const struct FString& InFuncName);
+	void RecordSkillException(class AActor* InActor, int InSkillID, TEnumAsByte<ENetRole> InRole, const struct FString& InNetMode, const struct FString& InFuncName);
 	int RandRangeSyn(int StartIndex, int EndIndex);
 	class AUTSkill* QuerySkill(int SkillID);
 	class AUTSkill* QueryOrNewSkill(int SkillID);
@@ -257,8 +255,8 @@ public:
 	bool IsCastingSkillTag(int InSkillTag);
 	bool IsCastingSkillID(int InSkillID);
 	bool IsCastingSkill();
-	void HandleTriggerParamsEventFail(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType);
-	bool HandleTriggerParamsEvent(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType);
+	void HandleTriggerParamsEventFail(int SkillID, TEnumAsByte<EUTSkillEventType> EventType);
+	bool HandleTriggerParamsEvent(int SkillID, TEnumAsByte<EUTSkillEventType> EventType);
 	void HandleSkillStop(int SkillID, class AUTSkill* InSkill, EUTSkillStopReason StopReason);
 	void HandleSkillStart(int SkillID, class AUTSkill* InSkill);
 	bool HandleGMDirectTriggerSkillEvent(int SkillID, int SkillPlayRet);
@@ -281,8 +279,8 @@ public:
 	struct FUTSkillRuntimeData GetSkillBaseData(int SkillID);
 	class AUTSkill* GetSkill(int SkillID);
 	int GetReplacedSkill(int OldSkillID);
-	TEnumAsByte<enum ENetRole> GetRealOwnerRoleSafety();
-	TEnumAsByte<enum ESkillMutexType> GetMutexRelation(class AUTSkill* CurSkill, class AUTSkill* NewSkill);
+	TEnumAsByte<ENetRole> GetRealOwnerRoleSafety();
+	TEnumAsByte<ESkillMutexType> GetMutexRelation(class AUTSkill* CurSkill, class AUTSkill* NewSkill);
 	float GetLastCastTime(int SkillID);
 	float GetLastCastFinishTime(int SkillID);
 	TArray<class AUTSkill*> GetCurSkills();
@@ -301,7 +299,7 @@ public:
 	void ClientTriggerEventSuccess_WithID(int SkillID, uint64_t PackageIndex);
 	void ClientTriggerEventFailed_WithID(int SkillID, ETriggerSkillFailed FailedReason, uint64_t PackageIndex);
 	void ClientStopPreActionSkill(int SkillID, uint64_t InstID);
-	void ClientStopOneSkill(uint64_t InstID, bool bSinglePhaseRep);
+	void ClientStopOneSkill(uint64_t InstID, bool bSinglePhaseRep, EUTSkillStopReason StopReason);
 	void ClientStartSkill(int SkillID, bool bAutoCast);
 	void ClientSimulateOneSkill(uint64_t InstID, int SkillID, int PhaseIndex, bool bSinglePhaseRep);
 	void ClearSkill(bool bStopAllSkill, bool bDeactivateAllSkill, bool bResetSkillCD);
@@ -328,7 +326,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillBaseWidget");
 		return pStaticClass;
@@ -338,6 +336,7 @@ public:
 	bool IsSetValueAsNewDataWhenNotExist(const struct FName& KeyName);
 	class UUAEBlackboard* GetUAEBlackboard();
 	class UUTSkillManagerComponent* GetOwnerSkillManager();
+	int GetOwnerSkillID();
 	class AActor* GetOwnerPawn();
 };
 
@@ -351,7 +350,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillEffect");
 		return pStaticClass;
@@ -382,7 +381,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillAction");
 		return pStaticClass;
@@ -413,12 +412,12 @@ class UUTSkillCondition : public UUTSkillBaseWidget
 {
 public:
 	bool                                               bTickCheckCondition;                                      // 0x0078(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESkillConditionRole>              ConditionRole;                                            // 0x0079(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESkillConditionRole>                   ConditionRole;                                            // 0x0079(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x007A(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillCondition");
 		return pStaticClass;
@@ -440,7 +439,7 @@ public:
 class UUTSkillEventEffectMapForEditor : public UUTSkillBaseWidget
 {
 public:
-	TEnumAsByte<enum EUTSkillEventType>                SkillEventType;                                           // 0x0078(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     SkillEventType;                                           // 0x0078(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0079(0x0007) MISSED OFFSET
 	TArray<struct FName>                               InterestedOwnerTags;                                      // 0x0080(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	class UUTSkillEffect*                              SkillEffect;                                              // 0x0090(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
@@ -451,7 +450,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillEventEffectMapForEditor");
 		return pStaticClass;
@@ -468,13 +467,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillInterface");
 		return pStaticClass;
 	}
 
 
+	bool IsNeedCheckAutoSkill();
 	bool HasSkillToken(int SkillID);
 	void HandleSkillStart(int SkillID);
 	void HandleSkillEnd(int SkillID, EUTSkillStopReason Reason);
@@ -503,7 +503,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillPhase");
 		return pStaticClass;
@@ -517,27 +517,27 @@ public:
 	bool PlaySkillHurtEffect(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim);
 	bool PlaySkillHurtAppearances(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim);
 	void PickTargets(class UUTSkillManagerComponent* SkillManagerComponent);
-	bool OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> TheEventType);
-	bool OnCustomEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> TheEventType);
+	bool OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> TheEventType);
+	bool OnCustomEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> TheEventType);
 	bool ForceStopPhase(class UUTSkillManagerComponent* SkillManagerComponent);
 	bool ClearAttachments();
 };
 
 
 // Class Skill.UTSkillPicker
-// 0x0068 (0x00E0 - 0x0078)
+// 0x0090 (0x0108 - 0x0078)
 class UUTSkillPicker : public UUTSkillBaseWidget
 {
 public:
-	struct FUTSkillPickerCreateData                    BaseData;                                                 // 0x0078(0x0028) (Edit)
-	TArray<class UClass*>                              FilterTemplates;                                          // 0x00A0(0x0010) (Edit, ZeroConstructor)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x00B0(0x0010) MISSED OFFSET
-	TArray<struct FUTSkillPickedTarget>                PickedResultTargets;                                      // 0x00C0(0x0010) (ZeroConstructor, Transient)
-	TArray<class UUTSkillPickerFilter*>                Filters;                                                  // 0x00D0(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
+	struct FUTSkillPickerCreateData                    BaseData;                                                 // 0x0078(0x0050) (Edit)
+	TArray<class UClass*>                              FilterTemplates;                                          // 0x00C8(0x0010) (Edit, ZeroConstructor)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x00D8(0x0010) MISSED OFFSET
+	TArray<struct FUTSkillPickedTarget>                PickedResultTargets;                                      // 0x00E8(0x0010) (ZeroConstructor, Transient)
+	TArray<class UUTSkillPickerFilter*>                Filters;                                                  // 0x00F8(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillPicker");
 		return pStaticClass;
@@ -557,7 +557,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillPickerFilter");
 		return pStaticClass;
@@ -582,7 +582,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillWidget");
 		return pStaticClass;
@@ -609,7 +609,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillLocationPicker");
 		return pStaticClass;
@@ -626,7 +626,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.PrivateNodeLuaInterface");
 		return pStaticClass;
@@ -646,7 +646,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UniqueKeyOwnerLuaInterface");
 		return pStaticClass;
@@ -666,7 +666,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.SharedDelegate");
 		return pStaticClass;
@@ -685,7 +685,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.LuaEventSharedDelegate");
 		return pStaticClass;
@@ -695,17 +695,19 @@ public:
 
 
 // Class Skill.SharedDelegateManager
-// 0x00F0 (0x0120 - 0x0030)
+// 0x0110 (0x0140 - 0x0030)
 class USharedDelegateManager : public UWorldSubsystem
 {
 public:
 	TMap<struct FSharedDelegateWrap, class USharedDelegate*> DelegateMap;                                              // 0x0030(0x0050) (ZeroConstructor)
 	TMap<struct FMultiSharedDelegateWrap, class USharedDelegate*> MultiDelegateMap;                                         // 0x0080(0x0050) (ZeroConstructor)
 	TMap<struct FLuaEventRegistWrap, class ULuaEventSharedDelegate*> LuaEventRegistMap;                                        // 0x00D0(0x0050) (ZeroConstructor)
+	TArray<class USharedDelegate*>                     CacheSharedDelegates;                                     // 0x0120(0x0010) (ZeroConstructor)
+	TArray<class ULuaEventSharedDelegate*>             CacheLuaEventSharedDelegates;                             // 0x0130(0x0010) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.SharedDelegateManager");
 		return pStaticClass;
@@ -722,7 +724,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.SkillNodeLuaInterface");
 		return pStaticClass;
@@ -737,19 +739,19 @@ class USkillTriggerData : public UUTSkillBaseWidget
 {
 public:
 	TArray<struct FUAEBlackboardKeySelector>           UploadSkillTriggerData;                                   // 0x0078(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<enum EUTSkillEventType>                CurSkillEvent;                                            // 0x0088(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     CurSkillEvent;                                            // 0x0088(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0089(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.SkillTriggerData");
 		return pStaticClass;
 	}
 
 
-	TEnumAsByte<enum EUTSkillEventType> GetSkillEventType();
+	TEnumAsByte<EUTSkillEventType> GetSkillEventType();
 };
 
 
@@ -766,7 +768,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.SkillTriggerData_Lua");
 		return pStaticClass;
@@ -788,7 +790,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillAction_Lua");
 		return pStaticClass;
@@ -811,7 +813,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillAction_LuaContainer");
 		return pStaticClass;
@@ -833,7 +835,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillBlackboardInterface");
 		return pStaticClass;
@@ -898,7 +900,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillCDBase");
 		return pStaticClass;
@@ -922,7 +924,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillCondition_Lua");
 		return pStaticClass;
@@ -936,12 +938,12 @@ public:
 class UUTSkillEvent : public UObject
 {
 public:
-	TEnumAsByte<enum EUTSkillEventType>                SkillEventType;                                           // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     SkillEventType;                                           // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillEvent");
 		return pStaticClass;
@@ -958,7 +960,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillInstancedNodeContainerInterface");
 		return pStaticClass;
@@ -975,7 +977,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillInstancedNodeInterface");
 		return pStaticClass;
@@ -992,7 +994,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillNodeBlackboardInterface");
 		return pStaticClass;
@@ -1039,8 +1041,8 @@ public:
 	bool GetValueAsBool(const struct FName& KeyName);
 	class AActor* GetValueAsActor(const struct FName& KeyName);
 	class UUAEBlackboard* GetUAEBlackboard();
-	void AddValueByKeySelector(TEnumAsByte<enum EUAEBlackboardType> BBType, const struct FUAEBlackboardKeySelector& Key);
-	void AddValueByKeName(TEnumAsByte<enum EUAEBlackboardType> BBType, const struct FName& KeyName);
+	void AddValueByKeySelector(TEnumAsByte<EUAEBlackboardType> BBType, const struct FUAEBlackboardKeySelector& Key);
+	void AddValueByKeName(TEnumAsByte<EUAEBlackboardType> BBType, const struct FName& KeyName);
 };
 
 
@@ -1055,7 +1057,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillFunctionBase");
 		return pStaticClass;
@@ -1078,7 +1080,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillSpecificAction");
 		return pStaticClass;
@@ -1105,7 +1107,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.UTSkillSpecificCondition");
 		return pStaticClass;
@@ -1122,7 +1124,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Skill.SkillUtil");
 		return pStaticClass;

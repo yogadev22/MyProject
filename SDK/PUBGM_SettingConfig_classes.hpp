@@ -1,15 +1,15 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // BlueprintGeneratedClass SettingConfig.SettingConfig_C
-// 0x0F1C (0x0F44 - 0x0028)
+// 0x0F2C (0x0F54 - 0x0028)
 class USettingConfig_C : public USaveGame
 {
 public:
@@ -260,7 +260,7 @@ public:
 	int                                                SelectUIElemIndexFPP1;                                    // 0x04D0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                SelectUIElemIndexFPP2;                                    // 0x04D4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                SelectUIElemIndexFPP3;                                    // 0x04D8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERenderQuality>                   TurboLastQuality;                                         // 0x04DC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ERenderQuality>                        TurboLastQuality;                                         // 0x04DC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData32[0x3];                                       // 0x04DD(0x0003) MISSED OFFSET
 	TMap<struct FString, struct FString>               PubgPlusGuideRecord;                                      // 0x04E0(0x0050) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TMap<struct FString, struct FString>               PubgPlusGuideConfig;                                      // 0x0530(0x0050) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -670,10 +670,17 @@ public:
 	bool                                               LowTickRateInSpectating;                                  // 0x0F41(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bEnergySaveManuelChangeFlag1;                             // 0x0F42(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bEnergySaveManuelChangeFlag2;                             // 0x0F43(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int                                                CollectionHallVisit;                                      // 0x0F44(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int                                                nEnhancedLobbyQuality;                                    // 0x0F48(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               ShowMiniTvInFighting;                                     // 0x0F4C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               ShowMiniTvInRank;                                         // 0x0F4D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               ShowMiniTvInSocial;                                       // 0x0F4E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bVoiceChanger;                                            // 0x0F4F(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	int                                                VoiceChangerType;                                         // 0x0F50(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("BlueprintGeneratedClass SettingConfig.SettingConfig_C");
 		return pStaticClass;

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum BuildSystem.EBuildingActionType
 enum class EBuildingActionType : uint8_t
@@ -51,9 +51,9 @@ enum class EBuildingType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct BuildSystem.BuildingActorWorldSnapSetup
 // 0x0024
@@ -77,7 +77,7 @@ struct FBuildingActorDSBuildCheckData
 struct FBuildingActorDSBuildCheck
 {
 	TArray<struct FBuildingActorDSBuildCheckData>      DSCheckCfg;                                               // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<enum ECollisionChannel>                CheckChannel;                                             // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CheckChannel;                                             // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
@@ -93,10 +93,10 @@ struct FWorldGridData
 struct FBuildingData
 {
 	int                                                BuildingID;                                               // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBuildingType>                    BuildingType;                                             // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBuildingType>                         BuildingType;                                             // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
 	struct FSoftObjectPath                             BuildingActorClassPath;                                   // 0x0008(0x0018) (Edit, BlueprintVisible)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        BlockingChannels;                                         // 0x0020(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             BlockingChannels;                                         // 0x0020(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	float                                              MaxBuildDist;                                             // 0x0030(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              CDInterval;                                               // 0x0034(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                MaxBuildCount;                                            // 0x0038(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)

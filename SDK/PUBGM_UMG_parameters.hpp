@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UMG.Widget.SetWidgetVisibility
 struct UWidget_SetWidgetVisibility_Params
@@ -104,7 +104,7 @@ struct UWidget_SetIsEnabled_Params
 // Function UMG.Widget.SetCursor
 struct UWidget_SetCursor_Params
 {
-	TEnumAsByte<enum EMouseCursor>                     InCursor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMouseCursor>                          InCursor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.Widget.SetClipping
@@ -279,7 +279,7 @@ struct UWidget_GetOwningPlayer_Params
 // DelegateFunction UMG.Widget.GetMouseCursor__DelegateSignature
 struct UWidget_GetMouseCursor__DelegateSignature_Params
 {
-	TEnumAsByte<enum EMouseCursor>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EMouseCursor>                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature
@@ -401,7 +401,7 @@ struct UUserWidget_Tick_Params
 struct UUserWidget_StopListeningForInputAction_Params
 {
 	struct FName                                       ActionName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EInputEvent>                      EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInputEvent>                           EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.UserWidget.StopListeningForAllInputActions
@@ -536,7 +536,7 @@ struct UUserWidget_PlayUserWidgetAnimation_Params
 	class UWidgetAnimation*                            InAnimation;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	float                                              StartAtTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                NumLoopsToPlay;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUMGSequencePlayMode>             PlayMode;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUMGSequencePlayMode>                  PlayMode;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              PlaybackSpeed;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -553,7 +553,7 @@ struct UUserWidget_PlayAnimationTo_Params
 	float                                              StartAtTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              EndAtTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                NumLoopsToPlay;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUMGSequencePlayMode>             PlayMode;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUMGSequencePlayMode>                  PlayMode;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              PlaybackSpeed;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -563,7 +563,7 @@ struct UUserWidget_PlayAnimation_Params
 	class UWidgetAnimation*                            InAnimation;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	float                                              StartAtTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                NumLoopsToPlay;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUMGSequencePlayMode>             PlayMode;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUMGSequencePlayMode>                  PlayMode;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              PlaybackSpeed;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -816,7 +816,7 @@ struct UUserWidget_OnAddedToFocusPath_Params
 struct UUserWidget_ListenForInputAction_Params
 {
 	struct FName                                       ActionName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EInputEvent>                      EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInputEvent>                           EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bConsume;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FScriptDelegate                             Callback;                                                 // (Parm, ZeroConstructor)
 };
@@ -1070,7 +1070,7 @@ struct UScrollBox_SetScrollbarThickness_Params
 // Function UMG.ScrollBox.SetOrientation
 struct UScrollBox_SetOrientation_Params
 {
-	TEnumAsByte<enum EOrientation>                     NewOrientation;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EOrientation>                          NewOrientation;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.ScrollBox.SetMaxScrollSpd
@@ -1145,6 +1145,78 @@ struct UScrollBox_GetCacheOverscrollOffset_Params
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function UMG.TextBlock.SetVerticalJustification
+struct UTextBlock_SetVerticalJustification_Params
+{
+	TEnumAsByte<ETextVerticalJustify>                  InJustification;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.SetText
+struct UTextBlock_SetText_Params
+{
+	struct FText                                       InText;                                                   // (Parm)
+};
+
+// Function UMG.TextBlock.SetShadowOffset
+struct UTextBlock_SetShadowOffset_Params
+{
+	struct FVector2D                                   InShadowOffset;                                           // (Parm, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.SetShadowColorAndOpacity
+struct UTextBlock_SetShadowColorAndOpacity_Params
+{
+	struct FLinearColor                                InShadowColorAndOpacity;                                  // (Parm, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.SetSelectColor
+struct UTextBlock_SetSelectColor_Params
+{
+	bool                                               bIsSelect;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.SetOpacity
+struct UTextBlock_SetOpacity_Params
+{
+	float                                              InOpacity;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.SetMinDesiredWidth
+struct UTextBlock_SetMinDesiredWidth_Params
+{
+	float                                              InMinDesiredWidth;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.SetJustification
+struct UTextBlock_SetJustification_Params
+{
+	TEnumAsByte<ETextJustify>                          InJustification;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.SetFont
+struct UTextBlock_SetFont_Params
+{
+	struct FSlateFontInfo                              InFontInfo;                                               // (Parm)
+};
+
+// Function UMG.TextBlock.SetColorAndOpacity
+struct UTextBlock_SetColorAndOpacity_Params
+{
+	struct FSlateColor                                 InColorAndOpacity;                                        // (Parm)
+};
+
+// Function UMG.TextBlock.SetAutoEllipsisText
+struct UTextBlock_SetAutoEllipsisText_Params
+{
+	bool                                               InAutoEllipsisText;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function UMG.TextBlock.GetText
+struct UTextBlock_GetText_Params
+{
+	struct FText                                       ReturnValue;                                              // (Parm, OutParm, ReturnParm)
+};
+
 // Function UMG.ComboBoxString.SetSelectedOption
 struct UComboBoxString_SetSelectedOption_Params
 {
@@ -1174,7 +1246,7 @@ struct UComboBoxString_RefreshOptions_Params
 struct UComboBoxString_OnSelectionChangedEvent__DelegateSignature_Params
 {
 	struct FString                                     SelectedItem;                                             // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ESelectInfo>                      SelectionType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESelectInfo>                           SelectionType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // DelegateFunction UMG.ComboBoxString.OnOpeningEvent__DelegateSignature
@@ -1371,7 +1443,7 @@ struct UContentWidget_GetContent_Params
 // Function UMG.Button.SetTouchMethod
 struct UButton_SetTouchMethod_Params
 {
-	TEnumAsByte<enum EButtonTouchMethod>               InTouchMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EButtonTouchMethod>                    InTouchMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.Button.SetStyle
@@ -1407,7 +1479,7 @@ struct UButton_SetClickSoundType_Params
 // Function UMG.Button.SetClickMethod
 struct UButton_SetClickMethod_Params
 {
-	TEnumAsByte<enum EButtonClickMethod>               InClickMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EButtonClickMethod>                    InClickMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.Button.SetBackgroundColor
@@ -1461,7 +1533,7 @@ struct UEditableTextBox_SetError_Params
 struct UEditableTextBox_OnEditableTextBoxCommittedEvent__DelegateSignature_Params
 {
 	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // DelegateFunction UMG.EditableTextBox.OnEditableTextBoxChangedEvent__DelegateSignature
@@ -1655,7 +1727,7 @@ struct UAsyncTaskDownloadImage_DownloadImage_Params
 // Function UMG.BackgroundBlur.SetVerticalAlignment
 struct UBackgroundBlur_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.BackgroundBlur.SetPadding
@@ -1673,7 +1745,7 @@ struct UBackgroundBlur_SetLowQualityFallbackBrush_Params
 // Function UMG.BackgroundBlur.SetHorizontalAlignment
 struct UBackgroundBlur_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.BackgroundBlur.SetBlurStrength
@@ -1715,7 +1787,7 @@ struct UBackgroundBlur_SetApplyAlphaToBlur_Params
 // Function UMG.BackgroundBlurSlot.SetVerticalAlignment
 struct UBackgroundBlurSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.BackgroundBlurSlot.SetPadding
@@ -1727,7 +1799,7 @@ struct UBackgroundBlurSlot_SetPadding_Params
 // Function UMG.BackgroundBlurSlot.SetHorizontalAlignment
 struct UBackgroundBlurSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.BoolBinding.GetValue
@@ -1739,7 +1811,7 @@ struct UBoolBinding_GetValue_Params
 // Function UMG.Border.SetVerticalAlignment
 struct UBorder_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.Border.SetPadding
@@ -1751,7 +1823,7 @@ struct UBorder_SetPadding_Params
 // Function UMG.Border.SetHorizontalAlignment
 struct UBorder_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.Border.SetDontPaintWhenChildEmpty
@@ -1829,7 +1901,7 @@ struct UBorder_GetDontPaintWhenAlphaZero_Params
 // Function UMG.BorderSlot.SetVerticalAlignment
 struct UBorderSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.BorderSlot.SetPadding
@@ -1841,7 +1913,7 @@ struct UBorderSlot_SetPadding_Params
 // Function UMG.BorderSlot.SetHorizontalAlignment
 struct UBorderSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.BrushBinding.GetValue
@@ -1853,7 +1925,7 @@ struct UBrushBinding_GetValue_Params
 // Function UMG.ButtonSlot.SetVerticalAlignment
 struct UButtonSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.ButtonSlot.SetPadding
@@ -1865,7 +1937,7 @@ struct UButtonSlot_SetPadding_Params
 // Function UMG.ButtonSlot.SetHorizontalAlignment
 struct UButtonSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.CanvasPanelSlot.SetZOrder
@@ -2100,7 +2172,7 @@ struct UEditableText_SetHintText_Params
 struct UEditableText_OnEditableTextCommittedEvent__DelegateSignature_Params
 {
 	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // DelegateFunction UMG.EditableText.OnEditableTextChangedEvent__DelegateSignature
@@ -2166,7 +2238,7 @@ struct UGridPanel_AddChildToGrid_Params
 // Function UMG.GridSlot.SetVerticalAlignment
 struct UGridSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.GridSlot.SetRowSpan
@@ -2196,7 +2268,7 @@ struct UGridSlot_SetLayer_Params
 // Function UMG.GridSlot.SetHorizontalAlignment
 struct UGridSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.GridSlot.SetColumnSpan
@@ -2233,7 +2305,7 @@ struct UHorizontalBox_AddChildToHorizontalBox_Params
 // Function UMG.HorizontalBoxSlot.SetVerticalAlignment
 struct UHorizontalBoxSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.HorizontalBoxSlot.SetSize
@@ -2251,7 +2323,7 @@ struct UHorizontalBoxSlot_SetPadding_Params
 // Function UMG.HorizontalBoxSlot.SetHorizontalAlignment
 struct UHorizontalBoxSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.InputKeySelector.SetTextBlockVisibility
@@ -2357,7 +2429,7 @@ struct UMenuAnchor_Close_Params
 // Function UMG.MouseCursorBinding.GetValue
 struct UMouseCursorBinding_GetValue_Params
 {
-	TEnumAsByte<enum EMouseCursor>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EMouseCursor>                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function UMG.MultiLineEditableText.SetText
@@ -2382,7 +2454,7 @@ struct UMultiLineEditableText_SetHintText_Params
 struct UMultiLineEditableText_OnMultiLineEditableTextCommittedEvent__DelegateSignature_Params
 {
 	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextChangedEvent__DelegateSignature
@@ -2425,7 +2497,7 @@ struct UMultiLineEditableTextBox_SetError_Params
 struct UMultiLineEditableTextBox_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature_Params
 {
 	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxChangedEvent__DelegateSignature
@@ -2450,7 +2522,7 @@ struct UOverlay_AddChildToOverlay_Params
 // Function UMG.OverlaySlot.SetVerticalAlignment
 struct UOverlaySlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.OverlaySlot.SetPadding
@@ -2462,7 +2534,7 @@ struct UOverlaySlot_SetPadding_Params
 // Function UMG.OverlaySlot.SetHorizontalAlignment
 struct UOverlaySlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.ProgressBar.SetPercent
@@ -2507,13 +2579,13 @@ struct UScaleBox_SetUserSpecifiedScale_Params
 // Function UMG.ScaleBox.SetStretchDirection
 struct UScaleBox_SetStretchDirection_Params
 {
-	TEnumAsByte<enum EStretchDirection>                InStretchDirection;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EStretchDirection>                     InStretchDirection;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.ScaleBox.SetStretch
 struct UScaleBox_SetStretch_Params
 {
-	TEnumAsByte<enum EStretch>                         InStretch;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EStretch>                              InStretch;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.ScaleBox.SetIgnoreInheritedScale
@@ -2531,7 +2603,7 @@ struct UScaleBox_SetFixQuiver_Params
 // Function UMG.ScaleBoxSlot.SetVerticalAlignment
 struct UScaleBoxSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.ScaleBoxSlot.SetPadding
@@ -2543,7 +2615,7 @@ struct UScaleBoxSlot_SetPadding_Params
 // Function UMG.ScaleBoxSlot.SetHorizontalAlignment
 struct UScaleBoxSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.ScrollBar.SetState
@@ -2562,7 +2634,7 @@ struct UScrollBoxSlot_SetPadding_Params
 // Function UMG.ScrollBoxSlot.SetHorizontalAlignment
 struct UScrollBoxSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.SizeBox.SetWidthOverride
@@ -2657,7 +2729,7 @@ struct USizeBox_ClearHeightOverride_Params
 // Function UMG.SizeBoxSlot.SetVerticalAlignment
 struct USizeBoxSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.SizeBoxSlot.SetPadding
@@ -2669,7 +2741,7 @@ struct USizeBoxSlot_SetPadding_Params
 // Function UMG.SizeBoxSlot.SetHorizontalAlignment
 struct USizeBoxSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.SlateBlueprintLibrary.ScreenToWidgetLocal
@@ -2815,7 +2887,7 @@ struct USpinBox_SetForegroundColor_Params
 struct USpinBox_OnSpinBoxValueCommittedEvent__DelegateSignature_Params
 {
 	float                                              InValue;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // DelegateFunction UMG.SpinBox.OnSpinBoxValueChangedEvent__DelegateSignature
@@ -2891,78 +2963,6 @@ struct UTextBinding_GetStringValue_Params
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
-// Function UMG.TextBlock.SetVerticalJustification
-struct UTextBlock_SetVerticalJustification_Params
-{
-	TEnumAsByte<enum ETextVerticalJustify>             InJustification;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.SetText
-struct UTextBlock_SetText_Params
-{
-	struct FText                                       InText;                                                   // (Parm)
-};
-
-// Function UMG.TextBlock.SetShadowOffset
-struct UTextBlock_SetShadowOffset_Params
-{
-	struct FVector2D                                   InShadowOffset;                                           // (Parm, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.SetShadowColorAndOpacity
-struct UTextBlock_SetShadowColorAndOpacity_Params
-{
-	struct FLinearColor                                InShadowColorAndOpacity;                                  // (Parm, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.SetSelectColor
-struct UTextBlock_SetSelectColor_Params
-{
-	bool                                               bIsSelect;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.SetOpacity
-struct UTextBlock_SetOpacity_Params
-{
-	float                                              InOpacity;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.SetMinDesiredWidth
-struct UTextBlock_SetMinDesiredWidth_Params
-{
-	float                                              InMinDesiredWidth;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.SetJustification
-struct UTextBlock_SetJustification_Params
-{
-	TEnumAsByte<enum ETextJustify>                     InJustification;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.SetFont
-struct UTextBlock_SetFont_Params
-{
-	struct FSlateFontInfo                              InFontInfo;                                               // (Parm)
-};
-
-// Function UMG.TextBlock.SetColorAndOpacity
-struct UTextBlock_SetColorAndOpacity_Params
-{
-	struct FSlateColor                                 InColorAndOpacity;                                        // (Parm)
-};
-
-// Function UMG.TextBlock.SetAutoEllipsisText
-struct UTextBlock_SetAutoEllipsisText_Params
-{
-	bool                                               InAutoEllipsisText;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function UMG.TextBlock.GetText
-struct UTextBlock_GetText_Params
-{
-	struct FText                                       ReturnValue;                                              // (Parm, OutParm, ReturnParm)
-};
-
 // Function UMG.Throbber.SetNumberOfPieces
 struct UThrobber_SetNumberOfPieces_Params
 {
@@ -3032,7 +3032,7 @@ struct UUniformGridPanel_AddChildToUniformGrid_Params
 // Function UMG.UniformGridSlot.SetVerticalAlignment
 struct UUniformGridSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.UniformGridSlot.SetRow
@@ -3044,7 +3044,7 @@ struct UUniformGridSlot_SetRow_Params
 // Function UMG.UniformGridSlot.SetHorizontalAlignment
 struct UUniformGridSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.UniformGridSlot.SetColumn
@@ -3075,7 +3075,7 @@ struct UVerticalBox_AddChildToVerticalBox_Params
 // Function UMG.VerticalBoxSlot.SetVerticalAlignment
 struct UVerticalBoxSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.VerticalBoxSlot.SetSize
@@ -3093,7 +3093,7 @@ struct UVerticalBoxSlot_SetPadding_Params
 // Function UMG.VerticalBoxSlot.SetHorizontalAlignment
 struct UVerticalBoxSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.Viewport.Spawn
@@ -3242,7 +3242,7 @@ struct UWidgetBlueprintLibrary_SetInputMode_GameAndUI_Params
 struct UWidgetBlueprintLibrary_SetHardwareCursor_Params
 {
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMouseCursor>                     CursorShape;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMouseCursor>                          CursorShape;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       CursorName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector2D                                   HotSpot;                                                  // (Parm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -3839,7 +3839,7 @@ struct UWidgetSwitcher_GetActiveWidget_Params
 // Function UMG.WidgetSwitcherSlot.SetVerticalAlignment
 struct UWidgetSwitcherSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WidgetSwitcherSlot.SetPadding
@@ -3851,13 +3851,13 @@ struct UWidgetSwitcherSlot_SetPadding_Params
 // Function UMG.WidgetSwitcherSlot.SetHorizontalAlignment
 struct UWidgetSwitcherSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WindowTitleBarArea.SetVerticalAlignment
 struct UWindowTitleBarArea_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WindowTitleBarArea.SetPadding
@@ -3869,13 +3869,13 @@ struct UWindowTitleBarArea_SetPadding_Params
 // Function UMG.WindowTitleBarArea.SetHorizontalAlignment
 struct UWindowTitleBarArea_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment
 struct UWindowTitleBarAreaSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WindowTitleBarAreaSlot.SetPadding
@@ -3887,7 +3887,7 @@ struct UWindowTitleBarAreaSlot_SetPadding_Params
 // Function UMG.WindowTitleBarAreaSlot.SetHorizontalAlignment
 struct UWindowTitleBarAreaSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WrapBox.SetInnerSlotPadding
@@ -3906,7 +3906,7 @@ struct UWrapBox_AddChildWrapBox_Params
 // Function UMG.WrapBoxSlot.SetVerticalAlignment
 struct UWrapBoxSlot_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalAlignment>               InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalAlignment>                    InVerticalAlignment;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WrapBoxSlot.SetPadding
@@ -3918,7 +3918,7 @@ struct UWrapBoxSlot_SetPadding_Params
 // Function UMG.WrapBoxSlot.SetHorizontalAlignment
 struct UWrapBoxSlot_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizontalAlignment>             InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizontalAlignment>                  InHorizontalAlignment;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UMG.WrapBoxSlot.SetFillSpanWhenLessThan

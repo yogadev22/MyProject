@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class SpawnSystem.STSpawnerBase
 // 0x0168 (0x0618 - 0x04B0)
@@ -58,7 +58,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STSpawnerBase");
 		return pStaticClass;
@@ -70,7 +70,7 @@ public:
 	void StopSpawn();
 	void SetSpawnerID(uint32_t ID);
 	void OnUnitSpawned(class AActor* NewUnit, const struct FSTSpawnParam& SpawnParam, class ASTSpawnerBase* Spawner);
-	void OnUnitDead(class AActor* Actor, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
+	void OnUnitDead(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);
 	void OnSpawnTimingRipe(bool IsRipe);
 	void OnSpawnerDeactivate();
 	void OnSpawnerActivate();
@@ -129,7 +129,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STSpawnSubsystem");
 		return pStaticClass;
@@ -178,7 +178,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyBase");
 		return pStaticClass;
@@ -207,12 +207,12 @@ public:
 class USTStrategyLocation : public USTStrategyBase
 {
 public:
-	struct FScriptDelegate                             OnGenerateSpawnLocationDelegate;                          // 0x00E0(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnGenerateSpawnLocationDelegate;                          // 0x00E0(0x0010) (ZeroConstructor, InstancedReference)
 	TArray<struct FSpawnSpotInfo>                      CacheSpotInfosArray;                                      // 0x00F0(0x0010) (BlueprintVisible, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyLocation");
 		return pStaticClass;
@@ -229,12 +229,12 @@ class USTStrategySpecies : public USTStrategyBase
 {
 public:
 	class USTSpeciesDataAsset*                         SpeciesData;                                              // 0x00E0(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FScriptDelegate                             SupplySpawnSpeciesDelegate;                               // 0x00E8(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             SupplySpawnSpeciesDelegate;                               // 0x00E8(0x0010) (ZeroConstructor, InstancedReference)
 	TArray<struct FUnitConfig>                         CacheSpeciesArray;                                        // 0x00F8(0x0010) (BlueprintVisible, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategySpecies");
 		return pStaticClass;
@@ -256,7 +256,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyTiming");
 		return pStaticClass;
@@ -287,7 +287,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.SpawnSystemSettings");
 		return pStaticClass;
@@ -320,7 +320,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STSpawnSpot");
 		return pStaticClass;
@@ -352,7 +352,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STSpawnSystemGameplayStatics");
 		return pStaticClass;
@@ -376,7 +376,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STSpawnVisualDebug");
 		return pStaticClass;
@@ -399,7 +399,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STSpeciesDataAsset");
 		return pStaticClass;
@@ -416,7 +416,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyCond");
 		return pStaticClass;
@@ -443,7 +443,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyCond_Hide");
 		return pStaticClass;
@@ -464,7 +464,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyCond_Quantity");
 		return pStaticClass;
@@ -484,7 +484,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyLocation_Root");
 		return pStaticClass;
@@ -503,7 +503,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyLocation_Spots");
 		return pStaticClass;
@@ -524,7 +524,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategySpecies_SquadRatio");
 		return pStaticClass;
@@ -551,7 +551,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategySpecies_Static");
 		return pStaticClass;
@@ -586,7 +586,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyTiming_Period");
 		return pStaticClass;
@@ -614,7 +614,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyTiming_Trigger");
 		return pStaticClass;
@@ -645,7 +645,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class SpawnSystem.STStrategyTiming_Wave");
 		return pStaticClass;

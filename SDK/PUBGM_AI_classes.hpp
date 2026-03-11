@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class AI.AESpawner
 // 0x0048 (0x0660 - 0x0618)
@@ -18,7 +18,7 @@ public:
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0629(0x0007) MISSED OFFSET
 	TArray<class UClass*>                              TeamAIClasses;                                            // 0x0630(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	int                                                SpawnerTeamID;                                            // 0x0640(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBotCategray>                     SpeciesCategory;                                          // 0x0644(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBotCategray>                          SpeciesCategory;                                          // 0x0644(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0645(0x0003) MISSED OFFSET
 	int                                                SpawnerCampItemID;                                        // 0x0648(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                GroupID;                                                  // 0x064C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AESpawner");
 		return pStaticClass;
@@ -39,7 +39,7 @@ public:
 	void OnSpawnTimingRipe(bool IsRipe);
 	void OnOwnedMobDead(class ASTExtraSimpleCharacter* DeadCharacter, class AController* Killer, class AActor* DamageCauser, const struct FHitResult& KillingHitInfo, const struct FVector& KillingHitImpulseDir, class UClass* KillingHitDamageType);
 	void OnOwnedFakePlayerDead(class ASTExtraBaseCharacter* DeadCharacter, class AController* Killer, class AActor* DamageCauser, const struct FHitResult& KillingHitInfo, const struct FVector& KillingHitImpulseDir, class UClass* KillingHitDamageType);
-	TEnumAsByte<enum EBotCategray> GetSpeciesCategory();
+	TEnumAsByte<EBotCategray> GetSpeciesCategory();
 	float GetSpawnerTeamID();
 	float GetSpawnerGroupID();
 	int GenerateParamID(int ConfigId, int BaseParamID, const struct FSTSpawnParam& SpawnParam);
@@ -63,12 +63,12 @@ public:
 	struct FVehicleParams                              CacheVehicleParams;                                       // 0x0260(0x0014)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x0274(0x0004) MISSED OFFSET
 	struct FDecoratorParams                            CacheDecoratorParams;                                     // 0x0278(0x0018)
-	TMap<TEnumAsByte<enum EBotCategray>, int>          UnitsNumberThreshold;                                     // 0x0290(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<EBotCategray>, int>               UnitsNumberThreshold;                                     // 0x0290(0x0050) (ZeroConstructor)
 	unsigned char                                      UnknownData03[0xF0];                                      // 0x02E0(0x00F0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AESpawnSubsystem");
 		return pStaticClass;
@@ -78,8 +78,8 @@ public:
 	class AActor* SpawnUnit(const struct FSTSpawnParam& SpawnParam);
 	void RegisterSpawner(class ASTSpawnerBase* Spawner);
 	bool PreCheck();
-	void ModifyThreshold(TEnumAsByte<enum EBotCategray> Category, int Threshold);
-	int GetUnitsNumByCategory(TEnumAsByte<enum EBotCategray> Category);
+	void ModifyThreshold(TEnumAsByte<EBotCategray> Category, int Threshold);
+	int GetUnitsNumByCategory(TEnumAsByte<EBotCategray> Category);
 	int GetUnitConfigID(class AActor* Unit);
 	TArray<class ASTSpawnerBase*> GetGroupedSpawners(int InGroupID);
 	void EnQueue(class ASTSpawnerBase* Spawner, struct FSTSpawnParam* SpawnParam);
@@ -102,7 +102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIActionExecutionComponent");
 		return pStaticClass;
@@ -142,7 +142,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIBasicStateInfoComponent");
 		return pStaticClass;
@@ -150,7 +150,6 @@ public:
 
 
 	void OnItemStateChanged(const struct FVector& Location);
-	struct FTLogAIShootInfo GetTLogAIShootInfo();
 	class APickUpWrapperActor* GetPickActorWithID(int UID);
 };
 
@@ -207,7 +206,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIBehaviorAdapter_VehicleBase");
 		return pStaticClass;
@@ -225,7 +224,7 @@ public:
 	void HandleOnVehicleHealthStateChanged(ESTExtraVehicleHealthState InVehicleHealthState);
 	void HandleOnMeshHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void BroadcastServiceDebugInfo();
-	void BPReceiveDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser, TEnumAsByte<enum EDamageType> DamageEventType);
+	void BPReceiveDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser, TEnumAsByte<EDamageType> DamageEventType);
 };
 
 
@@ -276,7 +275,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIBehaviorAdapter_Tank");
 		return pStaticClass;
@@ -304,7 +303,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIPerceptionChildPickUpComponent");
 		return pStaticClass;
@@ -316,25 +315,29 @@ public:
 
 
 // Class AI.AIPerceptionDynamicItemComponent
-// 0x0050 (0x0288 - 0x0238)
+// 0x00A8 (0x02E0 - 0x0238)
 class UAIPerceptionDynamicItemComponent : public ULuaActorComponent
 {
 public:
 	TArray<struct FChildDynamicItem>                   ChildArray;                                               // 0x0238(0x0010) (Edit, ZeroConstructor)
-	struct FScriptDelegate                             GetDynamicItemDurabilityDelegate;                         // 0x0248(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             GetDynamicItemDurabilityDelegate;                         // 0x0248(0x0010) (Edit, ZeroConstructor, InstancedReference)
 	bool                                               CheckVisible;                                             // 0x0258(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0259(0x0007) MISSED OFFSET
 	TArray<class UStaticMeshComponent*>                CheckVisibleMeshComponents;                               // 0x0260(0x0010) (ExportObject, ZeroConstructor)
 	uint32_t                                           CustomUInt32State;                                        // 0x0270(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0xC];                                       // 0x0274(0x000C) MISSED OFFSET
-	bool                                               IsMovable;                                                // 0x0280(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               IsCheckVisAngle;                                          // 0x0281(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               IsFireSpreadingCalCenter;                                 // 0x0282(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x5];                                       // 0x0283(0x0005) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0274(0x0004) MISSED OFFSET
+	TMap<uint32_t, float>                              CustomAttributeMap;                                       // 0x0278(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData02[0x10];                                      // 0x02C8(0x0010) MISSED OFFSET
+	bool                                               IsMovable;                                                // 0x02D8(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               IsCheckVisAngle;                                          // 0x02D9(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               IsFireSpreadingCalCenter;                                 // 0x02DA(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableState;                                             // 0x02DB(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               IsHaveDamageableComp;                                     // 0x02DC(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x02DD(0x0003) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIPerceptionDynamicItemComponent");
 		return pStaticClass;
@@ -342,7 +345,11 @@ public:
 
 
 	void UpdateInAICell(bool bForceUpdate);
+	void UpdateCustomAttributeValue(uint32_t InCustomAttributeID, float InValue, bool bRemove);
+	void SetEnableState(bool bInEnable);
+	void RemoveInAICell();
 	uint32_t GetUniqueID(class AActor* DynamicItem);
+	void GetCustomAttributeList(TArray<struct FAIAttribute>* OutCustomAttributeList);
 };
 
 
@@ -368,7 +375,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AISoundCollectionComponent");
 		return pStaticClass;
@@ -382,42 +389,34 @@ public:
 
 
 // Class AI.AIStateInfoComponentBase
-// 0x1430 (0x1668 - 0x0238)
+// 0x0110 (0x0348 - 0x0238)
 class UAIStateInfoComponentBase : public UAIBasicStateInfoComponent
 {
 public:
-	struct FAIStateInfoBaseMod                         CacheAIStateInfoBaseMod;                                  // 0x0238(0x0468)
-	struct FAIStateInfoBaseMod                         LastAIStateInfoBaseMod;                                   // 0x06A0(0x0468)
-	struct FDiffAIStateInfoBaseModGeneral              CacheDiffAIStateInfoBaseModGeneral;                       // 0x0B08(0x05D8)
-	struct FDiffAIStateInfoBaseMod                     CacheDiffAIStateInfoBaseMod;                              // 0x10E0(0x0428)
-	bool                                               IsTouchedPlayer;                                          // 0x1508(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x1509(0x0003) MISSED OFFSET
-	uint32_t                                           FrameNo;                                                  // 0x150C(0x0004) (ZeroConstructor, IsPlainOldData)
-	class ASTExtraPlayerController*                    MyPlayerController;                                       // 0x1510(0x0008) (ZeroConstructor, IsPlainOldData)
-	int                                                SkipFrameConfig;                                          // 0x1518(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                SkipFrameConfigSecond;                                    // 0x151C(0x0004) (ZeroConstructor, IsPlainOldData)
-	class AController*                                 OwnerController;                                          // 0x1520(0x0008) (ZeroConstructor, IsPlainOldData)
-	class ANewFakePlayerAIController*                  MyAIController;                                           // 0x1528(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UAIActingComponent*                          AIActingComp;                                             // 0x1530(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class APawn*                                       MyOwnerPawn;                                              // 0x1538(0x0008) (ZeroConstructor, IsPlainOldData)
-	class ABattleRoyaleGameModeBase*                   MyGameMode;                                               // 0x1540(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x48];                                      // 0x1548(0x0048) MISSED OFFSET
-	TArray<struct FDamageSource>                       DamageSourcesInfoNew;                                     // 0x1590(0x0010) (ZeroConstructor)
-	TMap<int, class APickUpWrapperActor*>              CacheAINearbyItem;                                        // 0x15A0(0x0050) (ZeroConstructor)
-	TArray<class ASTExtraBaseCharacter*>               CacheNearbyEnemies;                                       // 0x15F0(0x0010) (ZeroConstructor)
-	struct FCacheNearbyItemState                       CacheNearbyItemState;                                     // 0x1600(0x0020)
-	class UMLAIControllerComponent*                    MyMLAIControllerComp;                                     // 0x1620(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	uint32_t                                           CacheModeMapId;                                           // 0x1628(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0xC];                                       // 0x162C(0x000C) MISSED OFFSET
-	class UMLAISubSystem*                              MLAISubSystem;                                            // 0x1638(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UMLAIUtilsBase*                              MLAIUtils;                                                // 0x1640(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UAIStateInfoDataAsset*                       AIStateInfoDataAsset;                                     // 0x1648(0x0008) (ZeroConstructor, IsPlainOldData)
-	class AAIWorldVolume*                              AIWorldVolume;                                            // 0x1650(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x10];                                      // 0x1658(0x0010) MISSED OFFSET
+	class ASTExtraPlayerController*                    MyPlayerController;                                       // 0x0238(0x0008) (ZeroConstructor, IsPlainOldData)
+	int                                                SkipFrameConfig;                                          // 0x0240(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                SkipFrameConfigSecond;                                    // 0x0244(0x0004) (ZeroConstructor, IsPlainOldData)
+	class AController*                                 OwnerController;                                          // 0x0248(0x0008) (ZeroConstructor, IsPlainOldData)
+	class ANewFakePlayerAIController*                  MyAIController;                                           // 0x0250(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UAIActingComponent*                          AIActingComp;                                             // 0x0258(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class APawn*                                       MyOwnerPawn;                                              // 0x0260(0x0008) (ZeroConstructor, IsPlainOldData)
+	class ABattleRoyaleGameModeBase*                   MyGameMode;                                               // 0x0268(0x0008) (ZeroConstructor, IsPlainOldData)
+	TArray<struct FDamageSource>                       DamageSourcesInfoNew;                                     // 0x0270(0x0010) (ZeroConstructor)
+	TMap<int, class APickUpWrapperActor*>              CacheAINearbyItem;                                        // 0x0280(0x0050) (ZeroConstructor)
+	TArray<class ASTExtraBaseCharacter*>               CacheNearbyEnemies;                                       // 0x02D0(0x0010) (ZeroConstructor)
+	struct FCacheNearbyItemState                       CacheNearbyItemState;                                     // 0x02E0(0x0020)
+	class UMLAIControllerComponent*                    MyMLAIControllerComp;                                     // 0x0300(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	uint32_t                                           CacheModeMapId;                                           // 0x0308(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0xC];                                       // 0x030C(0x000C) MISSED OFFSET
+	class UMLAISubSystem*                              MLAISubSystem;                                            // 0x0318(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UAIStateInfoDataAsset*                       AIStateInfoDataAsset;                                     // 0x0320(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UMLAIStateInfoManager*                       MLAIStateInfoManager;                                     // 0x0328(0x0008) (ZeroConstructor, IsPlainOldData)
+	class AAIWorldVolume*                              AIWorldVolume;                                            // 0x0330(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x0338(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIStateInfoComponentBase");
 		return pStaticClass;
@@ -438,88 +437,15 @@ public:
 	struct FProgressBarState GetProgressBarState();
 	struct FAIPlayerInteractInfo GetPlayerInteractInfo();
 	class ASTExtraBaseCharacter* GetOwnerBaseCharacter();
-	void GetObstaclesState(class ASTExtraBaseCharacter* InPawn, float Range, TArray<struct FObstacleState>* ObstaclesState);
 	uint32_t GetFrameNo();
-	void GetDiffAIStateInfoToCacheGeneral();
-	void GetDiffAIStateInfoToCache();
 	TArray<struct FDamageSource> GetDamageSourcesNew();
-	struct FAIDamageSources GetDamageSources();
-	struct FCameraState GetCameraState(class ASTExtraBaseCharacter* InCharacter);
-	void GetAIStateInfoToCache();
-	void GetAIStateInfoBaseModInternal();
-	void GetAIPlayerBackpackItems(TArray<struct FAIBackpackItem>* Items);
-	bool GetAINearbyThrownState(class ASTExtraBaseCharacter* InCharacter, float InRange, float InCheckAngle, int MaxNum, float InSmokeRange, TArray<struct FAINearbyThrown>* Ret);
 	void GetAIDestroyBulletProbInfo(TArray<struct FAIDestroyBulletProbInfo>* AIDestroyBulletProbInfoList);
 	void ClearDamageSources();
 };
 
 
-// Class AI.AIStateInfoComponentBRBase
-// 0x08E8 (0x1F50 - 0x1668)
-class UAIStateInfoComponentBRBase : public UAIStateInfoComponentBase
-{
-public:
-	struct FAIStateInfoBRBase                          CacheAIStateInfoBRBase;                                   // 0x1668(0x0208)
-	struct FAIStateInfoBRBase                          LastAIStateInfoBRBase;                                    // 0x1870(0x0208)
-	struct FDiffAIStateInfoBRBaseGeneral               CacheDiffAIStateInfoBRBaseGeneral;                        // 0x1A78(0x0298)
-	struct FDiffAIStateInfoBRBase                      CacheDiffAIStateInfoBRBase;                               // 0x1D10(0x0220)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x1F30(0x0008) MISSED OFFSET
-	class UMLAIUtilsBRBase*                            MLAIUtilsBR;                                              // 0x1F38(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x1F40(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class AI.AIStateInfoComponentBRBase");
-		return pStaticClass;
-	}
-
-};
-
-
-// Class AI.AIStateInfoComponentMPBase
-// 0x0220 (0x1888 - 0x1668)
-class UAIStateInfoComponentMPBase : public UAIStateInfoComponentBase
-{
-public:
-	struct FAIStateInfoMPBase                          CacheAIStateInfoMPBase;                                   // 0x1668(0x00B0)
-	struct FAIStateInfoMPBase                          LastAIStateInfoMPBase;                                    // 0x1718(0x00B0)
-	struct FDiffAIStateInfoMPBaseGeneral               CacheDiffAIStateInfoMPBaseGeneral;                        // 0x17C8(0x00C0)
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class AI.AIStateInfoComponentMPBase");
-		return pStaticClass;
-	}
-
-};
-
-
-// Class AI.AIStateInfoComponentTeamDeath
-// 0x00F0 (0x1978 - 0x1888)
-class UAIStateInfoComponentTeamDeath : public UAIStateInfoComponentMPBase
-{
-public:
-	struct FAIStateInfoTeamDeath                       CacheAIStateInfoTeamDeath;                                // 0x1888(0x0050)
-	struct FAIStateInfoTeamDeath                       LastAIStateInfoTeamDeath;                                 // 0x18D8(0x0050)
-	struct FDiffAIStateInfoTeamDeathGeneral            CacheDiffAIStateInfoTeamDeathGeneral;                     // 0x1928(0x0050)
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class AI.AIStateInfoComponentTeamDeath");
-		return pStaticClass;
-	}
-
-};
-
-
 // Class AI.AIStateInfoDataAsset
-// 0x0230 (0x0260 - 0x0030)
+// 0x0228 (0x0258 - 0x0030)
 class UAIStateInfoDataAsset : public UDataAsset
 {
 public:
@@ -577,13 +503,11 @@ public:
 	TArray<int>                                        IgnoredMonsterIDs;                                        // 0x0230(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	TArray<EAvatarSlotType>                            AvailableAvatarSlotTypes;                                 // 0x0240(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	uint32_t                                           nCanMLAIBuildAttributeID;                                 // 0x0250(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	uint32_t                                           SpecialLuaKeyStart;                                       // 0x0254(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	uint32_t                                           SpecialVehicleLuaKeyStart;                                // 0x0258(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	uint32_t                                           SpecialMechaVehicleLuaKeyStart;                           // 0x025C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x4];                                       // 0x0254(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIStateInfoDataAsset");
 		return pStaticClass;
@@ -593,7 +517,7 @@ public:
 
 
 // Class AI.StateInfoCollectorBase
-// 0x0028 (0x0050 - 0x0028)
+// 0x0030 (0x0058 - 0x0028)
 class UStateInfoCollectorBase : public UObject
 {
 public:
@@ -602,12 +526,13 @@ public:
 	unsigned char                                      UnknownData00[0x3];                                       // 0x002D(0x0003) MISSED OFFSET
 	class UAIStateInfoDataAsset*                       AIStateInfoDataAsset;                                     // 0x0030(0x0008) (ZeroConstructor, IsPlainOldData)
 	class UMLAIStateInfoManager*                       MLAIStateInfoManager;                                     // 0x0038(0x0008) (ZeroConstructor, IsPlainOldData)
-	class ABattleRoyaleGameMode*                       CurGameMode;                                              // 0x0040(0x0008) (ZeroConstructor, IsPlainOldData)
-	class AAIWorldVolume*                              AIWorldVolume;                                            // 0x0048(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UMLAISubSystem*                              MLAISubSystem;                                            // 0x0040(0x0008) (ZeroConstructor, IsPlainOldData)
+	class ABattleRoyaleGameMode*                       CurGameMode;                                              // 0x0048(0x0008) (ZeroConstructor, IsPlainOldData)
+	class AAIWorldVolume*                              AIWorldVolume;                                            // 0x0050(0x0008) (ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.StateInfoCollectorBase");
 		return pStaticClass;
@@ -617,19 +542,18 @@ public:
 
 
 // Class AI.BaseMLAIStateInfoCollector
-// 0x02B0 (0x0300 - 0x0050)
+// 0x01F8 (0x0250 - 0x0058)
 class UBaseMLAIStateInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FMLAIStateInfoBaseMod>       LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAIStateInfoBaseMod>       CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAIStateInfoBaseMod>       CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllMLAIInfoBaseModGeneral              CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllMLAIInfoBaseMod                     CacheAllPlayersInfoCSS;                                   // 0x0248(0x00B8)
+	TMap<uint32_t, struct FMLBaseAIStateInfo>          LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMLBaseAIStateInfo>          CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMLBaseAIStateInfo>          CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffMLBaseAllPlayersInfo                   CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BaseMLAIStateInfoCollector");
 		return pStaticClass;
@@ -639,27 +563,25 @@ public:
 
 
 // Class AI.BaseStateInfoCollector
-// 0x0A00 (0x0A50 - 0x0050)
+// 0x05A0 (0x05F8 - 0x0058)
 class UBaseStateInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAIBaseStateInfo>            LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBaseStateInfo>            CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBaseStateInfo>            CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerBaseInfoGeneral               CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0120)
-	struct FDiffAllPlayerBaseInfo                      CacheAllPlayersInfoCSS;                                   // 0x0260(0x0448)
-	struct FGlobalGameBaseState                        CacheGlobalGameState;                                     // 0x06A8(0x0090)
-	struct FGlobalGameBaseState                        LastGlobalGameState;                                      // 0x0738(0x0090)
-	struct FDiffGlobalGameBaseState                    DiffGlobalGameState;                                      // 0x07C8(0x0080)
-	struct FDiffGlobalGameBaseStateGeneral             DiffGlobalGameStateGeneral;                               // 0x0848(0x00B8)
-	TMap<uint32_t, uint32_t>                           DiffStateInfoKeyMap;                                      // 0x0900(0x0050) (ZeroConstructor)
-	unsigned char                                      UnknownData00[0x50];                                      // 0x0950(0x0050) UNKNOWN PROPERTY: SetProperty AI.BaseStateInfoCollector.LastSilentMLAIMap
-	unsigned char                                      UnknownData01[0x50];                                      // 0x09A0(0x0050) UNKNOWN PROPERTY: SetProperty AI.BaseStateInfoCollector.CurrentSilentMLAIMap
-	unsigned char                                      UnknownData02[0x60];                                      // 0x09F0(0x0060) MISSED OFFSET
+	TMap<uint32_t, struct FBaseModAIStateInfo>         LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseModAIStateInfo>         CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseModAIStateInfo>         CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffBaseModAllPlayersInfo                  CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0120)
+	struct FBaseModGlobalGameState                     CacheGlobalGameState;                                     // 0x0268(0x00A8)
+	struct FBaseModGlobalGameState                     LastGlobalGameState;                                      // 0x0310(0x00A8)
+	struct FDiffBaseModGlobalGameState                 DiffGlobalGameStateGeneral;                               // 0x03B8(0x00F0)
+	TMap<uint32_t, uint32_t>                           DiffStateInfoKeyMap;                                      // 0x04A8(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x50];                                      // 0x04F8(0x0050) UNKNOWN PROPERTY: SetProperty AI.BaseStateInfoCollector.LastSilentMLAIMap
+	unsigned char                                      UnknownData01[0x50];                                      // 0x0548(0x0050) UNKNOWN PROPERTY: SetProperty AI.BaseStateInfoCollector.CurrentSilentMLAIMap
+	unsigned char                                      UnknownData02[0x60];                                      // 0x0598(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BaseStateInfoCollector");
 		return pStaticClass;
@@ -673,25 +595,23 @@ public:
 
 
 // Class AI.BRBaseStateInfoCollector
-// 0x0C80 (0x0CD0 - 0x0050)
+// 0x0588 (0x05E0 - 0x0058)
 class UBRBaseStateInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIBRBaseStateInfo>          CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerBRBaseInfoGeneral             CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllPlayerBRBaseInfo                    CacheAllPlayersInfoCSS;                                   // 0x0248(0x0520)
-	struct FGlobalGameBRBaseState                      CacheGlobalGameState;                                     // 0x0768(0x0108)
-	struct FGlobalGameBRBaseState                      LastGlobalGameState;                                      // 0x0870(0x0108)
-	struct FDiffGlobalGameBRBaseState                  DiffGlobalGameState;                                      // 0x0978(0x0180)
-	struct FDiffGlobalGameBRBaseStateGeneral           DiffGlobalGameStateGeneral;                               // 0x0AF8(0x01A0)
-	unsigned char                                      UnknownData00[0x30];                                      // 0x0C98(0x0030) MISSED OFFSET
-	class UCircleMgrComponent*                         CircleMgr;                                                // 0x0CC8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	TMap<uint32_t, struct FBRBaseAIStateInfo>          LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBRBaseAIStateInfo>          CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBRBaseAIStateInfo>          CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffBRBaseAllPlayersInfo                   CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0118)
+	struct FBRBaseGlobalGameState                      CacheGlobalGameState;                                     // 0x0260(0x00F0)
+	struct FBRBaseGlobalGameState                      LastGlobalGameState;                                      // 0x0350(0x00F0)
+	struct FDiffBRBaseGlobalGameState                  DiffGlobalGameStateGeneral;                               // 0x0440(0x0168)
+	unsigned char                                      UnknownData00[0x30];                                      // 0x05A8(0x0030) MISSED OFFSET
+	class UCircleMgrComponent*                         CircleMgr;                                                // 0x05D8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BRBaseStateInfoCollector");
 		return pStaticClass;
@@ -721,7 +641,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTD_CheckObstacleInCustomRange");
 		return pStaticClass;
@@ -731,17 +651,18 @@ public:
 
 
 // Class AI.BTDecorator_AttrObserver
-// 0x0018 (0x0078 - 0x0060)
-class UBTDecorator_AttrObserver : public UBTDecorator
+// 0x0018 (0x00A0 - 0x0088)
+class UBTDecorator_AttrObserver : public UBTDecorator_BlackboardBase
 {
 public:
-	TArray<struct FAIAttrObserver>                     AttrObserverList;                                         // 0x0060(0x0010) (Edit, ZeroConstructor)
-	unsigned char                                      bEnableObserver : 1;                                      // 0x0070(0x0001) (Edit)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
+	TArray<struct FAIAttrObserver>                     AttrObserverList;                                         // 0x0088(0x0010) (Edit, ZeroConstructor)
+	unsigned char                                      bEnableObserver : 1;                                      // 0x0098(0x0001) (Edit)
+	bool                                               bUseBlackboardKey;                                        // 0x0099(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x009A(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_AttrObserver");
 		return pStaticClass;
@@ -761,7 +682,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_BlackboardValueCheck");
 		return pStaticClass;
@@ -779,7 +700,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_CheckAreaID");
 		return pStaticClass;
@@ -796,7 +717,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_CheckDSSwitchOpen");
 		return pStaticClass;
@@ -813,7 +734,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_CheckFlyingStatus");
 		return pStaticClass;
@@ -830,7 +751,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_CheckInOcclusionPose");
 		return pStaticClass;
@@ -847,7 +768,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_CheckShootingPose");
 		return pStaticClass;
@@ -863,16 +784,16 @@ class UBTDecorator_DistanceCheck : public UBTDecorator
 public:
 	struct FBlackboardKeySelector                      CenterActorBlackBoardKey;                                 // 0x0060(0x0028) (Edit)
 	struct FBlackboardKeySelector                      TargetActorBlackBoardKey;                                 // 0x0088(0x0028) (Edit)
-	TEnumAsByte<enum ECompareLengthType>               CompareOperation;                                         // 0x00B0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECompareLengthType>                    CompareOperation;                                         // 0x00B0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x00B1(0x0003) MISSED OFFSET
 	float                                              Distance;                                                 // 0x00B4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FBlackboardKeySelector                      CustomCheckDistanceBlackBoardKey;                         // 0x00B8(0x0028) (Edit)
-	TEnumAsByte<enum EDistanceCheckType>               DistanceCheckType;                                        // 0x00E0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDistanceCheckType>                    DistanceCheckType;                                        // 0x00E0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x00E1(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_DistanceCheck");
 		return pStaticClass;
@@ -895,7 +816,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_DoesDistanceSatisfy");
 		return pStaticClass;
@@ -912,7 +833,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_GameModeCheck");
 		return pStaticClass;
@@ -926,7 +847,7 @@ public:
 class UBTDecorator_GeneralLineTrace : public UBTDecorator
 {
 public:
-	TArray<TEnumAsByte<enum ECollisionChannel>>        traceObjectTypes;                                         // 0x0060(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             traceObjectTypes;                                         // 0x0060(0x0010) (Edit, ZeroConstructor)
 	EAIDecoratorGeneralLineTraceType                   lineTraceType;                                            // 0x0070(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0071(0x0003) MISSED OFFSET
 	float                                              ForwardTestForwardOffset;                                 // 0x0074(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -944,7 +865,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_GeneralLineTrace");
 		return pStaticClass;
@@ -961,7 +882,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_HasOccludeBuildActor");
 		return pStaticClass;
@@ -981,7 +902,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_HasPawnState");
 		return pStaticClass;
@@ -1001,7 +922,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_HasPlayerAIState");
 		return pStaticClass;
@@ -1018,7 +939,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_HasStaticOccludePos");
 		return pStaticClass;
@@ -1035,7 +956,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_IsEnemyInBuilding");
 		return pStaticClass;
@@ -1055,7 +976,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_IsInSafetyCircle");
 		return pStaticClass;
@@ -1065,16 +986,17 @@ public:
 
 
 // Class AI.BTDecorator_IsMovementMode
-// 0x0008 (0x0090 - 0x0088)
+// 0x0018 (0x00A0 - 0x0088)
 class UBTDecorator_IsMovementMode : public UBTDecorator_BlackboardBase
 {
 public:
-	TEnumAsByte<enum EMovementMode>                    MovementMode;                                             // 0x0088(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         MovementMode;                                             // 0x0088(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0089(0x0007) MISSED OFFSET
+	TArray<TEnumAsByte<EMovementMode>>                 MovementModeArray;                                        // 0x0090(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_IsMovementMode");
 		return pStaticClass;
@@ -1091,7 +1013,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_IsOcclusionExist");
 		return pStaticClass;
@@ -1113,7 +1035,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_IsOcclusionSafe");
 		return pStaticClass;
@@ -1130,7 +1052,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_IsSkillReady");
 		return pStaticClass;
@@ -1148,7 +1070,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_IsWayPointNeedRotate");
 		return pStaticClass;
@@ -1167,7 +1089,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_ItemNumberCheck");
 		return pStaticClass;
@@ -1190,7 +1112,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_CheckJump");
 		return pStaticClass;
@@ -1211,7 +1133,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_CheckJumpToLowDirect");
 		return pStaticClass;
@@ -1230,7 +1152,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_CheckObstacle");
 		return pStaticClass;
@@ -1252,7 +1174,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_CloseEnough");
 		return pStaticClass;
@@ -1269,7 +1191,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_HasAIState");
 		return pStaticClass;
@@ -1288,7 +1210,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_IsTargetAbove");
 		return pStaticClass;
@@ -1302,11 +1224,11 @@ public:
 class UBTDecorator_Mob_LineTrace : public UBTDecorator_BlackboardBase
 {
 public:
-	TArray<TEnumAsByte<enum ECollisionChannel>>        traceObjectTypes;                                         // 0x0088(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             traceObjectTypes;                                         // 0x0088(0x0010) (Edit, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_LineTrace");
 		return pStaticClass;
@@ -1325,7 +1247,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_LinkCheckJumpWall");
 		return pStaticClass;
@@ -1342,7 +1264,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Mob_Once");
 		return pStaticClass;
@@ -1359,7 +1281,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_NearTargetLoc");
 		return pStaticClass;
@@ -1379,7 +1301,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_NewCoolDown");
 		return pStaticClass;
@@ -1399,7 +1321,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_NewSatisfyAttkDist");
 		return pStaticClass;
@@ -1421,7 +1343,7 @@ public:
 	struct FVector                                     OffsetOfTargetLocation;                                   // 0x0094(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector2D                                   JumpSpeedRange;                                           // 0x00A0(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
 	float                                              JumpSpeedInterval;                                        // 0x00A8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESuggestProjVelocityTraceOption>  JumpProjTraceType;                                        // 0x00AC(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESuggestProjVelocityTraceOption>       JumpProjTraceType;                                        // 0x00AC(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x00AD(0x0003) MISSED OFFSET
 	float                                              OverrideGravityZ;                                         // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              CollisionRadius;                                          // 0x00B4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -1432,7 +1354,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_PreCheckLaunchMove");
 		return pStaticClass;
@@ -1452,7 +1374,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_Probability");
 		return pStaticClass;
@@ -1469,7 +1391,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIQueryShapeDesc_Base");
 		return pStaticClass;
@@ -1492,7 +1414,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.AIQueryShapeDesc_Cylinder");
 		return pStaticClass;
@@ -1519,7 +1441,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_QueryTarget");
 		return pStaticClass;
@@ -1538,7 +1460,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_RandomStrategy");
 		return pStaticClass;
@@ -1557,7 +1479,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_SatisfyAttkDist");
 		return pStaticClass;
@@ -1574,11 +1496,11 @@ public:
 	bool                                               bIsInversed;                                              // 0x0060(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0061(0x0003) MISSED OFFSET
 	float                                              ExtraDistance;                                            // 0x0064(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TMap<TEnumAsByte<enum EWeaponTypeNew>, float>      WeaponTypeRange;                                          // 0x0068(0x0050) (Edit, ZeroConstructor)
+	TMap<TEnumAsByte<EWeaponTypeNew>, float>           WeaponTypeRange;                                          // 0x0068(0x0050) (Edit, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_SatisfyAttkDistWithWeapon");
 		return pStaticClass;
@@ -1595,7 +1517,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_TargetEnemyLandedTimeCheck");
 		return pStaticClass;
@@ -1612,7 +1534,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTDecorator_WeaponTypeCheck");
 		return pStaticClass;
@@ -1655,7 +1577,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_AdvancedShooting");
 		return pStaticClass;
@@ -1674,7 +1596,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_CheckAttackTarget");
 		return pStaticClass;
@@ -1697,7 +1619,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_CheckInAIBehaviorRegion");
 		return pStaticClass;
@@ -1722,9 +1644,30 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_CheckMaxDistanceFromSpawnPoint");
+		return pStaticClass;
+	}
+
+};
+
+
+// Class AI.BTService_CheckMaxDistanceFromTargetPoint
+// 0x0058 (0x00C0 - 0x0068)
+class UBTService_CheckMaxDistanceFromTargetPoint : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                      BBKeyIsOutOfMaxDistance;                                  // 0x0068(0x0028) (Edit)
+	struct FBlackboardKeySelector                      BBKeyTargetPoint;                                         // 0x0090(0x0028) (Edit)
+	bool                                               bClearEnemyTargetWhenOutOfMaxDist;                        // 0x00B8(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x00B9(0x0007) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class AI.BTService_CheckMaxDistanceFromTargetPoint");
 		return pStaticClass;
 	}
 
@@ -1760,7 +1703,7 @@ public:
 	unsigned char                                      UnknownData01[0x3];                                       // 0x018D(0x0003) MISSED OFFSET
 	float                                              WarningCD;                                                // 0x0190(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableSmokingVisibilityCheck;                            // 0x0194(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                SmokingVisibilityCheckChannel;                            // 0x0195(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     SmokingVisibilityCheckChannel;                            // 0x0195(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x2];                                       // 0x0196(0x0002) MISSED OFFSET
 	struct FName                                       SmokingVisibilityCheckTag;                                // 0x0198(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnablePeekShootingCheck;                                 // 0x01A0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
@@ -1786,7 +1729,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_ChooseEnemy");
 		return pStaticClass;
@@ -1807,7 +1750,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_ChooseEnemyByShape");
 		return pStaticClass;
@@ -1824,7 +1767,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_ChooseEnemySingleTraining");
 		return pStaticClass;
@@ -1843,7 +1786,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_ChooseFightbackEnemy");
 		return pStaticClass;
@@ -1861,7 +1804,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_ChooseTeammate");
 		return pStaticClass;
@@ -1899,7 +1842,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_CJChooseEnemy");
 		return pStaticClass;
@@ -1922,7 +1865,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_ClearTrouble");
 		return pStaticClass;
@@ -1939,7 +1882,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Cruising");
 		return pStaticClass;
@@ -1959,7 +1902,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_DebugInfo");
 		return pStaticClass;
@@ -1979,7 +1922,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_DeliverControl");
 		return pStaticClass;
@@ -2000,7 +1943,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_DetectVehicle");
 		return pStaticClass;
@@ -2023,7 +1966,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_DetectVehicleRisk");
 		return pStaticClass;
@@ -2044,7 +1987,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_DistantJudge");
 		return pStaticClass;
@@ -2061,7 +2004,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_FightDecisionSystem");
 		return pStaticClass;
@@ -2084,7 +2027,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_FlyingChooseEnemy");
 		return pStaticClass;
@@ -2101,7 +2044,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Focus");
 		return pStaticClass;
@@ -2119,7 +2062,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_HealthCheck");
 		return pStaticClass;
@@ -2140,7 +2083,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_LookAround");
 		return pStaticClass;
@@ -2159,7 +2102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_AddHp");
 		return pStaticClass;
@@ -2176,7 +2119,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_AdvancedMovementDetector");
 		return pStaticClass;
@@ -2194,7 +2137,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_AutoDestroy");
 		return pStaticClass;
@@ -2211,7 +2154,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_CheckLocation");
 		return pStaticClass;
@@ -2231,7 +2174,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_CheckLoseTarget");
 		return pStaticClass;
@@ -2248,7 +2191,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_CheckPathExist");
 		return pStaticClass;
@@ -2292,9 +2235,28 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_ChooseEnemy");
+		return pStaticClass;
+	}
+
+};
+
+
+// Class AI.BTService_Mob_ChooseEnemyByRule
+// 0x0008 (0x00D8 - 0x00D0)
+class UBTService_Mob_ChooseEnemyByRule : public UBTService_Mob_ChooseEnemy
+{
+public:
+	bool                                               bSenseMonster;                                            // 0x00D0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x00D1(0x0007) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class AI.BTService_Mob_ChooseEnemyByRule");
 		return pStaticClass;
 	}
 
@@ -2316,7 +2278,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_ChooseEnemyBySingleRule");
 		return pStaticClass;
@@ -2333,7 +2295,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_DetectionEnemy");
 		return pStaticClass;
@@ -2355,7 +2317,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_Hearing");
 		return pStaticClass;
@@ -2372,7 +2334,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_MoveBlockTimer");
 		return pStaticClass;
@@ -2391,7 +2353,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Mob_OpenDoor");
 		return pStaticClass;
@@ -2414,7 +2376,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_ModifyBlackboardValue");
 		return pStaticClass;
@@ -2433,7 +2395,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_OccupyHandler");
 		return pStaticClass;
@@ -2450,7 +2412,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_OpenDoor");
 		return pStaticClass;
@@ -2469,7 +2431,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_QueryNearestTarget");
 		return pStaticClass;
@@ -2488,7 +2450,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_QueryPlayerHoldingWeapon");
 		return pStaticClass;
@@ -2505,7 +2467,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_RescueHandler");
 		return pStaticClass;
@@ -2528,7 +2490,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_SensedEnemy");
 		return pStaticClass;
@@ -2546,7 +2508,7 @@ public:
 	TArray<struct FBPAISenseGrenadeDistanceConfig>     SenseDistanceConfig;                                      // 0x00B8(0x0010) (Edit, ZeroConstructor)
 	TMap<EAISenseGrenadeType, struct FAISenseGrenadeClassConfig> GrenadeClasses;                                           // 0x00C8(0x0050) (Edit, ZeroConstructor)
 	TArray<struct FAISenseGrenadeBBKeyInfo>            GrenadeBBKeyConfig;                                       // 0x0118(0x0010) (Edit, ZeroConstructor)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        GrenadeCollisionChannels;                                 // 0x0128(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             GrenadeCollisionChannels;                                 // 0x0128(0x0010) (Edit, ZeroConstructor)
 	struct FBlackboardKeySelector                      BBKeyHasBeenFlashed;                                      // 0x0138(0x0028) (Edit)
 	int                                                FlashBombBuffID;                                          // 0x0160(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0164(0x0004) MISSED OFFSET
@@ -2556,7 +2518,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_SenseGrenade");
 		return pStaticClass;
@@ -2573,7 +2535,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Shooting");
 		return pStaticClass;
@@ -2597,7 +2559,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_SimpleCheckBehindEnemy");
 		return pStaticClass;
@@ -2619,7 +2581,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_SimpleShooting");
 		return pStaticClass;
@@ -2641,7 +2603,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Tank_RotateTurret");
 		return pStaticClass;
@@ -2661,7 +2623,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_Tank_Shooting");
 		return pStaticClass;
@@ -2681,7 +2643,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_TargetAngleCheck");
 		return pStaticClass;
@@ -2698,7 +2660,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_TargetEnemyHP");
 		return pStaticClass;
@@ -2718,7 +2680,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_TurnAround");
 		return pStaticClass;
@@ -2738,7 +2700,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_UseSkill");
 		return pStaticClass;
@@ -2757,7 +2719,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_VH_ChooseEnemy");
 		return pStaticClass;
@@ -2774,7 +2736,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_WeaponHandler");
 		return pStaticClass;
@@ -2795,7 +2757,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTService_WeatherTimeCount");
 		return pStaticClass;
@@ -2816,7 +2778,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_AddItem");
 		return pStaticClass;
@@ -2834,7 +2796,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_AdvancedWait");
 		return pStaticClass;
@@ -2883,7 +2845,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_AdvFindOcclusionPoint");
 		return pStaticClass;
@@ -2912,7 +2874,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_AnimalFindDirectedPoint");
 		return pStaticClass;
@@ -2948,7 +2910,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_AnimalFindRandomPoint");
 		return pStaticClass;
@@ -2967,7 +2929,7 @@ public:
 	float                                              CollisionDetectAdvancedTime;                              // 0x00B4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              CollisionDetectFreq;                                      // 0x00B8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseSweep;                                                // 0x00BC(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                TraceChannel;                                             // 0x00BD(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     TraceChannel;                                             // 0x00BD(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bRandomAcceptableRadius;                                  // 0x00BE(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x1];                                       // 0x00BF(0x0001) MISSED OFFSET
 	struct FVector2D                                   RandomAcceptableRadiusRange;                              // 0x00C0(0x0008) (Edit, IsPlainOldData)
@@ -2982,7 +2944,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_AnimalMove");
 		return pStaticClass;
@@ -3014,7 +2976,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_AnimalTeleport");
 		return pStaticClass;
@@ -3048,7 +3010,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_BioVH_MoveTo");
 		return pStaticClass;
@@ -3069,7 +3031,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_ChangeWalkSpeed");
 		return pStaticClass;
@@ -3086,7 +3048,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_ClearBlackboardData");
 		return pStaticClass;
@@ -3103,7 +3065,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_ClearDelivery");
 		return pStaticClass;
@@ -3122,7 +3084,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_ConvertActorToRotaion");
 		return pStaticClass;
@@ -3141,7 +3103,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_CopyBlackboardData");
 		return pStaticClass;
@@ -3185,7 +3147,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_CrowdMove");
 		return pStaticClass;
@@ -3211,7 +3173,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_CrowdMoveToOcclusion");
 		return pStaticClass;
@@ -3230,7 +3192,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_DealNextBuildingPathNode");
 		return pStaticClass;
@@ -3268,7 +3230,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_ShortDistanceMove");
 		return pStaticClass;
@@ -3292,7 +3254,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Escape");
 		return pStaticClass;
@@ -3317,7 +3279,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_MagicMove");
 		return pStaticClass;
@@ -3334,7 +3296,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindAndPickItem");
 		return pStaticClass;
@@ -3351,7 +3313,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindAndPickupEquip");
 		return pStaticClass;
@@ -3367,7 +3329,7 @@ class UBTTask_FindCustomActorWithTag : public UBTTask_BlackboardBase
 public:
 	float                                              SphereRadius;                                             // 0x0098(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x009C(0x0004) MISSED OFFSET
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         QueryObjectType;                                          // 0x00A0(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              QueryObjectType;                                          // 0x00A0(0x0010) (Edit, ZeroConstructor)
 	struct FName                                       ActorTag;                                                 // 0x00B0(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      ActorClassFilter;                                         // 0x00B8(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              IgnoreDistance;                                           // 0x00C0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -3375,7 +3337,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindCustomActorWithTag");
 		return pStaticClass;
@@ -3402,7 +3364,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindFlyingHoverPoint");
 		return pStaticClass;
@@ -3423,7 +3385,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindNearestTombBoxTask");
 		return pStaticClass;
@@ -3446,7 +3408,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindOcclusionPoint");
 		return pStaticClass;
@@ -3467,7 +3429,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindRandPosInOccupyPt");
 		return pStaticClass;
@@ -3486,7 +3448,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindTargetPTInHardPT");
 		return pStaticClass;
@@ -3516,7 +3478,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindWayPoint");
 		return pStaticClass;
@@ -3543,7 +3505,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FindWayPointByIDList");
 		return pStaticClass;
@@ -3560,7 +3522,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FinishOrder");
 		return pStaticClass;
@@ -3602,7 +3564,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FlyAlongSpline");
 		return pStaticClass;
@@ -3638,7 +3600,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_FlyTo");
 		return pStaticClass;
@@ -3665,7 +3627,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_ForceIdle");
 		return pStaticClass;
@@ -3688,7 +3650,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralActivateNextWayPoint");
 		return pStaticClass;
@@ -3707,7 +3669,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralAIWayPointPathSelector");
 		return pStaticClass;
@@ -3734,7 +3696,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralExecuteEventsOfWayPoint");
 		return pStaticClass;
@@ -3752,7 +3714,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralExecuteEventsOfWayPointNew");
 		return pStaticClass;
@@ -3787,7 +3749,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralFindAttackablePosition");
 		return pStaticClass;
@@ -3817,7 +3779,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralFindEscapePosition");
 		return pStaticClass;
@@ -3846,20 +3808,20 @@ public:
 	unsigned char                                      bFilterOutBehaviorRegion : 1;                             // 0x0138(0x0001) (Edit, BlueprintVisible)
 	unsigned char                                      bFindSpecialSurface : 1;                                  // 0x0138(0x0001) (Edit, BlueprintVisible)
 	unsigned char                                      bUseBlackboardRange : 1;                                  // 0x0138(0x0001) (Edit, BlueprintVisible)
-	TEnumAsByte<enum EPhysicalSurface>                 SurfaceType;                                              // 0x0139(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      SurfaceType;                                              // 0x0139(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      bUseNavmesh : 1;                                          // 0x013A(0x0001) (Edit, BlueprintVisible)
 	unsigned char                                      UnknownData01[0x5];                                       // 0x013B(0x0005) MISSED OFFSET
 	struct FName                                       SpecificNaVName;                                          // 0x0140(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      bTraceBlock : 1;                                          // 0x0148(0x0001) (Edit, BlueprintVisible)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x0149(0x0003) MISSED OFFSET
 	float                                              SweepCapsuleScale;                                        // 0x014C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                CollisionChannel;                                         // 0x0150(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CollisionChannel;                                         // 0x0150(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x3];                                       // 0x0151(0x0003) MISSED OFFSET
 	float                                              MaxLocationTraceHeightZ;                                  // 0x0154(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralFindRandomPoint");
 		return pStaticClass;
@@ -3878,7 +3840,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralSendEventOfEventWayPoint");
 		return pStaticClass;
@@ -3911,7 +3873,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralStrategyMove");
 		return pStaticClass;
@@ -3931,7 +3893,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GeneralTriggerSkillEvent");
 		return pStaticClass;
@@ -3950,7 +3912,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GetClosestPointFromVehicle");
 		return pStaticClass;
@@ -3971,7 +3933,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_GetRandomAttackablePosition");
 		return pStaticClass;
@@ -3998,7 +3960,7 @@ public:
 	unsigned char                                      UnknownData02[0x3];                                       // 0x00E1(0x0003) MISSED OFFSET
 	struct FVector2D                                   JumpSpeedRange;                                           // 0x00E4(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
 	float                                              JumpSpeedInterval;                                        // 0x00EC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESuggestProjVelocityTraceOption>  JumpProjTraceType;                                        // 0x00F0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESuggestProjVelocityTraceOption>       JumpProjTraceType;                                        // 0x00F0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x3];                                       // 0x00F1(0x0003) MISSED OFFSET
 	float                                              OverrideGravityZ;                                         // 0x00F4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              CollisionRadius;                                          // 0x00F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -4014,7 +3976,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_LaunchMove");
 		return pStaticClass;
@@ -4033,7 +3995,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_MagicMoveAndJump");
 		return pStaticClass;
@@ -4052,7 +4014,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_CastSkill");
 		return pStaticClass;
@@ -4071,7 +4033,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_EnterState");
 		return pStaticClass;
@@ -4087,12 +4049,12 @@ class UBTTask_Mob_Explode : public UBTTask_BlackboardBase
 public:
 	int                                                ExplodeSkillIndex;                                        // 0x0098(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                SkillID;                                                  // 0x009C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                ExplodeSkillType;                                         // 0x00A0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     ExplodeSkillType;                                         // 0x00A0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x00A1(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_Explode");
 		return pStaticClass;
@@ -4111,7 +4073,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_FaceEnemy");
 		return pStaticClass;
@@ -4128,7 +4090,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_FindNextPathPosition");
 		return pStaticClass;
@@ -4154,7 +4116,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_FindNextPatrolPosition");
 		return pStaticClass;
@@ -4187,7 +4149,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_FindPosByTarget");
 		return pStaticClass;
@@ -4223,7 +4185,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_FindRandomAttackablePosition");
 		return pStaticClass;
@@ -4243,7 +4205,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_GetNearDeathCharNearby");
 		return pStaticClass;
@@ -4267,7 +4229,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_GetRandomAttackTargetInRadius");
 		return pStaticClass;
@@ -4286,7 +4248,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_GetRandomSkill");
 		return pStaticClass;
@@ -4304,7 +4266,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_GetTargetVehicle");
 		return pStaticClass;
@@ -4324,7 +4286,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_GetVehicleNearby");
 		return pStaticClass;
@@ -4343,7 +4305,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_LeaveState");
 		return pStaticClass;
@@ -4359,13 +4321,13 @@ class UBTTask_Mob_LinkGetJumpVelocity : public UBTTask_BlackboardBase
 public:
 	float                                              JumpForwardOffset;                                        // 0x0098(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FVector2D                                   JumpSpeedRange;                                           // 0x009C(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum ESuggestProjVelocityTraceOption>  Stride_JumpProjTraceType;                                 // 0x00A4(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESuggestProjVelocityTraceOption>       Stride_JumpProjTraceType;                                 // 0x00A4(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               SetJumpFaceAngle;                                         // 0x00A5(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x00A6(0x0002) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_LinkGetJumpVelocity");
 		return pStaticClass;
@@ -4395,7 +4357,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_MoveTo");
 		return pStaticClass;
@@ -4419,7 +4381,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_NewFindPatrolPosition");
 		return pStaticClass;
@@ -4445,7 +4407,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_SnakeMove");
 		return pStaticClass;
@@ -4462,7 +4424,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_Suicide");
 		return pStaticClass;
@@ -4484,7 +4446,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_Mob_SwimDirect");
 		return pStaticClass;
@@ -4502,7 +4464,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_MobCMD_CastSkill");
 		return pStaticClass;
@@ -4522,7 +4484,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_ModifyBlackboardData");
 		return pStaticClass;
@@ -4554,7 +4516,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_MoveAround");
 		return pStaticClass;
@@ -4611,7 +4573,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_MoveToOcclusion");
 		return pStaticClass;
@@ -4631,7 +4593,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_MoveToSafeArea");
 		return pStaticClass;
@@ -4650,7 +4612,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_PickUpItemAtTombBox");
 		return pStaticClass;
@@ -4673,7 +4635,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_RotateToTarget");
 		return pStaticClass;
@@ -4691,7 +4653,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_RunBBSubTree");
 		return pStaticClass;
@@ -4710,7 +4672,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_RunMultiDynamicSubTree");
 		return pStaticClass;
@@ -4745,7 +4707,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_SeekFlyPoint");
 		return pStaticClass;
@@ -4772,7 +4734,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_SetDownwardPos");
 		return pStaticClass;
@@ -4792,7 +4754,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_SpawnItem");
 		return pStaticClass;
@@ -4835,7 +4797,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_StrategyMove");
 		return pStaticClass;
@@ -4852,9 +4814,10 @@ public:
 	class UClass*                                      SummonActorClass;                                         // 0x0070(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	int                                                SummonNum;                                                // 0x0078(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	int                                                MaxSummonNum;                                             // 0x007C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseSummonPoint;                                          // 0x0080(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0081(0x0007) MISSED OFFSET
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         QueryObjectType;                                          // 0x0088(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	int                                                MonsterResID;                                             // 0x0080(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseSummonPoint;                                          // 0x0084(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0085(0x0003) MISSED OFFSET
+	TArray<TEnumAsByte<EObjectTypeQuery>>              QueryObjectType;                                          // 0x0088(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	float                                              SphereRadius;                                             // 0x0098(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x009C(0x0004) MISSED OFFSET
 	class UClass*                                      SummonLocationClass;                                      // 0x00A0(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -4863,7 +4826,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_SummonActor");
 		return pStaticClass;
@@ -4882,7 +4845,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_SwimInput");
 		return pStaticClass;
@@ -4910,7 +4873,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_TeleportToSpecLoc");
 		return pStaticClass;
@@ -4932,7 +4895,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_TryFightback");
 		return pStaticClass;
@@ -4963,7 +4926,7 @@ public:
 	unsigned char                                      bUseNavmesh : 1;                                          // 0x00F4(0x0001) (Edit, BlueprintVisible)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x00F5(0x0003) MISSED OFFSET
 	struct FName                                       SpecificNaVName;                                          // 0x00F8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                CollisionChannel;                                         // 0x0100(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CollisionChannel;                                         // 0x0100(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x3];                                       // 0x0101(0x0003) MISSED OFFSET
 	float                                              MaxLocationTraceHeightZ;                                  // 0x0104(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      bDebug : 1;                                               // 0x0108(0x0001) (Edit)
@@ -4972,7 +4935,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_VH_Locate");
 		return pStaticClass;
@@ -5006,7 +4969,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_VH_NavigateTo");
 		return pStaticClass;
@@ -5033,7 +4996,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_WayPointDirectMove");
 		return pStaticClass;
@@ -5060,7 +5023,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTask_WayPointListMove");
 		return pStaticClass;
@@ -5079,7 +5042,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_CastSkill");
 		return pStaticClass;
@@ -5102,7 +5065,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_CharacterCastNoneTargetSkill");
 		return pStaticClass;
@@ -5122,7 +5085,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_CharacterCastOnTargetSkill");
 		return pStaticClass;
@@ -5152,7 +5115,7 @@ public:
 	struct FRotator                                    HighThrowViewOffsetRotation;                              // 0x00FC(0x000C) (Edit, IsPlainOldData)
 	struct FRotator                                    LowThrowViewOffsetRotation;                               // 0x0108(0x000C) (Edit, IsPlainOldData)
 	float                                              ProjectileCollisionRadius;                                // 0x0114(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESuggestProjVelocityTraceOption>  ProjVelocityTraceType;                                    // 0x0118(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESuggestProjVelocityTraceOption>       ProjVelocityTraceType;                                    // 0x0118(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0119(0x0003) MISSED OFFSET
 	float                                              fReplanThrowAngleDistance;                                // 0x011C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	TArray<struct FAITaskNodeThrowGrenadeTargetLocRandomableConfig> TargetLocRandomableConfig;                                // 0x0120(0x0010) (Edit, ZeroConstructor)
@@ -5176,7 +5139,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_CharacterCastSkill");
 		return pStaticClass;
@@ -5195,7 +5158,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_CheckOcclusionSafe");
 		return pStaticClass;
@@ -5212,7 +5175,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_ClearCurrentEnemy");
 		return pStaticClass;
@@ -5229,7 +5192,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_ClearFocus");
 		return pStaticClass;
@@ -5246,7 +5209,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_EmptyShot");
 		return pStaticClass;
@@ -5264,7 +5227,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_EquipItemDirectly");
 		return pStaticClass;
@@ -5281,7 +5244,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_EquipOrUnWeapon");
 		return pStaticClass;
@@ -5306,7 +5269,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_FindBuilding");
 		return pStaticClass;
@@ -5323,7 +5286,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_FindItemSpot");
 		return pStaticClass;
@@ -5343,7 +5306,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_FindPosByTarget");
 		return pStaticClass;
@@ -5360,7 +5323,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_ForceSuccess");
 		return pStaticClass;
@@ -5377,7 +5340,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_HumanAction");
 		return pStaticClass;
@@ -5394,7 +5357,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_MeleeAttack");
 		return pStaticClass;
@@ -5410,14 +5373,14 @@ class UBTTaskNode_MonsterCastSkill : public UBTTask_BlackboardBase
 public:
 	int                                                skillindex;                                               // 0x0098(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                SkillID;                                                  // 0x009C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                SkillType;                                                // 0x00A0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     SkillType;                                                // 0x00A0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bCanCastWithoutTarget;                                    // 0x00A1(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bIgnoreSkillCastDistanceCheck;                            // 0x00A2(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x5];                                       // 0x00A3(0x0005) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_MonsterCastSkill");
 		return pStaticClass;
@@ -5434,7 +5397,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_MonsterJumpToPos");
 		return pStaticClass;
@@ -5468,7 +5431,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_NewParachuteJumpBase");
 		return pStaticClass;
@@ -5487,7 +5450,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_NewParachuteJump");
 		return pStaticClass;
@@ -5505,7 +5468,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_NewParachuteJumpBigEvent");
 		return pStaticClass;
@@ -5526,7 +5489,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_NewParachuteJumpDoubleCircle");
 		return pStaticClass;
@@ -5547,7 +5510,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_ParachuteJump");
 		return pStaticClass;
@@ -5574,7 +5537,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_ParachuteJumpV3");
 		return pStaticClass;
@@ -5593,7 +5556,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_PickItemsAtSpot");
 		return pStaticClass;
@@ -5612,7 +5575,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_PlayEmote");
 		return pStaticClass;
@@ -5629,7 +5592,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_PlaySound");
 		return pStaticClass;
@@ -5650,7 +5613,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_PostLuaEvent");
 		return pStaticClass;
@@ -5667,7 +5630,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_RefreshWeaponBBD");
 		return pStaticClass;
@@ -5684,7 +5647,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_Rescue");
 		return pStaticClass;
@@ -5703,7 +5666,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_StopMeleeAttack");
 		return pStaticClass;
@@ -5720,7 +5683,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_StopShooting");
 		return pStaticClass;
@@ -5738,7 +5701,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.BTTaskNode_TakeMedicine");
 		return pStaticClass;
@@ -5766,7 +5729,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.CustomDamageEventComponent");
 		return pStaticClass;
@@ -5786,7 +5749,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.CharacterCustomDamageEventComponent");
 		return pStaticClass;
@@ -5811,7 +5774,7 @@ public:
 	class UTeammateMLAIControllerComponent*            TeammateMLAIControllerComp;                               // 0x0268(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 	float                                              HearRadius;                                               // 0x0270(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0274(0x0004) MISSED OFFSET
-	TMap<TEnumAsByte<enum ESTEPoseState>, struct FCameraViewPitchLimitData> CameraViewPitchLimitDataMap;                              // 0x0278(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	TMap<TEnumAsByte<ESTEPoseState>, struct FCameraViewPitchLimitData> CameraViewPitchLimitDataMap;                              // 0x0278(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	struct FCameraViewPitchLimitData                   FreeFallCameraViewPitchLimitData;                         // 0x02C8(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FVector                                     PrePos;                                                   // 0x02D0(0x000C) (IsPlainOldData)
 	float                                              PreTickTime;                                              // 0x02DC(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -5847,7 +5810,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAIControllerComponent");
 		return pStaticClass;
@@ -5890,24 +5853,22 @@ public:
 
 
 // Class AI.MLAIDynamicItemInfoCollector
-// 0x04F8 (0x0548 - 0x0050)
+// 0x0330 (0x0388 - 0x0058)
 class UMLAIDynamicItemInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAIDynamicItemStateInfo>     LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDynamicItemStateInfo>     CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDynamicItemStateInfo>     CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerDynamicItemInfoGeneral        CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllPlayerDynamicItemInfo               CacheAllPlayersInfoCSS;                                   // 0x0248(0x0160)
-	struct FGlobalDynamicItemState                     CacheGlobalGameState;                                     // 0x03A8(0x0040)
-	struct FGlobalDynamicItemState                     LastGlobalGameState;                                      // 0x03E8(0x0040)
-	struct FDiffGlobalDynamicItemState                 DiffGlobalGameState;                                      // 0x0428(0x0068)
-	struct FDiffGlobalDynamicItemStateGeneral          DiffGlobalGameStateGeneral;                               // 0x0490(0x0068)
-	TMap<uint64_t, struct FDynamicItem>                CacheDynamicItems;                                        // 0x04F8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDynamicItemAIStateInfo>     LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDynamicItemAIStateInfo>     CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FDynamicItemAIStateInfo>     CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffDynamicItemAllPlayersInfo              CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
+	struct FDynamicItemGlobalGameState                 CacheGlobalGameState;                                     // 0x0250(0x0040)
+	struct FDynamicItemGlobalGameState                 LastGlobalGameState;                                      // 0x0290(0x0040)
+	struct FDiffDynamicItemGlobalGameState             DiffGlobalGameStateGeneral;                               // 0x02D0(0x0068)
+	TMap<uint64_t, struct FDynamicItem>                CacheDynamicItems;                                        // 0x0338(0x0050) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAIDynamicItemInfoCollector");
 		return pStaticClass;
@@ -5917,22 +5878,21 @@ public:
 
 
 // Class AI.MLAILandScapeInfoCollector
-// 0x0350 (0x03A0 - 0x0050)
+// 0x0298 (0x02F0 - 0x0058)
 class UMLAILandScapeInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAILandScapeDestroyInfo>     LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAILandScapeDestroyInfo>     CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAILandScapeDestroyInfo>     CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerLandScapeDestroyInfoGeneral   CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllPlayerLandScapeDestroyInfo          CacheAllPlayersInfoCSS;                                   // 0x0248(0x00B8)
-	struct FGlobalLandScapeChangeInfo                  CacheGlobalGameState;                                     // 0x0300(0x0028)
-	struct FGlobalLandScapeChangeInfo                  LastGlobalGameState;                                      // 0x0328(0x0028)
-	struct FDiffGlobalLandScapeChangeInfoGeneral       DiffGlobalGameStateGeneral;                               // 0x0350(0x0050)
+	TMap<uint32_t, struct FLandScapeAIStateInfo>       LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FLandScapeAIStateInfo>       CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FLandScapeAIStateInfo>       CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffLandScapeAllPlayerInfo                 CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
+	struct FLandScapeGlobalGameInfo                    CacheGlobalGameState;                                     // 0x0250(0x0028)
+	struct FLandScapeGlobalGameInfo                    LastGlobalGameState;                                      // 0x0278(0x0028)
+	struct FDiffLandScapeGlobalGameInfo                DiffGlobalGameStateGeneral;                               // 0x02A0(0x0050)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAILandScapeInfoCollector");
 		return pStaticClass;
@@ -5942,24 +5902,22 @@ public:
 
 
 // Class AI.MLAINearbyDoorInfoCollector
-// 0x04F8 (0x0548 - 0x0050)
+// 0x0330 (0x0388 - 0x0058)
 class UMLAINearbyDoorInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAIDoorStateInfo>            LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDoorStateInfo>            CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIDoorStateInfo>            CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerDoorInfoGeneral               CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllPlayerDoorInfo                      CacheAllPlayersInfoCSS;                                   // 0x0248(0x0160)
-	struct FGlobalDoorState                            CacheGlobalGameState;                                     // 0x03A8(0x0040)
-	struct FGlobalDoorState                            LastGlobalGameState;                                      // 0x03E8(0x0040)
-	struct FDiffGlobalDoorState                        DiffGlobalGameState;                                      // 0x0428(0x0068)
-	struct FDiffGlobalDoorStateGeneral                 DiffGlobalGameStateGeneral;                               // 0x0490(0x0068)
-	TMap<uint64_t, struct FDoorState>                  CacheDoorStates;                                          // 0x04F8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyDoorAIStateInfo>      LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyDoorAIStateInfo>      CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyDoorAIStateInfo>      CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffNearbyDoorAllPlayersInfo               CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
+	struct FNearbyDoorGlobalGameState                  CacheGlobalGameState;                                     // 0x0250(0x0040)
+	struct FNearbyDoorGlobalGameState                  LastGlobalGameState;                                      // 0x0290(0x0040)
+	struct FDiffNearbyDoorGlobalGameState              DiffGlobalGameStateGeneral;                               // 0x02D0(0x0068)
+	TMap<uint64_t, struct FDoorState>                  CacheDoorStates;                                          // 0x0338(0x0050) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAINearbyDoorInfoCollector");
 		return pStaticClass;
@@ -5969,24 +5927,22 @@ public:
 
 
 // Class AI.MLAINearbyMonsterInfoCollector
-// 0x04F8 (0x0548 - 0x0050)
+// 0x0330 (0x0388 - 0x0058)
 class UMLAINearbyMonsterInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAINearbyMonsterStateInfo>   LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyMonsterStateInfo>   CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyMonsterStateInfo>   CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerNearbyMonsterGeneral          CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllPlayerNearbyMonsterInfo             CacheAllPlayersInfoCSS;                                   // 0x0248(0x0160)
-	struct FGlobalMonsterState                         CacheGlobalGameState;                                     // 0x03A8(0x0040)
-	struct FGlobalMonsterState                         LastGlobalGameState;                                      // 0x03E8(0x0040)
-	struct FDiffGlobalMonsterState                     DiffGlobalGameState;                                      // 0x0428(0x0068)
-	TMap<uint64_t, struct FMonsterState>               CacheMonsterStats;                                        // 0x0490(0x0050) (ZeroConstructor)
-	struct FDiffGlobalMonsterStateGeneral              DiffGlobalGameStateGeneral;                               // 0x04E0(0x0068)
+	TMap<uint32_t, struct FNearbyMonsterAIStateInfo>   LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyMonsterAIStateInfo>   CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyMonsterAIStateInfo>   CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffNearbyMonsterAllPlayersInfo            CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
+	struct FNearbyMonsterGlobalGameState               CacheGlobalGameState;                                     // 0x0250(0x0040)
+	struct FNearbyMonsterGlobalGameState               LastGlobalGameState;                                      // 0x0290(0x0040)
+	TMap<uint64_t, struct FMonsterState>               CacheMonsterStats;                                        // 0x02D0(0x0050) (ZeroConstructor)
+	struct FDiffNearbyMonsterGlobalGameState           DiffGlobalGameStateGeneral;                               // 0x0320(0x0068)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAINearbyMonsterInfoCollector");
 		return pStaticClass;
@@ -5996,19 +5952,18 @@ public:
 
 
 // Class AI.MLAINearbyPlayerInfoCollector
-// 0x02B0 (0x0300 - 0x0050)
+// 0x01F8 (0x0250 - 0x0058)
 class UMLAINearbyPlayerInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAINearbyPlayerStateInfo>    LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyPlayerStateInfo>    CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAINearbyPlayerStateInfo>    CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerNearbyPlayerInfoGeneral       CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllPlayerNearbyPlayerInfo              CacheAllPlayersInfoCSS;                                   // 0x0248(0x00B8)
+	TMap<uint32_t, struct FNearbyPlayerAIStateInfo>    LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyPlayerAIStateInfo>    CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FNearbyPlayerAIStateInfo>    CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffNearbyPlayerAllPlayersInfo             CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAINearbyPlayerInfoCollector");
 		return pStaticClass;
@@ -6018,26 +5973,23 @@ public:
 
 
 // Class AI.MLAINearbyStateInfoCollector
-// 0x0620 (0x0670 - 0x0050)
+// 0x03D8 (0x0430 - 0x0058)
 class UMLAINearbyStateInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FMLAINearbyStateInfoBaseMod> LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAINearbyStateInfoBaseMod> CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FMLAINearbyStateInfoBaseMod> CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllMLAINearbyInfoBaseModGeneral        CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllMLAINearbyInfoBaseMod               CacheAllPlayersInfoCSS;                                   // 0x0248(0x0180)
-	struct FGlobalNearbyStateBaseMod                   CacheGlobalGameState;                                     // 0x03C8(0x0050)
-	struct FGlobalNearbyStateBaseMod                   LastGlobalGameState;                                      // 0x0418(0x0050)
-	struct FDiffGlobalNearbyStateBaseMod               DiffGlobalGameState;                                      // 0x0468(0x0078)
-	struct FDiffGlobalNearbyStateBaseModGeneral        DiffGlobalGameStateGeneral;                               // 0x04E0(0x00A0)
-	TMap<uint64_t, struct FItemStateData>              CacheItemData;                                            // 0x0580(0x0050) (ZeroConstructor)
-	TMap<uint64_t, struct FAINearbyThrown>             CacheAINearbyThrown;                                      // 0x05D0(0x0050) (ZeroConstructor)
-	TMap<uint64_t, struct FObstacleState>              CacheObstacleStates;                                      // 0x0620(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseNearbyAIStateInfo>      LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseNearbyAIStateInfo>      CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FBaseNearbyAIStateInfo>      CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffBaseNearbyAllPlayersInfo               CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
+	struct FNearbyBaseGlobalGameState                  CacheGlobalGameState;                                     // 0x0250(0x0050)
+	struct FNearbyBaseGlobalGameState                  LastGlobalGameState;                                      // 0x02A0(0x0050)
+	struct FDiffBaseNearbyGlobalGameState              DiffGlobalGameStateGeneral;                               // 0x02F0(0x00A0)
+	TMap<uint64_t, struct FItemStateData>              CacheItemData;                                            // 0x0390(0x0050) (ZeroConstructor)
+	TMap<uint64_t, struct FAINearbyThrown>             CacheAINearbyThrown;                                      // 0x03E0(0x0050) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAINearbyStateInfoCollector");
 		return pStaticClass;
@@ -6074,7 +6026,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAIParachuteJumpComponent");
 		return pStaticClass;
@@ -6093,25 +6045,23 @@ public:
 
 
 // Class AI.MLAIStateInfoManager
-// 0x03E0 (0x0408 - 0x0028)
+// 0x0528 (0x0550 - 0x0028)
 class UMLAIStateInfoManager : public UObject
 {
 public:
 	unsigned char                                      UnknownData00[0x58];                                      // 0x0028(0x0058) MISSED OFFSET
 	struct FString                                     LuaFilePath;                                              // 0x0080(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	bool                                               bUseGlobalNearbyInfo;                                     // 0x0090(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bNeedDebugNearbyInfo;                                     // 0x0091(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bDiffSwitch;                                              // 0x0092(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x5];                                       // 0x0093(0x0005) MISSED OFFSET
+	bool                                               bDiffSwitch;                                              // 0x0090(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0091(0x0007) MISSED OFFSET
 	class UAIStateInfoDataAsset*                       AIStateInfoDataAsset;                                     // 0x0098(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	TArray<class UStateInfoCollectorBase*>             StateInfoCollectorList;                                   // 0x00A0(0x0010) (ZeroConstructor)
-	class UMLAISubSystem*                              MLAISubSystem;                                            // 0x00B0(0x0008) (ZeroConstructor, IsPlainOldData)
-	TMap<struct FString, class UClass*>                CollectorNameToClassMap;                                  // 0x00B8(0x0050) (ZeroConstructor)
-	TMap<class ASTExtraPlayerCharacter*, bool>         CacheMLAIs;                                               // 0x0108(0x0050) (ZeroConstructor)
-	TMap<class ASTExtraPlayerCharacter*, bool>         CachePlayerAndBTAIs;                                      // 0x0158(0x0050) (ZeroConstructor)
-	TMap<uint32_t, bool>                               CacheCandidateAIs;                                        // 0x01A8(0x0050) (ZeroConstructor)
-	TMap<uint32_t, bool>                               AlreadySendDeadStateMap;                                  // 0x01F8(0x0050) (ZeroConstructor)
-	TMap<uint32_t, int>                                CachePlayerType;                                          // 0x0248(0x0050) (ZeroConstructor)
+	TMap<EStatePlayerType, struct FCollectorArray>     PlayerTypeStateInfoCollectorMap;                          // 0x00B0(0x0050) (ZeroConstructor)
+	class UMLAISubSystem*                              MLAISubSystem;                                            // 0x0100(0x0008) (ZeroConstructor, IsPlainOldData)
+	TMap<struct FString, class UClass*>                CollectorNameToClassMap;                                  // 0x0108(0x0050) (ZeroConstructor)
+	TMap<class ASTExtraPlayerCharacter*, bool>         CacheMLAIs;                                               // 0x0158(0x0050) (ZeroConstructor)
+	TMap<class ASTExtraPlayerCharacter*, bool>         CachePlayerAndBTAIs;                                      // 0x01A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, bool>                               CacheCandidateAIs;                                        // 0x01F8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, bool>                               AlreadySendDeadStateMap;                                  // 0x0248(0x0050) (ZeroConstructor)
 	TMap<EDiffListIDTag, struct FDiffListIDMap>        DiffPlayerIDToListIDMap;                                  // 0x0298(0x0050) (ZeroConstructor)
 	TMap<uint64_t, struct FPropertyNameListIDMap>      DiffAIPlayerInfoListIDMaps;                               // 0x02E8(0x0050) (ZeroConstructor)
 	unsigned char                                      UnknownData02[0x20];                                      // 0x0338(0x0020) MISSED OFFSET
@@ -6119,13 +6069,14 @@ public:
 	unsigned char                                      UnknownData03[0xA0];                                      // 0x0360(0x00A0) MISSED OFFSET
 	bool                                               CheckGlobalGameStateShouldCollectInfo;                    // 0x0400(0x0001) (ZeroConstructor, IsPlainOldData)
 	EStatePlayerType                                   CheckGlobalCollectPlayerType;                             // 0x0401(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bUseGeneralStateInfo;                                     // 0x0402(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bUseCombineAIStateInfo;                                   // 0x0403(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x4];                                       // 0x0404(0x0004) MISSED OFFSET
+	bool                                               bUseCombineAIStateInfo;                                   // 0x0402(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0xAD];                                      // 0x0403(0x00AD) MISSED OFFSET
+	TMap<uint32_t, class UAIStateInfoComponentBase*>   AIStateInfoCompMap;                                       // 0x04B0(0x0050) (ExportObject, ZeroConstructor)
+	TMap<uint32_t, class UMLAIControllerComponent*>    MLAIControllerCompMap;                                    // 0x0500(0x0050) (ExportObject, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAIStateInfoManager");
 		return pStaticClass;
@@ -6133,15 +6084,15 @@ public:
 
 
 	void StartRequestCache();
+	void SetUseNewDiffCmds(bool InUseNewDiffCmds);
+	void SetOpenHeadAndMuzzleInfo(bool InOpenHeadAndMuzzleInfo);
 	void ResetWhiteList();
-	bool IsUseGeneralAIStateInfo();
 	void InitCollectorList(TArray<struct FCollectorInitInfo> CollectorInitInfoList);
 	void InitCollector();
 	void Init(class UWorld* InWorld);
+	void GetSinglePlayerStateInfoToCache(class UWorld* InWorld, class ASTExtraPlayerCharacter* Player);
 	void GetGlobalGameStateToCache(class UWorld* InWorld);
 	void GetDiffGlobalGameStateToCacheGeneral(class UWorld* InWorld);
-	void GetDiffGlobalGameStateToCacheCCS(class UWorld* InWorld);
-	void GetDiffAllPlayerStateInfoToCacheCCS(class UWorld* InWorld, bool bUseDiff);
 	void GetDiffAllPlayerAIStateInfoToCacheGeneral(class UWorld* InWorld);
 	void GetAllPlayerStateInfoToCache(class UWorld* InWorld);
 	void EndRequestCache();
@@ -6151,7 +6102,7 @@ public:
 
 
 // Class AI.MLAISubSystem
-// 0x0AB0 (0x0AE0 - 0x0030)
+// 0x0950 (0x0980 - 0x0030)
 class UMLAISubSystem : public UWorldSubsystem
 {
 public:
@@ -6172,39 +6123,43 @@ public:
 	float                                              AirAttackTotalTime;                                       // 0x04E0(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x4];                                       // 0x04E4(0x0004) MISSED OFFSET
 	class UAirAttackComponent*                         AirAttackComp;                                            // 0x04E8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FGlobalGameStateBRBase                      GlobalGameState;                                          // 0x04F0(0x0180)
-	struct FGlobalGameStateBRBase                      LastGlobalGameState;                                      // 0x0670(0x0180)
-	class UMLAIUtilsBase*                              MLAIUtils;                                                // 0x07F0(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x70];                                      // 0x07F8(0x0070) MISSED OFFSET
-	TMap<uint32_t, int>                                CachePlayerRevivalTypes;                                  // 0x0868(0x0050) (ZeroConstructor)
-	class UMLAIStateInfoManager*                       MLAIStateInfoManager;                                     // 0x08B8(0x0008) (ZeroConstructor, IsPlainOldData)
-	TMap<uint32_t, struct FString>                     VoiceRoomInfoMap;                                         // 0x08C0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FString>                     VoiceServerURLMap;                                        // 0x0910(0x0050) (ZeroConstructor)
-	int                                                AirDropTag;                                               // 0x0960(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x4];                                       // 0x0964(0x0004) MISSED OFFSET
-	float                                              ProduceSoundInterval;                                     // 0x0968(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                nCanJumpToSky;                                            // 0x096C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                nNewbieRealHiddenScore;                                   // 0x0970(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                nNewbieMatchCount;                                        // 0x0974(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x50];                                      // 0x0978(0x0050) UNKNOWN PROPERTY: SetProperty AI.MLAISubSystem.TeammateMLAITeamIDSet
-	TArray<uint32_t>                                   SilentMLAIList;                                           // 0x09C8(0x0010) (ZeroConstructor)
-	bool                                               WhitelistPlayerStatesSwitch;                              // 0x09D8(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData07[0x7];                                       // 0x09D9(0x0007) MISSED OFFSET
-	TArray<uint32_t>                                   PlayerWhitelist;                                          // 0x09E0(0x0010) (ZeroConstructor)
-	TMap<class APawn*, class APawn*>                   PlayerWhiteMercenary2MasterMap;                           // 0x09F0(0x0050) (ZeroConstructor)
-	float                                              MercenaryPerceptionDist;                                  // 0x0A40(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              MasterPerceptionDist;                                     // 0x0A44(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              UpdateMercenaryPlayerWhiteInterval;                       // 0x0A48(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData08[0xC];                                       // 0x0A4C(0x000C) MISSED OFFSET
-	TMap<class AActor*, class ASpecialZoneActor*>      CacheSpecialZoneParents;                                  // 0x0A58(0x0050) (ZeroConstructor)
-	TArray<class ASpecialZoneActor*>                   CacheDynamicSpecialZone;                                  // 0x0AA8(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData09[0x18];                                      // 0x0AB8(0x0018) MISSED OFFSET
-	class ABattleRoyaleGameMode*                       CurGameMode;                                              // 0x0AD0(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData10[0x8];                                       // 0x0AD8(0x0008) MISSED OFFSET
+	struct FBRBaseGlobalGameState                      GlobalGameState;                                          // 0x04F0(0x00F0)
+	TArray<struct FSpecialZoneState>                   SpecialZones;                                             // 0x05E0(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData04[0x70];                                      // 0x05F0(0x0070) MISSED OFFSET
+	TMap<uint32_t, int>                                CachePlayerRevivalTypes;                                  // 0x0660(0x0050) (ZeroConstructor)
+	class UMLAIStateInfoManager*                       MLAIStateInfoManager;                                     // 0x06B0(0x0008) (ZeroConstructor, IsPlainOldData)
+	TMap<uint32_t, struct FString>                     VoiceRoomInfoMap;                                         // 0x06B8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FString>                     VoiceServerURLMap;                                        // 0x0708(0x0050) (ZeroConstructor)
+	TMap<int, int>                                     ItemDurabilityMap;                                        // 0x0758(0x0050) (ZeroConstructor)
+	int                                                AirDropTag;                                               // 0x07A8(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x4];                                       // 0x07AC(0x0004) MISSED OFFSET
+	float                                              ProduceSoundInterval;                                     // 0x07B0(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                nCanJumpToSky;                                            // 0x07B4(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                nNewbieRealHiddenScore;                                   // 0x07B8(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                nNewbieMatchCount;                                        // 0x07BC(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData06[0x50];                                      // 0x07C0(0x0050) UNKNOWN PROPERTY: SetProperty AI.MLAISubSystem.TeammateMLAITeamIDSet
+	TArray<uint32_t>                                   SilentMLAIList;                                           // 0x0810(0x0010) (ZeroConstructor)
+	bool                                               WhitelistPlayerStatesSwitch;                              // 0x0820(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData07[0x7];                                       // 0x0821(0x0007) MISSED OFFSET
+	TArray<uint32_t>                                   PlayerWhitelist;                                          // 0x0828(0x0010) (ZeroConstructor)
+	TMap<class APawn*, class APawn*>                   PlayerWhiteMercenary2MasterMap;                           // 0x0838(0x0050) (ZeroConstructor)
+	bool                                               IncludesMasterTeammatesSwitch;                            // 0x0888(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData08[0x3];                                       // 0x0889(0x0003) MISSED OFFSET
+	float                                              MercenaryPerceptionDist;                                  // 0x088C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              MasterPerceptionDist;                                     // 0x0890(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              UpdateMercenaryPlayerWhiteInterval;                       // 0x0894(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData09[0x50];                                      // 0x0898(0x0050) UNKNOWN PROPERTY: SetProperty AI.MLAISubSystem.AICheckVisibilityFilteredActors
+	unsigned char                                      UnknownData10[0x8];                                       // 0x08E8(0x0008) MISSED OFFSET
+	TMap<class AActor*, class ASpecialZoneActor*>      CacheSpecialZoneParents;                                  // 0x08F0(0x0050) (ZeroConstructor)
+	TArray<class ASpecialZoneActor*>                   CacheDynamicSpecialZone;                                  // 0x0940(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData11[0x18];                                      // 0x0950(0x0018) MISSED OFFSET
+	class ABattleRoyaleGameMode*                       CurGameMode;                                              // 0x0968(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData12[0x8];                                       // 0x0970(0x0008) MISSED OFFSET
+	class UDataTableProxy*                             ItemTable;                                                // 0x0978(0x0008) (ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAISubSystem");
 		return pStaticClass;
@@ -6223,20 +6178,21 @@ public:
 	void SetSpecialZoneType(class AActor* InParent, int InType);
 	void SetSpecialZoneExtraState(class AActor* InParent, uint32_t InExtraState);
 	void SetSpecialZoneCustomState(class AActor* InParent, int InCustomState);
+	void SetSpecialZoneCustomAttribute(class AActor* InParent, uint32_t CustomAttributeID, float InValue, bool bRemove);
 	void SetPlayerRevivalType(uint32_t InPlayerKey, int InRevivalType);
+	void SetPlayerAttributeModifyCompConfig(TMap<uint32_t, struct FString> InAttributeModifyCompConfig);
 	void SetPawnStateConfig(TMap<int, uint32_t> InPawnStateConfig);
 	void SetOpenBTCameraInfo(bool InOpenBTCameraInfo);
 	void SetNonMLAIBuffConfig(TMap<int, uint32_t> InBuffIDs);
 	void SetNewbieRealHiddenScore(int InNewbieRealHiddenScore);
 	void SetNewbieMatchCount(int InNewbieMatchCount);
 	static void SetNeedAllInfo(bool bInNeedAllInfo);
-	void SetMLAIUtils(class UMLAIUtilsBase* MLAIUtils);
 	void SetMLAIStateInfoManager(class UMLAIStateInfoManager* InMLAIStateInfoManager);
 	void SetMLAIBuffConfig(TMap<int, uint32_t> InBuffIDs);
 	void SetCDSkillConfig(TMap<int, uint32_t> InAttributeCDSkillConfigs);
 	static void SetBackpackItemUpdatedMapSwitch(bool bInSwitch);
-	void SetAttributeModifyCompConfig(TMap<uint32_t, struct FString> InAttributeModifyCompConfig);
 	void SetAirDropLocation(int InAirDropTag, const struct FVector& AirDropLocation);
+	void SetAIAttributeModifyCompConfig(TMap<uint32_t, struct FString> InAttributeModifyCompConfig);
 	void SetAIAttribute_CastEnergyWithCount(uint32_t InPlayerKey, uint32_t InAttributeID, int InCurCount, float InCurEnergy, float InLastActiveTime, int InMaxCount, float InMaxEnergy, float InDeltaEnergy);
 	void SetAIAttribute(uint32_t InPlayerKey, uint32_t InAttributeID, float InAttributeValue);
 	void ResetAttributeIDToPlayerKeysMap(uint32_t InAttributeID, TArray<uint32_t> InPlayerKeys);
@@ -6244,6 +6200,7 @@ public:
 	void RemoveMercenary2MasterMap(class APawn* MercenaryAI, class APawn* Master);
 	void RemoveFromSilentMLAIList(uint32_t InPlayerKey);
 	void RemoveFromPlayerWhitelist(uint32_t InPlayerKey);
+	void RemoveAICheckVisibilityFilteredActor(uint32_t actorid);
 	void OnVehicleDamageInfo(class AController* InstigatorController, class AController* VictimController, int DamageTypeId, float Damage, bool bIsFatalHealthCost, class AActor* DamageCauser, class AActor* VictimVehicle);
 	void OnPlayerStartFire(uint32_t PlayerKey, int Count);
 	void OnPlayerPickUpItem(uint32_t InPlayerKey);
@@ -6258,9 +6215,11 @@ public:
 	void GetVoiceRoomInfo(TArray<struct FBattleVoiceRoomInfo>* BattleVoiceRoomInfos);
 	struct FString GetServerIPAddress();
 	float GetLossTime(class ASTExtraPlayerController* PlayerController);
+	int GetItemDurability(int InTypeSpecificID);
 	void GetCacheAIAttributes(uint32_t InPlayerKey, TArray<struct FAIAttribute>* Attributes);
 	int GetAndCheckAirDopTag();
 	void FindPlayerWhiteRange(const struct FVector& InLocation, float InRange);
+	void FindMasterTeamMateList(class APawn* Master);
 	void EndRequestCache();
 	void ClearAttributeIDToPlayerKeysMap(uint32_t InAttributeID);
 	void ChangeMLAIInfo(class AFakePlayerAIController* AIController, const struct FString& Name, uint64_t DisplayUID, struct FPlayerOBInfo* OBInfo);
@@ -6269,8 +6228,8 @@ public:
 	void AddVoiceServerURLInfo(uint32_t PlayerKey, const struct FString& BattleVoiceServerURL);
 	void AddVoiceRoomInfo(uint32_t TeamID, const struct FString& BattleVoiceRoomID);
 	void AddTeammateMLAITeamID(uint32_t TeamID);
-	void AddMercenary2MasterMap(class APawn* MercenaryAI, class APawn* Master);
-	void AddAIAttributeConfig(uint32_t InID, const struct FString& InKey);
+	void AddMercenary2MasterMap(class APawn* MercenaryAI, class APawn* Master, bool bIncludesTeammates);
+	void AddAICheckVisibilityFilteredActor(uint32_t actorid);
 };
 
 
@@ -6289,7 +6248,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MLAITrainingComponent");
 		return pStaticClass;
@@ -6306,163 +6265,24 @@ public:
 };
 
 
-// Class AI.MLAIUtilsBase
-// 0x0940 (0x0968 - 0x0028)
-class UMLAIUtilsBase : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x58];                                      // 0x0028(0x0058) MISSED OFFSET
-	struct FString                                     LuaFilePath;                                              // 0x0080(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	class UAIStateInfoDataAsset*                       AIStateInfoDataAsset;                                     // 0x0090(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseGlobalNearbyInfo;                                     // 0x0098(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bNeedDebugNearbyInfo;                                     // 0x0099(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               OnlyBaseGlobalState;                                      // 0x009A(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x5];                                       // 0x009B(0x0005) MISSED OFFSET
-	TMap<uint64_t, struct FItemStateData>              CacheItemData;                                            // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint64_t, struct FAINearbyThrown>             CacheAINearbyThrown;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	TMap<uint64_t, struct FObstacleState>              CacheObstacleStates;                                      // 0x0140(0x0050) (ZeroConstructor)
-	struct FGlobalGameStateBaseMod                     CacheGlobalGameStateBaseMod;                              // 0x0190(0x00C8)
-	struct FGlobalGameStateBaseMod                     LastGlobalGameStateBaseMod;                               // 0x0258(0x00C8)
-	struct FDiffGlobalGameStateBaseMod                 DiffGlobalGameStateBaseMod;                               // 0x0320(0x0080)
-	struct FDiffGlobalGameStateBaseModGeneral          DiffGlobalGameStateBaseModGeneral;                        // 0x03A0(0x0140)
-	struct FDiffListIDMap                              DiffPlayerIDToListIDMap;                                  // 0x04E0(0x0050)
-	TMap<uint64_t, struct FPropertyNameListIDMap>      DiffAIPlayerInfoListIDMaps;                               // 0x0530(0x0050) (ZeroConstructor)
-	TArray<struct FAIStateInfoBaseMod>                 CacheAllPlayersInfoBaseMod;                               // 0x0580(0x0010) (ZeroConstructor)
-	struct FDiffAllPlayerInfoBaseModGeneral            CacheDiffAllPlayersInfoBaseModGeneral;                    // 0x0590(0x00A0)
-	struct FDiffAllPlayerInfoBaseMod                   CacheAllPlayersInfoBaseModCSS;                            // 0x0630(0x0200)
-	TMap<uint32_t, struct FAIStateInfoBaseMod>         LastAllPlayerInfoMapBaseMod;                              // 0x0830(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIStateInfoBaseMod>         CacheAllPlayersInfoMapBaseMod;                            // 0x0880(0x0050) (ZeroConstructor)
-	unsigned char                                      UnknownData02[0x60];                                      // 0x08D0(0x0060) MISSED OFFSET
-	TArray<class ASTExtraPlayerCharacter*>             CacheMLAIs;                                               // 0x0930(0x0010) (ZeroConstructor)
-	TArray<class ASTExtraPlayerCharacter*>             CachePlayerAndBTAIs;                                      // 0x0940(0x0010) (ZeroConstructor)
-	class ABattleRoyaleGameMode*                       CurGameMode;                                              // 0x0950(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UAIActingComponent*                          AIActingComp;                                             // 0x0958(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class UMLAISubSystem*                              MLAISubSystem;                                            // 0x0960(0x0008) (ZeroConstructor, IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class AI.MLAIUtilsBase");
-		return pStaticClass;
-	}
-
-
-	void StartRequestCache();
-	static void SetUseNewDiffCmds(bool InUseNewDiffCmds, bool InUseNewDiffField);
-	void SetOpenHeadAndMuzzleInfo(bool InOpenHeadAndMuzzleInfo);
-	void RemoveBackpackItemUpdatedMap(uint32_t PlayerKey, bool AllRemove);
-	void OnBackpackItemListUpdated(uint32_t PlayerKey);
-	void GetGlobalGameStateInfoToCache(class UWorld* InWorld);
-	void GetDiffGlobalGameStateInfoToCache(class UWorld* InWorld);
-	void GetDiffGlobalGameStateBaseModToCacheGeneral(class UWorld* InWorld);
-	void GetDiffGlobalGameStatBaseModToCache(class UWorld* InWorld);
-	void GetDiffAllPlayerStateInfoToCacheCSS(class UWorld* InWorld, bool bUseDiff);
-	void GetDiffAllPlayerStateInfoToCache(class UWorld* InWorld);
-	void GetDiffAllPlayerStateInfoBaseModToCacheCCS(class UWorld* InWorld, bool bUseDiff);
-	void GetAllPlayerStateInfoToCache(class UWorld* InWorld);
-	void EndRequestCache();
-	void AddBackpackItemListUpdatedDelegate(class UBackpackComponent* InBackpackComp, uint32_t InPlayerKey);
-};
-
-
-// Class AI.MLAIUtilsBRBase
-// 0x0DB0 (0x1718 - 0x0968)
-class UMLAIUtilsBRBase : public UMLAIUtilsBase
-{
-public:
-	TMap<uint64_t, struct FDoorState>                  CacheDoorStates;                                          // 0x0968(0x0050) (ZeroConstructor)
-	TMap<uint64_t, struct FVehicleState>               CacheVehicleStates;                                       // 0x09B8(0x0050) (ZeroConstructor)
-	TMap<uint64_t, struct FDynamicItem>                CacheDynamicItems;                                        // 0x0A08(0x0050) (ZeroConstructor)
-	TMap<uint64_t, struct FMonsterState>               CacheMonsterStats;                                        // 0x0A58(0x0050) (ZeroConstructor)
-	struct FGlobalGameStateBRBase                      CacheGlobalGameStateBRBase;                               // 0x0AA8(0x0180)
-	struct FGlobalGameStateBRBase                      LastGlobalGameStateBRBase;                                // 0x0C28(0x0180)
-	struct FDiffGlobalGameStateBRBase                  DiffGlobalGameStateBRBase;                                // 0x0DA8(0x0180)
-	struct FDiffGlobalGameStateBRBaseGeneral           DiffGlobalGameStateBRBaseGeneral;                         // 0x0F28(0x02E0)
-	struct FRedZoneState                               CacheRedZoneInfo;                                         // 0x1208(0x0030)
-	TArray<struct FAIStateInfoBRBase>                  CacheAllPlayersInfoBRBase;                                // 0x1238(0x0010) (ZeroConstructor)
-	struct FDiffAllPlayerInfoBRBaseGeneral             CacheDiffAllPlayersInfoBRBaseGeneral;                     // 0x1248(0x0098)
-	struct FDiffAllPlayerInfoBRBase                    CacheAllPlayersInfoBRBaseCSS;                             // 0x12E0(0x0398)
-	TMap<uint32_t, struct FAIStateInfoBRBase>          LastAllPlayerInfoMapBRBase;                               // 0x1678(0x0050) (ZeroConstructor)
-	class AAIWorldVolume*                              AIWorldVolume;                                            // 0x16C8(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x30];                                      // 0x16D0(0x0030) MISSED OFFSET
-	class UCircleMgrComponent*                         CircleMgr;                                                // 0x1700(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x1708(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class AI.MLAIUtilsBRBase");
-		return pStaticClass;
-	}
-
-
-	void HandleGameModeStateChanged(const struct FGameModeStateChangedParams& Params);
-	void GetRedZoneState(class UWorld* InWorld, struct FRedZoneState* ZoneState);
-	void GetAIPlayerStateBRBase(class ASTExtraBaseCharacter* InCharacter, struct FAIPlayerStateBRBase* Ret);
-};
-
-
-// Class AI.MLAIUtilsMPBase
-// 0x01F8 (0x0B60 - 0x0968)
-class UMLAIUtilsMPBase : public UMLAIUtilsBase
-{
-public:
-	struct FGlobalGameStateMPBase                      CacheGlobalGameStateMPBase;                               // 0x0968(0x0040)
-	struct FGlobalGameStateMPBase                      LastGlobalGameStateMPBase;                                // 0x09A8(0x0040)
-	struct FDiffGlobalGameStateMPBaseGeneral           DiffGlobalGameStateMPBaseGeneral;                         // 0x09E8(0x0050)
-	TArray<struct FAIStateInfoMPBase>                  CacheAllPlayersInfoMPBase;                                // 0x0A38(0x0010) (ZeroConstructor)
-	struct FDiffAllPlayerInfoMPBaseGeneral             CacheDiffAllPlayersInfoMPBaseGeneral;                     // 0x0A48(0x0098)
-	TMap<uint32_t, struct FAIStateInfoMPBase>          LastAllPlayerInfoMapMPBase;                               // 0x0AE0(0x0050) (ZeroConstructor)
-	unsigned char                                      UnknownData00[0x30];                                      // 0x0B30(0x0030) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class AI.MLAIUtilsMPBase");
-		return pStaticClass;
-	}
-
-};
-
-
-// Class AI.MlAIUtilsTeamDeath
-// 0x0000 (0x0B60 - 0x0B60)
-class UMlAIUtilsTeamDeath : public UMLAIUtilsMPBase
-{
-public:
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class AI.MlAIUtilsTeamDeath");
-		return pStaticClass;
-	}
-
-};
-
-
 // Class AI.MPStateInfoCollector
-// 0x0348 (0x0398 - 0x0050)
+// 0x0360 (0x03B8 - 0x0058)
 class UMPStateInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAIMPStateInfo>              LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIMPStateInfo>              CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIMPStateInfo>              CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerMPBaseInfoGeneral             CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0118)
-	struct FGlobalGameMPState                          CacheGlobalGameState;                                     // 0x0258(0x0040)
-	struct FGlobalGameMPState                          LastGlobalGameState;                                      // 0x0298(0x0040)
-	struct FGlobalGameMPState                          DiffGlobalGameState;                                      // 0x02D8(0x0040)
-	struct FDiffGlobalGameMPBaseStateGeneral           DiffGlobalGameStateGeneral;                               // 0x0318(0x0050)
-	unsigned char                                      UnknownData00[0x30];                                      // 0x0368(0x0030) MISSED OFFSET
+	TMap<uint32_t, struct FMPBaseAIStateInfo>          LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMPBaseAIStateInfo>          CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FMPBaseAIStateInfo>          CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffMPBaseAllPlayersInfo                   CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0118)
+	struct FMPBaseGlobalGameState                      CacheGlobalGameState;                                     // 0x0260(0x0040)
+	struct FMPBaseGlobalGameState                      LastGlobalGameState;                                      // 0x02A0(0x0040)
+	struct FMPBaseGlobalGameState                      DiffGlobalGameState;                                      // 0x02E0(0x0040)
+	struct FDiffMPBaseGlobalGameState                  DiffGlobalGameStateGeneral;                               // 0x0320(0x0068)
+	unsigned char                                      UnknownData00[0x30];                                      // 0x0388(0x0030) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.MPStateInfoCollector");
 		return pStaticClass;
@@ -6472,16 +6292,14 @@ public:
 
 
 // Class AI.SpecialZoneShapeComponent
-// 0x0010 (0x0930 - 0x0920)
+// 0x0000 (0x0930 - 0x0930)
 class USpecialZoneShapeComponent : public UPrimitiveComponent
 {
 public:
-	float                                              SphereRadius;                                             // 0x0920(0x0004) (BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0xC];                                       // 0x0924(0x000C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.SpecialZoneShapeComponent");
 		return pStaticClass;
@@ -6491,7 +6309,7 @@ public:
 
 
 // Class AI.SpecialZoneActor
-// 0x00B0 (0x0560 - 0x04B0)
+// 0x0100 (0x05B0 - 0x04B0)
 class ASpecialZoneActor : public AActor
 {
 public:
@@ -6500,29 +6318,30 @@ public:
 	bool                                               IsDynamic;                                                // 0x04B8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x04B9(0x0003) MISSED OFFSET
 	int                                                CustomState;                                              // 0x04BC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsDestructibleMesh;                                       // 0x04C0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsInstanced;                                              // 0x04C1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x04C2(0x0002) MISSED OFFSET
-	int                                                InstancedMaxNum;                                          // 0x04C4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TMap<struct FString, int>                          StaticMeshNameToType;                                     // 0x04C8(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
-	bool                                               CheckNearHaveAI;                                          // 0x0518(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0519(0x0003) MISSED OFFSET
-	float                                              CheckAIDist;                                              // 0x051C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class USpecialZoneShapeComponent*                  SpecialZoneShapeComponent;                                // 0x0520(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class AActor*                                      CacheParentActor;                                         // 0x0528(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0530(0x0004) MISSED OFFSET
-	uint32_t                                           ExtraState;                                               // 0x0534(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              Health;                                                   // 0x0538(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsSpawnBTAINeedCheck;                                     // 0x053C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	ESpecialZoneType                                   SpecialZoneType;                                          // 0x053D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0xA];                                       // 0x053E(0x000A) MISSED OFFSET
-	class AAIWorldVolume*                              AIWorldVolume;                                            // 0x0548(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UInstancedStaticMeshComponent*               CacheInstancedMeshComp;                                   // 0x0550(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class USTDestructionComponent*                     CacheDestructibleMeshComp;                                // 0x0558(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	TMap<uint32_t, float>                              CustomAttributeMap;                                       // 0x04C0(0x0050) (ZeroConstructor)
+	bool                                               IsDestructibleMesh;                                       // 0x0510(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsInstanced;                                              // 0x0511(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0512(0x0002) MISSED OFFSET
+	int                                                InstancedMaxNum;                                          // 0x0514(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TMap<struct FString, int>                          StaticMeshNameToType;                                     // 0x0518(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
+	bool                                               CheckNearHaveAI;                                          // 0x0568(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0569(0x0003) MISSED OFFSET
+	float                                              CheckAIDist;                                              // 0x056C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USpecialZoneShapeComponent*                  SpecialZoneShapeComponent;                                // 0x0570(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class AActor*                                      CacheParentActor;                                         // 0x0578(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0580(0x0004) MISSED OFFSET
+	uint32_t                                           ExtraState;                                               // 0x0584(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              Health;                                                   // 0x0588(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsSpawnBTAINeedCheck;                                     // 0x058C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	ESpecialZoneType                                   SpecialZoneType;                                          // 0x058D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0xA];                                       // 0x058E(0x000A) MISSED OFFSET
+	class AAIWorldVolume*                              AIWorldVolume;                                            // 0x0598(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UInstancedStaticMeshComponent*               CacheInstancedMeshComp;                                   // 0x05A0(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class USTDestructionComponent*                     CacheDestructibleMeshComp;                                // 0x05A8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.SpecialZoneActor");
 		return pStaticClass;
@@ -6532,8 +6351,10 @@ public:
 	void UpdateType(int InType);
 	void UpdateExtraState(uint32_t InExtraState);
 	void UpdateCustomState(int InCustomState);
+	void UpdateCustomAttributeValue(uint32_t InCustomAttributeID, float InValue, bool bRemove);
 	void HandleFragmentsStateChanged(int FragmentItemIndex, EPhotonFracturedMeshFragmentState State, TArray<EPhotonFracturedMeshFragmentState> FragmentState);
 	struct FSpecialZoneState GetSpecialZoneState();
+	void GetCustomAttributeList(TArray<struct FAIAttribute>* OutCustomAttributeList);
 };
 
 
@@ -6550,7 +6371,7 @@ public:
 	unsigned char                                      UnknownData01[0x3];                                       // 0x010D(0x0003) MISSED OFFSET
 	float                                              VerticalOffset;                                           // 0x0110(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              PlayerViewDistance;                                       // 0x0114(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                CollisionChannel;                                         // 0x0118(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CollisionChannel;                                         // 0x0118(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x0119(0x0003) MISSED OFFSET
 	float                                              MaxLocationTraceHeightZ;                                  // 0x011C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	TArray<struct FSpawnArea>                          CustomAreas;                                              // 0x0120(0x0010) (Edit, ZeroConstructor)
@@ -6558,7 +6379,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.STStrategyLocation_Range");
 		return pStaticClass;
@@ -6580,7 +6401,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.STStrategySpecies_Candidate");
 		return pStaticClass;
@@ -6600,7 +6421,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.STStrategySpecies_Lua");
 		return pStaticClass;
@@ -6622,7 +6443,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.STStrategyTiming_Event");
 		return pStaticClass;
@@ -6655,7 +6476,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.TeammateMLAIControllerComponent");
 		return pStaticClass;
@@ -6687,7 +6508,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.VehicleAIController");
 		return pStaticClass;
@@ -6711,7 +6532,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.VehicleAIUserComponent");
 		return pStaticClass;
@@ -6738,7 +6559,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.VehicleCustomDamageEventComponent");
 		return pStaticClass;
@@ -6763,7 +6584,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.VehiclePathFollowingComponent");
 		return pStaticClass;
@@ -6773,25 +6594,23 @@ public:
 
 
 // Class AI.VehicleStateInfoCollector
-// 0x0760 (0x07B0 - 0x0050)
+// 0x03A8 (0x0400 - 0x0058)
 class UVehicleStateInfoCollector : public UStateInfoCollectorBase
 {
 public:
-	TMap<uint32_t, struct FAIVehicleStateInfo>         LastAllPlayerStateInfoMap;                                // 0x0050(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIVehicleStateInfo>         CurrentAllPlayerStateInfoMap;                             // 0x00A0(0x0050) (ZeroConstructor)
-	TMap<uint32_t, struct FAIVehicleStateInfo>         CacheAllPlayersInfo;                                      // 0x00F0(0x0050) (ZeroConstructor)
-	struct FDiffAllPlayerVehicleInfoGeneral            CacheDiffAllPlayersInfoGeneral;                           // 0x0140(0x0108)
-	struct FDiffAllPlayerVehicleInfo                   CacheAllPlayersInfoCSS;                                   // 0x0248(0x0350)
-	struct FGlobalVehicleState                         CacheGlobalGameState;                                     // 0x0598(0x0050)
-	struct FGlobalVehicleState                         LastGlobalGameState;                                      // 0x05E8(0x0050)
-	struct FDiffGlobalVehicleState                     DiffGlobalGameState;                                      // 0x0638(0x0068)
-	struct FDiffGlobalVehicleStateGeneral              DiffGlobalGameStateGeneral;                               // 0x06A0(0x0078)
-	TMap<uint64_t, struct FVehicleState>               CacheVehicleStates;                                       // 0x0718(0x0050) (ZeroConstructor)
-	unsigned char                                      UnknownData00[0x48];                                      // 0x0768(0x0048) MISSED OFFSET
+	TMap<uint32_t, struct FVehicleAIStateInfo>         LastAllPlayerStateInfoMap;                                // 0x0058(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FVehicleAIStateInfo>         CurrentAllPlayerStateInfoMap;                             // 0x00A8(0x0050) (ZeroConstructor)
+	TMap<uint32_t, struct FVehicleAIStateInfo>         CacheAllPlayersInfo;                                      // 0x00F8(0x0050) (ZeroConstructor)
+	struct FDiffVehicleAllPlayersInfo                  CacheDiffAllPlayersInfoGeneral;                           // 0x0148(0x0108)
+	struct FVehicleGlobalGameState                     CacheGlobalGameState;                                     // 0x0250(0x0050)
+	struct FVehicleGlobalGameState                     LastGlobalGameState;                                      // 0x02A0(0x0050)
+	struct FDiffVehicleGlobalGameState                 DiffGlobalGameStateGeneral;                               // 0x02F0(0x0078)
+	TMap<uint64_t, struct FVehicleState>               CacheVehicleStates;                                       // 0x0368(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x48];                                      // 0x03B8(0x0048) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AI.VehicleStateInfoCollector");
 		return pStaticClass;

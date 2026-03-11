@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function MediaAssets.MediaSource.Validate
 // (Native, Public, BlueprintCallable, BlueprintPure, Const)
@@ -15,7 +15,7 @@ namespace SDK
 
 bool UMediaSource::Validate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaSource.Validate");
 
@@ -40,7 +40,7 @@ bool UMediaSource::Validate()
 
 struct FString UMediaSource::GetUrl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaSource.GetUrl");
 
@@ -65,7 +65,7 @@ struct FString UMediaSource::GetUrl()
 
 void UFileMediaSource::SetFilePath(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.FileMediaSource.SetFilePath");
 
@@ -90,7 +90,7 @@ void UFileMediaSource::SetFilePath(const struct FString& Path)
 
 void UMediaBlueprintFunctionLibrary::EnumerateWebcamCaptureDevices(int filter, TArray<struct FMediaCaptureDevice>* OutDevices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateWebcamCaptureDevices");
 
@@ -118,7 +118,7 @@ void UMediaBlueprintFunctionLibrary::EnumerateWebcamCaptureDevices(int filter, T
 
 void UMediaBlueprintFunctionLibrary::EnumerateVideoCaptureDevices(int filter, TArray<struct FMediaCaptureDevice>* OutDevices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateVideoCaptureDevices");
 
@@ -146,7 +146,7 @@ void UMediaBlueprintFunctionLibrary::EnumerateVideoCaptureDevices(int filter, TA
 
 void UMediaBlueprintFunctionLibrary::EnumerateAudioCaptureDevices(int filter, TArray<struct FMediaCaptureDevice>* OutDevices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateAudioCaptureDevices");
 
@@ -173,7 +173,7 @@ void UMediaBlueprintFunctionLibrary::EnumerateAudioCaptureDevices(int filter, TA
 
 bool UMediaPlayer::SupportsSeeking()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsSeeking");
 
@@ -198,7 +198,7 @@ bool UMediaPlayer::SupportsSeeking()
 
 bool UMediaPlayer::SupportsScrubbing()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsScrubbing");
 
@@ -225,7 +225,7 @@ bool UMediaPlayer::SupportsScrubbing()
 
 bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsRate");
 
@@ -254,7 +254,7 @@ bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 
 bool UMediaPlayer::SetViewRotation(const struct FRotator& Rotation, bool Absolute)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetViewRotation");
 
@@ -284,7 +284,7 @@ bool UMediaPlayer::SetViewRotation(const struct FRotator& Rotation, bool Absolut
 
 bool UMediaPlayer::SetViewField(float Horizontal, float Vertical, bool Absolute)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetViewField");
 
@@ -315,7 +315,7 @@ bool UMediaPlayer::SetViewField(float Horizontal, float Vertical, bool Absolute)
 
 bool UMediaPlayer::SetVideoTrackFrameRate(int TrackIndex, int FormatIndex, float FrameRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetVideoTrackFrameRate");
 
@@ -346,7 +346,7 @@ bool UMediaPlayer::SetVideoTrackFrameRate(int TrackIndex, int FormatIndex, float
 
 bool UMediaPlayer::SetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetTrackFormat");
 
@@ -375,7 +375,7 @@ bool UMediaPlayer::SetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex, i
 
 bool UMediaPlayer::SetRate(float Rate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetRate");
 
@@ -402,7 +402,7 @@ bool UMediaPlayer::SetRate(float Rate)
 
 bool UMediaPlayer::SetLooping(bool Looping)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetLooping");
 
@@ -428,7 +428,7 @@ bool UMediaPlayer::SetLooping(bool Looping)
 
 void UMediaPlayer::SetDesiredPlayerName(const struct FName& PlayerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetDesiredPlayerName");
 
@@ -452,7 +452,7 @@ void UMediaPlayer::SetDesiredPlayerName(const struct FName& PlayerName)
 
 void UMediaPlayer::SetCancelPending(bool flag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetCancelPending");
 
@@ -478,7 +478,7 @@ void UMediaPlayer::SetCancelPending(bool flag)
 
 bool UMediaPlayer::SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SelectTrack");
 
@@ -506,7 +506,7 @@ bool UMediaPlayer::SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
 
 bool UMediaPlayer::Seek(const struct FTimespan& Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Seek");
 
@@ -532,7 +532,7 @@ bool UMediaPlayer::Seek(const struct FTimespan& Time)
 
 bool UMediaPlayer::Rewind()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Rewind");
 
@@ -557,7 +557,7 @@ bool UMediaPlayer::Rewind()
 
 bool UMediaPlayer::Reopen()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Reopen");
 
@@ -582,7 +582,7 @@ bool UMediaPlayer::Reopen()
 
 bool UMediaPlayer::Previous()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Previous");
 
@@ -607,7 +607,7 @@ bool UMediaPlayer::Previous()
 
 bool UMediaPlayer::Play()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Play");
 
@@ -632,7 +632,7 @@ bool UMediaPlayer::Play()
 
 bool UMediaPlayer::Pause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Pause");
 
@@ -658,7 +658,7 @@ bool UMediaPlayer::Pause()
 
 bool UMediaPlayer::OpenUrl(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenUrl");
 
@@ -685,7 +685,7 @@ bool UMediaPlayer::OpenUrl(const struct FString& URL)
 
 bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenSource");
 
@@ -713,7 +713,7 @@ bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 
 bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenPlaylistIndex");
 
@@ -741,7 +741,7 @@ bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index
 
 bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenPlaylist");
 
@@ -768,7 +768,7 @@ bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 
 bool UMediaPlayer::OpenFile(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenFile");
 
@@ -794,7 +794,7 @@ bool UMediaPlayer::OpenFile(const struct FString& FilePath)
 
 bool UMediaPlayer::Next()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Next");
 
@@ -819,7 +819,7 @@ bool UMediaPlayer::Next()
 
 bool UMediaPlayer::IsReady()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsReady");
 
@@ -844,7 +844,7 @@ bool UMediaPlayer::IsReady()
 
 bool UMediaPlayer::IsPreparing()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPreparing");
 
@@ -869,7 +869,7 @@ bool UMediaPlayer::IsPreparing()
 
 bool UMediaPlayer::IsPlaying()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPlaying");
 
@@ -894,7 +894,7 @@ bool UMediaPlayer::IsPlaying()
 
 bool UMediaPlayer::IsPaused()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPaused");
 
@@ -919,7 +919,7 @@ bool UMediaPlayer::IsPaused()
 
 bool UMediaPlayer::IsLooping()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsLooping");
 
@@ -944,7 +944,7 @@ bool UMediaPlayer::IsLooping()
 
 bool UMediaPlayer::IsConnecting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsConnecting");
 
@@ -969,7 +969,7 @@ bool UMediaPlayer::IsConnecting()
 
 bool UMediaPlayer::IsBuffering()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsBuffering");
 
@@ -994,7 +994,7 @@ bool UMediaPlayer::IsBuffering()
 
 bool UMediaPlayer::HasError()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.HasError");
 
@@ -1019,7 +1019,7 @@ bool UMediaPlayer::HasError()
 
 struct FRotator UMediaPlayer::GetViewRotation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetViewRotation");
 
@@ -1046,7 +1046,7 @@ struct FRotator UMediaPlayer::GetViewRotation()
 
 struct FString UMediaPlayer::GetVideoTrackType(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackType");
 
@@ -1075,7 +1075,7 @@ struct FString UMediaPlayer::GetVideoTrackType(int TrackIndex, int FormatIndex)
 
 struct FFloatRange UMediaPlayer::GetVideoTrackFrameRates(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates");
 
@@ -1104,7 +1104,7 @@ struct FFloatRange UMediaPlayer::GetVideoTrackFrameRates(int TrackIndex, int For
 
 float UMediaPlayer::GetVideoTrackFrameRate(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackFrameRate");
 
@@ -1133,7 +1133,7 @@ float UMediaPlayer::GetVideoTrackFrameRate(int TrackIndex, int FormatIndex)
 
 struct FIntPoint UMediaPlayer::GetVideoTrackDimensions(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackDimensions");
 
@@ -1162,7 +1162,7 @@ struct FIntPoint UMediaPlayer::GetVideoTrackDimensions(int TrackIndex, int Forma
 
 float UMediaPlayer::GetVideoTrackAspectRatio(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackAspectRatio");
 
@@ -1189,7 +1189,7 @@ float UMediaPlayer::GetVideoTrackAspectRatio(int TrackIndex, int FormatIndex)
 
 float UMediaPlayer::GetVerticalFieldOfView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVerticalFieldOfView");
 
@@ -1214,7 +1214,7 @@ float UMediaPlayer::GetVerticalFieldOfView()
 
 struct FString UMediaPlayer::GetUrl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetUrl");
 
@@ -1241,7 +1241,7 @@ struct FString UMediaPlayer::GetUrl()
 
 struct FString UMediaPlayer::GetTrackLanguage(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackLanguage");
 
@@ -1270,7 +1270,7 @@ struct FString UMediaPlayer::GetTrackLanguage(EMediaPlayerTrack TrackType, int T
 
 int UMediaPlayer::GetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackFormat");
 
@@ -1299,7 +1299,7 @@ int UMediaPlayer::GetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex)
 
 struct FText UMediaPlayer::GetTrackDisplayName(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackDisplayName");
 
@@ -1326,7 +1326,7 @@ struct FText UMediaPlayer::GetTrackDisplayName(EMediaPlayerTrack TrackType, int 
 
 struct FTimespan UMediaPlayer::GetTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTime");
 
@@ -1352,7 +1352,7 @@ struct FTimespan UMediaPlayer::GetTime()
 
 void UMediaPlayer::GetSupportedRates(bool Unthinned, TArray<struct FFloatRange>* OutRates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetSupportedRates");
 
@@ -1380,7 +1380,7 @@ void UMediaPlayer::GetSupportedRates(bool Unthinned, TArray<struct FFloatRange>*
 
 int UMediaPlayer::GetSelectedTrack(EMediaPlayerTrack TrackType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetSelectedTrack");
 
@@ -1406,7 +1406,7 @@ int UMediaPlayer::GetSelectedTrack(EMediaPlayerTrack TrackType)
 
 float UMediaPlayer::GetRate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetRate");
 
@@ -1431,7 +1431,7 @@ float UMediaPlayer::GetRate()
 
 int UMediaPlayer::GetPlaylistIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetPlaylistIndex");
 
@@ -1456,7 +1456,7 @@ int UMediaPlayer::GetPlaylistIndex()
 
 class UMediaPlaylist* UMediaPlayer::GetPlaylist()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetPlaylist");
 
@@ -1481,7 +1481,7 @@ class UMediaPlaylist* UMediaPlayer::GetPlaylist()
 
 struct FName UMediaPlayer::GetPlayerName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetPlayerName");
 
@@ -1507,7 +1507,7 @@ struct FName UMediaPlayer::GetPlayerName()
 
 int UMediaPlayer::GetNumTracks(EMediaPlayerTrack TrackType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetNumTracks");
 
@@ -1535,7 +1535,7 @@ int UMediaPlayer::GetNumTracks(EMediaPlayerTrack TrackType)
 
 int UMediaPlayer::GetNumTrackFormats(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetNumTrackFormats");
 
@@ -1562,7 +1562,7 @@ int UMediaPlayer::GetNumTrackFormats(EMediaPlayerTrack TrackType, int TrackIndex
 
 struct FText UMediaPlayer::GetMediaName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetMediaName");
 
@@ -1587,7 +1587,7 @@ struct FText UMediaPlayer::GetMediaName()
 
 float UMediaPlayer::GetHorizontalFieldOfView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetHorizontalFieldOfView");
 
@@ -1612,7 +1612,7 @@ float UMediaPlayer::GetHorizontalFieldOfView()
 
 struct FTimespan UMediaPlayer::GetDuration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetDuration");
 
@@ -1637,7 +1637,7 @@ struct FTimespan UMediaPlayer::GetDuration()
 
 struct FName UMediaPlayer::GetDesiredPlayerName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetDesiredPlayerName");
 
@@ -1664,7 +1664,7 @@ struct FName UMediaPlayer::GetDesiredPlayerName()
 
 struct FString UMediaPlayer::GetAudioTrackType(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetAudioTrackType");
 
@@ -1693,7 +1693,7 @@ struct FString UMediaPlayer::GetAudioTrackType(int TrackIndex, int FormatIndex)
 
 int UMediaPlayer::GetAudioTrackSampleRate(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetAudioTrackSampleRate");
 
@@ -1722,7 +1722,7 @@ int UMediaPlayer::GetAudioTrackSampleRate(int TrackIndex, int FormatIndex)
 
 int UMediaPlayer::GetAudioTrackChannels(int TrackIndex, int FormatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetAudioTrackChannels");
 
@@ -1747,7 +1747,7 @@ int UMediaPlayer::GetAudioTrackChannels(int TrackIndex, int FormatIndex)
 
 void UMediaPlayer::Close()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Close");
 
@@ -1771,7 +1771,7 @@ void UMediaPlayer::Close()
 
 bool UMediaPlayer::CanPlayUrl(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPlayUrl");
 
@@ -1798,7 +1798,7 @@ bool UMediaPlayer::CanPlayUrl(const struct FString& URL)
 
 bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPlaySource");
 
@@ -1824,7 +1824,7 @@ bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 
 bool UMediaPlayer::CanPause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPause");
 
@@ -1851,7 +1851,7 @@ bool UMediaPlayer::CanPause()
 
 bool UMediaPlaylist::Replace(int Index, class UMediaSource* Replacement)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Replace");
 
@@ -1879,7 +1879,7 @@ bool UMediaPlaylist::Replace(int Index, class UMediaSource* Replacement)
 
 bool UMediaPlaylist::RemoveAt(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.RemoveAt");
 
@@ -1906,7 +1906,7 @@ bool UMediaPlaylist::RemoveAt(int Index)
 
 bool UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Remove");
 
@@ -1932,7 +1932,7 @@ bool UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 
 int UMediaPlaylist::Num()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Num");
 
@@ -1958,7 +1958,7 @@ int UMediaPlaylist::Num()
 
 void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Insert");
 
@@ -1984,7 +1984,7 @@ void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int Index)
 
 class UMediaSource* UMediaPlaylist::GetRandom(int* OutIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetRandom");
 
@@ -2013,7 +2013,7 @@ class UMediaSource* UMediaPlaylist::GetRandom(int* OutIndex)
 
 class UMediaSource* UMediaPlaylist::GetPrevious(int* InOutIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetPrevious");
 
@@ -2042,7 +2042,7 @@ class UMediaSource* UMediaPlaylist::GetPrevious(int* InOutIndex)
 
 class UMediaSource* UMediaPlaylist::GetNext(int* InOutIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetNext");
 
@@ -2071,7 +2071,7 @@ class UMediaSource* UMediaPlaylist::GetNext(int* InOutIndex)
 
 class UMediaSource* UMediaPlaylist::Get(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Get");
 
@@ -2098,7 +2098,7 @@ class UMediaSource* UMediaPlaylist::Get(int Index)
 
 bool UMediaPlaylist::AddUrl(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.AddUrl");
 
@@ -2125,7 +2125,7 @@ bool UMediaPlaylist::AddUrl(const struct FString& URL)
 
 bool UMediaPlaylist::AddFile(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.AddFile");
 
@@ -2152,7 +2152,7 @@ bool UMediaPlaylist::AddFile(const struct FString& FilePath)
 
 bool UMediaPlaylist::Add(class UMediaSource* MediaSource)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Add");
 
@@ -2178,7 +2178,7 @@ bool UMediaPlaylist::Add(class UMediaSource* MediaSource)
 
 int UMediaTexture::GetWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetWidth");
 
@@ -2203,7 +2203,7 @@ int UMediaTexture::GetWidth()
 
 int UMediaTexture::GetHeight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetHeight");
 
@@ -2228,7 +2228,7 @@ int UMediaTexture::GetHeight()
 
 float UMediaTexture::GetAspectRatio()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetAspectRatio");
 

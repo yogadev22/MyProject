@@ -1,12 +1,36 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+
+// Class QDevKit.FilePicker
+// 0x0010 (0x0038 - 0x0028)
+class UFilePicker : public UObject
+{
+public:
+	struct FScriptMulticastDelegate                    OnFileSelectionComplete;                                  // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class QDevKit.FilePicker");
+		return pStaticClass;
+	}
+
+
+	static void UnInitialize();
+	bool OpenFilePicker(const struct FString& InParamJson);
+	void Initialize();
+	static class UFilePicker* GetInstance();
+	void FileSelectionCompleteDelegate__DelegateSignature(const struct FString& ResultJson);
+};
+
 
 // Class QDevKit.FirebaseHelper
 // 0x0030 (0x0058 - 0x0028)
@@ -17,7 +41,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class QDevKit.FirebaseHelper");
 		return pStaticClass;
@@ -46,7 +70,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class QDevKit.FirebaseRemoteConfigImpl");
 		return pStaticClass;
@@ -68,7 +92,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class QDevKit.LocationHelper");
 		return pStaticClass;
@@ -93,7 +117,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class QDevKit.PhotoAlbumHelper");
 		return pStaticClass;
@@ -119,7 +143,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class QDevKit.SystemPermissionHelper");
 		return pStaticClass;
@@ -134,6 +158,30 @@ public:
 	bool AndroidRequestPermissions(const struct FString& InPermission, int InRequestCode);
 	bool AndroidIsPermissionGranted(const struct FString& InPermission);
 	bool AndroidHasDefinePermission(const struct FString& InPermssionName);
+};
+
+
+// Class QDevKit.TouchTransmission
+// 0x0010 (0x0038 - 0x0028)
+class UTouchTransmission : public UObject
+{
+public:
+	struct FScriptMulticastDelegate                    OnTransmissionComplete;                                   // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class QDevKit.TouchTransmission");
+		return pStaticClass;
+	}
+
+
+	static void UnInitialize();
+	void TransmissionCompleteDelegate__DelegateSignature(const struct FString& ResultJson);
+	void Initialize();
+	bool HandleReceivedPakFiles(const struct FString& InParamJson);
+	static class UTouchTransmission* GetInstance();
 };
 
 

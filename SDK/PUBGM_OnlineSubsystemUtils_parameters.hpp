@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
 struct UAchievementBlueprintLibrary_GetCachedAchievementProgress_Params
@@ -93,8 +93,8 @@ struct UEndMatchCallbackProxy_EndMatch_Params
 	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TScriptInterface<class UTurnBasedMatchInterface>   MatchActor;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     MatchID;                                                  // (Parm, ZeroConstructor)
-	TEnumAsByte<enum EMPMatchOutcome>                  LocalPlayerOutcome;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMPMatchOutcome>                  OtherPlayersOutcome;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMPMatchOutcome>                       LocalPlayerOutcome;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMPMatchOutcome>                       OtherPlayersOutcome;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 	class UEndMatchCallbackProxy*                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -264,13 +264,13 @@ struct APartyBeaconClient_ClientSendReservationFull_Params
 // Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse
 struct APartyBeaconClient_ClientReservationResponse_Params
 {
-	TEnumAsByte<enum EPartyReservationResult>          ReservationResponse;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPartyReservationResult>               ReservationResponse;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse
 struct APartyBeaconClient_ClientCancelReservationResponse_Params
 {
-	TEnumAsByte<enum EPartyReservationResult>          ReservationResponse;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPartyReservationResult>               ReservationResponse;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
@@ -279,7 +279,7 @@ struct UQuitMatchCallbackProxy_QuitMatch_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     MatchID;                                                  // (Parm, ZeroConstructor)
-	TEnumAsByte<enum EMPMatchOutcome>                  Outcome;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMPMatchOutcome>                       Outcome;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                TurnTimeoutInSeconds;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	class UQuitMatchCallbackProxy*                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };

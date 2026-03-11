@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function KantanChartsUMG.KantanChart.SetUpdateTickRate
 struct UKantanChart_SetUpdateTickRate_Params
@@ -113,7 +113,7 @@ struct UKantanCartesianChartBase_SetPlotScale_Params
 // Function KantanChartsUMG.KantanCartesianChartBase.SetDataPointSize
 struct UKantanCartesianChartBase_SetDataPointSize_Params
 {
-	TEnumAsByte<enum EKantanDataPointSize>             InSize;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EKantanDataPointSize>                  InSize;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function KantanChartsUMG.KantanCartesianChartBase.SetAxisTitlePadding

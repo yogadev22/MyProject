@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class BuildSystem.BuildingActorBase
 // 0x01F0 (0x0760 - 0x0570)
@@ -16,7 +16,7 @@ public:
 	unsigned char                                      UnknownData00[0x1C];                                      // 0x0570(0x001C) MISSED OFFSET
 	bool                                               bCustomBlockingChannels;                                  // 0x058C(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x058D(0x0003) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        CustomBlockingChannels;                                   // 0x0590(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	TArray<TEnumAsByte<ECollisionChannel>>             CustomBlockingChannels;                                   // 0x0590(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
 	bool                                               bCheckVisibilitySkipTypes;                                // 0x05A0(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bSkipCheckOwnerCollision;                                 // 0x05A1(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x6];                                       // 0x05A2(0x0006) MISSED OFFSET
@@ -52,7 +52,7 @@ public:
 	float                                              MaxDeviation;                                             // 0x06F8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              MaxTraceDepth;                                            // 0x06FC(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bDoQuadTrace;                                             // 0x0700(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EBuildingActorConstructingMode>   ConstructingMode;                                         // 0x0701(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EBuildingActorConstructingMode>        ConstructingMode;                                         // 0x0701(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bEnableOverlayPlace;                                      // 0x0702(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bEnablePitchRotatePlace;                                  // 0x0703(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bAutoPickValidPlace;                                      // 0x0704(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -77,7 +77,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BuildSystem.BuildingActorBase");
 		return pStaticClass;
@@ -140,7 +140,7 @@ public:
 	unsigned char                                      UnknownData06[0x6];                                       // 0x03BA(0x0006) MISSED OFFSET
 	TArray<class UClass*>                              FilterTemplates;                                          // 0x03C0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UClass*>                              ActorsShouldSkipVisiblityCheck;                           // 0x03D0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	TEnumAsByte<enum ECollisionChannel>                BuildingGridChannel;                                      // 0x03E0(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     BuildingGridChannel;                                      // 0x03E0(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData07[0x3];                                       // 0x03E1(0x0003) MISSED OFFSET
 	float                                              MaxCanAdsorbAngle;                                        // 0x03E4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              SnappingDistance;                                         // 0x03E8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -165,7 +165,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BuildSystem.BuildSystemComponent");
 		return pStaticClass;
@@ -191,8 +191,8 @@ public:
 	bool PickLocationByBuildID(int InBuildID, struct FVector* OutLocation, struct FRotator* OutRotation);
 	void OverriveDeploymentTransform(const struct FRotator& rotIn, const struct FVector& locIn, struct FRotator* rotOut, struct FVector* locOut);
 	void OverrideBuildingMaxBuildDistance(float BuildingMaxDistance, bool SetAll, int BuildingID);
-	void OnTouchedConstructableBoxEnded(TEnumAsByte<enum ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent);
-	void OnTouchedConstructableBox(TEnumAsByte<enum ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent);
+	void OnTouchedConstructableBoxEnded(TEnumAsByte<ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent);
+	void OnTouchedConstructableBox(TEnumAsByte<ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent);
 	void OnTouchActorBuild(const struct FVector2D& ScreenPosition, class APlayerController* Controller);
 	void OnAsyncLoadingMeshFinished(int buildIndex);
 	void OnAsyncLoadingEffectFinished(int buildIndex);
@@ -202,7 +202,7 @@ public:
 	bool IsOverlayBuildHeightValid(const struct FVector& BuildLocation, float OverlayMaxHeightFromGround);
 	bool IsInPreBuildingMode();
 	bool IsCanPlaceBuildingBP(int InBuildID);
-	bool IsCanPlaceBuilding(int InBuildID, TEnumAsByte<enum EBuildingActionType> _TYPE);
+	bool IsCanPlaceBuilding(int InBuildID, TEnumAsByte<EBuildingActionType> _TYPE);
 	bool IsActorProhibited(class AActor* Actor);
 	struct FRotator GetPreBuildingEffectRotation(int InBuildID);
 	struct FSoftObjectPath GetPreBuildingEffectPath(int InBuildID, int AvatarID);
@@ -211,12 +211,12 @@ public:
 	float GetMaxDistance();
 	bool GetIsHasInitData();
 	int GetIndexByBuildingID(int BuildID);
-	TEnumAsByte<enum EBuildingType> GetCurrentBuildType();
+	TEnumAsByte<EBuildingType> GetCurrentBuildType();
 	class AActor* GetCDOByIndex(int Index);
 	TArray<struct FBuildingData> GetBuildingList();
 	int GetBuildingDataModeID();
 	void EnableBuildingByID(int BuildID, bool bEnable);
-	void DoSceenTouchBuild(int buildIndex, const struct FVector2D& ScreenPostion, int PointerIndex, TEnumAsByte<enum EBuildingActionType> _TYPE, bool IsBegin, TEnumAsByte<enum EBuildingActionType> CustomBuildEvent);
+	void DoSceenTouchBuild(int buildIndex, const struct FVector2D& ScreenPostion, int PointerIndex, TEnumAsByte<EBuildingActionType> _TYPE, bool IsBegin, TEnumAsByte<EBuildingActionType> CustomBuildEvent);
 	bool DensityCheck(const struct FBuildingActorDensityCheck& DensityCheckParmas);
 	bool CheckShouldSkipByVisibility(class UPrimitiveComponent* _comp, int buildIndex);
 	bool CheckPlacementWithPitch(const struct FHitResult& Hit, const struct FVector& BoxExtent, const struct FBuildingData& CurBuildData, struct FVector* OutLocation, struct FRotator* OutRotation);
@@ -224,7 +224,7 @@ public:
 	bool CheckPlaceBuildingWithIndex(int buildIndex);
 	bool CheckObjectIsOneOfTheTemplate(class UObject* Obj, TArray<class UClass*> _ActorFilterTemplates);
 	bool CheckCollisionNeedSkipOwner(int buildIndex);
-	bool BuildAtWorldLoc(int buildIndex, const struct FTransform& tranx, const struct FVector& EndLocation, bool bUseTrace, TEnumAsByte<enum EBuildingActionType> BuildType);
+	bool BuildAtWorldLoc(int buildIndex, const struct FTransform& tranx, const struct FVector& EndLocation, bool bUseTrace, TEnumAsByte<EBuildingActionType> BuildType);
 	void AddBuildingData(const struct FBuildingData& InData);
 };
 
@@ -237,7 +237,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BuildSystem.BuildingActorInterface");
 		return pStaticClass;
@@ -281,8 +281,8 @@ public:
 	float GetDetectDeath();
 	struct FTransform GetDestroyedParticleTransformOffset();
 	struct FBuildingActorDensityCheck GetDensityParams(const struct FVector& Location);
-	TArray<TEnumAsByte<enum ECollisionChannel>> GetCustomBlockingChannels();
-	TEnumAsByte<enum EBuildingActorConstructingMode> GetConstructingMode();
+	TArray<TEnumAsByte<ECollisionChannel>> GetCustomBlockingChannels();
+	TEnumAsByte<EBuildingActorConstructingMode> GetConstructingMode();
 	float GetBuildOnEdgeUpLength();
 	float GetBuildOnEdgeFrontLength();
 	int GetBuildingActorID();
@@ -305,7 +305,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BuildSystem.BuildingActorMgr");
 		return pStaticClass;
@@ -319,16 +319,17 @@ public:
 
 
 // Class BuildSystem.BuildingGridComponent
-// 0x0010 (0x0960 - 0x0950)
+// 0x0020 (0x0970 - 0x0950)
 class UBuildingGridComponent : public UBoxComponent
 {
 public:
-	struct FVector                                     BuildCenterOffset;                                        // 0x0950(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x095C(0x0004) MISSED OFFSET
+	struct FName                                       CollisionProfileName;                                     // 0x0950(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FVector                                     BuildCenterOffset;                                        // 0x0958(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0xC];                                       // 0x0964(0x000C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BuildSystem.BuildingGridComponent");
 		return pStaticClass;
@@ -348,7 +349,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BuildSystem.SelectBuildActor");
 		return pStaticClass;

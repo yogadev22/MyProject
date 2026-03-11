@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function BlockyLua.Blocky3DVarWidget.SetResult
 // (Final, Native, Public, BlueprintCallable)
 
 void UBlocky3DVarWidget::SetResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.Blocky3DVarWidget.SetResult");
 
@@ -38,7 +38,7 @@ void UBlocky3DVarWidget::SetResult()
 
 void UBlocky3DVarWidget::InitText(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.Blocky3DVarWidget.InitText");
 
@@ -64,7 +64,7 @@ void UBlocky3DVarWidget::InitText(float X, float Y, float Z)
 
 struct FString UBlocky3DVarWidget::CleanNumber(const struct FString& Input)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.Blocky3DVarWidget.CleanNumber");
 
@@ -90,7 +90,7 @@ struct FString UBlocky3DVarWidget::CleanNumber(const struct FString& Input)
 
 void UBlockyBlockDisplayWidget_Custom::UpdateName(const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockDisplayWidget_Custom.UpdateName");
 
@@ -110,11 +110,11 @@ void UBlockyBlockDisplayWidget_Custom::UpdateName(const struct FString& Name)
 // Function BlockyLua.BlockyBlockDisplayWidget_Custom.Init
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ECustomBlockType> Type                           (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECustomBlockType>  Type                           (Parm, ZeroConstructor, IsPlainOldData)
 
-void UBlockyBlockDisplayWidget_Custom::Init(TEnumAsByte<enum ECustomBlockType> Type)
+void UBlockyBlockDisplayWidget_Custom::Init(TEnumAsByte<ECustomBlockType> Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockDisplayWidget_Custom.Init");
 
@@ -138,7 +138,7 @@ void UBlockyBlockDisplayWidget_Custom::Init(TEnumAsByte<enum ECustomBlockType> T
 
 void UBlockyBlockDisplayWidget_Preset::InitPreset(class UBlockyGraphWidget* HostGraphWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockDisplayWidget_Preset.InitPreset");
 
@@ -160,7 +160,7 @@ void UBlockyBlockDisplayWidget_Preset::InitPreset(class UBlockyGraphWidget* Host
 
 void UBlockyBlockDisplayWidget_Variable::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockDisplayWidget_Variable.Init");
 
@@ -183,7 +183,7 @@ void UBlockyBlockDisplayWidget_Variable::Init()
 
 struct FVector2D UBlockyBlockDisplayWidget_Variable::CalculateDrawSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockDisplayWidget_Variable.CalculateDrawSize");
 
@@ -208,7 +208,7 @@ struct FVector2D UBlockyBlockDisplayWidget_Variable::CalculateDrawSize()
 
 void UBlockyBlockWindowWidget::SetWidgetVariableToShow(class UBlockyMenuItemObject_Variable* item_Variable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockWindowWidget.SetWidgetVariableToShow");
 
@@ -231,7 +231,7 @@ void UBlockyBlockWindowWidget::SetWidgetVariableToShow(class UBlockyMenuItemObje
 
 void UBlockyBlockWindowWidget::SetWidgetCustomToShow(class UBlockyMenuItemObject_Custom* item_Custom)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockWindowWidget.SetWidgetCustomToShow");
 
@@ -254,7 +254,7 @@ void UBlockyBlockWindowWidget::SetWidgetCustomToShow(class UBlockyMenuItemObject
 
 void UBlockyBlockWindowWidget::SetWidgetCommonToShow(class UBlockyMenuItemObject* MenuItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockWindowWidget.SetWidgetCommonToShow");
 
@@ -277,7 +277,7 @@ void UBlockyBlockWindowWidget::SetWidgetCommonToShow(class UBlockyMenuItemObject
 
 void UBlockyBlockWindowWidget::SetWidgetBPToShow(class UUserWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBlockWindowWidget.SetWidgetBPToShow");
 
@@ -300,7 +300,7 @@ void UBlockyBlockWindowWidget::SetWidgetBPToShow(class UUserWidget* Widget)
 
 void UBlockyBooleanWidget::SetText(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBooleanWidget.SetText");
 
@@ -324,7 +324,7 @@ void UBlockyBooleanWidget::SetText(const struct FString& Value)
 
 void UBlockyBooleanWidget::SetResult(const struct FString& displayValue, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyBooleanWidget.SetResult");
 
@@ -349,7 +349,7 @@ void UBlockyBooleanWidget::SetResult(const struct FString& displayValue, const s
 
 void UBlockyCategoryItemWidget::SetSelected(bool IsSelected)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyCategoryItemWidget.SetSelected");
 
@@ -370,7 +370,7 @@ void UBlockyCategoryItemWidget::SetSelected(bool IsSelected)
 
 void UBlockyCategoryItemWidget::OnScroll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyCategoryItemWidget.OnScroll");
 
@@ -391,7 +391,7 @@ void UBlockyCategoryItemWidget::OnScroll()
 
 void UBlockyCategoryItemWidget::OnClick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyCategoryItemWidget.OnClick");
 
@@ -414,12 +414,32 @@ void UBlockyCategoryItemWidget::OnClick()
 
 void UBlockyCategoryItemWidget::InitWithItemObject(class UBlockyCategoryItemObject* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyCategoryItemWidget.InitWithItemObject");
 
 	UBlockyCategoryItemWidget_InitWithItemObject_Params params;
 	params.Item = Item;
+
+	auto flags = pFunc->FunctionFlags;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function BlockyLua.BlockyCategoryItemWidget.InitTextToShow
+// (Event, Public, BlueprintEvent)
+
+void UBlockyCategoryItemWidget::InitTextToShow()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyCategoryItemWidget.InitTextToShow");
+
+	UBlockyCategoryItemWidget_InitTextToShow_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 
@@ -437,7 +457,7 @@ void UBlockyCategoryItemWidget::InitWithItemObject(class UBlockyCategoryItemObje
 
 struct FText UBlockyCategoryWidget::GetCurrentCategoryNameWithVariable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyCategoryWidget.GetCurrentCategoryNameWithVariable");
 
@@ -462,7 +482,7 @@ struct FText UBlockyCategoryWidget::GetCurrentCategoryNameWithVariable()
 
 class UPanelWidget* UBlockyCategoryWidget::GetCategoryContainer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyCategoryWidget.GetCategoryContainer");
 
@@ -486,7 +506,7 @@ class UPanelWidget* UBlockyCategoryWidget::GetCategoryContainer()
 
 void UBlockyColorPickerWidget::SetResult(const struct FLinearColor& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyColorPickerWidget.SetResult");
 
@@ -510,7 +530,7 @@ void UBlockyColorPickerWidget::SetResult(const struct FLinearColor& Value)
 
 void UBlockyColorPickerWidget::SetColor(const struct FLinearColor& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyColorPickerWidget.SetColor");
 
@@ -531,7 +551,7 @@ void UBlockyColorPickerWidget::SetColor(const struct FLinearColor& Value)
 
 void UBlockyColorPickerWidget::LoadColors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyColorPickerWidget.LoadColors");
 
@@ -552,7 +572,7 @@ void UBlockyColorPickerWidget::LoadColors()
 
 void UBlockyEditor::UpdateTriggerGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.UpdateTriggerGroups");
 
@@ -572,7 +592,7 @@ void UBlockyEditor::UpdateTriggerGroups()
 
 void UBlockyEditor::UpdateSearchPanel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.UpdateSearchPanel");
 
@@ -594,7 +614,7 @@ void UBlockyEditor::UpdateSearchPanel()
 
 void UBlockyEditor::UpdateSearchButtonVisible(bool IsShowSearchButton)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.UpdateSearchButtonVisible");
 
@@ -617,7 +637,7 @@ void UBlockyEditor::UpdateSearchButtonVisible(bool IsShowSearchButton)
 
 bool UBlockyEditor::TryBackToVariableOrCustomPanel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.TryBackToVariableOrCustomPanel");
 
@@ -642,7 +662,7 @@ bool UBlockyEditor::TryBackToVariableOrCustomPanel()
 
 void UBlockyEditor::ShowPresetAnimation(class UPresetDesc* PresetDesc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.ShowPresetAnimation");
 
@@ -667,7 +687,7 @@ void UBlockyEditor::ShowPresetAnimation(class UPresetDesc* PresetDesc)
 
 void UBlockyEditor::SetWidgetBPToShow(class UUserWidget* Widget, bool HideCategory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.SetWidgetBPToShow");
 
@@ -691,7 +711,7 @@ void UBlockyEditor::SetWidgetBPToShow(class UUserWidget* Widget, bool HideCatego
 
 void UBlockyEditor::SetMenuWidget(class UBlockyMenuWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.SetMenuWidget");
 
@@ -715,7 +735,7 @@ void UBlockyEditor::SetMenuWidget(class UBlockyMenuWidget* Widget)
 
 void UBlockyEditor::SetCategoryWidget(class UBlockyCategoryWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.SetCategoryWidget");
 
@@ -739,7 +759,7 @@ void UBlockyEditor::SetCategoryWidget(class UBlockyCategoryWidget* Widget)
 
 void UBlockyEditor::SetBlockLogWidget(class UBlockyLogWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.SetBlockLogWidget");
 
@@ -763,7 +783,7 @@ void UBlockyEditor::SetBlockLogWidget(class UBlockyLogWidget* Widget)
 
 void UBlockyEditor::SetBlockListWidget(class UBlockyBlockWindowWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.SetBlockListWidget");
 
@@ -785,7 +805,7 @@ void UBlockyEditor::SetBlockListWidget(class UBlockyBlockWindowWidget* Widget)
 
 void UBlockyEditor::ResetAsyncWidgetHandleMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.ResetAsyncWidgetHandleMap");
 
@@ -809,7 +829,7 @@ void UBlockyEditor::ResetAsyncWidgetHandleMap()
 
 void UBlockyEditor::OnUpdateUndoRedoState(bool HasUndoCommands, bool HasRedoCommands)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.OnUpdateUndoRedoState");
 
@@ -833,7 +853,7 @@ void UBlockyEditor::OnUpdateUndoRedoState(bool HasUndoCommands, bool HasRedoComm
 
 void UBlockyEditor::OnShowTips(const struct FText& Tips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.OnShowTips");
 
@@ -856,7 +876,7 @@ void UBlockyEditor::OnShowTips(const struct FText& Tips)
 
 void UBlockyEditor::OnShowPresetPanelHandler(bool IsShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.OnShowPresetPanelHandler");
 
@@ -882,7 +902,7 @@ void UBlockyEditor::OnShowPresetPanelHandler(bool IsShow)
 
 void UBlockyEditor::LoadWidgetAsync(const struct FString& WidgetName, const struct FString& WidgetPath, const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.LoadWidgetAsync");
 
@@ -909,7 +929,7 @@ void UBlockyEditor::LoadWidgetAsync(const struct FString& WidgetName, const stru
 
 class UMaterialInterface* UBlockyEditor::LoadMaterialInterface(const struct FString& AnimationPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.LoadMaterialInterface");
 
@@ -935,7 +955,7 @@ class UMaterialInterface* UBlockyEditor::LoadMaterialInterface(const struct FStr
 
 void UBlockyEditor::IsShowExplain(bool bFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.IsShowExplain");
 
@@ -958,7 +978,7 @@ void UBlockyEditor::IsShowExplain(bool bFlag)
 
 void UBlockyEditor::IsCloseComment(bool bFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.IsCloseComment");
 
@@ -981,7 +1001,7 @@ void UBlockyEditor::IsCloseComment(bool bFlag)
 
 float UBlockyEditor::GetSaveCooldownDuration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.GetSaveCooldownDuration");
 
@@ -1007,7 +1027,7 @@ float UBlockyEditor::GetSaveCooldownDuration()
 
 struct FString UBlockyEditor::GetLocaleString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.GetLocaleString");
 
@@ -1033,7 +1053,7 @@ struct FString UBlockyEditor::GetLocaleString(const struct FString& KeyString)
 
 class UBlockyMenuItemObject* UBlockyEditor::GetCurrentMenuItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.GetCurrentMenuItem");
 
@@ -1058,7 +1078,7 @@ class UBlockyMenuItemObject* UBlockyEditor::GetCurrentMenuItem()
 
 void UBlockyEditor::CollectListItem(bool bCollect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.CollectListItem");
 
@@ -1082,7 +1102,7 @@ void UBlockyEditor::CollectListItem(bool bCollect)
 
 void UBlockyEditor::BP_OnShowTools(TArray<EBlockyBPToolButtonType> ButtonTypes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.BP_OnShowTools");
 
@@ -1105,7 +1125,7 @@ void UBlockyEditor::BP_OnShowTools(TArray<EBlockyBPToolButtonType> ButtonTypes)
 
 void UBlockyEditor::AddChildBluckyWidget(class UUserWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEditor.AddChildBluckyWidget");
 
@@ -1128,7 +1148,7 @@ void UBlockyEditor::AddChildBluckyWidget(class UUserWidget* Widget)
 
 void UBlockyEnumWidget::SetShowDisplayItems(TMap<struct FName, struct FText> Names)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEnumWidget.SetShowDisplayItems");
 
@@ -1151,7 +1171,7 @@ void UBlockyEnumWidget::SetShowDisplayItems(TMap<struct FName, struct FText> Nam
 
 void UBlockyEnumWidget::SetResultWithName(const struct FName& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyEnumWidget.SetResultWithName");
 
@@ -1175,7 +1195,7 @@ void UBlockyEnumWidget::SetResultWithName(const struct FName& Name)
 
 void UBlockyFloatWidget::SetText(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyFloatWidget.SetText");
 
@@ -1198,7 +1218,7 @@ void UBlockyFloatWidget::SetText(const struct FString& Value)
 
 void UBlockyFloatWidget::SetResult(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyFloatWidget.SetResult");
 
@@ -1223,7 +1243,7 @@ void UBlockyFloatWidget::SetResult(const struct FString& Value)
 
 struct FString UBlockyFloatWidget::CleanNumber(const struct FString& Input)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyFloatWidget.CleanNumber");
 
@@ -1250,7 +1270,7 @@ struct FString UBlockyFloatWidget::CleanNumber(const struct FString& Input)
 
 struct FVector2D UBlockyGraphWidget::ViewPosToCanvasPos(const struct FVector2D& Postion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ViewPosToCanvasPos");
 
@@ -1276,7 +1296,7 @@ struct FVector2D UBlockyGraphWidget::ViewPosToCanvasPos(const struct FVector2D& 
 
 TArray<struct FText> UBlockyGraphWidget::UpdateVariableItemNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.UpdateVariableItemNames");
 
@@ -1299,7 +1319,7 @@ TArray<struct FText> UBlockyGraphWidget::UpdateVariableItemNames()
 
 void UBlockyGraphWidget::UpdateTriggerGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.UpdateTriggerGroups");
 
@@ -1322,7 +1342,7 @@ void UBlockyGraphWidget::UpdateTriggerGroups()
 
 TArray<struct FText> UBlockyGraphWidget::UpdateCustomItemNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.UpdateCustomItemNames");
 
@@ -1345,7 +1365,7 @@ TArray<struct FText> UBlockyGraphWidget::UpdateCustomItemNames()
 
 void UBlockyGraphWidget::UpdateBlockByTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.UpdateBlockByTag");
 
@@ -1366,7 +1386,7 @@ void UBlockyGraphWidget::UpdateBlockByTag()
 
 void UBlockyGraphWidget::Undo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Undo");
 
@@ -1389,7 +1409,7 @@ void UBlockyGraphWidget::Undo()
 
 bool UBlockyGraphWidget::TryBackToVariableOrCustomPanel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.TryBackToVariableOrCustomPanel");
 
@@ -1414,7 +1434,7 @@ bool UBlockyGraphWidget::TryBackToVariableOrCustomPanel()
 
 void UBlockyGraphWidget::ShowTips(const struct FText& Tips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ShowTips");
 
@@ -1436,7 +1456,7 @@ void UBlockyGraphWidget::ShowTips(const struct FText& Tips)
 
 void UBlockyGraphWidget::ShowPresetParamPop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ShowPresetParamPop");
 
@@ -1459,7 +1479,7 @@ void UBlockyGraphWidget::ShowPresetParamPop()
 
 void UBlockyGraphWidget::SetViewScale(float inScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetViewScale");
 
@@ -1483,7 +1503,7 @@ void UBlockyGraphWidget::SetViewScale(float inScale)
 
 void UBlockyGraphWidget::SetViewPosition(const struct FVector2D& ViewPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetViewPosition");
 
@@ -1508,7 +1528,7 @@ void UBlockyGraphWidget::SetViewPosition(const struct FVector2D& ViewPosition)
 
 void UBlockyGraphWidget::SetTagsSetting(TArray<int>* newDefaultTags, struct FGraphSettingMap* newGraphSettingsMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetTagsSetting");
 
@@ -1536,7 +1556,7 @@ void UBlockyGraphWidget::SetTagsSetting(TArray<int>* newDefaultTags, struct FGra
 
 void UBlockyGraphWidget::SetShowSaveTemplateVar(bool IsShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetShowSaveTemplateVar");
 
@@ -1560,7 +1580,7 @@ void UBlockyGraphWidget::SetShowSaveTemplateVar(bool IsShow)
 
 void UBlockyGraphWidget::SetMenuWidget(class UBlockyMenuWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetMenuWidget");
 
@@ -1584,7 +1604,7 @@ void UBlockyGraphWidget::SetMenuWidget(class UBlockyMenuWidget* Widget)
 
 void UBlockyGraphWidget::SetGraphCanMove(bool isCanMove)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetGraphCanMove");
 
@@ -1608,7 +1628,7 @@ void UBlockyGraphWidget::SetGraphCanMove(bool isCanMove)
 
 void UBlockyGraphWidget::SetCurrentSubGraph(const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetCurrentSubGraph");
 
@@ -1632,7 +1652,7 @@ void UBlockyGraphWidget::SetCurrentSubGraph(const struct FString& InName)
 
 void UBlockyGraphWidget::SetCategoryWidget(class UBlockyCategoryWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetCategoryWidget");
 
@@ -1657,7 +1677,7 @@ void UBlockyGraphWidget::SetCategoryWidget(class UBlockyCategoryWidget* Widget)
 
 class UTexture2D* UBlockyGraphWidget::SetCaptureScreenShot(const struct FVector2D& screenRect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetCaptureScreenShot");
 
@@ -1683,7 +1703,7 @@ class UTexture2D* UBlockyGraphWidget::SetCaptureScreenShot(const struct FVector2
 
 void UBlockyGraphWidget::SetBlockLogWidget(class UBlockyLogWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetBlockLogWidget");
 
@@ -1707,7 +1727,7 @@ void UBlockyGraphWidget::SetBlockLogWidget(class UBlockyLogWidget* Widget)
 
 void UBlockyGraphWidget::SetBlockListWidget(class UBlockyBlockWindowWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SetBlockListWidget");
 
@@ -1731,7 +1751,7 @@ void UBlockyGraphWidget::SetBlockListWidget(class UBlockyBlockWindowWidget* Widg
 
 struct FString UBlockyGraphWidget::SaveGraphToJsonText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SaveGraphToJsonText");
 
@@ -1756,7 +1776,7 @@ struct FString UBlockyGraphWidget::SaveGraphToJsonText()
 
 TArray<unsigned char> UBlockyGraphWidget::SaveGraphToBin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SaveGraphToBin");
 
@@ -1781,7 +1801,7 @@ TArray<unsigned char> UBlockyGraphWidget::SaveGraphToBin()
 
 struct FString UBlockyGraphWidget::SaveGlobalVarToJsonText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SaveGlobalVarToJsonText");
 
@@ -1806,7 +1826,7 @@ struct FString UBlockyGraphWidget::SaveGlobalVarToJsonText()
 
 TArray<unsigned char> UBlockyGraphWidget::SaveGlobalVarToBin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SaveGlobalVarToBin");
 
@@ -1829,7 +1849,7 @@ TArray<unsigned char> UBlockyGraphWidget::SaveGlobalVarToBin()
 
 void UBlockyGraphWidget::SaveCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SaveCustom");
 
@@ -1853,7 +1873,7 @@ void UBlockyGraphWidget::SaveCustom()
 
 TArray<unsigned char> UBlockyGraphWidget::SaveBlockyGraphToTemplate(class UBlockyGraph* BlockyGraph)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.SaveBlockyGraphToTemplate");
 
@@ -1877,7 +1897,7 @@ TArray<unsigned char> UBlockyGraphWidget::SaveBlockyGraphToTemplate(class UBlock
 
 void UBlockyGraphWidget::Save()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Save");
 
@@ -1898,7 +1918,7 @@ void UBlockyGraphWidget::Save()
 
 void UBlockyGraphWidget::ReturnToPreviewGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ReturnToPreviewGraph");
 
@@ -1919,7 +1939,7 @@ void UBlockyGraphWidget::ReturnToPreviewGraph()
 
 void UBlockyGraphWidget::ReturnToMainGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ReturnToMainGraph");
 
@@ -1940,7 +1960,7 @@ void UBlockyGraphWidget::ReturnToMainGraph()
 
 void UBlockyGraphWidget::ResetMenuItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ResetMenuItems");
 
@@ -1961,7 +1981,7 @@ void UBlockyGraphWidget::ResetMenuItems()
 
 void UBlockyGraphWidget::ResetJsonChangedFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ResetJsonChangedFlag");
 
@@ -1982,7 +2002,7 @@ void UBlockyGraphWidget::ResetJsonChangedFlag()
 
 void UBlockyGraphWidget::ResetGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ResetGraph");
 
@@ -2005,7 +2025,7 @@ void UBlockyGraphWidget::ResetGraph()
 
 void UBlockyGraphWidget::RemoveSubGraph(const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.RemoveSubGraph");
 
@@ -2027,7 +2047,7 @@ void UBlockyGraphWidget::RemoveSubGraph(const struct FString& InName)
 
 void UBlockyGraphWidget::RefreshFont()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.RefreshFont");
 
@@ -2050,7 +2070,7 @@ void UBlockyGraphWidget::RefreshFont()
 
 void UBlockyGraphWidget::ReEditVariable(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ReEditVariable");
 
@@ -2072,7 +2092,7 @@ void UBlockyGraphWidget::ReEditVariable(int Index)
 
 void UBlockyGraphWidget::Redo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Redo");
 
@@ -2093,7 +2113,7 @@ void UBlockyGraphWidget::Redo()
 
 void UBlockyGraphWidget::QuoteCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.QuoteCustom");
 
@@ -2114,7 +2134,7 @@ void UBlockyGraphWidget::QuoteCustom()
 
 void UBlockyGraphWidget::Quote()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Quote");
 
@@ -2135,7 +2155,7 @@ void UBlockyGraphWidget::Quote()
 
 void UBlockyGraphWidget::Paste()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Paste");
 
@@ -2156,7 +2176,7 @@ void UBlockyGraphWidget::Paste()
 
 void UBlockyGraphWidget::OnCloseItemList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.OnCloseItemList");
 
@@ -2176,7 +2196,7 @@ void UBlockyGraphWidget::OnCloseItemList()
 
 void UBlockyGraphWidget::OnAsyncLoadGraphBinCompleted()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.OnAsyncLoadGraphBinCompleted");
 
@@ -2201,7 +2221,7 @@ void UBlockyGraphWidget::OnAsyncLoadGraphBinCompleted()
 
 void UBlockyGraphWidget::LoadTemplateToBlockyGraph(bool IsCreateNewGraph, bool IsLoadPresetsInGraph, TArray<unsigned char>* TemplateAst)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.LoadTemplateToBlockyGraph");
 
@@ -2229,7 +2249,7 @@ void UBlockyGraphWidget::LoadTemplateToBlockyGraph(bool IsCreateNewGraph, bool I
 
 void UBlockyGraphWidget::LoadGraphFromJsonText(const struct FString& JsonStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.LoadGraphFromJsonText");
 
@@ -2253,7 +2273,7 @@ void UBlockyGraphWidget::LoadGraphFromJsonText(const struct FString& JsonStr)
 
 void UBlockyGraphWidget::LoadGraphFromBin(TArray<unsigned char> JsonStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.LoadGraphFromBin");
 
@@ -2277,7 +2297,7 @@ void UBlockyGraphWidget::LoadGraphFromBin(TArray<unsigned char> JsonStr)
 
 void UBlockyGraphWidget::LoadGlobalVarFromJsonText(const struct FString& JsonStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.LoadGlobalVarFromJsonText");
 
@@ -2301,7 +2321,7 @@ void UBlockyGraphWidget::LoadGlobalVarFromJsonText(const struct FString& JsonStr
 
 void UBlockyGraphWidget::LoadGlobalVarFromBin(TArray<unsigned char> JsonStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.LoadGlobalVarFromBin");
 
@@ -2323,7 +2343,7 @@ void UBlockyGraphWidget::LoadGlobalVarFromBin(TArray<unsigned char> JsonStr)
 
 void UBlockyGraphWidget::Load()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Load");
 
@@ -2348,7 +2368,7 @@ void UBlockyGraphWidget::Load()
 
 bool UBlockyGraphWidget::IsViewOverlap(const struct FVector2D& Position, const struct FVector2D& Size)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.IsViewOverlap");
 
@@ -2375,7 +2395,7 @@ bool UBlockyGraphWidget::IsViewOverlap(const struct FVector2D& Position, const s
 
 bool UBlockyGraphWidget::IsFirstGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.IsFirstGraph");
 
@@ -2402,7 +2422,7 @@ bool UBlockyGraphWidget::IsFirstGraph()
 
 void UBlockyGraphWidget::GM_GenerateAllBlocks(int CombinedBlocksNum, int GraphBlocksNum, bool bNeedResetGraph)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GM_GenerateAllBlocks");
 
@@ -2430,7 +2450,7 @@ void UBlockyGraphWidget::GM_GenerateAllBlocks(int CombinedBlocksNum, int GraphBl
 
 void UBlockyGraphWidget::GM_AddBlocks(TArray<struct FString> typeNames, int X, int Y)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GM_AddBlocks");
 
@@ -2456,7 +2476,7 @@ void UBlockyGraphWidget::GM_AddBlocks(TArray<struct FString> typeNames, int X, i
 
 struct FVector2D UBlockyGraphWidget::GetViewSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GetViewSize");
 
@@ -2481,7 +2501,7 @@ struct FVector2D UBlockyGraphWidget::GetViewSize()
 
 float UBlockyGraphWidget::GetViewScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GetViewScale");
 
@@ -2506,7 +2526,7 @@ float UBlockyGraphWidget::GetViewScale()
 
 struct FVector2D UBlockyGraphWidget::GetViewPosition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GetViewPosition");
 
@@ -2531,7 +2551,7 @@ struct FVector2D UBlockyGraphWidget::GetViewPosition()
 
 bool UBlockyGraphWidget::GetJsonChangedFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GetJsonChangedFlag");
 
@@ -2561,7 +2581,7 @@ bool UBlockyGraphWidget::GetJsonChangedFlag()
 
 void UBlockyGraphWidget::GetGraphSettingByName(const struct FString& GraphName, bool* CanCopy, bool* CanReName, bool* CanDel, bool* CanSave, TArray<int>* Tags)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GetGraphSettingByName");
 
@@ -2596,7 +2616,7 @@ void UBlockyGraphWidget::GetGraphSettingByName(const struct FString& GraphName, 
 
 void UBlockyGraphWidget::GetDeleteBlockUIRect(float InRectWidth)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GetDeleteBlockUIRect");
 
@@ -2620,7 +2640,7 @@ void UBlockyGraphWidget::GetDeleteBlockUIRect(float InRectWidth)
 
 class UBlockyGraph* UBlockyGraphWidget::GetCurrentGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.GetCurrentGraph");
 
@@ -2645,7 +2665,7 @@ class UBlockyGraph* UBlockyGraphWidget::GetCurrentGraph()
 
 void UBlockyGraphWidget::FocusTo(class UBlockBase* TargetBlock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.FocusTo");
 
@@ -2670,7 +2690,7 @@ void UBlockyGraphWidget::FocusTo(class UBlockBase* TargetBlock)
 
 void UBlockyGraphWidget::FinishVariableEdit(bool bSaveVar, bool bReEdit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.FinishVariableEdit");
 
@@ -2695,7 +2715,7 @@ void UBlockyGraphWidget::FinishVariableEdit(bool bSaveVar, bool bReEdit)
 
 void UBlockyGraphWidget::FinishCustomEdit(bool bSave)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.FinishCustomEdit");
 
@@ -2719,7 +2739,7 @@ void UBlockyGraphWidget::FinishCustomEdit(bool bSave)
 
 void UBlockyGraphWidget::FinishBlockSetting(bool bSave)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.FinishBlockSetting");
 
@@ -2741,7 +2761,7 @@ void UBlockyGraphWidget::FinishBlockSetting(bool bSave)
 
 void UBlockyGraphWidget::Eject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Eject");
 
@@ -2762,7 +2782,7 @@ void UBlockyGraphWidget::Eject()
 
 void UBlockyGraphWidget::EditCustumBlockGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.EditCustumBlockGraph");
 
@@ -2783,7 +2803,7 @@ void UBlockyGraphWidget::EditCustumBlockGraph()
 
 void UBlockyGraphWidget::EditCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.EditCustom");
 
@@ -2804,7 +2824,7 @@ void UBlockyGraphWidget::EditCustom()
 
 void UBlockyGraphWidget::Disable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Disable");
 
@@ -2827,7 +2847,7 @@ void UBlockyGraphWidget::Disable()
 
 void UBlockyGraphWidget::DeleteVariableListItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.DeleteVariableListItem");
 
@@ -2849,7 +2869,7 @@ void UBlockyGraphWidget::DeleteVariableListItem(int Index)
 
 void UBlockyGraphWidget::DeleteSelected()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.DeleteSelected");
 
@@ -2870,7 +2890,7 @@ void UBlockyGraphWidget::DeleteSelected()
 
 void UBlockyGraphWidget::DeleteCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.DeleteCustom");
 
@@ -2891,7 +2911,7 @@ void UBlockyGraphWidget::DeleteCustom()
 
 void UBlockyGraphWidget::DefineCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.DefineCustom");
 
@@ -2912,7 +2932,7 @@ void UBlockyGraphWidget::DefineCustom()
 
 void UBlockyGraphWidget::Define()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Define");
 
@@ -2933,7 +2953,7 @@ void UBlockyGraphWidget::Define()
 
 void UBlockyGraphWidget::Copy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Copy");
 
@@ -2954,7 +2974,7 @@ void UBlockyGraphWidget::Copy()
 
 void UBlockyGraphWidget::Comment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Comment");
 
@@ -2977,7 +2997,7 @@ void UBlockyGraphWidget::Comment()
 
 void UBlockyGraphWidget::CollectListItem(bool bCollect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.CollectListItem");
 
@@ -2999,7 +3019,7 @@ void UBlockyGraphWidget::CollectListItem(bool bCollect)
 
 void UBlockyGraphWidget::Clone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.Clone");
 
@@ -3020,7 +3040,7 @@ void UBlockyGraphWidget::Clone()
 
 void UBlockyGraphWidget::ClearUndoRedoDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ClearUndoRedoDatas");
 
@@ -3041,7 +3061,7 @@ void UBlockyGraphWidget::ClearUndoRedoDatas()
 
 void UBlockyGraphWidget::ClearTextSizeCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ClearTextSizeCache");
 
@@ -3062,7 +3082,7 @@ void UBlockyGraphWidget::ClearTextSizeCache()
 
 void UBlockyGraphWidget::ClearLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.ClearLog");
 
@@ -3086,7 +3106,7 @@ void UBlockyGraphWidget::ClearLog()
 
 struct FVector2D UBlockyGraphWidget::CanvasPosToViewPos(const struct FVector2D& Postion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.CanvasPosToViewPos");
 
@@ -3115,7 +3135,7 @@ struct FVector2D UBlockyGraphWidget::CanvasPosToViewPos(const struct FVector2D& 
 
 void UBlockyGraphWidget::BlockyLog_Show(EBlockyLogMsgMode Mode, class UBlockBase* BlockSource, const struct FString& SlotID, const struct FString& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.BlockyLog_Show");
 
@@ -3143,7 +3163,7 @@ void UBlockyGraphWidget::BlockyLog_Show(EBlockyLogMsgMode Mode, class UBlockBase
 
 void UBlockyGraphWidget::AsyncLoadGraphFromBin(TArray<unsigned char> GraphBinContent, TArray<unsigned char> GlobalVarBinContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.AsyncLoadGraphFromBin");
 
@@ -3169,7 +3189,7 @@ void UBlockyGraphWidget::AsyncLoadGraphFromBin(TArray<unsigned char> GraphBinCon
 
 void UBlockyGraphWidget::AddSubGraph(const struct FString& InName, const struct FString& InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.AddSubGraph");
 
@@ -3196,7 +3216,7 @@ void UBlockyGraphWidget::AddSubGraph(const struct FString& InName, const struct 
 
 class UBlockyGraph* UBlockyGraphWidget::AddGraph(const struct FString& InName, const struct FString& InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.AddGraph");
 
@@ -3221,7 +3241,7 @@ class UBlockyGraph* UBlockyGraphWidget::AddGraph(const struct FString& InName, c
 
 void UBlockyGraphWidget::AddGlobalComment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGraphWidget.AddGlobalComment");
 
@@ -3244,7 +3264,7 @@ void UBlockyGraphWidget::AddGlobalComment()
 
 class UPanelWidget* UBlockyGroupWidget::GetGroupContainer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGroupWidget.GetGroupContainer");
 
@@ -3266,7 +3286,7 @@ class UPanelWidget* UBlockyGroupWidget::GetGroupContainer()
 
 void UBlockyGroupWidget::AddGroupItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyGroupWidget.AddGroupItem");
 
@@ -3289,7 +3309,7 @@ void UBlockyGroupWidget::AddGroupItem()
 
 void UBlockyIntegerWidget::SetText(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyIntegerWidget.SetText");
 
@@ -3312,7 +3332,7 @@ void UBlockyIntegerWidget::SetText(const struct FString& Value)
 
 void UBlockyIntegerWidget::SetResult(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyIntegerWidget.SetResult");
 
@@ -3336,7 +3356,7 @@ void UBlockyIntegerWidget::SetResult(const struct FString& Value)
 
 void UBlockyIntegerWidget::SetNegativeEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyIntegerWidget.SetNegativeEnable");
 
@@ -3359,7 +3379,7 @@ void UBlockyIntegerWidget::SetNegativeEnable(bool Enable)
 
 void UBlockyLogItemWidget::SetShowWarn(const struct FString& Warn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.SetShowWarn");
 
@@ -3382,7 +3402,7 @@ void UBlockyLogItemWidget::SetShowWarn(const struct FString& Warn)
 
 void UBlockyLogItemWidget::SetShowInfo(const struct FString& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.SetShowInfo");
 
@@ -3405,7 +3425,7 @@ void UBlockyLogItemWidget::SetShowInfo(const struct FString& Info)
 
 void UBlockyLogItemWidget::SetShowError(const struct FString& Error)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.SetShowError");
 
@@ -3428,7 +3448,7 @@ void UBlockyLogItemWidget::SetShowError(const struct FString& Error)
 
 void UBlockyLogItemWidget::SetActiveWidgetIndex(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.SetActiveWidgetIndex");
 
@@ -3449,7 +3469,7 @@ void UBlockyLogItemWidget::SetActiveWidgetIndex(int Index)
 
 void UBlockyLogItemWidget::OnClickBtnToBlock()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.OnClickBtnToBlock");
 
@@ -3472,7 +3492,7 @@ void UBlockyLogItemWidget::OnClickBtnToBlock()
 
 class UTextBlock* UBlockyLogItemWidget::GetTextBlockWarn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.GetTextBlockWarn");
 
@@ -3496,7 +3516,7 @@ class UTextBlock* UBlockyLogItemWidget::GetTextBlockWarn()
 
 class UTextBlock* UBlockyLogItemWidget::GetTextBlockInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.GetTextBlockInfo");
 
@@ -3520,7 +3540,7 @@ class UTextBlock* UBlockyLogItemWidget::GetTextBlockInfo()
 
 class UTextBlock* UBlockyLogItemWidget::GetTextBlockError()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.GetTextBlockError");
 
@@ -3544,7 +3564,7 @@ class UTextBlock* UBlockyLogItemWidget::GetTextBlockError()
 
 int UBlockyLogItemWidget::GetActiveWidgetIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogItemWidget.GetActiveWidgetIndex");
 
@@ -3566,7 +3586,7 @@ int UBlockyLogItemWidget::GetActiveWidgetIndex()
 
 void UBlockyLogWidget::ShowLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.ShowLog");
 
@@ -3589,7 +3609,7 @@ void UBlockyLogWidget::ShowLog()
 
 void UBlockyLogWidget::SetBtnWarnText(const struct FString& Warn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.SetBtnWarnText");
 
@@ -3612,7 +3632,7 @@ void UBlockyLogWidget::SetBtnWarnText(const struct FString& Warn)
 
 void UBlockyLogWidget::SetBtnInfoText(const struct FString& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.SetBtnInfoText");
 
@@ -3635,7 +3655,7 @@ void UBlockyLogWidget::SetBtnInfoText(const struct FString& Info)
 
 void UBlockyLogWidget::SetBtnErrorText(const struct FString& Error)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.SetBtnErrorText");
 
@@ -3656,7 +3676,7 @@ void UBlockyLogWidget::SetBtnErrorText(const struct FString& Error)
 
 void UBlockyLogWidget::OnClickWarnShow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.OnClickWarnShow");
 
@@ -3677,7 +3697,7 @@ void UBlockyLogWidget::OnClickWarnShow()
 
 void UBlockyLogWidget::OnClickInfoShow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.OnClickInfoShow");
 
@@ -3698,7 +3718,7 @@ void UBlockyLogWidget::OnClickInfoShow()
 
 void UBlockyLogWidget::OnClickErrorShow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.OnClickErrorShow");
 
@@ -3719,7 +3739,7 @@ void UBlockyLogWidget::OnClickErrorShow()
 
 void UBlockyLogWidget::OnClickAllShow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.OnClickAllShow");
 
@@ -3742,7 +3762,7 @@ void UBlockyLogWidget::OnClickAllShow()
 
 class UPanelWidget* UBlockyLogWidget::GetLogContainer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.GetLogContainer");
 
@@ -3766,7 +3786,7 @@ class UPanelWidget* UBlockyLogWidget::GetLogContainer()
 
 float UBlockyLogWidget::GetItemTextWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.GetItemTextWidth");
 
@@ -3790,7 +3810,7 @@ float UBlockyLogWidget::GetItemTextWidth()
 
 struct FString UBlockyLogWidget::GetBtnWarnText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.GetBtnWarnText");
 
@@ -3814,7 +3834,7 @@ struct FString UBlockyLogWidget::GetBtnWarnText()
 
 struct FString UBlockyLogWidget::GetBtnInfoText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.GetBtnInfoText");
 
@@ -3838,7 +3858,7 @@ struct FString UBlockyLogWidget::GetBtnInfoText()
 
 struct FString UBlockyLogWidget::GetBtnErrorText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLogWidget.GetBtnErrorText");
 
@@ -3862,7 +3882,7 @@ struct FString UBlockyLogWidget::GetBtnErrorText()
 
 void UBlockyLuaLoopScrollBase::UserScrolled(float Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.UserScrolled");
 
@@ -3886,7 +3906,7 @@ void UBlockyLuaLoopScrollBase::UserScrolled(float Offset)
 
 void UBlockyLuaLoopScrollBase::SetItemType(class UClass* _ItemType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.SetItemType");
 
@@ -3911,7 +3931,7 @@ void UBlockyLuaLoopScrollBase::SetItemType(class UClass* _ItemType)
 
 bool UBlockyLuaLoopScrollBase::SetItemCount(int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.SetItemCount");
 
@@ -3937,7 +3957,7 @@ bool UBlockyLuaLoopScrollBase::SetItemCount(int Count)
 
 void UBlockyLuaLoopScrollBase::RemoveItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.RemoveItem");
 
@@ -3962,7 +3982,7 @@ void UBlockyLuaLoopScrollBase::RemoveItem(int Index)
 
 bool UBlockyLuaLoopScrollBase::RefreshItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.RefreshItem");
 
@@ -3986,7 +4006,7 @@ bool UBlockyLuaLoopScrollBase::RefreshItem(int Index)
 
 void UBlockyLuaLoopScrollBase::RefreshAllItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.RefreshAllItems");
 
@@ -4007,7 +4027,7 @@ void UBlockyLuaLoopScrollBase::RefreshAllItems()
 
 void UBlockyLuaLoopScrollBase::Push()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.Push");
 
@@ -4028,7 +4048,7 @@ void UBlockyLuaLoopScrollBase::Push()
 
 void UBlockyLuaLoopScrollBase::Pop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.Pop");
 
@@ -4052,7 +4072,7 @@ void UBlockyLuaLoopScrollBase::Pop()
 
 void UBlockyLuaLoopScrollBase::OnRefreshItem__DelegateSignature(class UWidget* Item, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLuaLoopScrollBase.OnRefreshItem__DelegateSignature");
 
@@ -4077,7 +4097,7 @@ void UBlockyLuaLoopScrollBase::OnRefreshItem__DelegateSignature(class UWidget* I
 
 void UBlockyLuaLoopScrollBase::OnItemCreated__DelegateSignature(class UWidget* Item, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLuaLoopScrollBase.OnItemCreated__DelegateSignature");
 
@@ -4103,7 +4123,7 @@ void UBlockyLuaLoopScrollBase::OnItemCreated__DelegateSignature(class UWidget* I
 
 void UBlockyLuaLoopScrollBase::OnChangeData__DelegateSignature(class UWidget* Item, int Index, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLuaLoopScrollBase.OnChangeData__DelegateSignature");
 
@@ -4128,7 +4148,7 @@ void UBlockyLuaLoopScrollBase::OnChangeData__DelegateSignature(class UWidget* It
 
 void UBlockyLuaLoopScrollBase::InsertItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.InsertItem");
 
@@ -4153,7 +4173,7 @@ void UBlockyLuaLoopScrollBase::InsertItem(int Index)
 
 int UBlockyLuaLoopScrollBase::GetWidgetIndex(class UWidget* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.GetWidgetIndex");
 
@@ -4179,7 +4199,7 @@ int UBlockyLuaLoopScrollBase::GetWidgetIndex(class UWidget* Item)
 
 int UBlockyLuaLoopScrollBase::GetItemCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.GetItemCount");
 
@@ -4205,7 +4225,7 @@ int UBlockyLuaLoopScrollBase::GetItemCount()
 
 class UWidget* UBlockyLuaLoopScrollBase::GetIndexOfWidget(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.GetIndexOfWidget");
 
@@ -4233,7 +4253,7 @@ class UWidget* UBlockyLuaLoopScrollBase::GetIndexOfWidget(int Index)
 
 bool UBlockyLuaLoopScrollBase::ChangeData(int Index, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.ChangeData");
 
@@ -4260,7 +4280,7 @@ bool UBlockyLuaLoopScrollBase::ChangeData(int Index, const struct FString& Key)
 
 void UBlockyLuaLoopScrollBase::CallTick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.CallTick");
 
@@ -4284,7 +4304,7 @@ void UBlockyLuaLoopScrollBase::CallTick(float DeltaTime)
 
 void UBlockyLuaLoopScrollBase::AutoSize(bool bAutoSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase.AutoSize");
 
@@ -4308,7 +4328,7 @@ void UBlockyLuaLoopScrollBase::AutoSize(bool bAutoSize)
 
 void UBlockyLuaLoopScrollBase_MultiItem::UserScrolled(float Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.UserScrolled");
 
@@ -4332,7 +4352,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::UserScrolled(float Offset)
 
 void UBlockyLuaLoopScrollBase_MultiItem::SetItemType(TArray<class UClass*> TypeArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.SetItemType");
 
@@ -4357,7 +4377,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::SetItemType(TArray<class UClass*> TypeA
 
 bool UBlockyLuaLoopScrollBase_MultiItem::SetItemCount(int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.SetItemCount");
 
@@ -4383,7 +4403,7 @@ bool UBlockyLuaLoopScrollBase_MultiItem::SetItemCount(int Count)
 
 void UBlockyLuaLoopScrollBase_MultiItem::RemoveItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.RemoveItem");
 
@@ -4408,7 +4428,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::RemoveItem(int Index)
 
 bool UBlockyLuaLoopScrollBase_MultiItem::RefreshItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.RefreshItem");
 
@@ -4432,7 +4452,7 @@ bool UBlockyLuaLoopScrollBase_MultiItem::RefreshItem(int Index)
 
 void UBlockyLuaLoopScrollBase_MultiItem::RefreshAllItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.RefreshAllItems");
 
@@ -4455,7 +4475,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::RefreshAllItems()
 
 void UBlockyLuaLoopScrollBase_MultiItem::Push(class UClass* Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.Push");
 
@@ -4477,7 +4497,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::Push(class UClass* Type)
 
 void UBlockyLuaLoopScrollBase_MultiItem::Pop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.Pop");
 
@@ -4501,7 +4521,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::Pop()
 
 void UBlockyLuaLoopScrollBase_MultiItem::OnRefreshItem__DelegateSignature(class UWidget* Item, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLuaLoopScrollBase_MultiItem.OnRefreshItem__DelegateSignature");
 
@@ -4526,7 +4546,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::OnRefreshItem__DelegateSignature(class 
 
 void UBlockyLuaLoopScrollBase_MultiItem::OnItemCreated__DelegateSignature(class UWidget* Item, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLuaLoopScrollBase_MultiItem.OnItemCreated__DelegateSignature");
 
@@ -4552,7 +4572,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::OnItemCreated__DelegateSignature(class 
 
 void UBlockyLuaLoopScrollBase_MultiItem::OnChangeData__DelegateSignature(class UWidget* Item, int Index, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLuaLoopScrollBase_MultiItem.OnChangeData__DelegateSignature");
 
@@ -4578,7 +4598,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::OnChangeData__DelegateSignature(class U
 
 void UBlockyLuaLoopScrollBase_MultiItem::InsertItem(int Index, class UClass* Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.InsertItem");
 
@@ -4604,7 +4624,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::InsertItem(int Index, class UClass* Typ
 
 int UBlockyLuaLoopScrollBase_MultiItem::GetWidgetIndex(class UWidget* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.GetWidgetIndex");
 
@@ -4630,7 +4650,7 @@ int UBlockyLuaLoopScrollBase_MultiItem::GetWidgetIndex(class UWidget* Item)
 
 int UBlockyLuaLoopScrollBase_MultiItem::GetItemCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.GetItemCount");
 
@@ -4656,7 +4676,7 @@ int UBlockyLuaLoopScrollBase_MultiItem::GetItemCount()
 
 class UWidget* UBlockyLuaLoopScrollBase_MultiItem::GetIndexOfWidget(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.GetIndexOfWidget");
 
@@ -4680,7 +4700,7 @@ class UWidget* UBlockyLuaLoopScrollBase_MultiItem::GetIndexOfWidget(int Index)
 
 void UBlockyLuaLoopScrollBase_MultiItem::ClearItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.ClearItems");
 
@@ -4705,7 +4725,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::ClearItems()
 
 bool UBlockyLuaLoopScrollBase_MultiItem::ChangeData(int Index, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.ChangeData");
 
@@ -4732,7 +4752,7 @@ bool UBlockyLuaLoopScrollBase_MultiItem::ChangeData(int Index, const struct FStr
 
 void UBlockyLuaLoopScrollBase_MultiItem::CallTick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.CallTick");
 
@@ -4756,7 +4776,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::CallTick(float DeltaTime)
 
 void UBlockyLuaLoopScrollBase_MultiItem::AutoSize(bool bAutoSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBase_MultiItem.AutoSize");
 
@@ -4780,7 +4800,7 @@ void UBlockyLuaLoopScrollBase_MultiItem::AutoSize(bool bAutoSize)
 
 void UBlockyLuaLoopScrollBox::ScrollToItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBox.ScrollToItem");
 
@@ -4804,7 +4824,7 @@ void UBlockyLuaLoopScrollBox::ScrollToItem(int Index)
 
 void UBlockyLuaLoopScrollBox_MultiItem::ScrollToItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBox_MultiItem.ScrollToItem");
 
@@ -4828,7 +4848,7 @@ void UBlockyLuaLoopScrollBox_MultiItem::ScrollToItem(int Index)
 
 void UBlockyLuaLoopScrollBox_MultiItem::BP_UserScrolled(float Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBox_MultiItem.BP_UserScrolled");
 
@@ -4853,7 +4873,7 @@ void UBlockyLuaLoopScrollBox_MultiItem::BP_UserScrolled(float Offset)
 
 bool UBlockyLuaLoopScrollBox_MultiItem::BP_PreventScrollOutOfSize(bool bScroll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBox_MultiItem.BP_PreventScrollOutOfSize");
 
@@ -4879,7 +4899,7 @@ bool UBlockyLuaLoopScrollBox_MultiItem::BP_PreventScrollOutOfSize(bool bScroll)
 
 float UBlockyLuaLoopScrollBox_MultiItem::BP_GetContentSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollBox_MultiItem.BP_GetContentSize");
 
@@ -4904,7 +4924,7 @@ float UBlockyLuaLoopScrollBox_MultiItem::BP_GetContentSize()
 
 void UBlockyLuaLoopScrollGrid::ScrollToItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLuaLoopScrollGrid.ScrollToItem");
 
@@ -4928,7 +4948,7 @@ void UBlockyLuaLoopScrollGrid::ScrollToItem(int Index)
 
 void UBlockyMenuItemWidget::SetSelected(bool IsSelected)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyMenuItemWidget.SetSelected");
 
@@ -4949,7 +4969,7 @@ void UBlockyMenuItemWidget::SetSelected(bool IsSelected)
 
 void UBlockyMenuItemWidget::OnClick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyMenuItemWidget.OnClick");
 
@@ -4972,12 +4992,32 @@ void UBlockyMenuItemWidget::OnClick()
 
 void UBlockyMenuItemWidget::InitWithItemObject(class UBlockyMenuItemObject* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyMenuItemWidget.InitWithItemObject");
 
 	UBlockyMenuItemWidget_InitWithItemObject_Params params;
 	params.Item = Item;
+
+	auto flags = pFunc->FunctionFlags;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function BlockyLua.BlockyMenuItemWidget.InitTextToShow
+// (Event, Public, BlueprintEvent)
+
+void UBlockyMenuItemWidget::InitTextToShow()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyMenuItemWidget.InitTextToShow");
+
+	UBlockyMenuItemWidget_InitTextToShow_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 
@@ -4996,7 +5036,7 @@ void UBlockyMenuItemWidget::InitWithItemObject(class UBlockyMenuItemObject* Item
 
 bool UBlockyMenuWidget::SelectMenu(class UBlockyMenuItemWidget* MenuItemWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyMenuWidget.SelectMenu");
 
@@ -5022,7 +5062,7 @@ bool UBlockyMenuWidget::SelectMenu(class UBlockyMenuItemWidget* MenuItemWidget)
 
 void UBlockyMenuWidget::OnAddMenuItemWidget(class UBlockyMenuItemWidget* MenuItemWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyMenuWidget.OnAddMenuItemWidget");
 
@@ -5045,7 +5085,7 @@ void UBlockyMenuWidget::OnAddMenuItemWidget(class UBlockyMenuItemWidget* MenuIte
 
 class UPanelWidget* UBlockyMenuWidget::GetMenuContainer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyMenuWidget.GetMenuContainer");
 
@@ -5069,7 +5109,7 @@ class UPanelWidget* UBlockyMenuWidget::GetMenuContainer()
 
 void UBlockyPresetItemWidget::SetPresetDesc_BP(class UPresetDesc* PresetDesc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetItemWidget.SetPresetDesc_BP");
 
@@ -5092,7 +5132,7 @@ void UBlockyPresetItemWidget::SetPresetDesc_BP(class UPresetDesc* PresetDesc)
 
 void UBlockyPresetItemWidget::SetImageShowIcon(class UImage* Image)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetItemWidget.SetImageShowIcon");
 
@@ -5116,7 +5156,7 @@ void UBlockyPresetItemWidget::SetImageShowIcon(class UImage* Image)
 
 struct FString UBlockyPresetItemWidget::GetPresetDescCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetItemWidget.GetPresetDescCode");
 
@@ -5141,7 +5181,7 @@ struct FString UBlockyPresetItemWidget::GetPresetDescCode()
 
 void UBlockyPresetWidget::SetResult(class UPresetDesc* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.SetResult");
 
@@ -5165,7 +5205,7 @@ void UBlockyPresetWidget::SetResult(class UPresetDesc* Value)
 
 void UBlockyPresetWidget::SetPresets(TArray<class UPresetDesc*> Presets)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.SetPresets");
 
@@ -5186,7 +5226,7 @@ void UBlockyPresetWidget::SetPresets(TArray<class UPresetDesc*> Presets)
 
 void UBlockyPresetWidget::ResetMenuItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.ResetMenuItem");
 
@@ -5209,7 +5249,7 @@ void UBlockyPresetWidget::ResetMenuItem()
 
 struct FString UBlockyPresetWidget::OnFilterBtnClick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.OnFilterBtnClick");
 
@@ -5234,7 +5274,7 @@ struct FString UBlockyPresetWidget::OnFilterBtnClick()
 
 void UBlockyPresetWidget::LoopScrollBoxFilterStr(const struct FString& filter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.LoopScrollBoxFilterStr");
 
@@ -5259,7 +5299,7 @@ void UBlockyPresetWidget::LoopScrollBoxFilterStr(const struct FString& filter)
 
 void UBlockyPresetWidget::LoopScrollBoxFilterByTag(TMap<int, struct FIntArrayWrapper> Tags, TArray<struct FString> curTagsStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.LoopScrollBoxFilterByTag");
 
@@ -5282,7 +5322,7 @@ void UBlockyPresetWidget::LoopScrollBoxFilterByTag(TMap<int, struct FIntArrayWra
 
 void UBlockyPresetWidget::InitPresets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.InitPresets");
 
@@ -5305,7 +5345,7 @@ void UBlockyPresetWidget::InitPresets()
 
 class UPresetDesc* UBlockyPresetWidget::GetPresetDesc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.GetPresetDesc");
 
@@ -5330,7 +5370,7 @@ class UPresetDesc* UBlockyPresetWidget::GetPresetDesc()
 
 class UScrollBox* UBlockyPresetWidget::GetLoopScrollBox()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.GetLoopScrollBox");
 
@@ -5354,7 +5394,7 @@ class UScrollBox* UBlockyPresetWidget::GetLoopScrollBox()
 
 bool UBlockyPresetWidget::GetIsIconWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.GetIsIconWidget");
 
@@ -5377,7 +5417,7 @@ bool UBlockyPresetWidget::GetIsIconWidget()
 
 void UBlockyPresetWidget::ClearSearchText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyPresetWidget.ClearSearchText");
 
@@ -5399,7 +5439,7 @@ void UBlockyPresetWidget::ClearSearchText()
 
 void UBlockyRichTextBlock::SetText(const struct FText& InText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyRichTextBlock.SetText");
 
@@ -5423,7 +5463,7 @@ void UBlockyRichTextBlock::SetText(const struct FText& InText)
 
 struct FText UBlockyRichTextBlock::GetText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyRichTextBlock.GetText");
 
@@ -5446,7 +5486,7 @@ struct FText UBlockyRichTextBlock::GetText()
 
 void UBlockySearchResultPanel::UpdateGraphContentSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.UpdateGraphContentSize");
 
@@ -5469,7 +5509,7 @@ void UBlockySearchResultPanel::UpdateGraphContentSize()
 
 void UBlockySearchResultPanel::ToggleGraphResults(class UBlockyGraph* InGraph)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.ToggleGraphResults");
 
@@ -5494,7 +5534,7 @@ void UBlockySearchResultPanel::ToggleGraphResults(class UBlockyGraph* InGraph)
 
 void UBlockySearchResultPanel::ScrollToCategory(int CategoryIndex, bool GraphCategory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.ScrollToCategory");
 
@@ -5517,7 +5557,7 @@ void UBlockySearchResultPanel::ScrollToCategory(int CategoryIndex, bool GraphCat
 
 void UBlockySearchResultPanel::RefreshGraphBlocksWidgets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.RefreshGraphBlocksWidgets");
 
@@ -5541,7 +5581,7 @@ void UBlockySearchResultPanel::RefreshGraphBlocksWidgets()
 
 void UBlockySearchResultPanel::OnGraphBlocksCreated(class UWidget* Widget, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.OnGraphBlocksCreated");
 
@@ -5567,7 +5607,7 @@ void UBlockySearchResultPanel::OnGraphBlocksCreated(class UWidget* Widget, int I
 
 void UBlockySearchResultPanel::FocusToBlock(class UBlockyGraph* InGraph, class UBlockBase* InBlock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.FocusToBlock");
 
@@ -5592,7 +5632,7 @@ void UBlockySearchResultPanel::FocusToBlock(class UBlockyGraph* InGraph, class U
 
 void UBlockySearchResultPanel::FilterOutSearchResultToShow(ESearchResultVisibleType VisibleType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.FilterOutSearchResultToShow");
 
@@ -5617,7 +5657,7 @@ void UBlockySearchResultPanel::FilterOutSearchResultToShow(ESearchResultVisibleT
 
 bool UBlockySearchResultPanel::BP_ScrollYOffset(int DeltaY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultPanel.BP_ScrollYOffset");
 
@@ -5640,7 +5680,7 @@ bool UBlockySearchResultPanel::BP_ScrollYOffset(int DeltaY)
 
 void UBlockySearchResults_GraphItemWidget::OnClickedBlock()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphItemWidget.OnClickedBlock");
 
@@ -5663,7 +5703,7 @@ void UBlockySearchResults_GraphItemWidget::OnClickedBlock()
 
 void UBlockySearchResults_GraphItemWidget::OnBlockWidgetSelected(bool bSelected)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphItemWidget.OnBlockWidgetSelected");
 
@@ -5689,7 +5729,7 @@ void UBlockySearchResults_GraphItemWidget::OnBlockWidgetSelected(bool bSelected)
 
 struct FString UBlockySearchResults_GraphItemWidget::MarkSearchingStringWithColor(const struct FString& InputString, const struct FString& Target, const struct FString& ColorString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphItemWidget.MarkSearchingStringWithColor");
 
@@ -5717,7 +5757,7 @@ struct FString UBlockySearchResults_GraphItemWidget::MarkSearchingStringWithColo
 
 bool UBlockySearchResults_GraphItemWidget::IsSearchUseCase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphItemWidget.IsSearchUseCase");
 
@@ -5742,7 +5782,7 @@ bool UBlockySearchResults_GraphItemWidget::IsSearchUseCase()
 
 struct FString UBlockySearchResults_GraphItemWidget::GetKeyWordColor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphItemWidget.GetKeyWordColor");
 
@@ -5765,7 +5805,7 @@ struct FString UBlockySearchResults_GraphItemWidget::GetKeyWordColor()
 
 void UBlockySearchResults_GraphWidget::ToggleGraphResultsCollapse()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphWidget.ToggleGraphResultsCollapse");
 
@@ -5788,7 +5828,7 @@ void UBlockySearchResults_GraphWidget::ToggleGraphResultsCollapse()
 
 void UBlockySearchResults_GraphWidget::OnSetGraphResultsCollapse(bool InCollapse)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphWidget.OnSetGraphResultsCollapse");
 
@@ -5811,7 +5851,7 @@ void UBlockySearchResults_GraphWidget::OnSetGraphResultsCollapse(bool InCollapse
 
 void UBlockySearchResults_GraphWidget::OnRefreshDisplayNameView(const struct FString& InGraphDisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResults_GraphWidget.OnRefreshDisplayNameView");
 
@@ -5834,7 +5874,7 @@ void UBlockySearchResults_GraphWidget::OnRefreshDisplayNameView(const struct FSt
 
 void UBlockySearchResultsTab::OnSetSelected(bool bSelected)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchResultsTab.OnSetSelected");
 
@@ -5857,7 +5897,7 @@ void UBlockySearchResultsTab::OnSetSelected(bool bSelected)
 
 void UBlockySearchWidget::StoreLastSelectedMenuItems(bool OverrideLastData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.StoreLastSelectedMenuItems");
 
@@ -5882,7 +5922,7 @@ void UBlockySearchWidget::StoreLastSelectedMenuItems(bool OverrideLastData)
 
 bool UBlockySearchWidget::ShouldCommitString(const struct FText& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.ShouldCommitString");
 
@@ -5908,7 +5948,7 @@ bool UBlockySearchWidget::ShouldCommitString(const struct FText& Value)
 
 void UBlockySearchWidget::SetSearchHistories(TArray<struct FString> searchArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.SetSearchHistories");
 
@@ -5932,7 +5972,7 @@ void UBlockySearchWidget::SetSearchHistories(TArray<struct FString> searchArr)
 
 void UBlockySearchWidget::SetResult(class UPresetDesc* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.SetResult");
 
@@ -5956,7 +5996,7 @@ void UBlockySearchWidget::SetResult(class UPresetDesc* Value)
 
 void UBlockySearchWidget::SetGraphWidget(class UBlockyGraphWidget* InGraphWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.SetGraphWidget");
 
@@ -5981,7 +6021,7 @@ void UBlockySearchWidget::SetGraphWidget(class UBlockyGraphWidget* InGraphWidget
 
 bool UBlockySearchWidget::SearchMatchingResults(const struct FString& SearchStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.SearchMatchingResults");
 
@@ -6007,7 +6047,7 @@ bool UBlockySearchWidget::SearchMatchingResults(const struct FString& SearchStr)
 
 void UBlockySearchWidget::ScrollToTabContent(class UBlockySearchResultsTab* NewSelectedTab)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.ScrollToTabContent");
 
@@ -6029,7 +6069,7 @@ void UBlockySearchWidget::ScrollToTabContent(class UBlockySearchResultsTab* NewS
 
 void UBlockySearchWidget::SaveSearchHistories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.SaveSearchHistories");
 
@@ -6050,7 +6090,7 @@ void UBlockySearchWidget::SaveSearchHistories()
 
 void UBlockySearchWidget::RevertLastSelectedMenuItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.RevertLastSelectedMenuItem");
 
@@ -6071,7 +6111,7 @@ void UBlockySearchWidget::RevertLastSelectedMenuItem()
 
 void UBlockySearchWidget::RefreshTabContainerView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.RefreshTabContainerView");
 
@@ -6092,7 +6132,7 @@ void UBlockySearchWidget::RefreshTabContainerView()
 
 void UBlockySearchWidget::RefreshSearchResultsView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.RefreshSearchResultsView");
 
@@ -6113,7 +6153,7 @@ void UBlockySearchWidget::RefreshSearchResultsView()
 
 void UBlockySearchWidget::LoadSearchHistories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.LoadSearchHistories");
 
@@ -6136,7 +6176,7 @@ void UBlockySearchWidget::LoadSearchHistories()
 
 bool UBlockySearchWidget::IsSearchUseCase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.IsSearchUseCase");
 
@@ -6162,7 +6202,7 @@ bool UBlockySearchWidget::IsSearchUseCase()
 
 void UBlockySearchWidget::InitLoopScroll(class UBlockyLoopScrollBox* ScrollBox, TArray<class UPresetDesc*> arrayPresets)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.InitLoopScroll");
 
@@ -6187,7 +6227,7 @@ void UBlockySearchWidget::InitLoopScroll(class UBlockyLoopScrollBox* ScrollBox, 
 
 bool UBlockySearchWidget::HasMenuSelected()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.HasMenuSelected");
 
@@ -6212,7 +6252,7 @@ bool UBlockySearchWidget::HasMenuSelected()
 
 bool UBlockySearchWidget::HasAnySearchResults()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.HasAnySearchResults");
 
@@ -6237,7 +6277,7 @@ bool UBlockySearchWidget::HasAnySearchResults()
 
 bool UBlockySearchWidget::HasAnyHistory()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.HasAnyHistory");
 
@@ -6262,7 +6302,7 @@ bool UBlockySearchWidget::HasAnyHistory()
 
 int UBlockySearchWidget::GetTotalSearchedNums()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetTotalSearchedNums");
 
@@ -6287,7 +6327,7 @@ int UBlockySearchWidget::GetTotalSearchedNums()
 
 TArray<struct FString> UBlockySearchWidget::GetSearchHistories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetSearchHistories");
 
@@ -6312,7 +6352,7 @@ TArray<struct FString> UBlockySearchWidget::GetSearchHistories()
 
 int UBlockySearchWidget::GetPresetsSearchedNums()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetPresetsSearchedNums");
 
@@ -6337,7 +6377,7 @@ int UBlockySearchWidget::GetPresetsSearchedNums()
 
 class UPresetDesc* UBlockySearchWidget::GetPresetDesc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetPresetDesc");
 
@@ -6362,7 +6402,7 @@ class UPresetDesc* UBlockySearchWidget::GetPresetDesc()
 
 int UBlockySearchWidget::GetHistoryStoreNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetHistoryStoreNum");
 
@@ -6387,7 +6427,7 @@ int UBlockySearchWidget::GetHistoryStoreNum()
 
 int UBlockySearchWidget::GetHistoryNums()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetHistoryNums");
 
@@ -6412,7 +6452,7 @@ int UBlockySearchWidget::GetHistoryNums()
 
 int UBlockySearchWidget::GetGraphSearchedNums()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetGraphSearchedNums");
 
@@ -6437,7 +6477,7 @@ int UBlockySearchWidget::GetGraphSearchedNums()
 
 int UBlockySearchWidget::GetBlockSearchedNums()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.GetBlockSearchedNums");
 
@@ -6462,7 +6502,7 @@ int UBlockySearchWidget::GetBlockSearchedNums()
 
 void UBlockySearchWidget::FilterSearchResultVisible(ESearchResultVisibleType InSearchResultVisibleType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.FilterSearchResultVisible");
 
@@ -6484,7 +6524,7 @@ void UBlockySearchWidget::FilterSearchResultVisible(ESearchResultVisibleType InS
 
 void UBlockySearchWidget::EmptyListItemSeleceted()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.EmptyListItemSeleceted");
 
@@ -6507,7 +6547,7 @@ void UBlockySearchWidget::EmptyListItemSeleceted()
 
 void UBlockySearchWidget::DoSearching(const struct FString& SearchStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.DoSearching");
 
@@ -6528,7 +6568,7 @@ void UBlockySearchWidget::DoSearching(const struct FString& SearchStr)
 
 void UBlockySearchWidget::ClearTabSelected()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.ClearTabSelected");
 
@@ -6549,7 +6589,7 @@ void UBlockySearchWidget::ClearTabSelected()
 
 void UBlockySearchWidget::ClearSearchHistories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.ClearSearchHistories");
 
@@ -6570,7 +6610,7 @@ void UBlockySearchWidget::ClearSearchHistories()
 
 void UBlockySearchWidget::ClearMenuSelectionStore()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.ClearMenuSelectionStore");
 
@@ -6593,7 +6633,7 @@ void UBlockySearchWidget::ClearMenuSelectionStore()
 
 void UBlockySearchWidget::AddSearchHistory(const struct FString& NewHistory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySearchWidget.AddSearchHistory");
 
@@ -6617,7 +6657,7 @@ void UBlockySearchWidget::AddSearchHistory(const struct FString& NewHistory)
 
 void UBlockySelectFromSceneWidget::SetPreset(class UPresetDesc* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySelectFromSceneWidget.SetPreset");
 
@@ -6640,7 +6680,7 @@ void UBlockySelectFromSceneWidget::SetPreset(class UPresetDesc* Value)
 
 void UBlockySelectFromSceneWidget::SetObjectDesc(class UObjectDesc* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySelectFromSceneWidget.SetObjectDesc");
 
@@ -6664,7 +6704,7 @@ void UBlockySelectFromSceneWidget::SetObjectDesc(class UObjectDesc* Value)
 
 bool UBlockySelectFromSceneWidget::SetImageShowIcon(class UImage* Image)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySelectFromSceneWidget.SetImageShowIcon");
 
@@ -6690,7 +6730,7 @@ bool UBlockySelectFromSceneWidget::SetImageShowIcon(class UImage* Image)
 
 void UBlockySelectFromSceneWidget::OnReceiveCustomSelectionResult(class UObjectDesc* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySelectFromSceneWidget.OnReceiveCustomSelectionResult");
 
@@ -6712,7 +6752,7 @@ void UBlockySelectFromSceneWidget::OnReceiveCustomSelectionResult(class UObjectD
 
 void UBlockySelectFromSceneWidget::CallSelectScenePreset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockySelectFromSceneWidget.CallSelectScenePreset");
 
@@ -6736,7 +6776,7 @@ void UBlockySelectFromSceneWidget::CallSelectScenePreset()
 
 struct FText UBlockyStringWidget::StrDelEnt(const struct FText& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyStringWidget.StrDelEnt");
 
@@ -6762,7 +6802,7 @@ struct FText UBlockyStringWidget::StrDelEnt(const struct FText& Value)
 
 void UBlockyStringWidget::StoreSlotDataWithSerialId(int SerialId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyStringWidget.StoreSlotDataWithSerialId");
 
@@ -6786,7 +6826,7 @@ void UBlockyStringWidget::StoreSlotDataWithSerialId(int SerialId)
 
 void UBlockyStringWidget::SetText(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyStringWidget.SetText");
 
@@ -6810,7 +6850,7 @@ void UBlockyStringWidget::SetText(const struct FString& Value)
 
 void UBlockyStringWidget::SetResult(const struct FString& Value, int SerialId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyStringWidget.SetResult");
 
@@ -6835,7 +6875,7 @@ void UBlockyStringWidget::SetResult(const struct FString& Value, int SerialId)
 
 void UCustomizeEditableText::SetNewText(const struct FText& InText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeEditableText.SetNewText");
 
@@ -6861,7 +6901,7 @@ void UCustomizeEditableText::SetNewText(const struct FText& InText)
 
 void UCustomizeEditableText::ReceiveCheckStringResultProcess(bool Result, const struct FString& ValidString, const struct FCheckStringHandleData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeEditableText.ReceiveCheckStringResultProcess");
 
@@ -6885,7 +6925,7 @@ void UCustomizeEditableText::ReceiveCheckStringResultProcess(bool Result, const 
 
 void UCustomizeEditableText::OpenKeyBoard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeEditableText.OpenKeyBoard");
 
@@ -6905,12 +6945,12 @@ void UCustomizeEditableText::OpenKeyBoard()
 // (MulticastDelegate, Public, Delegate, HasOutParms)
 // Parameters:
 // struct FText                   CommittedText                  (ConstParm, Parm, OutParm, ReferenceParm)
-// TEnumAsByte<enum ETextCommit>  CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETextCommit>       CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
 // int                            SerialId                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCustomizeEditableText::OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<enum ETextCommit> CommitMethod, int SerialId)
+void UCustomizeEditableText::OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<ETextCommit> CommitMethod, int SerialId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.CustomizeEditableText.OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature");
 
@@ -6935,7 +6975,7 @@ void UCustomizeEditableText::OnMultiLineEditableTextBoxCommittedWithSerialIdEven
 
 struct FText UCustomizeEditableText::GetValidText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeEditableText.GetValidText");
 
@@ -6960,7 +7000,7 @@ struct FText UCustomizeEditableText::GetValidText()
 
 void UCustomizeEditableTextBox::SetNewText(const struct FText& InText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeEditableTextBox.SetNewText");
 
@@ -6986,7 +7026,7 @@ void UCustomizeEditableTextBox::SetNewText(const struct FText& InText)
 
 void UCustomizeEditableTextBox::ReceiveCheckStringResultProcess(bool Result, const struct FString& ValidString, const struct FCheckStringHandleData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeEditableTextBox.ReceiveCheckStringResultProcess");
 
@@ -7009,12 +7049,12 @@ void UCustomizeEditableTextBox::ReceiveCheckStringResultProcess(bool Result, con
 // (MulticastDelegate, Public, Delegate, HasOutParms)
 // Parameters:
 // struct FText                   CommittedText                  (ConstParm, Parm, OutParm, ReferenceParm)
-// TEnumAsByte<enum ETextCommit>  CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETextCommit>       CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
 // int                            SerialId                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCustomizeEditableTextBox::OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<enum ETextCommit> CommitMethod, int SerialId)
+void UCustomizeEditableTextBox::OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<ETextCommit> CommitMethod, int SerialId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.CustomizeEditableTextBox.OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature");
 
@@ -7039,7 +7079,7 @@ void UCustomizeEditableTextBox::OnMultiLineEditableTextBoxCommittedWithSerialIdE
 
 struct FText UCustomizeEditableTextBox::GetValidText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeEditableTextBox.GetValidText");
 
@@ -7064,7 +7104,7 @@ struct FText UCustomizeEditableTextBox::GetValidText()
 
 void UCustomizeMultiLineEditableTextBox::SetNewText(const struct FText& InText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeMultiLineEditableTextBox.SetNewText");
 
@@ -7090,7 +7130,7 @@ void UCustomizeMultiLineEditableTextBox::SetNewText(const struct FText& InText)
 
 void UCustomizeMultiLineEditableTextBox::ReceiveCheckStringResultProcess(bool Result, const struct FString& ValidString, const struct FCheckStringHandleData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeMultiLineEditableTextBox.ReceiveCheckStringResultProcess");
 
@@ -7113,12 +7153,12 @@ void UCustomizeMultiLineEditableTextBox::ReceiveCheckStringResultProcess(bool Re
 // (MulticastDelegate, Public, Delegate, HasOutParms)
 // Parameters:
 // struct FText                   CommittedText                  (ConstParm, Parm, OutParm, ReferenceParm)
-// TEnumAsByte<enum ETextCommit>  CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETextCommit>       CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
 // int                            SerialId                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCustomizeMultiLineEditableTextBox::OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<enum ETextCommit> CommitMethod, int SerialId)
+void UCustomizeMultiLineEditableTextBox::OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<ETextCommit> CommitMethod, int SerialId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.CustomizeMultiLineEditableTextBox.OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature");
 
@@ -7143,7 +7183,7 @@ void UCustomizeMultiLineEditableTextBox::OnMultiLineEditableTextBoxCommittedWith
 
 struct FText UCustomizeMultiLineEditableTextBox::GetValidText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeMultiLineEditableTextBox.GetValidText");
 
@@ -7165,11 +7205,11 @@ struct FText UCustomizeMultiLineEditableTextBox::GetValidText()
 // (Final, Native, Protected, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FText                   InText                         (ConstParm, Parm, OutParm, ReferenceParm)
-// TEnumAsByte<enum ETextCommit>  CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETextCommit>       CommitMethod                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCustomizeMultiLineEditableTextBox::CheckStringValidProcess(const struct FText& InText, TEnumAsByte<enum ETextCommit> CommitMethod)
+void UCustomizeMultiLineEditableTextBox::CheckStringValidProcess(const struct FText& InText, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.CustomizeMultiLineEditableTextBox.CheckStringValidProcess");
 
@@ -7194,7 +7234,7 @@ void UCustomizeMultiLineEditableTextBox::CheckStringValidProcess(const struct FT
 
 void UBlockyAutoScrollBox::Tick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyAutoScrollBox.Tick");
 
@@ -7220,7 +7260,7 @@ void UBlockyAutoScrollBox::Tick(float DeltaTime)
 
 void UBlockyAutoScrollBox::SetTextPadding(class UTextBlock* Text, class UScrollBoxSlot* boxSlot, float totalLength)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyAutoScrollBox.SetTextPadding");
 
@@ -7246,7 +7286,7 @@ void UBlockyAutoScrollBox::SetTextPadding(class UTextBlock* Text, class UScrollB
 
 void UBlockyLoopScrollBase::UserScrolled(float Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.UserScrolled");
 
@@ -7270,7 +7310,7 @@ void UBlockyLoopScrollBase::UserScrolled(float Offset)
 
 void UBlockyLoopScrollBase::Tick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.Tick");
 
@@ -7294,7 +7334,7 @@ void UBlockyLoopScrollBase::Tick(float DeltaTime)
 
 void UBlockyLoopScrollBase::SetItemType(class UClass* _ItemType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.SetItemType");
 
@@ -7319,7 +7359,7 @@ void UBlockyLoopScrollBase::SetItemType(class UClass* _ItemType)
 
 bool UBlockyLoopScrollBase::SetItemCount(int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.SetItemCount");
 
@@ -7345,7 +7385,7 @@ bool UBlockyLoopScrollBase::SetItemCount(int Count)
 
 void UBlockyLoopScrollBase::RemoveItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.RemoveItem");
 
@@ -7370,7 +7410,7 @@ void UBlockyLoopScrollBase::RemoveItem(int Index)
 
 bool UBlockyLoopScrollBase::RefreshItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.RefreshItem");
 
@@ -7394,7 +7434,7 @@ bool UBlockyLoopScrollBase::RefreshItem(int Index)
 
 void UBlockyLoopScrollBase::RefreshAllItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.RefreshAllItems");
 
@@ -7418,7 +7458,7 @@ void UBlockyLoopScrollBase::RefreshAllItems()
 
 void UBlockyLoopScrollBase::OnRefreshItem__DelegateSignature(class UWidget* Item, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLoopScrollBase.OnRefreshItem__DelegateSignature");
 
@@ -7443,7 +7483,7 @@ void UBlockyLoopScrollBase::OnRefreshItem__DelegateSignature(class UWidget* Item
 
 void UBlockyLoopScrollBase::OnItemCreated__DelegateSignature(class UWidget* Item, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLoopScrollBase.OnItemCreated__DelegateSignature");
 
@@ -7469,7 +7509,7 @@ void UBlockyLoopScrollBase::OnItemCreated__DelegateSignature(class UWidget* Item
 
 void UBlockyLoopScrollBase::OnChangeData__DelegateSignature(class UWidget* Item, int Index, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction BlockyLua.BlockyLoopScrollBase.OnChangeData__DelegateSignature");
 
@@ -7494,7 +7534,7 @@ void UBlockyLoopScrollBase::OnChangeData__DelegateSignature(class UWidget* Item,
 
 void UBlockyLoopScrollBase::LoopScrollBoxFilterStr(const struct FString& filter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.LoopScrollBoxFilterStr");
 
@@ -7518,7 +7558,7 @@ void UBlockyLoopScrollBase::LoopScrollBoxFilterStr(const struct FString& filter)
 
 void UBlockyLoopScrollBase::LoopScrollBoxFilterByTag(TMap<int, struct FIntArrayWrapper> Tags)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.LoopScrollBoxFilterByTag");
 
@@ -7542,7 +7582,7 @@ void UBlockyLoopScrollBase::LoopScrollBoxFilterByTag(TMap<int, struct FIntArrayW
 
 void UBlockyLoopScrollBase::InsertItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.InsertItem");
 
@@ -7567,7 +7607,7 @@ void UBlockyLoopScrollBase::InsertItem(int Index)
 
 int UBlockyLoopScrollBase::GetWidgetIndex(class UWidget* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.GetWidgetIndex");
 
@@ -7593,7 +7633,7 @@ int UBlockyLoopScrollBase::GetWidgetIndex(class UWidget* Item)
 
 TArray<class UWidget*> UBlockyLoopScrollBase::GetItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.GetItems");
 
@@ -7618,7 +7658,7 @@ TArray<class UWidget*> UBlockyLoopScrollBase::GetItems()
 
 int UBlockyLoopScrollBase::GetItemCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.GetItemCount");
 
@@ -7644,7 +7684,7 @@ int UBlockyLoopScrollBase::GetItemCount()
 
 class UWidget* UBlockyLoopScrollBase::GetIndexOfWidget(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.GetIndexOfWidget");
 
@@ -7672,7 +7712,7 @@ class UWidget* UBlockyLoopScrollBase::GetIndexOfWidget(int Index)
 
 bool UBlockyLoopScrollBase::ChangeData(int Index, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.ChangeData");
 
@@ -7699,7 +7739,7 @@ bool UBlockyLoopScrollBase::ChangeData(int Index, const struct FString& Key)
 
 void UBlockyLoopScrollBase::AutoSize(bool bAutoSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBase.AutoSize");
 
@@ -7723,7 +7763,7 @@ void UBlockyLoopScrollBase::AutoSize(bool bAutoSize)
 
 void UBlockyLoopScrollBox::Tick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBox.Tick");
 
@@ -7747,7 +7787,7 @@ void UBlockyLoopScrollBox::Tick(float DeltaTime)
 
 void UBlockyLoopScrollBox::ScrollToItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollBox.ScrollToItem");
 
@@ -7771,7 +7811,7 @@ void UBlockyLoopScrollBox::ScrollToItem(int Index)
 
 void UBlockyLoopScrollGrid::ScrollToItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLua.BlockyLoopScrollGrid.ScrollToItem");
 

@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_61EF6894468110B4D589E1B7009DAEEA
 // (BlueprintEvent)
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_61EF6894468110B4D589E1B7009DAEEA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_61EF6894468110B4D589E1B7009DAEEA");
 
@@ -33,7 +33,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequencePlayer_FD44ACE0489529B1B1E3468593ABF6EC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequencePlayer_FD44ACE0489529B1B1E3468593ABF6EC");
 
@@ -53,7 +53,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_F246D3BC43638C1E4A0CD7A4093ECFE3()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_F246D3BC43638C1E4A0CD7A4093ECFE3");
 
@@ -73,7 +73,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_BB16DD9C48109CFD1788B3B60A435C67()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_BB16DD9C48109CFD1788B3B60A435C67");
 
@@ -93,7 +93,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendSpacePlayer_EC7772CA4717595422791DB0356E7446()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendSpacePlayer_EC7772CA4717595422791DB0356E7446");
 
@@ -113,7 +113,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_99288328421057D37BB1198AA773CFA8()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_99288328421057D37BB1198AA773CFA8");
 
@@ -133,7 +133,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequencePlayer_D3DD31C0472B6C0F4726D7BCD13BE4FD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequencePlayer_D3DD31C0472B6C0F4726D7BCD13BE4FD");
 
@@ -153,7 +153,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequencePlayer_693DD741490FB5D23D825FBDF1CAF303()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequencePlayer_693DD741490FB5D23D825FBDF1CAF303");
 
@@ -173,7 +173,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_4A2747AE48EAD59BF53D288CCDE102BD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_4A2747AE48EAD59BF53D288CCDE102BD");
 
@@ -193,7 +193,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_70C75196485F1D5760DEEA95ED192B22()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_70C75196485F1D5760DEEA95ED192B22");
 
@@ -213,7 +213,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SyncBlendSpacePlayerSafety_23C71D0842200B0BB48F7F89E4304980()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SyncBlendSpacePlayerSafety_23C71D0842200B0BB48F7F89E4304980");
 
@@ -233,7 +233,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_A39C00F94B8B17F3DF23A99C3DDB2E88()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_A39C00F94B8B17F3DF23A99C3DDB2E88");
 
@@ -253,7 +253,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendSpacePlayer_326A87BA48D64DA8E0BC20B8D64A8B2D()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendSpacePlayer_326A87BA48D64DA8E0BC20B8D64A8B2D");
 
@@ -273,7 +273,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_B53A6CA547FE1C98AF198C8EA998D46A()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_B53A6CA547FE1C98AF198C8EA998D46A");
 
@@ -293,7 +293,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_FD5B9C494EBA47F8974327B3D99915E2()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_FD5B9C494EBA47F8974327B3D99915E2");
 
@@ -313,7 +313,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_9326BBEB4B42336572D0429EE91307E5()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_9326BBEB4B42336572D0429EE91307E5");
 
@@ -333,7 +333,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_B4DC46DC4A69BEE6420B65B133C2DA7D()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_B4DC46DC4A69BEE6420B65B133C2DA7D");
 
@@ -353,7 +353,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_EF558E8C47A2D32F0AA02E9DC166B80B()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_EF558E8C47A2D32F0AA02E9DC166B80B");
 
@@ -373,7 +373,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_B50C1AE84D9436FFBC33709F6F0EB106()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_B50C1AE84D9436FFBC33709F6F0EB106");
 
@@ -393,7 +393,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_BD7572964E901FCB78C8ADA9BFA6FB05()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_BD7572964E901FCB78C8ADA9BFA6FB05");
 
@@ -413,7 +413,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_F1D98C164D1DA7E269F82B99AA85A3C0()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_F1D98C164D1DA7E269F82B99AA85A3C0");
 
@@ -433,7 +433,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_320BE4BD4FA38ED2E9247FBA473D5E69()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_320BE4BD4FA38ED2E9247FBA473D5E69");
 
@@ -453,7 +453,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequenceEvaluator_020889A2426931D7C123DA9D3B491177()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_SequenceEvaluator_020889A2426931D7C123DA9D3B491177");
 
@@ -473,7 +473,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_8E329B0A47E416418324F99CE29A2401()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_8E329B0A47E416418324F99CE29A2401");
 
@@ -493,7 +493,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendSpacePlayer_7F58C2804CD31C02288F4B81263A22FF()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendSpacePlayer_7F58C2804CD31C02288F4B81263A22FF");
 
@@ -513,7 +513,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_80DFA2864DFC581215F60B95F7DC9380()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_TransitionResult_80DFA2864DFC581215F60B95F7DC9380");
 
@@ -533,7 +533,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_8A5819BC46CE926E4F3D8EB521DF5E1A()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_8A5819BC46CE926E4F3D8EB521DF5E1A");
 
@@ -555,7 +555,7 @@ void UCH_ABP_Parachute_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Par
 
 void UCH_ABP_Parachute_C::ExecuteUbergraph_CH_ABP_Parachute(int EntryPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CH_ABP_Parachute.CH_ABP_Parachute_C.ExecuteUbergraph_CH_ABP_Parachute");
 

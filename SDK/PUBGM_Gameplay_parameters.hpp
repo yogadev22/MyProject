@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Gameplay.UAECharacter.SetNetCullDistanceSquared
 struct AUAECharacter_SetNetCullDistanceSquared_Params
@@ -1204,7 +1204,7 @@ struct UItemGroupSpotSceneComponent_RepeatSingleSpot_Params
 // Function Gameplay.ItemGroupSpotSceneComponent.RandomSpotByType
 struct UItemGroupSpotSceneComponent_RandomSpotByType_Params
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class UItemSpotSceneComponent*>             AllSpots;                                                 // (Parm, OutParm, ZeroConstructor)
 	struct FSpotTypeProperty                           Property;                                                 // (ConstParm, Parm, OutParm, ReferenceParm)
 };
@@ -1275,7 +1275,7 @@ struct USpotSceneComponent_GenerateActor_Params
 struct UItemSpotSceneComponent_SetSpotProperty_Params
 {
 	int                                                CompositionID;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESpotGroupType>                   GroupType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        GroupType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	class UItemGeneratorComponent*                     Generator;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FSpotTypeProperty                           Property;                                                 // (ConstParm, Parm, OutParm, ReferenceParm)
 	class UGroupSpotSceneComponent*                    Component;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
@@ -1376,7 +1376,7 @@ struct AUAEProjectile_SetActorInitialRelativeOffset_Params
 	struct FVector                                     StandOffset;                                              // (Parm, IsPlainOldData)
 	struct FVector                                     CrouchOffset;                                             // (Parm, IsPlainOldData)
 	struct FVector                                     ProneOffset;                                              // (Parm, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               PrevoisOwnerPose;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    PrevoisOwnerPose;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gameplay.UAEProjectile.ServerNotifyGroundEventOnClient
@@ -3525,7 +3525,7 @@ struct UItemGeneratorComponent_GetSpotLocInCircle_Params
 // Function Gameplay.ItemGeneratorComponent.GetSpotGroupPropertyByGroupType
 struct UItemGeneratorComponent_GetSpotGroupPropertyByGroupType_Params
 {
-	TEnumAsByte<enum ESpotGroupType>                   SpotGroupType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        SpotGroupType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FSpotGroupProperty                          ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
@@ -3750,14 +3750,14 @@ struct ULuaBTDecoratorBase_ReceiveExecutionFinishAI_Params
 {
 	class AAIController*                               OwnerController;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBTNodeResult>                    NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBTNodeResult>                         NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gameplay.LuaBTDecoratorBase.ReceiveExecutionFinish
 struct ULuaBTDecoratorBase_ReceiveExecutionFinish_Params
 {
 	class AActor*                                      OwnerActor;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBTNodeResult>                    NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBTNodeResult>                         NodeResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gameplay.LuaBTDecoratorBase.PerformConditionCheckAI
@@ -4299,7 +4299,7 @@ struct UUAEChaParachuteAnimListComponent_GetOwnerName_Params
 // Function Gameplay.UAEChaParachuteAnimListComponent.GetCharacterParachuteAnim
 struct UUAEChaParachuteAnimListComponent_GetCharacterParachuteAnim_Params
 {
-	TEnumAsByte<enum ECharacterParachuteAnimType>      AnimType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterParachuteAnimType>           AnimType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                AnimOverrideType;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAnimationAsset*                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -4344,7 +4344,7 @@ struct UUAECharacterAnimListComponent_GetCharacterShovelAnim_Params
 // Function Gameplay.UAECharacterAnimListComponent.GetCharacterJumpAnim
 struct UUAECharacterAnimListComponent_GetCharacterJumpAnim_Params
 {
-	TEnumAsByte<enum ECharacterJumpType>               JumpType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterJumpType>                    JumpType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FPlayerAnimData>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
@@ -4375,151 +4375,6 @@ struct UUAEChaVehAnimListComponent_OnAnimListAsyncLoadingFinished_Params
 struct UUAEChaVehAnimListComponent_ChangeAnimData_Params
 {
 	TArray<struct FVehCharAnimData>                    InAnimData;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// Function Gameplay.UAEGameplayTagEventNodeBase.Validate
-struct UUAEGameplayTagEventNodeBase_Validate_Params
-{
-	class AActor*                                      NodeTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	class UObject*                                     Observer;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagEventNodeBase.OnUnregistered
-struct UUAEGameplayTagEventNodeBase_OnUnregistered_Params
-{
-	class AActor*                                      NodeTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	class UObject*                                     Observer;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagEventNodeBase.OnRegistered
-struct UUAEGameplayTagEventNodeBase_OnRegistered_Params
-{
-	class AActor*                                      NodeTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	class UObject*                                     Observer;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagEventNodeBase.Invalidate
-struct UUAEGameplayTagEventNodeBase_Invalidate_Params
-{
-	class AActor*                                      NodeTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	class UObject*                                     Observer;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.OnActorEndPlay
-struct UUAEGameplayTagImposerSubsystem_OnActorEndPlay_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_UntagActor
-struct UUAEGameplayTagImposerSubsystem_K2_UntagActor_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FGameplayTag                                Tag;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_UnregisterActorTagChangedEvent
-struct UUAEGameplayTagImposerSubsystem_K2_UnregisterActorTagChangedEvent_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FGameplayTag                                InTag;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FScriptDelegate                             InDelegate;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_TagActor
-struct UUAEGameplayTagImposerSubsystem_K2_TagActor_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FGameplayTag                                Tag;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RemoveAllMatchingTags
-struct UUAEGameplayTagImposerSubsystem_K2_RemoveAllMatchingTags_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FGameplayTag                                Tag;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RemoveActorTagEventNode
-struct UUAEGameplayTagImposerSubsystem_K2_RemoveActorTagEventNode_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                Handle;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RegisterActorTagChangedEvent
-struct UUAEGameplayTagImposerSubsystem_K2_RegisterActorTagChangedEvent_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FGameplayTag                                InTag;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FScriptDelegate                             InDelegate;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_MultipleUntagActor
-struct UUAEGameplayTagImposerSubsystem_K2_MultipleUntagActor_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FGameplayTag>                        InTags;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_MultipleTagActor
-struct UUAEGameplayTagImposerSubsystem_K2_MultipleTagActor_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FGameplayTag>                        InTags;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ClearActorTags
-struct UUAEGameplayTagImposerSubsystem_K2_ClearActorTags_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bNotifyAll;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ApplyActorTagEventNode
-struct UUAEGameplayTagImposerSubsystem_K2_ApplyActorTagEventNode_Params
-{
-	class AActor*                                      TargetActor;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	class UObject*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	class UUAEGameplayTagEventNodeBase*                NodeBase;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasMatchingTag
-struct UUAEGameplayTagImposerSubsystem_K2_ActorHasMatchingTag_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FGameplayTag                                TagToCheck;                                               // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               bExactMatch;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasAnyTags
-struct UUAEGameplayTagImposerSubsystem_K2_ActorHasAnyTags_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FGameplayTag>                        InTags;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	bool                                               bExactMatch;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasAllTags
-struct UUAEGameplayTagImposerSubsystem_K2_ActorHasAllTags_Params
-{
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FGameplayTag>                        InTags;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	bool                                               bExactMatch;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.Get
-struct UUAEGameplayTagImposerSubsystem_Get_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class UUAEGameplayTagImposerSubsystem*             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Gameplay.UAELevelSequenceActor.UpdateTrackBindingData
@@ -4754,10 +4609,10 @@ struct UAELobbyCharAnimListComp_InitPendingList_Params
 // Function Gameplay.AELobbyCharAnimListComp.GetCharacterAnim
 struct UAELobbyCharAnimListComp_GetCharacterAnim_Params
 {
-	TEnumAsByte<enum ELobbyCharacterPosIndex>          PosIdx;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ELobbyCharacterAnimType>          GenderType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELobbyCharacterPosIndex>               PosIdx;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELobbyCharacterAnimType>               GenderType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                WeaponAnimType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterShowSceneType>          sceneType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterShowSceneType>               sceneType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAnimationAsset*                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -4765,7 +4620,7 @@ struct UAELobbyCharAnimListComp_GetCharacterAnim_Params
 struct UAELobbyCharAnimListComp_BuildAnimMap_Params
 {
 	TArray<struct FLobbyCharacterWeaponAnimData>       AnimList;                                                 // (Parm, OutParm, ZeroConstructor)
-	TEnumAsByte<enum ECharacterShowSceneType>          sceneType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterShowSceneType>               sceneType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Gameplay.UAESpawnActorComponent.UAESpawnActor
@@ -4966,7 +4821,7 @@ struct UVehicleAndTreasureBoxGeneratorComponent_GetVehicleSpotRandomInfoWithCate
 // Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetVehicleSpotRandomInfoBySpotType
 struct UVehicleAndTreasureBoxGeneratorComponent_GetVehicleSpotRandomInfoBySpotType_Params
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     InCategory;                                               // (Parm, ZeroConstructor)
 	struct FVehicleGenerateRandomInfo                  ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
@@ -5055,7 +4910,7 @@ struct UVehicleAndTreasureBoxGeneratorComponent_CanDynamicSpawnVehicle_Params
 // Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.AddVehicleSpotCount
 struct UVehicleAndTreasureBoxGeneratorComponent_AddVehicleSpotCount_Params
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     Path;                                                     // (Parm, ZeroConstructor)
 	float                                              LocationX;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LocationY;                                                // (Parm, ZeroConstructor, IsPlainOldData)
@@ -5130,7 +4985,7 @@ struct UVehicleGeneratorComponent_LoadVehicleGenerateTable_Params
 // Function Gameplay.VehicleGeneratorComponent.GetVehicleSpotRandomInfoBySpotType
 struct UVehicleGeneratorComponent_GetVehicleSpotRandomInfoBySpotType_Params
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVehicleGenerateRandomInfo                  ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
@@ -5169,7 +5024,7 @@ struct UVehicleGeneratorComponent_DeleteGroups_Params
 // Function Gameplay.VehicleGeneratorComponent.AddVehicleSpotCount
 struct UVehicleGeneratorComponent_AddVehicleSpotCount_Params
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     Path;                                                     // (Parm, ZeroConstructor)
 	float                                              LocationX;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LocationY;                                                // (Parm, ZeroConstructor, IsPlainOldData)

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum PixUI.EPxKeyboardTypes
 enum class EPxKeyboardTypes : uint8_t
@@ -111,8 +111,9 @@ enum class EPxPublicCapability : uint8_t
 	EPxPublicCapability__DelayFreePxImgBrush = 2,
 	EPxPublicCapability__AllowBigFontSize = 3,
 	EPxPublicCapability__ImageBlendsInLinearSpace = 4,
-	EPxPublicCapability__Count     = 5,
-	EPxPublicCapability__EPxPublicCapability_MAX = 6
+	EPxPublicCapability__ForceShapeMeasureText = 5,
+	EPxPublicCapability__Count     = 6,
+	EPxPublicCapability__EPxPublicCapability_MAX = 7
 };
 
 

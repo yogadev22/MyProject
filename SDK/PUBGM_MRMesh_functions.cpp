@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function MRMesh.MeshReconstructorBase.StopReconstruction
 // (Native, Public, BlueprintCallable)
 
 void UMeshReconstructorBase::StopReconstruction()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MeshReconstructorBase.StopReconstruction");
 
@@ -34,7 +34,7 @@ void UMeshReconstructorBase::StopReconstruction()
 
 void UMeshReconstructorBase::StartReconstruction()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MeshReconstructorBase.StartReconstruction");
 
@@ -55,7 +55,7 @@ void UMeshReconstructorBase::StartReconstruction()
 
 void UMeshReconstructorBase::PauseReconstruction()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MeshReconstructorBase.PauseReconstruction");
 
@@ -78,7 +78,7 @@ void UMeshReconstructorBase::PauseReconstruction()
 
 bool UMeshReconstructorBase::IsReconstructionStarted()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MeshReconstructorBase.IsReconstructionStarted");
 
@@ -103,7 +103,7 @@ bool UMeshReconstructorBase::IsReconstructionStarted()
 
 bool UMeshReconstructorBase::IsReconstructionPaused()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MeshReconstructorBase.IsReconstructionPaused");
 
@@ -126,7 +126,7 @@ bool UMeshReconstructorBase::IsReconstructionPaused()
 
 void UMeshReconstructorBase::DisconnectMRMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MeshReconstructorBase.DisconnectMRMesh");
 
@@ -150,7 +150,7 @@ void UMeshReconstructorBase::DisconnectMRMesh()
 
 struct FMRMeshConfiguration UMeshReconstructorBase::ConnectMRMesh(class UMRMeshComponent* Mesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MeshReconstructorBase.ConnectMRMesh");
 
@@ -176,7 +176,7 @@ struct FMRMeshConfiguration UMeshReconstructorBase::ConnectMRMesh(class UMRMeshC
 
 class UMeshReconstructorBase* UMRMeshComponent::GetReconstructor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.GetReconstructor");
 
@@ -201,7 +201,7 @@ class UMeshReconstructorBase* UMRMeshComponent::GetReconstructor()
 
 void UMRMeshComponent::ConnectReconstructor(class UMeshReconstructorBase* Reconstructor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.ConnectReconstructor");
 

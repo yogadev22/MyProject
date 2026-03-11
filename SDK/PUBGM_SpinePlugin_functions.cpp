@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function SpinePlugin.SpineBoneDriverComponent.BeforeUpdateWorldTransform
 // (Final, Native, Protected)
@@ -15,7 +15,7 @@ namespace SDK
 
 void USpineBoneDriverComponent::BeforeUpdateWorldTransform(class USpineSkeletonComponent* Skeleton)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineBoneDriverComponent.BeforeUpdateWorldTransform");
 
@@ -39,7 +39,7 @@ void USpineBoneDriverComponent::BeforeUpdateWorldTransform(class USpineSkeletonC
 
 void UTrackEntry::SetTrackTime(float trackTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetTrackTime");
 
@@ -63,7 +63,7 @@ void UTrackEntry::SetTrackTime(float trackTime)
 
 void UTrackEntry::SetTrackEnd(float trackEnd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetTrackEnd");
 
@@ -87,7 +87,7 @@ void UTrackEntry::SetTrackEnd(float trackEnd)
 
 void UTrackEntry::SetTimeScale(float TimeScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetTimeScale");
 
@@ -111,7 +111,7 @@ void UTrackEntry::SetTimeScale(float TimeScale)
 
 void UTrackEntry::SetMixTime(float mixTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetMixTime");
 
@@ -135,7 +135,7 @@ void UTrackEntry::SetMixTime(float mixTime)
 
 void UTrackEntry::SetMixDuration(float mixDuration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetMixDuration");
 
@@ -159,7 +159,7 @@ void UTrackEntry::SetMixDuration(float mixDuration)
 
 void UTrackEntry::SetLoop(bool Loop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetLoop");
 
@@ -183,7 +183,7 @@ void UTrackEntry::SetLoop(bool Loop)
 
 void UTrackEntry::SetEventThreshold(float eventThreshold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetEventThreshold");
 
@@ -207,7 +207,7 @@ void UTrackEntry::SetEventThreshold(float eventThreshold)
 
 void UTrackEntry::SetDrawOrderThreshold(float drawOrderThreshold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetDrawOrderThreshold");
 
@@ -231,7 +231,7 @@ void UTrackEntry::SetDrawOrderThreshold(float drawOrderThreshold)
 
 void UTrackEntry::SetDelay(float Delay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetDelay");
 
@@ -255,7 +255,7 @@ void UTrackEntry::SetDelay(float Delay)
 
 void UTrackEntry::SetAttachmentThreshold(float attachmentThreshold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetAttachmentThreshold");
 
@@ -279,7 +279,7 @@ void UTrackEntry::SetAttachmentThreshold(float attachmentThreshold)
 
 void UTrackEntry::SetAnimationStart(float animationStart)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetAnimationStart");
 
@@ -303,7 +303,7 @@ void UTrackEntry::SetAnimationStart(float animationStart)
 
 void UTrackEntry::SetAnimationLast(float animationLast)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetAnimationLast");
 
@@ -327,7 +327,7 @@ void UTrackEntry::SetAnimationLast(float animationLast)
 
 void UTrackEntry::SetAnimationEnd(float animationEnd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetAnimationEnd");
 
@@ -351,7 +351,7 @@ void UTrackEntry::SetAnimationEnd(float animationEnd)
 
 void UTrackEntry::SetAlpha(float Alpha)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.SetAlpha");
 
@@ -375,7 +375,7 @@ void UTrackEntry::SetAlpha(float Alpha)
 
 bool UTrackEntry::isValidAnimation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.isValidAnimation");
 
@@ -400,7 +400,7 @@ bool UTrackEntry::isValidAnimation()
 
 float UTrackEntry::GetTrackTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetTrackTime");
 
@@ -425,7 +425,7 @@ float UTrackEntry::GetTrackTime()
 
 int UTrackEntry::GetTrackIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetTrackIndex");
 
@@ -450,7 +450,7 @@ int UTrackEntry::GetTrackIndex()
 
 float UTrackEntry::GetTrackEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetTrackEnd");
 
@@ -475,7 +475,7 @@ float UTrackEntry::GetTrackEnd()
 
 float UTrackEntry::GetTimeScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetTimeScale");
 
@@ -500,7 +500,7 @@ float UTrackEntry::GetTimeScale()
 
 float UTrackEntry::GetMixTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetMixTime");
 
@@ -525,7 +525,7 @@ float UTrackEntry::GetMixTime()
 
 float UTrackEntry::GetMixDuration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetMixDuration");
 
@@ -550,7 +550,7 @@ float UTrackEntry::GetMixDuration()
 
 bool UTrackEntry::GetLoop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetLoop");
 
@@ -575,7 +575,7 @@ bool UTrackEntry::GetLoop()
 
 float UTrackEntry::GetEventThreshold()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetEventThreshold");
 
@@ -600,7 +600,7 @@ float UTrackEntry::GetEventThreshold()
 
 float UTrackEntry::GetDrawOrderThreshold()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetDrawOrderThreshold");
 
@@ -625,7 +625,7 @@ float UTrackEntry::GetDrawOrderThreshold()
 
 float UTrackEntry::GetDelay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetDelay");
 
@@ -650,7 +650,7 @@ float UTrackEntry::GetDelay()
 
 float UTrackEntry::GetAttachmentThreshold()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetAttachmentThreshold");
 
@@ -675,7 +675,7 @@ float UTrackEntry::GetAttachmentThreshold()
 
 float UTrackEntry::GetAnimationStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetAnimationStart");
 
@@ -700,7 +700,7 @@ float UTrackEntry::GetAnimationStart()
 
 struct FString UTrackEntry::getAnimationName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.getAnimationName");
 
@@ -725,7 +725,7 @@ struct FString UTrackEntry::getAnimationName()
 
 float UTrackEntry::GetAnimationLast()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetAnimationLast");
 
@@ -750,7 +750,7 @@ float UTrackEntry::GetAnimationLast()
 
 float UTrackEntry::GetAnimationEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetAnimationEnd");
 
@@ -775,7 +775,7 @@ float UTrackEntry::GetAnimationEnd()
 
 float UTrackEntry::getAnimationDuration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.getAnimationDuration");
 
@@ -800,7 +800,7 @@ float UTrackEntry::getAnimationDuration()
 
 float UTrackEntry::GetAlpha()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.TrackEntry.GetAlpha");
 
@@ -823,7 +823,7 @@ float UTrackEntry::GetAlpha()
 
 void USpineSkeletonComponent::UpdateWorldTransform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.UpdateWorldTransform");
 
@@ -844,7 +844,7 @@ void USpineSkeletonComponent::UpdateWorldTransform()
 
 void USpineSkeletonComponent::SetToSetupPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetToSetupPose");
 
@@ -865,7 +865,7 @@ void USpineSkeletonComponent::SetToSetupPose()
 
 void USpineSkeletonComponent::SetSlotsToSetupPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetSlotsToSetupPose");
 
@@ -889,7 +889,7 @@ void USpineSkeletonComponent::SetSlotsToSetupPose()
 
 void USpineSkeletonComponent::SetSlotColor(const struct FString& SlotName, const struct FColor& Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetSlotColor");
 
@@ -915,7 +915,7 @@ void USpineSkeletonComponent::SetSlotColor(const struct FString& SlotName, const
 
 bool USpineSkeletonComponent::SetSkins(TArray<struct FString>* SkinNames)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetSkins");
 
@@ -944,7 +944,7 @@ bool USpineSkeletonComponent::SetSkins(TArray<struct FString>* SkinNames)
 
 bool USpineSkeletonComponent::SetSkin(const struct FString& SkinName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetSkin");
 
@@ -970,7 +970,7 @@ bool USpineSkeletonComponent::SetSkin(const struct FString& SkinName)
 
 void USpineSkeletonComponent::SetScaleY(float ScaleY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetScaleY");
 
@@ -994,7 +994,7 @@ void USpineSkeletonComponent::SetScaleY(float ScaleY)
 
 void USpineSkeletonComponent::SetScaleX(float ScaleX)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetScaleX");
 
@@ -1019,7 +1019,7 @@ void USpineSkeletonComponent::SetScaleX(float ScaleX)
 
 void USpineSkeletonComponent::SetBoneWorldPosition(const struct FString& BoneName, const struct FVector& Position)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetBoneWorldPosition");
 
@@ -1042,7 +1042,7 @@ void USpineSkeletonComponent::SetBoneWorldPosition(const struct FString& BoneNam
 
 void USpineSkeletonComponent::SetBonesToSetupPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetBonesToSetupPose");
 
@@ -1067,7 +1067,7 @@ void USpineSkeletonComponent::SetBonesToSetupPose()
 
 bool USpineSkeletonComponent::SetAttachment(const struct FString& SlotName, const struct FString& AttachmentName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.SetAttachment");
 
@@ -1095,7 +1095,7 @@ bool USpineSkeletonComponent::SetAttachment(const struct FString& SlotName, cons
 
 bool USpineSkeletonComponent::HasSlot(const struct FString& SlotName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.HasSlot");
 
@@ -1122,7 +1122,7 @@ bool USpineSkeletonComponent::HasSlot(const struct FString& SlotName)
 
 bool USpineSkeletonComponent::HasSkin(const struct FString& SkinName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.HasSkin");
 
@@ -1149,7 +1149,7 @@ bool USpineSkeletonComponent::HasSkin(const struct FString& SkinName)
 
 bool USpineSkeletonComponent::HasBone(const struct FString& BoneName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.HasBone");
 
@@ -1176,7 +1176,7 @@ bool USpineSkeletonComponent::HasBone(const struct FString& BoneName)
 
 bool USpineSkeletonComponent::HasAnimation(const struct FString& AnimationName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.HasAnimation");
 
@@ -1202,7 +1202,7 @@ bool USpineSkeletonComponent::HasAnimation(const struct FString& AnimationName)
 
 void USpineSkeletonComponent::GetSlots(TArray<struct FString>* Slots)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.GetSlots");
 
@@ -1228,7 +1228,7 @@ void USpineSkeletonComponent::GetSlots(TArray<struct FString>* Slots)
 
 void USpineSkeletonComponent::GetSkins(TArray<struct FString>* Skins)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.GetSkins");
 
@@ -1254,7 +1254,7 @@ void USpineSkeletonComponent::GetSkins(TArray<struct FString>* Skins)
 
 float USpineSkeletonComponent::GetScaleY()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.GetScaleY");
 
@@ -1279,7 +1279,7 @@ float USpineSkeletonComponent::GetScaleY()
 
 float USpineSkeletonComponent::GetScaleX()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.GetScaleX");
 
@@ -1305,7 +1305,7 @@ float USpineSkeletonComponent::GetScaleX()
 
 struct FTransform USpineSkeletonComponent::GetBoneWorldTransform(const struct FString& BoneName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.GetBoneWorldTransform");
 
@@ -1331,7 +1331,7 @@ struct FTransform USpineSkeletonComponent::GetBoneWorldTransform(const struct FS
 
 void USpineSkeletonComponent::GetBones(TArray<struct FString>* Bones)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.GetBones");
 
@@ -1357,7 +1357,7 @@ void USpineSkeletonComponent::GetBones(TArray<struct FString>* Bones)
 
 void USpineSkeletonComponent::GetAnimations(TArray<struct FString>* Animations)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.GetAnimations");
 
@@ -1384,7 +1384,7 @@ void USpineSkeletonComponent::GetAnimations(TArray<struct FString>* Animations)
 
 float USpineSkeletonComponent::getAnimationDuration(const struct FString& AnimationName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonComponent.getAnimationDuration");
 
@@ -1410,7 +1410,7 @@ float USpineSkeletonComponent::getAnimationDuration(const struct FString& Animat
 
 void USpineSkeletonAnimationComponent::SetTimeScale(float TimeScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.SetTimeScale");
 
@@ -1435,7 +1435,7 @@ void USpineSkeletonAnimationComponent::SetTimeScale(float TimeScale)
 
 void USpineSkeletonAnimationComponent::SetPlaybackTime(float InPlaybackTime, bool bCallDelegates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.SetPlaybackTime");
 
@@ -1462,7 +1462,7 @@ void USpineSkeletonAnimationComponent::SetPlaybackTime(float InPlaybackTime, boo
 
 class UTrackEntry* USpineSkeletonAnimationComponent::SetEmptyAnimation(int TrackIndex, float mixDuration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.SetEmptyAnimation");
 
@@ -1489,7 +1489,7 @@ class UTrackEntry* USpineSkeletonAnimationComponent::SetEmptyAnimation(int Track
 
 void USpineSkeletonAnimationComponent::SetAutoPlay(bool bInAutoPlays)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.SetAutoPlay");
 
@@ -1516,7 +1516,7 @@ void USpineSkeletonAnimationComponent::SetAutoPlay(bool bInAutoPlays)
 
 class UTrackEntry* USpineSkeletonAnimationComponent::SetAnimation(int TrackIndex, const struct FString& AnimationName, bool Loop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.SetAnimation");
 
@@ -1544,7 +1544,7 @@ class UTrackEntry* USpineSkeletonAnimationComponent::SetAnimation(int TrackIndex
 
 float USpineSkeletonAnimationComponent::GetTimeScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.GetTimeScale");
 
@@ -1570,7 +1570,7 @@ float USpineSkeletonAnimationComponent::GetTimeScale()
 
 class UTrackEntry* USpineSkeletonAnimationComponent::GetCurrent(int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.GetCurrent");
 
@@ -1594,7 +1594,7 @@ class UTrackEntry* USpineSkeletonAnimationComponent::GetCurrent(int TrackIndex)
 
 void USpineSkeletonAnimationComponent::ClearTracks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.ClearTracks");
 
@@ -1617,7 +1617,7 @@ void USpineSkeletonAnimationComponent::ClearTracks()
 
 void USpineSkeletonAnimationComponent::ClearTrack(int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.ClearTrack");
 
@@ -1644,7 +1644,7 @@ void USpineSkeletonAnimationComponent::ClearTrack(int TrackIndex)
 
 class UTrackEntry* USpineSkeletonAnimationComponent::AddEmptyAnimation(int TrackIndex, float mixDuration, float Delay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.AddEmptyAnimation");
 
@@ -1676,7 +1676,7 @@ class UTrackEntry* USpineSkeletonAnimationComponent::AddEmptyAnimation(int Track
 
 class UTrackEntry* USpineSkeletonAnimationComponent::AddAnimation(int TrackIndex, const struct FString& AnimationName, bool Loop, float Delay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineSkeletonAnimationComponent.AddAnimation");
 
@@ -1703,7 +1703,7 @@ class UTrackEntry* USpineSkeletonAnimationComponent::AddAnimation(int TrackIndex
 
 void USpineWidget::UpdateWorldTransform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.UpdateWorldTransform");
 
@@ -1727,7 +1727,7 @@ void USpineWidget::UpdateWorldTransform()
 
 void USpineWidget::Tick(float DeltaTime, bool CallDelegates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.Tick");
 
@@ -1750,7 +1750,7 @@ void USpineWidget::Tick(float DeltaTime, bool CallDelegates)
 
 void USpineWidget::SetToSetupPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetToSetupPose");
 
@@ -1773,7 +1773,7 @@ void USpineWidget::SetToSetupPose()
 
 void USpineWidget::SetTimeScale(float TimeScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetTimeScale");
 
@@ -1795,7 +1795,7 @@ void USpineWidget::SetTimeScale(float TimeScale)
 
 void USpineWidget::SetSlotsToSetupPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetSlotsToSetupPose");
 
@@ -1819,7 +1819,7 @@ void USpineWidget::SetSlotsToSetupPose()
 
 bool USpineWidget::SetSkins(TArray<struct FString>* SkinNames)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetSkins");
 
@@ -1848,7 +1848,7 @@ bool USpineWidget::SetSkins(TArray<struct FString>* SkinNames)
 
 bool USpineWidget::SetSkin(const struct FString& SkinName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetSkin");
 
@@ -1874,7 +1874,7 @@ bool USpineWidget::SetSkin(const struct FString& SkinName)
 
 void USpineWidget::SetScaleY(float ScaleY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetScaleY");
 
@@ -1898,7 +1898,7 @@ void USpineWidget::SetScaleY(float ScaleY)
 
 void USpineWidget::SetScaleX(float ScaleX)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetScaleX");
 
@@ -1922,7 +1922,7 @@ void USpineWidget::SetScaleX(float ScaleX)
 
 void USpineWidget::SetScale(float inScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetScale");
 
@@ -1947,7 +1947,7 @@ void USpineWidget::SetScale(float inScale)
 
 void USpineWidget::SetPlaybackTime(float InPlaybackTime, bool bCallDelegates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetPlaybackTime");
 
@@ -1974,7 +1974,7 @@ void USpineWidget::SetPlaybackTime(float InPlaybackTime, bool bCallDelegates)
 
 class UTrackEntry* USpineWidget::SetEmptyAnimation(int TrackIndex, float mixDuration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetEmptyAnimation");
 
@@ -2001,7 +2001,7 @@ class UTrackEntry* USpineWidget::SetEmptyAnimation(int TrackIndex, float mixDura
 
 void USpineWidget::SetColor(const struct FLinearColor& InColor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetColor");
 
@@ -2023,7 +2023,7 @@ void USpineWidget::SetColor(const struct FLinearColor& InColor)
 
 void USpineWidget::SetBonesToSetupPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetBonesToSetupPose");
 
@@ -2046,7 +2046,7 @@ void USpineWidget::SetBonesToSetupPose()
 
 void USpineWidget::SetAutoPlay(bool bInAutoPlays)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetAutoPlay");
 
@@ -2072,7 +2072,7 @@ void USpineWidget::SetAutoPlay(bool bInAutoPlays)
 
 bool USpineWidget::SetAttachment(const struct FString& SlotName, const struct FString& AttachmentName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetAttachment");
 
@@ -2102,7 +2102,7 @@ bool USpineWidget::SetAttachment(const struct FString& SlotName, const struct FS
 
 class UTrackEntry* USpineWidget::SetAnimation(int TrackIndex, const struct FString& AnimationName, bool Loop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.SetAnimation");
 
@@ -2131,7 +2131,7 @@ class UTrackEntry* USpineWidget::SetAnimation(int TrackIndex, const struct FStri
 
 bool USpineWidget::HasSlot(const struct FString& SlotName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.HasSlot");
 
@@ -2158,7 +2158,7 @@ bool USpineWidget::HasSlot(const struct FString& SlotName)
 
 bool USpineWidget::HasSkin(const struct FString& SkinName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.HasSkin");
 
@@ -2185,7 +2185,7 @@ bool USpineWidget::HasSkin(const struct FString& SkinName)
 
 bool USpineWidget::HasBone(const struct FString& BoneName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.HasBone");
 
@@ -2212,7 +2212,7 @@ bool USpineWidget::HasBone(const struct FString& BoneName)
 
 bool USpineWidget::HasAnimation(const struct FString& AnimationName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.HasAnimation");
 
@@ -2238,7 +2238,7 @@ bool USpineWidget::HasAnimation(const struct FString& AnimationName)
 
 float USpineWidget::GetTimeScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetTimeScale");
 
@@ -2263,7 +2263,7 @@ float USpineWidget::GetTimeScale()
 
 void USpineWidget::GetSlots(TArray<struct FString>* Slots)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetSlots");
 
@@ -2289,7 +2289,7 @@ void USpineWidget::GetSlots(TArray<struct FString>* Slots)
 
 void USpineWidget::GetSkins(TArray<struct FString>* Skins)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetSkins");
 
@@ -2315,7 +2315,7 @@ void USpineWidget::GetSkins(TArray<struct FString>* Skins)
 
 float USpineWidget::GetScaleY()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetScaleY");
 
@@ -2340,7 +2340,7 @@ float USpineWidget::GetScaleY()
 
 float USpineWidget::GetScaleX()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetScaleX");
 
@@ -2365,7 +2365,7 @@ float USpineWidget::GetScaleX()
 
 float USpineWidget::GetScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetScale");
 
@@ -2391,7 +2391,7 @@ float USpineWidget::GetScale()
 
 class UTrackEntry* USpineWidget::GetCurrent(int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetCurrent");
 
@@ -2417,7 +2417,7 @@ class UTrackEntry* USpineWidget::GetCurrent(int TrackIndex)
 
 struct FLinearColor USpineWidget::GetColor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetColor");
 
@@ -2442,7 +2442,7 @@ struct FLinearColor USpineWidget::GetColor()
 
 void USpineWidget::GetBones(TArray<struct FString>* Bones)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetBones");
 
@@ -2468,7 +2468,7 @@ void USpineWidget::GetBones(TArray<struct FString>* Bones)
 
 void USpineWidget::GetAnimations(TArray<struct FString>* Animations)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.GetAnimations");
 
@@ -2495,7 +2495,7 @@ void USpineWidget::GetAnimations(TArray<struct FString>* Animations)
 
 float USpineWidget::getAnimationDuration(const struct FString& AnimationName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.getAnimationDuration");
 
@@ -2519,7 +2519,7 @@ float USpineWidget::getAnimationDuration(const struct FString& AnimationName)
 
 void USpineWidget::ClearTracks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.ClearTracks");
 
@@ -2542,7 +2542,7 @@ void USpineWidget::ClearTracks()
 
 void USpineWidget::ClearTrack(int TrackIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.ClearTrack");
 
@@ -2569,7 +2569,7 @@ void USpineWidget::ClearTrack(int TrackIndex)
 
 class UTrackEntry* USpineWidget::AddEmptyAnimation(int TrackIndex, float mixDuration, float Delay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.AddEmptyAnimation");
 
@@ -2601,7 +2601,7 @@ class UTrackEntry* USpineWidget::AddEmptyAnimation(int TrackIndex, float mixDura
 
 class UTrackEntry* USpineWidget::AddAnimation(int TrackIndex, const struct FString& AnimationName, bool Loop, float Delay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpinePlugin.SpineWidget.AddAnimation");
 

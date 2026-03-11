@@ -699,8 +699,8 @@ void *main_thread(void *) {
         sleep(1);
 	}
 
-	FName::GNames = ((TNameEntryArray * (*)()) (UE4 + 0x83412f0))();
-    UObject::GUObjectArray = (FUObjectArray *) (UE4 + 0xe57bca0);
+	FName::GNames = ((TNameEntryArray * (*)()) (UE4 + 0x83de2d4))();
+    UObject::GUObjectArray = (FUObjectArray *) (UE4 + 0xe74e0f0);
 	
     A64HookFunction((void *) (UE4 + 0xC876C60), (void *) _eglSwapBuffers, (void **) &orig_eglSwapBuffers);
 	return NULL;
@@ -709,5 +709,5 @@ void *main_thread(void *) {
 __attribute__((constructor)) void _init() {
     pthread_t t;
     pthread_create(&t, NULL, main_thread, NULL);
-    pthread_create(&t, NULL, bypass_thread, NULL);
+    //pthread_create(&t, NULL, bypass_thread, NULL);
 }

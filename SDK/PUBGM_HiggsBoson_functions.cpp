@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function HiggsBoson.BaziState.OnControllerReconnected
 // (Final, Native, Private)
 
 void UBaziState::OnControllerReconnected()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.BaziState.OnControllerReconnected");
 
@@ -36,7 +36,7 @@ void UBaziState::OnControllerReconnected()
 
 void UBaziState::AddChori(const struct FChori& Element)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.BaziState.AddChori");
 
@@ -60,7 +60,7 @@ void UBaziState::AddChori(const struct FChori& Element)
 
 void UBaziState::AddBazi(const struct FBazi& Element)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.BaziState.AddBazi");
 
@@ -84,7 +84,7 @@ void UBaziState::AddBazi(const struct FBazi& Element)
 
 float UClientGlueHiaSystem::Vulou()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Vulou");
 
@@ -109,7 +109,7 @@ float UClientGlueHiaSystem::Vulou()
 
 void UClientGlueHiaSystem::LuaFunc9(int Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc9");
 
@@ -134,7 +134,7 @@ void UClientGlueHiaSystem::LuaFunc9(int Param1)
 
 bool UClientGlueHiaSystem::LuaFunc8(int Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc8");
 
@@ -161,7 +161,7 @@ bool UClientGlueHiaSystem::LuaFunc8(int Param1)
 
 bool UClientGlueHiaSystem::LuaFunc7(int Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc7");
 
@@ -188,7 +188,7 @@ bool UClientGlueHiaSystem::LuaFunc7(int Param1)
 
 bool UClientGlueHiaSystem::LuaFunc6(int Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc6");
 
@@ -215,7 +215,7 @@ bool UClientGlueHiaSystem::LuaFunc6(int Param1)
 
 bool UClientGlueHiaSystem::LuaFunc5(int Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc5");
 
@@ -242,7 +242,7 @@ bool UClientGlueHiaSystem::LuaFunc5(int Param1)
 
 bool UClientGlueHiaSystem::LuaFunc4(int Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc4");
 
@@ -268,7 +268,7 @@ bool UClientGlueHiaSystem::LuaFunc4(int Param1)
 
 void UClientGlueHiaSystem::LuaFunc3(int Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc3");
 
@@ -290,7 +290,7 @@ void UClientGlueHiaSystem::LuaFunc3(int Param1)
 
 void UClientGlueHiaSystem::LuaFunc2()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc2");
 
@@ -314,7 +314,7 @@ void UClientGlueHiaSystem::LuaFunc2()
 
 bool UClientGlueHiaSystem::LuaFunc1(class AActor* PtrActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.LuaFunc1");
 
@@ -340,7 +340,7 @@ bool UClientGlueHiaSystem::LuaFunc1(class AActor* PtrActor)
 
 void UClientGlueHiaSystem::Func9(class AActor* PtrWeapon)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func9");
 
@@ -367,7 +367,7 @@ void UClientGlueHiaSystem::Func9(class AActor* PtrWeapon)
 
 int UClientGlueHiaSystem::Func8(class AActor* PtrWeapon, const struct FBulletHitInfoUploadData& UploadData, const struct FLocalShootHitData& LocalHitData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func8");
 
@@ -395,7 +395,7 @@ int UClientGlueHiaSystem::Func8(class AActor* PtrWeapon, const struct FBulletHit
 
 bool UClientGlueHiaSystem::Func7()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func7");
 
@@ -421,7 +421,7 @@ bool UClientGlueHiaSystem::Func7()
 
 float UClientGlueHiaSystem::Func6(class AActor* Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func6");
 
@@ -447,7 +447,7 @@ float UClientGlueHiaSystem::Func6(class AActor* Param1)
 
 float UClientGlueHiaSystem::Func3()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func3");
 
@@ -474,7 +474,7 @@ float UClientGlueHiaSystem::Func3()
 
 void UClientGlueHiaSystem::Func28(class AActor* Weapon, const struct FBulletHitInfoUploadData& BulletHitInfoUploadData, const struct FLocalShootHitData& LocalShootHitData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func28");
 
@@ -500,7 +500,7 @@ void UClientGlueHiaSystem::Func28(class AActor* Weapon, const struct FBulletHitI
 
 void UClientGlueHiaSystem::Func27(uint32_t ShootID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func27");
 
@@ -525,7 +525,7 @@ void UClientGlueHiaSystem::Func27(uint32_t ShootID)
 
 void UClientGlueHiaSystem::Func26(class AActor* Param4, class AActor* Param5)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func26");
 
@@ -554,7 +554,7 @@ void UClientGlueHiaSystem::Func26(class AActor* Param4, class AActor* Param5)
 
 void UClientGlueHiaSystem::Func25(int Param1, float Param2, float param3, class AActor* Param4, class AActor* Param5)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func25");
 
@@ -587,7 +587,7 @@ void UClientGlueHiaSystem::Func25(int Param1, float Param2, float param3, class 
 
 void UClientGlueHiaSystem::Func24(int Param1, float Param2, float param3, float Param4, class AActor* Param5, class AActor* Param6)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func24");
 
@@ -618,7 +618,7 @@ void UClientGlueHiaSystem::Func24(int Param1, float Param2, float param3, float 
 
 void UClientGlueHiaSystem::Func23(uint32_t Param1, const struct FVector& Param2, const struct FHitResult& param3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func23");
 
@@ -646,7 +646,7 @@ void UClientGlueHiaSystem::Func23(uint32_t Param1, const struct FVector& Param2,
 
 void UClientGlueHiaSystem::Func22(uint32_t Param1, const struct FVector& Param2, const struct FVector& param3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func22");
 
@@ -672,7 +672,7 @@ void UClientGlueHiaSystem::Func22(uint32_t Param1, const struct FVector& Param2,
 
 void UClientGlueHiaSystem::Func21(class AActor* Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func21");
 
@@ -697,7 +697,7 @@ void UClientGlueHiaSystem::Func21(class AActor* Param1)
 
 void UClientGlueHiaSystem::Func20(class AActor* Param1, struct FVector* Param2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func20");
 
@@ -726,7 +726,7 @@ void UClientGlueHiaSystem::Func20(class AActor* Param1, struct FVector* Param2)
 
 bool UClientGlueHiaSystem::Func2(class AActor* CharacterPtr, bool bParam1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func2");
 
@@ -755,7 +755,7 @@ bool UClientGlueHiaSystem::Func2(class AActor* CharacterPtr, bool bParam1)
 
 void UClientGlueHiaSystem::Func19(uint32_t Param1, float Param2, float param3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func19");
 
@@ -782,7 +782,7 @@ void UClientGlueHiaSystem::Func19(uint32_t Param1, float Param2, float param3)
 
 void UClientGlueHiaSystem::Func18(TArray<struct FBazi> Bazi, TArray<struct FChori> Chori)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func18");
 
@@ -807,7 +807,7 @@ void UClientGlueHiaSystem::Func18(TArray<struct FBazi> Bazi, TArray<struct FChor
 
 void UClientGlueHiaSystem::Func17(const struct FFatalDamageParameter& Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func17");
 
@@ -829,7 +829,7 @@ void UClientGlueHiaSystem::Func17(const struct FFatalDamageParameter& Param1)
 
 void UClientGlueHiaSystem::Func16()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func16");
 
@@ -852,7 +852,7 @@ void UClientGlueHiaSystem::Func16()
 
 void UClientGlueHiaSystem::Func15(class AActor* Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func15");
 
@@ -877,7 +877,7 @@ void UClientGlueHiaSystem::Func15(class AActor* Param1)
 
 void UClientGlueHiaSystem::Func14(const struct FShootTimeData& InData, class AActor* PtrWeapon)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func14");
 
@@ -903,7 +903,7 @@ void UClientGlueHiaSystem::Func14(const struct FShootTimeData& InData, class AAc
 
 float UClientGlueHiaSystem::Func11(class AActor* Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func11");
 
@@ -929,7 +929,7 @@ float UClientGlueHiaSystem::Func11(class AActor* Param1)
 
 void UClientGlueHiaSystem::Func10(class AActor* Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func10");
 
@@ -956,7 +956,7 @@ void UClientGlueHiaSystem::Func10(class AActor* Param1)
 
 bool UClientGlueHiaSystem::Func1(class AActor* CharacterPtr, float TimeInSeconds, float MarginInSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientGlueHiaSystem.Func1");
 
@@ -986,7 +986,7 @@ bool UClientGlueHiaSystem::Func1(class AActor* CharacterPtr, float TimeInSeconds
 
 bool UFuzzyObject::SetUInt8ValueByName(int Name, unsigned char Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetUInt8ValueByName");
 
@@ -1015,7 +1015,7 @@ bool UFuzzyObject::SetUInt8ValueByName(int Name, unsigned char Value)
 
 bool UFuzzyObject::SetUInt64ValueByName(int Name, uint64_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetUInt64ValueByName");
 
@@ -1044,7 +1044,7 @@ bool UFuzzyObject::SetUInt64ValueByName(int Name, uint64_t Value)
 
 bool UFuzzyObject::SetUInt32ValueByName(int Name, uint32_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetUInt32ValueByName");
 
@@ -1073,7 +1073,7 @@ bool UFuzzyObject::SetUInt32ValueByName(int Name, uint32_t Value)
 
 bool UFuzzyObject::SetUInt16ValueByName(int Name, uint16_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetUInt16ValueByName");
 
@@ -1102,7 +1102,7 @@ bool UFuzzyObject::SetUInt16ValueByName(int Name, uint16_t Value)
 
 bool UFuzzyObject::SetInt8ValueByName(int Name, int8_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetInt8ValueByName");
 
@@ -1131,7 +1131,7 @@ bool UFuzzyObject::SetInt8ValueByName(int Name, int8_t Value)
 
 bool UFuzzyObject::SetInt64ValueByName(int Name, int64_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetInt64ValueByName");
 
@@ -1160,7 +1160,7 @@ bool UFuzzyObject::SetInt64ValueByName(int Name, int64_t Value)
 
 bool UFuzzyObject::SetInt32ValueByName(int Name, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetInt32ValueByName");
 
@@ -1189,7 +1189,7 @@ bool UFuzzyObject::SetInt32ValueByName(int Name, int Value)
 
 bool UFuzzyObject::SetInt16ValueByName(int Name, int16_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetInt16ValueByName");
 
@@ -1218,7 +1218,7 @@ bool UFuzzyObject::SetInt16ValueByName(int Name, int16_t Value)
 
 bool UFuzzyObject::SetFloatValueByName(int Name, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetFloatValueByName");
 
@@ -1247,7 +1247,7 @@ bool UFuzzyObject::SetFloatValueByName(int Name, float Value)
 
 bool UFuzzyObject::SetBoolValueByName(int Name, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.SetBoolValueByName");
 
@@ -1276,7 +1276,7 @@ bool UFuzzyObject::SetBoolValueByName(int Name, bool Value)
 
 bool UFuzzyObject::GetUInt8ValueByName(int Name, unsigned char* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetUInt8ValueByName");
 
@@ -1307,7 +1307,7 @@ bool UFuzzyObject::GetUInt8ValueByName(int Name, unsigned char* OutValue)
 
 bool UFuzzyObject::GetUInt64ValueByName(int Name, uint64_t* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetUInt64ValueByName");
 
@@ -1338,7 +1338,7 @@ bool UFuzzyObject::GetUInt64ValueByName(int Name, uint64_t* OutValue)
 
 bool UFuzzyObject::GetUInt32ValueByName(int Name, uint32_t* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetUInt32ValueByName");
 
@@ -1369,7 +1369,7 @@ bool UFuzzyObject::GetUInt32ValueByName(int Name, uint32_t* OutValue)
 
 bool UFuzzyObject::GetUInt16ValueByName(int Name, uint16_t* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetUInt16ValueByName");
 
@@ -1400,7 +1400,7 @@ bool UFuzzyObject::GetUInt16ValueByName(int Name, uint16_t* OutValue)
 
 bool UFuzzyObject::GetInt8ValueByName(int Name, int8_t* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetInt8ValueByName");
 
@@ -1431,7 +1431,7 @@ bool UFuzzyObject::GetInt8ValueByName(int Name, int8_t* OutValue)
 
 bool UFuzzyObject::GetInt64ValueByName(int Name, int64_t* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetInt64ValueByName");
 
@@ -1462,7 +1462,7 @@ bool UFuzzyObject::GetInt64ValueByName(int Name, int64_t* OutValue)
 
 bool UFuzzyObject::GetInt32ValueByName(int Name, int* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetInt32ValueByName");
 
@@ -1493,7 +1493,7 @@ bool UFuzzyObject::GetInt32ValueByName(int Name, int* OutValue)
 
 bool UFuzzyObject::GetInt16ValueByName(int Name, int16_t* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetInt16ValueByName");
 
@@ -1524,7 +1524,7 @@ bool UFuzzyObject::GetInt16ValueByName(int Name, int16_t* OutValue)
 
 bool UFuzzyObject::GetFloatValueByName(int Name, float* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetFloatValueByName");
 
@@ -1555,7 +1555,7 @@ bool UFuzzyObject::GetFloatValueByName(int Name, float* OutValue)
 
 bool UFuzzyObject::GetBoolValueByName(int Name, bool* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.FuzzyObject.GetBoolValueByName");
 
@@ -1587,7 +1587,7 @@ bool UFuzzyObject::GetBoolValueByName(int Name, bool* OutValue)
 
 void UClientAmaUbaSubsystem::Func1(int IntType, float InTimestamp, int IncreaseCount, bool bAlertUploadFrequency)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.ClientAmaUbaSubsystem.Func1");
 
@@ -1617,7 +1617,7 @@ void UClientAmaUbaSubsystem::Func1(int IntType, float InTimestamp, int IncreaseC
 
 void UCamoyoHelper::MakeRectTu(const struct FScriptDelegate& CamoyoRetDelegate, const struct FString& Filename, int Quality, bool bShowUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.CamoyoHelper.MakeRectTu");
 
@@ -1644,7 +1644,7 @@ void UCamoyoHelper::MakeRectTu(const struct FScriptDelegate& CamoyoRetDelegate, 
 
 void UCamoyoHelper::MakeMemPerform(int InbOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.CamoyoHelper.MakeMemPerform");
 
@@ -1671,7 +1671,7 @@ void UCamoyoHelper::MakeMemPerform(int InbOpen)
 
 void UCamoyoHelper::MakeFitRectTu(const struct FScriptDelegate& CamoyoRetDelegate, const struct FVector4& InCutParam, int InTuType, bool isShowUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.CamoyoHelper.MakeFitRectTu");
 
@@ -1698,7 +1698,7 @@ void UCamoyoHelper::MakeFitRectTu(const struct FScriptDelegate& CamoyoRetDelegat
 
 void UHiggsBosonComponent::Zanwu(const struct FString& Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.Zanwu");
 
@@ -1722,7 +1722,7 @@ void UHiggsBosonComponent::Zanwu(const struct FString& Param1)
 
 void UHiggsBosonComponent::SyncServerParam(bool Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.SyncServerParam");
 
@@ -1747,7 +1747,7 @@ void UHiggsBosonComponent::SyncServerParam(bool Param1)
 
 void UHiggsBosonComponent::SwiftHawk(TArray<unsigned char> Hawks, uint32_t Magic)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.SwiftHawk");
 
@@ -1773,7 +1773,7 @@ void UHiggsBosonComponent::SwiftHawk(TArray<unsigned char> Hawks, uint32_t Magic
 
 void UHiggsBosonComponent::ShowABCD(const struct FString& Message, bool bIsClientShowWindow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ShowABCD");
 
@@ -1800,7 +1800,7 @@ void UHiggsBosonComponent::ShowABCD(const struct FString& Message, bool bIsClien
 
 void UHiggsBosonComponent::SetSchemeForInitialize(int Index, uint32_t VerifyLen, TArray<unsigned char> VerifyHashArray, TArray<struct FPatchPoint> PatchPointArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.SetSchemeForInitialize");
 
@@ -1830,7 +1830,7 @@ void UHiggsBosonComponent::SetSchemeForInitialize(int Index, uint32_t VerifyLen,
 
 void UHiggsBosonComponent::SetSchemeForGet(int Index, uint32_t VerifyLen, TArray<unsigned char> VerifyHashArray, TArray<struct FPatchPoint> PatchPointArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.SetSchemeForGet");
 
@@ -1857,7 +1857,7 @@ void UHiggsBosonComponent::SetSchemeForGet(int Index, uint32_t VerifyLen, TArray
 
 void UHiggsBosonComponent::ServerPoPo(TArray<unsigned char>* Array)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ServerPoPo");
 
@@ -1883,7 +1883,7 @@ void UHiggsBosonComponent::ServerPoPo(TArray<unsigned char>* Array)
 
 void UHiggsBosonComponent::SendMoveStatusToServer(EPawnState State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.SendMoveStatusToServer");
 
@@ -1907,7 +1907,7 @@ void UHiggsBosonComponent::SendMoveStatusToServer(EPawnState State)
 
 void UHiggsBosonComponent::S2CNuoro(int Lotion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.S2CNuoro");
 
@@ -1936,7 +1936,7 @@ void UHiggsBosonComponent::S2CNuoro(int Lotion)
 
 void UHiggsBosonComponent::RPC_ServerGlueHiaPark(int8_t HiaType, TArray<unsigned char> GlueHiaParkArr, uint32_t HiaStatus, TArray<unsigned char> GlueArg, TArray<unsigned char> GlueHiaParkArr2, uint32_t HiaStatus2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.RPC_ServerGlueHiaPark");
 
@@ -1967,7 +1967,7 @@ void UHiggsBosonComponent::RPC_ServerGlueHiaPark(int8_t HiaType, TArray<unsigned
 
 void UHiggsBosonComponent::RPC_ServerCapbo(int8_t BoCapC, int8_t InBoType, TArray<unsigned char> BoDataArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.RPC_ServerCapbo");
 
@@ -1993,7 +1993,7 @@ void UHiggsBosonComponent::RPC_ServerCapbo(int8_t BoCapC, int8_t InBoType, TArra
 
 void UHiggsBosonComponent::RPC_ServerAddInvalidFilesInPakLite(TArray<int> InvalidIndexList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.RPC_ServerAddInvalidFilesInPakLite");
 
@@ -2019,7 +2019,7 @@ void UHiggsBosonComponent::RPC_ServerAddInvalidFilesInPakLite(TArray<int> Invali
 
 void UHiggsBosonComponent::RPC_ClientCoronaLab(unsigned char bAllSwitch, TArray<unsigned char> CoronaLab, uint32_t CoronaState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.RPC_ClientCoronaLab");
 
@@ -2048,7 +2048,7 @@ void UHiggsBosonComponent::RPC_ClientCoronaLab(unsigned char bAllSwitch, TArray<
 
 void UHiggsBosonComponent::OnWeaponAimInput(float InDistToEnemy, float InYaw, float InPitch, float InRoll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnWeaponAimInput");
 
@@ -2077,7 +2077,7 @@ void UHiggsBosonComponent::OnWeaponAimInput(float InDistToEnemy, float InYaw, fl
 
 void UHiggsBosonComponent::OnTouchInput(float InYaw, float InPitch, float InRoll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnTouchInput");
 
@@ -2101,7 +2101,7 @@ void UHiggsBosonComponent::OnTouchInput(float InYaw, float InPitch, float InRoll
 
 void UHiggsBosonComponent::OnStopFireEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnStopFireEvent");
 
@@ -2122,7 +2122,7 @@ void UHiggsBosonComponent::OnStopFireEvent()
 
 void UHiggsBosonComponent::OnStartFireEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnStartFireEvent");
 
@@ -2146,7 +2146,7 @@ void UHiggsBosonComponent::OnStartFireEvent()
 
 void UHiggsBosonComponent::OnSkillInteruptVisual(class AActor* InTarget, class AActor* InCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnSkillInteruptVisual");
 
@@ -2172,7 +2172,7 @@ void UHiggsBosonComponent::OnSkillInteruptVisual(class AActor* InTarget, class A
 
 void UHiggsBosonComponent::OnSkillEndVisual(class AActor* InTarget, class AActor* InCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnSkillEndVisual");
 
@@ -2198,7 +2198,7 @@ void UHiggsBosonComponent::OnSkillEndVisual(class AActor* InTarget, class AActor
 
 void UHiggsBosonComponent::OnSkillEndTrans(class AActor* InTarget, class AActor* InCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnSkillEndTrans");
 
@@ -2224,7 +2224,7 @@ void UHiggsBosonComponent::OnSkillEndTrans(class AActor* InTarget, class AActor*
 
 void UHiggsBosonComponent::OnSkillBeginVisual(class AActor* InTarget, class AActor* InCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnSkillBeginVisual");
 
@@ -2250,7 +2250,7 @@ void UHiggsBosonComponent::OnSkillBeginVisual(class AActor* InTarget, class AAct
 
 void UHiggsBosonComponent::OnSkillBeginTrans(class AActor* InTarget, class AActor* InCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnSkillBeginTrans");
 
@@ -2275,7 +2275,7 @@ void UHiggsBosonComponent::OnSkillBeginTrans(class AActor* InTarget, class AActo
 
 void UHiggsBosonComponent::OnRecoilCurveCheckFailed(class AActor* Weapon)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnRecoilCurveCheckFailed");
 
@@ -2299,7 +2299,7 @@ void UHiggsBosonComponent::OnRecoilCurveCheckFailed(class AActor* Weapon)
 
 void UHiggsBosonComponent::OnPlayerScopeOut(bool bBegan)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnPlayerScopeOut");
 
@@ -2323,7 +2323,7 @@ void UHiggsBosonComponent::OnPlayerScopeOut(bool bBegan)
 
 void UHiggsBosonComponent::OnPlayerScopeIn(bool bBegan)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnPlayerScopeIn");
 
@@ -2347,7 +2347,7 @@ void UHiggsBosonComponent::OnPlayerScopeIn(bool bBegan)
 
 void UHiggsBosonComponent::OnMyPawnRespawn(class AUAEPlayerController* InPlayerController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnMyPawnRespawn");
 
@@ -2371,7 +2371,7 @@ void UHiggsBosonComponent::OnMyPawnRespawn(class AUAEPlayerController* InPlayerC
 
 void UHiggsBosonComponent::OnKillSomeOneEvent(class AActor* InSomeOne)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnKillSomeOneEvent");
 
@@ -2397,7 +2397,7 @@ void UHiggsBosonComponent::OnKillSomeOneEvent(class AActor* InSomeOne)
 
 void UHiggsBosonComponent::OnGyroInput(float InYaw, float InPitch, float InRoll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnGyroInput");
 
@@ -2424,7 +2424,7 @@ void UHiggsBosonComponent::OnGyroInput(float InYaw, float InPitch, float InRoll)
 
 void UHiggsBosonComponent::OnClientAdjustPosition(const struct FVector& NewLoc, ECharacterMoveDragReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnClientAdjustPosition");
 
@@ -2451,7 +2451,7 @@ void UHiggsBosonComponent::OnClientAdjustPosition(const struct FVector& NewLoc, 
 
 void UHiggsBosonComponent::OnCapboReturn(int BoCapC, int InBoType, TArray<unsigned char> RetData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnCapboReturn");
 
@@ -2478,39 +2478,13 @@ void UHiggsBosonComponent::OnCapboReturn(int BoCapC, int InBoType, TArray<unsign
 
 void UHiggsBosonComponent::OnBulletImpactEvent(class AActor* InCauser, const struct FHitResult& InImpactResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.OnBulletImpactEvent");
 
 	UHiggsBosonComponent_OnBulletImpactEvent_Params params;
 	params.InCauser = InCauser;
 	params.InImpactResult = InImpactResult;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function HiggsBoson.HiggsBosonComponent.LuaNotifySecurityAbnormalJump
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// float                          Time                           (Parm, ZeroConstructor, IsPlainOldData)
-// float                          Velocity                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UHiggsBosonComponent::LuaNotifySecurityAbnormalJump(float Time, float Velocity)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.LuaNotifySecurityAbnormalJump");
-
-	UHiggsBosonComponent_LuaNotifySecurityAbnormalJump_Params params;
-	params.Time = Time;
-	params.Velocity = Velocity;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -2529,7 +2503,7 @@ void UHiggsBosonComponent::LuaNotifySecurityAbnormalJump(float Time, float Veloc
 
 bool UHiggsBosonComponent::IsCharacterOwnerWerewolf()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.IsCharacterOwnerWerewolf");
 
@@ -2554,7 +2528,7 @@ bool UHiggsBosonComponent::IsCharacterOwnerWerewolf()
 
 bool UHiggsBosonComponent::IsCharacterOwnerButcher()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.IsCharacterOwnerButcher");
 
@@ -2577,7 +2551,7 @@ bool UHiggsBosonComponent::IsCharacterOwnerButcher()
 
 void UHiggsBosonComponent::HandleClientReconnect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.HandleClientReconnect");
 
@@ -2598,7 +2572,7 @@ void UHiggsBosonComponent::HandleClientReconnect()
 
 void UHiggsBosonComponent::FlushGameEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.FlushGameEnd");
 
@@ -2624,7 +2598,7 @@ void UHiggsBosonComponent::FlushGameEnd()
 
 void UHiggsBosonComponent::Ezio(int Param1, int Param2, int param3, int Param4)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.Ezio");
 
@@ -2651,7 +2625,7 @@ void UHiggsBosonComponent::Ezio(int Param1, int Param2, int param3, int Param4)
 
 int UHiggsBosonComponent::EnableTickEncrypt()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.EnableTickEncrypt");
 
@@ -2676,7 +2650,7 @@ int UHiggsBosonComponent::EnableTickEncrypt()
 
 int UHiggsBosonComponent::EnablePeekShootVerify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.EnablePeekShootVerify");
 
@@ -2701,7 +2675,7 @@ int UHiggsBosonComponent::EnablePeekShootVerify()
 
 void UHiggsBosonComponent::EnableEnhancedDynamicActors(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.EnableEnhancedDynamicActors");
 
@@ -2727,7 +2701,7 @@ void UHiggsBosonComponent::EnableEnhancedDynamicActors(int Index)
 
 int UHiggsBosonComponent::EnableCheckFilesInPakLite(TArray<struct FString> InFiles, int InVerifyCountSinglePass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.EnableCheckFilesInPakLite");
 
@@ -2760,7 +2734,7 @@ int UHiggsBosonComponent::EnableCheckFilesInPakLite(TArray<struct FString> InFil
 
 void UHiggsBosonComponent::DispatchIntegrityCheckItem(uint32_t PlatID, uint32_t AreaID, uint32_t GameBits, uint32_t Index, int Offset, uint32_t Len, uint32_t Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.DispatchIntegrityCheckItem");
 
@@ -2795,7 +2769,7 @@ void UHiggsBosonComponent::DispatchIntegrityCheckItem(uint32_t PlatID, uint32_t 
 
 void UHiggsBosonComponent::DevPVSCheckClientLocationC2S(class ASTExtraBaseCharacter* PtrOtherCharacter, const struct FVector& D, const struct FVector& A, const struct FVector& V, const struct FVector& C, bool b1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.DevPVSCheckClientLocationC2S");
 
@@ -2825,7 +2799,7 @@ void UHiggsBosonComponent::DevPVSCheckClientLocationC2S(class ASTExtraBaseCharac
 
 void UHiggsBosonComponent::DevPVSCheckClientLocation(class AActor* PtrSimulatedProxy, const struct FVector& D)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.DevPVSCheckClientLocation");
 
@@ -2852,7 +2826,7 @@ void UHiggsBosonComponent::DevPVSCheckClientLocation(class AActor* PtrSimulatedP
 
 void UHiggsBosonComponent::DevPrintMouke(const struct FString& Param0, float Param1, const struct FString& param3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.DevPrintMouke");
 
@@ -2878,7 +2852,7 @@ void UHiggsBosonComponent::DevPrintMouke(const struct FString& Param0, float Par
 
 void UHiggsBosonComponent::ControlRoofTouch(int Switch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ControlRoofTouch");
 
@@ -2907,7 +2881,7 @@ void UHiggsBosonComponent::ControlRoofTouch(int Switch)
 
 void UHiggsBosonComponent::ControlMoveInputRecord(int Switch, float RecordCooldown, int BitmapSize, int MinValidSampleCount, uint32_t InAngleSampleMaxCount, uint32_t InAngleDistributionNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ControlMoveInputRecord");
 
@@ -2936,7 +2910,7 @@ void UHiggsBosonComponent::ControlMoveInputRecord(int Switch, float RecordCooldo
 
 void UHiggsBosonComponent::ControlMHActive(int Switch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ControlMHActive");
 
@@ -2960,7 +2934,7 @@ void UHiggsBosonComponent::ControlMHActive(int Switch)
 
 void UHiggsBosonComponent::Cofew(uint32_t InIter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.Cofew");
 
@@ -2984,7 +2958,7 @@ void UHiggsBosonComponent::Cofew(uint32_t InIter)
 
 void UHiggsBosonComponent::ClientSwiftHawkWithParams(TArray<unsigned char> Hawks)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ClientSwiftHawkWithParams");
 
@@ -3009,7 +2983,7 @@ void UHiggsBosonComponent::ClientSwiftHawkWithParams(TArray<unsigned char> Hawks
 
 void UHiggsBosonComponent::ClientSwiftHawk(unsigned char Type, int SequenceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ClientSwiftHawk");
 
@@ -3034,7 +3008,7 @@ void UHiggsBosonComponent::ClientSwiftHawk(unsigned char Type, int SequenceID)
 
 void UHiggsBosonComponent::ClientReceiveEx(TArray<unsigned char> RPCConstArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ClientReceiveEx");
 
@@ -3058,7 +3032,7 @@ void UHiggsBosonComponent::ClientReceiveEx(TArray<unsigned char> RPCConstArray)
 
 void UHiggsBosonComponent::ClientDoJT(bool bDelayUntilShot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ClientDoJT");
 
@@ -3083,7 +3057,7 @@ void UHiggsBosonComponent::ClientDoJT(bool bDelayUntilShot)
 
 void UHiggsBosonComponent::ClientCloseBaziUI(TArray<struct FBazi> Bazi, TArray<struct FChori> Chori)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ClientCloseBaziUI");
 
@@ -3108,7 +3082,7 @@ void UHiggsBosonComponent::ClientCloseBaziUI(TArray<struct FBazi> Bazi, TArray<s
 
 void UHiggsBosonComponent::ClientAccom(uint16_t Owea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.ClientAccom");
 
@@ -3132,7 +3106,7 @@ void UHiggsBosonComponent::ClientAccom(uint16_t Owea)
 
 void UHiggsBosonComponent::C2SSendAlert(const struct FString& Param1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.HiggsBosonComponent.C2SSendAlert");
 
@@ -3154,7 +3128,7 @@ void UHiggsBosonComponent::C2SSendAlert(const struct FString& Param1)
 
 void UMarginIntervalCharacterTicker::Reset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.MarginIntervalCharacterTicker.Reset");
 
@@ -3178,7 +3152,7 @@ void UMarginIntervalCharacterTicker::Reset()
 
 void USecurityAvatarSystem::OnAvatarRectifyDataChange(class AUAECharacter* CharacterOwner, int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.SecurityAvatarSystem.OnAvatarRectifyDataChange");
 
@@ -3206,7 +3180,7 @@ void USecurityAvatarSystem::OnAvatarRectifyDataChange(class AUAECharacter* Chara
 
 void USecurityAvatarSystem::OnAvatarEquipped(class AUAECharacter* CharacterOwner, int SlotID, const struct FItemDefineID& NewItemID, const struct FItemDefineID& OldItemID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.SecurityAvatarSystem.OnAvatarEquipped");
 
@@ -3233,7 +3207,7 @@ void USecurityAvatarSystem::OnAvatarEquipped(class AUAECharacter* CharacterOwner
 
 void USecurityImprisonComp::ReleaseTeammate(uint64_t PlayerUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.SecurityImprisonComp.ReleaseTeammate");
 
@@ -3258,7 +3232,7 @@ void USecurityImprisonComp::ReleaseTeammate(uint64_t PlayerUID)
 
 void USecurityImprisonComp::ImprisonmentUIUpdate(uint64_t PlayerUID, bool bIsImprison)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.SecurityImprisonComp.ImprisonmentUIUpdate");
 
@@ -3284,7 +3258,7 @@ void USecurityImprisonComp::ImprisonmentUIUpdate(uint64_t PlayerUID, bool bIsImp
 
 void USecurityImprisonComp::ImprisonmentTeammate(uint64_t PlayerUID, bool bIscomplaint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.SecurityImprisonComp.ImprisonmentTeammate");
 
@@ -3309,7 +3283,7 @@ void USecurityImprisonComp::ImprisonmentTeammate(uint64_t PlayerUID, bool bIscom
 
 void USecurityImprisonComp::ImprisonmentReport(uint64_t PlayerUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.SecurityImprisonComp.ImprisonmentReport");
 
@@ -3331,7 +3305,7 @@ void USecurityImprisonComp::ImprisonmentReport(uint64_t PlayerUID)
 
 void UTimeIntervalPawnStateHistorySystem::UpdateParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.TimeIntervalPawnStateHistorySystem.UpdateParams");
 
@@ -3359,7 +3333,7 @@ void UTimeIntervalPawnStateHistorySystem::UpdateParams()
 
 bool UTimeIntervalPawnStateHistorySystem::QueryHistoryMaxVelocity(uint64_t UID, float CenterTime, float MarginTime, float* OutMaxZVelocity, float* OutMaxXYVelocity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function HiggsBoson.TimeIntervalPawnStateHistorySystem.QueryHistoryMaxVelocity");
 

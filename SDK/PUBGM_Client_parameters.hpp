@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Client.AsyncLoadHelper.SetMaxTaskNum
 struct UAsyncLoadHelper_SetMaxTaskNum_Params
@@ -1512,7 +1512,8 @@ struct UDynamicCustomIndexer_CreateDynamicCustomWidgets_Params
 {
 	TArray<int>                                        InCustomTypeList;                                         // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TMap<int, class UUAECustomizePanel*>               CustomPanelMap;                                           // (Parm, OutParm, ZeroConstructor)
-	TArray<class UCanvasPanel*>                        Containers;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	class UCanvasPanel*                                Container;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	bool                                               bIgnoreDPIScale;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	TMap<int, class UUAECustomizePanel*>               ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
@@ -2617,16 +2618,16 @@ struct UGCPufferDownloader_OnHashGenerateFinished_Params
 struct UGCPufferDownloader_MoveFileTo_Params
 {
 	struct FString                                     Filename;                                                 // (Parm, ZeroConstructor)
-	struct FString                                     from;                                                     // (Parm, ZeroConstructor)
-	struct FString                                     to;                                                       // (Parm, ZeroConstructor)
+	struct FString                                     From;                                                     // (Parm, ZeroConstructor)
+	struct FString                                     To;                                                       // (Parm, ZeroConstructor)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.GCPufferDownloader.MoveFile
 struct UGCPufferDownloader_MoveFile_Params
 {
-	struct FString                                     from;                                                     // (Parm, ZeroConstructor)
-	struct FString                                     to;                                                       // (Parm, ZeroConstructor)
+	struct FString                                     From;                                                     // (Parm, ZeroConstructor)
+	struct FString                                     To;                                                       // (Parm, ZeroConstructor)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -3141,6 +3142,7 @@ struct UIntlSDKComplianceHelper_SendEmail_Params
 {
 	struct FString                                     InEmail;                                                  // (Parm, ZeroConstructor)
 	struct FString                                     UserName;                                                 // (Parm, ZeroConstructor)
+	int                                                InScene;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Client.IntlSDKComplianceHelper.QueryUserStatus
@@ -3251,8 +3253,8 @@ struct ULobbyChatSecurity_GetKey_Params
 // Function Client.LobbyDecalBakingComponent.SwitchDecalParam
 struct ULobbyDecalBakingComponent_SwitchDecalParam_Params
 {
-	int                                                from;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                to;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                From;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                To;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Client.LobbyDecalBakingComponent.SavePng
@@ -4182,22 +4184,6 @@ struct UScreenshotMaker_CropAndResizePicture_Params
 	float                                              cropWidthScale;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              cropHeightScale;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     savePathStr;                                              // (Parm, ZeroConstructor)
-};
-
-// Function Client.ScriptHelperClient.ZLIBDecompress
-struct UScriptHelperClient_ZLIBDecompress_Params
-{
-	struct FString                                     CompressedData;                                           // (Parm, ZeroConstructor)
-	int                                                CompressedSize;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                UnCompressedSize;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               IsHEX;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
-// Function Client.ScriptHelperClient.ZLIBCompress_LuaState
-struct UScriptHelperClient_ZLIBCompress_LuaState_Params
-{
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.ScriptHelperClient.WakeupFromSuspendSound
@@ -5539,12 +5525,6 @@ struct UScriptHelperClient_SetAccountRegion_Params
 	struct FString                                     Region;                                                   // (Parm, ZeroConstructor)
 };
 
-// Function Client.ScriptHelperClient.SendRetriveBeginnerFinisheGuideReq
-struct UScriptHelperClient_SendRetriveBeginnerFinisheGuideReq_Params
-{
-	class UGameFrontendHUD*                            GameFrontendHUD;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
 // Function Client.ScriptHelperClient.SendRecordFinishedGuideReq
 struct UScriptHelperClient_SendRecordFinishedGuideReq_Params
 {
@@ -5599,6 +5579,13 @@ struct UScriptHelperClient_ScheduleLocalNotificationAtTime_Params
 	struct FString                                     Body;                                                     // (Parm, ZeroConstructor)
 	struct FString                                     Action;                                                   // (Parm, ZeroConstructor)
 	int                                                NotificationID;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.SaveToSharedPreferences
+struct UScriptHelperClient_SaveToSharedPreferences_Params
+{
+	struct FString                                     Key;                                                      // (Parm, ZeroConstructor)
+	struct FString                                     Value;                                                    // (Parm, ZeroConstructor)
 };
 
 // Function Client.ScriptHelperClient.SaveStringToIntermediateFile
@@ -5697,6 +5684,11 @@ struct UScriptHelperClient_SaveAOSMemMapsInfo_Params
 
 // Function Client.ScriptHelperClient.RunTestCreateLobbyActor
 struct UScriptHelperClient_RunTestCreateLobbyActor_Params
+{
+};
+
+// Function Client.ScriptHelperClient.RunFileLockHelper
+struct UScriptHelperClient_RunFileLockHelper_Params
 {
 };
 
@@ -6060,6 +6052,12 @@ struct UScriptHelperClient_QuickLogin_Params
 	int                                                refreshTokenBeforeExpDays;                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Client.ScriptHelperClient.ProjectUserDir
+struct UScriptHelperClient_ProjectUserDir_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Client.ScriptHelperClient.ProjectSavedDir
 struct UScriptHelperClient_ProjectSavedDir_Params
 {
@@ -6114,6 +6112,18 @@ struct UScriptHelperClient_PlayHapticsFile_Params
 	struct FScriptDelegate                             Callback;                                                 // (Parm, ZeroConstructor)
 };
 
+// Function Client.ScriptHelperClient.PerfReportSetLabel
+struct UScriptHelperClient_PerfReportSetLabel_Params
+{
+	struct FString                                     str;                                                      // (Parm, OutParm, ZeroConstructor)
+};
+
+// Function Client.ScriptHelperClient.PerfReportAddNote
+struct UScriptHelperClient_PerfReportAddNote_Params
+{
+	struct FString                                     str;                                                      // (Parm, OutParm, ZeroConstructor)
+};
+
 // Function Client.ScriptHelperClient.OpenWebviewInGameProcess
 struct UScriptHelperClient_OpenWebviewInGameProcess_Params
 {
@@ -6132,6 +6142,16 @@ struct UScriptHelperClient_OpenURLInSDK_Params
 	bool                                               InSystemWebBrowser;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               InFullScreen;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     ExtraJson;                                                // (Parm, ZeroConstructor)
+};
+
+// Function Client.ScriptHelperClient.OpenSystemStorage
+struct UScriptHelperClient_OpenSystemStorage_Params
+{
+};
+
+// Function Client.ScriptHelperClient.OpenSystemSettings
+struct UScriptHelperClient_OpenSystemSettings_Params
+{
 };
 
 // Function Client.ScriptHelperClient.OpenShaderCodeLibrary
@@ -6354,7 +6374,7 @@ struct UScriptHelperClient_MemOption_Params
 // Function Client.ScriptHelperClient.MediaCopyFromPakToLocal
 struct UScriptHelperClient_MediaCopyFromPakToLocal_Params
 {
-	struct FString                                     from;                                                     // (Parm, ZeroConstructor)
+	struct FString                                     From;                                                     // (Parm, ZeroConstructor)
 	bool                                               bForce;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -6378,11 +6398,23 @@ struct UScriptHelperClient_ManualSleep_Params
 	float                                              Seconds;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Client.ScriptHelperClient.LuaSnapShot_LuaState
+struct UScriptHelperClient_LuaSnapShot_LuaState_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Client.ScriptHelperClient.LuaLoadFileToString
 struct UScriptHelperClient_LuaLoadFileToString_Params
 {
 	struct FString                                     InFileName;                                               // (Parm, ZeroConstructor)
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Client.ScriptHelperClient.LowMemoryInGB
+struct UScriptHelperClient_LowMemoryInGB_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.ScriptHelperClient.LogoutAllDevices
@@ -6470,6 +6502,13 @@ struct UScriptHelperClient_LoadSavFileAsByteArray_Params
 struct UScriptHelperClient_LoadSavFile_LuaState_Params
 {
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.LoadSavedFileToStringArray
+struct UScriptHelperClient_LoadSavedFileToStringArray_Params
+{
+	struct FString                                     Filename;                                                 // (Parm, ZeroConstructor)
+	TArray<struct FString>                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Client.ScriptHelperClient.LoadIntermediateFileToString
@@ -7054,6 +7093,12 @@ struct UScriptHelperClient_IsDeviceHWSupportVulkan_Params
 
 // Function Client.ScriptHelperClient.IsDevelopment
 struct UScriptHelperClient_IsDevelopment_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.IsCPUArchMisMatch
+struct UScriptHelperClient_IsCPUArchMisMatch_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -7659,6 +7704,12 @@ struct UScriptHelperClient_GetScreenDensity_Params
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Client.ScriptHelperClient.GetRootDir
+struct UScriptHelperClient_GetRootDir_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Client.ScriptHelperClient.GetRingMode
 struct UScriptHelperClient_GetRingMode_Params
 {
@@ -7843,6 +7894,12 @@ struct UScriptHelperClient_GetODPakName_Params
 struct UScriptHelperClient_GetObjectArrayNum_Params
 {
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.GetObbFilePath
+struct UScriptHelperClient_GetObbFilePath_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Client.ScriptHelperClient.GetNotchSize
@@ -8080,6 +8137,14 @@ struct UScriptHelperClient_GetGameMasterGUID_Params
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function Client.ScriptHelperClient.GetFromSharedPreferences
+struct UScriptHelperClient_GetFromSharedPreferences_Params
+{
+	struct FString                                     Key;                                                      // (Parm, ZeroConstructor)
+	struct FString                                     DefaultValue;                                             // (Parm, ZeroConstructor)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Client.ScriptHelperClient.GetFrameCounter
 struct UScriptHelperClient_GetFrameCounter_Params
 {
@@ -8108,6 +8173,13 @@ struct UScriptHelperClient_GetFocusedSlateName_Params
 struct UScriptHelperClient_GetFireBaseFCMToken_Params
 {
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Client.ScriptHelperClient.GetFileSizeOutsideSandbox
+struct UScriptHelperClient_GetFileSizeOutsideSandbox_Params
+{
+	struct FString                                     FilePath;                                                 // (Parm, ZeroConstructor)
+	int64_t                                            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.ScriptHelperClient.GetFileSizeOnDiskBytes
@@ -8202,6 +8274,12 @@ struct UScriptHelperClient_GetDSConnectionIP_Params
 
 // Function Client.ScriptHelperClient.GetDownLoadLanguageName
 struct UScriptHelperClient_GetDownLoadLanguageName_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Client.ScriptHelperClient.GetDownloadDirPath
+struct UScriptHelperClient_GetDownloadDirPath_Params
 {
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
@@ -8304,6 +8382,24 @@ struct UScriptHelperClient_GetCpuType_Params
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function Client.ScriptHelperClient.GetCPUMaxFrequency
+struct UScriptHelperClient_GetCPUMaxFrequency_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.GetCPUCoreCount
+struct UScriptHelperClient_GetCPUCoreCount_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.GetCPUClockCycles
+struct UScriptHelperClient_GetCPUClockCycles_Params
+{
+	uint64_t                                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Client.ScriptHelperClient.GetConfigString
 struct UScriptHelperClient_GetConfigString_Params
 {
@@ -8396,6 +8492,19 @@ struct UScriptHelperClient_GetAreaIPNo_Params
 struct UScriptHelperClient_GetAppVersion_Params
 {
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Client.ScriptHelperClient.GetAppStartupTrackerCurrentTime
+struct UScriptHelperClient_GetAppStartupTrackerCurrentTime_Params
+{
+	int64_t                                            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.GetAppStartupStageTime
+struct UScriptHelperClient_GetAppStartupStageTime_Params
+{
+	struct FString                                     str;                                                      // (Parm, OutParm, ZeroConstructor)
+	int64_t                                            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.ScriptHelperClient.GetAppMountHandleInfo
@@ -8795,6 +8904,19 @@ struct UScriptHelperClient_FetchFileFromPAK_Params
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Client.ScriptHelperClient.ExportLocalUsage_3
+struct UScriptHelperClient_ExportLocalUsage_3_Params
+{
+	struct FString                                     DestDir;                                                  // (Parm, OutParm, ZeroConstructor)
+	struct FString                                     DumpFilePath;                                             // (Parm, ZeroConstructor)
+};
+
+// Function Client.ScriptHelperClient.ExportLocalUsage
+struct UScriptHelperClient_ExportLocalUsage_Params
+{
+	struct FString                                     DumpFilePath;                                             // (Parm, ZeroConstructor)
+};
+
 // Function Client.ScriptHelperClient.ExitGameForSafety
 struct UScriptHelperClient_ExitGameForSafety_Params
 {
@@ -8891,11 +9013,24 @@ struct UScriptHelperClient_EnableSubMountPoint_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Client.ScriptHelperClient.EnableShaderGroupAsync
+struct UScriptHelperClient_EnableShaderGroupAsync_Params
+{
+	struct FString                                     GroupNames;                                               // (Parm, ZeroConstructor)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Client.ScriptHelperClient.EnableShaderGroup
 struct UScriptHelperClient_EnableShaderGroup_Params
 {
 	struct FString                                     GroupName;                                                // (Parm, ZeroConstructor)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ScriptHelperClient.EnableShaderFinishPersent
+struct UScriptHelperClient_EnableShaderFinishPersent_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.ScriptHelperClient.EnableReportVoiceSdkEvent
@@ -9010,6 +9145,11 @@ struct UScriptHelperClient_DumpLogFile_Params
 	bool                                               backup;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Client.ScriptHelperClient.DumpConsoleVariables
+struct UScriptHelperClient_DumpConsoleVariables_Params
+{
+};
+
 // Function Client.ScriptHelperClient.DoesPackageExist
 struct UScriptHelperClient_DoesPackageExist_Params
 {
@@ -9046,6 +9186,11 @@ struct UScriptHelperClient_DisableAndroidHardwareAcceleration_Params
 
 // Function Client.ScriptHelperClient.DirectToSetting
 struct UScriptHelperClient_DirectToSetting_Params
+{
+};
+
+// Function Client.ScriptHelperClient.DirectToMemoryManagement
+struct UScriptHelperClient_DirectToMemoryManagement_Params
 {
 };
 
@@ -9104,6 +9249,13 @@ struct UScriptHelperClient_CreateQRCodeTexture_Params
 struct UScriptHelperClient_CreateHapticsEngine_Params
 {
 	struct FScriptDelegate                             Callback;                                                 // (Parm, ZeroConstructor)
+};
+
+// Function Client.ScriptHelperClient.CrashSightReportLogInfo
+struct UScriptHelperClient_CrashSightReportLogInfo_Params
+{
+	struct FString                                     MsgType;                                                  // (Parm, ZeroConstructor)
+	struct FString                                     Info;                                                     // (Parm, ZeroConstructor)
 };
 
 // Function Client.ScriptHelperClient.CrashSetAppVersion
@@ -9388,6 +9540,12 @@ struct UScriptHelperClient_ClearAllAudioBanks_Params
 // Function Client.ScriptHelperClient.CheckRegisterGestureConflictWithZoom
 struct UScriptHelperClient_CheckRegisterGestureConflictWithZoom_Params
 {
+};
+
+// Function Client.ScriptHelperClient.CheckMetalLibraryUncompressed
+struct UScriptHelperClient_CheckMetalLibraryUncompressed_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.ScriptHelperClient.CheckMemorySymbolSource
@@ -9807,13 +9965,6 @@ struct USettingCustomPanel_ResetMaxScale_Params
 struct USettingCustomPanel_IsSquareFlashEffectAssetName_Params
 {
 	struct FString                                     InAssetName;                                              // (Parm, ZeroConstructor)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Client.SettingCustomPanel.IsOffsetInBoundary
-struct USettingCustomPanel_IsOffsetInBoundary_Params
-{
-	struct FVector2D                                   Offset;                                                   // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -10335,8 +10486,8 @@ struct UTranslator_OnDetectV2_Params
 struct UTranslator_OnDetect__DelegateSignature_Params
 {
 	bool                                               IsSuccess;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     from;                                                     // (Parm, ZeroConstructor)
-	struct FString                                     to;                                                       // (Parm, ZeroConstructor)
+	struct FString                                     From;                                                     // (Parm, ZeroConstructor)
+	struct FString                                     To;                                                       // (Parm, ZeroConstructor)
 };
 
 // Function Client.Translator.OnDetect
@@ -10478,7 +10629,7 @@ struct UUTRichTextBlock_EstimateDesiredSize_Params
 // Function Client.AEVarButton.SetTouchMethod
 struct UAEVarButton_SetTouchMethod_Params
 {
-	TEnumAsByte<enum EButtonTouchMethod>               InTouchMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EButtonTouchMethod>                    InTouchMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Client.AEVarButton.SetStyle
@@ -10496,7 +10647,7 @@ struct UAEVarButton_SetColorAndOpacity_Params
 // Function Client.AEVarButton.SetClickMethod
 struct UAEVarButton_SetClickMethod_Params
 {
-	TEnumAsByte<enum EButtonClickMethod>               InClickMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EButtonClickMethod>                    InClickMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Client.AEVarButton.SetBackgroundColor
@@ -10547,6 +10698,12 @@ struct UReuseFallC_SetCurItemClass_Params
 {
 	struct FString                                     StrName;                                                  // (Parm, ZeroConstructor)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.ReuseFallC.SetBottomMargin
+struct UReuseFallC_SetBottomMargin_Params
+{
+	float                                              Val;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Client.ReuseFallC.ScrollToStart
@@ -11595,6 +11752,13 @@ struct UVoiceSDKInterface_SetMicphoneStatus_Params
 	bool                                               flag;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Client.VoiceSDKInterface.SetMagicVoiceMsgType
+struct UVoiceSDKInterface_SetMagicVoiceMsgType_Params
+{
+	struct FString                                     InMagicType;                                              // (Parm, ZeroConstructor)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Client.VoiceSDKInterface.SetLbsVoiceRadius
 struct UVoiceSDKInterface_SetLbsVoiceRadius_Params
 {
@@ -11653,6 +11817,19 @@ struct UVoiceSDKInterface_SetAllVoiceStatus_Params
 // Function Client.VoiceSDKInterface.RSTSStopRecording
 struct UVoiceSDKInterface_RSTSStopRecording_Params
 {
+};
+
+// Function Client.VoiceSDKInterface.RSTSStartRecording
+struct UVoiceSDKInterface_RSTSStartRecording_Params
+{
+	int                                                InSrcLang;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<int>                                        InTargetLangs;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	int                                                InTargetLangCnt;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                InTransType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                InTimeoutMS;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     InRecordFilePath;                                         // (Parm, ZeroConstructor)
+	struct FString                                     InSrcLangStr;                                             // (Parm, ZeroConstructor)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Client.VoiceSDKInterface.RSTSSpeechToText
@@ -12129,9 +12306,24 @@ struct UVoiceSDKInterface_EnableReportALLAbroad_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Client.VoiceSDKInterface.EnableRecvMagicVoice
+struct UVoiceSDKInterface_EnableRecvMagicVoice_Params
+{
+	bool                                               InEnable;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Client.VoiceSDKInterface.EnableMultiRoom
 struct UVoiceSDKInterface_EnableMultiRoom_Params
 {
+	bool                                               InEnable;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Client.VoiceSDKInterface.EnableMagicVoice
+struct UVoiceSDKInterface_EnableMagicVoice_Params
+{
+	struct FString                                     InMagicType;                                              // (Parm, ZeroConstructor)
 	bool                                               InEnable;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };

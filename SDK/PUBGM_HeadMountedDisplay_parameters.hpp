@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetWorldToMetersScale
 struct UHeadMountedDisplayFunctionLibrary_SetWorldToMetersScale_Params
@@ -20,7 +20,7 @@ struct UHeadMountedDisplayFunctionLibrary_SetWorldToMetersScale_Params
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetTrackingOrigin
 struct UHeadMountedDisplayFunctionLibrary_SetTrackingOrigin_Params
 {
-	TEnumAsByte<enum EHMDTrackingOrigin>               Origin;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHMDTrackingOrigin>                    Origin;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenTexture
@@ -57,7 +57,7 @@ struct UHeadMountedDisplayFunctionLibrary_SetClippingPlanes_Params
 struct UHeadMountedDisplayFunctionLibrary_ResetOrientationAndPosition_Params
 {
 	float                                              Yaw;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EOrientPositionSelector>          Options;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EOrientPositionSelector>               Options;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsSpectatorScreenModeControllable
@@ -123,7 +123,7 @@ struct UHeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters_Params
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingOrigin
 struct UHeadMountedDisplayFunctionLibrary_GetTrackingOrigin_Params
 {
-	TEnumAsByte<enum EHMDTrackingOrigin>               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EHMDTrackingOrigin>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetScreenPercentage
@@ -160,7 +160,7 @@ struct UHeadMountedDisplayFunctionLibrary_GetNumOfTrackingSensors_Params
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDWornState
 struct UHeadMountedDisplayFunctionLibrary_GetHMDWornState_Params
 {
-	TEnumAsByte<enum EHMDWornState>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EHMDWornState>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDDeviceName

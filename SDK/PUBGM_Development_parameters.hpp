@@ -1,14 +1,128 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+
+// Function Development.ActorClickPickerWidget.SetPickerEnabled
+struct UActorClickPickerWidget_SetPickerEnabled_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorClickPickerWidget.SetOwnerTab
+struct UActorClickPickerWidget_SetOwnerTab_Params
+{
+	class UActorInspectorTab*                          InOwnerTab;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorClickPickerWidget.IsPickerEnabled
+struct UActorClickPickerWidget_IsPickerEnabled_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ActorPropertyMonitorWidget.SetTargetObject
+struct UActorPropertyMonitorWidget_SetTargetObject_Params
+{
+	class UObject*                                     InObject;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorPropertyMonitorWidget.SetTargetActor
+struct UActorPropertyMonitorWidget_SetTargetActor_Params
+{
+	class AActor*                                      InActor;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorPropertyMonitorWidget.SetPropertyNames
+struct UActorPropertyMonitorWidget_SetPropertyNames_Params
+{
+	TArray<struct FString>                             PropertyNames;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+
+// Function Development.ActorPropertyMonitorWidget.SearchProperties
+struct UActorPropertyMonitorWidget_SearchProperties_Params
+{
+	struct FString                                     SearchKeyword;                                            // (Parm, ZeroConstructor)
+};
+
+// Function Development.ActorPropertyMonitorWidget.RefreshPropertyValues
+struct UActorPropertyMonitorWidget_RefreshPropertyValues_Params
+{
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnSearchTextChanged
+struct UActorPropertyMonitorWidget_OnSearchTextChanged_Params
+{
+	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnScaleChanged
+struct UActorPropertyMonitorWidget_OnScaleChanged_Params
+{
+	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnPropertyValueCommittedInternal
+struct UActorPropertyMonitorWidget_OnPropertyValueCommittedInternal_Params
+{
+	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnPropertyValueCommitted
+struct UActorPropertyMonitorWidget_OnPropertyValueCommitted_Params
+{
+	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     PropertyName;                                             // (Parm, ZeroConstructor)
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnPropertyNameButtonClicked
+struct UActorPropertyMonitorWidget_OnPropertyNameButtonClicked_Params
+{
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnOpacityChanged
+struct UActorPropertyMonitorWidget_OnOpacityChanged_Params
+{
+	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnDragButtonReleased
+struct UActorPropertyMonitorWidget_OnDragButtonReleased_Params
+{
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnDragButtonPressed
+struct UActorPropertyMonitorWidget_OnDragButtonPressed_Params
+{
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnComponentSelectionChanged
+struct UActorPropertyMonitorWidget_OnComponentSelectionChanged_Params
+{
+	struct FString                                     SelectedItem;                                             // (Parm, ZeroConstructor)
+	TEnumAsByte<ESelectInfo>                           SelectionType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnClickListenerButtonClicked
+struct UActorPropertyMonitorWidget_OnClickListenerButtonClicked_Params
+{
+};
+
+// Function Development.ActorPropertyMonitorWidget.OnAttachedActorSelectionChanged
+struct UActorPropertyMonitorWidget_OnAttachedActorSelectionChanged_Params
+{
+	struct FString                                     SelectedItem;                                             // (Parm, ZeroConstructor)
+	TEnumAsByte<ESelectInfo>                           SelectionType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
 
 // Function Development.CloudGMHandle.InitCloudGM
 struct UCloudGMHandle_InitCloudGM_Params
@@ -18,6 +132,66 @@ struct UCloudGMHandle_InitCloudGM_Params
 // Function Development.CloudGMHandle.DestroyCloudGM
 struct UCloudGMHandle_DestroyCloudGM_Params
 {
+};
+
+// Function Development.ImGuiFeatureWidget.SetFeatureVisible
+struct UImGuiFeatureWidget_SetFeatureVisible_Params
+{
+	bool                                               bVisible;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiFeatureWidget.SetFeatureEnabled
+struct UImGuiFeatureWidget_SetFeatureEnabled_Params
+{
+	bool                                               bEnabled;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiFeatureWidget.IsFeatureVisible
+struct UImGuiFeatureWidget_IsFeatureVisible_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiFeatureWidget.IsFeatureEnabled
+struct UImGuiFeatureWidget_IsFeatureEnabled_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiFeatureWidget.GetOwnerWindow
+struct UImGuiFeatureWidget_GetOwnerWindow_Params
+{
+	class AImGuiWindowBase*                            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiFeatureWidget.GetOwnerTab
+struct UImGuiFeatureWidget_GetOwnerTab_Params
+{
+	class UImGuiTabBase*                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiFeatureWidget.GetOwner
+struct UImGuiFeatureWidget_GetOwner_Params
+{
+	class UObject*                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiFeatureWidget.GetFeatureName
+struct UImGuiFeatureWidget_GetFeatureName_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Development.ImGuiFeatureWidget.GetFeatureID
+struct UImGuiFeatureWidget_GetFeatureID_Params
+{
+	struct FName                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.DebugNameDisplayFeature.AddExcludedActorClass
+struct UDebugNameDisplayFeature_AddExcludedActorClass_Params
+{
+	class UClass*                                      ActorClass;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Development.GMCheatAI.TeleportAIToLoc
@@ -340,6 +514,11 @@ struct UGMCheatBackpack_DropItem_Params
 
 // Function Development.GMCheatBackpack.DropAllItem
 struct UGMCheatBackpack_DropAllItem_Params
+{
+};
+
+// Function Development.GMCheatBackpack.DestroyPickUpActors
+struct UGMCheatBackpack_DestroyPickUpActors_Params
 {
 };
 
@@ -697,11 +876,6 @@ struct UGMCheatCharacter_KillAll_Params
 struct UGMCheatCharacter_Kill_Params
 {
 	int                                                GivenNumber;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Development.GMCheatCharacter.GMTestZengzuo
-struct UGMCheatCharacter_GMTestZengzuo_Params
-{
 };
 
 // Function Development.GMCheatCharacter.GMSetCampId
@@ -2067,11 +2241,6 @@ struct UGMCheatManager_GMStopAI_Params
 {
 	bool                                               bStop;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	uint32_t                                           InPlayerKey;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Development.GMCheatManager.GMSpeedUp
-struct UGMCheatManager_GMSpeedUp_Params
-{
 };
 
 // Function Development.GMCheatManager.GMSpawnSociallandSubVehicle01
@@ -3672,6 +3841,222 @@ struct UGMCheatWeapon_AutoShoot_Params
 
 // Function Development.GMCheatWeapon.AimForAutoShoot
 struct UGMCheatWeapon_AimForAutoShoot_Params
+{
+};
+
+// Function Development.ImGuiWindowBase.ToggleWindow
+struct AImGuiWindowBase_ToggleWindow_Params
+{
+};
+
+// Function Development.ImGuiWindowBase.ShowWindowWithTabs
+struct AImGuiWindowBase_ShowWindowWithTabs_Params
+{
+	TArray<class UClass*>                              TabClasses;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+
+// Function Development.ImGuiWindowBase.ShowWindow
+struct AImGuiWindowBase_ShowWindow_Params
+{
+};
+
+// Function Development.ImGuiWindowBase.SetWindowAlpha
+struct AImGuiWindowBase_SetWindowAlpha_Params
+{
+	float                                              Alpha;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.RemoveTab
+struct AImGuiWindowBase_RemoveTab_Params
+{
+	struct FName                                       TabID;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.RemoveFeature
+struct AImGuiWindowBase_RemoveFeature_Params
+{
+	struct FName                                       FeatureID;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.IsWindowVisible
+struct AImGuiWindowBase_IsWindowVisible_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.HideWindow
+struct AImGuiWindowBase_HideWindow_Params
+{
+};
+
+// Function Development.ImGuiWindowBase.GetWindowAlpha
+struct AImGuiWindowBase_GetWindowAlpha_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.GetTabByID
+struct AImGuiWindowBase_GetTabByID_Params
+{
+	struct FName                                       TabID;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class UImGuiTabBase*                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.GetFeatureByID
+struct AImGuiWindowBase_GetFeatureByID_Params
+{
+	struct FName                                       FeatureID;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	class UImGuiFeatureWidget*                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.GetAllTabs
+struct AImGuiWindowBase_GetAllTabs_Params
+{
+	TArray<class UImGuiTabBase*>                       ReturnValue;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm)
+};
+
+// Function Development.ImGuiWindowBase.GetAllFeatures
+struct AImGuiWindowBase_GetAllFeatures_Params
+{
+	TArray<class UImGuiFeatureWidget*>                 ReturnValue;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm)
+};
+
+// Function Development.ImGuiWindowBase.GetActiveTab
+struct AImGuiWindowBase_GetActiveTab_Params
+{
+	class UImGuiTabBase*                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.AddTabWithLuaPath
+struct AImGuiWindowBase_AddTabWithLuaPath_Params
+{
+	class UClass*                                      TabClass;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     InLuaFilePath;                                            // (Parm, ZeroConstructor)
+	class UImGuiTabBase*                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.AddTabInstance
+struct AImGuiWindowBase_AddTabInstance_Params
+{
+	class UImGuiTabBase*                               Tab;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     InLuaFilePath;                                            // (Parm, ZeroConstructor)
+};
+
+// Function Development.ImGuiWindowBase.AddTab
+struct AImGuiWindowBase_AddTab_Params
+{
+	class UClass*                                      TabClass;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	class UImGuiTabBase*                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.AddLuaTab
+struct AImGuiWindowBase_AddLuaTab_Params
+{
+	struct FString                                     InLuaFilePath;                                            // (Parm, ZeroConstructor)
+	class UImGuiTabBase*                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.AddLuaFeature
+struct AImGuiWindowBase_AddLuaFeature_Params
+{
+	struct FString                                     InLuaFilePath;                                            // (Parm, ZeroConstructor)
+	class UImGuiFeatureWidget*                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.AddFeatureWithLuaPath
+struct AImGuiWindowBase_AddFeatureWithLuaPath_Params
+{
+	class UClass*                                      FeatureClass;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     InLuaFilePath;                                            // (Parm, ZeroConstructor)
+	class UImGuiFeatureWidget*                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.AddFeatureInstance
+struct AImGuiWindowBase_AddFeatureInstance_Params
+{
+	class UImGuiFeatureWidget*                         Feature;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     InLuaFilePath;                                            // (Parm, ZeroConstructor)
+};
+
+// Function Development.ImGuiWindowBase.AddFeature
+struct AImGuiWindowBase_AddFeature_Params
+{
+	class UClass*                                      FeatureClass;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class UImGuiFeatureWidget*                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowBase.ActivateTab
+struct AImGuiWindowBase_ActivateTab_Params
+{
+	struct FName                                       TabID;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.ToggleWindow
+struct UImGuiWindowManager_ToggleWindow_Params
+{
+	class UClass*                                      WindowClass;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.ShowWindowWithTabs
+struct UImGuiWindowManager_ShowWindowWithTabs_Params
+{
+	class UClass*                                      WindowClass;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TArray<class UClass*>                              TabClasses;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+
+// Function Development.ImGuiWindowManager.ShowWindow
+struct UImGuiWindowManager_ShowWindow_Params
+{
+	class UClass*                                      WindowClass;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.HideWindow
+struct UImGuiWindowManager_HideWindow_Params
+{
+	class UClass*                                      WindowClass;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.HideAllWindows
+struct UImGuiWindowManager_HideAllWindows_Params
+{
+};
+
+// Function Development.ImGuiWindowManager.HasWindow
+struct UImGuiWindowManager_HasWindow_Params
+{
+	class UClass*                                      WindowClass;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.GetWindow
+struct UImGuiWindowManager_GetWindow_Params
+{
+	class UClass*                                      WindowClass;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class AImGuiWindowBase*                            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.GetOrCreateWindow
+struct UImGuiWindowManager_GetOrCreateWindow_Params
+{
+	class UClass*                                      WindowClass;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class AImGuiWindowBase*                            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.GetAllWindows
+struct UImGuiWindowManager_GetAllWindows_Params
+{
+	TArray<class AImGuiWindowBase*>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Development.ImGuiWindowManager.Get
+struct UImGuiWindowManager_Get_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class UImGuiWindowManager*                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Development.ImGuiWindowManager.DestroyAllWindows
+struct UImGuiWindowManager_DestroyAllWindows_Params
 {
 };
 

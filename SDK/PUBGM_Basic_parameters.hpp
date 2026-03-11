@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Basic.UAENetActor.ReceivedPlayerActiveRegionsChanged
 struct AUAENetActor_ReceivedPlayerActiveRegionsChanged_Params
@@ -836,7 +836,7 @@ struct UBuffConfigSubsystem_ClearTable_Params
 // Function Basic.BuffUtils.IsRoleOK
 struct UBuffUtils_IsRoleOK_Params
 {
-	TEnumAsByte<enum ENetRole>                         Role;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              Role;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	EBuffEnabledRole                                   EnabledRole;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -1218,6 +1218,12 @@ struct USTBuffAction_TryGetParams_Params
 	TMap<int, struct FString>                          ActionParamMap;                                           // (Parm, OutParm, ZeroConstructor)
 };
 
+// Function Basic.STBuffAction.ToString
+struct USTBuffAction_ToString_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Basic.STBuffAction.Tick
 struct USTBuffAction_Tick_Params
 {
@@ -1302,16 +1308,10 @@ struct USTBuffAction_Initialize_Params
 	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function Basic.STBuffAction.GetTargetSharedActors
-struct USTBuffAction_GetTargetSharedActors_Params
-{
-	TArray<class AActor*>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
 // Function Basic.STBuffAction.GetRealOwnerRole
 struct USTBuffAction_GetRealOwnerRole_Params
 {
-	TEnumAsByte<enum ENetRole>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Basic.STBuffAction.GetOwner
@@ -1361,6 +1361,12 @@ struct USTBuffAction_ChangeNotify_Params
 	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Basic.STBuffAction_Lua.ToString
+struct USTBuffAction_Lua_ToString_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Basic.STBuffAction_Lua.OnTick
 struct USTBuffAction_Lua_OnTick_Params
 {
@@ -1398,14 +1404,6 @@ struct USTBuffCheckConditionWrapper_Tick_Params
 	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              DetalTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Basic.STBuffCheckConditionWrapper.SetEnabled
-struct USTBuffCheckConditionWrapper_SetEnabled_Params
-{
-	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               Enabled;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Basic.STBuffCheckConditionWrapper.ResetExecute
@@ -1447,11 +1445,30 @@ struct USTBuffCheckConditionWrapper_OnChangeNotify_Params
 {
 };
 
+// Function Basic.STBuffCheckConditionWrapper.IsRoleOK
+struct USTBuffCheckConditionWrapper_IsRoleOK_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffCheckConditionWrapper.InitLinkActionEnableState
+struct USTBuffCheckConditionWrapper_InitLinkActionEnableState_Params
+{
+	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Basic.STBuffCheckConditionWrapper.Initialize
 struct USTBuffCheckConditionWrapper_Initialize_Params
 {
 	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffCheckConditionWrapper.GetRealOwnerRole
+struct USTBuffCheckConditionWrapper_GetRealOwnerRole_Params
+{
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Basic.STBuffCheckConditionWrapper.Execute
@@ -1470,13 +1487,6 @@ struct USTBuffCheckConditionWrapper_End_Params
 
 // Function Basic.STBuffCheckConditionWrapper.Destroy
 struct USTBuffCheckConditionWrapper_Destroy_Params
-{
-	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Basic.STBuffCheckConditionWrapper.CheckLinkActionEnabled
-struct USTBuffCheckConditionWrapper_CheckLinkActionEnabled_Params
 {
 	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1538,6 +1548,11 @@ struct USTBuffCondition_Copy_Params
 struct USTBuffCondition_CheckIsTrue_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffCondition.ChangeNotify
+struct USTBuffCondition_ChangeNotify_Params
+{
 };
 
 // Function Basic.STBuffConditionComplex.OnInitialize
@@ -1638,10 +1653,269 @@ struct USTBuffConditionAction_CheckCondition_Params
 {
 };
 
+// Function Basic.STBuffEvent.TriggerEvent
+struct USTBuffEvent_TriggerEvent_Params
+{
+};
+
+// Function Basic.STBuffEvent.ToString
+struct USTBuffEvent_ToString_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Basic.STBuffEvent.SetTimer
+struct USTBuffEvent_SetTimer_Params
+{
+	struct FName                                       FunctionName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InRate;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               InbLoop;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InFirstDelay;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent.OnInitialize
+struct USTBuffEvent_OnInitialize_Params
+{
+};
+
+// Function Basic.STBuffEvent.OnEnd
+struct USTBuffEvent_OnEnd_Params
+{
+};
+
+// Function Basic.STBuffEvent.OnDestroy
+struct USTBuffEvent_OnDestroy_Params
+{
+};
+
+// Function Basic.STBuffEvent.IsRoleOK
+struct USTBuffEvent_IsRoleOK_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent.GetRealOwnerRole
+struct USTBuffEvent_GetRealOwnerRole_Params
+{
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent.GetOwner
+struct USTBuffEvent_GetOwner_Params
+{
+	class AActor*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent.GetCauser
+struct USTBuffEvent_GetCauser_Params
+{
+	class AActor*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent.Copy
+struct USTBuffEvent_Copy_Params
+{
+	class UObject*                                     Outer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class USTBuffEvent*                                ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent.ClearTimer
+struct USTBuffEvent_ClearTimer_Params
+{
+	struct FName                                       FunctionName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent.ClearAllTimer
+struct USTBuffEvent_ClearAllTimer_Params
+{
+};
+
+// Function Basic.STBuffEvent_Lua.ToString
+struct USTBuffEvent_Lua_ToString_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Basic.STBuffEvent_Multi.OnInitialize
+struct USTBuffEvent_Multi_OnInitialize_Params
+{
+};
+
+// Function Basic.STBuffEvent_Multi.OnEnd
+struct USTBuffEvent_Multi_OnEnd_Params
+{
+};
+
+// Function Basic.STBuffEvent_Multi.OnDestroy
+struct USTBuffEvent_Multi_OnDestroy_Params
+{
+};
+
+// Function Basic.STBuffEvent_Multi.Copy
+struct USTBuffEvent_Multi_Copy_Params
+{
+	class UObject*                                     Outer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class USTBuffEvent*                                ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function Basic.STBuffEvent_Multi.ChildTriggerEvent
+struct USTBuffEvent_Multi_ChildTriggerEvent_Params
+{
+};
+
+// Function Basic.STBuffSharedInterface.SetVectorShared
+struct USTBuffSharedInterface_SetVectorShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FVector                                     InValue;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.SetUInt8Shared
+struct USTBuffSharedInterface_SetUInt8Shared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	unsigned char                                      InValue;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.SetTargetShared
+struct USTBuffSharedInterface_SetTargetShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	TArray<class AActor*>                              InActors;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+
+// Function Basic.STBuffSharedInterface.SetStringShared
+struct USTBuffSharedInterface_SetStringShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FString                                     InValue;                                                  // (Parm, ZeroConstructor)
+};
+
+// Function Basic.STBuffSharedInterface.SetRotatorShared
+struct USTBuffSharedInterface_SetRotatorShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FRotator                                    InValue;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.SetNameShared
+struct USTBuffSharedInterface_SetNameShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FName                                       InValue;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.SetInt32Shared
+struct USTBuffSharedInterface_SetInt32Shared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	int                                                InValue;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.SetFloatShared
+struct USTBuffSharedInterface_SetFloatShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	float                                              InValue;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.SetBooleanShared
+struct USTBuffSharedInterface_SetBooleanShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	bool                                               InValue;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.RemoveShared
+struct USTBuffSharedInterface_RemoveShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+};
+
+// Function Basic.STBuffSharedInterface.GetVectorShared
+struct USTBuffSharedInterface_GetVectorShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FVector                                     OutValue;                                                 // (Parm, OutParm, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetUInt8Shared
+struct USTBuffSharedInterface_GetUInt8Shared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	unsigned char                                      OutValue;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetTargetShared
+struct USTBuffSharedInterface_GetTargetShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	TArray<class AActor*>                              OutActors;                                                // (Parm, OutParm, ZeroConstructor)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetStringShared
+struct USTBuffSharedInterface_GetStringShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FString                                     OutValue;                                                 // (Parm, OutParm, ZeroConstructor)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetRotatorShared
+struct USTBuffSharedInterface_GetRotatorShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FRotator                                    OutValue;                                                 // (Parm, OutParm, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetNameShared
+struct USTBuffSharedInterface_GetNameShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	struct FName                                       OutValue;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetInt32Shared
+struct USTBuffSharedInterface_GetInt32Shared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	int                                                OutValue;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetFloatShared
+struct USTBuffSharedInterface_GetFloatShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	float                                              OutValue;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSharedInterface.GetBooleanShared
+struct USTBuffSharedInterface_GetBooleanShared_Params
+{
+	struct FString                                     SharedName;                                               // (Parm, ZeroConstructor)
+	bool                                               OutValue;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Basic.STBuffSystemComponent.UpdateClientBuff
 struct USTBuffSystemComponent_UpdateClientBuff_Params
 {
 	struct FBuffSyncBrief                              Brief;                                                    // (Parm, OutParm)
+};
+
+// Function Basic.STBuffSystemComponent.SetBuffReplaceData
+struct USTBuffSystemComponent_SetBuffReplaceData_Params
+{
+	struct FBuffReplaceData                            From;                                                     // (Parm)
+	struct FBuffReplaceData                            To;                                                       // (Parm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Basic.STBuffSystemComponent.RemoveBuffBySkill
@@ -1672,6 +1946,14 @@ struct USTBuffSystemComponent_RemoveAllBuffsWithExcludeArray_Params
 struct USTBuffSystemComponent_RemoveAllBuffs_Params
 {
 	bool                                               bClearAll;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// DelegateFunction Basic.STBuffSystemComponent.OnUpdateBuffEvent__DelegateSignature
+struct USTBuffSystemComponent_OnUpdateBuffEvent__DelegateSignature_Params
+{
+	int                                                BuffID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Basic.STBuffSystemComponent.OnRep_SyncBriefs
@@ -1770,7 +2052,15 @@ struct USTBuffSystemComponent_GetSTBuffByBuffID_Params
 // Function Basic.STBuffSystemComponent.GetRealOwnerRoleSafety
 struct USTBuffSystemComponent_GetRealOwnerRoleSafety_Params
 {
-	TEnumAsByte<enum ENetRole>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffSystemComponent.GetBuffReplaceDataByID
+struct USTBuffSystemComponent_GetBuffReplaceDataByID_Params
+{
+	int                                                ID;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bBuffInst;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FBuffReplaceData                            ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
 // Function Basic.STBuffSystemComponent.GetBuffLayerCount
@@ -1852,6 +2142,14 @@ struct USTBuffSystemComponent_ClearBuffs_Params
 {
 };
 
+// Function Basic.STBuffSystemComponent.ChangeLevel
+struct USTBuffSystemComponent_ChangeLevel_Params
+{
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                NewLevel;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Basic.STBuffSystemComponent.ChangeDuration
 struct USTBuffSystemComponent_ChangeDuration_Params
 {
@@ -1879,6 +2177,102 @@ struct USTBuffSystemComponent_AddBuff_Params
 	int                                                CauseSkillID;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Level;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.TriggerEvent
+struct USTBuffTrigger_TriggerEvent_Params
+{
+};
+
+// Function Basic.STBuffTrigger.Tick
+struct USTBuffTrigger_Tick_Params
+{
+	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              DetalTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.SetTriggerState
+struct USTBuffTrigger_SetTriggerState_Params
+{
+	EBuffTriggerState                                  State;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.OnTick
+struct USTBuffTrigger_OnTick_Params
+{
+};
+
+// Function Basic.STBuffTrigger.OnInitialize
+struct USTBuffTrigger_OnInitialize_Params
+{
+};
+
+// Function Basic.STBuffTrigger.OnEnd
+struct USTBuffTrigger_OnEnd_Params
+{
+};
+
+// Function Basic.STBuffTrigger.OnDestroy
+struct USTBuffTrigger_OnDestroy_Params
+{
+};
+
+// Function Basic.STBuffTrigger.OnCheckLinkActionEnabled
+struct USTBuffTrigger_OnCheckLinkActionEnabled_Params
+{
+};
+
+// Function Basic.STBuffTrigger.IsRoleOK
+struct USTBuffTrigger_IsRoleOK_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.IsNeedTick
+struct USTBuffTrigger_IsNeedTick_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.Initialize
+struct USTBuffTrigger_Initialize_Params
+{
+	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.GetRealOwnerRole
+struct USTBuffTrigger_GetRealOwnerRole_Params
+{
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.GetActiveExecuteCount
+struct USTBuffTrigger_GetActiveExecuteCount_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.End
+struct USTBuffTrigger_End_Params
+{
+	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.Destroy
+struct USTBuffTrigger_Destroy_Params
+{
+	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Basic.STBuffTrigger.CheckLinkActionEnabled
+struct USTBuffTrigger_CheckLinkActionEnabled_Params
+{
+	class UActorComponent*                             BuffSystemComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Basic.TableManagerSubsystem.SetTableStringDataField
@@ -2294,6 +2688,15 @@ struct UUAELoadedClassManager_GetCustom1Class_Params
 	struct FString                                     BPTableName;                                              // (Parm, ZeroConstructor)
 	int                                                ID;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Basic.UAELoadedClassManager.GetClassLoadingPath
+struct UUAELoadedClassManager_GetClassLoadingPath_Params
+{
+	struct FString                                     BPTableName;                                              // (Parm, ZeroConstructor)
+	int                                                ID;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               IsLobby;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Basic.UAELoadedClassManager.GetClass

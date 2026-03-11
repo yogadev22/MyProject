@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 std::string UObject::GetName() const
 {
@@ -21,7 +21,7 @@ std::string UObject::GetName() const
 	{
 		return name;
 	}
-
+	
 	return name.substr(pos + 1);
 }
 
@@ -29,7 +29,7 @@ std::string UObject::GetFullName() const
 {
 	std::string name;
 
-	if (ClassPrivate != 0)
+	if (ClassPrivate != nullptr)
 	{
 		std::string temp;
 		for (auto p = OuterPrivate; p; p = p->OuterPrivate)
@@ -48,7 +48,7 @@ std::string UObject::GetFullName() const
 
 bool UObject::IsA(UClass* cmp) const
 {
-	for (auto super = ClassPrivate; super; super = (UClass*)super->SuperStruct)
+	for (auto super = ClassPrivate; super; super = static_cast<UClass*>(super->SuperStruct))
 	{
 		if (super == cmp)
 		{
@@ -66,7 +66,7 @@ bool UObject::IsA(UClass* cmp) const
 
 void UObject::ExecuteUbergraph(int EntryPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CoreUObject.Object.ExecuteUbergraph");
 

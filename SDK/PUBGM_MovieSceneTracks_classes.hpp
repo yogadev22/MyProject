@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class MovieSceneTracks.MovieSceneTransformOrigin
 // 0x0000 (0x0028 - 0x0028)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneTransformOrigin");
 		return pStaticClass;
@@ -36,7 +36,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DConstraintSection");
 		return pStaticClass;
@@ -62,7 +62,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DAttachSection");
 		return pStaticClass;
@@ -80,7 +80,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DConstraintTrack");
 		return pStaticClass;
@@ -97,7 +97,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DAttachTrack");
 		return pStaticClass;
@@ -122,7 +122,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DPathSection");
 		return pStaticClass;
@@ -139,7 +139,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DPathTrack");
 		return pStaticClass;
@@ -165,7 +165,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DTransformSection");
 		return pStaticClass;
@@ -185,7 +185,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScenePropertyTrack");
 		return pStaticClass;
@@ -202,7 +202,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScene3DTransformTrack");
 		return pStaticClass;
@@ -223,7 +223,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneActorReferenceSection");
 		return pStaticClass;
@@ -240,7 +240,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneActorReferenceTrack");
 		return pStaticClass;
@@ -265,13 +265,13 @@ public:
 	bool                                               bOverrideAttenuation;                                     // 0x01A9(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x01AA(0x0006) MISSED OFFSET
 	class USoundAttenuation*                           AttenuationSettings;                                      // 0x01B0(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FScriptDelegate                             OnQueueSubtitles;                                         // 0x01B8(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnQueueSubtitles;                                         // 0x01B8(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnAudioFinished;                                          // 0x01C8(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnAudioPlaybackPercent;                                   // 0x01D8(0x0010) (ZeroConstructor, InstancedReference)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneAudioSection");
 		return pStaticClass;
@@ -289,7 +289,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneAudioTrack");
 		return pStaticClass;
@@ -310,7 +310,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneBoolSection");
 		return pStaticClass;
@@ -327,7 +327,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneBoolTrack");
 		return pStaticClass;
@@ -346,7 +346,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneByteSection");
 		return pStaticClass;
@@ -364,7 +364,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneByteTrack");
 		return pStaticClass;
@@ -389,7 +389,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraAnimSection");
 		return pStaticClass;
@@ -407,7 +407,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraAnimTrack");
 		return pStaticClass;
@@ -425,7 +425,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraCutSection");
 		return pStaticClass;
@@ -443,7 +443,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraCutTrack");
 		return pStaticClass;
@@ -460,14 +460,14 @@ public:
 	struct FMovieSceneCameraShakeSectionData           ShakeData;                                                // 0x00B0(0x0020) (Edit)
 	class UClass*                                      ShakeClass;                                               // 0x00D0(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
 	float                                              PlayScale;                                                // 0x00D8(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData)
-	TEnumAsByte<enum ECameraAnimPlaySpace>             PlaySpace;                                                // 0x00DC(0x0001) (ZeroConstructor, Deprecated, IsPlainOldData)
+	TEnumAsByte<ECameraAnimPlaySpace>                  PlaySpace;                                                // 0x00DC(0x0001) (ZeroConstructor, Deprecated, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x00DD(0x0003) MISSED OFFSET
 	struct FRotator                                    UserDefinedPlaySpace;                                     // 0x00E0(0x000C) (Deprecated, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x00EC(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraShakeSection");
 		return pStaticClass;
@@ -485,7 +485,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraShakeTrack");
 		return pStaticClass;
@@ -511,7 +511,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSubSection");
 		return pStaticClass;
@@ -529,7 +529,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCinematicShotSection");
 		return pStaticClass;
@@ -547,7 +547,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSubTrack");
 		return pStaticClass;
@@ -564,7 +564,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneCinematicShotTrack");
 		return pStaticClass;
@@ -586,7 +586,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneColorSection");
 		return pStaticClass;
@@ -605,7 +605,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneColorTrack");
 		return pStaticClass;
@@ -624,7 +624,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneEnumSection");
 		return pStaticClass;
@@ -642,7 +642,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneEnumTrack");
 		return pStaticClass;
@@ -662,7 +662,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneEventSection");
 		return pStaticClass;
@@ -681,7 +681,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneEventTrack");
 		return pStaticClass;
@@ -700,7 +700,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneFloatSection");
 		return pStaticClass;
@@ -720,7 +720,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneFadeSection");
 		return pStaticClass;
@@ -737,7 +737,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneFloatTrack");
 		return pStaticClass;
@@ -754,7 +754,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneFadeTrack");
 		return pStaticClass;
@@ -773,7 +773,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneIntegerSection");
 		return pStaticClass;
@@ -790,7 +790,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneIntegerTrack");
 		return pStaticClass;
@@ -808,7 +808,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneLevelVisibilitySection");
 		return pStaticClass;
@@ -826,7 +826,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneLevelVisibilityTrack");
 		return pStaticClass;
@@ -844,7 +844,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneMaterialTrack");
 		return pStaticClass;
@@ -862,7 +862,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneMaterialParameterCollectionTrack");
 		return pStaticClass;
@@ -881,7 +881,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneComponentMaterialTrack");
 		return pStaticClass;
@@ -901,7 +901,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneParameterSection");
 		return pStaticClass;
@@ -919,7 +919,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneParticleParameterTrack");
 		return pStaticClass;
@@ -937,7 +937,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneParticleSection");
 		return pStaticClass;
@@ -955,7 +955,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneParticleTrack");
 		return pStaticClass;
@@ -974,7 +974,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieScenePrimitiveMaterialTrack");
 		return pStaticClass;
@@ -1000,7 +1000,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSkeletalAnimationSection");
 		return pStaticClass;
@@ -1020,7 +1020,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSkeletalAnimationTrack");
 		return pStaticClass;
@@ -1037,7 +1037,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSlomoSection");
 		return pStaticClass;
@@ -1054,7 +1054,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSlomoTrack");
 		return pStaticClass;
@@ -1071,7 +1071,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSpawnSection");
 		return pStaticClass;
@@ -1090,7 +1090,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneSpawnTrack");
 		return pStaticClass;
@@ -1109,7 +1109,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneStringSection");
 		return pStaticClass;
@@ -1126,7 +1126,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneStringTrack");
 		return pStaticClass;
@@ -1143,7 +1143,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneTransformTrack");
 		return pStaticClass;
@@ -1164,7 +1164,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneVectorSection");
 		return pStaticClass;
@@ -1183,7 +1183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneVectorTrack");
 		return pStaticClass;
@@ -1200,7 +1200,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieSceneTracks.MovieSceneVisibilityTrack");
 		return pStaticClass;

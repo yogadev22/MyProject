@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CommonLib.TextWidgetInterface.GetTextContent
 // (Native, Public, Const)
@@ -15,7 +15,7 @@ namespace SDK
 
 struct FString UTextWidgetInterface::GetTextContent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.TextWidgetInterface.GetTextContent");
 
@@ -42,7 +42,7 @@ struct FString UTextWidgetInterface::GetTextContent()
 
 bool UCommonLuaLibrary::IsMatch(const struct FString& Source, const struct FString& regex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.CommonLuaLibrary.IsMatch");
 
@@ -70,7 +70,7 @@ bool UCommonLuaLibrary::IsMatch(const struct FString& Source, const struct FStri
 
 struct FString UCommonLuaLibrary::GetName(class UObject* Obj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.CommonLuaLibrary.GetName");
 
@@ -96,7 +96,7 @@ struct FString UCommonLuaLibrary::GetName(class UObject* Obj)
 
 TArray<struct FString> UCommonLuaLibrary::GetModNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.CommonLuaLibrary.GetModNames");
 
@@ -121,7 +121,7 @@ TArray<struct FString> UCommonLuaLibrary::GetModNames()
 
 class UWorld* UCommonLuaLibrary::GetGWorld()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.CommonLuaLibrary.GetGWorld");
 
@@ -147,7 +147,7 @@ class UWorld* UCommonLuaLibrary::GetGWorld()
 
 struct FString UCommonLuaLibrary::GetFullName(class UObject* Obj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.CommonLuaLibrary.GetFullName");
 
@@ -175,7 +175,7 @@ struct FString UCommonLuaLibrary::GetFullName(class UObject* Obj)
 
 class URuntimeFilesDownloaderLibrary* URuntimeFilesDownloaderLibrary::DownloadFile(const struct FString& URL, const struct FString& SavePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.RuntimeFilesDownloaderLibrary.DownloadFile");
 
@@ -202,7 +202,7 @@ class URuntimeFilesDownloaderLibrary* URuntimeFilesDownloaderLibrary::DownloadFi
 
 class URuntimeFilesDownloaderLibrary* URuntimeFilesDownloaderLibrary::CreateDownloader()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.RuntimeFilesDownloaderLibrary.CreateDownloader");
 
@@ -228,7 +228,7 @@ class URuntimeFilesDownloaderLibrary* URuntimeFilesDownloaderLibrary::CreateDown
 
 void UServiceManager::UnregisterService(class UClass* ServiceType, const struct FString& serviceName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.ServiceManager.UnregisterService");
 
@@ -255,7 +255,7 @@ void UServiceManager::UnregisterService(class UClass* ServiceType, const struct 
 
 void UServiceManager::RegisterService(class UObject* Service, class UClass* ServiceType, const struct FString& serviceName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.ServiceManager.RegisterService");
 
@@ -283,7 +283,7 @@ void UServiceManager::RegisterService(class UObject* Service, class UClass* Serv
 
 class UObject* UServiceManager::GetService(class UClass* ServiceType, const struct FString& serviceName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonLib.ServiceManager.GetService");
 

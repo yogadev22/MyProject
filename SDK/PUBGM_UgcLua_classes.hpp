@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class UgcLua.CreativeLuaVM
 // 0x0338 (0x0360 - 0x0028)
@@ -40,14 +40,14 @@ public:
 	TMap<struct FString, int>                          CountBlockMap;                                            // 0x0148(0x0050) (ZeroConstructor)
 	bool                                               bCanFreeze;                                               // 0x0198(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData06[0x7];                                       // 0x0199(0x0007) MISSED OFFSET
-	struct FScriptDelegate                             AtPanicDelegate;                                          // 0x01A0(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             AtPanicDelegate;                                          // 0x01A0(0x0010) (ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData07[0x10];                                      // 0x01B0(0x0010) MISSED OFFSET
-	struct FScriptDelegate                             CodeFinishDelegate;                                       // 0x01C0(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             CodeOutputDelegate;                                       // 0x01D0(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             HasEventToRunDelegate;                                    // 0x01E0(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             PrepareEventDelegate;                                     // 0x01F0(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             ExecuteDelayedDelegate;                                   // 0x0200(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             CodePreExecuteDelegate;                                   // 0x0210(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CodeFinishDelegate;                                       // 0x01C0(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CodeOutputDelegate;                                       // 0x01D0(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             HasEventToRunDelegate;                                    // 0x01E0(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             PrepareEventDelegate;                                     // 0x01F0(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             ExecuteDelayedDelegate;                                   // 0x0200(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CodePreExecuteDelegate;                                   // 0x0210(0x0010) (ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData08[0x20];                                      // 0x0220(0x0020) MISSED OFFSET
 	struct FString                                     MainModule;                                               // 0x0240(0x0010) (ZeroConstructor)
 	struct FString                                     EventHandlerName;                                         // 0x0250(0x0010) (ZeroConstructor)
@@ -56,7 +56,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UgcLua.CreativeLuaVM");
 		return pStaticClass;
@@ -101,7 +101,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UgcLua.CreativeEntityInterface");
 		return pStaticClass;

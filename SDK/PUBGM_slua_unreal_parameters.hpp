@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function slua_unreal.LuaActorComponent.UnRegistLuaTick
 struct ULuaActorComponent_UnRegistLuaTick_Params
@@ -85,7 +85,7 @@ struct ULuaOverrider_InputVectorAxis_Params
 // Function slua_unreal.LuaOverrider.InputTouch
 struct ULuaOverrider_InputTouch_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Location;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 

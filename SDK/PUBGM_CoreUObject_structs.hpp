@@ -1,15 +1,12 @@
 #pragma once
 
-#ifndef __forceinline
-#define __forceinline inline __attribute__((always_inline))
-#endif
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum CoreUObject.EInterpCurveMode
 enum class EInterpCurveMode : uint8_t
@@ -214,7 +211,7 @@ enum class EPixelFormat : uint8_t
 	PF_ETC2_SIGNED_RG11            = 65,
 	PF_ETC2_RGB_PUNCHTHROUGH_ALPHA1 = 66,
 	PF_R8                          = 67,
-	PF_MAX_                         = 68
+	PF_MAX69                         = 68
 };
 
 
@@ -259,9 +256,9 @@ enum class ESearchCase : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct CoreUObject.JoinabilitySettings
 // 0x0018
@@ -302,6 +299,7 @@ struct FVector
 	float                                              Y;                                                        // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 	float                                              Z;                                                        // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 
+ 
         inline FVector():X(0), Y(0), Z(0)
         {
         }
@@ -310,58 +308,62 @@ struct FVector
         {
         }
 
-        __forceinline FVector operator-(const FVector & V)
+        inline FVector operator-(const FVector & V) const
         {
             return FVector(X - V.X, Y - V.Y, Z - V.Z);
         }
 
-        __forceinline FVector operator+(const FVector & V)
+        inline FVector operator+(const FVector & V) const
         {
             return FVector(X + V.X, Y + V.Y, Z + V.Z);
         }
 
-        __forceinline FVector operator*(float Scale)const
+        inline FVector operator*(float Scale) const
         {
             return FVector(X * Scale, Y * Scale, Z * Scale);
         }
 
-        __forceinline FVector operator/(float Scale)const
+        inline FVector operator/(float Scale) const
         {
             const float RScale = 1.f / Scale;
-              return FVector(X * RScale, Y * RScale, Z * RScale);
+            return FVector(X * RScale, Y * RScale, Z * RScale);
         }
 
-        __forceinline FVector operator+(float A)const
+        inline FVector operator+(float A) const
         {
             return FVector(X + A, Y + A, Z + A);
         }
 
-        __forceinline FVector operator-(float A)const
+        inline FVector operator-(float A) const
         {
             return FVector(X - A, Y - A, Z - A);
         }
 
-        __forceinline FVector operator*(const FVector & V)const
+        inline FVector operator*(const FVector & V) const
         {
             return FVector(X * V.X, Y * V.Y, Z * V.Z);
         }
 
-        __forceinline FVector operator/(const FVector & V)const
+        inline FVector operator/(const FVector & V) const
         {
             return FVector(X / V.X, Y / V.Y, Z / V.Z);
         }
 
-        __forceinline float operator|(const FVector & V) const
+        inline float operator|(const FVector & V) const
         {
             return X * V.X + Y * V.Y + Z * V.Z;
         }
 
-        __forceinline float operator^(const FVector & V) const
+        inline FVector operator^(const FVector & V) const
         {
-            return X * V.Y - Y * V.X - Z * V.Z;
+            return FVector(
+                Y * V.Z - Z * V.Y,
+                Z * V.X - X * V.Z,
+                X * V.Y - Y * V.X
+            );
         }
 
-        __forceinline FVector & operator+=(const FVector & v)
+        inline FVector & operator+=(const FVector & v)
         {
             X += v.X;
             Y += v.Y;
@@ -369,7 +371,7 @@ struct FVector
             return *this;
         }
 
-        __forceinline FVector & operator-=(const FVector & v)
+        inline FVector & operator-=(const FVector & v)
         {
             X -= v.X;
             Y -= v.Y;
@@ -377,7 +379,7 @@ struct FVector
             return *this;
         }
 
-        __forceinline FVector & operator*=(const FVector & v)
+        inline FVector & operator*=(const FVector & v)
         {
             X *= v.X;
             Y *= v.Y;
@@ -385,7 +387,7 @@ struct FVector
             return *this;
         }
 
-        __forceinline FVector & operator/=(const FVector & v)
+        inline FVector & operator/=(const FVector & v)
         {
             X /= v.X;
             Y /= v.Y;
@@ -393,54 +395,53 @@ struct FVector
             return *this;
         }
 
-        __forceinline bool operator==(const FVector & src)const
+        inline bool operator==(const FVector & src) const
         {
             return (src.X == X) && (src.Y == Y) && (src.Z == Z);
         }
 
-        __forceinline bool operator!=(const FVector & src)const
+        inline bool operator!=(const FVector & src) const
         {
             return (src.X != X) || (src.Y != Y) || (src.Z != Z);
         }
 
-        __forceinline float Distance(FVector PE_Result)
+        inline float Distance(const FVector& PE_Result) const
         {
-            return float (sqrtf(powf(PE_Result.X - X, 2.0) + powf(PE_Result.Y - Y, 2.0) + powf(PE_Result.Z - Z, 2.0)));
+            return float(sqrtf(powf(PE_Result.X - X, 2.0f) + powf(PE_Result.Y - Y, 2.0f) + powf(PE_Result.Z - Z, 2.0f)));
         }
 
-        static float Distance(FVector a, FVector PE_Result)
+        static float Distance(const FVector& a, const FVector& PE_Result)
         {
             FVector v = { a.X - PE_Result.X, a.Y - PE_Result.Y, a.Z - PE_Result.Z };
             return sqrt(v.X * v.X + v.Y * v.Y + v.Z * v.Z);
         }
 
-        __forceinline float Size() const
+        inline float Size() const
         {
             return sqrt(X * X + Y * Y + Z * Z);
         }
 
-        __forceinline float Size2D() const
+        inline float Size2D() const
         {
             return sqrt(X * X + Y * Y);
         }
 
-        __forceinline float SizeSquared() const
+        inline float SizeSquared() const
         {
             return X * X + Y * Y + Z * Z;
         }
 
-        __forceinline float SizeSquared2D() const
+        inline float SizeSquared2D() const
         {
             return X * X + Y * Y;
         }
 
-        __forceinline float Dot(const FVector & vOther) const
+        static inline float Dot(const FVector& lhs, const FVector& rhs)
         {
-            const FVector & a = *this;
-              return (a.X * vOther.X + a.Y * vOther.Y + a.Z * vOther.Z);
+            return (lhs.X * rhs.X + lhs.Y * rhs.Y + lhs.Z * rhs.Z);
         }
 
-        __forceinline FVector Normalize()
+        inline FVector Normalize() const
         {
             FVector vector;
             float length = this->Size();
@@ -452,11 +453,16 @@ struct FVector
                 vector.Z = Z / length;
             }
             else
-                vector.X = vector.Y = 0.0f;
-            vector.Z = 1.0f;
+            {
+                vector.X = 0.0f;
+                vector.Y = 0.0f;
+                vector.Z = 1.0f;
+            }
 
             return vector;
         }
+
+   
 
 };
 
@@ -477,19 +483,150 @@ struct FVector2D
 	float                                              X;                                                        // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 	float                                              Y;                                                        // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 
-	inline FVector2D()
-		: X(0), Y(0)
-	{ }
+ 
 
-	inline FVector2D(float x, float y)
-		: X(x),
-		  Y(y)
-	{ }
+        inline FVector2D():X(0), Y(0)
+        {
+        }
 
-	static float Distance(const FVector2D& a, const FVector2D& PE_Result)
-	{
-		return sqrt(pow(PE_Result.X - a.X, 2) + pow(PE_Result.Y - a.Y, 2));
-	}
+        inline FVector2D(float x, float y):X(x), Y(y)
+        {
+        }
+
+        inline FVector2D operator-(const FVector2D & V) const
+        {
+            return FVector2D(X - V.X, Y - V.Y);
+        }
+
+        inline FVector2D operator+(const FVector2D & V) const
+        {
+            return FVector2D(X + V.X, Y + V.Y);
+        }
+
+        inline FVector2D operator*(float Scale) const
+        {
+            return FVector2D(X * Scale, Y * Scale);
+        }
+
+        inline FVector2D operator/(float Scale) const
+        {
+            const float RScale = 1.f / Scale;
+            return FVector2D(X * RScale, Y * RScale);
+        }
+
+        inline FVector2D operator+(float A) const
+        {
+            return FVector2D(X + A, Y + A);
+        }
+
+        inline FVector2D operator-(float A) const
+        {
+            return FVector2D(X - A, Y - A);
+        }
+
+        inline FVector2D operator*(const FVector2D & V) const
+        {
+            return FVector2D(X * V.X, Y * V.Y);
+        }
+
+        inline FVector2D operator/(const FVector2D & V) const
+        {
+            return FVector2D(X / V.X, Y / V.Y);
+        }
+
+        inline float operator|(const FVector2D & V) const
+        {
+            return X * V.X + Y * V.Y;
+        }
+
+        inline float operator^(const FVector2D & V) const
+        {
+            return X * V.Y - Y * V.X;
+        }
+
+        inline FVector2D & operator+=(const FVector2D & v)
+        {
+            X += v.X;
+            Y += v.Y;
+            return *this;
+        }
+
+        inline FVector2D & operator-=(const FVector2D & v)
+        {
+            X -= v.X;
+            Y -= v.Y;
+            return *this;
+        }
+
+        inline FVector2D & operator*=(const FVector2D & v)
+        {
+            X *= v.X;
+            Y *= v.Y;
+            return *this;
+        }
+
+        inline FVector2D & operator/=(const FVector2D & v)
+        {
+            X /= v.X;
+            Y /= v.Y;
+            return *this;
+        }
+
+        inline bool operator==(const FVector2D & src) const
+        {
+            return (src.X == X) && (src.Y == Y);
+        }
+
+        inline bool operator!=(const FVector2D & src) const
+        {
+            return (src.X != X) || (src.Y != Y);
+        }
+  
+        inline float Distance(const FVector2D& PE_Result) const
+        {
+            return sqrtf((PE_Result.X - X) * (PE_Result.X - X) + (PE_Result.Y - Y) * (PE_Result.Y - Y));
+        }
+
+        static float Distance(const FVector2D& a, const FVector2D& PE_Result)
+        {
+            return sqrtf((PE_Result.X - a.X) * (PE_Result.X - a.X) + (PE_Result.Y - a.Y) * (PE_Result.Y - a.Y));
+        }
+
+        inline float Size() const
+        {
+            return sqrtf(X * X + Y * Y);
+        }
+
+        inline float SizeSquared() const
+        {
+            return X * X + Y * Y;
+        }
+
+        static inline float Dot(const FVector2D& lhs, const FVector2D& rhs)
+        {
+            return (lhs.X * rhs.X + lhs.Y * rhs.Y);
+        }
+
+        inline FVector2D Normalize() const
+        {
+            FVector2D vector;
+            float length = this->Size();
+
+            if (length != 0)
+            {
+                vector.X = X / length;
+                vector.Y = Y / length;
+            }
+            else
+            {
+                vector.X = 0.0f;
+                vector.Y = 0.0f;
+            }
+
+            return vector;
+        }
+
+
 
 };
 
@@ -661,7 +798,7 @@ struct FInterpCurvePointFloat
 	float                                              OutVal;                                                   // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              ArriveTangent;                                            // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              LeaveTangent;                                             // 0x000C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EInterpCurveMode>                 InterpMode;                                               // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInterpCurveMode>                      InterpMode;                                               // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 };
 
@@ -683,7 +820,7 @@ struct FInterpCurvePointVector2D
 	struct FVector2D                                   OutVal;                                                   // 0x0004(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector2D                                   ArriveTangent;                                            // 0x000C(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector2D                                   LeaveTangent;                                             // 0x0014(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EInterpCurveMode>                 InterpMode;                                               // 0x001C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInterpCurveMode>                      InterpMode;                                               // 0x001C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
 };
 
@@ -705,7 +842,7 @@ struct FInterpCurvePointVector
 	struct FVector                                     OutVal;                                                   // 0x0004(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector                                     ArriveTangent;                                            // 0x0010(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector                                     LeaveTangent;                                             // 0x001C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EInterpCurveMode>                 InterpMode;                                               // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInterpCurveMode>                      InterpMode;                                               // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
 };
 
@@ -728,7 +865,7 @@ struct FInterpCurvePointQuat
 	struct FQuat                                       OutVal;                                                   // 0x0010(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FQuat                                       ArriveTangent;                                            // 0x0020(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FQuat                                       LeaveTangent;                                             // 0x0030(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EInterpCurveMode>                 InterpMode;                                               // 0x0040(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInterpCurveMode>                      InterpMode;                                               // 0x0040(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0xF];                                       // 0x0041(0x000F) MISSED OFFSET
 };
 
@@ -750,7 +887,7 @@ struct FInterpCurvePointTwoVectors
 	struct FTwoVectors                                 OutVal;                                                   // 0x0004(0x0018) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FTwoVectors                                 ArriveTangent;                                            // 0x001C(0x0018) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FTwoVectors                                 LeaveTangent;                                             // 0x0034(0x0018) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EInterpCurveMode>                 InterpMode;                                               // 0x004C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInterpCurveMode>                      InterpMode;                                               // 0x004C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x004D(0x0003) MISSED OFFSET
 };
 
@@ -772,7 +909,7 @@ struct FInterpCurvePointLinearColor
 	struct FLinearColor                                OutVal;                                                   // 0x0004(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FLinearColor                                ArriveTangent;                                            // 0x0014(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FLinearColor                                LeaveTangent;                                             // 0x0024(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EInterpCurveMode>                 InterpMode;                                               // 0x0034(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EInterpCurveMode>                      InterpMode;                                               // 0x0034(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0035(0x0003) MISSED OFFSET
 };
 
@@ -860,7 +997,7 @@ struct FFallbackStruct
 // 0x0008
 struct FFloatRangeBound
 {
-	TEnumAsByte<enum ERangeBoundTypes>                 Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERangeBoundTypes>                      Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	float                                              Value;                                                    // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
@@ -877,7 +1014,7 @@ struct FFloatRange
 // 0x0008
 struct FInt32RangeBound
 {
-	TEnumAsByte<enum ERangeBoundTypes>                 Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERangeBoundTypes>                      Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                Value;                                                    // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };

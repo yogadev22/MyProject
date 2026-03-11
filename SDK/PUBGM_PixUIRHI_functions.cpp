@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PixUIRHI.PxRHIImage.GetHandleObject
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 class UObject* UPxRHIImage::GetHandleObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIRHI.PxRHIImage.GetHandleObject");
 
@@ -41,7 +41,7 @@ class UObject* UPxRHIImage::GetHandleObject()
 
 bool UPxRHIMgr::RHIImageUpdate(class UPxRHIMgr* pPxRHIImage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIRHI.PxRHIMgr.RHIImageUpdate");
 
@@ -68,7 +68,7 @@ bool UPxRHIMgr::RHIImageUpdate(class UPxRHIMgr* pPxRHIImage)
 
 class UPxRHIMgr* UPxRHIMgr::RHIImageFindByObject(class UObject* pCoreObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIRHI.PxRHIMgr.RHIImageFindByObject");
 
@@ -95,7 +95,7 @@ class UPxRHIMgr* UPxRHIMgr::RHIImageFindByObject(class UObject* pCoreObject)
 
 bool UPxRHIMgr::RHIImageDestroy(class UPxRHIMgr* pPxRHIImage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIRHI.PxRHIMgr.RHIImageDestroy");
 
@@ -121,7 +121,7 @@ bool UPxRHIMgr::RHIImageDestroy(class UPxRHIMgr* pPxRHIImage)
 
 class UPxRHIImage* UPxRHIMgr::RHIImageCreate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIRHI.PxRHIMgr.RHIImageCreate");
 
@@ -146,7 +146,7 @@ class UPxRHIImage* UPxRHIMgr::RHIImageCreate()
 
 class UPxRHIMgr* UPxRHIMgr::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIRHI.PxRHIMgr.Get");
 

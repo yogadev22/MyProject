@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function AI.AESpawner.SwitchTeamAI
 struct AAESpawner_SwitchTeamAI_Params
@@ -64,7 +64,7 @@ struct AAESpawner_OnOwnedFakePlayerDead_Params
 // Function AI.AESpawner.GetSpeciesCategory
 struct AAESpawner_GetSpeciesCategory_Params
 {
-	TEnumAsByte<enum EBotCategray>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBotCategray>                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AI.AESpawner.GetSpawnerTeamID
@@ -128,14 +128,14 @@ struct UAESpawnSubsystem_PreCheck_Params
 // Function AI.AESpawnSubsystem.ModifyThreshold
 struct UAESpawnSubsystem_ModifyThreshold_Params
 {
-	TEnumAsByte<enum EBotCategray>                     Category;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBotCategray>                          Category;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Threshold;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AI.AESpawnSubsystem.GetUnitsNumByCategory
 struct UAESpawnSubsystem_GetUnitsNumByCategory_Params
 {
-	TEnumAsByte<enum EBotCategray>                     Category;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBotCategray>                          Category;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -330,12 +330,6 @@ struct UAIBasicStateInfoComponent_OnItemStateChanged_Params
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
 };
 
-// Function AI.AIBasicStateInfoComponent.GetTLogAIShootInfo
-struct UAIBasicStateInfoComponent_GetTLogAIShootInfo_Params
-{
-	struct FTLogAIShootInfo                            ReturnValue;                                              // (Parm, OutParm, ReturnParm)
-};
-
 // Function AI.AIBasicStateInfoComponent.GetPickActorWithID
 struct UAIBasicStateInfoComponent_GetPickActorWithID_Params
 {
@@ -423,7 +417,7 @@ struct UAIBehaviorAdapter_VehicleBase_BPReceiveDamage_Params
 	class UDamageType*                                 DamageType;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	class AController*                                 InstigatedBy;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EDamageType>                      DamageEventType;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDamageType>                           DamageEventType;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AI.AIBehaviorAdapter_Tank.UpdateTurretAimingTarget
@@ -497,11 +491,36 @@ struct UAIPerceptionDynamicItemComponent_UpdateInAICell_Params
 	bool                                               bForceUpdate;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function AI.AIPerceptionDynamicItemComponent.UpdateCustomAttributeValue
+struct UAIPerceptionDynamicItemComponent_UpdateCustomAttributeValue_Params
+{
+	uint32_t                                           InCustomAttributeID;                                      // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InValue;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bRemove;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AI.AIPerceptionDynamicItemComponent.SetEnableState
+struct UAIPerceptionDynamicItemComponent_SetEnableState_Params
+{
+	bool                                               bInEnable;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AI.AIPerceptionDynamicItemComponent.RemoveInAICell
+struct UAIPerceptionDynamicItemComponent_RemoveInAICell_Params
+{
+};
+
 // Function AI.AIPerceptionDynamicItemComponent.GetUniqueID
 struct UAIPerceptionDynamicItemComponent_GetUniqueID_Params
 {
 	class AActor*                                      DynamicItem;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	uint32_t                                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AI.AIPerceptionDynamicItemComponent.GetCustomAttributeList
+struct UAIPerceptionDynamicItemComponent_GetCustomAttributeList_Params
+{
+	TArray<struct FAIAttribute>                        OutCustomAttributeList;                                   // (Parm, OutParm, ZeroConstructor)
 };
 
 // Function AI.AISoundCollectionComponent.OnCollectionHearSound
@@ -624,75 +643,16 @@ struct UAIStateInfoComponentBase_GetOwnerBaseCharacter_Params
 	class ASTExtraBaseCharacter*                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AI.AIStateInfoComponentBase.GetObstaclesState
-struct UAIStateInfoComponentBase_GetObstaclesState_Params
-{
-	class ASTExtraBaseCharacter*                       InPawn;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Range;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FObstacleState>                      ObstaclesState;                                           // (Parm, OutParm, ZeroConstructor)
-};
-
 // Function AI.AIStateInfoComponentBase.GetFrameNo
 struct UAIStateInfoComponentBase_GetFrameNo_Params
 {
 	uint32_t                                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AI.AIStateInfoComponentBase.GetDiffAIStateInfoToCacheGeneral
-struct UAIStateInfoComponentBase_GetDiffAIStateInfoToCacheGeneral_Params
-{
-};
-
-// Function AI.AIStateInfoComponentBase.GetDiffAIStateInfoToCache
-struct UAIStateInfoComponentBase_GetDiffAIStateInfoToCache_Params
-{
-};
-
 // Function AI.AIStateInfoComponentBase.GetDamageSourcesNew
 struct UAIStateInfoComponentBase_GetDamageSourcesNew_Params
 {
 	TArray<struct FDamageSource>                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
-// Function AI.AIStateInfoComponentBase.GetDamageSources
-struct UAIStateInfoComponentBase_GetDamageSources_Params
-{
-	struct FAIDamageSources                            ReturnValue;                                              // (Parm, OutParm, ReturnParm)
-};
-
-// Function AI.AIStateInfoComponentBase.GetCameraState
-struct UAIStateInfoComponentBase_GetCameraState_Params
-{
-	class ASTExtraBaseCharacter*                       InCharacter;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FCameraState                                ReturnValue;                                              // (Parm, OutParm, ReturnParm)
-};
-
-// Function AI.AIStateInfoComponentBase.GetAIStateInfoToCache
-struct UAIStateInfoComponentBase_GetAIStateInfoToCache_Params
-{
-};
-
-// Function AI.AIStateInfoComponentBase.GetAIStateInfoBaseModInternal
-struct UAIStateInfoComponentBase_GetAIStateInfoBaseModInternal_Params
-{
-};
-
-// Function AI.AIStateInfoComponentBase.GetAIPlayerBackpackItems
-struct UAIStateInfoComponentBase_GetAIPlayerBackpackItems_Params
-{
-	TArray<struct FAIBackpackItem>                     Items;                                                    // (Parm, OutParm, ZeroConstructor)
-};
-
-// Function AI.AIStateInfoComponentBase.GetAINearbyThrownState
-struct UAIStateInfoComponentBase_GetAINearbyThrownState_Params
-{
-	class ASTExtraBaseCharacter*                       InCharacter;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              InRange;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              InCheckAngle;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                MaxNum;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              InSmokeRange;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FAINearbyThrown>                     Ret;                                                      // (Parm, OutParm, ZeroConstructor)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AI.AIStateInfoComponentBase.GetAIDestroyBulletProbInfo
@@ -1004,15 +964,21 @@ struct UMLAIStateInfoManager_StartRequestCache_Params
 {
 };
 
+// Function AI.MLAIStateInfoManager.SetUseNewDiffCmds
+struct UMLAIStateInfoManager_SetUseNewDiffCmds_Params
+{
+	bool                                               InUseNewDiffCmds;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AI.MLAIStateInfoManager.SetOpenHeadAndMuzzleInfo
+struct UMLAIStateInfoManager_SetOpenHeadAndMuzzleInfo_Params
+{
+	bool                                               InOpenHeadAndMuzzleInfo;                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function AI.MLAIStateInfoManager.ResetWhiteList
 struct UMLAIStateInfoManager_ResetWhiteList_Params
 {
-};
-
-// Function AI.MLAIStateInfoManager.IsUseGeneralAIStateInfo
-struct UMLAIStateInfoManager_IsUseGeneralAIStateInfo_Params
-{
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AI.MLAIStateInfoManager.InitCollectorList
@@ -1032,6 +998,13 @@ struct UMLAIStateInfoManager_Init_Params
 	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function AI.MLAIStateInfoManager.GetSinglePlayerStateInfoToCache
+struct UMLAIStateInfoManager_GetSinglePlayerStateInfoToCache_Params
+{
+	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	class ASTExtraPlayerCharacter*                     Player;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function AI.MLAIStateInfoManager.GetGlobalGameStateToCache
 struct UMLAIStateInfoManager_GetGlobalGameStateToCache_Params
 {
@@ -1042,19 +1015,6 @@ struct UMLAIStateInfoManager_GetGlobalGameStateToCache_Params
 struct UMLAIStateInfoManager_GetDiffGlobalGameStateToCacheGeneral_Params
 {
 	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIStateInfoManager.GetDiffGlobalGameStateToCacheCCS
-struct UMLAIStateInfoManager_GetDiffGlobalGameStateToCacheCCS_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIStateInfoManager.GetDiffAllPlayerStateInfoToCacheCCS
-struct UMLAIStateInfoManager_GetDiffAllPlayerStateInfoToCacheCCS_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseDiff;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AI.MLAIStateInfoManager.GetDiffAllPlayerAIStateInfoToCacheGeneral
@@ -1164,11 +1124,26 @@ struct UMLAISubSystem_SetSpecialZoneCustomState_Params
 	int                                                InCustomState;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function AI.MLAISubSystem.SetSpecialZoneCustomAttribute
+struct UMLAISubSystem_SetSpecialZoneCustomAttribute_Params
+{
+	class AActor*                                      InParent;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	uint32_t                                           CustomAttributeID;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InValue;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bRemove;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function AI.MLAISubSystem.SetPlayerRevivalType
 struct UMLAISubSystem_SetPlayerRevivalType_Params
 {
 	uint32_t                                           InPlayerKey;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                InRevivalType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AI.MLAISubSystem.SetPlayerAttributeModifyCompConfig
+struct UMLAISubSystem_SetPlayerAttributeModifyCompConfig_Params
+{
+	TMap<uint32_t, struct FString>                     InAttributeModifyCompConfig;                              // (Parm, ZeroConstructor)
 };
 
 // Function AI.MLAISubSystem.SetPawnStateConfig
@@ -1207,12 +1182,6 @@ struct UMLAISubSystem_SetNeedAllInfo_Params
 	bool                                               bInNeedAllInfo;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AI.MLAISubSystem.SetMLAIUtils
-struct UMLAISubSystem_SetMLAIUtils_Params
-{
-	class UMLAIUtilsBase*                              MLAIUtils;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-};
-
 // Function AI.MLAISubSystem.SetMLAIStateInfoManager
 struct UMLAISubSystem_SetMLAIStateInfoManager_Params
 {
@@ -1237,17 +1206,17 @@ struct UMLAISubSystem_SetBackpackItemUpdatedMapSwitch_Params
 	bool                                               bInSwitch;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AI.MLAISubSystem.SetAttributeModifyCompConfig
-struct UMLAISubSystem_SetAttributeModifyCompConfig_Params
-{
-	TMap<uint32_t, struct FString>                     InAttributeModifyCompConfig;                              // (Parm, ZeroConstructor)
-};
-
 // Function AI.MLAISubSystem.SetAirDropLocation
 struct UMLAISubSystem_SetAirDropLocation_Params
 {
 	int                                                InAirDropTag;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     AirDropLocation;                                          // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function AI.MLAISubSystem.SetAIAttributeModifyCompConfig
+struct UMLAISubSystem_SetAIAttributeModifyCompConfig_Params
+{
+	TMap<uint32_t, struct FString>                     InAttributeModifyCompConfig;                              // (Parm, ZeroConstructor)
 };
 
 // Function AI.MLAISubSystem.SetAIAttribute_CastEnergyWithCount
@@ -1302,6 +1271,12 @@ struct UMLAISubSystem_RemoveFromSilentMLAIList_Params
 struct UMLAISubSystem_RemoveFromPlayerWhitelist_Params
 {
 	uint32_t                                           InPlayerKey;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AI.MLAISubSystem.RemoveAICheckVisibilityFilteredActor
+struct UMLAISubSystem_RemoveAICheckVisibilityFilteredActor_Params
+{
+	uint32_t                                           actorid;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AI.MLAISubSystem.OnVehicleDamageInfo
@@ -1407,6 +1382,13 @@ struct UMLAISubSystem_GetLossTime_Params
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function AI.MLAISubSystem.GetItemDurability
+struct UMLAISubSystem_GetItemDurability_Params
+{
+	int                                                InTypeSpecificID;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function AI.MLAISubSystem.GetCacheAIAttributes
 struct UMLAISubSystem_GetCacheAIAttributes_Params
 {
@@ -1425,6 +1407,12 @@ struct UMLAISubSystem_FindPlayerWhiteRange_Params
 {
 	struct FVector                                     InLocation;                                               // (Parm, IsPlainOldData)
 	float                                              InRange;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AI.MLAISubSystem.FindMasterTeamMateList
+struct UMLAISubSystem_FindMasterTeamMateList_Params
+{
+	class APawn*                                       Master;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AI.MLAISubSystem.EndRequestCache
@@ -1486,13 +1474,13 @@ struct UMLAISubSystem_AddMercenary2MasterMap_Params
 {
 	class APawn*                                       MercenaryAI;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class APawn*                                       Master;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIncludesTeammates;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AI.MLAISubSystem.AddAIAttributeConfig
-struct UMLAISubSystem_AddAIAttributeConfig_Params
+// Function AI.MLAISubSystem.AddAICheckVisibilityFilteredActor
+struct UMLAISubSystem_AddAICheckVisibilityFilteredActor_Params
 {
-	uint32_t                                           InID;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     InKey;                                                    // (Parm, ZeroConstructor)
+	uint32_t                                           actorid;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AI.MLAITrainingComponent.StopRunnable
@@ -1539,119 +1527,6 @@ struct UMLAITrainingComponent_EndRequestAIState_Params
 {
 };
 
-// Function AI.MLAIUtilsBase.StartRequestCache
-struct UMLAIUtilsBase_StartRequestCache_Params
-{
-};
-
-// Function AI.MLAIUtilsBase.SetUseNewDiffCmds
-struct UMLAIUtilsBase_SetUseNewDiffCmds_Params
-{
-	bool                                               InUseNewDiffCmds;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               InUseNewDiffField;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.SetOpenHeadAndMuzzleInfo
-struct UMLAIUtilsBase_SetOpenHeadAndMuzzleInfo_Params
-{
-	bool                                               InOpenHeadAndMuzzleInfo;                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.RemoveBackpackItemUpdatedMap
-struct UMLAIUtilsBase_RemoveBackpackItemUpdatedMap_Params
-{
-	uint32_t                                           PlayerKey;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               AllRemove;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.OnBackpackItemListUpdated
-struct UMLAIUtilsBase_OnBackpackItemListUpdated_Params
-{
-	uint32_t                                           PlayerKey;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetGlobalGameStateInfoToCache
-struct UMLAIUtilsBase_GetGlobalGameStateInfoToCache_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetDiffGlobalGameStateInfoToCache
-struct UMLAIUtilsBase_GetDiffGlobalGameStateInfoToCache_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetDiffGlobalGameStateBaseModToCacheGeneral
-struct UMLAIUtilsBase_GetDiffGlobalGameStateBaseModToCacheGeneral_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetDiffGlobalGameStatBaseModToCache
-struct UMLAIUtilsBase_GetDiffGlobalGameStatBaseModToCache_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoToCacheCSS
-struct UMLAIUtilsBase_GetDiffAllPlayerStateInfoToCacheCSS_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseDiff;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoToCache
-struct UMLAIUtilsBase_GetDiffAllPlayerStateInfoToCache_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoBaseModToCacheCCS
-struct UMLAIUtilsBase_GetDiffAllPlayerStateInfoBaseModToCacheCCS_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseDiff;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.GetAllPlayerStateInfoToCache
-struct UMLAIUtilsBase_GetAllPlayerStateInfoToCache_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBase.EndRequestCache
-struct UMLAIUtilsBase_EndRequestCache_Params
-{
-};
-
-// Function AI.MLAIUtilsBase.AddBackpackItemListUpdatedDelegate
-struct UMLAIUtilsBase_AddBackpackItemListUpdatedDelegate_Params
-{
-	class UBackpackComponent*                          InBackpackComp;                                           // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	uint32_t                                           InPlayerKey;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AI.MLAIUtilsBRBase.HandleGameModeStateChanged
-struct UMLAIUtilsBRBase_HandleGameModeStateChanged_Params
-{
-	struct FGameModeStateChangedParams                 Params;                                                   // (ConstParm, Parm, OutParm, ReferenceParm)
-};
-
-// Function AI.MLAIUtilsBRBase.GetRedZoneState
-struct UMLAIUtilsBRBase_GetRedZoneState_Params
-{
-	class UWorld*                                      InWorld;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FRedZoneState                               ZoneState;                                                // (Parm, OutParm)
-};
-
-// Function AI.MLAIUtilsBRBase.GetAIPlayerStateBRBase
-struct UMLAIUtilsBRBase_GetAIPlayerStateBRBase_Params
-{
-	class ASTExtraBaseCharacter*                       InCharacter;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FAIPlayerStateBRBase                        Ret;                                                      // (Parm, OutParm)
-};
-
 // Function AI.SpecialZoneActor.UpdateType
 struct ASpecialZoneActor_UpdateType_Params
 {
@@ -1670,6 +1545,14 @@ struct ASpecialZoneActor_UpdateCustomState_Params
 	int                                                InCustomState;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function AI.SpecialZoneActor.UpdateCustomAttributeValue
+struct ASpecialZoneActor_UpdateCustomAttributeValue_Params
+{
+	uint32_t                                           InCustomAttributeID;                                      // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+	float                                              InValue;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+	bool                                               bRemove;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+};
+
 // Function AI.SpecialZoneActor.HandleFragmentsStateChanged
 struct ASpecialZoneActor_HandleFragmentsStateChanged_Params
 {
@@ -1682,6 +1565,12 @@ struct ASpecialZoneActor_HandleFragmentsStateChanged_Params
 struct ASpecialZoneActor_GetSpecialZoneState_Params
 {
 	struct FSpecialZoneState                           ReturnValue;                                              // (Parm, OutParm, ReturnParm)
+};
+
+// Function AI.SpecialZoneActor.GetCustomAttributeList
+struct ASpecialZoneActor_GetCustomAttributeList_Params
+{
+	TArray<struct FAIAttribute>                        OutCustomAttributeList;                                   // (Parm, OutParm, ZeroConstructor)
 };
 
 // Function AI.STStrategyLocation_Range.ModifyBaseLocation

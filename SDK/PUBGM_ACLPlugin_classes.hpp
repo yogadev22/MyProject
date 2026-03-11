@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class ACLPlugin.ACLStatsDumpCommandlet
 // 0x0000 (0x0080 - 0x0080)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ACLPlugin.ACLStatsDumpCommandlet");
 		return pStaticClass;
@@ -33,7 +33,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ACLPlugin.AnimCompress_ACLBase");
 		return pStaticClass;
@@ -47,7 +47,7 @@ public:
 class UAnimCompress_ACL : public UAnimCompress_ACLBase
 {
 public:
-	TEnumAsByte<enum EACLCompressionLevel>             CompressionLevel;                                         // 0x0040(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EACLCompressionLevel>                  CompressionLevel;                                         // 0x0040(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0041(0x0003) MISSED OFFSET
 	float                                              DefaultVirtualVertexDistance;                             // 0x0044(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              SafeVirtualVertexDistance;                                // 0x0048(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -57,7 +57,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ACLPlugin.AnimCompress_ACL");
 		return pStaticClass;
@@ -73,10 +73,10 @@ class UAnimCompress_ACLCustom : public UAnimCompress_ACLBase
 public:
 	float                                              DefaultVirtualVertexDistance;                             // 0x0040(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              SafeVirtualVertexDistance;                                // 0x0044(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EACLCompressionLevel>             CompressionLevel;                                         // 0x0048(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EACLRotationFormat>               RotationFormat;                                           // 0x0049(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EACLVectorFormat>                 TranslationFormat;                                        // 0x004A(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EACLVectorFormat>                 ScaleFormat;                                              // 0x004B(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EACLCompressionLevel>                  CompressionLevel;                                         // 0x0048(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EACLRotationFormat>                    RotationFormat;                                           // 0x0049(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EACLVectorFormat>                      TranslationFormat;                                        // 0x004A(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EACLVectorFormat>                      ScaleFormat;                                              // 0x004B(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              ErrorThreshold;                                           // 0x004C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              ConstantRotationThresholdAngle;                           // 0x0050(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              ConstantTranslationThreshold;                             // 0x0054(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -95,7 +95,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ACLPlugin.AnimCompress_ACLCustom");
 		return pStaticClass;

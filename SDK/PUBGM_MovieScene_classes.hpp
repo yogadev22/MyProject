@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class MovieScene.MovieSceneSignedObject
 // 0x0028 (0x0050 - 0x0028)
@@ -18,7 +18,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneSignedObject");
 		return pStaticClass;
@@ -52,7 +52,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieScene");
 		return pStaticClass;
@@ -72,7 +72,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneBindingOverrides");
 		return pStaticClass;
@@ -89,7 +89,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneBindingOverridesInterface");
 		return pStaticClass;
@@ -106,7 +106,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneBindingOwnerInterface");
 		return pStaticClass;
@@ -126,7 +126,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneBuiltInEasingFunction");
 		return pStaticClass;
@@ -145,7 +145,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneEasingExternalCurve");
 		return pStaticClass;
@@ -162,7 +162,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneEasingFunction");
 		return pStaticClass;
@@ -186,7 +186,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneFolder");
 		return pStaticClass;
@@ -205,7 +205,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneTrack");
 		return pStaticClass;
@@ -222,7 +222,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneNameableTrack");
 		return pStaticClass;
@@ -255,7 +255,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneSection");
 		return pStaticClass;
@@ -273,7 +273,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneSegmentCompilerTestTrack");
 		return pStaticClass;
@@ -290,7 +290,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneSegmentCompilerTestSection");
 		return pStaticClass;
@@ -300,7 +300,7 @@ public:
 
 
 // Class MovieScene.MovieSceneSequence
-// 0x0290 (0x02E0 - 0x0050)
+// 0x0298 (0x02E8 - 0x0050)
 class UMovieSceneSequence : public UMovieSceneSignedObject
 {
 public:
@@ -309,11 +309,11 @@ public:
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0272(0x0006) MISSED OFFSET
 	TMap<class UObject*, struct FCachedMovieSceneEvaluationTemplate> InstancedSubSequenceEvaluationTemplates;                  // 0x0278(0x0050) (ZeroConstructor)
 	bool                                               bParentContextsAreSignificant;                            // 0x02C8(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x17];                                      // 0x02C9(0x0017) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x1F];                                      // 0x02C9(0x001F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneSequence");
 		return pStaticClass;
@@ -337,7 +337,7 @@ public:
 	struct FScriptMulticastDelegate                    OnPause;                                                  // 0x03B8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnFinished;                                               // 0x03C8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnObjectSpawnedEvent;                                     // 0x03D8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	TEnumAsByte<enum EMovieScenePlayerStatus>          status;                                                   // 0x03E8(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovieScenePlayerStatus>               status;                                                   // 0x03E8(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      bReversePlayback : 1;                                     // 0x03E9(0x0001)
 	unsigned char                                      bPendingFirstUpdate : 1;                                  // 0x03E9(0x0001)
 	unsigned char                                      UnknownData02[0x6];                                       // 0x03EA(0x0006) MISSED OFFSET
@@ -352,7 +352,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MovieScene.MovieSceneSequencePlayer");
 		return pStaticClass;

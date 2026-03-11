@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function TPlanGame.BackpackComponentTPlan.PickupItemFromWrapperDetail
 // (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
@@ -19,7 +19,7 @@ namespace SDK
 
 bool UBackpackComponentTPlan::PickupItemFromWrapperDetail(const struct FItemDefineID& DefineID, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason, EBattleItemClientPickupType BattleItemClientPickupType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.PickupItemFromWrapperDetail");
 
@@ -51,7 +51,7 @@ bool UBackpackComponentTPlan::PickupItemFromWrapperDetail(const struct FItemDefi
 
 bool UBackpackComponentTPlan::PickItem_IntoSafetyBox(const struct FItemDefineID& DefineID, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.PickItem_IntoSafetyBox");
 
@@ -79,7 +79,7 @@ bool UBackpackComponentTPlan::PickItem_IntoSafetyBox(const struct FItemDefineID&
 
 void UBackpackComponentTPlan::NotifyItemUpdated(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.NotifyItemUpdated");
 
@@ -103,7 +103,7 @@ void UBackpackComponentTPlan::NotifyItemUpdated(const struct FItemDefineID& Defi
 
 void UBackpackComponentTPlan::NotifyItemRemoved(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.NotifyItemRemoved");
 
@@ -125,7 +125,7 @@ void UBackpackComponentTPlan::NotifyItemRemoved(const struct FItemDefineID& Defi
 
 void UBackpackComponentTPlan::NotifyItemListUpdated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.NotifyItemListUpdated");
 
@@ -151,7 +151,7 @@ void UBackpackComponentTPlan::NotifyItemListUpdated()
 
 bool UBackpackComponentTPlan::ChangeItemStoreAreaNewInner(const struct FItemDefineID& DefineID, int InItemNum, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.ChangeItemStoreAreaNewInner");
 
@@ -182,7 +182,7 @@ bool UBackpackComponentTPlan::ChangeItemStoreAreaNewInner(const struct FItemDefi
 
 bool UBackpackComponentTPlan::ChangeItemStoreAreaNew(const struct FItemDefineID& DefineID, int InItemNum, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.ChangeItemStoreAreaNew");
 
@@ -213,7 +213,7 @@ bool UBackpackComponentTPlan::ChangeItemStoreAreaNew(const struct FItemDefineID&
 
 bool UBackpackComponentTPlan::ChangeItemStoreAreaInner(const struct FItemDefineID& DefineID, int InItemNum, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.ChangeItemStoreAreaInner");
 
@@ -244,7 +244,7 @@ bool UBackpackComponentTPlan::ChangeItemStoreAreaInner(const struct FItemDefineI
 
 bool UBackpackComponentTPlan::ChangeItemStoreArea(const struct FItemDefineID& DefineID, int InItemNum, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackComponentTPlan.ChangeItemStoreArea");
 
@@ -270,7 +270,7 @@ bool UBackpackComponentTPlan::ChangeItemStoreArea(const struct FItemDefineID& De
 
 void UBackpackTPlanUtils::UnRegisterInvokeClass()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackTPlanUtils.UnRegisterInvokeClass");
 
@@ -291,7 +291,7 @@ void UBackpackTPlanUtils::UnRegisterInvokeClass()
 
 void UBackpackTPlanUtils::RegisterInvokeClass()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackTPlanUtils.RegisterInvokeClass");
 
@@ -314,7 +314,7 @@ void UBackpackTPlanUtils::RegisterInvokeClass()
 
 class UBackpackBlueprintTPlanUtils* UBackpackTPlanUtils::RealGetBPUtils()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.BackpackTPlanUtils.RealGetBPUtils");
 
@@ -337,7 +337,7 @@ class UBackpackBlueprintTPlanUtils* UBackpackTPlanUtils::RealGetBPUtils()
 
 void UMetroStoreComponent::OnRep_StoreID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.MetroStoreComponent.OnRep_StoreID");
 
@@ -358,7 +358,7 @@ void UMetroStoreComponent::OnRep_StoreID()
 
 void UMetroStoreComponent::OnRep_Status()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.MetroStoreComponent.OnRep_Status");
 
@@ -379,7 +379,7 @@ void UMetroStoreComponent::OnRep_Status()
 
 void UMetroStoreComponent::OnRep_GoodsNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.MetroStoreComponent.OnRep_GoodsNum");
 
@@ -400,7 +400,7 @@ void UMetroStoreComponent::OnRep_GoodsNum()
 
 void UMetroStoreComponent::OnRep_GoodsListNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.MetroStoreComponent.OnRep_GoodsListNum");
 
@@ -421,7 +421,7 @@ void UMetroStoreComponent::OnRep_GoodsListNum()
 
 void UMetroStoreComponent::OnRep_GoodsList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.MetroStoreComponent.OnRep_GoodsList");
 
@@ -442,7 +442,7 @@ void UMetroStoreComponent::OnRep_GoodsList()
 
 void UMetroStoreComponent::OnRep_CurrencyList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.MetroStoreComponent.OnRep_CurrencyList");
 
@@ -463,7 +463,7 @@ void UMetroStoreComponent::OnRep_CurrencyList()
 
 void UMetroStoreComponent::OnRep_BuyFrequence()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.MetroStoreComponent.OnRep_BuyFrequence");
 
@@ -486,7 +486,7 @@ void UMetroStoreComponent::OnRep_BuyFrequence()
 
 void AXTGameMode::SetStateLeftTime(int LeftTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.SetStateLeftTime");
 
@@ -510,7 +510,7 @@ void AXTGameMode::SetStateLeftTime(int LeftTime)
 
 void AXTGameMode::SetPlayerStartOccupied(class AActor* PlayerStart)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.SetPlayerStartOccupied");
 
@@ -537,7 +537,7 @@ void AXTGameMode::SetPlayerStartOccupied(class AActor* PlayerStart)
 
 void AXTGameMode::RevisePlayerTombBoxDropWrapperList(class ASTExtraBaseCharacter* Character, class ASTExtraBaseCharacter* DamageCauser, int InstanceIDCnt, TArray<struct FPickUpItemData>* OutItemDataList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.RevisePlayerTombBoxDropWrapperList");
 
@@ -568,7 +568,7 @@ void AXTGameMode::RevisePlayerTombBoxDropWrapperList(class ASTExtraBaseCharacter
 
 void AXTGameMode::NotifyPlayerExitWhenNotStarted(uint32_t PlayerKey, const struct FName& PlayerType, const struct FString& Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.NotifyPlayerExitWhenNotStarted");
 
@@ -601,7 +601,7 @@ void AXTGameMode::NotifyPlayerExitWhenNotStarted(uint32_t PlayerKey, const struc
 
 void AXTGameMode::NotifyPlayerExit(uint32_t PlayerKey, const struct FName& PlayerType, bool bDestroyPlayerController, bool bDestroyCharacter, bool bSendFailure, const struct FString& FailureMessage, const struct FName& ParamState, const struct FString& ParamReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.NotifyPlayerExit");
 
@@ -630,7 +630,7 @@ void AXTGameMode::NotifyPlayerExit(uint32_t PlayerKey, const struct FName& Playe
 
 void AXTGameMode::NotifyGameModeInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.NotifyGameModeInit");
 
@@ -651,7 +651,7 @@ void AXTGameMode::NotifyGameModeInit()
 
 void AXTGameMode::LoadMapFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.LoadMapFinished");
 
@@ -675,7 +675,7 @@ void AXTGameMode::LoadMapFinished()
 
 bool AXTGameMode::IsNeedRestPlayerStart(class AController* Player)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.IsNeedRestPlayerStart");
 
@@ -699,7 +699,7 @@ bool AXTGameMode::IsNeedRestPlayerStart(class AController* Player)
 
 void AXTGameMode::GMShowSpawner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.GMShowSpawner");
 
@@ -720,7 +720,7 @@ void AXTGameMode::GMShowSpawner()
 
 void AXTGameMode::GMShowEnterExit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.GMShowEnterExit");
 
@@ -741,7 +741,7 @@ void AXTGameMode::GMShowEnterExit()
 
 void AXTGameMode::GMShowAssetBox()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.GMShowAssetBox");
 
@@ -764,7 +764,7 @@ void AXTGameMode::GMShowAssetBox()
 
 void AXTGameMode::GMSetPVEAIMax(int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.GMSetPVEAIMax");
 
@@ -788,7 +788,7 @@ void AXTGameMode::GMSetPVEAIMax(int Num)
 
 TArray<class AActor*> AXTGameMode::GetOccupiedPlayerStartGroupList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.GetOccupiedPlayerStartGroupList");
 
@@ -813,7 +813,7 @@ TArray<class AActor*> AXTGameMode::GetOccupiedPlayerStartGroupList()
 
 bool AXTGameMode::CheckNoHumanExist()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.CheckNoHumanExist");
 
@@ -836,7 +836,7 @@ bool AXTGameMode::CheckNoHumanExist()
 
 void AXTGameMode::CheckAIActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameMode.CheckAIActive");
 
@@ -857,7 +857,7 @@ void AXTGameMode::CheckAIActive()
 
 void AXTGameState::ResetLeftTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameState.ResetLeftTime");
 
@@ -878,7 +878,7 @@ void AXTGameState::ResetLeftTime()
 
 void AXTGameState::PreLoadPreciousItemsMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameState.PreLoadPreciousItemsMap");
 
@@ -899,7 +899,7 @@ void AXTGameState::PreLoadPreciousItemsMap()
 
 void AXTGameState::OnRep_LastLeaveTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameState.OnRep_LastLeaveTime");
 
@@ -922,7 +922,7 @@ void AXTGameState::OnRep_LastLeaveTime()
 
 int AXTGameState::GetPlayerMilitartyOnClient()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameState.GetPlayerMilitartyOnClient");
 
@@ -948,7 +948,7 @@ int AXTGameState::GetPlayerMilitartyOnClient()
 
 int AXTGameState::CheckPreciousItemPrice(int TypeSpecificID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameState.CheckPreciousItemPrice");
 
@@ -975,7 +975,7 @@ int AXTGameState::CheckPreciousItemPrice(int TypeSpecificID)
 
 void AXTGameState::BroadcastClimbHelicopter(class ASTExtraPlayerCharacter* Character, class AActor* ExitActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTGameState.BroadcastClimbHelicopter");
 
@@ -998,7 +998,7 @@ void AXTGameState::BroadcastClimbHelicopter(class ASTExtraPlayerCharacter* Chara
 
 void AXTPlayerState::OnRepXTBetrayInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRepXTBetrayInfo");
 
@@ -1018,7 +1018,7 @@ void AXTPlayerState::OnRepXTBetrayInfo()
 
 void AXTPlayerState::OnRepRelevantPlayerTaskNotifyBP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRepRelevantPlayerTaskNotifyBP");
 
@@ -1038,7 +1038,7 @@ void AXTPlayerState::OnRepRelevantPlayerTaskNotifyBP()
 
 void AXTPlayerState::OnRepEscapePosition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRepEscapePosition");
 
@@ -1058,7 +1058,7 @@ void AXTPlayerState::OnRepEscapePosition()
 
 void AXTPlayerState::OnRepAssetPointsCheckedByTeammate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRepAssetPointsCheckedByTeammate");
 
@@ -1078,7 +1078,7 @@ void AXTPlayerState::OnRepAssetPointsCheckedByTeammate()
 
 void AXTPlayerState::OnRep_RelevantPlayerTaskNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRep_RelevantPlayerTaskNotify");
 
@@ -1099,7 +1099,7 @@ void AXTPlayerState::OnRep_RelevantPlayerTaskNotify()
 
 void AXTPlayerState::OnRep_IsRunAway()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRep_IsRunAway");
 
@@ -1120,7 +1120,7 @@ void AXTPlayerState::OnRep_IsRunAway()
 
 void AXTPlayerState::OnRep_IsEscaped()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRep_IsEscaped");
 
@@ -1141,7 +1141,7 @@ void AXTPlayerState::OnRep_IsEscaped()
 
 void AXTPlayerState::OnRep_Gold()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRep_Gold");
 
@@ -1162,7 +1162,7 @@ void AXTPlayerState::OnRep_Gold()
 
 void AXTPlayerState::OnRep_EscapePosiNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRep_EscapePosiNotify");
 
@@ -1183,7 +1183,7 @@ void AXTPlayerState::OnRep_EscapePosiNotify()
 
 void AXTPlayerState::OnRep_BetrayInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRep_BetrayInfo");
 
@@ -1204,7 +1204,7 @@ void AXTPlayerState::OnRep_BetrayInfo()
 
 void AXTPlayerState::OnRep_AssetPointsCheckedByTeammate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnRep_AssetPointsCheckedByTeammate");
 
@@ -1225,7 +1225,7 @@ void AXTPlayerState::OnRep_AssetPointsCheckedByTeammate()
 
 void AXTPlayerState::OnPlayerEscaped()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.OnPlayerEscaped");
 
@@ -1247,7 +1247,7 @@ void AXTPlayerState::OnPlayerEscaped()
 
 bool AXTPlayerState::IsInGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.IsInGame");
 
@@ -1272,7 +1272,7 @@ bool AXTPlayerState::IsInGame()
 
 bool AXTPlayerState::IsInBetrayState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.IsInBetrayState");
 
@@ -1297,7 +1297,7 @@ bool AXTPlayerState::IsInBetrayState()
 
 TArray<struct FPreciousItem> AXTPlayerState::GetAllPreciousItemsList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TPlanGame.XTPlayerState.GetAllPreciousItemsList");
 

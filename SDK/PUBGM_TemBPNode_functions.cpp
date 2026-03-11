@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function TemBPNode.TemBPLibrary.TempUIMsgInvokeRef
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
@@ -18,7 +18,7 @@ namespace SDK
 
 void UTemBPLibrary::TempUIMsgInvokeRef(class UObject* ObjContext, const struct FString& MsgName, const struct FString& ModuleName, TArray<struct FTemBPDataAddr> ParamArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TemBPNode.TemBPLibrary.TempUIMsgInvokeRef");
 
@@ -48,7 +48,7 @@ void UTemBPLibrary::TempUIMsgInvokeRef(class UObject* ObjContext, const struct F
 
 void UTemBPLibrary::TempBridgeEventInvokeRef(class UObject* ObjContext, const struct FString& EventType, const struct FString& EventID, TArray<struct FTemBPDataAddr> ParamArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TemBPNode.TemBPLibrary.TempBridgeEventInvokeRef");
 
@@ -77,7 +77,7 @@ void UTemBPLibrary::TempBridgeEventInvokeRef(class UObject* ObjContext, const st
 
 struct FTemBPDataAddr UTemBPLibrary::AddrFromWild(const struct FString& DataType, const struct FTemBPDataAddr& InAny)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TemBPNode.TemBPLibrary.AddrFromWild");
 
@@ -105,7 +105,7 @@ struct FTemBPDataAddr UTemBPLibrary::AddrFromWild(const struct FString& DataType
 
 struct FTemBPDataAddr UTemBPLibrary::AddrFromSet(const struct FString& DataType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TemBPNode.TemBPLibrary.AddrFromSet");
 
@@ -133,7 +133,7 @@ struct FTemBPDataAddr UTemBPLibrary::AddrFromSet(const struct FString& DataType)
 
 struct FTemBPDataAddr UTemBPLibrary::AddrFromMap(const struct FString& DataType, TMap<int, int> InAny)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TemBPNode.TemBPLibrary.AddrFromMap");
 
@@ -162,7 +162,7 @@ struct FTemBPDataAddr UTemBPLibrary::AddrFromMap(const struct FString& DataType,
 
 struct FTemBPDataAddr UTemBPLibrary::AddrFromArray(const struct FString& DataType, TArray<int> InAny)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function TemBPNode.TemBPLibrary.AddrFromArray");
 

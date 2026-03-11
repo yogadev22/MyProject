@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum ImmediatePhysics.ESimulationSpace
 enum class ESimulationSpace : uint8_t
@@ -19,9 +19,9 @@ enum class ESimulationSpace : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct ImmediatePhysics.AnimNode_RigidBody
 // 0x0260 (0x02D8 - 0x0078)
@@ -30,7 +30,7 @@ struct FAnimNode_RigidBody : public FAnimNode_SkeletalControlBase
 	class UPhysicsAsset*                               OverridePhysicsAsset;                                     // 0x0078(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     OverrideWorldGravity;                                     // 0x0080(0x000C) (Edit, IsPlainOldData)
 	struct FVector                                     ExternalForce;                                            // 0x008C(0x000C) (Edit, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                OverlapChannel;                                           // 0x0098(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     OverlapChannel;                                           // 0x0098(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableWorldGeometry;                                     // 0x0099(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x009A(0x0002) MISSED OFFSET
 	ESimulationSpace                                   SimulationSpace;                                          // 0x009C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)

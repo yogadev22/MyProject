@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class AndroidRuntimeSettings.AndroidRuntimeSettings
 // 0x0228 (0x0250 - 0x0028)
@@ -20,19 +20,19 @@ public:
 	struct FString                                     VersionDisplayName;                                       // 0x0050(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
 	int                                                MinSDKVersion;                                            // 0x0060(0x0004) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	int                                                TargetSDKVersion;                                         // 0x0064(0x0004) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
-	TEnumAsByte<enum EAndroidInstallLocation>          InstallLocation;                                          // 0x0068(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
+	TEnumAsByte<EAndroidInstallLocation>               InstallLocation;                                          // 0x0068(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bEnableGradle;                                            // 0x0069(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bPackageDataInsideApk;                                    // 0x006A(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bCreateAllPlatformsInstall;                               // 0x006B(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bDisableVerifyOBBOnStartUp;                               // 0x006C(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bUseExternalFilesDir;                                     // 0x006D(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
-	TEnumAsByte<enum EAndroidScreenOrientation>        Orientation;                                              // 0x006E(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
+	TEnumAsByte<EAndroidScreenOrientation>             Orientation;                                              // 0x006E(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x1];                                       // 0x006F(0x0001) MISSED OFFSET
 	float                                              MaxAspectRatio;                                           // 0x0070(0x0004) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
-	TEnumAsByte<enum EAndroidAntVerbosity>             AntVerbosity;                                             // 0x0074(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
+	TEnumAsByte<EAndroidAntVerbosity>                  AntVerbosity;                                             // 0x0074(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bFullScreen;                                              // 0x0075(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bEnableNewKeyboard;                                       // 0x0076(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
-	TEnumAsByte<enum EAndroidDepthBufferPreference>    DepthBufferPreference;                                    // 0x0077(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
+	TEnumAsByte<EAndroidDepthBufferPreference>         DepthBufferPreference;                                    // 0x0077(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	TArray<struct FString>                             ExtraManifestNodeTags;                                    // 0x0078(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
 	TArray<struct FString>                             ExtraApplicationNodeTags;                                 // 0x0088(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
 	struct FString                                     ExtraApplicationSettings;                                 // 0x0098(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
@@ -43,7 +43,7 @@ public:
 	bool                                               bPackageForGearVR;                                        // 0x00D9(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	bool                                               bRemoveOSIG;                                              // 0x00DA(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x5];                                       // 0x00DB(0x0005) MISSED OFFSET
-	TArray<TEnumAsByte<enum EGoogleVRCaps>>            GoogleVRCaps;                                             // 0x00E0(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
+	TArray<TEnumAsByte<EGoogleVRCaps>>                 GoogleVRCaps;                                             // 0x00E0(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
 	bool                                               bGoogleVRSustainedPerformance;                            // 0x00F0(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x7];                                       // 0x00F1(0x0007) MISSED OFFSET
 	struct FString                                     KeyStore;                                                 // 0x00F8(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
@@ -71,7 +71,7 @@ public:
 	struct FString                                     GooglePlayLicenseKey;                                     // 0x01A0(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
 	struct FString                                     GCMClientSenderID;                                        // 0x01B0(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig)
 	bool                                               bShowLaunchImage;                                         // 0x01C0(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
-	TEnumAsByte<enum EAndroidAudio>                    AndroidAudio;                                             // 0x01C1(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
+	TEnumAsByte<EAndroidAudio>                         AndroidAudio;                                             // 0x01C1(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	unsigned char                                      UnknownData06[0x2];                                       // 0x01C2(0x0002) MISSED OFFSET
 	int                                                AudioSampleRate;                                          // 0x01C4(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData)
 	int                                                AudioCallbackBufferFrameSize;                             // 0x01C8(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData)
@@ -81,7 +81,7 @@ public:
 	struct FString                                     SpatializationPlugin;                                     // 0x01D8(0x0010) (Edit, ZeroConstructor, Config)
 	struct FString                                     ReverbPlugin;                                             // 0x01E8(0x0010) (Edit, ZeroConstructor, Config)
 	struct FString                                     OcclusionPlugin;                                          // 0x01F8(0x0010) (Edit, ZeroConstructor, Config)
-	TEnumAsByte<enum EAndroidGraphicsDebugger>         AndroidGraphicsDebugger;                                  // 0x0208(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
+	TEnumAsByte<EAndroidGraphicsDebugger>              AndroidGraphicsDebugger;                                  // 0x0208(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	unsigned char                                      UnknownData07[0x7];                                       // 0x0209(0x0007) MISSED OFFSET
 	struct FDirectoryPath                              MaliGraphicsDebuggerPath;                                 // 0x0210(0x0010) (Edit, Config, GlobalConfig)
 	struct FDirectoryPath                              RenderDocPath;                                            // 0x0220(0x0010) (Edit, Config, GlobalConfig)
@@ -101,7 +101,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AndroidRuntimeSettings.AndroidRuntimeSettings");
 		return pStaticClass;

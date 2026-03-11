@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PandoraVideoPlayer.BP_PixVideoLibrary.SetPixVideoLibraryPath
 struct UBP_PixVideoLibrary_SetPixVideoLibraryPath_Params
@@ -91,6 +91,13 @@ struct UPVideoImage_SetNeedVideoTexture_Params
 struct UPVideoImage_SetNeedPlayAudio_Params
 {
 	bool                                               needPlayAudio;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PandoraVideoPlayer.PVideoImage.SetMediaCodecMaxBufferGap
+struct UPVideoImage_SetMediaCodecMaxBufferGap_Params
+{
+	int                                                maxBufferGap;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function PandoraVideoPlayer.PVideoImage.SetDecryptionKey
@@ -340,6 +347,13 @@ struct UPVideoPlayer_SetNeedVideoTexture_Params
 struct UPVideoPlayer_SetNeedPlayAudio_Params
 {
 	bool                                               bNeedPlayAudio;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PandoraVideoPlayer.PVideoPlayer.SetMediaCodecMaxBufferGap
+struct UPVideoPlayer_SetMediaCodecMaxBufferGap_Params
+{
+	int                                                maxBufferGap;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function PandoraVideoPlayer.PVideoPlayer.SetHardwareDecodec
@@ -622,6 +636,13 @@ struct UVideoPlayerWidget_SetNeedVideoTexture_Params
 struct UVideoPlayerWidget_SetNeedPlayAudio_Params
 {
 	bool                                               needPlayAudio;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PandoraVideoPlayer.VideoPlayerWidget.SetMediaCodecMaxBufferGap
+struct UVideoPlayerWidget_SetMediaCodecMaxBufferGap_Params
+{
+	int                                                maxBufferGap;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function PandoraVideoPlayer.VideoPlayerWidget.SetHardwareDecodec

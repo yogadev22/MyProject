@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class OnlineSubsystemUtils.IpConnection
 // 0x0068 (0x35708 - 0x356A0)
@@ -17,7 +17,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.IpConnection");
 		return pStaticClass;
@@ -27,30 +27,30 @@ public:
 
 
 // Class OnlineSubsystemUtils.IpNetDriver
-// 0x0118 (0x07A8 - 0x0690)
+// 0x0118 (0x0898 - 0x0780)
 class UIpNetDriver : public UNetDriver
 {
 public:
-	unsigned char                                      LogPortUnreach : 1;                                       // 0x0690(0x0001) (Config)
-	unsigned char                                      AllowPlayerPortUnreach : 1;                               // 0x0690(0x0001) (Config)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0691(0x0003) MISSED OFFSET
-	uint32_t                                           MaxPortCountToTry;                                        // 0x0694(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x18];                                      // 0x0698(0x0018) MISSED OFFSET
-	uint32_t                                           ServerDesiredSocketReceiveBufferBytes;                    // 0x06B0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x06B4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x06B8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x06BC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x60];                                      // 0x06C0(0x0060) MISSED OFFSET
-	float                                              RecreateSocketCooldownTime;                               // 0x0720(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              RecreateSocketMaxTryCount;                                // 0x0724(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bResolveRemoteHostOnRecreateSocket;                       // 0x0728(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bContinueProcessWhenReceiveEmptyPackets;                  // 0x0729(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bContinueProcessWhenConReceiveEmptyPackets;               // 0x072A(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7D];                                      // 0x072B(0x007D) MISSED OFFSET
+	unsigned char                                      LogPortUnreach : 1;                                       // 0x0780(0x0001) (Config)
+	unsigned char                                      AllowPlayerPortUnreach : 1;                               // 0x0780(0x0001) (Config)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0781(0x0003) MISSED OFFSET
+	uint32_t                                           MaxPortCountToTry;                                        // 0x0784(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x18];                                      // 0x0788(0x0018) MISSED OFFSET
+	uint32_t                                           ServerDesiredSocketReceiveBufferBytes;                    // 0x07A0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x07A4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x07A8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x07AC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x60];                                      // 0x07B0(0x0060) MISSED OFFSET
+	float                                              RecreateSocketCooldownTime;                               // 0x0810(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              RecreateSocketMaxTryCount;                                // 0x0814(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bResolveRemoteHostOnRecreateSocket;                       // 0x0818(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bContinueProcessWhenReceiveEmptyPackets;                  // 0x0819(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bContinueProcessWhenConReceiveEmptyPackets;               // 0x081A(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7D];                                      // 0x081B(0x007D) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.IpNetDriver");
 		return pStaticClass;
@@ -67,7 +67,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.AchievementBlueprintLibrary");
 		return pStaticClass;
@@ -90,7 +90,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.AchievementQueryCallbackProxy");
 		return pStaticClass;
@@ -113,7 +113,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.AchievementWriteCallbackProxy");
 		return pStaticClass;
@@ -135,7 +135,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.ConnectionCallbackProxy");
 		return pStaticClass;
@@ -157,7 +157,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.CreateSessionCallbackProxy");
 		return pStaticClass;
@@ -179,7 +179,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.DestroySessionCallbackProxy");
 		return pStaticClass;
@@ -201,14 +201,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.EndMatchCallbackProxy");
 		return pStaticClass;
 	}
 
 
-	static class UEndMatchCallbackProxy* EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const TScriptInterface<class UTurnBasedMatchInterface>& MatchActor, const struct FString& MatchID, TEnumAsByte<enum EMPMatchOutcome> LocalPlayerOutcome, TEnumAsByte<enum EMPMatchOutcome> OtherPlayersOutcome);
+	static class UEndMatchCallbackProxy* EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const TScriptInterface<class UTurnBasedMatchInterface>& MatchActor, const struct FString& MatchID, TEnumAsByte<EMPMatchOutcome> LocalPlayerOutcome, TEnumAsByte<EMPMatchOutcome> OtherPlayersOutcome);
 };
 
 
@@ -223,7 +223,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.EndTurnCallbackProxy");
 		return pStaticClass;
@@ -245,7 +245,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.FindSessionsCallbackProxy");
 		return pStaticClass;
@@ -271,7 +271,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy");
 		return pStaticClass;
@@ -293,7 +293,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy");
 		return pStaticClass;
@@ -315,7 +315,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy");
 		return pStaticClass;
@@ -337,7 +337,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy");
 		return pStaticClass;
@@ -359,7 +359,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.JoinSessionCallbackProxy");
 		return pStaticClass;
@@ -378,7 +378,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.LeaderboardBlueprintLibrary");
 		return pStaticClass;
@@ -400,7 +400,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy");
 		return pStaticClass;
@@ -422,7 +422,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy");
 		return pStaticClass;
@@ -444,7 +444,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.LogoutCallbackProxy");
 		return pStaticClass;
@@ -468,7 +468,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeacon");
 		return pStaticClass;
@@ -489,7 +489,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeaconClient");
 		return pStaticClass;
@@ -512,7 +512,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeaconHost");
 		return pStaticClass;
@@ -532,7 +532,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeaconHostObject");
 		return pStaticClass;
@@ -551,7 +551,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl");
 		return pStaticClass;
@@ -571,7 +571,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.OnlinePIESettings");
 		return pStaticClass;
@@ -592,7 +592,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.OnlineSessionClient");
 		return pStaticClass;
@@ -616,7 +616,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.PartyBeaconClient");
 		return pStaticClass;
@@ -628,8 +628,8 @@ public:
 	void ServerCancelReservationRequest(const struct FUniqueNetIdRepl& PartyLeader);
 	void ClientSendReservationUpdates(int NumRemainingReservations);
 	void ClientSendReservationFull();
-	void ClientReservationResponse(TEnumAsByte<enum EPartyReservationResult> ReservationResponse);
-	void ClientCancelReservationResponse(TEnumAsByte<enum EPartyReservationResult> ReservationResponse);
+	void ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
+	void ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
 };
 
 
@@ -648,7 +648,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.PartyBeaconHost");
 		return pStaticClass;
@@ -675,7 +675,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.PartyBeaconState");
 		return pStaticClass;
@@ -695,14 +695,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.QuitMatchCallbackProxy");
 		return pStaticClass;
 	}
 
 
-	static class UQuitMatchCallbackProxy* QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchID, TEnumAsByte<enum EMPMatchOutcome> Outcome, int TurnTimeoutInSeconds);
+	static class UQuitMatchCallbackProxy* QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchID, TEnumAsByte<EMPMatchOutcome> Outcome, int TurnTimeoutInSeconds);
 };
 
 
@@ -717,7 +717,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.ShowLoginUICallbackProxy");
 		return pStaticClass;
@@ -736,7 +736,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.TestBeaconClient");
 		return pStaticClass;
@@ -756,7 +756,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.TestBeaconHost");
 		return pStaticClass;
@@ -773,7 +773,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OnlineSubsystemUtils.TurnBasedBlueprintLibrary");
 		return pStaticClass;

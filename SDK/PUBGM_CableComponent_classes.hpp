@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class CableComponent.CableActor
 // 0x0008 (0x04B8 - 0x04B0)
@@ -17,7 +17,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CableComponent.CableActor");
 		return pStaticClass;
@@ -27,31 +27,31 @@ public:
 
 
 // Class CableComponent.CableComponent
-// 0x0070 (0x09F0 - 0x0980)
+// 0x0080 (0x0A00 - 0x0980)
 class UCableComponent : public UMeshComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0980(0x0010) MISSED OFFSET
-	struct FName                                       AttachEndToSocketName;                                    // 0x0990(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     EndLocation;                                              // 0x0998(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	float                                              CableLength;                                              // 0x09A4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	int                                                NumSegments;                                              // 0x09A8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              SubstepTime;                                              // 0x09AC(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	int                                                SolverIterations;                                         // 0x09B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableStiffness;                                         // 0x09B4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableCollision;                                         // 0x09B5(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x09B6(0x0002) MISSED OFFSET
-	float                                              CollisionFriction;                                        // 0x09B8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     CableForce;                                               // 0x09BC(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	float                                              CableGravityScale;                                        // 0x09C8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              CableWidth;                                               // 0x09CC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	int                                                NumSides;                                                 // 0x09D0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              TileMaterial;                                             // 0x09D4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x18];                                      // 0x09D8(0x0018) MISSED OFFSET
+	struct FComponentReference                         AttachEndTo;                                              // 0x0980(0x0018) (Edit)
+	struct FName                                       AttachEndToSocketName;                                    // 0x0998(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     EndLocation;                                              // 0x09A0(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              CableLength;                                              // 0x09AC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                NumSegments;                                              // 0x09B0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              SubstepTime;                                              // 0x09B4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	int                                                SolverIterations;                                         // 0x09B8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableStiffness;                                         // 0x09BC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableCollision;                                         // 0x09BD(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x09BE(0x0002) MISSED OFFSET
+	float                                              CollisionFriction;                                        // 0x09C0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     CableForce;                                               // 0x09C4(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              CableGravityScale;                                        // 0x09D0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              CableWidth;                                               // 0x09D4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                NumSides;                                                 // 0x09D8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              TileMaterial;                                             // 0x09DC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x20];                                      // 0x09E0(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class CableComponent.CableComponent");
 		return pStaticClass;

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 #include <iostream>
 #include <string>
@@ -12,10 +12,10 @@ namespace SDK
 template<typename Fn>
     inline Fn GetVFunction(void *thiz, int idx)
     {
-	auto VTable = *(void***)(void*)thiz;
+	auto VTable = *reinterpret_cast<void***>(const_cast<void*>(thiz));
 	return (Fn)(VTable[idx]);
     }
-
+	
 class UObject;
 
 class FUObjectItem
@@ -47,6 +47,13 @@ public:
         return !!(Flags & static_cast<std::underlying_type_t<ObjectFlags>>(ObjectFlags::PendingKill));
     }
 };
+
+
+
+
+
+
+
 
 class TUObjectArray
 {
@@ -117,25 +124,7 @@ public:
     {
         return i < Num();
     }
-    inline void Add(const T& Element)
-    {
-        if (Count >= Max)
-        {
-            int32_t NewMax = Max == 0 ? 1 : Max * 2;
-            T* NewData = new T[NewMax];
-            
-            for (int32_t Index = 0; Index < Count; ++Index)
-            {
-                NewData[Index] = Data[Index];
-            }
-            
-            delete[] Data;
-            Data = NewData;
-            Max = NewMax;
-        }
-        
-        Data[Count++] = Element;
-    }
+
 private:
     T* Data;
     int32_t Count;
@@ -149,8 +138,12 @@ public:
     static const auto NAME_INDEX_SHIFT = 1;
 
     int32_t Index;
-    uint8_t FNameSize[sizeof(uintptr_t)];
-    
+#if defined(__LP64__)
+    char pad[0x8];
+#else
+    char pad[0x4];
+#endif
+
     union
     {
         char AnsiName[1024];
@@ -259,7 +252,7 @@ struct FName
 
         for (auto i = 0; i < GetNames().Num(); ++i)
         {
-            if (GetNames()[i] != 0)
+            if (GetNames()[i] != nullptr)
             {
                 if (!std::strcmp(GetNames()[i]->GetAnsiName(), nameToFind))
                 {
@@ -278,7 +271,7 @@ struct FName
     {
         return *GNames;
     };
-	
+
     inline const char* GetName() const
     {
         return GetNames()[ComparisonIndex]->GetAnsiName();

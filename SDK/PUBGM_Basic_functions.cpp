@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Basic.UAENetActor.ReceivedPlayerActiveRegionsChanged
 // (Event, Public, BlueprintEvent)
@@ -15,7 +15,7 @@ namespace SDK
 
 void AUAENetActor::ReceivedPlayerActiveRegionsChanged(bool bEnter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAENetActor.ReceivedPlayerActiveRegionsChanged");
 
@@ -39,7 +39,7 @@ void AUAENetActor::ReceivedPlayerActiveRegionsChanged(bool bEnter)
 
 void UItemHandleBase::SetAssociation(int AssociationType, const struct FItemAssociation& Association)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.SetAssociation");
 
@@ -64,7 +64,7 @@ void UItemHandleBase::SetAssociation(int AssociationType, const struct FItemAsso
 
 void UItemHandleBase::RemoveAssociation(int AssociationType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.RemoveAssociation");
 
@@ -88,7 +88,7 @@ void UItemHandleBase::RemoveAssociation(int AssociationType)
 
 void UItemHandleBase::Init(const struct FItemDefineID& InDefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.Init");
 
@@ -112,7 +112,7 @@ void UItemHandleBase::Init(const struct FItemDefineID& InDefineID)
 
 struct FItemDefineID UItemHandleBase::GetDefineID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.GetDefineID");
 
@@ -137,7 +137,7 @@ struct FItemDefineID UItemHandleBase::GetDefineID()
 
 TMap<int, struct FItemAssociation> UItemHandleBase::GetAssociationMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.GetAssociationMap");
 
@@ -163,7 +163,7 @@ TMap<int, struct FItemAssociation> UItemHandleBase::GetAssociationMap()
 
 TArray<struct FItemAssociation> UItemHandleBase::GetAssociationListByTargetType(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.GetAssociationListByTargetType");
 
@@ -190,7 +190,7 @@ TArray<struct FItemAssociation> UItemHandleBase::GetAssociationListByTargetType(
 
 struct FItemAssociation UItemHandleBase::GetAssociationByTargetDefineID(const struct FItemDefineID& TargetDefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.GetAssociationByTargetDefineID");
 
@@ -217,7 +217,7 @@ struct FItemAssociation UItemHandleBase::GetAssociationByTargetDefineID(const st
 
 struct FItemAssociation UItemHandleBase::GetAssociation(int AssociationType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.GetAssociation");
 
@@ -243,7 +243,7 @@ struct FItemAssociation UItemHandleBase::GetAssociation(int AssociationType)
 
 void UItemHandleBase::Constuct(const struct FItemDefineID& InDefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.Constuct");
 
@@ -267,7 +267,7 @@ void UItemHandleBase::Constuct(const struct FItemDefineID& InDefineID)
 
 void UItemHandleBase::CollectionNeedLoadSoftPath(TArray<struct FSoftObjectPath>* OutSoftPathList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.CollectionNeedLoadSoftPath");
 
@@ -294,7 +294,7 @@ void UItemHandleBase::CollectionNeedLoadSoftPath(TArray<struct FSoftObjectPath>*
 
 void UItemHandleBase::AddAssociation(int AssociationType, const struct FItemAssociation& Association)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemHandleBase.AddAssociation");
 
@@ -319,7 +319,7 @@ void UItemHandleBase::AddAssociation(int AssociationType, const struct FItemAsso
 
 void UBattleItemHandleBase::UpdateAttributeModify(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.UpdateAttributeModify");
 
@@ -343,7 +343,7 @@ void UBattleItemHandleBase::UpdateAttributeModify(bool bEnable)
 
 bool UBattleItemHandleBase::UnEquip()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.UnEquip");
 
@@ -373,7 +373,7 @@ bool UBattleItemHandleBase::UnEquip()
 
 bool UBattleItemHandleBase::ShouldDropInDisuse(const TScriptInterface<class UItemContainerInterface>& ItemContainer, const struct FItemDefineID& CurrentPickupItemDefineID, const struct FItemDefineID& ThisItemDefineID, int KeptCount, EBattleItemDisuseReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.ShouldDropInDisuse");
 
@@ -404,7 +404,7 @@ bool UBattleItemHandleBase::ShouldDropInDisuse(const TScriptInterface<class UIte
 
 bool UBattleItemHandleBase::HanldePickupAssociationData(TArray<struct FBattleItemAdditionalData> PickupAdditionalData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HanldePickupAssociationData");
 
@@ -430,7 +430,7 @@ bool UBattleItemHandleBase::HanldePickupAssociationData(TArray<struct FBattleIte
 
 bool UBattleItemHandleBase::HanldeDropAssociationData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HanldeDropAssociationData");
 
@@ -455,7 +455,7 @@ bool UBattleItemHandleBase::HanldeDropAssociationData()
 
 bool UBattleItemHandleBase::HanldeCleared()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HanldeCleared");
 
@@ -482,7 +482,7 @@ bool UBattleItemHandleBase::HanldeCleared()
 
 bool UBattleItemHandleBase::HandleUse(const struct FBattleItemUseTarget& Target, EBattleItemUseReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HandleUse");
 
@@ -512,7 +512,7 @@ bool UBattleItemHandleBase::HandleUse(const struct FBattleItemUseTarget& Target,
 
 bool UBattleItemHandleBase::HandlePickup(const TScriptInterface<class UItemContainerInterface>& ItemContainer, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HandlePickup");
 
@@ -541,7 +541,7 @@ bool UBattleItemHandleBase::HandlePickup(const TScriptInterface<class UItemConta
 
 bool UBattleItemHandleBase::HandleEnable(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HandleEnable");
 
@@ -569,7 +569,7 @@ bool UBattleItemHandleBase::HandleEnable(bool bEnable)
 
 bool UBattleItemHandleBase::HandleDrop(int InCount, EBattleItemDropReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HandleDrop");
 
@@ -597,7 +597,7 @@ bool UBattleItemHandleBase::HandleDrop(int InCount, EBattleItemDropReason Reason
 
 bool UBattleItemHandleBase::HandleDisuse(EBattleItemDisuseReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HandleDisuse");
 
@@ -624,7 +624,7 @@ bool UBattleItemHandleBase::HandleDisuse(EBattleItemDisuseReason Reason)
 
 bool UBattleItemHandleBase::HandleChangeItemStoreArea(EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HandleChangeItemStoreArea");
 
@@ -650,7 +650,7 @@ bool UBattleItemHandleBase::HandleChangeItemStoreArea(EItemStoreArea InItemStore
 
 bool UBattleItemHandleBase::HandleBindToTargetItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.HandleBindToTargetItem");
 
@@ -675,7 +675,7 @@ bool UBattleItemHandleBase::HandleBindToTargetItem()
 
 class UWorld* UBattleItemHandleBase::GetWorldInternal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.GetWorldInternal");
 
@@ -700,7 +700,7 @@ class UWorld* UBattleItemHandleBase::GetWorldInternal()
 
 class UWorld* UBattleItemHandleBase::GetCurrentWorld()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.GetCurrentWorld");
 
@@ -725,7 +725,7 @@ class UWorld* UBattleItemHandleBase::GetCurrentWorld()
 
 struct FBattleItemData UBattleItemHandleBase::ExtractItemData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.ExtractItemData");
 
@@ -750,7 +750,7 @@ struct FBattleItemData UBattleItemHandleBase::ExtractItemData()
 
 void UBattleItemHandleBase::ClearAdditionalDataByType(EBattleItemAdditionalDataType DataType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.ClearAdditionalDataByType");
 
@@ -772,7 +772,7 @@ void UBattleItemHandleBase::ClearAdditionalDataByType(EBattleItemAdditionalDataT
 
 void UBattleItemHandleBase::ClearAdditionalData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.ClearAdditionalData");
 
@@ -798,7 +798,7 @@ void UBattleItemHandleBase::ClearAdditionalData()
 
 bool UBattleItemHandleBase::CheckCanUse(const TScriptInterface<class UItemContainerInterface>& ItemContainer, const struct FBattleItemUseTarget& Target, EBattleItemUseReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BattleItemHandleBase.CheckCanUse");
 
@@ -826,7 +826,7 @@ bool UBattleItemHandleBase::CheckCanUse(const TScriptInterface<class UItemContai
 
 void UUAEGameInstance::SetModeID(int InModeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.SetModeID");
 
@@ -850,7 +850,7 @@ void UUAEGameInstance::SetModeID(int InModeID)
 
 void UUAEGameInstance::SetLuaStateWrapper(class ULuaStateWrapper* TLuaStateWrapper)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.SetLuaStateWrapper");
 
@@ -874,7 +874,7 @@ void UUAEGameInstance::SetLuaStateWrapper(class ULuaStateWrapper* TLuaStateWrapp
 
 void UUAEGameInstance::SetExtraModules(TArray<struct FString> InExtraModules)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.SetExtraModules");
 
@@ -896,7 +896,7 @@ void UUAEGameInstance::SetExtraModules(TArray<struct FString> InExtraModules)
 
 void UUAEGameInstance::OpenAssetLoadLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.OpenAssetLoadLog");
 
@@ -917,7 +917,7 @@ void UUAEGameInstance::OpenAssetLoadLog()
 
 void UUAEGameInstance::OnPreBattleResult__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.UAEGameInstance.OnPreBattleResult__DelegateSignature");
 
@@ -937,7 +937,7 @@ void UUAEGameInstance::OnPreBattleResult__DelegateSignature()
 
 void UUAEGameInstance::LuaLeakDetect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.LuaLeakDetect");
 
@@ -960,7 +960,7 @@ void UUAEGameInstance::LuaLeakDetect()
 
 void UUAEGameInstance::LuaDoString(const struct FString& LuaString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.LuaDoString");
 
@@ -984,7 +984,7 @@ void UUAEGameInstance::LuaDoString(const struct FString& LuaString)
 
 float UUAEGameInstance::GetWeatherTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetWeatherTime");
 
@@ -1009,7 +1009,7 @@ float UUAEGameInstance::GetWeatherTime()
 
 struct FString UUAEGameInstance::GetWeatherLevelName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetWeatherLevelName");
 
@@ -1034,7 +1034,7 @@ struct FString UUAEGameInstance::GetWeatherLevelName()
 
 int UUAEGameInstance::GetWeatherID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetWeatherID");
 
@@ -1059,7 +1059,7 @@ int UUAEGameInstance::GetWeatherID()
 
 struct FString UUAEGameInstance::GetModType2()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetModType2");
 
@@ -1084,7 +1084,7 @@ struct FString UUAEGameInstance::GetModType2()
 
 struct FString UUAEGameInstance::GetModType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetModType");
 
@@ -1109,7 +1109,7 @@ struct FString UUAEGameInstance::GetModType()
 
 int UUAEGameInstance::GetModeID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetModeID");
 
@@ -1134,7 +1134,7 @@ int UUAEGameInstance::GetModeID()
 
 class ULuaStateWrapper* UUAEGameInstance::GetLuaStateWrapper()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetLuaStateWrapper");
 
@@ -1160,7 +1160,7 @@ class ULuaStateWrapper* UUAEGameInstance::GetLuaStateWrapper()
 
 struct FString UUAEGameInstance::GetLoadWeatherName(const struct FString& InWeatherName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetLoadWeatherName");
 
@@ -1187,7 +1187,7 @@ struct FString UUAEGameInstance::GetLoadWeatherName(const struct FString& InWeat
 
 bool UUAEGameInstance::GetIsHighWeatherLevel(const struct FString& InWeatherLevelName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetIsHighWeatherLevel");
 
@@ -1213,7 +1213,7 @@ bool UUAEGameInstance::GetIsHighWeatherLevel(const struct FString& InWeatherLeve
 
 struct FString UUAEGameInstance::GetGameID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetGameID");
 
@@ -1238,7 +1238,7 @@ struct FString UUAEGameInstance::GetGameID()
 
 struct FString UUAEGameInstance::GetExtraModulesString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetExtraModulesString");
 
@@ -1263,7 +1263,7 @@ struct FString UUAEGameInstance::GetExtraModulesString()
 
 TArray<struct FString> UUAEGameInstance::GetExtraModules()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetExtraModules");
 
@@ -1288,7 +1288,7 @@ TArray<struct FString> UUAEGameInstance::GetExtraModules()
 
 int UUAEGameInstance::GetDeviceLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetDeviceLevel");
 
@@ -1314,7 +1314,7 @@ int UUAEGameInstance::GetDeviceLevel()
 
 class UUAEDataTable* UUAEGameInstance::GetDataTable_Mod(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetDataTable_Mod");
 
@@ -1341,7 +1341,7 @@ class UUAEDataTable* UUAEGameInstance::GetDataTable_Mod(const struct FString& ta
 
 class UUAEDataTable* UUAEGameInstance::GetDataTable(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetDataTable");
 
@@ -1367,7 +1367,7 @@ class UUAEDataTable* UUAEGameInstance::GetDataTable(const struct FString& tableN
 
 class UFrontendHUD* UUAEGameInstance::GetAssociatedFrontendHUD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.GetAssociatedFrontendHUD");
 
@@ -1390,7 +1390,7 @@ class UFrontendHUD* UUAEGameInstance::GetAssociatedFrontendHUD()
 
 void UUAEGameInstance::CloseAssetLoadLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEGameInstance.CloseAssetLoadLog");
 
@@ -1415,7 +1415,7 @@ void UUAEGameInstance::CloseAssetLoadLog()
 
 bool UAttrModifyComponent::SwitchAttrModifier(const struct FString& AttrModifyItemName, bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.SwitchAttrModifier");
 
@@ -1442,7 +1442,7 @@ bool UAttrModifyComponent::SwitchAttrModifier(const struct FString& AttrModifyIt
 
 void UAttrModifyComponent::StartTimerToSyncRecordAttrValue(float Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.StartTimerToSyncRecordAttrValue");
 
@@ -1468,7 +1468,7 @@ void UAttrModifyComponent::StartTimerToSyncRecordAttrValue(float Time)
 
 void UAttrModifyComponent::SetValueToAttributeSafety(const struct FString& AttrName, float Value, int ModifyRecordType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.SetValueToAttributeSafety");
 
@@ -1495,7 +1495,7 @@ void UAttrModifyComponent::SetValueToAttributeSafety(const struct FString& AttrN
 
 void UAttrModifyComponent::SetOrignalValueToAttribute(const struct FString& AttrName, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.SetOrignalValueToAttribute");
 
@@ -1521,7 +1521,7 @@ void UAttrModifyComponent::SetOrignalValueToAttribute(const struct FString& Attr
 
 void UAttrModifyComponent::SetAttrModifyStateValue(int Index, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.SetAttrModifyStateValue");
 
@@ -1547,7 +1547,7 @@ void UAttrModifyComponent::SetAttrModifyStateValue(int Index, bool Value)
 
 void UAttrModifyComponent::SetAttributeMinValue(const struct FString& AttrName, float MinValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.SetAttributeMinValue");
 
@@ -1573,7 +1573,7 @@ void UAttrModifyComponent::SetAttributeMinValue(const struct FString& AttrName, 
 
 void UAttrModifyComponent::SetAttributeMaxValue(const struct FString& AttrName, float MaxValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.SetAttributeMaxValue");
 
@@ -1599,7 +1599,7 @@ void UAttrModifyComponent::SetAttributeMaxValue(const struct FString& AttrName, 
 
 void UAttrModifyComponent::ServerSendExceptionType(const struct FString& AttrName, int ExceptionType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.ServerSendExceptionType");
 
@@ -1624,7 +1624,7 @@ void UAttrModifyComponent::ServerSendExceptionType(const struct FString& AttrNam
 
 void UAttrModifyComponent::ServerRequestRecordAttrValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.ServerRequestRecordAttrValue");
 
@@ -1649,7 +1649,7 @@ void UAttrModifyComponent::ServerRequestRecordAttrValue(const struct FString& At
 
 void UAttrModifyComponent::ResponeAttrValue(const struct FString& AttrName, float FinalValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.ResponeAttrValue");
 
@@ -1674,7 +1674,7 @@ void UAttrModifyComponent::ResponeAttrValue(const struct FString& AttrName, floa
 
 void UAttrModifyComponent::RequestAttrValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.RequestAttrValue");
 
@@ -1699,7 +1699,7 @@ void UAttrModifyComponent::RequestAttrValue(const struct FString& AttrName)
 
 bool UAttrModifyComponent::RemoveModifyItemFromCache(uint32_t ModifyUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.RemoveModifyItemFromCache");
 
@@ -1726,7 +1726,7 @@ bool UAttrModifyComponent::RemoveModifyItemFromCache(uint32_t ModifyUID)
 
 void UAttrModifyComponent::RemoveAttrListener(const struct FString& AttrName, const struct FSluaBPVar& Listener)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.RemoveAttrListener");
 
@@ -1751,7 +1751,7 @@ void UAttrModifyComponent::RemoveAttrListener(const struct FString& AttrName, co
 
 void UAttrModifyComponent::RemoveAllDynamicModifier(bool bForce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.RemoveAllDynamicModifier");
 
@@ -1777,7 +1777,7 @@ void UAttrModifyComponent::RemoveAllDynamicModifier(bool bForce)
 
 bool UAttrModifyComponent::RegisterModifyAbleAttr(bool bSetAttrByOrigin, TArray<struct FAttrRegisterItem>* AttrRegists)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.RegisterModifyAbleAttr");
 
@@ -1807,7 +1807,7 @@ bool UAttrModifyComponent::RegisterModifyAbleAttr(bool bSetAttrByOrigin, TArray<
 
 void UAttrModifyComponent::RegistAttrModifyRecordList(const struct FString& AttrName, int RecordLen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.RegistAttrModifyRecordList");
 
@@ -1830,7 +1830,7 @@ void UAttrModifyComponent::RegistAttrModifyRecordList(const struct FString& Attr
 
 void UAttrModifyComponent::RegCurrentModAttrs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.RegCurrentModAttrs");
 
@@ -1857,7 +1857,7 @@ void UAttrModifyComponent::RegCurrentModAttrs()
 
 void UAttrModifyComponent::PushAttrModifyRecordItem(const struct FString& AttrName, float PreValue, float CurValue, int ModifyRecordType, const struct FString& ModifyDesc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.PushAttrModifyRecordItem");
 
@@ -1883,7 +1883,7 @@ void UAttrModifyComponent::PushAttrModifyRecordItem(const struct FString& AttrNa
 
 void UAttrModifyComponent::OnRep_ModSimulateSyncList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.OnRep_ModSimulateSyncList");
 
@@ -1904,7 +1904,7 @@ void UAttrModifyComponent::OnRep_ModSimulateSyncList()
 
 void UAttrModifyComponent::OnRep_ExceptionAttrModifyRecords()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.OnRep_ExceptionAttrModifyRecords");
 
@@ -1925,7 +1925,7 @@ void UAttrModifyComponent::OnRep_ExceptionAttrModifyRecords()
 
 void UAttrModifyComponent::OnRep_DynamicModifier()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.OnRep_DynamicModifier");
 
@@ -1946,7 +1946,7 @@ void UAttrModifyComponent::OnRep_DynamicModifier()
 
 void UAttrModifyComponent::OnRep_AttrModifyStateList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.OnRep_AttrModifyStateList");
 
@@ -1967,7 +1967,7 @@ void UAttrModifyComponent::OnRep_AttrModifyStateList()
 
 void UAttrModifyComponent::OnNeedSetSpeedOverLimit__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.AttrModifyComponent.OnNeedSetSpeedOverLimit__DelegateSignature");
 
@@ -1989,7 +1989,7 @@ void UAttrModifyComponent::OnNeedSetSpeedOverLimit__DelegateSignature()
 
 void UAttrModifyComponent::OnAttrModifiedEvent__DelegateSignature(TArray<struct FAttrAffected> AffectedAttrS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.AttrModifyComponent.OnAttrModifiedEvent__DelegateSignature");
 
@@ -2013,7 +2013,7 @@ void UAttrModifyComponent::OnAttrModifiedEvent__DelegateSignature(TArray<struct 
 
 void UAttrModifyComponent::LuaSetValueToAttributeSafety(const struct FString& AttrName, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.LuaSetValueToAttributeSafety");
 
@@ -2039,7 +2039,7 @@ void UAttrModifyComponent::LuaSetValueToAttributeSafety(const struct FString& At
 
 bool UAttrModifyComponent::IsAttrModifyStateValidIndex(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.IsAttrModifyStateValidIndex");
 
@@ -2063,7 +2063,7 @@ bool UAttrModifyComponent::IsAttrModifyStateValidIndex(int Index)
 
 void UAttrModifyComponent::InitializeRelateAttributeExpands()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.InitializeRelateAttributeExpands");
 
@@ -2087,7 +2087,7 @@ void UAttrModifyComponent::InitializeRelateAttributeExpands()
 
 bool UAttrModifyComponent::HasDynamicModifier(const struct FString& AttrModifyId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.HasDynamicModifier");
 
@@ -2114,7 +2114,7 @@ bool UAttrModifyComponent::HasDynamicModifier(const struct FString& AttrModifyId
 
 void UAttrModifyComponent::HandleExceptionAttrModify(const struct FString& AttrName, int ExceptionType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.HandleExceptionAttrModify");
 
@@ -2139,7 +2139,7 @@ void UAttrModifyComponent::HandleExceptionAttrModify(const struct FString& AttrN
 
 class UAttrModifyModDataSubsystem* UAttrModifyComponent::GetSubsystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetSubsystem");
 
@@ -2165,7 +2165,7 @@ class UAttrModifyModDataSubsystem* UAttrModifyComponent::GetSubsystem()
 
 struct FString UAttrModifyComponent::GetMaxAttrName(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetMaxAttrName");
 
@@ -2192,7 +2192,7 @@ struct FString UAttrModifyComponent::GetMaxAttrName(const struct FString& AttrNa
 
 bool UAttrModifyComponent::GetAttrModifyStateValue(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttrModifyStateValue");
 
@@ -2218,7 +2218,7 @@ bool UAttrModifyComponent::GetAttrModifyStateValue(int Index)
 
 int UAttrModifyComponent::GetAttrModifyStateNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttrModifyStateNum");
 
@@ -2244,7 +2244,7 @@ int UAttrModifyComponent::GetAttrModifyStateNum()
 
 struct FAttrModifyItem UAttrModifyComponent::GetAttrModifyItemByItemName(const struct FString& ItemName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttrModifyItemByItemName");
 
@@ -2271,7 +2271,7 @@ struct FAttrModifyItem UAttrModifyComponent::GetAttrModifyItemByItemName(const s
 
 float UAttrModifyComponent::GetAttributeValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttributeValue");
 
@@ -2298,7 +2298,7 @@ float UAttrModifyComponent::GetAttributeValue(const struct FString& AttrName)
 
 float UAttrModifyComponent::GetAttributeOrignalValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttributeOrignalValue");
 
@@ -2325,7 +2325,7 @@ float UAttrModifyComponent::GetAttributeOrignalValue(const struct FString& AttrN
 
 float UAttrModifyComponent::GetAttributeMaxValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttributeMaxValue");
 
@@ -2352,7 +2352,7 @@ float UAttrModifyComponent::GetAttributeMaxValue(const struct FString& AttrName)
 
 struct FString UAttrModifyComponent::GetAttrDynamicModifyTargetString(const struct FAttrDynamicModifyTarget& DynamicModifyTarget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttrDynamicModifyTargetString");
 
@@ -2379,7 +2379,7 @@ struct FString UAttrModifyComponent::GetAttrDynamicModifyTargetString(const stru
 
 struct FString UAttrModifyComponent::GetAttrDynamicModifyItemString(const struct FAttrDynamicModifyItem& DynamicModifyItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.GetAttrDynamicModifyItemString");
 
@@ -2406,7 +2406,7 @@ struct FString UAttrModifyComponent::GetAttrDynamicModifyItemString(const struct
 
 bool UAttrModifyComponent::EnableAttrModifierByIndex(int ModifyConfigIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.EnableAttrModifierByIndex");
 
@@ -2433,7 +2433,7 @@ bool UAttrModifyComponent::EnableAttrModifierByIndex(int ModifyConfigIndex)
 
 bool UAttrModifyComponent::EnableAttrModifier(const struct FString& AttrModifyItemName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.EnableAttrModifier");
 
@@ -2460,7 +2460,7 @@ bool UAttrModifyComponent::EnableAttrModifier(const struct FString& AttrModifyIt
 
 bool UAttrModifyComponent::DisableAttrModifierByIndex(int ModifyConfigIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.DisableAttrModifierByIndex");
 
@@ -2487,7 +2487,7 @@ bool UAttrModifyComponent::DisableAttrModifierByIndex(int ModifyConfigIndex)
 
 bool UAttrModifyComponent::DisableAttrModifier(const struct FString& AttrModifyItemName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.DisableAttrModifier");
 
@@ -2514,7 +2514,7 @@ bool UAttrModifyComponent::DisableAttrModifier(const struct FString& AttrModifyI
 
 bool UAttrModifyComponent::DisableAllAttrModifier(bool bForce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.DisableAllAttrModifier");
 
@@ -2538,7 +2538,7 @@ bool UAttrModifyComponent::DisableAllAttrModifier(bool bForce)
 
 void UAttrModifyComponent::ConditionSyncRecordAttrValue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.ConditionSyncRecordAttrValue");
 
@@ -2561,7 +2561,7 @@ void UAttrModifyComponent::ConditionSyncRecordAttrValue()
 
 void UAttrModifyComponent::ClientSyncRecordAttrValue(TArray<struct FAttrDesc> AttrDescs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.ClientSyncRecordAttrValue");
 
@@ -2586,7 +2586,7 @@ void UAttrModifyComponent::ClientSyncRecordAttrValue(TArray<struct FAttrDesc> At
 
 void UAttrModifyComponent::ClientSendRecordData(const struct FAttrModifyRecordItem& RecordItem, int ExceptionType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.ClientSendRecordData");
 
@@ -2609,7 +2609,7 @@ void UAttrModifyComponent::ClientSendRecordData(const struct FAttrModifyRecordIt
 
 void UAttrModifyComponent::ClearAllAttrModify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.ClearAllAttrModify");
 
@@ -2633,7 +2633,7 @@ void UAttrModifyComponent::ClearAllAttrModify()
 
 void UAttrModifyComponent::AddValueToAttribute(const struct FString& AttrName, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.AddValueToAttribute");
 
@@ -2664,7 +2664,7 @@ void UAttrModifyComponent::AddValueToAttribute(const struct FString& AttrName, f
 
 uint32_t UAttrModifyComponent::AddModifyItemAndCache(const struct FString& AttrName, EAttrModifyRefType CModifyType, float CValue, bool bEnable, class UObject* Causer, bool bOldModify)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.AddModifyItemAndCache");
 
@@ -2696,7 +2696,7 @@ uint32_t UAttrModifyComponent::AddModifyItemAndCache(const struct FString& AttrN
 
 void UAttrModifyComponent::AddDynamicModifier(bool RepOnlyOwner, struct FAttrModifyItem* AttrModifyItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.AddDynamicModifier");
 
@@ -2727,7 +2727,7 @@ void UAttrModifyComponent::AddDynamicModifier(bool RepOnlyOwner, struct FAttrMod
 
 uint32_t UAttrModifyComponent::AddBModifyAndCacheWithCParam(const struct FString& AttrName, EAttrModifyRefType CModifyType, float CValue, bool ClientSimulate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.AddBModifyAndCacheWithCParam");
 
@@ -2760,7 +2760,7 @@ uint32_t UAttrModifyComponent::AddBModifyAndCacheWithCParam(const struct FString
 
 uint32_t UAttrModifyComponent::AddBModifyAndCache(const struct FString& AttrName, EAttrOperator ModifyType, float Value, bool ClientSimulate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.AddBModifyAndCache");
 
@@ -2790,7 +2790,7 @@ uint32_t UAttrModifyComponent::AddBModifyAndCache(const struct FString& AttrName
 
 void UAttrModifyComponent::AddAttrListener(const struct FString& AttrName, const struct FSluaBPVar& Listener)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyComponent.AddAttrListener");
 
@@ -2817,7 +2817,7 @@ void UAttrModifyComponent::AddAttrListener(const struct FString& AttrName, const
 
 void UAttrModifyInterface::SetAttrValue(const struct FString& AttrName, float NewVal, int Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.SetAttrValue");
 
@@ -2843,7 +2843,7 @@ void UAttrModifyInterface::SetAttrValue(const struct FString& AttrName, float Ne
 
 void UAttrModifyInterface::RequestAttrValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.RequestAttrValue");
 
@@ -2865,7 +2865,7 @@ void UAttrModifyInterface::RequestAttrValue(const struct FString& AttrName)
 
 void UAttrModifyInterface::RegisterModifiedAttributes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.RegisterModifiedAttributes");
 
@@ -2889,7 +2889,7 @@ void UAttrModifyInterface::RegisterModifiedAttributes()
 
 float UAttrModifyInterface::GetAttrValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.GetAttrValue");
 
@@ -2915,7 +2915,7 @@ float UAttrModifyInterface::GetAttrValue(const struct FString& AttrName)
 
 TArray<class AActor*> UAttrModifyInterface::GetAttrModifyRelevantActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.GetAttrModifyRelevantActors");
 
@@ -2940,7 +2940,7 @@ TArray<class AActor*> UAttrModifyInterface::GetAttrModifyRelevantActors()
 
 class UAttrModifyComponent* UAttrModifyInterface::GetAttrModifyComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.GetAttrModifyComponent");
 
@@ -2966,7 +2966,7 @@ class UAttrModifyComponent* UAttrModifyInterface::GetAttrModifyComponent()
 
 float UAttrModifyInterface::GetAttributeValue(const struct FString& AttrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.GetAttributeValue");
 
@@ -2994,7 +2994,7 @@ float UAttrModifyInterface::GetAttributeValue(const struct FString& AttrName)
 
 void UAttrModifyInterface::AddAttrValue(const struct FString& AttrName, float AddVal, int Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.AttrModifyInterface.AddAttrValue");
 
@@ -3022,7 +3022,7 @@ void UAttrModifyInterface::AddAttrValue(const struct FString& AttrName, float Ad
 
 void UBPClassManager::ModifyClass(class UClass* InNativeClass, const struct FString& BPClassPath, const struct FString& ModTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPClassManager.ModifyClass");
 
@@ -3049,7 +3049,7 @@ void UBPClassManager::ModifyClass(class UClass* InNativeClass, const struct FStr
 
 class UClass* UBPClassManager::GetUClass(int KeyIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPClassManager.GetUClass");
 
@@ -3077,7 +3077,7 @@ class UClass* UBPClassManager::GetUClass(int KeyIndex)
 
 class UClass* UBPClassManager::GetBPClassOverrideByName(const struct FString& ClassTagName, const struct FString& ModTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPClassManager.GetBPClassOverrideByName");
 
@@ -3106,7 +3106,7 @@ class UClass* UBPClassManager::GetBPClassOverrideByName(const struct FString& Cl
 
 class UClass* UBPClassManager::GetBPClassOverride(class UClass* InNativeClass, const struct FString& ModTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPClassManager.GetBPClassOverride");
 
@@ -3133,7 +3133,7 @@ class UClass* UBPClassManager::GetBPClassOverride(class UClass* InNativeClass, c
 
 class UBPClassManager* UBPClassManager::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPClassManager.Get");
 
@@ -3158,7 +3158,7 @@ class UBPClassManager* UBPClassManager::Get()
 
 void UBuffConfigSubsystem::ReloadTable(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BuffConfigSubsystem.ReloadTable");
 
@@ -3180,7 +3180,7 @@ void UBuffConfigSubsystem::ReloadTable(class UWorld* World)
 
 void UBuffConfigSubsystem::ClearTable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BuffConfigSubsystem.ClearTable");
 
@@ -3199,13 +3199,13 @@ void UBuffConfigSubsystem::ClearTable()
 // Function Basic.BuffUtils.IsRoleOK
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ENetRole>     Role                           (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ENetRole>          Role                           (Parm, ZeroConstructor, IsPlainOldData)
 // EBuffEnabledRole               EnabledRole                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UBuffUtils::IsRoleOK(TEnumAsByte<enum ENetRole> Role, EBuffEnabledRole EnabledRole)
+bool UBuffUtils::IsRoleOK(TEnumAsByte<ENetRole> Role, EBuffEnabledRole EnabledRole)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BuffUtils.IsRoleOK");
 
@@ -3230,7 +3230,7 @@ bool UBuffUtils::IsRoleOK(TEnumAsByte<enum ENetRole> Role, EBuffEnabledRole Enab
 
 void UDelayReplicationInterface::ReSendRPCAfterBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.DelayReplicationInterface.ReSendRPCAfterBeginPlay");
 
@@ -3251,7 +3251,7 @@ void UDelayReplicationInterface::ReSendRPCAfterBeginPlay()
 
 void UDelayReplicationInterface::ReCallRepAfterBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.DelayReplicationInterface.ReCallRepAfterBeginPlay");
 
@@ -3275,7 +3275,7 @@ void UDelayReplicationInterface::ReCallRepAfterBeginPlay()
 
 int UGameModeEnvUtil::GetModeID(const struct FString& GameModeClassPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.GameModeEnvUtil.GetModeID");
 
@@ -3303,7 +3303,7 @@ int UGameModeEnvUtil::GetModeID(const struct FString& GameModeClassPath)
 
 bool UGameModeEnvUtil::GetGameModeEnvData(int InModeID, struct FGameModeEnvData* OutData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.GameModeEnvUtil.GetGameModeEnvData");
 
@@ -3332,7 +3332,7 @@ bool UGameModeEnvUtil::GetGameModeEnvData(int InModeID, struct FGameModeEnvData*
 
 class UObject* UItemContainerInterface::GetOwningObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerInterface.GetOwningObject");
 
@@ -3358,7 +3358,7 @@ class UObject* UItemContainerInterface::GetOwningObject()
 
 TArray<class UItemHandleBase*> UItemContainerInterface::GetItemHandleListByDefineID(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerInterface.GetItemHandleListByDefineID");
 
@@ -3385,7 +3385,7 @@ TArray<class UItemHandleBase*> UItemContainerInterface::GetItemHandleListByDefin
 
 class UItemHandleBase* UItemContainerInterface::GetItemHandleByDefineID(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerInterface.GetItemHandleByDefineID");
 
@@ -3411,7 +3411,7 @@ class UItemHandleBase* UItemContainerInterface::GetItemHandleByDefineID(const st
 
 TArray<struct FItemDefineID> UItemContainerInterface::GetItemDefineIDList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerInterface.GetItemDefineIDList");
 
@@ -3437,7 +3437,7 @@ TArray<struct FItemDefineID> UItemContainerInterface::GetItemDefineIDList()
 
 struct FItemDefineID UItemContainerInterface::GetFirstItemDefineBySpecificID(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerInterface.GetFirstItemDefineBySpecificID");
 
@@ -3466,7 +3466,7 @@ struct FItemDefineID UItemContainerInterface::GetFirstItemDefineBySpecificID(int
 
 void UItemContainerOwnerInterface::NotifyUpdateCustomAccessoriesData(int WeaponItemId, int Index, int ItemId, bool bIsSetOrRemove)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerOwnerInterface.NotifyUpdateCustomAccessoriesData");
 
@@ -3496,7 +3496,7 @@ void UItemContainerOwnerInterface::NotifyUpdateCustomAccessoriesData(int WeaponI
 
 void UItemContainerOwnerInterface::NotifyUpdateCapacity(float InBackPackCapacity, float InOccupiedCapacity, float InSafetyBoxCapacity, float InSafetyBoxOccupiedCapacity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerOwnerInterface.NotifyUpdateCapacity");
 
@@ -3524,7 +3524,7 @@ void UItemContainerOwnerInterface::NotifyUpdateCapacity(float InBackPackCapacity
 
 void UItemContainerOwnerInterface::NotifyItemUpdated(const struct FItemDefineID& DefineID, const struct FBattleItemData& ItemData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerOwnerInterface.NotifyItemUpdated");
 
@@ -3550,7 +3550,7 @@ void UItemContainerOwnerInterface::NotifyItemUpdated(const struct FItemDefineID&
 
 void UItemContainerOwnerInterface::NotifyItemRemoved(const struct FItemDefineID& DefineID, const struct FBattleItemData& ItemData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerOwnerInterface.NotifyItemRemoved");
 
@@ -3573,7 +3573,7 @@ void UItemContainerOwnerInterface::NotifyItemRemoved(const struct FItemDefineID&
 
 void UItemContainerOwnerInterface::NotifyItemEmpty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerOwnerInterface.NotifyItemEmpty");
 
@@ -3597,7 +3597,7 @@ void UItemContainerOwnerInterface::NotifyItemEmpty()
 
 void UItemContainerOwnerInterface::NotifyItemAdded(const struct FItemDefineID& DefineID, const struct FBattleItemData& ItemData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.ItemContainerOwnerInterface.NotifyItemAdded");
 
@@ -3625,7 +3625,7 @@ void UItemContainerOwnerInterface::NotifyItemAdded(const struct FItemDefineID& D
 
 bool ULuaAsyncTasksSubsystem::IsNeedClear(float ClearMemorySize, float ClearArrayObjectSize, const struct FSluaBPVar& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaAsyncTasksSubsystem.IsNeedClear");
 
@@ -3655,7 +3655,7 @@ bool ULuaAsyncTasksSubsystem::IsNeedClear(float ClearMemorySize, float ClearArra
 
 bool ULuaAsyncTaskSubsystem::IsNeedClear(class UFrontendHUD* FrontendHUD, const struct FSluaBPVar& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaAsyncTaskSubsystem.IsNeedClear");
 
@@ -3682,7 +3682,7 @@ bool ULuaAsyncTaskSubsystem::IsNeedClear(class UFrontendHUD* FrontendHUD, const 
 
 void ULuaEventBridgeFunction::UnRegisterEventByTarget(class UObject* ObjContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridgeFunction.UnRegisterEventByTarget");
 
@@ -3709,7 +3709,7 @@ void ULuaEventBridgeFunction::UnRegisterEventByTarget(class UObject* ObjContext)
 
 void ULuaEventBridgeFunction::UnRegisterEvent(const struct FString& FEventType, const struct FString& EventID, class UObject* ObjContext, int EventHandle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridgeFunction.UnRegisterEvent");
 
@@ -3740,7 +3740,7 @@ void ULuaEventBridgeFunction::UnRegisterEvent(const struct FString& FEventType, 
 
 int ULuaEventBridgeFunction::RegistEvent(const struct FString& EventType, const struct FString& EventID, class UObject* ObjContext, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridgeFunction.RegistEvent");
 
@@ -3771,7 +3771,7 @@ int ULuaEventBridgeFunction::RegistEvent(const struct FString& EventType, const 
 
 void ULuaEventBridge::SyncLuaRegisterEventNum(const struct FString& EventType, const struct FString& EventID, int Number)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridge.SyncLuaRegisterEventNum");
 
@@ -3797,7 +3797,7 @@ void ULuaEventBridge::SyncLuaRegisterEventNum(const struct FString& EventType, c
 
 TArray<class ULuaTemBPData*> ULuaEventBridge::GetCurrentParam()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridge.GetCurrentParam");
 
@@ -3822,7 +3822,7 @@ TArray<class ULuaTemBPData*> ULuaEventBridge::GetCurrentParam()
 
 void ULuaEventBridge::DeactivateEventsByFilterKey(uint32_t FilterKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridge.DeactivateEventsByFilterKey");
 
@@ -3850,7 +3850,7 @@ void ULuaEventBridge::DeactivateEventsByFilterKey(uint32_t FilterKey)
 
 bool ULuaEventBridge::CheckNeedPostEventWithFilterKey(uint32_t FilterKey, const struct FString& EventType, const struct FString& EventID, bool bCheckNeedPostLua)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridge.CheckNeedPostEventWithFilterKey");
 
@@ -3882,7 +3882,7 @@ bool ULuaEventBridge::CheckNeedPostEventWithFilterKey(uint32_t FilterKey, const 
 
 void ULuaEventBridge::ActiveEventByFilterKey(uint32_t FilterKey, const struct FString& EventType, const struct FString& EventID, bool bActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventBridge.ActiveEventByFilterKey");
 
@@ -3909,7 +3909,7 @@ void ULuaEventBridge::ActiveEventByFilterKey(uint32_t FilterKey, const struct FS
 
 void ULuaEventSubsystem::UnRegistEvent(int EventHandle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventSubsystem.UnRegistEvent");
 
@@ -3936,7 +3936,7 @@ void ULuaEventSubsystem::UnRegistEvent(int EventHandle)
 
 void ULuaEventSubsystem::SetBridgeFunction(const struct FSluaBPVar& OnRegistEvent, const struct FSluaBPVar& OnUnRegistEvent, const struct FSluaBPVar& OnPostEvent, const struct FSluaBPVar& OnPostBlueprintEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventSubsystem.SetBridgeFunction");
 
@@ -3967,7 +3967,7 @@ void ULuaEventSubsystem::SetBridgeFunction(const struct FSluaBPVar& OnRegistEven
 
 int ULuaEventSubsystem::RegistEvent(const struct FString& EventID, const struct FString& EventType, class UObject* Object, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.LuaEventSubsystem.RegistEvent");
 
@@ -3996,7 +3996,7 @@ int ULuaEventSubsystem::RegistEvent(const struct FString& EventID, const struct 
 
 void APlayerReliableSequentialSyncActor::OnActorSpawned(class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.PlayerReliableSequentialSyncActor.OnActorSpawned");
 
@@ -4020,7 +4020,7 @@ void APlayerReliableSequentialSyncActor::OnActorSpawned(class AActor* Actor)
 
 void URenderFunctionLibrary::MarkComponentRenderStateDirty(class UActorComponent* comp)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.RenderFunctionLibrary.MarkComponentRenderStateDirty");
 
@@ -4047,7 +4047,7 @@ void URenderFunctionLibrary::MarkComponentRenderStateDirty(class UActorComponent
 
 bool USTBaseBuffCarrierInterface::RemoveBuffBySkill(int SkillID, int LayerCount, class AActor* Causer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.RemoveBuffBySkill");
 
@@ -4079,7 +4079,7 @@ bool USTBaseBuffCarrierInterface::RemoveBuffBySkill(int SkillID, int LayerCount,
 
 bool USTBaseBuffCarrierInterface::RemoveBuffByID(int BuffID, class AActor* Causer, int LayerCount, int CauseSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.RemoveBuffByID");
 
@@ -4109,7 +4109,7 @@ bool USTBaseBuffCarrierInterface::RemoveBuffByID(int BuffID, class AActor* Cause
 
 bool USTBaseBuffCarrierInterface::HasSkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.HasSkillID");
 
@@ -4136,7 +4136,7 @@ bool USTBaseBuffCarrierInterface::HasSkillID(int SkillID)
 
 bool USTBaseBuffCarrierInterface::HasBuffID(int BuffID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.HasBuffID");
 
@@ -4163,7 +4163,7 @@ bool USTBaseBuffCarrierInterface::HasBuffID(int BuffID)
 
 TArray<int> USTBaseBuffCarrierInterface::GetBuffIDsBySkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.GetBuffIDsBySkillID");
 
@@ -4191,7 +4191,7 @@ TArray<int> USTBaseBuffCarrierInterface::GetBuffIDsBySkillID(int SkillID)
 
 float USTBaseBuffCarrierInterface::GetBuffDuration(int InstID, int CauseSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.GetBuffDuration");
 
@@ -4218,7 +4218,7 @@ float USTBaseBuffCarrierInterface::GetBuffDuration(int InstID, int CauseSkillID)
 
 class USTBuffSystemComponent* USTBaseBuffCarrierInterface::GetBuffComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.GetBuffComponent");
 
@@ -4245,7 +4245,7 @@ class USTBuffSystemComponent* USTBaseBuffCarrierInterface::GetBuffComponent()
 
 bool USTBaseBuffCarrierInterface::ChangeBuffDuration(int InstID, float Duration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.ChangeBuffDuration");
 
@@ -4276,7 +4276,7 @@ bool USTBaseBuffCarrierInterface::ChangeBuffDuration(int InstID, float Duration)
 
 bool USTBaseBuffCarrierInterface::AddBuffBySkill(int SkillID, int LayerCount, class AActor* Causer, int Level)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.AddBuffBySkill");
 
@@ -4310,7 +4310,7 @@ bool USTBaseBuffCarrierInterface::AddBuffBySkill(int SkillID, int LayerCount, cl
 
 int USTBaseBuffCarrierInterface::AddBuffByID(int BuffID, class AActor* Causer, int LayerCount, int CauseSkillID, int Level)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBaseBuffCarrierInterface.AddBuffByID");
 
@@ -4340,7 +4340,7 @@ int USTBaseBuffCarrierInterface::AddBuffByID(int BuffID, class AActor* Causer, i
 
 void USTBuff::TryGetParams(TMap<int, struct FString>* ActionParamMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.TryGetParams");
 
@@ -4369,7 +4369,7 @@ void USTBuff::TryGetParams(TMap<int, struct FString>* ActionParamMap)
 
 void USTBuff::Tick(class UActorComponent* BuffSystemComponent, int InstID, float DetalTime, float TimeSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.Tick");
 
@@ -4397,7 +4397,7 @@ void USTBuff::Tick(class UActorComponent* BuffSystemComponent, int InstID, float
 
 void USTBuff::ResetActionExecute(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.ResetActionExecute");
 
@@ -4423,7 +4423,7 @@ void USTBuff::ResetActionExecute(class UActorComponent* BuffSystemComponent, int
 
 void USTBuff::OnCreate(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.OnCreate");
 
@@ -4449,7 +4449,7 @@ void USTBuff::OnCreate(class UActorComponent* BuffSystemComponent, int InstID)
 
 void USTBuff::Initialize(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.Initialize");
 
@@ -4472,7 +4472,7 @@ void USTBuff::Initialize(class UActorComponent* BuffSystemComponent, int InstID)
 
 void USTBuff::InitBuffAction()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.InitBuffAction");
 
@@ -4496,7 +4496,7 @@ void USTBuff::InitBuffAction()
 
 void USTBuff::End(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.End");
 
@@ -4522,7 +4522,7 @@ void USTBuff::End(class UActorComponent* BuffSystemComponent, int InstID)
 
 void USTBuff::Destroy(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.Destroy");
 
@@ -4548,7 +4548,7 @@ void USTBuff::Destroy(class UActorComponent* BuffSystemComponent, int InstID)
 
 void USTBuff::ChangeNotify(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuff.ChangeNotify");
 
@@ -4573,7 +4573,7 @@ void USTBuff::ChangeNotify(class UActorComponent* BuffSystemComponent, int InstI
 
 int USTBuffNodeInstanceData::GetBuffInstLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffNodeInstanceData.GetBuffInstLevel");
 
@@ -4598,7 +4598,7 @@ int USTBuffNodeInstanceData::GetBuffInstLevel()
 
 void USTBuffAction::TryGetParams(TMap<int, struct FString>* ActionParamMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.TryGetParams");
 
@@ -4617,6 +4617,31 @@ void USTBuffAction::TryGetParams(TMap<int, struct FString>* ActionParamMap)
 }
 
 
+// Function Basic.STBuffAction.ToString
+// (Native, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString USTBuffAction::ToString()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.ToString");
+
+	USTBuffAction_ToString_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Basic.STBuffAction.Tick
 // (Final, Native, Public)
 // Parameters:
@@ -4626,7 +4651,7 @@ void USTBuffAction::TryGetParams(TMap<int, struct FString>* ActionParamMap)
 
 void USTBuffAction::Tick(class UActorComponent* BuffSystemComponent, int InstID, float DetalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.Tick");
 
@@ -4654,7 +4679,7 @@ void USTBuffAction::Tick(class UActorComponent* BuffSystemComponent, int InstID,
 
 void USTBuffAction::SetEnabled(class UActorComponent* BuffSystemComponent, int InstID, bool Enabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.SetEnabled");
 
@@ -4682,7 +4707,7 @@ void USTBuffAction::SetEnabled(class UActorComponent* BuffSystemComponent, int I
 
 void USTBuffAction::ResetExecute(class UActorComponent* BuffSystemComponent, int InstID, bool IgnoreEnd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.ResetExecute");
 
@@ -4708,7 +4733,7 @@ void USTBuffAction::ResetExecute(class UActorComponent* BuffSystemComponent, int
 
 void USTBuffAction::OnTick(float DetalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnTick");
 
@@ -4732,7 +4757,7 @@ void USTBuffAction::OnTick(float DetalTime)
 
 void USTBuffAction::OnResetExecute(bool IgnoreEnd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnResetExecute");
 
@@ -4754,7 +4779,7 @@ void USTBuffAction::OnResetExecute(bool IgnoreEnd)
 
 void USTBuffAction::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnInitialize");
 
@@ -4775,7 +4800,7 @@ void USTBuffAction::OnInitialize()
 
 void USTBuffAction::OnExecute()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnExecute");
 
@@ -4796,7 +4821,7 @@ void USTBuffAction::OnExecute()
 
 void USTBuffAction::OnEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnEnd");
 
@@ -4817,7 +4842,7 @@ void USTBuffAction::OnEnd()
 
 void USTBuffAction::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnDestroy");
 
@@ -4838,7 +4863,7 @@ void USTBuffAction::OnDestroy()
 
 void USTBuffAction::OnCheckLinkActionEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnCheckLinkActionEnabled");
 
@@ -4859,7 +4884,7 @@ void USTBuffAction::OnCheckLinkActionEnabled()
 
 void USTBuffAction::OnChangeNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnChangeNotify");
 
@@ -4880,7 +4905,7 @@ void USTBuffAction::OnChangeNotify()
 
 void USTBuffAction::OnAsyncLoadSoftPathDone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.OnAsyncLoadSoftPathDone");
 
@@ -4903,7 +4928,7 @@ void USTBuffAction::OnAsyncLoadSoftPathDone()
 
 bool USTBuffAction::IsRoleOK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.IsRoleOK");
 
@@ -4929,7 +4954,7 @@ bool USTBuffAction::IsRoleOK()
 
 void USTBuffAction::Initialize(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.Initialize");
 
@@ -4947,39 +4972,14 @@ void USTBuffAction::Initialize(class UActorComponent* BuffSystemComponent, int I
 }
 
 
-// Function Basic.STBuffAction.GetTargetSharedActors
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TArray<class AActor*>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-
-TArray<class AActor*> USTBuffAction::GetTargetSharedActors()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.GetTargetSharedActors");
-
-	USTBuffAction_GetTargetSharedActors_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function Basic.STBuffAction.GetRealOwnerRole
 // (Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ENetRole>     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<ENetRole>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum ENetRole> USTBuffAction::GetRealOwnerRole()
+TEnumAsByte<ENetRole> USTBuffAction::GetRealOwnerRole()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.GetRealOwnerRole");
 
@@ -5004,7 +5004,7 @@ TEnumAsByte<enum ENetRole> USTBuffAction::GetRealOwnerRole()
 
 class AActor* USTBuffAction::GetOwner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.GetOwner");
 
@@ -5029,7 +5029,7 @@ class AActor* USTBuffAction::GetOwner()
 
 class AActor* USTBuffAction::GetCauser()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.GetCauser");
 
@@ -5055,7 +5055,7 @@ class AActor* USTBuffAction::GetCauser()
 
 void USTBuffAction::Execute(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.Execute");
 
@@ -5081,7 +5081,7 @@ void USTBuffAction::Execute(class UActorComponent* BuffSystemComponent, int Inst
 
 void USTBuffAction::End(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.End");
 
@@ -5107,7 +5107,7 @@ void USTBuffAction::End(class UActorComponent* BuffSystemComponent, int InstID)
 
 void USTBuffAction::Destroy(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.Destroy");
 
@@ -5133,7 +5133,7 @@ void USTBuffAction::Destroy(class UActorComponent* BuffSystemComponent, int Inst
 
 void USTBuffAction::CheckLinkActionEnabled(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.CheckLinkActionEnabled");
 
@@ -5159,7 +5159,7 @@ void USTBuffAction::CheckLinkActionEnabled(class UActorComponent* BuffSystemComp
 
 void USTBuffAction::ChangeNotify(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction.ChangeNotify");
 
@@ -5177,6 +5177,31 @@ void USTBuffAction::ChangeNotify(class UActorComponent* BuffSystemComponent, int
 }
 
 
+// Function Basic.STBuffAction_Lua.ToString
+// (Native, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString USTBuffAction_Lua::ToString()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction_Lua.ToString");
+
+	USTBuffAction_Lua_ToString_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Basic.STBuffAction_Lua.OnTick
 // (Native, Public)
 // Parameters:
@@ -5184,7 +5209,7 @@ void USTBuffAction::ChangeNotify(class UActorComponent* BuffSystemComponent, int
 
 void USTBuffAction_Lua::OnTick(float DetalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction_Lua.OnTick");
 
@@ -5206,7 +5231,7 @@ void USTBuffAction_Lua::OnTick(float DetalTime)
 
 void USTBuffAction_Lua::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction_Lua.OnInitialize");
 
@@ -5227,7 +5252,7 @@ void USTBuffAction_Lua::OnInitialize()
 
 void USTBuffAction_Lua::OnExecute()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction_Lua.OnExecute");
 
@@ -5248,7 +5273,7 @@ void USTBuffAction_Lua::OnExecute()
 
 void USTBuffAction_Lua::OnEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction_Lua.OnEnd");
 
@@ -5269,7 +5294,7 @@ void USTBuffAction_Lua::OnEnd()
 
 void USTBuffAction_Lua::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction_Lua.OnDestroy");
 
@@ -5290,7 +5315,7 @@ void USTBuffAction_Lua::OnDestroy()
 
 void USTBuffAction_Lua::OnChangeNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffAction_Lua.OnChangeNotify");
 
@@ -5315,7 +5340,7 @@ void USTBuffAction_Lua::OnChangeNotify()
 
 void USTBuffCheckConditionWrapper::Tick(class UActorComponent* BuffSystemComponent, int InstID, float DetalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.Tick");
 
@@ -5323,34 +5348,6 @@ void USTBuffCheckConditionWrapper::Tick(class UActorComponent* BuffSystemCompone
 	params.BuffSystemComponent = BuffSystemComponent;
 	params.InstID = InstID;
 	params.DetalTime = DetalTime;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Basic.STBuffCheckConditionWrapper.SetEnabled
-// (Final, Native, Public)
-// Parameters:
-// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           Enabled                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void USTBuffCheckConditionWrapper::SetEnabled(class UActorComponent* BuffSystemComponent, int InstID, bool Enabled)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.SetEnabled");
-
-	USTBuffCheckConditionWrapper_SetEnabled_Params params;
-	params.BuffSystemComponent = BuffSystemComponent;
-	params.InstID = InstID;
-	params.Enabled = Enabled;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5371,7 +5368,7 @@ void USTBuffCheckConditionWrapper::SetEnabled(class UActorComponent* BuffSystemC
 
 void USTBuffCheckConditionWrapper::ResetExecute(class UActorComponent* BuffSystemComponent, int InstID, bool IgnoreEnd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.ResetExecute");
 
@@ -5397,7 +5394,7 @@ void USTBuffCheckConditionWrapper::ResetExecute(class UActorComponent* BuffSyste
 
 void USTBuffCheckConditionWrapper::OnTick(float DetalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.OnTick");
 
@@ -5419,7 +5416,7 @@ void USTBuffCheckConditionWrapper::OnTick(float DetalTime)
 
 void USTBuffCheckConditionWrapper::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.OnInitialize");
 
@@ -5440,7 +5437,7 @@ void USTBuffCheckConditionWrapper::OnInitialize()
 
 void USTBuffCheckConditionWrapper::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.OnDestroy");
 
@@ -5461,7 +5458,7 @@ void USTBuffCheckConditionWrapper::OnDestroy()
 
 void USTBuffCheckConditionWrapper::OnConditionTrue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.OnConditionTrue");
 
@@ -5482,7 +5479,7 @@ void USTBuffCheckConditionWrapper::OnConditionTrue()
 
 void USTBuffCheckConditionWrapper::OnConditionFalse()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.OnConditionFalse");
 
@@ -5503,11 +5500,62 @@ void USTBuffCheckConditionWrapper::OnConditionFalse()
 
 void USTBuffCheckConditionWrapper::OnChangeNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.OnChangeNotify");
 
 	USTBuffCheckConditionWrapper_OnChangeNotify_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffCheckConditionWrapper.IsRoleOK
+// (Final, Native, Public)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffCheckConditionWrapper::IsRoleOK()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.IsRoleOK");
+
+	USTBuffCheckConditionWrapper_IsRoleOK_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffCheckConditionWrapper.InitLinkActionEnableState
+// (Final, Native, Public)
+// Parameters:
+// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffCheckConditionWrapper::InitLinkActionEnableState(class UActorComponent* BuffSystemComponent, int InstID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.InitLinkActionEnableState");
+
+	USTBuffCheckConditionWrapper_InitLinkActionEnableState_Params params;
+	params.BuffSystemComponent = BuffSystemComponent;
+	params.InstID = InstID;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5527,7 +5575,7 @@ void USTBuffCheckConditionWrapper::OnChangeNotify()
 
 void USTBuffCheckConditionWrapper::Initialize(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.Initialize");
 
@@ -5545,6 +5593,31 @@ void USTBuffCheckConditionWrapper::Initialize(class UActorComponent* BuffSystemC
 }
 
 
+// Function Basic.STBuffCheckConditionWrapper.GetRealOwnerRole
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// TEnumAsByte<ENetRole>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+TEnumAsByte<ENetRole> USTBuffCheckConditionWrapper::GetRealOwnerRole()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.GetRealOwnerRole");
+
+	USTBuffCheckConditionWrapper_GetRealOwnerRole_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Basic.STBuffCheckConditionWrapper.Execute
 // (Final, Native, Public)
 // Parameters:
@@ -5553,7 +5626,7 @@ void USTBuffCheckConditionWrapper::Initialize(class UActorComponent* BuffSystemC
 
 void USTBuffCheckConditionWrapper::Execute(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.Execute");
 
@@ -5579,7 +5652,7 @@ void USTBuffCheckConditionWrapper::Execute(class UActorComponent* BuffSystemComp
 
 void USTBuffCheckConditionWrapper::End(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.End");
 
@@ -5605,37 +5678,11 @@ void USTBuffCheckConditionWrapper::End(class UActorComponent* BuffSystemComponen
 
 void USTBuffCheckConditionWrapper::Destroy(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.Destroy");
 
 	USTBuffCheckConditionWrapper_Destroy_Params params;
-	params.BuffSystemComponent = BuffSystemComponent;
-	params.InstID = InstID;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Basic.STBuffCheckConditionWrapper.CheckLinkActionEnabled
-// (Final, Native, Public)
-// Parameters:
-// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void USTBuffCheckConditionWrapper::CheckLinkActionEnabled(class UActorComponent* BuffSystemComponent, int InstID)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.CheckLinkActionEnabled");
-
-	USTBuffCheckConditionWrapper_CheckLinkActionEnabled_Params params;
 	params.BuffSystemComponent = BuffSystemComponent;
 	params.InstID = InstID;
 
@@ -5654,7 +5701,7 @@ void USTBuffCheckConditionWrapper::CheckLinkActionEnabled(class UActorComponent*
 
 void USTBuffCheckConditionWrapper::CheckCondition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.CheckCondition");
 
@@ -5678,7 +5725,7 @@ void USTBuffCheckConditionWrapper::CheckCondition()
 
 void USTBuffCheckConditionWrapper::ChangeNotify(class UActorComponent* BuffSystemComponent, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCheckConditionWrapper.ChangeNotify");
 
@@ -5703,7 +5750,7 @@ void USTBuffCheckConditionWrapper::ChangeNotify(class UActorComponent* BuffSyste
 
 void USTBuffCondition::OnResetExecute(bool IgnoreEnd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.OnResetExecute");
 
@@ -5725,7 +5772,7 @@ void USTBuffCondition::OnResetExecute(bool IgnoreEnd)
 
 void USTBuffCondition::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.OnInitialize");
 
@@ -5746,7 +5793,7 @@ void USTBuffCondition::OnInitialize()
 
 void USTBuffCondition::OnEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.OnEnd");
 
@@ -5767,7 +5814,7 @@ void USTBuffCondition::OnEnd()
 
 void USTBuffCondition::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.OnDestroy");
 
@@ -5790,7 +5837,7 @@ void USTBuffCondition::OnDestroy()
 
 class AActor* USTBuffCondition::GetOwner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.GetOwner");
 
@@ -5815,7 +5862,7 @@ class AActor* USTBuffCondition::GetOwner()
 
 class AActor* USTBuffCondition::GetCauser()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.GetCauser");
 
@@ -5841,7 +5888,7 @@ class AActor* USTBuffCondition::GetCauser()
 
 class USTBuffCondition* USTBuffCondition::Copy(class UObject* Outer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.Copy");
 
@@ -5867,7 +5914,7 @@ class USTBuffCondition* USTBuffCondition::Copy(class UObject* Outer)
 
 bool USTBuffCondition::CheckIsTrue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.CheckIsTrue");
 
@@ -5885,12 +5932,33 @@ bool USTBuffCondition::CheckIsTrue()
 }
 
 
+// Function Basic.STBuffCondition.ChangeNotify
+// (Native, Protected)
+
+void USTBuffCondition::ChangeNotify()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition.ChangeNotify");
+
+	USTBuffCondition_ChangeNotify_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Basic.STBuffConditionComplex.OnInitialize
 // (Native, Protected)
 
 void USTBuffConditionComplex::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionComplex.OnInitialize");
 
@@ -5911,7 +5979,7 @@ void USTBuffConditionComplex::OnInitialize()
 
 void USTBuffConditionComplex::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionComplex.OnDestroy");
 
@@ -5935,7 +6003,7 @@ void USTBuffConditionComplex::OnDestroy()
 
 class USTBuffCondition* USTBuffConditionComplex::Copy(class UObject* Outer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionComplex.Copy");
 
@@ -5961,7 +6029,7 @@ class USTBuffCondition* USTBuffConditionComplex::Copy(class UObject* Outer)
 
 bool USTBuffConditionComplex::CheckIsTrue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionComplex.CheckIsTrue");
 
@@ -5984,7 +6052,7 @@ bool USTBuffConditionComplex::CheckIsTrue()
 
 void USTBuffConditionNot::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionNot.OnInitialize");
 
@@ -6005,7 +6073,7 @@ void USTBuffConditionNot::OnInitialize()
 
 void USTBuffConditionNot::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionNot.OnDestroy");
 
@@ -6029,7 +6097,7 @@ void USTBuffConditionNot::OnDestroy()
 
 class USTBuffCondition* USTBuffConditionNot::Copy(class UObject* Outer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionNot.Copy");
 
@@ -6055,7 +6123,7 @@ class USTBuffCondition* USTBuffConditionNot::Copy(class UObject* Outer)
 
 bool USTBuffConditionNot::CheckIsTrue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionNot.CheckIsTrue");
 
@@ -6078,7 +6146,7 @@ bool USTBuffConditionNot::CheckIsTrue()
 
 void USTBuffCondition_Lua::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition_Lua.OnInitialize");
 
@@ -6099,7 +6167,7 @@ void USTBuffCondition_Lua::OnInitialize()
 
 void USTBuffCondition_Lua::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition_Lua.OnDestroy");
 
@@ -6122,7 +6190,7 @@ void USTBuffCondition_Lua::OnDestroy()
 
 bool USTBuffCondition_Lua::CheckIsTrue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffCondition_Lua.CheckIsTrue");
 
@@ -6147,7 +6215,7 @@ bool USTBuffCondition_Lua::CheckIsTrue()
 
 void USTBuffConditionAction::OnTick(float DetalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionAction.OnTick");
 
@@ -6169,7 +6237,7 @@ void USTBuffConditionAction::OnTick(float DetalTime)
 
 void USTBuffConditionAction::OnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionAction.OnInitialize");
 
@@ -6190,7 +6258,7 @@ void USTBuffConditionAction::OnInitialize()
 
 void USTBuffConditionAction::OnDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionAction.OnDestroy");
 
@@ -6211,7 +6279,7 @@ void USTBuffConditionAction::OnDestroy()
 
 void USTBuffConditionAction::OnConditionTrue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionAction.OnConditionTrue");
 
@@ -6232,7 +6300,7 @@ void USTBuffConditionAction::OnConditionTrue()
 
 void USTBuffConditionAction::OnConditionFalse()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionAction.OnConditionFalse");
 
@@ -6253,7 +6321,7 @@ void USTBuffConditionAction::OnConditionFalse()
 
 void USTBuffConditionAction::OnChangeNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionAction.OnChangeNotify");
 
@@ -6274,7 +6342,7 @@ void USTBuffConditionAction::OnChangeNotify()
 
 void USTBuffConditionAction::CheckCondition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffConditionAction.CheckCondition");
 
@@ -6290,6 +6358,990 @@ void USTBuffConditionAction::CheckCondition()
 }
 
 
+// Function Basic.STBuffEvent.TriggerEvent
+// (Native, Public)
+
+void USTBuffEvent::TriggerEvent()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.TriggerEvent");
+
+	USTBuffEvent_TriggerEvent_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent.ToString
+// (Native, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString USTBuffEvent::ToString()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.ToString");
+
+	USTBuffEvent_ToString_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent.SetTimer
+// (Final, Native, Public)
+// Parameters:
+// struct FName                   FunctionName                   (Parm, ZeroConstructor, IsPlainOldData)
+// float                          InRate                         (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           InbLoop                        (Parm, ZeroConstructor, IsPlainOldData)
+// float                          InFirstDelay                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffEvent::SetTimer(const struct FName& FunctionName, float InRate, bool InbLoop, float InFirstDelay)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.SetTimer");
+
+	USTBuffEvent_SetTimer_Params params;
+	params.FunctionName = FunctionName;
+	params.InRate = InRate;
+	params.InbLoop = InbLoop;
+	params.InFirstDelay = InFirstDelay;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent.OnInitialize
+// (Native, Public)
+
+void USTBuffEvent::OnInitialize()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.OnInitialize");
+
+	USTBuffEvent_OnInitialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent.OnEnd
+// (Native, Public)
+
+void USTBuffEvent::OnEnd()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.OnEnd");
+
+	USTBuffEvent_OnEnd_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent.OnDestroy
+// (Native, Public)
+
+void USTBuffEvent::OnDestroy()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.OnDestroy");
+
+	USTBuffEvent_OnDestroy_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent.IsRoleOK
+// (Final, Native, Public)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffEvent::IsRoleOK()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.IsRoleOK");
+
+	USTBuffEvent_IsRoleOK_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent.GetRealOwnerRole
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// TEnumAsByte<ENetRole>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+TEnumAsByte<ENetRole> USTBuffEvent::GetRealOwnerRole()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.GetRealOwnerRole");
+
+	USTBuffEvent_GetRealOwnerRole_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent.GetOwner
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AActor* USTBuffEvent::GetOwner()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.GetOwner");
+
+	USTBuffEvent_GetOwner_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent.GetCauser
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class AActor* USTBuffEvent::GetCauser()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.GetCauser");
+
+	USTBuffEvent_GetCauser_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent.Copy
+// (Native, Public)
+// Parameters:
+// class UObject*                 Outer                          (Parm, ZeroConstructor, IsPlainOldData)
+// class USTBuffEvent*            ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class USTBuffEvent* USTBuffEvent::Copy(class UObject* Outer)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.Copy");
+
+	USTBuffEvent_Copy_Params params;
+	params.Outer = Outer;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent.ClearTimer
+// (Final, Native, Public)
+// Parameters:
+// struct FName                   FunctionName                   (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffEvent::ClearTimer(const struct FName& FunctionName)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.ClearTimer");
+
+	USTBuffEvent_ClearTimer_Params params;
+	params.FunctionName = FunctionName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent.ClearAllTimer
+// (Final, Native, Public)
+
+void USTBuffEvent::ClearAllTimer()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent.ClearAllTimer");
+
+	USTBuffEvent_ClearAllTimer_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent_Lua.ToString
+// (Native, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString USTBuffEvent_Lua::ToString()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent_Lua.ToString");
+
+	USTBuffEvent_Lua_ToString_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent_Multi.OnInitialize
+// (Native, Public)
+
+void USTBuffEvent_Multi::OnInitialize()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent_Multi.OnInitialize");
+
+	USTBuffEvent_Multi_OnInitialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent_Multi.OnEnd
+// (Native, Public)
+
+void USTBuffEvent_Multi::OnEnd()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent_Multi.OnEnd");
+
+	USTBuffEvent_Multi_OnEnd_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent_Multi.OnDestroy
+// (Native, Public)
+
+void USTBuffEvent_Multi::OnDestroy()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent_Multi.OnDestroy");
+
+	USTBuffEvent_Multi_OnDestroy_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffEvent_Multi.Copy
+// (Native, Public)
+// Parameters:
+// class UObject*                 Outer                          (Parm, ZeroConstructor, IsPlainOldData)
+// class USTBuffEvent*            ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class USTBuffEvent* USTBuffEvent_Multi::Copy(class UObject* Outer)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent_Multi.Copy");
+
+	USTBuffEvent_Multi_Copy_Params params;
+	params.Outer = Outer;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffEvent_Multi.ChildTriggerEvent
+// (Native, Public)
+
+void USTBuffEvent_Multi::ChildTriggerEvent()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffEvent_Multi.ChildTriggerEvent");
+
+	USTBuffEvent_Multi_ChildTriggerEvent_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetVectorShared
+// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FVector                 InValue                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+
+void USTBuffSharedInterface::SetVectorShared(const struct FString& SharedName, const struct FVector& InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetVectorShared");
+
+	USTBuffSharedInterface_SetVectorShared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetUInt8Shared
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// unsigned char                  InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffSharedInterface::SetUInt8Shared(const struct FString& SharedName, unsigned char InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetUInt8Shared");
+
+	USTBuffSharedInterface_SetUInt8Shared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetTargetShared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// TArray<class AActor*>          InActors                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void USTBuffSharedInterface::SetTargetShared(const struct FString& SharedName, TArray<class AActor*> InActors)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetTargetShared");
+
+	USTBuffSharedInterface_SetTargetShared_Params params;
+	params.SharedName = SharedName;
+	params.InActors = InActors;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetStringShared
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FString                 InValue                        (Parm, ZeroConstructor)
+
+void USTBuffSharedInterface::SetStringShared(const struct FString& SharedName, const struct FString& InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetStringShared");
+
+	USTBuffSharedInterface_SetStringShared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetRotatorShared
+// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FRotator                InValue                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+
+void USTBuffSharedInterface::SetRotatorShared(const struct FString& SharedName, const struct FRotator& InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetRotatorShared");
+
+	USTBuffSharedInterface_SetRotatorShared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetNameShared
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FName                   InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffSharedInterface::SetNameShared(const struct FString& SharedName, const struct FName& InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetNameShared");
+
+	USTBuffSharedInterface_SetNameShared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetInt32Shared
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// int                            InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffSharedInterface::SetInt32Shared(const struct FString& SharedName, int InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetInt32Shared");
+
+	USTBuffSharedInterface_SetInt32Shared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetFloatShared
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// float                          InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffSharedInterface::SetFloatShared(const struct FString& SharedName, float InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetFloatShared");
+
+	USTBuffSharedInterface_SetFloatShared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.SetBooleanShared
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// bool                           InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffSharedInterface::SetBooleanShared(const struct FString& SharedName, bool InValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.SetBooleanShared");
+
+	USTBuffSharedInterface_SetBooleanShared_Params params;
+	params.SharedName = SharedName;
+	params.InValue = InValue;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.RemoveShared
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+
+void USTBuffSharedInterface::RemoveShared(const struct FString& SharedName)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.RemoveShared");
+
+	USTBuffSharedInterface_RemoveShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetVectorShared
+// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FVector                 OutValue                       (Parm, OutParm, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetVectorShared(const struct FString& SharedName, struct FVector* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetVectorShared");
+
+	USTBuffSharedInterface_GetVectorShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetUInt8Shared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// unsigned char                  OutValue                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetUInt8Shared(const struct FString& SharedName, unsigned char* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetUInt8Shared");
+
+	USTBuffSharedInterface_GetUInt8Shared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetTargetShared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// TArray<class AActor*>          OutActors                      (Parm, OutParm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetTargetShared(const struct FString& SharedName, TArray<class AActor*>* OutActors)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetTargetShared");
+
+	USTBuffSharedInterface_GetTargetShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutActors != nullptr)
+		*OutActors = params.OutActors;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetStringShared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FString                 OutValue                       (Parm, OutParm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetStringShared(const struct FString& SharedName, struct FString* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetStringShared");
+
+	USTBuffSharedInterface_GetStringShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetRotatorShared
+// (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FRotator                OutValue                       (Parm, OutParm, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetRotatorShared(const struct FString& SharedName, struct FRotator* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetRotatorShared");
+
+	USTBuffSharedInterface_GetRotatorShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetNameShared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// struct FName                   OutValue                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetNameShared(const struct FString& SharedName, struct FName* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetNameShared");
+
+	USTBuffSharedInterface_GetNameShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetInt32Shared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// int                            OutValue                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetInt32Shared(const struct FString& SharedName, int* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetInt32Shared");
+
+	USTBuffSharedInterface_GetInt32Shared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetFloatShared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// float                          OutValue                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetFloatShared(const struct FString& SharedName, float* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetFloatShared");
+
+	USTBuffSharedInterface_GetFloatShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSharedInterface.GetBooleanShared
+// (Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// struct FString                 SharedName                     (Parm, ZeroConstructor)
+// bool                           OutValue                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSharedInterface::GetBooleanShared(const struct FString& SharedName, bool* OutValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSharedInterface.GetBooleanShared");
+
+	USTBuffSharedInterface_GetBooleanShared_Params params;
+	params.SharedName = SharedName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutValue != nullptr)
+		*OutValue = params.OutValue;
+
+	return params.ReturnValue;
+}
+
+
 // Function Basic.STBuffSystemComponent.UpdateClientBuff
 // (Final, Native, Protected, HasOutParms)
 // Parameters:
@@ -6297,7 +7349,7 @@ void USTBuffConditionAction::CheckCondition()
 
 void USTBuffSystemComponent::UpdateClientBuff(struct FBuffSyncBrief* Brief)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.UpdateClientBuff");
 
@@ -6316,6 +7368,35 @@ void USTBuffSystemComponent::UpdateClientBuff(struct FBuffSyncBrief* Brief)
 }
 
 
+// Function Basic.STBuffSystemComponent.SetBuffReplaceData
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FBuffReplaceData        From                           (Parm)
+// struct FBuffReplaceData        To                             (Parm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSystemComponent::SetBuffReplaceData(const struct FBuffReplaceData& From, const struct FBuffReplaceData& To)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.SetBuffReplaceData");
+
+	USTBuffSystemComponent_SetBuffReplaceData_Params params;
+	params.From = From;
+	params.To = To;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Basic.STBuffSystemComponent.RemoveBuffBySkill
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -6326,7 +7407,7 @@ void USTBuffSystemComponent::UpdateClientBuff(struct FBuffSyncBrief* Brief)
 
 bool USTBuffSystemComponent::RemoveBuffBySkill(int SkillID, int LayerCount, class AActor* Causer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.RemoveBuffBySkill");
 
@@ -6357,7 +7438,7 @@ bool USTBuffSystemComponent::RemoveBuffBySkill(int SkillID, int LayerCount, clas
 
 void USTBuffSystemComponent::RemoveBuff(int BuffID, int LayerCount, class AActor* Causer, int CauseSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.RemoveBuff");
 
@@ -6384,7 +7465,7 @@ void USTBuffSystemComponent::RemoveBuff(int BuffID, int LayerCount, class AActor
 
 void USTBuffSystemComponent::RemoveAllBuffsWithExcludeArray(TArray<int> InExcludeArry)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.RemoveAllBuffsWithExcludeArray");
 
@@ -6408,7 +7489,7 @@ void USTBuffSystemComponent::RemoveAllBuffsWithExcludeArray(TArray<int> InExclud
 
 void USTBuffSystemComponent::RemoveAllBuffs(bool bClearAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.RemoveAllBuffs");
 
@@ -6425,12 +7506,39 @@ void USTBuffSystemComponent::RemoveAllBuffs(bool bClearAll)
 }
 
 
+// DelegateFunction Basic.STBuffSystemComponent.OnUpdateBuffEvent__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// int                            BuffID                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffSystemComponent::OnUpdateBuffEvent__DelegateSignature(int BuffID, int SkillID, int InstID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.STBuffSystemComponent.OnUpdateBuffEvent__DelegateSignature");
+
+	USTBuffSystemComponent_OnUpdateBuffEvent__DelegateSignature_Params params;
+	params.BuffID = BuffID;
+	params.SkillID = SkillID;
+	params.InstID = InstID;
+
+	auto flags = pFunc->FunctionFlags;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Basic.STBuffSystemComponent.OnRep_SyncBriefs
 // (Final, Native, Public)
 
 void USTBuffSystemComponent::OnRep_SyncBriefs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.OnRep_SyncBriefs");
 
@@ -6451,7 +7559,7 @@ void USTBuffSystemComponent::OnRep_SyncBriefs()
 
 void USTBuffSystemComponent::OnRep_OwnerSyncBriefs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.OnRep_OwnerSyncBriefs");
 
@@ -6476,7 +7584,7 @@ void USTBuffSystemComponent::OnRep_OwnerSyncBriefs()
 
 void USTBuffSystemComponent::OnRemoveBuffEvent__DelegateSignature(int BuffID, int SkillID, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.STBuffSystemComponent.OnRemoveBuffEvent__DelegateSignature");
 
@@ -6503,7 +7611,7 @@ void USTBuffSystemComponent::OnRemoveBuffEvent__DelegateSignature(int BuffID, in
 
 void USTBuffSystemComponent::OnClientUpdateBuffEvent__DelegateSignature(int BuffID, int SkillID, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.STBuffSystemComponent.OnClientUpdateBuffEvent__DelegateSignature");
 
@@ -6530,7 +7638,7 @@ void USTBuffSystemComponent::OnClientUpdateBuffEvent__DelegateSignature(int Buff
 
 void USTBuffSystemComponent::OnClientRemoveBuffEvent__DelegateSignature(int BuffID, int SkillID, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.STBuffSystemComponent.OnClientRemoveBuffEvent__DelegateSignature");
 
@@ -6557,7 +7665,7 @@ void USTBuffSystemComponent::OnClientRemoveBuffEvent__DelegateSignature(int Buff
 
 void USTBuffSystemComponent::OnClientAddBuffEvent__DelegateSignature(int BuffID, int SkillID, int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.STBuffSystemComponent.OnClientAddBuffEvent__DelegateSignature");
 
@@ -6585,7 +7693,7 @@ void USTBuffSystemComponent::OnClientAddBuffEvent__DelegateSignature(int BuffID,
 
 void USTBuffSystemComponent::OnAddBuffEvent__DelegateSignature(int BuffID, int SkillID, bool IsExist, class AActor* Causer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Basic.STBuffSystemComponent.OnAddBuffEvent__DelegateSignature");
 
@@ -6613,7 +7721,7 @@ void USTBuffSystemComponent::OnAddBuffEvent__DelegateSignature(int BuffID, int S
 
 bool USTBuffSystemComponent::IsCDOK(int InstID, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.IsCDOK");
 
@@ -6641,7 +7749,7 @@ bool USTBuffSystemComponent::IsCDOK(int InstID, int Index)
 
 bool USTBuffSystemComponent::IsBuffInstExist(int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.IsBuffInstExist");
 
@@ -6668,7 +7776,7 @@ bool USTBuffSystemComponent::IsBuffInstExist(int InstID)
 
 bool USTBuffSystemComponent::HasSkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.HasSkillID");
 
@@ -6695,7 +7803,7 @@ bool USTBuffSystemComponent::HasSkillID(int SkillID)
 
 bool USTBuffSystemComponent::HasBuff(int BuffID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.HasBuff");
 
@@ -6721,7 +7829,7 @@ bool USTBuffSystemComponent::HasBuff(int BuffID)
 
 class UBuffConfigSubsystem* USTBuffSystemComponent::GetSubsystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetSubsystem");
 
@@ -6747,7 +7855,7 @@ class UBuffConfigSubsystem* USTBuffSystemComponent::GetSubsystem()
 
 class USTBuff* USTBuffSystemComponent::GetSTBuffByBuffID(int BuffID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetSTBuffByBuffID");
 
@@ -6769,15 +7877,44 @@ class USTBuff* USTBuffSystemComponent::GetSTBuffByBuffID(int BuffID)
 // Function Basic.STBuffSystemComponent.GetRealOwnerRoleSafety
 // (Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ENetRole>     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<ENetRole>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum ENetRole> USTBuffSystemComponent::GetRealOwnerRoleSafety()
+TEnumAsByte<ENetRole> USTBuffSystemComponent::GetRealOwnerRoleSafety()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetRealOwnerRoleSafety");
 
 	USTBuffSystemComponent_GetRealOwnerRoleSafety_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffSystemComponent.GetBuffReplaceDataByID
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            ID                             (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bBuffInst                      (Parm, ZeroConstructor, IsPlainOldData)
+// struct FBuffReplaceData        ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FBuffReplaceData USTBuffSystemComponent::GetBuffReplaceDataByID(int ID, bool bBuffInst)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffReplaceDataByID");
+
+	USTBuffSystemComponent_GetBuffReplaceDataByID_Params params;
+	params.ID = ID;
+	params.bBuffInst = bBuffInst;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -6800,7 +7937,7 @@ TEnumAsByte<enum ENetRole> USTBuffSystemComponent::GetRealOwnerRoleSafety()
 
 int USTBuffSystemComponent::GetBuffLayerCount(int InstID, int CauseSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffLayerCount");
 
@@ -6828,7 +7965,7 @@ int USTBuffSystemComponent::GetBuffLayerCount(int InstID, int CauseSkillID)
 
 TArray<struct FBuffSyncBrief> USTBuffSystemComponent::GetBuffInfoBySkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffInfoBySkillID");
 
@@ -6855,7 +7992,7 @@ TArray<struct FBuffSyncBrief> USTBuffSystemComponent::GetBuffInfoBySkillID(int S
 
 TArray<struct FBuffSyncBrief> USTBuffSystemComponent::GetBuffInfoByBuffID(int BuffID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffInfoByBuffID");
 
@@ -6883,7 +8020,7 @@ TArray<struct FBuffSyncBrief> USTBuffSystemComponent::GetBuffInfoByBuffID(int Bu
 
 bool USTBuffSystemComponent::GetBuffInfo(int InstID, struct FBuffSyncBrief* OutBuff)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffInfo");
 
@@ -6913,7 +8050,7 @@ bool USTBuffSystemComponent::GetBuffInfo(int InstID, struct FBuffSyncBrief* OutB
 
 TArray<int> USTBuffSystemComponent::GetBuffIDsBySkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffIDsBySkillID");
 
@@ -6941,7 +8078,7 @@ TArray<int> USTBuffSystemComponent::GetBuffIDsBySkillID(int SkillID)
 
 float USTBuffSystemComponent::GetBuffDuration(int InstID, int CauseSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffDuration");
 
@@ -6970,7 +8107,7 @@ float USTBuffSystemComponent::GetBuffDuration(int InstID, int CauseSkillID)
 
 float USTBuffSystemComponent::GetBuffDSEndTime(int InstID, int CauseSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffDSEndTime");
 
@@ -6998,7 +8135,7 @@ float USTBuffSystemComponent::GetBuffDSEndTime(int InstID, int CauseSkillID)
 
 TArray<float> USTBuffSystemComponent::GetBuffCDInfo(int InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetBuffCDInfo");
 
@@ -7024,7 +8161,7 @@ TArray<float> USTBuffSystemComponent::GetBuffCDInfo(int InstID)
 
 TArray<struct FBuffSyncBrief> USTBuffSystemComponent::GetAllBuffInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.GetAllBuffInfo");
 
@@ -7051,7 +8188,7 @@ TArray<struct FBuffSyncBrief> USTBuffSystemComponent::GetAllBuffInfo()
 
 void USTBuffSystemComponent::DoCooldown(int InstID, int Index, bool bReset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.DoCooldown");
 
@@ -7075,7 +8212,7 @@ void USTBuffSystemComponent::DoCooldown(int InstID, int Index, bool bReset)
 
 void USTBuffSystemComponent::ClearBuffs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.ClearBuffs");
 
@@ -7091,6 +8228,35 @@ void USTBuffSystemComponent::ClearBuffs()
 }
 
 
+// Function Basic.STBuffSystemComponent.ChangeLevel
+// (Final, Native, Public)
+// Parameters:
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            NewLevel                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffSystemComponent::ChangeLevel(int InstID, int NewLevel)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.ChangeLevel");
+
+	USTBuffSystemComponent_ChangeLevel_Params params;
+	params.InstID = InstID;
+	params.NewLevel = NewLevel;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Basic.STBuffSystemComponent.ChangeDuration
 // (Final, Native, Public)
 // Parameters:
@@ -7100,7 +8266,7 @@ void USTBuffSystemComponent::ClearBuffs()
 
 bool USTBuffSystemComponent::ChangeDuration(int InstID, float Duration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.ChangeDuration");
 
@@ -7131,7 +8297,7 @@ bool USTBuffSystemComponent::ChangeDuration(int InstID, float Duration)
 
 bool USTBuffSystemComponent::AddBuffBySkill(int SkillID, int LayerCount, class AActor* Causer, int Level)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.AddBuffBySkill");
 
@@ -7165,7 +8331,7 @@ bool USTBuffSystemComponent::AddBuffBySkill(int SkillID, int LayerCount, class A
 
 int USTBuffSystemComponent::AddBuff(int BuffID, class AActor* Causer, int LayerCount, int CauseSkillID, int Level)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffSystemComponent.AddBuff");
 
@@ -7188,6 +8354,388 @@ int USTBuffSystemComponent::AddBuff(int BuffID, class AActor* Causer, int LayerC
 }
 
 
+// Function Basic.STBuffTrigger.TriggerEvent
+// (Native, Public)
+
+void USTBuffTrigger::TriggerEvent()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.TriggerEvent");
+
+	USTBuffTrigger_TriggerEvent_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.Tick
+// (Final, Native, Public)
+// Parameters:
+// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+// float                          DetalTime                      (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffTrigger::Tick(class UActorComponent* BuffSystemComponent, int InstID, float DetalTime)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.Tick");
+
+	USTBuffTrigger_Tick_Params params;
+	params.BuffSystemComponent = BuffSystemComponent;
+	params.InstID = InstID;
+	params.DetalTime = DetalTime;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.SetTriggerState
+// (Final, Native, Public)
+// Parameters:
+// EBuffTriggerState              State                          (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffTrigger::SetTriggerState(EBuffTriggerState State)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.SetTriggerState");
+
+	USTBuffTrigger_SetTriggerState_Params params;
+	params.State = State;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.OnTick
+// (Final, Native, Public)
+
+void USTBuffTrigger::OnTick()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.OnTick");
+
+	USTBuffTrigger_OnTick_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.OnInitialize
+// (Native, Protected)
+
+void USTBuffTrigger::OnInitialize()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.OnInitialize");
+
+	USTBuffTrigger_OnInitialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.OnEnd
+// (Final, Native, Public)
+
+void USTBuffTrigger::OnEnd()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.OnEnd");
+
+	USTBuffTrigger_OnEnd_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.OnDestroy
+// (Native, Protected)
+
+void USTBuffTrigger::OnDestroy()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.OnDestroy");
+
+	USTBuffTrigger_OnDestroy_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.OnCheckLinkActionEnabled
+// (Native, Protected)
+
+void USTBuffTrigger::OnCheckLinkActionEnabled()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.OnCheckLinkActionEnabled");
+
+	USTBuffTrigger_OnCheckLinkActionEnabled_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.IsRoleOK
+// (Final, Native, Public)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffTrigger::IsRoleOK()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.IsRoleOK");
+
+	USTBuffTrigger_IsRoleOK_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffTrigger.IsNeedTick
+// (Final, Native, Public, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool USTBuffTrigger::IsNeedTick()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.IsNeedTick");
+
+	USTBuffTrigger_IsNeedTick_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffTrigger.Initialize
+// (Final, Native, Public)
+// Parameters:
+// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffTrigger::Initialize(class UActorComponent* BuffSystemComponent, int InstID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.Initialize");
+
+	USTBuffTrigger_Initialize_Params params;
+	params.BuffSystemComponent = BuffSystemComponent;
+	params.InstID = InstID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.GetRealOwnerRole
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// TEnumAsByte<ENetRole>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+TEnumAsByte<ENetRole> USTBuffTrigger::GetRealOwnerRole()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.GetRealOwnerRole");
+
+	USTBuffTrigger_GetRealOwnerRole_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffTrigger.GetActiveExecuteCount
+// (Final, Native, Public)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int USTBuffTrigger::GetActiveExecuteCount()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.GetActiveExecuteCount");
+
+	USTBuffTrigger_GetActiveExecuteCount_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.STBuffTrigger.End
+// (Final, Native, Public)
+// Parameters:
+// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffTrigger::End(class UActorComponent* BuffSystemComponent, int InstID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.End");
+
+	USTBuffTrigger_End_Params params;
+	params.BuffSystemComponent = BuffSystemComponent;
+	params.InstID = InstID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.Destroy
+// (Final, Native, Public)
+// Parameters:
+// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffTrigger::Destroy(class UActorComponent* BuffSystemComponent, int InstID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.Destroy");
+
+	USTBuffTrigger_Destroy_Params params;
+	params.BuffSystemComponent = BuffSystemComponent;
+	params.InstID = InstID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Basic.STBuffTrigger.CheckLinkActionEnabled
+// (Final, Native, Public)
+// Parameters:
+// class UActorComponent*         BuffSystemComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            InstID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void USTBuffTrigger::CheckLinkActionEnabled(class UActorComponent* BuffSystemComponent, int InstID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.STBuffTrigger.CheckLinkActionEnabled");
+
+	USTBuffTrigger_CheckLinkActionEnabled_Params params;
+	params.BuffSystemComponent = BuffSystemComponent;
+	params.InstID = InstID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Basic.TableManagerSubsystem.SetTableStringDataField
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -7199,7 +8747,7 @@ int USTBuffSystemComponent::AddBuff(int BuffID, class AActor* Causer, int LayerC
 
 bool UTableManagerSubsystem::SetTableStringDataField(const struct FName& tableName, const struct FString& Key, const struct FString& Field, const struct FString& NewValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TableManagerSubsystem.SetTableStringDataField");
 
@@ -7228,7 +8776,7 @@ bool UTableManagerSubsystem::SetTableStringDataField(const struct FName& tableNa
 
 void UTableManagerSubsystem::SetModName(const struct FString& ModName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TableManagerSubsystem.SetModName");
 
@@ -7256,7 +8804,7 @@ void UTableManagerSubsystem::SetModName(const struct FString& ModName)
 
 class UDataTableProxy* UTableManagerSubsystem::GetTableProxy(const struct FName& tableName, bool bTempory, const struct FName& SystemName, const struct FName& SubModName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TableManagerSubsystem.GetTableProxy");
 
@@ -7289,7 +8837,7 @@ class UDataTableProxy* UTableManagerSubsystem::GetTableProxy(const struct FName&
 
 bool UTableManagerSubsystem::GetTableDataField(const struct FString& tableName, const struct FTableRowBase& Key, const struct FString& Field, struct FTableRowBase* Out)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TableManagerSubsystem.GetTableDataField");
 
@@ -7323,7 +8871,7 @@ bool UTableManagerSubsystem::GetTableDataField(const struct FString& tableName, 
 
 bool UTableManagerSubsystem::GetTableData(const struct FString& tableName, const struct FString& Key, struct FTableRowBase* OutRow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TableManagerSubsystem.GetTableData");
 
@@ -7353,7 +8901,7 @@ bool UTableManagerSubsystem::GetTableData(const struct FString& tableName, const
 
 bool UTickOptimizationAnimComponent::ShouldForceEnableAnimUpdateRateOptimizations()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.ShouldForceEnableAnimUpdateRateOptimizations");
 
@@ -7378,7 +8926,7 @@ bool UTickOptimizationAnimComponent::ShouldForceEnableAnimUpdateRateOptimization
 
 void UTickOptimizationAnimComponent::SetNonRenderedFramesSkipped(int InNonRenderedFramesSkipped)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.SetNonRenderedFramesSkipped");
 
@@ -7402,7 +8950,7 @@ void UTickOptimizationAnimComponent::SetNonRenderedFramesSkipped(int InNonRender
 
 void UTickOptimizationAnimComponent::SetMaxFramesSkippedForInterpolation(int InMaxFramesSkippedForInterpolation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.SetMaxFramesSkippedForInterpolation");
 
@@ -7426,7 +8974,7 @@ void UTickOptimizationAnimComponent::SetMaxFramesSkippedForInterpolation(int InM
 
 void UTickOptimizationAnimComponent::SetLODToFramesSkipped(TArray<int> InLODToFramesSkipped)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.SetLODToFramesSkipped");
 
@@ -7450,7 +8998,7 @@ void UTickOptimizationAnimComponent::SetLODToFramesSkipped(TArray<int> InLODToFr
 
 void UTickOptimizationAnimComponent::SetFramesSkippedScreenSizeThresholds(TArray<float> InFramesSkippedScreenSizeThresholds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.SetFramesSkippedScreenSizeThresholds");
 
@@ -7474,7 +9022,7 @@ void UTickOptimizationAnimComponent::SetFramesSkippedScreenSizeThresholds(TArray
 
 void UTickOptimizationAnimComponent::SetForceEnableAnimUpdateRateOptimizations(bool bInForceEnableAnimUpdateRateOptimizations)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.SetForceEnableAnimUpdateRateOptimizations");
 
@@ -7498,7 +9046,7 @@ void UTickOptimizationAnimComponent::SetForceEnableAnimUpdateRateOptimizations(b
 
 void UTickOptimizationAnimComponent::SetAnimUpdateRateOptimizationsMode(ETickOptimizationAnimUROMode InAnimUpdateRateOptimizationsMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.SetAnimUpdateRateOptimizationsMode");
 
@@ -7522,7 +9070,7 @@ void UTickOptimizationAnimComponent::SetAnimUpdateRateOptimizationsMode(ETickOpt
 
 void UTickOptimizationAnimComponent::RegisterDynamicSkinnedMeshComponent(class USkinnedMeshComponent* SkinnedMeshComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.RegisterDynamicSkinnedMeshComponent");
 
@@ -7546,7 +9094,7 @@ void UTickOptimizationAnimComponent::RegisterDynamicSkinnedMeshComponent(class U
 
 int UTickOptimizationAnimComponent::GetNonRenderedFramesSkipped()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.GetNonRenderedFramesSkipped");
 
@@ -7571,7 +9119,7 @@ int UTickOptimizationAnimComponent::GetNonRenderedFramesSkipped()
 
 int UTickOptimizationAnimComponent::GetMaxFramesSkippedForInterpolation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.GetMaxFramesSkippedForInterpolation");
 
@@ -7596,7 +9144,7 @@ int UTickOptimizationAnimComponent::GetMaxFramesSkippedForInterpolation()
 
 TArray<int> UTickOptimizationAnimComponent::GetLODToFramesSkipped()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.GetLODToFramesSkipped");
 
@@ -7621,7 +9169,7 @@ TArray<int> UTickOptimizationAnimComponent::GetLODToFramesSkipped()
 
 TArray<float> UTickOptimizationAnimComponent::GetFramesSkippedScreenSizeThresholds()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.GetFramesSkippedScreenSizeThresholds");
 
@@ -7646,7 +9194,7 @@ TArray<float> UTickOptimizationAnimComponent::GetFramesSkippedScreenSizeThreshol
 
 ETickOptimizationAnimUROMode UTickOptimizationAnimComponent::GetAnimUpdateRateOptimizationsMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationAnimComponent.GetAnimUpdateRateOptimizationsMode");
 
@@ -7671,7 +9219,7 @@ ETickOptimizationAnimUROMode UTickOptimizationAnimComponent::GetAnimUpdateRateOp
 
 bool UTickOptimizationFocusComponent::ShouldTrack()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationFocusComponent.ShouldTrack");
 
@@ -7696,7 +9244,7 @@ bool UTickOptimizationFocusComponent::ShouldTrack()
 
 bool UTickOptimizationTargetComponent::ShouldForceExecuteFirstTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.ShouldForceExecuteFirstTick");
 
@@ -7721,7 +9269,7 @@ bool UTickOptimizationTargetComponent::ShouldForceExecuteFirstTick()
 
 void UTickOptimizationTargetComponent::SetTickSettings(TArray<struct FTickOptimizationTickSettings> InTickSettings)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetTickSettings");
 
@@ -7745,7 +9293,7 @@ void UTickOptimizationTargetComponent::SetTickSettings(TArray<struct FTickOptimi
 
 void UTickOptimizationTargetComponent::SetSphereRadius(float InRadius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetSphereRadius");
 
@@ -7769,7 +9317,7 @@ void UTickOptimizationTargetComponent::SetSphereRadius(float InRadius)
 
 void UTickOptimizationTargetComponent::SetMidZoneSizes(TArray<float> InMidZoneSizes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetMidZoneSizes");
 
@@ -7793,7 +9341,7 @@ void UTickOptimizationTargetComponent::SetMidZoneSizes(TArray<float> InMidZoneSi
 
 void UTickOptimizationTargetComponent::SetForceExecuteFirstTick(bool bInForceExecuteFirstTick)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetForceExecuteFirstTick");
 
@@ -7817,7 +9365,7 @@ void UTickOptimizationTargetComponent::SetForceExecuteFirstTick(bool bInForceExe
 
 void UTickOptimizationTargetComponent::SetDistanceMode(ETickOptimizationDistanceMode InDistanceMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetDistanceMode");
 
@@ -7841,7 +9389,7 @@ void UTickOptimizationTargetComponent::SetDistanceMode(ETickOptimizationDistance
 
 void UTickOptimizationTargetComponent::SetComponentsTickControl(bool bInComponentsTickControl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetComponentsTickControl");
 
@@ -7865,7 +9413,7 @@ void UTickOptimizationTargetComponent::SetComponentsTickControl(bool bInComponen
 
 void UTickOptimizationTargetComponent::SetBufferSize(float InBufferSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetBufferSize");
 
@@ -7889,7 +9437,7 @@ void UTickOptimizationTargetComponent::SetBufferSize(float InBufferSize)
 
 void UTickOptimizationTargetComponent::SetActorTickControl(bool bInActorTickControl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.SetActorTickControl");
 
@@ -7913,7 +9461,7 @@ void UTickOptimizationTargetComponent::SetActorTickControl(bool bInActorTickCont
 
 void UTickOptimizationTargetComponent::RemoveComponentTickControl(class UActorComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.RemoveComponentTickControl");
 
@@ -7935,7 +9483,7 @@ void UTickOptimizationTargetComponent::RemoveComponentTickControl(class UActorCo
 
 void UTickOptimizationTargetComponent::Release()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.Release");
 
@@ -7958,7 +9506,7 @@ void UTickOptimizationTargetComponent::Release()
 
 bool UTickOptimizationTargetComponent::IsForced()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.IsForced");
 
@@ -7983,7 +9531,7 @@ bool UTickOptimizationTargetComponent::IsForced()
 
 bool UTickOptimizationTargetComponent::IsComponentsTickControl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.IsComponentsTickControl");
 
@@ -8008,7 +9556,7 @@ bool UTickOptimizationTargetComponent::IsComponentsTickControl()
 
 bool UTickOptimizationTargetComponent::IsActorTickControl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.IsActorTickControl");
 
@@ -8033,7 +9581,7 @@ bool UTickOptimizationTargetComponent::IsActorTickControl()
 
 int UTickOptimizationTargetComponent::GetTickZone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.GetTickZone");
 
@@ -8058,7 +9606,7 @@ int UTickOptimizationTargetComponent::GetTickZone()
 
 TArray<struct FTickOptimizationTickSettings> UTickOptimizationTargetComponent::GetTickSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.GetTickSettings");
 
@@ -8083,7 +9631,7 @@ TArray<struct FTickOptimizationTickSettings> UTickOptimizationTargetComponent::G
 
 float UTickOptimizationTargetComponent::GetSphereRadius()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.GetSphereRadius");
 
@@ -8108,7 +9656,7 @@ float UTickOptimizationTargetComponent::GetSphereRadius()
 
 TArray<float> UTickOptimizationTargetComponent::GetMidZoneSizes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.GetMidZoneSizes");
 
@@ -8133,7 +9681,7 @@ TArray<float> UTickOptimizationTargetComponent::GetMidZoneSizes()
 
 ETickOptimizationDistanceMode UTickOptimizationTargetComponent::GetDistanceMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.GetDistanceMode");
 
@@ -8158,7 +9706,7 @@ ETickOptimizationDistanceMode UTickOptimizationTargetComponent::GetDistanceMode(
 
 float UTickOptimizationTargetComponent::GetBufferSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.GetBufferSize");
 
@@ -8183,7 +9731,7 @@ float UTickOptimizationTargetComponent::GetBufferSize()
 
 void UTickOptimizationTargetComponent::Force(int InZone)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.Force");
 
@@ -8207,7 +9755,7 @@ void UTickOptimizationTargetComponent::Force(int InZone)
 
 void UTickOptimizationTargetComponent::AddComponentTickControl(class UActorComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.TickOptimizationTargetComponent.AddComponentTickControl");
 
@@ -8232,7 +9780,7 @@ void UTickOptimizationTargetComponent::AddComponentTickControl(class UActorCompo
 
 struct FString UBPTable::GetWrapperPath(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetWrapperPath");
 
@@ -8259,7 +9807,7 @@ struct FString UBPTable::GetWrapperPath(int ID)
 
 class UClass* UBPTable::GetWrapperClass(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetWrapperClass");
 
@@ -8288,7 +9836,7 @@ class UClass* UBPTable::GetWrapperClass(int ID)
 
 struct FString UBPTable::GetPath(int ID, bool IsLobby, bool bForceLobby)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetPath");
 
@@ -8320,7 +9868,7 @@ struct FString UBPTable::GetPath(int ID, bool IsLobby, bool bForceLobby)
 
 class UObject* UBPTable::GetObject(int ID, class UObject* Outer, bool IsLobby, bool IsLowDevice)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetObject");
 
@@ -8352,7 +9900,7 @@ class UObject* UBPTable::GetObject(int ID, class UObject* Outer, bool IsLobby, b
 
 class UObject* UBPTable::GetModObject(int ID, class UObject* Outer, bool IsLobby)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetModObject");
 
@@ -8382,7 +9930,7 @@ class UObject* UBPTable::GetModObject(int ID, class UObject* Outer, bool IsLobby
 
 class UClass* UBPTable::GetModClass(int ID, bool IsLobby)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetModClass");
 
@@ -8410,7 +9958,7 @@ class UClass* UBPTable::GetModClass(int ID, bool IsLobby)
 
 class UClass* UBPTable::GetCustom1Class(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetCustom1Class");
 
@@ -8439,7 +9987,7 @@ class UClass* UBPTable::GetCustom1Class(int ID)
 
 class UClass* UBPTable::GetClass(int ID, bool IsLobby, bool IsLowDevice)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.GetClass");
 
@@ -8467,7 +10015,7 @@ class UClass* UBPTable::GetClass(int ID, bool IsLobby, bool IsLowDevice)
 
 void UBPTable::ConvertPath(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.BPTable.ConvertPath");
 
@@ -8489,7 +10037,7 @@ void UBPTable::ConvertPath(int ID)
 
 void UUAELoadedClassManager::InitTableData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.InitTableData");
 
@@ -8510,7 +10058,7 @@ void UUAELoadedClassManager::InitTableData()
 
 void UUAELoadedClassManager::InitialModTableItemMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.InitialModTableItemMap");
 
@@ -8531,7 +10079,7 @@ void UUAELoadedClassManager::InitialModTableItemMap()
 
 void UUAELoadedClassManager::InitBPTableMap_Mod()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.InitBPTableMap_Mod");
 
@@ -8551,7 +10099,7 @@ void UUAELoadedClassManager::InitBPTableMap_Mod()
 
 void UUAELoadedClassManager::InitBPTableMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.InitBPTableMap");
 
@@ -8573,7 +10121,7 @@ void UUAELoadedClassManager::InitBPTableMap()
 
 void UUAELoadedClassManager::HandleTableModNameChanged(const struct FString& InModName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.HandleTableModNameChanged");
 
@@ -8599,7 +10147,7 @@ void UUAELoadedClassManager::HandleTableModNameChanged(const struct FString& InM
 
 struct FString UUAELoadedClassManager::GetWrapperPath(const struct FString& BPTableName, int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetWrapperPath");
 
@@ -8628,7 +10176,7 @@ struct FString UUAELoadedClassManager::GetWrapperPath(const struct FString& BPTa
 
 class UClass* UUAELoadedClassManager::GetWrapperClass(const struct FString& BPTableName, int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetWrapperClass");
 
@@ -8659,7 +10207,7 @@ class UClass* UUAELoadedClassManager::GetWrapperClass(const struct FString& BPTa
 
 struct FString UUAELoadedClassManager::GetPath(const struct FString& BPTableName, int ID, bool IsLobby, bool bForceLobby)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetPath");
 
@@ -8693,7 +10241,7 @@ struct FString UUAELoadedClassManager::GetPath(const struct FString& BPTableName
 
 class UObject* UUAELoadedClassManager::GetObject(const struct FString& BPTableName, int ID, class UObject* Outer, bool IsLobby, bool IsLowDevice)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetObject");
 
@@ -8723,7 +10271,7 @@ class UObject* UUAELoadedClassManager::GetObject(const struct FString& BPTableNa
 
 int UUAELoadedClassManager::GetExactDeviceLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetExactDeviceLevel");
 
@@ -8748,7 +10296,7 @@ int UUAELoadedClassManager::GetExactDeviceLevel()
 
 int UUAELoadedClassManager::GetDeviceLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetDeviceLevel");
 
@@ -8775,13 +10323,44 @@ int UUAELoadedClassManager::GetDeviceLevel()
 
 class UClass* UUAELoadedClassManager::GetCustom1Class(const struct FString& BPTableName, int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetCustom1Class");
 
 	UUAELoadedClassManager_GetCustom1Class_Params params;
 	params.BPTableName = BPTableName;
 	params.ID = ID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Basic.UAELoadedClassManager.GetClassLoadingPath
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 BPTableName                    (Parm, ZeroConstructor)
+// int                            ID                             (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           IsLobby                        (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UUAELoadedClassManager::GetClassLoadingPath(const struct FString& BPTableName, int ID, bool IsLobby)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetClassLoadingPath");
+
+	UUAELoadedClassManager_GetClassLoadingPath_Params params;
+	params.BPTableName = BPTableName;
+	params.ID = ID;
+	params.IsLobby = IsLobby;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -8806,7 +10385,7 @@ class UClass* UUAELoadedClassManager::GetCustom1Class(const struct FString& BPTa
 
 class UClass* UUAELoadedClassManager::GetClass(const struct FString& BPTableName, int ID, bool IsLobby, bool IsLowDevice)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetClass");
 
@@ -8836,7 +10415,7 @@ class UClass* UUAELoadedClassManager::GetClass(const struct FString& BPTableName
 
 struct FString UUAELoadedClassManager::GetBPTableName(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetBPTableName");
 
@@ -8863,7 +10442,7 @@ struct FString UUAELoadedClassManager::GetBPTableName(int Type)
 
 void UUAELoadedClassManager::GetAssetByAssetReferenceAsync(const struct FSoftObjectPath& AssetReference, const struct FScriptDelegate& AssetLoadSuccessDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetAssetByAssetReferenceAsync");
 
@@ -8890,7 +10469,7 @@ void UUAELoadedClassManager::GetAssetByAssetReferenceAsync(const struct FSoftObj
 
 void UUAELoadedClassManager::GetAssetAsyncWithStringForManage(const struct FSoftObjectPath& AssetReference, const struct FString& InputString, const struct FScriptDelegate& AssetLoadSuccessDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.GetAssetAsyncWithStringForManage");
 
@@ -8916,7 +10495,7 @@ void UUAELoadedClassManager::GetAssetAsyncWithStringForManage(const struct FSoft
 
 class UUAELoadedClassManager* UUAELoadedClassManager::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.Get");
 
@@ -8942,7 +10521,7 @@ class UUAELoadedClassManager* UUAELoadedClassManager::Get()
 
 class UBPTable* UUAELoadedClassManager::CreateAndAddBPTable_Mod(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.CreateAndAddBPTable_Mod");
 
@@ -8969,7 +10548,7 @@ class UBPTable* UUAELoadedClassManager::CreateAndAddBPTable_Mod(const struct FSt
 
 class UBPTable* UUAELoadedClassManager::CreateAndAddBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.CreateAndAddBPTable");
 
@@ -8993,7 +10572,7 @@ class UBPTable* UUAELoadedClassManager::CreateAndAddBPTable(const struct FString
 
 void UUAELoadedClassManager::ClearModTableItemMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.ClearModTableItemMap");
 
@@ -9014,7 +10593,7 @@ void UUAELoadedClassManager::ClearModTableItemMap()
 
 void UUAELoadedClassManager::ClearBPTable_Mod()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.ClearBPTable_Mod");
 
@@ -9035,7 +10614,7 @@ void UUAELoadedClassManager::ClearBPTable_Mod()
 
 void UUAELoadedClassManager::ClearBPTable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.ClearBPTable");
 
@@ -9058,7 +10637,7 @@ void UUAELoadedClassManager::ClearBPTable()
 
 void UUAELoadedClassManager::ClearAssetByAssetReferenceAsync(const struct FScriptDelegate& AssetLoadSuccessDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.ClearAssetByAssetReferenceAsync");
 
@@ -9080,7 +10659,7 @@ void UUAELoadedClassManager::ClearAssetByAssetReferenceAsync(const struct FScrip
 
 void UUAELoadedClassManager::ClearAllHandle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.ClearAllHandle");
 
@@ -9101,7 +10680,7 @@ void UUAELoadedClassManager::ClearAllHandle()
 
 void UUAELoadedClassManager::ClearAllData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAELoadedClassManager.ClearAllData");
 
@@ -9124,7 +10703,7 @@ void UUAELoadedClassManager::ClearAllData()
 
 int UUAEMeshComponent::GetPredictedLODLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEMeshComponent.GetPredictedLODLevel");
 
@@ -9149,7 +10728,7 @@ int UUAEMeshComponent::GetPredictedLODLevel()
 
 struct FString UUAEMeshComponent::GetAnimUpdateParamsInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAEMeshComponent.GetAnimUpdateParamsInfo");
 
@@ -9174,7 +10753,7 @@ struct FString UUAEMeshComponent::GetAnimUpdateParamsInfo()
 
 bool UUAENetConnection::IsClosed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAENetConnection.IsClosed");
 
@@ -9201,7 +10780,7 @@ bool UUAENetConnection::IsClosed()
 
 bool UUAENetConnection::HasSameRegion(const struct FVector& OldLoc, const struct FVector& NewLoc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAENetConnection.HasSameRegion");
 
@@ -9228,7 +10807,7 @@ bool UUAENetConnection::HasSameRegion(const struct FVector& OldLoc, const struct
 
 void UUAENetConnection::ForceRefreshRegionWeakNetUpdateObjects(float WeakNetConsiderFrequency)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAENetConnection.ForceRefreshRegionWeakNetUpdateObjects");
 
@@ -9252,7 +10831,7 @@ void UUAENetConnection::ForceRefreshRegionWeakNetUpdateObjects(float WeakNetCons
 
 void UUAETableManager::ReleaseTable(const struct FName& TableFName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.ReleaseTable");
 
@@ -9277,7 +10856,7 @@ void UUAETableManager::ReleaseTable(const struct FName& TableFName)
 
 class UUAEDataTable* UUAETableManager::GetTablePtr_Mod(const struct FName& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetTablePtr_Mod");
 
@@ -9305,7 +10884,7 @@ class UUAEDataTable* UUAETableManager::GetTablePtr_Mod(const struct FName& table
 
 class UUAEDataTable* UUAETableManager::GetTablePtr(const struct FName& tableName, bool bCheckModTable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetTablePtr");
 
@@ -9333,7 +10912,7 @@ class UUAEDataTable* UUAETableManager::GetTablePtr(const struct FName& tableName
 
 class UBaseTableResMap* UUAETableManager::GetTableMap(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetTableMap");
 
@@ -9362,7 +10941,7 @@ class UBaseTableResMap* UUAETableManager::GetTableMap(const struct FString& tabl
 
 bool UUAETableManager::GetTableData(const struct FString& tableName, const struct FString& Key, struct FTableRowBase* OutRow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetTableData");
 
@@ -9392,7 +10971,7 @@ bool UUAETableManager::GetTableData(const struct FString& tableName, const struc
 
 class UUAETableManager* UUAETableManager::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetInstance");
 
@@ -9418,7 +10997,7 @@ class UUAETableManager* UUAETableManager::GetInstance()
 
 struct FString UUAETableManager::GetDomainByID(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetDomainByID");
 
@@ -9445,7 +11024,7 @@ struct FString UUAETableManager::GetDomainByID(int ID)
 
 class UUAEDataTable* UUAETableManager::GetDataTableStatic_Mod(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetDataTableStatic_Mod");
 
@@ -9472,7 +11051,7 @@ class UUAEDataTable* UUAETableManager::GetDataTableStatic_Mod(const struct FStri
 
 class UUAEDataTable* UUAETableManager::GetDataTableStatic(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetDataTableStatic");
 
@@ -9502,7 +11081,7 @@ class UUAEDataTable* UUAETableManager::GetDataTableStatic(const struct FString& 
 
 class UDataTableProxy* UUAETableManager::GetDataTableProxy(const struct FName& tableName, bool bTempory, const struct FName& SystemName, const struct FName& SubModName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UAETableManager.GetDataTableProxy");
 
@@ -9531,7 +11110,7 @@ class UDataTableProxy* UUAETableManager::GetDataTableProxy(const struct FName& t
 
 void UUELanguageUtilityMethods::SetDownLoadLanguageName(const struct FString& Language)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UELanguageUtilityMethods.SetDownLoadLanguageName");
 
@@ -9555,7 +11134,7 @@ void UUELanguageUtilityMethods::SetDownLoadLanguageName(const struct FString& La
 
 bool UUELanguageUtilityMethods::IsJaguar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UELanguageUtilityMethods.IsJaguar");
 
@@ -9580,7 +11159,7 @@ bool UUELanguageUtilityMethods::IsJaguar()
 
 struct FString UUELanguageUtilityMethods::GetPublishRegion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UELanguageUtilityMethods.GetPublishRegion");
 
@@ -9605,7 +11184,7 @@ struct FString UUELanguageUtilityMethods::GetPublishRegion()
 
 struct FString UUELanguageUtilityMethods::GetDownLoadLanguageName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UELanguageUtilityMethods.GetDownLoadLanguageName");
 
@@ -9630,7 +11209,7 @@ struct FString UUELanguageUtilityMethods::GetDownLoadLanguageName()
 
 struct FString UUELanguageUtilityMethods::GetCurrentLanguageName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UELanguageUtilityMethods.GetCurrentLanguageName");
 
@@ -9655,7 +11234,7 @@ struct FString UUELanguageUtilityMethods::GetCurrentLanguageName()
 
 bool UUELanguageUtilityMethods::CheckLocalizationExist()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UELanguageUtilityMethods.CheckLocalizationExist");
 
@@ -9682,7 +11261,7 @@ bool UUELanguageUtilityMethods::CheckLocalizationExist()
 
 void UUEMathUtilityMethods::VectorNormalizeMultiple(const struct FVector& v1, float Multiple, struct FVector* Out)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.VectorNormalizeMultiple");
 
@@ -9712,7 +11291,7 @@ void UUEMathUtilityMethods::VectorNormalizeMultiple(const struct FVector& v1, fl
 
 void UUEMathUtilityMethods::VectorMultiple(const struct FVector& v1, float Multiple, struct FVector* Out)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.VectorMultiple");
 
@@ -9742,7 +11321,7 @@ void UUEMathUtilityMethods::VectorMultiple(const struct FVector& v1, float Multi
 
 void UUEMathUtilityMethods::VectorMinus(const struct FVector& v1, const struct FVector& v2, struct FVector* Out)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.VectorMinus");
 
@@ -9772,7 +11351,7 @@ void UUEMathUtilityMethods::VectorMinus(const struct FVector& v1, const struct F
 
 void UUEMathUtilityMethods::VectorAdditive(const struct FVector& v1, const struct FVector& v2, struct FVector* Out)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.VectorAdditive");
 
@@ -9803,7 +11382,7 @@ void UUEMathUtilityMethods::VectorAdditive(const struct FVector& v1, const struc
 
 bool UUEMathUtilityMethods::FilterOKForCurrentMode(unsigned char ModeType, int ModeOpenFlag, const struct FString& ModeTypes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.FilterOKForCurrentMode");
 
@@ -9832,7 +11411,7 @@ bool UUEMathUtilityMethods::FilterOKForCurrentMode(unsigned char ModeType, int M
 
 void UUEMathUtilityMethods::Conv_VectorToRotator(const struct FVector& Vec, struct FRotator* Out)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.Conv_VectorToRotator");
 
@@ -9863,7 +11442,7 @@ void UUEMathUtilityMethods::Conv_VectorToRotator(const struct FVector& Vec, stru
 
 float UUEMathUtilityMethods::CalculateAngleToTargetAngle(float StartAngle, float targetAngle, float StepAngle, EAngleRotationDirectionType Dir)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.CalculateAngleToTargetAngle");
 
@@ -9894,7 +11473,7 @@ float UUEMathUtilityMethods::CalculateAngleToTargetAngle(float StartAngle, float
 
 int UUEMathUtilityMethods::BKDRHash(const struct FString& StrToHash, int Mod)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.BKDRHash");
 
@@ -9923,7 +11502,7 @@ int UUEMathUtilityMethods::BKDRHash(const struct FString& StrToHash, int Mod)
 
 float UUEMathUtilityMethods::AngleDis(float angleA, float angleB)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEMathUtilityMethods.AngleDis");
 
@@ -9951,7 +11530,7 @@ float UUEMathUtilityMethods::AngleDis(float angleA, float angleB)
 
 bool UUEPathUtilityMethods::IsPathExist(const struct FString& HandlePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.IsPathExist");
 
@@ -9979,7 +11558,7 @@ bool UUEPathUtilityMethods::IsPathExist(const struct FString& HandlePath)
 
 bool UUEPathUtilityMethods::IsAvatarResPathExistRetODPakName(const struct FString& HandlePath, struct FString* OutODPakName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.IsAvatarResPathExistRetODPakName");
 
@@ -10009,7 +11588,7 @@ bool UUEPathUtilityMethods::IsAvatarResPathExistRetODPakName(const struct FStrin
 
 bool UUEPathUtilityMethods::IsAvatarResPathExist(const struct FString& HandlePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.IsAvatarResPathExist");
 
@@ -10035,7 +11614,7 @@ bool UUEPathUtilityMethods::IsAvatarResPathExist(const struct FString& HandlePat
 
 TArray<struct FString> UUEPathUtilityMethods::GetPassiveDownloadResourcePaths()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.GetPassiveDownloadResourcePaths");
 
@@ -10060,7 +11639,7 @@ TArray<struct FString> UUEPathUtilityMethods::GetPassiveDownloadResourcePaths()
 
 TArray<int> UUEPathUtilityMethods::GetPassiveDownloadResourceIDList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.GetPassiveDownloadResourceIDList");
 
@@ -10086,7 +11665,7 @@ TArray<int> UUEPathUtilityMethods::GetPassiveDownloadResourceIDList()
 
 struct FString UUEPathUtilityMethods::GetODPakFileName(const struct FString& InODPakPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.GetODPakFileName");
 
@@ -10113,7 +11692,7 @@ struct FString UUEPathUtilityMethods::GetODPakFileName(const struct FString& InO
 
 struct FString UUEPathUtilityMethods::GetModName(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.GetModName");
 
@@ -10141,7 +11720,7 @@ struct FString UUEPathUtilityMethods::GetModName(class UObject* WorldContext)
 
 void UUEPathUtilityMethods::GetFullModName(class UObject* WorldContext, struct FString* MainMod, struct FString* SubMod)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.GetFullModName");
 
@@ -10175,7 +11754,7 @@ void UUEPathUtilityMethods::GetFullModName(class UObject* WorldContext, struct F
 
 bool UUEPathUtilityMethods::FilterOKForCurrentModeString(const struct FString& CurrentModeString, const struct FString& CurrentExtraModeString, const struct FString& ModStringInfo, unsigned char ModeType, int ModeOpenFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.FilterOKForCurrentModeString");
 
@@ -10203,7 +11782,7 @@ bool UUEPathUtilityMethods::FilterOKForCurrentModeString(const struct FString& C
 
 void UUEPathUtilityMethods::ClearPassiveDownloadResourcePaths()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.ClearPassiveDownloadResourcePaths");
 
@@ -10224,7 +11803,7 @@ void UUEPathUtilityMethods::ClearPassiveDownloadResourcePaths()
 
 void UUEPathUtilityMethods::ClearPassiveDownloadResourceIDList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.ClearPassiveDownloadResourceIDList");
 
@@ -10247,7 +11826,7 @@ void UUEPathUtilityMethods::ClearPassiveDownloadResourceIDList()
 
 void UUEPathUtilityMethods::AddPassiveResourceDownloadFlag(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Basic.UEPathUtilityMethods.AddPassiveResourceDownloadFlag");
 

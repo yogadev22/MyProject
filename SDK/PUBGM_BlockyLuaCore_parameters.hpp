@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function BlockyLuaCore.BlockBase.SetIsDisable
 struct UBlockBase_SetIsDisable_Params
@@ -116,7 +116,7 @@ struct UNamedVar_SetDefiner_Params
 // Function BlockyLuaCore.NamedVar.SetAccessType
 struct UNamedVar_SetAccessType_Params
 {
-	TEnumAsByte<enum EBlockyAccessType>                Access;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlockyAccessType>                     Access;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.NamedVar.IsGlobalVar
@@ -181,7 +181,7 @@ struct UNamedVar_GetColorStr_Params
 // Function BlockyLuaCore.NamedVar.GetAccessType
 struct UNamedVar_GetAccessType_Params
 {
-	TEnumAsByte<enum EBlockyAccessType>                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyAccessType>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.NamedVar.CallCustomSelectObject
@@ -214,7 +214,7 @@ struct UBinaryOperatorExpression_SetRight_Params
 struct UBinaryOperatorExpression_SetOperation_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyBinaryOperation>           BlockyOp;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlockyBinaryOperation>                BlockyOp;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.BinaryOperatorExpression.SetLeft
@@ -242,7 +242,7 @@ struct UBinaryOperatorExpression_GetRight_Params
 struct UBinaryOperatorExpression_GetOperation_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyBinaryOperation>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyBinaryOperation>                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.BinaryOperatorExpression.GetLeft
@@ -867,6 +867,12 @@ struct UBlockyGraphData_GetAllBlockyInGraph_Params
 	TArray<class UBlockBase*>                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function BlockyLuaCore.BlockyGraphData.GetAllBlockIdStrings
+struct UBlockyGraphData_GetAllBlockIdStrings_Params
+{
+	TArray<struct FString>                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function BlockyLuaCore.BlockyGraphData.GetAllBlockByKeyName
 struct UBlockyGraphData_GetAllBlockByKeyName_Params
 {
@@ -1021,7 +1027,7 @@ struct UBlockyGraphData_Define_Params
 // Function BlockyLuaCore.BlockyGraphData.CustomNumByType
 struct UBlockyGraphData_CustomNumByType_Params
 {
-	TEnumAsByte<enum ECustomBlockType>                 CustomType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECustomBlockType>                      CustomType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -1438,7 +1444,7 @@ struct UBlockyMenuItemObject_Custom_IsCurrentCategoryEmpty_Params
 // Function BlockyLuaCore.BlockyMenuItemObject_Custom.GetCustomType
 struct UBlockyMenuItemObject_Custom_GetCustomType_Params
 {
-	TEnumAsByte<enum ECustomBlockType>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECustomBlockType>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.BlockyMenuItemObject_Custom.ClosePopUp
@@ -1484,7 +1490,7 @@ struct UBlockyMenuItemObject_Variable_FilterBlackboard_Params
 // Function BlockyLuaCore.BlockyMenuItemObject_Variable.FilterAccess
 struct UBlockyMenuItemObject_Variable_FilterAccess_Params
 {
-	TEnumAsByte<enum EBlockyAccessType>                InAccess;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlockyAccessType>                     InAccess;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.BlockyMenuItemObject_Variable.CanSeeCustomVar
@@ -1885,7 +1891,7 @@ struct UDefaultValueExpression_CreateDefaultValueExpression_Params
 struct UFunctionInvokeArgumentExpression_SetOperationType_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyFunctionArgumentAttribute> Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlockyFunctionArgumentAttribute>      Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.FunctionInvokeArgumentExpression.SetExpression
@@ -1906,7 +1912,7 @@ struct UFunctionInvokeArgumentExpression_SetAdditionPostCode_Params
 struct UFunctionInvokeArgumentExpression_GetOperationType_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyFunctionArgumentAttribute> ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyFunctionArgumentAttribute>      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.FunctionInvokeArgumentExpression.GetExpression
@@ -2724,7 +2730,7 @@ struct UPresetDesc_GetLocaleName_Params
 struct UPrimitiveExpression_GetValueType_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyValueType>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyValueType>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.PrimitiveExpression.GetValueString
@@ -2886,7 +2892,7 @@ struct UStatementBase_CreateStatementBase_Params
 struct UVariableDeclaration_SetVisitMode_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyVisitMode>                 visitMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlockyVisitMode>                      visitMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.VariableDeclaration.SetVariableName
@@ -2914,7 +2920,7 @@ struct UVariableDeclaration_SetComment_Params
 struct UVariableDeclaration_GetVisitMode_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyVisitMode>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyVisitMode>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.VariableDeclaration.GetVariableName
@@ -2948,14 +2954,14 @@ struct UVariableDeclaration_CreateVariableDeclaration_Params
 struct UAssignOperatorStatement_SetTo_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	struct FBlockyLuaHandle                            to;                                                       // (Parm)
+	struct FBlockyLuaHandle                            To;                                                       // (Parm)
 };
 
 // Function BlockyLuaCore.AssignOperatorStatement.SetFrom
 struct UAssignOperatorStatement_SetFrom_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	struct FBlockyLuaHandle                            from;                                                     // (Parm)
+	struct FBlockyLuaHandle                            From;                                                     // (Parm)
 };
 
 // Function BlockyLuaCore.AssignOperatorStatement.GetTo
@@ -3426,7 +3432,7 @@ struct UUnaryOperatorExpression_SetValue_Params
 struct UUnaryOperatorExpression_SetOperation_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyUnaryOperation>            Op;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlockyUnaryOperation>                 Op;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.UnaryOperatorExpression.GetValue
@@ -3440,7 +3446,7 @@ struct UUnaryOperatorExpression_GetValue_Params
 struct UUnaryOperatorExpression_GetOperation_Params
 {
 	struct FBlockyLuaHandle                            ptr;                                                      // (Parm)
-	TEnumAsByte<enum EBlockyUnaryOperation>            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyUnaryOperation>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.UnaryOperatorExpression.CreateUnaryOperatorExpression
@@ -3458,13 +3464,13 @@ struct UVarDefiner_SetType_Params
 // Function BlockyLuaCore.VarDefiner.GetVarTypeEnum
 struct UVarDefiner_GetVarTypeEnum_Params
 {
-	TEnumAsByte<enum EBlockyVariableType>              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyVariableType>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.VarDefiner.GetTypeEnum
 struct UVarDefiner_GetTypeEnum_Params
 {
-	TEnumAsByte<enum EBlockyListItemType>              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBlockyListItemType>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BlockyLuaCore.VarDefiner.GetType

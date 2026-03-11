@@ -1,32 +1,32 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UITweens.TweenManager.TweenScale
 // (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UWidget*                 Widget                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// struct FVector2D               from                           (Parm, IsPlainOldData)
-// struct FVector2D               to                             (Parm, IsPlainOldData)
+// struct FVector2D               From                           (Parm, IsPlainOldData)
+// struct FVector2D               To                             (Parm, IsPlainOldData)
 // float                          Timespan                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Type                           (Parm, ZeroConstructor, IsPlainOldData)
 
-void UTweenManager::TweenScale(class UWidget* Widget, const struct FVector2D& from, const struct FVector2D& to, float Timespan, int Type)
+void UTweenManager::TweenScale(class UWidget* Widget, const struct FVector2D& From, const struct FVector2D& To, float Timespan, int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UITweens.TweenManager.TweenScale");
 
 	UTweenManager_TweenScale_Params params;
 	params.Widget = Widget;
-	params.from = from;
-	params.to = to;
+	params.From = From;
+	params.To = To;
 	params.Timespan = Timespan;
 	params.Type = Type;
 
@@ -44,21 +44,21 @@ void UTweenManager::TweenScale(class UWidget* Widget, const struct FVector2D& fr
 // (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UWidget*                 Widget                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// struct FVector2D               from                           (Parm, IsPlainOldData)
-// struct FVector2D               to                             (Parm, IsPlainOldData)
+// struct FVector2D               From                           (Parm, IsPlainOldData)
+// struct FVector2D               To                             (Parm, IsPlainOldData)
 // float                          Timespan                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Type                           (Parm, ZeroConstructor, IsPlainOldData)
 
-void UTweenManager::TweenPosition(class UWidget* Widget, const struct FVector2D& from, const struct FVector2D& to, float Timespan, int Type)
+void UTweenManager::TweenPosition(class UWidget* Widget, const struct FVector2D& From, const struct FVector2D& To, float Timespan, int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UITweens.TweenManager.TweenPosition");
 
 	UTweenManager_TweenPosition_Params params;
 	params.Widget = Widget;
-	params.from = from;
-	params.to = to;
+	params.From = From;
+	params.To = To;
 	params.Timespan = Timespan;
 	params.Type = Type;
 
@@ -76,21 +76,21 @@ void UTweenManager::TweenPosition(class UWidget* Widget, const struct FVector2D&
 // (Final, Native, Public)
 // Parameters:
 // class UWidget*                 Widget                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// float                          from                           (Parm, ZeroConstructor, IsPlainOldData)
-// float                          to                             (Parm, ZeroConstructor, IsPlainOldData)
+// float                          From                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          To                             (Parm, ZeroConstructor, IsPlainOldData)
 // float                          Timespan                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Type                           (Parm, ZeroConstructor, IsPlainOldData)
 
-void UTweenManager::TweenAlpha(class UWidget* Widget, float from, float to, float Timespan, int Type)
+void UTweenManager::TweenAlpha(class UWidget* Widget, float From, float To, float Timespan, int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UITweens.TweenManager.TweenAlpha");
 
 	UTweenManager_TweenAlpha_Params params;
 	params.Widget = Widget;
-	params.from = from;
-	params.to = to;
+	params.From = From;
+	params.To = To;
 	params.Timespan = Timespan;
 	params.Type = Type;
 
@@ -111,7 +111,7 @@ void UTweenManager::TweenAlpha(class UWidget* Widget, float from, float to, floa
 
 void UTweenManager::Tick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UITweens.TweenManager.Tick");
 

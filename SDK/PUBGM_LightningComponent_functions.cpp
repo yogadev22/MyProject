@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function LightningComponent.LightningComponent.SetWidthDecay
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void ULightningComponent::SetWidthDecay(float InDecay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.SetWidthDecay");
 
@@ -39,7 +39,7 @@ void ULightningComponent::SetWidthDecay(float InDecay)
 
 void ULightningComponent::SetShrinkWidth(bool InBool)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.SetShrinkWidth");
 
@@ -63,7 +63,7 @@ void ULightningComponent::SetShrinkWidth(bool InBool)
 
 void ULightningComponent::SetPatternMask(int InPatternMask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.SetPatternMask");
 
@@ -87,7 +87,7 @@ void ULightningComponent::SetPatternMask(int InPatternMask)
 
 void ULightningComponent::SetMaxFractalTime(int InMaxFractalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.SetMaxFractalTime");
 
@@ -111,7 +111,7 @@ void ULightningComponent::SetMaxFractalTime(int InMaxFractalTime)
 
 void ULightningComponent::SetLightningWidth(float InWidth)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.SetLightningWidth");
 
@@ -135,7 +135,7 @@ void ULightningComponent::SetLightningWidth(float InWidth)
 
 void ULightningComponent::SetBrightnessDecay(float InDecay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.SetBrightnessDecay");
 
@@ -159,7 +159,7 @@ void ULightningComponent::SetBrightnessDecay(float InDecay)
 
 void ULightningComponent::SetAtlasNum(int InVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.SetAtlasNum");
 
@@ -181,7 +181,7 @@ void ULightningComponent::SetAtlasNum(int InVal)
 
 void ULightningComponent::RefreshLightningMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.RefreshLightningMesh");
 
@@ -204,7 +204,7 @@ void ULightningComponent::RefreshLightningMesh()
 
 bool ULightningComponent::IsShrinkWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.IsShrinkWidth");
 
@@ -229,7 +229,7 @@ bool ULightningComponent::IsShrinkWidth()
 
 float ULightningComponent::GetWidthDecay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.GetWidthDecay");
 
@@ -254,7 +254,7 @@ float ULightningComponent::GetWidthDecay()
 
 int ULightningComponent::GetPatternMask()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.GetPatternMask");
 
@@ -279,7 +279,7 @@ int ULightningComponent::GetPatternMask()
 
 int ULightningComponent::GetMaxFractalTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.GetMaxFractalTime");
 
@@ -304,7 +304,7 @@ int ULightningComponent::GetMaxFractalTime()
 
 float ULightningComponent::GetLightningWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.GetLightningWidth");
 
@@ -329,7 +329,7 @@ float ULightningComponent::GetLightningWidth()
 
 float ULightningComponent::GetBrightnessDecay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.GetBrightnessDecay");
 
@@ -354,7 +354,7 @@ float ULightningComponent::GetBrightnessDecay()
 
 float ULightningComponent::GetAtlasNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LightningComponent.LightningComponent.GetAtlasNum");
 

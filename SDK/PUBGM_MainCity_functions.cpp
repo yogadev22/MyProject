@@ -1,22 +1,22 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function MainCity.CarryBackMCAnimInstance.HandlePlayerPoseChange
 // (Native, Public)
 // Parameters:
-// TEnumAsByte<enum ESTEPoseState> LastPose                       (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ESTEPoseState> NewPose                        (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESTEPoseState>     LastPose                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESTEPoseState>     NewPose                        (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCarryBackMCAnimInstance::HandlePlayerPoseChange(TEnumAsByte<enum ESTEPoseState> LastPose, TEnumAsByte<enum ESTEPoseState> NewPose)
+void UCarryBackMCAnimInstance::HandlePlayerPoseChange(TEnumAsByte<ESTEPoseState> LastPose, TEnumAsByte<ESTEPoseState> NewPose)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CarryBackMCAnimInstance.HandlePlayerPoseChange");
 
@@ -39,7 +39,7 @@ void UCarryBackMCAnimInstance::HandlePlayerPoseChange(TEnumAsByte<enum ESTEPoseS
 
 void UCharLocomotionMCAnimInstance::SwitchingPoseFinishCallback()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharLocomotionMCAnimInstance.SwitchingPoseFinishCallback");
 
@@ -63,7 +63,7 @@ void UCharLocomotionMCAnimInstance::SwitchingPoseFinishCallback()
 
 void UCharLocomotionMCAnimInstance::SetViewPointLimitByPoseStatus(ECharacterAnimBlendPoseType InPoseType, bool bEnter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharLocomotionMCAnimInstance.SetViewPointLimitByPoseStatus");
 
@@ -85,11 +85,11 @@ void UCharLocomotionMCAnimInstance::SetViewPointLimitByPoseStatus(ECharacterAnim
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bUseInterruptPose              (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ECharacterPoseType> InterruptPose                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECharacterPoseType> InterruptPose                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCharLocomotionMCAnimInstance::SetInterruptPose(bool bUseInterruptPose, TEnumAsByte<enum ECharacterPoseType> InterruptPose)
+void UCharLocomotionMCAnimInstance::SetInterruptPose(bool bUseInterruptPose, TEnumAsByte<ECharacterPoseType> InterruptPose)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharLocomotionMCAnimInstance.SetInterruptPose");
 
@@ -112,7 +112,7 @@ void UCharLocomotionMCAnimInstance::SetInterruptPose(bool bUseInterruptPose, TEn
 
 void UCharLocomotionMCAnimInstance::LeaveStateCallback()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharLocomotionMCAnimInstance.LeaveStateCallback");
 
@@ -135,7 +135,7 @@ void UCharLocomotionMCAnimInstance::LeaveStateCallback()
 
 void UCharLocomotionMCAnimInstance::HandleStateLeave(EPawnState LeaveState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharLocomotionMCAnimInstance.HandleStateLeave");
 
@@ -155,12 +155,12 @@ void UCharLocomotionMCAnimInstance::HandleStateLeave(EPawnState LeaveState)
 // Function MainCity.CharLocomotionMCAnimInstance.HandlePlayerPoseChange
 // (Native, Public)
 // Parameters:
-// TEnumAsByte<enum ESTEPoseState> LastPose                       (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ESTEPoseState> NewPose                        (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESTEPoseState>     LastPose                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESTEPoseState>     NewPose                        (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCharLocomotionMCAnimInstance::HandlePlayerPoseChange(TEnumAsByte<enum ESTEPoseState> LastPose, TEnumAsByte<enum ESTEPoseState> NewPose)
+void UCharLocomotionMCAnimInstance::HandlePlayerPoseChange(TEnumAsByte<ESTEPoseState> LastPose, TEnumAsByte<ESTEPoseState> NewPose)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharLocomotionMCAnimInstance.HandlePlayerPoseChange");
 
@@ -186,7 +186,7 @@ void UCharLocomotionMCAnimInstance::HandlePlayerPoseChange(TEnumAsByte<enum ESTE
 
 void UCharMainMCAnimInstance::SetClimbAnimation(class UAnimSequence* AnimSequence, bool bFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharMainMCAnimInstance.SetClimbAnimation");
 
@@ -217,7 +217,7 @@ void UCharMainMCAnimInstance::SetClimbAnimation(class UAnimSequence* AnimSequenc
 
 void UCharMainMCAnimInstance::HandlePlayerAnimMontagePlayExtraDelegate(class UAnimMontage* MontageToPlay, bool bWantsPlay, float PlayRate, const struct FName& StartSection, float StartPos, bool bOnlyJumpToSectionWhilePlaying, const struct FName& IgnoreStopSection)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharMainMCAnimInstance.HandlePlayerAnimMontagePlayExtraDelegate");
 
@@ -251,7 +251,7 @@ void UCharMainMCAnimInstance::HandlePlayerAnimMontagePlayExtraDelegate(class UAn
 
 void UCharMainMCAnimInstance::HandlePlayerAnimMontagePlayDelegate(class UAnimMontage* MontageToPlay, bool bWantsPlay, float PlayRate, const struct FName& StartSection, float StartPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharMainMCAnimInstance.HandlePlayerAnimMontagePlayDelegate");
 
@@ -286,7 +286,7 @@ void UCharMainMCAnimInstance::HandlePlayerAnimMontagePlayDelegate(class UAnimMon
 
 void UCharMainMCAnimInstance::HandleAnimPlaySlotAnimDelegate(class UAnimSequenceBase* AnimSequence, bool bWantsPlay, const struct FName& SlotName, float PlayRate, float BlendTime, unsigned char InLoopCount, float InStartPos, float LoopStartPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.CharMainMCAnimInstance.HandleAnimPlaySlotAnimDelegate");
 
@@ -317,7 +317,7 @@ void UCharMainMCAnimInstance::HandleAnimPlaySlotAnimDelegate(class UAnimSequence
 
 void AMainCityGameMode::ReplayRecoverGenerateDSCheckpoint(const struct FString& InReplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityGameMode.ReplayRecoverGenerateDSCheckpoint");
 
@@ -339,7 +339,7 @@ void AMainCityGameMode::ReplayRecoverGenerateDSCheckpoint(const struct FString& 
 
 void AMainCityGameMode::PreInitGameState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityGameMode.PreInitGameState");
 
@@ -362,7 +362,7 @@ void AMainCityGameMode::PreInitGameState()
 
 void AMainCityGameMode::InternalNotifyPlayerExit(class ASTExtraPlayerController* PlayerController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityGameMode.InternalNotifyPlayerExit");
 
@@ -386,7 +386,7 @@ void AMainCityGameMode::InternalNotifyPlayerExit(class ASTExtraPlayerController*
 
 void AMainCityGameMode::InitConsoleVar(const struct FString& Command)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityGameMode.InitConsoleVar");
 
@@ -410,7 +410,7 @@ void AMainCityGameMode::InitConsoleVar(const struct FString& Command)
 
 void AMainCityGameMode::GenReplayDone(const struct FString& ErrorMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityGameMode.GenReplayDone");
 
@@ -436,7 +436,7 @@ void AMainCityGameMode::GenReplayDone(const struct FString& ErrorMsg)
 
 void AMainCityGameMode::DSPlayerKickOut(uint64_t UID, const struct FName& PlayerType, const struct FString& ExitReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityGameMode.DSPlayerKickOut");
 
@@ -462,7 +462,7 @@ void AMainCityGameMode::DSPlayerKickOut(uint64_t UID, const struct FName& Player
 
 struct FString UMainCityGameplayStatics::GetProjectSavedDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityGameplayStatics.GetProjectSavedDir");
 
@@ -488,7 +488,7 @@ struct FString UMainCityGameplayStatics::GetProjectSavedDir()
 
 int UMainCityHelper::SetSwapRolesForReplay(class AActor* InActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityHelper.SetSwapRolesForReplay");
 
@@ -514,7 +514,7 @@ int UMainCityHelper::SetSwapRolesForReplay(class AActor* InActor)
 
 void AMainCityPlayerState::RefreshAliasInfo(struct FGameModePlayerAliasInfo* PlayerAliasInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCityPlayerState.RefreshAliasInfo");
 
@@ -538,7 +538,7 @@ void AMainCityPlayerState::RefreshAliasInfo(struct FGameModePlayerAliasInfo* Pla
 
 void UMainCitySeesawAnimInstance::SyncAttachedActorAnimation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySeesawAnimInstance.SyncAttachedActorAnimation");
 
@@ -562,7 +562,7 @@ void UMainCitySeesawAnimInstance::SyncAttachedActorAnimation()
 
 void UMainCitySubsystem::SetHasInitLobbyAvatar(class ASTExtraPlayerController* InController, bool bInValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.SetHasInitLobbyAvatar");
 
@@ -587,7 +587,7 @@ void UMainCitySubsystem::SetHasInitLobbyAvatar(class ASTExtraPlayerController* I
 
 void UMainCitySubsystem::ResetMainCityGameState(class ASTExtraGameStateBase* InGameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.ResetMainCityGameState");
 
@@ -609,7 +609,7 @@ void UMainCitySubsystem::ResetMainCityGameState(class ASTExtraGameStateBase* InG
 
 void UMainCitySubsystem::PreShutdownUnrealNetwork()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PreShutdownUnrealNetwork");
 
@@ -630,7 +630,7 @@ void UMainCitySubsystem::PreShutdownUnrealNetwork()
 
 void UMainCitySubsystem::PreEnterMainCityBattle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PreEnterMainCityBattle");
 
@@ -653,7 +653,7 @@ void UMainCitySubsystem::PreEnterMainCityBattle()
 
 void UMainCitySubsystem::PreDestroyAutonomousChar(class ASTExtraBaseCharacter* Character)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PreDestroyAutonomousChar");
 
@@ -675,7 +675,7 @@ void UMainCitySubsystem::PreDestroyAutonomousChar(class ASTExtraBaseCharacter* C
 
 void UMainCitySubsystem::PostShutdownUnrealNetwork()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PostShutdownUnrealNetwork");
 
@@ -696,7 +696,7 @@ void UMainCitySubsystem::PostShutdownUnrealNetwork()
 
 void UMainCitySubsystem::PostPlayerActorChannelOpen()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PostPlayerActorChannelOpen");
 
@@ -717,7 +717,7 @@ void UMainCitySubsystem::PostPlayerActorChannelOpen()
 
 void UMainCitySubsystem::PostInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PostInitialize");
 
@@ -738,7 +738,7 @@ void UMainCitySubsystem::PostInitialize()
 
 void UMainCitySubsystem::PostEnterMainCityBattle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PostEnterMainCityBattle");
 
@@ -759,7 +759,7 @@ void UMainCitySubsystem::PostEnterMainCityBattle()
 
 void UMainCitySubsystem::PostDeinitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PostDeinitialize");
 
@@ -780,7 +780,7 @@ void UMainCitySubsystem::PostDeinitialize()
 
 void UMainCitySubsystem::PostClearActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.PostClearActors");
 
@@ -803,7 +803,7 @@ void UMainCitySubsystem::PostClearActors()
 
 void UMainCitySubsystem::KeepActor(class AActor* InActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.KeepActor");
 
@@ -830,7 +830,7 @@ void UMainCitySubsystem::KeepActor(class AActor* InActor)
 
 class ASTExtraBaseCharacter* UMainCitySubsystem::InitStandalonePawn(class UClass* InClass, const struct FVector& InLocation, const struct FRotator& InRotation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.InitStandalonePawn");
 
@@ -856,7 +856,7 @@ class ASTExtraBaseCharacter* UMainCitySubsystem::InitStandalonePawn(class UClass
 
 void UMainCitySubsystem::ClearActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.MainCitySubsystem.ClearActors");
 
@@ -879,7 +879,7 @@ void UMainCitySubsystem::ClearActors()
 
 void UReplayRecoverSubsystem::WriteLuaInfo(TArray<unsigned char> InData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.WriteLuaInfo");
 
@@ -903,7 +903,7 @@ void UReplayRecoverSubsystem::WriteLuaInfo(TArray<unsigned char> InData)
 
 void UReplayRecoverSubsystem::SetReplayName(const struct FString& InReplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.SetReplayName");
 
@@ -927,7 +927,7 @@ void UReplayRecoverSubsystem::SetReplayName(const struct FString& InReplayName)
 
 TArray<unsigned char> UReplayRecoverSubsystem::ReadLuaInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.ReadLuaInfo");
 
@@ -953,7 +953,7 @@ TArray<unsigned char> UReplayRecoverSubsystem::ReadLuaInfo()
 
 void UReplayRecoverSubsystem::PreInitializeWithParams(class UWorld* InWorld, class UNetDriver* InDriver)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.PreInitializeWithParams");
 
@@ -980,7 +980,7 @@ void UReplayRecoverSubsystem::PreInitializeWithParams(class UWorld* InWorld, cla
 
 void UReplayRecoverSubsystem::PreInitializeForWorld(const struct FString& InURLStr, class UWorld* InWorld, class USTExtraGameInstance* InGameInstance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.PreInitializeForWorld");
 
@@ -1008,7 +1008,7 @@ void UReplayRecoverSubsystem::PreInitializeForWorld(const struct FString& InURLS
 
 void UReplayRecoverSubsystem::PreInitializeForGameMode(const struct FString& InURLStr, class UWorld* InWorld, class AGameStateBase* InGameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.PreInitializeForGameMode");
 
@@ -1034,7 +1034,7 @@ void UReplayRecoverSubsystem::PreInitializeForGameMode(const struct FString& InU
 
 void UReplayRecoverSubsystem::PreDemoPlaybackEnded(class UWorld* InWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.PreDemoPlaybackEnded");
 
@@ -1059,7 +1059,7 @@ void UReplayRecoverSubsystem::PreDemoPlaybackEnded(class UWorld* InWorld)
 
 void UReplayRecoverSubsystem::PostInitializeWithParams(class UWorld* InWorld, class UNetDriver* InDriver)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.PostInitializeWithParams");
 
@@ -1086,7 +1086,7 @@ void UReplayRecoverSubsystem::PostInitializeWithParams(class UWorld* InWorld, cl
 
 void UReplayRecoverSubsystem::PostInitializeForWorld(const struct FString& InURLStr, class UWorld* InWorld, class USTExtraGameInstance* InGameInstance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.PostInitializeForWorld");
 
@@ -1114,7 +1114,7 @@ void UReplayRecoverSubsystem::PostInitializeForWorld(const struct FString& InURL
 
 void UReplayRecoverSubsystem::PostInitializeForGameMode(const struct FString& InURLStr, class UWorld* InWorld, class AGameStateBase* InGameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.PostInitializeForGameMode");
 
@@ -1140,7 +1140,7 @@ void UReplayRecoverSubsystem::PostInitializeForGameMode(const struct FString& In
 
 bool UReplayRecoverSubsystem::LuaSaveLuaInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.LuaSaveLuaInfo");
 
@@ -1165,7 +1165,7 @@ bool UReplayRecoverSubsystem::LuaSaveLuaInfo()
 
 void UReplayRecoverSubsystem::LoadReplayDone(const struct FString& ErrorMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.LoadReplayDone");
 
@@ -1191,7 +1191,7 @@ void UReplayRecoverSubsystem::LoadReplayDone(const struct FString& ErrorMsg)
 
 bool UReplayRecoverSubsystem::IsVersionValid(const struct FString& RecordVersion, const struct FString& PlayerVersion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.IsVersionValid");
 
@@ -1220,7 +1220,7 @@ bool UReplayRecoverSubsystem::IsVersionValid(const struct FString& RecordVersion
 
 bool UReplayRecoverSubsystem::IsTimeValid(int64_t RecordTime, int64_t PlayTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.IsTimeValid");
 
@@ -1247,7 +1247,7 @@ bool UReplayRecoverSubsystem::IsTimeValid(int64_t RecordTime, int64_t PlayTime)
 
 void UReplayRecoverSubsystem::GenReplayDone(const struct FString& ErrorMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.GenReplayDone");
 
@@ -1271,7 +1271,7 @@ void UReplayRecoverSubsystem::GenReplayDone(const struct FString& ErrorMsg)
 
 void UReplayRecoverSubsystem::DeleteExpiredFiles(float MaxKeepHours)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.DeleteExpiredFiles");
 
@@ -1293,7 +1293,7 @@ void UReplayRecoverSubsystem::DeleteExpiredFiles(float MaxKeepHours)
 
 void UReplayRecoverSubsystem::ClearRecoverFile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MainCity.ReplayRecoverSubsystem.ClearRecoverFile");
 

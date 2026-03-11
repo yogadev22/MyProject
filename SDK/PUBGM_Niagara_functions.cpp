@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Niagara.NiagaraComponent.SetSeekDelta
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UNiagaraComponent::SetSeekDelta(float InSeekDelta)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetSeekDelta");
 
@@ -39,7 +39,7 @@ void UNiagaraComponent::SetSeekDelta(float InSeekDelta)
 
 void UNiagaraComponent::SetRenderingEnabled(bool bInRenderingEnabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetRenderingEnabled");
 
@@ -64,7 +64,7 @@ void UNiagaraComponent::SetRenderingEnabled(bool bInRenderingEnabled)
 
 void UNiagaraComponent::SetPreviewLODDistance(bool bEnablePreviewLODDistance, float PreviewLODDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetPreviewLODDistance");
 
@@ -90,7 +90,7 @@ void UNiagaraComponent::SetPreviewLODDistance(bool bEnablePreviewLODDistance, fl
 
 void UNiagaraComponent::SetPreviewDetailLevel(bool bEnablePreviewDetailLevel, int PreviewDetailLevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetPreviewDetailLevel");
 
@@ -115,7 +115,7 @@ void UNiagaraComponent::SetPreviewDetailLevel(bool bEnablePreviewDetailLevel, in
 
 void UNiagaraComponent::SetPaused(bool bInPaused)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetPaused");
 
@@ -140,7 +140,7 @@ void UNiagaraComponent::SetPaused(bool bInPaused)
 
 void UNiagaraComponent::SetNiagaraVariableVec4(const struct FString& InVariableName, const struct FVector4& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableVec4");
 
@@ -166,7 +166,7 @@ void UNiagaraComponent::SetNiagaraVariableVec4(const struct FString& InVariableN
 
 void UNiagaraComponent::SetNiagaraVariableVec3(const struct FString& InVariableName, const struct FVector& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableVec3");
 
@@ -192,7 +192,7 @@ void UNiagaraComponent::SetNiagaraVariableVec3(const struct FString& InVariableN
 
 void UNiagaraComponent::SetNiagaraVariableVec2(const struct FString& InVariableName, const struct FVector2D& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableVec2");
 
@@ -218,7 +218,7 @@ void UNiagaraComponent::SetNiagaraVariableVec2(const struct FString& InVariableN
 
 void UNiagaraComponent::SetNiagaraVariableQuat(const struct FString& InVariableName, const struct FQuat& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableQuat");
 
@@ -244,7 +244,7 @@ void UNiagaraComponent::SetNiagaraVariableQuat(const struct FString& InVariableN
 
 void UNiagaraComponent::SetNiagaraVariableLinearColor(const struct FString& InVariableName, const struct FLinearColor& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor");
 
@@ -270,7 +270,7 @@ void UNiagaraComponent::SetNiagaraVariableLinearColor(const struct FString& InVa
 
 void UNiagaraComponent::SetNiagaraVariableInt(const struct FString& InVariableName, int InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableInt");
 
@@ -296,7 +296,7 @@ void UNiagaraComponent::SetNiagaraVariableInt(const struct FString& InVariableNa
 
 void UNiagaraComponent::SetNiagaraVariableFloat(const struct FString& InVariableName, float InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableFloat");
 
@@ -322,7 +322,7 @@ void UNiagaraComponent::SetNiagaraVariableFloat(const struct FString& InVariable
 
 void UNiagaraComponent::SetNiagaraVariableBool(const struct FString& InVariableName, bool InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableBool");
 
@@ -348,7 +348,7 @@ void UNiagaraComponent::SetNiagaraVariableBool(const struct FString& InVariableN
 
 void UNiagaraComponent::SetNiagaraVariableActor(const struct FString& InVariableName, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableActor");
 
@@ -373,7 +373,7 @@ void UNiagaraComponent::SetNiagaraVariableActor(const struct FString& InVariable
 
 void UNiagaraComponent::SetMaxSimTime(float InMaxTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetMaxSimTime");
 
@@ -397,7 +397,7 @@ void UNiagaraComponent::SetMaxSimTime(float InMaxTime)
 
 void UNiagaraComponent::SetForceSolo(bool bInForceSolo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetForceSolo");
 
@@ -421,7 +421,7 @@ void UNiagaraComponent::SetForceSolo(bool bInForceSolo)
 
 void UNiagaraComponent::SetDesiredAge(float InDesiredAge)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetDesiredAge");
 
@@ -445,7 +445,7 @@ void UNiagaraComponent::SetDesiredAge(float InDesiredAge)
 
 void UNiagaraComponent::SetCanRenderWhileSeeking(bool bInCanRenderWhileSeeking)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking");
 
@@ -469,7 +469,7 @@ void UNiagaraComponent::SetCanRenderWhileSeeking(bool bInCanRenderWhileSeeking)
 
 void UNiagaraComponent::SetAutoDestroy(bool bInAutoDestroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAutoDestroy");
 
@@ -497,7 +497,7 @@ void UNiagaraComponent::SetAutoDestroy(bool bInAutoDestroy)
 
 void UNiagaraComponent::SetAutoAttachmentParameters(class USceneComponent* Parent, const struct FName& SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAutoAttachmentParameters");
 
@@ -525,7 +525,7 @@ void UNiagaraComponent::SetAutoAttachmentParameters(class USceneComponent* Paren
 
 void UNiagaraComponent::SetAsset(class UNiagaraSystem* InAsset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAsset");
 
@@ -549,7 +549,7 @@ void UNiagaraComponent::SetAsset(class UNiagaraSystem* InAsset)
 
 void UNiagaraComponent::SetAgeUpdateMode(ENiagaraAgeUpdateMode InAgeUpdateMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAgeUpdateMode");
 
@@ -573,7 +573,7 @@ void UNiagaraComponent::SetAgeUpdateMode(ENiagaraAgeUpdateMode InAgeUpdateMode)
 
 void UNiagaraComponent::SeekToDesiredAge(float InDesiredAge)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SeekToDesiredAge");
 
@@ -595,7 +595,7 @@ void UNiagaraComponent::SeekToDesiredAge(float InDesiredAge)
 
 void UNiagaraComponent::ResetSystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.ResetSystem");
 
@@ -616,7 +616,7 @@ void UNiagaraComponent::ResetSystem()
 
 void UNiagaraComponent::ReinitializeSystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.ReinitializeSystem");
 
@@ -639,7 +639,7 @@ void UNiagaraComponent::ReinitializeSystem()
 
 bool UNiagaraComponent::IsPaused()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.IsPaused");
 
@@ -664,7 +664,7 @@ bool UNiagaraComponent::IsPaused()
 
 float UNiagaraComponent::GetSeekDelta()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetSeekDelta");
 
@@ -691,7 +691,7 @@ float UNiagaraComponent::GetSeekDelta()
 
 TArray<struct FVector> UNiagaraComponent::GetNiagaraParticleValueVec3_DebugOnly(const struct FString& InEmitterName, const struct FString& InValueName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly");
 
@@ -720,7 +720,7 @@ TArray<struct FVector> UNiagaraComponent::GetNiagaraParticleValueVec3_DebugOnly(
 
 TArray<float> UNiagaraComponent::GetNiagaraParticleValues_DebugOnly(const struct FString& InEmitterName, const struct FString& InValueName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly");
 
@@ -748,7 +748,7 @@ TArray<float> UNiagaraComponent::GetNiagaraParticleValues_DebugOnly(const struct
 
 TArray<struct FVector> UNiagaraComponent::GetNiagaraParticlePositions_DebugOnly(const struct FString& InEmitterName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly");
 
@@ -774,7 +774,7 @@ TArray<struct FVector> UNiagaraComponent::GetNiagaraParticlePositions_DebugOnly(
 
 float UNiagaraComponent::GetMaxSimTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetMaxSimTime");
 
@@ -799,7 +799,7 @@ float UNiagaraComponent::GetMaxSimTime()
 
 bool UNiagaraComponent::GetForceSolo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetForceSolo");
 
@@ -824,7 +824,7 @@ bool UNiagaraComponent::GetForceSolo()
 
 float UNiagaraComponent::GetDesiredAge()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetDesiredAge");
 
@@ -849,7 +849,7 @@ float UNiagaraComponent::GetDesiredAge()
 
 class UNiagaraSystem* UNiagaraComponent::GetAsset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetAsset");
 
@@ -874,7 +874,7 @@ class UNiagaraSystem* UNiagaraComponent::GetAsset()
 
 ENiagaraAgeUpdateMode UNiagaraComponent::GetAgeUpdateMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetAgeUpdateMode");
 
@@ -897,7 +897,7 @@ ENiagaraAgeUpdateMode UNiagaraComponent::GetAgeUpdateMode()
 
 void UNiagaraComponent::DeactivateImmediate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.DeactivateImmediate");
 
@@ -921,7 +921,7 @@ void UNiagaraComponent::DeactivateImmediate()
 
 void UNiagaraComponent::AdvanceSimulationByTime(float SimulateTime, float TickDeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.AdvanceSimulationByTime");
 
@@ -947,7 +947,7 @@ void UNiagaraComponent::AdvanceSimulationByTime(float SimulateTime, float TickDe
 
 void UNiagaraComponent::AdvanceSimulation(int TickCount, float TickDeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.AdvanceSimulation");
 
@@ -973,13 +973,13 @@ void UNiagaraComponent::AdvanceSimulation(int TickCount, float TickDeltaSeconds)
 // struct FName                   AttachPointName                (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 Location                       (Parm, IsPlainOldData)
 // struct FRotator                Rotation                       (Parm, IsPlainOldData)
-// TEnumAsByte<enum EAttachLocation> LocationType                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EAttachLocation>   LocationType                   (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bAutoDestroy                   (Parm, ZeroConstructor, IsPlainOldData)
 // class UNiagaraComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 
-class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAttached(class UNiagaraSystem* SystemTemplate, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TEnumAsByte<enum EAttachLocation> LocationType, bool bAutoDestroy)
+class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAttached(class UNiagaraSystem* SystemTemplate, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TEnumAsByte<EAttachLocation> LocationType, bool bAutoDestroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.SpawnSystemAttached");
 
@@ -1016,7 +1016,7 @@ class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAttached(class UNia
 
 class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAtLocation(class UObject* WorldContextObject, class UNiagaraSystem* SystemTemplate, const struct FVector& Location, const struct FRotator& Rotation, bool bAutoDestroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.SpawnSystemAtLocation");
 
@@ -1048,7 +1048,7 @@ class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAtLocation(class UO
 
 void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMeshComponent(class UNiagaraComponent* NiagaraSystem, const struct FString& OverrideName, class UStaticMeshComponent* StaticMeshComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.OverrideSystemUserVariableStaticMeshComponent");
 
@@ -1076,7 +1076,7 @@ void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMeshComponent(clas
 
 void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMesh(class UNiagaraComponent* NiagaraSystem, const struct FString& OverrideName, class UStaticMesh* StaticMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.OverrideSystemUserVariableStaticMesh");
 
@@ -1104,7 +1104,7 @@ void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMesh(class UNiagar
 
 void UNiagaraFunctionLibrary::OverrideSystemUserVariableSkeletalMeshComponent(class UNiagaraComponent* NiagaraSystem, const struct FString& OverrideName, class USkeletalMeshComponent* SkeletalMeshComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.OverrideSystemUserVariableSkeletalMeshComponent");
 
@@ -1131,7 +1131,7 @@ void UNiagaraFunctionLibrary::OverrideSystemUserVariableSkeletalMeshComponent(cl
 
 bool UNiagaraFunctionLibrary::IsAllowNiagaraGPUParticles(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.IsAllowNiagaraGPUParticles");
 
@@ -1157,7 +1157,7 @@ bool UNiagaraFunctionLibrary::IsAllowNiagaraGPUParticles(class UObject* WorldCon
 
 int UNiagaraFunctionLibrary::GetReadbackParticleCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.GetReadbackParticleCount");
 
@@ -1184,7 +1184,7 @@ int UNiagaraFunctionLibrary::GetReadbackParticleCount()
 
 class UNiagaraParameterCollectionInstance* UNiagaraFunctionLibrary::GetNiagaraParameterCollection(class UObject* WorldContextObject, class UNiagaraParameterCollection* Collection)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.GetNiagaraParameterCollection");
 
@@ -1211,7 +1211,7 @@ class UNiagaraParameterCollectionInstance* UNiagaraFunctionLibrary::GetNiagaraPa
 
 int UNiagaraFunctionLibrary::GetGPUReadbackDelay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.GetGPUReadbackDelay");
 
@@ -1236,7 +1236,7 @@ int UNiagaraFunctionLibrary::GetGPUReadbackDelay()
 
 int UNiagaraFunctionLibrary::GetGPUParticleCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.GetGPUParticleCount");
 
@@ -1261,7 +1261,7 @@ int UNiagaraFunctionLibrary::GetGPUParticleCount()
 
 int UNiagaraFunctionLibrary::GetDeadParticleCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.GetDeadParticleCount");
 
@@ -1286,7 +1286,7 @@ int UNiagaraFunctionLibrary::GetDeadParticleCount()
 
 int UNiagaraFunctionLibrary::GetCPUParticleCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.GetCPUParticleCount");
 
@@ -1312,7 +1312,7 @@ int UNiagaraFunctionLibrary::GetCPUParticleCount()
 
 void UNiagaraParameterCollectionInstance::SetVectorParameter(const struct FString& InVariableName, const struct FVector& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter");
 
@@ -1338,7 +1338,7 @@ void UNiagaraParameterCollectionInstance::SetVectorParameter(const struct FStrin
 
 void UNiagaraParameterCollectionInstance::SetVector4Parameter(const struct FString& InVariableName, const struct FVector4& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter");
 
@@ -1364,7 +1364,7 @@ void UNiagaraParameterCollectionInstance::SetVector4Parameter(const struct FStri
 
 void UNiagaraParameterCollectionInstance::SetVector2DParameter(const struct FString& InVariableName, const struct FVector2D& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter");
 
@@ -1390,7 +1390,7 @@ void UNiagaraParameterCollectionInstance::SetVector2DParameter(const struct FStr
 
 void UNiagaraParameterCollectionInstance::SetQuatParameter(const struct FString& InVariableName, const struct FQuat& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter");
 
@@ -1416,7 +1416,7 @@ void UNiagaraParameterCollectionInstance::SetQuatParameter(const struct FString&
 
 void UNiagaraParameterCollectionInstance::SetIntParameter(const struct FString& InVariableName, int InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter");
 
@@ -1442,7 +1442,7 @@ void UNiagaraParameterCollectionInstance::SetIntParameter(const struct FString& 
 
 void UNiagaraParameterCollectionInstance::SetFloatParameter(const struct FString& InVariableName, float InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter");
 
@@ -1468,7 +1468,7 @@ void UNiagaraParameterCollectionInstance::SetFloatParameter(const struct FString
 
 void UNiagaraParameterCollectionInstance::SetColorParameter(const struct FString& InVariableName, const struct FLinearColor& InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter");
 
@@ -1494,7 +1494,7 @@ void UNiagaraParameterCollectionInstance::SetColorParameter(const struct FString
 
 void UNiagaraParameterCollectionInstance::SetBoolParameter(const struct FString& InVariableName, bool InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter");
 
@@ -1520,7 +1520,7 @@ void UNiagaraParameterCollectionInstance::SetBoolParameter(const struct FString&
 
 struct FVector UNiagaraParameterCollectionInstance::GetVectorParameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter");
 
@@ -1547,7 +1547,7 @@ struct FVector UNiagaraParameterCollectionInstance::GetVectorParameter(const str
 
 struct FVector4 UNiagaraParameterCollectionInstance::GetVector4Parameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter");
 
@@ -1574,7 +1574,7 @@ struct FVector4 UNiagaraParameterCollectionInstance::GetVector4Parameter(const s
 
 struct FVector2D UNiagaraParameterCollectionInstance::GetVector2DParameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter");
 
@@ -1601,7 +1601,7 @@ struct FVector2D UNiagaraParameterCollectionInstance::GetVector2DParameter(const
 
 struct FQuat UNiagaraParameterCollectionInstance::GetQuatParameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter");
 
@@ -1628,7 +1628,7 @@ struct FQuat UNiagaraParameterCollectionInstance::GetQuatParameter(const struct 
 
 int UNiagaraParameterCollectionInstance::GetIntParameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter");
 
@@ -1655,7 +1655,7 @@ int UNiagaraParameterCollectionInstance::GetIntParameter(const struct FString& I
 
 float UNiagaraParameterCollectionInstance::GetFloatParameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter");
 
@@ -1682,7 +1682,7 @@ float UNiagaraParameterCollectionInstance::GetFloatParameter(const struct FStrin
 
 struct FLinearColor UNiagaraParameterCollectionInstance::GetColorParameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter");
 
@@ -1709,7 +1709,7 @@ struct FLinearColor UNiagaraParameterCollectionInstance::GetColorParameter(const
 
 bool UNiagaraParameterCollectionInstance::GetBoolParameter(const struct FString& InVariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter");
 
@@ -1735,7 +1735,7 @@ bool UNiagaraParameterCollectionInstance::GetBoolParameter(const struct FString&
 
 void ANiagaraPreviewBase::SetSystem(class UNiagaraSystem* InSystem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewBase.SetSystem");
 
@@ -1759,7 +1759,7 @@ void ANiagaraPreviewBase::SetSystem(class UNiagaraSystem* InSystem)
 
 void ANiagaraPreviewBase::SetLabelText(const struct FText& InXAxisText, const struct FText& InYAxisText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewBase.SetLabelText");
 
@@ -1783,7 +1783,7 @@ void ANiagaraPreviewBase::SetLabelText(const struct FText& InXAxisText, const st
 
 int UNiagaraPreviewAxis::Num()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewAxis.Num");
 
@@ -1811,7 +1811,7 @@ int UNiagaraPreviewAxis::Num()
 
 void UNiagaraPreviewAxis::ApplyToPreview(class UNiagaraComponent* PreviewComponent, int PreviewIndex, bool bIsXAxis, struct FString* OutLabelText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewAxis.ApplyToPreview");
 
@@ -1838,7 +1838,7 @@ void UNiagaraPreviewAxis::ApplyToPreview(class UNiagaraComponent* PreviewCompone
 
 void ANiagaraPreviewGrid::DeactivatePreviews()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewGrid.DeactivatePreviews");
 
@@ -1861,7 +1861,7 @@ void ANiagaraPreviewGrid::DeactivatePreviews()
 
 void ANiagaraPreviewGrid::ActivatePreviews(bool bReset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewGrid.ActivatePreviews");
 
@@ -1883,7 +1883,7 @@ void ANiagaraPreviewGrid::ActivatePreviews(bool bReset)
 
 void UNiagaraScript::OnCompilationComplete()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Niagara.NiagaraScript.OnCompilationComplete");
 

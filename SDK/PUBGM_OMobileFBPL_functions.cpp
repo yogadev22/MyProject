@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function OMobileFBPL.OMobileFBPL.IsRunningOnBattery
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 bool UOMobileFBPL::IsRunningOnBattery()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OMobileFBPL.OMobileFBPL.IsRunningOnBattery");
 
@@ -40,7 +40,7 @@ bool UOMobileFBPL::IsRunningOnBattery()
 
 bool UOMobileFBPL::IsBatteryStateCharging()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OMobileFBPL.OMobileFBPL.IsBatteryStateCharging");
 
@@ -65,7 +65,7 @@ bool UOMobileFBPL::IsBatteryStateCharging()
 
 int UOMobileFBPL::GetVolumeState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OMobileFBPL.OMobileFBPL.GetVolumeState");
 
@@ -90,7 +90,7 @@ int UOMobileFBPL::GetVolumeState()
 
 struct FString UOMobileFBPL::GetDeviceName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OMobileFBPL.OMobileFBPL.GetDeviceName");
 
@@ -115,7 +115,7 @@ struct FString UOMobileFBPL::GetDeviceName()
 
 float UOMobileFBPL::GetBatteryTemperature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OMobileFBPL.OMobileFBPL.GetBatteryTemperature");
 
@@ -140,7 +140,7 @@ float UOMobileFBPL::GetBatteryTemperature()
 
 int UOMobileFBPL::GetBatteryLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OMobileFBPL.OMobileFBPL.GetBatteryLevel");
 
@@ -165,7 +165,7 @@ int UOMobileFBPL::GetBatteryLevel()
 
 bool UOMobileFBPL::AreHeadphonesPluggedIn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OMobileFBPL.OMobileFBPL.AreHeadphonesPluggedIn");
 

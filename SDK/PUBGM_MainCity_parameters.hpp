@@ -1,20 +1,20 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function MainCity.CarryBackMCAnimInstance.HandlePlayerPoseChange
 struct UCarryBackMCAnimInstance_HandlePlayerPoseChange_Params
 {
-	TEnumAsByte<enum ESTEPoseState>                    LastPose;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEPoseState>                    NewPose;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         LastPose;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         NewPose;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainCity.CharLocomotionMCAnimInstance.SwitchingPoseFinishCallback
@@ -33,7 +33,7 @@ struct UCharLocomotionMCAnimInstance_SetViewPointLimitByPoseStatus_Params
 struct UCharLocomotionMCAnimInstance_SetInterruptPose_Params
 {
 	bool                                               bUseInterruptPose;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               InterruptPose;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    InterruptPose;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainCity.CharLocomotionMCAnimInstance.LeaveStateCallback
@@ -50,8 +50,8 @@ struct UCharLocomotionMCAnimInstance_HandleStateLeave_Params
 // Function MainCity.CharLocomotionMCAnimInstance.HandlePlayerPoseChange
 struct UCharLocomotionMCAnimInstance_HandlePlayerPoseChange_Params
 {
-	TEnumAsByte<enum ESTEPoseState>                    LastPose;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEPoseState>                    NewPose;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         LastPose;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         NewPose;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainCity.CharMainMCAnimInstance.SetClimbAnimation

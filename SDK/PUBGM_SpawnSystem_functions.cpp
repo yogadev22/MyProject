@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function SpawnSystem.STSpawnerBase.Thinking
 // (Native, Event, Public, BlueprintCallable, BlueprintEvent)
@@ -15,7 +15,7 @@ namespace SDK
 
 void ASTSpawnerBase::Thinking(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.Thinking");
 
@@ -39,7 +39,7 @@ void ASTSpawnerBase::Thinking(float DeltaTime)
 
 void ASTSpawnerBase::Switch(bool IsSwitchOn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.Switch");
 
@@ -61,7 +61,7 @@ void ASTSpawnerBase::Switch(bool IsSwitchOn)
 
 void ASTSpawnerBase::StopSpawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.StopSpawn");
 
@@ -84,7 +84,7 @@ void ASTSpawnerBase::StopSpawn()
 
 void ASTSpawnerBase::SetSpawnerID(uint32_t ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.SetSpawnerID");
 
@@ -110,7 +110,7 @@ void ASTSpawnerBase::SetSpawnerID(uint32_t ID)
 
 void ASTSpawnerBase::OnUnitSpawned(class AActor* NewUnit, const struct FSTSpawnParam& SpawnParam, class ASTSpawnerBase* Spawner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.OnUnitSpawned");
 
@@ -133,11 +133,11 @@ void ASTSpawnerBase::OnUnitSpawned(class AActor* NewUnit, const struct FSTSpawnP
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EEndPlayReason>    EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void ASTSpawnerBase::OnUnitDead(class AActor* Actor, TEnumAsByte<enum EEndPlayReason> EndPlayReason)
+void ASTSpawnerBase::OnUnitDead(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.OnUnitDead");
 
@@ -162,7 +162,7 @@ void ASTSpawnerBase::OnUnitDead(class AActor* Actor, TEnumAsByte<enum EEndPlayRe
 
 void ASTSpawnerBase::OnSpawnTimingRipe(bool IsRipe)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.OnSpawnTimingRipe");
 
@@ -184,7 +184,7 @@ void ASTSpawnerBase::OnSpawnTimingRipe(bool IsRipe)
 
 void ASTSpawnerBase::OnSpawnerDeactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.OnSpawnerDeactivate");
 
@@ -204,7 +204,7 @@ void ASTSpawnerBase::OnSpawnerDeactivate()
 
 void ASTSpawnerBase::OnSpawnerActivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.OnSpawnerActivate");
 
@@ -224,7 +224,7 @@ void ASTSpawnerBase::OnSpawnerActivate()
 
 void ASTSpawnerBase::OnRep_SpawnerID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.OnRep_SpawnerID");
 
@@ -253,7 +253,7 @@ void ASTSpawnerBase::OnRep_SpawnerID()
 
 void ASTSpawnerBase::Multicast_SpawnerSnapshot(const struct FString& Timing, const struct FString& Species, const struct FString& Location, const struct FString& Conditions, const struct FString& Extra, bool IsActive, bool IsUsable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.Multicast_SpawnerSnapshot");
 
@@ -285,7 +285,7 @@ void ASTSpawnerBase::Multicast_SpawnerSnapshot(const struct FString& Timing, con
 
 void ASTSpawnerBase::Multicast_AlivePawnsChange(class APawn* Unit, bool IsBorn, bool IsAllDead)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.Multicast_AlivePawnsChange");
 
@@ -311,7 +311,7 @@ void ASTSpawnerBase::Multicast_AlivePawnsChange(class APawn* Unit, bool IsBorn, 
 
 void ASTSpawnerBase::ModifyMaxAlive(int NewAlive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.ModifyMaxAlive");
 
@@ -335,7 +335,7 @@ void ASTSpawnerBase::ModifyMaxAlive(int NewAlive)
 
 bool ASTSpawnerBase::IsUsable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.IsUsable");
 
@@ -360,7 +360,7 @@ bool ASTSpawnerBase::IsUsable()
 
 bool ASTSpawnerBase::IsPlayerEnterRegion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.IsPlayerEnterRegion");
 
@@ -385,7 +385,7 @@ bool ASTSpawnerBase::IsPlayerEnterRegion()
 
 bool ASTSpawnerBase::IsInitialized()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.IsInitialized");
 
@@ -410,7 +410,7 @@ bool ASTSpawnerBase::IsInitialized()
 
 bool ASTSpawnerBase::IsActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.IsActive");
 
@@ -433,7 +433,7 @@ bool ASTSpawnerBase::IsActive()
 
 void ASTSpawnerBase::InitSpawner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.InitSpawner");
 
@@ -456,7 +456,7 @@ void ASTSpawnerBase::InitSpawner()
 
 int ASTSpawnerBase::GetTotalSpawnedNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetTotalSpawnedNum");
 
@@ -481,7 +481,7 @@ int ASTSpawnerBase::GetTotalSpawnedNum()
 
 class USTSpawnSubsystem* ASTSpawnerBase::GetSpawnSystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnSystem");
 
@@ -506,7 +506,7 @@ class USTSpawnSubsystem* ASTSpawnerBase::GetSpawnSystem()
 
 TArray<class ASTSpawnSpot*> ASTSpawnerBase::GetSpawnSpots()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnSpots");
 
@@ -531,7 +531,7 @@ TArray<class ASTSpawnSpot*> ASTSpawnerBase::GetSpawnSpots()
 
 float ASTSpawnerBase::GetSpawnRadius()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnRadius");
 
@@ -556,7 +556,7 @@ float ASTSpawnerBase::GetSpawnRadius()
 
 struct FVector ASTSpawnerBase::GetSpawnLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnLocation");
 
@@ -581,7 +581,7 @@ struct FVector ASTSpawnerBase::GetSpawnLocation()
 
 struct FVector ASTSpawnerBase::GetSpawnExtent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnExtent");
 
@@ -606,7 +606,7 @@ struct FVector ASTSpawnerBase::GetSpawnExtent()
 
 struct FString ASTSpawnerBase::GetSpawnerSnapshot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnerSnapshot");
 
@@ -631,7 +631,7 @@ struct FString ASTSpawnerBase::GetSpawnerSnapshot()
 
 uint32_t ASTSpawnerBase::GetSpawnerID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnerID");
 
@@ -656,7 +656,7 @@ uint32_t ASTSpawnerBase::GetSpawnerID()
 
 struct FString ASTSpawnerBase::GetSpawnerDesc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetSpawnerDesc");
 
@@ -681,7 +681,7 @@ struct FString ASTSpawnerBase::GetSpawnerDesc()
 
 int ASTSpawnerBase::GetReferencedCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetReferencedCount");
 
@@ -706,7 +706,7 @@ int ASTSpawnerBase::GetReferencedCount()
 
 int ASTSpawnerBase::GetMaxUnits()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetMaxUnits");
 
@@ -731,7 +731,7 @@ int ASTSpawnerBase::GetMaxUnits()
 
 int ASTSpawnerBase::GetMaxAlive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetMaxAlive");
 
@@ -756,7 +756,7 @@ int ASTSpawnerBase::GetMaxAlive()
 
 bool ASTSpawnerBase::GetIsForceSpawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetIsForceSpawn");
 
@@ -781,7 +781,7 @@ bool ASTSpawnerBase::GetIsForceSpawn()
 
 TArray<class AActor*> ASTSpawnerBase::GetAliveUnits()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.GetAliveUnits");
 
@@ -807,7 +807,7 @@ TArray<class AActor*> ASTSpawnerBase::GetAliveUnits()
 
 class ASTSpawnSpot* ASTSpawnerBase::FindSpot(const struct FString& SpotID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.FindSpot");
 
@@ -831,7 +831,7 @@ class ASTSpawnSpot* ASTSpawnerBase::FindSpot(const struct FString& SpotID)
 
 void ASTSpawnerBase::DeactivateSpawner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.DeactivateSpawner");
 
@@ -855,7 +855,7 @@ void ASTSpawnerBase::DeactivateSpawner()
 
 bool ASTSpawnerBase::CheckTriggerGuest(class AActor* Guest)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.CheckTriggerGuest");
 
@@ -882,7 +882,7 @@ bool ASTSpawnerBase::CheckTriggerGuest(class AActor* Guest)
 
 bool ASTSpawnerBase::CheckOwnedUnit(class AActor* InUnit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.CheckOwnedUnit");
 
@@ -906,7 +906,7 @@ bool ASTSpawnerBase::CheckOwnedUnit(class AActor* InUnit)
 
 void ASTSpawnerBase::AnalyseConfigData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.AnalyseConfigData");
 
@@ -927,7 +927,7 @@ void ASTSpawnerBase::AnalyseConfigData()
 
 void ASTSpawnerBase::ActivateSpawner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnerBase.ActivateSpawner");
 
@@ -950,7 +950,7 @@ void ASTSpawnerBase::ActivateSpawner()
 
 void USTSpawnSubsystem::UnregisterSpawner(class ASTSpawnerBase* Spawner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.UnregisterSpawner");
 
@@ -975,7 +975,7 @@ void USTSpawnSubsystem::UnregisterSpawner(class ASTSpawnerBase* Spawner)
 
 class ASTSpawnerBase* USTSpawnSubsystem::UnitFindSpawner(int UnitUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.UnitFindSpawner");
 
@@ -1001,7 +1001,7 @@ class ASTSpawnerBase* USTSpawnSubsystem::UnitFindSpawner(int UnitUID)
 
 void USTSpawnSubsystem::StopSpawner(uint32_t SpawnerID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.StopSpawner");
 
@@ -1026,7 +1026,7 @@ void USTSpawnSubsystem::StopSpawner(uint32_t SpawnerID)
 
 class AActor* USTSpawnSubsystem::SpawnUnit(const struct FSTSpawnParam& SpawnParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.SpawnUnit");
 
@@ -1052,7 +1052,7 @@ class AActor* USTSpawnSubsystem::SpawnUnit(const struct FSTSpawnParam& SpawnPara
 
 void USTSpawnSubsystem::RegisterSpawner(class ASTSpawnerBase* Spawner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.RegisterSpawner");
 
@@ -1074,7 +1074,7 @@ void USTSpawnSubsystem::RegisterSpawner(class ASTSpawnerBase* Spawner)
 
 void USTSpawnSubsystem::RecordProgress()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.RecordProgress");
 
@@ -1097,7 +1097,7 @@ void USTSpawnSubsystem::RecordProgress()
 
 void USTSpawnSubsystem::ReadySpawn(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.ReadySpawn");
 
@@ -1121,7 +1121,7 @@ void USTSpawnSubsystem::ReadySpawn(float DeltaTime)
 
 bool USTSpawnSubsystem::PreCheck()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.PreCheck");
 
@@ -1146,7 +1146,7 @@ bool USTSpawnSubsystem::PreCheck()
 
 void USTSpawnSubsystem::OrderSpawnerThinking(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.OrderSpawnerThinking");
 
@@ -1171,7 +1171,7 @@ void USTSpawnSubsystem::OrderSpawnerThinking(float DeltaTime)
 
 void USTSpawnSubsystem::ModifyConfiguration(float TickFreq, int ThinkTimes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.ModifyConfiguration");
 
@@ -1197,7 +1197,7 @@ void USTSpawnSubsystem::ModifyConfiguration(float TickFreq, int ThinkTimes)
 
 void USTSpawnSubsystem::InitUnit(class APawn* AIPawn, TArray<struct FUnitInitConfig> Configs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.InitUnit");
 
@@ -1223,7 +1223,7 @@ void USTSpawnSubsystem::InitUnit(class APawn* AIPawn, TArray<struct FUnitInitCon
 
 int USTSpawnSubsystem::GetUnitConfigID(class AActor* Unit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.GetUnitConfigID");
 
@@ -1249,7 +1249,7 @@ int USTSpawnSubsystem::GetUnitConfigID(class AActor* Unit)
 
 TArray<class AActor*> USTSpawnSubsystem::GetAllUnits()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.GetAllUnits");
 
@@ -1275,7 +1275,7 @@ TArray<class AActor*> USTSpawnSubsystem::GetAllUnits()
 
 class ASTSpawnerBase* USTSpawnSubsystem::FindSpawner(uint32_t SpawnerID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.FindSpawner");
 
@@ -1302,7 +1302,7 @@ class ASTSpawnerBase* USTSpawnSubsystem::FindSpawner(uint32_t SpawnerID)
 
 void USTSpawnSubsystem::EnQueue(class ASTSpawnerBase* Spawner, struct FSTSpawnParam* SpawnParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.EnQueue");
 
@@ -1327,7 +1327,7 @@ void USTSpawnSubsystem::EnQueue(class ASTSpawnerBase* Spawner, struct FSTSpawnPa
 
 void USTSpawnSubsystem::CleanQueue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.CleanQueue");
 
@@ -1352,7 +1352,7 @@ void USTSpawnSubsystem::CleanQueue()
 
 bool USTSpawnSubsystem::CheckCategoryLimit(class ASTSpawnerBase* Spawner, int* AvailableBalance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSubsystem.CheckCategoryLimit");
 
@@ -1381,7 +1381,7 @@ bool USTSpawnSubsystem::CheckCategoryLimit(class ASTSpawnerBase* Spawner, int* A
 
 void USTStrategyBase::UpdateSnapshot(const struct FString& New)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.UpdateSnapshot");
 
@@ -1405,7 +1405,7 @@ void USTStrategyBase::UpdateSnapshot(const struct FString& New)
 
 void USTStrategyBase::TickStrategy(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.TickStrategy");
 
@@ -1427,7 +1427,7 @@ void USTStrategyBase::TickStrategy(float DeltaTime)
 
 void USTStrategyBase::ResetCD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.ResetCD");
 
@@ -1448,7 +1448,7 @@ void USTStrategyBase::ResetCD()
 
 void USTStrategyBase::OnStrategyDeactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.OnStrategyDeactivate");
 
@@ -1468,7 +1468,7 @@ void USTStrategyBase::OnStrategyDeactivate()
 
 void USTStrategyBase::OnStrategyActivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.OnStrategyActivate");
 
@@ -1490,7 +1490,7 @@ void USTStrategyBase::OnStrategyActivate()
 
 bool USTStrategyBase::IsSTActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.IsSTActive");
 
@@ -1515,7 +1515,7 @@ bool USTStrategyBase::IsSTActive()
 
 bool USTStrategyBase::IsOnCD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.IsOnCD");
 
@@ -1540,7 +1540,7 @@ bool USTStrategyBase::IsOnCD()
 
 bool USTStrategyBase::GetTickEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.GetTickEnable");
 
@@ -1565,7 +1565,7 @@ bool USTStrategyBase::GetTickEnable()
 
 struct FString USTStrategyBase::GetStrategyDesc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.GetStrategyDesc");
 
@@ -1590,7 +1590,7 @@ struct FString USTStrategyBase::GetStrategyDesc()
 
 struct FString USTStrategyBase::GetSnapshot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.GetSnapshot");
 
@@ -1615,7 +1615,7 @@ struct FString USTStrategyBase::GetSnapshot()
 
 class ASTSpawnerBase* USTStrategyBase::GetOwnerSpawner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.GetOwnerSpawner");
 
@@ -1638,7 +1638,7 @@ class ASTSpawnerBase* USTStrategyBase::GetOwnerSpawner()
 
 void USTStrategyBase::DeactivateStrategy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.DeactivateStrategy");
 
@@ -1661,7 +1661,7 @@ void USTStrategyBase::DeactivateStrategy()
 
 float USTStrategyBase::CDRemaining()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.CDRemaining");
 
@@ -1686,7 +1686,7 @@ float USTStrategyBase::CDRemaining()
 
 void USTStrategyBase::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyBase.ActivateStrategy");
 
@@ -1713,7 +1713,7 @@ void USTStrategyBase::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 bool USTStrategyLocation::GetSpawnLocation(class AActor* Requester, int ReferenceCount, TArray<struct FSpawnSpotInfo>* OutArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyLocation.GetSpawnLocation");
 
@@ -1745,7 +1745,7 @@ bool USTStrategyLocation::GetSpawnLocation(class AActor* Requester, int Referenc
 
 TArray<struct FUnitConfig> USTStrategySpecies::Supply(int ReferencedCount, TArray<struct FSpawnSpotInfo> SpotSpecies)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies.Supply");
 
@@ -1772,7 +1772,7 @@ TArray<struct FUnitConfig> USTStrategySpecies::Supply(int ReferencedCount, TArra
 
 TArray<int> USTStrategySpecies::GeAllCacheConfigIDs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies.GeAllCacheConfigIDs");
 
@@ -1797,7 +1797,7 @@ TArray<int> USTStrategySpecies::GeAllCacheConfigIDs()
 
 void USTStrategySpecies::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies.ActivateStrategy");
 
@@ -1819,7 +1819,7 @@ void USTStrategySpecies::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 void USTStrategyTiming::TimeIsRipe()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming.TimeIsRipe");
 
@@ -1842,7 +1842,7 @@ void USTStrategyTiming::TimeIsRipe()
 
 class USpawnSystemSettings* USpawnSystemSettings::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.SpawnSystemSettings.Get");
 
@@ -1869,7 +1869,7 @@ class USpawnSystemSettings* USpawnSystemSettings::Get()
 
 void ASTSpawnSpot::OnUnitSpawnedSuc(uint32_t InSpawnerID, class APawn* AIPawn, const struct FSTSpawnParam& SpawnParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.OnUnitSpawnedSuc");
 
@@ -1896,7 +1896,7 @@ void ASTSpawnSpot::OnUnitSpawnedSuc(uint32_t InSpawnerID, class APawn* AIPawn, c
 
 void ASTSpawnSpot::OnUnitDead(uint32_t InSpawnerID, class APawn* AIPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.OnUnitDead");
 
@@ -1921,7 +1921,7 @@ void ASTSpawnSpot::OnUnitDead(uint32_t InSpawnerID, class APawn* AIPawn)
 
 bool ASTSpawnSpot::IsSpotValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.IsSpotValid");
 
@@ -1946,7 +1946,7 @@ bool ASTSpawnSpot::IsSpotValid()
 
 bool ASTSpawnSpot::HasModifySpecies()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.HasModifySpecies");
 
@@ -1971,7 +1971,7 @@ bool ASTSpawnSpot::HasModifySpecies()
 
 int ASTSpawnSpot::GetSpotWeigh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetSpotWeigh");
 
@@ -1996,7 +1996,7 @@ int ASTSpawnSpot::GetSpotWeigh()
 
 int ASTSpawnSpot::GetSpotUnitIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetSpotUnitIndex");
 
@@ -2021,7 +2021,7 @@ int ASTSpawnSpot::GetSpotUnitIndex()
 
 ESpawnSpotType ASTSpawnSpot::GetSpotType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetSpotType");
 
@@ -2046,7 +2046,7 @@ ESpawnSpotType ASTSpawnSpot::GetSpotType()
 
 int ASTSpawnSpot::GetSpotSquadIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetSpotSquadIndex");
 
@@ -2071,7 +2071,7 @@ int ASTSpawnSpot::GetSpotSquadIndex()
 
 struct FString ASTSpawnSpot::GetSpotID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetSpotID");
 
@@ -2096,7 +2096,7 @@ struct FString ASTSpawnSpot::GetSpotID()
 
 int ASTSpawnSpot::GetNumberThresholdCfg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetNumberThresholdCfg");
 
@@ -2124,7 +2124,7 @@ int ASTSpawnSpot::GetNumberThresholdCfg()
 
 TArray<struct FVector> ASTSpawnSpot::GetMultiPositions(int ReqCount, int MaxCount, int TryTimes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetMultiPositions");
 
@@ -2152,7 +2152,7 @@ TArray<struct FVector> ASTSpawnSpot::GetMultiPositions(int ReqCount, int MaxCoun
 
 int ASTSpawnSpot::GetCacheSpawnedCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetCacheSpawnedCount");
 
@@ -2177,7 +2177,7 @@ int ASTSpawnSpot::GetCacheSpawnedCount()
 
 int ASTSpawnSpot::GetCacheAliveCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetCacheAliveCount");
 
@@ -2202,7 +2202,7 @@ int ASTSpawnSpot::GetCacheAliveCount()
 
 int ASTSpawnSpot::GetAliveThresholdCfg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSpot.GetAliveThresholdCfg");
 
@@ -2228,7 +2228,7 @@ int ASTSpawnSpot::GetAliveThresholdCfg()
 
 class ASTSpawnerBase* USTSpawnSystemGameplayStatics::UnitFindSpawnerByUObject(class UObject* Object)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSystemGameplayStatics.UnitFindSpawnerByUObject");
 
@@ -2256,7 +2256,7 @@ class ASTSpawnerBase* USTSpawnSystemGameplayStatics::UnitFindSpawnerByUObject(cl
 
 class ASTSpawnerBase* USTSpawnSystemGameplayStatics::UnitFindSpawner(class UObject* WorldContextObject, int UnitUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSystemGameplayStatics.UnitFindSpawner");
 
@@ -2289,7 +2289,7 @@ class ASTSpawnerBase* USTSpawnSystemGameplayStatics::UnitFindSpawner(class UObje
 
 struct FVector USTSpawnSystemGameplayStatics::ProjectPointToFloorWithComplexCollisionCheck(class UObject* WorldContextObject, const struct FVector& Origin, bool bCheckComplex, float OffsetHeight, bool* bOutHit, struct FHitResult* HitResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSystemGameplayStatics.ProjectPointToFloorWithComplexCollisionCheck");
 
@@ -2323,7 +2323,7 @@ struct FVector USTSpawnSystemGameplayStatics::ProjectPointToFloorWithComplexColl
 
 bool USTSpawnSystemGameplayStatics::IsEditor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSystemGameplayStatics.IsEditor");
 
@@ -2355,7 +2355,7 @@ bool USTSpawnSystemGameplayStatics::IsEditor()
 
 TArray<struct FVector> USTSpawnSystemGameplayStatics::FindNearbyGroundLoc(class UObject* WorldContextObject, int OutCount, const struct FVector& InCenterLoc, float RangeMin, float RangeMax, float TraceHeight, int TryTimes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnSystemGameplayStatics.FindNearbyGroundLoc");
 
@@ -2387,7 +2387,7 @@ TArray<struct FVector> USTSpawnSystemGameplayStatics::FindNearbyGroundLoc(class 
 
 class USTSpawnVisualDebug* USTSpawnVisualDebug::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STSpawnVisualDebug.Get");
 
@@ -2412,7 +2412,7 @@ class USTSpawnVisualDebug* USTSpawnVisualDebug::Get()
 
 bool USTStrategyCond::LuaCheckCondition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyCond.LuaCheckCondition");
 
@@ -2437,7 +2437,7 @@ bool USTStrategyCond::LuaCheckCondition()
 
 bool USTStrategyCond::CheckCondition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyCond.CheckCondition");
 
@@ -2462,7 +2462,7 @@ bool USTStrategyCond::CheckCondition()
 
 bool USTStrategyCond_Hide::CheckCondition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyCond_Hide.CheckCondition");
 
@@ -2487,7 +2487,7 @@ bool USTStrategyCond_Hide::CheckCondition()
 
 bool USTStrategyCond_Quantity::CheckCondition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyCond_Quantity.CheckCondition");
 
@@ -2512,7 +2512,7 @@ bool USTStrategyCond_Quantity::CheckCondition()
 
 void USTStrategyCond_Quantity::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyCond_Quantity.ActivateStrategy");
 
@@ -2539,7 +2539,7 @@ void USTStrategyCond_Quantity::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 bool USTStrategyLocation_Root::GetSpawnLocation(class AActor* Requester, int ReferenceCount, TArray<struct FSpawnSpotInfo>* OutArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyLocation_Root.GetSpawnLocation");
 
@@ -2572,7 +2572,7 @@ bool USTStrategyLocation_Root::GetSpawnLocation(class AActor* Requester, int Ref
 
 bool USTStrategyLocation_Spots::GetSpawnLocation(class AActor* Requester, int ReferenceCount, TArray<struct FSpawnSpotInfo>* OutArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyLocation_Spots.GetSpawnLocation");
 
@@ -2604,7 +2604,7 @@ bool USTStrategyLocation_Spots::GetSpawnLocation(class AActor* Requester, int Re
 
 TArray<struct FUnitConfig> USTStrategySpecies_SquadRatio::Supply(int ReferencedCount, TArray<struct FSpawnSpotInfo> SpotSpecies)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_SquadRatio.Supply");
 
@@ -2632,7 +2632,7 @@ TArray<struct FUnitConfig> USTStrategySpecies_SquadRatio::Supply(int ReferencedC
 
 void USTStrategySpecies_SquadRatio::ReadSquadRatios(int ReferencedCount, TArray<struct FUnitRatio> RatioConfig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_SquadRatio.ReadSquadRatios");
 
@@ -2657,7 +2657,7 @@ void USTStrategySpecies_SquadRatio::ReadSquadRatios(int ReferencedCount, TArray<
 
 void USTStrategySpecies_SquadRatio::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_SquadRatio.ActivateStrategy");
 
@@ -2682,7 +2682,7 @@ void USTStrategySpecies_SquadRatio::ActivateStrategy(class ASTSpawnerBase* Owner
 
 void USTStrategySpecies_Static::WeightedReadUnit(int ReferencedCount, TArray<struct FUnitConfig> Units)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.WeightedReadUnit");
 
@@ -2709,7 +2709,7 @@ void USTStrategySpecies_Static::WeightedReadUnit(int ReferencedCount, TArray<str
 
 void USTStrategySpecies_Static::WeightedReadSquad(int ReferencedCount, const struct FSquadConfig& SquadConfig, TArray<struct FUnitConfig> Units)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.WeightedReadSquad");
 
@@ -2738,7 +2738,7 @@ void USTStrategySpecies_Static::WeightedReadSquad(int ReferencedCount, const str
 
 void USTStrategySpecies_Static::WeightedReadGroup(int ReferencedCount, const struct FGroupConfig& GroupConfig, TArray<struct FSquadConfig> Squads, TArray<struct FUnitConfig> Units)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.WeightedReadGroup");
 
@@ -2767,7 +2767,7 @@ void USTStrategySpecies_Static::WeightedReadGroup(int ReferencedCount, const str
 
 TArray<struct FUnitConfig> USTStrategySpecies_Static::Supply(int ReferencedCount, TArray<struct FSpawnSpotInfo> SpotSpecies)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.Supply");
 
@@ -2797,7 +2797,7 @@ TArray<struct FUnitConfig> USTStrategySpecies_Static::Supply(int ReferencedCount
 
 void USTStrategySpecies_Static::ReadSpotSpecies(TArray<struct FSpawnSpotInfo> SpotSpecies, TArray<struct FSquadConfig> Squads, TArray<struct FUnitConfig> Units, int* ReferencedCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.ReadSpotSpecies");
 
@@ -2827,7 +2827,7 @@ void USTStrategySpecies_Static::ReadSpotSpecies(TArray<struct FSpawnSpotInfo> Sp
 
 void USTStrategySpecies_Static::OrderedReadUnit(int ReferencedCount, TArray<struct FUnitConfig> Units)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.OrderedReadUnit");
 
@@ -2854,7 +2854,7 @@ void USTStrategySpecies_Static::OrderedReadUnit(int ReferencedCount, TArray<stru
 
 void USTStrategySpecies_Static::OrderedReadSquad(int ReferencedCount, const struct FSquadConfig& SquadConfig, TArray<struct FUnitConfig> Units)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.OrderedReadSquad");
 
@@ -2883,7 +2883,7 @@ void USTStrategySpecies_Static::OrderedReadSquad(int ReferencedCount, const stru
 
 void USTStrategySpecies_Static::OrderedReadGroup(int ReferencedCount, const struct FGroupConfig& GroupConfig, TArray<struct FSquadConfig> Squads, TArray<struct FUnitConfig> Units)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.OrderedReadGroup");
 
@@ -2912,7 +2912,7 @@ void USTStrategySpecies_Static::OrderedReadGroup(int ReferencedCount, const stru
 
 void USTStrategySpecies_Static::ManuallyReadUnit(int ReferencedCount, int Index, TArray<struct FUnitConfig> Units)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.ManuallyReadUnit");
 
@@ -2938,7 +2938,7 @@ void USTStrategySpecies_Static::ManuallyReadUnit(int ReferencedCount, int Index,
 
 void USTStrategySpecies_Static::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategySpecies_Static.ActivateStrategy");
 
@@ -2962,7 +2962,7 @@ void USTStrategySpecies_Static::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 void USTStrategyTiming_Period::TickStrategy(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Period.TickStrategy");
 
@@ -2984,7 +2984,7 @@ void USTStrategyTiming_Period::TickStrategy(float DeltaTime)
 
 void USTStrategyTiming_Period::OnReachTimer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Period.OnReachTimer");
 
@@ -3005,7 +3005,7 @@ void USTStrategyTiming_Period::OnReachTimer()
 
 void USTStrategyTiming_Period::OnFirstDelay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Period.OnFirstDelay");
 
@@ -3026,7 +3026,7 @@ void USTStrategyTiming_Period::OnFirstDelay()
 
 void USTStrategyTiming_Period::DeactivateStrategy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Period.DeactivateStrategy");
 
@@ -3049,7 +3049,7 @@ void USTStrategyTiming_Period::DeactivateStrategy()
 
 void USTStrategyTiming_Period::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Period.ActivateStrategy");
 
@@ -3073,7 +3073,7 @@ void USTStrategyTiming_Period::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 void USTStrategyTiming_Trigger::TickStrategy(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Trigger.TickStrategy");
 
@@ -3097,7 +3097,7 @@ void USTStrategyTiming_Trigger::TickStrategy(float DeltaTime)
 
 void USTStrategyTiming_Trigger::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Trigger.ActivateStrategy");
 
@@ -3121,7 +3121,7 @@ void USTStrategyTiming_Trigger::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 void USTStrategyTiming_Wave::TickStrategy(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Wave.TickStrategy");
 
@@ -3143,7 +3143,7 @@ void USTStrategyTiming_Wave::TickStrategy(float DeltaTime)
 
 void USTStrategyTiming_Wave::ResetCD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Wave.ResetCD");
 
@@ -3166,7 +3166,7 @@ void USTStrategyTiming_Wave::ResetCD()
 
 void USTStrategyTiming_Wave::OnTriggerToStartWave(bool IsRipe)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Wave.OnTriggerToStartWave");
 
@@ -3188,7 +3188,7 @@ void USTStrategyTiming_Wave::OnTriggerToStartWave(bool IsRipe)
 
 void USTStrategyTiming_Wave::OnDelayToStartWave()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Wave.OnDelayToStartWave");
 
@@ -3211,7 +3211,7 @@ void USTStrategyTiming_Wave::OnDelayToStartWave()
 
 int USTStrategyTiming_Wave::GetCurrentWave()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Wave.GetCurrentWave");
 
@@ -3236,7 +3236,7 @@ int USTStrategyTiming_Wave::GetCurrentWave()
 
 void USTStrategyTiming_Wave::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SpawnSystem.STStrategyTiming_Wave.ActivateStrategy");
 

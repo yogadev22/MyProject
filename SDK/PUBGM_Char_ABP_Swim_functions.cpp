@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_923ECC9946F87BD9304658A4C6C371E1
 // (BlueprintEvent)
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_923ECC9946F87BD9304658A4C6C371E1()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_923ECC9946F87BD9304658A4C6C371E1");
 
@@ -33,7 +33,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_CC8B1E084EF50E58E7E92B881995E35D()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_CC8B1E084EF50E58E7E92B881995E35D");
 
@@ -53,7 +53,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendListByBool_A8F2C54D4B38AF5749C3BBAEB4CCD442()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendListByBool_A8F2C54D4B38AF5749C3BBAEB4CCD442");
 
@@ -73,7 +73,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendListByBool_4F338550438AA787A37AC7A5B47A57D6()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendListByBool_4F338550438AA787A37AC7A5B47A57D6");
 
@@ -93,7 +93,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_5322D9594A3FF835BE1EF8BD9B874442()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_5322D9594A3FF835BE1EF8BD9B874442");
 
@@ -113,7 +113,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_8CCABF8A4335407291BE5F82A4F2DF4C()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_BlendSpacePlayer_8CCABF8A4335407291BE5F82A4F2DF4C");
 
@@ -133,7 +133,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_TransitionResult_EA8583CF48558D8742D60989B755AECF()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_TransitionResult_EA8583CF48558D8742D60989B755AECF");
 
@@ -153,7 +153,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_ModifyBone_9329604E408B6CE5ED05CB9A881E12D7()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_ModifyBone_9329604E408B6CE5ED05CB9A881E12D7");
 
@@ -173,7 +173,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_TransitionResult_ACDC5F01413E6CDDD5E26290FB0D2A28()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim_AnimGraphNode_TransitionResult_ACDC5F01413E6CDDD5E26290FB0D2A28");
 
@@ -195,7 +195,7 @@ void UChar_ABP_Swim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Char_ABP_Swim
 
 void UChar_ABP_Swim_C::ExecuteUbergraph_Char_ABP_Swim(int EntryPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Char_ABP_Swim.Char_ABP_Swim_C.ExecuteUbergraph_Char_ABP_Swim");
 

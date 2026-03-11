@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class ClientNet.HDmpveNet
 // 0x0370 (0x0398 - 0x0028)
@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.HDmpveNet");
 		return pStaticClass;
@@ -69,7 +69,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.HDmpveSDK");
 		return pStaticClass;
@@ -124,7 +124,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.HDmpveSDKDelegates");
 		return pStaticClass;
@@ -189,7 +189,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.IMSDKConfig");
 		return pStaticClass;
@@ -218,7 +218,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.IMSDKHelper");
 		return pStaticClass;
@@ -369,7 +369,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.iTOPPrefs");
 		return pStaticClass;
@@ -390,37 +390,42 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.MockGameSvrClientNet");
 		return pStaticClass;
 	}
 
+
+	void LoginMockGameSvr(const struct FString& UID, const struct FString& PlayerName, int ModeID);
 };
 
 
 // Class ClientNet.StoreGameHelper
-// 0x0010 (0x0038 - 0x0028)
+// 0x0018 (0x0040 - 0x0028)
 class UStoreGameHelper : public UObject
 {
 public:
 	struct FScriptMulticastDelegate                    StoreGameCallback;                                        // 0x0028(0x0010) (ZeroConstructor, InstancedReference)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0038(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ClientNet.StoreGameHelper");
 		return pStaticClass;
 	}
 
 
+	void UnlockGPAchievement(const struct FString& InAchievement);
 	void UnInitialize();
 	void ShowLeaderboard(const struct FString& InIdentifier, int InTimeScope);
 	void ShowAchievements();
 	void ReportScore(int64_t InScore, const struct FString& InIdentifier);
 	void ReportAchievement1(const struct FString& InIdentifier, double percent);
 	void ReportAchievement(const struct FString& InIdentifier, double percent);
+	void LoginGPManual();
 	void LoadReceivedChallenges();
 	void LoadLeaderboardScores(const struct FString& InIdentifier, int InRangeLocation, int InRangeLength, int InPlayScope, int InTimeScope);
 	void LoadFriends();
@@ -428,6 +433,8 @@ public:
 	void IssueChallengeWithScore(TMap<struct FString, struct FString> InScoreInfo, TMap<struct FString, struct FString> InPlayerInfo, TArray<struct FString> InPlayerIDs, const struct FString& InMessage);
 	void IssueChallengeWithArchivement(TMap<struct FString, struct FString> InAchievementInfo, TArray<struct FString> InPlayerIDs, const struct FString& InMessage);
 	void Initialize();
+	void InitGP();
+	void IncreaseGPAchievement(const struct FString& InAchievement, int InStep);
 	static class UStoreGameHelper* Get();
 	static void Destroy();
 	void AuthenticateLocalPlayer();

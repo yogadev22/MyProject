@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CH_ABP_Parachute.CH_ABP_Parachute_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_61EF6894468110B4D589E1B7009DAEEA
 struct UCH_ABP_Parachute_C_EvaluateGraphExposedInputs_ExecuteUbergraph_CH_ABP_Parachute_AnimGraphNode_BlendListByBool_61EF6894468110B4D589E1B7009DAEEA_Params

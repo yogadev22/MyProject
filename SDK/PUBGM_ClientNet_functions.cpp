@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function ClientNet.HDmpveNet.SetTickNetMsgMaxTime
 // (Final, Native, Private)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UHDmpveNet::SetTickNetMsgMaxTime(float MaxTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.SetTickNetMsgMaxTime");
 
@@ -39,7 +39,7 @@ void UHDmpveNet::SetTickNetMsgMaxTime(float MaxTime)
 
 void UHDmpveNet::OnWebviewNotify(const struct FWebviewInfoWrapper& webviewinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnWebviewNotify");
 
@@ -63,7 +63,7 @@ void UHDmpveNet::OnWebviewNotify(const struct FWebviewInfoWrapper& webviewinfo)
 
 void UHDmpveNet::OnUAAssistantNotify(const struct FUAAssistantInfoWrapper& uaAssistantInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnUAAssistantNotify");
 
@@ -88,7 +88,7 @@ void UHDmpveNet::OnUAAssistantNotify(const struct FUAAssistantInfoWrapper& uaAss
 
 void UHDmpveNet::OnTraceCallBack(int code, const struct FString& dataJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnTraceCallBack");
 
@@ -111,7 +111,7 @@ void UHDmpveNet::OnTraceCallBack(int code, const struct FString& dataJson)
 
 void UHDmpveNet::OnTConndAuthFailDelegate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnTConndAuthFailDelegate");
 
@@ -135,7 +135,7 @@ void UHDmpveNet::OnTConndAuthFailDelegate()
 
 void UHDmpveNet::OnShareNotify(int Result, int Platform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnShareNotify");
 
@@ -162,7 +162,7 @@ void UHDmpveNet::OnShareNotify(int Result, int Platform)
 
 void UHDmpveNet::OnRequestPermissionsResult(int code, const struct FString& permission, const struct FString& grantResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnRequestPermissionsResult");
 
@@ -189,7 +189,7 @@ void UHDmpveNet::OnRequestPermissionsResult(int code, const struct FString& perm
 
 void UHDmpveNet::OnReceiveDataNotify(int Result, TArray<unsigned char> Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnReceiveDataNotify");
 
@@ -214,7 +214,7 @@ void UHDmpveNet::OnReceiveDataNotify(int Result, TArray<unsigned char> Msg)
 
 void UHDmpveNet::OnQuickLoginNotify(const struct FWakeupInfoWrapper& wakeupinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnQuickLoginNotify");
 
@@ -240,7 +240,7 @@ void UHDmpveNet::OnQuickLoginNotify(const struct FWakeupInfoWrapper& wakeupinfo)
 
 void UHDmpveNet::OnQRCodeGenQRImg(int Tag, int Ret, const struct FString& imgPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnQRCodeGenQRImg");
 
@@ -266,7 +266,7 @@ void UHDmpveNet::OnQRCodeGenQRImg(int Tag, int Ret, const struct FString& imgPat
 
 void UHDmpveNet::OnMigrateNotify(int Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnMigrateNotify");
 
@@ -290,7 +290,7 @@ void UHDmpveNet::OnMigrateNotify(int Result)
 
 void UHDmpveNet::OnLaunchInfo(const struct FString& roominfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnLaunchInfo");
 
@@ -315,7 +315,7 @@ void UHDmpveNet::OnLaunchInfo(const struct FString& roominfo)
 
 void UHDmpveNet::OnIGShareUploadFinished(int Result, const struct FString& Platform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnIGShareUploadFinished");
 
@@ -340,7 +340,7 @@ void UHDmpveNet::OnIGShareUploadFinished(int Result, const struct FString& Platf
 
 void UHDmpveNet::OnGroupNotify(const struct FGroupInfoWrapper& groupInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnGroupNotify");
 
@@ -364,7 +364,7 @@ void UHDmpveNet::OnGroupNotify(const struct FGroupInfoWrapper& groupInfo)
 
 void UHDmpveNet::OnGetWebviewActionNotify(const struct FString& webviewinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnGetWebviewActionNotify");
 
@@ -388,7 +388,7 @@ void UHDmpveNet::OnGetWebviewActionNotify(const struct FString& webviewinfo)
 
 void UHDmpveNet::OnGetTicketNotify(const struct FString& TicketInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnGetTicketNotify");
 
@@ -412,7 +412,7 @@ void UHDmpveNet::OnGetTicketNotify(const struct FString& TicketInfo)
 
 void UHDmpveNet::OnGetShortUrlNotify(const struct FShortURLInfoWrapper& shorturlinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnGetShortUrlNotify");
 
@@ -436,7 +436,7 @@ void UHDmpveNet::OnGetShortUrlNotify(const struct FShortURLInfoWrapper& shorturl
 
 void UHDmpveNet::OnGetPlatformFriendsNotify(const struct FPlatformFriendInfoMap& platformFriends)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnGetPlatformFriendsNotify");
 
@@ -460,7 +460,7 @@ void UHDmpveNet::OnGetPlatformFriendsNotify(const struct FPlatformFriendInfoMap&
 
 void UHDmpveNet::OnGetCountryNoByIMSDK(int Country)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnGetCountryNoByIMSDK");
 
@@ -485,7 +485,7 @@ void UHDmpveNet::OnGetCountryNoByIMSDK(int Country)
 
 void UHDmpveNet::OnGameMasterEvent(const struct FString& EvenName, int Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnGameMasterEvent");
 
@@ -513,7 +513,7 @@ void UHDmpveNet::OnGameMasterEvent(const struct FString& EvenName, int Result)
 
 void UHDmpveNet::OnConnectorStateChangeNotify(int State, int Param1, int Param2, int param3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnConnectorStateChangeNotify");
 
@@ -540,7 +540,7 @@ void UHDmpveNet::OnConnectorStateChangeNotify(int State, int Param1, int Param2,
 
 void UHDmpveNet::OnConnectorDisconnectedNotify(int Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnConnectorDisconnectedNotify");
 
@@ -565,7 +565,7 @@ void UHDmpveNet::OnConnectorDisconnectedNotify(int Result)
 
 void UHDmpveNet::OnConnectorConnectedNotify(int IsConnected, int nResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnConnectorConnectedNotify");
 
@@ -590,7 +590,7 @@ void UHDmpveNet::OnConnectorConnectedNotify(int IsConnected, int nResult)
 
 void UHDmpveNet::OnBindIntlNotify(int bindEventID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnBindIntlNotify");
 
@@ -614,7 +614,7 @@ void UHDmpveNet::OnBindIntlNotify(int bindEventID)
 
 void UHDmpveNet::OnAccountLogoutNotify(int Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnAccountLogoutNotify");
 
@@ -642,7 +642,7 @@ void UHDmpveNet::OnAccountLogoutNotify(int Result)
 
 void UHDmpveNet::OnAccountLoginNotify(int Result, const struct FString& OpenID, int Channel, const struct FString& resultMsg, int thirdRetCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnAccountLoginNotify");
 
@@ -670,7 +670,7 @@ void UHDmpveNet::OnAccountLoginNotify(int Result, const struct FString& OpenID, 
 
 void UHDmpveNet::OnAccountInitializeNotify(int Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnAccountInitializeNotify");
 
@@ -694,7 +694,7 @@ void UHDmpveNet::OnAccountInitializeNotify(int Result)
 
 void UHDmpveNet::OnAccessTokenRefreshedNotify(int Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveNet.OnAccessTokenRefreshedNotify");
 
@@ -720,7 +720,7 @@ void UHDmpveNet::OnAccessTokenRefreshedNotify(int Result)
 
 void UHDmpveSDK::UploadFile(const struct FString& _imgPath, int shareFileType, const struct FString& InDestKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.UploadFile");
 
@@ -749,7 +749,7 @@ void UHDmpveSDK::UploadFile(const struct FString& _imgPath, int shareFileType, c
 
 void UHDmpveSDK::ShareWithUploadPhotoByChannel(const struct FString& _imgPath, int _channel, const struct FString& _url, const struct FString& _destKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.ShareWithUploadPhotoByChannel");
 
@@ -779,7 +779,7 @@ void UHDmpveSDK::ShareWithUploadPhotoByChannel(const struct FString& _imgPath, i
 
 void UHDmpveSDK::ShareWithPhotoByChannel_Simple(const struct FString& _imgPath, const struct FString& _title, const struct FString& _content, int _channel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.ShareWithPhotoByChannel_Simple");
 
@@ -808,7 +808,7 @@ void UHDmpveSDK::ShareWithPhotoByChannel_Simple(const struct FString& _imgPath, 
 
 void UHDmpveSDK::ShareFacebookLink(const struct FString& ftitle, const struct FString& fdesc, const struct FString& fsharelink)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.ShareFacebookLink");
 
@@ -835,7 +835,7 @@ void UHDmpveSDK::ShareFacebookLink(const struct FString& ftitle, const struct FS
 
 void UHDmpveSDK::SetTestLogin(const struct FString& OpenID, int Channel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.SetTestLogin");
 
@@ -862,7 +862,7 @@ void UHDmpveSDK::SetTestLogin(const struct FString& OpenID, int Channel)
 
 void UHDmpveSDK::InviteSystemOfflineFriendsExt2(const struct FString& _title, const struct FString& _content, const struct FString& _link)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.InviteSystemOfflineFriendsExt2");
 
@@ -890,7 +890,7 @@ void UHDmpveSDK::InviteSystemOfflineFriendsExt2(const struct FString& _title, co
 
 void UHDmpveSDK::InviteSystemOfflineFriendsExt(const struct FString& _title, const struct FString& _content, const struct FString& _link)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.InviteSystemOfflineFriendsExt");
 
@@ -919,7 +919,7 @@ void UHDmpveSDK::InviteSystemOfflineFriendsExt(const struct FString& _title, con
 
 void UHDmpveSDK::InviteFBFriendsUnregistered_Link(const struct FString& _title, const struct FString& _content, const struct FString& _link, const struct FString& _extend)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.InviteFBFriendsUnregistered_Link");
 
@@ -946,7 +946,7 @@ void UHDmpveSDK::InviteFBFriendsUnregistered_Link(const struct FString& _title, 
 
 void UHDmpveSDK::HttpDnsSetOpenid(const struct FString& InOpenid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.HttpDnsSetOpenid");
 
@@ -972,7 +972,7 @@ void UHDmpveSDK::HttpDnsSetOpenid(const struct FString& InOpenid)
 
 void UHDmpveSDK::HttpDnsInit(const struct FString& InAppId, bool InIsDebug, int InTimeout)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.HttpDnsInit");
 
@@ -996,7 +996,7 @@ void UHDmpveSDK::HttpDnsInit(const struct FString& InAppId, bool InIsDebug, int 
 
 void UHDmpveSDK::HttpDnsDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.HttpDnsDestroy");
 
@@ -1020,7 +1020,7 @@ void UHDmpveSDK::HttpDnsDestroy()
 
 int UHDmpveSDK::GRomePingDuallink(const struct FString& InHost)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.GRomePingDuallink");
 
@@ -1046,7 +1046,7 @@ int UHDmpveSDK::GRomePingDuallink(const struct FString& InHost)
 
 int UHDmpveSDK::GRomeGetDuallinkStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.GRomeGetDuallinkStatus");
 
@@ -1072,7 +1072,7 @@ int UHDmpveSDK::GRomeGetDuallinkStatus()
 
 struct FString UHDmpveSDK::GetUploadUrlByFile(const struct FString& file)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.GetUploadUrlByFile");
 
@@ -1098,7 +1098,7 @@ struct FString UHDmpveSDK::GetUploadUrlByFile(const struct FString& file)
 
 struct FString UHDmpveSDK::GetUploadUrl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.GetUploadUrl");
 
@@ -1124,7 +1124,7 @@ struct FString UHDmpveSDK::GetUploadUrl()
 
 int UHDmpveSDK::GetUploadStatusByFile(const struct FString& file)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.GetUploadStatusByFile");
 
@@ -1150,7 +1150,7 @@ int UHDmpveSDK::GetUploadStatusByFile(const struct FString& file)
 
 int UHDmpveSDK::GetUploadStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.GetUploadStatus");
 
@@ -1175,7 +1175,7 @@ int UHDmpveSDK::GetUploadStatus()
 
 void UHDmpveSDK::ClearFileUpload(const struct FString& file)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.HDmpveSDK.ClearFileUpload");
 
@@ -1197,7 +1197,7 @@ void UHDmpveSDK::ClearFileUpload(const struct FString& file)
 
 void UIMSDKConfig::PatchMSDKConfigWithAreaConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKConfig.PatchMSDKConfigWithAreaConfig");
 
@@ -1221,7 +1221,7 @@ void UIMSDKConfig::PatchMSDKConfigWithAreaConfig()
 
 struct FString UIMSDKConfig::GetIMSDKLogLevel(int InEnv)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKConfig.GetIMSDKLogLevel");
 
@@ -1247,7 +1247,7 @@ struct FString UIMSDKConfig::GetIMSDKLogLevel(int InEnv)
 
 void UIMSDKHelper::UpdateIMSDKBindResult(const struct FString& InBindResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.UpdateIMSDKBindResult");
 
@@ -1272,7 +1272,7 @@ void UIMSDKHelper::UpdateIMSDKBindResult(const struct FString& InBindResult)
 
 bool UIMSDKHelper::SwitchQRCodeLoginResult(const struct FString& InOpenid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SwitchQRCodeLoginResult");
 
@@ -1300,7 +1300,7 @@ bool UIMSDKHelper::SwitchQRCodeLoginResult(const struct FString& InOpenid)
 
 void UIMSDKHelper::StartWebVerify(const struct FString& InExtraInfo, const struct FString& InVerifyAppId, const struct FString& InAccount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.StartWebVerify");
 
@@ -1326,7 +1326,7 @@ void UIMSDKHelper::StartWebVerify(const struct FString& InExtraInfo, const struc
 
 void UIMSDKHelper::SetWindowEditorLoginTokenIndex(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetWindowEditorLoginTokenIndex");
 
@@ -1351,7 +1351,7 @@ void UIMSDKHelper::SetWindowEditorLoginTokenIndex(int Index)
 
 void UIMSDKHelper::SetupLoginCacheInfo(int InChannelID, bool InIsQuickLogin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetupLoginCacheInfo");
 
@@ -1378,7 +1378,7 @@ void UIMSDKHelper::SetupLoginCacheInfo(int InChannelID, bool InIsQuickLogin)
 
 void UIMSDKHelper::SetupAdjustDMA(int InEEA, int InAdPersonalization, int InAdUserData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetupAdjustDMA");
 
@@ -1404,7 +1404,7 @@ void UIMSDKHelper::SetupAdjustDMA(int InEEA, int InAdPersonalization, int InAdUs
 
 void UIMSDKHelper::SetUgId(const struct FString& InUgId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetUgId");
 
@@ -1428,7 +1428,7 @@ void UIMSDKHelper::SetUgId(const struct FString& InUgId)
 
 void UIMSDKHelper::SetNoAuthOpenid(const struct FString& OpenID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetNoAuthOpenid");
 
@@ -1453,7 +1453,7 @@ void UIMSDKHelper::SetNoAuthOpenid(const struct FString& OpenID)
 
 void UIMSDKHelper::SetMSDKConfig(bool InClearLoginData, TMap<struct FString, struct FString>* InConfigMaps)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetMSDKConfig");
 
@@ -1480,7 +1480,7 @@ void UIMSDKHelper::SetMSDKConfig(bool InClearLoginData, TMap<struct FString, str
 
 void UIMSDKHelper::SetLoginType(const struct FString& InIMSDKChannelName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetLoginType");
 
@@ -1505,7 +1505,7 @@ void UIMSDKHelper::SetLoginType(const struct FString& InIMSDKChannelName)
 
 struct FString UIMSDKHelper::SetLoginResult(const struct FString& InLoginRetJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetLoginResult");
 
@@ -1531,7 +1531,7 @@ struct FString UIMSDKHelper::SetLoginResult(const struct FString& InLoginRetJson
 
 void UIMSDKHelper::SetIMSDKEnv(int iEnv)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetIMSDKEnv");
 
@@ -1555,7 +1555,7 @@ void UIMSDKHelper::SetIMSDKEnv(int iEnv)
 
 void UIMSDKHelper::SetChannel(const struct FString& InIMSDKChannelName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetChannel");
 
@@ -1579,7 +1579,7 @@ void UIMSDKHelper::SetChannel(const struct FString& InIMSDKChannelName)
 
 void UIMSDKHelper::SetAdvertiseUserID(const struct FString& userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetAdvertiseUserID");
 
@@ -1603,7 +1603,7 @@ void UIMSDKHelper::SetAdvertiseUserID(const struct FString& userID)
 
 void UIMSDKHelper::SetAdvertiseCustomData(const struct FString& InCustomData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SetAdvertiseCustomData");
 
@@ -1627,7 +1627,7 @@ void UIMSDKHelper::SetAdvertiseCustomData(const struct FString& InCustomData)
 
 void UIMSDKHelper::SaveLastIMSDKChannelID(int channelId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.SaveLastIMSDKChannelID");
 
@@ -1656,7 +1656,7 @@ void UIMSDKHelper::SaveLastIMSDKChannelID(int channelId)
 
 void UIMSDKHelper::RequestVerifyCode(const struct FString& InPhoneOrEmail, int InAccountType, int InUseForType, const struct FString& InPhoneAreaCode, const struct FString& InLanuageCode, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.RequestVerifyCode");
 
@@ -1683,7 +1683,7 @@ void UIMSDKHelper::RequestVerifyCode(const struct FString& InPhoneOrEmail, int I
 
 void UIMSDKHelper::RefreshLogin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.RefreshLogin");
 
@@ -1707,7 +1707,7 @@ void UIMSDKHelper::RefreshLogin()
 
 bool UIMSDKHelper::RecoverGuest(const struct FString& channelUserId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.RecoverGuest");
 
@@ -1731,7 +1731,7 @@ bool UIMSDKHelper::RecoverGuest(const struct FString& channelUserId)
 
 void UIMSDKHelper::QuickLogin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.QuickLogin");
 
@@ -1756,7 +1756,7 @@ void UIMSDKHelper::QuickLogin()
 
 void UIMSDKHelper::QueryQRCodeStatus(const struct FString& InCodeId, const struct FString& InRandStr, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.QueryQRCodeStatus");
 
@@ -1780,7 +1780,7 @@ void UIMSDKHelper::QueryQRCodeStatus(const struct FString& InCodeId, const struc
 
 void UIMSDKHelper::PlayAdvertise()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.PlayAdvertise");
 
@@ -1811,7 +1811,7 @@ void UIMSDKHelper::PlayAdvertise()
 
 void UIMSDKHelper::OriginalShare(int InShareType, const struct FString& InMSDKChannelName, const struct FString& InTitle, const struct FString& InContent, const struct FString& InLink, const struct FString& InThumbPath, const struct FString& InImagePath, const struct FString& InExtraJson, const struct FString& InUser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.OriginalShare");
 
@@ -1845,7 +1845,7 @@ void UIMSDKHelper::OriginalShare(int InShareType, const struct FString& InMSDKCh
 
 void UIMSDKHelper::OriginalLogin(const struct FString& InExtraJson, TArray<struct FString> InPermissions, bool InNeedGuid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.OriginalLogin");
 
@@ -1873,7 +1873,7 @@ void UIMSDKHelper::OriginalLogin(const struct FString& InExtraJson, TArray<struc
 
 void UIMSDKHelper::OriginalBind(const struct FString& InChannel, const struct FString& InSubChannel, const struct FString& InExtra)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.OriginalBind");
 
@@ -1900,7 +1900,7 @@ void UIMSDKHelper::OriginalBind(const struct FString& InChannel, const struct FS
 
 void UIMSDKHelper::OnCommandLogin(const struct FString& InCmd, const struct FString& InExtra)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.OnCommandLogin");
 
@@ -1935,7 +1935,7 @@ void UIMSDKHelper::OnCommandLogin(const struct FString& InCmd, const struct FStr
 
 void UIMSDKHelper::ModifyAccountInfo(const struct FString& InAccount, int InAccountType, int InVerifyType, const struct FString& InVerifyData, const struct FString& InPhoneAreaCode, const struct FString& InLanuageCode, const struct FString& InMondifyToAccount, int InModifyAccountType, const struct FString& InModifyVerifyCode, const struct FString& InModifyPhoneAreaCode, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ModifyAccountInfo");
 
@@ -1969,7 +1969,7 @@ void UIMSDKHelper::ModifyAccountInfo(const struct FString& InAccount, int InAcco
 
 void UIMSDKHelper::LogoutWith(int InMSDKChannelId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.LogoutWith");
 
@@ -1993,7 +1993,7 @@ void UIMSDKHelper::LogoutWith(int InMSDKChannelId)
 
 void UIMSDKHelper::LogoutQRCode(const struct FString& InOpenid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.LogoutQRCode");
 
@@ -2017,7 +2017,7 @@ void UIMSDKHelper::LogoutQRCode(const struct FString& InOpenid)
 
 void UIMSDKHelper::LoadAdvertise(const struct FString& InAdvertiseUnitId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.LoadAdvertise");
 
@@ -2042,7 +2042,7 @@ void UIMSDKHelper::LoadAdvertise(const struct FString& InAdvertiseUnitId)
 
 bool UIMSDKHelper::IsEqualCurLoginPlatform(const struct FString& strChannel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsEqualCurLoginPlatform");
 
@@ -2069,7 +2069,7 @@ bool UIMSDKHelper::IsEqualCurLoginPlatform(const struct FString& strChannel)
 
 bool UIMSDKHelper::IsChannelBound(int InMSDKChannelId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsChannelBound");
 
@@ -2095,7 +2095,7 @@ bool UIMSDKHelper::IsChannelBound(int InMSDKChannelId)
 
 bool UIMSDKHelper::IsAlreadyBindWhatsApp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindWhatsApp");
 
@@ -2120,7 +2120,7 @@ bool UIMSDKHelper::IsAlreadyBindWhatsApp()
 
 bool UIMSDKHelper::IsAlreadyBindVK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindVK");
 
@@ -2145,7 +2145,7 @@ bool UIMSDKHelper::IsAlreadyBindVK()
 
 bool UIMSDKHelper::IsAlreadyBindUnifiedAccount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindUnifiedAccount");
 
@@ -2170,7 +2170,7 @@ bool UIMSDKHelper::IsAlreadyBindUnifiedAccount()
 
 bool UIMSDKHelper::IsAlreadyBindTwitter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindTwitter");
 
@@ -2195,7 +2195,7 @@ bool UIMSDKHelper::IsAlreadyBindTwitter()
 
 bool UIMSDKHelper::IsAlreadyBindTikTok()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindTikTok");
 
@@ -2220,7 +2220,7 @@ bool UIMSDKHelper::IsAlreadyBindTikTok()
 
 bool UIMSDKHelper::IsAlreadyBindNosChat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindNosChat");
 
@@ -2245,7 +2245,7 @@ bool UIMSDKHelper::IsAlreadyBindNosChat()
 
 bool UIMSDKHelper::IsAlreadyBindLine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindLine");
 
@@ -2270,7 +2270,7 @@ bool UIMSDKHelper::IsAlreadyBindLine()
 
 bool UIMSDKHelper::IsAlreadyBindHMS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindHMS");
 
@@ -2295,7 +2295,7 @@ bool UIMSDKHelper::IsAlreadyBindHMS()
 
 bool UIMSDKHelper::IsAlreadyBindGooglePlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindGooglePlay");
 
@@ -2320,7 +2320,7 @@ bool UIMSDKHelper::IsAlreadyBindGooglePlay()
 
 bool UIMSDKHelper::IsAlreadyBindGameCenter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindGameCenter");
 
@@ -2345,7 +2345,7 @@ bool UIMSDKHelper::IsAlreadyBindGameCenter()
 
 bool UIMSDKHelper::IsAlreadyBindFB()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindFB");
 
@@ -2370,7 +2370,7 @@ bool UIMSDKHelper::IsAlreadyBindFB()
 
 bool UIMSDKHelper::IsAlreadyBindDiscord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindDiscord");
 
@@ -2395,7 +2395,7 @@ bool UIMSDKHelper::IsAlreadyBindDiscord()
 
 bool UIMSDKHelper::IsAlreadyBindBgBg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindBgBg");
 
@@ -2420,7 +2420,7 @@ bool UIMSDKHelper::IsAlreadyBindBgBg()
 
 bool UIMSDKHelper::IsAlreadyBindApple()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.IsAlreadyBindApple");
 
@@ -2447,7 +2447,7 @@ bool UIMSDKHelper::IsAlreadyBindApple()
 
 void UIMSDKHelper::InvalidateQRCode(const struct FString& InCodeId, const struct FString& InRandStr, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.InvalidateQRCode");
 
@@ -2471,7 +2471,7 @@ void UIMSDKHelper::InvalidateQRCode(const struct FString& InCodeId, const struct
 
 void UIMSDKHelper::InitAdvertiseSDK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.InitAdvertiseSDK");
 
@@ -2494,7 +2494,7 @@ void UIMSDKHelper::InitAdvertiseSDK()
 
 struct FString UIMSDKHelper::GetVerifyAppId4SendCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetVerifyAppId4SendCode");
 
@@ -2521,7 +2521,7 @@ struct FString UIMSDKHelper::GetVerifyAppId4SendCode()
 
 void UIMSDKHelper::GetShortUrl(const struct FString& URL, const struct FString& Mask, const struct FString& Extra)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetShortUrl");
 
@@ -2547,7 +2547,7 @@ void UIMSDKHelper::GetShortUrl(const struct FString& URL, const struct FString& 
 
 struct FString UIMSDKHelper::GetOpenId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetOpenId");
 
@@ -2572,7 +2572,7 @@ struct FString UIMSDKHelper::GetOpenId()
 
 struct FIMSDKLoginResult UIMSDKHelper::GetLoginResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetLoginResult");
 
@@ -2597,7 +2597,7 @@ struct FIMSDKLoginResult UIMSDKHelper::GetLoginResult()
 
 struct FString UIMSDKHelper::GetLastLoginResultJson()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetLastLoginResultJson");
 
@@ -2622,7 +2622,7 @@ struct FString UIMSDKHelper::GetLastLoginResultJson()
 
 int UIMSDKHelper::GetLastIMSDKChannelID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetLastIMSDKChannelID");
 
@@ -2647,7 +2647,7 @@ int UIMSDKHelper::GetLastIMSDKChannelID()
 
 class UIMSDKHelper* UIMSDKHelper::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetInstance");
 
@@ -2672,7 +2672,7 @@ class UIMSDKHelper* UIMSDKHelper::GetInstance()
 
 struct FString UIMSDKHelper::GetIMSDKLoginToken()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetIMSDKLoginToken");
 
@@ -2697,7 +2697,7 @@ struct FString UIMSDKHelper::GetIMSDKLoginToken()
 
 struct FString UIMSDKHelper::GetIMSDKClientApiParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetIMSDKClientApiParams");
 
@@ -2722,7 +2722,7 @@ struct FString UIMSDKHelper::GetIMSDKClientApiParams()
 
 int UIMSDKHelper::GetHDmpveChannelID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetHDmpveChannelID");
 
@@ -2747,7 +2747,7 @@ int UIMSDKHelper::GetHDmpveChannelID()
 
 struct FString UIMSDKHelper::GetCurLoginPlatform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetCurLoginPlatform");
 
@@ -2772,7 +2772,7 @@ struct FString UIMSDKHelper::GetCurLoginPlatform()
 
 struct FString UIMSDKHelper::GetChannelNickname()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetChannelNickname");
 
@@ -2797,7 +2797,7 @@ struct FString UIMSDKHelper::GetChannelNickname()
 
 struct FString UIMSDKHelper::GetBindRet()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetBindRet");
 
@@ -2820,7 +2820,7 @@ struct FString UIMSDKHelper::GetBindRet()
 
 void UIMSDKHelper::GetBindInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetBindInfo");
 
@@ -2843,7 +2843,7 @@ void UIMSDKHelper::GetBindInfo()
 
 int UIMSDKHelper::GetBindCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetBindCount");
 
@@ -2868,7 +2868,7 @@ int UIMSDKHelper::GetBindCount()
 
 struct FString UIMSDKHelper::GetAllQRCodeLoginResults()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetAllQRCodeLoginResults");
 
@@ -2893,7 +2893,7 @@ struct FString UIMSDKHelper::GetAllQRCodeLoginResults()
 
 struct FString UIMSDKHelper::GetAdjustAttr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GetAdjustAttr");
 
@@ -2918,7 +2918,7 @@ struct FString UIMSDKHelper::GetAdjustAttr()
 
 void UIMSDKHelper::GenerateQRCode(const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.GenerateQRCode");
 
@@ -2943,7 +2943,7 @@ void UIMSDKHelper::GenerateQRCode(const struct FString& InExtraJson)
 
 int UIMSDKHelper::ConvertTConndChannel2IMSDKChannel(int InTConndChannelId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ConvertTConndChannel2IMSDKChannel");
 
@@ -2970,7 +2970,7 @@ int UIMSDKHelper::ConvertTConndChannel2IMSDKChannel(int InTConndChannelId)
 
 int UIMSDKHelper::ConvertStrToIMSDKChannel(const struct FString& strChannel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ConvertStrToIMSDKChannel");
 
@@ -2998,7 +2998,7 @@ int UIMSDKHelper::ConvertStrToIMSDKChannel(const struct FString& strChannel)
 
 struct FString UIMSDKHelper::ConvertIMSDKChannelToStr(int imsdkChannel, bool caseSensitive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ConvertIMSDKChannelToStr");
 
@@ -3026,7 +3026,7 @@ struct FString UIMSDKHelper::ConvertIMSDKChannelToStr(int imsdkChannel, bool cas
 
 int UIMSDKHelper::ConvertIMSDKChannel2TConndChannel(int InIMSDKChannelId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ConvertIMSDKChannel2TConndChannel");
 
@@ -3050,7 +3050,7 @@ int UIMSDKHelper::ConvertIMSDKChannel2TConndChannel(int InIMSDKChannelId)
 
 void UIMSDKHelper::ContinueLoginWithLocalResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ContinueLoginWithLocalResult");
 
@@ -3071,7 +3071,7 @@ void UIMSDKHelper::ContinueLoginWithLocalResult()
 
 void UIMSDKHelper::ClearLoginResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ClearLoginResult");
 
@@ -3100,7 +3100,7 @@ void UIMSDKHelper::ClearLoginResult()
 
 void UIMSDKHelper::CheckVerifyCodeValid(const struct FString& InAccount, int InAccountType, const struct FString& InPhoneAreaCode, const struct FString& InVerifyCode, int InCodeType, const struct FString& InLanuageCode, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.CheckVerifyCodeValid");
 
@@ -3131,7 +3131,7 @@ void UIMSDKHelper::CheckVerifyCodeValid(const struct FString& InAccount, int InA
 
 bool UIMSDKHelper::CheckLocalForceLoginFlag(int InChannel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.CheckLocalForceLoginFlag");
 
@@ -3161,7 +3161,7 @@ bool UIMSDKHelper::CheckLocalForceLoginFlag(int InChannel)
 
 void UIMSDKHelper::CheckIsRegisted(const struct FString& InAccount, int InAccountType, const struct FString& InPhoneAreaCode, const struct FString& InLanuageCode, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.CheckIsRegisted");
 
@@ -3195,7 +3195,7 @@ void UIMSDKHelper::CheckIsRegisted(const struct FString& InAccount, int InAccoun
 
 void UIMSDKHelper::ChangePassword(const struct FString& InAccount, int InAccountType, const struct FString& InVerifyCode, const struct FString& InNewPassword, const struct FString& InAreaCode, const struct FString& InLangType, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.ChangePassword");
 
@@ -3225,7 +3225,7 @@ void UIMSDKHelper::ChangePassword(const struct FString& InAccount, int InAccount
 
 void UIMSDKHelper::BindWhatsApp(const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindWhatsApp");
 
@@ -3247,7 +3247,7 @@ void UIMSDKHelper::BindWhatsApp(const struct FString& InExtraJson)
 
 void UIMSDKHelper::BindVK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindVK");
 
@@ -3270,7 +3270,7 @@ void UIMSDKHelper::BindVK()
 
 void UIMSDKHelper::BindUnifiedAccount(const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindUnifiedAccount");
 
@@ -3292,7 +3292,7 @@ void UIMSDKHelper::BindUnifiedAccount(const struct FString& InExtraJson)
 
 void UIMSDKHelper::BindTwitter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindTwitter");
 
@@ -3315,7 +3315,7 @@ void UIMSDKHelper::BindTwitter()
 
 void UIMSDKHelper::BindTikTok(const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindTikTok");
 
@@ -3337,7 +3337,7 @@ void UIMSDKHelper::BindTikTok(const struct FString& InExtraJson)
 
 void UIMSDKHelper::BindNosChat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindNosChat");
 
@@ -3358,7 +3358,7 @@ void UIMSDKHelper::BindNosChat()
 
 void UIMSDKHelper::BindLine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindLine");
 
@@ -3379,7 +3379,7 @@ void UIMSDKHelper::BindLine()
 
 void UIMSDKHelper::BindHMS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindHMS");
 
@@ -3400,7 +3400,7 @@ void UIMSDKHelper::BindHMS()
 
 void UIMSDKHelper::BindGooglePlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindGooglePlay");
 
@@ -3421,7 +3421,7 @@ void UIMSDKHelper::BindGooglePlay()
 
 void UIMSDKHelper::BindGameCenter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindGameCenter");
 
@@ -3442,7 +3442,7 @@ void UIMSDKHelper::BindGameCenter()
 
 void UIMSDKHelper::BindFB()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindFB");
 
@@ -3463,7 +3463,7 @@ void UIMSDKHelper::BindFB()
 
 void UIMSDKHelper::BindDiscord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindDiscord");
 
@@ -3487,7 +3487,7 @@ void UIMSDKHelper::BindDiscord()
 
 void UIMSDKHelper::BindChannel(int InMSDKChannelId, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindChannel");
 
@@ -3510,7 +3510,7 @@ void UIMSDKHelper::BindChannel(int InMSDKChannelId, const struct FString& InExtr
 
 void UIMSDKHelper::BindBgBg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindBgBg");
 
@@ -3531,11 +3531,63 @@ void UIMSDKHelper::BindBgBg()
 
 void UIMSDKHelper::BindApple()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.IMSDKHelper.BindApple");
 
 	UIMSDKHelper_BindApple_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function ClientNet.MockGameSvrClientNet.LoginMockGameSvr
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 UID                            (Parm, ZeroConstructor)
+// struct FString                 PlayerName                     (Parm, ZeroConstructor)
+// int                            ModeID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMockGameSvrClientNet::LoginMockGameSvr(const struct FString& UID, const struct FString& PlayerName, int ModeID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.MockGameSvrClientNet.LoginMockGameSvr");
+
+	UMockGameSvrClientNet_LoginMockGameSvr_Params params;
+	params.UID = UID;
+	params.PlayerName = PlayerName;
+	params.ModeID = ModeID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function ClientNet.StoreGameHelper.UnlockGPAchievement
+// (Final, Native, Public)
+// Parameters:
+// struct FString                 InAchievement                  (Parm, ZeroConstructor)
+
+void UStoreGameHelper::UnlockGPAchievement(const struct FString& InAchievement)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.UnlockGPAchievement");
+
+	UStoreGameHelper_UnlockGPAchievement_Params params;
+	params.InAchievement = InAchievement;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -3552,7 +3604,7 @@ void UIMSDKHelper::BindApple()
 
 void UStoreGameHelper::UnInitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.UnInitialize");
 
@@ -3576,7 +3628,7 @@ void UStoreGameHelper::UnInitialize()
 
 void UStoreGameHelper::ShowLeaderboard(const struct FString& InIdentifier, int InTimeScope)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.ShowLeaderboard");
 
@@ -3599,7 +3651,7 @@ void UStoreGameHelper::ShowLeaderboard(const struct FString& InIdentifier, int I
 
 void UStoreGameHelper::ShowAchievements()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.ShowAchievements");
 
@@ -3623,7 +3675,7 @@ void UStoreGameHelper::ShowAchievements()
 
 void UStoreGameHelper::ReportScore(int64_t InScore, const struct FString& InIdentifier)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.ReportScore");
 
@@ -3649,7 +3701,7 @@ void UStoreGameHelper::ReportScore(int64_t InScore, const struct FString& InIden
 
 void UStoreGameHelper::ReportAchievement1(const struct FString& InIdentifier, double percent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.ReportAchievement1");
 
@@ -3675,7 +3727,7 @@ void UStoreGameHelper::ReportAchievement1(const struct FString& InIdentifier, do
 
 void UStoreGameHelper::ReportAchievement(const struct FString& InIdentifier, double percent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.ReportAchievement");
 
@@ -3693,12 +3745,33 @@ void UStoreGameHelper::ReportAchievement(const struct FString& InIdentifier, dou
 }
 
 
+// Function ClientNet.StoreGameHelper.LoginGPManual
+// (Final, Native, Public)
+
+void UStoreGameHelper::LoginGPManual()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.LoginGPManual");
+
+	UStoreGameHelper_LoginGPManual_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function ClientNet.StoreGameHelper.LoadReceivedChallenges
 // (Final, Native, Public)
 
 void UStoreGameHelper::LoadReceivedChallenges()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.LoadReceivedChallenges");
 
@@ -3725,7 +3798,7 @@ void UStoreGameHelper::LoadReceivedChallenges()
 
 void UStoreGameHelper::LoadLeaderboardScores(const struct FString& InIdentifier, int InRangeLocation, int InRangeLength, int InPlayScope, int InTimeScope)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.LoadLeaderboardScores");
 
@@ -3751,7 +3824,7 @@ void UStoreGameHelper::LoadLeaderboardScores(const struct FString& InIdentifier,
 
 void UStoreGameHelper::LoadFriends()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.LoadFriends");
 
@@ -3772,7 +3845,7 @@ void UStoreGameHelper::LoadFriends()
 
 void UStoreGameHelper::LoadAchievements()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.LoadAchievements");
 
@@ -3798,7 +3871,7 @@ void UStoreGameHelper::LoadAchievements()
 
 void UStoreGameHelper::IssueChallengeWithScore(TMap<struct FString, struct FString> InScoreInfo, TMap<struct FString, struct FString> InPlayerInfo, TArray<struct FString> InPlayerIDs, const struct FString& InMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.IssueChallengeWithScore");
 
@@ -3827,7 +3900,7 @@ void UStoreGameHelper::IssueChallengeWithScore(TMap<struct FString, struct FStri
 
 void UStoreGameHelper::IssueChallengeWithArchivement(TMap<struct FString, struct FString> InAchievementInfo, TArray<struct FString> InPlayerIDs, const struct FString& InMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.IssueChallengeWithArchivement");
 
@@ -3851,11 +3924,58 @@ void UStoreGameHelper::IssueChallengeWithArchivement(TMap<struct FString, struct
 
 void UStoreGameHelper::Initialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.Initialize");
 
 	UStoreGameHelper_Initialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function ClientNet.StoreGameHelper.InitGP
+// (Final, Native, Public)
+
+void UStoreGameHelper::InitGP()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.InitGP");
+
+	UStoreGameHelper_InitGP_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function ClientNet.StoreGameHelper.IncreaseGPAchievement
+// (Final, Native, Public)
+// Parameters:
+// struct FString                 InAchievement                  (Parm, ZeroConstructor)
+// int                            InStep                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void UStoreGameHelper::IncreaseGPAchievement(const struct FString& InAchievement, int InStep)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.IncreaseGPAchievement");
+
+	UStoreGameHelper_IncreaseGPAchievement_Params params;
+	params.InAchievement = InAchievement;
+	params.InStep = InStep;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -3874,7 +3994,7 @@ void UStoreGameHelper::Initialize()
 
 class UStoreGameHelper* UStoreGameHelper::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.Get");
 
@@ -3897,7 +4017,7 @@ class UStoreGameHelper* UStoreGameHelper::Get()
 
 void UStoreGameHelper::Destroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.Destroy");
 
@@ -3918,7 +4038,7 @@ void UStoreGameHelper::Destroy()
 
 void UStoreGameHelper::AuthenticateLocalPlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ClientNet.StoreGameHelper.AuthenticateLocalPlayer");
 

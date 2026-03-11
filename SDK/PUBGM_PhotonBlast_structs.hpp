@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum PhotonBlast.EDestructionDamageType
 enum class EDestructionDamageType : uint8_t
@@ -44,6 +44,15 @@ enum class EPhotonFracturedMeshFragmentState : uint8_t
 	EPhotonFracturedMeshFragmentState__PhotonFracturedMesh_Damaged = 2,
 	EPhotonFracturedMeshFragmentState__PhotonFractureMesh_DamagedByCollapse = 3,
 	EPhotonFracturedMeshFragmentState__EPhotonFracturedMeshFragmentState_MAX = 4
+};
+
+
+// Enum PhotonBlast.EPhotonDestructibleKey
+enum class EPhotonDestructibleKey : uint8_t
+{
+	EPhotonDestructibleKey__Reset  = 0,
+	EPhotonDestructibleKey__Trigger = 1,
+	EPhotonDestructibleKey__EPhotonDestructibleKey_MAX = 2
 };
 
 
@@ -103,9 +112,9 @@ enum class EPhotonMeshFragmentType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct PhotonBlast.PhotonDestructibleImpactParam
 // 0x0008
@@ -189,7 +198,7 @@ struct FClusterReplicationProxy
 };
 
 // ScriptStruct PhotonBlast.PhotonDestructibleMeshPhysicsDetachData
-// 0x0028
+// 0x00C0
 struct FPhotonDestructibleMeshPhysicsDetachData
 {
 	float                                              TimeSpeed;                                                // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -200,6 +209,13 @@ struct FPhotonDestructibleMeshPhysicsDetachData
 	float                                              VisibleTime;                                              // 0x001C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                SlideSmallestChunks;                                      // 0x0020(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              SlideRemoveSmallestSize;                                  // 0x0024(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableReverse;                                           // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
+	float                                              MaxReverseTime;                                           // 0x002C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseCustomRandomValue;                                    // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0031(0x0007) MISSED OFFSET
+	struct FRawDistributionVector                      CustomRandomDirection;                                    // 0x0038(0x0050) (Edit)
+	struct FRawDistributionFloat                       CustomRandomW;                                            // 0x0088(0x0038) (Edit)
 };
 
 // ScriptStruct PhotonBlast.EdgeNode
@@ -241,6 +257,17 @@ struct FPhotonInstanceImpactData
 struct FReplicationEvent
 {
 	unsigned char                                      UnknownData00[0x18];                                      // 0x0000(0x0018) MISSED OFFSET
+};
+
+// ScriptStruct PhotonBlast.MovieScenePhotonDestructibleSectionTemplate
+// 0x0230 (0x0248 - 0x0018)
+struct FMovieScenePhotonDestructibleSectionTemplate : public FMovieSceneEvalTemplate
+{
+	struct FIntegralCurve                              PhotonDestructibleKeys;                                   // 0x0018(0x0070)
+	struct FRichCurve                                  TimeSpeedCurve;                                           // 0x0088(0x0070)
+	struct FRichCurve                                  SpreadSpeedCurve;                                         // 0x00F8(0x0070)
+	struct FRichCurve                                  VelocitySpeedCurve;                                       // 0x0168(0x0070)
+	struct FRichCurve                                  RotationSpeedCurve;                                       // 0x01D8(0x0070)
 };
 
 }

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum ZLevel.ELevelEndCondType
 enum class ELevelEndCondType : uint8_t
@@ -53,9 +53,9 @@ enum class EMonsterWaveEndCondType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct ZLevel.GameLevelDesc
 // 0x0018
@@ -154,7 +154,7 @@ struct FMonsterGeneratePlan
 struct FMonsterGroup
 {
 	struct FString                                     Desc;                                                     // 0x0000(0x0010) (Edit, ZeroConstructor)
-	TEnumAsByte<enum EGenerateType>                    ChooseGroupSpotType;                                      // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGenerateType>                         ChooseGroupSpotType;                                      // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 	int                                                NearPlayTeamIdx;                                          // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	TArray<class UZMonsterSpotGroup*>                  SpotGroupChooseList;                                      // 0x0018(0x0010) (Edit, ExportObject, ZeroConstructor)
@@ -172,7 +172,7 @@ struct FMonsterWave
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
 	TArray<struct FMonsterGroup>                       MonsterGroupList;                                         // 0x0008(0x0010) (Edit, ZeroConstructor)
 	struct FString                                     Desc;                                                     // 0x0018(0x0010) (Edit, ZeroConstructor)
-	TEnumAsByte<enum EMonsterWaveEndCondType>          EndCondType;                                              // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMonsterWaveEndCondType>               EndCondType;                                              // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
 	int                                                EndCondPar;                                               // 0x002C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                ID;                                                       // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -195,7 +195,7 @@ struct FLevelData
 	struct FGameLevelDesc                              LevelDesc;                                                // 0x0000(0x0018) (Edit)
 	TArray<struct FString>                             TargetClassPaths;                                         // 0x0018(0x0010) (Edit, ZeroConstructor)
 	struct FString                                     LeveDirectorFilePath;                                     // 0x0028(0x0010) (Edit, ZeroConstructor)
-	TEnumAsByte<enum ELevelEndCondType>                EndCondType;                                              // 0x0038(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELevelEndCondType>                     EndCondType;                                              // 0x0038(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0039(0x0007) MISSED OFFSET
 	struct FString                                     EndCondPar;                                               // 0x0040(0x0010) (Edit, ZeroConstructor)
 	bool                                               IsLastLevel;                                              // 0x0050(0x0001) (Edit, ZeroConstructor, IsPlainOldData)

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum AndroidDeviceProfileSelector.ECompareType
 enum class ECompareType : uint8_t
@@ -75,9 +75,9 @@ enum class EGradeType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct AndroidDeviceProfileSelector.GradeScoreProfileName
 // 0x0018
@@ -92,8 +92,8 @@ struct FGradeScoreProfileName
 // 0x0018
 struct FGradeProfileMatchItem
 {
-	TEnumAsByte<enum ESourceType>                      SourceType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECompareType>                     CompareType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESourceType>                           SourceType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECompareType>                          CompareType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0002(0x0006) MISSED OFFSET
 	struct FString                                     MatchString;                                              // 0x0008(0x0010) (ZeroConstructor)
 };
@@ -102,7 +102,7 @@ struct FGradeProfileMatchItem
 // 0x0018
 struct FGradeProfileMatch
 {
-	TEnumAsByte<enum EGradeScoreType>                  ScoreType;                                                // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGradeScoreType>                       ScoreType;                                                // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                Score;                                                    // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 	TArray<struct FGradeProfileMatchItem>              Match;                                                    // 0x0008(0x0010) (ZeroConstructor)
@@ -112,8 +112,8 @@ struct FGradeProfileMatch
 // 0x0018
 struct FProfileMatchItem
 {
-	TEnumAsByte<enum ESourceType>                      SourceType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECompareType>                     CompareType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESourceType>                           SourceType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECompareType>                          CompareType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0002(0x0006) MISSED OFFSET
 	struct FString                                     MatchString;                                              // 0x0008(0x0010) (ZeroConstructor)
 };

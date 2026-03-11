@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class KantanChartsUMG.KantanChart
 // 0x0050 (0x0150 - 0x0100)
@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.KantanChart");
 		return pStaticClass;
@@ -47,7 +47,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.KantanCategoryChart");
 		return pStaticClass;
@@ -76,7 +76,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.KantanBarChartBase");
 		return pStaticClass;
@@ -101,7 +101,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.BarChart");
 		return pStaticClass;
@@ -119,7 +119,7 @@ class UKantanCartesianChartBase : public UKantanChart
 public:
 	struct FKantanCartesianChartStyle                  WidgetStyle;                                              // 0x0150(0x0158) (Edit, BlueprintVisible)
 	struct FKantanCartesianPlotScale                   PlotScale;                                                // 0x02A8(0x0024) (Edit)
-	TEnumAsByte<enum EKantanDataPointSize>             DataPointSize;                                            // 0x02CC(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EKantanDataPointSize>                  DataPointSize;                                            // 0x02CC(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x02CD(0x0003) MISSED OFFSET
 	struct FCartesianAxisConfig                        XAxisCfg;                                                 // 0x02D0(0x0048) (Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FCartesianAxisConfig                        YAxisCfg;                                                 // 0x0318(0x0048) (Edit, BlueprintVisible, BlueprintReadOnly)
@@ -131,7 +131,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.KantanCartesianChartBase");
 		return pStaticClass;
@@ -142,7 +142,7 @@ public:
 	void SetXAxisConfig(const struct FCartesianAxisConfig& InCfg);
 	void SetPlotScaleByRange(const struct FCartesianAxisRange& InRangeX, const struct FCartesianAxisRange& InRangeY);
 	void SetPlotScale(const struct FVector2D& inScale, const struct FVector2D& InFocalCoords);
-	void SetDataPointSize(TEnumAsByte<enum EKantanDataPointSize> InSize);
+	void SetDataPointSize(TEnumAsByte<EKantanDataPointSize> InSize);
 	void SetAxisTitlePadding(const struct FMargin& InPadding);
 	void EnableSeries(const struct FName& ID, bool bEnable);
 	void ConfigureSeries(const struct FName& ID, bool bDrawPoints, bool bDrawLines);
@@ -158,7 +158,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.KantanCartesianPlotBase");
 		return pStaticClass;
@@ -176,7 +176,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.CartesianPlot");
 		return pStaticClass;
@@ -201,7 +201,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.KantanChartLegend");
 		return pStaticClass;
@@ -228,7 +228,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.KantanTimeSeriesPlotBase");
 		return pStaticClass;
@@ -246,7 +246,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.SimpleBarChart");
 		return pStaticClass;
@@ -270,7 +270,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.SimpleCartesianPlot");
 		return pStaticClass;
@@ -294,7 +294,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.SimpleTimeSeriesPlot");
 		return pStaticClass;
@@ -319,7 +319,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class KantanChartsUMG.TimeSeriesPlot");
 		return pStaticClass;

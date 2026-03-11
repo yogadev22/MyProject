@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum Gameplay.EBattleItemOperationType
 enum class EBattleItemOperationType : uint8_t
@@ -209,7 +209,8 @@ enum class ECharacterAnimType : uint8_t
 	ECharAnim_BeCarriedBackOpenDoor = 56,
 	ECharAnim_ScopeBlendAnim       = 57,
 	ECharAnim_MovementLowerBodyOverride = 58,
-	ECharAnim_Max                  = 59
+	ECharAnim_WeaponStandBase      = 59,
+	ECharAnim_Max                  = 60
 };
 
 
@@ -935,9 +936,9 @@ enum class EWeatherType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct Gameplay.GameModePlayerItem
 // 0x0020
@@ -2045,7 +2046,7 @@ struct FSpotWeight
 // 0x0038
 struct FSpotTypeProperty
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                SpotPercentMin;                                           // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                SpotPercentMax;                                           // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -2060,7 +2061,7 @@ struct FSpotTypeProperty
 // 0x0028
 struct FSpotGroupProperty
 {
-	TEnumAsByte<enum ESpotGroupType>                   SpotGroupType;                                            // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        SpotGroupType;                                            // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                SpotGroupPercent;                                         // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	TArray<struct FSpotTypeProperty>                   SpotTypeProperties;                                       // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
@@ -2551,7 +2552,7 @@ struct FItemOperationInfo
 // 0x0018
 struct FGroupSpotComponentArray
 {
-	TEnumAsByte<enum ESpotGroupType>                   GroupType;                                                // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        GroupType;                                                // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<class UGroupSpotSceneComponent*>            AllGroupComponents;                                       // 0x0008(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
 };
@@ -2618,7 +2619,7 @@ struct FItemSpawnClass
 // 0x0018 (0x0020 - 0x0008)
 struct FItemGroupStatisticsData : public FTableRowBase
 {
-	TEnumAsByte<enum ESpotGroupType>                   SpotGroupType;                                            // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        SpotGroupType;                                            // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
 	int                                                AllGroupSpotCount;                                        // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                AllValidGroupSpotCount;                                   // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -2631,7 +2632,7 @@ struct FItemGroupStatisticsData : public FTableRowBase
 // 0x0010 (0x0018 - 0x0008)
 struct FItemSpotStatisticsData : public FTableRowBase
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
 	int                                                AllSpotCount;                                             // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                AllValidSpotCount;                                        // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -2649,7 +2650,7 @@ struct FBuildingStatisticsData : public FTableRowBase
 	int                                                AllValidGroupSpotCount;                                   // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                AllSpotCount;                                             // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                AllValidSpotCount;                                        // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	TMap<TEnumAsByte<enum ESpotType>, struct FItemSpotStatisticsData> SpotStatisticsData;                                       // 0x0030(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotType>, struct FItemSpotStatisticsData> SpotStatisticsData;                                       // 0x0030(0x0050) (ZeroConstructor)
 };
 
 // ScriptStruct Gameplay.ItemClassStatisticsData
@@ -2690,7 +2691,7 @@ struct FItemGenerateStatisticsData
 	int                                                AllValidGroupSpotCount;                                   // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                AllSpotCount;                                             // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                AllValidSpotCount;                                        // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
-	TMap<TEnumAsByte<enum ESpotGroupType>, struct FItemGroupStatisticsData> GroupStatisticsData;                                      // 0x0010(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotGroupType>, struct FItemGroupStatisticsData> GroupStatisticsData;                                      // 0x0010(0x0050) (ZeroConstructor)
 	TMap<struct FString, struct FBuildingStatisticsData> BuildingStatisticsData;                                   // 0x0060(0x0050) (ZeroConstructor)
 	TMap<struct FString, struct FItemClassStatisticsData> ItemStatisticsData;                                       // 0x00B0(0x0050) (ZeroConstructor)
 	TArray<struct FAreaItemStatisticsData>             AreaItemStatisticsData;                                   // 0x0100(0x0010) (ZeroConstructor)
@@ -2837,7 +2838,7 @@ struct FCharacterAnimTypeAsynLoadedPhaseData
 // 0x0078
 struct FCharacterAsynLoadedTypeAnim
 {
-	TEnumAsByte<enum ECharacterAnimTypeAsynLoaded>     AnimTypeAsynLoaded;                                       // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimTypeAsynLoaded>          AnimTypeAsynLoaded;                                       // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     AnimsCatorgeryName;                                       // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	struct FCharacterAnimTypeAsynLoadedPhaseData       Anim;                                                     // 0x0018(0x0060) (Edit, BlueprintVisible)
@@ -2867,7 +2868,7 @@ struct FCharCustomAnimInstacneData
 // 0x0048
 struct FCharParachuteAnimData
 {
-	TEnumAsByte<enum ECharacterParachuteAnimType>      ParachuteAnimType;                                        // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharacterParachuteAnimType>           ParachuteAnimType;                                        // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.CharParachuteAnimData.ParachuteAnimSoftPtr
 	class UAnimationAsset*                             ParachuteAnim;                                            // 0x0030(0x0008) (ZeroConstructor, IsPlainOldData)
@@ -2878,7 +2879,7 @@ struct FCharParachuteAnimData
 // 0x0030
 struct FChararacterPoseAnimData
 {
-	TEnumAsByte<enum ECharacterPoseType>               PoseType;                                                 // 0x0000(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    PoseType;                                                 // 0x0000(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.ChararacterPoseAnimData.PoseAnimSoftPtr
 };
@@ -2887,7 +2888,7 @@ struct FChararacterPoseAnimData
 // 0x00A0
 struct FCharacterMovementAnimData
 {
-	TEnumAsByte<enum ECharacterAnimType>               AnimType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimType>                    AnimType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FName                                       AnimTypeName;                                             // 0x0008(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	struct FChararacterPoseAnimData                    PoseAnim_Stand;                                           // 0x0010(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
@@ -2899,7 +2900,7 @@ struct FCharacterMovementAnimData
 // 0x0030
 struct FChararacterJumpPhaseData
 {
-	TEnumAsByte<enum ECharacterJumpPhase>              JumpPhase;                                                // 0x0000(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	TEnumAsByte<ECharacterJumpPhase>                   JumpPhase;                                                // 0x0000(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.ChararacterJumpPhaseData.PhaseAnimSoftPtr
 };
@@ -2908,7 +2909,7 @@ struct FChararacterJumpPhaseData
 // 0x01C0
 struct FCharacterJumpAnimData
 {
-	TEnumAsByte<enum ECharacterJumpType>               JumpType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
+	TEnumAsByte<ECharacterJumpType>                    JumpType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FName                                       JumpTypeName;                                             // 0x0008(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	struct FChararacterJumpPhaseData                   JumpPhase_PreJump;                                        // 0x0010(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
@@ -2946,11 +2947,11 @@ struct FCharacterShovelAnimData
 struct FCharAnimModifyData
 {
 	int                                                AppliedGameMode;                                          // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECharaAnimListType>               ModifyAnimListType;                                       // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECharacterAnimType>               AnimType;                                                 // 0x0005(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               PoseType;                                                 // 0x0006(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECharacterJumpType>               JumpType;                                                 // 0x0007(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECharacterJumpPhase>              JumpPhase;                                                // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharaAnimListType>                    ModifyAnimListType;                                       // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimType>                    AnimType;                                                 // 0x0005(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    PoseType;                                                 // 0x0006(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharacterJumpType>                    JumpType;                                                 // 0x0007(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharacterJumpPhase>                   JumpPhase;                                                // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0009(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.CharAnimModifyData.PoseAnimSoftPtr
 };
@@ -2962,7 +2963,7 @@ struct FCharacterVehAnimModifyData
 	ESVehAnimVehicleType                               VehicleType;                                              // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                SeatIdx;                                                  // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECharacterVehicleAnimType>        VehicleAnimType;                                          // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharacterVehicleAnimType>             VehicleAnimType;                                          // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData02[0x28];                                      // 0x0009(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.CharacterVehAnimModifyData.VehicleAnimSoftPtr
 };
@@ -2996,7 +2997,7 @@ struct FPlayerAnimData
 // 0x0040
 struct FVehCharAnimData
 {
-	TEnumAsByte<enum ECharacterVehicleAnimType>        VehAnimType;                                              // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharacterVehicleAnimType>             VehAnimType;                                              // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.VehCharAnimData.VehAnimSoftPtr
 	unsigned char                                      UnknownData02[0x10];                                      // 0x0030(0x0010) MISSED OFFSET
@@ -3021,7 +3022,7 @@ struct FSeqActorBindingData
 // 0x0078
 struct FLobbyCharacterGenderWeaponAnimData
 {
-	TEnumAsByte<enum ELobbyCharacterAnimType>          GenderType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELobbyCharacterAnimType>               GenderType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     GenderTypeName;                                           // 0x0008(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst)
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0018(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.LobbyCharacterGenderWeaponAnimData.WeaponAnimSoftPtr
@@ -3033,7 +3034,7 @@ struct FLobbyCharacterGenderWeaponAnimData
 // 0x0028
 struct FLobbyCharacterWeaponAnimData
 {
-	TEnumAsByte<enum ELobbyCharacterPosIndex>          PosIndex;                                                 // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELobbyCharacterPosIndex>               PosIndex;                                                 // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     CharPosName;                                              // 0x0008(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst)
 	TArray<struct FLobbyCharacterGenderWeaponAnimData> GenderWeaponAnimList;                                     // 0x0018(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -3067,7 +3068,7 @@ struct FUAESpawnActorParam
 	struct FString                                     MakerName;                                                // 0x0060(0x0010) (BlueprintVisible, ZeroConstructor)
 	bool                                               IsTracePos;                                               // 0x0070(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsHalfCapsulePull;                                        // 0x0071(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EActorSpawnType>                  SpawnType;                                                // 0x0072(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EActorSpawnType>                       SpawnType;                                                // 0x0072(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x1];                                       // 0x0073(0x0001) MISSED OFFSET
 	int                                                ZTraceOffset;                                             // 0x0074(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                MonsterBornType;                                          // 0x0078(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -3081,8 +3082,8 @@ struct FUAESpawnActorParam
 struct FBackupVehicleSpotData
 {
 	int                                                ID;                                                       // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESpotGroupType>                   SpotGroupType;                                            // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0005(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        SpotGroupType;                                            // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0005(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
 	struct FVector                                     SpotGenerateLoc;                                          // 0x0008(0x000C) (IsPlainOldData)
 	struct FRotator                                    SpotRotator;                                              // 0x0014(0x000C) (IsPlainOldData)
@@ -3095,13 +3096,13 @@ struct FBackupVehicleSpotData
 // 0x0038
 struct FVehicleSpotProperty
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<struct FSpotWeight>                         WeightsPerCategory;                                       // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	int                                                FuelPercentMin;                                           // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                FuelPercentMax;                                           // 0x001C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bActiveByStartVolume;                                     // 0x0020(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EVehicleSpotRandomType>           RandomType;                                               // 0x0021(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVehicleSpotRandomType>                RandomType;                                               // 0x0021(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x2];                                       // 0x0022(0x0002) MISSED OFFSET
 	float                                              TotalCountMultiplierWithPalyerCount;                      // 0x0024(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                TotalCountRangeMin;                                       // 0x0028(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -3114,7 +3115,7 @@ struct FVehicleSpotProperty
 // 0x0020
 struct FTreasureBoxSpotProperty
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<struct FSpotWeight>                         WeightsPerCategory;                                       // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	int                                                TotalCountRangeMin;                                       // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -3125,7 +3126,7 @@ struct FTreasureBoxSpotProperty
 // 0x0018
 struct FVehicleSpotComponentArray
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<class UVehicleSpotSceneComponent*>          AllSpots;                                                 // 0x0008(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
 };
@@ -3155,7 +3156,7 @@ struct FVehicleGenerateSpawnDataArray
 // 0x0028 (0x0030 - 0x0008)
 struct FVehicleSpotStatisticsData : public FTableRowBase
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	struct FString                                     VehiclePath;                                              // 0x0010(0x0010) (ZeroConstructor)
 	float                                              VehicleLocationX;                                         // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -4504,7 +4505,7 @@ struct FHardPointBattleResultData
 struct FCustomCircleParams
 {
 	int                                                Stage;                                                    // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                DelayTime;                                                // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                delayTime;                                                // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                SafeZoneAppeartime;                                       // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                LastTime;                                                 // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                CircleDamage;                                             // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -4957,7 +4958,7 @@ struct FItemGenerateTableRow : public FTableRowBase
 // 0x0018
 struct FItemSpotSceneComponentArray
 {
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<class UItemSpotSceneComponent*>             AllSpots;                                                 // 0x0008(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
 };
@@ -6451,8 +6452,8 @@ struct FPlayerRouteFlow
 struct FVehicleSpotDebugData
 {
 	struct FString                                     VehicleSpotName;                                          // 0x0000(0x0010) (ZeroConstructor)
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESpotGroupType>                   SpotGroupType;                                            // 0x0011(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        SpotGroupType;                                            // 0x0011(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0012(0x0006) MISSED OFFSET
 	struct FString                                     VehiclePath;                                              // 0x0018(0x0010) (ZeroConstructor)
 	float                                              VehicleLocationX;                                         // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -6465,8 +6466,8 @@ struct FVehicleSpotDebugData
 // 0x0058 (0x0060 - 0x0008)
 struct FSpotStatisticsData : public FTableRowBase
 {
-	TEnumAsByte<enum ESpotGroupType>                   GroupType;                                                // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESpotType>                        SpotType;                                                 // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        GroupType;                                                // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotType>                             SpotType;                                                 // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x000A(0x0006) MISSED OFFSET
 	struct FString                                     AreaName;                                                 // 0x0010(0x0010) (ZeroConstructor)
 	struct FString                                     SpotDefaultTag;                                           // 0x0020(0x0010) (ZeroConstructor)
@@ -6486,18 +6487,18 @@ struct FSpotStatisticsData : public FTableRowBase
 // 0x0002
 struct FCharacterAnimStartAsynLoadParam
 {
-	TEnumAsByte<enum ECharacterAnimTypeAsynLoaded>     AnimType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterViewType>               CharacterViewType;                                        // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimTypeAsynLoaded>          AnimType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterViewType>                    CharacterViewType;                                        // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Gameplay.CharacterAnimAsynLoadCompleteParam
 // 0x0048
 struct FCharacterAnimAsynLoadCompleteParam
 {
-	TEnumAsByte<enum ECharacterAnimTypeAsynLoaded>     AnimTypeAsynLoaded;                                       // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimTypeAsynLoaded>          AnimTypeAsynLoaded;                                       // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     AnimsCatorgeryName;                                       // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<enum ECharacterViewType>               CharacterViewType;                                        // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterViewType>                    CharacterViewType;                                        // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0019(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData02[0x28];                                      // 0x0019(0x0028) UNKNOWN PROPERTY: SoftObjectProperty Gameplay.CharacterAnimAsynLoadCompleteParam.SoftPtrAnimation
 };
@@ -6536,7 +6537,7 @@ struct FLevelSequenceConfig
 // 0x00F0
 struct FCharSpecialLevelSequenceData
 {
-	TEnumAsByte<enum ECharSpecialLevelSequenceType>    LevelSequenceType;                                        // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECharSpecialLevelSequenceType>         LevelSequenceType;                                        // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FLevelSequenceConfig                        LevelSequenceConfig;                                      // 0x0008(0x00E8) (Edit, BlueprintVisible, DisableEditOnInstance)
 };

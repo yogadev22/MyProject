@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum ClothingSystemRuntime.EClothingWindMethod
 enum class EClothingWindMethod : uint8_t
@@ -26,14 +26,15 @@ enum class EMaskTarget_PhysMesh : uint8_t
 	MaskTarget_PhysMesh__BackstopRadius = 3,
 	MaskTarget_PhysMesh__AnimDriveMultiplier = 4,
 	MaskTarget_PhysMesh__SelfCollisionMask = 5,
-	MaskTarget_PhysMesh__MaskTarget_MAX = 6
+	MaskTarget_PhysMesh__PhysicsStiffness = 6,
+	MaskTarget_PhysMesh__MaskTarget_MAX = 7
 };
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct ClothingSystemRuntime.ClothConstraintSetup
 // 0x0010
@@ -46,7 +47,7 @@ struct FClothConstraintSetup
 };
 
 // ScriptStruct ClothingSystemRuntime.ClothConfig
-// 0x00F0
+// 0x00F8
 struct FClothConfig
 {
 	EClothingWindMethod                                WindMethod;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
@@ -91,7 +92,9 @@ struct FClothConfig
 	bool                                               bEnableContinuousCollision;                               // 0x00EC(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableEnvironmentalCollision;                            // 0x00ED(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableGroundCollision;                                   // 0x00EE(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x1];                                       // 0x00EF(0x0001) MISSED OFFSET
+	bool                                               bEnableSleep;                                             // 0x00EF(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              SleepThreshold;                                           // 0x00F0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              SleepDamping;                                             // 0x00F4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ClothingSystemRuntime.ClothVertBoneData
@@ -104,7 +107,7 @@ struct FClothVertBoneData
 };
 
 // ScriptStruct ClothingSystemRuntime.ClothPhysicalMeshData
-// 0x00D0
+// 0x00E0
 struct FClothPhysicalMeshData
 {
 	TArray<struct FVector>                             Vertices;                                                 // 0x0000(0x0010) (Edit, ZeroConstructor)
@@ -115,23 +118,24 @@ struct FClothPhysicalMeshData
 	TArray<float>                                      BackstopRadiuses;                                         // 0x0050(0x0010) (Edit, ZeroConstructor)
 	TArray<float>                                      AnimDriveMultipliers;                                     // 0x0060(0x0010) (Edit, ZeroConstructor)
 	TArray<float>                                      SelfCollisionMask;                                        // 0x0070(0x0010) (Edit, ZeroConstructor)
-	TArray<float>                                      InverseMasses;                                            // 0x0080(0x0010) (Edit, ZeroConstructor)
-	TArray<struct FClothVertBoneData>                  BoneData;                                                 // 0x0090(0x0010) (Edit, ZeroConstructor)
-	int                                                MaxBoneWeights;                                           // 0x00A0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	int                                                NumFixedVerts;                                            // 0x00A4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	int                                                OriginalSectionVertexCount;                               // 0x00A8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x00AC(0x0004) MISSED OFFSET
-	TArray<uint32_t>                                   SelfCollisionIndices;                                     // 0x00B0(0x0010) (Edit, ZeroConstructor)
-	TArray<struct FIntPoint>                           VirtualEdges;                                             // 0x00C0(0x0010) (Edit, ZeroConstructor)
+	TArray<float>                                      PhysicsStiffness;                                         // 0x0080(0x0010) (Edit, ZeroConstructor)
+	TArray<float>                                      InverseMasses;                                            // 0x0090(0x0010) (Edit, ZeroConstructor)
+	TArray<struct FClothVertBoneData>                  BoneData;                                                 // 0x00A0(0x0010) (Edit, ZeroConstructor)
+	int                                                MaxBoneWeights;                                           // 0x00B0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	int                                                NumFixedVerts;                                            // 0x00B4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	int                                                OriginalSectionVertexCount;                               // 0x00B8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x00BC(0x0004) MISSED OFFSET
+	TArray<uint32_t>                                   SelfCollisionIndices;                                     // 0x00C0(0x0010) (Edit, ZeroConstructor)
+	TArray<struct FIntPoint>                           VirtualEdges;                                             // 0x00D0(0x0010) (Edit, ZeroConstructor)
 };
 
 // ScriptStruct ClothingSystemRuntime.ClothLODData
-// 0x0120
+// 0x0130
 struct FClothLODData
 {
-	struct FClothPhysicalMeshData                      PhysicalMeshData;                                         // 0x0000(0x00D0) (Edit)
-	struct FClothCollisionData                         CollisionData;                                            // 0x00D0(0x0030) (Edit)
-	unsigned char                                      UnknownData00[0x20];                                      // 0x0100(0x0020) MISSED OFFSET
+	struct FClothPhysicalMeshData                      PhysicalMeshData;                                         // 0x0000(0x00E0) (Edit)
+	struct FClothCollisionData                         CollisionData;                                            // 0x00E0(0x0030) (Edit)
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0110(0x0020) MISSED OFFSET
 };
 
 // ScriptStruct ClothingSystemRuntime.ClothParameterMask_PhysMesh

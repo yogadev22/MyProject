@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function bp_global.bp_global_C.EventShowPlatWXStartup_NoFetch
 // (BlueprintCallable, BlueprintEvent)
 
 void Abp_global_C::EventShowPlatWXStartup_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventShowPlatWXStartup_NoFetch");
 
@@ -33,7 +33,7 @@ void Abp_global_C::EventShowPlatWXStartup_NoFetch()
 
 void Abp_global_C::EventShowPlatWXStartup()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventShowPlatWXStartup");
 
@@ -53,7 +53,7 @@ void Abp_global_C::EventShowPlatWXStartup()
 
 void Abp_global_C::EventShowPlatQQStartup_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventShowPlatQQStartup_NoFetch");
 
@@ -73,7 +73,7 @@ void Abp_global_C::EventShowPlatQQStartup_NoFetch()
 
 void Abp_global_C::EventShowPlatQQStartup()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventShowPlatQQStartup");
 
@@ -93,7 +93,7 @@ void Abp_global_C::EventShowPlatQQStartup()
 
 void Abp_global_C::EventShowPlatIconTips_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventShowPlatIconTips_NoFetch");
 
@@ -113,7 +113,7 @@ void Abp_global_C::EventShowPlatIconTips_NoFetch()
 
 void Abp_global_C::EventShowPlatIconTips()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventShowPlatIconTips");
 
@@ -133,7 +133,7 @@ void Abp_global_C::EventShowPlatIconTips()
 
 void Abp_global_C::EventSetInfo_Push_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventSetInfo_Push_NoFetch");
 
@@ -153,7 +153,7 @@ void Abp_global_C::EventSetInfo_Push_NoFetch()
 
 void Abp_global_C::EventSetInfo_Push()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventSetInfo_Push");
 
@@ -173,7 +173,7 @@ void Abp_global_C::EventSetInfo_Push()
 
 void Abp_global_C::EventSendClickGemReport_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventSendClickGemReport_NoFetch");
 
@@ -193,7 +193,7 @@ void Abp_global_C::EventSendClickGemReport_NoFetch()
 
 void Abp_global_C::EventSendClickGemReport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventSendClickGemReport");
 
@@ -213,7 +213,7 @@ void Abp_global_C::EventSendClickGemReport()
 
 void Abp_global_C::EventSendBAReport_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventSendBAReport_NoFetch");
 
@@ -233,7 +233,7 @@ void Abp_global_C::EventSendBAReport_NoFetch()
 
 void Abp_global_C::EventSendBAReport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventSendBAReport");
 
@@ -253,7 +253,7 @@ void Abp_global_C::EventSendBAReport()
 
 void Abp_global_C::EventGlobalUseItem_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventGlobalUseItem_NoFetch");
 
@@ -273,7 +273,7 @@ void Abp_global_C::EventGlobalUseItem_NoFetch()
 
 void Abp_global_C::EventGlobalUseItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventGlobalUseItem");
 
@@ -293,7 +293,7 @@ void Abp_global_C::EventGlobalUseItem()
 
 void Abp_global_C::EventGlobalCloseItemTips_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventGlobalCloseItemTips_NoFetch");
 
@@ -313,7 +313,7 @@ void Abp_global_C::EventGlobalCloseItemTips_NoFetch()
 
 void Abp_global_C::EventGlobalCloseItemTips()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventGlobalCloseItemTips");
 
@@ -333,7 +333,7 @@ void Abp_global_C::EventGlobalCloseItemTips()
 
 void Abp_global_C::EventFetchNationSwitch_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventFetchNationSwitch_NoFetch");
 
@@ -353,7 +353,7 @@ void Abp_global_C::EventFetchNationSwitch_NoFetch()
 
 void Abp_global_C::EventFetchNationSwitch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventFetchNationSwitch");
 
@@ -373,7 +373,7 @@ void Abp_global_C::EventFetchNationSwitch()
 
 void Abp_global_C::EventFetchInfo_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventFetchInfo_NoFetch");
 
@@ -393,7 +393,7 @@ void Abp_global_C::EventFetchInfo_NoFetch()
 
 void Abp_global_C::EventFetchInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventFetchInfo");
 
@@ -413,7 +413,7 @@ void Abp_global_C::EventFetchInfo()
 
 void Abp_global_C::EventComMsgBoxSluaClickUrl_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventComMsgBoxSluaClickUrl_NoFetch");
 
@@ -433,7 +433,7 @@ void Abp_global_C::EventComMsgBoxSluaClickUrl_NoFetch()
 
 void Abp_global_C::EventComMsgBoxSluaClickUrl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventComMsgBoxSluaClickUrl");
 
@@ -453,7 +453,7 @@ void Abp_global_C::EventComMsgBoxSluaClickUrl()
 
 void Abp_global_C::EventClickLobbyEventGemReport_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventClickLobbyEventGemReport_NoFetch");
 
@@ -473,7 +473,7 @@ void Abp_global_C::EventClickLobbyEventGemReport_NoFetch()
 
 void Abp_global_C::EventClickLobbyEventGemReport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventClickLobbyEventGemReport");
 
@@ -493,7 +493,7 @@ void Abp_global_C::EventClickLobbyEventGemReport()
 
 void Abp_global_C::EventCheckIfMenuOpen_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventCheckIfMenuOpen_NoFetch");
 
@@ -513,7 +513,7 @@ void Abp_global_C::EventCheckIfMenuOpen_NoFetch()
 
 void Abp_global_C::EventCheckIfMenuOpen()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventCheckIfMenuOpen");
 
@@ -533,7 +533,7 @@ void Abp_global_C::EventCheckIfMenuOpen()
 
 void Abp_global_C::EventAndroidQuitGame_NoFetch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventAndroidQuitGame_NoFetch");
 
@@ -553,7 +553,7 @@ void Abp_global_C::EventAndroidQuitGame_NoFetch()
 
 void Abp_global_C::EventAndroidQuitGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.EventAndroidQuitGame");
 
@@ -573,7 +573,7 @@ void Abp_global_C::EventAndroidQuitGame()
 
 void Abp_global_C::UserConstructionScript()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_global.bp_global_C.UserConstructionScript");
 

@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Engine.ActorComponent.ToggleActive
 struct UActorComponent_ToggleActive_Params
@@ -18,7 +18,7 @@ struct UActorComponent_ToggleActive_Params
 // Function Engine.ActorComponent.SetTickGroup
 struct UActorComponent_SetTickGroup_Params
 {
-	TEnumAsByte<enum ETickingGroup>                    NewTickGroup;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETickingGroup>                         NewTickGroup;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.ActorComponent.SetTickableWhenPaused
@@ -84,7 +84,7 @@ struct UActorComponent_ReceivePostReplayRecover_Params
 // Function Engine.ActorComponent.ReceiveEndPlay
 struct UActorComponent_ReceiveEndPlay_Params
 {
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.ActorComponent.ReceiveBeginPlay
@@ -212,7 +212,7 @@ struct AActor_SnapRootComponentTo_Params
 // Function Engine.Actor.SetTickGroup
 struct AActor_SetTickGroup_Params
 {
-	TEnumAsByte<enum ETickingGroup>                    NewTickGroup;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETickingGroup>                         NewTickGroup;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.Actor.SetTickableWhenPaused
@@ -261,7 +261,7 @@ struct AActor_SetNetUpdateGroup_Params
 // Function Engine.Actor.SetNetDormancy
 struct AActor_SetNetDormancy_Params
 {
-	TEnumAsByte<enum ENetDormancy>                     NewDormancy;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ENetDormancy>                          NewDormancy;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.Actor.SetLifeSpan
@@ -382,7 +382,7 @@ struct AActor_ReceiveHit_Params
 // Function Engine.Actor.ReceiveEndPlay
 struct AActor_ReceiveEndPlay_Params
 {
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.Actor.ReceiveDestroyed
@@ -413,25 +413,25 @@ struct AActor_ReceiveActorOnReleased_Params
 // Function Engine.Actor.ReceiveActorOnInputTouchLeave
 struct AActor_ReceiveActorOnInputTouchLeave_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.Actor.ReceiveActorOnInputTouchEnter
 struct AActor_ReceiveActorOnInputTouchEnter_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.Actor.ReceiveActorOnInputTouchEnd
 struct AActor_ReceiveActorOnInputTouchEnd_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.Actor.ReceiveActorOnInputTouchBegin
 struct AActor_ReceiveActorOnInputTouchBegin_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.Actor.ReceiveActorOnClicked
@@ -674,7 +674,7 @@ struct AActor_K2_AttachRootComponentToActor_Params
 {
 	class AActor*                                      InParentActor;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  AttachLocationType;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       AttachLocationType;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bWeldSimulatedBodies;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -683,7 +683,7 @@ struct AActor_K2_AttachRootComponentTo_Params
 {
 	class USceneComponent*                             InParent;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  AttachLocationType;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       AttachLocationType;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bWeldSimulatedBodies;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -807,13 +807,13 @@ struct AActor_GetSquaredDistanceTo_Params
 // Function Engine.Actor.GetRole
 struct AActor_GetRole_Params
 {
-	TEnumAsByte<enum ENetRole>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.Actor.GetRemoteRole
 struct AActor_GetRemoteRole_Params
 {
-	TEnumAsByte<enum ENetRole>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.Actor.GetParentComponent
@@ -853,10 +853,16 @@ struct AActor_GetOverlappingActors_Params
 	class UClass*                                      ClassFilter;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Engine.Actor.GetNetUpdateGroupID
+struct AActor_GetNetUpdateGroupID_Params
+{
+	unsigned char                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Engine.Actor.GetLocalRole
 struct AActor_GetLocalRole_Params
 {
-	TEnumAsByte<enum ENetRole>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENetRole>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.Actor.GetLifeSpan
@@ -1347,7 +1353,7 @@ struct USceneComponent_K2_AttachTo_Params
 {
 	class USceneComponent*                             InParent;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  AttachType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       AttachType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bWeldSimulatedBodies;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -1453,7 +1459,7 @@ struct USceneComponent_GetUpVector_Params
 struct USceneComponent_GetSocketTransform_Params
 {
 	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERelativeTransformSpace>          TransformSpace;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERelativeTransformSpace>               TransformSpace;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -1831,7 +1837,7 @@ struct UPrimitiveComponent_SetLODDefault_Params
 // Function Engine.PrimitiveComponent.SetLockedAxis
 struct UPrimitiveComponent_SetLockedAxis_Params
 {
-	TEnumAsByte<enum EDOFMode>                         LockedAxis;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDOFMode>                              LockedAxis;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.SetLinearDamping
@@ -1946,20 +1952,20 @@ struct UPrimitiveComponent_SetCullDistance_Params
 // Function Engine.PrimitiveComponent.SetConstraintMode
 struct UPrimitiveComponent_SetConstraintMode_Params
 {
-	TEnumAsByte<enum EDOFMode>                         ConstraintMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDOFMode>                              ConstraintMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.SetCollisionResponseToChannel
 struct UPrimitiveComponent_SetCollisionResponseToChannel_Params
 {
-	TEnumAsByte<enum ECollisionChannel>                Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionResponse>               NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionResponse>                    NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.SetCollisionResponseToAllChannels
 struct UPrimitiveComponent_SetCollisionResponseToAllChannels_Params
 {
-	TEnumAsByte<enum ECollisionResponse>               NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionResponse>                    NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.SetCollisionProfileName
@@ -1971,13 +1977,13 @@ struct UPrimitiveComponent_SetCollisionProfileName_Params
 // Function Engine.PrimitiveComponent.SetCollisionObjectType
 struct UPrimitiveComponent_SetCollisionObjectType_Params
 {
-	TEnumAsByte<enum ECollisionChannel>                Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.SetCollisionEnabled
 struct UPrimitiveComponent_SetCollisionEnabled_Params
 {
-	TEnumAsByte<enum ECollisionEnabled>                NewType;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     NewType;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.SetCenterOfMass
@@ -2101,7 +2107,7 @@ struct UPrimitiveComponent_OverrideHighlightColor_Params
 // Function Engine.PrimitiveComponent.ModifyCollision
 struct UPrimitiveComponent_ModifyCollision_Params
 {
-	TEnumAsByte<enum ECollisionEnabled>                NewType;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     NewType;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.K2_SetMoveIgnoreMask
@@ -2320,8 +2326,8 @@ struct UPrimitiveComponent_GetInertiaTensor_Params
 // Function Engine.PrimitiveComponent.GetCollisionResponseToChannel
 struct UPrimitiveComponent_GetCollisionResponseToChannel_Params
 {
-	TEnumAsByte<enum ECollisionChannel>                Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionResponse>               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionResponse>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.GetCollisionProfileName
@@ -2333,13 +2339,13 @@ struct UPrimitiveComponent_GetCollisionProfileName_Params
 // Function Engine.PrimitiveComponent.GetCollisionObjectType
 struct UPrimitiveComponent_GetCollisionObjectType_Params
 {
-	TEnumAsByte<enum ECollisionChannel>                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.GetCollisionEnabled
 struct UPrimitiveComponent_GetCollisionEnabled_Params
 {
-	TEnumAsByte<enum ECollisionEnabled>                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.PrimitiveComponent.GetClosestPointOnCollision
@@ -2510,7 +2516,7 @@ struct UPrimitiveComponent_AddRadialImpulse_Params
 	struct FVector                                     Origin;                                                   // (Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Strength;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERadialImpulseFalloff>            Falloff;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERadialImpulseFalloff>                 Falloff;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bVelChange;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2520,7 +2526,7 @@ struct UPrimitiveComponent_AddRadialForce_Params
 	struct FVector                                     Origin;                                                   // (Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Strength;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERadialImpulseFalloff>            Falloff;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERadialImpulseFalloff>                 Falloff;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bAccelChange;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2629,7 +2635,7 @@ struct UMeshComponent_SetOverlayMaterial_Params
 // Function Engine.MeshComponent.SetLayerVisibilityValue
 struct UMeshComponent_SetLayerVisibilityValue_Params
 {
-	TEnumAsByte<enum EMeshVisibleLayer>                Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMeshVisibleLayer>                     Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               Visible;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bPropagateToChildren;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -2644,7 +2650,7 @@ struct UMeshComponent_SetLayerVisibilityEnable_Params
 // Function Engine.MeshComponent.SetLayerCastShadowValue
 struct UMeshComponent_SetLayerCastShadowValue_Params
 {
-	TEnumAsByte<enum EMeshCastShadowLayer>             Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMeshCastShadowLayer>                  Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               NewCastShadow;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2683,7 +2689,7 @@ struct UMeshComponent_SetFeatureMaterial_Params
 // Function Engine.MeshComponent.SetDrawStyle
 struct UMeshComponent_SetDrawStyle_Params
 {
-	TEnumAsByte<enum EDrawStyleMode>                   InDrawStyle;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawStyleMode>                        InDrawStyle;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.MeshComponent.SetCastShadow
@@ -2747,14 +2753,14 @@ struct UMeshComponent_GetMaterialIndex_Params
 // Function Engine.MeshComponent.GetLayerVisibilityValue
 struct UMeshComponent_GetLayerVisibilityValue_Params
 {
-	TEnumAsByte<enum EMeshVisibleLayer>                Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMeshVisibleLayer>                     Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.MeshComponent.GetLayerCastShadowValue
 struct UMeshComponent_GetLayerCastShadowValue_Params
 {
-	TEnumAsByte<enum EMeshCastShadowLayer>             Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMeshCastShadowLayer>                  Layer;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -2779,7 +2785,7 @@ struct UMeshComponent_GetForceSyncCreatePSO_Params
 // Function Engine.MeshComponent.GetDrawStyle
 struct UMeshComponent_GetDrawStyle_Params
 {
-	TEnumAsByte<enum EDrawStyleMode>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EDrawStyleMode>                        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.MeshComponent.EnableMeshClipPlane
@@ -2930,7 +2936,7 @@ struct USkinnedMeshComponent_SetForcedLOD_Params
 // Function Engine.SkinnedMeshComponent.SetDrawStyle
 struct USkinnedMeshComponent_SetDrawStyle_Params
 {
-	TEnumAsByte<enum EDrawStyleMode>                   InDrawStyle;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawStyleMode>                        InDrawStyle;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.SkinnedMeshComponent.SetCastCapsuleIndirectShadow
@@ -2975,7 +2981,7 @@ struct USkinnedMeshComponent_IsBoneHiddenByName_Params
 struct USkinnedMeshComponent_HideBoneByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPhysBodyOp>                      PhysBodyOption;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPhysBodyOp>                           PhysBodyOption;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.SkinnedMeshComponent.GetSocketBoneName
@@ -3025,7 +3031,7 @@ struct USkinnedMeshComponent_GetForceSyncCreatePSO_Params
 // Function Engine.SkinnedMeshComponent.GetDrawStyle
 struct USkinnedMeshComponent_GetDrawStyle_Params
 {
-	TEnumAsByte<enum EDrawStyleMode>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EDrawStyleMode>                        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.SkinnedMeshComponent.GetCurrentSkinWeightProfileName
@@ -3270,10 +3276,16 @@ struct USkeletalMeshComponent_SetAnimInstanceClass_Params
 	class UClass*                                      NewClass;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Engine.SkeletalMeshComponent.SetAnimGroupRole
+struct USkeletalMeshComponent_SetAnimGroupRole_Params
+{
+	ESkeletalMeshGroupRole                             NewRole;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Engine.SkeletalMeshComponent.SetAnimationMode
 struct USkeletalMeshComponent_SetAnimationMode_Params
 {
-	TEnumAsByte<enum EAnimationMode>                   InAnimationMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAnimationMode>                        InAnimationMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.SkeletalMeshComponent.SetAnimation
@@ -3533,7 +3545,7 @@ struct USkeletalMeshComponent_GetAnimInstance_Params
 // Function Engine.SkeletalMeshComponent.GetAnimationMode
 struct USkeletalMeshComponent_GetAnimationMode_Params
 {
-	TEnumAsByte<enum EAnimationMode>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EAnimationMode>                        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.SkeletalMeshComponent.GetAllowedAnimCurveEvaluate
@@ -3673,7 +3685,7 @@ struct UAnimInstance_SetSubAnimNodeAnimInstance_Params
 // Function Engine.AnimInstance.SetRootMotionMode
 struct UAnimInstance_SetRootMotionMode_Params
 {
-	TEnumAsByte<enum ERootMotionMode>                  Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERootMotionMode>                       Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.AnimInstance.SetMorphTarget
@@ -4670,8 +4682,8 @@ struct ACharacter_K2_OnStartCrouch_Params
 // Function Engine.Character.K2_OnMovementModeChanged
 struct ACharacter_K2_OnMovementModeChanged_Params
 {
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PrevCustomMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -4994,13 +5006,13 @@ struct UGameInstance_ReceiveInit_Params
 // Function Engine.GameInstance.HandleTravelError
 struct UGameInstance_HandleTravelError_Params
 {
-	TEnumAsByte<enum ETravelFailure>                   FailureType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETravelFailure>                        FailureType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.GameInstance.HandleNetworkError
 struct UGameInstance_HandleNetworkError_Params
 {
-	TEnumAsByte<enum ENetworkFailure>                  FailureType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ENetworkFailure>                       FailureType;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsServer;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -5543,7 +5555,7 @@ struct USplineComponent_SetUpVectorAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     InUpVector;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -5559,7 +5571,7 @@ struct USplineComponent_SetTangentsAtSplinePoint_Params
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     InArriveTangent;                                          // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	struct FVector                                     InLeaveTangent;                                           // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -5568,7 +5580,7 @@ struct USplineComponent_SetTangentAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     InTangent;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -5582,7 +5594,7 @@ struct USplineComponent_SetSplineWorldPoints_Params
 struct USplineComponent_SetSplinePointType_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplinePointType>                 Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplinePointType>                      Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -5590,7 +5602,7 @@ struct USplineComponent_SetSplinePointType_Params
 struct USplineComponent_SetSplinePoints_Params
 {
 	TArray<struct FVector>                             Points;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -5611,7 +5623,7 @@ struct USplineComponent_SetLocationAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     InLocation;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -5625,7 +5637,7 @@ struct USplineComponent_SetDrawDebug_Params
 struct USplineComponent_SetDefaultUpVector_Params
 {
 	struct FVector                                     UpVector;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.SplineComponent.SetClosedLoopAtPosition
@@ -5719,7 +5731,7 @@ struct USplineComponent_GetWorldDirectionAtDistanceAlongSpline_Params
 struct USplineComponent_GetUpVectorAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -5728,7 +5740,7 @@ struct USplineComponent_GetUpVectorAtTime_Params
 struct USplineComponent_GetUpVectorAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5736,7 +5748,7 @@ struct USplineComponent_GetUpVectorAtSplinePoint_Params
 struct USplineComponent_GetUpVectorAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5744,7 +5756,7 @@ struct USplineComponent_GetUpVectorAtDistanceAlongSpline_Params
 struct USplineComponent_GetTransformAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
@@ -5754,7 +5766,7 @@ struct USplineComponent_GetTransformAtTime_Params
 struct USplineComponent_GetTransformAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -5763,7 +5775,7 @@ struct USplineComponent_GetTransformAtSplinePoint_Params
 struct USplineComponent_GetTransformAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -5772,7 +5784,7 @@ struct USplineComponent_GetTransformAtDistanceAlongSpline_Params
 struct USplineComponent_GetTangentAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -5781,7 +5793,7 @@ struct USplineComponent_GetTangentAtTime_Params
 struct USplineComponent_GetTangentAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5789,7 +5801,7 @@ struct USplineComponent_GetTangentAtSplinePoint_Params
 struct USplineComponent_GetTangentAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5797,7 +5809,7 @@ struct USplineComponent_GetTangentAtDistanceAlongSpline_Params
 struct USplineComponent_GetSplinePointType_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplinePointType>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ESplinePointType>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.SplineComponent.GetSplineLength
@@ -5832,7 +5844,7 @@ struct USplineComponent_GetScaleAtDistanceAlongSpline_Params
 struct USplineComponent_GetRotationAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -5841,7 +5853,7 @@ struct USplineComponent_GetRotationAtTime_Params
 struct USplineComponent_GetRotationAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5849,7 +5861,7 @@ struct USplineComponent_GetRotationAtSplinePoint_Params
 struct USplineComponent_GetRotationAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5857,7 +5869,7 @@ struct USplineComponent_GetRotationAtDistanceAlongSpline_Params
 struct USplineComponent_GetRollAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -5866,7 +5878,7 @@ struct USplineComponent_GetRollAtTime_Params
 struct USplineComponent_GetRollAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -5874,7 +5886,7 @@ struct USplineComponent_GetRollAtSplinePoint_Params
 struct USplineComponent_GetRollAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -5882,7 +5894,7 @@ struct USplineComponent_GetRollAtDistanceAlongSpline_Params
 struct USplineComponent_GetRightVectorAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -5891,7 +5903,7 @@ struct USplineComponent_GetRightVectorAtTime_Params
 struct USplineComponent_GetRightVectorAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5899,7 +5911,7 @@ struct USplineComponent_GetRightVectorAtSplinePoint_Params
 struct USplineComponent_GetRightVectorAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5913,7 +5925,7 @@ struct USplineComponent_GetNumberOfSplinePoints_Params
 struct USplineComponent_GetLocationAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -5922,7 +5934,7 @@ struct USplineComponent_GetLocationAtTime_Params
 struct USplineComponent_GetLocationAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5930,7 +5942,7 @@ struct USplineComponent_GetLocationAtSplinePoint_Params
 struct USplineComponent_GetLocationAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5940,7 +5952,7 @@ struct USplineComponent_GetLocationAndTangentAtSplinePoint_Params
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Location;                                                 // (Parm, OutParm, IsPlainOldData)
 	struct FVector                                     Tangent;                                                  // (Parm, OutParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.SplineComponent.GetLocationAndRotationAtDistanceAlongSpline
@@ -5948,7 +5960,7 @@ struct USplineComponent_GetLocationAndRotationAtDistanceAlongSpline_Params
 {
 	struct FRotator                                    OutRotation;                                              // (Parm, OutParm, IsPlainOldData)
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5964,7 +5976,7 @@ struct USplineComponent_GetLocalLocationAndTangentAtSplinePoint_Params
 struct USplineComponent_GetLeaveTangentAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -5993,7 +6005,7 @@ struct USplineComponent_GetDistanceAlongSplineAtSplineInputKey_Params
 struct USplineComponent_GetDirectionAtTime_Params
 {
 	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -6002,7 +6014,7 @@ struct USplineComponent_GetDirectionAtTime_Params
 struct USplineComponent_GetDirectionAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6010,14 +6022,14 @@ struct USplineComponent_GetDirectionAtSplinePoint_Params
 struct USplineComponent_GetDirectionAtDistanceAlongSpline_Params
 {
 	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.SplineComponent.GetDefaultUpVector
 struct USplineComponent_GetDefaultUpVector_Params
 {
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6039,7 +6051,7 @@ struct USplineComponent_GetCurvatureAtDistance_Params
 struct USplineComponent_GetArriveTangentAtSplinePoint_Params
 {
 	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6047,7 +6059,7 @@ struct USplineComponent_GetArriveTangentAtSplinePoint_Params
 struct USplineComponent_FindUpVectorClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6055,7 +6067,7 @@ struct USplineComponent_FindUpVectorClosestToWorldLocation_Params
 struct USplineComponent_FindTransformClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
@@ -6064,7 +6076,7 @@ struct USplineComponent_FindTransformClosestToWorldLocation_Params
 struct USplineComponent_FindTangentClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6079,7 +6091,7 @@ struct USplineComponent_FindScaleClosestToWorldLocation_Params
 struct USplineComponent_FindRotationClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6087,7 +6099,7 @@ struct USplineComponent_FindRotationClosestToWorldLocation_Params
 struct USplineComponent_FindRollClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -6095,7 +6107,7 @@ struct USplineComponent_FindRollClosestToWorldLocation_Params
 struct USplineComponent_FindRightVectorClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6103,7 +6115,7 @@ struct USplineComponent_FindRightVectorClosestToWorldLocation_Params
 struct USplineComponent_FindLocationClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6118,7 +6130,7 @@ struct USplineComponent_FindInputKeyClosestToWorldLocation_Params
 struct USplineComponent_FindDirectionClosestToWorldLocation_Params
 {
 	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -6139,7 +6151,7 @@ struct USplineComponent_AddSplinePointAtIndex_Params
 {
 	struct FVector                                     Position;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -6147,7 +6159,7 @@ struct USplineComponent_AddSplinePointAtIndex_Params
 struct USplineComponent_AddSplinePoint_Params
 {
 	struct FVector                                     Position;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum ESplineCoordinateSpace>           CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -6180,7 +6192,7 @@ struct UCameraComponent_SetUseFieldOfViewForLOD_Params
 // Function Engine.CameraComponent.SetProjectionMode
 struct UCameraComponent_SetProjectionMode_Params
 {
-	TEnumAsByte<enum ECameraProjectionMode>            InProjectionMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECameraProjectionMode>                 InProjectionMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.CameraComponent.SetPostProcessBlendWeight
@@ -6311,7 +6323,7 @@ struct UParticleSystemComponent_SetTrailSourceData_Params
 {
 	struct FName                                       InFirstSocketName;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       InSecondSocketName;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETrailWidthMode>                  InWidthMode;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETrailWidthMode>                       InWidthMode;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              InWidth;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -6429,7 +6441,7 @@ struct UParticleSystemComponent_SetAutoAttachParams_Params
 {
 	class USceneComponent*                             Parent;                                                   // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FName                                       SocketName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.ParticleSystemComponent.SetAutoAttachmentParameters
@@ -6579,7 +6591,7 @@ struct UParticleSystemComponent_BeginTrails_Params
 {
 	struct FName                                       InFirstSocketName;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       InSecondSocketName;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETrailWidthMode>                  InWidthMode;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETrailWidthMode>                       InWidthMode;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              InWidth;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -6858,7 +6870,7 @@ struct UStaticMeshComponent_SetForcedLodModel_Params
 // Function Engine.StaticMeshComponent.SetDrawStyle
 struct UStaticMeshComponent_SetDrawStyle_Params
 {
-	TEnumAsByte<enum EDrawStyleMode>                   InDrawStyle;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawStyleMode>                        InDrawStyle;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.StaticMeshComponent.SetDistanceFieldSelfShadowBias
@@ -6894,7 +6906,7 @@ struct UStaticMeshComponent_GetForceSyncCreatePSO_Params
 // Function Engine.StaticMeshComponent.GetDrawStyle
 struct UStaticMeshComponent_GetDrawStyle_Params
 {
-	TEnumAsByte<enum EDrawStyleMode>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EDrawStyleMode>                        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.StaticMeshComponent.EnableMeshClipPlane
@@ -6949,7 +6961,7 @@ struct UCharacterMovementComponent_SetWalkableFloorAngle_Params
 // Function Engine.CharacterMovementComponent.SetMovementMode
 struct UCharacterMovementComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -7311,6 +7323,19 @@ struct UCameraShake_BlueprintUpdateCameraShake_Params
 	struct FMinimalViewInfo                            ModifiedPOV;                                              // (Parm, OutParm)
 };
 
+// Function Engine.NetDriver.SetFunctionEligibleForSharedSerializationByName
+struct UNetDriver_SetFunctionEligibleForSharedSerializationByName_Params
+{
+	class UClass*                                      Class;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     FunctionName;                                             // (Parm, ZeroConstructor)
+	bool                                               bEligible;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.NetDriver.PrintRPCFunctionCallInfo
+struct UNetDriver_PrintRPCFunctionCallInfo_Params
+{
+};
+
 // Function Engine.GameplayStatics.UnloadStreamLevel
 struct UGameplayStatics_UnloadStreamLevel_Params
 {
@@ -7345,7 +7370,7 @@ struct UGameplayStatics_SpawnSoundAttached_Params
 	struct FName                                       AttachPointName;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bStopWhenAttachedToDestroyed;                             // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              VolumeMultiplier;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              PitchMultiplier;                                          // (Parm, ZeroConstructor, IsPlainOldData)
@@ -7402,7 +7427,7 @@ struct UGameplayStatics_SpawnForceFeedbackAttached_Params
 	struct FName                                       AttachPointName;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bStopWhenAttachedToDestroyed;                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bLooping;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              IntensityMultiplier;                                      // (Parm, ZeroConstructor, IsPlainOldData)
@@ -7436,7 +7461,7 @@ struct UGameplayStatics_SpawnEmitterAttachedToActor_Params
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
 	struct FVector                                     Scale;                                                    // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bAutoDestroy;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class UParticleSystemComponent*                    ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
@@ -7450,7 +7475,7 @@ struct UGameplayStatics_SpawnEmitterAttached_Params
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
 	struct FVector                                     Scale;                                                    // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bAutoDestroy;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class UParticleSystemComponent*                    ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
@@ -7476,7 +7501,7 @@ struct UGameplayStatics_SpawnDialogueAttached_Params
 	struct FName                                       AttachPointName;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bStopWhenAttachedToDestroyed;                             // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              VolumeMultiplier;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              PitchMultiplier;                                          // (Parm, ZeroConstructor, IsPlainOldData)
@@ -7524,7 +7549,7 @@ struct UGameplayStatics_SpawnDecalAttached_Params
 	struct FName                                       AttachPointName;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LifeSpan;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	class UDecalComponent*                             ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
@@ -7871,7 +7896,7 @@ struct UGameplayStatics_GetTimeSeconds_Params
 struct UGameplayStatics_GetSurfaceType_Params
 {
 	struct FHitResult                                  Hit;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum EPhysicalSurface>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.GameplayStatics.GetStreamingLevel
@@ -8208,6 +8233,12 @@ struct UGameplayStatics_ClearSoundMixClassOverride_Params
 	float                                              FadeOutTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Engine.GameplayStatics.CheckMetalLibraryUncompressed
+struct UGameplayStatics_CheckMetalLibraryUncompressed_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Engine.GameplayStatics.CancelAsyncLoading
 struct UGameplayStatics_CancelAsyncLoading_Params
 {
@@ -8244,7 +8275,7 @@ struct UGameplayStatics_BlueprintSuggestProjectileVelocity_Params
 	struct FVector                                     EndLocation;                                              // (Parm, IsPlainOldData)
 	float                                              LaunchSpeed;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              OverrideGravityZ;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESuggestProjVelocityTraceOption>  TraceOption;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESuggestProjVelocityTraceOption>       TraceOption;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              CollisionRadius;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bFavorHighArc;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bDrawDebug;                                               // (Parm, ZeroConstructor, IsPlainOldData)
@@ -8262,10 +8293,10 @@ struct UGameplayStatics_Blueprint_PredictProjectilePath_ByTraceChannel_Params
 	struct FVector                                     LaunchVelocity;                                           // (Parm, IsPlainOldData)
 	bool                                               bTracePath;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ProjectileRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              DrawDebugTime;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              SimFrequency;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              MaxSimTime;                                               // (Parm, ZeroConstructor, IsPlainOldData)
@@ -8286,10 +8317,10 @@ struct UGameplayStatics_Blueprint_PredictProjectilePath_ByObjectType_Params
 	struct FVector                                     LaunchVelocity;                                           // (Parm, IsPlainOldData)
 	bool                                               bTracePath;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ProjectileRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              DrawDebugTime;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              SimFrequency;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              MaxSimTime;                                               // (Parm, ZeroConstructor, IsPlainOldData)
@@ -8317,10 +8348,10 @@ struct UGameplayStatics_Blueprint_PredictBulletPath_ByTraceChannel_Params
 	struct FVector                                     LaunchVelocity;                                           // (Parm, IsPlainOldData)
 	bool                                               bTracePath;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BulletRadius;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              DrawDebugTime;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              SimFrequency;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              MaxSimTime;                                               // (Parm, ZeroConstructor, IsPlainOldData)
@@ -8390,7 +8421,7 @@ struct UGameplayStatics_ApplyRadialDamageWithFalloff_Params
 	TArray<class AActor*>                              IgnoreActors;                                             // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class AController*                                 InstigatedByController;                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                DamagePreventionChannel;                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     DamagePreventionChannel;                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -8406,7 +8437,7 @@ struct UGameplayStatics_ApplyRadialDamage_Params
 	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class AController*                                 InstigatedByController;                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bDoFullDamage;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                DamagePreventionChannel;                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     DamagePreventionChannel;                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -8636,7 +8667,7 @@ struct APlayerController_SetViewTargetWithBlend_Params
 {
 	class AActor*                                      NewViewTarget;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EViewTargetBlendFunction>         BlendFunc;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EViewTargetBlendFunction>              BlendFunc;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendExp;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bLockOutgoing;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -8657,7 +8688,7 @@ struct APlayerController_SetMouseLocation_Params
 // Function Engine.PlayerController.SetMouseCursorWidget
 struct APlayerController_SetMouseCursorWidget_Params
 {
-	TEnumAsByte<enum EMouseCursor>                     Cursor;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMouseCursor>                          Cursor;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	class UUserWidget*                                 CursorWidget;                                             // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
@@ -8845,7 +8876,7 @@ struct APlayerController_PlayDynamicForceFeedback_Params
 	bool                                               bAffectsLeftSmall;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bAffectsRightLarge;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bAffectsRightSmall;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EDynamicForceFeedbackAction>      Action;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDynamicForceFeedbackAction>           Action;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLatentActionInfo                           LatentInfo;                                               // (Parm)
 };
 
@@ -8909,7 +8940,7 @@ struct APlayerController_GetInputVectorKeyState_Params
 // Function Engine.PlayerController.GetInputTouchState
 struct APlayerController_GetInputTouchState_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LocationX;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	float                                              LocationY;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsCurrentlyPressed;                                      // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
@@ -8941,7 +8972,7 @@ struct APlayerController_GetInputKeyTimeDown_Params
 // Function Engine.PlayerController.GetInputAnalogStickState
 struct APlayerController_GetInputAnalogStickState_Params
 {
-	TEnumAsByte<enum EControllerAnalogStick>           WhichStick;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EControllerAnalogStick>                WhichStick;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              StickX;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	float                                              StickY;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
@@ -8962,8 +8993,8 @@ struct APlayerController_GetHUD_Params
 // Function Engine.PlayerController.GetHitResultUnderFingerForObjects
 struct APlayerController_GetHitResultUnderFingerForObjects_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  HitResult;                                                // (Parm, OutParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -8972,8 +9003,8 @@ struct APlayerController_GetHitResultUnderFingerForObjects_Params
 // Function Engine.PlayerController.GetHitResultUnderFingerByChannel
 struct APlayerController_GetHitResultUnderFingerByChannel_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  HitResult;                                                // (Parm, OutParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -8982,8 +9013,8 @@ struct APlayerController_GetHitResultUnderFingerByChannel_Params
 // Function Engine.PlayerController.GetHitResultUnderFinger
 struct APlayerController_GetHitResultUnderFinger_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  HitResult;                                                // (Parm, OutParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -8992,7 +9023,7 @@ struct APlayerController_GetHitResultUnderFinger_Params
 // Function Engine.PlayerController.GetHitResultUnderCursorForObjects
 struct APlayerController_GetHitResultUnderCursorForObjects_Params
 {
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  HitResult;                                                // (Parm, OutParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -9001,7 +9032,7 @@ struct APlayerController_GetHitResultUnderCursorForObjects_Params
 // Function Engine.PlayerController.GetHitResultUnderCursorByChannel
 struct APlayerController_GetHitResultUnderCursorByChannel_Params
 {
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  HitResult;                                                // (Parm, OutParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -9010,7 +9041,7 @@ struct APlayerController_GetHitResultUnderCursorByChannel_Params
 // Function Engine.PlayerController.GetHitResultUnderCursor
 struct APlayerController_GetHitResultUnderCursor_Params
 {
-	TEnumAsByte<enum ECollisionChannel>                TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  HitResult;                                                // (Parm, OutParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -9088,7 +9119,7 @@ struct APlayerController_ClientUnmutePlayer_Params
 struct APlayerController_ClientTravelInternal_Params
 {
 	struct FString                                     URL;                                                      // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ETravelType>                      TravelType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETravelType>                           TravelType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bSeamless;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGuid                                       MapPackageGuid;                                           // (Parm, IsPlainOldData)
 };
@@ -9097,7 +9128,7 @@ struct APlayerController_ClientTravelInternal_Params
 struct APlayerController_ClientTravel_Params
 {
 	struct FString                                     URL;                                                      // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ETravelType>                      TravelType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETravelType>                           TravelType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bSeamless;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGuid                                       MapPackageGuid;                                           // (Parm, IsPlainOldData)
 };
@@ -9286,7 +9317,7 @@ struct APlayerController_ClientPlayCameraShake_Params
 {
 	class UClass*                                      Shake;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Scale;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECameraAnimPlaySpace>             PlaySpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECameraAnimPlaySpace>                  PlaySpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    UserPlaySpaceRot;                                         // (Parm, IsPlainOldData)
 };
 
@@ -9300,7 +9331,7 @@ struct APlayerController_ClientPlayCameraAnim_Params
 	float                                              BlendOutTime;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bLoop;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bRandomStartTime;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECameraAnimPlaySpace>             Space;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECameraAnimPlaySpace>                  Space;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    CustomPlaySpace;                                          // (Parm, IsPlainOldData)
 };
 
@@ -9521,7 +9552,7 @@ struct APlayerCameraManager_PlayCameraShake_Params
 {
 	class UClass*                                      ShakeClass;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Scale;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECameraAnimPlaySpace>             PlaySpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECameraAnimPlaySpace>                  PlaySpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    UserPlaySpaceRot;                                         // (Parm, IsPlainOldData)
 	class UCameraShake*                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -9537,7 +9568,7 @@ struct APlayerCameraManager_PlayCameraAnim_Params
 	bool                                               bLoop;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bRandomStartTime;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Duration;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECameraAnimPlaySpace>             PlaySpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECameraAnimPlaySpace>                  PlaySpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    UserPlaySpaceRot;                                         // (Parm, IsPlainOldData)
 	class UCameraAnimInst*                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -9801,7 +9832,7 @@ struct AHUD_DrawTexture_Params
 	float                                              TextureUWidth;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              TextureVHeight;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TintColor;                                                // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EBlendMode>                       BlendMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlendMode>                            BlendMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Scale;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bScalePosition;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Rotation;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
@@ -10084,7 +10115,7 @@ struct UNavigationSystem_GetPathLength_Params
 	float                                              PathLength;                                               // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	class ANavigationData*                             NavData;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ENavigationQueryResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENavigationQueryResult>                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.NavigationSystem.GetPathCost
@@ -10096,7 +10127,7 @@ struct UNavigationSystem_GetPathCost_Params
 	float                                              PathCost;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	class ANavigationData*                             NavData;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ENavigationQueryResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ENavigationQueryResult>                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.NavigationSystem.GetNavigationSystem
@@ -10207,7 +10238,7 @@ struct USplineMeshComponent_SetSplineUpDir_Params
 // Function Engine.SplineMeshComponent.SetForwardAxis
 struct USplineMeshComponent_SetForwardAxis_Params
 {
-	TEnumAsByte<enum ESplineMeshAxis>                  InForwardAxis;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineMeshAxis>                       InForwardAxis;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateMesh;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -10299,7 +10330,7 @@ struct USplineMeshComponent_GetSplineUpDir_Params
 // Function Engine.SplineMeshComponent.GetForwardAxis
 struct USplineMeshComponent_GetForwardAxis_Params
 {
-	TEnumAsByte<enum ESplineMeshAxis>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ESplineMeshAxis>                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.SplineMeshComponent.GetEndTangent
@@ -10373,7 +10404,7 @@ struct UInstancedSplineMeshComponent_SetSplineUpDir_Params
 // Function Engine.InstancedSplineMeshComponent.SetForwardAxis
 struct UInstancedSplineMeshComponent_SetForwardAxis_Params
 {
-	TEnumAsByte<enum ESplineMeshAxis>                  InForwardAxis;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESplineMeshAxis>                       InForwardAxis;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUpdateMesh;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -10432,7 +10463,7 @@ struct UInstancedSplineMeshComponent_GetInstanceNum_Params
 // Function Engine.InstancedSplineMeshComponent.GetForwardAxis
 struct UInstancedSplineMeshComponent_GetForwardAxis_Params
 {
-	TEnumAsByte<enum ESplineMeshAxis>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ESplineMeshAxis>                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.InstancedSplineMeshComponent.GetEndTangent
@@ -10481,329 +10512,6 @@ struct UInstancedSplineMeshComponent_AddOrSetIndexStartAndEnd_Params
 	bool                                               bUpdateMesh;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function Engine.GameViewportClient.SSSwapControllers
-struct UGameViewportClient_SSSwapControllers_Params
-{
-};
-
-// Function Engine.GameViewportClient.ShowTitleSafeArea
-struct UGameViewportClient_ShowTitleSafeArea_Params
-{
-};
-
-// Function Engine.GameViewportClient.SetConsoleTarget
-struct UGameViewportClient_SetConsoleTarget_Params
-{
-	int                                                playerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.GameViewportClient.RemoveViewportChangeDelegate
-struct UGameViewportClient_RemoveViewportChangeDelegate_Params
-{
-	struct FScriptDelegate                             Delegate;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// Function Engine.GameViewportClient.AddViewportChangeDelegate
-struct UGameViewportClient_AddViewportChangeDelegate_Params
-{
-	struct FScriptDelegate                             Delegate;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// Function Engine.CheatManager.Walk
-struct UCheatManager_Walk_Params
-{
-};
-
-// Function Engine.CheatManager.ViewSelf
-struct UCheatManager_ViewSelf_Params
-{
-};
-
-// Function Engine.CheatManager.ViewPlayer
-struct UCheatManager_ViewPlayer_Params
-{
-	struct FString                                     S;                                                        // (Parm, ZeroConstructor)
-};
-
-// Function Engine.CheatManager.ViewClass
-struct UCheatManager_ViewClass_Params
-{
-	class UClass*                                      DesiredClass;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.ViewActor
-struct UCheatManager_ViewActor_Params
-{
-	struct FName                                       actorName;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.TriggerCrash
-struct UCheatManager_TriggerCrash_Params
-{
-};
-
-// Function Engine.CheatManager.ToggleDebugCamera
-struct UCheatManager_ToggleDebugCamera_Params
-{
-};
-
-// Function Engine.CheatManager.ToggleAILogging
-struct UCheatManager_ToggleAILogging_Params
-{
-};
-
-// Function Engine.CheatManager.TestCollisionDistance
-struct UCheatManager_TestCollisionDistance_Params
-{
-};
-
-// Function Engine.CheatManager.Teleport
-struct UCheatManager_Teleport_Params
-{
-};
-
-// Function Engine.CheatManager.Summon
-struct UCheatManager_Summon_Params
-{
-	struct FString                                     ClassName;                                                // (Parm, ZeroConstructor)
-};
-
-// Function Engine.CheatManager.StreamLevelOut
-struct UCheatManager_StreamLevelOut_Params
-{
-	struct FName                                       PackageName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.StreamLevelIn
-struct UCheatManager_StreamLevelIn_Params
-{
-	struct FName                                       PackageName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.Slomo
-struct UCheatManager_Slomo_Params
-{
-	float                                              NewTimeDilation;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.SetWorldOrigin
-struct UCheatManager_SetWorldOrigin_Params
-{
-};
-
-// Function Engine.CheatManager.SetNavDrawDistance
-struct UCheatManager_SetNavDrawDistance_Params
-{
-	float                                              DrawDistance;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.SetMouseSensitivityToDefault
-struct UCheatManager_SetMouseSensitivityToDefault_Params
-{
-};
-
-// Function Engine.CheatManager.ServerToggleAILogging
-struct UCheatManager_ServerToggleAILogging_Params
-{
-};
-
-// Function Engine.CheatManager.ReceiveInitCheatManager
-struct UCheatManager_ReceiveInitCheatManager_Params
-{
-};
-
-// Function Engine.CheatManager.ReceiveEndPlay
-struct UCheatManager_ReceiveEndPlay_Params
-{
-};
-
-// Function Engine.CheatManager.RebuildNavigation
-struct UCheatManager_RebuildNavigation_Params
-{
-};
-
-// Function Engine.CheatManager.PlayersOnly
-struct UCheatManager_PlayersOnly_Params
-{
-};
-
-// Function Engine.CheatManager.OnlyLoadLevel
-struct UCheatManager_OnlyLoadLevel_Params
-{
-	struct FName                                       PackageName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.LogLoc
-struct UCheatManager_LogLoc_Params
-{
-};
-
-// Function Engine.CheatManager.InvertMouse
-struct UCheatManager_InvertMouse_Params
-{
-};
-
-// Function Engine.CheatManager.God
-struct UCheatManager_God_Params
-{
-};
-
-// Function Engine.CheatManager.Ghost
-struct UCheatManager_Ghost_Params
-{
-};
-
-// Function Engine.CheatManager.FreezeFrame
-struct UCheatManager_FreezeFrame_Params
-{
-	float                                              Delay;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.Fly
-struct UCheatManager_Fly_Params
-{
-};
-
-// Function Engine.CheatManager.FlushLog
-struct UCheatManager_FlushLog_Params
-{
-};
-
-// Function Engine.CheatManager.EnableDebugCamera
-struct UCheatManager_EnableDebugCamera_Params
-{
-};
-
-// Function Engine.CheatManager.DumpVoiceMutingState
-struct UCheatManager_DumpVoiceMutingState_Params
-{
-};
-
-// Function Engine.CheatManager.DumpPartyState
-struct UCheatManager_DumpPartyState_Params
-{
-};
-
-// Function Engine.CheatManager.DumpOnlineSessionState
-struct UCheatManager_DumpOnlineSessionState_Params
-{
-};
-
-// Function Engine.CheatManager.DumpChatState
-struct UCheatManager_DumpChatState_Params
-{
-};
-
-// Function Engine.CheatManager.DisableDebugCamera
-struct UCheatManager_DisableDebugCamera_Params
-{
-};
-
-// Function Engine.CheatManager.DestroyTarget
-struct UCheatManager_DestroyTarget_Params
-{
-};
-
-// Function Engine.CheatManager.DestroyPawns
-struct UCheatManager_DestroyPawns_Params
-{
-	class UClass*                                      aClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.DestroyAllPawnsExceptTarget
-struct UCheatManager_DestroyAllPawnsExceptTarget_Params
-{
-};
-
-// Function Engine.CheatManager.DestroyAll
-struct UCheatManager_DestroyAll_Params
-{
-	class UClass*                                      aClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.DebugCapsuleSweepSize
-struct UCheatManager_DebugCapsuleSweepSize_Params
-{
-	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.DebugCapsuleSweepPawn
-struct UCheatManager_DebugCapsuleSweepPawn_Params
-{
-};
-
-// Function Engine.CheatManager.DebugCapsuleSweepComplex
-struct UCheatManager_DebugCapsuleSweepComplex_Params
-{
-	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.DebugCapsuleSweepClear
-struct UCheatManager_DebugCapsuleSweepClear_Params
-{
-};
-
-// Function Engine.CheatManager.DebugCapsuleSweepChannel
-struct UCheatManager_DebugCapsuleSweepChannel_Params
-{
-	TEnumAsByte<enum ECollisionChannel>                Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.DebugCapsuleSweepCapture
-struct UCheatManager_DebugCapsuleSweepCapture_Params
-{
-};
-
-// Function Engine.CheatManager.DebugCapsuleSweep
-struct UCheatManager_DebugCapsuleSweep_Params
-{
-};
-
-// Function Engine.CheatManager.DamageTarget
-struct UCheatManager_DamageTarget_Params
-{
-	float                                              DamageAmount;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.CheatScript
-struct UCheatManager_CheatScript_Params
-{
-	struct FString                                     ScriptName;                                               // (Parm, ZeroConstructor)
-};
-
-// Function Engine.CheatManager.ChangeSize
-struct UCheatManager_ChangeSize_Params
-{
-	float                                              F;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.BugItStringCreator
-struct UCheatManager_BugItStringCreator_Params
-{
-	struct FVector                                     ViewLocation;                                             // (Parm, IsPlainOldData)
-	struct FRotator                                    ViewRotation;                                             // (Parm, IsPlainOldData)
-	struct FString                                     GoString;                                                 // (Parm, OutParm, ZeroConstructor)
-	struct FString                                     LocString;                                                // (Parm, OutParm, ZeroConstructor)
-};
-
-// Function Engine.CheatManager.BugItGo
-struct UCheatManager_BugItGo_Params
-{
-	float                                              X;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Y;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Z;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Pitch;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Yaw;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Roll;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.CheatManager.BugIt
-struct UCheatManager_BugIt_Params
-{
-	struct FString                                     ScreenShotDescription;                                    // (Parm, ZeroConstructor)
-};
-
 // Function Engine.MaterialInterface.SetStreamingTextureMipOffset
 struct UMaterialInterface_SetStreamingTextureMipOffset_Params
 {
@@ -10830,6 +10538,12 @@ struct UMaterialInterface_GetPhysicalMaterial_Params
 struct UMaterialInterface_GetBaseMaterial_Params
 {
 	class UMaterial*                                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.CameraActor.SetFullScreen
+struct ACameraActor_SetFullScreen_Params
+{
+	bool                                               bNewFullScreen;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.CameraActor.GetAutoActivatePlayerIndex
@@ -11658,7 +11372,7 @@ struct UCanvas_K2_DrawTexture_Params
 	struct FVector2D                                   CoordinatePosition;                                       // (Parm, IsPlainOldData)
 	struct FVector2D                                   CoordinateSize;                                           // (Parm, IsPlainOldData)
 	struct FLinearColor                                RenderColor;                                              // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EBlendMode>                       BlendMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlendMode>                            BlendMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Rotation;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector2D                                   PivotPoint;                                               // (Parm, IsPlainOldData)
 };
@@ -11790,10 +11504,333 @@ struct UCanvasRenderTarget2D_CreateCanvasRenderTarget2D_Params
 	class UCanvasRenderTarget2D*                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Engine.CheatManager.Walk
+struct UCheatManager_Walk_Params
+{
+};
+
+// Function Engine.CheatManager.ViewSelf
+struct UCheatManager_ViewSelf_Params
+{
+};
+
+// Function Engine.CheatManager.ViewPlayer
+struct UCheatManager_ViewPlayer_Params
+{
+	struct FString                                     S;                                                        // (Parm, ZeroConstructor)
+};
+
+// Function Engine.CheatManager.ViewClass
+struct UCheatManager_ViewClass_Params
+{
+	class UClass*                                      DesiredClass;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.ViewActor
+struct UCheatManager_ViewActor_Params
+{
+	struct FName                                       actorName;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.TriggerCrash
+struct UCheatManager_TriggerCrash_Params
+{
+};
+
+// Function Engine.CheatManager.ToggleDebugCamera
+struct UCheatManager_ToggleDebugCamera_Params
+{
+};
+
+// Function Engine.CheatManager.ToggleAILogging
+struct UCheatManager_ToggleAILogging_Params
+{
+};
+
+// Function Engine.CheatManager.TestCollisionDistance
+struct UCheatManager_TestCollisionDistance_Params
+{
+};
+
+// Function Engine.CheatManager.Teleport
+struct UCheatManager_Teleport_Params
+{
+};
+
+// Function Engine.CheatManager.Summon
+struct UCheatManager_Summon_Params
+{
+	struct FString                                     ClassName;                                                // (Parm, ZeroConstructor)
+};
+
+// Function Engine.CheatManager.StreamLevelOut
+struct UCheatManager_StreamLevelOut_Params
+{
+	struct FName                                       PackageName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.StreamLevelIn
+struct UCheatManager_StreamLevelIn_Params
+{
+	struct FName                                       PackageName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.Slomo
+struct UCheatManager_Slomo_Params
+{
+	float                                              NewTimeDilation;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.SetWorldOrigin
+struct UCheatManager_SetWorldOrigin_Params
+{
+};
+
+// Function Engine.CheatManager.SetNavDrawDistance
+struct UCheatManager_SetNavDrawDistance_Params
+{
+	float                                              DrawDistance;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.SetMouseSensitivityToDefault
+struct UCheatManager_SetMouseSensitivityToDefault_Params
+{
+};
+
+// Function Engine.CheatManager.ServerToggleAILogging
+struct UCheatManager_ServerToggleAILogging_Params
+{
+};
+
+// Function Engine.CheatManager.ReceiveInitCheatManager
+struct UCheatManager_ReceiveInitCheatManager_Params
+{
+};
+
+// Function Engine.CheatManager.ReceiveEndPlay
+struct UCheatManager_ReceiveEndPlay_Params
+{
+};
+
+// Function Engine.CheatManager.RebuildNavigation
+struct UCheatManager_RebuildNavigation_Params
+{
+};
+
+// Function Engine.CheatManager.PlayersOnly
+struct UCheatManager_PlayersOnly_Params
+{
+};
+
+// Function Engine.CheatManager.OnlyLoadLevel
+struct UCheatManager_OnlyLoadLevel_Params
+{
+	struct FName                                       PackageName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.LogLoc
+struct UCheatManager_LogLoc_Params
+{
+};
+
+// Function Engine.CheatManager.InvertMouse
+struct UCheatManager_InvertMouse_Params
+{
+};
+
+// Function Engine.CheatManager.God
+struct UCheatManager_God_Params
+{
+};
+
+// Function Engine.CheatManager.Ghost
+struct UCheatManager_Ghost_Params
+{
+};
+
+// Function Engine.CheatManager.FreezeFrame
+struct UCheatManager_FreezeFrame_Params
+{
+	float                                              Delay;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.Fly
+struct UCheatManager_Fly_Params
+{
+};
+
+// Function Engine.CheatManager.FlushLog
+struct UCheatManager_FlushLog_Params
+{
+};
+
+// Function Engine.CheatManager.EnableDebugCamera
+struct UCheatManager_EnableDebugCamera_Params
+{
+};
+
+// Function Engine.CheatManager.DumpVoiceMutingState
+struct UCheatManager_DumpVoiceMutingState_Params
+{
+};
+
+// Function Engine.CheatManager.DumpPartyState
+struct UCheatManager_DumpPartyState_Params
+{
+};
+
+// Function Engine.CheatManager.DumpOnlineSessionState
+struct UCheatManager_DumpOnlineSessionState_Params
+{
+};
+
+// Function Engine.CheatManager.DumpChatState
+struct UCheatManager_DumpChatState_Params
+{
+};
+
+// Function Engine.CheatManager.DisableDebugCamera
+struct UCheatManager_DisableDebugCamera_Params
+{
+};
+
+// Function Engine.CheatManager.DestroyTarget
+struct UCheatManager_DestroyTarget_Params
+{
+};
+
+// Function Engine.CheatManager.DestroyPawns
+struct UCheatManager_DestroyPawns_Params
+{
+	class UClass*                                      aClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.DestroyAllPawnsExceptTarget
+struct UCheatManager_DestroyAllPawnsExceptTarget_Params
+{
+};
+
+// Function Engine.CheatManager.DestroyAll
+struct UCheatManager_DestroyAll_Params
+{
+	class UClass*                                      aClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.DebugCapsuleSweepSize
+struct UCheatManager_DebugCapsuleSweepSize_Params
+{
+	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.DebugCapsuleSweepPawn
+struct UCheatManager_DebugCapsuleSweepPawn_Params
+{
+};
+
+// Function Engine.CheatManager.DebugCapsuleSweepComplex
+struct UCheatManager_DebugCapsuleSweepComplex_Params
+{
+	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.DebugCapsuleSweepClear
+struct UCheatManager_DebugCapsuleSweepClear_Params
+{
+};
+
+// Function Engine.CheatManager.DebugCapsuleSweepChannel
+struct UCheatManager_DebugCapsuleSweepChannel_Params
+{
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.DebugCapsuleSweepCapture
+struct UCheatManager_DebugCapsuleSweepCapture_Params
+{
+};
+
+// Function Engine.CheatManager.DebugCapsuleSweep
+struct UCheatManager_DebugCapsuleSweep_Params
+{
+};
+
+// Function Engine.CheatManager.DamageTarget
+struct UCheatManager_DamageTarget_Params
+{
+	float                                              DamageAmount;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.CheatScript
+struct UCheatManager_CheatScript_Params
+{
+	struct FString                                     ScriptName;                                               // (Parm, ZeroConstructor)
+};
+
+// Function Engine.CheatManager.ChangeSize
+struct UCheatManager_ChangeSize_Params
+{
+	float                                              F;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.BugItStringCreator
+struct UCheatManager_BugItStringCreator_Params
+{
+	struct FVector                                     ViewLocation;                                             // (Parm, IsPlainOldData)
+	struct FRotator                                    ViewRotation;                                             // (Parm, IsPlainOldData)
+	struct FString                                     GoString;                                                 // (Parm, OutParm, ZeroConstructor)
+	struct FString                                     LocString;                                                // (Parm, OutParm, ZeroConstructor)
+};
+
+// Function Engine.CheatManager.BugItGo
+struct UCheatManager_BugItGo_Params
+{
+	float                                              X;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Y;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Z;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Pitch;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Yaw;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Roll;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.CheatManager.BugIt
+struct UCheatManager_BugIt_Params
+{
+	struct FString                                     ScreenShotDescription;                                    // (Parm, ZeroConstructor)
+};
+
 // Function Engine.ChildActorComponent.SetChildActorClass
 struct UChildActorComponent_SetChildActorClass_Params
 {
 	class UClass*                                      InClass;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.GameViewportClient.SSSwapControllers
+struct UGameViewportClient_SSSwapControllers_Params
+{
+};
+
+// Function Engine.GameViewportClient.ShowTitleSafeArea
+struct UGameViewportClient_ShowTitleSafeArea_Params
+{
+};
+
+// Function Engine.GameViewportClient.SetConsoleTarget
+struct UGameViewportClient_SetConsoleTarget_Params
+{
+	int                                                playerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.GameViewportClient.RemoveViewportChangeDelegate
+struct UGameViewportClient_RemoveViewportChangeDelegate_Params
+{
+	struct FScriptDelegate                             Delegate;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+
+// Function Engine.GameViewportClient.AddViewportChangeDelegate
+struct UGameViewportClient_AddViewportChangeDelegate_Params
+{
+	struct FScriptDelegate                             Delegate;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function Engine.CurveBase.GetValueRange
@@ -11872,7 +11909,7 @@ struct UDataTableFunctionLibrary_EvaluateCurveTableRow_Params
 	class UCurveTable*                                 CurveTable;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       RowName;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              InXY;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEvaluateCurveTableResult>        OutResult;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEvaluateCurveTableResult>             OutResult;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	float                                              OutXY;                                                    // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     ContextString;                                            // (Parm, ZeroConstructor)
 };
@@ -12685,7 +12722,7 @@ struct UGameUserSettings_SetOverallScalabilityLevel_Params
 // Function Engine.GameUserSettings.SetFullscreenMode
 struct UGameUserSettings_SetFullscreenMode_Params
 {
-	TEnumAsByte<enum EWindowMode>                      InFullscreenMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWindowMode>                           InFullscreenMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.GameUserSettings.SetFrameRateLimit
@@ -12839,7 +12876,7 @@ struct UGameUserSettings_GetRecommendedResolutionScale_Params
 // Function Engine.GameUserSettings.GetPreferredFullscreenMode
 struct UGameUserSettings_GetPreferredFullscreenMode_Params
 {
-	TEnumAsByte<enum EWindowMode>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EWindowMode>                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.GameUserSettings.GetPostProcessingQuality
@@ -12863,7 +12900,7 @@ struct UGameUserSettings_GetLastConfirmedScreenResolution_Params
 // Function Engine.GameUserSettings.GetLastConfirmedFullscreenMode
 struct UGameUserSettings_GetLastConfirmedFullscreenMode_Params
 {
-	TEnumAsByte<enum EWindowMode>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EWindowMode>                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.GameUserSettings.GetGameUserSettings
@@ -12875,7 +12912,7 @@ struct UGameUserSettings_GetGameUserSettings_Params
 // Function Engine.GameUserSettings.GetFullscreenMode
 struct UGameUserSettings_GetFullscreenMode_Params
 {
-	TEnumAsByte<enum EWindowMode>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EWindowMode>                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.GameUserSettings.GetFrameRateLimit
@@ -12905,7 +12942,7 @@ struct UGameUserSettings_GetDefaultWindowPosition_Params
 // Function Engine.GameUserSettings.GetDefaultWindowMode
 struct UGameUserSettings_GetDefaultWindowMode_Params
 {
-	TEnumAsByte<enum EWindowMode>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EWindowMode>                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Engine.GameUserSettings.GetDefaultResolutionScale
@@ -13236,7 +13273,7 @@ struct UImportanceSamplingLibrary_NextSobolCell2D_Params
 struct UImportanceSamplingLibrary_MakeImportanceTexture_Params
 {
 	class UTexture2D*                                  Texture;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EImportanceWeight>                WeightingFunc;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EImportanceWeight>                     WeightingFunc;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FImportanceTexture                          ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
@@ -13258,7 +13295,7 @@ struct UImportanceSamplingLibrary_BreakImportanceTexture_Params
 {
 	struct FImportanceTexture                          ImportanceTexture;                                        // (ConstParm, Parm, OutParm, ReferenceParm)
 	class UTexture2D*                                  Texture;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EImportanceWeight>                WeightingFunc;                                            // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EImportanceWeight>                     WeightingFunc;                                            // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.InputComponent.WasControllerKeyJustReleased
@@ -13315,7 +13352,7 @@ struct UInputComponent_GetControllerKeyTimeDown_Params
 // Function Engine.InputComponent.GetControllerAnalogStickState
 struct UInputComponent_GetControllerAnalogStickState_Params
 {
-	TEnumAsByte<enum EControllerAnalogStick>           WhichStick;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EControllerAnalogStick>                WhichStick;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              StickX;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	float                                              StickY;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
@@ -14086,7 +14123,7 @@ struct UKismetMathLibrary_VEase_Params
 	struct FVector                                     A;                                                        // (Parm, IsPlainOldData)
 	struct FVector                                     B;                                                        // (Parm, IsPlainOldData)
 	float                                              Alpha;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEasingFunc>                      EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEasingFunc>                           EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendExp;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                STEPS;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
@@ -14134,7 +14171,7 @@ struct UKismetMathLibrary_TLerp_Params
 	struct FTransform                                  A;                                                        // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	struct FTransform                                  B;                                                        // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	float                                              Alpha;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ELerpInterpolationMode>           InterpMode;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELerpInterpolationMode>                InterpMode;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -14188,7 +14225,7 @@ struct UKismetMathLibrary_TEase_Params
 	struct FTransform                                  A;                                                        // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	struct FTransform                                  B;                                                        // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	float                                              Alpha;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEasingFunc>                      EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEasingFunc>                           EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendExp;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                STEPS;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
@@ -14514,7 +14551,7 @@ struct UKismetMathLibrary_REase_Params
 	struct FRotator                                    B;                                                        // (Parm, IsPlainOldData)
 	float                                              Alpha;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bShortestPath;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEasingFunc>                      EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEasingFunc>                           EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendExp;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                STEPS;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
@@ -16005,8 +16042,8 @@ struct UKismetMathLibrary_GetDuration_Params
 // Function Engine.KismetMathLibrary.GetDirectionUnitVector
 struct UKismetMathLibrary_GetDirectionUnitVector_Params
 {
-	struct FVector                                     from;                                                     // (Parm, IsPlainOldData)
-	struct FVector                                     to;                                                       // (Parm, IsPlainOldData)
+	struct FVector                                     From;                                                     // (Parm, IsPlainOldData)
+	struct FVector                                     To;                                                       // (Parm, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -16369,7 +16406,7 @@ struct UKismetMathLibrary_Ease_Params
 	float                                              A;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              B;                                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Alpha;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEasingFunc>                      EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEasingFunc>                           EasingFunc;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendExp;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                STEPS;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -17211,8 +17248,8 @@ struct UKismetRenderingLibrary_RenderTargetCreateStaticTexture2DEditorOnly_Param
 {
 	class UTextureRenderTarget2D*                      RenderTarget;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     Name;                                                     // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ETextureCompressionSettings>      CompressionSettings;                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETextureMipGenSettings>           MipSettings;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextureCompressionSettings>           CompressionSettings;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextureMipGenSettings>                MipSettings;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class UTexture2D*                                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -17295,7 +17332,7 @@ struct UKismetRenderingLibrary_CreateRenderTarget2D_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETextureRenderTargetFormat>       Format;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextureRenderTargetFormat>            Format;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	class UTextureRenderTarget2D*                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -17379,7 +17416,7 @@ struct UKismetStringLibrary_StartsWith_Params
 {
 	struct FString                                     sourceString;                                             // (Parm, ZeroConstructor)
 	struct FString                                     InPrefix;                                                 // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ESearchCase>                      SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESearchCase>                           SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -17390,8 +17427,8 @@ struct UKismetStringLibrary_Split_Params
 	struct FString                                     InStr;                                                    // (Parm, ZeroConstructor)
 	struct FString                                     LeftS;                                                    // (Parm, OutParm, ZeroConstructor)
 	struct FString                                     RightS;                                                   // (Parm, OutParm, ZeroConstructor)
-	TEnumAsByte<enum ESearchCase>                      SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESearchDir>                       SearchDir;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESearchCase>                           SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESearchDir>                            SearchDir;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -17432,7 +17469,7 @@ struct UKismetStringLibrary_ReplaceInline_Params
 	struct FString                                     sourceString;                                             // (Parm, OutParm, ZeroConstructor, ReferenceParm)
 	struct FString                                     SearchText;                                               // (Parm, ZeroConstructor)
 	struct FString                                     ReplacementText;                                          // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ESearchCase>                      SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESearchCase>                           SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -17440,9 +17477,9 @@ struct UKismetStringLibrary_ReplaceInline_Params
 struct UKismetStringLibrary_Replace_Params
 {
 	struct FString                                     sourceString;                                             // (Parm, ZeroConstructor)
-	struct FString                                     from;                                                     // (Parm, ZeroConstructor)
-	struct FString                                     to;                                                       // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ESearchCase>                      SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     From;                                                     // (Parm, ZeroConstructor)
+	struct FString                                     To;                                                       // (Parm, ZeroConstructor)
+	TEnumAsByte<ESearchCase>                           SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
@@ -17485,7 +17522,7 @@ struct UKismetStringLibrary_MatchesWildcard_Params
 {
 	struct FString                                     sourceString;                                             // (Parm, ZeroConstructor)
 	struct FString                                     Wildcard;                                                 // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ESearchCase>                      SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESearchCase>                           SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -17591,7 +17628,7 @@ struct UKismetStringLibrary_EndsWith_Params
 {
 	struct FString                                     sourceString;                                             // (Parm, ZeroConstructor)
 	struct FString                                     InSuffix;                                                 // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ESearchCase>                      SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESearchCase>                           SearchCase;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -17947,10 +17984,10 @@ struct UKismetSystemLibrary_SphereTraceSingleForObjects_Params
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -17969,7 +18006,7 @@ struct UKismetSystemLibrary_SphereTraceSingleByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -17985,10 +18022,10 @@ struct UKismetSystemLibrary_SphereTraceSingle_Params
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18004,10 +18041,10 @@ struct UKismetSystemLibrary_SphereTraceMultiForObjects_Params
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18026,7 +18063,7 @@ struct UKismetSystemLibrary_SphereTraceMultiByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18042,10 +18079,10 @@ struct UKismetSystemLibrary_SphereTraceMulti_Params
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18060,7 +18097,7 @@ struct UKismetSystemLibrary_SphereOverlapComponents_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     SpherePos;                                                // (ConstParm, Parm, IsPlainOldData)
 	float                                              SphereRadius;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ComponentClassFilter;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UPrimitiveComponent*>                 OutComponents;                                            // (Parm, OutParm, ZeroConstructor)
@@ -18073,7 +18110,7 @@ struct UKismetSystemLibrary_SphereOverlapActors_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     SpherePos;                                                // (ConstParm, Parm, IsPlainOldData)
 	float                                              SphereRadius;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ActorClassFilter;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class AActor*>                              OutActors;                                                // (Parm, OutParm, ZeroConstructor)
@@ -18307,7 +18344,7 @@ struct UKismetSystemLibrary_QuitGame_Params
 {
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class APlayerController*                           SpecificPlayer;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EQuitPreference>                  QuitPreference;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EQuitPreference>                       QuitPreference;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.KismetSystemLibrary.PrintWarning
@@ -18399,7 +18436,7 @@ struct UKismetSystemLibrary_MoveComponentTo_Params
 	bool                                               bEaseIn;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              OverTime;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bForceShortestRotationPath;                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMoveComponentAction>             MoveAction;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMoveComponentAction>                  MoveAction;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLatentActionInfo                           LatentInfo;                                               // (Parm)
 };
 
@@ -18487,10 +18524,10 @@ struct UKismetSystemLibrary_LineTraceSingleForObjects_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18508,7 +18545,7 @@ struct UKismetSystemLibrary_LineTraceSingleByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18523,10 +18560,10 @@ struct UKismetSystemLibrary_LineTraceSingle_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18541,10 +18578,10 @@ struct UKismetSystemLibrary_LineTraceMultiForObjects_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18562,7 +18599,7 @@ struct UKismetSystemLibrary_LineTraceMultiByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -18577,10 +18614,10 @@ struct UKismetSystemLibrary_LineTraceMulti_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Start;                                                    // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19198,6 +19235,13 @@ struct UKismetSystemLibrary_GetClassPathName_Params
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function Engine.KismetSystemLibrary.GetClassName
+struct UKismetSystemLibrary_GetClassName_Params
+{
+	class UObject*                                     Object;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Engine.KismetSystemLibrary.GetClassFromPrimaryAssetId
 struct UKismetSystemLibrary_GetClassFromPrimaryAssetId_Params
 {
@@ -19604,7 +19648,7 @@ struct UKismetSystemLibrary_ComponentOverlapComponents_Params
 {
 	class UPrimitiveComponent*                         Component;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FTransform                                  ComponentTransform;                                       // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ComponentClassFilter;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UPrimitiveComponent*>                 OutComponents;                                            // (Parm, OutParm, ZeroConstructor)
@@ -19616,7 +19660,7 @@ struct UKismetSystemLibrary_ComponentOverlapActors_Params
 {
 	class UPrimitiveComponent*                         Component;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FTransform                                  ComponentTransform;                                       // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ActorClassFilter;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class AActor*>                              OutActors;                                                // (Parm, OutParm, ZeroConstructor)
@@ -19641,10 +19685,10 @@ struct UKismetSystemLibrary_CapsuleTraceSingleForObjects_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19664,7 +19708,7 @@ struct UKismetSystemLibrary_CapsuleTraceSingleByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19681,10 +19725,10 @@ struct UKismetSystemLibrary_CapsuleTraceSingle_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19701,10 +19745,10 @@ struct UKismetSystemLibrary_CapsuleTraceMultiForObjects_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19724,7 +19768,7 @@ struct UKismetSystemLibrary_CapsuleTraceMultiByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19741,10 +19785,10 @@ struct UKismetSystemLibrary_CapsuleTraceMulti_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19760,7 +19804,7 @@ struct UKismetSystemLibrary_CapsuleOverlapComponents_Params
 	struct FVector                                     CapsulePos;                                               // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ComponentClassFilter;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UPrimitiveComponent*>                 OutComponents;                                            // (Parm, OutParm, ZeroConstructor)
@@ -19774,7 +19818,7 @@ struct UKismetSystemLibrary_CapsuleOverlapActors_Params
 	struct FVector                                     CapsulePos;                                               // (ConstParm, Parm, IsPlainOldData)
 	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              HalfHeight;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ActorClassFilter;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class AActor*>                              OutActors;                                                // (Parm, OutParm, ZeroConstructor)
@@ -19803,10 +19847,10 @@ struct UKismetSystemLibrary_BoxTraceSingleForObjects_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     HalfSize;                                                 // (ConstParm, Parm, IsPlainOldData)
 	struct FRotator                                    Orientation;                                              // (ConstParm, Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19826,7 +19870,7 @@ struct UKismetSystemLibrary_BoxTraceSingleByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19843,10 +19887,10 @@ struct UKismetSystemLibrary_BoxTraceSingle_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     HalfSize;                                                 // (ConstParm, Parm, IsPlainOldData)
 	struct FRotator                                    Orientation;                                              // (ConstParm, Parm, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19863,10 +19907,10 @@ struct UKismetSystemLibrary_BoxTraceMultiForObjects_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     HalfSize;                                                 // (ConstParm, Parm, IsPlainOldData)
 	struct FRotator                                    Orientation;                                              // (ConstParm, Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19886,7 +19930,7 @@ struct UKismetSystemLibrary_BoxTraceMultiByProfile_Params
 	struct FName                                       ProfileName;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19903,10 +19947,10 @@ struct UKismetSystemLibrary_BoxTraceMulti_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     HalfSize;                                                 // (Parm, IsPlainOldData)
 	struct FRotator                                    Orientation;                                              // (ConstParm, Parm, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum EDrawDebugTrace>                  DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDrawDebugTrace>                       DrawDebugType;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FHitResult>                          OutHits;                                                  // (Parm, OutParm, ZeroConstructor)
 	bool                                               bIgnoreSelf;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                TraceColor;                                               // (Parm, IsPlainOldData)
@@ -19921,7 +19965,7 @@ struct UKismetSystemLibrary_BoxOverlapComponents_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     BoxPos;                                                   // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     Extent;                                                   // (Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ComponentClassFilter;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UPrimitiveComponent*>                 OutComponents;                                            // (Parm, OutParm, ZeroConstructor)
@@ -19934,7 +19978,7 @@ struct UKismetSystemLibrary_BoxOverlapActors_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     BoxPos;                                                   // (ConstParm, Parm, IsPlainOldData)
 	struct FVector                                     BoxExtent;                                                // (Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ActorClassFilter;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class AActor*>                              OutActors;                                                // (Parm, OutParm, ZeroConstructor)
@@ -20164,7 +20208,7 @@ struct UKismetTextLibrary_Conv_Int64ToText_Params
 struct UKismetTextLibrary_Conv_FloatToText_Params
 {
 	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERoundingMode>                    RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERoundingMode>                         RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseGrouping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MinimumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MaximumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
@@ -20236,7 +20280,7 @@ struct UKismetTextLibrary_AsTime_DateTime_Params
 struct UKismetTextLibrary_AsPercent_Float_Params
 {
 	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERoundingMode>                    RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERoundingMode>                         RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseGrouping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MinimumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MaximumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
@@ -20271,7 +20315,7 @@ struct UKismetTextLibrary_AsCurrencyBase_Params
 struct UKismetTextLibrary_AsCurrency_Integer_Params
 {
 	int                                                Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERoundingMode>                    RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERoundingMode>                         RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseGrouping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MinimumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MaximumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
@@ -20285,7 +20329,7 @@ struct UKismetTextLibrary_AsCurrency_Integer_Params
 struct UKismetTextLibrary_AsCurrency_Float_Params
 {
 	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERoundingMode>                    RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERoundingMode>                         RoundingMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseGrouping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MinimumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                MaximumIntegralDigits;                                    // (Parm, ZeroConstructor, IsPlainOldData)
@@ -20607,7 +20651,7 @@ struct UNavigationPath_GetDebugString_Params
 // Function Engine.NavigationPath.EnableRecalculationOnInvalidation
 struct UNavigationPath_EnableRecalculationOnInvalidation_Params
 {
-	TEnumAsByte<enum ENavigationOptionFlag>            DoRecalculation;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ENavigationOptionFlag>                 DoRecalculation;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.NavigationPath.EnableDebugDrawing
@@ -20886,21 +20930,21 @@ struct UPhysicsConstraintComponent_SetOrientationDriveSLERP_Params
 // Function Engine.PhysicsConstraintComponent.SetLinearZLimit
 struct UPhysicsConstraintComponent_SetLinearZLimit_Params
 {
-	TEnumAsByte<enum ELinearConstraintMotion>          ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELinearConstraintMotion>               ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LimitSize;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PhysicsConstraintComponent.SetLinearYLimit
 struct UPhysicsConstraintComponent_SetLinearYLimit_Params
 {
-	TEnumAsByte<enum ELinearConstraintMotion>          ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELinearConstraintMotion>               ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LimitSize;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PhysicsConstraintComponent.SetLinearXLimit
 struct UPhysicsConstraintComponent_SetLinearXLimit_Params
 {
-	TEnumAsByte<enum ELinearConstraintMotion>          ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELinearConstraintMotion>               ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LimitSize;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -20956,14 +21000,14 @@ struct UPhysicsConstraintComponent_SetDisableCollision_Params
 // Function Engine.PhysicsConstraintComponent.SetConstraintReferencePosition
 struct UPhysicsConstraintComponent_SetConstraintReferencePosition_Params
 {
-	TEnumAsByte<enum EConstraintFrame>                 Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EConstraintFrame>                      Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     RefPosition;                                              // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
 // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceOrientation
 struct UPhysicsConstraintComponent_SetConstraintReferenceOrientation_Params
 {
-	TEnumAsByte<enum EConstraintFrame>                 Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EConstraintFrame>                      Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     PriAxis;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	struct FVector                                     SecAxis;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
@@ -20971,7 +21015,7 @@ struct UPhysicsConstraintComponent_SetConstraintReferenceOrientation_Params
 // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceFrame
 struct UPhysicsConstraintComponent_SetConstraintReferenceFrame_Params
 {
-	TEnumAsByte<enum EConstraintFrame>                 Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EConstraintFrame>                      Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  RefFrame;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
@@ -21013,21 +21057,21 @@ struct UPhysicsConstraintComponent_SetAngularVelocityDrive_Params
 // Function Engine.PhysicsConstraintComponent.SetAngularTwistLimit
 struct UPhysicsConstraintComponent_SetAngularTwistLimit_Params
 {
-	TEnumAsByte<enum EAngularConstraintMotion>         ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAngularConstraintMotion>              ConstraintType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              TwistLimitAngle;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PhysicsConstraintComponent.SetAngularSwing2Limit
 struct UPhysicsConstraintComponent_SetAngularSwing2Limit_Params
 {
-	TEnumAsByte<enum EAngularConstraintMotion>         MotionType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAngularConstraintMotion>              MotionType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Swing2LimitAngle;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PhysicsConstraintComponent.SetAngularSwing1Limit
 struct UPhysicsConstraintComponent_SetAngularSwing1Limit_Params
 {
-	TEnumAsByte<enum EAngularConstraintMotion>         MotionType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAngularConstraintMotion>              MotionType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Swing1LimitAngle;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -21055,7 +21099,7 @@ struct UPhysicsConstraintComponent_SetAngularDriveParams_Params
 // Function Engine.PhysicsConstraintComponent.SetAngularDriveMode
 struct UPhysicsConstraintComponent_SetAngularDriveMode_Params
 {
-	TEnumAsByte<enum EAngularDriveMode>                DriveMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAngularDriveMode>                     DriveMode;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PhysicsConstraintComponent.SetAngularBreakable
@@ -21092,7 +21136,7 @@ struct UPhysicsConstraintComponent_GetCurrentSwing1_Params
 // Function Engine.PhysicsConstraintComponent.GetConstraintWorldTransform
 struct UPhysicsConstraintComponent_GetConstraintWorldTransform_Params
 {
-	TEnumAsByte<enum EConstraintFrame>                 Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EConstraintFrame>                      Frame;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -21435,7 +21479,7 @@ struct UPoseableMeshComponent_SetBoneTransformByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  InTransform;                                              // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PoseableMeshComponent.SetBoneScaleByName
@@ -21443,7 +21487,7 @@ struct UPoseableMeshComponent_SetBoneScaleByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     InScale3D;                                                // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PoseableMeshComponent.SetBoneRotationByName
@@ -21451,7 +21495,7 @@ struct UPoseableMeshComponent_SetBoneRotationByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    InRotation;                                               // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PoseableMeshComponent.SetBoneLocationByName
@@ -21459,7 +21503,7 @@ struct UPoseableMeshComponent_SetBoneLocationByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     InLocation;                                               // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.PoseableMeshComponent.ResetBoneTransformByName
@@ -21472,7 +21516,7 @@ struct UPoseableMeshComponent_ResetBoneTransformByName_Params
 struct UPoseableMeshComponent_GetBoneTransformByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -21480,7 +21524,7 @@ struct UPoseableMeshComponent_GetBoneTransformByName_Params
 struct UPoseableMeshComponent_GetBoneScaleByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -21488,7 +21532,7 @@ struct UPoseableMeshComponent_GetBoneScaleByName_Params
 struct UPoseableMeshComponent_GetBoneRotationByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -21496,7 +21540,7 @@ struct UPoseableMeshComponent_GetBoneRotationByName_Params
 struct UPoseableMeshComponent_GetBoneLocationByName_Params
 {
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneSpaces>                      BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneSpaces>                           BoneSpace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -21549,7 +21593,7 @@ struct ARadialForceActor_DisableForce_Params
 // Function Engine.RadialForceComponent.RemoveObjectTypeToAffect
 struct URadialForceComponent_RemoveObjectTypeToAffect_Params
 {
-	TEnumAsByte<enum EObjectTypeQuery>                 ObjectType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EObjectTypeQuery>                      ObjectType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.RadialForceComponent.FireImpulse
@@ -21560,7 +21604,7 @@ struct URadialForceComponent_FireImpulse_Params
 // Function Engine.RadialForceComponent.AddObjectTypeToAffect
 struct URadialForceComponent_AddObjectTypeToAffect_Params
 {
-	TEnumAsByte<enum EObjectTypeQuery>                 ObjectType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EObjectTypeQuery>                      ObjectType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.ResetableInReplayInterface.ResetInReplay
@@ -22205,7 +22249,7 @@ struct UTextRenderComponent_SetVertSpacingAdjust_Params
 // Function Engine.TextRenderComponent.SetVerticalAlignment
 struct UTextRenderComponent_SetVerticalAlignment_Params
 {
-	TEnumAsByte<enum EVerticalTextAligment>            Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EVerticalTextAligment>                 Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.TextRenderComponent.SetTextRenderColor
@@ -22235,7 +22279,7 @@ struct UTextRenderComponent_SetHorizSpacingAdjust_Params
 // Function Engine.TextRenderComponent.SetHorizontalAlignment
 struct UTextRenderComponent_SetHorizontalAlignment_Params
 {
-	TEnumAsByte<enum EHorizTextAligment>               Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHorizTextAligment>                    Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.TextRenderComponent.SetFont
@@ -22302,7 +22346,7 @@ struct UTimelineComponent_SetVectorCurve_Params
 // Function Engine.TimelineComponent.SetTimelineLengthMode
 struct UTimelineComponent_SetTimelineLengthMode_Params
 {
-	TEnumAsByte<enum ETimelineLengthMode>              NewLengthMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETimelineLengthMode>                   NewLengthMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Engine.TimelineComponent.SetTimelineLength
@@ -22429,7 +22473,7 @@ struct UTwitterIntegrationBase_TwitterRequest_Params
 {
 	struct FString                                     URL;                                                      // (Parm, ZeroConstructor)
 	TArray<struct FString>                             ParamKeysAndValues;                                       // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<enum ETwitterRequestMethod>            RequestMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETwitterRequestMethod>                 RequestMethod;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                AccountIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };

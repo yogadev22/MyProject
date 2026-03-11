@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function AutoRobot.AutoTestInterface.StarJumpPlane
 // (Final, Native, Public)
 
 void UAutoTestInterface::StarJumpPlane()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestInterface.StarJumpPlane");
 
@@ -45,7 +45,7 @@ void UAutoTestInterface::StarJumpPlane()
 
 void UAutoTestSubsystem::Swipe(const struct FString& InPath, float Duringtime, int StartX, int StartY, int EndX, int EndY, int TouchIndex, int ControllerId, int ScreensizeX, int ScreensizeY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.Swipe");
 
@@ -76,7 +76,7 @@ void UAutoTestSubsystem::Swipe(const struct FString& InPath, float Duringtime, i
 
 void UAutoTestSubsystem::StopRecordInput()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.StopRecordInput");
 
@@ -97,7 +97,7 @@ void UAutoTestSubsystem::StopRecordInput()
 
 void UAutoTestSubsystem::StopPlayInput()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.StopPlayInput");
 
@@ -122,7 +122,7 @@ void UAutoTestSubsystem::StopPlayInput()
 
 void UAutoTestSubsystem::StartRemoteControl(const struct FString& Name, const struct FString& Host, int Port)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.StartRemoteControl");
 
@@ -148,7 +148,7 @@ void UAutoTestSubsystem::StartRemoteControl(const struct FString& Name, const st
 
 void UAutoTestSubsystem::StartRecordInput(const struct FString& Command)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.StartRecordInput");
 
@@ -172,7 +172,7 @@ void UAutoTestSubsystem::StartRecordInput(const struct FString& Command)
 
 void UAutoTestSubsystem::StartPlayInput(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.StartPlayInput");
 
@@ -194,7 +194,7 @@ void UAutoTestSubsystem::StartPlayInput(const struct FString& Filename)
 
 void UAutoTestSubsystem::SetCustomRouteLine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.SetCustomRouteLine");
 
@@ -215,7 +215,7 @@ void UAutoTestSubsystem::SetCustomRouteLine()
 
 void UAutoTestSubsystem::RegisterInputProcessor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.RegisterInputProcessor");
 
@@ -238,7 +238,7 @@ void UAutoTestSubsystem::RegisterInputProcessor()
 
 struct FVector UAutoTestSubsystem::PVEAutoTestGetEnemyLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.PVEAutoTestGetEnemyLocation");
 
@@ -263,7 +263,7 @@ struct FVector UAutoTestSubsystem::PVEAutoTestGetEnemyLocation()
 
 void UAutoTestSubsystem::PubgmSimulateActionClientEx(int SimulateType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.PubgmSimulateActionClientEx");
 
@@ -288,7 +288,7 @@ void UAutoTestSubsystem::PubgmSimulateActionClientEx(int SimulateType)
 
 struct FVector UAutoTestSubsystem::ParsePoint(const struct FString& SrcStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.ParsePoint");
 
@@ -312,7 +312,7 @@ struct FVector UAutoTestSubsystem::ParsePoint(const struct FString& SrcStr)
 
 void UAutoTestSubsystem::OpenDebugg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.OpenDebugg");
 
@@ -333,7 +333,7 @@ void UAutoTestSubsystem::OpenDebugg()
 
 void UAutoTestSubsystem::OnStopAutoTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.OnStopAutoTest");
 
@@ -354,7 +354,7 @@ void UAutoTestSubsystem::OnStopAutoTest()
 
 void UAutoTestSubsystem::OnStartAutoTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.OnStartAutoTest");
 
@@ -375,7 +375,7 @@ void UAutoTestSubsystem::OnStartAutoTest()
 
 void UAutoTestSubsystem::OnGameStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.OnGameStart");
 
@@ -396,7 +396,7 @@ void UAutoTestSubsystem::OnGameStart()
 
 void UAutoTestSubsystem::OnGameEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.OnGameEnd");
 
@@ -419,7 +419,7 @@ void UAutoTestSubsystem::OnGameEnd()
 
 bool UAutoTestSubsystem::IsUIAutoTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.IsUIAutoTest");
 
@@ -444,7 +444,7 @@ bool UAutoTestSubsystem::IsUIAutoTest()
 
 bool UAutoTestSubsystem::IsSecAutoRunTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.IsSecAutoRunTest");
 
@@ -469,7 +469,7 @@ bool UAutoTestSubsystem::IsSecAutoRunTest()
 
 bool UAutoTestSubsystem::IsGAutomatorTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.IsGAutomatorTest");
 
@@ -494,7 +494,7 @@ bool UAutoTestSubsystem::IsGAutomatorTest()
 
 bool UAutoTestSubsystem::IsAutoRunTestGamePVEProfile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.IsAutoRunTestGamePVEProfile");
 
@@ -519,7 +519,7 @@ bool UAutoTestSubsystem::IsAutoRunTestGamePVEProfile()
 
 bool UAutoTestSubsystem::IsAutoRunTestGamePVE()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.IsAutoRunTestGamePVE");
 
@@ -544,7 +544,7 @@ bool UAutoTestSubsystem::IsAutoRunTestGamePVE()
 
 bool UAutoTestSubsystem::IsAutoRunTestGameBindComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.IsAutoRunTestGameBindComponent");
 
@@ -569,7 +569,7 @@ bool UAutoTestSubsystem::IsAutoRunTestGameBindComponent()
 
 bool UAutoTestSubsystem::IsAutoRunTestGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.IsAutoRunTestGame");
 
@@ -597,7 +597,7 @@ bool UAutoTestSubsystem::IsAutoRunTestGame()
 
 void UAutoTestSubsystem::GetWidgetPathByPos(int StartX, int StartY, int ScreensizeX, int ScreensizeY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.GetWidgetPathByPos");
 
@@ -624,7 +624,7 @@ void UAutoTestSubsystem::GetWidgetPathByPos(int StartX, int StartY, int Screensi
 
 struct FString UAutoTestSubsystem::GetRuntimeProfileData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.GetRuntimeProfileData");
 
@@ -649,7 +649,7 @@ struct FString UAutoTestSubsystem::GetRuntimeProfileData()
 
 class UAutoTestInterface* UAutoTestSubsystem::GetAutoTestInterface()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.GetAutoTestInterface");
 
@@ -674,7 +674,7 @@ class UAutoTestInterface* UAutoTestSubsystem::GetAutoTestInterface()
 
 int UAutoTestSubsystem::GetAutoRunTestServerIdx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.GetAutoRunTestServerIdx");
 
@@ -699,7 +699,7 @@ int UAutoTestSubsystem::GetAutoRunTestServerIdx()
 
 struct FString UAutoTestSubsystem::GetAutoRunPassWD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.GetAutoRunPassWD");
 
@@ -724,7 +724,7 @@ struct FString UAutoTestSubsystem::GetAutoRunPassWD()
 
 struct FString UAutoTestSubsystem::GetAutoRunLuaTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.GetAutoRunLuaTest");
 
@@ -749,7 +749,7 @@ struct FString UAutoTestSubsystem::GetAutoRunLuaTest()
 
 struct FString UAutoTestSubsystem::GetAutoRunAccount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.GetAutoRunAccount");
 
@@ -772,7 +772,7 @@ struct FString UAutoTestSubsystem::GetAutoRunAccount()
 
 void UAutoTestSubsystem::CloseDebugg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.CloseDebugg");
 
@@ -805,7 +805,7 @@ void UAutoTestSubsystem::CloseDebugg()
 
 void UAutoTestSubsystem::ClickButton(const struct FString& InPath, float Duringtime, int StartX, int StartY, int EndX, int EndY, int TouchIndex, int ControllerId, int ScreensizeX, int ScreensizeY, const struct FString& UsePos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.ClickButton");
 
@@ -842,7 +842,7 @@ void UAutoTestSubsystem::ClickButton(const struct FString& InPath, float Duringt
 
 void UAutoTestSubsystem::CheckStaticMesh(float Radius, float DeformationDistance, bool CheckComplexCollisionQuery, const struct FString& MapName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.CheckStaticMesh");
 
@@ -869,7 +869,7 @@ void UAutoTestSubsystem::CheckStaticMesh(float Radius, float DeformationDistance
 
 void UAutoTestSubsystem::AutoTestWaitForUIWithName(const struct FString& UIName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestWaitForUIWithName");
 
@@ -893,7 +893,7 @@ void UAutoTestSubsystem::AutoTestWaitForUIWithName(const struct FString& UIName)
 
 void UAutoTestSubsystem::AutoTestWaitForSecond(int sec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestWaitForSecond");
 
@@ -917,7 +917,7 @@ void UAutoTestSubsystem::AutoTestWaitForSecond(int sec)
 
 bool UAutoTestSubsystem::AutoTestWaitForJumpPlane()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestWaitForJumpPlane");
 
@@ -940,7 +940,7 @@ bool UAutoTestSubsystem::AutoTestWaitForJumpPlane()
 
 void UAutoTestSubsystem::AutoTestVehicleDriverShoot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestVehicleDriverShoot");
 
@@ -961,7 +961,7 @@ void UAutoTestSubsystem::AutoTestVehicleDriverShoot()
 
 void UAutoTestSubsystem::AutoTestVaultWall()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestVaultWall");
 
@@ -982,7 +982,7 @@ void UAutoTestSubsystem::AutoTestVaultWall()
 
 void UAutoTestSubsystem::AutoTestUsePropSkillClientEx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestUsePropSkillClientEx");
 
@@ -1005,7 +1005,7 @@ void UAutoTestSubsystem::AutoTestUsePropSkillClientEx()
 
 void UAutoTestSubsystem::AutoTestUseItemClientEx(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestUseItemClientEx");
 
@@ -1029,7 +1029,7 @@ void UAutoTestSubsystem::AutoTestUseItemClientEx(int ItemId)
 
 void UAutoTestSubsystem::AutoTestUseItem(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestUseItem");
 
@@ -1053,7 +1053,7 @@ void UAutoTestSubsystem::AutoTestUseItem(int ItemId)
 
 void UAutoTestSubsystem::AutoTestUpgradePropSkillClientEx(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestUpgradePropSkillClientEx");
 
@@ -1077,7 +1077,7 @@ void UAutoTestSubsystem::AutoTestUpgradePropSkillClientEx(int ItemId)
 
 void UAutoTestSubsystem::AutoTestToggleVehicleSync(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestToggleVehicleSync");
 
@@ -1101,7 +1101,7 @@ void UAutoTestSubsystem::AutoTestToggleVehicleSync(bool Val)
 
 void UAutoTestSubsystem::AutoTestThrowBoomOnlyClientEx(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestThrowBoomOnlyClientEx");
 
@@ -1125,7 +1125,7 @@ void UAutoTestSubsystem::AutoTestThrowBoomOnlyClientEx(int SkillID)
 
 void UAutoTestSubsystem::AutoTestThrowBoom(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestThrowBoom");
 
@@ -1149,7 +1149,7 @@ void UAutoTestSubsystem::AutoTestThrowBoom(int SkillID)
 
 void UAutoTestSubsystem::AutoTestSwitchWeapon(int WeaponType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSwitchWeapon");
 
@@ -1173,7 +1173,7 @@ void UAutoTestSubsystem::AutoTestSwitchWeapon(int WeaponType)
 
 void UAutoTestSubsystem::AutoTestSwitchMode(const struct FString& FunName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSwitchMode");
 
@@ -1195,7 +1195,7 @@ void UAutoTestSubsystem::AutoTestSwitchMode(const struct FString& FunName)
 
 void UAutoTestSubsystem::AutoTestStopRecordStats()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestStopRecordStats");
 
@@ -1218,7 +1218,7 @@ void UAutoTestSubsystem::AutoTestStopRecordStats()
 
 void UAutoTestSubsystem::AutoTestStatsCommand(const struct FString& Command)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestStatsCommand");
 
@@ -1242,7 +1242,7 @@ void UAutoTestSubsystem::AutoTestStatsCommand(const struct FString& Command)
 
 void UAutoTestSubsystem::AutoTestStartRecordStats(const struct FString& FileStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestStartRecordStats");
 
@@ -1269,7 +1269,7 @@ void UAutoTestSubsystem::AutoTestStartRecordStats(const struct FString& FileStr)
 
 void UAutoTestSubsystem::AutoTestStartFireOnlyClientEx(int InX, int InY, int InZ, int sec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestStartFireOnlyClientEx");
 
@@ -1299,7 +1299,7 @@ void UAutoTestSubsystem::AutoTestStartFireOnlyClientEx(int InX, int InY, int InZ
 
 void UAutoTestSubsystem::AutoTestStartFire(int InX, int InY, int InZ, int sec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestStartFire");
 
@@ -1326,7 +1326,7 @@ void UAutoTestSubsystem::AutoTestStartFire(int InX, int InY, int InZ, int sec)
 
 void UAutoTestSubsystem::AutoTestSpecating(int LeftTeamCnt)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSpecating");
 
@@ -1350,7 +1350,7 @@ void UAutoTestSubsystem::AutoTestSpecating(int LeftTeamCnt)
 
 void UAutoTestSubsystem::AutoTestSpawnVehicle(const struct FString& ResPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSpawnVehicle");
 
@@ -1377,7 +1377,7 @@ void UAutoTestSubsystem::AutoTestSpawnVehicle(const struct FString& ResPath)
 
 void UAutoTestSubsystem::AutoTestSpawnAI(int ID, float PosiX, float PosiY, float PosiZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSpawnAI");
 
@@ -1406,7 +1406,7 @@ void UAutoTestSubsystem::AutoTestSpawnAI(int ID, float PosiX, float PosiY, float
 
 void UAutoTestSubsystem::AutoTestSetVehicleRotation(int InX, int InY, int InZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetVehicleRotation");
 
@@ -1432,7 +1432,7 @@ void UAutoTestSubsystem::AutoTestSetVehicleRotation(int InX, int InY, int InZ)
 
 void UAutoTestSubsystem::AutoTestSetRecordFrequency(int Frequency)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetRecordFrequency");
 
@@ -1456,7 +1456,7 @@ void UAutoTestSubsystem::AutoTestSetRecordFrequency(int Frequency)
 
 void UAutoTestSubsystem::AutoTestSetGamePaused(bool IsPause)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetGamePaused");
 
@@ -1480,7 +1480,7 @@ void UAutoTestSubsystem::AutoTestSetGamePaused(bool IsPause)
 
 void UAutoTestSubsystem::AutoTestSetActorYaw(float InRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetActorYaw");
 
@@ -1505,7 +1505,7 @@ void UAutoTestSubsystem::AutoTestSetActorYaw(float InRate)
 
 void UAutoTestSubsystem::AutoTestSetActorRotation(float InRate, float InSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetActorRotation");
 
@@ -1530,7 +1530,7 @@ void UAutoTestSubsystem::AutoTestSetActorRotation(float InRate, float InSpeed)
 
 void UAutoTestSubsystem::AutoTestSetActorPitch(float InRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetActorPitch");
 
@@ -1556,7 +1556,7 @@ void UAutoTestSubsystem::AutoTestSetActorPitch(float InRate)
 
 void UAutoTestSubsystem::AutoTestSetActorFacePointWithZ(int InX, int InY, int InZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetActorFacePointWithZ");
 
@@ -1584,7 +1584,7 @@ void UAutoTestSubsystem::AutoTestSetActorFacePointWithZ(int InX, int InY, int In
 
 void UAutoTestSubsystem::AutoTestSetActorFacePoint(int InX, int InY, int InZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSetActorFacePoint");
 
@@ -1610,7 +1610,7 @@ void UAutoTestSubsystem::AutoTestSetActorFacePoint(int InX, int InY, int InZ)
 
 void UAutoTestSubsystem::AutoTestSendBuffertoSvr(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestSendBuffertoSvr");
 
@@ -1640,7 +1640,7 @@ void UAutoTestSubsystem::AutoTestSendBuffertoSvr(TScriptInterface<class UClientN
 
 void UAutoTestSubsystem::AutoTestReplaceMatByActorName(const struct FString& actorName, const struct FString& NewMatName, int RComp, int GComp, int BComp)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestReplaceMatByActorName");
 
@@ -1666,7 +1666,7 @@ void UAutoTestSubsystem::AutoTestReplaceMatByActorName(const struct FString& act
 
 void UAutoTestSubsystem::AutoTestReloadOnlyClientEx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestReloadOnlyClientEx");
 
@@ -1689,7 +1689,7 @@ void UAutoTestSubsystem::AutoTestReloadOnlyClientEx()
 
 struct FVector2D UAutoTestSubsystem::AutoTestPickupItemOnlyClientEx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestPickupItemOnlyClientEx");
 
@@ -1715,7 +1715,7 @@ struct FVector2D UAutoTestSubsystem::AutoTestPickupItemOnlyClientEx()
 
 struct FVector2D UAutoTestSubsystem::AutoTestPickupItem(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestPickupItem");
 
@@ -1739,7 +1739,7 @@ struct FVector2D UAutoTestSubsystem::AutoTestPickupItem(int ItemId)
 
 void UAutoTestSubsystem::AutoTestOpenTraceRPC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestOpenTraceRPC");
 
@@ -1762,7 +1762,7 @@ void UAutoTestSubsystem::AutoTestOpenTraceRPC()
 
 void UAutoTestSubsystem::AutoTestOpenScope(bool bOpenScope)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestOpenScope");
 
@@ -1786,7 +1786,7 @@ void UAutoTestSubsystem::AutoTestOpenScope(bool bOpenScope)
 
 void UAutoTestSubsystem::AutoTestOpenDoorOnlyClientEx(int bOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestOpenDoorOnlyClientEx");
 
@@ -1810,7 +1810,7 @@ void UAutoTestSubsystem::AutoTestOpenDoorOnlyClientEx(int bOpen)
 
 void UAutoTestSubsystem::AutoTestMustDie(int LeftTeamCnt)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestMustDie");
 
@@ -1836,7 +1836,7 @@ void UAutoTestSubsystem::AutoTestMustDie(int LeftTeamCnt)
 
 void UAutoTestSubsystem::AutoTestMoveVehicleForward(float Speed, float Rate, float sec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestMoveVehicleForward");
 
@@ -1864,7 +1864,7 @@ void UAutoTestSubsystem::AutoTestMoveVehicleForward(float Speed, float Rate, flo
 
 void UAutoTestSubsystem::AutoTestMoveToPoint(int InX, int InY, int InZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestMoveToPoint");
 
@@ -1890,7 +1890,7 @@ void UAutoTestSubsystem::AutoTestMoveToPoint(int InX, int InY, int InZ)
 
 void UAutoTestSubsystem::AutoTestJumpPlane(int sec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestJumpPlane");
 
@@ -1912,7 +1912,7 @@ void UAutoTestSubsystem::AutoTestJumpPlane(int sec)
 
 void UAutoTestSubsystem::AutoTestJump()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestJump");
 
@@ -1935,7 +1935,7 @@ void UAutoTestSubsystem::AutoTestJump()
 
 bool UAutoTestSubsystem::AutoTestIsOnVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestIsOnVehicle");
 
@@ -1960,7 +1960,7 @@ bool UAutoTestSubsystem::AutoTestIsOnVehicle()
 
 bool UAutoTestSubsystem::AutoTestIsDriver()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestIsDriver");
 
@@ -1985,7 +1985,7 @@ bool UAutoTestSubsystem::AutoTestIsDriver()
 
 bool UAutoTestSubsystem::AutoTestIsCurrentCommandFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestIsCurrentCommandFinished");
 
@@ -2010,7 +2010,7 @@ bool UAutoTestSubsystem::AutoTestIsCurrentCommandFinished()
 
 void UAutoTestSubsystem::AutoTestInputMovement(float InRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestInputMovement");
 
@@ -2031,13 +2031,13 @@ void UAutoTestSubsystem::AutoTestInputMovement(float InRate)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Key                            (Parm, ZeroConstructor)
-// TEnumAsByte<enum EInputEvent>  EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EInputEvent>       EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          AmountDepressed                (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bGamepad                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UAutoTestSubsystem::AutoTestInputKey(const struct FString& Key, TEnumAsByte<enum EInputEvent> EventType, float AmountDepressed, bool bGamepad)
+void UAutoTestSubsystem::AutoTestInputKey(const struct FString& Key, TEnumAsByte<EInputEvent> EventType, float AmountDepressed, bool bGamepad)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestInputKey");
 
@@ -2069,7 +2069,7 @@ void UAutoTestSubsystem::AutoTestInputKey(const struct FString& Key, TEnumAsByte
 
 void UAutoTestSubsystem::AutoTestGMVehicleMoveAndTowardClientEx(float InX, float InY, float InZ, float InX1, float InY1, float InZ1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGMVehicleMoveAndTowardClientEx");
 
@@ -2100,7 +2100,7 @@ void UAutoTestSubsystem::AutoTestGMVehicleMoveAndTowardClientEx(float InX, float
 
 void UAutoTestSubsystem::AutoTestGMGotoClientEx(int InX, int InY, int InZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGMGotoClientEx");
 
@@ -2128,7 +2128,7 @@ void UAutoTestSubsystem::AutoTestGMGotoClientEx(int InX, int InY, int InZ)
 
 void UAutoTestSubsystem::AutoTestGMGoto(int InX, int InY, int InZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGMGoto");
 
@@ -2154,7 +2154,7 @@ void UAutoTestSubsystem::AutoTestGMGoto(int InX, int InY, int InZ)
 
 void UAutoTestSubsystem::AutoTestGMCommand(const struct FString& Command)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGMCommand");
 
@@ -2178,7 +2178,7 @@ void UAutoTestSubsystem::AutoTestGMCommand(const struct FString& Command)
 
 struct FVector UAutoTestSubsystem::AutoTestGetVehicleLocationClientEx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetVehicleLocationClientEx");
 
@@ -2203,7 +2203,7 @@ struct FVector UAutoTestSubsystem::AutoTestGetVehicleLocationClientEx()
 
 struct FVector UAutoTestSubsystem::AutoTestGetVehicleLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetVehicleLocation");
 
@@ -2226,7 +2226,7 @@ struct FVector UAutoTestSubsystem::AutoTestGetVehicleLocation()
 
 void UAutoTestSubsystem::AutoTestGetRuntimeStats()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetRuntimeStats");
 
@@ -2247,7 +2247,7 @@ void UAutoTestSubsystem::AutoTestGetRuntimeStats()
 
 void UAutoTestSubsystem::AutoTestGetRenderTimeDetail()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetRenderTimeDetail");
 
@@ -2268,7 +2268,7 @@ void UAutoTestSubsystem::AutoTestGetRenderTimeDetail()
 
 void UAutoTestSubsystem::AutoTestGetPrimitivesDetail()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetPrimitivesDetail");
 
@@ -2291,7 +2291,7 @@ void UAutoTestSubsystem::AutoTestGetPrimitivesDetail()
 
 void UAutoTestSubsystem::AutoTestGetOnVehicle(int SeatType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetOnVehicle");
 
@@ -2313,7 +2313,7 @@ void UAutoTestSubsystem::AutoTestGetOnVehicle(int SeatType)
 
 void UAutoTestSubsystem::AutoTestGetOffVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetOffVehicle");
 
@@ -2336,7 +2336,7 @@ void UAutoTestSubsystem::AutoTestGetOffVehicle()
 
 struct FVector UAutoTestSubsystem::AutoTestGetNearVehiclePos()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetNearVehiclePos");
 
@@ -2359,7 +2359,7 @@ struct FVector UAutoTestSubsystem::AutoTestGetNearVehiclePos()
 
 void UAutoTestSubsystem::AutoTestGetMemoryDetail()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetMemoryDetail");
 
@@ -2382,7 +2382,7 @@ void UAutoTestSubsystem::AutoTestGetMemoryDetail()
 
 struct FString UAutoTestSubsystem::AutoTestGetMapName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetMapName");
 
@@ -2407,7 +2407,7 @@ struct FString UAutoTestSubsystem::AutoTestGetMapName()
 
 void UAutoTestSubsystem::AutoTestGetLuaReturnValue(const struct FString& retval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetLuaReturnValue");
 
@@ -2431,7 +2431,7 @@ void UAutoTestSubsystem::AutoTestGetLuaReturnValue(const struct FString& retval)
 
 struct FString UAutoTestSubsystem::AutoTestGetGameModeState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetGameModeState");
 
@@ -2456,7 +2456,7 @@ struct FString UAutoTestSubsystem::AutoTestGetGameModeState()
 
 struct FVector UAutoTestSubsystem::AutoTestGetFrameInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetFrameInfo");
 
@@ -2479,7 +2479,7 @@ struct FVector UAutoTestSubsystem::AutoTestGetFrameInfo()
 
 void UAutoTestSubsystem::AutoTestGetDrawCallDetail()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetDrawCallDetail");
 
@@ -2508,7 +2508,7 @@ void UAutoTestSubsystem::AutoTestGetDrawCallDetail()
 
 int UAutoTestSubsystem::AutoTestGetDis2D(int InX1, int InY1, int InZ1, int InX2, int InY2, int InZ2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetDis2D");
 
@@ -2539,7 +2539,7 @@ int UAutoTestSubsystem::AutoTestGetDis2D(int InX1, int InY1, int InZ1, int InX2,
 
 struct FVector UAutoTestSubsystem::AutoTestGetCircleLocationClientEx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetCircleLocationClientEx");
 
@@ -2564,7 +2564,7 @@ struct FVector UAutoTestSubsystem::AutoTestGetCircleLocationClientEx()
 
 TArray<int> UAutoTestSubsystem::AutoTestGetAvailableDeadBoxItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetAvailableDeadBoxItem");
 
@@ -2589,7 +2589,7 @@ TArray<int> UAutoTestSubsystem::AutoTestGetAvailableDeadBoxItem()
 
 TArray<struct FString> UAutoTestSubsystem::AutoTestGetAllActorNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetAllActorNames");
 
@@ -2614,7 +2614,7 @@ TArray<struct FString> UAutoTestSubsystem::AutoTestGetAllActorNames()
 
 struct FString UAutoTestSubsystem::AutoTestGetActorName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetActorName");
 
@@ -2641,7 +2641,7 @@ struct FString UAutoTestSubsystem::AutoTestGetActorName()
 
 TArray<struct FVector> UAutoTestSubsystem::AutoTestGetActorLocationListClientEx(int ActorType, float RangeRadius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetActorLocationListClientEx");
 
@@ -2669,7 +2669,7 @@ TArray<struct FVector> UAutoTestSubsystem::AutoTestGetActorLocationListClientEx(
 
 struct FVector UAutoTestSubsystem::AutoTestGetActorLocation(const struct FString& PlayerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestGetActorLocation");
 
@@ -2696,7 +2696,7 @@ struct FVector UAutoTestSubsystem::AutoTestGetActorLocation(const struct FString
 
 float UAutoTestSubsystem::AutoTestForceVehiclePosPullClientEx(bool bNext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestForceVehiclePosPullClientEx");
 
@@ -2720,7 +2720,7 @@ float UAutoTestSubsystem::AutoTestForceVehiclePosPullClientEx(bool bNext)
 
 void UAutoTestSubsystem::AutoTestForceDeleteCmdAnim()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestForceDeleteCmdAnim");
 
@@ -2741,7 +2741,7 @@ void UAutoTestSubsystem::AutoTestForceDeleteCmdAnim()
 
 void UAutoTestSubsystem::AutoTestEnableUITest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestEnableUITest");
 
@@ -2766,7 +2766,7 @@ void UAutoTestSubsystem::AutoTestEnableUITest()
 
 void UAutoTestSubsystem::AutoTestEnableTickOrVisibilityByActorName(const struct FString& actorName, bool bEnableTick, bool bShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestEnableTickOrVisibilityByActorName");
 
@@ -2796,7 +2796,7 @@ void UAutoTestSubsystem::AutoTestEnableTickOrVisibilityByActorName(const struct 
 
 void UAutoTestSubsystem::AutoTestEnableActorPrimitiveHighlight(const struct FString& actorName, bool bEnable, bool bInCanBeOccluded, bool bOverrideColor, const struct FLinearColor& Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestEnableActorPrimitiveHighlight");
 
@@ -2825,7 +2825,7 @@ void UAutoTestSubsystem::AutoTestEnableActorPrimitiveHighlight(const struct FStr
 
 void UAutoTestSubsystem::AutoTestDropItemClientEx(int ItemId, int nCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestDropItemClientEx");
 
@@ -2855,7 +2855,7 @@ void UAutoTestSubsystem::AutoTestDropItemClientEx(int ItemId, int nCount)
 
 void UAutoTestSubsystem::AutoTestDrawBox(float LocationX, float LocationY, float LocationZ, float ExtentX, float ExtentY, float ExtentZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestDrawBox");
 
@@ -2886,7 +2886,7 @@ void UAutoTestSubsystem::AutoTestDrawBox(float LocationX, float LocationY, float
 
 void UAutoTestSubsystem::AutoTestContinuousMoveTo(float InX, float InY, float InZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestContinuousMoveTo");
 
@@ -2912,7 +2912,7 @@ void UAutoTestSubsystem::AutoTestContinuousMoveTo(float InX, float InY, float In
 
 void UAutoTestSubsystem::AutoTestConsoleCommand(const struct FString& Command)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestConsoleCommand");
 
@@ -2934,7 +2934,7 @@ void UAutoTestSubsystem::AutoTestConsoleCommand(const struct FString& Command)
 
 void UAutoTestSubsystem::AutoTestCloseTraceRPC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestCloseTraceRPC");
 
@@ -2957,7 +2957,7 @@ void UAutoTestSubsystem::AutoTestCloseTraceRPC()
 
 void UAutoTestSubsystem::AutoTestAutoMoveForward(bool StartAutoMoveForward)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestAutoMoveForward");
 
@@ -2982,7 +2982,7 @@ void UAutoTestSubsystem::AutoTestAutoMoveForward(bool StartAutoMoveForward)
 
 void UAutoTestSubsystem::AutoTestAddItem(int ItemId, int nCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoTestAddItem");
 
@@ -3007,7 +3007,7 @@ void UAutoTestSubsystem::AutoTestAddItem(int ItemId, int nCount)
 
 void UAutoTestSubsystem::AutoMoveToTargetPosClientEx(const struct FVector& targetPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoMoveToTargetPosClientEx");
 
@@ -3031,7 +3031,7 @@ void UAutoTestSubsystem::AutoMoveToTargetPosClientEx(const struct FVector& targe
 
 void UAutoTestSubsystem::AutoMovePawnToTargetPosClientEx(const struct FVector& targetPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.AutoTestSubsystem.AutoMovePawnToTargetPosClientEx");
 
@@ -3057,7 +3057,7 @@ void UAutoTestSubsystem::AutoMovePawnToTargetPosClientEx(const struct FVector& t
 
 void UPubgmAutoRun::VehicleTowardTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.VehicleTowardTo");
 
@@ -3085,7 +3085,7 @@ void UPubgmAutoRun::VehicleTowardTo(float X, float Y, float Z)
 
 void UPubgmAutoRun::VehicleMoveTo(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.VehicleMoveTo");
 
@@ -3116,7 +3116,7 @@ void UPubgmAutoRun::VehicleMoveTo(float X, float Y, float Z)
 
 void UPubgmAutoRun::VehicleMoveAndTowardTo(float X, float Y, float Z, float X1, float Y1, float Z1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.VehicleMoveAndTowardTo");
 
@@ -3145,7 +3145,7 @@ void UPubgmAutoRun::VehicleMoveAndTowardTo(float X, float Y, float Z, float X1, 
 
 void UPubgmAutoRun::OnPubgmAutoRunSimulateAction__DelegateSignature(int SimActionType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction AutoRobot.PubgmAutoRun.OnPubgmAutoRunSimulateAction__DelegateSignature");
 
@@ -3168,7 +3168,7 @@ void UPubgmAutoRun::OnPubgmAutoRunSimulateAction__DelegateSignature(int SimActio
 
 bool UPubgmAutoRun::NeedCmdAutoRun()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.NeedCmdAutoRun");
 
@@ -3193,7 +3193,7 @@ bool UPubgmAutoRun::NeedCmdAutoRun()
 
 void UPubgmAutoRun::NativeSimulateAction(int SimActionType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.NativeSimulateAction");
 
@@ -3215,7 +3215,7 @@ void UPubgmAutoRun::NativeSimulateAction(int SimActionType)
 
 void UPubgmAutoRun::InitRoutePoint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.InitRoutePoint");
 
@@ -3240,7 +3240,7 @@ void UPubgmAutoRun::InitRoutePoint()
 
 void UPubgmAutoRun::GMGotoPosition(int X, int Y, int Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.GMGotoPosition");
 
@@ -3269,7 +3269,7 @@ void UPubgmAutoRun::GMGotoPosition(int X, int Y, int Z)
 
 TArray<struct FVector> UPubgmAutoRun::GetRangeActorsPostions(int ActorType, const struct FVector& OriginPos, float RangeRadius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.GetRangeActorsPostions");
 
@@ -3297,7 +3297,7 @@ TArray<struct FVector> UPubgmAutoRun::GetRangeActorsPostions(int ActorType, cons
 
 struct FVector UPubgmAutoRun::GetPoisonCircleLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.GetPoisonCircleLocation");
 
@@ -3323,7 +3323,7 @@ struct FVector UPubgmAutoRun::GetPoisonCircleLocation()
 
 float UPubgmAutoRun::GetPlayerSpeed(int SpeedIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.GetPlayerSpeed");
 
@@ -3352,7 +3352,7 @@ float UPubgmAutoRun::GetPlayerSpeed(int SpeedIdx)
 
 bool UPubgmAutoRun::GetNearestXTPointToVehicle(bool bNext, struct FTransform* FirstPoint, struct FTransform* SecendPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.GetNearestXTPointToVehicle");
 
@@ -3384,7 +3384,7 @@ bool UPubgmAutoRun::GetNearestXTPointToVehicle(bool bNext, struct FTransform* Fi
 
 float UPubgmAutoRun::ForceVehiclePosPull(bool bNext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.PubgmAutoRun.ForceVehiclePosPull");
 
@@ -3410,7 +3410,7 @@ float UPubgmAutoRun::ForceVehiclePosPull(bool bNext)
 
 struct FString URemoteControlHelper::GetRuntimeStats()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.RemoteControlHelper.GetRuntimeStats");
 
@@ -3435,7 +3435,7 @@ struct FString URemoteControlHelper::GetRuntimeStats()
 
 struct FString URemoteControlHelper::GetDeviceName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.RemoteControlHelper.GetDeviceName");
 
@@ -3460,7 +3460,7 @@ struct FString URemoteControlHelper::GetDeviceName()
 
 void URemoteControlHelper::AutoPickup(class ASTExtraBaseCharacter* Player)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.RemoteControlHelper.AutoPickup");
 
@@ -3485,7 +3485,7 @@ void URemoteControlHelper::AutoPickup(class ASTExtraBaseCharacter* Player)
 
 bool URemoteControlManager::Tick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.RemoteControlManager.Tick");
 
@@ -3509,7 +3509,7 @@ bool URemoteControlManager::Tick(float DeltaTime)
 
 void URemoteControlManager::Stop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.RemoteControlManager.Stop");
 
@@ -3532,7 +3532,7 @@ void URemoteControlManager::Stop()
 
 bool URemoteControlManager::BeginWithFile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.RemoteControlManager.BeginWithFile");
 
@@ -3560,7 +3560,7 @@ bool URemoteControlManager::BeginWithFile()
 
 bool URemoteControlManager::Begin(const struct FString& Name, const struct FString& Host, int Port)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.RemoteControlManager.Begin");
 
@@ -3589,7 +3589,7 @@ bool URemoteControlManager::Begin(const struct FString& Name, const struct FStri
 
 void UShootWeaponAutoTestHandle::OnWeaponShootBullet(class ASTExtraShootWeapon* ShootWeapon, class ASTExtraShootWeaponBulletBase* Bullet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.ShootWeaponAutoTestHandle.OnWeaponShootBullet");
 
@@ -3616,7 +3616,7 @@ void UShootWeaponAutoTestHandle::OnWeaponShootBullet(class ASTExtraShootWeapon* 
 
 void UShootWeaponAutoTestHandle::OnBulletImpact(class ASTExtraShootWeapon* ShootWeapon, class ASTExtraShootWeaponBulletBase* Bullet, const struct FHitResult& HitRet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.ShootWeaponAutoTestHandle.OnBulletImpact");
 
@@ -3643,7 +3643,7 @@ void UShootWeaponAutoTestHandle::OnBulletImpact(class ASTExtraShootWeapon* Shoot
 
 void UShootWeaponAutoTestHandle::OnBulletDamage(int ShootID, float Damage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.ShootWeaponAutoTestHandle.OnBulletDamage");
 
@@ -3668,7 +3668,7 @@ void UShootWeaponAutoTestHandle::OnBulletDamage(int ShootID, float Damage)
 
 struct FString UShootWeaponAutoTestHandle::GenerateBulletsImpactJsonStringAndClearData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AutoRobot.ShootWeaponAutoTestHandle.GenerateBulletsImpactJsonStringAndClearData");
 

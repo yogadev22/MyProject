@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum SlateCore.ECheckBoxState
 enum class ECheckBoxState : uint8_t
@@ -448,9 +448,9 @@ enum class EWidgetPixelSnapping : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct SlateCore.Margin
 // 0x0010
@@ -474,7 +474,7 @@ struct FGeometry
 struct FSlateColor
 {
 	struct FLinearColor                                SpecifiedColor;                                           // 0x0000(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum ESlateColorStylingMode>           ColorUseRule;                                             // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESlateColorStylingMode>                ColorUseRule;                                             // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x17];                                      // 0x0011(0x0017) MISSED OFFSET
 };
 
@@ -493,10 +493,10 @@ struct FSlateBrush
 	unsigned char                                      UnknownData02[0x28];                                      // 0x0058(0x0028) UNKNOWN PROPERTY: SoftObjectProperty SlateCore.SlateBrush.SoftResourceObject
 	struct FName                                       ResourceName;                                             // 0x0080(0x0008) (ZeroConstructor, IsPlainOldData)
 	struct FBox2D                                      UVRegion;                                                 // 0x0088(0x0014)
-	TEnumAsByte<enum ESlateBrushDrawType>              DrawAs;                                                   // 0x009C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESlateBrushTileType>              Tiling;                                                   // 0x009D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESlateBrushMirrorType>            Mirroring;                                                // 0x009E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESlateBrushImageType>             ImageType;                                                // 0x009F(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESlateBrushDrawType>                   DrawAs;                                                   // 0x009C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESlateBrushTileType>                   Tiling;                                                   // 0x009D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESlateBrushMirrorType>                 Mirroring;                                                // 0x009E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESlateBrushImageType>                  ImageType;                                                // 0x009F(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x10];                                      // 0x00A0(0x0010) MISSED OFFSET
 	unsigned char                                      bIsDynamicallyLoaded : 1;                                 // 0x00B0(0x0001)
 	unsigned char                                      bHasUObject : 1;                                          // 0x00B0(0x0001) (Deprecated)
@@ -963,7 +963,7 @@ struct FHyperlinkStyle : public FSlateWidgetStyle
 // 0x0728 (0x0730 - 0x0008)
 struct FCheckBoxStyle : public FSlateWidgetStyle
 {
-	TEnumAsByte<enum ESlateCheckBoxType>               CheckBoxType;                                             // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESlateCheckBoxType>                    CheckBoxType;                                             // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	struct FSlateBrush                                 UncheckedImage;                                           // 0x0010(0x00B8) (Edit, BlueprintVisible)
 	struct FSlateBrush                                 UncheckedHoveredImage;                                    // 0x00C8(0x00B8) (Edit, BlueprintVisible)

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class UnrealArchExt.UAEUserWidget
 // 0x01B8 (0x0418 - 0x0260)
@@ -50,7 +50,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.UAEUserWidget");
 		return pStaticClass;
@@ -123,7 +123,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.LuaUAEUserWidget");
 		return pStaticClass;
@@ -140,7 +140,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.UAECanvasPanel");
 		return pStaticClass;
@@ -160,7 +160,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.BackendUtils");
 		return pStaticClass;
@@ -183,7 +183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.BackendHUD");
 		return pStaticClass;
@@ -220,7 +220,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.LogicManagerBase");
 		return pStaticClass;
@@ -282,7 +282,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.FrontendHUD");
 		return pStaticClass;
@@ -338,14 +338,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.FrontendUtils");
 		return pStaticClass;
 	}
 
 
-	void SwitchSceneCameraToTransform(const struct FTransform& targetTrans, TEnumAsByte<enum ECameraProjectionMode> ProjectionMode, float FOV, float BlendTime, bool bForce, bool bAutoFixAspect);
+	void SwitchSceneCameraToTransform(const struct FTransform& targetTrans, TEnumAsByte<ECameraProjectionMode> ProjectionMode, float FOV, float BlendTime, bool bForce, bool bAutoFixAspect);
 	void SwitchSceneCamera(const struct FName& SceneCameraName, float BlendTime, bool bForce);
 	void SetSceneSkyLightProperty(const struct FName& sceneLightName, const struct FTransform& targetTrans, float Intensity, const struct FLinearColor& Color);
 	void SetScenePointLightProperty(const struct FName& sceneLightName, const struct FTransform& targetTrans, float Intensity, const struct FLinearColor& Color, int inverseSquareFalloff, float Radius);
@@ -362,6 +362,7 @@ public:
 	struct FString GetUIStackTopSrcTag();
 	struct FString GetUIStackTopDstTag();
 	struct FString GetUIStackTop();
+	class UCameraComponent* GetSceneCameraComponent();
 	class ACameraActor* GetSceneCamera();
 	class UFrontendHUD* GetOwningFrontendHUD();
 	class UUAEWidgetContainer* GetGlobalUIContainer(const struct FName& ContainerName);
@@ -379,7 +380,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.TableTraver");
 		return pStaticClass;
@@ -399,7 +400,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.UAEDataTable");
 		return pStaticClass;
@@ -423,7 +424,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.UAEDataTableInterface");
 		return pStaticClass;
@@ -444,13 +445,13 @@ public:
 	struct FVector2D                                   Offset;                                                   // 0x042C(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0434(0x0004) MISSED OFFSET
 	class UDragDropOperation*                          DragDropOperation;                                        // 0x0438(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FScriptDelegate                             OnOnDragDetectedDel;                                      // 0x0440(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnOnDragDetectedDel;                                      // 0x0440(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnDragEnterDel;                                           // 0x0450(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnDragCancelledDel;                                       // 0x0460(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.UAEUserWidgetForDrag");
 		return pStaticClass;
@@ -471,7 +472,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class UnrealArchExt.UAEWidgetContainer");
 		return pStaticClass;

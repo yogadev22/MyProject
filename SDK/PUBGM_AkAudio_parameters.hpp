@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function AkAudio.AkAcousticPortal.OpenPortal
 struct AAkAcousticPortal_OpenPortal_Params
@@ -435,6 +435,11 @@ struct UAkComponent_UseEarlyReflections_Params
 	bool                                               Front;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               SpotReflectors;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     AuxBusName;                                               // (Parm, ZeroConstructor)
+};
+
+// Function AkAudio.AkComponent.UpdateGameObjectPosition
+struct UAkComponent_UpdateGameObjectPosition_Params
+{
 };
 
 // Function AkAudio.AkComponent.TriggerEventWithRangedEmitter
@@ -971,7 +976,7 @@ struct UAkGameplayStatics_GetAkComponent_Params
 	class USceneComponent*                             AttachToComponent;                                        // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FName                                       AttachPointName;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAkComponent*                                ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 

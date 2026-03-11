@@ -1,23 +1,23 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Skill.UTSkill.VerifyServerSkillData
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
 // class UUTSkillManagerComponent* SkillManagerComponent          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> InEventType                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> InEventType                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool AUTSkill::VerifyServerSkillData(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> InEventType)
+bool AUTSkill::VerifyServerSkillData(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> InEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.VerifyServerSkillData");
 
@@ -45,7 +45,7 @@ bool AUTSkill::VerifyServerSkillData(class UUTSkillManagerComponent* SkillManage
 
 void AUTSkill::StopSkillCoolDown(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.StopSkillCoolDown");
 
@@ -71,7 +71,7 @@ void AUTSkill::StopSkillCoolDown(class UUTSkillManagerComponent* SkillManagerCom
 
 void AUTSkill::ResetSkillCoolDown(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.ResetSkillCoolDown");
 
@@ -93,13 +93,13 @@ void AUTSkill::ResetSkillCoolDown(class UUTSkillManagerComponent* SkillManagerCo
 // (Native, Public, BlueprintCallable)
 // Parameters:
 // class UUTSkillManagerComponent* SkillManagerComponent          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> TheEventType                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> TheEventType                   (Parm, ZeroConstructor, IsPlainOldData)
 // int                            PhaseIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool AUTSkill::OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> TheEventType, int PhaseIndex)
+bool AUTSkill::OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> TheEventType, int PhaseIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.OnEvent");
 
@@ -129,7 +129,7 @@ bool AUTSkill::OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TE
 
 bool AUTSkill::JumpToPhase(class UUTSkillManagerComponent* SkillManagerComponent, int PhaseId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.JumpToPhase");
 
@@ -157,7 +157,7 @@ bool AUTSkill::JumpToPhase(class UUTSkillManagerComponent* SkillManagerComponent
 
 bool AUTSkill::IsEnableSkillCoolDown(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.IsEnableSkillCoolDown");
 
@@ -185,7 +185,7 @@ bool AUTSkill::IsEnableSkillCoolDown(class UUTSkillManagerComponent* SkillManage
 
 bool AUTSkill::IsCDOK(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.IsCDOK");
 
@@ -209,11 +209,11 @@ bool AUTSkill::IsCDOK(class UUTSkillManagerComponent* SkillManagerComponent, int
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
 // class UUTSkillManagerComponent* SkillManagerComponent          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> InEventType                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> InEventType                    (Parm, ZeroConstructor, IsPlainOldData)
 
-void AUTSkill::HandleVerifyServerSkillDataFail(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> InEventType)
+void AUTSkill::HandleVerifyServerSkillDataFail(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> InEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.HandleVerifyServerSkillDataFail");
 
@@ -238,7 +238,7 @@ void AUTSkill::HandleVerifyServerSkillDataFail(class UUTSkillManagerComponent* S
 
 class UUTSkillManagerComponent* AUTSkill::GetSpecificSkillManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSpecificSkillManager");
 
@@ -263,7 +263,7 @@ class UUTSkillManagerComponent* AUTSkill::GetSpecificSkillManager()
 
 class UUAEBlackboard* AUTSkill::GetSpecificBlackboard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSpecificBlackboard");
 
@@ -289,7 +289,7 @@ class UUAEBlackboard* AUTSkill::GetSpecificBlackboard()
 
 class UUTSkillPhase* AUTSkill::GetSkillPhaseByName(const struct FString& PhaseName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSkillPhaseByName");
 
@@ -316,7 +316,7 @@ class UUTSkillPhase* AUTSkill::GetSkillPhaseByName(const struct FString& PhaseNa
 
 class UUTSkillPhase* AUTSkill::GetSkillPhase(int PhaseIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSkillPhase");
 
@@ -342,7 +342,7 @@ class UUTSkillPhase* AUTSkill::GetSkillPhase(int PhaseIndex)
 
 int AUTSkill::GetSkillID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSkillID");
 
@@ -369,7 +369,7 @@ int AUTSkill::GetSkillID()
 
 class UUTSkillBaseWidget* AUTSkill::GetSkillEffectByPhaseName(const struct FString& PhaseName, const struct FString& EffectName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSkillEffectByPhaseName");
 
@@ -398,7 +398,7 @@ class UUTSkillBaseWidget* AUTSkill::GetSkillEffectByPhaseName(const struct FStri
 
 class UUTSkillBaseWidget* AUTSkill::GetSkillEffectByPhaseIndex(int PhaseIndex, const struct FString& EffectName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSkillEffectByPhaseIndex");
 
@@ -426,7 +426,7 @@ class UUTSkillBaseWidget* AUTSkill::GetSkillEffectByPhaseIndex(int PhaseIndex, c
 
 float AUTSkill::GetSkillDurationScale(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetSkillDurationScale");
 
@@ -453,7 +453,7 @@ float AUTSkill::GetSkillDurationScale(class UUTSkillManagerComponent* SkillManag
 
 int AUTSkill::GetCurSkillPhaseIndex(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetCurSkillPhaseIndex");
 
@@ -480,7 +480,7 @@ int AUTSkill::GetCurSkillPhaseIndex(class UUTSkillManagerComponent* SkillManager
 
 class UUTSkillPhase* AUTSkill::GetCurSkillPhase(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetCurSkillPhase");
 
@@ -508,7 +508,7 @@ class UUTSkillPhase* AUTSkill::GetCurSkillPhase(class UUTSkillManagerComponent* 
 
 float AUTSkill::GetCoolDownTime(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.GetCoolDownTime");
 
@@ -536,7 +536,7 @@ float AUTSkill::GetCoolDownTime(class UUTSkillManagerComponent* SkillManagerComp
 
 void AUTSkill::DoSkillCoolDown(class UUTSkillManagerComponent* SkillManagerComponent, int CoolDownIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.DoSkillCoolDown");
 
@@ -562,7 +562,7 @@ void AUTSkill::DoSkillCoolDown(class UUTSkillManagerComponent* SkillManagerCompo
 
 ESkillCanBePlayedResult AUTSkill::CanBePlayed(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkill.CanBePlayed");
 
@@ -588,7 +588,7 @@ ESkillCanBePlayedResult AUTSkill::CanBePlayed(class UUTSkillManagerComponent* Sk
 
 void UUTSkillManagerComponent::UpdateSyncSkillCDData(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.UpdateSyncSkillCDData");
 
@@ -612,7 +612,7 @@ void UUTSkillManagerComponent::UpdateSyncSkillCDData(int SkillID)
 
 void UUTSkillManagerComponent::UnRegisterActorBlackBorad(class AActor* InActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.UnRegisterActorBlackBorad");
 
@@ -638,7 +638,7 @@ void UUTSkillManagerComponent::UnRegisterActorBlackBorad(class AActor* InActor)
 
 void UUTSkillManagerComponent::TryDeleteOneSkill(int SkillID, bool IsImmediately, bool bResetCD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TryDeleteOneSkill");
 
@@ -666,7 +666,7 @@ void UUTSkillManagerComponent::TryDeleteOneSkill(int SkillID, bool IsImmediately
 
 void UUTSkillManagerComponent::TryAddOneSkill(int SkillID, bool bActive, int ButtonSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TryAddOneSkill");
 
@@ -695,7 +695,7 @@ void UUTSkillManagerComponent::TryAddOneSkill(int SkillID, bool bActive, int But
 
 bool UUTSkillManagerComponent::TriggerSkillWithParams(int SkillID, TArray<struct FString> InKeyStrings, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TriggerSkillWithParams");
 
@@ -725,7 +725,7 @@ bool UUTSkillManagerComponent::TriggerSkillWithParams(int SkillID, TArray<struct
 
 bool UUTSkillManagerComponent::TriggerSkillWithID(int SkillID, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TriggerSkillWithID");
 
@@ -748,13 +748,13 @@ bool UUTSkillManagerComponent::TriggerSkillWithID(int SkillID, bool bEnable)
 // Function Skill.UTSkillManagerComponent.TriggerLocalEventWithID
 // (Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EUTSkillEventType> SkillEventType                 (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> SkillEventType                 (Parm, ZeroConstructor, IsPlainOldData)
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UUTSkillManagerComponent::TriggerLocalEventWithID(TEnumAsByte<enum EUTSkillEventType> SkillEventType, int SkillID)
+bool UUTSkillManagerComponent::TriggerLocalEventWithID(TEnumAsByte<EUTSkillEventType> SkillEventType, int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TriggerLocalEventWithID");
 
@@ -777,13 +777,13 @@ bool UUTSkillManagerComponent::TriggerLocalEventWithID(TEnumAsByte<enum EUTSkill
 // Function Skill.UTSkillManagerComponent.TriggerEventWithID
 // (Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EUTSkillEventType> SkillEventType                 (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> SkillEventType                 (Parm, ZeroConstructor, IsPlainOldData)
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UUTSkillManagerComponent::TriggerEventWithID(TEnumAsByte<enum EUTSkillEventType> SkillEventType, int SkillID)
+bool UUTSkillManagerComponent::TriggerEventWithID(TEnumAsByte<EUTSkillEventType> SkillEventType, int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TriggerEventWithID");
 
@@ -807,11 +807,11 @@ bool UUTSkillManagerComponent::TriggerEventWithID(TEnumAsByte<enum EUTSkillEvent
 // (Native, Public, BlueprintCallable)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::TriggerEvent(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType)
+void UUTSkillManagerComponent::TriggerEvent(int SkillID, TEnumAsByte<EUTSkillEventType> EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TriggerEvent");
 
@@ -841,7 +841,7 @@ void UUTSkillManagerComponent::TriggerEvent(int SkillID, TEnumAsByte<enum EUTSki
 
 bool UUTSkillManagerComponent::TraceTarget(const struct FVector& StartTrace, const struct FVector& EndTrace, EUTPickerTargetType TargetType, float Radius, class AActor** TargetActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.TraceTarget");
 
@@ -875,7 +875,7 @@ bool UUTSkillManagerComponent::TraceTarget(const struct FVector& StartTrace, con
 
 void UUTSkillManagerComponent::SyncOneSkillState(bool RepSkillCD, bool RepSkillActiveState, int RequestID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SyncOneSkillState");
 
@@ -901,7 +901,7 @@ void UUTSkillManagerComponent::SyncOneSkillState(bool RepSkillCD, bool RepSkillA
 
 void UUTSkillManagerComponent::StopSkillAll(EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.StopSkillAll");
 
@@ -926,7 +926,7 @@ void UUTSkillManagerComponent::StopSkillAll(EUTSkillStopReason StopReason)
 
 void UUTSkillManagerComponent::StopSkill(int SkillID, EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.StopSkill");
 
@@ -951,7 +951,7 @@ void UUTSkillManagerComponent::StopSkill(int SkillID, EUTSkillStopReason StopRea
 
 void UUTSkillManagerComponent::StopCurSkill(EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.StopCurSkill");
 
@@ -975,7 +975,7 @@ void UUTSkillManagerComponent::StopCurSkill(EUTSkillStopReason StopReason)
 
 bool UUTSkillManagerComponent::SetupOwnerAndSystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetupOwnerAndSystem");
 
@@ -1002,7 +1002,7 @@ bool UUTSkillManagerComponent::SetupOwnerAndSystem()
 
 void UUTSkillManagerComponent::SetSkillTagsLimit(TArray<int> SkillTags, bool bLimit, const struct FString& TriggerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillTagsLimit");
 
@@ -1030,7 +1030,7 @@ void UUTSkillManagerComponent::SetSkillTagsLimit(TArray<int> SkillTags, bool bLi
 
 void UUTSkillManagerComponent::SetSkillTagsDisable(TArray<int> SkillTags, bool bDisable, const struct FString& TriggerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillTagsDisable");
 
@@ -1058,7 +1058,7 @@ void UUTSkillManagerComponent::SetSkillTagsDisable(TArray<int> SkillTags, bool b
 
 bool UUTSkillManagerComponent::SetSkillSkinID(int SkillID, int InSkillSkinID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillSkinID");
 
@@ -1087,7 +1087,7 @@ bool UUTSkillManagerComponent::SetSkillSkinID(int SkillID, int InSkillSkinID)
 
 bool UUTSkillManagerComponent::SetSkillSelect(int SkillID, bool bSelect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillSelect");
 
@@ -1114,7 +1114,7 @@ bool UUTSkillManagerComponent::SetSkillSelect(int SkillID, bool bSelect)
 
 void UUTSkillManagerComponent::SetSkillOwner(class AActor* tempActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillOwner");
 
@@ -1140,7 +1140,7 @@ void UUTSkillManagerComponent::SetSkillOwner(class AActor* tempActor)
 
 bool UUTSkillManagerComponent::SetSkillLevel(int SkillID, int SkillLevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillLevel");
 
@@ -1169,7 +1169,7 @@ bool UUTSkillManagerComponent::SetSkillLevel(int SkillID, int SkillLevel)
 
 void UUTSkillManagerComponent::SetSkillIDsLimit(TArray<int> SkillIDs, bool bLimit, const struct FString& TriggerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillIDsLimit");
 
@@ -1197,7 +1197,7 @@ void UUTSkillManagerComponent::SetSkillIDsLimit(TArray<int> SkillIDs, bool bLimi
 
 void UUTSkillManagerComponent::SetSkillIDsDisable(TArray<int> SkillIDs, bool bDisable, const struct FString& TriggerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillIDsDisable");
 
@@ -1225,7 +1225,7 @@ void UUTSkillManagerComponent::SetSkillIDsDisable(TArray<int> SkillIDs, bool bDi
 
 void UUTSkillManagerComponent::SetSkillCDTimeScale(int SkillID, float Scale, int ScaleType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillCDTimeScale");
 
@@ -1253,7 +1253,7 @@ void UUTSkillManagerComponent::SetSkillCDTimeScale(int SkillID, float Scale, int
 
 void UUTSkillManagerComponent::SetSkillCDIndexTimeScale(int SkillID, int SkillCDIndex, float Scale, int ScaleType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillCDIndexTimeScale");
 
@@ -1283,7 +1283,7 @@ void UUTSkillManagerComponent::SetSkillCDIndexTimeScale(int SkillID, int SkillCD
 
 bool UUTSkillManagerComponent::SetSkillActive(int SkillID, bool bActive, bool bForceSet, int ButtonSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetSkillActive");
 
@@ -1312,7 +1312,7 @@ bool UUTSkillManagerComponent::SetSkillActive(int SkillID, bool bActive, bool bF
 
 void UUTSkillManagerComponent::SetAutoSkillID(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetAutoSkillID");
 
@@ -1336,7 +1336,7 @@ void UUTSkillManagerComponent::SetAutoSkillID(int InSkillID)
 
 void UUTSkillManagerComponent::SetAllSkillCDTimeScale(float Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.SetAllSkillCDTimeScale");
 
@@ -1356,15 +1356,15 @@ void UUTSkillManagerComponent::SetAllSkillCDTimeScale(float Scale)
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 // uint64_t                       InstID                         (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<unsigned char>          Content                        (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 // TArray<unsigned char>          TssData                        (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 // uint64_t                       PackageIndex                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::ServerTriggerEvent_WithParamsAndTssData(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, TArray<unsigned char> TssData, uint64_t PackageIndex)
+void UUTSkillManagerComponent::ServerTriggerEvent_WithParamsAndTssData(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, TArray<unsigned char> TssData, uint64_t PackageIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerTriggerEvent_WithParamsAndTssData");
 
@@ -1390,14 +1390,14 @@ void UUTSkillManagerComponent::ServerTriggerEvent_WithParamsAndTssData(int Skill
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 // uint64_t                       InstID                         (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<unsigned char>          Content                        (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 // uint64_t                       PackageIndex                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::ServerTriggerEvent_WithParams(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, uint64_t PackageIndex)
+void UUTSkillManagerComponent::ServerTriggerEvent_WithParams(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> Content, uint64_t PackageIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerTriggerEvent_WithParams");
 
@@ -1422,14 +1422,14 @@ void UUTSkillManagerComponent::ServerTriggerEvent_WithParams(int SkillID, TEnumA
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 // uint64_t                       InstID                         (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<unsigned char>          TssData                        (ConstParm, Parm, ZeroConstructor, ReferenceParm)
 // uint64_t                       PackageIndex                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::ServerTriggerEvent_WithIDAndTssData(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> TssData, uint64_t PackageIndex)
+void UUTSkillManagerComponent::ServerTriggerEvent_WithIDAndTssData(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, TArray<unsigned char> TssData, uint64_t PackageIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerTriggerEvent_WithIDAndTssData");
 
@@ -1454,13 +1454,13 @@ void UUTSkillManagerComponent::ServerTriggerEvent_WithIDAndTssData(int SkillID, 
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 // uint64_t                       InstID                         (Parm, ZeroConstructor, IsPlainOldData)
 // uint64_t                       PackageIndex                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::ServerTriggerEvent_WithID(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType, uint64_t InstID, uint64_t PackageIndex)
+void UUTSkillManagerComponent::ServerTriggerEvent_WithID(int SkillID, TEnumAsByte<EUTSkillEventType> EventType, uint64_t InstID, uint64_t PackageIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerTriggerEvent_WithID");
 
@@ -1484,11 +1484,11 @@ void UUTSkillManagerComponent::ServerTriggerEvent_WithID(int SkillID, TEnumAsByt
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::ServerTriggerEvent(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType)
+void UUTSkillManagerComponent::ServerTriggerEvent(int SkillID, TEnumAsByte<EUTSkillEventType> EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerTriggerEvent");
 
@@ -1514,7 +1514,7 @@ void UUTSkillManagerComponent::ServerTriggerEvent(int SkillID, TEnumAsByte<enum 
 
 void UUTSkillManagerComponent::ServerStopSkill(int SkillID, EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerStopSkill");
 
@@ -1539,7 +1539,7 @@ void UUTSkillManagerComponent::ServerStopSkill(int SkillID, EUTSkillStopReason S
 
 void UUTSkillManagerComponent::ServerStopAllSkill(EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerStopAllSkill");
 
@@ -1565,7 +1565,7 @@ void UUTSkillManagerComponent::ServerStopAllSkill(EUTSkillStopReason StopReason)
 
 bool UUTSkillManagerComponent::ServerStartSkill(int SkillID, bool bAutoCast)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerStartSkill");
 
@@ -1592,7 +1592,7 @@ bool UUTSkillManagerComponent::ServerStartSkill(int SkillID, bool bAutoCast)
 
 void UUTSkillManagerComponent::ServerNotifyRandomSeed(int Seed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ServerNotifyRandomSeed");
 
@@ -1614,7 +1614,7 @@ void UUTSkillManagerComponent::ServerNotifyRandomSeed(int Seed)
 
 void UUTSkillManagerComponent::ResetTeammateSkillCDData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ResetTeammateSkillCDData");
 
@@ -1638,7 +1638,7 @@ void UUTSkillManagerComponent::ResetTeammateSkillCDData()
 
 void UUTSkillManagerComponent::ResetSkillCoolDown(int SkillID, int CDIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ResetSkillCoolDown");
 
@@ -1661,7 +1661,7 @@ void UUTSkillManagerComponent::ResetSkillCoolDown(int SkillID, int CDIndex)
 
 void UUTSkillManagerComponent::ResetAllSkillCoolDown()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ResetAllSkillCoolDown");
 
@@ -1685,7 +1685,7 @@ void UUTSkillManagerComponent::ResetAllSkillCoolDown()
 
 void UUTSkillManagerComponent::RequestSkillStates(bool RepSkillCD, bool RepSkillActiveState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RequestSkillStates");
 
@@ -1708,7 +1708,7 @@ void UUTSkillManagerComponent::RequestSkillStates(bool RepSkillCD, bool RepSkill
 
 void UUTSkillManagerComponent::RepSkillHitInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RepSkillHitInfo");
 
@@ -1729,7 +1729,7 @@ void UUTSkillManagerComponent::RepSkillHitInfo()
 
 void UUTSkillManagerComponent::RepLastCastTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RepLastCastTime");
 
@@ -1753,7 +1753,7 @@ void UUTSkillManagerComponent::RepLastCastTime()
 
 void UUTSkillManagerComponent::ReplaceSkill(int OldSkillID, int NewSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ReplaceSkill");
 
@@ -1778,7 +1778,7 @@ void UUTSkillManagerComponent::ReplaceSkill(int OldSkillID, int NewSkillID)
 
 void UUTSkillManagerComponent::RemoveReplacedSkill(int OldSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RemoveReplacedSkill");
 
@@ -1800,7 +1800,7 @@ void UUTSkillManagerComponent::RemoveReplacedSkill(int OldSkillID)
 
 void UUTSkillManagerComponent::RemoveAllSkillUIWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RemoveAllSkillUIWidget");
 
@@ -1824,7 +1824,7 @@ void UUTSkillManagerComponent::RemoveAllSkillUIWidget()
 
 void UUTSkillManagerComponent::RegisterActorBlackBorad(class AActor* InActor, class UUAEBlackboard* RegisterBlackboard)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RegisterActorBlackBorad");
 
@@ -1847,7 +1847,7 @@ void UUTSkillManagerComponent::RegisterActorBlackBorad(class AActor* InActor, cl
 
 void UUTSkillManagerComponent::RefreshSkillRepData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RefreshSkillRepData");
 
@@ -1868,13 +1868,13 @@ void UUTSkillManagerComponent::RefreshSkillRepData()
 // Parameters:
 // class AActor*                  InActor                        (Parm, ZeroConstructor, IsPlainOldData)
 // int                            InSkillID                      (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ENetRole>     InRole                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ENetRole>          InRole                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 InNetMode                      (Parm, ZeroConstructor)
 // struct FString                 InFuncName                     (Parm, ZeroConstructor)
 
-void UUTSkillManagerComponent::RecordSkillException(class AActor* InActor, int InSkillID, TEnumAsByte<enum ENetRole> InRole, const struct FString& InNetMode, const struct FString& InFuncName)
+void UUTSkillManagerComponent::RecordSkillException(class AActor* InActor, int InSkillID, TEnumAsByte<ENetRole> InRole, const struct FString& InNetMode, const struct FString& InFuncName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RecordSkillException");
 
@@ -1904,7 +1904,7 @@ void UUTSkillManagerComponent::RecordSkillException(class AActor* InActor, int I
 
 int UUTSkillManagerComponent::RandRangeSyn(int StartIndex, int EndIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.RandRangeSyn");
 
@@ -1932,7 +1932,7 @@ int UUTSkillManagerComponent::RandRangeSyn(int StartIndex, int EndIndex)
 
 class AUTSkill* UUTSkillManagerComponent::QuerySkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.QuerySkill");
 
@@ -1959,7 +1959,7 @@ class AUTSkill* UUTSkillManagerComponent::QuerySkill(int SkillID)
 
 class AUTSkill* UUTSkillManagerComponent::QueryOrNewSkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.QueryOrNewSkill");
 
@@ -1985,7 +1985,7 @@ class AUTSkill* UUTSkillManagerComponent::QueryOrNewSkill(int SkillID)
 
 void UUTSkillManagerComponent::PreTriggerSkillEvent(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.PreTriggerSkillEvent");
 
@@ -2009,7 +2009,7 @@ void UUTSkillManagerComponent::PreTriggerSkillEvent(int InSkillID)
 
 void UUTSkillManagerComponent::PostTriggerSkillEvent(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.PostTriggerSkillEvent");
 
@@ -2033,7 +2033,7 @@ void UUTSkillManagerComponent::PostTriggerSkillEvent(int InSkillID)
 
 void UUTSkillManagerComponent::PlayHurtSkillEffect(const struct FUTSkillHitInfo& TheSkillHitInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.PlayHurtSkillEffect");
 
@@ -2058,7 +2058,7 @@ void UUTSkillManagerComponent::PlayHurtSkillEffect(const struct FUTSkillHitInfo&
 
 void UUTSkillManagerComponent::OnStopSkill(class AUTSkill* Skill, EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnStopSkill");
 
@@ -2081,7 +2081,7 @@ void UUTSkillManagerComponent::OnStopSkill(class AUTSkill* Skill, EUTSkillStopRe
 
 void UUTSkillManagerComponent::OnRespawned()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRespawned");
 
@@ -2102,7 +2102,7 @@ void UUTSkillManagerComponent::OnRespawned()
 
 void UUTSkillManagerComponent::OnRep_SkillHitInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_SkillHitInfo");
 
@@ -2123,7 +2123,7 @@ void UUTSkillManagerComponent::OnRep_SkillHitInfo()
 
 void UUTSkillManagerComponent::OnRep_SkillCDDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_SkillCDDatas");
 
@@ -2144,7 +2144,7 @@ void UUTSkillManagerComponent::OnRep_SkillCDDatas()
 
 void UUTSkillManagerComponent::OnRep_SkillAttrRepData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_SkillAttrRepData");
 
@@ -2165,7 +2165,7 @@ void UUTSkillManagerComponent::OnRep_SkillAttrRepData()
 
 void UUTSkillManagerComponent::OnRep_SkillActiveState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_SkillActiveState");
 
@@ -2186,7 +2186,7 @@ void UUTSkillManagerComponent::OnRep_SkillActiveState()
 
 void UUTSkillManagerComponent::OnRep_ReplaceSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_ReplaceSkill");
 
@@ -2207,7 +2207,7 @@ void UUTSkillManagerComponent::OnRep_ReplaceSkill()
 
 void UUTSkillManagerComponent::OnRep_NewSkillSynData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_NewSkillSynData");
 
@@ -2228,7 +2228,7 @@ void UUTSkillManagerComponent::OnRep_NewSkillSynData()
 
 void UUTSkillManagerComponent::OnRep_NewSkillSinglePhaseData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_NewSkillSinglePhaseData");
 
@@ -2249,7 +2249,7 @@ void UUTSkillManagerComponent::OnRep_NewSkillSinglePhaseData()
 
 void UUTSkillManagerComponent::OnRep_NetClientSimulateInstID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_NetClientSimulateInstID");
 
@@ -2270,7 +2270,7 @@ void UUTSkillManagerComponent::OnRep_NetClientSimulateInstID()
 
 void UUTSkillManagerComponent::OnRep_NetAutoSkillID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_NetAutoSkillID");
 
@@ -2291,7 +2291,7 @@ void UUTSkillManagerComponent::OnRep_NetAutoSkillID()
 
 void UUTSkillManagerComponent::OnRep_EnableSkillEncrypt()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_EnableSkillEncrypt");
 
@@ -2312,7 +2312,7 @@ void UUTSkillManagerComponent::OnRep_EnableSkillEncrypt()
 
 void UUTSkillManagerComponent::OnRep_DynamicRepData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRep_DynamicRepData");
 
@@ -2333,7 +2333,7 @@ void UUTSkillManagerComponent::OnRep_DynamicRepData()
 
 void UUTSkillManagerComponent::OnRecycled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnRecycled");
 
@@ -2357,7 +2357,7 @@ void UUTSkillManagerComponent::OnRecycled()
 
 void UUTSkillManagerComponent::OnInterruptSkill(class AUTSkill* Skill, EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.OnInterruptSkill");
 
@@ -2382,7 +2382,7 @@ void UUTSkillManagerComponent::OnInterruptSkill(class AUTSkill* Skill, EUTSkillS
 
 void UUTSkillManagerComponent::NewUAEBlackboard(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.NewUAEBlackboard");
 
@@ -2407,7 +2407,7 @@ void UUTSkillManagerComponent::NewUAEBlackboard(int SkillID)
 
 bool UUTSkillManagerComponent::NeedSimulateStoppedNewSkill(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.NeedSimulateStoppedNewSkill");
 
@@ -2434,7 +2434,7 @@ bool UUTSkillManagerComponent::NeedSimulateStoppedNewSkill(int InSkillID)
 
 void UUTSkillManagerComponent::LocalTriggerNewSkillFail(class AUTSkill* InNewSkill, uint64_t InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.LocalTriggerNewSkillFail");
 
@@ -2460,7 +2460,7 @@ void UUTSkillManagerComponent::LocalTriggerNewSkillFail(class AUTSkill* InNewSki
 
 void UUTSkillManagerComponent::LocalStopSkillAllWithExcludeArray(TArray<int> InExcludeArry, EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.LocalStopSkillAllWithExcludeArray");
 
@@ -2486,7 +2486,7 @@ void UUTSkillManagerComponent::LocalStopSkillAllWithExcludeArray(TArray<int> InE
 
 bool UUTSkillManagerComponent::IsSkillSelect(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsSkillSelect");
 
@@ -2513,7 +2513,7 @@ bool UUTSkillManagerComponent::IsSkillSelect(int SkillID)
 
 bool UUTSkillManagerComponent::IsSkillNeedPackageVerify(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsSkillNeedPackageVerify");
 
@@ -2540,7 +2540,7 @@ bool UUTSkillManagerComponent::IsSkillNeedPackageVerify(int SkillID)
 
 bool UUTSkillManagerComponent::IsSkillInit(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsSkillInit");
 
@@ -2567,7 +2567,7 @@ bool UUTSkillManagerComponent::IsSkillInit(int InSkillID)
 
 bool UUTSkillManagerComponent::IsSkillIDDisable(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsSkillIDDisable");
 
@@ -2593,7 +2593,7 @@ bool UUTSkillManagerComponent::IsSkillIDDisable(int InSkillID)
 
 bool UUTSkillManagerComponent::IsSkillCanUse()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsSkillCanUse");
 
@@ -2619,7 +2619,7 @@ bool UUTSkillManagerComponent::IsSkillCanUse()
 
 bool UUTSkillManagerComponent::IsSkillActived(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsSkillActived");
 
@@ -2646,7 +2646,7 @@ bool UUTSkillManagerComponent::IsSkillActived(int SkillID)
 
 bool UUTSkillManagerComponent::IsReadyToCastSkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsReadyToCastSkill");
 
@@ -2673,7 +2673,7 @@ bool UUTSkillManagerComponent::IsReadyToCastSkill(int SkillID)
 
 bool UUTSkillManagerComponent::IsPendingCastSkillID(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsPendingCastSkillID");
 
@@ -2699,7 +2699,7 @@ bool UUTSkillManagerComponent::IsPendingCastSkillID(int InSkillID)
 
 bool UUTSkillManagerComponent::IsPendingCastSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsPendingCastSkill");
 
@@ -2724,7 +2724,7 @@ bool UUTSkillManagerComponent::IsPendingCastSkill()
 
 bool UUTSkillManagerComponent::IsEnableSkillCoolDown()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsEnableSkillCoolDown");
 
@@ -2750,7 +2750,7 @@ bool UUTSkillManagerComponent::IsEnableSkillCoolDown()
 
 bool UUTSkillManagerComponent::IsCurrentUseSkillID(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsCurrentUseSkillID");
 
@@ -2777,7 +2777,7 @@ bool UUTSkillManagerComponent::IsCurrentUseSkillID(int InSkillID)
 
 bool UUTSkillManagerComponent::IsCastingSkillTag(int InSkillTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsCastingSkillTag");
 
@@ -2804,7 +2804,7 @@ bool UUTSkillManagerComponent::IsCastingSkillTag(int InSkillTag)
 
 bool UUTSkillManagerComponent::IsCastingSkillID(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsCastingSkillID");
 
@@ -2830,7 +2830,7 @@ bool UUTSkillManagerComponent::IsCastingSkillID(int InSkillID)
 
 bool UUTSkillManagerComponent::IsCastingSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.IsCastingSkill");
 
@@ -2852,11 +2852,11 @@ bool UUTSkillManagerComponent::IsCastingSkill()
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::HandleTriggerParamsEventFail(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType)
+void UUTSkillManagerComponent::HandleTriggerParamsEventFail(int SkillID, TEnumAsByte<EUTSkillEventType> EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.HandleTriggerParamsEventFail");
 
@@ -2877,12 +2877,12 @@ void UUTSkillManagerComponent::HandleTriggerParamsEventFail(int SkillID, TEnumAs
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // int                            SkillID                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> EventType                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UUTSkillManagerComponent::HandleTriggerParamsEvent(int SkillID, TEnumAsByte<enum EUTSkillEventType> EventType)
+bool UUTSkillManagerComponent::HandleTriggerParamsEvent(int SkillID, TEnumAsByte<EUTSkillEventType> EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.HandleTriggerParamsEvent");
 
@@ -2910,7 +2910,7 @@ bool UUTSkillManagerComponent::HandleTriggerParamsEvent(int SkillID, TEnumAsByte
 
 void UUTSkillManagerComponent::HandleSkillStop(int SkillID, class AUTSkill* InSkill, EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.HandleSkillStop");
 
@@ -2937,7 +2937,7 @@ void UUTSkillManagerComponent::HandleSkillStop(int SkillID, class AUTSkill* InSk
 
 void UUTSkillManagerComponent::HandleSkillStart(int SkillID, class AUTSkill* InSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.HandleSkillStart");
 
@@ -2964,7 +2964,7 @@ void UUTSkillManagerComponent::HandleSkillStart(int SkillID, class AUTSkill* InS
 
 bool UUTSkillManagerComponent::HandleGMDirectTriggerSkillEvent(int SkillID, int SkillPlayRet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.HandleGMDirectTriggerSkillEvent");
 
@@ -2991,7 +2991,7 @@ bool UUTSkillManagerComponent::HandleGMDirectTriggerSkillEvent(int SkillID, int 
 
 class UUAEBlackboard* UUTSkillManagerComponent::GetUAEBlackboardBySkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetUAEBlackboardBySkillID");
 
@@ -3018,7 +3018,7 @@ class UUAEBlackboard* UUTSkillManagerComponent::GetUAEBlackboardBySkillID(int Sk
 
 class UUAEBlackboard* UUTSkillManagerComponent::GetUAEBlackboard(class AUTSkill* InSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetUAEBlackboard");
 
@@ -3045,7 +3045,7 @@ class UUAEBlackboard* UUTSkillManagerComponent::GetUAEBlackboard(class AUTSkill*
 
 class UUTSkillWidget* UUTSkillManagerComponent::GetSkillWidget(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillWidget");
 
@@ -3073,7 +3073,7 @@ class UUTSkillWidget* UUTSkillManagerComponent::GetSkillWidget(int SkillID)
 
 TArray<struct FString> UUTSkillManagerComponent::GetSkillSynDataString(const struct FString& PrefixText, bool bWithLastData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillSynDataString");
 
@@ -3101,7 +3101,7 @@ TArray<struct FString> UUTSkillManagerComponent::GetSkillSynDataString(const str
 
 int UUTSkillManagerComponent::GetSkillSlotBySkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillSlotBySkillID");
 
@@ -3128,7 +3128,7 @@ int UUTSkillManagerComponent::GetSkillSlotBySkillID(int SkillID)
 
 int UUTSkillManagerComponent::GetSkillSlotBySkill(class AUTSkill* Skill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillSlotBySkill");
 
@@ -3155,7 +3155,7 @@ int UUTSkillManagerComponent::GetSkillSlotBySkill(class AUTSkill* Skill)
 
 int UUTSkillManagerComponent::GetSkillSkinID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillSkinID");
 
@@ -3183,7 +3183,7 @@ int UUTSkillManagerComponent::GetSkillSkinID(int SkillID)
 
 TArray<struct FString> UUTSkillManagerComponent::GetSkillSinglePhaseDataString(const struct FString& PrefixText, bool bWithLastData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillSinglePhaseDataString");
 
@@ -3211,7 +3211,7 @@ TArray<struct FString> UUTSkillManagerComponent::GetSkillSinglePhaseDataString(c
 
 TArray<class AUTSkill*> UUTSkillManagerComponent::GetSkillsByGroup(const struct FName& SkillGroup)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillsByGroup");
 
@@ -3238,7 +3238,7 @@ TArray<class AUTSkill*> UUTSkillManagerComponent::GetSkillsByGroup(const struct 
 
 int UUTSkillManagerComponent::GetSkillLevel(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillLevel");
 
@@ -3265,7 +3265,7 @@ int UUTSkillManagerComponent::GetSkillLevel(int SkillID)
 
 int UUTSkillManagerComponent::GetSkillIDByClass(class UClass* SkillClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillIDByClass");
 
@@ -3291,7 +3291,7 @@ int UUTSkillManagerComponent::GetSkillIDByClass(class UClass* SkillClass)
 
 TArray<struct FString> UUTSkillManagerComponent::GetSkillExecString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillExecString");
 
@@ -3317,7 +3317,7 @@ TArray<struct FString> UUTSkillManagerComponent::GetSkillExecString()
 
 int UUTSkillManagerComponent::GetSkillCurPhase(class AUTSkill* Skill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillCurPhase");
 
@@ -3344,7 +3344,7 @@ int UUTSkillManagerComponent::GetSkillCurPhase(class AUTSkill* Skill)
 
 class AUTSkill* UUTSkillManagerComponent::GetSkillByName(const struct FString& SkillName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillByName");
 
@@ -3371,7 +3371,7 @@ class AUTSkill* UUTSkillManagerComponent::GetSkillByName(const struct FString& S
 
 class AUTSkill* UUTSkillManagerComponent::GetSkillByClassName(const struct FString& SkillClassName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillByClassName");
 
@@ -3398,7 +3398,7 @@ class AUTSkill* UUTSkillManagerComponent::GetSkillByClassName(const struct FStri
 
 int UUTSkillManagerComponent::GetSkillButtonSlot(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillButtonSlot");
 
@@ -3425,7 +3425,7 @@ int UUTSkillManagerComponent::GetSkillButtonSlot(int SkillID)
 
 struct FUTSkillRuntimeData UUTSkillManagerComponent::GetSkillBaseData(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkillBaseData");
 
@@ -3452,7 +3452,7 @@ struct FUTSkillRuntimeData UUTSkillManagerComponent::GetSkillBaseData(int SkillI
 
 class AUTSkill* UUTSkillManagerComponent::GetSkill(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetSkill");
 
@@ -3479,7 +3479,7 @@ class AUTSkill* UUTSkillManagerComponent::GetSkill(int SkillID)
 
 int UUTSkillManagerComponent::GetReplacedSkill(int OldSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetReplacedSkill");
 
@@ -3501,11 +3501,11 @@ int UUTSkillManagerComponent::GetReplacedSkill(int OldSkillID)
 // Function Skill.UTSkillManagerComponent.GetRealOwnerRoleSafety
 // (Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ENetRole>     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<ENetRole>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum ENetRole> UUTSkillManagerComponent::GetRealOwnerRoleSafety()
+TEnumAsByte<ENetRole> UUTSkillManagerComponent::GetRealOwnerRoleSafety()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetRealOwnerRoleSafety");
 
@@ -3528,11 +3528,11 @@ TEnumAsByte<enum ENetRole> UUTSkillManagerComponent::GetRealOwnerRoleSafety()
 // Parameters:
 // class AUTSkill*                CurSkill                       (Parm, ZeroConstructor, IsPlainOldData)
 // class AUTSkill*                NewSkill                       (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ESkillMutexType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<ESkillMutexType>   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum ESkillMutexType> UUTSkillManagerComponent::GetMutexRelation(class AUTSkill* CurSkill, class AUTSkill* NewSkill)
+TEnumAsByte<ESkillMutexType> UUTSkillManagerComponent::GetMutexRelation(class AUTSkill* CurSkill, class AUTSkill* NewSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetMutexRelation");
 
@@ -3560,7 +3560,7 @@ TEnumAsByte<enum ESkillMutexType> UUTSkillManagerComponent::GetMutexRelation(cla
 
 float UUTSkillManagerComponent::GetLastCastTime(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetLastCastTime");
 
@@ -3587,7 +3587,7 @@ float UUTSkillManagerComponent::GetLastCastTime(int SkillID)
 
 float UUTSkillManagerComponent::GetLastCastFinishTime(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetLastCastFinishTime");
 
@@ -3613,7 +3613,7 @@ float UUTSkillManagerComponent::GetLastCastFinishTime(int SkillID)
 
 TArray<class AUTSkill*> UUTSkillManagerComponent::GetCurSkills()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurSkills");
 
@@ -3638,7 +3638,7 @@ TArray<class AUTSkill*> UUTSkillManagerComponent::GetCurSkills()
 
 class UUTSkillPhase* UUTSkillManagerComponent::GetCurSkillPhase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurSkillPhase");
 
@@ -3664,7 +3664,7 @@ class UUTSkillPhase* UUTSkillManagerComponent::GetCurSkillPhase()
 
 int UUTSkillManagerComponent::GetCurSkillID(class AUTSkill* Skill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurSkillID");
 
@@ -3690,7 +3690,7 @@ int UUTSkillManagerComponent::GetCurSkillID(class AUTSkill* Skill)
 
 class AUTSkill* UUTSkillManagerComponent::GetCurSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurSkill");
 
@@ -3715,7 +3715,7 @@ class AUTSkill* UUTSkillManagerComponent::GetCurSkill()
 
 TArray<int> UUTSkillManagerComponent::GetCurMonopolizeSkills()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurMonopolizeSkills");
 
@@ -3740,7 +3740,7 @@ TArray<int> UUTSkillManagerComponent::GetCurMonopolizeSkills()
 
 class UUTSkillPhase* UUTSkillManagerComponent::GetCurMonopolizedSkillPhase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurMonopolizedSkillPhase");
 
@@ -3765,7 +3765,7 @@ class UUTSkillPhase* UUTSkillManagerComponent::GetCurMonopolizedSkillPhase()
 
 class AUTSkill* UUTSkillManagerComponent::GetCurMonopolizedSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurMonopolizedSkill");
 
@@ -3790,7 +3790,7 @@ class AUTSkill* UUTSkillManagerComponent::GetCurMonopolizedSkill()
 
 TArray<int> UUTSkillManagerComponent::GetCurAllSkillIDs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCurAllSkillIDs");
 
@@ -3817,7 +3817,7 @@ TArray<int> UUTSkillManagerComponent::GetCurAllSkillIDs()
 
 float UUTSkillManagerComponent::GetCoolDownTime(int SkillID, int CoolDownIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCoolDownTime");
 
@@ -3844,7 +3844,7 @@ float UUTSkillManagerComponent::GetCoolDownTime(int SkillID, int CoolDownIndex)
 
 TArray<int> UUTSkillManagerComponent::GetCastingSkillIDs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetCastingSkillIDs");
 
@@ -3870,7 +3870,7 @@ TArray<int> UUTSkillManagerComponent::GetCastingSkillIDs()
 
 int UUTSkillManagerComponent::GetButtonSlotSkillID(int ButtonSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.GetButtonSlotSkillID");
 
@@ -3896,7 +3896,7 @@ int UUTSkillManagerComponent::GetButtonSlotSkillID(int ButtonSlot)
 
 void UUTSkillManagerComponent::DynamicRemoveSkill(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.DynamicRemoveSkill");
 
@@ -3920,7 +3920,7 @@ void UUTSkillManagerComponent::DynamicRemoveSkill(int InSkillID)
 
 void UUTSkillManagerComponent::DynamicAddSkill(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.DynamicAddSkill");
 
@@ -3945,7 +3945,7 @@ void UUTSkillManagerComponent::DynamicAddSkill(int InSkillID)
 
 void UUTSkillManagerComponent::ClientTriggerEventSuccess_WithID(int SkillID, uint64_t PackageIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClientTriggerEventSuccess_WithID");
 
@@ -3972,7 +3972,7 @@ void UUTSkillManagerComponent::ClientTriggerEventSuccess_WithID(int SkillID, uin
 
 void UUTSkillManagerComponent::ClientTriggerEventFailed_WithID(int SkillID, ETriggerSkillFailed FailedReason, uint64_t PackageIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClientTriggerEventFailed_WithID");
 
@@ -3999,7 +3999,7 @@ void UUTSkillManagerComponent::ClientTriggerEventFailed_WithID(int SkillID, ETri
 
 void UUTSkillManagerComponent::ClientStopPreActionSkill(int SkillID, uint64_t InstID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClientStopPreActionSkill");
 
@@ -4022,16 +4022,18 @@ void UUTSkillManagerComponent::ClientStopPreActionSkill(int SkillID, uint64_t In
 // Parameters:
 // uint64_t                       InstID                         (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bSinglePhaseRep                (Parm, ZeroConstructor, IsPlainOldData)
+// EUTSkillStopReason             StopReason                     (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUTSkillManagerComponent::ClientStopOneSkill(uint64_t InstID, bool bSinglePhaseRep)
+void UUTSkillManagerComponent::ClientStopOneSkill(uint64_t InstID, bool bSinglePhaseRep, EUTSkillStopReason StopReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClientStopOneSkill");
 
 	UUTSkillManagerComponent_ClientStopOneSkill_Params params;
 	params.InstID = InstID;
 	params.bSinglePhaseRep = bSinglePhaseRep;
+	params.StopReason = StopReason;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4051,7 +4053,7 @@ void UUTSkillManagerComponent::ClientStopOneSkill(uint64_t InstID, bool bSingleP
 
 void UUTSkillManagerComponent::ClientStartSkill(int SkillID, bool bAutoCast)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClientStartSkill");
 
@@ -4079,7 +4081,7 @@ void UUTSkillManagerComponent::ClientStartSkill(int SkillID, bool bAutoCast)
 
 void UUTSkillManagerComponent::ClientSimulateOneSkill(uint64_t InstID, int SkillID, int PhaseIndex, bool bSinglePhaseRep)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClientSimulateOneSkill");
 
@@ -4108,7 +4110,7 @@ void UUTSkillManagerComponent::ClientSimulateOneSkill(uint64_t InstID, int Skill
 
 void UUTSkillManagerComponent::ClearSkill(bool bStopAllSkill, bool bDeactivateAllSkill, bool bResetSkillCD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClearSkill");
 
@@ -4132,7 +4134,7 @@ void UUTSkillManagerComponent::ClearSkill(bool bStopAllSkill, bool bDeactivateAl
 
 void UUTSkillManagerComponent::ClearRepParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClearRepParams");
 
@@ -4153,7 +4155,7 @@ void UUTSkillManagerComponent::ClearRepParams()
 
 void UUTSkillManagerComponent::ClearInitParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.ClearInitParams");
 
@@ -4178,7 +4180,7 @@ void UUTSkillManagerComponent::ClearInitParams()
 
 bool UUTSkillManagerComponent::CheckAIIsCDOKBySkillID(int SkillID, int CoolDownIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.CheckAIIsCDOKBySkillID");
 
@@ -4206,7 +4208,7 @@ bool UUTSkillManagerComponent::CheckAIIsCDOKBySkillID(int SkillID, int CoolDownI
 
 void UUTSkillManagerComponent::CacheSkillWidget(int SkillID, class UUTSkillWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.CacheSkillWidget");
 
@@ -4233,7 +4235,7 @@ void UUTSkillManagerComponent::CacheSkillWidget(int SkillID, class UUTSkillWidge
 
 void UUTSkillManagerComponent::AddOrRemoveIngoreSkillIDWhenStopAllSkills(EUTSkillStopReason InStopReason, int InSkillID, bool bAdd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillManagerComponent.AddOrRemoveIngoreSkillIDWhenStopAllSkills");
 
@@ -4260,7 +4262,7 @@ void UUTSkillManagerComponent::AddOrRemoveIngoreSkillIDWhenStopAllSkills(EUTSkil
 
 bool UUTSkillBaseWidget::IsSetValueAsNewDataWhenNotExist(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBaseWidget.IsSetValueAsNewDataWhenNotExist");
 
@@ -4286,7 +4288,7 @@ bool UUTSkillBaseWidget::IsSetValueAsNewDataWhenNotExist(const struct FName& Key
 
 class UUAEBlackboard* UUTSkillBaseWidget::GetUAEBlackboard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBaseWidget.GetUAEBlackboard");
 
@@ -4311,11 +4313,36 @@ class UUAEBlackboard* UUTSkillBaseWidget::GetUAEBlackboard()
 
 class UUTSkillManagerComponent* UUTSkillBaseWidget::GetOwnerSkillManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBaseWidget.GetOwnerSkillManager");
 
 	UUTSkillBaseWidget_GetOwnerSkillManager_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Skill.UTSkillBaseWidget.GetOwnerSkillID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UUTSkillBaseWidget::GetOwnerSkillID()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBaseWidget.GetOwnerSkillID");
+
+	UUTSkillBaseWidget_GetOwnerSkillID_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4336,7 +4363,7 @@ class UUTSkillManagerComponent* UUTSkillBaseWidget::GetOwnerSkillManager()
 
 class AActor* UUTSkillBaseWidget::GetOwnerPawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBaseWidget.GetOwnerPawn");
 
@@ -4362,7 +4389,7 @@ class AActor* UUTSkillBaseWidget::GetOwnerPawn()
 
 void UUTSkillEffect::UpdateAction(class UUTSkillManagerComponent* SkillManagerComponent, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.UpdateAction");
 
@@ -4387,7 +4414,7 @@ void UUTSkillEffect::UpdateAction(class UUTSkillManagerComponent* SkillManagerCo
 
 void UUTSkillEffect::UndoAction(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.UndoAction");
 
@@ -4412,7 +4439,7 @@ void UUTSkillEffect::UndoAction(class UUTSkillManagerComponent* SkillManagerComp
 
 void UUTSkillEffect::PreCloseSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.PreCloseSkill");
 
@@ -4438,7 +4465,7 @@ void UUTSkillEffect::PreCloseSkill(class UUTSkillManagerComponent* SkillManagerC
 
 void UUTSkillEffect::PostInitSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.PostInitSkill");
 
@@ -4464,7 +4491,7 @@ void UUTSkillEffect::PostInitSkill(class UUTSkillManagerComponent* SkillManagerC
 
 void UUTSkillEffect::PostActiveSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.PostActiveSkill");
 
@@ -4487,7 +4514,7 @@ void UUTSkillEffect::PostActiveSkill(class UUTSkillManagerComponent* SkillManage
 
 void UUTSkillEffect::OnAsyncLoadSoftPathDone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.OnAsyncLoadSoftPathDone");
 
@@ -4510,7 +4537,7 @@ void UUTSkillEffect::OnAsyncLoadSoftPathDone()
 
 class AUTSkill* UUTSkillEffect::GetOwnerSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.GetOwnerSkill");
 
@@ -4536,7 +4563,7 @@ class AUTSkill* UUTSkillEffect::GetOwnerSkill()
 
 void UUTSkillEffect::DoHurtAppearance(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.DoHurtAppearance");
 
@@ -4563,7 +4590,7 @@ void UUTSkillEffect::DoHurtAppearance(class UUTSkillManagerComponent* SkillManag
 
 bool UUTSkillEffect::DoAction(class UUTSkillManagerComponent* SkillManagerComponent, bool bCheckSkillStopped)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillEffect.DoAction");
 
@@ -4590,7 +4617,7 @@ bool UUTSkillEffect::DoAction(class UUTSkillManagerComponent* SkillManagerCompon
 
 void UUTSkillAction::UpdateAction_Internal(float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.UpdateAction_Internal");
 
@@ -4615,7 +4642,7 @@ void UUTSkillAction::UpdateAction_Internal(float DeltaSeconds)
 
 void UUTSkillAction::UpdateAction(class UUTSkillManagerComponent* SkillManagerComponent, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.UpdateAction");
 
@@ -4638,7 +4665,7 @@ void UUTSkillAction::UpdateAction(class UUTSkillManagerComponent* SkillManagerCo
 
 void UUTSkillAction::UndoAction_Internal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.UndoAction_Internal");
 
@@ -4661,7 +4688,7 @@ void UUTSkillAction::UndoAction_Internal()
 
 void UUTSkillAction::UndoAction(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.UndoAction");
 
@@ -4686,7 +4713,7 @@ void UUTSkillAction::UndoAction(class UUTSkillManagerComponent* SkillManagerComp
 
 void UUTSkillAction::TimerRealDoAction(class UUTSkillManagerComponent* SkillManagerComponent, bool bCheckSkillStopped)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.TimerRealDoAction");
 
@@ -4709,7 +4736,7 @@ void UUTSkillAction::TimerRealDoAction(class UUTSkillManagerComponent* SkillMana
 
 void UUTSkillAction::Reset_Internal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.Reset_Internal");
 
@@ -4732,7 +4759,7 @@ void UUTSkillAction::Reset_Internal()
 
 void UUTSkillAction::Reset(class UActorComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.Reset");
 
@@ -4757,7 +4784,7 @@ void UUTSkillAction::Reset(class UActorComponent* SkillManagerComponent)
 
 void UUTSkillAction::RealDoHurtAppearance_Internal(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.RealDoHurtAppearance_Internal");
 
@@ -4783,7 +4810,7 @@ void UUTSkillAction::RealDoHurtAppearance_Internal(class UUTSkillManagerComponen
 
 void UUTSkillAction::RealDoHurtAppearance(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.RealDoHurtAppearance");
 
@@ -4808,7 +4835,7 @@ void UUTSkillAction::RealDoHurtAppearance(class UUTSkillManagerComponent* SkillM
 
 bool UUTSkillAction::RealDoAction_Internal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.RealDoAction_Internal");
 
@@ -4835,7 +4862,7 @@ bool UUTSkillAction::RealDoAction_Internal()
 
 bool UUTSkillAction::RealDoAction(class UUTSkillManagerComponent* SkillManagerComponent, bool bCheckSkillStopped)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.RealDoAction");
 
@@ -4864,7 +4891,7 @@ bool UUTSkillAction::RealDoAction(class UUTSkillManagerComponent* SkillManagerCo
 
 void UUTSkillAction::OnAsyncLoadAssetDone(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* SkillAppearanceVictim, bool bSkillAppearance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.OnAsyncLoadAssetDone");
 
@@ -4890,7 +4917,7 @@ void UUTSkillAction::OnAsyncLoadAssetDone(class UUTSkillManagerComponent* SkillM
 
 bool UUTSkillAction::JudgeNeedPhaseWait()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.JudgeNeedPhaseWait");
 
@@ -4916,7 +4943,7 @@ bool UUTSkillAction::JudgeNeedPhaseWait()
 
 void UUTSkillAction::DoHurtAppearance(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.DoHurtAppearance");
 
@@ -4943,7 +4970,7 @@ void UUTSkillAction::DoHurtAppearance(class UUTSkillManagerComponent* SkillManag
 
 bool UUTSkillAction::DoAction(class UUTSkillManagerComponent* SkillManagerComponent, bool bCheckSkillStopped)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction.DoAction");
 
@@ -4971,7 +4998,7 @@ bool UUTSkillAction::DoAction(class UUTSkillManagerComponent* SkillManagerCompon
 
 void UUTSkillCondition::PreCloseSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCondition.PreCloseSkill");
 
@@ -4997,7 +5024,7 @@ void UUTSkillCondition::PreCloseSkill(class UUTSkillManagerComponent* SkillManag
 
 void UUTSkillCondition::PostInitSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCondition.PostInitSkill");
 
@@ -5023,7 +5050,7 @@ void UUTSkillCondition::PostInitSkill(class UUTSkillManagerComponent* SkillManag
 
 void UUTSkillCondition::PostActiveSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCondition.PostActiveSkill");
 
@@ -5050,7 +5077,7 @@ void UUTSkillCondition::PostActiveSkill(class UUTSkillManagerComponent* SkillMan
 
 bool UUTSkillCondition::IsTargetOK(class UActorComponent* SkillManagerComponent, class AActor* Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCondition.IsTargetOK");
 
@@ -5077,7 +5104,7 @@ bool UUTSkillCondition::IsTargetOK(class UActorComponent* SkillManagerComponent,
 
 bool UUTSkillCondition::IsOK_Internal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCondition.IsOK_Internal");
 
@@ -5103,7 +5130,7 @@ bool UUTSkillCondition::IsOK_Internal()
 
 bool UUTSkillCondition::IsOK(class UActorComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCondition.IsOK");
 
@@ -5129,11 +5156,36 @@ bool UUTSkillCondition::IsOK(class UActorComponent* SkillManagerComponent)
 
 class AUTSkill* UUTSkillCondition::GetOwnerSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCondition.GetOwnerSkill");
 
 	UUTSkillCondition_GetOwnerSkill_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Skill.UTSkillInterface.IsNeedCheckAutoSkill
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UUTSkillInterface::IsNeedCheckAutoSkill()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.IsNeedCheckAutoSkill");
+
+	UUTSkillInterface_IsNeedCheckAutoSkill_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5155,7 +5207,7 @@ class AUTSkill* UUTSkillCondition::GetOwnerSkill()
 
 bool UUTSkillInterface::HasSkillToken(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.HasSkillToken");
 
@@ -5181,7 +5233,7 @@ bool UUTSkillInterface::HasSkillToken(int SkillID)
 
 void UUTSkillInterface::HandleSkillStart(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.HandleSkillStart");
 
@@ -5206,7 +5258,7 @@ void UUTSkillInterface::HandleSkillStart(int SkillID)
 
 void UUTSkillInterface::HandleSkillEnd(int SkillID, EUTSkillStopReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.HandleSkillEnd");
 
@@ -5231,7 +5283,7 @@ void UUTSkillInterface::HandleSkillEnd(int SkillID, EUTSkillStopReason Reason)
 
 class UUTSkillManagerComponent* UUTSkillInterface::GetSkillManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.GetSkillManager");
 
@@ -5256,7 +5308,7 @@ class UUTSkillManagerComponent* UUTSkillInterface::GetSkillManager()
 
 void UUTSkillInterface::ClearSkillToken(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.ClearSkillToken");
 
@@ -5278,7 +5330,7 @@ void UUTSkillInterface::ClearSkillToken(int SkillID)
 
 void UUTSkillInterface::ClearAllSkillToken()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.ClearAllSkillToken");
 
@@ -5301,7 +5353,7 @@ void UUTSkillInterface::ClearAllSkillToken()
 
 void UUTSkillInterface::AddSkillToken(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillInterface.AddSkillToken");
 
@@ -5327,7 +5379,7 @@ void UUTSkillInterface::AddSkillToken(int SkillID)
 
 bool UUTSkillPhase::TryJumpToPhase(class UUTSkillManagerComponent* SkillManagerComponent, int PhaseId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.TryJumpToPhase");
 
@@ -5354,7 +5406,7 @@ bool UUTSkillPhase::TryJumpToPhase(class UUTSkillManagerComponent* SkillManagerC
 
 void UUTSkillPhase::StopPhase(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.StopPhase");
 
@@ -5378,7 +5430,7 @@ void UUTSkillPhase::StopPhase(class UUTSkillManagerComponent* SkillManagerCompon
 
 void UUTSkillPhase::StartPhase(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.StartPhase");
 
@@ -5402,7 +5454,7 @@ void UUTSkillPhase::StartPhase(class UUTSkillManagerComponent* SkillManagerCompo
 
 void UUTSkillPhase::RepeatPhase(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.RepeatPhase");
 
@@ -5428,7 +5480,7 @@ void UUTSkillPhase::RepeatPhase(class UUTSkillManagerComponent* SkillManagerComp
 
 bool UUTSkillPhase::PlaySkillHurtEffect(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.PlaySkillHurtEffect");
 
@@ -5457,7 +5509,7 @@ bool UUTSkillPhase::PlaySkillHurtEffect(class UUTSkillManagerComponent* SkillMan
 
 bool UUTSkillPhase::PlaySkillHurtAppearances(class UUTSkillManagerComponent* SkillManagerComponent, class AActor* Victim)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.PlaySkillHurtAppearances");
 
@@ -5484,7 +5536,7 @@ bool UUTSkillPhase::PlaySkillHurtAppearances(class UUTSkillManagerComponent* Ski
 
 void UUTSkillPhase::PickTargets(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.PickTargets");
 
@@ -5505,12 +5557,12 @@ void UUTSkillPhase::PickTargets(class UUTSkillManagerComponent* SkillManagerComp
 // (Native, Public)
 // Parameters:
 // class UUTSkillManagerComponent* SkillManagerComponent          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> TheEventType                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> TheEventType                   (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UUTSkillPhase::OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> TheEventType)
+bool UUTSkillPhase::OnEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> TheEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.OnEvent");
 
@@ -5534,12 +5586,12 @@ bool UUTSkillPhase::OnEvent(class UUTSkillManagerComponent* SkillManagerComponen
 // (Native, Public)
 // Parameters:
 // class UUTSkillManagerComponent* SkillManagerComponent          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// TEnumAsByte<enum EUTSkillEventType> TheEventType                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> TheEventType                   (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UUTSkillPhase::OnCustomEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<enum EUTSkillEventType> TheEventType)
+bool UUTSkillPhase::OnCustomEvent(class UUTSkillManagerComponent* SkillManagerComponent, TEnumAsByte<EUTSkillEventType> TheEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.OnCustomEvent");
 
@@ -5567,7 +5619,7 @@ bool UUTSkillPhase::OnCustomEvent(class UUTSkillManagerComponent* SkillManagerCo
 
 bool UUTSkillPhase::ForceStopPhase(class UUTSkillManagerComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.ForceStopPhase");
 
@@ -5593,7 +5645,7 @@ bool UUTSkillPhase::ForceStopPhase(class UUTSkillManagerComponent* SkillManagerC
 
 bool UUTSkillPhase::ClearAttachments()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPhase.ClearAttachments");
 
@@ -5619,7 +5671,7 @@ bool UUTSkillPhase::ClearAttachments()
 
 bool UUTSkillPicker::PickTargetsInner(const struct FVector& OriginPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPicker.PickTargetsInner");
 
@@ -5646,7 +5698,7 @@ bool UUTSkillPicker::PickTargetsInner(const struct FVector& OriginPoint)
 
 bool UUTSkillPicker::PickTargets(const struct FVector& OriginPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPicker.PickTargets");
 
@@ -5674,7 +5726,7 @@ bool UUTSkillPicker::PickTargets(const struct FVector& OriginPoint)
 
 bool UUTSkillPickerFilter::IsValidFilterActor(class AActor* InActor, class AActor* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPickerFilter.IsValidFilterActor");
 
@@ -5702,7 +5754,7 @@ bool UUTSkillPickerFilter::IsValidFilterActor(class AActor* InActor, class AActo
 
 void UUTSkillPickerFilter::HandleFilterArray(class AActor* Owner, TArray<struct FUTSkillPickedTarget>* inArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillPickerFilter.HandleFilterArray");
 
@@ -5729,7 +5781,7 @@ void UUTSkillPickerFilter::HandleFilterArray(class AActor* Owner, TArray<struct 
 
 void UUTSkillWidget::SetSkillManager(class UUTSkillManagerComponent* Manager)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.SetSkillManager");
 
@@ -5753,7 +5805,7 @@ void UUTSkillWidget::SetSkillManager(class UUTSkillManagerComponent* Manager)
 
 void UUTSkillWidget::SetSkillID(int InSkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.SetSkillID");
 
@@ -5775,7 +5827,7 @@ void UUTSkillWidget::SetSkillID(int InSkillID)
 
 void UUTSkillWidget::RemoveSelf()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.RemoveSelf");
 
@@ -5798,7 +5850,7 @@ void UUTSkillWidget::RemoveSelf()
 
 class UUTSkillManagerComponent* UUTSkillWidget::GetSkillManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.GetSkillManager");
 
@@ -5823,7 +5875,7 @@ class UUTSkillManagerComponent* UUTSkillWidget::GetSkillManager()
 
 int UUTSkillWidget::GetSkillID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.GetSkillID");
 
@@ -5848,7 +5900,7 @@ int UUTSkillWidget::GetSkillID()
 
 TArray<class UUTSkillCDBase*> UUTSkillWidget::GetSkillCDBases()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.GetSkillCDBases");
 
@@ -5873,7 +5925,7 @@ TArray<class UUTSkillCDBase*> UUTSkillWidget::GetSkillCDBases()
 
 class AUTSkill* UUTSkillWidget::GetSkill()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.GetSkill");
 
@@ -5898,7 +5950,7 @@ class AUTSkill* UUTSkillWidget::GetSkill()
 
 class APlayerController* UUTSkillWidget::GetLocalPlayerController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.GetLocalPlayerController");
 
@@ -5923,7 +5975,7 @@ class APlayerController* UUTSkillWidget::GetLocalPlayerController()
 
 void UUTSkillWidget::BindLua(const struct FString& luaPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillWidget.BindLua");
 
@@ -5947,7 +5999,7 @@ void UUTSkillWidget::BindLua(const struct FString& luaPath)
 
 void UPrivateNodeLuaInterface::SetPrivateUniqueKey(const struct FString& NewKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.PrivateNodeLuaInterface.SetPrivateUniqueKey");
 
@@ -5971,7 +6023,7 @@ void UPrivateNodeLuaInterface::SetPrivateUniqueKey(const struct FString& NewKey)
 
 struct FString UPrivateNodeLuaInterface::GetPrivateUniqueKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.PrivateNodeLuaInterface.GetPrivateUniqueKey");
 
@@ -5994,7 +6046,7 @@ struct FString UPrivateNodeLuaInterface::GetPrivateUniqueKey()
 
 void USharedDelegate::EventTrigger()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.SharedDelegate.EventTrigger");
 
@@ -6013,11 +6065,11 @@ void USharedDelegate::EventTrigger()
 // Function Skill.SkillTriggerData.GetSkillEventType
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EUTSkillEventType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EUTSkillEventType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EUTSkillEventType> USkillTriggerData::GetSkillEventType()
+TEnumAsByte<EUTSkillEventType> USkillTriggerData::GetSkillEventType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.SkillTriggerData.GetSkillEventType");
 
@@ -6043,7 +6095,7 @@ TEnumAsByte<enum EUTSkillEventType> USkillTriggerData::GetSkillEventType()
 
 void UUTSkillAction_LuaContainer::UpdateActionInContainer(class UActorComponent* SkillManagerComponent, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction_LuaContainer.UpdateActionInContainer");
 
@@ -6068,7 +6120,7 @@ void UUTSkillAction_LuaContainer::UpdateActionInContainer(class UActorComponent*
 
 void UUTSkillAction_LuaContainer::UndoActionInContainer(class UActorComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction_LuaContainer.UndoActionInContainer");
 
@@ -6092,7 +6144,7 @@ void UUTSkillAction_LuaContainer::UndoActionInContainer(class UActorComponent* S
 
 void UUTSkillAction_LuaContainer::ResetActionInContainer(class UActorComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction_LuaContainer.ResetActionInContainer");
 
@@ -6117,7 +6169,7 @@ void UUTSkillAction_LuaContainer::ResetActionInContainer(class UActorComponent* 
 
 bool UUTSkillAction_LuaContainer::RealDoActionInContainer(class UActorComponent* SkillManagerComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillAction_LuaContainer.RealDoActionInContainer");
 
@@ -6145,7 +6197,7 @@ bool UUTSkillAction_LuaContainer::RealDoActionInContainer(class UActorComponent*
 
 void UUTSkillBlackboardInterface::SetValueAsWeakObject(int SkillID, const struct FName& KeyName, class UObject* ObjectValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsWeakObject");
 
@@ -6173,7 +6225,7 @@ void UUTSkillBlackboardInterface::SetValueAsWeakObject(int SkillID, const struct
 
 void UUTSkillBlackboardInterface::SetValueAsVector(int SkillID, const struct FName& KeyName, const struct FVector& VectorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsVector");
 
@@ -6201,7 +6253,7 @@ void UUTSkillBlackboardInterface::SetValueAsVector(int SkillID, const struct FNa
 
 void UUTSkillBlackboardInterface::SetValueAsUInt(int SkillID, const struct FName& KeyName, uint32_t UIntValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsUInt");
 
@@ -6229,7 +6281,7 @@ void UUTSkillBlackboardInterface::SetValueAsUInt(int SkillID, const struct FName
 
 void UUTSkillBlackboardInterface::SetValueAsString(int SkillID, const struct FName& KeyName, const struct FString& StringValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsString");
 
@@ -6257,7 +6309,7 @@ void UUTSkillBlackboardInterface::SetValueAsString(int SkillID, const struct FNa
 
 void UUTSkillBlackboardInterface::SetValueAsRotator(int SkillID, const struct FName& KeyName, const struct FRotator& VectorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsRotator");
 
@@ -6285,7 +6337,7 @@ void UUTSkillBlackboardInterface::SetValueAsRotator(int SkillID, const struct FN
 
 void UUTSkillBlackboardInterface::SetValueAsObject(int SkillID, const struct FName& KeyName, class UObject* ObjectValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsObject");
 
@@ -6313,7 +6365,7 @@ void UUTSkillBlackboardInterface::SetValueAsObject(int SkillID, const struct FNa
 
 void UUTSkillBlackboardInterface::SetValueAsName(int SkillID, const struct FName& KeyName, const struct FName& NameValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsName");
 
@@ -6341,7 +6393,7 @@ void UUTSkillBlackboardInterface::SetValueAsName(int SkillID, const struct FName
 
 void UUTSkillBlackboardInterface::SetValueAsInt(int SkillID, const struct FName& KeyName, int IntValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsInt");
 
@@ -6369,7 +6421,7 @@ void UUTSkillBlackboardInterface::SetValueAsInt(int SkillID, const struct FName&
 
 void UUTSkillBlackboardInterface::SetValueAsFloat(int SkillID, const struct FName& KeyName, float FloatValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsFloat");
 
@@ -6397,7 +6449,7 @@ void UUTSkillBlackboardInterface::SetValueAsFloat(int SkillID, const struct FNam
 
 void UUTSkillBlackboardInterface::SetValueAsEnum(int SkillID, const struct FName& KeyName, unsigned char EnumValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsEnum");
 
@@ -6425,7 +6477,7 @@ void UUTSkillBlackboardInterface::SetValueAsEnum(int SkillID, const struct FName
 
 void UUTSkillBlackboardInterface::SetValueAsClass(int SkillID, const struct FName& KeyName, class UClass* ClassValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsClass");
 
@@ -6453,7 +6505,7 @@ void UUTSkillBlackboardInterface::SetValueAsClass(int SkillID, const struct FNam
 
 void UUTSkillBlackboardInterface::SetValueAsBool(int SkillID, const struct FName& KeyName, bool BoolValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.SetValueAsBool");
 
@@ -6481,7 +6533,7 @@ void UUTSkillBlackboardInterface::SetValueAsBool(int SkillID, const struct FName
 
 bool UUTSkillBlackboardInterface::IsExistWeakObject(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistWeakObject");
 
@@ -6510,7 +6562,7 @@ bool UUTSkillBlackboardInterface::IsExistWeakObject(int SkillID, const struct FN
 
 bool UUTSkillBlackboardInterface::IsExistVector(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistVector");
 
@@ -6539,7 +6591,7 @@ bool UUTSkillBlackboardInterface::IsExistVector(int SkillID, const struct FName&
 
 bool UUTSkillBlackboardInterface::IsExistUInt(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistUInt");
 
@@ -6568,7 +6620,7 @@ bool UUTSkillBlackboardInterface::IsExistUInt(int SkillID, const struct FName& K
 
 bool UUTSkillBlackboardInterface::IsExistString(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistString");
 
@@ -6597,7 +6649,7 @@ bool UUTSkillBlackboardInterface::IsExistString(int SkillID, const struct FName&
 
 bool UUTSkillBlackboardInterface::IsExistRotator(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistRotator");
 
@@ -6626,7 +6678,7 @@ bool UUTSkillBlackboardInterface::IsExistRotator(int SkillID, const struct FName
 
 bool UUTSkillBlackboardInterface::IsExistObject(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistObject");
 
@@ -6655,7 +6707,7 @@ bool UUTSkillBlackboardInterface::IsExistObject(int SkillID, const struct FName&
 
 bool UUTSkillBlackboardInterface::IsExistName(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistName");
 
@@ -6684,7 +6736,7 @@ bool UUTSkillBlackboardInterface::IsExistName(int SkillID, const struct FName& K
 
 bool UUTSkillBlackboardInterface::IsExistInt(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistInt");
 
@@ -6713,7 +6765,7 @@ bool UUTSkillBlackboardInterface::IsExistInt(int SkillID, const struct FName& Ke
 
 bool UUTSkillBlackboardInterface::IsExistFloat(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistFloat");
 
@@ -6742,7 +6794,7 @@ bool UUTSkillBlackboardInterface::IsExistFloat(int SkillID, const struct FName& 
 
 bool UUTSkillBlackboardInterface::IsExistEnum(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistEnum");
 
@@ -6771,7 +6823,7 @@ bool UUTSkillBlackboardInterface::IsExistEnum(int SkillID, const struct FName& K
 
 bool UUTSkillBlackboardInterface::IsExistClass(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistClass");
 
@@ -6800,7 +6852,7 @@ bool UUTSkillBlackboardInterface::IsExistClass(int SkillID, const struct FName& 
 
 bool UUTSkillBlackboardInterface::IsExistBool(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.IsExistBool");
 
@@ -6829,7 +6881,7 @@ bool UUTSkillBlackboardInterface::IsExistBool(int SkillID, const struct FName& K
 
 class UObject* UUTSkillBlackboardInterface::GetValueAsWeakObject(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsWeakObject");
 
@@ -6858,7 +6910,7 @@ class UObject* UUTSkillBlackboardInterface::GetValueAsWeakObject(int SkillID, co
 
 class AActor* UUTSkillBlackboardInterface::GetValueAsWeakActor(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsWeakActor");
 
@@ -6887,7 +6939,7 @@ class AActor* UUTSkillBlackboardInterface::GetValueAsWeakActor(int SkillID, cons
 
 struct FVector UUTSkillBlackboardInterface::GetValueAsVector(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsVector");
 
@@ -6916,7 +6968,7 @@ struct FVector UUTSkillBlackboardInterface::GetValueAsVector(int SkillID, const 
 
 uint32_t UUTSkillBlackboardInterface::GetValueAsUInt(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsUInt");
 
@@ -6945,7 +6997,7 @@ uint32_t UUTSkillBlackboardInterface::GetValueAsUInt(int SkillID, const struct F
 
 struct FString UUTSkillBlackboardInterface::GetValueAsString(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsString");
 
@@ -6974,7 +7026,7 @@ struct FString UUTSkillBlackboardInterface::GetValueAsString(int SkillID, const 
 
 struct FRotator UUTSkillBlackboardInterface::GetValueAsRotator(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsRotator");
 
@@ -7003,7 +7055,7 @@ struct FRotator UUTSkillBlackboardInterface::GetValueAsRotator(int SkillID, cons
 
 class UObject* UUTSkillBlackboardInterface::GetValueAsObject(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsObject");
 
@@ -7032,7 +7084,7 @@ class UObject* UUTSkillBlackboardInterface::GetValueAsObject(int SkillID, const 
 
 struct FName UUTSkillBlackboardInterface::GetValueAsName(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsName");
 
@@ -7061,7 +7113,7 @@ struct FName UUTSkillBlackboardInterface::GetValueAsName(int SkillID, const stru
 
 int UUTSkillBlackboardInterface::GetValueAsInt(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsInt");
 
@@ -7090,7 +7142,7 @@ int UUTSkillBlackboardInterface::GetValueAsInt(int SkillID, const struct FName& 
 
 float UUTSkillBlackboardInterface::GetValueAsFloat(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsFloat");
 
@@ -7119,7 +7171,7 @@ float UUTSkillBlackboardInterface::GetValueAsFloat(int SkillID, const struct FNa
 
 unsigned char UUTSkillBlackboardInterface::GetValueAsEnum(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsEnum");
 
@@ -7148,7 +7200,7 @@ unsigned char UUTSkillBlackboardInterface::GetValueAsEnum(int SkillID, const str
 
 class UClass* UUTSkillBlackboardInterface::GetValueAsClass(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsClass");
 
@@ -7177,7 +7229,7 @@ class UClass* UUTSkillBlackboardInterface::GetValueAsClass(int SkillID, const st
 
 bool UUTSkillBlackboardInterface::GetValueAsBool(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsBool");
 
@@ -7206,7 +7258,7 @@ bool UUTSkillBlackboardInterface::GetValueAsBool(int SkillID, const struct FName
 
 class AActor* UUTSkillBlackboardInterface::GetValueAsActor(int SkillID, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetValueAsActor");
 
@@ -7234,7 +7286,7 @@ class AActor* UUTSkillBlackboardInterface::GetValueAsActor(int SkillID, const st
 
 class UUAEBlackboard* UUTSkillBlackboardInterface::GetUAEBlackboardBySkillID(int SkillID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillBlackboardInterface.GetUAEBlackboardBySkillID");
 
@@ -7260,7 +7312,7 @@ class UUAEBlackboard* UUTSkillBlackboardInterface::GetUAEBlackboardBySkillID(int
 
 void UUTSkillCDBase::BindLua(const struct FString& luaPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillCDBase.BindLua");
 
@@ -7285,7 +7337,7 @@ void UUTSkillCDBase::BindLua(const struct FString& luaPath)
 
 void UUTSkillNodeBlackboardInterface::SetValueAsWeakObject(const struct FName& KeyName, class UObject* ObjectValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsWeakObject");
 
@@ -7311,7 +7363,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsWeakObject(const struct FName& K
 
 void UUTSkillNodeBlackboardInterface::SetValueAsVector(const struct FName& KeyName, const struct FVector& VectorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsVector");
 
@@ -7337,7 +7389,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsVector(const struct FName& KeyNa
 
 void UUTSkillNodeBlackboardInterface::SetValueAsUInt(const struct FName& KeyName, uint32_t UIntValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsUInt");
 
@@ -7363,7 +7415,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsUInt(const struct FName& KeyName
 
 void UUTSkillNodeBlackboardInterface::SetValueAsString(const struct FName& KeyName, const struct FString& StringValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsString");
 
@@ -7389,7 +7441,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsString(const struct FName& KeyNa
 
 void UUTSkillNodeBlackboardInterface::SetValueAsRotator(const struct FName& KeyName, const struct FRotator& VectorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsRotator");
 
@@ -7415,7 +7467,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsRotator(const struct FName& KeyN
 
 void UUTSkillNodeBlackboardInterface::SetValueAsObject(const struct FName& KeyName, class UObject* ObjectValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsObject");
 
@@ -7441,7 +7493,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsObject(const struct FName& KeyNa
 
 void UUTSkillNodeBlackboardInterface::SetValueAsName(const struct FName& KeyName, const struct FName& NameValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsName");
 
@@ -7467,7 +7519,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsName(const struct FName& KeyName
 
 void UUTSkillNodeBlackboardInterface::SetValueAsInt(const struct FName& KeyName, int IntValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsInt");
 
@@ -7493,7 +7545,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsInt(const struct FName& KeyName,
 
 void UUTSkillNodeBlackboardInterface::SetValueAsFloat(const struct FName& KeyName, float FloatValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsFloat");
 
@@ -7519,7 +7571,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsFloat(const struct FName& KeyNam
 
 void UUTSkillNodeBlackboardInterface::SetValueAsEnum(const struct FName& KeyName, unsigned char EnumValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsEnum");
 
@@ -7545,7 +7597,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsEnum(const struct FName& KeyName
 
 void UUTSkillNodeBlackboardInterface::SetValueAsClass(const struct FName& KeyName, class UClass* ClassValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsClass");
 
@@ -7571,7 +7623,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsClass(const struct FName& KeyNam
 
 void UUTSkillNodeBlackboardInterface::SetValueAsBool(const struct FName& KeyName, bool BoolValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.SetValueAsBool");
 
@@ -7597,7 +7649,7 @@ void UUTSkillNodeBlackboardInterface::SetValueAsBool(const struct FName& KeyName
 
 bool UUTSkillNodeBlackboardInterface::IsSetValueAsNewDataWhenNotExist(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsSetValueAsNewDataWhenNotExist");
 
@@ -7624,7 +7676,7 @@ bool UUTSkillNodeBlackboardInterface::IsSetValueAsNewDataWhenNotExist(const stru
 
 bool UUTSkillNodeBlackboardInterface::IsExistWeakObject(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistWeakObject");
 
@@ -7651,7 +7703,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistWeakObject(const struct FName& KeyN
 
 bool UUTSkillNodeBlackboardInterface::IsExistVector(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistVector");
 
@@ -7678,7 +7730,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistVector(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistUInt(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistUInt");
 
@@ -7705,7 +7757,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistUInt(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistString(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistString");
 
@@ -7732,7 +7784,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistString(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistRotator(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistRotator");
 
@@ -7759,7 +7811,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistRotator(const struct FName& KeyName
 
 bool UUTSkillNodeBlackboardInterface::IsExistObject(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistObject");
 
@@ -7786,7 +7838,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistObject(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistName(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistName");
 
@@ -7813,7 +7865,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistName(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistInt(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistInt");
 
@@ -7840,7 +7892,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistInt(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistFloat(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistFloat");
 
@@ -7867,7 +7919,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistFloat(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistEnum(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistEnum");
 
@@ -7894,7 +7946,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistEnum(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistClass(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistClass");
 
@@ -7921,7 +7973,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistClass(const struct FName& KeyName)
 
 bool UUTSkillNodeBlackboardInterface::IsExistBool(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.IsExistBool");
 
@@ -7948,7 +8000,7 @@ bool UUTSkillNodeBlackboardInterface::IsExistBool(const struct FName& KeyName)
 
 class UObject* UUTSkillNodeBlackboardInterface::GetValueAsWeakObject(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsWeakObject");
 
@@ -7975,7 +8027,7 @@ class UObject* UUTSkillNodeBlackboardInterface::GetValueAsWeakObject(const struc
 
 class AActor* UUTSkillNodeBlackboardInterface::GetValueAsWeakActor(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsWeakActor");
 
@@ -8002,7 +8054,7 @@ class AActor* UUTSkillNodeBlackboardInterface::GetValueAsWeakActor(const struct 
 
 struct FVector UUTSkillNodeBlackboardInterface::GetValueAsVector(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsVector");
 
@@ -8029,7 +8081,7 @@ struct FVector UUTSkillNodeBlackboardInterface::GetValueAsVector(const struct FN
 
 uint32_t UUTSkillNodeBlackboardInterface::GetValueAsUInt(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsUInt");
 
@@ -8056,7 +8108,7 @@ uint32_t UUTSkillNodeBlackboardInterface::GetValueAsUInt(const struct FName& Key
 
 struct FString UUTSkillNodeBlackboardInterface::GetValueAsString(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsString");
 
@@ -8083,7 +8135,7 @@ struct FString UUTSkillNodeBlackboardInterface::GetValueAsString(const struct FN
 
 struct FRotator UUTSkillNodeBlackboardInterface::GetValueAsRotator(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsRotator");
 
@@ -8110,7 +8162,7 @@ struct FRotator UUTSkillNodeBlackboardInterface::GetValueAsRotator(const struct 
 
 class UObject* UUTSkillNodeBlackboardInterface::GetValueAsObject(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsObject");
 
@@ -8137,7 +8189,7 @@ class UObject* UUTSkillNodeBlackboardInterface::GetValueAsObject(const struct FN
 
 struct FName UUTSkillNodeBlackboardInterface::GetValueAsName(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsName");
 
@@ -8164,7 +8216,7 @@ struct FName UUTSkillNodeBlackboardInterface::GetValueAsName(const struct FName&
 
 int UUTSkillNodeBlackboardInterface::GetValueAsInt(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsInt");
 
@@ -8191,7 +8243,7 @@ int UUTSkillNodeBlackboardInterface::GetValueAsInt(const struct FName& KeyName)
 
 float UUTSkillNodeBlackboardInterface::GetValueAsFloat(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsFloat");
 
@@ -8218,7 +8270,7 @@ float UUTSkillNodeBlackboardInterface::GetValueAsFloat(const struct FName& KeyNa
 
 unsigned char UUTSkillNodeBlackboardInterface::GetValueAsEnum(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsEnum");
 
@@ -8245,7 +8297,7 @@ unsigned char UUTSkillNodeBlackboardInterface::GetValueAsEnum(const struct FName
 
 class UClass* UUTSkillNodeBlackboardInterface::GetValueAsClass(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsClass");
 
@@ -8272,7 +8324,7 @@ class UClass* UUTSkillNodeBlackboardInterface::GetValueAsClass(const struct FNam
 
 bool UUTSkillNodeBlackboardInterface::GetValueAsBool(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsBool");
 
@@ -8299,7 +8351,7 @@ bool UUTSkillNodeBlackboardInterface::GetValueAsBool(const struct FName& KeyName
 
 class AActor* UUTSkillNodeBlackboardInterface::GetValueAsActor(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetValueAsActor");
 
@@ -8325,7 +8377,7 @@ class AActor* UUTSkillNodeBlackboardInterface::GetValueAsActor(const struct FNam
 
 class UUAEBlackboard* UUTSkillNodeBlackboardInterface::GetUAEBlackboard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.GetUAEBlackboard");
 
@@ -8346,12 +8398,12 @@ class UUAEBlackboard* UUTSkillNodeBlackboardInterface::GetUAEBlackboard()
 // Function Skill.UTSkillNodeBlackboardInterface.AddValueByKeySelector
 // (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EUAEBlackboardType> BBType                         (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUAEBlackboardType> BBType                         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FUAEBlackboardKeySelector Key                            (ConstParm, Parm, OutParm, ReferenceParm)
 
-void UUTSkillNodeBlackboardInterface::AddValueByKeySelector(TEnumAsByte<enum EUAEBlackboardType> BBType, const struct FUAEBlackboardKeySelector& Key)
+void UUTSkillNodeBlackboardInterface::AddValueByKeySelector(TEnumAsByte<EUAEBlackboardType> BBType, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.AddValueByKeySelector");
 
@@ -8372,12 +8424,12 @@ void UUTSkillNodeBlackboardInterface::AddValueByKeySelector(TEnumAsByte<enum EUA
 // Function Skill.UTSkillNodeBlackboardInterface.AddValueByKeName
 // (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EUAEBlackboardType> BBType                         (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EUAEBlackboardType> BBType                         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FName                   KeyName                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 
-void UUTSkillNodeBlackboardInterface::AddValueByKeName(TEnumAsByte<enum EUAEBlackboardType> BBType, const struct FName& KeyName)
+void UUTSkillNodeBlackboardInterface::AddValueByKeName(TEnumAsByte<EUAEBlackboardType> BBType, const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillNodeBlackboardInterface.AddValueByKeName");
 
@@ -8402,7 +8454,7 @@ void UUTSkillNodeBlackboardInterface::AddValueByKeName(TEnumAsByte<enum EUAEBlac
 
 void UUTSkillSpecificAction::UpdateAction_Internal(float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillSpecificAction.UpdateAction_Internal");
 
@@ -8424,7 +8476,7 @@ void UUTSkillSpecificAction::UpdateAction_Internal(float DeltaSeconds)
 
 void UUTSkillSpecificAction::UndoAction_Internal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillSpecificAction.UndoAction_Internal");
 
@@ -8445,7 +8497,7 @@ void UUTSkillSpecificAction::UndoAction_Internal()
 
 void UUTSkillSpecificAction::Reset_Internal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillSpecificAction.Reset_Internal");
 
@@ -8468,7 +8520,7 @@ void UUTSkillSpecificAction::Reset_Internal()
 
 bool UUTSkillSpecificAction::RealDoAction_Internal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillSpecificAction.RealDoAction_Internal");
 
@@ -8494,7 +8546,7 @@ bool UUTSkillSpecificAction::RealDoAction_Internal()
 
 void UUTSkillSpecificAction::PreCloseSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillSpecificAction.PreCloseSkill");
 
@@ -8520,7 +8572,7 @@ void UUTSkillSpecificAction::PreCloseSkill(class UUTSkillManagerComponent* Skill
 
 void UUTSkillSpecificAction::PostInitSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillSpecificAction.PostInitSkill");
 
@@ -8546,7 +8598,7 @@ void UUTSkillSpecificAction::PostInitSkill(class UUTSkillManagerComponent* Skill
 
 void UUTSkillSpecificAction::PostActiveSkill(class UUTSkillManagerComponent* SkillManagerComponent, class AUTSkill* CurOwnerSkill)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Skill.UTSkillSpecificAction.PostActiveSkill");
 

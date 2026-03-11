@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadEffectItemBPTable
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -15,7 +15,7 @@ namespace SDK
 
 void ULoadedClassManager_BP_C::LoadEffectItemBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadEffectItemBPTable");
 
@@ -39,7 +39,7 @@ void ULoadedClassManager_BP_C::LoadEffectItemBPTable(const struct FString& BPTab
 
 void ULoadedClassManager_BP_C::LoadBPTableData(const struct FString& BPTableName, const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadBPTableData");
 
@@ -63,7 +63,7 @@ void ULoadedClassManager_BP_C::LoadBPTableData(const struct FString& BPTableName
 
 void ULoadedClassManager_BP_C::Load3DIconBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.Load3DIconBPTable");
 
@@ -86,7 +86,7 @@ void ULoadedClassManager_BP_C::Load3DIconBPTable(const struct FString& BPTableNa
 
 void ULoadedClassManager_BP_C::LoadInFillingBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadInFillingBPTable");
 
@@ -109,7 +109,7 @@ void ULoadedClassManager_BP_C::LoadInFillingBPTable(const struct FString& BPTabl
 
 void ULoadedClassManager_BP_C::LoadVehiclePropsBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadVehiclePropsBPTable");
 
@@ -132,7 +132,7 @@ void ULoadedClassManager_BP_C::LoadVehiclePropsBPTable(const struct FString& BPT
 
 void ULoadedClassManager_BP_C::LoadDecalBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadDecalBPTable");
 
@@ -155,7 +155,7 @@ void ULoadedClassManager_BP_C::LoadDecalBPTable(const struct FString& BPTableNam
 
 void ULoadedClassManager_BP_C::LoadSkillPropsBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadSkillPropsBPTable");
 
@@ -178,7 +178,7 @@ void ULoadedClassManager_BP_C::LoadSkillPropsBPTable(const struct FString& BPTab
 
 void ULoadedClassManager_BP_C::LoadPetAvatarBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadPetAvatarBPTable");
 
@@ -201,7 +201,7 @@ void ULoadedClassManager_BP_C::LoadPetAvatarBPTable(const struct FString& BPTabl
 
 void ULoadedClassManager_BP_C::LoadVehilceRefitBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadVehilceRefitBPTable");
 
@@ -224,7 +224,7 @@ void ULoadedClassManager_BP_C::LoadVehilceRefitBPTable(const struct FString& BPT
 
 void ULoadedClassManager_BP_C::LoadSeasonMissionBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadSeasonMissionBPTable");
 
@@ -247,7 +247,7 @@ void ULoadedClassManager_BP_C::LoadSeasonMissionBPTable(const struct FString& BP
 
 void ULoadedClassManager_BP_C::LoadAvatarPatternBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadAvatarPatternBPTable");
 
@@ -270,7 +270,7 @@ void ULoadedClassManager_BP_C::LoadAvatarPatternBPTable(const struct FString& BP
 
 void ULoadedClassManager_BP_C::LoadAvatarColorBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadAvatarColorBPTable");
 
@@ -293,7 +293,7 @@ void ULoadedClassManager_BP_C::LoadAvatarColorBPTable(const struct FString& BPTa
 
 void ULoadedClassManager_BP_C::LoadVehicleBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadVehicleBPTable");
 
@@ -316,7 +316,7 @@ void ULoadedClassManager_BP_C::LoadVehicleBPTable(const struct FString& BPTableN
 
 void ULoadedClassManager_BP_C::LoadPlaneBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadPlaneBPTable");
 
@@ -339,7 +339,7 @@ void ULoadedClassManager_BP_C::LoadPlaneBPTable(const struct FString& BPTableNam
 
 void ULoadedClassManager_BP_C::LoadEmoteBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadEmoteBPTable");
 
@@ -362,7 +362,7 @@ void ULoadedClassManager_BP_C::LoadEmoteBPTable(const struct FString& BPTableNam
 
 void ULoadedClassManager_BP_C::LoadConsumableBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadConsumableBPTable");
 
@@ -385,7 +385,7 @@ void ULoadedClassManager_BP_C::LoadConsumableBPTable(const struct FString& BPTab
 
 void ULoadedClassManager_BP_C::LoadGameModeBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadGameModeBPTable");
 
@@ -408,7 +408,7 @@ void ULoadedClassManager_BP_C::LoadGameModeBPTable(const struct FString& BPTable
 
 void ULoadedClassManager_BP_C::LoadAvatarBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadAvatarBPTable");
 
@@ -431,7 +431,7 @@ void ULoadedClassManager_BP_C::LoadAvatarBPTable(const struct FString& BPTableNa
 
 void ULoadedClassManager_BP_C::LoadWeaponBPTable(const struct FString& BPTableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.LoadWeaponBPTable");
 
@@ -452,7 +452,7 @@ void ULoadedClassManager_BP_C::LoadWeaponBPTable(const struct FString& BPTableNa
 
 void ULoadedClassManager_BP_C::InitBPTableMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.InitBPTableMap");
 
@@ -472,7 +472,7 @@ void ULoadedClassManager_BP_C::InitBPTableMap()
 
 void ULoadedClassManager_BP_C::InitBPTableMap_Mod()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.InitBPTableMap_Mod");
 
@@ -494,7 +494,7 @@ void ULoadedClassManager_BP_C::InitBPTableMap_Mod()
 
 void ULoadedClassManager_BP_C::ExecuteUbergraph_LoadedClassManager_BP(int EntryPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function LoadedClassManager_BP.LoadedClassManager_BP_C.ExecuteUbergraph_LoadedClassManager_BP");
 

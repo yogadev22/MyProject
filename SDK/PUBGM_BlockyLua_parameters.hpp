@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function BlockyLua.Blocky3DVarWidget.SetResult
 struct UBlocky3DVarWidget_SetResult_Params
@@ -39,7 +39,7 @@ struct UBlockyBlockDisplayWidget_Custom_UpdateName_Params
 // Function BlockyLua.BlockyBlockDisplayWidget_Custom.Init
 struct UBlockyBlockDisplayWidget_Custom_Init_Params
 {
-	TEnumAsByte<enum ECustomBlockType>                 Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECustomBlockType>                      Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLua.BlockyBlockDisplayWidget_Preset.InitPreset
@@ -116,6 +116,11 @@ struct UBlockyCategoryItemWidget_OnClick_Params
 struct UBlockyCategoryItemWidget_InitWithItemObject_Params
 {
 	class UBlockyCategoryItemObject*                   Item;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function BlockyLua.BlockyCategoryItemWidget.InitTextToShow
+struct UBlockyCategoryItemWidget_InitTextToShow_Params
+{
 };
 
 // Function BlockyLua.BlockyCategoryWidget.GetCurrentCategoryNameWithVariable
@@ -1267,6 +1272,11 @@ struct UBlockyMenuItemWidget_InitWithItemObject_Params
 	class UBlockyMenuItemObject*                       Item;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function BlockyLua.BlockyMenuItemWidget.InitTextToShow
+struct UBlockyMenuItemWidget_InitTextToShow_Params
+{
+};
+
 // Function BlockyLua.BlockyMenuWidget.SelectMenu
 struct UBlockyMenuWidget_SelectMenu_Params
 {
@@ -1750,7 +1760,7 @@ struct UCustomizeEditableText_OpenKeyBoard_Params
 struct UCustomizeEditableText_OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature_Params
 {
 	struct FText                                       CommittedText;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                SerialId;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -1778,7 +1788,7 @@ struct UCustomizeEditableTextBox_ReceiveCheckStringResultProcess_Params
 struct UCustomizeEditableTextBox_OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature_Params
 {
 	struct FText                                       CommittedText;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                SerialId;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -1806,7 +1816,7 @@ struct UCustomizeMultiLineEditableTextBox_ReceiveCheckStringResultProcess_Params
 struct UCustomizeMultiLineEditableTextBox_OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature_Params
 {
 	struct FText                                       CommittedText;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                SerialId;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -1820,7 +1830,7 @@ struct UCustomizeMultiLineEditableTextBox_GetValidText_Params
 struct UCustomizeMultiLineEditableTextBox_CheckStringValidProcess_Params
 {
 	struct FText                                       InText;                                                   // (ConstParm, Parm, OutParm, ReferenceParm)
-	TEnumAsByte<enum ETextCommit>                      CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextCommit>                           CommitMethod;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BlockyLua.BlockyAutoScrollBox.Tick

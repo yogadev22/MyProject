@@ -1,12 +1,129 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+
+// Function QDevKit.FilePicker.UnInitialize
+// (Final, Native, Static, Public, BlueprintCallable)
+
+void UFilePicker::UnInitialize()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FilePicker.UnInitialize");
+
+	UFilePicker_UnInitialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function QDevKit.FilePicker.OpenFilePicker
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 InParamJson                    (Parm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UFilePicker::OpenFilePicker(const struct FString& InParamJson)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FilePicker.OpenFilePicker");
+
+	UFilePicker_OpenFilePicker_Params params;
+	params.InParamJson = InParamJson;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function QDevKit.FilePicker.Initialize
+// (Final, Native, Public, BlueprintCallable)
+
+void UFilePicker::Initialize()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FilePicker.Initialize");
+
+	UFilePicker_Initialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function QDevKit.FilePicker.GetInstance
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UFilePicker*             ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UFilePicker* UFilePicker::GetInstance()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FilePicker.GetInstance");
+
+	UFilePicker_GetInstance_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// DelegateFunction QDevKit.FilePicker.FileSelectionCompleteDelegate__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// struct FString                 ResultJson                     (Parm, ZeroConstructor)
+
+void UFilePicker::FileSelectionCompleteDelegate__DelegateSignature(const struct FString& ResultJson)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("DelegateFunction QDevKit.FilePicker.FileSelectionCompleteDelegate__DelegateSignature");
+
+	UFilePicker_FileSelectionCompleteDelegate__DelegateSignature_Params params;
+	params.ResultJson = ResultJson;
+
+	auto flags = pFunc->FunctionFlags;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
 
 // Function QDevKit.FirebaseHelper.SetConsent
 // (Final, Native, Public, HasOutParms)
@@ -15,7 +132,7 @@ namespace SDK
 
 void UFirebaseHelper::SetConsent(TMap<int, int> InConsent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.SetConsent");
 
@@ -39,7 +156,7 @@ void UFirebaseHelper::SetConsent(TMap<int, int> InConsent)
 
 bool UFirebaseHelper::IsNotificationLaunchApp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.IsNotificationLaunchApp");
 
@@ -65,7 +182,7 @@ bool UFirebaseHelper::IsNotificationLaunchApp()
 
 struct FString UFirebaseHelper::GetNotificationLaunchAppExtraData(const struct FString& InKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.GetNotificationLaunchAppExtraData");
 
@@ -91,7 +208,7 @@ struct FString UFirebaseHelper::GetNotificationLaunchAppExtraData(const struct F
 
 class UFirebaseHelper* UFirebaseHelper::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.GetInstance");
 
@@ -116,7 +233,7 @@ class UFirebaseHelper* UFirebaseHelper::GetInstance()
 
 struct FString UFirebaseHelper::GetFIRInstallId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.GetFIRInstallId");
 
@@ -141,7 +258,7 @@ struct FString UFirebaseHelper::GetFIRInstallId()
 
 struct FString UFirebaseHelper::GetFIRAppInstanceId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.GetFIRAppInstanceId");
 
@@ -166,7 +283,7 @@ struct FString UFirebaseHelper::GetFIRAppInstanceId()
 
 struct FString UFirebaseHelper::GetFCMToken()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.GetFCMToken");
 
@@ -189,7 +306,7 @@ struct FString UFirebaseHelper::GetFCMToken()
 
 void UFirebaseHelper::ConsumeNotificationLaunchApp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseHelper.ConsumeNotificationLaunchApp");
 
@@ -212,7 +329,7 @@ void UFirebaseHelper::ConsumeNotificationLaunchApp()
 
 EQFirebaseRemoteConfigStatus UFirebaseRemoteConfigImpl::GetStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseRemoteConfigImpl.GetStatus");
 
@@ -238,7 +355,7 @@ EQFirebaseRemoteConfigStatus UFirebaseRemoteConfigImpl::GetStatus()
 
 struct FString UFirebaseRemoteConfigImpl::GetRemoteConfig(const struct FString& ConfigNameToQuery)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseRemoteConfigImpl.GetRemoteConfig");
 
@@ -264,7 +381,7 @@ struct FString UFirebaseRemoteConfigImpl::GetRemoteConfig(const struct FString& 
 
 class UFirebaseRemoteConfigImpl* UFirebaseRemoteConfigImpl::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.FirebaseRemoteConfigImpl.GetInstance");
 
@@ -289,7 +406,7 @@ class UFirebaseRemoteConfigImpl* UFirebaseRemoteConfigImpl::GetInstance()
 
 void ULocationHelper::QueryLocation(int InTimeout)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.LocationHelper.QueryLocation");
 
@@ -311,7 +428,7 @@ void ULocationHelper::QueryLocation(int InTimeout)
 
 void ULocationHelper::Initialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.LocationHelper.Initialize");
 
@@ -334,7 +451,7 @@ void ULocationHelper::Initialize()
 
 class ULocationHelper* ULocationHelper::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.LocationHelper.GetInstance");
 
@@ -357,7 +474,7 @@ class ULocationHelper* ULocationHelper::GetInstance()
 
 void ULocationHelper::Destroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.LocationHelper.Destroy");
 
@@ -378,7 +495,7 @@ void ULocationHelper::Destroy()
 
 void UPhotoAlbumHelper::UnRegisterScreenCaptureListener()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.PhotoAlbumHelper.UnRegisterScreenCaptureListener");
 
@@ -402,7 +519,7 @@ void UPhotoAlbumHelper::UnRegisterScreenCaptureListener()
 
 void UPhotoAlbumHelper::RegisterScreenCaptureListener(const struct FString& InScreenshotFolders, const struct FString& InScreenshotMimeTypes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.PhotoAlbumHelper.RegisterScreenCaptureListener");
 
@@ -425,7 +542,7 @@ void UPhotoAlbumHelper::RegisterScreenCaptureListener(const struct FString& InSc
 
 void UPhotoAlbumHelper::Initialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.PhotoAlbumHelper.Initialize");
 
@@ -448,7 +565,7 @@ void UPhotoAlbumHelper::Initialize()
 
 class UPhotoAlbumHelper* UPhotoAlbumHelper::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.PhotoAlbumHelper.GetInstance");
 
@@ -479,7 +596,7 @@ class UPhotoAlbumHelper* UPhotoAlbumHelper::GetInstance()
 
 int UPhotoAlbumHelper::GenerateImageFromAlbum(const struct FString& InFilePath, const struct FString& InThumbFilePath, int InThumbnailWidth, int InThumbnailHeight, bool InForceJPG, bool InOverride)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.PhotoAlbumHelper.GenerateImageFromAlbum");
 
@@ -515,7 +632,7 @@ int UPhotoAlbumHelper::GenerateImageFromAlbum(const struct FString& InFilePath, 
 
 void UPhotoAlbumHelper::FetchAlbumImageInfo(int InStartIndex, int InLimitNum, int InThumbWidth, int InThumbHeight, const struct FString& InThumbPath, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.PhotoAlbumHelper.FetchAlbumImageInfo");
 
@@ -546,7 +663,7 @@ void UPhotoAlbumHelper::FetchAlbumImageInfo(int InStartIndex, int InLimitNum, in
 
 bool USystemPermissionHelper::RequestPermissions(int InPermissionType, int InRequestCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.RequestPermissions");
 
@@ -574,7 +691,7 @@ bool USystemPermissionHelper::RequestPermissions(int InPermissionType, int InReq
 
 bool USystemPermissionHelper::IsPermissionGranted(int InPermissionType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.IsPermissionGranted");
 
@@ -598,7 +715,7 @@ bool USystemPermissionHelper::IsPermissionGranted(int InPermissionType)
 
 void USystemPermissionHelper::Initialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.Initialize");
 
@@ -621,7 +738,7 @@ void USystemPermissionHelper::Initialize()
 
 class USystemPermissionHelper* USystemPermissionHelper::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.GetInstance");
 
@@ -647,7 +764,7 @@ class USystemPermissionHelper* USystemPermissionHelper::GetInstance()
 
 bool USystemPermissionHelper::AndroidShouldShowRequestPermissionRationale(const struct FString& InPermission)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.AndroidShouldShowRequestPermissionRationale");
 
@@ -675,7 +792,7 @@ bool USystemPermissionHelper::AndroidShouldShowRequestPermissionRationale(const 
 
 bool USystemPermissionHelper::AndroidRequestPermissions(const struct FString& InPermission, int InRequestCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.AndroidRequestPermissions");
 
@@ -703,7 +820,7 @@ bool USystemPermissionHelper::AndroidRequestPermissions(const struct FString& In
 
 bool USystemPermissionHelper::AndroidIsPermissionGranted(const struct FString& InPermission)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.AndroidIsPermissionGranted");
 
@@ -730,7 +847,7 @@ bool USystemPermissionHelper::AndroidIsPermissionGranted(const struct FString& I
 
 bool USystemPermissionHelper::AndroidHasDefinePermission(const struct FString& InPermssionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.SystemPermissionHelper.AndroidHasDefinePermission");
 
@@ -742,6 +859,123 @@ bool USystemPermissionHelper::AndroidHasDefinePermission(const struct FString& I
 
 	UObject *currentObj = (UObject *) this;
 	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function QDevKit.TouchTransmission.UnInitialize
+// (Final, Native, Static, Public, BlueprintCallable)
+
+void UTouchTransmission::UnInitialize()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.TouchTransmission.UnInitialize");
+
+	UTouchTransmission_UnInitialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// DelegateFunction QDevKit.TouchTransmission.TransmissionCompleteDelegate__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// struct FString                 ResultJson                     (Parm, ZeroConstructor)
+
+void UTouchTransmission::TransmissionCompleteDelegate__DelegateSignature(const struct FString& ResultJson)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("DelegateFunction QDevKit.TouchTransmission.TransmissionCompleteDelegate__DelegateSignature");
+
+	UTouchTransmission_TransmissionCompleteDelegate__DelegateSignature_Params params;
+	params.ResultJson = ResultJson;
+
+	auto flags = pFunc->FunctionFlags;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function QDevKit.TouchTransmission.Initialize
+// (Final, Native, Public, BlueprintCallable)
+
+void UTouchTransmission::Initialize()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.TouchTransmission.Initialize");
+
+	UTouchTransmission_Initialize_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function QDevKit.TouchTransmission.HandleReceivedPakFiles
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 InParamJson                    (Parm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UTouchTransmission::HandleReceivedPakFiles(const struct FString& InParamJson)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.TouchTransmission.HandleReceivedPakFiles");
+
+	UTouchTransmission_HandleReceivedPakFiles_Params params;
+	params.InParamJson = InParamJson;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function QDevKit.TouchTransmission.GetInstance
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UTouchTransmission*      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UTouchTransmission* UTouchTransmission::GetInstance()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function QDevKit.TouchTransmission.GetInstance");
+
+	UTouchTransmission_GetInstance_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
 
 	pFunc->FunctionFlags = flags;
 

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum AIGCKit.EAIGCAnimVersion
 enum class EAIGCAnimVersion : uint8_t
@@ -19,9 +19,9 @@ enum class EAIGCAnimVersion : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct AIGCKit.AIBonesTransfroms
 // 0x0090
@@ -38,12 +38,12 @@ struct FAIBonesTransfroms
 // 0x0006
 struct FSkeletonModifyRule
 {
-	TEnumAsByte<enum EBoneModificationMode>            TranslationMode;                                          // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneModificationMode>            RotationMode;                                             // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneModificationMode>            ScaleMode;                                                // 0x0002(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneControlSpace>                TranslationSpace;                                         // 0x0003(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneControlSpace>                RotationSpace;                                            // 0x0004(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneControlSpace>                ScaleSpace;                                               // 0x0005(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 TranslationMode;                                          // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 RotationMode;                                             // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 ScaleMode;                                                // 0x0002(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     TranslationSpace;                                         // 0x0003(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     RotationSpace;                                            // 0x0004(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     ScaleSpace;                                               // 0x0005(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct AIGCKit.SkeletonAnimCompressInfo

@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function slua_unreal.LuaActorComponent.UnRegistLuaTick
 // (Final, Native, Public, BlueprintCallable)
 
 void ULuaActorComponent::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaActorComponent.UnRegistLuaTick");
 
@@ -36,7 +36,7 @@ void ULuaActorComponent::UnRegistLuaTick()
 
 void ULuaActorComponent::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaActorComponent.RegistLuaTick");
 
@@ -58,7 +58,7 @@ void ULuaActorComponent::RegistLuaTick(float TickInterval)
 
 void ULuaInstancedActorComponent::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaInstancedActorComponent.UnRegistLuaTick");
 
@@ -81,7 +81,7 @@ void ULuaInstancedActorComponent::UnRegistLuaTick()
 
 void ULuaInstancedActorComponent::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaInstancedActorComponent.RegistLuaTick");
 
@@ -103,7 +103,7 @@ void ULuaInstancedActorComponent::RegistLuaTick(float TickInterval)
 
 void ALuaActor::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaActor.UnRegistLuaTick");
 
@@ -126,7 +126,7 @@ void ALuaActor::UnRegistLuaTick()
 
 void ALuaActor::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaActor.RegistLuaTick");
 
@@ -150,7 +150,7 @@ void ALuaActor::RegistLuaTick(float TickInterval)
 
 struct FString ULuaOverriderInterface::GetLuaFilePath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaOverriderInterface.GetLuaFilePath");
 
@@ -175,7 +175,7 @@ struct FString ULuaOverriderInterface::GetLuaFilePath()
 
 void ULatentDelegate::OnLatentCallback(int threadRef)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LatentDelegate.OnLatentCallback");
 
@@ -197,7 +197,7 @@ void ULatentDelegate::OnLatentCallback(int threadRef)
 
 void ULuaDelegate::EventTrigger()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaDelegate.EventTrigger");
 
@@ -218,7 +218,7 @@ void ULuaDelegate::EventTrigger()
 
 void ALuaLevelScriptActor::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaLevelScriptActor.UnRegistLuaTick");
 
@@ -241,7 +241,7 @@ void ALuaLevelScriptActor::UnRegistLuaTick()
 
 void ALuaLevelScriptActor::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaLevelScriptActor.RegistLuaTick");
 
@@ -263,7 +263,7 @@ void ALuaLevelScriptActor::RegistLuaTick(float TickInterval)
 
 void ULuaOverrider::TriggerAnimNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaOverrider.TriggerAnimNotify");
 
@@ -285,7 +285,7 @@ void ULuaOverrider::TriggerAnimNotify()
 
 void ULuaOverrider::InputVectorAxis(const struct FVector& AxisValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaOverrider.InputVectorAxis");
 
@@ -305,12 +305,12 @@ void ULuaOverrider::InputVectorAxis(const struct FVector& AxisValue)
 // Function slua_unreal.LuaOverrider.InputTouch
 // (Native, Event, Protected, HasOutParms, HasDefaults, BlueprintEvent)
 // Parameters:
-// TEnumAsByte<enum ETouchIndex>  FingerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETouchIndex>       FingerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 Location                       (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 
-void ULuaOverrider::InputTouch(TEnumAsByte<enum ETouchIndex> FingerIndex, const struct FVector& Location)
+void ULuaOverrider::InputTouch(TEnumAsByte<ETouchIndex> FingerIndex, const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaOverrider.InputTouch");
 
@@ -335,7 +335,7 @@ void ULuaOverrider::InputTouch(TEnumAsByte<enum ETouchIndex> FingerIndex, const 
 
 void ULuaOverrider::InputGesture(float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaOverrider.InputGesture");
 
@@ -359,7 +359,7 @@ void ULuaOverrider::InputGesture(float Value)
 
 void ULuaOverrider::InputAxis(float AxisValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaOverrider.InputAxis");
 
@@ -383,7 +383,7 @@ void ULuaOverrider::InputAxis(float AxisValue)
 
 void ULuaOverrider::InputAction(const struct FKey& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.LuaOverrider.InputAction");
 
@@ -409,7 +409,7 @@ void ULuaOverrider::InputAction(const struct FKey& Key)
 
 struct FString USluaBlueprintLibrary::GetStringFromVar(const struct FSluaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.GetStringFromVar");
 
@@ -438,7 +438,7 @@ struct FString USluaBlueprintLibrary::GetStringFromVar(const struct FSluaBPVar& 
 
 class UObject* USluaBlueprintLibrary::GetObjectFromVar(const struct FSluaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.GetObjectFromVar");
 
@@ -467,7 +467,7 @@ class UObject* USluaBlueprintLibrary::GetObjectFromVar(const struct FSluaBPVar& 
 
 float USluaBlueprintLibrary::GetNumberFromVar(const struct FSluaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.GetNumberFromVar");
 
@@ -496,7 +496,7 @@ float USluaBlueprintLibrary::GetNumberFromVar(const struct FSluaBPVar& Value, in
 
 int USluaBlueprintLibrary::GetIntFromVar(const struct FSluaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.GetIntFromVar");
 
@@ -525,7 +525,7 @@ int USluaBlueprintLibrary::GetIntFromVar(const struct FSluaBPVar& Value, int Ind
 
 bool USluaBlueprintLibrary::GetBoolFromVar(const struct FSluaBPVar& Value, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.GetBoolFromVar");
 
@@ -553,7 +553,7 @@ bool USluaBlueprintLibrary::GetBoolFromVar(const struct FSluaBPVar& Value, int I
 
 struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromString(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.CreateVarFromString");
 
@@ -581,7 +581,7 @@ struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromString(const struct FStrin
 
 struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromObject(class UObject* WorldContextObject, class UObject* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.CreateVarFromObject");
 
@@ -609,7 +609,7 @@ struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromObject(class UObject* Worl
 
 struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromNumber(float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.CreateVarFromNumber");
 
@@ -636,7 +636,7 @@ struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromNumber(float Value)
 
 struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromInt(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.CreateVarFromInt");
 
@@ -663,7 +663,7 @@ struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromInt(int Value)
 
 struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromBool(bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.CreateVarFromBool");
 
@@ -693,7 +693,7 @@ struct FSluaBPVar USluaBlueprintLibrary::CreateVarFromBool(bool Value)
 
 struct FSluaBPVar USluaBlueprintLibrary::CallToLuaWithArgs(class UObject* WorldContextObject, const struct FString& FunctionName, TArray<struct FSluaBPVar> Args, const struct FString& StateName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.CallToLuaWithArgs");
 
@@ -725,7 +725,7 @@ struct FSluaBPVar USluaBlueprintLibrary::CallToLuaWithArgs(class UObject* WorldC
 
 struct FSluaBPVar USluaBlueprintLibrary::CallToLua(class UObject* WorldContextObject, const struct FString& FunctionName, const struct FString& StateName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function slua_unreal.SluaBlueprintLibrary.CallToLua");
 

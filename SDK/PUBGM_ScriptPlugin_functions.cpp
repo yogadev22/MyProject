@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function ScriptPlugin.ScriptContext.CallScriptFunction
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UScriptContext::CallScriptFunction(const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContext.CallScriptFunction");
 
@@ -40,7 +40,7 @@ void UScriptContext::CallScriptFunction(const struct FString& FunctionName)
 
 void UScriptContextComponent::PushScriptArrayIndexData(const struct FString& ParamName, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.PushScriptArrayIndexData");
 
@@ -65,7 +65,7 @@ void UScriptContextComponent::PushScriptArrayIndexData(const struct FString& Par
 
 void UScriptContextComponent::PushOneScriptPropertyValues(const struct FString& ParamName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.PushOneScriptPropertyValues");
 
@@ -87,7 +87,7 @@ void UScriptContextComponent::PushOneScriptPropertyValues(const struct FString& 
 
 void UScriptContextComponent::PushAllScriptPropertyValues()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.PushAllScriptPropertyValues");
 
@@ -111,7 +111,7 @@ void UScriptContextComponent::PushAllScriptPropertyValues()
 
 void UScriptContextComponent::FetchScriptArrayIndexData(const struct FString& ParamName, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.FetchScriptArrayIndexData");
 
@@ -136,7 +136,7 @@ void UScriptContextComponent::FetchScriptArrayIndexData(const struct FString& Pa
 
 void UScriptContextComponent::FetchOneScriptPropertyValues(const struct FString& ParamName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.FetchOneScriptPropertyValues");
 
@@ -158,7 +158,7 @@ void UScriptContextComponent::FetchOneScriptPropertyValues(const struct FString&
 
 void UScriptContextComponent::FetchAllScriptPropertyValues()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.FetchAllScriptPropertyValues");
 
@@ -181,7 +181,7 @@ void UScriptContextComponent::FetchAllScriptPropertyValues()
 
 void UScriptContextComponent::CallScriptFunctionWithoutFetch(const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.CallScriptFunctionWithoutFetch");
 
@@ -205,7 +205,7 @@ void UScriptContextComponent::CallScriptFunctionWithoutFetch(const struct FStrin
 
 void UScriptContextComponent::CallScriptFunction(const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptContextComponent.CallScriptFunction");
 
@@ -229,7 +229,7 @@ void UScriptContextComponent::CallScriptFunction(const struct FString& FunctionN
 
 int UScriptHelperNetInterface::SendPacket_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptHelperNetInterface.SendPacket_LuaState");
 
@@ -254,7 +254,7 @@ int UScriptHelperNetInterface::SendPacket_LuaState()
 
 void UScriptHelperNetInterface::Disconnect(TScriptInterface<class UNetInterface>* NetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptHelperNetInterface.Disconnect");
 
@@ -281,7 +281,7 @@ void UScriptHelperNetInterface::Disconnect(TScriptInterface<class UNetInterface>
 
 void UScriptHelperNetInterface::Connect(int Timeout, TScriptInterface<class UNetInterface>* NetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptHelperNetInterface.Connect");
 
@@ -309,7 +309,7 @@ void UScriptHelperNetInterface::Connect(int Timeout, TScriptInterface<class UNet
 
 bool UScriptPluginComponent::CallScriptFunction(const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptPluginComponent.CallScriptFunction");
 
@@ -338,7 +338,7 @@ bool UScriptPluginComponent::CallScriptFunction(const struct FString& FunctionNa
 
 float AScriptTestActor::TestFunction(float InValue, float InFactor, bool bMultiply)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.ScriptTestActor.TestFunction");
 
@@ -371,7 +371,7 @@ float AScriptTestActor::TestFunction(float InValue, float InFactor, bool bMultip
 
 struct FString ALuaClassBaseObj::ItsATest(const struct FPlayerInfo& Player1, TArray<int> nums, int X, const struct FString& Q, TArray<struct FPlayerInfo> Player2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.LuaClassBaseObj.ItsATest");
 
@@ -401,7 +401,7 @@ struct FString ALuaClassBaseObj::ItsATest(const struct FPlayerInfo& Player1, TAr
 
 void ALuaClassBaseObj::HandleUIMessage(const struct FString& UIMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.LuaClassBaseObj.HandleUIMessage");
 
@@ -425,7 +425,7 @@ void ALuaClassBaseObj::HandleUIMessage(const struct FString& UIMessage)
 
 struct FString ALuaClassBaseObj::GetGameStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function ScriptPlugin.LuaClassBaseObj.GetGameStatus");
 

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CommonGameFeatures.ActorRepControlComponent.ToggleGroupedRepControlByUID
 // (Native, Public)
@@ -17,7 +17,7 @@ namespace SDK
 
 void UActorRepControlComponent::ToggleGroupedRepControlByUID(int64_t UID, int ControlMark, int RepControlGroup)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonGameFeatures.ActorRepControlComponent.ToggleGroupedRepControlByUID");
 
@@ -45,7 +45,7 @@ void UActorRepControlComponent::ToggleGroupedRepControlByUID(int64_t UID, int Co
 
 bool UActorRepControlComponent::ShouldBlockRepByUID(int64_t UID, int RepControlGroup)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonGameFeatures.ActorRepControlComponent.ShouldBlockRepByUID");
 
@@ -74,7 +74,7 @@ bool UActorRepControlComponent::ShouldBlockRepByUID(int64_t UID, int RepControlG
 
 bool UActorRepControlComponent::GetControlGroupData(int RepControlGroup, struct FRepControlGroupData* OutData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonGameFeatures.ActorRepControlComponent.GetControlGroupData");
 
@@ -106,7 +106,7 @@ bool UActorRepControlComponent::GetControlGroupData(int RepControlGroup, struct 
 
 bool ARepControlActorBase::IsNetRelevantForCustomCheck(class AActor* RealViewer, class AActor* ViewTarget, const struct FVector& SrcLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CommonGameFeatures.RepControlActorBase.IsNetRelevantForCustomCheck");
 

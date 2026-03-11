@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function MMKVUnreal.MMKVObject.TotalSize
 // (Final, Native, Public, Const)
@@ -15,7 +15,7 @@ namespace SDK
 
 uint32_t UMMKVObject::TotalSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.TotalSize");
 
@@ -42,7 +42,7 @@ uint32_t UMMKVObject::TotalSize()
 
 bool UMMKVObject::SetString(const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.SetString");
 
@@ -71,7 +71,7 @@ bool UMMKVObject::SetString(const struct FString& Key, const struct FString& Val
 
 bool UMMKVObject::SetInt32(const struct FString& Key, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.SetInt32");
 
@@ -98,7 +98,7 @@ bool UMMKVObject::SetInt32(const struct FString& Key, int Value)
 
 void UMMKVObject::SetErrorLogDelegate(const struct FScriptDelegate& handler)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.SetErrorLogDelegate");
 
@@ -124,7 +124,7 @@ void UMMKVObject::SetErrorLogDelegate(const struct FScriptDelegate& handler)
 
 bool UMMKVObject::SetDouble(const struct FString& Key, double Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.SetDouble");
 
@@ -153,7 +153,7 @@ bool UMMKVObject::SetDouble(const struct FString& Key, double Value)
 
 bool UMMKVObject::SetBuffer(const struct FString& Key, TArray<unsigned char> Buffer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.SetBuffer");
 
@@ -182,7 +182,7 @@ bool UMMKVObject::SetBuffer(const struct FString& Key, TArray<unsigned char> Buf
 
 bool UMMKVObject::SetBool(const struct FString& Key, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.SetBool");
 
@@ -209,7 +209,7 @@ bool UMMKVObject::SetBool(const struct FString& Key, bool Value)
 
 void UMMKVObject::Remove(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.Remove");
 
@@ -234,7 +234,7 @@ void UMMKVObject::Remove(const struct FString& Key)
 
 void UMMKVObject::MMKVLogError__DelegateSignature(const struct FString& MapID, int ErrorType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction MMKVUnreal.MMKVObject.MMKVLogError__DelegateSignature");
 
@@ -259,7 +259,7 @@ void UMMKVObject::MMKVLogError__DelegateSignature(const struct FString& MapID, i
 
 void UMMKVObject::Init(const struct FString& MMapID, const struct FString& RootPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.Init");
 
@@ -285,7 +285,7 @@ void UMMKVObject::Init(const struct FString& MMapID, const struct FString& RootP
 
 uint32_t UMMKVObject::GetValueSize(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.GetValueSize");
 
@@ -312,7 +312,7 @@ uint32_t UMMKVObject::GetValueSize(const struct FString& Key)
 
 struct FString UMMKVObject::GetString(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.GetString");
 
@@ -339,7 +339,7 @@ struct FString UMMKVObject::GetString(const struct FString& Key)
 
 int UMMKVObject::GetInt32(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.GetInt32");
 
@@ -366,7 +366,7 @@ int UMMKVObject::GetInt32(const struct FString& Key)
 
 double UMMKVObject::GetDouble(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.GetDouble");
 
@@ -393,7 +393,7 @@ double UMMKVObject::GetDouble(const struct FString& Key)
 
 TArray<unsigned char> UMMKVObject::GetBuffer(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.GetBuffer");
 
@@ -420,7 +420,7 @@ TArray<unsigned char> UMMKVObject::GetBuffer(const struct FString& Key)
 
 bool UMMKVObject::GetBool(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.GetBool");
 
@@ -446,7 +446,7 @@ bool UMMKVObject::GetBool(const struct FString& Key)
 
 TMap<struct FString, bool> UMMKVObject::GetAllKeys()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.GetAllKeys");
 
@@ -472,7 +472,7 @@ TMap<struct FString, bool> UMMKVObject::GetAllKeys()
 
 bool UMMKVObject::ContainsKey(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function MMKVUnreal.MMKVObject.ContainsKey");
 

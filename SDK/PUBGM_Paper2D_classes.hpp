@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Paper2D.MaterialExpressionSpriteTextureSampler
 // 0x0020 (0x01D8 - 0x01B8)
@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.MaterialExpressionSpriteTextureSampler");
 		return pStaticClass;
@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperCharacter");
 		return pStaticClass;
@@ -55,12 +55,12 @@ public:
 	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
 	TArray<struct FPaperFlipbookKeyFrame>              KeyFrames;                                                // 0x0030(0x0010) (Edit, ZeroConstructor)
 	class UMaterialInterface*                          DefaultMaterial;                                          // 0x0040(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFlipbookCollisionMode>           CollisionSource;                                          // 0x0048(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFlipbookCollisionMode>                CollisionSource;                                          // 0x0048(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0049(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperFlipbook");
 		return pStaticClass;
@@ -86,7 +86,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperFlipbookActor");
 		return pStaticClass;
@@ -96,25 +96,27 @@ public:
 
 
 // Class Paper2D.PaperFlipbookComponent
-// 0x0040 (0x09C0 - 0x0980)
+// 0x0050 (0x09D0 - 0x0980)
 class UPaperFlipbookComponent : public UMeshComponent
 {
 public:
-	class UMaterialInterface*                          Material;                                                 // 0x0980(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
-	float                                              PlayRate;                                                 // 0x0988(0x0004) (Edit, Net, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      bLooping : 1;                                             // 0x098C(0x0001) (Net)
-	unsigned char                                      bReversePlayback : 1;                                     // 0x098C(0x0001) (Net)
-	unsigned char                                      bPlayIng : 1;                                             // 0x098C(0x0001) (Net)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x098D(0x0003) MISSED OFFSET
-	float                                              AccumulatedTime;                                          // 0x0990(0x0004) (Net, ZeroConstructor, IsPlainOldData)
-	int                                                CachedFrameIndex;                                         // 0x0994(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FLinearColor                                SpriteColor;                                              // 0x0998(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	class UBodySetup*                                  CachedBodySetup;                                          // 0x09A8(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	struct FScriptMulticastDelegate                    OnFinishedPlaying;                                        // 0x09B0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	class UPaperFlipbook*                              SourceFlipbook;                                           // 0x0980(0x0008) (Edit, Net, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          Material;                                                 // 0x0988(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
+	float                                              PlayRate;                                                 // 0x0990(0x0004) (Edit, Net, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      bLooping : 1;                                             // 0x0994(0x0001) (Net)
+	unsigned char                                      bReversePlayback : 1;                                     // 0x0994(0x0001) (Net)
+	unsigned char                                      bPlayIng : 1;                                             // 0x0994(0x0001) (Net)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0995(0x0003) MISSED OFFSET
+	float                                              AccumulatedTime;                                          // 0x0998(0x0004) (Net, ZeroConstructor, IsPlainOldData)
+	int                                                CachedFrameIndex;                                         // 0x099C(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FLinearColor                                SpriteColor;                                              // 0x09A0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
+	class UBodySetup*                                  CachedBodySetup;                                          // 0x09B0(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnFinishedPlaying;                                        // 0x09B8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x09C8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperFlipbookComponent");
 		return pStaticClass;
@@ -156,7 +158,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperGroupedSpriteActor");
 		return pStaticClass;
@@ -170,13 +172,13 @@ public:
 class UPaperGroupedSpriteComponent : public UMeshComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0980(0x0008) MISSED OFFSET
-	TArray<struct FSpriteInstanceData>                 PerInstanceSpriteData;                                    // 0x0988(0x0010) (Edit, ZeroConstructor)
-	unsigned char                                      UnknownData01[0x18];                                      // 0x0998(0x0018) MISSED OFFSET
+	TArray<class UMaterialInterface*>                  InstanceMaterials;                                        // 0x0980(0x0010) (ZeroConstructor)
+	TArray<struct FSpriteInstanceData>                 PerInstanceSpriteData;                                    // 0x0990(0x0010) (Edit, ZeroConstructor)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x09A0(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperGroupedSpriteComponent");
 		return pStaticClass;
@@ -206,7 +208,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperRuntimeSettings");
 		return pStaticClass;
@@ -231,7 +233,7 @@ public:
 	class UMaterialInterface*                          DefaultMaterial;                                          // 0x0078(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	class UMaterialInterface*                          AlternateMaterial;                                        // 0x0080(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	TArray<struct FPaperSpriteSocket>                  Sockets;                                                  // 0x0088(0x0010) (Edit, ZeroConstructor)
-	TEnumAsByte<enum ESpriteCollisionMode>             SpriteCollisionDomain;                                    // 0x0098(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpriteCollisionMode>                  SpriteCollisionDomain;                                    // 0x0098(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0099(0x0003) MISSED OFFSET
 	float                                              PixelsPerUnrealUnit;                                      // 0x009C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	class UBodySetup*                                  BodySetup;                                                // 0x00A0(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
@@ -241,7 +243,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperSprite");
 		return pStaticClass;
@@ -259,7 +261,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperSpriteActor");
 		return pStaticClass;
@@ -276,7 +278,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperSpriteAtlas");
 		return pStaticClass;
@@ -293,7 +295,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperSpriteBlueprintLibrary");
 		return pStaticClass;
@@ -309,13 +311,13 @@ public:
 class UPaperSpriteComponent : public UMeshComponent
 {
 public:
-	class UMaterialInterface*                          MaterialOverride;                                         // 0x0980(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
-	struct FLinearColor                                SpriteColor;                                              // 0x0988(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0998(0x0008) MISSED OFFSET
+	class UPaperSprite*                                SourceSprite;                                             // 0x0980(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          MaterialOverride;                                         // 0x0988(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
+	struct FLinearColor                                SpriteColor;                                              // 0x0990(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperSpriteComponent");
 		return pStaticClass;
@@ -339,7 +341,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTerrainActor");
 		return pStaticClass;
@@ -349,29 +351,28 @@ public:
 
 
 // Class Paper2D.PaperTerrainComponent
-// 0x0060 (0x0980 - 0x0920)
+// 0x0050 (0x0980 - 0x0930)
 class UPaperTerrainComponent : public UPrimitiveComponent
 {
 public:
-	class UPaperTerrainMaterial*                       TerrainMaterial;                                          // 0x0920(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bClosedSpline;                                            // 0x0928(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bFilledSpline;                                            // 0x0929(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x6];                                       // 0x092A(0x0006) MISSED OFFSET
-	class UPaperTerrainSplineComponent*                AssociatedSpline;                                         // 0x0930(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	int                                                RandomSeed;                                               // 0x0938(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              SegmentOverlapAmount;                                     // 0x093C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FLinearColor                                TerrainColor;                                             // 0x0940(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	int                                                ReparamStepsPerSegment;                                   // 0x0950(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESpriteCollisionMode>             SpriteCollisionDomain;                                    // 0x0954(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0955(0x0003) MISSED OFFSET
-	float                                              CollisionThickness;                                       // 0x0958(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x095C(0x0004) MISSED OFFSET
-	class UBodySetup*                                  CachedBodySetup;                                          // 0x0960(0x0008) (ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x18];                                      // 0x0968(0x0018) MISSED OFFSET
+	bool                                               bClosedSpline;                                            // 0x0930(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bFilledSpline;                                            // 0x0931(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x0932(0x0006) MISSED OFFSET
+	class UPaperTerrainSplineComponent*                AssociatedSpline;                                         // 0x0938(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                RandomSeed;                                               // 0x0940(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              SegmentOverlapAmount;                                     // 0x0944(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	struct FLinearColor                                TerrainColor;                                             // 0x0948(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
+	int                                                ReparamStepsPerSegment;                                   // 0x0958(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpriteCollisionMode>                  SpriteCollisionDomain;                                    // 0x095C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x095D(0x0003) MISSED OFFSET
+	float                                              CollisionThickness;                                       // 0x0960(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x0964(0x0004) MISSED OFFSET
+	class UBodySetup*                                  CachedBodySetup;                                          // 0x0968(0x0008) (ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x10];                                      // 0x0970(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTerrainComponent");
 		return pStaticClass;
@@ -392,7 +393,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTerrainMaterial");
 		return pStaticClass;
@@ -410,7 +411,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTerrainSplineComponent");
 		return pStaticClass;
@@ -444,7 +445,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTileLayer");
 		return pStaticClass;
@@ -470,8 +471,8 @@ public:
 	class UMaterialInterface*                          Material;                                                 // 0x0070(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	TArray<class UPaperTileLayer*>                     TileLayers;                                               // 0x0078(0x0010) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor)
 	float                                              CollisionThickness;                                       // 0x0088(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESpriteCollisionMode>             SpriteCollisionDomain;                                    // 0x008C(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETileMapProjectionMode>           ProjectionMode;                                           // 0x008D(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpriteCollisionMode>                  SpriteCollisionDomain;                                    // 0x008C(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETileMapProjectionMode>                ProjectionMode;                                           // 0x008D(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x2];                                       // 0x008E(0x0002) MISSED OFFSET
 	int                                                HexSideLength;                                            // 0x0090(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x0094(0x0004) MISSED OFFSET
@@ -481,7 +482,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTileMap");
 		return pStaticClass;
@@ -499,7 +500,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTileMapActor");
 		return pStaticClass;
@@ -513,21 +514,22 @@ public:
 class UPaperTileMapComponent : public UMeshComponent
 {
 public:
-	int                                                TileWidth;                                                // 0x0980(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData)
-	int                                                TileHeight;                                               // 0x0984(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData)
-	class UPaperTileSet*                               DefaultLayerTileSet;                                      // 0x0988(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
-	class UMaterialInterface*                          Material;                                                 // 0x0990(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
-	TArray<class UPaperTileLayer*>                     TileLayers;                                               // 0x0998(0x0010) (ZeroConstructor, Deprecated)
-	struct FLinearColor                                TileMapColor;                                             // 0x09A8(0x0010) (Edit, IsPlainOldData)
-	int                                                UseSingleLayerIndex;                                      // 0x09B8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseSingleLayer;                                          // 0x09BC(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x09BD(0x0003) MISSED OFFSET
-	class UPaperTileMap*                               TileMap;                                                  // 0x09C0(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x09C8(0x0008) MISSED OFFSET
+	int                                                MapWidth;                                                 // 0x0980(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData)
+	int                                                MapHeight;                                                // 0x0984(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData)
+	int                                                TileWidth;                                                // 0x0988(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData)
+	int                                                TileHeight;                                               // 0x098C(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData)
+	class UPaperTileSet*                               DefaultLayerTileSet;                                      // 0x0990(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
+	class UMaterialInterface*                          Material;                                                 // 0x0998(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData)
+	TArray<class UPaperTileLayer*>                     TileLayers;                                               // 0x09A0(0x0010) (ZeroConstructor, Deprecated)
+	struct FLinearColor                                TileMapColor;                                             // 0x09B0(0x0010) (Edit, IsPlainOldData)
+	int                                                UseSingleLayerIndex;                                      // 0x09C0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseSingleLayer;                                          // 0x09C4(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x09C5(0x0003) MISSED OFFSET
+	class UPaperTileMap*                               TileMap;                                                  // 0x09C8(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTileMapComponent");
 		return pStaticClass;
@@ -580,7 +582,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.PaperTileSet");
 		return pStaticClass;
@@ -597,7 +599,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Paper2D.TileMapBlueprintLibrary");
 		return pStaticClass;

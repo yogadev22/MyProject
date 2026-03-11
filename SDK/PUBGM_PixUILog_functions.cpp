@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PixUILog.PxLogMgr.PxLogToggleSwitchLevel
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -16,7 +16,7 @@ namespace SDK
 
 void UPxLogMgr::PxLogToggleSwitchLevel(EPxLogLevels eLogLevel, bool beOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUILog.PxLogMgr.PxLogToggleSwitchLevel");
 
@@ -42,7 +42,7 @@ void UPxLogMgr::PxLogToggleSwitchLevel(EPxLogLevels eLogLevel, bool beOpen)
 
 void UPxLogMgr::PxLogToggleSwitchGroup(EPxLogGroups eLogGroup, bool beOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUILog.PxLogMgr.PxLogToggleSwitchGroup");
 
@@ -67,7 +67,7 @@ void UPxLogMgr::PxLogToggleSwitchGroup(EPxLogGroups eLogGroup, bool beOpen)
 
 void UPxLogMgr::PxLogToggleForceLocalOutPut(bool beOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUILog.PxLogMgr.PxLogToggleForceLocalOutPut");
 
@@ -91,7 +91,7 @@ void UPxLogMgr::PxLogToggleForceLocalOutPut(bool beOpen)
 
 void UPxLogMgr::PxLogEnable(bool beEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUILog.PxLogMgr.PxLogEnable");
 
@@ -115,7 +115,7 @@ void UPxLogMgr::PxLogEnable(bool beEnable)
 
 class UPxLogMgr* UPxLogMgr::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUILog.PxLogMgr.Get");
 
@@ -142,7 +142,7 @@ class UPxLogMgr* UPxLogMgr::Get()
 
 void UPxLogMgr::DispatchLog(EPxLogGroups eLogGroup, EPxLogLevels eLogLevel, const struct FString& strLogContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUILog.PxLogMgr.DispatchLog");
 

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Editor_login.Editor_login_C.SetFpsByIndex
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -15,7 +15,7 @@ namespace SDK
 
 void AEditor_login_C::SetFpsByIndex(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.SetFpsByIndex");
 
@@ -38,7 +38,7 @@ void AEditor_login_C::SetFpsByIndex(int idx)
 
 void AEditor_login_C::InpActEvt_Android_Back_K2Node_InputKeyEvent_12(const struct FKey& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.InpActEvt_Android_Back_K2Node_InputKeyEvent_12");
 
@@ -61,7 +61,7 @@ void AEditor_login_C::InpActEvt_Android_Back_K2Node_InputKeyEvent_12(const struc
 
 void AEditor_login_C::InpActEvt_E_K2Node_InputKeyEvent_11(const struct FKey& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.InpActEvt_E_K2Node_InputKeyEvent_11");
 
@@ -84,7 +84,7 @@ void AEditor_login_C::InpActEvt_E_K2Node_InputKeyEvent_11(const struct FKey& Key
 
 void AEditor_login_C::InpActEvt_BackSpace_K2Node_InputKeyEvent_10(const struct FKey& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.InpActEvt_BackSpace_K2Node_InputKeyEvent_10");
 
@@ -107,7 +107,7 @@ void AEditor_login_C::InpActEvt_BackSpace_K2Node_InputKeyEvent_10(const struct F
 
 void AEditor_login_C::InpActEvt_B_K2Node_InputKeyEvent_9(const struct FKey& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.InpActEvt_B_K2Node_InputKeyEvent_9");
 
@@ -130,7 +130,7 @@ void AEditor_login_C::InpActEvt_B_K2Node_InputKeyEvent_9(const struct FKey& Key)
 
 void AEditor_login_C::InpActEvt_G_K2Node_InputKeyEvent_8(const struct FKey& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.InpActEvt_G_K2Node_InputKeyEvent_8");
 
@@ -153,7 +153,7 @@ void AEditor_login_C::InpActEvt_G_K2Node_InputKeyEvent_8(const struct FKey& Key)
 
 void AEditor_login_C::InpActEvt_N_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.InpActEvt_N_K2Node_InputKeyEvent_7");
 
@@ -174,7 +174,7 @@ void AEditor_login_C::InpActEvt_N_K2Node_InputKeyEvent_7(const struct FKey& Key)
 
 void AEditor_login_C::ReceiveBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.ReceiveBeginPlay");
 
@@ -196,7 +196,7 @@ void AEditor_login_C::ReceiveBeginPlay()
 
 void AEditor_login_C::ExecuteUbergraph_Editor_login(int EntryPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Editor_login.Editor_login_C.ExecuteUbergraph_Editor_login");
 

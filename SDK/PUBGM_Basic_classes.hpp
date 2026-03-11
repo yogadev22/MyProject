@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Basic.OnlyActorComponent
 // 0x0008 (0x0180 - 0x0178)
@@ -18,7 +18,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.OnlyActorComponent");
 		return pStaticClass;
@@ -40,7 +40,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAENetActor");
 		return pStaticClass;
@@ -65,7 +65,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAEAnimListComponentBase");
 		return pStaticClass;
@@ -91,7 +91,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.ItemHandleBase");
 		return pStaticClass;
@@ -135,7 +135,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BattleItemHandleBase");
 		return pStaticClass;
@@ -190,7 +190,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAEGameInstance");
 		return pStaticClass;
@@ -232,7 +232,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAENetBunchQueueSystem");
 		return pStaticClass;
@@ -250,7 +250,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAEBaseSkillCondition");
 		return pStaticClass;
@@ -293,7 +293,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.AttrModifyComponent");
 		return pStaticClass;
@@ -365,7 +365,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.AttrModifyInterface");
 		return pStaticClass;
@@ -392,7 +392,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.AttrModifyModDataSubsystem");
 		return pStaticClass;
@@ -413,7 +413,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BCDataTable");
 		return pStaticClass;
@@ -432,7 +432,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BlueprintFunctionOverride");
 		return pStaticClass;
@@ -455,7 +455,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BPClassManager");
 		return pStaticClass;
@@ -481,7 +481,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BuffConfigSubsystem");
 		return pStaticClass;
@@ -501,7 +501,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BuffNodeLuaInterface");
 		return pStaticClass;
@@ -518,14 +518,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BuffUtils");
 		return pStaticClass;
 	}
 
 
-	static bool IsRoleOK(TEnumAsByte<enum ENetRole> Role, EBuffEnabledRole EnabledRole);
+	static bool IsRoleOK(TEnumAsByte<ENetRole> Role, EBuffEnabledRole EnabledRole);
 };
 
 
@@ -537,7 +537,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.DelayReplicationInterface");
 		return pStaticClass;
@@ -561,7 +561,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.PathCompressionRef");
 		return pStaticClass;
@@ -578,7 +578,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.GameModeEnvInterface");
 		return pStaticClass;
@@ -595,7 +595,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.GameModeEnvUtil");
 		return pStaticClass;
@@ -615,7 +615,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.ItemContainerInterface");
 		return pStaticClass;
@@ -638,7 +638,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.ItemContainerOwnerInterface");
 		return pStaticClass;
@@ -662,7 +662,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.ItemFactoryInterface");
 		return pStaticClass;
@@ -680,7 +680,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.LuaAsyncTasksSubsystem");
 		return pStaticClass;
@@ -700,7 +700,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.LuaAsyncTaskSubsystem");
 		return pStaticClass;
@@ -719,7 +719,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.LuaEventBridgeFunction");
 		return pStaticClass;
@@ -748,7 +748,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.LuaEventBridge");
 		return pStaticClass;
@@ -776,7 +776,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.LuaEventSubsystem");
 		return pStaticClass;
@@ -798,7 +798,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.ModTable");
 		return pStaticClass;
@@ -819,7 +819,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.NetRelevancyGroup");
 		return pStaticClass;
@@ -838,7 +838,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.OnlyActorCompManagerComponent");
 		return pStaticClass;
@@ -855,7 +855,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.OnlyActorComponentManagerInterface");
 		return pStaticClass;
@@ -872,7 +872,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.OwnerRelevancyDependencyInterface");
 		return pStaticClass;
@@ -882,14 +882,14 @@ public:
 
 
 // Class Basic.PlayerActorChannelEx
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0580 - 0x0580)
 class UPlayerActorChannelEx : public UActorChannel
 {
 public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.PlayerActorChannelEx");
 		return pStaticClass;
@@ -906,7 +906,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.PlayerActorChannelExActor");
 		return pStaticClass;
@@ -925,7 +925,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.PlayerReliableSequentialSyncActor");
 		return pStaticClass;
@@ -937,14 +937,14 @@ public:
 
 
 // Class Basic.PlayerReliableSequentialSyncActorChannel
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0580 - 0x0580)
 class UPlayerReliableSequentialSyncActorChannel : public UPlayerActorChannelEx
 {
 public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.PlayerReliableSequentialSyncActorChannel");
 		return pStaticClass;
@@ -961,7 +961,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.RenderFunctionLibrary");
 		return pStaticClass;
@@ -981,7 +981,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.RepPropertyModOptim");
 		return pStaticClass;
@@ -998,7 +998,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBaseBuffCarrierInterface");
 		return pStaticClass;
@@ -1019,7 +1019,7 @@ public:
 
 
 // Class Basic.STBuff
-// 0x0118 (0x0140 - 0x0028)
+// 0x0128 (0x0150 - 0x0028)
 class USTBuff : public UObject
 {
 public:
@@ -1027,40 +1027,41 @@ public:
 	int                                                BuffID;                                                   // 0x0040(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
 	struct FString                                     BuffName;                                                 // 0x0048(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	struct FString                                     Desc;                                                     // 0x0058(0x0010) (BlueprintVisible, ZeroConstructor)
-	int                                                LayerMax;                                                 // 0x0068(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FString                                     Desc;                                                     // 0x0058(0x0010) (Edit, BlueprintVisible, ZeroConstructor, EditConst)
+	int                                                LayerMax;                                                 // 0x0068(0x0004) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
 	float                                              Duration;                                                 // 0x006C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              ClientSyncInterval;                                       // 0x0070(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x0074(0x0004) MISSED OFFSET
 	TArray<float>                                      CDConfigArray;                                            // 0x0078(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	bool                                               bNeedSyncCD;                                              // 0x0088(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffClientSyncType                                ClientSyncType;                                           // 0x0089(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffTargetType                                    TargetType;                                               // 0x008A(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffRefreshType                                   RefreshType;                                              // 0x008B(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffReActionType                                  ReActionType;                                             // 0x008C(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EMultiCauserHandleType                             MultiCauserHandleType;                                    // 0x008D(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EMultiSkillHandleType                              MultiSkillHandleType;                                     // 0x008E(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsExecuteOnece;                                           // 0x008F(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EBuffClientSyncType                                ClientSyncType;                                           // 0x0089(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	EBuffTargetType                                    TargetType;                                               // 0x008A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	EBuffRefreshType                                   RefreshType;                                              // 0x008B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	EBuffReActionType                                  ReActionType;                                             // 0x008C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	EMultiCauserHandleType                             MultiCauserHandleType;                                    // 0x008D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	EMultiSkillHandleType                              MultiSkillHandleType;                                     // 0x008E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	bool                                               IsExecuteOnece;                                           // 0x008F(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
 	bool                                               RemoveAllLayer;                                           // 0x0090(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x7];                                       // 0x0091(0x0007) MISSED OFFSET
-	TArray<class USTBuffCheckConditionWrapper*>        Conditions;                                               // 0x0098(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
-	TArray<class USTBuffAction*>                       Actions;                                                  // 0x00A8(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
-	EBuffShowInUIType                                  NeedShowBuffTypeInBuffList;                               // 0x00B8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x00B9(0x0003) MISSED OFFSET
-	int                                                LocalizeDescID;                                           // 0x00BC(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FString                                     IconPath;                                                 // 0x00C0(0x0010) (BlueprintVisible, ZeroConstructor)
-	bool                                               IsClientOwnLife;                                          // 0x00D0(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               ExistForever;                                             // 0x00D1(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x2];                                       // 0x00D2(0x0002) MISSED OFFSET
-	int                                                TipsOnAddBuff;                                            // 0x00D4(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FString                                     TimeFormula;                                              // 0x00D8(0x0010) (BlueprintVisible, ZeroConstructor)
-	TMap<class UObject*, int>                          InstancedNodeNameToMemoryMap;                             // 0x00E8(0x0050) (ZeroConstructor)
-	int                                                InstancedNodesTotalSize;                                  // 0x0138(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x4];                                       // 0x013C(0x0004) MISSED OFFSET
+	TArray<class USTBuffTrigger*>                      Triggers;                                                 // 0x0098(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
+	TArray<class USTBuffCheckConditionWrapper*>        Conditions;                                               // 0x00A8(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
+	TArray<class USTBuffAction*>                       Actions;                                                  // 0x00B8(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
+	EBuffShowInUIType                                  NeedShowBuffTypeInBuffList;                               // 0x00C8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x00C9(0x0003) MISSED OFFSET
+	int                                                LocalizeDescID;                                           // 0x00CC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	struct FString                                     IconPath;                                                 // 0x00D0(0x0010) (Edit, BlueprintVisible, ZeroConstructor, EditConst)
+	bool                                               IsClientOwnLife;                                          // 0x00E0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	bool                                               ExistForever;                                             // 0x00E1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x2];                                       // 0x00E2(0x0002) MISSED OFFSET
+	int                                                TipsOnAddBuff;                                            // 0x00E4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData)
+	struct FString                                     TimeFormula;                                              // 0x00E8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, EditConst)
+	TMap<class UObject*, int>                          InstancedNodeNameToMemoryMap;                             // 0x00F8(0x0050) (ZeroConstructor)
+	int                                                InstancedNodesTotalSize;                                  // 0x0148(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData06[0x4];                                       // 0x014C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuff");
 		return pStaticClass;
@@ -1092,7 +1093,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffNodeInstanceData");
 		return pStaticClass;
@@ -1104,21 +1105,23 @@ public:
 
 
 // Class Basic.STBuffAction
-// 0x0030 (0x0088 - 0x0058)
+// 0x0048 (0x00A0 - 0x0058)
 class USTBuffAction : public USTBuffNodeInstanceData
 {
 public:
-	EBuffEnabledRole                                   ActionRole;                                               // 0x0058(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0059(0x0003) MISSED OFFSET
-	float                                              ExecuteDelay;                                             // 0x005C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TArray<struct FBuffCheckConditionWrapperItem>      ConditionSettings;                                        // 0x0060(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	bool                                               AutoEnabled;                                              // 0x0070(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
-	TArray<class UObject*>                             CacheSoftObject;                                          // 0x0078(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0058(0x0008) MISSED OFFSET
+	EBuffEnabledRole                                   ActionRole;                                               // 0x0060(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0061(0x0003) MISSED OFFSET
+	float                                              ExecuteDelay;                                             // 0x0064(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TArray<struct FBuffCheckConditionWrapperItem>      ConditionSettings;                                        // 0x0068(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<struct FBuffTriggerWrapperItem>             TriggerSettings;                                          // 0x0078(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	bool                                               AutoEnabled;                                              // 0x0088(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0089(0x0007) MISSED OFFSET
+	TArray<class UObject*>                             CacheSoftObject;                                          // 0x0090(0x0010) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffAction");
 		return pStaticClass;
@@ -1126,6 +1129,7 @@ public:
 
 
 	void TryGetParams(TMap<int, struct FString>* ActionParamMap);
+	struct FString ToString();
 	void Tick(class UActorComponent* BuffSystemComponent, int InstID, float DetalTime);
 	void SetEnabled(class UActorComponent* BuffSystemComponent, int InstID, bool Enabled);
 	void ResetExecute(class UActorComponent* BuffSystemComponent, int InstID, bool IgnoreEnd);
@@ -1140,8 +1144,7 @@ public:
 	void OnAsyncLoadSoftPathDone();
 	bool IsRoleOK();
 	void Initialize(class UActorComponent* BuffSystemComponent, int InstID);
-	TArray<class AActor*> GetTargetSharedActors();
-	TEnumAsByte<enum ENetRole> GetRealOwnerRole();
+	TEnumAsByte<ENetRole> GetRealOwnerRole();
 	class AActor* GetOwner();
 	class AActor* GetCauser();
 	void Execute(class UActorComponent* BuffSystemComponent, int InstID);
@@ -1153,25 +1156,28 @@ public:
 
 
 // Class Basic.STBuffAction_Lua
-// 0x0128 (0x01B0 - 0x0088)
+// 0x0130 (0x01D0 - 0x00A0)
 class USTBuffAction_Lua : public USTBuffAction
 {
 public:
-	unsigned char                                      UnknownData00[0xC0];                                      // 0x0088(0x00C0) MISSED OFFSET
-	TMap<struct FName, struct FString>                 ActionParams;                                             // 0x0148(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	bool                                               bEnableLuaPrivateData;                                    // 0x0198(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0199(0x0007) MISSED OFFSET
-	struct FString                                     LuaFilePath;                                              // 0x01A0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	unsigned char                                      UnknownData00[0xC0];                                      // 0x00A0(0x00C0) MISSED OFFSET
+	TMap<struct FName, struct FString>                 ActionParams;                                             // 0x0160(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	bool                                               bEnableLuaPrivateData;                                    // 0x01B0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x01B1(0x0007) MISSED OFFSET
+	struct FString                                     LuaFilePath;                                              // 0x01B8(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	bool                                               bNeedTick;                                                // 0x01C8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x01C9(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffAction_Lua");
 		return pStaticClass;
 	}
 
 
+	struct FString ToString();
 	void OnTick(float DetalTime);
 	void OnInitialize();
 	void OnExecute();
@@ -1182,26 +1188,27 @@ public:
 
 
 // Class Basic.STBuffCheckConditionWrapper
-// 0x0020 (0x0078 - 0x0058)
+// 0x0028 (0x0080 - 0x0058)
 class USTBuffCheckConditionWrapper : public USTBuffNodeInstanceData
 {
 public:
-	class USTBuffCondition*                            Condition;                                                // 0x0058(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	float                                              ConditionTickInterval;                                    // 0x0060(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              Probality;                                                // 0x0064(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffConditionExecuteTimeType                      ExecuteTimeType;                                          // 0x0068(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsDoOnFalse;                                              // 0x0069(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsNeedTick;                                               // 0x006A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsNeedExecute;                                            // 0x006B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsSetFalseWhenExecute;                                    // 0x006C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x006D(0x0003) MISSED OFFSET
-	float                                              ExecuteDelay;                                             // 0x0070(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               AutoEnabled;                                              // 0x0074(0x0001) (ZeroConstructor, IsPlainOldData)
+	EBuffEnabledRole                                   ExecuteRole;                                              // 0x0058(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0059(0x0007) MISSED OFFSET
+	class USTBuffCondition*                            Condition;                                                // 0x0060(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	float                                              ConditionTickInterval;                                    // 0x0068(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              Probality;                                                // 0x006C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EBuffConditionExecuteTimeType                      ExecuteTimeType;                                          // 0x0070(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsDoOnFalse;                                              // 0x0071(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsNeedTick;                                               // 0x0072(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsNeedExecute;                                            // 0x0073(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsSetFalseWhenExecute;                                    // 0x0074(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0075(0x0003) MISSED OFFSET
+	float                                              ExecuteDelay;                                             // 0x0078(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x007C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffCheckConditionWrapper");
 		return pStaticClass;
@@ -1209,7 +1216,6 @@ public:
 
 
 	void Tick(class UActorComponent* BuffSystemComponent, int InstID, float DetalTime);
-	void SetEnabled(class UActorComponent* BuffSystemComponent, int InstID, bool Enabled);
 	void ResetExecute(class UActorComponent* BuffSystemComponent, int InstID, bool IgnoreEnd);
 	void OnTick(float DetalTime);
 	void OnInitialize();
@@ -1217,30 +1223,32 @@ public:
 	void OnConditionTrue();
 	void OnConditionFalse();
 	void OnChangeNotify();
+	bool IsRoleOK();
+	void InitLinkActionEnableState(class UActorComponent* BuffSystemComponent, int InstID);
 	void Initialize(class UActorComponent* BuffSystemComponent, int InstID);
+	TEnumAsByte<ENetRole> GetRealOwnerRole();
 	void Execute(class UActorComponent* BuffSystemComponent, int InstID);
 	void End(class UActorComponent* BuffSystemComponent, int InstID);
 	void Destroy(class UActorComponent* BuffSystemComponent, int InstID);
-	void CheckLinkActionEnabled(class UActorComponent* BuffSystemComponent, int InstID);
 	void CheckCondition();
 	void ChangeNotify(class UActorComponent* BuffSystemComponent, int InstID);
 };
 
 
 // Class Basic.STBuffCondition
-// 0x0028 (0x0050 - 0x0028)
+// 0x0030 (0x0058 - 0x0028)
 class USTBuffCondition : public UObject
 {
 public:
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0028(0x0018) MISSED OFFSET
-	EBuffConditionAndOr                                AndOrPrev;                                                // 0x0040(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsKeepResult;                                             // 0x0041(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x6];                                       // 0x0042(0x0006) MISSED OFFSET
-	class USTBuffNodeInstanceData*                     OwnerInstanceData;                                        // 0x0048(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0028(0x0020) MISSED OFFSET
+	EBuffConditionAndOr                                AndOrPrev;                                                // 0x0048(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsKeepResult;                                             // 0x0049(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x004A(0x0006) MISSED OFFSET
+	class USTBuffNodeInstanceData*                     OwnerInstanceData;                                        // 0x0050(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffCondition");
 		return pStaticClass;
@@ -1255,19 +1263,20 @@ public:
 	class AActor* GetCauser();
 	class USTBuffCondition* Copy(class UObject* Outer);
 	bool CheckIsTrue();
+	void ChangeNotify();
 };
 
 
 // Class Basic.STBuffConditionComplex
-// 0x0010 (0x0060 - 0x0050)
+// 0x0010 (0x0068 - 0x0058)
 class USTBuffConditionComplex : public USTBuffCondition
 {
 public:
-	TArray<class USTBuffCondition*>                    Conditions;                                               // 0x0050(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
+	TArray<class USTBuffCondition*>                    Conditions;                                               // 0x0058(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffConditionComplex");
 		return pStaticClass;
@@ -1282,15 +1291,15 @@ public:
 
 
 // Class Basic.STBuffConditionNot
-// 0x0008 (0x0058 - 0x0050)
+// 0x0008 (0x0060 - 0x0058)
 class USTBuffConditionNot : public USTBuffCondition
 {
 public:
-	class USTBuffCondition*                            Condition;                                                // 0x0050(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class USTBuffCondition*                            Condition;                                                // 0x0058(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffConditionNot");
 		return pStaticClass;
@@ -1305,19 +1314,19 @@ public:
 
 
 // Class Basic.STBuffCondition_Lua
-// 0x0128 (0x0178 - 0x0050)
+// 0x0128 (0x0180 - 0x0058)
 class USTBuffCondition_Lua : public USTBuffCondition
 {
 public:
-	unsigned char                                      UnknownData00[0xC0];                                      // 0x0050(0x00C0) MISSED OFFSET
-	TMap<struct FName, struct FString>                 ActionParams;                                             // 0x0110(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	bool                                               bEnableLuaPrivateData;                                    // 0x0160(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0161(0x0007) MISSED OFFSET
-	struct FString                                     LuaFilePath;                                              // 0x0168(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	unsigned char                                      UnknownData00[0xC0];                                      // 0x0058(0x00C0) MISSED OFFSET
+	TMap<struct FName, struct FString>                 ActionParams;                                             // 0x0118(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	bool                                               bEnableLuaPrivateData;                                    // 0x0168(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0169(0x0007) MISSED OFFSET
+	struct FString                                     LuaFilePath;                                              // 0x0170(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffCondition_Lua");
 		return pStaticClass;
@@ -1331,24 +1340,24 @@ public:
 
 
 // Class Basic.STBuffConditionAction
-// 0x0028 (0x00B0 - 0x0088)
+// 0x0028 (0x00C8 - 0x00A0)
 class USTBuffConditionAction : public USTBuffAction
 {
 public:
-	class USTBuffCondition*                            Condition;                                                // 0x0088(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	float                                              ConditionTickInterval;                                    // 0x0090(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              Probality;                                                // 0x0094(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffConditionExecuteTimeType                      ExecuteTimeType;                                          // 0x0098(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsDoOnFalse;                                              // 0x0099(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsNeedTick;                                               // 0x009A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsNeedExecute;                                            // 0x009B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               IsSetFalseWhenExecute;                                    // 0x009C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x009D(0x0003) MISSED OFFSET
-	TArray<struct FBuffConditionActionItem>            LinkActions;                                              // 0x00A0(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	class USTBuffCondition*                            Condition;                                                // 0x00A0(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	float                                              ConditionTickInterval;                                    // 0x00A8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              Probality;                                                // 0x00AC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EBuffConditionExecuteTimeType                      ExecuteTimeType;                                          // 0x00B0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsDoOnFalse;                                              // 0x00B1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsNeedTick;                                               // 0x00B2(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsNeedExecute;                                            // 0x00B3(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               IsSetFalseWhenExecute;                                    // 0x00B4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x00B5(0x0003) MISSED OFFSET
+	TArray<struct FBuffConditionActionItem>            LinkActions;                                              // 0x00B8(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffConditionAction");
 		return pStaticClass;
@@ -1365,8 +1374,131 @@ public:
 };
 
 
+// Class Basic.STBuffEvent
+// 0x0050 (0x0078 - 0x0028)
+class USTBuffEvent : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0028(0x0020) MISSED OFFSET
+	class USTBuffTrigger*                              OwnerInstanceData;                                        // 0x0048(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
+	EBuffEnabledRole                                   ExecuteRole;                                              // 0x0050(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bStateEvent;                                              // 0x0051(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x0052(0x0006) MISSED OFFSET
+	struct FString                                     StateSharedKey;                                           // 0x0058(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	struct FScriptMulticastDelegate                    OnTriggerEventDelegate;                                   // 0x0068(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Basic.STBuffEvent");
+		return pStaticClass;
+	}
+
+
+	void TriggerEvent();
+	struct FString ToString();
+	void SetTimer(const struct FName& FunctionName, float InRate, bool InbLoop, float InFirstDelay);
+	void OnInitialize();
+	void OnEnd();
+	void OnDestroy();
+	bool IsRoleOK();
+	TEnumAsByte<ENetRole> GetRealOwnerRole();
+	class AActor* GetOwner();
+	class AActor* GetCauser();
+	class USTBuffEvent* Copy(class UObject* Outer);
+	void ClearTimer(const struct FName& FunctionName);
+	void ClearAllTimer();
+};
+
+
+// Class Basic.STBuffEvent_Lua
+// 0x0128 (0x01A0 - 0x0078)
+class USTBuffEvent_Lua : public USTBuffEvent
+{
+public:
+	unsigned char                                      UnknownData00[0xC0];                                      // 0x0078(0x00C0) MISSED OFFSET
+	TMap<struct FName, struct FString>                 ActionParams;                                             // 0x0138(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	bool                                               bEnableLuaPrivateData;                                    // 0x0188(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0189(0x0007) MISSED OFFSET
+	struct FString                                     LuaFilePath;                                              // 0x0190(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Basic.STBuffEvent_Lua");
+		return pStaticClass;
+	}
+
+
+	struct FString ToString();
+};
+
+
+// Class Basic.STBuffEvent_Multi
+// 0x0010 (0x0088 - 0x0078)
+class USTBuffEvent_Multi : public USTBuffEvent
+{
+public:
+	TArray<class USTBuffEvent*>                        Events;                                                   // 0x0078(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Basic.STBuffEvent_Multi");
+		return pStaticClass;
+	}
+
+
+	void OnInitialize();
+	void OnEnd();
+	void OnDestroy();
+	class USTBuffEvent* Copy(class UObject* Outer);
+	void ChildTriggerEvent();
+};
+
+
+// Class Basic.STBuffSharedInterface
+// 0x0000 (0x0028 - 0x0028)
+class USTBuffSharedInterface : public UInterface
+{
+public:
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Basic.STBuffSharedInterface");
+		return pStaticClass;
+	}
+
+
+	void SetVectorShared(const struct FString& SharedName, const struct FVector& InValue);
+	void SetUInt8Shared(const struct FString& SharedName, unsigned char InValue);
+	void SetTargetShared(const struct FString& SharedName, TArray<class AActor*> InActors);
+	void SetStringShared(const struct FString& SharedName, const struct FString& InValue);
+	void SetRotatorShared(const struct FString& SharedName, const struct FRotator& InValue);
+	void SetNameShared(const struct FString& SharedName, const struct FName& InValue);
+	void SetInt32Shared(const struct FString& SharedName, int InValue);
+	void SetFloatShared(const struct FString& SharedName, float InValue);
+	void SetBooleanShared(const struct FString& SharedName, bool InValue);
+	void RemoveShared(const struct FString& SharedName);
+	bool GetVectorShared(const struct FString& SharedName, struct FVector* OutValue);
+	bool GetUInt8Shared(const struct FString& SharedName, unsigned char* OutValue);
+	bool GetTargetShared(const struct FString& SharedName, TArray<class AActor*>* OutActors);
+	bool GetStringShared(const struct FString& SharedName, struct FString* OutValue);
+	bool GetRotatorShared(const struct FString& SharedName, struct FRotator* OutValue);
+	bool GetNameShared(const struct FString& SharedName, struct FName* OutValue);
+	bool GetInt32Shared(const struct FString& SharedName, int* OutValue);
+	bool GetFloatShared(const struct FString& SharedName, float* OutValue);
+	bool GetBooleanShared(const struct FString& SharedName, bool* OutValue);
+};
+
+
 // Class Basic.STBuffSystemComponent
-// 0x02C8 (0x0440 - 0x0178)
+// 0x0328 (0x04A0 - 0x0178)
 class USTBuffSystemComponent : public UActorComponent
 {
 public:
@@ -1378,18 +1510,20 @@ public:
 	struct FScriptMulticastDelegate                    OnClientUpdateBuffEvent;                                  // 0x01A8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnAddBuffEvent;                                           // 0x01B8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnRemoveBuffEvent;                                        // 0x01C8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	TMap<int, class UUAEBlackboard*>                   BuffBlackboardMap;                                        // 0x01D8(0x0050) (ZeroConstructor)
-	struct FBuffIncNetArray                            SyncBriefs;                                               // 0x0228(0x0020) (Net)
-	struct FBuffIncNetArray                            SyncRefBriefs;                                            // 0x0248(0x0020)
-	struct FBuffIncNetArray                            OwnerSyncBriefs;                                          // 0x0268(0x0020) (Net)
-	struct FBuffIncNetArray                            OwnerSyncRefBriefs;                                       // 0x0288(0x0020)
-	struct FBuffIncNetArray                            DsBuffBriefs;                                             // 0x02A8(0x0020) (Net)
-	unsigned char                                      UnknownData02[0x50];                                      // 0x02C8(0x0050) UNKNOWN PROPERTY: SetProperty Basic.STBuffSystemComponent.BriefRemoveInstIds
-	unsigned char                                      UnknownData03[0x128];                                     // 0x0318(0x0128) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnUpdateBuffEvent;                                        // 0x01D8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	TMap<int, class UUAEBlackboard*>                   BuffBlackboardMap;                                        // 0x01E8(0x0050) (ZeroConstructor)
+	struct FBuffIncNetArray                            SyncBriefs;                                               // 0x0238(0x0020) (Net)
+	struct FBuffIncNetArray                            SyncRefBriefs;                                            // 0x0258(0x0020)
+	struct FBuffIncNetArray                            OwnerSyncBriefs;                                          // 0x0278(0x0020) (Net)
+	struct FBuffIncNetArray                            OwnerSyncRefBriefs;                                       // 0x0298(0x0020)
+	struct FBuffIncNetArray                            DsBuffBriefs;                                             // 0x02B8(0x0020) (Net)
+	unsigned char                                      UnknownData02[0x50];                                      // 0x02D8(0x0050) UNKNOWN PROPERTY: SetProperty Basic.STBuffSystemComponent.BriefRemoveInstIds
+	TMap<struct FBuffReplaceData, struct FBuffReplaceData> BuffReplaceData;                                          // 0x0328(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData03[0x128];                                     // 0x0378(0x0128) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STBuffSystemComponent");
 		return pStaticClass;
@@ -1397,10 +1531,12 @@ public:
 
 
 	void UpdateClientBuff(struct FBuffSyncBrief* Brief);
+	bool SetBuffReplaceData(const struct FBuffReplaceData& From, const struct FBuffReplaceData& To);
 	bool RemoveBuffBySkill(int SkillID, int LayerCount, class AActor* Causer);
 	void RemoveBuff(int BuffID, int LayerCount, class AActor* Causer, int CauseSkillID);
 	void RemoveAllBuffsWithExcludeArray(TArray<int> InExcludeArry);
 	void RemoveAllBuffs(bool bClearAll);
+	void OnUpdateBuffEvent__DelegateSignature(int BuffID, int SkillID, int InstID);
 	void OnRep_SyncBriefs();
 	void OnRep_OwnerSyncBriefs();
 	void OnRemoveBuffEvent__DelegateSignature(int BuffID, int SkillID, int InstID);
@@ -1414,7 +1550,8 @@ public:
 	bool HasBuff(int BuffID);
 	class UBuffConfigSubsystem* GetSubsystem();
 	class USTBuff* GetSTBuffByBuffID(int BuffID);
-	TEnumAsByte<enum ENetRole> GetRealOwnerRoleSafety();
+	TEnumAsByte<ENetRole> GetRealOwnerRoleSafety();
+	struct FBuffReplaceData GetBuffReplaceDataByID(int ID, bool bBuffInst);
 	int GetBuffLayerCount(int InstID, int CauseSkillID);
 	TArray<struct FBuffSyncBrief> GetBuffInfoBySkillID(int SkillID);
 	TArray<struct FBuffSyncBrief> GetBuffInfoByBuffID(int BuffID);
@@ -1426,9 +1563,52 @@ public:
 	TArray<struct FBuffSyncBrief> GetAllBuffInfo();
 	void DoCooldown(int InstID, int Index, bool bReset);
 	void ClearBuffs();
+	bool ChangeLevel(int InstID, int NewLevel);
 	bool ChangeDuration(int InstID, float Duration);
 	bool AddBuffBySkill(int SkillID, int LayerCount, class AActor* Causer, int Level);
 	int AddBuff(int BuffID, class AActor* Causer, int LayerCount, int CauseSkillID, int Level);
+};
+
+
+// Class Basic.STBuffTrigger
+// 0x0020 (0x0078 - 0x0058)
+class USTBuffTrigger : public USTBuffNodeInstanceData
+{
+public:
+	EBuffTriggerType                                   TriggerType;                                              // 0x0058(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableTick;                                              // 0x0059(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x005A(0x0002) MISSED OFFSET
+	float                                              TickInterval;                                             // 0x005C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EBuffEnabledRole                                   ExecuteRole;                                              // 0x0060(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0061(0x0007) MISSED OFFSET
+	class USTBuffEvent*                                Event;                                                    // 0x0068(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class USTBuffCondition*                            Condition;                                                // 0x0070(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class Basic.STBuffTrigger");
+		return pStaticClass;
+	}
+
+
+	void TriggerEvent();
+	void Tick(class UActorComponent* BuffSystemComponent, int InstID, float DetalTime);
+	void SetTriggerState(EBuffTriggerState State);
+	void OnTick();
+	void OnInitialize();
+	void OnEnd();
+	void OnDestroy();
+	void OnCheckLinkActionEnabled();
+	bool IsRoleOK();
+	bool IsNeedTick();
+	void Initialize(class UActorComponent* BuffSystemComponent, int InstID);
+	TEnumAsByte<ENetRole> GetRealOwnerRole();
+	int GetActiveExecuteCount();
+	void End(class UActorComponent* BuffSystemComponent, int InstID);
+	void Destroy(class UActorComponent* BuffSystemComponent, int InstID);
+	void CheckLinkActionEnabled(class UActorComponent* BuffSystemComponent, int InstID);
 };
 
 
@@ -1441,7 +1621,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UStringMap");
 		return pStaticClass;
@@ -1467,7 +1647,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STExtraNetPriorityConfig");
 		return pStaticClass;
@@ -1484,7 +1664,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.STExtraNetPriorityInterface");
 		return pStaticClass;
@@ -1502,7 +1682,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.DataTableRowDesc");
 		return pStaticClass;
@@ -1524,7 +1704,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.DataTableProxy");
 		return pStaticClass;
@@ -1546,7 +1726,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.TableManagerSubsystem");
 		return pStaticClass;
@@ -1578,7 +1758,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.TickOptimizationAnimComponent");
 		return pStaticClass;
@@ -1611,7 +1791,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.TickOptimizationFocusComponent");
 		return pStaticClass;
@@ -1637,7 +1817,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.TickOptimizationSubsystem");
 		return pStaticClass;
@@ -1677,7 +1857,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.TickOptimizationTargetComponent");
 		return pStaticClass;
@@ -1718,7 +1898,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAEBuffPoolSubsystem");
 		return pStaticClass;
@@ -1749,7 +1929,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAEGameEngine");
 		return pStaticClass;
@@ -1769,7 +1949,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.BPTable");
 		return pStaticClass;
@@ -1804,7 +1984,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAELoadedClassManager");
 		return pStaticClass;
@@ -1823,6 +2003,7 @@ public:
 	static int GetExactDeviceLevel();
 	static int GetDeviceLevel();
 	class UClass* GetCustom1Class(const struct FString& BPTableName, int ID);
+	struct FString GetClassLoadingPath(const struct FString& BPTableName, int ID, bool IsLobby);
 	class UClass* GetClass(const struct FString& BPTableName, int ID, bool IsLobby, bool IsLowDevice);
 	struct FString GetBPTableName(int Type);
 	void GetAssetByAssetReferenceAsync(const struct FSoftObjectPath& AssetReference, const struct FScriptDelegate& AssetLoadSuccessDelegate);
@@ -1840,14 +2021,14 @@ public:
 
 
 // Class Basic.UAEMeshComponent
-// 0x0000 (0x11D0 - 0x11D0)
+// 0x0000 (0x11E0 - 0x11E0)
 class UUAEMeshComponent : public USkeletalMeshComponent
 {
 public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAEMeshComponent");
 		return pStaticClass;
@@ -1902,7 +2083,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAENetConnection");
 		return pStaticClass;
@@ -1916,18 +2097,20 @@ public:
 
 
 // Class Basic.UAENetDriver
-// 0x0158 (0x0900 - 0x07A8)
+// 0x0168 (0x0A00 - 0x0898)
 class UUAENetDriver : public UIpNetDriver
 {
 public:
-	float                                              NetCullChangeTime;                                        // 0x07A8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bEnableCollectNetStats;                                   // 0x07AC(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	bool                                               bEnableResetNetStats;                                     // 0x07AD(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x152];                                     // 0x07AE(0x0152) MISSED OFFSET
+	float                                              NetCullChangeTime;                                        // 0x0898(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bEnableCollectNetStats;                                   // 0x089C(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	bool                                               bEnableResetNetStats;                                     // 0x089D(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x089E(0x0002) MISSED OFFSET
+	TArray<struct FRPCShareSerializationFunctionPresetConfig> RPCShareSerializationFunctionPresetConfigs;               // 0x08A0(0x0010) (ZeroConstructor, Config)
+	unsigned char                                      UnknownData01[0x150];                                     // 0x08B0(0x0150) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAENetDriver");
 		return pStaticClass;
@@ -1984,7 +2167,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UAETableManager");
 		return pStaticClass;
@@ -2012,7 +2195,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UELanguageUtilityMethods");
 		return pStaticClass;
@@ -2036,7 +2219,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UEMathUtilityMethods");
 		return pStaticClass;
@@ -2063,7 +2246,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Basic.UEPathUtilityMethods");
 		return pStaticClass;

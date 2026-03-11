@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Intl.StatManager.ReportUAStatsEvent
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
@@ -18,7 +18,7 @@ namespace SDK
 
 void UStatManager::ReportUAStatsEvent(TArray<struct FString> InReportChannels, const struct FString& InEventName, TMap<struct FString, struct FString> InParams, bool InIsRealTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Intl.StatManager.ReportUAStatsEvent");
 
@@ -49,7 +49,7 @@ void UStatManager::ReportUAStatsEvent(TArray<struct FString> InReportChannels, c
 
 void UStatManager::ReportRevenue(int InPurchaseEventType, const struct FString& InCurrencyCode, const struct FString& InExpense, TMap<struct FString, struct FString> InParams, const struct FString& InExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Intl.StatManager.ReportRevenue");
 
@@ -80,7 +80,7 @@ void UStatManager::ReportRevenue(int InPurchaseEventType, const struct FString& 
 
 void UStatManager::ReportPurchase(int InPurchaseEventType, const struct FString& InCurrencyCode, const struct FString& InExpense, bool isRealTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Intl.StatManager.ReportPurchase");
 
@@ -109,7 +109,7 @@ void UStatManager::ReportPurchase(int InPurchaseEventType, const struct FString&
 
 void UStatManager::ReportEventWithString(int EventType, const struct FString& _eventBody, bool isRealTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Intl.StatManager.ReportEventWithString");
 
@@ -137,7 +137,7 @@ void UStatManager::ReportEventWithString(int EventType, const struct FString& _e
 
 void UStatManager::ReportEventWithParam(int EventType, TMap<struct FString, struct FString> _params, bool isRealTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Intl.StatManager.ReportEventWithParam");
 
@@ -164,7 +164,7 @@ void UStatManager::ReportEventWithParam(int EventType, TMap<struct FString, stru
 
 void UStatManager::ReportEventWithNoParam(int EventType, bool isRealTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Intl.StatManager.ReportEventWithNoParam");
 
@@ -189,7 +189,7 @@ void UStatManager::ReportEventWithNoParam(int EventType, bool isRealTime)
 
 class UStatManager* UStatManager::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Intl.StatManager.GetInstance");
 

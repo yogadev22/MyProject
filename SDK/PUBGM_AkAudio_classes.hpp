@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class AkAudio.AkAcousticPortal
 // 0x0010 (0x04F0 - 0x04E0)
@@ -19,7 +19,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAcousticPortal");
 		return pStaticClass;
@@ -40,7 +40,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAcousticTexture");
 		return pStaticClass;
@@ -62,7 +62,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAmbientSound");
 		return pStaticClass;
@@ -83,7 +83,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAreaCheckComponent");
 		return pStaticClass;
@@ -105,7 +105,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAreaCheckVolume");
 		return pStaticClass;
@@ -127,7 +127,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAudioBank");
 		return pStaticClass;
@@ -157,7 +157,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAudioDeviceSettings");
 		return pStaticClass;
@@ -182,7 +182,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAudioEvent");
 		return pStaticClass;
@@ -199,7 +199,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAudioMonitor");
 		return pStaticClass;
@@ -271,7 +271,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAudioMonitorData");
 		return pStaticClass;
@@ -305,7 +305,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAudioVisualComponent");
 		return pStaticClass;
@@ -332,7 +332,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkAuxBus");
 		return pStaticClass;
@@ -370,7 +370,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkComponent");
 		return pStaticClass;
@@ -379,6 +379,7 @@ public:
 
 	void UseReverbVolumes(bool inUseReverbVolumes);
 	void UseEarlyReflections(class UAkAuxBus* AuxBus, bool Left, bool Right, bool floor, bool Ceiling, bool Back, bool Front, bool SpotReflectors, const struct FString& AuxBusName);
+	void UpdateGameObjectPosition();
 	void TriggerEventWithRangedEmitter(bool bEnable);
 	void StopPlayingID(int StopEventID);
 	void StopEventInRange();
@@ -412,7 +413,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkGameplayStatics");
 		return pStaticClass;
@@ -471,7 +472,7 @@ public:
 	static int GetSourcePlayPosition(int AkEvent);
 	static float GetOcclusionScalingFactor();
 	static bool GetDefaultListenerLocation(class UObject* WorldContextObject, struct FVector* OutLocation);
-	static class UAkComponent* GetAkComponent(class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<enum EAttachLocation> LocationType);
+	static class UAkComponent* GetAkComponent(class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<EAttachLocation> LocationType);
 	static void ClearBanks();
 	static void AKSetRTPCValue(const struct FString& RTPC, float Value, bool in_bBypassInternalValueInterpolation);
 	static void AddOutputCaptureMarker(const struct FString& MarkerText);
@@ -493,7 +494,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkLateReverbComponent");
 		return pStaticClass;
@@ -519,7 +520,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkReverbVolume");
 		return pStaticClass;
@@ -539,7 +540,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkRoomComponent");
 		return pStaticClass;
@@ -567,7 +568,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkSettings");
 		return pStaticClass;
@@ -587,7 +588,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkSpatialAudioVolume");
 		return pStaticClass;
@@ -610,7 +611,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkSpotReflector");
 		return pStaticClass;
@@ -629,7 +630,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AkSurfaceReflectorSetComponent");
 		return pStaticClass;
@@ -658,7 +659,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AudioOfflineDataRecorder");
 		return pStaticClass;
@@ -677,7 +678,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AudioOfflineVisual");
 		return pStaticClass;
@@ -703,7 +704,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AudioVisual");
 		return pStaticClass;
@@ -731,7 +732,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.AudioVisualBlueprintLibrary");
 		return pStaticClass;
@@ -754,7 +755,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.InterpTrackAkAudioEvent");
 		return pStaticClass;
@@ -775,7 +776,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.InterpTrackAkAudioRTPC");
 		return pStaticClass;
@@ -794,7 +795,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.InterpTrackInstAkAudioEvent");
 		return pStaticClass;
@@ -813,7 +814,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.InterpTrackInstAkAudioRTPC");
 		return pStaticClass;
@@ -834,7 +835,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.MovieSceneAkAudioEventSection");
 		return pStaticClass;
@@ -854,7 +855,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.MovieSceneAkTrack");
 		return pStaticClass;
@@ -871,7 +872,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.MovieSceneAkAudioEventTrack");
 		return pStaticClass;
@@ -891,7 +892,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.MovieSceneAkAudioRTPCSection");
 		return pStaticClass;
@@ -908,7 +909,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AkAudio.MovieSceneAkAudioRTPCTrack");
 		return pStaticClass;

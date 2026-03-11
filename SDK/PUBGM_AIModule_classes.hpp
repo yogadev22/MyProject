@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class AIModule.AIController
 // 0x00A0 (0x05B8 - 0x0518)
@@ -39,7 +39,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIController");
 		return pStaticClass;
@@ -54,14 +54,14 @@ public:
 	void OnUnpossess(class APawn* UnpossessedPawn);
 	void OnPossess(class APawn* PossessedPawn);
 	void OnGameplayTaskResourcesClaimed(const struct FGameplayResourceSet& NewlyClaimed, const struct FGameplayResourceSet& FreshlyReleased);
-	TEnumAsByte<enum EPathFollowingRequestResult> MoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath);
-	TEnumAsByte<enum EPathFollowingRequestResult> MoveToActor(class AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath);
+	TEnumAsByte<EPathFollowingRequestResult> MoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath);
+	TEnumAsByte<EPathFollowingRequestResult> MoveToActor(class AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath);
 	void K2_SetFocus(class AActor* NewFocus);
 	void K2_SetFocalPoint(const struct FVector& FP);
 	void K2_ClearFocus();
 	bool HasPartialPath();
 	class UPathFollowingComponent* GetPathFollowingComponent();
-	TEnumAsByte<enum EPathFollowingStatus> GetMoveStatus();
+	TEnumAsByte<EPathFollowingStatus> GetMoveStatus();
 	struct FVector GetImmediateMoveDestination();
 	class AActor* GetFocusActor();
 	struct FVector GetFocalPointOnActor(class AActor* Actor);
@@ -84,7 +84,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTNode");
 		return pStaticClass;
@@ -101,7 +101,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTAuxiliaryNode");
 		return pStaticClass;
@@ -123,7 +123,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTService");
 		return pStaticClass;
@@ -141,7 +141,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTService_BlackboardBase");
 		return pStaticClass;
@@ -161,7 +161,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTaskNode");
 		return pStaticClass;
@@ -179,7 +179,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_BlackboardBase");
 		return pStaticClass;
@@ -210,7 +210,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_MoveTo");
 		return pStaticClass;
@@ -227,7 +227,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_MoveDirectlyToward");
 		return pStaticClass;
@@ -249,7 +249,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardComponent");
 		return pStaticClass;
@@ -296,7 +296,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PathFollowingComponent");
 		return pStaticClass;
@@ -306,7 +306,7 @@ public:
 	void OnNavDataRegistered(class ANavigationData* NavData);
 	void OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	struct FVector GetPathDestination();
-	TEnumAsByte<enum EPathFollowingAction> GetPathActionType();
+	TEnumAsByte<EPathFollowingAction> GetPathActionType();
 };
 
 
@@ -317,12 +317,12 @@ class UBTDecorator : public UBTAuxiliaryNode
 public:
 	unsigned char                                      UnknownData00 : 7;                                        // 0x0058(0x0001)
 	unsigned char                                      bInverseCondition : 1;                                    // 0x0058(0x0001) (Edit)
-	TEnumAsByte<enum EBTFlowAbortMode>                 FlowAbortMode;                                            // 0x0059(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBTFlowAbortMode>                      FlowAbortMode;                                            // 0x0059(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x005A(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator");
 		return pStaticClass;
@@ -346,7 +346,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense");
 		return pStaticClass;
@@ -367,7 +367,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig");
 		return pStaticClass;
@@ -384,7 +384,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseEvent");
 		return pStaticClass;
@@ -409,7 +409,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.CrowdFollowingComponent");
 		return pStaticClass;
@@ -444,7 +444,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.CrowdManager");
 		return pStaticClass;
@@ -465,7 +465,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BrainComponent");
 		return pStaticClass;
@@ -490,7 +490,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BehaviorTreeComponent");
 		return pStaticClass;
@@ -512,7 +512,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_BlackboardBase");
 		return pStaticClass;
@@ -529,7 +529,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_Cooldown");
 		return pStaticClass;
@@ -548,7 +548,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTService_DefaultFocus");
 		return pStaticClass;
@@ -567,7 +567,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_Wait");
 		return pStaticClass;
@@ -587,14 +587,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIAsyncTaskBlueprintProxy");
 		return pStaticClass;
 	}
 
 
-	void OnMoveCompleted(const struct FAIRequestID& RequestID, TEnumAsByte<enum EPathFollowingResult> MovementResult);
+	void OnMoveCompleted(const struct FAIRequestID& RequestID, TEnumAsByte<EPathFollowingResult> MovementResult);
 };
 
 
@@ -606,7 +606,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIBlueprintHelperLibrary");
 		return pStaticClass;
@@ -635,7 +635,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIDataProvider");
 		return pStaticClass;
@@ -657,7 +657,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIDataProvider_QueryParams");
 		return pStaticClass;
@@ -677,7 +677,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIDataProvider_Random");
 		return pStaticClass;
@@ -694,7 +694,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIHotSpotManager");
 		return pStaticClass;
@@ -719,7 +719,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIPerceptionComponent");
 		return pStaticClass;
@@ -728,7 +728,7 @@ public:
 
 	void SetSenseEnabled(class UClass* SenseClass, bool bEnable);
 	void RequestStimuliListenerUpdate();
-	void OnOwnerEndPlay(class AActor* Actor, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
+	void OnOwnerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);
 	void GetPerceivedHostileActors(TArray<class AActor*>* OutActors);
 	void GetPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors);
 	void GetKnownPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors);
@@ -745,7 +745,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIPerceptionListenerInterface");
 		return pStaticClass;
@@ -765,7 +765,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIPerceptionStimuliSourceComponent");
 		return pStaticClass;
@@ -791,7 +791,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIPerceptionSystem");
 		return pStaticClass;
@@ -801,7 +801,7 @@ public:
 	static void ReportPerceptionEvent(class UObject* WorldContextObject, class UAISenseEvent* PerceptionEvent);
 	void ReportEvent(class UAISenseEvent* PerceptionEvent);
 	static bool RegisterPerceptionStimuliSource(class UObject* WorldContextObject, class UClass* Sense, class AActor* Target);
-	void OnPerceptionStimuliSourceEndPlay(class AActor* Actor, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
+	void OnPerceptionStimuliSourceEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);
 	static class UClass* GetSenseClassForStimulus(class UObject* WorldContextObject, const struct FAIStimulus& Stimulus);
 };
 
@@ -814,7 +814,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIResourceInterface");
 		return pStaticClass;
@@ -831,7 +831,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIResource_Movement");
 		return pStaticClass;
@@ -848,7 +848,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AIResource_Logic");
 		return pStaticClass;
@@ -868,7 +868,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense_Blueprint");
 		return pStaticClass;
@@ -894,7 +894,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense_Damage");
 		return pStaticClass;
@@ -916,7 +916,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense_Hearing");
 		return pStaticClass;
@@ -936,7 +936,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense_Prediction");
 		return pStaticClass;
@@ -965,7 +965,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense_Sight");
 		return pStaticClass;
@@ -983,7 +983,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense_Team");
 		return pStaticClass;
@@ -1001,7 +1001,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISense_Touch");
 		return pStaticClass;
@@ -1018,7 +1018,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseBlueprintListener");
 		return pStaticClass;
@@ -1036,7 +1036,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig_Blueprint");
 		return pStaticClass;
@@ -1054,7 +1054,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig_Damage");
 		return pStaticClass;
@@ -1077,7 +1077,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig_Hearing");
 		return pStaticClass;
@@ -1094,7 +1094,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig_Prediction");
 		return pStaticClass;
@@ -1118,7 +1118,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig_Sight");
 		return pStaticClass;
@@ -1135,7 +1135,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig_Team");
 		return pStaticClass;
@@ -1152,7 +1152,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseConfig_Touch");
 		return pStaticClass;
@@ -1170,7 +1170,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseEvent_Damage");
 		return pStaticClass;
@@ -1188,7 +1188,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISenseEvent_Hearing");
 		return pStaticClass;
@@ -1205,7 +1205,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISightTargetInterface");
 		return pStaticClass;
@@ -1230,7 +1230,7 @@ public:
 	bool                                               bEnableBTAITasks;                                         // 0x008F(0x0001) (Edit, ZeroConstructor, Config, DisableEditOnInstance, GlobalConfig, IsPlainOldData)
 	bool                                               bAllowControllersAsEQSQuerier;                            // 0x0090(0x0001) (Edit, ZeroConstructor, Config, DisableEditOnInstance, GlobalConfig, IsPlainOldData)
 	bool                                               bEnableDebuggerPlugin;                                    // 0x0091(0x0001) (Edit, ZeroConstructor, Config, DisableEditOnInstance, GlobalConfig, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                DefaultSightCollisionChannel;                             // 0x0092(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     DefaultSightCollisionChannel;                             // 0x0092(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x5];                                       // 0x0093(0x0005) MISSED OFFSET
 	class UBehaviorTreeManager*                        BehaviorTreeManager;                                      // 0x0098(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 	class UEnvQueryManager*                            EnvironmentQueryManager;                                  // 0x00A0(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
@@ -1242,7 +1242,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AISystem");
 		return pStaticClass;
@@ -1263,7 +1263,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AITask");
 		return pStaticClass;
@@ -1280,7 +1280,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AITask_LockLogic");
 		return pStaticClass;
@@ -1301,14 +1301,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AITask_MoveTo");
 		return pStaticClass;
 	}
 
 
-	static class UAITask_MoveTo* AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, TEnumAsByte<enum EAIOptionFlag> StopOnOverlap, TEnumAsByte<enum EAIOptionFlag> AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuosGoalTracking);
+	static class UAITask_MoveTo* AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, TEnumAsByte<EAIOptionFlag> StopOnOverlap, TEnumAsByte<EAIOptionFlag> AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuosGoalTracking);
 };
 
 
@@ -1321,7 +1321,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.AITask_RunEQS");
 		return pStaticClass;
@@ -1345,7 +1345,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BehaviorTree");
 		return pStaticClass;
@@ -1366,7 +1366,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BehaviorTreeManager");
 		return pStaticClass;
@@ -1383,7 +1383,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BehaviorTreeTypes");
 		return pStaticClass;
@@ -1404,7 +1404,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardData");
 		return pStaticClass;
@@ -1422,7 +1422,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType");
 		return pStaticClass;
@@ -1439,7 +1439,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Bool");
 		return pStaticClass;
@@ -1457,7 +1457,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Class");
 		return pStaticClass;
@@ -1478,7 +1478,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Enum");
 		return pStaticClass;
@@ -1495,7 +1495,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Float");
 		return pStaticClass;
@@ -1512,7 +1512,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Int");
 		return pStaticClass;
@@ -1529,7 +1529,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Name");
 		return pStaticClass;
@@ -1548,7 +1548,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_NativeEnum");
 		return pStaticClass;
@@ -1566,7 +1566,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Object");
 		return pStaticClass;
@@ -1583,7 +1583,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Rotator");
 		return pStaticClass;
@@ -1601,7 +1601,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_String");
 		return pStaticClass;
@@ -1618,7 +1618,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BlackboardKeyType_Vector");
 		return pStaticClass;
@@ -1638,7 +1638,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTCompositeNode");
 		return pStaticClass;
@@ -1655,7 +1655,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTComposite_Selector");
 		return pStaticClass;
@@ -1672,7 +1672,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTComposite_Sequence");
 		return pStaticClass;
@@ -1689,7 +1689,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTComposite_SimpleParallel");
 		return pStaticClass;
@@ -1708,12 +1708,12 @@ public:
 	struct FString                                     StringValue;                                              // 0x0090(0x0010) (Edit, ZeroConstructor)
 	struct FString                                     CachedDescription;                                        // 0x00A0(0x0010) (ZeroConstructor)
 	unsigned char                                      OperationType;                                            // 0x00B0(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBTBlackboardRestart>             NotifyObserver;                                           // 0x00B1(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBTBlackboardRestart>                  NotifyObserver;                                           // 0x00B1(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x00B2(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_Blackboard");
 		return pStaticClass;
@@ -1738,7 +1738,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_BlueprintBase");
 		return pStaticClass;
@@ -1753,8 +1753,8 @@ public:
 	void ReceiveObserverActivated(class AActor* OwnerActor);
 	void ReceiveExecutionStartAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 	void ReceiveExecutionStart(class AActor* OwnerActor);
-	void ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, TEnumAsByte<enum EBTNodeResult> NodeResult);
-	void ReceiveExecutionFinish(class AActor* OwnerActor, TEnumAsByte<enum EBTNodeResult> NodeResult);
+	void ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, TEnumAsByte<EBTNodeResult> NodeResult);
+	void ReceiveExecutionFinish(class AActor* OwnerActor, TEnumAsByte<EBTNodeResult> NodeResult);
 	bool PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 	bool PerformConditionCheck(class AActor* OwnerActor);
 	bool IsDecoratorObserverActive();
@@ -1775,7 +1775,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_CheckGameplayTagsOnActor");
 		return pStaticClass;
@@ -1794,7 +1794,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_CompareBBEntries");
 		return pStaticClass;
@@ -1811,7 +1811,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_ConditionalLoop");
 		return pStaticClass;
@@ -1832,7 +1832,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_ConeCheck");
 		return pStaticClass;
@@ -1849,13 +1849,13 @@ public:
 	struct FBlackboardKeySelector                      BlackboardKeyA;                                           // 0x0060(0x0028) (Edit)
 	struct FBlackboardKeySelector                      BlackboardKeyB;                                           // 0x0088(0x0028) (Edit)
 	unsigned char                                      bUseSelf : 1;                                             // 0x00B0(0x0001)
-	TEnumAsByte<enum EPathExistanceQueryType>          PathQueryType;                                            // 0x00B1(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPathExistanceQueryType>               PathQueryType;                                            // 0x00B1(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x00B2(0x0006) MISSED OFFSET
 	class UClass*                                      FilterClass;                                              // 0x00B8(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_DoesPathExist");
 		return pStaticClass;
@@ -1872,7 +1872,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_ForceSuccess");
 		return pStaticClass;
@@ -1897,7 +1897,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_IsAtLocation");
 		return pStaticClass;
@@ -1915,7 +1915,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_IsBBEntryOfClass");
 		return pStaticClass;
@@ -1937,7 +1937,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_KeepInCone");
 		return pStaticClass;
@@ -1957,7 +1957,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_Loop");
 		return pStaticClass;
@@ -1974,7 +1974,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_ReachedMoveGoal");
 		return pStaticClass;
@@ -1995,7 +1995,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_SetTagCooldown");
 		return pStaticClass;
@@ -2017,7 +2017,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_TagCooldown");
 		return pStaticClass;
@@ -2034,7 +2034,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTDecorator_TimeLimit");
 		return pStaticClass;
@@ -2051,7 +2051,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTFunctionLibrary");
 		return pStaticClass;
@@ -2102,7 +2102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTService_BlueprintBase");
 		return pStaticClass;
@@ -2131,7 +2131,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTService_RunEQS");
 		return pStaticClass;
@@ -2153,7 +2153,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_BlueprintBase");
 		return pStaticClass;
@@ -2183,7 +2183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_GameplayTaskBase");
 		return pStaticClass;
@@ -2200,7 +2200,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_MakeNoise");
 		return pStaticClass;
@@ -2217,7 +2217,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_PawnActionBase");
 		return pStaticClass;
@@ -2241,7 +2241,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_PlayAnimation");
 		return pStaticClass;
@@ -2259,7 +2259,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_PlaySound");
 		return pStaticClass;
@@ -2277,7 +2277,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_PushPawnAction");
 		return pStaticClass;
@@ -2296,7 +2296,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_RotateToFaceBBEntry");
 		return pStaticClass;
@@ -2314,7 +2314,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_RunBehavior");
 		return pStaticClass;
@@ -2334,7 +2334,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_RunBehaviorDynamic");
 		return pStaticClass;
@@ -2351,7 +2351,7 @@ public:
 	class UEnvQuery*                                   QueryTemplate;                                            // 0x0098(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	TArray<struct FEnvNamedValue>                      QueryParams;                                              // 0x00A0(0x0010) (Edit, ZeroConstructor, EditConst)
 	TArray<struct FAIDynamicParam>                     QueryConfig;                                              // 0x00B0(0x0010) (Edit, ZeroConstructor, EditConst)
-	TEnumAsByte<enum EEnvQueryRunMode>                 RunMode;                                                  // 0x00C0(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
+	TEnumAsByte<EEnvQueryRunMode>                      RunMode;                                                  // 0x00C0(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x00C1(0x0007) MISSED OFFSET
 	struct FBlackboardKeySelector                      EQSQueryBlackboardKey;                                    // 0x00C8(0x0028) (Edit, EditConst)
 	bool                                               bUseBBKey;                                                // 0x00F0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
@@ -2361,7 +2361,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_RunEQSQuery");
 		return pStaticClass;
@@ -2382,7 +2382,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_SetTagCooldown");
 		return pStaticClass;
@@ -2400,7 +2400,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.BTTask_WaitBlackboardTime");
 		return pStaticClass;
@@ -2417,7 +2417,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.CrowdAgentInterface");
 		return pStaticClass;
@@ -2434,7 +2434,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.DetourCrowdAIController");
 		return pStaticClass;
@@ -2453,7 +2453,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQuery");
 		return pStaticClass;
@@ -2470,7 +2470,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryContext");
 		return pStaticClass;
@@ -2488,7 +2488,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryContext_BlueprintBase");
 		return pStaticClass;
@@ -2510,7 +2510,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryContext_Item");
 		return pStaticClass;
@@ -2527,7 +2527,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryContext_Querier");
 		return pStaticClass;
@@ -2544,7 +2544,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryDebugHelpers");
 		return pStaticClass;
@@ -2563,7 +2563,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryNode");
 		return pStaticClass;
@@ -2584,7 +2584,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator");
 		return pStaticClass;
@@ -2605,7 +2605,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_ActorsOfClass");
 		return pStaticClass;
@@ -2626,7 +2626,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_BlueprintBase");
 		return pStaticClass;
@@ -2653,7 +2653,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_Composite");
 		return pStaticClass;
@@ -2671,7 +2671,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_ProjectedPoints");
 		return pStaticClass;
@@ -2695,7 +2695,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_Cone");
 		return pStaticClass;
@@ -2713,7 +2713,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_CurrentLocation");
 		return pStaticClass;
@@ -2741,7 +2741,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_Donut");
 		return pStaticClass;
@@ -2774,7 +2774,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_OnCircle");
 		return pStaticClass;
@@ -2794,7 +2794,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_SimpleGrid");
 		return pStaticClass;
@@ -2814,7 +2814,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryGenerator_PathingGrid");
 		return pStaticClass;
@@ -2838,7 +2838,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryInstanceBlueprintWrapper");
 		return pStaticClass;
@@ -2849,7 +2849,7 @@ public:
 	TArray<struct FVector> GetResultsAsLocations();
 	TArray<class AActor*> GetResultsAsActors();
 	float GetItemScore(int ItemIndex);
-	void EQSQueryDoneSignature__DelegateSignature(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<enum EEnvQueryStatus> QueryStatus);
+	void EQSQueryDoneSignature__DelegateSignature(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<EEnvQueryStatus> QueryStatus);
 };
 
 
@@ -2862,7 +2862,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryItemType");
 		return pStaticClass;
@@ -2879,7 +2879,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryItemType_VectorBase");
 		return pStaticClass;
@@ -2896,7 +2896,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryItemType_ActorBase");
 		return pStaticClass;
@@ -2913,7 +2913,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryItemType_Actor");
 		return pStaticClass;
@@ -2930,7 +2930,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryItemType_Direction");
 		return pStaticClass;
@@ -2947,7 +2947,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryItemType_Point");
 		return pStaticClass;
@@ -2974,14 +2974,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryManager");
 		return pStaticClass;
 	}
 
 
-	static class UEnvQueryInstanceBlueprintWrapper* RunEQSQuery(class UObject* WorldContextObject, class UEnvQuery* QueryTemplate, class UObject* Querier, TEnumAsByte<enum EEnvQueryRunMode> RunMode, class UClass* WrapperClass);
+	static class UEnvQueryInstanceBlueprintWrapper* RunEQSQuery(class UObject* WorldContextObject, class UEnvQuery* QueryTemplate, class UObject* Querier, TEnumAsByte<EEnvQueryRunMode> RunMode, class UClass* WrapperClass);
 };
 
 
@@ -2995,7 +2995,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryOption");
 		return pStaticClass;
@@ -3009,20 +3009,20 @@ public:
 class UEnvQueryTest : public UEnvQueryNode
 {
 public:
-	TEnumAsByte<enum EEnvTestPurpose>                  TestPurpose;                                              // 0x0030(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EEnvTestPurpose>                       TestPurpose;                                              // 0x0030(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0031(0x0007) MISSED OFFSET
 	struct FString                                     TestComment;                                              // 0x0038(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	TEnumAsByte<enum EEnvTestFilterOperator>           MultipleContextFilterOp;                                  // 0x0048(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EEnvTestScoreOperator>            MultipleContextScoreOp;                                   // 0x0049(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EEnvTestFilterType>               FilterType;                                               // 0x004A(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EEnvTestFilterOperator>                MultipleContextFilterOp;                                  // 0x0048(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EEnvTestScoreOperator>                 MultipleContextScoreOp;                                   // 0x0049(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EEnvTestFilterType>                    FilterType;                                               // 0x004A(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x5];                                       // 0x004B(0x0005) MISSED OFFSET
 	struct FAIDataProviderBoolValue                    BoolValue;                                                // 0x0050(0x0030) (Edit, DisableEditOnInstance)
 	struct FAIDataProviderFloatValue                   FloatValueMin;                                            // 0x0080(0x0030) (Edit, DisableEditOnInstance)
 	struct FAIDataProviderFloatValue                   FloatValueMax;                                            // 0x00B0(0x0030) (Edit, DisableEditOnInstance)
 	unsigned char                                      UnknownData02[0x1];                                       // 0x00E0(0x0001) MISSED OFFSET
-	TEnumAsByte<enum EEnvTestScoreEquation>            ScoringEquation;                                          // 0x00E1(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EEnvQueryTestClamping>            ClampMinType;                                             // 0x00E2(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EEnvQueryTestClamping>            ClampMaxType;                                             // 0x00E3(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EEnvTestScoreEquation>                 ScoringEquation;                                          // 0x00E1(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EEnvQueryTestClamping>                 ClampMinType;                                             // 0x00E2(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EEnvQueryTestClamping>                 ClampMaxType;                                             // 0x00E3(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	EEQSNormalizationType                              NormalizationType;                                        // 0x00E4(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x3];                                       // 0x00E5(0x0003) MISSED OFFSET
 	struct FAIDataProviderFloatValue                   ScoreClampMin;                                            // 0x00E8(0x0030) (Edit, DisableEditOnInstance)
@@ -3036,7 +3036,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest");
 		return pStaticClass;
@@ -3054,7 +3054,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_Distance");
 		return pStaticClass;
@@ -3076,7 +3076,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_Dot");
 		return pStaticClass;
@@ -3098,7 +3098,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_GameplayTags");
 		return pStaticClass;
@@ -3116,7 +3116,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_Overlap");
 		return pStaticClass;
@@ -3137,7 +3137,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_Pathfinding");
 		return pStaticClass;
@@ -3155,7 +3155,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_PathfindingBatch");
 		return pStaticClass;
@@ -3173,7 +3173,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_Project");
 		return pStaticClass;
@@ -3190,7 +3190,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_Random");
 		return pStaticClass;
@@ -3212,7 +3212,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTest_Trace");
 		return pStaticClass;
@@ -3229,7 +3229,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EnvQueryTypes");
 		return pStaticClass;
@@ -3246,7 +3246,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EQSQueryResultSourceInterface");
 		return pStaticClass;
@@ -3256,15 +3256,15 @@ public:
 
 
 // Class AIModule.EQSRenderingComponent
-// 0x0040 (0x0960 - 0x0920)
+// 0x0030 (0x0960 - 0x0930)
 class UEQSRenderingComponent : public UPrimitiveComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x40];                                      // 0x0920(0x0040) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x30];                                      // 0x0930(0x0030) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EQSRenderingComponent");
 		return pStaticClass;
@@ -3289,12 +3289,12 @@ public:
 	unsigned char                                      bReRunQueryOnlyOnFinishedMove : 1;                        // 0x0921(0x0001) (Edit)
 	unsigned char                                      bShouldBeVisibleInGame : 1;                               // 0x0921(0x0001) (Edit)
 	unsigned char                                      bTickDuringGame : 1;                                      // 0x0921(0x0001) (Edit)
-	TEnumAsByte<enum EEnvQueryRunMode>                 QueryingMode;                                             // 0x0922(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEnvQueryRunMode>                      QueryingMode;                                             // 0x0922(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2D];                                      // 0x0923(0x002D) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.EQSTestingPawn");
 		return pStaticClass;
@@ -3311,7 +3311,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.GenericTeamAgentInterface");
 		return pStaticClass;
@@ -3328,7 +3328,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.GridPathAIController");
 		return pStaticClass;
@@ -3347,7 +3347,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.GridPathFollowingComponent");
 		return pStaticClass;
@@ -3364,7 +3364,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.NavFilter_AIControllerDefault");
 		return pStaticClass;
@@ -3382,7 +3382,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.NavLocalGridManager");
 		return pStaticClass;
@@ -3418,15 +3418,15 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnAction");
 		return pStaticClass;
 	}
 
 
-	TEnumAsByte<enum EAIRequestPriority> GetActionPriority();
-	void Finish(TEnumAsByte<enum EPawnActionResult> WithResult);
+	TEnumAsByte<EAIRequestPriority> GetActionPriority();
+	void Finish(TEnumAsByte<EPawnActionResult> WithResult);
 	static class UPawnAction* CreateActionInstance(class UObject* WorldContextObject, class UClass* ActionClass);
 };
 
@@ -3439,7 +3439,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnAction_BlueprintBase");
 		return pStaticClass;
@@ -3450,7 +3450,7 @@ public:
 	void ActionStart(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionPause(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, TEnumAsByte<enum EPawnActionResult> WithResult);
+	void ActionFinished(class APawn* ControlledPawn, TEnumAsByte<EPawnActionResult> WithResult);
 };
 
 
@@ -3474,7 +3474,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnAction_Move");
 		return pStaticClass;
@@ -3490,12 +3490,12 @@ class UPawnAction_Repeat : public UPawnAction
 public:
 	class UPawnAction*                                 ActionToRepeat;                                           // 0x0098(0x0008) (ZeroConstructor, IsPlainOldData)
 	class UPawnAction*                                 RecentActionCopy;                                         // 0x00A0(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	TEnumAsByte<enum EPawnActionFailHandling>          ChildFailureHandlingMode;                                 // 0x00A8(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPawnActionFailHandling>               ChildFailureHandlingMode;                                 // 0x00A8(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0xF];                                       // 0x00A9(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnAction_Repeat");
 		return pStaticClass;
@@ -3510,14 +3510,14 @@ class UPawnAction_Sequence : public UPawnAction
 {
 public:
 	TArray<class UPawnAction*>                         ActionSequence;                                           // 0x0098(0x0010) (ZeroConstructor)
-	TEnumAsByte<enum EPawnActionFailHandling>          ChildFailureHandlingMode;                                 // 0x00A8(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPawnActionFailHandling>               ChildFailureHandlingMode;                                 // 0x00A8(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x00A9(0x0007) MISSED OFFSET
 	class UPawnAction*                                 RecentActionCopy;                                         // 0x00B0(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x8];                                       // 0x00B8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnAction_Sequence");
 		return pStaticClass;
@@ -3535,7 +3535,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnAction_Wait");
 		return pStaticClass;
@@ -3557,17 +3557,17 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnActionsComponent");
 		return pStaticClass;
 	}
 
 
-	bool K2_PushAction(class UPawnAction* NewAction, TEnumAsByte<enum EAIRequestPriority> Priority, class UObject* Instigator);
-	static bool K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, TEnumAsByte<enum EAIRequestPriority> Priority);
-	TEnumAsByte<enum EPawnActionAbortState> K2_ForceAbortAction(class UPawnAction* ActionToAbort);
-	TEnumAsByte<enum EPawnActionAbortState> K2_AbortAction(class UPawnAction* ActionToAbort);
+	bool K2_PushAction(class UPawnAction* NewAction, TEnumAsByte<EAIRequestPriority> Priority, class UObject* Instigator);
+	static bool K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, TEnumAsByte<EAIRequestPriority> Priority);
+	TEnumAsByte<EPawnActionAbortState> K2_ForceAbortAction(class UPawnAction* ActionToAbort);
+	TEnumAsByte<EPawnActionAbortState> K2_AbortAction(class UPawnAction* ActionToAbort);
 };
 
 
@@ -3593,7 +3593,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.PawnSensingComponent");
 		return pStaticClass;
@@ -3618,7 +3618,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIModule.VisualLoggerExtension");
 		return pStaticClass;

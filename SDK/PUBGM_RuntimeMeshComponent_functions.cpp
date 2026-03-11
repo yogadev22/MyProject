@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function RuntimeMeshComponent.RuntimeMeshComponent.UpdateMeshSection_Blueprint
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
@@ -24,7 +24,7 @@ namespace SDK
 
 void URuntimeMeshComponent::UpdateMeshSection_Blueprint(int SectionIndex, TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector> Normals, TArray<struct FRuntimeMeshTangent> Tangents, TArray<struct FVector2D> UV0, TArray<struct FVector2D> UV1, TArray<struct FLinearColor> Colors, bool bCalculateNormalTangent, bool bGenerateTessellationTriangles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.UpdateMeshSection_Blueprint");
 
@@ -59,7 +59,7 @@ void URuntimeMeshComponent::UpdateMeshSection_Blueprint(int SectionIndex, TArray
 
 void URuntimeMeshComponent::SetSectionTessellationTriangles(int SectionIndex, TArray<int> TessellationTriangles, bool bShouldMoveArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.SetSectionTessellationTriangles");
 
@@ -86,7 +86,7 @@ void URuntimeMeshComponent::SetSectionTessellationTriangles(int SectionIndex, TA
 
 void URuntimeMeshComponent::SetMeshSectionVisible(int SectionIndex, bool bNewVisibility)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.SetMeshSectionVisible");
 
@@ -112,7 +112,7 @@ void URuntimeMeshComponent::SetMeshSectionVisible(int SectionIndex, bool bNewVis
 
 void URuntimeMeshComponent::SetMeshSectionCollisionEnabled(int SectionIndex, bool bNewCollisionEnabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.SetMeshSectionCollisionEnabled");
 
@@ -138,7 +138,7 @@ void URuntimeMeshComponent::SetMeshSectionCollisionEnabled(int SectionIndex, boo
 
 void URuntimeMeshComponent::SetMeshSectionCastsShadow(int SectionIndex, bool bNewCastsShadow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.SetMeshSectionCastsShadow");
 
@@ -165,7 +165,7 @@ void URuntimeMeshComponent::SetMeshSectionCastsShadow(int SectionIndex, bool bNe
 
 void URuntimeMeshComponent::SetMeshCollisionSection(int CollisionSectionIndex, TArray<struct FVector> Vertices, TArray<int> Triangles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.SetMeshCollisionSection");
 
@@ -189,7 +189,7 @@ void URuntimeMeshComponent::SetMeshCollisionSection(int CollisionSectionIndex, T
 
 void URuntimeMeshComponent::RuntimeMeshCollisionUpdatedDelegate__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction RuntimeMeshComponent.RuntimeMeshComponent.RuntimeMeshCollisionUpdatedDelegate__DelegateSignature");
 
@@ -212,7 +212,7 @@ void URuntimeMeshComponent::RuntimeMeshCollisionUpdatedDelegate__DelegateSignatu
 
 bool URuntimeMeshComponent::IsMeshSectionVisible(int SectionIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.IsMeshSectionVisible");
 
@@ -239,7 +239,7 @@ bool URuntimeMeshComponent::IsMeshSectionVisible(int SectionIndex)
 
 bool URuntimeMeshComponent::IsMeshSectionCollisionEnabled(int SectionIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.IsMeshSectionCollisionEnabled");
 
@@ -266,7 +266,7 @@ bool URuntimeMeshComponent::IsMeshSectionCollisionEnabled(int SectionIndex)
 
 bool URuntimeMeshComponent::IsMeshSectionCastingShadows(int SectionIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.IsMeshSectionCastingShadows");
 
@@ -292,7 +292,7 @@ bool URuntimeMeshComponent::IsMeshSectionCastingShadows(int SectionIndex)
 
 int URuntimeMeshComponent::GetNumSections()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.GetNumSections");
 
@@ -317,7 +317,7 @@ int URuntimeMeshComponent::GetNumSections()
 
 int URuntimeMeshComponent::GetLastSectionIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.GetLastSectionIndex");
 
@@ -342,7 +342,7 @@ int URuntimeMeshComponent::GetLastSectionIndex()
 
 int URuntimeMeshComponent::FirstAvailableMeshSectionIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.FirstAvailableMeshSectionIndex");
 
@@ -365,7 +365,7 @@ int URuntimeMeshComponent::FirstAvailableMeshSectionIndex()
 
 void URuntimeMeshComponent::EndBatchUpdates()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.EndBatchUpdates");
 
@@ -389,7 +389,7 @@ void URuntimeMeshComponent::EndBatchUpdates()
 
 bool URuntimeMeshComponent::DoesSectionExist(int SectionIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.DoesSectionExist");
 
@@ -426,7 +426,7 @@ bool URuntimeMeshComponent::DoesSectionExist(int SectionIndex)
 
 void URuntimeMeshComponent::CreateMeshSection_Blueprint(int SectionIndex, TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector> Normals, TArray<struct FRuntimeMeshTangent> Tangents, TArray<struct FVector2D> UV0, TArray<struct FVector2D> UV1, TArray<struct FLinearColor> Colors, bool bCreateCollision, bool bCalculateNormalTangent, bool bGenerateTessellationTriangles, EUpdateFrequency UpdateFrequency)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.CreateMeshSection_Blueprint");
 
@@ -459,7 +459,7 @@ void URuntimeMeshComponent::CreateMeshSection_Blueprint(int SectionIndex, TArray
 
 void URuntimeMeshComponent::CookCollisionNow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.CookCollisionNow");
 
@@ -482,7 +482,7 @@ void URuntimeMeshComponent::CookCollisionNow()
 
 void URuntimeMeshComponent::ClearMeshSection(int SectionIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.ClearMeshSection");
 
@@ -506,7 +506,7 @@ void URuntimeMeshComponent::ClearMeshSection(int SectionIndex)
 
 void URuntimeMeshComponent::ClearMeshCollisionSection(int CollisionSectionIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.ClearMeshCollisionSection");
 
@@ -528,7 +528,7 @@ void URuntimeMeshComponent::ClearMeshCollisionSection(int CollisionSectionIndex)
 
 void URuntimeMeshComponent::ClearCollisionConvexMeshes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.ClearCollisionConvexMeshes");
 
@@ -549,7 +549,7 @@ void URuntimeMeshComponent::ClearCollisionConvexMeshes()
 
 void URuntimeMeshComponent::ClearAllMeshSections()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.ClearAllMeshSections");
 
@@ -570,7 +570,7 @@ void URuntimeMeshComponent::ClearAllMeshSections()
 
 void URuntimeMeshComponent::ClearAllMeshCollisionSections()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.ClearAllMeshCollisionSections");
 
@@ -596,7 +596,7 @@ void URuntimeMeshComponent::ClearAllMeshCollisionSections()
 
 bool URuntimeMeshComponent::ChangeRuntimeMeshSectionUVs(int SectionIndex, int Index, TMap<int, struct FVector2D> UVs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.ChangeRuntimeMeshSectionUVs");
 
@@ -622,7 +622,7 @@ bool URuntimeMeshComponent::ChangeRuntimeMeshSectionUVs(int SectionIndex, int In
 
 void URuntimeMeshComponent::BeginBatchUpdates()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.BeginBatchUpdates");
 
@@ -645,7 +645,7 @@ void URuntimeMeshComponent::BeginBatchUpdates()
 
 void URuntimeMeshComponent::AddCollisionConvexMesh(TArray<struct FVector> ConvexVerts)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshComponent.AddCollisionConvexMesh");
 
@@ -676,7 +676,7 @@ void URuntimeMeshComponent::AddCollisionConvexMesh(TArray<struct FVector> Convex
 
 void URuntimeMeshLibrary::GetSectionFromStaticMesh(class UStaticMesh* InMesh, int LODIndex, int SectionIndex, TArray<struct FVector>* Vertices, TArray<int>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FRuntimeMeshTangent>* Tangents)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.GetSectionFromStaticMesh");
 
@@ -718,7 +718,7 @@ void URuntimeMeshLibrary::GetSectionFromStaticMesh(class UStaticMesh* InMesh, in
 
 void URuntimeMeshLibrary::GenerateTessellationIndexBuffer(TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector2D> UVs, TArray<struct FVector>* Normals, TArray<struct FRuntimeMeshTangent>* Tangents, TArray<int>* OutTessTriangles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.GenerateTessellationIndexBuffer");
 
@@ -754,7 +754,7 @@ void URuntimeMeshLibrary::GenerateTessellationIndexBuffer(TArray<struct FVector>
 
 void URuntimeMeshLibrary::CreateGridMeshTriangles(int NumX, int NumY, bool bWinding, TArray<int>* Triangles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.CreateGridMeshTriangles");
 
@@ -788,7 +788,7 @@ void URuntimeMeshLibrary::CreateGridMeshTriangles(int NumX, int NumY, bool bWind
 
 void URuntimeMeshLibrary::CreateBoxMesh(const struct FVector& BoxRadius, TArray<struct FVector>* Vertices, TArray<int>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FRuntimeMeshTangent>* Tangents)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.CreateBoxMesh");
 
@@ -826,7 +826,7 @@ void URuntimeMeshLibrary::CreateBoxMesh(const struct FVector& BoxRadius, TArray<
 
 void URuntimeMeshLibrary::CopyRuntimeMeshFromStaticMeshComponent(class UStaticMeshComponent* StaticMeshComp, int LODIndex, class URuntimeMeshComponent* RuntimeMeshComp, bool bShouldCreateCollision)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.CopyRuntimeMeshFromStaticMeshComponent");
 
@@ -856,7 +856,7 @@ void URuntimeMeshLibrary::CopyRuntimeMeshFromStaticMeshComponent(class UStaticMe
 
 void URuntimeMeshLibrary::CopyRuntimeMeshFromStaticMesh(class UStaticMesh* StaticMesh, int LODIndex, class URuntimeMeshComponent* RuntimeMeshComp, bool bShouldCreateCollision)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.CopyRuntimeMeshFromStaticMesh");
 
@@ -887,7 +887,7 @@ void URuntimeMeshLibrary::CopyRuntimeMeshFromStaticMesh(class UStaticMesh* Stati
 
 void URuntimeMeshLibrary::ConvertQuadToTriangles(int Vert0, int Vert1, int Vert2, int Vert3, TArray<int>* Triangles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.ConvertQuadToTriangles");
 
@@ -921,7 +921,7 @@ void URuntimeMeshLibrary::ConvertQuadToTriangles(int Vert0, int Vert1, int Vert2
 
 void URuntimeMeshLibrary::CalculateTangentsForMesh(TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector2D> UVs, TArray<struct FVector>* Normals, TArray<struct FRuntimeMeshTangent>* Tangents)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function RuntimeMeshComponent.RuntimeMeshLibrary.CalculateTangentsForMesh");
 

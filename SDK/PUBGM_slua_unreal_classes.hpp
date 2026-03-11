@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class slua_unreal.LuaActorComponent
 // 0x00C0 (0x0238 - 0x0178)
@@ -20,7 +20,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaActorComponent");
 		return pStaticClass;
@@ -43,7 +43,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaInstancedActorComponent");
 		return pStaticClass;
@@ -65,7 +65,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaObject");
 		return pStaticClass;
@@ -86,7 +86,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaActor");
 		return pStaticClass;
@@ -108,7 +108,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaGameMode");
 		return pStaticClass;
@@ -128,7 +128,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaGameState");
 		return pStaticClass;
@@ -148,29 +148,9 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaPlayerState");
-		return pStaticClass;
-	}
-
-};
-
-
-// Class slua_unreal.LuaPlayerController
-// 0x00B8 (0x08E0 - 0x0828)
-class ALuaPlayerController : public APlayerController
-{
-public:
-	unsigned char                                      UnknownData00[0x58];                                      // 0x0828(0x0058) MISSED OFFSET
-	struct FLuaNetSerialization                        LuaNetSerialization;                                      // 0x0880(0x0050) (Net)
-	struct FString                                     LuaFilePath;                                              // 0x08D0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class slua_unreal.LuaPlayerController");
 		return pStaticClass;
 	}
 
@@ -187,7 +167,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaUserWidget");
 		return pStaticClass;
@@ -207,9 +187,29 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaCharacter");
+		return pStaticClass;
+	}
+
+};
+
+
+// Class slua_unreal.LuaPlayerController
+// 0x00B8 (0x08E0 - 0x0828)
+class ALuaPlayerController : public APlayerController
+{
+public:
+	unsigned char                                      UnknownData00[0x58];                                      // 0x0828(0x0058) MISSED OFFSET
+	struct FLuaNetSerialization                        LuaNetSerialization;                                      // 0x0880(0x0050) (Net)
+	struct FString                                     LuaFilePath;                                              // 0x08D0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class slua_unreal.LuaPlayerController");
 		return pStaticClass;
 	}
 
@@ -224,7 +224,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaOverriderInterface");
 		return pStaticClass;
@@ -244,7 +244,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LatentDelegate");
 		return pStaticClass;
@@ -264,7 +264,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaDelegate");
 		return pStaticClass;
@@ -286,7 +286,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaLevelScriptActor");
 		return pStaticClass;
@@ -306,7 +306,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaOverrider");
 		return pStaticClass;
@@ -315,7 +315,7 @@ public:
 
 	void TriggerAnimNotify();
 	void InputVectorAxis(const struct FVector& AxisValue);
-	void InputTouch(TEnumAsByte<enum ETouchIndex> FingerIndex, const struct FVector& Location);
+	void InputTouch(TEnumAsByte<ETouchIndex> FingerIndex, const struct FVector& Location);
 	void InputGesture(float Value);
 	void InputAxis(float AxisValue);
 	void InputAction(const struct FKey& Key);
@@ -333,7 +333,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.LuaPawn");
 		return pStaticClass;
@@ -350,7 +350,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class slua_unreal.SluaBlueprintLibrary");
 		return pStaticClass;

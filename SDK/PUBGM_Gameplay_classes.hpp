@@ -1,15 +1,15 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Gameplay.UAECharacter
-// 0x01E0 (0x0AD0 - 0x08F0)
+// 0x01F0 (0x0AE0 - 0x08F0)
 class AUAECharacter : public ACharacter
 {
 public:
@@ -24,39 +24,41 @@ public:
 	unsigned char                                      UnknownData02[0x4];                                       // 0x0984(0x0004) MISSED OFFSET
 	struct FString                                     PlayerUID;                                                // 0x0988(0x0010) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor)
 	int                                                TeamID;                                                   // 0x0998(0x0004) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
-	bool                                               bTeamLeader;                                              // 0x099C(0x0001) (Net, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x099D(0x0003) MISSED OFFSET
-	int                                                Campid;                                                   // 0x09A0(0x0004) (BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
-	int                                                resID;                                                    // 0x09A4(0x0004) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
-	ECharacterGender                                   DefaultCharacterGender;                                   // 0x09A8(0x0001) (BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x7];                                       // 0x09A9(0x0007) MISSED OFFSET
-	TArray<struct FGameModePlayerItem>                 InitialItemList;                                          // 0x09B0(0x0010) (ZeroConstructor)
-	struct FGameModePlayerUpassInfo                    UpassInfo;                                                // 0x09C0(0x0038)
-	struct FGameModePlayerPetInfo                      PetInfo;                                                  // 0x09F8(0x0020) (BlueprintVisible)
-	int                                                planeAvatarId;                                            // 0x0A18(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                DyeDebugFlag;                                             // 0x0A1C(0x0004) (ZeroConstructor, IsPlainOldData)
-	TArray<struct FGameModePlayerTaskData>             InitialTaskDataList;                                      // 0x0A20(0x0010) (ZeroConstructor)
-	bool                                               bIsAI;                                                    // 0x0A30(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bIsMLAI;                                                  // 0x0A31(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bIsAIWithPet;                                             // 0x0A32(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAINeedCheckBullets;                                      // 0x0A33(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              DestinyValue;                                             // 0x0A34(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData05[0xC];                                       // 0x0A38(0x000C) MISSED OFFSET
-	float                                              RatingScore;                                              // 0x0A44(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               UseWholeBodyModel;                                        // 0x0A48(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnsure;                                                  // 0x0A49(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
-	bool                                               bMEnsure;                                                 // 0x0A4A(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
-	bool                                               bRepEnsure;                                               // 0x0A4B(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bRepMEnsure;                                              // 0x0A4C(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               DefaultIsUseWholeBodyModel;                               // 0x0A4D(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x12];                                      // 0x0A4E(0x0012) MISSED OFFSET
-	struct FString                                     LuaFilePath;                                              // 0x0A60(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	struct FLuaNetSerialization                        LuaNetSerialization;                                      // 0x0A70(0x0050) (Net)
-	unsigned char                                      UnknownData07[0x10];                                      // 0x0AC0(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData03[0x4];                                       // 0x099C(0x0004) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnTeamIDChange;                                           // 0x09A0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	bool                                               bTeamLeader;                                              // 0x09B0(0x0001) (Net, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x09B1(0x0003) MISSED OFFSET
+	int                                                Campid;                                                   // 0x09B4(0x0004) (BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
+	int                                                resID;                                                    // 0x09B8(0x0004) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
+	ECharacterGender                                   DefaultCharacterGender;                                   // 0x09BC(0x0001) (BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x3];                                       // 0x09BD(0x0003) MISSED OFFSET
+	TArray<struct FGameModePlayerItem>                 InitialItemList;                                          // 0x09C0(0x0010) (ZeroConstructor)
+	struct FGameModePlayerUpassInfo                    UpassInfo;                                                // 0x09D0(0x0038)
+	struct FGameModePlayerPetInfo                      PetInfo;                                                  // 0x0A08(0x0020) (BlueprintVisible)
+	int                                                planeAvatarId;                                            // 0x0A28(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                DyeDebugFlag;                                             // 0x0A2C(0x0004) (ZeroConstructor, IsPlainOldData)
+	TArray<struct FGameModePlayerTaskData>             InitialTaskDataList;                                      // 0x0A30(0x0010) (ZeroConstructor)
+	bool                                               bIsAI;                                                    // 0x0A40(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsMLAI;                                                  // 0x0A41(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsAIWithPet;                                             // 0x0A42(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bAINeedCheckBullets;                                      // 0x0A43(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              DestinyValue;                                             // 0x0A44(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData06[0xC];                                       // 0x0A48(0x000C) MISSED OFFSET
+	float                                              RatingScore;                                              // 0x0A54(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               UseWholeBodyModel;                                        // 0x0A58(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnsure;                                                  // 0x0A59(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
+	bool                                               bMEnsure;                                                 // 0x0A5A(0x0001) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
+	bool                                               bRepEnsure;                                               // 0x0A5B(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bRepMEnsure;                                              // 0x0A5C(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               DefaultIsUseWholeBodyModel;                               // 0x0A5D(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData07[0x12];                                      // 0x0A5E(0x0012) MISSED OFFSET
+	struct FString                                     LuaFilePath;                                              // 0x0A70(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	struct FLuaNetSerialization                        LuaNetSerialization;                                      // 0x0A80(0x0050) (Net)
+	unsigned char                                      UnknownData08[0x10];                                      // 0x0AD0(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAECharacter");
 		return pStaticClass;
@@ -197,8 +199,8 @@ public:
 	unsigned char                                      UnknownData18[0x4B];                                      // 0x0AAD(0x004B) MISSED OFFSET
 	struct FScriptMulticastDelegate                    OnGameModeStateChanged;                                   // 0x0AF8(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	unsigned char                                      UnknownData19[0x110];                                     // 0x0B08(0x0110) MISSED OFFSET
-	struct FScriptDelegate                             SendTeammateResultWhenChicken;                            // 0x0C18(0x0016) (ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             HaveSentTeamBattleResult;                                 // 0x0C28(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             SendTeammateResultWhenChicken;                            // 0x0C18(0x0010) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             HaveSentTeamBattleResult;                                 // 0x0C28(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    SendTeamBattleResult;                                     // 0x0C38(0x0010) (ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData20[0x110];                                     // 0x0C48(0x0110) MISSED OFFSET
 	struct FScriptMulticastDelegate                    SendGameStopJoin;                                         // 0x0D58(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
@@ -258,7 +260,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEGameMode");
 		return pStaticClass;
@@ -373,7 +375,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEGameState");
 		return pStaticClass;
@@ -628,7 +630,7 @@ public:
 	TMap<EEventCounterDefine, int>                     EventCounterMap;                                          // 0x0FB8(0x0050) (BlueprintVisible, ZeroConstructor)
 	TMap<int, int>                                     GeneralCounterMap;                                        // 0x1008(0x0050) (BlueprintVisible, ZeroConstructor)
 	unsigned char                                      UnknownData30[0x8];                                       // 0x1058(0x0008) MISSED OFFSET
-	struct FScriptDelegate                             AllowToAddGeneralCount;                                   // 0x1060(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             AllowToAddGeneralCount;                                   // 0x1060(0x0010) (ZeroConstructor, InstancedReference)
 	struct FScriptMulticastDelegate                    OnGenerelCountChanged;                                    // 0x1070(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	int                                                VeteranRecruitIndex;                                      // 0x1080(0x0004) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData31[0x4];                                       // 0x1084(0x0004) MISSED OFFSET
@@ -667,7 +669,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEPlayerState");
 		return pStaticClass;
@@ -748,7 +750,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemSceneComponent");
 		return pStaticClass;
@@ -771,7 +773,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GroupSpotSceneComponent");
 		return pStaticClass;
@@ -800,7 +802,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemGroupSpotSceneComponent");
 		return pStaticClass;
@@ -810,7 +812,7 @@ public:
 	void SetGroupProperty(class UItemGeneratorComponent* Generator, const struct FSpotGroupProperty& Property);
 	void RepeatSpots();
 	void RepeatSingleSpot(class UItemSpotSceneComponent* Spot);
-	void RandomSpotByType(TEnumAsByte<enum ESpotType> SpotType, const struct FSpotTypeProperty& Property, TArray<class UItemSpotSceneComponent*>* AllSpots);
+	void RandomSpotByType(TEnumAsByte<ESpotType> SpotType, const struct FSpotTypeProperty& Property, TArray<class UItemSpotSceneComponent*>* AllSpots);
 	void RandomSingleSpot(const struct FSpotTypeProperty& Property, TArray<class UItemSpotSceneComponent*>* Spots);
 	float RandomRepeatGenerateItemCD(const struct FSpotGroupProperty& GroupProperty);
 };
@@ -831,7 +833,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.SpotSceneComponent");
 		return pStaticClass;
@@ -860,14 +862,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemSpotSceneComponent");
 		return pStaticClass;
 	}
 
 
-	void SetSpotProperty(int CompositionID, TEnumAsByte<enum ESpotGroupType> GroupType, class UItemGeneratorComponent* Generator, const struct FSpotTypeProperty& Property, class UGroupSpotSceneComponent* Component, bool RepeatGenerateItem);
+	void SetSpotProperty(int CompositionID, TEnumAsByte<ESpotGroupType> GroupType, class UItemGeneratorComponent* Generator, const struct FSpotTypeProperty& Property, class UGroupSpotSceneComponent* Component, bool RepeatGenerateItem);
 	void RepeatSpotProperty(const struct FSpotTypeProperty& Property);
 	bool GenerateSpot();
 	void GenerateItems(TArray<struct FItemGenerateSpawnClass>* AllItemClass);
@@ -900,7 +902,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEHouseActor");
 		return pStaticClass;
@@ -923,7 +925,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEGameplayStatics");
 		return pStaticClass;
@@ -945,7 +947,7 @@ public:
 	struct FVector                                     ProjStandOffset;                                          // 0x0580(0x000C) (BlueprintVisible, BlueprintReadOnly, Net, IsPlainOldData)
 	struct FVector                                     ProjCrouchOffset;                                         // 0x058C(0x000C) (BlueprintVisible, BlueprintReadOnly, Net, IsPlainOldData)
 	struct FVector                                     ProjProneOffset;                                          // 0x0598(0x000C) (BlueprintVisible, BlueprintReadOnly, Net, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               ProjPrevoisOwnerPose;                                     // 0x05A4(0x0001) (BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    ProjPrevoisOwnerPose;                                     // 0x05A4(0x0001) (BlueprintVisible, Net, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x05A5(0x0003) MISSED OFFSET
 	float                                              SpawnSeconds;                                             // 0x05A8(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bShowGrenadeWarningFlag;                                  // 0x05AC(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -954,7 +956,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEProjectile");
 		return pStaticClass;
@@ -964,7 +966,7 @@ public:
 	void WorkAsBuffApplierEvent(const struct FString& BuffName, class APawn* BuffTarget);
 	void TimeoutExplodeMulticast_CPP();
 	void TimeoutExplodeMulticast_BPEvent();
-	void SetActorInitialRelativeOffset(const struct FVector& Offset, const struct FVector& StandOffset, const struct FVector& CrouchOffset, const struct FVector& ProneOffset, TEnumAsByte<enum ECharacterPoseType> PrevoisOwnerPose);
+	void SetActorInitialRelativeOffset(const struct FVector& Offset, const struct FVector& StandOffset, const struct FVector& CrouchOffset, const struct FVector& ProneOffset, TEnumAsByte<ECharacterPoseType> PrevoisOwnerPose);
 	void ServerNotifyGroundEventOnClient();
 	void OnRep_IsServerAlreadyExplodedCpp();
 	void OnRep_IsGroundedOnServerCpp();
@@ -988,7 +990,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEOBState");
 		return pStaticClass;
@@ -1152,7 +1154,7 @@ public:
 	struct FScriptMulticastDelegate                    PlayerControllerLostDelegate;                             // 0x11C0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    SyncDailyTaskInfoDelegate;                                // 0x11D0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    PlayerControllerRecoveredDelegate;                        // 0x11E0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    PlayerControllerAboutToReconnectDelegate;                 // 0x11F0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnPlayerControllerReconnectStarted;                       // 0x11F0(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    PlayerControllerReconnectedDelegate;                      // 0x1200(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    PlayerControllerAboutToRespawnDelegate;                   // 0x1210(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    PlayerControllerRespawnedDelegate;                        // 0x1220(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintAssignable)
@@ -1188,7 +1190,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEPlayerController");
 		return pStaticClass;
@@ -1339,7 +1341,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ActorGridGeneratorInterface");
 		return pStaticClass;
@@ -1358,7 +1360,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.AutoRotationComponent");
 		return pStaticClass;
@@ -1435,7 +1437,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.BackpackComponent");
 		return pStaticClass;
@@ -1572,7 +1574,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.BackpackRepActor");
 		return pStaticClass;
@@ -1595,7 +1597,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemActorComponent");
 		return pStaticClass;
@@ -1614,7 +1616,7 @@ public:
 	class UUAEDataTable*                               ItemTable;                                                // 0x0258(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsWriteStatisticsToLog;                                   // 0x0260(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0261(0x0007) MISSED OFFSET
-	TMap<TEnumAsByte<enum ESpotGroupType>, struct FGroupSpotComponentArray> AllGroupSpots;                                            // 0x0268(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotGroupType>, struct FGroupSpotComponentArray> AllGroupSpots;                                            // 0x0268(0x0050) (ZeroConstructor)
 	TArray<class USpotSceneComponent*>                 AllSpotsToTick;                                           // 0x02B8(0x0010) (ExportObject, ZeroConstructor)
 	TMap<int, struct FWorldTileSpotArray>              WorldTileSpots;                                           // 0x02C8(0x0050) (ZeroConstructor)
 	struct FString                                     CookedFilePath;                                           // 0x0318(0x0010) (Edit, ZeroConstructor)
@@ -1622,7 +1624,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.BaseGeneratorComponent");
 		return pStaticClass;
@@ -1649,7 +1651,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ConfigInterface");
 		return pStaticClass;
@@ -1667,7 +1669,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.DynamicSpotContainerComponent");
 		return pStaticClass;
@@ -1687,7 +1689,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.FoliageFakeCollision");
 		return pStaticClass;
@@ -1707,7 +1709,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GameModeConfigComponent");
 		return pStaticClass;
@@ -1724,7 +1726,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.PatchTableUtils");
 		return pStaticClass;
@@ -1741,7 +1743,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GameModeStatisticsComponent");
 		return pStaticClass;
@@ -1810,7 +1812,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GameplayDelegates");
 		return pStaticClass;
@@ -1827,7 +1829,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GeneratorActorAIInterface");
 		return pStaticClass;
@@ -1846,7 +1848,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GeneratorActorInterface");
 		return pStaticClass;
@@ -1869,7 +1871,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GeneratorVehicleInterface");
 		return pStaticClass;
@@ -1894,7 +1896,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.GlobalConfigActor");
 		return pStaticClass;
@@ -1913,7 +1915,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ImplItemRegionInterface");
 		return pStaticClass;
@@ -1937,7 +1939,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemBandSpotSceneComponent");
 		return pStaticClass;
@@ -1956,7 +1958,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemConfigActorComponent");
 		return pStaticClass;
@@ -1981,7 +1983,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemCountArea");
 		return pStaticClass;
@@ -2000,7 +2002,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemGenerateInterface");
 		return pStaticClass;
@@ -2015,7 +2017,7 @@ class UItemGeneratorComponent : public UBaseGeneratorComponent
 {
 public:
 	struct FVector                                     ItemGenerateOffset;                                       // 0x0338(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	TEnumAsByte<enum ESpotGroupType>                   BornIslandGroupType;                                      // 0x0344(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        BornIslandGroupType;                                      // 0x0344(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	bool                                               bStatisticsValid;                                         // 0x0345(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0346(0x0002) MISSED OFFSET
 	struct FItemGenerateStatisticsData                 ItemStatisticsData;                                       // 0x0348(0x0110)
@@ -2028,7 +2030,7 @@ public:
 	TArray<struct FItemRegionCircle>                   ReplacedGeneratorRegionMap;                               // 0x04D0(0x0010) (ZeroConstructor)
 	TArray<struct FSpotGroupProperty>                  SpotGroupPropertysEx;                                     // 0x04E0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	TArray<struct FExtraItemSpawn>                     ExtraSpawnItemsList;                                      // 0x04F0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	TMap<TEnumAsByte<enum ESpotGroupType>, struct FSpotGroupProperty> SpotGroupPropertysDic;                                    // 0x0500(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotGroupType>, struct FSpotGroupProperty> SpotGroupPropertysDic;                                    // 0x0500(0x0050) (ZeroConstructor)
 	struct FSpotGroupProperty                          DefaultSpotGroupProperty;                                 // 0x0550(0x0028)
 	class UCurveFloat*                                 SpotRateCurve;                                            // 0x0578(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	class UCurveFloat*                                 ItemRateCurve;                                            // 0x0580(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -2076,7 +2078,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemGeneratorComponent");
 		return pStaticClass;
@@ -2118,7 +2120,7 @@ public:
 	TArray<struct FVector> GetSpotLocsByTag(const struct FString& ExTag);
 	int GetSpotLocInPolygon(TArray<struct FVector> Anchors, int RandomNum, TArray<struct FVector>* OutLocs);
 	int GetSpotLocInCircle(const struct FVector& Center, float Radius, int RandomNum, TArray<struct FVector>* OutLocs);
-	struct FSpotGroupProperty GetSpotGroupPropertyByGroupType(TEnumAsByte<enum ESpotGroupType> SpotGroupType);
+	struct FSpotGroupProperty GetSpotGroupPropertyByGroupType(TEnumAsByte<ESpotGroupType> SpotGroupType);
 	bool GetRandomItemClassArray(bool RepeatGenerateItem, class UItemSpotSceneComponent* SpotComponent, struct FString* Value, struct FString* Category, TArray<struct FItemGenerateSpawnClass>* Results);
 	struct FString GetRandomCategory(TArray<struct FSpotWeight> SpotWeights);
 	int GetItemDefineID(class UClass* PickUpClass);
@@ -2154,14 +2156,14 @@ public:
 	TArray<class UItemSpotSceneComponent*>             PendingGenerateSpots;                                     // 0x03D8(0x0010) (ExportObject, ZeroConstructor)
 	class UItemGeneratorComponent*                     ItemGenerator;                                            // 0x03E8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FSpotGroupProperty                          SpotGroupProperty;                                        // 0x03F0(0x0028)
-	TMap<TEnumAsByte<enum ESpotType>, struct FSpotTypeProperty> SpotTypePropertys;                                        // 0x0418(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotType>, struct FSpotTypeProperty> SpotTypePropertys;                                        // 0x0418(0x0050) (ZeroConstructor)
 	bool                                               bInitialize;                                              // 0x0468(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bEnable;                                                  // 0x0469(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x046A(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.ItemGroupRepeatSpotComponent");
 		return pStaticClass;
@@ -2195,7 +2197,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.LuaBTDecoratorBase");
 		return pStaticClass;
@@ -2210,8 +2212,8 @@ public:
 	void ReceiveObserverActivated(class AActor* OwnerActor);
 	void ReceiveExecutionStartAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 	void ReceiveExecutionStart(class AActor* OwnerActor);
-	void ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, TEnumAsByte<enum EBTNodeResult> NodeResult);
-	void ReceiveExecutionFinish(class AActor* OwnerActor, TEnumAsByte<enum EBTNodeResult> NodeResult);
+	void ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, TEnumAsByte<EBTNodeResult> NodeResult);
+	void ReceiveExecutionFinish(class AActor* OwnerActor, TEnumAsByte<EBTNodeResult> NodeResult);
 	bool PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 	bool PerformConditionCheck(class AActor* OwnerActor);
 	bool IsDecoratorObserverActive();
@@ -2227,7 +2229,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.LuaBTNodeInterface");
 		return pStaticClass;
@@ -2276,7 +2278,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.LuaBTServiceBase");
 		return pStaticClass;
@@ -2311,7 +2313,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.LuaBTTaskBase");
 		return pStaticClass;
@@ -2343,7 +2345,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.MissionBoardComponent");
 		return pStaticClass;
@@ -2364,7 +2366,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.NetworkExceptionHandleSubsystem");
 		return pStaticClass;
@@ -2386,7 +2388,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.NetworkReportActor");
 		return pStaticClass;
@@ -2407,7 +2409,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.NewWeatherComponent");
 		return pStaticClass;
@@ -2436,7 +2438,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEAdvertisementActor");
 		return pStaticClass;
@@ -2470,7 +2472,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.RegionableAdvertisementActor");
 		return pStaticClass;
@@ -2489,7 +2491,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.SpotGeneratorStruct");
 		return pStaticClass;
@@ -2506,7 +2508,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.TriggerActionSpawnItemInterface");
 		return pStaticClass;
@@ -2524,7 +2526,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEActorMap");
 		return pStaticClass;
@@ -2542,7 +2544,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEBuffApplierActor");
 		return pStaticClass;
@@ -2561,7 +2563,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.AnimInstanceCacheCustomAnimInterface");
 		return pStaticClass;
@@ -2579,7 +2581,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAECharAnimListCompBase");
 		return pStaticClass;
@@ -2605,7 +2607,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEChaCustomAnimListComponent");
 		return pStaticClass;
@@ -2635,7 +2637,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.AnimInstanceCacheParachuteAnimInterface");
 		return pStaticClass;
@@ -2654,7 +2656,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEChaParachuteAnimListComponent");
 		return pStaticClass;
@@ -2667,7 +2669,7 @@ public:
 	bool HasAnimAsyncLoadingFinished();
 	void HandleAsyncLoadingFinishedEvent();
 	struct FString GetOwnerName();
-	class UAnimationAsset* GetCharacterParachuteAnim(TEnumAsByte<enum ECharacterParachuteAnimType> AnimType, int AnimOverrideType);
+	class UAnimationAsset* GetCharacterParachuteAnim(TEnumAsByte<ECharacterParachuteAnimType> AnimType, int AnimOverrideType);
 };
 
 
@@ -2694,7 +2696,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAECharacterAnimListComponent");
 		return pStaticClass;
@@ -2707,7 +2709,7 @@ public:
 	void OnAsyncLoadingFinishedNew(const struct FAsyncLoadCharAnimParams& LoadingParam);
 	void InitAnimListMap(bool IsFPP);
 	TArray<struct FPlayerAnimData> GetCharacterShovelAnim();
-	TArray<struct FPlayerAnimData> GetCharacterJumpAnim(TEnumAsByte<enum ECharacterJumpType> JumpType);
+	TArray<struct FPlayerAnimData> GetCharacterJumpAnim(TEnumAsByte<ECharacterJumpType> JumpType);
 	class UAnimationAsset* GetAnimationAsset();
 };
 
@@ -2721,7 +2723,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAECharacterAnimListSubSystem");
 		return pStaticClass;
@@ -2742,7 +2744,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEChaVehAnimListComponent");
 		return pStaticClass;
@@ -2756,67 +2758,6 @@ public:
 };
 
 
-// Class Gameplay.UAEGameplayTagEventNodeBase
-// 0x00B8 (0x00E0 - 0x0028)
-class UUAEGameplayTagEventNodeBase : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x58];                                      // 0x0028(0x0058) MISSED OFFSET
-	struct FGameplayTagQuery                           Requirements;                                             // 0x0080(0x0048) (Edit, BlueprintVisible, DisableEditOnTemplate)
-	struct FString                                     LuaFilePath;                                              // 0x00C8(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	bool                                               bInitialAutoVerify;                                       // 0x00D8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x00D9(0x0007) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class Gameplay.UAEGameplayTagEventNodeBase");
-		return pStaticClass;
-	}
-
-
-	void Validate(class AActor* NodeTarget, class UObject* Observer);
-	void OnUnregistered(class AActor* NodeTarget, class UObject* Observer);
-	void OnRegistered(class AActor* NodeTarget, class UObject* Observer);
-	void Invalidate(class AActor* NodeTarget, class UObject* Observer);
-};
-
-
-// Class Gameplay.UAEGameplayTagImposerSubsystem
-// 0x0140 (0x0170 - 0x0030)
-class UUAEGameplayTagImposerSubsystem : public UWorldSubsystem
-{
-public:
-	unsigned char                                      UnknownData00[0x140];                                     // 0x0030(0x0140) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-        static UClass *pStaticClass = nullptr;
-        if (!pStaticClass)
-            pStaticClass = UObject::FindClass("Class Gameplay.UAEGameplayTagImposerSubsystem");
-		return pStaticClass;
-	}
-
-
-	void OnActorEndPlay(class AActor* Actor, TEnumAsByte<enum EEndPlayReason> EndPlayReason);
-	static void K2_UntagActor(class AActor* Actor, const struct FGameplayTag& Tag);
-	static bool K2_UnregisterActorTagChangedEvent(class AActor* Actor, const struct FGameplayTag& InTag, const struct FScriptDelegate& InDelegate);
-	static void K2_TagActor(class AActor* Actor, const struct FGameplayTag& Tag);
-	static void K2_RemoveAllMatchingTags(class AActor* Actor, const struct FGameplayTag& Tag);
-	static void K2_RemoveActorTagEventNode(class UObject* WorldContextObject, int Handle);
-	static bool K2_RegisterActorTagChangedEvent(class AActor* Actor, const struct FGameplayTag& InTag, const struct FScriptDelegate& InDelegate);
-	static void K2_MultipleUntagActor(class AActor* Actor, TArray<struct FGameplayTag> InTags);
-	static void K2_MultipleTagActor(class AActor* Actor, TArray<struct FGameplayTag> InTags);
-	static void K2_ClearActorTags(class AActor* Actor, bool bNotifyAll);
-	static int K2_ApplyActorTagEventNode(class AActor* TargetActor, class UObject* NodeOwner, class UUAEGameplayTagEventNodeBase* NodeBase);
-	static bool K2_ActorHasMatchingTag(class AActor* Actor, const struct FGameplayTag& TagToCheck, bool bExactMatch);
-	static bool K2_ActorHasAnyTags(class AActor* Actor, TArray<struct FGameplayTag> InTags, bool bExactMatch);
-	static bool K2_ActorHasAllTags(class AActor* Actor, TArray<struct FGameplayTag> InTags, bool bExactMatch);
-	static class UUAEGameplayTagImposerSubsystem* Get(class UObject* WorldContextObject);
-};
-
-
 // Class Gameplay.UAEIndependentSpot
 // 0x0000 (0x04B0 - 0x04B0)
 class AUAEIndependentSpot : public AActor
@@ -2825,7 +2766,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEIndependentSpot");
 		return pStaticClass;
@@ -2835,7 +2776,7 @@ public:
 
 
 // Class Gameplay.UAELevelSequenceActor
-// 0x0160 (0x06B0 - 0x0550)
+// 0x0178 (0x06C8 - 0x0550)
 class AUAELevelSequenceActor : public ALevelSequenceActor
 {
 public:
@@ -2850,7 +2791,7 @@ public:
 	bool                                               bInitPlayerBeforeBeginPlay;                               // 0x05B8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	ESequenceRelevantType                              RelevantType;                                             // 0x05B9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bCameraOnlyOwnerUse;                                      // 0x05BA(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ELevelSequenceStartPlayType>      LevelSequenceStartPlayType;                               // 0x05BB(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELevelSequenceStartPlayType>           LevelSequenceStartPlayType;                               // 0x05BB(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x4];                                       // 0x05BC(0x0004) MISSED OFFSET
 	TArray<struct FMovieSceneBindingOverrideData>      NetSyncBindingData;                                       // 0x05C0(0x0010) (Net, ZeroConstructor)
 	float                                              AuthorityStartPlayTime;                                   // 0x05D0(0x0004) (BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData)
@@ -2861,10 +2802,11 @@ public:
 	TArray<struct FSeqActorBindingData>                TrackBindingData;                                         // 0x0640(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	struct FString                                     LuaFilePath;                                              // 0x0650(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	struct FLuaNetSerialization                        LuaNetSerialization;                                      // 0x0660(0x0050) (Net)
+	unsigned char                                      UnknownData06[0x18];                                      // 0x06B0(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAELevelSequenceActor");
 		return pStaticClass;
@@ -2925,7 +2867,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.AELobbyCharAnimListComp");
 		return pStaticClass;
@@ -2934,8 +2876,8 @@ public:
 
 	void OnAsyncLoadingFinished(const struct FLobbyAsyncLoadCharAnimParams& LoadingParam);
 	void InitPendingList(TArray<struct FLobbyCharacterWeaponAnimData>* animEditList, TArray<struct FSoftObjectPath>* PendingList);
-	class UAnimationAsset* GetCharacterAnim(TEnumAsByte<enum ELobbyCharacterPosIndex> PosIdx, TEnumAsByte<enum ELobbyCharacterAnimType> GenderType, int WeaponAnimType, TEnumAsByte<enum ECharacterShowSceneType> sceneType);
-	void BuildAnimMap(TEnumAsByte<enum ECharacterShowSceneType> sceneType, TArray<struct FLobbyCharacterWeaponAnimData>* AnimList);
+	class UAnimationAsset* GetCharacterAnim(TEnumAsByte<ELobbyCharacterPosIndex> PosIdx, TEnumAsByte<ELobbyCharacterAnimType> GenderType, int WeaponAnimType, TEnumAsByte<ECharacterShowSceneType> sceneType);
+	void BuildAnimMap(TEnumAsByte<ECharacterShowSceneType> sceneType, TArray<struct FLobbyCharacterWeaponAnimData>* AnimList);
 };
 
 
@@ -2947,7 +2889,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAESimpleSceneActor");
 		return pStaticClass;
@@ -2964,7 +2906,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAESpawnActorComponent");
 		return pStaticClass;
@@ -2988,7 +2930,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAESpotGroupObject");
 		return pStaticClass;
@@ -3009,7 +2951,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.UAEWindowComponent");
 		return pStaticClass;
@@ -3033,7 +2975,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.VehicleConfigActorComponent");
 		return pStaticClass;
@@ -3053,7 +2995,7 @@ public:
 	bool                                               bCanBackupVehicleSpotDatas;                               // 0x0339(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x033A(0x0006) MISSED OFFSET
 	TArray<class UVehicleSpotSceneComponent*>          VehicleSpotSceneComponentList;                            // 0x0340(0x0010) (ExportObject, ZeroConstructor)
-	TEnumAsByte<enum ERegionType>                      RegionType;                                               // 0x0350(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERegionType>                           RegionType;                                               // 0x0350(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0351(0x0007) MISSED OFFSET
 	TArray<struct FBackupVehicleSpotData>              BackupVehicleSpotDatas;                                   // 0x0358(0x0010) (ZeroConstructor)
 	TArray<struct FVehicleSpotProperty>                VehicleSpotPropertys;                                     // 0x0368(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
@@ -3061,8 +3003,8 @@ public:
 	bool                                               bStatisticsValid;                                         // 0x0388(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsRandom;                                                // 0x0389(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x6];                                       // 0x038A(0x0006) MISSED OFFSET
-	TMap<TEnumAsByte<enum ESpotType>, struct FVehicleSpotComponentArray> AllVehicleSpots;                                          // 0x0390(0x0050) (ZeroConstructor)
-	TMap<TEnumAsByte<enum ESpotType>, struct FVehicleSpotComponentArray> AllTreasureBoxSpots;                                      // 0x03E0(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotType>, struct FVehicleSpotComponentArray> AllVehicleSpots;                                          // 0x0390(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotType>, struct FVehicleSpotComponentArray> AllTreasureBoxSpots;                                      // 0x03E0(0x0050) (ZeroConstructor)
 	TMap<struct FString, struct FVehicleGenerateSpawnDataArray> VehicleGenerateSpawnDatas;                                // 0x0430(0x0050) (ZeroConstructor)
 	struct FVehicleGenerateStatisticsData              VehicleStatisticsData;                                    // 0x0480(0x0060)
 	class UUAEDataTable*                               VehicleDataTable;                                         // 0x04E0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -3074,14 +3016,14 @@ public:
 	unsigned char                                      UnknownData05[0x18];                                      // 0x0560(0x0018) MISSED OFFSET
 	struct FScriptMulticastDelegate                    OnVehicleGeneratedDelegate;                               // 0x0578(0x0010) (BlueprintVisible, ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnVehicleGenerateEndDelegate;                             // 0x0588(0x0010) (BlueprintVisible, ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptDelegate                             CanGenerateVehicleDelegate;                               // 0x0598(0x0016) (BlueprintVisible, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CanGenerateVehicleDelegate;                               // 0x0598(0x0010) (BlueprintVisible, ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData06[0x50];                                      // 0x05A8(0x0050) UNKNOWN PROPERTY: SetProperty Gameplay.VehicleAndTreasureBoxGeneratorComponent.IgnoreClassPathSet
 	bool                                               bEnableLevelIndex;                                        // 0x05F8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData07[0x57];                                      // 0x05F9(0x0057) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.VehicleAndTreasureBoxGeneratorComponent");
 		return pStaticClass;
@@ -3110,7 +3052,7 @@ public:
 	void LoadVehicleGenerateTable();
 	bool GMGenerateAllVehicleSpot(const struct FString& VehiclePath);
 	struct FVehicleGenerateRandomInfo GetVehicleSpotRandomInfoWithCategory(const struct FString& Category, struct FVehicleSpotProperty* SpotProperty);
-	struct FVehicleGenerateRandomInfo GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<enum ESpotType> SpotType, const struct FString& InCategory);
+	struct FVehicleGenerateRandomInfo GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<ESpotType> SpotType, const struct FString& InCategory);
 	struct FVehicleGenerateRandomInfo GetVehicleSpotRandomInfo(const struct FVehicleSpotProperty& SpotProperty, const struct FString& InCategory);
 	struct FVehicleGenerateRandomInfo GetTreasureBoxSpotRandomInfo(struct FTreasureBoxSpotProperty* SpotProperty);
 	struct FString GetTraceLevelName(const struct FString& SpotFileName, int16_t LevelIndex);
@@ -3123,7 +3065,7 @@ public:
 	bool DynamicSpawnVehicleBySpotId(int ID, const struct FString& Category);
 	void DeleteGroups();
 	bool CanDynamicSpawnVehicle(const struct FVector& SpawnLocation, const struct FVector& TestLocationOffset, const struct FVector& TestBoxSize);
-	void AddVehicleSpotCount(TEnumAsByte<enum ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ);
+	void AddVehicleSpotCount(TEnumAsByte<ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ);
 	void AddVehicleClassCount(const struct FString& Path, bool IsValid, int Count);
 	void AddIgnoreClassPath(TArray<struct FString> IgnoreItemClassList);
 };
@@ -3138,13 +3080,13 @@ public:
 	bool                                               bStatisticsValid;                                         // 0x0348(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsRandom;                                                // 0x0349(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x034A(0x0006) MISSED OFFSET
-	TMap<TEnumAsByte<enum ESpotType>, struct FVehicleSpotComponentArray> AllVehicleSpots;                                          // 0x0350(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESpotType>, struct FVehicleSpotComponentArray> AllVehicleSpots;                                          // 0x0350(0x0050) (ZeroConstructor)
 	TMap<struct FString, struct FVehicleGenerateSpawnDataArray> VehicleGenerateSpawnDatas;                                // 0x03A0(0x0050) (ZeroConstructor)
 	struct FVehicleGenerateStatisticsData              VehicleStatisticsData;                                    // 0x03F0(0x0060)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.VehicleGeneratorComponent");
 		return pStaticClass;
@@ -3160,13 +3102,13 @@ public:
 	void RandomSingleSpots(TArray<class UVehicleSpotSceneComponent*>* AllSpots, struct FVehicleSpotProperty* Property);
 	void RandomGroups();
 	void LoadVehicleGenerateTable();
-	struct FVehicleGenerateRandomInfo GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<enum ESpotType> SpotType);
+	struct FVehicleGenerateRandomInfo GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<ESpotType> SpotType);
 	struct FVehicleGenerateRandomInfo GetVehicleSpotRandomInfo(struct FVehicleSpotProperty* SpotProperty);
 	struct FVehicleGenerateSpawnData GetRandomVehicleClass(const struct FString& Category);
 	struct FString GetRandomCategory(TArray<struct FSpotWeight> SpotWeights);
 	void GenerateSpotOnTick(float DeltaTime);
 	void DeleteGroups();
-	void AddVehicleSpotCount(TEnumAsByte<enum ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ);
+	void AddVehicleSpotCount(TEnumAsByte<ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ);
 	void AddVehicleClassCount(const struct FString& Path, bool IsValid, int Count);
 };
 
@@ -3179,7 +3121,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.VehicleGroupSpotSceneComponent");
 		return pStaticClass;
@@ -3200,7 +3142,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.VehicleSpotObject");
 		return pStaticClass;
@@ -3217,8 +3159,8 @@ public:
 class UVehicleSpotSceneComponent : public USpotSceneComponent
 {
 public:
-	TEnumAsByte<enum ESpotGroupType>                   SpotGroupType;                                            // 0x03C0(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERegionType>                      RegionType;                                               // 0x03C1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpotGroupType>                        SpotGroupType;                                            // 0x03C0(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERegionType>                           RegionType;                                               // 0x03C1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bHasGenerateSpot;                                         // 0x03C2(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bRandomRotation;                                          // 0x03C3(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              RandomRotationMin;                                        // 0x03C4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -3232,7 +3174,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.VehicleSpotSceneComponent");
 		return pStaticClass;
@@ -3253,7 +3195,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gameplay.WeatherConfigComponent");
 		return pStaticClass;

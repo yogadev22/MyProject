@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PixUI.PixUIBPLibrary.PixUI_Version
 struct UPixUIBPLibrary_PixUI_Version_Params
@@ -168,7 +168,7 @@ struct UPixUIBPLibrary_PixUI_SetDynamicTextureUpdateMode_Params
 // Function PixUI.PixUIBPLibrary.PixUI_SetDynamicTextureFilter
 struct UPixUIBPLibrary_PixUI_SetDynamicTextureFilter_Params
 {
-	TEnumAsByte<enum ETextureFilter>                   eTextureFilter;                                           // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextureFilter>                        eTextureFilter;                                           // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PixUI.PixUIBPLibrary.PixUI_SetDynamicLibraryPath
@@ -519,7 +519,7 @@ struct UPixUIBPLibrary_PixUI_GetDynamicTextureUpdateMode_Params
 // Function PixUI.PixUIBPLibrary.PixUI_GetDynamicTextureFilter
 struct UPixUIBPLibrary_PixUI_GetDynamicTextureFilter_Params
 {
-	TEnumAsByte<enum ETextureFilter>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ETextureFilter>                        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function PixUI.PixUIBPLibrary.PixUI_GetDrawEffectNoPixelSnapping
@@ -672,6 +672,13 @@ struct UPixUIBPLibrary_PixUI_AddSystemFont_Params
 {
 	struct FString                                     strFontName;                                              // (Parm, ZeroConstructor)
 	struct FString                                     strFontPath;                                              // (Parm, ZeroConstructor)
+};
+
+// Function PixUI.PixUIExternalInterface.OnWidgetUnload
+struct UPixUIExternalInterface_OnWidgetUnload_Params
+{
+	class UWidget*                                     pWidget;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function PixUI.PixUIExternalInterface.OnWidgetLoad

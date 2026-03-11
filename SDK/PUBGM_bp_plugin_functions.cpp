@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function bp_plugin.bp_pluginBPLibrary.bp_pluginSendEvent
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void Ubp_pluginBPLibrary::bp_pluginSendEvent(const struct FString& jsonEventCmd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_plugin.bp_pluginBPLibrary.bp_pluginSendEvent");
 
@@ -41,7 +41,7 @@ void Ubp_pluginBPLibrary::bp_pluginSendEvent(const struct FString& jsonEventCmd)
 
 int Ubp_pluginBPLibrary::bp_pluginRequestInstallWidget(int wigetType, const struct FString& authInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_plugin.bp_pluginBPLibrary.bp_pluginRequestInstallWidget");
 
@@ -69,7 +69,7 @@ int Ubp_pluginBPLibrary::bp_pluginRequestInstallWidget(int wigetType, const stru
 
 float Ubp_pluginBPLibrary::bp_pluginLaunchMeemoFunction(const struct FString& Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_plugin.bp_pluginBPLibrary.bp_pluginLaunchMeemoFunction");
 
@@ -95,7 +95,7 @@ float Ubp_pluginBPLibrary::bp_pluginLaunchMeemoFunction(const struct FString& Pa
 
 bool Ubp_pluginBPLibrary::bp_pluginIsInForeground()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_plugin.bp_pluginBPLibrary.bp_pluginIsInForeground");
 
@@ -120,7 +120,7 @@ bool Ubp_pluginBPLibrary::bp_pluginIsInForeground()
 
 int Ubp_pluginBPLibrary::bp_pluginGetInstalledWidgetType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function bp_plugin.bp_pluginBPLibrary.bp_pluginGetInstalledWidgetType");
 

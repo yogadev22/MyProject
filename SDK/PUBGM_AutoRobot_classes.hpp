@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class AutoRobot.AutoRobotModule
 // 0x0038 (0x0060 - 0x0028)
@@ -17,7 +17,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.AutoRobotModule");
 		return pStaticClass;
@@ -34,7 +34,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.AutoRobotSceneTool");
 		return pStaticClass;
@@ -53,7 +53,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.AutoRunPlayerTestActor");
 		return pStaticClass;
@@ -71,7 +71,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.AutoTestInterface");
 		return pStaticClass;
@@ -97,7 +97,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.AutoTestSubsystem");
 		return pStaticClass;
@@ -184,7 +184,7 @@ public:
 	bool AutoTestIsDriver();
 	bool AutoTestIsCurrentCommandFinished();
 	void AutoTestInputMovement(float InRate);
-	void AutoTestInputKey(const struct FString& Key, TEnumAsByte<enum EInputEvent> EventType, float AmountDepressed, bool bGamepad);
+	void AutoTestInputKey(const struct FString& Key, TEnumAsByte<EInputEvent> EventType, float AmountDepressed, bool bGamepad);
 	void AutoTestGMVehicleMoveAndTowardClientEx(float InX, float InY, float InZ, float InX1, float InY1, float InZ1);
 	void AutoTestGMGotoClientEx(int InX, int InY, int InZ);
 	void AutoTestGMGoto(int InX, int InY, int InZ);
@@ -239,7 +239,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.PubgmAutoRun");
 		return pStaticClass;
@@ -276,7 +276,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.PVEAutoRunTest");
 		return pStaticClass;
@@ -293,7 +293,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.RemoteControlHelper");
 		return pStaticClass;
@@ -314,7 +314,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.RemoteControlManager");
 		return pStaticClass;
@@ -337,7 +337,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.ShootWeaponAutoTestHandle");
 		return pStaticClass;
@@ -361,7 +361,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AutoRobot.TestAIController");
 		return pStaticClass;

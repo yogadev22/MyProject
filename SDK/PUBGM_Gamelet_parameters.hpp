@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Gamelet.Gamelet.UpdateProductConfig
 struct UGamelet_UpdateProductConfig_Params
@@ -103,7 +103,7 @@ struct UGamelet_RefreshUserdata_Params
 // Function Gamelet.Gamelet.OpenBeforeLoginWithGameVersion
 struct UGamelet_OpenBeforeLoginWithGameVersion_Params
 {
-	TEnumAsByte<enum EGameletEnvironment>              Environment;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameletEnvironment>                   Environment;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     GameVersion;                                              // (Parm, ZeroConstructor)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -111,7 +111,7 @@ struct UGamelet_OpenBeforeLoginWithGameVersion_Params
 // Function Gamelet.Gamelet.OpenBeforeLogin
 struct UGamelet_OpenBeforeLogin_Params
 {
-	TEnumAsByte<enum EGameletEnvironment>              Environment;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameletEnvironment>                   Environment;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -126,7 +126,7 @@ struct UGamelet_OpenApp_Params
 // Function Gamelet.Gamelet.Open
 struct UGamelet_Open_Params
 {
-	TEnumAsByte<enum EGameletEnvironment>              Environment;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameletEnvironment>                   Environment;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	TMap<struct FString, struct FString>               UserData;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -142,6 +142,12 @@ struct UGamelet_Initialize_Params
 struct UGamelet_GetProductConfig_Params
 {
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Gamelet.Gamelet.GetIsProductEnvironment
+struct UGamelet_GetIsProductEnvironment_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Gamelet.Gamelet.GetGlobalSettings
@@ -554,7 +560,7 @@ struct UGameletPuertsUtilities_LoadUI_Params
 struct UGameletPuertsUtilities_LoadImageToTexture2D_Params
 {
 	struct FString                                     Path;                                                     // (Parm, ZeroConstructor)
-	TEnumAsByte<enum ETextureGroup>                    LODGroup;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextureGroup>                         LODGroup;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      IsSRGB;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	class UTexture2D*                                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -596,6 +602,12 @@ struct UGameletPuertsUtilities_GetNetWorkType_Params
 	unsigned char                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Gamelet.GameletPuertsUtilities.GetIsProductEnvironment
+struct UGameletPuertsUtilities_GetIsProductEnvironment_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Gamelet.GameletPuertsUtilities.GetHardwareInfo
 struct UGameletPuertsUtilities_GetHardwareInfo_Params
 {
@@ -611,6 +623,15 @@ struct UGameletPuertsUtilities_GetEngineVersion_Params
 // Function Gamelet.GameletPuertsUtilities.FlushPuertsVMMessages
 struct UGameletPuertsUtilities_FlushPuertsVMMessages_Params
 {
+};
+
+// Function Gamelet.GameletPuertsUtilities.CallCommonFunc
+struct UGameletPuertsUtilities_CallCommonFunc_Params
+{
+	struct FString                                     Type;                                                     // (Parm, ZeroConstructor)
+	struct FString                                     ParamJson;                                                // (Parm, ZeroConstructor)
+	class UWidget*                                     Widget;                                                   // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FScriptDelegate                             Callback;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function Gamelet.GameletPuertsUtilities.AddUserWidgetToGame

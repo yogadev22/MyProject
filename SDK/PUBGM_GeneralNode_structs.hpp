@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum GeneralNode.EGNActionState
 enum class EGNActionState : uint8_t
@@ -34,9 +34,9 @@ enum class EGNRunRole : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct GeneralNode.GNUniqueInstancedNodeKey
 // 0x0010
@@ -63,13 +63,13 @@ struct FGNTargetContext
 };
 
 // ScriptStruct GeneralNode.GNActionInstance
-// 0x0070
+// 0x0068
 struct FGNActionInstance
 {
 	class UGNAction*                                   Action;                                                   // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FGNContext                                  Context;                                                  // 0x0008(0x0010) (Edit)
 	struct FGNTargetContext                            TargetContext;                                            // 0x0018(0x0020) (Edit)
-	unsigned char                                      UnknownData00[0x38];                                      // 0x0038(0x0038) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x30];                                      // 0x0038(0x0030) MISSED OFFSET
 };
 
 // ScriptStruct GeneralNode.GNSharedDelegateWrap

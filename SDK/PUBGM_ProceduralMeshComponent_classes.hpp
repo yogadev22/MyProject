@@ -1,31 +1,33 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class ProceduralMeshComponent.ProceduralMeshComponent
-// 0x0060 (0x09E0 - 0x0980)
+// 0x0070 (0x09F0 - 0x0980)
 class UProceduralMeshComponent : public UMeshComponent
 {
 public:
-	bool                                               bUseComplexAsSimpleCollision;                             // 0x0980(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseAsyncCooking;                                         // 0x0981(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x6];                                       // 0x0982(0x0006) MISSED OFFSET
-	class UBodySetup*                                  ProcMeshBodySetup;                                        // 0x0988(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TArray<struct FProcMeshSection>                    ProcMeshSections;                                         // 0x0990(0x0010) (ZeroConstructor)
-	TArray<struct FKConvexElem>                        CollisionConvexElems;                                     // 0x09A0(0x0010) (ZeroConstructor)
-	struct FBoxSphereBounds                            LocalBounds;                                              // 0x09B0(0x001C) (IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x09CC(0x0004) MISSED OFFSET
-	TArray<class UBodySetup*>                          AsyncBodySetupQueue;                                      // 0x09D0(0x0010) (ZeroConstructor, Transient)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0980(0x0008) MISSED OFFSET
+	bool                                               bUseComplexAsSimpleCollision;                             // 0x0988(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseAsyncCooking;                                         // 0x0989(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x098A(0x0006) MISSED OFFSET
+	class UBodySetup*                                  ProcMeshBodySetup;                                        // 0x0990(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	TArray<struct FProcMeshSection>                    ProcMeshSections;                                         // 0x0998(0x0010) (ZeroConstructor)
+	TArray<struct FKConvexElem>                        CollisionConvexElems;                                     // 0x09A8(0x0010) (ZeroConstructor)
+	struct FBoxSphereBounds                            LocalBounds;                                              // 0x09B8(0x001C) (IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x09D4(0x0004) MISSED OFFSET
+	TArray<class UBodySetup*>                          AsyncBodySetupQueue;                                      // 0x09D8(0x0010) (ZeroConstructor, Transient)
+	unsigned char                                      UnknownData03[0x8];                                       // 0x09E8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ProceduralMeshComponent.ProceduralMeshComponent");
 		return pStaticClass;
@@ -55,7 +57,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ProceduralMeshComponent.KismetProceduralMeshLibrary");
 		return pStaticClass;

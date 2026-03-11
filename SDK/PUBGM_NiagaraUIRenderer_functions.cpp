@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function NiagaraUIRenderer.NiagaraSystemWidget.SetIsActivated
 // (Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UNiagaraSystemWidget::SetIsActivated(bool bInIsActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function NiagaraUIRenderer.NiagaraSystemWidget.SetIsActivated");
 
@@ -39,7 +39,7 @@ void UNiagaraSystemWidget::SetIsActivated(bool bInIsActive)
 
 class UNiagaraUIComponent* UNiagaraSystemWidget::GetNiagaraComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function NiagaraUIRenderer.NiagaraSystemWidget.GetNiagaraComponent");
 
@@ -64,7 +64,7 @@ class UNiagaraUIComponent* UNiagaraSystemWidget::GetNiagaraComponent()
 
 bool UNiagaraSystemWidget::GetIsActivated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function NiagaraUIRenderer.NiagaraSystemWidget.GetIsActivated");
 
@@ -87,7 +87,7 @@ bool UNiagaraSystemWidget::GetIsActivated()
 
 void UNiagaraSystemWidget::DeactivateSystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function NiagaraUIRenderer.NiagaraSystemWidget.DeactivateSystem");
 
@@ -110,7 +110,7 @@ void UNiagaraSystemWidget::DeactivateSystem()
 
 void UNiagaraSystemWidget::ActivateSystem(bool Reset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function NiagaraUIRenderer.NiagaraSystemWidget.ActivateSystem");
 

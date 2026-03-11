@@ -1,17 +1,17 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum Skill.UTSkillStopReason
 enum class EUTSkillStopReason : uint8_t
 {
-	UTSkillStopReason__SkillStopReason_UnKown = 0,
+	UTSkillStopReason__SkillStopReason_None = 0,
 	UTSkillStopReason__SkillStopReason_Finished = 1,
 	UTSkillStopReason__SkillStopReason_Failed = 2,
 	UTSkillStopReason__SkillStopReason_Interrupted = 3,
@@ -346,9 +346,9 @@ enum class ESkillDebugEventType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct Skill.UTSkillCreateData
 // 0x0060
@@ -460,13 +460,12 @@ struct FSkillNetBytesData
 };
 
 // ScriptStruct Skill.UTSkillSyncData_CD
-// 0x0028
+// 0x0018
 struct FUTSkillSyncData_CD
 {
 	int                                                SkillCDIndex;                                             // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              SkillTimeScale;                                           // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
-	TArray<unsigned char>                              SkillSyncDatas;                                           // 0x0008(0x0010) (ZeroConstructor)
-	struct FSkillNetBytesData                          CDSyncDatas;                                              // 0x0018(0x0010)
+	struct FSkillNetBytesData                          CDSyncDatas;                                              // 0x0008(0x0010)
 };
 
 // ScriptStruct Skill.SkillCDRepData
@@ -488,7 +487,7 @@ struct FUTSkillHitInfo
 	int                                                SkillPhaseID;                                             // 0x001C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	float                                              TimeSeconds;                                              // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
 	bool                                               IsHeadshot;                                               // 0x0024(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPhysicalSurface>                 HitSurfaceType;                                           // 0x0025(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      HitSurfaceType;                                           // 0x0025(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0026(0x0002) MISSED OFFSET
 	struct FVector                                     HitEnvLocation;                                           // 0x0028(0x000C) (IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
@@ -502,7 +501,7 @@ struct FUTSkillHitEnvInfo
 	class AActor*                                      FromPawn;                                                 // 0x0010(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	int                                                SkillID;                                                  // 0x0018(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	int                                                SkillPhaseID;                                             // 0x001C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
-	TEnumAsByte<enum EPhysicalSurface>                 HitSurfaceType;                                           // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      HitSurfaceType;                                           // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0021(0x0003) MISSED OFFSET
 	struct FVector                                     HitEnvLocation;                                           // 0x0024(0x000C) (IsPlainOldData)
 };
@@ -544,19 +543,18 @@ struct FSkillLimitKeySet
 };
 
 // ScriptStruct Skill.UTMultiSkillSynData
-// 0x0050
+// 0x0040
 struct FUTMultiSkillSynData
 {
 	bool                                               bEnableRepeat;                                            // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bSkillStop;                                               // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EUTSkillStopReason                                 StopReason;                                               // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0002(0x0006) MISSED OFFSET
 	uint64_t                                           InstanceID;                                               // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
 	int                                                SkillID;                                                  // 0x0010(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                PhaseIndexes;                                             // 0x0014(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FSkillNetBytesData                          PhaseIndexArray;                                          // 0x0018(0x0010) (Edit, BlueprintVisible)
-	TArray<unsigned char>                              BlackboardContent;                                        // 0x0028(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	struct FSkillNetBytesData                          BlackboardBytesData;                                      // 0x0038(0x0010) (BlueprintVisible)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0048(0x0008) MISSED OFFSET
+	struct FSkillNetBytesData                          BlackboardBytesData;                                      // 0x0028(0x0010) (BlueprintVisible)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0038(0x0008) MISSED OFFSET
 };
 
 // ScriptStruct Skill.MultiSkillSynData
@@ -569,17 +567,16 @@ struct FMultiSkillSynData
 };
 
 // ScriptStruct Skill.UTSkillSynSinglePhaseData
-// 0x0040
+// 0x0030
 struct FUTSkillSynSinglePhaseData
 {
 	uint64_t                                           InstanceID;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
 	int                                                SkillID;                                                  // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                CurSkillPhase;                                            // 0x000C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bSkillStop;                                               // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EUTSkillStopReason                                 StopReason;                                               // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
-	TArray<unsigned char>                              BlackboardContent;                                        // 0x0018(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	struct FSkillNetBytesData                          BlackboardBytesData;                                      // 0x0028(0x0010) (BlueprintVisible)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0038(0x0008) MISSED OFFSET
+	struct FSkillNetBytesData                          BlackboardBytesData;                                      // 0x0018(0x0010) (BlueprintVisible)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
 };
 
 // ScriptStruct Skill.SkillSinglePhaseData
@@ -598,7 +595,7 @@ struct FUTSkillSimulateData
 	uint64_t                                           InstanceID;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
 	int                                                SkillID;                                                  // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
 	bool                                               bSinglePhaseRep;                                          // 0x000C(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bStopSkill;                                               // 0x000D(0x0001) (ZeroConstructor, IsPlainOldData)
+	EUTSkillStopReason                                 StopReason;                                               // 0x000D(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x000E(0x0002) MISSED OFFSET
 	TArray<int>                                        SimlatePhaseIndexs;                                       // 0x0010(0x0010) (ZeroConstructor)
 };
@@ -614,9 +611,9 @@ struct FUTSkillExecQueue
 // 0x0008
 struct FUTSkillActionCreateData
 {
-	TEnumAsByte<enum ESkillActionRole>                 ActionRole;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESkillActionRole>                      ActionRole;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
-	float                                              DelayTime;                                                // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              delayTime;                                                // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct Skill.SkillConditionWarpper
@@ -653,7 +650,7 @@ struct FUTSkillPhaseCreateData
 };
 
 // ScriptStruct Skill.UTSkillPickerCreateData
-// 0x0028
+// 0x0050
 struct FUTSkillPickerCreateData
 {
 	EUTSkillPickerType                                 PickerType;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -675,9 +672,18 @@ struct FUTSkillPickerCreateData
 	bool                                               IsCheckHeadshot;                                          // 0x0021(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseNewOffset;                                            // 0x0022(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bIgnoreOwnerVehicleWhenTracePlayer;                       // 0x0023(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bIgnoreDriverCharacter;                                   // 0x0024(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bOwnerActorMustBuilding;                                  // 0x0025(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2];                                       // 0x0026(0x0002) MISSED OFFSET
+	bool                                               bIgnoreTargetVehicleWhenTracePlayer;                      // 0x0024(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bIgnoreDriverCharacter;                                   // 0x0025(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bOwnerActorMustBuilding;                                  // 0x0026(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bUse2DAngle;                                              // 0x0027(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bSortByDistInNarrowAngle;                                 // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
+	float                                              NarrowAngleInDegree;                                      // 0x002C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bSortByDistInNarrowBox;                                   // 0x0030(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x0031(0x0003) MISSED OFFSET
+	struct FVector                                     NarrowBoxExtent;                                          // 0x0034(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector                                     TargetLocationOffset;                                     // 0x0040(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x4];                                       // 0x004C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct Skill.UTSkillPickedTarget
@@ -692,7 +698,7 @@ struct FUTSkillPickedTarget
 	struct FName                                       BoneName;                                                 // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
 	struct FVector                                     HitEnvLocation;                                           // 0x0020(0x000C) (IsPlainOldData)
 	float                                              HitAngleCos;                                              // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPhysicalSurface>                 HitPhysMatType;                                           // 0x0030(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      HitPhysMatType;                                           // 0x0030(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               IgnoreTakeDamage;                                         // 0x0031(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x0032(0x0006) MISSED OFFSET
 };
@@ -781,7 +787,7 @@ struct FUTSkillInstance
 	int                                                SkillCDIndex;                                             // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
 	EUTSkillStopReason                                 StopReason;                                               // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
-	TArray<TEnumAsByte<enum EUTSkillEventType>>        EventCache;                                               // 0x0030(0x0010) (ZeroConstructor)
+	TArray<TEnumAsByte<EUTSkillEventType>>             EventCache;                                               // 0x0030(0x0010) (ZeroConstructor)
 	struct FUTSkillCreateData                          SkillBaseData;                                            // 0x0040(0x0060)
 	TWeakObjectPtr<class AUTSkill>                     CurSkill;                                                 // 0x00A0(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 	TWeakObjectPtr<class UUTSkillWidget>               CurSkillWidget;                                           // 0x00A8(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
@@ -804,13 +810,13 @@ struct FSkillParamaterModifier : public FSkillParamater
 // 0x0028
 struct FUTSkillAutoTriggerCondition
 {
-	TEnumAsByte<enum ESkillConditionType>              Condition;                                                // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ESkillConditionType>                   Condition;                                                // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                Param_W;                                                  // 0x0004(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	int                                                Param_X;                                                  // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	int                                                Param_Y;                                                  // 0x000C(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	int                                                Param_Z;                                                  // 0x0010(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ESkillEndConditionType>           EndCondition;                                             // 0x0014(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ESkillEndConditionType>                EndCondition;                                             // 0x0014(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
 	int                                                Param_A;                                                  // 0x0018(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	int                                                Param_B;                                                  // 0x001C(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -822,7 +828,7 @@ struct FUTSkillAutoTriggerCondition
 // 0x0030
 struct FUTSkillEventActionMap
 {
-	TEnumAsByte<enum EUTSkillEventType>                SkillEventType;                                           // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     SkillEventType;                                           // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class UUTSkillEffect*                              Action;                                                   // 0x0008(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 	TArray<class UUTSkillCondition*>                   Conditions;                                               // 0x0010(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)

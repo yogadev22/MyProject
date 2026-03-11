@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UAEStateMachine.UAEStateMachineComponent.Start
 // (Final, Native, Public, BlueprintCallable)
 
 void UUAEStateMachineComponent::Start()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.Start");
 
@@ -36,7 +36,7 @@ void UUAEStateMachineComponent::Start()
 
 void UUAEStateMachineComponent::SetTag(const struct FString& InTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.SetTag");
 
@@ -62,7 +62,7 @@ void UUAEStateMachineComponent::SetTag(const struct FString& InTag)
 
 void UUAEStateMachineComponent::OnTransientEvent__DelegateSignature(const struct FString& TransientEvent, const struct FString& CurrentState, const struct FString& TransientToState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction UAEStateMachine.UAEStateMachineComponent.OnTransientEvent__DelegateSignature");
 
@@ -88,7 +88,7 @@ void UUAEStateMachineComponent::OnTransientEvent__DelegateSignature(const struct
 
 bool UUAEStateMachineComponent::IsInState(const struct FString& StateName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.IsInState");
 
@@ -114,7 +114,7 @@ bool UUAEStateMachineComponent::IsInState(const struct FString& StateName)
 
 class UUAEState* UUAEStateMachineComponent::GetCurrentState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.GetCurrentState");
 
@@ -139,7 +139,7 @@ class UUAEState* UUAEStateMachineComponent::GetCurrentState()
 
 void UUAEStateMachineComponent::ForceDoEvent(const struct FString& EventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.ForceDoEvent");
 
@@ -161,7 +161,7 @@ void UUAEStateMachineComponent::ForceDoEvent(const struct FString& EventName)
 
 void UUAEStateMachineComponent::Finish()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.Finish");
 
@@ -184,7 +184,7 @@ void UUAEStateMachineComponent::Finish()
 
 void UUAEStateMachineComponent::DoEvent(const struct FString& EventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.DoEvent");
 
@@ -209,7 +209,7 @@ void UUAEStateMachineComponent::DoEvent(const struct FString& EventName)
 
 bool UUAEStateMachineComponent::CanDoEvent(const struct FString& EventName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEStateMachineComponent.CanDoEvent");
 
@@ -235,7 +235,7 @@ bool UUAEStateMachineComponent::CanDoEvent(const struct FString& EventName)
 
 void UUAEState::Update(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEState.Update");
 
@@ -259,7 +259,7 @@ void UUAEState::Update(float DeltaTime)
 
 void UUAEState::OnLeave(class UUAEState* TranitToState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEState.OnLeave");
 
@@ -283,7 +283,7 @@ void UUAEState::OnLeave(class UUAEState* TranitToState)
 
 void UUAEState::OnEnter(class UUAEState* PrevState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAEStateMachine.UAEState.OnEnter");
 

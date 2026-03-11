@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PixUIProfiler.PxProfilerMgr.StartProfiler
 // (Final, Native, Static, Public, BlueprintCallable)
 
 void UPxProfilerMgr::StartProfiler()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIProfiler.PxProfilerMgr.StartProfiler");
 
@@ -37,7 +37,7 @@ void UPxProfilerMgr::StartProfiler()
 
 void UPxProfilerMgr::PxProfilerCapabilitySwitch(EPxProfilerCapability EPxProfilerCapability, bool bOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIProfiler.PxProfilerMgr.PxProfilerCapabilitySwitch");
 
@@ -60,7 +60,7 @@ void UPxProfilerMgr::PxProfilerCapabilitySwitch(EPxProfilerCapability EPxProfile
 
 void UPxProfilerMgr::Print()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIProfiler.PxProfilerMgr.Print");
 
@@ -84,7 +84,7 @@ void UPxProfilerMgr::Print()
 
 bool UPxProfilerMgr::GetPxProfilerCapability(EPxProfilerCapability EPxProfilerCapability)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIProfiler.PxProfilerMgr.GetPxProfilerCapability");
 
@@ -108,7 +108,7 @@ bool UPxProfilerMgr::GetPxProfilerCapability(EPxProfilerCapability EPxProfilerCa
 
 void UPxProfilerMgr::EndProfiler()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIProfiler.PxProfilerMgr.EndProfiler");
 
@@ -129,7 +129,7 @@ void UPxProfilerMgr::EndProfiler()
 
 void UPxProfilerMgr::Check()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUIProfiler.PxProfilerMgr.Check");
 

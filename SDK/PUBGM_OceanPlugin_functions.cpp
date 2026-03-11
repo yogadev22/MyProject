@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.TriangleArea
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
@@ -18,7 +18,7 @@ namespace SDK
 
 float UAdvancedBuoyancyComponent::TriangleArea(const struct FVector& A, const struct FVector& B, const struct FVector& C)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.TriangleArea");
 
@@ -50,7 +50,7 @@ float UAdvancedBuoyancyComponent::TriangleArea(const struct FVector& A, const st
 
 TArray<struct FForceTriangle> UAdvancedBuoyancyComponent::SplitTriangle(const struct FBuoyancyVertex& H, const struct FBuoyancyVertex& M, const struct FBuoyancyVertex& L, const struct FVector& InArrow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.SplitTriangle");
 
@@ -80,7 +80,7 @@ TArray<struct FForceTriangle> UAdvancedBuoyancyComponent::SplitTriangle(const st
 
 void UAdvancedBuoyancyComponent::SetMeshDensity(float NewDensity, float NewWaterDensity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.SetMeshDensity");
 
@@ -107,7 +107,7 @@ void UAdvancedBuoyancyComponent::SetMeshDensity(float NewDensity, float NewWater
 
 float UAdvancedBuoyancyComponent::GetOceanDepthFromGrid(const struct FVector& Position, bool bJustGetHeightAtLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.GetOceanDepthFromGrid");
 
@@ -132,7 +132,7 @@ float UAdvancedBuoyancyComponent::GetOceanDepthFromGrid(const struct FVector& Po
 
 void UAdvancedBuoyancyComponent::GetOcean()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.GetOcean");
 
@@ -156,7 +156,7 @@ void UAdvancedBuoyancyComponent::GetOcean()
 
 void UAdvancedBuoyancyComponent::DrawDebugStuff(const struct FForceTriangle& TriForce, const struct FColor& DebugColor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.DrawDebugStuff");
 
@@ -182,7 +182,7 @@ void UAdvancedBuoyancyComponent::DrawDebugStuff(const struct FForceTriangle& Tri
 
 void UAdvancedBuoyancyComponent::ApplySlamForce(const struct FVector& SlamForce, const struct FVector& TriCenter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.ApplySlamForce");
 
@@ -207,7 +207,7 @@ void UAdvancedBuoyancyComponent::ApplySlamForce(const struct FVector& SlamForce,
 
 void UAdvancedBuoyancyComponent::ApplyForce(const struct FForceTriangle& TriForce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.AdvancedBuoyancyComponent.ApplyForce");
 
@@ -231,7 +231,7 @@ void UAdvancedBuoyancyComponent::ApplyForce(const struct FForceTriangle& TriForc
 
 void UBuoyancyForceComponent::SetUpdatedComponent(class USceneComponent* NewUpdatedComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.SetUpdatedComponent");
 
@@ -255,7 +255,7 @@ void UBuoyancyForceComponent::SetUpdatedComponent(class USceneComponent* NewUpda
 
 void UBuoyancyForceComponent::OnEnterWaterDelegate__DelegateSignature(bool IsUnderWater)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction OceanPlugin.BuoyancyForceComponent.OnEnterWaterDelegate__DelegateSignature");
 
@@ -278,7 +278,7 @@ void UBuoyancyForceComponent::OnEnterWaterDelegate__DelegateSignature(bool IsUnd
 
 void UBuoyancyForceComponent::OnContactWaterDelegate__DelegateSignature(bool IsContactingWater)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction OceanPlugin.BuoyancyForceComponent.OnContactWaterDelegate__DelegateSignature");
 
@@ -301,7 +301,7 @@ void UBuoyancyForceComponent::OnContactWaterDelegate__DelegateSignature(bool IsC
 
 void UBuoyancyForceComponent::NativeSetEnableCustomWaveForce(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.NativeSetEnableCustomWaveForce");
 
@@ -325,7 +325,7 @@ void UBuoyancyForceComponent::NativeSetEnableCustomWaveForce(bool bEnable)
 
 bool UBuoyancyForceComponent::IsGerstnerWaveEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.IsGerstnerWaveEnabled");
 
@@ -350,7 +350,7 @@ bool UBuoyancyForceComponent::IsGerstnerWaveEnabled()
 
 bool UBuoyancyForceComponent::IsFloatingOnWater()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.IsFloatingOnWater");
 
@@ -375,7 +375,7 @@ bool UBuoyancyForceComponent::IsFloatingOnWater()
 
 bool UBuoyancyForceComponent::IsEntirelyUnderWater()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.IsEntirelyUnderWater");
 
@@ -400,7 +400,7 @@ bool UBuoyancyForceComponent::IsEntirelyUnderWater()
 
 bool UBuoyancyForceComponent::IsContactedWater()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.IsContactedWater");
 
@@ -425,7 +425,7 @@ bool UBuoyancyForceComponent::IsContactedWater()
 
 float UBuoyancyForceComponent::GetSeaLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.GetSeaLevel");
 
@@ -450,7 +450,7 @@ float UBuoyancyForceComponent::GetSeaLevel()
 
 class AOceanManager* UBuoyancyForceComponent::GetOceanManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.GetOceanManager");
 
@@ -475,7 +475,7 @@ class AOceanManager* UBuoyancyForceComponent::GetOceanManager()
 
 void UBuoyancyForceComponent::EndableUprightConstraint(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.EndableUprightConstraint");
 
@@ -501,7 +501,7 @@ void UBuoyancyForceComponent::EndableUprightConstraint(bool bEnable)
 
 bool UBuoyancyForceComponent::CheckPointInWater(const struct FVector& Point, bool isWorldPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.CheckPointInWater");
 
@@ -526,7 +526,7 @@ bool UBuoyancyForceComponent::CheckPointInWater(const struct FVector& Point, boo
 
 void UBuoyancyForceComponent::CacheDampingProperties()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.BuoyancyForceComponent.CacheDampingProperties");
 
@@ -552,7 +552,7 @@ void UBuoyancyForceComponent::CacheDampingProperties()
 
 void AFlockFish::OnEndOverlap(class UPrimitiveComponent* activatedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.FlockFish.OnEndOverlap");
 
@@ -584,7 +584,7 @@ void AFlockFish::OnEndOverlap(class UPrimitiveComponent* activatedComp, class AA
 
 void AFlockFish::OnBeginOverlap(class UPrimitiveComponent* activatedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.FlockFish.OnBeginOverlap");
 
@@ -613,7 +613,7 @@ void AFlockFish::OnBeginOverlap(class UPrimitiveComponent* activatedComp, class 
 
 void AOceanManager::LoadLandscapeHeightmap(class UTexture2D* Tex2D)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.OceanManager.LoadLandscapeHeightmap");
 
@@ -639,7 +639,7 @@ void AOceanManager::LoadLandscapeHeightmap(class UTexture2D* Tex2D)
 
 struct FLinearColor AOceanManager::GetHeightmapPixel(float U, float V)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.OceanManager.GetHeightmapPixel");
 
@@ -666,7 +666,7 @@ struct FLinearColor AOceanManager::GetHeightmapPixel(float U, float V)
 
 void ASegmentOceanManager::RemoveBoxComponent(class UWaterBoxComponent* InBoxComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.SegmentOceanManager.RemoveBoxComponent");
 
@@ -691,7 +691,7 @@ void ASegmentOceanManager::RemoveBoxComponent(class UWaterBoxComponent* InBoxCom
 
 void ASegmentOceanManager::AddBoxComponent(class UWaterBoxComponent* InBoxComponent, class USplineComponent* InDirectionSpline)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.SegmentOceanManager.AddBoxComponent");
 
@@ -716,7 +716,7 @@ void ASegmentOceanManager::AddBoxComponent(class UWaterBoxComponent* InBoxCompon
 
 void ATimeManager::SetCurrentLocalTime(float Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.SetCurrentLocalTime");
 
@@ -741,7 +741,7 @@ void ATimeManager::SetCurrentLocalTime(float Time)
 
 bool ATimeManager::IsLeapYear(int Year)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.IsLeapYear");
 
@@ -767,7 +767,7 @@ bool ATimeManager::IsLeapYear(int Year)
 
 void ATimeManager::InitializeCalendar(const struct FTimeDate& Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.InitializeCalendar");
 
@@ -791,7 +791,7 @@ void ATimeManager::InitializeCalendar(const struct FTimeDate& Time)
 
 void ATimeManager::IncrementTime(float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.IncrementTime");
 
@@ -815,7 +815,7 @@ void ATimeManager::IncrementTime(float DeltaSeconds)
 
 float ATimeManager::GetYearPhase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.GetYearPhase");
 
@@ -840,7 +840,7 @@ float ATimeManager::GetYearPhase()
 
 float ATimeManager::GetElapsedDayInMinutes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.GetElapsedDayInMinutes");
 
@@ -866,7 +866,7 @@ float ATimeManager::GetElapsedDayInMinutes()
 
 int ATimeManager::GetDaysInYear(int Year)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.GetDaysInYear");
 
@@ -894,7 +894,7 @@ int ATimeManager::GetDaysInYear(int Year)
 
 int ATimeManager::GetDaysInMonth(int Year, int Month)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.GetDaysInMonth");
 
@@ -921,7 +921,7 @@ int ATimeManager::GetDaysInMonth(int Year, int Month)
 
 float ATimeManager::GetDayPhase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.GetDayPhase");
 
@@ -947,7 +947,7 @@ float ATimeManager::GetDayPhase()
 
 int ATimeManager::GetDayOfYear(const struct FTimeDate& Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.GetDayOfYear");
 
@@ -973,7 +973,7 @@ int ATimeManager::GetDayOfYear(const struct FTimeDate& Time)
 
 struct FRotator ATimeManager::CalculateSunAngle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.CalculateSunAngle");
 
@@ -998,7 +998,7 @@ struct FRotator ATimeManager::CalculateSunAngle()
 
 float ATimeManager::CalculateMoonPhase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.CalculateMoonPhase");
 
@@ -1023,7 +1023,7 @@ float ATimeManager::CalculateMoonPhase()
 
 struct FRotator ATimeManager::CalculateMoonAngle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function OceanPlugin.TimeManager.CalculateMoonAngle");
 

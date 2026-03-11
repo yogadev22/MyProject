@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class PixUIRHI.PxRHIImage
 // 0x0000 (0x0028 - 0x0028)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUIRHI.PxRHIImage");
 		return pStaticClass;
@@ -35,7 +35,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PixUIRHI.PxRHIMgr");
 		return pStaticClass;
@@ -47,6 +47,24 @@ public:
 	static bool RHIImageDestroy(class UPxRHIMgr* pPxRHIImage);
 	static class UPxRHIImage* RHIImageCreate();
 	static class UPxRHIMgr* Get();
+};
+
+
+// Class PixUIRHI.PxRHIRender
+// 0x0098 (0x00C0 - 0x0028)
+class UPxRHIRender : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x98];                                      // 0x0028(0x0098) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+        static UClass *pStaticClass = 0;
+        if (!pStaticClass)
+            pStaticClass = UObject::FindClass("Class PixUIRHI.PxRHIRender");
+		return pStaticClass;
+	}
+
 };
 
 

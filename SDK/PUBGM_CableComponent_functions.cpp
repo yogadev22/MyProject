@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CableComponent.CableComponent.SetAttachEndTo
 // (Final, Native, Public, BlueprintCallable)
@@ -17,7 +17,7 @@ namespace SDK
 
 void UCableComponent::SetAttachEndTo(class AActor* Actor, const struct FName& ComponentProperty, const struct FName& SocketName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.SetAttachEndTo");
 
@@ -43,7 +43,7 @@ void UCableComponent::SetAttachEndTo(class AActor* Actor, const struct FName& Co
 
 void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Locations)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetCableParticleLocations");
 
@@ -69,7 +69,7 @@ void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Location
 
 class USceneComponent* UCableComponent::GetAttachedComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetAttachedComponent");
 
@@ -94,7 +94,7 @@ class USceneComponent* UCableComponent::GetAttachedComponent()
 
 class AActor* UCableComponent::GetAttachedActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetAttachedActor");
 

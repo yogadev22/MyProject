@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CreativeLua.CreativeBridgeLuaVM.UGCLuaError
 // (Final, Native, Public, Const)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UCreativeBridgeLuaVM::UGCLuaError(int ErrCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CreativeLua.CreativeBridgeLuaVM.UGCLuaError");
 
@@ -37,7 +37,7 @@ void UCreativeBridgeLuaVM::UGCLuaError(int ErrCode)
 
 void UCreativeBridgeLuaVM::RegisterSluaCallUgcluaEventHandler()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CreativeLua.CreativeBridgeLuaVM.RegisterSluaCallUgcluaEventHandler");
 
@@ -58,7 +58,7 @@ void UCreativeBridgeLuaVM::RegisterSluaCallUgcluaEventHandler()
 
 void UCreativeBridgeLuaVM::PostInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CreativeLua.CreativeBridgeLuaVM.PostInit");
 
@@ -71,6 +71,35 @@ void UCreativeBridgeLuaVM::PostInit()
 	currentObj->ProcessEvent(pFunc, &params);
 
 	pFunc->FunctionFlags = flags;
+}
+
+
+// Function CreativeLua.CreativeEnvLuaVMFactory.CreateCreativeEnvLuaVM
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 InLuaFilePath                  (Parm, ZeroConstructor)
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class UCreativeEnvLuaVM*       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UCreativeEnvLuaVM* UCreativeEnvLuaVMFactory::CreateCreativeEnvLuaVM(const struct FString& InLuaFilePath, class UObject* WorldContextObject)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function CreativeLua.CreativeEnvLuaVMFactory.CreateCreativeEnvLuaVM");
+
+	UCreativeEnvLuaVMFactory_CreateCreativeEnvLuaVM_Params params;
+	params.InLuaFilePath = InLuaFilePath;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 

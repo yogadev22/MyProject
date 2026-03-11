@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function AI.AESpawner.SwitchTeamAI
 // (Final, Native, Public)
@@ -15,7 +15,7 @@ namespace SDK
 
 void AAESpawner::SwitchTeamAI(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.SwitchTeamAI");
 
@@ -42,7 +42,7 @@ void AAESpawner::SwitchTeamAI(bool bEnable)
 
 void AAESpawner::OnUnitTakeDamageEvent(float Damage, const struct FDamageEvent& DamageEvent, class AActor* Victim, class AActor* Causer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.OnUnitTakeDamageEvent");
 
@@ -71,7 +71,7 @@ void AAESpawner::OnUnitTakeDamageEvent(float Damage, const struct FDamageEvent& 
 
 void AAESpawner::OnUnitSpawned(class AActor* NewUnit, const struct FSTSpawnParam& SpawnParam, class ASTSpawnerBase* Spawner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.OnUnitSpawned");
 
@@ -97,7 +97,7 @@ void AAESpawner::OnUnitSpawned(class AActor* NewUnit, const struct FSTSpawnParam
 
 void AAESpawner::OnSpawnTimingRipe(bool IsRipe)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.OnSpawnTimingRipe");
 
@@ -126,7 +126,7 @@ void AAESpawner::OnSpawnTimingRipe(bool IsRipe)
 
 void AAESpawner::OnOwnedMobDead(class ASTExtraSimpleCharacter* DeadCharacter, class AController* Killer, class AActor* DamageCauser, const struct FHitResult& KillingHitInfo, const struct FVector& KillingHitImpulseDir, class UClass* KillingHitDamageType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.OnOwnedMobDead");
 
@@ -160,7 +160,7 @@ void AAESpawner::OnOwnedMobDead(class ASTExtraSimpleCharacter* DeadCharacter, cl
 
 void AAESpawner::OnOwnedFakePlayerDead(class ASTExtraBaseCharacter* DeadCharacter, class AController* Killer, class AActor* DamageCauser, const struct FHitResult& KillingHitInfo, const struct FVector& KillingHitImpulseDir, class UClass* KillingHitDamageType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.OnOwnedFakePlayerDead");
 
@@ -185,11 +185,11 @@ void AAESpawner::OnOwnedFakePlayerDead(class ASTExtraBaseCharacter* DeadCharacte
 // Function AI.AESpawner.GetSpeciesCategory
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EBotCategray> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBotCategray>      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBotCategray> AAESpawner::GetSpeciesCategory()
+TEnumAsByte<EBotCategray> AAESpawner::GetSpeciesCategory()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.GetSpeciesCategory");
 
@@ -214,7 +214,7 @@ TEnumAsByte<enum EBotCategray> AAESpawner::GetSpeciesCategory()
 
 float AAESpawner::GetSpawnerTeamID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.GetSpawnerTeamID");
 
@@ -239,7 +239,7 @@ float AAESpawner::GetSpawnerTeamID()
 
 float AAESpawner::GetSpawnerGroupID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.GetSpawnerGroupID");
 
@@ -267,7 +267,7 @@ float AAESpawner::GetSpawnerGroupID()
 
 int AAESpawner::GenerateParamID(int ConfigId, int BaseParamID, const struct FSTSpawnParam& SpawnParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.GenerateParamID");
 
@@ -292,7 +292,7 @@ int AAESpawner::GenerateParamID(int ConfigId, int BaseParamID, const struct FSTS
 
 void AAESpawner::DeactivateSpawner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.DeactivateSpawner");
 
@@ -317,7 +317,7 @@ void AAESpawner::DeactivateSpawner()
 
 void AAESpawner::BPOnUnitSpawned(class APawn* AIPawn, int ConfigId, const struct FSTSpawnParam& SpawnParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.BPOnUnitSpawned");
 
@@ -340,7 +340,7 @@ void AAESpawner::BPOnUnitSpawned(class APawn* AIPawn, int ConfigId, const struct
 
 void AAESpawner::ActivateSpawner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawner.ActivateSpawner");
 
@@ -364,7 +364,7 @@ void AAESpawner::ActivateSpawner()
 
 class AActor* UAESpawnSubsystem::SpawnUnit(const struct FSTSpawnParam& SpawnParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.SpawnUnit");
 
@@ -390,7 +390,7 @@ class AActor* UAESpawnSubsystem::SpawnUnit(const struct FSTSpawnParam& SpawnPara
 
 void UAESpawnSubsystem::RegisterSpawner(class ASTSpawnerBase* Spawner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.RegisterSpawner");
 
@@ -414,7 +414,7 @@ void UAESpawnSubsystem::RegisterSpawner(class ASTSpawnerBase* Spawner)
 
 bool UAESpawnSubsystem::PreCheck()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.PreCheck");
 
@@ -435,12 +435,12 @@ bool UAESpawnSubsystem::PreCheck()
 // Function AI.AESpawnSubsystem.ModifyThreshold
 // (Final, Native, Protected, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EBotCategray> Category                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBotCategray>      Category                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Threshold                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UAESpawnSubsystem::ModifyThreshold(TEnumAsByte<enum EBotCategray> Category, int Threshold)
+void UAESpawnSubsystem::ModifyThreshold(TEnumAsByte<EBotCategray> Category, int Threshold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.ModifyThreshold");
 
@@ -461,12 +461,12 @@ void UAESpawnSubsystem::ModifyThreshold(TEnumAsByte<enum EBotCategray> Category,
 // Function AI.AESpawnSubsystem.GetUnitsNumByCategory
 // (Final, Native, Protected, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EBotCategray> Category                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBotCategray>      Category                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-int UAESpawnSubsystem::GetUnitsNumByCategory(TEnumAsByte<enum EBotCategray> Category)
+int UAESpawnSubsystem::GetUnitsNumByCategory(TEnumAsByte<EBotCategray> Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.GetUnitsNumByCategory");
 
@@ -493,7 +493,7 @@ int UAESpawnSubsystem::GetUnitsNumByCategory(TEnumAsByte<enum EBotCategray> Cate
 
 int UAESpawnSubsystem::GetUnitConfigID(class AActor* Unit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.GetUnitConfigID");
 
@@ -520,7 +520,7 @@ int UAESpawnSubsystem::GetUnitConfigID(class AActor* Unit)
 
 TArray<class ASTSpawnerBase*> UAESpawnSubsystem::GetGroupedSpawners(int InGroupID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.GetGroupedSpawners");
 
@@ -547,7 +547,7 @@ TArray<class ASTSpawnerBase*> UAESpawnSubsystem::GetGroupedSpawners(int InGroupI
 
 void UAESpawnSubsystem::EnQueue(class ASTSpawnerBase* Spawner, struct FSTSpawnParam* SpawnParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.EnQueue");
 
@@ -572,7 +572,7 @@ void UAESpawnSubsystem::EnQueue(class ASTSpawnerBase* Spawner, struct FSTSpawnPa
 
 void UAESpawnSubsystem::CleanQueue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.CleanQueue");
 
@@ -597,7 +597,7 @@ void UAESpawnSubsystem::CleanQueue()
 
 bool UAESpawnSubsystem::CheckCategoryLimit(class ASTSpawnerBase* Spawner, int* AvailableBalance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AESpawnSubsystem.CheckCategoryLimit");
 
@@ -627,7 +627,7 @@ bool UAESpawnSubsystem::CheckCategoryLimit(class ASTSpawnerBase* Spawner, int* A
 
 void UAIActionExecutionComponent::UseItem(int ItemId, int WeaponSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.UseItem");
 
@@ -654,7 +654,7 @@ void UAIActionExecutionComponent::UseItem(int ItemId, int WeaponSlot)
 
 void UAIActionExecutionComponent::SwapAttachmentItem(int ItemId, int SourceWeaponSlot, int TargetWeaponSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.SwapAttachmentItem");
 
@@ -680,7 +680,7 @@ void UAIActionExecutionComponent::SwapAttachmentItem(int ItemId, int SourceWeapo
 
 void UAIActionExecutionComponent::SetGrenadeLastSelectID(int WeaponId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.SetGrenadeLastSelectID");
 
@@ -706,7 +706,7 @@ void UAIActionExecutionComponent::SetGrenadeLastSelectID(int WeaponId)
 
 void UAIActionExecutionComponent::SetFocusRotation(float InPitch, float InYaw, float InRoll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.SetFocusRotation");
 
@@ -730,7 +730,7 @@ void UAIActionExecutionComponent::SetFocusRotation(float InPitch, float InYaw, f
 
 void UAIActionExecutionComponent::SetCurShootingPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.SetCurShootingPose");
 
@@ -753,7 +753,7 @@ void UAIActionExecutionComponent::SetCurShootingPose()
 
 void UAIActionExecutionComponent::RescueTarget(class ASTExtraBaseCharacter* RescueCharacter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.RescueTarget");
 
@@ -779,7 +779,7 @@ void UAIActionExecutionComponent::RescueTarget(class ASTExtraBaseCharacter* Resc
 
 void UAIActionExecutionComponent::OpenFixedRateOfDoors(float fCheckRealPlayerDistance, float fOpenDoorDistance, float fOpenDoorRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.OpenFixedRateOfDoors");
 
@@ -803,7 +803,7 @@ void UAIActionExecutionComponent::OpenFixedRateOfDoors(float fCheckRealPlayerDis
 
 void UAIActionExecutionComponent::OpenDoor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.OpenDoor");
 
@@ -826,7 +826,7 @@ void UAIActionExecutionComponent::OpenDoor()
 
 void UAIActionExecutionComponent::OnPlayerRespawn(class AUAEPlayerController* PC)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.OnPlayerRespawn");
 
@@ -848,7 +848,7 @@ void UAIActionExecutionComponent::OnPlayerRespawn(class AUAEPlayerController* PC
 
 void UAIActionExecutionComponent::OnFakePlayerRespawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.OnFakePlayerRespawn");
 
@@ -871,7 +871,7 @@ void UAIActionExecutionComponent::OnFakePlayerRespawn()
 
 bool UAIActionExecutionComponent::IsValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.IsValid");
 
@@ -896,7 +896,7 @@ bool UAIActionExecutionComponent::IsValid()
 
 bool UAIActionExecutionComponent::IsFreeCamera()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.IsFreeCamera");
 
@@ -922,7 +922,7 @@ bool UAIActionExecutionComponent::IsFreeCamera()
 
 class APickUpWrapperActor* UAIActionExecutionComponent::GetPickActorWithID(int UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.GetPickActorWithID");
 
@@ -948,7 +948,7 @@ class APickUpWrapperActor* UAIActionExecutionComponent::GetPickActorWithID(int U
 
 class ASTExtraBaseCharacter* UAIActionExecutionComponent::GetOwnerBaseCharacter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.GetOwnerBaseCharacter");
 
@@ -973,7 +973,7 @@ class ASTExtraBaseCharacter* UAIActionExecutionComponent::GetOwnerBaseCharacter(
 
 class UBackpackComponent* UAIActionExecutionComponent::GetBackpackComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.GetBackpackComponent");
 
@@ -999,7 +999,7 @@ class UBackpackComponent* UAIActionExecutionComponent::GetBackpackComponent()
 
 void UAIActionExecutionComponent::DropItem(int ItemId, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.DropItem");
 
@@ -1026,7 +1026,7 @@ void UAIActionExecutionComponent::DropItem(int ItemId, int Count)
 
 void UAIActionExecutionComponent::DoActionQuickMark(int actorUID, int ItemId, int CheckRange)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.DoActionQuickMark");
 
@@ -1057,7 +1057,7 @@ void UAIActionExecutionComponent::DoActionQuickMark(int actorUID, int ItemId, in
 
 void UAIActionExecutionComponent::DoActionMoveNew(bool IsStop, bool IsRun, float DirectionX, float DirectionY, float DirectionZ, int SwimUpRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.DoActionMoveNew");
 
@@ -1089,7 +1089,7 @@ void UAIActionExecutionComponent::DoActionMoveNew(bool IsStop, bool IsRun, float
 
 void UAIActionExecutionComponent::DoActionMove(bool IsRun, float DirectionX, float DirectionY, float DirectionZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.DoActionMove");
 
@@ -1119,7 +1119,7 @@ void UAIActionExecutionComponent::DoActionMove(bool IsRun, float DirectionX, flo
 
 void UAIActionExecutionComponent::DoActionFreeCamera(bool IsEnter, float InPitch, float InYaw, float InRoll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.DoActionFreeCamera");
 
@@ -1147,7 +1147,7 @@ void UAIActionExecutionComponent::DoActionFreeCamera(bool IsEnter, float InPitch
 
 void UAIActionExecutionComponent::DisuseItem(int ItemId, int WeaponSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.DisuseItem");
 
@@ -1170,7 +1170,7 @@ void UAIActionExecutionComponent::DisuseItem(int ItemId, int WeaponSlot)
 
 void UAIActionExecutionComponent::CloseDoor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIActionExecutionComponent.CloseDoor");
 
@@ -1193,7 +1193,7 @@ void UAIActionExecutionComponent::CloseDoor()
 
 void UAIBasicStateInfoComponent::OnItemStateChanged(const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBasicStateInfoComponent.OnItemStateChanged");
 
@@ -1210,31 +1210,6 @@ void UAIBasicStateInfoComponent::OnItemStateChanged(const struct FVector& Locati
 }
 
 
-// Function AI.AIBasicStateInfoComponent.GetTLogAIShootInfo
-// (Native, Public)
-// Parameters:
-// struct FTLogAIShootInfo        ReturnValue                    (Parm, OutParm, ReturnParm)
-
-struct FTLogAIShootInfo UAIBasicStateInfoComponent::GetTLogAIShootInfo()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBasicStateInfoComponent.GetTLogAIShootInfo");
-
-	UAIBasicStateInfoComponent_GetTLogAIShootInfo_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function AI.AIBasicStateInfoComponent.GetPickActorWithID
 // (Native, Public)
 // Parameters:
@@ -1243,7 +1218,7 @@ struct FTLogAIShootInfo UAIBasicStateInfoComponent::GetTLogAIShootInfo()
 
 class APickUpWrapperActor* UAIBasicStateInfoComponent::GetPickActorWithID(int UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBasicStateInfoComponent.GetPickActorWithID");
 
@@ -1267,7 +1242,7 @@ class APickUpWrapperActor* UAIBasicStateInfoComponent::GetPickActorWithID(int UI
 
 void UAIBehaviorAdapter_VehicleBase::Suicide()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.Suicide");
 
@@ -1290,7 +1265,7 @@ void UAIBehaviorAdapter_VehicleBase::Suicide()
 
 void UAIBehaviorAdapter_VehicleBase::RPC_Client_SetServiceDebugInfo(const struct FString& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.RPC_Client_SetServiceDebugInfo");
 
@@ -1312,7 +1287,7 @@ void UAIBehaviorAdapter_VehicleBase::RPC_Client_SetServiceDebugInfo(const struct
 
 void UAIBehaviorAdapter_VehicleBase::OnInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.OnInit");
 
@@ -1335,7 +1310,7 @@ void UAIBehaviorAdapter_VehicleBase::OnInit()
 
 void UAIBehaviorAdapter_VehicleBase::OnDeath(class AController* InstigatedBy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.OnDeath");
 
@@ -1359,7 +1334,7 @@ void UAIBehaviorAdapter_VehicleBase::OnDeath(class AController* InstigatedBy)
 
 void UAIBehaviorAdapter_VehicleBase::OnAICPossessed(class AController* InController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.OnAICPossessed");
 
@@ -1384,7 +1359,7 @@ void UAIBehaviorAdapter_VehicleBase::OnAICPossessed(class AController* InControl
 
 float UAIBehaviorAdapter_VehicleBase::LuaCalculateHitRate(float Distance, float BaseHitRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.LuaCalculateHitRate");
 
@@ -1410,7 +1385,7 @@ float UAIBehaviorAdapter_VehicleBase::LuaCalculateHitRate(float Distance, float 
 
 bool UAIBehaviorAdapter_VehicleBase::IsAlive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.IsAlive");
 
@@ -1439,7 +1414,7 @@ bool UAIBehaviorAdapter_VehicleBase::IsAlive()
 
 void UAIBehaviorAdapter_VehicleBase::HandleOnVehicleUnderAttack(class AController* EventInstigator, const struct FDamageEvent& DamageEvent, class AActor* DamageCauser, float Damage, float OriginDamage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.HandleOnVehicleUnderAttack");
 
@@ -1467,7 +1442,7 @@ void UAIBehaviorAdapter_VehicleBase::HandleOnVehicleUnderAttack(class AControlle
 
 void UAIBehaviorAdapter_VehicleBase::HandleOnVehicleHealthStateChanged(ESTExtraVehicleHealthState InVehicleHealthState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.HandleOnVehicleHealthStateChanged");
 
@@ -1495,7 +1470,7 @@ void UAIBehaviorAdapter_VehicleBase::HandleOnVehicleHealthStateChanged(ESTExtraV
 
 void UAIBehaviorAdapter_VehicleBase::HandleOnMeshHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.HandleOnMeshHit");
 
@@ -1521,7 +1496,7 @@ void UAIBehaviorAdapter_VehicleBase::HandleOnMeshHit(class UPrimitiveComponent* 
 
 void UAIBehaviorAdapter_VehicleBase::BroadcastServiceDebugInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.BroadcastServiceDebugInfo");
 
@@ -1544,11 +1519,11 @@ void UAIBehaviorAdapter_VehicleBase::BroadcastServiceDebugInfo()
 // class UDamageType*             DamageType                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // class AController*             InstigatedBy                   (Parm, ZeroConstructor, IsPlainOldData)
 // class AActor*                  DamageCauser                   (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EDamageType>  DamageEventType                (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EDamageType>       DamageEventType                (Parm, ZeroConstructor, IsPlainOldData)
 
-void UAIBehaviorAdapter_VehicleBase::BPReceiveDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser, TEnumAsByte<enum EDamageType> DamageEventType)
+void UAIBehaviorAdapter_VehicleBase::BPReceiveDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser, TEnumAsByte<EDamageType> DamageEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_VehicleBase.BPReceiveDamage");
 
@@ -1578,7 +1553,7 @@ void UAIBehaviorAdapter_VehicleBase::BPReceiveDamage(float Damage, class UDamage
 
 bool UAIBehaviorAdapter_Tank::UpdateTurretAimingTarget(const struct FVector& TargetLocation, float DeltaSeconds, bool FailedWhenCollided)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.UpdateTurretAimingTarget");
 
@@ -1606,7 +1581,7 @@ bool UAIBehaviorAdapter_Tank::UpdateTurretAimingTarget(const struct FVector& Tar
 
 bool UAIBehaviorAdapter_Tank::ShootTurret()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.ShootTurret");
 
@@ -1631,7 +1606,7 @@ bool UAIBehaviorAdapter_Tank::ShootTurret()
 
 bool UAIBehaviorAdapter_Tank::ShootMachineGun()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.ShootMachineGun");
 
@@ -1654,7 +1629,7 @@ bool UAIBehaviorAdapter_Tank::ShootMachineGun()
 
 void UAIBehaviorAdapter_Tank::OnInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.OnInit");
 
@@ -1677,7 +1652,7 @@ void UAIBehaviorAdapter_Tank::OnInit()
 
 void UAIBehaviorAdapter_Tank::OnDeath(class AController* InstigatedBy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.OnDeath");
 
@@ -1703,7 +1678,7 @@ void UAIBehaviorAdapter_Tank::OnDeath(class AController* InstigatedBy)
 
 bool UAIBehaviorAdapter_Tank::IsTurretLockTarget(const struct FVector& TargetLocation, float LockRadius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.IsTurretLockTarget");
 
@@ -1730,7 +1705,7 @@ bool UAIBehaviorAdapter_Tank::IsTurretLockTarget(const struct FVector& TargetLoc
 
 bool UAIBehaviorAdapter_Tank::IsAlive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.IsAlive");
 
@@ -1755,7 +1730,7 @@ bool UAIBehaviorAdapter_Tank::IsAlive()
 
 void UAIBehaviorAdapter_Tank::HandleOnVehicleHealthStateChanged(ESTExtraVehicleHealthState InVehicleHealthState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.HandleOnVehicleHealthStateChanged");
 
@@ -1779,7 +1754,7 @@ void UAIBehaviorAdapter_Tank::HandleOnVehicleHealthStateChanged(ESTExtraVehicleH
 
 void UAIBehaviorAdapter_Tank::BroadcastTankShootWeapon(bool IsTurret)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIBehaviorAdapter_Tank.BroadcastTankShootWeapon");
 
@@ -1804,7 +1779,7 @@ void UAIBehaviorAdapter_Tank::BroadcastTankShootWeapon(bool IsTurret)
 
 void UAIPerceptionChildPickUpComponent::OnPickUpWrapperHideStateChange(class APickUpWrapperActor* PickUpActor, bool bHide)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIPerceptionChildPickUpComponent.OnPickUpWrapperHideStateChange");
 
@@ -1829,12 +1804,85 @@ void UAIPerceptionChildPickUpComponent::OnPickUpWrapperHideStateChange(class APi
 
 void UAIPerceptionDynamicItemComponent::UpdateInAICell(bool bForceUpdate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIPerceptionDynamicItemComponent.UpdateInAICell");
 
 	UAIPerceptionDynamicItemComponent_UpdateInAICell_Params params;
 	params.bForceUpdate = bForceUpdate;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.AIPerceptionDynamicItemComponent.UpdateCustomAttributeValue
+// (Final, Native, Public)
+// Parameters:
+// uint32_t                       InCustomAttributeID            (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// float                          InValue                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bRemove                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UAIPerceptionDynamicItemComponent::UpdateCustomAttributeValue(uint32_t InCustomAttributeID, float InValue, bool bRemove)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.AIPerceptionDynamicItemComponent.UpdateCustomAttributeValue");
+
+	UAIPerceptionDynamicItemComponent_UpdateCustomAttributeValue_Params params;
+	params.InCustomAttributeID = InCustomAttributeID;
+	params.InValue = InValue;
+	params.bRemove = bRemove;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.AIPerceptionDynamicItemComponent.SetEnableState
+// (Final, Native, Public)
+// Parameters:
+// bool                           bInEnable                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UAIPerceptionDynamicItemComponent::SetEnableState(bool bInEnable)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.AIPerceptionDynamicItemComponent.SetEnableState");
+
+	UAIPerceptionDynamicItemComponent_SetEnableState_Params params;
+	params.bInEnable = bInEnable;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.AIPerceptionDynamicItemComponent.RemoveInAICell
+// (Final, Native, Public)
+
+void UAIPerceptionDynamicItemComponent::RemoveInAICell()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.AIPerceptionDynamicItemComponent.RemoveInAICell");
+
+	UAIPerceptionDynamicItemComponent_RemoveInAICell_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -1854,7 +1902,7 @@ void UAIPerceptionDynamicItemComponent::UpdateInAICell(bool bForceUpdate)
 
 uint32_t UAIPerceptionDynamicItemComponent::GetUniqueID(class AActor* DynamicItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIPerceptionDynamicItemComponent.GetUniqueID");
 
@@ -1873,6 +1921,32 @@ uint32_t UAIPerceptionDynamicItemComponent::GetUniqueID(class AActor* DynamicIte
 }
 
 
+// Function AI.AIPerceptionDynamicItemComponent.GetCustomAttributeList
+// (Final, Native, Public, HasOutParms)
+// Parameters:
+// TArray<struct FAIAttribute>    OutCustomAttributeList         (Parm, OutParm, ZeroConstructor)
+
+void UAIPerceptionDynamicItemComponent::GetCustomAttributeList(TArray<struct FAIAttribute>* OutCustomAttributeList)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.AIPerceptionDynamicItemComponent.GetCustomAttributeList");
+
+	UAIPerceptionDynamicItemComponent_GetCustomAttributeList_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutCustomAttributeList != nullptr)
+		*OutCustomAttributeList = params.OutCustomAttributeList;
+}
+
+
 // Function AI.AISoundCollectionComponent.OnCollectionHearSound
 // (Final, Native, Public, HasOutParms, HasDefaults)
 // Parameters:
@@ -1882,7 +1956,7 @@ uint32_t UAIPerceptionDynamicItemComponent::GetUniqueID(class AActor* DynamicIte
 
 void UAISoundCollectionComponent::OnCollectionHearSound(ESoundType SoundType, const struct FVector& InPos, class AActor* InSourceActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AISoundCollectionComponent.OnCollectionHearSound");
 
@@ -1911,7 +1985,7 @@ void UAISoundCollectionComponent::OnCollectionHearSound(ESoundType SoundType, co
 
 void UAISoundCollectionComponent::OnAISoundManagerHear(class AActor* InTargetActor, ESoundType SoundType, const struct FVector& InPos, class AActor* InSourceActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AISoundCollectionComponent.OnAISoundManagerHear");
 
@@ -1938,7 +2012,7 @@ void UAISoundCollectionComponent::OnAISoundManagerHear(class AActor* InTargetAct
 
 TArray<struct FSoundState> UAISoundCollectionComponent::GetCollectSoundInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AISoundCollectionComponent.GetCollectSoundInfo");
 
@@ -1976,7 +2050,7 @@ TArray<struct FSoundState> UAISoundCollectionComponent::GetCollectSoundInfo()
 
 void UAIStateInfoComponentBase::QueryItemStates(int MaxBoxNum, int MaxItemNum, float AirDropBoxRangeInner, float AirDropBoxRangeOuter, float DeathBoxRange, float PickUpWrapperRange, float FindBuildingMaxRange, float FindBuildingMinRange, bool InIsUseItemSpotLoc, int MaxTreasureChestNum, float TreasureChestRange, int MaxWeedNum, float WeedRange, TArray<struct FItemStateData>* ItemStateDatas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.QueryItemStates");
 
@@ -2013,7 +2087,7 @@ void UAIStateInfoComponentBase::QueryItemStates(int MaxBoxNum, int MaxItemNum, f
 
 void UAIStateInfoComponentBase::PrintCacheAINearbyItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.PrintCacheAINearbyItem");
 
@@ -2036,7 +2110,7 @@ void UAIStateInfoComponentBase::PrintCacheAINearbyItem()
 
 void UAIStateInfoComponentBase::OnPlayerRespawn(class AUAEPlayerController* PC)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.OnPlayerRespawn");
 
@@ -2058,7 +2132,7 @@ void UAIStateInfoComponentBase::OnPlayerRespawn(class AUAEPlayerController* PC)
 
 void UAIStateInfoComponentBase::OnFakePlayerRespawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.OnFakePlayerRespawn");
 
@@ -2079,7 +2153,7 @@ void UAIStateInfoComponentBase::OnFakePlayerRespawn()
 
 void UAIStateInfoComponentBase::OnAIStateRequestEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.OnAIStateRequestEnd");
 
@@ -2102,7 +2176,7 @@ void UAIStateInfoComponentBase::OnAIStateRequestEnd()
 
 bool UAIStateInfoComponentBase::IsValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.IsValid");
 
@@ -2128,7 +2202,7 @@ bool UAIStateInfoComponentBase::IsValid()
 
 bool UAIStateInfoComponentBase::IsAvailableNearbyItemType(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.IsAvailableNearbyItemType");
 
@@ -2155,7 +2229,7 @@ bool UAIStateInfoComponentBase::IsAvailableNearbyItemType(const struct FItemDefi
 
 bool UAIStateInfoComponentBase::IsAvailableBackpackItemType(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.IsAvailableBackpackItemType");
 
@@ -2181,7 +2255,7 @@ bool UAIStateInfoComponentBase::IsAvailableBackpackItemType(const struct FItemDe
 
 bool UAIStateInfoComponentBase::HasPlayerAround()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.HasPlayerAround");
 
@@ -2207,7 +2281,7 @@ bool UAIStateInfoComponentBase::HasPlayerAround()
 
 struct FVector UAIStateInfoComponentBase::GetViewForwardVector(class ACharacter* InCharacter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetViewForwardVector");
 
@@ -2233,7 +2307,7 @@ struct FVector UAIStateInfoComponentBase::GetViewForwardVector(class ACharacter*
 
 TArray<struct FSoundState> UAIStateInfoComponentBase::GetSoundInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetSoundInfo");
 
@@ -2258,7 +2332,7 @@ TArray<struct FSoundState> UAIStateInfoComponentBase::GetSoundInfo()
 
 struct FProgressBarState UAIStateInfoComponentBase::GetProgressBarState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetProgressBarState");
 
@@ -2283,7 +2357,7 @@ struct FProgressBarState UAIStateInfoComponentBase::GetProgressBarState()
 
 struct FAIPlayerInteractInfo UAIStateInfoComponentBase::GetPlayerInteractInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetPlayerInteractInfo");
 
@@ -2308,7 +2382,7 @@ struct FAIPlayerInteractInfo UAIStateInfoComponentBase::GetPlayerInteractInfo()
 
 class ASTExtraBaseCharacter* UAIStateInfoComponentBase::GetOwnerBaseCharacter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetOwnerBaseCharacter");
 
@@ -2326,36 +2400,6 @@ class ASTExtraBaseCharacter* UAIStateInfoComponentBase::GetOwnerBaseCharacter()
 }
 
 
-// Function AI.AIStateInfoComponentBase.GetObstaclesState
-// (Final, Native, Public, HasOutParms)
-// Parameters:
-// class ASTExtraBaseCharacter*   InPawn                         (Parm, ZeroConstructor, IsPlainOldData)
-// float                          Range                          (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<struct FObstacleState>  ObstaclesState                 (Parm, OutParm, ZeroConstructor)
-
-void UAIStateInfoComponentBase::GetObstaclesState(class ASTExtraBaseCharacter* InPawn, float Range, TArray<struct FObstacleState>* ObstaclesState)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetObstaclesState");
-
-	UAIStateInfoComponentBase_GetObstaclesState_Params params;
-	params.InPawn = InPawn;
-	params.Range = Range;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	if (ObstaclesState != nullptr)
-		*ObstaclesState = params.ObstaclesState;
-}
-
-
 // Function AI.AIStateInfoComponentBase.GetFrameNo
 // (Final, Native, Protected)
 // Parameters:
@@ -2363,7 +2407,7 @@ void UAIStateInfoComponentBase::GetObstaclesState(class ASTExtraBaseCharacter* I
 
 uint32_t UAIStateInfoComponentBase::GetFrameNo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetFrameNo");
 
@@ -2381,48 +2425,6 @@ uint32_t UAIStateInfoComponentBase::GetFrameNo()
 }
 
 
-// Function AI.AIStateInfoComponentBase.GetDiffAIStateInfoToCacheGeneral
-// (Native, Public)
-
-void UAIStateInfoComponentBase::GetDiffAIStateInfoToCacheGeneral()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetDiffAIStateInfoToCacheGeneral");
-
-	UAIStateInfoComponentBase_GetDiffAIStateInfoToCacheGeneral_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.AIStateInfoComponentBase.GetDiffAIStateInfoToCache
-// (Native, Public)
-
-void UAIStateInfoComponentBase::GetDiffAIStateInfoToCache()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetDiffAIStateInfoToCache");
-
-	UAIStateInfoComponentBase_GetDiffAIStateInfoToCache_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
 // Function AI.AIStateInfoComponentBase.GetDamageSourcesNew
 // (Final, Native, Public)
 // Parameters:
@@ -2430,7 +2432,7 @@ void UAIStateInfoComponentBase::GetDiffAIStateInfoToCache()
 
 TArray<struct FDamageSource> UAIStateInfoComponentBase::GetDamageSourcesNew()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetDamageSourcesNew");
 
@@ -2448,165 +2450,6 @@ TArray<struct FDamageSource> UAIStateInfoComponentBase::GetDamageSourcesNew()
 }
 
 
-// Function AI.AIStateInfoComponentBase.GetDamageSources
-// (Final, Native, Public)
-// Parameters:
-// struct FAIDamageSources        ReturnValue                    (Parm, OutParm, ReturnParm)
-
-struct FAIDamageSources UAIStateInfoComponentBase::GetDamageSources()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetDamageSources");
-
-	UAIStateInfoComponentBase_GetDamageSources_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function AI.AIStateInfoComponentBase.GetCameraState
-// (Final, Native, Public)
-// Parameters:
-// class ASTExtraBaseCharacter*   InCharacter                    (Parm, ZeroConstructor, IsPlainOldData)
-// struct FCameraState            ReturnValue                    (Parm, OutParm, ReturnParm)
-
-struct FCameraState UAIStateInfoComponentBase::GetCameraState(class ASTExtraBaseCharacter* InCharacter)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetCameraState");
-
-	UAIStateInfoComponentBase_GetCameraState_Params params;
-	params.InCharacter = InCharacter;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function AI.AIStateInfoComponentBase.GetAIStateInfoToCache
-// (Native, Public)
-
-void UAIStateInfoComponentBase::GetAIStateInfoToCache()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetAIStateInfoToCache");
-
-	UAIStateInfoComponentBase_GetAIStateInfoToCache_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.AIStateInfoComponentBase.GetAIStateInfoBaseModInternal
-// (Final, Native, Public)
-
-void UAIStateInfoComponentBase::GetAIStateInfoBaseModInternal()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetAIStateInfoBaseModInternal");
-
-	UAIStateInfoComponentBase_GetAIStateInfoBaseModInternal_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.AIStateInfoComponentBase.GetAIPlayerBackpackItems
-// (Final, Native, Public, HasOutParms, Const)
-// Parameters:
-// TArray<struct FAIBackpackItem> Items                          (Parm, OutParm, ZeroConstructor)
-
-void UAIStateInfoComponentBase::GetAIPlayerBackpackItems(TArray<struct FAIBackpackItem>* Items)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetAIPlayerBackpackItems");
-
-	UAIStateInfoComponentBase_GetAIPlayerBackpackItems_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	if (Items != nullptr)
-		*Items = params.Items;
-}
-
-
-// Function AI.AIStateInfoComponentBase.GetAINearbyThrownState
-// (Final, Native, Public, HasOutParms)
-// Parameters:
-// class ASTExtraBaseCharacter*   InCharacter                    (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InRange                        (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InCheckAngle                   (Parm, ZeroConstructor, IsPlainOldData)
-// int                            MaxNum                         (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InSmokeRange                   (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<struct FAINearbyThrown> Ret                            (Parm, OutParm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UAIStateInfoComponentBase::GetAINearbyThrownState(class ASTExtraBaseCharacter* InCharacter, float InRange, float InCheckAngle, int MaxNum, float InSmokeRange, TArray<struct FAINearbyThrown>* Ret)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetAINearbyThrownState");
-
-	UAIStateInfoComponentBase_GetAINearbyThrownState_Params params;
-	params.InCharacter = InCharacter;
-	params.InRange = InRange;
-	params.InCheckAngle = InCheckAngle;
-	params.MaxNum = MaxNum;
-	params.InSmokeRange = InSmokeRange;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	if (Ret != nullptr)
-		*Ret = params.Ret;
-
-	return params.ReturnValue;
-}
-
-
 // Function AI.AIStateInfoComponentBase.GetAIDestroyBulletProbInfo
 // (Final, Native, Public, HasOutParms, Const)
 // Parameters:
@@ -2614,7 +2457,7 @@ bool UAIStateInfoComponentBase::GetAINearbyThrownState(class ASTExtraBaseCharact
 
 void UAIStateInfoComponentBase::GetAIDestroyBulletProbInfo(TArray<struct FAIDestroyBulletProbInfo>* AIDestroyBulletProbInfoList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.GetAIDestroyBulletProbInfo");
 
@@ -2638,7 +2481,7 @@ void UAIStateInfoComponentBase::GetAIDestroyBulletProbInfo(TArray<struct FAIDest
 
 void UAIStateInfoComponentBase::ClearDamageSources()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.AIStateInfoComponentBase.ClearDamageSources");
 
@@ -2662,7 +2505,7 @@ void UAIStateInfoComponentBase::ClearDamageSources()
 
 void UBaseStateInfoCollector::RemoveBackpackItemUpdatedMap(uint32_t PlayerKey, bool AllRemove)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.BaseStateInfoCollector.RemoveBackpackItemUpdatedMap");
 
@@ -2687,7 +2530,7 @@ void UBaseStateInfoCollector::RemoveBackpackItemUpdatedMap(uint32_t PlayerKey, b
 
 void UBaseStateInfoCollector::OnBackpackItemListUpdated(uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.BaseStateInfoCollector.OnBackpackItemListUpdated");
 
@@ -2712,7 +2555,7 @@ void UBaseStateInfoCollector::OnBackpackItemListUpdated(uint32_t PlayerKey)
 
 void UBaseStateInfoCollector::AddBackpackItemListUpdatedDelegate(class UBackpackComponent* InBackpackComp, uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.BaseStateInfoCollector.AddBackpackItemListUpdatedDelegate");
 
@@ -2737,7 +2580,7 @@ void UBaseStateInfoCollector::AddBackpackItemListUpdatedDelegate(class UBackpack
 
 struct FString UBTService_DebugInfo::GetInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.BTService_DebugInfo.GetInfo");
 
@@ -2763,7 +2606,7 @@ struct FString UBTService_DebugInfo::GetInfo()
 
 TArray<struct FVector> UBTTask_SummonActor::GetSummonLocations(class AActor* Invoker)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.BTTask_SummonActor.GetSummonLocations");
 
@@ -2789,7 +2632,7 @@ TArray<struct FVector> UBTTask_SummonActor::GetSummonLocations(class AActor* Inv
 
 void UBTTaskNode_NewParachuteJumpBase::DelayClearParachute(class ASTExtraPlayerCharacter* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.BTTaskNode_NewParachuteJumpBase.DelayClearParachute");
 
@@ -2811,7 +2654,7 @@ void UBTTaskNode_NewParachuteJumpBase::DelayClearParachute(class ASTExtraPlayerC
 
 void UCustomDamageEventComponent::OnRep_ClientEvents()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.CustomDamageEventComponent.OnRep_ClientEvents");
 
@@ -2837,7 +2680,7 @@ void UCustomDamageEventComponent::OnRep_ClientEvents()
 
 void UCharacterCustomDamageEventComponent::OnTakeDamageEvent(float Damage, const struct FDamageEvent& DamageEvent, class AActor* Victim, class AActor* Causer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.CharacterCustomDamageEventComponent.OnTakeDamageEvent");
 
@@ -2864,7 +2707,7 @@ void UCharacterCustomDamageEventComponent::OnTakeDamageEvent(float Damage, const
 
 void UMLAIControllerComponent::UnBindDelegates(bool IsEndPlay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.UnBindDelegates");
 
@@ -2888,7 +2731,7 @@ void UMLAIControllerComponent::UnBindDelegates(bool IsEndPlay)
 
 void UMLAIControllerComponent::SetShowDebugAILevelTime(float InSetShowDebugAILevelTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetShowDebugAILevelTime");
 
@@ -2912,7 +2755,7 @@ void UMLAIControllerComponent::SetShowDebugAILevelTime(float InSetShowDebugAILev
 
 void UMLAIControllerComponent::SetMLAIStyle(uint32_t NewAIStyle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetMLAIStyle");
 
@@ -2937,7 +2780,7 @@ void UMLAIControllerComponent::SetMLAIStyle(uint32_t NewAIStyle)
 
 void UMLAIControllerComponent::SetLuaAIParamConfigString(const struct FString& InAIParamConfigString, int InLuaAIParamType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetLuaAIParamConfigString");
 
@@ -2962,7 +2805,7 @@ void UMLAIControllerComponent::SetLuaAIParamConfigString(const struct FString& I
 
 void UMLAIControllerComponent::SetIsMLAI(bool InIsMLAI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetIsMLAI");
 
@@ -2986,7 +2829,7 @@ void UMLAIControllerComponent::SetIsMLAI(bool InIsMLAI)
 
 void UMLAIControllerComponent::SetCurShootingPose(EAIShootingPose InCurAIShootingPose)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetCurShootingPose");
 
@@ -3010,7 +2853,7 @@ void UMLAIControllerComponent::SetCurShootingPose(EAIShootingPose InCurAIShootin
 
 void UMLAIControllerComponent::SetAllyMasterID(uint32_t InAllyMasterID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetAllyMasterID");
 
@@ -3034,7 +2877,7 @@ void UMLAIControllerComponent::SetAllyMasterID(uint32_t InAllyMasterID)
 
 void UMLAIControllerComponent::SetAIProvider(uint32_t AIProvider)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetAIProvider");
 
@@ -3058,7 +2901,7 @@ void UMLAIControllerComponent::SetAIProvider(uint32_t AIProvider)
 
 void UMLAIControllerComponent::SetAIParams(struct FGameModeAIPlayerParams* InAIParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetAIParams");
 
@@ -3084,7 +2927,7 @@ void UMLAIControllerComponent::SetAIParams(struct FGameModeAIPlayerParams* InAIP
 
 void UMLAIControllerComponent::SetAILevel(uint32_t NewAILevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.SetAILevel");
 
@@ -3108,7 +2951,7 @@ void UMLAIControllerComponent::SetAILevel(uint32_t NewAILevel)
 
 bool UMLAIControllerComponent::IsValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.IsValid");
 
@@ -3133,7 +2976,7 @@ bool UMLAIControllerComponent::IsValid()
 
 bool UMLAIControllerComponent::IsTeammateMLAI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.IsTeammateMLAI");
 
@@ -3158,7 +3001,7 @@ bool UMLAIControllerComponent::IsTeammateMLAI()
 
 bool UMLAIControllerComponent::IsFreeCamera()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.IsFreeCamera");
 
@@ -3183,7 +3026,7 @@ bool UMLAIControllerComponent::IsFreeCamera()
 
 void UMLAIControllerComponent::InitAIStateInfoComponent(class UAIBasicStateInfoComponent* AIStateInfoComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.InitAIStateInfoComponent");
 
@@ -3207,7 +3050,7 @@ void UMLAIControllerComponent::InitAIStateInfoComponent(class UAIBasicStateInfoC
 
 void UMLAIControllerComponent::InitAIActionExecutionComponent(class UAIActionExecutionComponent* InAIActionExecutionComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.InitAIActionExecutionComponent");
 
@@ -3231,7 +3074,7 @@ void UMLAIControllerComponent::InitAIActionExecutionComponent(class UAIActionExe
 
 struct FRotator UMLAIControllerComponent::GetViewRotation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetViewRotation");
 
@@ -3256,7 +3099,7 @@ struct FRotator UMLAIControllerComponent::GetViewRotation()
 
 struct FVector UMLAIControllerComponent::GetViewForwardVector()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetViewForwardVector");
 
@@ -3281,7 +3124,7 @@ struct FVector UMLAIControllerComponent::GetViewForwardVector()
 
 class ASTExtraBaseCharacter* UMLAIControllerComponent::GetOwnerBaseCharacter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetOwnerBaseCharacter");
 
@@ -3306,7 +3149,7 @@ class ASTExtraBaseCharacter* UMLAIControllerComponent::GetOwnerBaseCharacter()
 
 uint32_t UMLAIControllerComponent::GetMLAIStyle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetMLAIStyle");
 
@@ -3331,7 +3174,7 @@ uint32_t UMLAIControllerComponent::GetMLAIStyle()
 
 class UMLAIParachuteJumpComponent* UMLAIControllerComponent::GetMLAIParachuteJumpComp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetMLAIParachuteJumpComp");
 
@@ -3356,7 +3199,7 @@ class UMLAIParachuteJumpComponent* UMLAIControllerComponent::GetMLAIParachuteJum
 
 bool UMLAIControllerComponent::GetIsMLAI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetIsMLAI");
 
@@ -3381,7 +3224,7 @@ bool UMLAIControllerComponent::GetIsMLAI()
 
 class UBackpackComponent* UMLAIControllerComponent::GetBackpackComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetBackpackComponent");
 
@@ -3406,7 +3249,7 @@ class UBackpackComponent* UMLAIControllerComponent::GetBackpackComponent()
 
 uint32_t UMLAIControllerComponent::GetAllyMasterID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetAllyMasterID");
 
@@ -3431,7 +3274,7 @@ uint32_t UMLAIControllerComponent::GetAllyMasterID()
 
 class UAIBasicStateInfoComponent* UMLAIControllerComponent::GetAIStateInfoComp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetAIStateInfoComp");
 
@@ -3456,7 +3299,7 @@ class UAIBasicStateInfoComponent* UMLAIControllerComponent::GetAIStateInfoComp()
 
 uint32_t UMLAIControllerComponent::GetAIProvider()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetAIProvider");
 
@@ -3481,7 +3324,7 @@ uint32_t UMLAIControllerComponent::GetAIProvider()
 
 struct FGameModeAIPlayerParams UMLAIControllerComponent::GetAIParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetAIParams");
 
@@ -3506,7 +3349,7 @@ struct FGameModeAIPlayerParams UMLAIControllerComponent::GetAIParams()
 
 uint32_t UMLAIControllerComponent::GetAILevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetAILevel");
 
@@ -3531,7 +3374,7 @@ uint32_t UMLAIControllerComponent::GetAILevel()
 
 class UAIActionExecutionComponent* UMLAIControllerComponent::GetAIActionExecutionComp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.GetAIActionExecutionComp");
 
@@ -3554,7 +3397,7 @@ class UAIActionExecutionComponent* UMLAIControllerComponent::GetAIActionExecutio
 
 void UMLAIControllerComponent::FreshShootingPose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.FreshShootingPose");
 
@@ -3580,7 +3423,7 @@ void UMLAIControllerComponent::FreshShootingPose()
 
 void UMLAIControllerComponent::DoActionFreeCamera(bool IsEnter, float InPitch, float InYaw, float InRoll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.DoActionFreeCamera");
 
@@ -3608,7 +3451,7 @@ void UMLAIControllerComponent::DoActionFreeCamera(bool IsEnter, float InPitch, f
 
 bool UMLAIControllerComponent::CheckCameraViewPitchLimit(struct FRotator* InOutTargetRot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.CheckCameraViewPitchLimit");
 
@@ -3634,7 +3477,7 @@ bool UMLAIControllerComponent::CheckCameraViewPitchLimit(struct FRotator* InOutT
 
 void UMLAIControllerComponent::BindDelegates()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIControllerComponent.BindDelegates");
 
@@ -3658,7 +3501,7 @@ void UMLAIControllerComponent::BindDelegates()
 
 void UMLAIParachuteJumpComponent::ParachuteMove(float ForwardRate, float RightRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.ParachuteMove");
 
@@ -3681,7 +3524,7 @@ void UMLAIParachuteJumpComponent::ParachuteMove(float ForwardRate, float RightRa
 
 void UMLAIParachuteJumpComponent::OpenParachute()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.OpenParachute");
 
@@ -3702,7 +3545,7 @@ void UMLAIParachuteJumpComponent::OpenParachute()
 
 void UMLAIParachuteJumpComponent::OnAIEnterFighting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.OnAIEnterFighting");
 
@@ -3723,7 +3566,7 @@ void UMLAIParachuteJumpComponent::OnAIEnterFighting()
 
 void UMLAIParachuteJumpComponent::JumpFromPoint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.JumpFromPoint");
 
@@ -3744,7 +3587,7 @@ void UMLAIParachuteJumpComponent::JumpFromPoint()
 
 void UMLAIParachuteJumpComponent::JumpFromPlane()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.JumpFromPlane");
 
@@ -3768,7 +3611,7 @@ void UMLAIParachuteJumpComponent::JumpFromPlane()
 
 void UMLAIParachuteJumpComponent::EnterParachuteJumpPhase(const struct FVector& StartLoc, const struct FRotator& StartRot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.EnterParachuteJumpPhase");
 
@@ -3793,7 +3636,7 @@ void UMLAIParachuteJumpComponent::EnterParachuteJumpPhase(const struct FVector& 
 
 void UMLAIParachuteJumpComponent::EndJump(bool bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.EndJump");
 
@@ -3815,7 +3658,7 @@ void UMLAIParachuteJumpComponent::EndJump(bool bSuccess)
 
 void UMLAIParachuteJumpComponent::CloseParachute()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIParachuteJumpComponent.CloseParachute");
 
@@ -3836,11 +3679,59 @@ void UMLAIParachuteJumpComponent::CloseParachute()
 
 void UMLAIStateInfoManager::StartRequestCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.StartRequestCache");
 
 	UMLAIStateInfoManager_StartRequestCache_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.MLAIStateInfoManager.SetUseNewDiffCmds
+// (Final, Native, Public)
+// Parameters:
+// bool                           InUseNewDiffCmds               (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMLAIStateInfoManager::SetUseNewDiffCmds(bool InUseNewDiffCmds)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.SetUseNewDiffCmds");
+
+	UMLAIStateInfoManager_SetUseNewDiffCmds_Params params;
+	params.InUseNewDiffCmds = InUseNewDiffCmds;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.MLAIStateInfoManager.SetOpenHeadAndMuzzleInfo
+// (Final, Native, Public)
+// Parameters:
+// bool                           InOpenHeadAndMuzzleInfo        (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMLAIStateInfoManager::SetOpenHeadAndMuzzleInfo(bool InOpenHeadAndMuzzleInfo)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.SetOpenHeadAndMuzzleInfo");
+
+	UMLAIStateInfoManager_SetOpenHeadAndMuzzleInfo_Params params;
+	params.InOpenHeadAndMuzzleInfo = InOpenHeadAndMuzzleInfo;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -3857,7 +3748,7 @@ void UMLAIStateInfoManager::StartRequestCache()
 
 void UMLAIStateInfoManager::ResetWhiteList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.ResetWhiteList");
 
@@ -3873,31 +3764,6 @@ void UMLAIStateInfoManager::ResetWhiteList()
 }
 
 
-// Function AI.MLAIStateInfoManager.IsUseGeneralAIStateInfo
-// (Final, Native, Public, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UMLAIStateInfoManager::IsUseGeneralAIStateInfo()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.IsUseGeneralAIStateInfo");
-
-	UMLAIStateInfoManager_IsUseGeneralAIStateInfo_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function AI.MLAIStateInfoManager.InitCollectorList
 // (Final, Native, Public)
 // Parameters:
@@ -3905,7 +3771,7 @@ bool UMLAIStateInfoManager::IsUseGeneralAIStateInfo()
 
 void UMLAIStateInfoManager::InitCollectorList(TArray<struct FCollectorInitInfo> CollectorInitInfoList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.InitCollectorList");
 
@@ -3927,7 +3793,7 @@ void UMLAIStateInfoManager::InitCollectorList(TArray<struct FCollectorInitInfo> 
 
 void UMLAIStateInfoManager::InitCollector()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.InitCollector");
 
@@ -3950,12 +3816,38 @@ void UMLAIStateInfoManager::InitCollector()
 
 void UMLAIStateInfoManager::Init(class UWorld* InWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.Init");
 
 	UMLAIStateInfoManager_Init_Params params;
 	params.InWorld = InWorld;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.MLAIStateInfoManager.GetSinglePlayerStateInfoToCache
+// (Final, Native, Public)
+// Parameters:
+// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
+// class ASTExtraPlayerCharacter* Player                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMLAIStateInfoManager::GetSinglePlayerStateInfoToCache(class UWorld* InWorld, class ASTExtraPlayerCharacter* Player)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.GetSinglePlayerStateInfoToCache");
+
+	UMLAIStateInfoManager_GetSinglePlayerStateInfoToCache_Params params;
+	params.InWorld = InWorld;
+	params.Player = Player;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -3974,7 +3866,7 @@ void UMLAIStateInfoManager::Init(class UWorld* InWorld)
 
 void UMLAIStateInfoManager::GetGlobalGameStateToCache(class UWorld* InWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.GetGlobalGameStateToCache");
 
@@ -3998,62 +3890,12 @@ void UMLAIStateInfoManager::GetGlobalGameStateToCache(class UWorld* InWorld)
 
 void UMLAIStateInfoManager::GetDiffGlobalGameStateToCacheGeneral(class UWorld* InWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.GetDiffGlobalGameStateToCacheGeneral");
 
 	UMLAIStateInfoManager_GetDiffGlobalGameStateToCacheGeneral_Params params;
 	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIStateInfoManager.GetDiffGlobalGameStateToCacheCCS
-// (Final, Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIStateInfoManager::GetDiffGlobalGameStateToCacheCCS(class UWorld* InWorld)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.GetDiffGlobalGameStateToCacheCCS");
-
-	UMLAIStateInfoManager_GetDiffGlobalGameStateToCacheCCS_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIStateInfoManager.GetDiffAllPlayerStateInfoToCacheCCS
-// (Final, Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bUseDiff                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIStateInfoManager::GetDiffAllPlayerStateInfoToCacheCCS(class UWorld* InWorld, bool bUseDiff)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.GetDiffAllPlayerStateInfoToCacheCCS");
-
-	UMLAIStateInfoManager_GetDiffAllPlayerStateInfoToCacheCCS_Params params;
-	params.InWorld = InWorld;
-	params.bUseDiff = bUseDiff;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4072,7 +3914,7 @@ void UMLAIStateInfoManager::GetDiffAllPlayerStateInfoToCacheCCS(class UWorld* In
 
 void UMLAIStateInfoManager::GetDiffAllPlayerAIStateInfoToCacheGeneral(class UWorld* InWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.GetDiffAllPlayerAIStateInfoToCacheGeneral");
 
@@ -4096,7 +3938,7 @@ void UMLAIStateInfoManager::GetDiffAllPlayerAIStateInfoToCacheGeneral(class UWor
 
 void UMLAIStateInfoManager::GetAllPlayerStateInfoToCache(class UWorld* InWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.GetAllPlayerStateInfoToCache");
 
@@ -4118,7 +3960,7 @@ void UMLAIStateInfoManager::GetAllPlayerStateInfoToCache(class UWorld* InWorld)
 
 void UMLAIStateInfoManager::EndRequestCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.EndRequestCache");
 
@@ -4143,7 +3985,7 @@ void UMLAIStateInfoManager::EndRequestCache()
 
 void UMLAIStateInfoManager::CollectCandidateAIStateInfoToCache(class UWorld* InWorld, EStatePlayerType CollectPlayerType, struct FAIActingCandidateData* CandidateData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.CollectCandidateAIStateInfoToCache");
 
@@ -4173,7 +4015,7 @@ void UMLAIStateInfoManager::CollectCandidateAIStateInfoToCache(class UWorld* InW
 
 void UMLAIStateInfoManager::CollectAIStateInfoToCache(class UWorld* InWorld, EStatePlayerType CollectPlayerType, class ASTExtraBaseCharacter* PlayerPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIStateInfoManager.CollectAIStateInfoToCache");
 
@@ -4199,7 +4041,7 @@ void UMLAIStateInfoManager::CollectAIStateInfoToCache(class UWorld* InWorld, ESt
 
 void UMLAISubSystem::UpdateSpecialZoneStateChanged(class ASpecialZoneActor* InSpecialZone)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.UpdateSpecialZoneStateChanged");
 
@@ -4223,7 +4065,7 @@ void UMLAISubSystem::UpdateSpecialZoneStateChanged(class ASpecialZoneActor* InSp
 
 void UMLAISubSystem::UpdateSpecialZoneInfo(struct FSpecialZoneState* NewZoneInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.UpdateSpecialZoneInfo");
 
@@ -4249,7 +4091,7 @@ void UMLAISubSystem::UpdateSpecialZoneInfo(struct FSpecialZoneState* NewZoneInfo
 
 void UMLAISubSystem::UpdateRedZoneState(class UWorld* InWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.UpdateRedZoneState");
 
@@ -4271,7 +4113,7 @@ void UMLAISubSystem::UpdateRedZoneState(class UWorld* InWorld)
 
 void UMLAISubSystem::UpdateMercenaryPlayerWhite()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.UpdateMercenaryPlayerWhite");
 
@@ -4292,7 +4134,7 @@ void UMLAISubSystem::UpdateMercenaryPlayerWhite()
 
 void UMLAISubSystem::UpdateAirDropBoxStates()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.UpdateAirDropBoxStates");
 
@@ -4313,7 +4155,7 @@ void UMLAISubSystem::UpdateAirDropBoxStates()
 
 void UMLAISubSystem::StartRequestCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.StartRequestCache");
 
@@ -4338,7 +4180,7 @@ void UMLAISubSystem::StartRequestCache()
 
 void UMLAISubSystem::SetWhitelistPlayerStatesSwitch(bool InSwitch, bool InReset, bool InCheckGlobalState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetWhitelistPlayerStatesSwitch");
 
@@ -4364,7 +4206,7 @@ void UMLAISubSystem::SetWhitelistPlayerStatesSwitch(bool InSwitch, bool InReset,
 
 void UMLAISubSystem::SetVehicleWeekPointConfig(TMap<uint32_t, struct FString> InVehicleWeekPointConfig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetVehicleWeekPointConfig");
 
@@ -4388,7 +4230,7 @@ void UMLAISubSystem::SetVehicleWeekPointConfig(TMap<uint32_t, struct FString> In
 
 void UMLAISubSystem::SetUseTablePool(int InUseTablePool)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetUseTablePool");
 
@@ -4413,7 +4255,7 @@ void UMLAISubSystem::SetUseTablePool(int InUseTablePool)
 
 void UMLAISubSystem::SetSpecialZoneType(class AActor* InParent, int InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetSpecialZoneType");
 
@@ -4439,7 +4281,7 @@ void UMLAISubSystem::SetSpecialZoneType(class AActor* InParent, int InType)
 
 void UMLAISubSystem::SetSpecialZoneExtraState(class AActor* InParent, uint32_t InExtraState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetSpecialZoneExtraState");
 
@@ -4465,13 +4307,43 @@ void UMLAISubSystem::SetSpecialZoneExtraState(class AActor* InParent, uint32_t I
 
 void UMLAISubSystem::SetSpecialZoneCustomState(class AActor* InParent, int InCustomState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetSpecialZoneCustomState");
 
 	UMLAISubSystem_SetSpecialZoneCustomState_Params params;
 	params.InParent = InParent;
 	params.InCustomState = InCustomState;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.MLAISubSystem.SetSpecialZoneCustomAttribute
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                  InParent                       (Parm, ZeroConstructor, IsPlainOldData)
+// uint32_t                       CustomAttributeID              (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// float                          InValue                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bRemove                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+
+void UMLAISubSystem::SetSpecialZoneCustomAttribute(class AActor* InParent, uint32_t CustomAttributeID, float InValue, bool bRemove)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetSpecialZoneCustomAttribute");
+
+	UMLAISubSystem_SetSpecialZoneCustomAttribute_Params params;
+	params.InParent = InParent;
+	params.CustomAttributeID = CustomAttributeID;
+	params.InValue = InValue;
+	params.bRemove = bRemove;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4491,13 +4363,37 @@ void UMLAISubSystem::SetSpecialZoneCustomState(class AActor* InParent, int InCus
 
 void UMLAISubSystem::SetPlayerRevivalType(uint32_t InPlayerKey, int InRevivalType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetPlayerRevivalType");
 
 	UMLAISubSystem_SetPlayerRevivalType_Params params;
 	params.InPlayerKey = InPlayerKey;
 	params.InRevivalType = InRevivalType;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.MLAISubSystem.SetPlayerAttributeModifyCompConfig
+// (Final, Native, Public)
+// Parameters:
+// TMap<uint32_t, struct FString> InAttributeModifyCompConfig    (Parm, ZeroConstructor)
+
+void UMLAISubSystem::SetPlayerAttributeModifyCompConfig(TMap<uint32_t, struct FString> InAttributeModifyCompConfig)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetPlayerAttributeModifyCompConfig");
+
+	UMLAISubSystem_SetPlayerAttributeModifyCompConfig_Params params;
+	params.InAttributeModifyCompConfig = InAttributeModifyCompConfig;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4516,7 +4412,7 @@ void UMLAISubSystem::SetPlayerRevivalType(uint32_t InPlayerKey, int InRevivalTyp
 
 void UMLAISubSystem::SetPawnStateConfig(TMap<int, uint32_t> InPawnStateConfig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetPawnStateConfig");
 
@@ -4540,7 +4436,7 @@ void UMLAISubSystem::SetPawnStateConfig(TMap<int, uint32_t> InPawnStateConfig)
 
 void UMLAISubSystem::SetOpenBTCameraInfo(bool InOpenBTCameraInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetOpenBTCameraInfo");
 
@@ -4564,7 +4460,7 @@ void UMLAISubSystem::SetOpenBTCameraInfo(bool InOpenBTCameraInfo)
 
 void UMLAISubSystem::SetNonMLAIBuffConfig(TMap<int, uint32_t> InBuffIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetNonMLAIBuffConfig");
 
@@ -4588,7 +4484,7 @@ void UMLAISubSystem::SetNonMLAIBuffConfig(TMap<int, uint32_t> InBuffIDs)
 
 void UMLAISubSystem::SetNewbieRealHiddenScore(int InNewbieRealHiddenScore)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetNewbieRealHiddenScore");
 
@@ -4612,7 +4508,7 @@ void UMLAISubSystem::SetNewbieRealHiddenScore(int InNewbieRealHiddenScore)
 
 void UMLAISubSystem::SetNewbieMatchCount(int InNewbieMatchCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetNewbieMatchCount");
 
@@ -4636,7 +4532,7 @@ void UMLAISubSystem::SetNewbieMatchCount(int InNewbieMatchCount)
 
 void UMLAISubSystem::SetNeedAllInfo(bool bInNeedAllInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetNeedAllInfo");
 
@@ -4653,30 +4549,6 @@ void UMLAISubSystem::SetNeedAllInfo(bool bInNeedAllInfo)
 }
 
 
-// Function AI.MLAISubSystem.SetMLAIUtils
-// (Final, Native, Public)
-// Parameters:
-// class UMLAIUtilsBase*          MLAIUtils                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAISubSystem::SetMLAIUtils(class UMLAIUtilsBase* MLAIUtils)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetMLAIUtils");
-
-	UMLAISubSystem_SetMLAIUtils_Params params;
-	params.MLAIUtils = MLAIUtils;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
 // Function AI.MLAISubSystem.SetMLAIStateInfoManager
 // (Final, Native, Public)
 // Parameters:
@@ -4684,7 +4556,7 @@ void UMLAISubSystem::SetMLAIUtils(class UMLAIUtilsBase* MLAIUtils)
 
 void UMLAISubSystem::SetMLAIStateInfoManager(class UMLAIStateInfoManager* InMLAIStateInfoManager)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetMLAIStateInfoManager");
 
@@ -4708,7 +4580,7 @@ void UMLAISubSystem::SetMLAIStateInfoManager(class UMLAIStateInfoManager* InMLAI
 
 void UMLAISubSystem::SetMLAIBuffConfig(TMap<int, uint32_t> InBuffIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetMLAIBuffConfig");
 
@@ -4732,7 +4604,7 @@ void UMLAISubSystem::SetMLAIBuffConfig(TMap<int, uint32_t> InBuffIDs)
 
 void UMLAISubSystem::SetCDSkillConfig(TMap<int, uint32_t> InAttributeCDSkillConfigs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetCDSkillConfig");
 
@@ -4756,7 +4628,7 @@ void UMLAISubSystem::SetCDSkillConfig(TMap<int, uint32_t> InAttributeCDSkillConf
 
 void UMLAISubSystem::SetBackpackItemUpdatedMapSwitch(bool bInSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetBackpackItemUpdatedMapSwitch");
 
@@ -4773,19 +4645,21 @@ void UMLAISubSystem::SetBackpackItemUpdatedMapSwitch(bool bInSwitch)
 }
 
 
-// Function AI.MLAISubSystem.SetAttributeModifyCompConfig
-// (Final, Native, Public)
+// Function AI.MLAISubSystem.SetAirDropLocation
+// (Final, Native, Public, HasOutParms, HasDefaults)
 // Parameters:
-// TMap<uint32_t, struct FString> InAttributeModifyCompConfig    (Parm, ZeroConstructor)
+// int                            InAirDropTag                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 AirDropLocation                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 
-void UMLAISubSystem::SetAttributeModifyCompConfig(TMap<uint32_t, struct FString> InAttributeModifyCompConfig)
+void UMLAISubSystem::SetAirDropLocation(int InAirDropTag, const struct FVector& AirDropLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetAttributeModifyCompConfig");
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetAirDropLocation");
 
-	UMLAISubSystem_SetAttributeModifyCompConfig_Params params;
-	params.InAttributeModifyCompConfig = InAttributeModifyCompConfig;
+	UMLAISubSystem_SetAirDropLocation_Params params;
+	params.InAirDropTag = InAirDropTag;
+	params.AirDropLocation = AirDropLocation;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4797,21 +4671,19 @@ void UMLAISubSystem::SetAttributeModifyCompConfig(TMap<uint32_t, struct FString>
 }
 
 
-// Function AI.MLAISubSystem.SetAirDropLocation
-// (Final, Native, Public, HasOutParms, HasDefaults)
+// Function AI.MLAISubSystem.SetAIAttributeModifyCompConfig
+// (Final, Native, Public)
 // Parameters:
-// int                            InAirDropTag                   (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 AirDropLocation                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// TMap<uint32_t, struct FString> InAttributeModifyCompConfig    (Parm, ZeroConstructor)
 
-void UMLAISubSystem::SetAirDropLocation(int InAirDropTag, const struct FVector& AirDropLocation)
+void UMLAISubSystem::SetAIAttributeModifyCompConfig(TMap<uint32_t, struct FString> InAttributeModifyCompConfig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetAirDropLocation");
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetAIAttributeModifyCompConfig");
 
-	UMLAISubSystem_SetAirDropLocation_Params params;
-	params.InAirDropTag = InAirDropTag;
-	params.AirDropLocation = AirDropLocation;
+	UMLAISubSystem_SetAIAttributeModifyCompConfig_Params params;
+	params.InAttributeModifyCompConfig = InAttributeModifyCompConfig;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4837,7 +4709,7 @@ void UMLAISubSystem::SetAirDropLocation(int InAirDropTag, const struct FVector& 
 
 void UMLAISubSystem::SetAIAttribute_CastEnergyWithCount(uint32_t InPlayerKey, uint32_t InAttributeID, int InCurCount, float InCurEnergy, float InLastActiveTime, int InMaxCount, float InMaxEnergy, float InDeltaEnergy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetAIAttribute_CastEnergyWithCount");
 
@@ -4870,7 +4742,7 @@ void UMLAISubSystem::SetAIAttribute_CastEnergyWithCount(uint32_t InPlayerKey, ui
 
 void UMLAISubSystem::SetAIAttribute(uint32_t InPlayerKey, uint32_t InAttributeID, float InAttributeValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.SetAIAttribute");
 
@@ -4897,7 +4769,7 @@ void UMLAISubSystem::SetAIAttribute(uint32_t InPlayerKey, uint32_t InAttributeID
 
 void UMLAISubSystem::ResetAttributeIDToPlayerKeysMap(uint32_t InAttributeID, TArray<uint32_t> InPlayerKeys)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.ResetAttributeIDToPlayerKeysMap");
 
@@ -4923,7 +4795,7 @@ void UMLAISubSystem::ResetAttributeIDToPlayerKeysMap(uint32_t InAttributeID, TAr
 
 void UMLAISubSystem::RemoveSpecialZoneInfo(uint32_t ZoneID, uint32_t Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.RemoveSpecialZoneInfo");
 
@@ -4949,7 +4821,7 @@ void UMLAISubSystem::RemoveSpecialZoneInfo(uint32_t ZoneID, uint32_t Type)
 
 void UMLAISubSystem::RemoveMercenary2MasterMap(class APawn* MercenaryAI, class APawn* Master)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.RemoveMercenary2MasterMap");
 
@@ -4974,7 +4846,7 @@ void UMLAISubSystem::RemoveMercenary2MasterMap(class APawn* MercenaryAI, class A
 
 void UMLAISubSystem::RemoveFromSilentMLAIList(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.RemoveFromSilentMLAIList");
 
@@ -4998,12 +4870,36 @@ void UMLAISubSystem::RemoveFromSilentMLAIList(uint32_t InPlayerKey)
 
 void UMLAISubSystem::RemoveFromPlayerWhitelist(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.RemoveFromPlayerWhitelist");
 
 	UMLAISubSystem_RemoveFromPlayerWhitelist_Params params;
 	params.InPlayerKey = InPlayerKey;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.MLAISubSystem.RemoveAICheckVisibilityFilteredActor
+// (Final, Native, Public)
+// Parameters:
+// uint32_t                       actorid                        (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMLAISubSystem::RemoveAICheckVisibilityFilteredActor(uint32_t actorid)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.RemoveAICheckVisibilityFilteredActor");
+
+	UMLAISubSystem_RemoveAICheckVisibilityFilteredActor_Params params;
+	params.actorid = actorid;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5028,7 +4924,7 @@ void UMLAISubSystem::RemoveFromPlayerWhitelist(uint32_t InPlayerKey)
 
 void UMLAISubSystem::OnVehicleDamageInfo(class AController* InstigatorController, class AController* VictimController, int DamageTypeId, float Damage, bool bIsFatalHealthCost, class AActor* DamageCauser, class AActor* VictimVehicle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.OnVehicleDamageInfo");
 
@@ -5059,7 +4955,7 @@ void UMLAISubSystem::OnVehicleDamageInfo(class AController* InstigatorController
 
 void UMLAISubSystem::OnPlayerStartFire(uint32_t PlayerKey, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.OnPlayerStartFire");
 
@@ -5084,7 +4980,7 @@ void UMLAISubSystem::OnPlayerStartFire(uint32_t PlayerKey, int Count)
 
 void UMLAISubSystem::OnPlayerPickUpItem(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.OnPlayerPickUpItem");
 
@@ -5115,7 +5011,7 @@ void UMLAISubSystem::OnPlayerPickUpItem(uint32_t InPlayerKey)
 
 void UMLAISubSystem::OnPlayerDamageInfo(class ASTExtraPlayerState* InstigatorPlayerState, class ASTExtraPlayerState* VictimPlayerState, float Damage, const struct FDamageEvent& DamageEvent, float DamageBeforeCalArmor, bool bIsFatalHealthCost, class AActor* DamageCauser, bool bIsNearDeathHealthCost)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.OnPlayerDamageInfo");
 
@@ -5146,7 +5042,7 @@ void UMLAISubSystem::OnPlayerDamageInfo(class ASTExtraPlayerState* InstigatorPla
 
 void UMLAISubSystem::OnItemStateChanged(const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.OnItemStateChanged");
 
@@ -5170,7 +5066,7 @@ void UMLAISubSystem::OnItemStateChanged(const struct FVector& Location)
 
 void UMLAISubSystem::OnAirDropBoxSpawn(class AAirDropBoxActor* AirDropBoxActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.OnAirDropBoxSpawn");
 
@@ -5197,7 +5093,7 @@ void UMLAISubSystem::OnAirDropBoxSpawn(class AAirDropBoxActor* AirDropBoxActor)
 
 void UMLAISubSystem::OnAirAttackInfo(EAirAttackInfo airattacktype, int waveIndex, const struct FAirAttackOrder& InAirAttackOrder, const struct FVector& InAirAttackArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.OnAirAttackInfo");
 
@@ -5225,7 +5121,7 @@ void UMLAISubSystem::OnAirAttackInfo(EAirAttackInfo airattacktype, int waveIndex
 
 bool UMLAISubSystem::IsAvailableBackpackItemType(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.IsAvailableBackpackItemType");
 
@@ -5251,7 +5147,7 @@ bool UMLAISubSystem::IsAvailableBackpackItemType(const struct FItemDefineID& Def
 
 bool UMLAISubSystem::IsAIBotGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.IsAIBotGame");
 
@@ -5276,7 +5172,7 @@ bool UMLAISubSystem::IsAIBotGame()
 
 void UMLAISubSystem::InsertPlayerWhitelist(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.InsertPlayerWhitelist");
 
@@ -5300,7 +5196,7 @@ void UMLAISubSystem::InsertPlayerWhitelist(uint32_t InPlayerKey)
 
 void UMLAISubSystem::InsertIntoSilentMLAIList(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.InsertIntoSilentMLAIList");
 
@@ -5324,7 +5220,7 @@ void UMLAISubSystem::InsertIntoSilentMLAIList(uint32_t InPlayerKey)
 
 void UMLAISubSystem::GetVoiceRoomInfo(TArray<struct FBattleVoiceRoomInfo>* BattleVoiceRoomInfos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.GetVoiceRoomInfo");
 
@@ -5350,7 +5246,7 @@ void UMLAISubSystem::GetVoiceRoomInfo(TArray<struct FBattleVoiceRoomInfo>* Battl
 
 struct FString UMLAISubSystem::GetServerIPAddress()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.GetServerIPAddress");
 
@@ -5376,12 +5272,39 @@ struct FString UMLAISubSystem::GetServerIPAddress()
 
 float UMLAISubSystem::GetLossTime(class ASTExtraPlayerController* PlayerController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.GetLossTime");
 
 	UMLAISubSystem_GetLossTime_Params params;
 	params.PlayerController = PlayerController;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function AI.MLAISubSystem.GetItemDurability
+// (Final, Native, Public)
+// Parameters:
+// int                            InTypeSpecificID               (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UMLAISubSystem::GetItemDurability(int InTypeSpecificID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.GetItemDurability");
+
+	UMLAISubSystem_GetItemDurability_Params params;
+	params.InTypeSpecificID = InTypeSpecificID;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5403,7 +5326,7 @@ float UMLAISubSystem::GetLossTime(class ASTExtraPlayerController* PlayerControll
 
 void UMLAISubSystem::GetCacheAIAttributes(uint32_t InPlayerKey, TArray<struct FAIAttribute>* Attributes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.GetCacheAIAttributes");
 
@@ -5430,7 +5353,7 @@ void UMLAISubSystem::GetCacheAIAttributes(uint32_t InPlayerKey, TArray<struct FA
 
 int UMLAISubSystem::GetAndCheckAirDopTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.GetAndCheckAirDopTag");
 
@@ -5456,7 +5379,7 @@ int UMLAISubSystem::GetAndCheckAirDopTag()
 
 void UMLAISubSystem::FindPlayerWhiteRange(const struct FVector& InLocation, float InRange)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.FindPlayerWhiteRange");
 
@@ -5474,12 +5397,36 @@ void UMLAISubSystem::FindPlayerWhiteRange(const struct FVector& InLocation, floa
 }
 
 
+// Function AI.MLAISubSystem.FindMasterTeamMateList
+// (Final, Native, Public)
+// Parameters:
+// class APawn*                   Master                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void UMLAISubSystem::FindMasterTeamMateList(class APawn* Master)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.FindMasterTeamMateList");
+
+	UMLAISubSystem_FindMasterTeamMateList_Params params;
+	params.Master = Master;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function AI.MLAISubSystem.EndRequestCache
 // (Final, Native, Public)
 
 void UMLAISubSystem::EndRequestCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.EndRequestCache");
 
@@ -5502,7 +5449,7 @@ void UMLAISubSystem::EndRequestCache()
 
 void UMLAISubSystem::ClearAttributeIDToPlayerKeysMap(uint32_t InAttributeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.ClearAttributeIDToPlayerKeysMap");
 
@@ -5529,7 +5476,7 @@ void UMLAISubSystem::ClearAttributeIDToPlayerKeysMap(uint32_t InAttributeID)
 
 void UMLAISubSystem::ChangeMLAIInfo(class AFakePlayerAIController* AIController, const struct FString& Name, uint64_t DisplayUID, struct FPlayerOBInfo* OBInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.ChangeMLAIInfo");
 
@@ -5559,7 +5506,7 @@ void UMLAISubSystem::ChangeMLAIInfo(class AFakePlayerAIController* AIController,
 
 bool UMLAISubSystem::CanGetState(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.CanGetState");
 
@@ -5586,7 +5533,7 @@ bool UMLAISubSystem::CanGetState(uint32_t InPlayerKey)
 
 bool UMLAISubSystem::CanFindInSilentMLAIList(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.CanFindInSilentMLAIList");
 
@@ -5613,7 +5560,7 @@ bool UMLAISubSystem::CanFindInSilentMLAIList(uint32_t InPlayerKey)
 
 void UMLAISubSystem::AddVoiceServerURLInfo(uint32_t PlayerKey, const struct FString& BattleVoiceServerURL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.AddVoiceServerURLInfo");
 
@@ -5639,7 +5586,7 @@ void UMLAISubSystem::AddVoiceServerURLInfo(uint32_t PlayerKey, const struct FStr
 
 void UMLAISubSystem::AddVoiceRoomInfo(uint32_t TeamID, const struct FString& BattleVoiceRoomID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.AddVoiceRoomInfo");
 
@@ -5664,7 +5611,7 @@ void UMLAISubSystem::AddVoiceRoomInfo(uint32_t TeamID, const struct FString& Bat
 
 void UMLAISubSystem::AddTeammateMLAITeamID(uint32_t TeamID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.AddTeammateMLAITeamID");
 
@@ -5686,16 +5633,18 @@ void UMLAISubSystem::AddTeammateMLAITeamID(uint32_t TeamID)
 // Parameters:
 // class APawn*                   MercenaryAI                    (Parm, ZeroConstructor, IsPlainOldData)
 // class APawn*                   Master                         (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bIncludesTeammates             (Parm, ZeroConstructor, IsPlainOldData)
 
-void UMLAISubSystem::AddMercenary2MasterMap(class APawn* MercenaryAI, class APawn* Master)
+void UMLAISubSystem::AddMercenary2MasterMap(class APawn* MercenaryAI, class APawn* Master, bool bIncludesTeammates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.AddMercenary2MasterMap");
 
 	UMLAISubSystem_AddMercenary2MasterMap_Params params;
 	params.MercenaryAI = MercenaryAI;
 	params.Master = Master;
+	params.bIncludesTeammates = bIncludesTeammates;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5707,21 +5656,19 @@ void UMLAISubSystem::AddMercenary2MasterMap(class APawn* MercenaryAI, class APaw
 }
 
 
-// Function AI.MLAISubSystem.AddAIAttributeConfig
+// Function AI.MLAISubSystem.AddAICheckVisibilityFilteredActor
 // (Final, Native, Public)
 // Parameters:
-// uint32_t                       InID                           (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 InKey                          (Parm, ZeroConstructor)
+// uint32_t                       actorid                        (Parm, ZeroConstructor, IsPlainOldData)
 
-void UMLAISubSystem::AddAIAttributeConfig(uint32_t InID, const struct FString& InKey)
+void UMLAISubSystem::AddAICheckVisibilityFilteredActor(uint32_t actorid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.AddAIAttributeConfig");
+		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAISubSystem.AddAICheckVisibilityFilteredActor");
 
-	UMLAISubSystem_AddAIAttributeConfig_Params params;
-	params.InID = InID;
-	params.InKey = InKey;
+	UMLAISubSystem_AddAICheckVisibilityFilteredActor_Params params;
+	params.actorid = actorid;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5738,7 +5685,7 @@ void UMLAISubSystem::AddAIAttributeConfig(uint32_t InID, const struct FString& I
 
 void UMLAITrainingComponent::StopRunnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAITrainingComponent.StopRunnable");
 
@@ -5761,7 +5708,7 @@ void UMLAITrainingComponent::StopRunnable()
 
 void UMLAITrainingComponent::SetPauseGamePlayerState(class APlayerState* InPlayerState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAITrainingComponent.SetPauseGamePlayerState");
 
@@ -5787,7 +5734,7 @@ void UMLAITrainingComponent::SetPauseGamePlayerState(class APlayerState* InPlaye
 
 bool UMLAITrainingComponent::SetPause(bool bInPause, float InPauseTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAITrainingComponent.SetPause");
 
@@ -5814,7 +5761,7 @@ bool UMLAITrainingComponent::SetPause(bool bInPause, float InPauseTime)
 
 void UMLAITrainingComponent::SendAIStateRequest(TArray<unsigned char> Packet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAITrainingComponent.SendAIStateRequest");
 
@@ -5838,7 +5785,7 @@ void UMLAITrainingComponent::SendAIStateRequest(TArray<unsigned char> Packet)
 
 bool UMLAITrainingComponent::IsRequestAIState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAITrainingComponent.IsRequestAIState");
 
@@ -5865,7 +5812,7 @@ bool UMLAITrainingComponent::IsRequestAIState()
 
 void UMLAITrainingComponent::InitRunnable(float InStartCollectingInterval, float InSendInterval, float InTimeOutInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAITrainingComponent.InitRunnable");
 
@@ -5889,7 +5836,7 @@ void UMLAITrainingComponent::InitRunnable(float InStartCollectingInterval, float
 
 void UMLAITrainingComponent::EndRequestAIState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAITrainingComponent.EndRequestAIState");
 
@@ -5905,450 +5852,6 @@ void UMLAITrainingComponent::EndRequestAIState()
 }
 
 
-// Function AI.MLAIUtilsBase.StartRequestCache
-// (Native, Public)
-
-void UMLAIUtilsBase::StartRequestCache()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.StartRequestCache");
-
-	UMLAIUtilsBase_StartRequestCache_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.SetUseNewDiffCmds
-// (Final, Native, Static, Public)
-// Parameters:
-// bool                           InUseNewDiffCmds               (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           InUseNewDiffField              (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::SetUseNewDiffCmds(bool InUseNewDiffCmds, bool InUseNewDiffField)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.SetUseNewDiffCmds");
-
-	UMLAIUtilsBase_SetUseNewDiffCmds_Params params;
-	params.InUseNewDiffCmds = InUseNewDiffCmds;
-	params.InUseNewDiffField = InUseNewDiffField;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.SetOpenHeadAndMuzzleInfo
-// (Final, Native, Public)
-// Parameters:
-// bool                           InOpenHeadAndMuzzleInfo        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::SetOpenHeadAndMuzzleInfo(bool InOpenHeadAndMuzzleInfo)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.SetOpenHeadAndMuzzleInfo");
-
-	UMLAIUtilsBase_SetOpenHeadAndMuzzleInfo_Params params;
-	params.InOpenHeadAndMuzzleInfo = InOpenHeadAndMuzzleInfo;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.RemoveBackpackItemUpdatedMap
-// (Final, Native, Public)
-// Parameters:
-// uint32_t                       PlayerKey                      (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           AllRemove                      (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::RemoveBackpackItemUpdatedMap(uint32_t PlayerKey, bool AllRemove)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.RemoveBackpackItemUpdatedMap");
-
-	UMLAIUtilsBase_RemoveBackpackItemUpdatedMap_Params params;
-	params.PlayerKey = PlayerKey;
-	params.AllRemove = AllRemove;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.OnBackpackItemListUpdated
-// (Final, Native, Public)
-// Parameters:
-// uint32_t                       PlayerKey                      (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::OnBackpackItemListUpdated(uint32_t PlayerKey)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.OnBackpackItemListUpdated");
-
-	UMLAIUtilsBase_OnBackpackItemListUpdated_Params params;
-	params.PlayerKey = PlayerKey;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetGlobalGameStateInfoToCache
-// (Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetGlobalGameStateInfoToCache(class UWorld* InWorld)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetGlobalGameStateInfoToCache");
-
-	UMLAIUtilsBase_GetGlobalGameStateInfoToCache_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetDiffGlobalGameStateInfoToCache
-// (Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetDiffGlobalGameStateInfoToCache(class UWorld* InWorld)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetDiffGlobalGameStateInfoToCache");
-
-	UMLAIUtilsBase_GetDiffGlobalGameStateInfoToCache_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetDiffGlobalGameStateBaseModToCacheGeneral
-// (Final, Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetDiffGlobalGameStateBaseModToCacheGeneral(class UWorld* InWorld)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetDiffGlobalGameStateBaseModToCacheGeneral");
-
-	UMLAIUtilsBase_GetDiffGlobalGameStateBaseModToCacheGeneral_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetDiffGlobalGameStatBaseModToCache
-// (Final, Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetDiffGlobalGameStatBaseModToCache(class UWorld* InWorld)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetDiffGlobalGameStatBaseModToCache");
-
-	UMLAIUtilsBase_GetDiffGlobalGameStatBaseModToCache_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoToCacheCSS
-// (Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bUseDiff                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetDiffAllPlayerStateInfoToCacheCSS(class UWorld* InWorld, bool bUseDiff)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoToCacheCSS");
-
-	UMLAIUtilsBase_GetDiffAllPlayerStateInfoToCacheCSS_Params params;
-	params.InWorld = InWorld;
-	params.bUseDiff = bUseDiff;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoToCache
-// (Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetDiffAllPlayerStateInfoToCache(class UWorld* InWorld)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoToCache");
-
-	UMLAIUtilsBase_GetDiffAllPlayerStateInfoToCache_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoBaseModToCacheCCS
-// (Final, Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bUseDiff                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetDiffAllPlayerStateInfoBaseModToCacheCCS(class UWorld* InWorld, bool bUseDiff)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetDiffAllPlayerStateInfoBaseModToCacheCCS");
-
-	UMLAIUtilsBase_GetDiffAllPlayerStateInfoBaseModToCacheCCS_Params params;
-	params.InWorld = InWorld;
-	params.bUseDiff = bUseDiff;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.GetAllPlayerStateInfoToCache
-// (Native, Public)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::GetAllPlayerStateInfoToCache(class UWorld* InWorld)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.GetAllPlayerStateInfoToCache");
-
-	UMLAIUtilsBase_GetAllPlayerStateInfoToCache_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.EndRequestCache
-// (Native, Public)
-
-void UMLAIUtilsBase::EndRequestCache()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.EndRequestCache");
-
-	UMLAIUtilsBase_EndRequestCache_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBase.AddBackpackItemListUpdatedDelegate
-// (Final, Native, Public)
-// Parameters:
-// class UBackpackComponent*      InBackpackComp                 (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// uint32_t                       InPlayerKey                    (Parm, ZeroConstructor, IsPlainOldData)
-
-void UMLAIUtilsBase::AddBackpackItemListUpdatedDelegate(class UBackpackComponent* InBackpackComp, uint32_t InPlayerKey)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBase.AddBackpackItemListUpdatedDelegate");
-
-	UMLAIUtilsBase_AddBackpackItemListUpdatedDelegate_Params params;
-	params.InBackpackComp = InBackpackComp;
-	params.InPlayerKey = InPlayerKey;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBRBase.HandleGameModeStateChanged
-// (Final, Native, Public, HasOutParms)
-// Parameters:
-// struct FGameModeStateChangedParams Params                         (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UMLAIUtilsBRBase::HandleGameModeStateChanged(const struct FGameModeStateChangedParams& Params)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBRBase.HandleGameModeStateChanged");
-
-	UMLAIUtilsBRBase_HandleGameModeStateChanged_Params params;
-	params.Params = Params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function AI.MLAIUtilsBRBase.GetRedZoneState
-// (Final, Native, Public, HasOutParms)
-// Parameters:
-// class UWorld*                  InWorld                        (Parm, ZeroConstructor, IsPlainOldData)
-// struct FRedZoneState           ZoneState                      (Parm, OutParm)
-
-void UMLAIUtilsBRBase::GetRedZoneState(class UWorld* InWorld, struct FRedZoneState* ZoneState)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBRBase.GetRedZoneState");
-
-	UMLAIUtilsBRBase_GetRedZoneState_Params params;
-	params.InWorld = InWorld;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	if (ZoneState != nullptr)
-		*ZoneState = params.ZoneState;
-}
-
-
-// Function AI.MLAIUtilsBRBase.GetAIPlayerStateBRBase
-// (Final, Native, Public, HasOutParms)
-// Parameters:
-// class ASTExtraBaseCharacter*   InCharacter                    (Parm, ZeroConstructor, IsPlainOldData)
-// struct FAIPlayerStateBRBase    Ret                            (Parm, OutParm)
-
-void UMLAIUtilsBRBase::GetAIPlayerStateBRBase(class ASTExtraBaseCharacter* InCharacter, struct FAIPlayerStateBRBase* Ret)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function AI.MLAIUtilsBRBase.GetAIPlayerStateBRBase");
-
-	UMLAIUtilsBRBase_GetAIPlayerStateBRBase_Params params;
-	params.InCharacter = InCharacter;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	if (Ret != nullptr)
-		*Ret = params.Ret;
-}
-
-
 // Function AI.SpecialZoneActor.UpdateType
 // (Final, Native, Public)
 // Parameters:
@@ -6356,7 +5859,7 @@ void UMLAIUtilsBRBase::GetAIPlayerStateBRBase(class ASTExtraBaseCharacter* InCha
 
 void ASpecialZoneActor::UpdateType(int InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.SpecialZoneActor.UpdateType");
 
@@ -6380,7 +5883,7 @@ void ASpecialZoneActor::UpdateType(int InType)
 
 void ASpecialZoneActor::UpdateExtraState(uint32_t InExtraState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.SpecialZoneActor.UpdateExtraState");
 
@@ -6404,12 +5907,40 @@ void ASpecialZoneActor::UpdateExtraState(uint32_t InExtraState)
 
 void ASpecialZoneActor::UpdateCustomState(int InCustomState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.SpecialZoneActor.UpdateCustomState");
 
 	ASpecialZoneActor_UpdateCustomState_Params params;
 	params.InCustomState = InCustomState;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function AI.SpecialZoneActor.UpdateCustomAttributeValue
+// (Final, Native, Public, HasOutParms)
+// Parameters:
+// uint32_t                       InCustomAttributeID            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// float                          InValue                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// bool                           bRemove                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+
+void ASpecialZoneActor::UpdateCustomAttributeValue(uint32_t InCustomAttributeID, float InValue, bool bRemove)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.SpecialZoneActor.UpdateCustomAttributeValue");
+
+	ASpecialZoneActor_UpdateCustomAttributeValue_Params params;
+	params.InCustomAttributeID = InCustomAttributeID;
+	params.InValue = InValue;
+	params.bRemove = bRemove;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -6430,7 +5961,7 @@ void ASpecialZoneActor::UpdateCustomState(int InCustomState)
 
 void ASpecialZoneActor::HandleFragmentsStateChanged(int FragmentItemIndex, EPhotonFracturedMeshFragmentState State, TArray<EPhotonFracturedMeshFragmentState> FragmentState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.SpecialZoneActor.HandleFragmentsStateChanged");
 
@@ -6456,7 +5987,7 @@ void ASpecialZoneActor::HandleFragmentsStateChanged(int FragmentItemIndex, EPhot
 
 struct FSpecialZoneState ASpecialZoneActor::GetSpecialZoneState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.SpecialZoneActor.GetSpecialZoneState");
 
@@ -6474,6 +6005,32 @@ struct FSpecialZoneState ASpecialZoneActor::GetSpecialZoneState()
 }
 
 
+// Function AI.SpecialZoneActor.GetCustomAttributeList
+// (Final, Native, Public, HasOutParms)
+// Parameters:
+// TArray<struct FAIAttribute>    OutCustomAttributeList         (Parm, OutParm, ZeroConstructor)
+
+void ASpecialZoneActor::GetCustomAttributeList(TArray<struct FAIAttribute>* OutCustomAttributeList)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function AI.SpecialZoneActor.GetCustomAttributeList");
+
+	ASpecialZoneActor_GetCustomAttributeList_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (OutCustomAttributeList != nullptr)
+		*OutCustomAttributeList = params.OutCustomAttributeList;
+}
+
+
 // Function AI.STStrategyLocation_Range.ModifyBaseLocation
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -6481,7 +6038,7 @@ struct FSpecialZoneState ASpecialZoneActor::GetSpecialZoneState()
 
 void USTStrategyLocation_Range::ModifyBaseLocation(const struct FVector& InLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategyLocation_Range.ModifyBaseLocation");
 
@@ -6508,7 +6065,7 @@ void USTStrategyLocation_Range::ModifyBaseLocation(const struct FVector& InLocat
 
 bool USTStrategyLocation_Range::GetSpawnLocation(class AActor* Requester, int ReferenceCount, TArray<struct FSpawnSpotInfo>* OutArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategyLocation_Range.GetSpawnLocation");
 
@@ -6539,7 +6096,7 @@ bool USTStrategyLocation_Range::GetSpawnLocation(class AActor* Requester, int Re
 
 void USTStrategyLocation_Range::AddSpawnArea(const struct FSpawnArea& NewArea, bool ForceAdd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategyLocation_Range.AddSpawnArea");
 
@@ -6564,7 +6121,7 @@ void USTStrategyLocation_Range::AddSpawnArea(const struct FSpawnArea& NewArea, b
 
 void USTStrategyLocation_Range::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategyLocation_Range.ActivateStrategy");
 
@@ -6590,7 +6147,7 @@ void USTStrategyLocation_Range::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 TArray<struct FUnitConfig> USTStrategySpecies_Candidate::Supply(int ReferencedCount, TArray<struct FSpawnSpotInfo> SpotSpecies)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategySpecies_Candidate.Supply");
 
@@ -6617,7 +6174,7 @@ TArray<struct FUnitConfig> USTStrategySpecies_Candidate::Supply(int ReferencedCo
 
 void USTStrategySpecies_Candidate::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategySpecies_Candidate.ActivateStrategy");
 
@@ -6643,7 +6200,7 @@ void USTStrategySpecies_Candidate::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 TArray<struct FUnitConfig> USTStrategySpecies_Lua::Supply(int ReferencedCount, TArray<struct FSpawnSpotInfo> SpotSpecies)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategySpecies_Lua.Supply");
 
@@ -6670,7 +6227,7 @@ TArray<struct FUnitConfig> USTStrategySpecies_Lua::Supply(int ReferencedCount, T
 
 void USTStrategySpecies_Lua::LuaSupply(int ReferencedCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategySpecies_Lua.LuaSupply");
 
@@ -6693,7 +6250,7 @@ void USTStrategySpecies_Lua::LuaSupply(int ReferencedCount)
 
 void USTStrategyTiming_Event::TickStrategy(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategyTiming_Event.TickStrategy");
 
@@ -6717,7 +6274,7 @@ void USTStrategyTiming_Event::TickStrategy(float DeltaTime)
 
 void USTStrategyTiming_Event::OnSpawnEventBroadcast(uint32_t SpawnerID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategyTiming_Event.OnSpawnEventBroadcast");
 
@@ -6741,7 +6298,7 @@ void USTStrategyTiming_Event::OnSpawnEventBroadcast(uint32_t SpawnerID)
 
 void USTStrategyTiming_Event::ActivateStrategy(class ASTSpawnerBase* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.STStrategyTiming_Event.ActivateStrategy");
 
@@ -6765,7 +6322,7 @@ void USTStrategyTiming_Event::ActivateStrategy(class ASTSpawnerBase* Owner)
 
 void UTeammateMLAIControllerComponent::SetMLAIStyle(uint32_t NewAIStyle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.SetMLAIStyle");
 
@@ -6789,7 +6346,7 @@ void UTeammateMLAIControllerComponent::SetMLAIStyle(uint32_t NewAIStyle)
 
 void UTeammateMLAIControllerComponent::SetIsMLAI(bool InIsMLAI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.SetIsMLAI");
 
@@ -6813,7 +6370,7 @@ void UTeammateMLAIControllerComponent::SetIsMLAI(bool InIsMLAI)
 
 void UTeammateMLAIControllerComponent::SetAIParams(struct FGameModeAIPlayerParams* InAIParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.SetAIParams");
 
@@ -6839,7 +6396,7 @@ void UTeammateMLAIControllerComponent::SetAIParams(struct FGameModeAIPlayerParam
 
 void UTeammateMLAIControllerComponent::SetAILevel(uint32_t NewAILevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.SetAILevel");
 
@@ -6861,7 +6418,7 @@ void UTeammateMLAIControllerComponent::SetAILevel(uint32_t NewAILevel)
 
 void UTeammateMLAIControllerComponent::OnTeammateMLAILost()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.OnTeammateMLAILost");
 
@@ -6882,7 +6439,7 @@ void UTeammateMLAIControllerComponent::OnTeammateMLAILost()
 
 void UTeammateMLAIControllerComponent::OnTeammateMLAIExit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.OnTeammateMLAIExit");
 
@@ -6905,7 +6462,7 @@ void UTeammateMLAIControllerComponent::OnTeammateMLAIExit()
 
 void UTeammateMLAIControllerComponent::OnControllerStateChanged(EStateType StateType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.OnControllerStateChanged");
 
@@ -6929,7 +6486,7 @@ void UTeammateMLAIControllerComponent::OnControllerStateChanged(EStateType State
 
 bool UTeammateMLAIControllerComponent::IsTakeOverTeammate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.IsTakeOverTeammate");
 
@@ -6954,7 +6511,7 @@ bool UTeammateMLAIControllerComponent::IsTakeOverTeammate()
 
 uint32_t UTeammateMLAIControllerComponent::GetMLAIStyle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.GetMLAIStyle");
 
@@ -6979,7 +6536,7 @@ uint32_t UTeammateMLAIControllerComponent::GetMLAIStyle()
 
 struct FGameModeAIPlayerParams UTeammateMLAIControllerComponent::GetAIParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.GetAIParams");
 
@@ -7004,7 +6561,7 @@ struct FGameModeAIPlayerParams UTeammateMLAIControllerComponent::GetAIParams()
 
 uint32_t UTeammateMLAIControllerComponent::GetAILevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.TeammateMLAIControllerComponent.GetAILevel");
 
@@ -7029,7 +6586,7 @@ uint32_t UTeammateMLAIControllerComponent::GetAILevel()
 
 void AVehicleAIController::SetCurEnemy(class APawn* NewEnemy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIController.SetCurEnemy");
 
@@ -7053,7 +6610,7 @@ void AVehicleAIController::SetCurEnemy(class APawn* NewEnemy)
 
 class UVehiclePathFollowingComponent* AVehicleAIController::GetVehiclePathFollow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIController.GetVehiclePathFollow");
 
@@ -7078,7 +6635,7 @@ class UVehiclePathFollowingComponent* AVehicleAIController::GetVehiclePathFollow
 
 class APawn* AVehicleAIController::GetCurEnemy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIController.GetCurEnemy");
 
@@ -7104,7 +6661,7 @@ class APawn* AVehicleAIController::GetCurEnemy()
 
 float AVehicleAIController::GetAIHitRate(float Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIController.GetAIHitRate");
 
@@ -7128,7 +6685,7 @@ float AVehicleAIController::GetAIHitRate(float Distance)
 
 void AVehicleAIController::ExplodeAndDeath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIController.ExplodeAndDeath");
 
@@ -7149,7 +6706,7 @@ void AVehicleAIController::ExplodeAndDeath()
 
 void AVehicleAIController::DelayInitVehicleWeapon()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIController.DelayInitVehicleWeapon");
 
@@ -7172,7 +6729,7 @@ void AVehicleAIController::DelayInitVehicleWeapon()
 
 void UVehicleAIUserComponent::ServerVehicleLeanOut(bool bLeanOut)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.ServerVehicleLeanOut");
 
@@ -7196,7 +6753,7 @@ void UVehicleAIUserComponent::ServerVehicleLeanOut(bool bLeanOut)
 
 void UVehicleAIUserComponent::ServerExitVehicleEx(bool bMustExit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.ServerExitVehicleEx");
 
@@ -7218,7 +6775,7 @@ void UVehicleAIUserComponent::ServerExitVehicleEx(bool bMustExit)
 
 void UVehicleAIUserComponent::ServerExitVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.ServerExitVehicle");
 
@@ -7242,7 +6799,7 @@ void UVehicleAIUserComponent::ServerExitVehicle()
 
 void UVehicleAIUserComponent::ServerEnterVehicle(class ASTExtraVehicleBase* InVehicle, unsigned char SeatType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.ServerEnterVehicle");
 
@@ -7267,7 +6824,7 @@ void UVehicleAIUserComponent::ServerEnterVehicle(class ASTExtraVehicleBase* InVe
 
 void UVehicleAIUserComponent::ServerChangeVehicleSeat(int InSeatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.ServerChangeVehicleSeat");
 
@@ -7289,7 +6846,7 @@ void UVehicleAIUserComponent::ServerChangeVehicleSeat(int InSeatIndex)
 
 void UVehicleAIUserComponent::MulticastExitVehicle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.MulticastExitVehicle");
 
@@ -7316,7 +6873,7 @@ void UVehicleAIUserComponent::MulticastExitVehicle()
 
 void UVehicleAIUserComponent::MulticastEnterVehicle(class ASTExtraVehicleBase* InVehicle, class ASTExtraPlayerCharacter* Pawn, bool bSuccess, unsigned char SeatType, int SeatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.MulticastEnterVehicle");
 
@@ -7344,7 +6901,7 @@ void UVehicleAIUserComponent::MulticastEnterVehicle(class ASTExtraVehicleBase* I
 
 void UVehicleAIUserComponent::MulticastChangeVehicleSeat(int InSeatIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleAIUserComponent.MulticastChangeVehicleSeat");
 
@@ -7369,7 +6926,7 @@ void UVehicleAIUserComponent::MulticastChangeVehicleSeat(int InSeatIndex)
 
 void UVehicleCustomDamageEventComponent::OnVehicleHPFuelChanged(float HP, float Fuel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleCustomDamageEventComponent.OnVehicleHPFuelChanged");
 
@@ -7394,7 +6951,7 @@ void UVehicleCustomDamageEventComponent::OnVehicleHPFuelChanged(float HP, float 
 
 void UVehicleStateInfoCollector::HandleGameModeStateChanged(const struct FGameModeStateChangedParams& Params)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function AI.VehicleStateInfoCollector.HandleGameModeStateChanged");
 

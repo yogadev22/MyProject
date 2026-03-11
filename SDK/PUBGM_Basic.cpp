@@ -1,4 +1,4 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 #include "../SDK.hpp"
 
@@ -6,7 +6,7 @@ namespace SDK
 {
 TNameEntryArray* FName::GNames = nullptr;
 FUObjectArray* UObject::GUObjectArray = nullptr;
-//---------------------By BangJO---------------------------
+//---------------------------------------------------------------------------
 bool FWeakObjectPtr::IsValid() const
 {
     if (ObjectSerialNumber == 0)
@@ -28,7 +28,7 @@ bool FWeakObjectPtr::IsValid() const
     }
     return !(ObjectItem->IsUnreachable() || ObjectItem->IsPendingKill());
 }
-//---------------------By BangJO---------------------------
+//---------------------------------------------------------------------------
 UObject* FWeakObjectPtr::Get() const
 {
     if (IsValid())
@@ -41,6 +41,6 @@ UObject* FWeakObjectPtr::Get() const
     }
     return nullptr;
 }
-//---------------------By BangJO---------------------------
+//---------------------------------------------------------------------------
 }
 

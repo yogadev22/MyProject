@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary
 // 0x0020 (0x0048 - 0x0028)
@@ -18,7 +18,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary");
 		return pStaticClass;
@@ -30,10 +30,10 @@ public:
 	static class UTexture2D* BP_PandoraPickerLoadImageTest(const struct FString& fImagePath, const struct FString& fOrgImagePath, class UTexture2D** orgTex2D);
 	static int BP_PandoraPickerInit();
 	static void BP_PandoraPickerGetSavedPath(struct FString* strSavePath);
-	static void BP_OpenImageLibraryWithOrg(int Width, int Height, const struct FString& SecretKey, const struct FString& savedPath);
+	static void BP_OpenImageLibraryWithOrg(int Width, int Height, const struct FString& SecretKey, const struct FString& SavedPath);
 	static void BP_OpenImageLibraryVideo(const struct FString& SecretKey);
-	static void BP_OpenImageLibraryNoCut(int Width, int Height, const struct FString& SecretKey, const struct FString& savedPath);
-	static void BP_OpenImageLibrary(int Width, int Height, const struct FString& SecretKey, const struct FString& savedPath);
+	static void BP_OpenImageLibraryNoCut(int Width, int Height, const struct FString& SecretKey, const struct FString& SavedPath);
+	static void BP_OpenImageLibrary(int Width, int Height, const struct FString& SecretKey, const struct FString& SavedPath);
 };
 
 

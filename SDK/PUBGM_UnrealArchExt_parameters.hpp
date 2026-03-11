@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UnrealArchExt.UAEUserWidget.Visible
 struct UUAEUserWidget_Visible_Params
@@ -529,7 +529,7 @@ struct UFrontendHUD_ClearLogicManagerByName_Params
 struct UFrontendUtils_SwitchSceneCameraToTransform_Params
 {
 	struct FTransform                                  targetTrans;                                              // (Parm, IsPlainOldData)
-	TEnumAsByte<enum ECameraProjectionMode>            ProjectionMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECameraProjectionMode>                 ProjectionMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              FOV;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bForce;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
@@ -648,6 +648,12 @@ struct UFrontendUtils_GetUIStackTopDstTag_Params
 struct UFrontendUtils_GetUIStackTop_Params
 {
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function UnrealArchExt.FrontendUtils.GetSceneCameraComponent
+struct UFrontendUtils_GetSceneCameraComponent_Params
+{
+	class UCameraComponent*                            ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 
 // Function UnrealArchExt.FrontendUtils.GetSceneCamera

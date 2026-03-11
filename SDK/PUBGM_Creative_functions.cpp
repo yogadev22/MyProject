@@ -1,12 +1,43 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+
+// Function Creative.AIGCAudioManager.WemCutByAssetKey
+// (Final, Native, Public)
+// Parameters:
+// uint64_t                       AssetKey                       (Parm, ZeroConstructor, IsPlainOldData)
+// int                            StartTime                      (Parm, ZeroConstructor, IsPlainOldData)
+// int                            EndTime                        (Parm, ZeroConstructor, IsPlainOldData)
+// uint64_t                       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+uint64_t UAIGCAudioManager::WemCutByAssetKey(uint64_t AssetKey, int StartTime, int EndTime)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.AIGCAudioManager.WemCutByAssetKey");
+
+	UAIGCAudioManager_WemCutByAssetKey_Params params;
+	params.AssetKey = AssetKey;
+	params.StartTime = StartTime;
+	params.EndTime = EndTime;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
 
 // Function Creative.AIGCAudioManager.SeekOnEvent
 // (Final, Native, Public, HasOutParms)
@@ -21,7 +52,7 @@ namespace SDK
 
 uint32_t UAIGCAudioManager::SeekOnEvent(class UAkAudioEvent* Event, class AActor* Actor, int in_iPosition, bool bStopWhenOwnerDestroyed, uint64_t AssetKey, uint32_t* PlayingID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.AIGCAudioManager.SeekOnEvent");
 
@@ -55,7 +86,7 @@ uint32_t UAIGCAudioManager::SeekOnEvent(class UAkAudioEvent* Event, class AActor
 
 class UAIGCAudioManager* UAIGCAudioManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.AIGCAudioManager.Get");
 
@@ -74,12 +105,36 @@ class UAIGCAudioManager* UAIGCAudioManager::Get(class UObject* WorldContext)
 }
 
 
+// Function Creative.AIGCAudioManager.AllocateTempAssetKey
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UAIGCAudioManager::AllocateTempAssetKey()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.AIGCAudioManager.AllocateTempAssetKey");
+
+	UAIGCAudioManager_AllocateTempAssetKey_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.CreateBackpackRepActor.InitCustomItemDataInfo
 // (Final, Native, Public)
 
 void ACreateBackpackRepActor::InitCustomItemDataInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreateBackpackRepActor.InitCustomItemDataInfo");
 
@@ -100,7 +155,7 @@ void ACreateBackpackRepActor::InitCustomItemDataInfo()
 
 void ACreateBackpackRepActor::CustomItemDataInitComplete()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreateBackpackRepActor.CustomItemDataInitComplete");
 
@@ -125,7 +180,7 @@ void ACreateBackpackRepActor::CustomItemDataInitComplete()
 
 void UCreativeAbilitySystemComponent::UpdateGridGhostBuildingLocation(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.UpdateGridGhostBuildingLocation");
 
@@ -149,7 +204,7 @@ void UCreativeAbilitySystemComponent::UpdateGridGhostBuildingLocation(float X, f
 
 void UCreativeAbilitySystemComponent::UpdateGhostBuildingTransform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.UpdateGhostBuildingTransform");
 
@@ -172,7 +227,7 @@ void UCreativeAbilitySystemComponent::UpdateGhostBuildingTransform()
 
 void UCreativeAbilitySystemComponent::SetSnapTargetTransform(const struct FTransform& SnapTargetTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.SetSnapTargetTransform");
 
@@ -197,7 +252,7 @@ void UCreativeAbilitySystemComponent::SetSnapTargetTransform(const struct FTrans
 
 void UCreativeAbilitySystemComponent::SetOverrideBuild(const struct FVector& Position, const struct FRotator& Rotation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.SetOverrideBuild");
 
@@ -224,7 +279,7 @@ void UCreativeAbilitySystemComponent::SetOverrideBuild(const struct FVector& Pos
 
 void UCreativeAbilitySystemComponent::SetLuaGhostBuildingTransformScale(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.SetLuaGhostBuildingTransformScale");
 
@@ -251,7 +306,7 @@ void UCreativeAbilitySystemComponent::SetLuaGhostBuildingTransformScale(float X,
 
 void UCreativeAbilitySystemComponent::SetLuaGhostBuildingTransformRotation(float Roll, float Yaw, float Pitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.SetLuaGhostBuildingTransformRotation");
 
@@ -278,7 +333,7 @@ void UCreativeAbilitySystemComponent::SetLuaGhostBuildingTransformRotation(float
 
 void UCreativeAbilitySystemComponent::SetLuaGhostBuildingTransformLocation(float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.SetLuaGhostBuildingTransformLocation");
 
@@ -301,7 +356,7 @@ void UCreativeAbilitySystemComponent::SetLuaGhostBuildingTransformLocation(float
 
 void UCreativeAbilitySystemComponent::LuaGhostBuildingInstaUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.LuaGhostBuildingInstaUpdate");
 
@@ -325,7 +380,7 @@ void UCreativeAbilitySystemComponent::LuaGhostBuildingInstaUpdate()
 
 float UCreativeAbilitySystemComponent::GetSnappedLocAxisZ(float Loc, float Base)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetSnappedLocAxisZ");
 
@@ -353,7 +408,7 @@ float UCreativeAbilitySystemComponent::GetSnappedLocAxisZ(float Loc, float Base)
 
 float UCreativeAbilitySystemComponent::GetSnappedLocAxis(float Value, int AxisType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetSnappedLocAxis");
 
@@ -379,7 +434,7 @@ float UCreativeAbilitySystemComponent::GetSnappedLocAxis(float Value, int AxisTy
 
 int UCreativeAbilitySystemComponent::GetSetupBuildingID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetSetupBuildingID");
 
@@ -403,7 +458,7 @@ int UCreativeAbilitySystemComponent::GetSetupBuildingID()
 
 class ASTExtraPlayerController* UCreativeAbilitySystemComponent::GetPlayerController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetPlayerController");
 
@@ -428,7 +483,7 @@ class ASTExtraPlayerController* UCreativeAbilitySystemComponent::GetPlayerContro
 
 bool UCreativeAbilitySystemComponent::GetLuaSnapTargetTransform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetLuaSnapTargetTransform");
 
@@ -452,7 +507,7 @@ bool UCreativeAbilitySystemComponent::GetLuaSnapTargetTransform()
 
 float UCreativeAbilitySystemComponent::GetLuaInstanceBoundingBox()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetLuaInstanceBoundingBox");
 
@@ -476,7 +531,7 @@ float UCreativeAbilitySystemComponent::GetLuaInstanceBoundingBox()
 
 struct FTransform UCreativeAbilitySystemComponent::GetGhostBuildingTransform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetGhostBuildingTransform");
 
@@ -501,7 +556,7 @@ struct FTransform UCreativeAbilitySystemComponent::GetGhostBuildingTransform()
 
 struct FString UCreativeAbilitySystemComponent::GetBuildingInstanceID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetBuildingInstanceID");
 
@@ -525,7 +580,7 @@ struct FString UCreativeAbilitySystemComponent::GetBuildingInstanceID()
 
 float UCreativeAbilitySystemComponent::GetBuildDistance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.GetBuildDistance");
 
@@ -547,7 +602,7 @@ float UCreativeAbilitySystemComponent::GetBuildDistance()
 
 void UCreativeAbilitySystemComponent::ClearOverrideBuild()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAbilitySystemComponent.ClearOverrideBuild");
 
@@ -568,7 +623,7 @@ void UCreativeAbilitySystemComponent::ClearOverrideBuild()
 
 void UCreativeModeActorInteractionComponent::SortCanEditParamsObjs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.SortCanEditParamsObjs");
 
@@ -590,7 +645,7 @@ void UCreativeModeActorInteractionComponent::SortCanEditParamsObjs()
 
 void UCreativeModeActorInteractionComponent::SetCrossHairTransformObjInstanceID(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.SetCrossHairTransformObjInstanceID");
 
@@ -613,7 +668,7 @@ void UCreativeModeActorInteractionComponent::SetCrossHairTransformObjInstanceID(
 
 void UCreativeModeActorInteractionComponent::SetCrossHairSelectedObjInstanceID(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.SetCrossHairSelectedObjInstanceID");
 
@@ -636,7 +691,7 @@ void UCreativeModeActorInteractionComponent::SetCrossHairSelectedObjInstanceID(c
 
 void UCreativeModeActorInteractionComponent::SetCrossHairPickActor(class AActor* PickActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.SetCrossHairPickActor");
 
@@ -652,6 +707,32 @@ void UCreativeModeActorInteractionComponent::SetCrossHairPickActor(class AActor*
 }
 
 
+// Function Creative.CreativeModeActorInteractionComponent.SectorCheckImplement
+// (Final, Native, Protected)
+// Parameters:
+// float                          CheckDistance                  (Parm, ZeroConstructor, IsPlainOldData)
+// float                          CheckAngle                     (Parm, ZeroConstructor, IsPlainOldData)
+
+void UCreativeModeActorInteractionComponent::SectorCheckImplement(float CheckDistance, float CheckAngle)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.SectorCheckImplement");
+
+	UCreativeModeActorInteractionComponent_SectorCheckImplement_Params params;
+	params.CheckDistance = CheckDistance;
+	params.CheckAngle = CheckAngle;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Creative.CreativeModeActorInteractionComponent.GetSectorCheckIntervalCfg
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -659,7 +740,7 @@ void UCreativeModeActorInteractionComponent::SetCrossHairPickActor(class AActor*
 
 float UCreativeModeActorInteractionComponent::GetSectorCheckIntervalCfg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetSectorCheckIntervalCfg");
 
@@ -683,7 +764,7 @@ float UCreativeModeActorInteractionComponent::GetSectorCheckIntervalCfg()
 
 float UCreativeModeActorInteractionComponent::GetSectorCheckDistance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetSectorCheckDistance");
 
@@ -707,7 +788,7 @@ float UCreativeModeActorInteractionComponent::GetSectorCheckDistance()
 
 float UCreativeModeActorInteractionComponent::GetSectorCheckAngle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetSectorCheckAngle");
 
@@ -731,7 +812,7 @@ float UCreativeModeActorInteractionComponent::GetSectorCheckAngle()
 
 float UCreativeModeActorInteractionComponent::GetPlayerHalfHeight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetPlayerHalfHeight");
 
@@ -755,7 +836,7 @@ float UCreativeModeActorInteractionComponent::GetPlayerHalfHeight()
 
 class ASTExtraPlayerController* UCreativeModeActorInteractionComponent::GetPlayerController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetPlayerController");
 
@@ -780,7 +861,7 @@ class ASTExtraPlayerController* UCreativeModeActorInteractionComponent::GetPlaye
 
 float UCreativeModeActorInteractionComponent::GetCrossHairTransformDistanceCfg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetCrossHairTransformDistanceCfg");
 
@@ -804,7 +885,7 @@ float UCreativeModeActorInteractionComponent::GetCrossHairTransformDistanceCfg()
 
 float UCreativeModeActorInteractionComponent::GetCrossHairPickDistanceCfg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetCrossHairPickDistanceCfg");
 
@@ -828,7 +909,7 @@ float UCreativeModeActorInteractionComponent::GetCrossHairPickDistanceCfg()
 
 float UCreativeModeActorInteractionComponent::GetCrossHairCheckIntervalCfg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetCrossHairCheckIntervalCfg");
 
@@ -852,7 +933,7 @@ float UCreativeModeActorInteractionComponent::GetCrossHairCheckIntervalCfg()
 
 float UCreativeModeActorInteractionComponent::GetCrossHairCheckDistanceCfg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.GetCrossHairCheckDistanceCfg");
 
@@ -869,12 +950,36 @@ float UCreativeModeActorInteractionComponent::GetCrossHairCheckDistanceCfg()
 }
 
 
+// Function Creative.CreativeModeActorInteractionComponent.CrossHairCheckImplement
+// (Final, Native, Protected)
+// Parameters:
+// float                          Distance                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UCreativeModeActorInteractionComponent::CrossHairCheckImplement(float Distance)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.CrossHairCheckImplement");
+
+	UCreativeModeActorInteractionComponent_CrossHairCheckImplement_Params params;
+	params.Distance = Distance;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Creative.CreativeModeActorInteractionComponent.ClearCanEditParamsObjs
 // (Event, Protected, BlueprintEvent)
 
 void UCreativeModeActorInteractionComponent::ClearCanEditParamsObjs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.ClearCanEditParamsObjs");
 
@@ -898,7 +1003,7 @@ void UCreativeModeActorInteractionComponent::ClearCanEditParamsObjs()
 
 void UCreativeModeActorInteractionComponent::AddCanEditObject(class UObject* uCanEditObject, float Angle, float Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeActorInteractionComponent.AddCanEditObject");
 
@@ -923,7 +1028,7 @@ void UCreativeModeActorInteractionComponent::AddCanEditObject(class UObject* uCa
 
 void UCreativeAdaptiveSchedulManager::SetObjectProfile(bool bOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.SetObjectProfile");
 
@@ -947,7 +1052,7 @@ void UCreativeAdaptiveSchedulManager::SetObjectProfile(bool bOpen)
 
 void UCreativeAdaptiveSchedulManager::SetLuaProfile(bool bOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.SetLuaProfile");
 
@@ -973,7 +1078,7 @@ void UCreativeAdaptiveSchedulManager::SetLuaProfile(bool bOpen)
 
 int UCreativeAdaptiveSchedulManager::RecordFunctionStart(const struct FString& ClassName, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.RecordFunctionStart");
 
@@ -1002,7 +1107,7 @@ int UCreativeAdaptiveSchedulManager::RecordFunctionStart(const struct FString& C
 
 void UCreativeAdaptiveSchedulManager::RecordFunctionEnd(const struct FString& ClassName, const struct FString& FunctionName, int Cycles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.RecordFunctionEnd");
 
@@ -1030,7 +1135,7 @@ void UCreativeAdaptiveSchedulManager::RecordFunctionEnd(const struct FString& Cl
 
 int UCreativeAdaptiveSchedulManager::LuaPath2Tag(const struct FString& luaPath, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.LuaPath2Tag");
 
@@ -1057,7 +1162,7 @@ int UCreativeAdaptiveSchedulManager::LuaPath2Tag(const struct FString& luaPath, 
 
 void UCreativeAdaptiveSchedulManager::LogOutputObjectMemoryInfo(bool bClear)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.LogOutputObjectMemoryInfo");
 
@@ -1081,7 +1186,7 @@ void UCreativeAdaptiveSchedulManager::LogOutputObjectMemoryInfo(bool bClear)
 
 void UCreativeAdaptiveSchedulManager::LogOutputLuaFunctionCallInfo(bool bClear)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.LogOutputLuaFunctionCallInfo");
 
@@ -1105,7 +1210,7 @@ void UCreativeAdaptiveSchedulManager::LogOutputLuaFunctionCallInfo(bool bClear)
 
 TMap<int, int64_t> UCreativeAdaptiveSchedulManager::LogoutLuaRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.LogoutLuaRecord");
 
@@ -1130,7 +1235,7 @@ TMap<int, int64_t> UCreativeAdaptiveSchedulManager::LogoutLuaRecord()
 
 bool UCreativeAdaptiveSchedulManager::LLMEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.LLMEnabled");
 
@@ -1156,7 +1261,7 @@ bool UCreativeAdaptiveSchedulManager::LLMEnabled()
 
 int UCreativeAdaptiveSchedulManager::InitTagIfNotExist(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.InitTagIfNotExist");
 
@@ -1184,7 +1289,7 @@ int UCreativeAdaptiveSchedulManager::InitTagIfNotExist(const struct FString& Tag
 
 int UCreativeAdaptiveSchedulManager::InitNewLuaPath2Tag(const struct FString& luaPath, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.InitNewLuaPath2Tag");
 
@@ -1211,7 +1316,7 @@ int UCreativeAdaptiveSchedulManager::InitNewLuaPath2Tag(const struct FString& lu
 
 uint64_t UCreativeAdaptiveSchedulManager::GetPureLuaUsedBytes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.GetPureLuaUsedBytes");
 
@@ -1236,7 +1341,7 @@ uint64_t UCreativeAdaptiveSchedulManager::GetPureLuaUsedBytes()
 
 uint64_t UCreativeAdaptiveSchedulManager::GetLuaUsedBytes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.GetLuaUsedBytes");
 
@@ -1262,7 +1367,7 @@ uint64_t UCreativeAdaptiveSchedulManager::GetLuaUsedBytes()
 
 class UCreativeAdaptiveSchedulManager* UCreativeAdaptiveSchedulManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.Get");
 
@@ -1288,7 +1393,7 @@ class UCreativeAdaptiveSchedulManager* UCreativeAdaptiveSchedulManager::Get(clas
 
 void UCreativeAdaptiveSchedulManager::AfterDead(int SpecType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAdaptiveSchedulManager.AfterDead");
 
@@ -1309,7 +1414,7 @@ void UCreativeAdaptiveSchedulManager::AfterDead(int SpecType)
 
 void UCreativeLuaSignalObjectBase::TryBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalObjectBase.TryBeginPlay");
 
@@ -1332,7 +1437,7 @@ void UCreativeLuaSignalObjectBase::TryBeginPlay()
 
 void UCreativeLuaSignalObjectBase::SetLuaFilePath(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalObjectBase.SetLuaFilePath");
 
@@ -1356,7 +1461,7 @@ void UCreativeLuaSignalObjectBase::SetLuaFilePath(const struct FString& FilePath
 
 void UCreativeLuaSignalObjectBase::RemoveCommonEvent(int EventHandle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalObjectBase.RemoveCommonEvent");
 
@@ -1378,7 +1483,7 @@ void UCreativeLuaSignalObjectBase::RemoveCommonEvent(int EventHandle)
 
 void UCreativeLuaSignalObjectBase::ReceivePostBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalObjectBase.ReceivePostBeginPlay");
 
@@ -1398,7 +1503,7 @@ void UCreativeLuaSignalObjectBase::ReceivePostBeginPlay()
 
 void UCreativeLuaSignalObjectBase::ReceiveBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalObjectBase.ReceiveBeginPlay");
 
@@ -1418,7 +1523,7 @@ void UCreativeLuaSignalObjectBase::ReceiveBeginPlay()
 
 void UCreativeLuaSignalObjectBase::ClearAllCommonEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalObjectBase.ClearAllCommonEvent");
 
@@ -1443,7 +1548,7 @@ void UCreativeLuaSignalObjectBase::ClearAllCommonEvent()
 
 void UCreativeLuaSignalObjectBase::AddCommonEvent(const struct FString& EventType, const struct FString& EventID, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalObjectBase.AddCommonEvent");
 
@@ -1469,7 +1574,7 @@ void UCreativeLuaSignalObjectBase::AddCommonEvent(const struct FString& EventTyp
 
 void UCreativeApiObject::SetModuleName(const struct FString& NewName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeApiObject.SetModuleName");
 
@@ -1493,7 +1598,7 @@ void UCreativeApiObject::SetModuleName(const struct FString& NewName)
 
 struct FString UCreativeApiObject::GetModuleName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeApiObject.GetModuleName");
 
@@ -1518,7 +1623,7 @@ struct FString UCreativeApiObject::GetModuleName()
 
 void UCreativeAssetManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAssetManager.ReceiveOnGameStateBeginPlay");
 
@@ -1541,7 +1646,7 @@ void UCreativeAssetManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* Ga
 
 void UCreativeAssetManager::ReceiveInitAssetInfo(int AssetId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAssetManager.ReceiveInitAssetInfo");
 
@@ -1564,7 +1669,7 @@ void UCreativeAssetManager::ReceiveInitAssetInfo(int AssetId)
 
 void UCreativeAssetManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAssetManager.OnGameStateBeginPlay");
 
@@ -1589,7 +1694,7 @@ void UCreativeAssetManager::OnGameStateBeginPlay(class AGameStateBase* GameState
 
 struct FString UCreativeAssetManager::GetObbyMeshPath(int AssetId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAssetManager.GetObbyMeshPath");
 
@@ -1615,7 +1720,7 @@ struct FString UCreativeAssetManager::GetObbyMeshPath(int AssetId)
 
 struct FString UCreativeAssetManager::GetMaterialPath(int MaterialID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAssetManager.GetMaterialPath");
 
@@ -1641,7 +1746,7 @@ struct FString UCreativeAssetManager::GetMaterialPath(int MaterialID)
 
 class UCreativeAssetManager* UCreativeAssetManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAssetManager.Get");
 
@@ -1668,7 +1773,7 @@ class UCreativeAssetManager* UCreativeAssetManager::Get(class UObject* WorldCont
 
 void UCreativeAssetManager::AddAssetInfo(int AssetId, const struct FCreativeAssetInfo& AssetInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAssetManager.AddAssetInfo");
 
@@ -1686,6 +1791,141 @@ void UCreativeAssetManager::AddAssetInfo(int AssetId, const struct FCreativeAsse
 }
 
 
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.SaveWemToConvert
+// (Final, Native, Static, Public)
+// Parameters:
+// TArray<unsigned char>          WemData                        (Parm, ZeroConstructor)
+// struct FString                 SavePath                       (Parm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UCreativeAudioBlueprintFunctionLibrary::SaveWemToConvert(TArray<unsigned char> WemData, const struct FString& SavePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAudioBlueprintFunctionLibrary.SaveWemToConvert");
+
+	UCreativeAudioBlueprintFunctionLibrary_SaveWemToConvert_Params params;
+	params.WemData = WemData;
+	params.SavePath = SavePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.RegisterWwiseBaseDir
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 BaseDir                        (Parm, ZeroConstructor)
+
+void UCreativeAudioBlueprintFunctionLibrary::RegisterWwiseBaseDir(const struct FString& BaseDir)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAudioBlueprintFunctionLibrary.RegisterWwiseBaseDir");
+
+	UCreativeAudioBlueprintFunctionLibrary_RegisterWwiseBaseDir_Params params;
+	params.BaseDir = BaseDir;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.GetWavLength
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<unsigned char>          WavData                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UCreativeAudioBlueprintFunctionLibrary::GetWavLength(TArray<unsigned char> WavData)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAudioBlueprintFunctionLibrary.GetWavLength");
+
+	UCreativeAudioBlueprintFunctionLibrary_GetWavLength_Params params;
+	params.WavData = WavData;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.GetMp3Length
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<unsigned char>          Mp3Data                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UCreativeAudioBlueprintFunctionLibrary::GetMp3Length(TArray<unsigned char> Mp3Data)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAudioBlueprintFunctionLibrary.GetMp3Length");
+
+	UCreativeAudioBlueprintFunctionLibrary_GetMp3Length_Params params;
+	params.Mp3Data = Mp3Data;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.GetAudioWaveform
+// (Final, Native, Static, Public)
+// Parameters:
+// uint32_t                       WemMediaID                     (Parm, ZeroConstructor, IsPlainOldData)
+// float                          SampleInterval                 (Parm, ZeroConstructor, IsPlainOldData)
+// struct FScriptDelegate         Callback                       (Parm, ZeroConstructor)
+
+void UCreativeAudioBlueprintFunctionLibrary::GetAudioWaveform(uint32_t WemMediaID, float SampleInterval, const struct FScriptDelegate& Callback)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAudioBlueprintFunctionLibrary.GetAudioWaveform");
+
+	UCreativeAudioBlueprintFunctionLibrary_GetAudioWaveform_Params params;
+	params.WemMediaID = WemMediaID;
+	params.SampleInterval = SampleInterval;
+	params.Callback = Callback;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Creative.CreativeAutoGenComponent.GetNodeSegmentContent
 // (Final, Native, Private, HasOutParms, BlueprintCallable)
 // Parameters:
@@ -1694,7 +1934,7 @@ void UCreativeAssetManager::AddAssetInfo(int AssetId, const struct FCreativeAsse
 
 TArray<unsigned char> UCreativeAutoGenComponent::GetNodeSegmentContent(struct FCreativeAutoGenItemDataSegment* Segment)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAutoGenComponent.GetNodeSegmentContent");
 
@@ -1724,7 +1964,7 @@ TArray<unsigned char> UCreativeAutoGenComponent::GetNodeSegmentContent(struct FC
 
 bool UCreativeAutoGenComponent::AddInstanceDataContent(TArray<unsigned char> Content, struct FCreativeAutoGenDataSegment* Segment)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeAutoGenComponent.AddInstanceDataContent");
 
@@ -1756,7 +1996,7 @@ bool UCreativeAutoGenComponent::AddInstanceDataContent(TArray<unsigned char> Con
 
 int UCreativeModeBackpackUtils::ResCanAddToBackpackNum(class UBackpackComponent* BackpackComponent, int resID, int AddNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBackpackUtils.ResCanAddToBackpackNum");
 
@@ -1786,7 +2026,7 @@ int UCreativeModeBackpackUtils::ResCanAddToBackpackNum(class UBackpackComponent*
 
 int UCreativeModeBackpackUtils::GetItemMaxCount(class UBackpackComponent* BackpackComponent, int resID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBackpackUtils.GetItemMaxCount");
 
@@ -1817,7 +2057,7 @@ int UCreativeModeBackpackUtils::GetItemMaxCount(class UBackpackComponent* Backpa
 
 void UCreativeModeBackpackUtils::AddAIAvatarItem(class UBackpackComponent* BackpackComponent, int ID, int Color, int Pattern, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBackpackUtils.AddAIAvatarItem");
 
@@ -1845,7 +2085,7 @@ void UCreativeModeBackpackUtils::AddAIAvatarItem(class UBackpackComponent* Backp
 
 void UCreativeBinaryDataManager::SetInitBinaryDataSize(uint32_t DataSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.SetInitBinaryDataSize");
 
@@ -1869,7 +2109,7 @@ void UCreativeBinaryDataManager::SetInitBinaryDataSize(uint32_t DataSize)
 
 void UCreativeBinaryDataManager::ReceiveOnPreLoadMap(const struct FString& MapName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.ReceiveOnPreLoadMap");
 
@@ -1890,7 +2130,7 @@ void UCreativeBinaryDataManager::ReceiveOnPreLoadMap(const struct FString& MapNa
 
 void UCreativeBinaryDataManager::ReceiveOnPostSetLuaEventBridgeInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.ReceiveOnPostSetLuaEventBridgeInstance");
 
@@ -1912,7 +2152,7 @@ void UCreativeBinaryDataManager::ReceiveOnPostSetLuaEventBridgeInstance()
 
 void UCreativeBinaryDataManager::ReceiveOnPostLoadMapWithWorld(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.ReceiveOnPostLoadMapWithWorld");
 
@@ -1933,7 +2173,7 @@ void UCreativeBinaryDataManager::ReceiveOnPostLoadMapWithWorld(class UWorld* Wor
 
 void UCreativeBinaryDataManager::OnRep_InitBinaryDataSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.OnRep_InitBinaryDataSize");
 
@@ -1956,7 +2196,7 @@ void UCreativeBinaryDataManager::OnRep_InitBinaryDataSize()
 
 void UCreativeBinaryDataManager::OnPreLoadMap(const struct FString& MapName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.OnPreLoadMap");
 
@@ -1978,7 +2218,7 @@ void UCreativeBinaryDataManager::OnPreLoadMap(const struct FString& MapName)
 
 void UCreativeBinaryDataManager::OnPostSetLuaEventBridgeInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.OnPostSetLuaEventBridgeInstance");
 
@@ -2001,7 +2241,7 @@ void UCreativeBinaryDataManager::OnPostSetLuaEventBridgeInstance()
 
 void UCreativeBinaryDataManager::OnPostLoadMapWithWorld(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.OnPostLoadMapWithWorld");
 
@@ -2025,7 +2265,7 @@ void UCreativeBinaryDataManager::OnPostLoadMapWithWorld(class UWorld* World)
 
 uint32_t UCreativeBinaryDataManager::GetInitBinaryDataSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.GetInitBinaryDataSize");
 
@@ -2051,7 +2291,7 @@ uint32_t UCreativeBinaryDataManager::GetInitBinaryDataSize()
 
 class UCreativeBinaryDataManager* UCreativeBinaryDataManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBinaryDataManager.Get");
 
@@ -2077,7 +2317,7 @@ class UCreativeBinaryDataManager* UCreativeBinaryDataManager::Get(class UObject*
 
 void UCreativeBlockyLuaManager::SetRTLOffsetY(float Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.SetRTLOffsetY");
 
@@ -2101,7 +2341,7 @@ void UCreativeBlockyLuaManager::SetRTLOffsetY(float Offset)
 
 void UCreativeBlockyLuaManager::SetLTROffsetY(float Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.SetLTROffsetY");
 
@@ -2125,7 +2365,7 @@ void UCreativeBlockyLuaManager::SetLTROffsetY(float Offset)
 
 void UCreativeBlockyLuaManager::SetFontSize(int FontSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.SetFontSize");
 
@@ -2150,7 +2390,7 @@ void UCreativeBlockyLuaManager::SetFontSize(int FontSize)
 
 void UCreativeBlockyLuaManager::SetBlockIdFromSlotString(const struct FString& blockId, struct FBlockySlotString* SlotString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.SetBlockIdFromSlotString");
 
@@ -2177,7 +2417,7 @@ void UCreativeBlockyLuaManager::SetBlockIdFromSlotString(const struct FString& b
 
 void UCreativeBlockyLuaManager::ReturnPresetDescsToCache(TArray<class UPresetDesc*> ReturnDescs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReturnPresetDescsToCache");
 
@@ -2202,7 +2442,7 @@ void UCreativeBlockyLuaManager::ReturnPresetDescsToCache(TArray<class UPresetDes
 
 bool UCreativeBlockyLuaManager::ReturnGraphDataObject(class UBlockyGraphData* GraphDataObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReturnGraphDataObject");
 
@@ -2228,7 +2468,7 @@ bool UCreativeBlockyLuaManager::ReturnGraphDataObject(class UBlockyGraphData* Gr
 
 void UCreativeBlockyLuaManager::RemoveDynamicPresetDescs(TArray<class UPresetDesc*> PresetDescs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.RemoveDynamicPresetDescs");
 
@@ -2252,7 +2492,7 @@ void UCreativeBlockyLuaManager::RemoveDynamicPresetDescs(TArray<class UPresetDes
 
 void UCreativeBlockyLuaManager::RegisterNameCache(class UBlockyGraphData* GraphData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.RegisterNameCache");
 
@@ -2276,7 +2516,7 @@ void UCreativeBlockyLuaManager::RegisterNameCache(class UBlockyGraphData* GraphD
 
 void UCreativeBlockyLuaManager::RefreshBlockyFont(struct FSlateFontInfo* DefaultFont)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.RefreshBlockyFont");
 
@@ -2302,7 +2542,7 @@ void UCreativeBlockyLuaManager::RefreshBlockyFont(struct FSlateFontInfo* Default
 
 void UCreativeBlockyLuaManager::ReceivePresetFromCustomSelection(class UObjectDesc* Desc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReceivePresetFromCustomSelection");
 
@@ -2327,7 +2567,7 @@ void UCreativeBlockyLuaManager::ReceivePresetFromCustomSelection(class UObjectDe
 
 void UCreativeBlockyLuaManager::ReceiveOutBlockyluaDownloadImage(class UTexture2D* Texture, const struct FString& IconPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReceiveOutBlockyluaDownloadImage");
 
@@ -2350,7 +2590,7 @@ void UCreativeBlockyLuaManager::ReceiveOutBlockyluaDownloadImage(class UTexture2
 
 void UCreativeBlockyLuaManager::ReceiveOpenGuide()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReceiveOpenGuide");
 
@@ -2372,7 +2612,7 @@ void UCreativeBlockyLuaManager::ReceiveOpenGuide()
 
 void UCreativeBlockyLuaManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReceiveOnGameStateBeginPlay");
 
@@ -2396,7 +2636,7 @@ void UCreativeBlockyLuaManager::ReceiveOnGameStateBeginPlay(class AGameStateBase
 
 struct FString UCreativeBlockyLuaManager::ReceivedGetLocalizeResStrHandleFailed(const struct FString& IdOrStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReceivedGetLocalizeResStrHandleFailed");
 
@@ -2422,7 +2662,7 @@ struct FString UCreativeBlockyLuaManager::ReceivedGetLocalizeResStrHandleFailed(
 
 void UCreativeBlockyLuaManager::ReceiveCheckStringValidFunction(const struct FString& CheckString, const struct FCheckStringHandleData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReceiveCheckStringValidFunction");
 
@@ -2448,7 +2688,7 @@ void UCreativeBlockyLuaManager::ReceiveCheckStringValidFunction(const struct FSt
 
 void UCreativeBlockyLuaManager::ReceiveCheckStringResult(bool Result, const struct FString& ValidString, const struct FCheckStringHandleData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ReceiveCheckStringResult");
 
@@ -2474,7 +2714,7 @@ void UCreativeBlockyLuaManager::ReceiveCheckStringResult(bool Result, const stru
 
 void UCreativeBlockyLuaManager::OnReceiveMessageData(TArray<struct FMessageDataWrapper> MessageDatas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.OnReceiveMessageData");
 
@@ -2495,7 +2735,7 @@ void UCreativeBlockyLuaManager::OnReceiveMessageData(TArray<struct FMessageDataW
 
 void UCreativeBlockyLuaManager::OnReceiveInitDisableFunc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.OnReceiveInitDisableFunc");
 
@@ -2515,7 +2755,7 @@ void UCreativeBlockyLuaManager::OnReceiveInitDisableFunc()
 
 void UCreativeBlockyLuaManager::OnInitBlockyLuaConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.OnInitBlockyLuaConfig");
 
@@ -2539,7 +2779,7 @@ void UCreativeBlockyLuaManager::OnInitBlockyLuaConfig()
 
 void UCreativeBlockyLuaManager::OnGameTypePreChanged(unsigned char LastGameType, unsigned char CurrentGameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.OnGameTypePreChanged");
 
@@ -2564,7 +2804,7 @@ void UCreativeBlockyLuaManager::OnGameTypePreChanged(unsigned char LastGameType,
 
 void UCreativeBlockyLuaManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.OnGameStateBeginPlay");
 
@@ -2588,7 +2828,7 @@ void UCreativeBlockyLuaManager::OnGameStateBeginPlay(class AGameStateBase* GameS
 
 bool UCreativeBlockyLuaManager::IsLTRLanguage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.IsLTRLanguage");
 
@@ -2613,7 +2853,7 @@ bool UCreativeBlockyLuaManager::IsLTRLanguage()
 
 bool UCreativeBlockyLuaManager::IsLTR()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.IsLTR");
 
@@ -2638,7 +2878,7 @@ bool UCreativeBlockyLuaManager::IsLTR()
 
 void UCreativeBlockyLuaManager::InitDisableFunction(TArray<struct FString> funcs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.InitDisableFunction");
 
@@ -2664,7 +2904,7 @@ void UCreativeBlockyLuaManager::InitDisableFunction(TArray<struct FString> funcs
 
 TArray<class UPresetDesc*> UCreativeBlockyLuaManager::GetPresetDescs(int GetCount, struct FString* TypeName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetPresetDescs");
 
@@ -2694,7 +2934,7 @@ TArray<class UPresetDesc*> UCreativeBlockyLuaManager::GetPresetDescs(int GetCoun
 
 class UPresetDesc* UCreativeBlockyLuaManager::GetPresetDesc(struct FString* TypeName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetPresetDesc");
 
@@ -2725,7 +2965,7 @@ class UPresetDesc* UCreativeBlockyLuaManager::GetPresetDesc(struct FString* Type
 
 class UBlockyGraphData* UCreativeBlockyLuaManager::GetGraphDataObjectFormTemplateContent(TArray<unsigned char> GrapbAstContent, bool CallLoadFinish, bool IsLoadPresetsInGraph)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetGraphDataObjectFormTemplateContent");
 
@@ -2757,7 +2997,7 @@ class UBlockyGraphData* UCreativeBlockyLuaManager::GetGraphDataObjectFormTemplat
 
 class UBlockyGraphData* UCreativeBlockyLuaManager::GetGraphDataObjectFormContent(TArray<unsigned char> GrapbAstContent, TArray<unsigned char> GlobalVarAstContent, bool CallLoadFinish, bool IsSingleton)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetGraphDataObjectFormContent");
 
@@ -2787,7 +3027,7 @@ class UBlockyGraphData* UCreativeBlockyLuaManager::GetGraphDataObjectFormContent
 
 class UPresetDesc* UCreativeBlockyLuaManager::GetDynamicPresetDescsByKey(const struct FString& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetDynamicPresetDescsByKey");
 
@@ -2813,7 +3053,7 @@ class UPresetDesc* UCreativeBlockyLuaManager::GetDynamicPresetDescsByKey(const s
 
 class UBlockyLuaConfig* UCreativeBlockyLuaManager::GetBlockyLuaConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetBlockyLuaConfig");
 
@@ -2839,7 +3079,7 @@ class UBlockyLuaConfig* UCreativeBlockyLuaManager::GetBlockyLuaConfig()
 
 struct FString UCreativeBlockyLuaManager::GetBlockNameByStr(const struct FString& BlockyId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetBlockNameByStr");
 
@@ -2866,7 +3106,7 @@ struct FString UCreativeBlockyLuaManager::GetBlockNameByStr(const struct FString
 
 struct FString UCreativeBlockyLuaManager::GetBlockIdFromSlotString(struct FBlockySlotString* SlotString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetBlockIdFromSlotString");
 
@@ -2894,7 +3134,7 @@ struct FString UCreativeBlockyLuaManager::GetBlockIdFromSlotString(struct FBlock
 
 struct FString UCreativeBlockyLuaManager::GetAllDynamicPresetJson()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GetAllDynamicPresetJson");
 
@@ -2920,7 +3160,7 @@ struct FString UCreativeBlockyLuaManager::GetAllDynamicPresetJson()
 
 class UCreativeBlockyLuaManager* UCreativeBlockyLuaManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.Get");
 
@@ -2949,7 +3189,7 @@ class UCreativeBlockyLuaManager* UCreativeBlockyLuaManager::Get(class UObject* W
 
 TArray<struct FString> UCreativeBlockyLuaManager::GenerateLuaCodeFormJson(const struct FString& JsonText, const struct FString& GlobalVarJsonText, bool GenGlobalVarLua)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GenerateLuaCodeFormJson");
 
@@ -2979,7 +3219,7 @@ TArray<struct FString> UCreativeBlockyLuaManager::GenerateLuaCodeFormJson(const 
 
 TArray<struct FString> UCreativeBlockyLuaManager::GenerateLuaCodeFormGraphDataObject(class UBlockyGraphData* GraphDataObj, bool GenGlobalVarLua)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GenerateLuaCodeFormGraphDataObject");
 
@@ -3010,7 +3250,7 @@ TArray<struct FString> UCreativeBlockyLuaManager::GenerateLuaCodeFormGraphDataOb
 
 TArray<struct FString> UCreativeBlockyLuaManager::GenerateLuaCodeFormContent(TArray<unsigned char> GrapbAstContent, TArray<unsigned char> GlobalVarAstContent, bool GenGlobalVarLua, bool CallLoadFinish)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.GenerateLuaCodeFormContent");
 
@@ -3037,7 +3277,7 @@ TArray<struct FString> UCreativeBlockyLuaManager::GenerateLuaCodeFormContent(TAr
 
 void UCreativeBlockyLuaManager::ClearNameIndexCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ClearNameIndexCache");
 
@@ -3060,7 +3300,7 @@ void UCreativeBlockyLuaManager::ClearNameIndexCache()
 
 TArray<class UPresetDesc*> UCreativeBlockyLuaManager::ClearDynamicPresetDescs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ClearDynamicPresetDescs");
 
@@ -3085,7 +3325,7 @@ TArray<class UPresetDesc*> UCreativeBlockyLuaManager::ClearDynamicPresetDescs()
 
 void UCreativeBlockyLuaManager::ClearCacheObjects(bool CallBeginDestroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ClearCacheObjects");
 
@@ -3107,7 +3347,7 @@ void UCreativeBlockyLuaManager::ClearCacheObjects(bool CallBeginDestroy)
 
 void UCreativeBlockyLuaManager::ClearBlockyLuaHotfixUtility()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.ClearBlockyLuaHotfixUtility");
 
@@ -3130,7 +3370,7 @@ void UCreativeBlockyLuaManager::ClearBlockyLuaHotfixUtility()
 
 void UCreativeBlockyLuaManager::BlockyluaShowPresetPanelHandle(bool IsShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaShowPresetPanelHandle");
 
@@ -3154,7 +3394,7 @@ void UCreativeBlockyLuaManager::BlockyluaShowPresetPanelHandle(bool IsShow)
 
 void UCreativeBlockyLuaManager::BlockyluaPresetSoundFunctionHandle(const struct FString& SoundPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaPresetSoundFunctionHandle");
 
@@ -3179,7 +3419,7 @@ void UCreativeBlockyLuaManager::BlockyluaPresetSoundFunctionHandle(const struct 
 
 struct FString UCreativeBlockyLuaManager::BlockyluaPresetSelectCheckHandle(class UObjectDesc* Desc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaPresetSelectCheckHandle");
 
@@ -3206,7 +3446,7 @@ struct FString UCreativeBlockyLuaManager::BlockyluaPresetSelectCheckHandle(class
 
 struct FText UCreativeBlockyLuaManager::BlockyluaModifyTipHandle(const struct FText& OriginalTip)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaModifyTipHandle");
 
@@ -3232,7 +3472,7 @@ struct FText UCreativeBlockyLuaManager::BlockyluaModifyTipHandle(const struct FT
 
 void UCreativeBlockyLuaManager::BlockyluaMessageDataHandle(TArray<struct FMessageDataStruct> MessageDatas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaMessageDataHandle");
 
@@ -3257,7 +3497,7 @@ void UCreativeBlockyLuaManager::BlockyluaMessageDataHandle(TArray<struct FMessag
 
 struct FString UCreativeBlockyLuaManager::BlockyluaGetLocalizeResStrHandle(const struct FString& IdOrStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaGetLocalizeResStrHandle");
 
@@ -3283,7 +3523,7 @@ struct FString UCreativeBlockyLuaManager::BlockyluaGetLocalizeResStrHandle(const
 
 void UCreativeBlockyLuaManager::BlockyluaDownloadImage(const struct FString& IconPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaDownloadImage");
 
@@ -3309,7 +3549,7 @@ void UCreativeBlockyLuaManager::BlockyluaDownloadImage(const struct FString& Ico
 
 void UCreativeBlockyLuaManager::BlockyluaCustomInputHandle(const struct FString& CustomClickType, class UObjectDesc* Desc, TArray<class UObjectDesc*> followers)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaCustomInputHandle");
 
@@ -3336,7 +3576,7 @@ void UCreativeBlockyLuaManager::BlockyluaCustomInputHandle(const struct FString&
 
 bool UCreativeBlockyLuaManager::BlockyluaCheckShowPresetFitlerBtnHandle(const struct FString& TypeName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaCheckShowPresetFitlerBtnHandle");
 
@@ -3365,7 +3605,7 @@ bool UCreativeBlockyLuaManager::BlockyluaCheckShowPresetFitlerBtnHandle(const st
 
 bool UCreativeBlockyLuaManager::BlockyluaCheckShowCustomInputHandle(const struct FString& CustomClickType, class UObjectDesc* Desc, TArray<class UObjectDesc*> followers)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BlockyluaCheckShowCustomInputHandle");
 
@@ -3394,7 +3634,7 @@ bool UCreativeBlockyLuaManager::BlockyluaCheckShowCustomInputHandle(const struct
 
 void UCreativeBlockyLuaManager::BindSetBlockNewStatusHandle(const struct FString& blockId, bool showstate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BindSetBlockNewStatusHandle");
 
@@ -3420,7 +3660,7 @@ void UCreativeBlockyLuaManager::BindSetBlockNewStatusHandle(const struct FString
 
 bool UCreativeBlockyLuaManager::BindGetBlockNewStatusHandle(const struct FString& blockId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BindGetBlockNewStatusHandle");
 
@@ -3447,7 +3687,7 @@ bool UCreativeBlockyLuaManager::BindGetBlockNewStatusHandle(const struct FString
 
 void UCreativeBlockyLuaManager::BindBlockyLuaStubFunc(const struct FString& BindFuncName, const struct FString& OverrdeFuncName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.BindBlockyLuaStubFunc");
 
@@ -3472,7 +3712,7 @@ void UCreativeBlockyLuaManager::BindBlockyLuaStubFunc(const struct FString& Bind
 
 void UCreativeBlockyLuaManager::AddDynamicPresetDescs(TArray<class UPresetDesc*> PresetDescs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeBlockyLuaManager.AddDynamicPresetDescs");
 
@@ -3498,7 +3738,7 @@ void UCreativeBlockyLuaManager::AddDynamicPresetDescs(TArray<class UPresetDesc*>
 
 bool UCreativeModeBlueprintLibrary::ZSTDDecompressData(TArray<unsigned char> CompressedData, TArray<unsigned char>* DecompressedData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ZSTDDecompressData");
 
@@ -3530,7 +3770,7 @@ bool UCreativeModeBlueprintLibrary::ZSTDDecompressData(TArray<unsigned char> Com
 
 bool UCreativeModeBlueprintLibrary::ZSTDCompressData(TArray<unsigned char> UncompressedData, int CompressionLevel, TArray<unsigned char>* CompressedData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ZSTDCompressData");
 
@@ -3553,6 +3793,62 @@ bool UCreativeModeBlueprintLibrary::ZSTDCompressData(TArray<unsigned char> Uncom
 }
 
 
+// Function Creative.CreativeModeBlueprintLibrary.WindowsReadFileSummary
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// struct FString                 FilePath                       (Parm, ZeroConstructor)
+// TArray<struct FString>         Properties                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UCreativeModeBlueprintLibrary::WindowsReadFileSummary(const struct FString& FilePath, TArray<struct FString> Properties)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.WindowsReadFileSummary");
+
+	UCreativeModeBlueprintLibrary_WindowsReadFileSummary_Params params;
+	params.FilePath = FilePath;
+	params.Properties = Properties;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.WindowsPickFile
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 filter                         (Parm, ZeroConstructor)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UCreativeModeBlueprintLibrary::WindowsPickFile(const struct FString& filter)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.WindowsPickFile");
+
+	UCreativeModeBlueprintLibrary_WindowsPickFile_Params params;
+	params.filter = filter;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.CreativeModeBlueprintLibrary.WidgetAbsoluteSizeToLocalSize
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -3562,7 +3858,7 @@ bool UCreativeModeBlueprintLibrary::ZSTDCompressData(TArray<unsigned char> Uncom
 
 struct FVector2D UCreativeModeBlueprintLibrary::WidgetAbsoluteSizeToLocalSize(class UWidget* Widget, const struct FVector2D& AbsoluteSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.WidgetAbsoluteSizeToLocalSize");
 
@@ -3589,7 +3885,7 @@ struct FVector2D UCreativeModeBlueprintLibrary::WidgetAbsoluteSizeToLocalSize(cl
 
 void UCreativeModeBlueprintLibrary::UObjSnapshot(class UWorld* MyWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.UObjSnapshot");
 
@@ -3615,7 +3911,7 @@ void UCreativeModeBlueprintLibrary::UObjSnapshot(class UWorld* MyWorld)
 
 struct FTransform UCreativeModeBlueprintLibrary::TransformRevert(const struct FTransform& TransformB, struct FTransform* TransformRelative)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.TransformRevert");
 
@@ -3645,7 +3941,7 @@ struct FTransform UCreativeModeBlueprintLibrary::TransformRevert(const struct FT
 
 void UCreativeModeBlueprintLibrary::TransformMultiplyBy(const struct FTransform& M, struct FTransform* Source)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.TransformMultiplyBy");
 
@@ -3673,7 +3969,7 @@ void UCreativeModeBlueprintLibrary::TransformMultiplyBy(const struct FTransform&
 
 void UCreativeModeBlueprintLibrary::TransformBounds(const struct FTransform& M, struct FBoxSphereBounds* Bounds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.TransformBounds");
 
@@ -3701,7 +3997,7 @@ void UCreativeModeBlueprintLibrary::TransformBounds(const struct FTransform& M, 
 
 double UCreativeModeBlueprintLibrary::ToMilliseconds64(uint64_t Cycles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ToMilliseconds64");
 
@@ -3728,7 +4024,7 @@ double UCreativeModeBlueprintLibrary::ToMilliseconds64(uint64_t Cycles)
 
 TArray<unsigned char> UCreativeModeBlueprintLibrary::TextureToPNG(class UTexture2D* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.TextureToPNG");
 
@@ -3755,7 +4051,7 @@ TArray<unsigned char> UCreativeModeBlueprintLibrary::TextureToPNG(class UTexture
 
 TArray<unsigned char> UCreativeModeBlueprintLibrary::TextureToJPEG(class UTexture2D* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.TextureToJPEG");
 
@@ -3789,7 +4085,7 @@ TArray<unsigned char> UCreativeModeBlueprintLibrary::TextureToJPEG(class UTextur
 
 struct FString UCreativeModeBlueprintLibrary::TakeSnapshot(class UWidget* WindowWidget, int X1, int Y1, int x2, int y2, const struct FString& Filename, bool bUseCrop, bool bFillRect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.TakeSnapshot");
 
@@ -3823,7 +4119,7 @@ struct FString UCreativeModeBlueprintLibrary::TakeSnapshot(class UWidget* Window
 
 bool UCreativeModeBlueprintLibrary::SynchronizePropertiesWidget(class UWidget* TargetWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SynchronizePropertiesWidget");
 
@@ -3848,15 +4144,15 @@ bool UCreativeModeBlueprintLibrary::SynchronizePropertiesWidget(class UWidget* T
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 SpherePos                      (Parm, IsPlainOldData)
 // float                          SphereRadius                   (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<TEnumAsByte<enum ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<TEnumAsByte<ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class UClass*                  ComponentClassFilter           (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<class AActor*>          ActorsToIgnore                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // TArray<class UPrimitiveComponent*> OutComponents                  (Parm, OutParm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCreativeModeBlueprintLibrary::SphereOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents)
+bool UCreativeModeBlueprintLibrary::SphereOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SphereOverlapComponentsByChannel");
 
@@ -3889,15 +4185,15 @@ bool UCreativeModeBlueprintLibrary::SphereOverlapComponentsByChannel(class UObje
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 SpherePos                      (Parm, IsPlainOldData)
 // float                          SphereRadius                   (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<TEnumAsByte<enum ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<TEnumAsByte<ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class UClass*                  ActorClassFilter               (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<class AActor*>          ActorsToIgnore                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // TArray<class AActor*>          OutActors                      (Parm, OutParm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCreativeModeBlueprintLibrary::SphereOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors)
+bool UCreativeModeBlueprintLibrary::SphereOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& SpherePos, float SphereRadius, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SphereOverlapActorsByChannel");
 
@@ -3932,7 +4228,7 @@ bool UCreativeModeBlueprintLibrary::SphereOverlapActorsByChannel(class UObject* 
 
 bool UCreativeModeBlueprintLibrary::ShouldCreatePhysicsState(class UPrimitiveComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ShouldCreatePhysicsState");
 
@@ -3960,7 +4256,7 @@ bool UCreativeModeBlueprintLibrary::ShouldCreatePhysicsState(class UPrimitiveCom
 
 float UCreativeModeBlueprintLibrary::SetWorldGravityZ(float GravityZ, class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetWorldGravityZ");
 
@@ -3988,7 +4284,7 @@ float UCreativeModeBlueprintLibrary::SetWorldGravityZ(float GravityZ, class UObj
 
 void UCreativeModeBlueprintLibrary::SetWidgetVisiblePass(class UWidget* Widget, bool bVisiblePass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetWidgetVisiblePass");
 
@@ -4010,11 +4306,11 @@ void UCreativeModeBlueprintLibrary::SetWidgetVisiblePass(class UWidget* Widget, 
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UStaticMeshComponent*    StaticMeshComponent            (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// TEnumAsByte<enum EComponentMobility> NewMobility                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EComponentMobility> NewMobility                    (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeModeBlueprintLibrary::SetStaticMeshMobility(class UStaticMeshComponent* StaticMeshComponent, TEnumAsByte<enum EComponentMobility> NewMobility)
+void UCreativeModeBlueprintLibrary::SetStaticMeshMobility(class UStaticMeshComponent* StaticMeshComponent, TEnumAsByte<EComponentMobility> NewMobility)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetStaticMeshMobility");
 
@@ -4039,7 +4335,7 @@ void UCreativeModeBlueprintLibrary::SetStaticMeshMobility(class UStaticMeshCompo
 
 void UCreativeModeBlueprintLibrary::SetSpeedOverLimit(class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetSpeedOverLimit");
 
@@ -4064,7 +4360,7 @@ void UCreativeModeBlueprintLibrary::SetSpeedOverLimit(class AActor* Actor)
 
 void UCreativeModeBlueprintLibrary::SetRelativeCamRotation(class APlayerController* PlayerController, class USceneComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetRelativeCamRotation");
 
@@ -4090,7 +4386,7 @@ void UCreativeModeBlueprintLibrary::SetRelativeCamRotation(class APlayerControll
 
 void UCreativeModeBlueprintLibrary::SetParticleCullingDistance(class UParticleSystemComponent* ParticleSystemComponent, float Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetParticleCullingDistance");
 
@@ -4118,7 +4414,7 @@ void UCreativeModeBlueprintLibrary::SetParticleCullingDistance(class UParticleSy
 
 void UCreativeModeBlueprintLibrary::SetInstanceValue(class UObject* WorldContextObject, const struct FString& InstanceID, const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetInstanceValue");
 
@@ -4146,7 +4442,7 @@ void UCreativeModeBlueprintLibrary::SetInstanceValue(class UObject* WorldContext
 
 void UCreativeModeBlueprintLibrary::SetCommandLineValue(const struct FString& Key, const struct FString& NewValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetCommandLineValue");
 
@@ -4168,11 +4464,11 @@ void UCreativeModeBlueprintLibrary::SetCommandLineValue(const struct FString& Ke
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UShapeComponent*         Component                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// TEnumAsByte<enum EComponentMobility> NewMobility                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EComponentMobility> NewMobility                    (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeModeBlueprintLibrary::SetCollisionMobility(class UShapeComponent* Component, TEnumAsByte<enum EComponentMobility> NewMobility)
+void UCreativeModeBlueprintLibrary::SetCollisionMobility(class UShapeComponent* Component, TEnumAsByte<EComponentMobility> NewMobility)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SetCollisionMobility");
 
@@ -4198,13 +4494,39 @@ void UCreativeModeBlueprintLibrary::SetCollisionMobility(class UShapeComponent* 
 
 void UCreativeModeBlueprintLibrary::SaveStringToFile(const struct FString& String, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SaveStringToFile");
 
 	UCreativeModeBlueprintLibrary_SaveStringToFile_Params params;
 	params.String = String;
 	params.Filename = Filename;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.SaveRawStringToFile
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// TArray<unsigned char>          Content                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FString                 FilePath                       (Parm, ZeroConstructor)
+
+void UCreativeModeBlueprintLibrary::SaveRawStringToFile(TArray<unsigned char> Content, const struct FString& FilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SaveRawStringToFile");
+
+	UCreativeModeBlueprintLibrary_SaveRawStringToFile_Params params;
+	params.Content = Content;
+	params.FilePath = FilePath;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4224,7 +4546,7 @@ void UCreativeModeBlueprintLibrary::SaveStringToFile(const struct FString& Strin
 
 void UCreativeModeBlueprintLibrary::SaveAssetStringToFile(const struct FString& String, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.SaveAssetStringToFile");
 
@@ -4251,7 +4573,7 @@ void UCreativeModeBlueprintLibrary::SaveAssetStringToFile(const struct FString& 
 
 struct FRotator UCreativeModeBlueprintLibrary::RotatorCrossInverse(const struct FRotator& Rot1, const struct FRotator& Rot2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.RotatorCrossInverse");
 
@@ -4280,7 +4602,7 @@ struct FRotator UCreativeModeBlueprintLibrary::RotatorCrossInverse(const struct 
 
 struct FRotator UCreativeModeBlueprintLibrary::RotatorCross(const struct FRotator& Rot1, const struct FRotator& Rot2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.RotatorCross");
 
@@ -4309,7 +4631,7 @@ struct FRotator UCreativeModeBlueprintLibrary::RotatorCross(const struct FRotato
 
 struct FVector UCreativeModeBlueprintLibrary::Rotation2Vector(const struct FRotator& Rotator, int Axis)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.Rotation2Vector");
 
@@ -4337,7 +4659,7 @@ struct FVector UCreativeModeBlueprintLibrary::Rotation2Vector(const struct FRota
 
 void UCreativeModeBlueprintLibrary::RenameObject(class UObject* Object, const struct FString& NewName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.RenameObject");
 
@@ -4362,7 +4684,7 @@ void UCreativeModeBlueprintLibrary::RenameObject(class UObject* Object, const st
 
 void UCreativeModeBlueprintLibrary::RecreatePhysicsState(class UPrimitiveComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.RecreatePhysicsState");
 
@@ -4388,7 +4710,7 @@ void UCreativeModeBlueprintLibrary::RecreatePhysicsState(class UPrimitiveCompone
 
 struct FQuat UCreativeModeBlueprintLibrary::QuatCrossInverse(const struct FQuat& Quat1, const struct FQuat& Quat2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.QuatCrossInverse");
 
@@ -4417,7 +4739,7 @@ struct FQuat UCreativeModeBlueprintLibrary::QuatCrossInverse(const struct FQuat&
 
 struct FQuat UCreativeModeBlueprintLibrary::QuatCross(const struct FQuat& Quat1, const struct FQuat& Quat2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.QuatCross");
 
@@ -4444,7 +4766,7 @@ struct FQuat UCreativeModeBlueprintLibrary::QuatCross(const struct FQuat& Quat1,
 
 struct FString UCreativeModeBlueprintLibrary::ProjectSavedDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ProjectSavedDir");
 
@@ -4469,7 +4791,7 @@ struct FString UCreativeModeBlueprintLibrary::ProjectSavedDir()
 
 struct FString UCreativeModeBlueprintLibrary::ProjectContentDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ProjectContentDir");
 
@@ -4494,7 +4816,7 @@ struct FString UCreativeModeBlueprintLibrary::ProjectContentDir()
 
 void UCreativeModeBlueprintLibrary::PopulateParticleProperties(class UParticleSystemComponent* ParticleSystemComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.PopulateParticleProperties");
 
@@ -4521,11 +4843,11 @@ void UCreativeModeBlueprintLibrary::PopulateParticleProperties(class UParticleSy
 // bool                           bEaseIn                        (Parm, ZeroConstructor, IsPlainOldData)
 // float                          OverTime                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bForceShortestRotationPath     (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EMoveComponentAction> MoveAction                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EMoveComponentAction> MoveAction                     (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeModeBlueprintLibrary::MoveComponentToNoLatent(class USceneComponent* Component, const struct FVector& TargetRelativeLocation, const struct FRotator& TargetRelativeRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<enum EMoveComponentAction> MoveAction)
+void UCreativeModeBlueprintLibrary::MoveComponentToNoLatent(class USceneComponent* Component, const struct FVector& TargetRelativeLocation, const struct FRotator& TargetRelativeRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<EMoveComponentAction> MoveAction)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.MoveComponentToNoLatent");
 
@@ -4559,11 +4881,11 @@ void UCreativeModeBlueprintLibrary::MoveComponentToNoLatent(class USceneComponen
 // bool                           bEaseIn                        (Parm, ZeroConstructor, IsPlainOldData)
 // float                          OverTime                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bForceShortestRotationPath     (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EMoveComponentAction> MoveAction                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EMoveComponentAction> MoveAction                     (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeModeBlueprintLibrary::MoveComponentTo(class USceneComponent* Component, const struct FVector& WorldLocation, const struct FRotator& WorldRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<enum EMoveComponentAction> MoveAction)
+void UCreativeModeBlueprintLibrary::MoveComponentTo(class USceneComponent* Component, const struct FVector& WorldLocation, const struct FRotator& WorldRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, TEnumAsByte<EMoveComponentAction> MoveAction)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.MoveComponentTo");
 
@@ -4602,7 +4924,7 @@ void UCreativeModeBlueprintLibrary::MoveComponentTo(class USceneComponent* Compo
 
 void UCreativeModeBlueprintLibrary::MinAreaRectangle(class UObject* WorldContextObject, TArray<struct FVector> InPoints, const struct FVector& SampleSurfaceNormal, bool bDebugDraw, struct FRotator* OutRectRotation, float* OutRectLengthX, float* OutRectLengthY, struct FVector* OutRectCenter, TArray<int>* PolyVertIndices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.MinAreaRectangle");
 
@@ -4641,7 +4963,7 @@ void UCreativeModeBlueprintLibrary::MinAreaRectangle(class UObject* WorldContext
 
 struct FString UCreativeModeBlueprintLibrary::MD5HashByteArray(TArray<unsigned char> inArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.MD5HashByteArray");
 
@@ -4668,7 +4990,7 @@ struct FString UCreativeModeBlueprintLibrary::MD5HashByteArray(TArray<unsigned c
 
 struct FString UCreativeModeBlueprintLibrary::MD5HashAnsiString(const struct FString& str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.MD5HashAnsiString");
 
@@ -4696,7 +5018,7 @@ struct FString UCreativeModeBlueprintLibrary::MD5HashAnsiString(const struct FSt
 
 bool UCreativeModeBlueprintLibrary::Lz4DecompressData(TArray<unsigned char> CompressedData, TArray<unsigned char>* DecompressedData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.Lz4DecompressData");
 
@@ -4727,7 +5049,7 @@ bool UCreativeModeBlueprintLibrary::Lz4DecompressData(TArray<unsigned char> Comp
 
 bool UCreativeModeBlueprintLibrary::Lz4CompressData(TArray<unsigned char> UncompressedData, TArray<unsigned char>* CompressedData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.Lz4CompressData");
 
@@ -4749,6 +5071,33 @@ bool UCreativeModeBlueprintLibrary::Lz4CompressData(TArray<unsigned char> Uncomp
 }
 
 
+// Function Creative.CreativeModeBlueprintLibrary.LoadRawFileToString
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 FilePath                       (Parm, ZeroConstructor)
+// TArray<unsigned char>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<unsigned char> UCreativeModeBlueprintLibrary::LoadRawFileToString(const struct FString& FilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.LoadRawFileToString");
+
+	UCreativeModeBlueprintLibrary_LoadRawFileToString_Params params;
+	params.FilePath = FilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.CreativeModeBlueprintLibrary.LoadFileToStringByFullPath
 // (Final, Native, Static, Public)
 // Parameters:
@@ -4757,7 +5106,7 @@ bool UCreativeModeBlueprintLibrary::Lz4CompressData(TArray<unsigned char> Uncomp
 
 struct FString UCreativeModeBlueprintLibrary::LoadFileToStringByFullPath(const struct FString& FullPathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.LoadFileToStringByFullPath");
 
@@ -4784,7 +5133,7 @@ struct FString UCreativeModeBlueprintLibrary::LoadFileToStringByFullPath(const s
 
 TArray<unsigned char> UCreativeModeBlueprintLibrary::LoadFileToArrayByFullPath(const struct FString& FullPathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.LoadFileToArrayByFullPath");
 
@@ -4811,7 +5160,7 @@ TArray<unsigned char> UCreativeModeBlueprintLibrary::LoadFileToArrayByFullPath(c
 
 struct FString UCreativeModeBlueprintLibrary::LoadAssetFileToString(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.LoadAssetFileToString");
 
@@ -4841,7 +5190,7 @@ struct FString UCreativeModeBlueprintLibrary::LoadAssetFileToString(const struct
 
 class USceneComponent* UCreativeModeBlueprintLibrary::LineTraceTouchComponent(const struct FVector2D& TouchPos, class APlayerController* PlayerController, TArray<class AActor*> IgnoreActors, struct FVector* TouchHitLoc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.LineTraceTouchComponent");
 
@@ -4876,7 +5225,7 @@ class USceneComponent* UCreativeModeBlueprintLibrary::LineTraceTouchComponent(co
 
 int UCreativeModeBlueprintLibrary::LineTraceTouchAxis(const struct FVector2D& TouchPos, class APlayerController* PlayerController, TArray<class AActor*> IgnoreActors, struct FVector* TouchHitLoc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.LineTraceTouchAxis");
 
@@ -4911,7 +5260,7 @@ int UCreativeModeBlueprintLibrary::LineTraceTouchAxis(const struct FVector2D& To
 
 struct FString UCreativeModeBlueprintLibrary::LineTraceInstance(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<class AActor*> IgnoreActors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.LineTraceInstance");
 
@@ -4920,6 +5269,31 @@ struct FString UCreativeModeBlueprintLibrary::LineTraceInstance(class UObject* W
 	params.Start = Start;
 	params.End = End;
 	params.IgnoreActors = IgnoreActors;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.IsWindows
+// (Final, Native, Static, Public)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UCreativeModeBlueprintLibrary::IsWindows()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsWindows");
+
+	UCreativeModeBlueprintLibrary_IsWindows_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -4944,7 +5318,7 @@ struct FString UCreativeModeBlueprintLibrary::LineTraceInstance(class UObject* W
 
 bool UCreativeModeBlueprintLibrary::IsPointWithinRotatedBounds(const struct FVector& BoxCenter, const struct FVector& BoxExtent, float YawDegrees, const struct FVector& Point)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsPointWithinRotatedBounds");
 
@@ -4975,7 +5349,7 @@ bool UCreativeModeBlueprintLibrary::IsPointWithinRotatedBounds(const struct FVec
 
 bool UCreativeModeBlueprintLibrary::IsPointInVolume(class AVolume* Volume, const struct FVector& Position)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsPointInVolume");
 
@@ -5003,7 +5377,7 @@ bool UCreativeModeBlueprintLibrary::IsPointInVolume(class AVolume* Volume, const
 
 bool UCreativeModeBlueprintLibrary::IsPhysicsStateCreated(class UPrimitiveComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsPhysicsStateCreated");
 
@@ -5029,7 +5403,7 @@ bool UCreativeModeBlueprintLibrary::IsPhysicsStateCreated(class UPrimitiveCompon
 
 bool UCreativeModeBlueprintLibrary::IsPersistentModeEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsPersistentModeEnabled");
 
@@ -5054,7 +5428,7 @@ bool UCreativeModeBlueprintLibrary::IsPersistentModeEnabled()
 
 bool UCreativeModeBlueprintLibrary::IsPerformanceSensitive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsPerformanceSensitive");
 
@@ -5079,7 +5453,7 @@ bool UCreativeModeBlueprintLibrary::IsPerformanceSensitive()
 
 bool UCreativeModeBlueprintLibrary::IsOfflineBuild()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsOfflineBuild");
 
@@ -5104,7 +5478,7 @@ bool UCreativeModeBlueprintLibrary::IsOfflineBuild()
 
 bool UCreativeModeBlueprintLibrary::IsMCPModeEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsMCPModeEnabled");
 
@@ -5129,7 +5503,7 @@ bool UCreativeModeBlueprintLibrary::IsMCPModeEnabled()
 
 bool UCreativeModeBlueprintLibrary::IsLLMEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsLLMEnabled");
 
@@ -5155,7 +5529,7 @@ bool UCreativeModeBlueprintLibrary::IsLLMEnabled()
 
 bool UCreativeModeBlueprintLibrary::IsCreativeMode(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsCreativeMode");
 
@@ -5186,7 +5560,7 @@ bool UCreativeModeBlueprintLibrary::IsCreativeMode(class UWorld* World)
 
 bool UCreativeModeBlueprintLibrary::IsBoxOverlapWithRotatedBox(const struct FVector& StaticBoxCenter, const struct FVector& StaticBoxExtent, const struct FVector& RotatedBoxCenter, const struct FVector& RotatedBoxExtent, float RotatedBoxYaw)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsBoxOverlapWithRotatedBox");
 
@@ -5209,6 +5583,43 @@ bool UCreativeModeBlueprintLibrary::IsBoxOverlapWithRotatedBox(const struct FVec
 }
 
 
+// Function Creative.CreativeModeBlueprintLibrary.IsAABBVisible
+// (Final, Native, Static, Public, HasOutParms, HasDefaults)
+// Parameters:
+// TArray<struct FBox>            TargetBoxs                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FString>         InstanceIDs                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FVector                 FarPlanePoint                  (Parm, IsPlainOldData)
+// struct FVector                 CameraForward                  (Parm, IsPlainOldData)
+// TArray<float>                  PlanesParams                   (Parm, OutParm, ZeroConstructor)
+// TArray<struct FString>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<struct FString> UCreativeModeBlueprintLibrary::IsAABBVisible(TArray<struct FBox> TargetBoxs, TArray<struct FString> InstanceIDs, const struct FVector& FarPlanePoint, const struct FVector& CameraForward, TArray<float>* PlanesParams)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IsAABBVisible");
+
+	UCreativeModeBlueprintLibrary_IsAABBVisible_Params params;
+	params.TargetBoxs = TargetBoxs;
+	params.InstanceIDs = InstanceIDs;
+	params.FarPlanePoint = FarPlanePoint;
+	params.CameraForward = CameraForward;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (PlanesParams != nullptr)
+		*PlanesParams = params.PlanesParams;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.CreativeModeBlueprintLibrary.IgnoreClientMovementErrorChecksAndCorrection
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -5217,7 +5628,7 @@ bool UCreativeModeBlueprintLibrary::IsBoxOverlapWithRotatedBox(const struct FVec
 
 void UCreativeModeBlueprintLibrary::IgnoreClientMovementErrorChecksAndCorrection(class ACharacter* Charcter, bool bIsIgnore)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.IgnoreClientMovementErrorChecksAndCorrection");
 
@@ -5247,7 +5658,7 @@ void UCreativeModeBlueprintLibrary::IgnoreClientMovementErrorChecksAndCorrection
 
 int UCreativeModeBlueprintLibrary::HideEnvironmentalActorsInSceneCapture(class USceneCaptureComponent2D* SceneCapture, class ADirectionalLight* LightToKeep, bool bHideSkyBox, bool bHideEnvironmentLights, bool bHideAtmosphere)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.HideEnvironmentalActorsInSceneCapture");
 
@@ -5281,7 +5692,7 @@ int UCreativeModeBlueprintLibrary::HideEnvironmentalActorsInSceneCapture(class U
 
 void UCreativeModeBlueprintLibrary::GetWidgetRect(class UWidget* Widget, int* X1, int* Y1, int* x2, int* y2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetWidgetRect");
 
@@ -5316,7 +5727,7 @@ void UCreativeModeBlueprintLibrary::GetWidgetRect(class UWidget* Widget, int* X1
 
 struct FString UCreativeModeBlueprintLibrary::GetUrlValue(class UObject* WorldContext, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetUrlValue");
 
@@ -5344,12 +5755,39 @@ struct FString UCreativeModeBlueprintLibrary::GetUrlValue(class UObject* WorldCo
 
 struct FString UCreativeModeBlueprintLibrary::GetUObjAssetPath(class UObject* Level)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetUObjAssetPath");
 
 	UCreativeModeBlueprintLibrary_GetUObjAssetPath_Params params;
 	params.Level = Level;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.GetUClassName
+// (Final, Native, Static, Public)
+// Parameters:
+// class UClass*                  UClass                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UCreativeModeBlueprintLibrary::GetUClassName(class UClass* UClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetUClassName");
+
+	UCreativeModeBlueprintLibrary_GetUClassName_Params params;
+	params.UClass = UClass;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5372,7 +5810,7 @@ struct FString UCreativeModeBlueprintLibrary::GetUObjAssetPath(class UObject* Le
 
 bool UCreativeModeBlueprintLibrary::GetSyncDataIsEqual(struct FNetAvatarSyncData* SyncDataFirst, struct FNetAvatarSyncData* SyncDataSecond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetSyncDataIsEqual");
 
@@ -5403,7 +5841,7 @@ bool UCreativeModeBlueprintLibrary::GetSyncDataIsEqual(struct FNetAvatarSyncData
 
 int UCreativeModeBlueprintLibrary::GetRTValidMaxArea(class UTextureRenderTarget2D* TextureTarget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetRTValidMaxArea");
 
@@ -5432,7 +5870,7 @@ int UCreativeModeBlueprintLibrary::GetRTValidMaxArea(class UTextureRenderTarget2
 
 int UCreativeModeBlueprintLibrary::GetReplicateAddDataArrayVaildNum(class UObject* WorldContextObject, const struct FReplicateAddDataArray& ReplicateAddDataArray, int StartIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetReplicateAddDataArrayVaildNum");
 
@@ -5462,7 +5900,7 @@ int UCreativeModeBlueprintLibrary::GetReplicateAddDataArrayVaildNum(class UObjec
 
 struct FTransform UCreativeModeBlueprintLibrary::GetRelativeTransform(const struct FTransform& Base, const struct FTransform& Other)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetRelativeTransform");
 
@@ -5489,7 +5927,7 @@ struct FTransform UCreativeModeBlueprintLibrary::GetRelativeTransform(const stru
 
 float UCreativeModeBlueprintLibrary::GetPlatformSeconds()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetPlatformSeconds");
 
@@ -5516,7 +5954,7 @@ float UCreativeModeBlueprintLibrary::GetPlatformSeconds()
 
 void UCreativeModeBlueprintLibrary::GetObjectScreenPos(class UObject* WorldContextObject, const struct FString& InstanceID, struct FVector2D* Pos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetObjectScreenPos");
 
@@ -5545,12 +5983,39 @@ void UCreativeModeBlueprintLibrary::GetObjectScreenPos(class UObject* WorldConte
 
 TMap<struct FString, class UObject*> UCreativeModeBlueprintLibrary::GetObjectMap(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetObjectMap");
 
 	UCreativeModeBlueprintLibrary_GetObjectMap_Params params;
 	params.WorldContextObject = WorldContextObject;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.GetObjectInheritanceChain
+// (Final, Native, Static, Public)
+// Parameters:
+// class UObject*                 Object                         (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UClass*>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<class UClass*> UCreativeModeBlueprintLibrary::GetObjectInheritanceChain(class UObject* Object)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetObjectInheritanceChain");
+
+	UCreativeModeBlueprintLibrary_GetObjectInheritanceChain_Params params;
+	params.Object = Object;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5575,7 +6040,7 @@ TMap<struct FString, class UObject*> UCreativeModeBlueprintLibrary::GetObjectMap
 
 float UCreativeModeBlueprintLibrary::GetMinFovForAABB(const struct FVector& CameraLocation, const struct FRotator& CameraRotation, TArray<struct FVector> AABBVertices, float AspectRatio)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetMinFovForAABB");
 
@@ -5604,7 +6069,7 @@ float UCreativeModeBlueprintLibrary::GetMinFovForAABB(const struct FVector& Came
 
 float UCreativeModeBlueprintLibrary::GetLastInteractionElapsedTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetLastInteractionElapsedTime");
 
@@ -5631,7 +6096,7 @@ float UCreativeModeBlueprintLibrary::GetLastInteractionElapsedTime()
 
 void UCreativeModeBlueprintLibrary::GetInstanceSpaceBoundingBox(const struct FString& InstanceID, float Yaw, class UCreativeAbilitySystemComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetInstanceSpaceBoundingBox");
 
@@ -5650,6 +6115,35 @@ void UCreativeModeBlueprintLibrary::GetInstanceSpaceBoundingBox(const struct FSt
 }
 
 
+// Function Creative.CreativeModeBlueprintLibrary.GetImageSize
+// (Final, Native, Static, Public, HasOutParms, HasDefaults)
+// Parameters:
+// TArray<unsigned char>          ImageBuffer                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// int                            Format                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector2D               ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+
+struct FVector2D UCreativeModeBlueprintLibrary::GetImageSize(TArray<unsigned char> ImageBuffer, int Format)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetImageSize");
+
+	UCreativeModeBlueprintLibrary_GetImageSize_Params params;
+	params.ImageBuffer = ImageBuffer;
+	params.Format = Format;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.CreativeModeBlueprintLibrary.GetGroupInstanceSpaceBoundingBox
 // (Final, Native, Static, Public, HasOutParms)
 // Parameters:
@@ -5661,7 +6155,7 @@ void UCreativeModeBlueprintLibrary::GetInstanceSpaceBoundingBox(const struct FSt
 
 void UCreativeModeBlueprintLibrary::GetGroupInstanceSpaceBoundingBox(const struct FString& GroupID, TArray<struct FString> ChildrenIds, TMap<struct FString, struct FTransform> ChildrenTransforms, float Yaw, class UCreativeAbilitySystemComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetGroupInstanceSpaceBoundingBox");
 
@@ -5690,7 +6184,7 @@ void UCreativeModeBlueprintLibrary::GetGroupInstanceSpaceBoundingBox(const struc
 
 class UWorld* UCreativeModeBlueprintLibrary::GetGameWorld(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetGameWorld");
 
@@ -5717,7 +6211,7 @@ class UWorld* UCreativeModeBlueprintLibrary::GetGameWorld(class UObject* WorldCo
 
 struct FString UCreativeModeBlueprintLibrary::GetGameTypeAsString(ECreativeModeGameType GameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetGameTypeAsString");
 
@@ -5744,7 +6238,7 @@ struct FString UCreativeModeBlueprintLibrary::GetGameTypeAsString(ECreativeModeG
 
 TArray<unsigned char> UCreativeModeBlueprintLibrary::GetDataConttentByInstanceDataContent(struct FCreativeInstanceDataContent* InstanceDataContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetDataConttentByInstanceDataContent");
 
@@ -5774,7 +6268,7 @@ TArray<unsigned char> UCreativeModeBlueprintLibrary::GetDataConttentByInstanceDa
 
 struct FString UCreativeModeBlueprintLibrary::GetCustomEventHashString(const struct FString& CustomEventName, bool isSampleHash)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCustomEventHashString");
 
@@ -5801,7 +6295,7 @@ struct FString UCreativeModeBlueprintLibrary::GetCustomEventHashString(const str
 
 uint32_t UCreativeModeBlueprintLibrary::GetCurFrameNumber()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCurFrameNumber");
 
@@ -5826,7 +6320,7 @@ uint32_t UCreativeModeBlueprintLibrary::GetCurFrameNumber()
 
 uint32_t UCreativeModeBlueprintLibrary::GetCurFrameCounter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCurFrameCounter");
 
@@ -5856,7 +6350,7 @@ uint32_t UCreativeModeBlueprintLibrary::GetCurFrameCounter()
 
 int UCreativeModeBlueprintLibrary::GetCubeTouchAxisFace(class UWidget* Widget, float Width, float Distance, struct FVector2D* ScreenPosition, struct FVector* OffsetLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCubeTouchAxisFace");
 
@@ -5890,7 +6384,7 @@ int UCreativeModeBlueprintLibrary::GetCubeTouchAxisFace(class UWidget* Widget, f
 
 struct FNetAvatarSyncData UCreativeModeBlueprintLibrary::GetCopiedAvatarSyncData(const struct FNetAvatarSyncData& SyncData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCopiedAvatarSyncData");
 
@@ -5919,7 +6413,7 @@ struct FNetAvatarSyncData UCreativeModeBlueprintLibrary::GetCopiedAvatarSyncData
 
 bool UCreativeModeBlueprintLibrary::GetContentPatchData(TArray<unsigned char> OldData, TArray<unsigned char> DiffData, TArray<unsigned char>* outNewData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetContentPatchData");
 
@@ -5952,7 +6446,7 @@ bool UCreativeModeBlueprintLibrary::GetContentPatchData(TArray<unsigned char> Ol
 
 bool UCreativeModeBlueprintLibrary::GetContentDiffData(TArray<unsigned char> OldData, TArray<unsigned char> NewData, TArray<unsigned char>* outDiffData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetContentDiffData");
 
@@ -5983,12 +6477,39 @@ bool UCreativeModeBlueprintLibrary::GetContentDiffData(TArray<unsigned char> Old
 
 struct FString UCreativeModeBlueprintLibrary::GetCommandLineValue(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCommandLineValue");
 
 	UCreativeModeBlueprintLibrary_GetCommandLineValue_Params params;
 	params.Key = Key;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.GetClassInheritanceChain
+// (Final, Native, Static, Public)
+// Parameters:
+// class UClass*                  UClass                         (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UClass*>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<class UClass*> UCreativeModeBlueprintLibrary::GetClassInheritanceChain(class UClass* UClass)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetClassInheritanceChain");
+
+	UCreativeModeBlueprintLibrary_GetClassInheritanceChain_Params params;
+	params.UClass = UClass;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -6011,13 +6532,40 @@ struct FString UCreativeModeBlueprintLibrary::GetCommandLineValue(const struct F
 
 struct FVector UCreativeModeBlueprintLibrary::GetCharacterSocketPos(class ACharacter* Character, const struct FName& SocketName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCharacterSocketPos");
 
 	UCreativeModeBlueprintLibrary_GetCharacterSocketPos_Params params;
 	params.Character = Character;
 	params.SocketName = SocketName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.GetCameraFrustumPlane
+// (Final, Native, Static, Public)
+// Parameters:
+// class UObject*                 WorldContext                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// TArray<struct FVector4>        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<struct FVector4> UCreativeModeBlueprintLibrary::GetCameraFrustumPlane(class UObject* WorldContext)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetCameraFrustumPlane");
+
+	UCreativeModeBlueprintLibrary_GetCameraFrustumPlane_Params params;
+	params.WorldContext = WorldContext;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -6042,7 +6590,7 @@ struct FVector UCreativeModeBlueprintLibrary::GetCharacterSocketPos(class AChara
 
 void UCreativeModeBlueprintLibrary::GetBoundingBoxOfInstances(class UObject* WorldContext, TArray<struct FString> Ids, float Yaw, struct FVector* Center, struct FVector* BoxExtent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetBoundingBoxOfInstances");
 
@@ -6076,7 +6624,7 @@ void UCreativeModeBlueprintLibrary::GetBoundingBoxOfInstances(class UObject* Wor
 
 void UCreativeModeBlueprintLibrary::GetBoundingBoxOfActors(TArray<class AActor*> Actors, float Yaw, struct FVector* Center, struct FVector* BoxExtent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetBoundingBoxOfActors");
 
@@ -6107,7 +6655,7 @@ void UCreativeModeBlueprintLibrary::GetBoundingBoxOfActors(TArray<class AActor*>
 
 struct FString UCreativeModeBlueprintLibrary::GetBigUObject(int MaxN)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetBigUObject");
 
@@ -6134,7 +6682,7 @@ struct FString UCreativeModeBlueprintLibrary::GetBigUObject(int MaxN)
 
 struct FString UCreativeModeBlueprintLibrary::GetBigLuaValue(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetBigLuaValue");
 
@@ -6165,7 +6713,7 @@ struct FString UCreativeModeBlueprintLibrary::GetBigLuaValue(class UObject* Worl
 
 TArray<struct FString> UCreativeModeBlueprintLibrary::GetAllInstanceInScreenBox(class UObject* WorldContext, const struct FVector2D& Start, const struct FVector2D& End, int CheckDistance, int CountLimit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetAllInstanceInScreenBox");
 
@@ -6199,7 +6747,7 @@ TArray<struct FString> UCreativeModeBlueprintLibrary::GetAllInstanceInScreenBox(
 
 TArray<struct FString> UCreativeModeBlueprintLibrary::GetAllInstanceInBox(class UObject* WorldContext, const struct FVector& Center, const struct FVector& Extent, const struct FRotator& Rotator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetAllInstanceInBox");
 
@@ -6208,6 +6756,53 @@ TArray<struct FString> UCreativeModeBlueprintLibrary::GetAllInstanceInBox(class 
 	params.Center = Center;
 	params.Extent = Extent;
 	params.Rotator = Rotator;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeBlueprintLibrary.GetActorsInCameraFrustumByLayer
+// (Final, Native, Static, Public, HasOutParms, HasDefaults)
+// Parameters:
+// class UWorld*                  World                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Origin                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// struct FRotator                CameraRot                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// float                          MaxDistance                    (Parm, ZeroConstructor, IsPlainOldData)
+// float                          AngleWidth                     (Parm, ZeroConstructor, IsPlainOldData)
+// float                          AngleHeight                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            NumLayers                      (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// bool                           bDrawDebug                     (Parm, ZeroConstructor, IsPlainOldData)
+// struct FColor                  DebugColor                     (Parm, IsPlainOldData)
+// float                          DebugLifeTime                  (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<struct FOverlapResult>  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<struct FOverlapResult> UCreativeModeBlueprintLibrary::GetActorsInCameraFrustumByLayer(class UWorld* World, const struct FVector& Origin, const struct FRotator& CameraRot, float MaxDistance, float AngleWidth, float AngleHeight, int NumLayers, TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes, bool bDrawDebug, const struct FColor& DebugColor, float DebugLifeTime)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetActorsInCameraFrustumByLayer");
+
+	UCreativeModeBlueprintLibrary_GetActorsInCameraFrustumByLayer_Params params;
+	params.World = World;
+	params.Origin = Origin;
+	params.CameraRot = CameraRot;
+	params.MaxDistance = MaxDistance;
+	params.AngleWidth = AngleWidth;
+	params.AngleHeight = AngleHeight;
+	params.NumLayers = NumLayers;
+	params.ObjectTypes = ObjectTypes;
+	params.bDrawDebug = bDrawDebug;
+	params.DebugColor = DebugColor;
+	params.DebugLifeTime = DebugLifeTime;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -6232,7 +6827,7 @@ TArray<struct FString> UCreativeModeBlueprintLibrary::GetAllInstanceInBox(class 
 
 void UCreativeModeBlueprintLibrary::GetActorMeshBoundsByTag(class AActor* Actor, const struct FString& IgnoreTag, const struct FString& IncludeTag, struct FVector* Origin, struct FVector* BoxExtent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GetActorMeshBoundsByTag");
 
@@ -6263,7 +6858,7 @@ void UCreativeModeBlueprintLibrary::GetActorMeshBoundsByTag(class AActor* Actor,
 
 uint32_t UCreativeModeBlueprintLibrary::GenerateUIntGuid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GenerateUIntGuid");
 
@@ -6289,7 +6884,7 @@ uint32_t UCreativeModeBlueprintLibrary::GenerateUIntGuid()
 
 TArray<int> UCreativeModeBlueprintLibrary::GenerateMemoryArray(int SizeInMB)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GenerateMemoryArray");
 
@@ -6315,7 +6910,7 @@ TArray<int> UCreativeModeBlueprintLibrary::GenerateMemoryArray(int SizeInMB)
 
 struct FString UCreativeModeBlueprintLibrary::GenerateGuid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.GenerateGuid");
 
@@ -6342,7 +6937,7 @@ struct FString UCreativeModeBlueprintLibrary::GenerateGuid()
 
 class AActor* UCreativeModeBlueprintLibrary::FindAttachedActorByName(class AActor* ParentActor, const struct FString& PartialName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.FindAttachedActorByName");
 
@@ -6371,7 +6966,7 @@ class AActor* UCreativeModeBlueprintLibrary::FindAttachedActorByName(class AActo
 
 class AActor* UCreativeModeBlueprintLibrary::FindActorByName(class UWorld* World, const struct FString& PartialName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.FindActorByName");
 
@@ -6399,7 +6994,7 @@ class AActor* UCreativeModeBlueprintLibrary::FindActorByName(class UWorld* World
 
 struct FString UCreativeModeBlueprintLibrary::EncryptToBase64(TArray<unsigned char> inArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.EncryptToBase64");
 
@@ -6426,7 +7021,7 @@ struct FString UCreativeModeBlueprintLibrary::EncryptToBase64(TArray<unsigned ch
 
 void UCreativeModeBlueprintLibrary::EditorMessage(const struct FString& Message, float Time)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.EditorMessage");
 
@@ -6452,7 +7047,7 @@ void UCreativeModeBlueprintLibrary::EditorMessage(const struct FString& Message,
 
 void UCreativeModeBlueprintLibrary::DumpCurrentWorldObjects(class UObject* WorldContextObject, const struct FString& Suffix)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DumpCurrentWorldObjects");
 
@@ -6478,7 +7073,7 @@ void UCreativeModeBlueprintLibrary::DumpCurrentWorldObjects(class UObject* World
 
 void UCreativeModeBlueprintLibrary::DumpActorNetReplicate(class UObject* WorldContext, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DumpActorNetReplicate");
 
@@ -6509,7 +7104,7 @@ void UCreativeModeBlueprintLibrary::DumpActorNetReplicate(class UObject* WorldCo
 
 void UCreativeModeBlueprintLibrary::DrawLine(const struct FPaintContext& InContext, const struct FVector2D& Start, const struct FVector2D& End, const struct FLinearColor& LineColor, int LayerOffset, float LineThickness, bool bAntiAlias)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DrawLine");
 
@@ -6548,7 +7143,7 @@ void UCreativeModeBlueprintLibrary::DrawLine(const struct FPaintContext& InConte
 
 void UCreativeModeBlueprintLibrary::DrawGrids(const struct FPaintContext& InContext, float CellSize, int CellCountX, int CellCountY, float PosOffsetX, float PosOffsetY, const struct FLinearColor& LineColor, float LineThickness, bool bAntiAlias, int LayerOffset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DrawGrids");
 
@@ -6588,7 +7183,7 @@ void UCreativeModeBlueprintLibrary::DrawGrids(const struct FPaintContext& InCont
 
 void UCreativeModeBlueprintLibrary::DrawGridCell(const struct FPaintContext& InContext, float CellSize, int CellIndexX, int CellIndexY, float PosOffsetX, float PosOffsetY, const struct FLinearColor& LineColor, int LayerOffset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DrawGridCell");
 
@@ -6619,7 +7214,7 @@ void UCreativeModeBlueprintLibrary::DrawGridCell(const struct FPaintContext& InC
 
 void UCreativeModeBlueprintLibrary::DestroyUObject(class UObject* Object)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DestroyUObject");
 
@@ -6645,7 +7240,7 @@ void UCreativeModeBlueprintLibrary::DestroyUObject(class UObject* Object)
 
 struct FString UCreativeModeBlueprintLibrary::DestroyInstance(class UObject* WorldContextObject, const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DestroyInstance");
 
@@ -6673,7 +7268,7 @@ struct FString UCreativeModeBlueprintLibrary::DestroyInstance(class UObject* Wor
 
 TArray<unsigned char> UCreativeModeBlueprintLibrary::DecryptFromBase64(const struct FString& inString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DecryptFromBase64");
 
@@ -6692,6 +7287,40 @@ TArray<unsigned char> UCreativeModeBlueprintLibrary::DecryptFromBase64(const str
 }
 
 
+// Function Creative.CreativeModeBlueprintLibrary.DarwCameraFrustumDebugLine
+// (Final, Native, Static, Public, HasOutParms, HasDefaults)
+// Parameters:
+// class UObject*                 WorldContext                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 FarPlanePoint                  (Parm, IsPlainOldData)
+// struct FVector                 CameraForward                  (Parm, IsPlainOldData)
+// TArray<float>                  PlanesParams                   (Parm, OutParm, ZeroConstructor)
+// float                          Duration                       (Parm, ZeroConstructor, IsPlainOldData)
+
+void UCreativeModeBlueprintLibrary::DarwCameraFrustumDebugLine(class UObject* WorldContext, const struct FVector& FarPlanePoint, const struct FVector& CameraForward, float Duration, TArray<float>* PlanesParams)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.DarwCameraFrustumDebugLine");
+
+	UCreativeModeBlueprintLibrary_DarwCameraFrustumDebugLine_Params params;
+	params.WorldContext = WorldContext;
+	params.FarPlanePoint = FarPlanePoint;
+	params.CameraForward = CameraForward;
+	params.Duration = Duration;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (PlanesParams != nullptr)
+		*PlanesParams = params.PlanesParams;
+}
+
+
 // Function Creative.CreativeModeBlueprintLibrary.CreativeInstanceDataContent
 // (Final, Native, Static, Public, HasOutParms)
 // Parameters:
@@ -6700,7 +7329,7 @@ TArray<unsigned char> UCreativeModeBlueprintLibrary::DecryptFromBase64(const str
 
 struct FCreativeInstanceDataContent UCreativeModeBlueprintLibrary::CreativeInstanceDataContent(TArray<unsigned char> DataContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.CreativeInstanceDataContent");
 
@@ -6720,19 +7349,19 @@ struct FCreativeInstanceDataContent UCreativeModeBlueprintLibrary::CreativeInsta
 
 
 // Function Creative.CreativeModeBlueprintLibrary.CreateCreativeMovingAudio
-// (Final, Native, Static, Public, BlueprintCallable)
+// (Final, Native, Static, Public)
 // Parameters:
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Sequence                       (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ConfigId                       (Parm, ZeroConstructor, IsPlainOldData)
+// uint64_t                       ConfigId                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bShowMark                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Duration                       (Parm, ZeroConstructor, IsPlainOldData)
 // float                          Volume                         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FCreativeMovingAudio    ReturnValue                    (Parm, OutParm, ReturnParm)
 
-struct FCreativeMovingAudio UCreativeModeBlueprintLibrary::CreateCreativeMovingAudio(class AActor* Actor, int Sequence, int ConfigId, bool bShowMark, int Duration, float Volume)
+struct FCreativeMovingAudio UCreativeModeBlueprintLibrary::CreateCreativeMovingAudio(class AActor* Actor, int Sequence, uint64_t ConfigId, bool bShowMark, int Duration, float Volume)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.CreateCreativeMovingAudio");
 
@@ -6764,7 +7393,7 @@ struct FCreativeMovingAudio UCreativeModeBlueprintLibrary::CreateCreativeMovingA
 
 struct FRotator UCreativeModeBlueprintLibrary::ConvertForwardToRotator(const struct FVector& Forward)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ConvertForwardToRotator");
 
@@ -6793,7 +7422,7 @@ struct FRotator UCreativeModeBlueprintLibrary::ConvertForwardToRotator(const str
 
 void UCreativeModeBlueprintLibrary::ClearGrassByMaskTexture(class UObject* WorldContextObject, class UTexture2D* MaskTexture, const struct FVector2D& WorldStart, const struct FVector2D& WorldEnd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.ClearGrassByMaskTexture");
 
@@ -6822,7 +7451,7 @@ void UCreativeModeBlueprintLibrary::ClearGrassByMaskTexture(class UObject* World
 
 bool UCreativeModeBlueprintLibrary::CheckWidgetsOverlap(class UWidget* Widget1, class UWidget* Widget2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.CheckWidgetsOverlap");
 
@@ -6845,7 +7474,7 @@ bool UCreativeModeBlueprintLibrary::CheckWidgetsOverlap(class UWidget* Widget1, 
 // Function Creative.CreativeModeBlueprintLibrary.CharacterPlayCreativeDynamicMontage
 // (Final, Native, Static, Public)
 // Parameters:
-// class ASTExtraCharacter*       CharacterOwner                 (Parm, ZeroConstructor, IsPlainOldData)
+// class ACharacter*              CharacterOwner                 (Parm, ZeroConstructor, IsPlainOldData)
 // class UAnimSequenceBase*       Asset                          (Parm, ZeroConstructor, IsPlainOldData)
 // float                          BlendInTime                    (Parm, ZeroConstructor, IsPlainOldData)
 // float                          BlendOutTime                   (Parm, ZeroConstructor, IsPlainOldData)
@@ -6855,9 +7484,9 @@ bool UCreativeModeBlueprintLibrary::CheckWidgetsOverlap(class UWidget* Widget1, 
 // float                          InTimeToStartMontageAt         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FName                   SlotNodeName                   (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeModeBlueprintLibrary::CharacterPlayCreativeDynamicMontage(class ASTExtraCharacter* CharacterOwner, class UAnimSequenceBase* Asset, float BlendInTime, float BlendOutTime, float InPlayRate, int LoopCount, bool bIsLoop, float InTimeToStartMontageAt, const struct FName& SlotNodeName)
+void UCreativeModeBlueprintLibrary::CharacterPlayCreativeDynamicMontage(class ACharacter* CharacterOwner, class UAnimSequenceBase* Asset, float BlendInTime, float BlendOutTime, float InPlayRate, int LoopCount, bool bIsLoop, float InTimeToStartMontageAt, const struct FName& SlotNodeName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.CharacterPlayCreativeDynamicMontage");
 
@@ -6895,7 +7524,7 @@ void UCreativeModeBlueprintLibrary::CharacterPlayCreativeDynamicMontage(class AS
 
 bool UCreativeModeBlueprintLibrary::CaptureWidget(class UObject* WorldContext, class UClass* WidgetClass, struct FString* Path, int* X, int* Y, bool* FlipY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.CaptureWidget");
 
@@ -6930,15 +7559,15 @@ bool UCreativeModeBlueprintLibrary::CaptureWidget(class UObject* WorldContext, c
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 BoxPos                         (Parm, IsPlainOldData)
 // struct FVector                 BoxExtent                      (Parm, IsPlainOldData)
-// TArray<TEnumAsByte<enum ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<TEnumAsByte<ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class UClass*                  ComponentClassFilter           (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<class AActor*>          ActorsToIgnore                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // TArray<class UPrimitiveComponent*> OutComponents                  (Parm, OutParm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCreativeModeBlueprintLibrary::BoxOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents)
+bool UCreativeModeBlueprintLibrary::BoxOverlapComponentsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ComponentClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComponents)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.BoxOverlapComponentsByChannel");
 
@@ -6979,7 +7608,7 @@ bool UCreativeModeBlueprintLibrary::BoxOverlapComponentsByChannel(class UObject*
 
 bool UCreativeModeBlueprintLibrary::BoxOverlapComponents(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<int> ObjectTypes, class UClass* CompClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class UPrimitiveComponent*>* OutComps)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.BoxOverlapComponents");
 
@@ -7012,15 +7641,15 @@ bool UCreativeModeBlueprintLibrary::BoxOverlapComponents(class UObject* WorldCon
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 BoxPos                         (Parm, IsPlainOldData)
 // struct FVector                 BoxExtent                      (Parm, IsPlainOldData)
-// TArray<TEnumAsByte<enum ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<TEnumAsByte<ECollisionChannel>> Channels                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class UClass*                  ActorClassFilter               (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<class AActor*>          ActorsToIgnore                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // TArray<class AActor*>          OutActors                      (Parm, OutParm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCreativeModeBlueprintLibrary::BoxOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<enum ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors)
+bool UCreativeModeBlueprintLibrary::BoxOverlapActorsByChannel(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<TEnumAsByte<ECollisionChannel>> Channels, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.BoxOverlapActorsByChannel");
 
@@ -7061,7 +7690,7 @@ bool UCreativeModeBlueprintLibrary::BoxOverlapActorsByChannel(class UObject* Wor
 
 bool UCreativeModeBlueprintLibrary::BoxOverlapActors(class UObject* WorldContextObject, const struct FVector& BoxPos, const struct FVector& BoxExtent, TArray<int> ObjectTypes, class UClass* ActorClassFilter, TArray<class AActor*> ActorsToIgnore, TArray<class AActor*>* OutActors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.BoxOverlapActors");
 
@@ -7097,7 +7726,7 @@ bool UCreativeModeBlueprintLibrary::BoxOverlapActors(class UObject* WorldContext
 // struct FVector                 EndLocation                    (Parm, IsPlainOldData)
 // float                          LaunchSpeed                    (Parm, ZeroConstructor, IsPlainOldData)
 // float                          OverrideGravityZ               (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ESuggestProjVelocityTraceOption> TraceOption                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESuggestProjVelocityTraceOption> TraceOption                    (Parm, ZeroConstructor, IsPlainOldData)
 // float                          CollisionRadius                (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bFavorHighArc                  (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bDrawDebug                     (Parm, ZeroConstructor, IsPlainOldData)
@@ -7105,9 +7734,9 @@ bool UCreativeModeBlueprintLibrary::BoxOverlapActors(class UObject* WorldContext
 // TArray<class AActor*>          ActorsToIgnore                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCreativeModeBlueprintLibrary::BlueprintSuggestProjectileVelocity(class UObject* WorldContextObject, TArray<class AActor*> ActorsToIgnore, const struct FVector& StartLocation, const struct FVector& EndLocation, float LaunchSpeed, float OverrideGravityZ, TEnumAsByte<enum ESuggestProjVelocityTraceOption> TraceOption, float CollisionRadius, bool bFavorHighArc, bool bDrawDebug, float Tolerance, struct FVector* TossVelocity)
+bool UCreativeModeBlueprintLibrary::BlueprintSuggestProjectileVelocity(class UObject* WorldContextObject, TArray<class AActor*> ActorsToIgnore, const struct FVector& StartLocation, const struct FVector& EndLocation, float LaunchSpeed, float OverrideGravityZ, TEnumAsByte<ESuggestProjVelocityTraceOption> TraceOption, float CollisionRadius, bool bFavorHighArc, bool bDrawDebug, float Tolerance, struct FVector* TossVelocity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.BlueprintSuggestProjectileVelocity");
 
@@ -7152,7 +7781,7 @@ bool UCreativeModeBlueprintLibrary::BlueprintSuggestProjectileVelocity(class UOb
 
 class AActor* UCreativeModeBlueprintLibrary::BeginDeferredActorSpawnWithName(class UObject* WorldContextObject, class UClass* ActorClass, const struct FTransform& SpawnTransform, const struct FName& Name, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, class AActor* Owner)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.BeginDeferredActorSpawnWithName");
 
@@ -7185,7 +7814,7 @@ class AActor* UCreativeModeBlueprintLibrary::BeginDeferredActorSpawnWithName(cla
 
 void UCreativeModeBlueprintLibrary::AttachOutlineBox(class AActor* AttachedActor, float Yaw, class AActor* OutlineBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.AttachOutlineBox");
 
@@ -7214,7 +7843,7 @@ void UCreativeModeBlueprintLibrary::AttachOutlineBox(class AActor* AttachedActor
 
 void UCreativeModeBlueprintLibrary::AttachInstanceOutlineBox(const struct FString& AttachedId, bool bGridEnable, float Yaw, class AActor* OutlineBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.AttachInstanceOutlineBox");
 
@@ -7244,7 +7873,7 @@ void UCreativeModeBlueprintLibrary::AttachInstanceOutlineBox(const struct FStrin
 
 void UCreativeModeBlueprintLibrary::AttachGroupOutlineBox(class AActor* GroupObject, TArray<class AActor*> AttachedActors, float Yaw, class AActor* OutlineBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.AttachGroupOutlineBox");
 
@@ -7276,7 +7905,7 @@ void UCreativeModeBlueprintLibrary::AttachGroupOutlineBox(class AActor* GroupObj
 
 void UCreativeModeBlueprintLibrary::AttachGroupInstanceOutlineBox(const struct FString& GroupID, TArray<struct FString> ChildrenIds, TMap<struct FString, struct FTransform> ChildrenTransforms, bool bGridEnable, float Yaw, class AActor* OutlineBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.AttachGroupInstanceOutlineBox");
 
@@ -7312,7 +7941,7 @@ void UCreativeModeBlueprintLibrary::AttachGroupInstanceOutlineBox(const struct F
 
 bool UCreativeModeBlueprintLibrary::AimSceneCaptureAtPawnSocket(class USceneComponent* SceneCapture, class APawn* TargetPawn, const struct FName& SocketName, float Distance, float FOV, const struct FVector& Offset, float PawnHeight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.AimSceneCaptureAtPawnSocket");
 
@@ -7344,7 +7973,7 @@ bool UCreativeModeBlueprintLibrary::AimSceneCaptureAtPawnSocket(class USceneComp
 
 void UCreativeModeBlueprintLibrary::AddOnScreenDebugMessage(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeBlueprintLibrary.AddOnScreenDebugMessage");
 
@@ -7366,7 +7995,7 @@ void UCreativeModeBlueprintLibrary::AddOnScreenDebugMessage(const struct FString
 
 void ACreativeModeLuaSpectatorPawn::UnRegistLuaTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLuaSpectatorPawn.UnRegistLuaTick");
 
@@ -7389,7 +8018,7 @@ void ACreativeModeLuaSpectatorPawn::UnRegistLuaTick()
 
 void ACreativeModeLuaSpectatorPawn::SetController(class APlayerController* InController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLuaSpectatorPawn.SetController");
 
@@ -7411,7 +8040,7 @@ void ACreativeModeLuaSpectatorPawn::SetController(class APlayerController* InCon
 
 void ACreativeModeLuaSpectatorPawn::SetAbilitySystemComponentAvatar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLuaSpectatorPawn.SetAbilitySystemComponentAvatar");
 
@@ -7434,7 +8063,7 @@ void ACreativeModeLuaSpectatorPawn::SetAbilitySystemComponentAvatar()
 
 void ACreativeModeLuaSpectatorPawn::RegistLuaTick(float TickInterval)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLuaSpectatorPawn.RegistLuaTick");
 
@@ -7458,7 +8087,7 @@ void ACreativeModeLuaSpectatorPawn::RegistLuaTick(float TickInterval)
 
 void ACreativeModeLuaSpectatorPawn::MoveRight(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLuaSpectatorPawn.MoveRight");
 
@@ -7482,7 +8111,7 @@ void ACreativeModeLuaSpectatorPawn::MoveRight(float Val)
 
 void ACreativeModeLuaSpectatorPawn::MoveForward(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLuaSpectatorPawn.MoveForward");
 
@@ -7506,7 +8135,7 @@ void ACreativeModeLuaSpectatorPawn::MoveForward(float Val)
 
 class USpringArmComponent* ACreativeModeLuaSpectatorPawn::GetActiveSpringArm()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLuaSpectatorPawn.GetActiveSpringArm");
 
@@ -7529,7 +8158,7 @@ class USpringArmComponent* ACreativeModeLuaSpectatorPawn::GetActiveSpringArm()
 
 void ACreativeCameraDeviceActor::UpdateFollowStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.UpdateFollowStatus");
 
@@ -7550,7 +8179,7 @@ void ACreativeCameraDeviceActor::UpdateFollowStatus()
 
 void ACreativeCameraDeviceActor::UpdateFollowPos()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.UpdateFollowPos");
 
@@ -7574,7 +8203,7 @@ void ACreativeCameraDeviceActor::UpdateFollowPos()
 
 void ACreativeCameraDeviceActor::RotCamera(float Yaw, float Pitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.RotCamera");
 
@@ -7599,7 +8228,7 @@ void ACreativeCameraDeviceActor::RotCamera(float Yaw, float Pitch)
 
 void ACreativeCameraDeviceActor::OnEndViewTarget(class APlayerController* PC)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.OnEndViewTarget");
 
@@ -7623,7 +8252,7 @@ void ACreativeCameraDeviceActor::OnEndViewTarget(class APlayerController* PC)
 
 void ACreativeCameraDeviceActor::OnBecomeViewTarget(class APlayerController* PC)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.OnBecomeViewTarget");
 
@@ -7647,7 +8276,7 @@ void ACreativeCameraDeviceActor::OnBecomeViewTarget(class APlayerController* PC)
 
 void ACreativeCameraDeviceActor::MoveUp(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.MoveUp");
 
@@ -7671,7 +8300,7 @@ void ACreativeCameraDeviceActor::MoveUp(float Val)
 
 void ACreativeCameraDeviceActor::MoveRight(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.MoveRight");
 
@@ -7695,7 +8324,7 @@ void ACreativeCameraDeviceActor::MoveRight(float Val)
 
 void ACreativeCameraDeviceActor::MoveForward(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.MoveForward");
 
@@ -7719,7 +8348,7 @@ void ACreativeCameraDeviceActor::MoveForward(float Val)
 
 void ACreativeCameraDeviceActor::LerpToTarget(float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.LerpToTarget");
 
@@ -7743,7 +8372,7 @@ void ACreativeCameraDeviceActor::LerpToTarget(float DeltaSeconds)
 
 void ACreativeCameraDeviceActor::LerpActor(float BlendPct)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.LerpActor");
 
@@ -7768,7 +8397,7 @@ void ACreativeCameraDeviceActor::LerpActor(float BlendPct)
 
 bool ACreativeCameraDeviceActor::IsVecInvalid(const struct FVector& Vect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.IsVecInvalid");
 
@@ -7795,7 +8424,7 @@ bool ACreativeCameraDeviceActor::IsVecInvalid(const struct FVector& Vect)
 
 bool ACreativeCameraDeviceActor::IsRotInvalid(const struct FRotator& Rot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.IsRotInvalid");
 
@@ -7821,7 +8450,7 @@ bool ACreativeCameraDeviceActor::IsRotInvalid(const struct FRotator& Rot)
 
 void ACreativeCameraDeviceActor::InterpolateToSpringRotation(float LerpValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.InterpolateToSpringRotation");
 
@@ -7845,7 +8474,7 @@ void ACreativeCameraDeviceActor::InterpolateToSpringRotation(float LerpValue)
 
 bool ACreativeCameraDeviceActor::InitStartPoint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.InitStartPoint");
 
@@ -7871,7 +8500,7 @@ bool ACreativeCameraDeviceActor::InitStartPoint()
 
 class USpringArmComponent* ACreativeCameraDeviceActor::GetSpringArmForCamera(class UCameraComponent* Camera)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.GetSpringArmForCamera");
 
@@ -7898,7 +8527,7 @@ class USpringArmComponent* ACreativeCameraDeviceActor::GetSpringArmForCamera(cla
 
 float ACreativeCameraDeviceActor::GetLerpTime(float BlendTimeToGo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.GetLerpTime");
 
@@ -7924,7 +8553,7 @@ float ACreativeCameraDeviceActor::GetLerpTime(float BlendTimeToGo)
 
 struct FVector ACreativeCameraDeviceActor::GetCameraPointPosition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.GetCameraPointPosition");
 
@@ -7949,7 +8578,7 @@ struct FVector ACreativeCameraDeviceActor::GetCameraPointPosition()
 
 class UCameraComponent* ACreativeCameraDeviceActor::GetActiveCamera()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraDeviceActor.GetActiveCamera");
 
@@ -7974,7 +8603,7 @@ class UCameraComponent* ACreativeCameraDeviceActor::GetActiveCamera()
 
 struct FVector UCreativeCameraGetter::GetCameraLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCameraGetter.GetCameraLocation");
 
@@ -7999,7 +8628,7 @@ struct FVector UCreativeCameraGetter::GetCameraLocation()
 
 void UCreativeCustomCameraComponent::InterpolateToTargetRotation(float LerpValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomCameraComponent.InterpolateToTargetRotation");
 
@@ -8023,7 +8652,7 @@ void UCreativeCustomCameraComponent::InterpolateToTargetRotation(float LerpValue
 
 void UCreativeCustomCameraComponent::InterpolateToTargetFOV(float LerpValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomCameraComponent.InterpolateToTargetFOV");
 
@@ -8048,7 +8677,7 @@ void UCreativeCustomCameraComponent::InterpolateToTargetFOV(float LerpValue)
 
 void UCreativeCustomParameterManager::RemoveCustomParameter(uint32_t ParameterID, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomParameterManager.RemoveCustomParameter");
 
@@ -8073,7 +8702,7 @@ void UCreativeCustomParameterManager::RemoveCustomParameter(uint32_t ParameterID
 
 void UCreativeCustomParameterManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomParameterManager.ReceiveOnGameStateBeginPlay");
 
@@ -8096,7 +8725,7 @@ void UCreativeCustomParameterManager::ReceiveOnGameStateBeginPlay(class AGameSta
 
 void UCreativeCustomParameterManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomParameterManager.OnGameStateBeginPlay");
 
@@ -8121,7 +8750,7 @@ void UCreativeCustomParameterManager::OnGameStateBeginPlay(class AGameStateBase*
 
 void UCreativeCustomParameterManager::GetCustomParameterDataNodes(uint32_t ParameterID, TArray<struct FCreativeCustomParameterDataNode>* OutCustomParameterDataNodes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomParameterManager.GetCustomParameterDataNodes");
 
@@ -8149,7 +8778,7 @@ void UCreativeCustomParameterManager::GetCustomParameterDataNodes(uint32_t Param
 
 class UCreativeCustomParameterManager* UCreativeCustomParameterManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomParameterManager.Get");
 
@@ -8178,7 +8807,7 @@ class UCreativeCustomParameterManager* UCreativeCustomParameterManager::Get(clas
 
 void UCreativeCustomParameterManager::ChangeCustomParameter(uint32_t ParameterID, uint32_t PlayerKey, int8_t TeamID, TArray<unsigned char> DataContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomParameterManager.ChangeCustomParameter");
 
@@ -8209,7 +8838,7 @@ void UCreativeCustomParameterManager::ChangeCustomParameter(uint32_t ParameterID
 
 void UCreativeCustomParameterManager::AddCustomParameter(uint32_t ParameterID, uint32_t PlayerKey, int8_t TeamID, TArray<unsigned char> DataContent, bool bPropagateToChildren)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomParameterManager.AddCustomParameter");
 
@@ -8238,7 +8867,7 @@ void UCreativeCustomParameterManager::AddCustomParameter(uint32_t ParameterID, u
 
 TArray<unsigned char> UCreativeCustomPrefabComponent::GetNodeSegmentContent(struct FCreativePrefabDataSegment* Segment)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomPrefabComponent.GetNodeSegmentContent");
 
@@ -8268,7 +8897,7 @@ TArray<unsigned char> UCreativeCustomPrefabComponent::GetNodeSegmentContent(stru
 
 bool UCreativeCustomPrefabComponent::AddInstanceDataContent(TArray<unsigned char> Content, struct FCreativeCustomPrefabDataSegment* Segment)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeCustomPrefabComponent.AddInstanceDataContent");
 
@@ -8297,7 +8926,7 @@ bool UCreativeCustomPrefabComponent::AddInstanceDataContent(TArray<unsigned char
 
 void ACreativeDestructibleMeshActor::SetDamageEnable(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDestructibleMeshActor.SetDamageEnable");
 
@@ -8324,7 +8953,7 @@ void ACreativeDestructibleMeshActor::SetDamageEnable(bool bEnable)
 
 void ACreativeDestructibleMeshActor::OnHit(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDestructibleMeshActor.OnHit");
 
@@ -8351,7 +8980,7 @@ void ACreativeDestructibleMeshActor::OnHit(class AActor* SelfActor, class AActor
 
 void ACreativeDestructibleMeshActor::InitHP(float fHP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDestructibleMeshActor.InitHP");
 
@@ -8375,7 +9004,7 @@ void ACreativeDestructibleMeshActor::InitHP(float fHP)
 
 class UPhotonDestructibleMeshComponent* ACreativeDestructibleMeshActor::GetFracturedComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDestructibleMeshActor.GetFracturedComponent");
 
@@ -8400,7 +9029,7 @@ class UPhotonDestructibleMeshComponent* ACreativeDestructibleMeshActor::GetFract
 
 void ACreativeDestructibleMeshActor::AddCanDamageWeapon(const struct FString& Weapon)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDestructibleMeshActor.AddCanDamageWeapon");
 
@@ -8422,7 +9051,7 @@ void ACreativeDestructibleMeshActor::AddCanDamageWeapon(const struct FString& We
 
 void ACreativeDestructibleMeshBatchActor::RemoveAllCacheReplicationData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDestructibleMeshBatchActor.RemoveAllCacheReplicationData");
 
@@ -8446,7 +9075,7 @@ void ACreativeDestructibleMeshBatchActor::RemoveAllCacheReplicationData()
 
 void UCreativeDropItemCurveAnimComponent::StopItemClient(int Group, class AActor* Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDropItemCurveAnimComponent.StopItemClient");
 
@@ -8471,7 +9100,7 @@ void UCreativeDropItemCurveAnimComponent::StopItemClient(int Group, class AActor
 
 void UCreativeDropItemCurveAnimComponent::OnParticleSystemComponentFinished(class UParticleSystemComponent* PSC)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDropItemCurveAnimComponent.OnParticleSystemComponentFinished");
 
@@ -8499,7 +9128,7 @@ void UCreativeDropItemCurveAnimComponent::OnParticleSystemComponentFinished(clas
 
 bool UCreativeDropItemCurveAnimComponent::IsInViewport(class APlayerController* PC, int ViewportX, int ViewportY, const struct FVector& CenterPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDropItemCurveAnimComponent.IsInViewport");
 
@@ -8529,7 +9158,7 @@ bool UCreativeDropItemCurveAnimComponent::IsInViewport(class APlayerController* 
 
 void UCreativeDropItemCurveAnimComponent::InitConfig(int BaseConfigID, struct FCreativeDropAnimConfig* Config)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDropItemCurveAnimComponent.InitConfig");
 
@@ -8557,7 +9186,7 @@ void UCreativeDropItemCurveAnimComponent::InitConfig(int BaseConfigID, struct FC
 
 void UCreativeDropItemCurveAnimComponent::DynamicReduceItemGroup(int CurrentGroup, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDropItemCurveAnimComponent.DynamicReduceItemGroup");
 
@@ -8584,7 +9213,7 @@ void UCreativeDropItemCurveAnimComponent::DynamicReduceItemGroup(int CurrentGrou
 
 void UCreativeDropItemCurveAnimComponent::DecodeDropItemGroupID(int GroupID, int* ConfigId, int* Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDropItemCurveAnimComponent.DecodeDropItemGroupID");
 
@@ -8616,7 +9245,7 @@ void UCreativeDropItemCurveAnimComponent::DecodeDropItemGroupID(int GroupID, int
 
 void UCreativeDropItemCurveAnimComponent::AddItemClient(int Group, const struct FVector& InStartPos, const struct FVector& InEndPos, class AActor* Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeDropItemCurveAnimComponent.AddItemClient");
 
@@ -8645,7 +9274,7 @@ void UCreativeDropItemCurveAnimComponent::AddItemClient(int Group, const struct 
 
 bool UCreativeModeLiteComponent::OnReturnToPool(class UObject* NewOuter, uint32_t RecycledSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLiteComponent.OnReturnToPool");
 
@@ -8675,7 +9304,7 @@ bool UCreativeModeLiteComponent::OnReturnToPool(class UObject* NewOuter, uint32_
 
 class UObject* UCreativeModeLiteComponent::GetObjectFromPool(int PoolId, class UObject* NewOuter, struct FString* InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeLiteComponent.GetObjectFromPool");
 
@@ -8705,7 +9334,7 @@ class UObject* UCreativeModeLiteComponent::GetObjectFromPool(int PoolId, class U
 
 void UCreativeModeGameModeBaseComponent::SetGameStateComponent(class UCreativeModeGameStateBaseComponent* NewGameStateComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameModeBaseComponent.SetGameStateComponent");
 
@@ -8727,7 +9356,7 @@ void UCreativeModeGameModeBaseComponent::SetGameStateComponent(class UCreativeMo
 
 void UCreativeModeGameModeBaseComponent::ReceivePostInitializeComponents()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameModeBaseComponent.ReceivePostInitializeComponents");
 
@@ -8749,7 +9378,7 @@ void UCreativeModeGameModeBaseComponent::ReceivePostInitializeComponents()
 
 ECreativeModeGameType UCreativeModeGameModeBaseComponent::GetGameType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameModeBaseComponent.GetGameType");
 
@@ -8774,7 +9403,7 @@ ECreativeModeGameType UCreativeModeGameModeBaseComponent::GetGameType()
 
 class ACreativeModeGameMode* UCreativeModeGameModeBaseComponent::GetGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameModeBaseComponent.GetGameMode");
 
@@ -8802,7 +9431,7 @@ class ACreativeModeGameMode* UCreativeModeGameModeBaseComponent::GetGameMode()
 
 class AActor* UCreativeModeGameModeBaseComponent::FindPlayerStartOverride(class AController* Player, const struct FString& IncomingName, bool bIsRevive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameModeBaseComponent.FindPlayerStartOverride");
 
@@ -8830,7 +9459,7 @@ class AActor* UCreativeModeGameModeBaseComponent::FindPlayerStartOverride(class 
 
 void ACreativeModeEditorObject::UnregisterLiteComponent(class ULiteComponent* Component, bool Destroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.UnregisterLiteComponent");
 
@@ -8857,7 +9486,7 @@ void ACreativeModeEditorObject::UnregisterLiteComponent(class ULiteComponent* Co
 
 void ACreativeModeEditorObject::ShowSelectedEffect(bool ShowEff, const struct FLinearColor& OutlineColor, float OutlineThickness)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ShowSelectedEffect");
 
@@ -8885,7 +9514,7 @@ void ACreativeModeEditorObject::ShowSelectedEffect(bool ShowEff, const struct FL
 
 void ACreativeModeEditorObject::ShowOutlineEffect(bool ShowEff, class UMaterialInstance* Material, const struct FString& IgnoreTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ShowOutlineEffect");
 
@@ -8911,7 +9540,7 @@ void ACreativeModeEditorObject::ShowOutlineEffect(bool ShowEff, class UMaterialI
 
 void ACreativeModeEditorObject::SetPhotographyMode(bool bIsCapturing)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.SetPhotographyMode");
 
@@ -8935,7 +9564,7 @@ void ACreativeModeEditorObject::SetPhotographyMode(bool bIsCapturing)
 
 void ACreativeModeEditorObject::SetLiteComponentTickEnable(bool bEnabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.SetLiteComponentTickEnable");
 
@@ -8959,7 +9588,7 @@ void ACreativeModeEditorObject::SetLiteComponentTickEnable(bool bEnabled)
 
 void ACreativeModeEditorObject::SetActorState(ECreativeModeActorState NewState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.SetActorState");
 
@@ -8983,7 +9612,7 @@ void ACreativeModeEditorObject::SetActorState(ECreativeModeActorState NewState)
 
 void ACreativeModeEditorObject::ReturnObjectToPool(class UObject* Obj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ReturnObjectToPool");
 
@@ -9007,7 +9636,7 @@ void ACreativeModeEditorObject::ReturnObjectToPool(class UObject* Obj)
 
 void ACreativeModeEditorObject::ReturnObjectsToPool(TArray<class UObject*> Objs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ReturnObjectsToPool");
 
@@ -9031,7 +9660,7 @@ void ACreativeModeEditorObject::ReturnObjectsToPool(TArray<class UObject*> Objs)
 
 void ACreativeModeEditorObject::RegisterLiteComponent(class ULiteComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.RegisterLiteComponent");
 
@@ -9053,7 +9682,7 @@ void ACreativeModeEditorObject::RegisterLiteComponent(class ULiteComponent* Comp
 
 void ACreativeModeEditorObject::ReceivePostBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ReceivePostBeginPlay");
 
@@ -9075,7 +9704,7 @@ void ACreativeModeEditorObject::ReceivePostBeginPlay()
 
 bool ACreativeModeEditorObject::ReceiveIsDedicatedServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ReceiveIsDedicatedServer");
 
@@ -9098,7 +9727,7 @@ bool ACreativeModeEditorObject::ReceiveIsDedicatedServer()
 
 void ACreativeModeEditorObject::ReceiveInitializeLiteComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ReceiveInitializeLiteComponent");
 
@@ -9118,7 +9747,7 @@ void ACreativeModeEditorObject::ReceiveInitializeLiteComponent()
 
 void ACreativeModeEditorObject::ReceiveInitCanEditFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ReceiveInitCanEditFlag");
 
@@ -9140,7 +9769,7 @@ void ACreativeModeEditorObject::ReceiveInitCanEditFlag()
 
 bool ACreativeModeEditorObject::ReceiveHasAuthority()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.ReceiveHasAuthority");
 
@@ -9165,7 +9794,7 @@ bool ACreativeModeEditorObject::ReceiveHasAuthority()
 
 void ACreativeModeEditorObject::OnRepActorStateOverride(ECreativeModeActorState NewState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.OnRepActorStateOverride");
 
@@ -9188,7 +9817,7 @@ void ACreativeModeEditorObject::OnRepActorStateOverride(ECreativeModeActorState 
 
 void ACreativeModeEditorObject::OnRep_ActorState(ECreativeModeActorState LastState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.OnRep_ActorState");
 
@@ -9212,7 +9841,7 @@ void ACreativeModeEditorObject::OnRep_ActorState(ECreativeModeActorState LastSta
 
 bool ACreativeModeEditorObject::InCollisionState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.InCollisionState");
 
@@ -9238,7 +9867,7 @@ bool ACreativeModeEditorObject::InCollisionState()
 
 TArray<class UObject*> ACreativeModeEditorObject::GetObjectsFromPool(TArray<struct FCreativePoolGetObjectParamInfo>* ObjectParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.GetObjectsFromPool");
 
@@ -9269,7 +9898,7 @@ TArray<class UObject*> ACreativeModeEditorObject::GetObjectsFromPool(TArray<stru
 
 class UObject* ACreativeModeEditorObject::GetObjectFromPool(int PoolId, class UObject* NewOuter, struct FString* InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.GetObjectFromPool");
 
@@ -9299,7 +9928,7 @@ class UObject* ACreativeModeEditorObject::GetObjectFromPool(int PoolId, class UO
 
 ECreativeModeActorState ACreativeModeEditorObject::GetActorState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.GetActorState");
 
@@ -9325,7 +9954,7 @@ ECreativeModeActorState ACreativeModeEditorObject::GetActorState()
 
 class ULiteComponent* ACreativeModeEditorObject::FindLiteComponentByClass(class UClass* ComponentClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeEditorObject.FindLiteComponentByClass");
 
@@ -9349,7 +9978,7 @@ class ULiteComponent* ACreativeModeEditorObject::FindLiteComponentByClass(class 
 
 void UCreativeModeGameStateBaseComponent::ReceivePostInitializeComponents()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateBaseComponent.ReceivePostInitializeComponents");
 
@@ -9371,7 +10000,7 @@ void UCreativeModeGameStateBaseComponent::ReceivePostInitializeComponents()
 
 ECreativeModePlayState UCreativeModeGameStateBaseComponent::GetPlayState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateBaseComponent.GetPlayState");
 
@@ -9396,7 +10025,7 @@ ECreativeModePlayState UCreativeModeGameStateBaseComponent::GetPlayState()
 
 ECreativeModeGameType UCreativeModeGameStateBaseComponent::GetGameType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateBaseComponent.GetGameType");
 
@@ -9421,7 +10050,7 @@ ECreativeModeGameType UCreativeModeGameStateBaseComponent::GetGameType()
 
 class ACreativeModeGameState* UCreativeModeGameStateBaseComponent::GetGameState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateBaseComponent.GetGameState");
 
@@ -9444,7 +10073,7 @@ class ACreativeModeGameState* UCreativeModeGameStateBaseComponent::GetGameState(
 
 void UCreativeEventObject::ReHookObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeEventObject.ReHookObject");
 
@@ -9465,7 +10094,7 @@ void UCreativeEventObject::ReHookObject()
 
 void UCreativeEventObject::EventObjectConditionalBeginDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeEventObject.EventObjectConditionalBeginDestroy");
 
@@ -9492,7 +10121,7 @@ void UCreativeEventObject::EventObjectConditionalBeginDestroy()
 
 TArray<int64_t> UCreativeGameAPIObject::GetPlayersInSphere(const struct FVector& SphereCenter, float SphereRadius, int TeamID, bool FilterNonPlayable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameAPIObject.GetPlayersInSphere");
 
@@ -9527,7 +10156,7 @@ TArray<int64_t> UCreativeGameAPIObject::GetPlayersInSphere(const struct FVector&
 
 TArray<int64_t> UCreativeGameAPIObject::GetPlayersInRectangle(const struct FVector& RectangleCenter, float RectangleX, float RectangleY, float RectangleZ, int TeamID, bool FilterNonPlayable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameAPIObject.GetPlayersInRectangle");
 
@@ -9558,7 +10187,7 @@ TArray<int64_t> UCreativeGameAPIObject::GetPlayersInRectangle(const struct FVect
 
 void ACreativeModeGameMode::UnregisterLiteComponent(class ULiteComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.UnregisterLiteComponent");
 
@@ -9582,7 +10211,7 @@ void ACreativeModeGameMode::UnregisterLiteComponent(class ULiteComponent* Compon
 
 void ACreativeModeGameMode::SetShowDropEffectEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.SetShowDropEffectEnable");
 
@@ -9606,7 +10235,7 @@ void ACreativeModeGameMode::SetShowDropEffectEnable(bool Enable)
 
 void ACreativeModeGameMode::SetLiteComponentTickEnable(bool bEnabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.SetLiteComponentTickEnable");
 
@@ -9630,7 +10259,7 @@ void ACreativeModeGameMode::SetLiteComponentTickEnable(bool bEnabled)
 
 void ACreativeModeGameMode::SetItemGenerate(bool bIsOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.SetItemGenerate");
 
@@ -9654,7 +10283,7 @@ void ACreativeModeGameMode::SetItemGenerate(bool bIsOpen)
 
 void ACreativeModeGameMode::SetCurrentGameType(ECreativeModeGameType NewGameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.SetCurrentGameType");
 
@@ -9678,7 +10307,7 @@ void ACreativeModeGameMode::SetCurrentGameType(ECreativeModeGameType NewGameType
 
 void ACreativeModeGameMode::ReInitItemGenerate(struct FString* NewItemClassPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.ReInitItemGenerate");
 
@@ -9704,7 +10333,7 @@ void ACreativeModeGameMode::ReInitItemGenerate(struct FString* NewItemClassPath)
 
 void ACreativeModeGameMode::RegisterLiteComponent(class ULiteComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.RegisterLiteComponent");
 
@@ -9726,7 +10355,7 @@ void ACreativeModeGameMode::RegisterLiteComponent(class ULiteComponent* Componen
 
 void ACreativeModeGameMode::ReceiveInitializeLiteComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.ReceiveInitializeLiteComponent");
 
@@ -9748,7 +10377,7 @@ void ACreativeModeGameMode::ReceiveInitializeLiteComponent()
 
 bool ACreativeModeGameMode::IsStandAloneGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.IsStandAloneGameMode");
 
@@ -9773,7 +10402,7 @@ bool ACreativeModeGameMode::IsStandAloneGameMode()
 
 bool ACreativeModeGameMode::IsRestartPlayerUsePawnRotation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.IsRestartPlayerUsePawnRotation");
 
@@ -9798,7 +10427,7 @@ bool ACreativeModeGameMode::IsRestartPlayerUsePawnRotation()
 
 class UCreativeModeGameModeBaseComponent* ACreativeModeGameMode::GetCurrentModeComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.GetCurrentModeComponent");
 
@@ -9823,7 +10452,7 @@ class UCreativeModeGameModeBaseComponent* ACreativeModeGameMode::GetCurrentModeC
 
 int ACreativeModeGameMode::GetCreativeModeRealTeamNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.GetCreativeModeRealTeamNum");
 
@@ -9848,7 +10477,7 @@ int ACreativeModeGameMode::GetCreativeModeRealTeamNum()
 
 TArray<int> ACreativeModeGameMode::GetCreativeModeRealTeamIDs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.GetCreativeModeRealTeamIDs");
 
@@ -9874,7 +10503,7 @@ TArray<int> ACreativeModeGameMode::GetCreativeModeRealTeamIDs()
 
 class ULiteComponent* ACreativeModeGameMode::FindLiteComponentByClass(class UClass* ComponentClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.FindLiteComponentByClass");
 
@@ -9902,7 +10531,7 @@ class ULiteComponent* ACreativeModeGameMode::FindLiteComponentByClass(class UCla
 
 void ACreativeModeGameMode::DSPlayerKickOut(uint64_t UID, const struct FName& PlayerType, const struct FString& ExitReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.DSPlayerKickOut");
 
@@ -9931,7 +10560,7 @@ void ACreativeModeGameMode::DSPlayerKickOut(uint64_t UID, const struct FName& Pl
 
 class AActor* ACreativeModeGameMode::CreativeModeFindPlayerStart(class AController* Player, const struct FString& IncomingName, bool bIsRevive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameMode.CreativeModeFindPlayerStart");
 
@@ -9957,7 +10586,7 @@ class AActor* ACreativeModeGameMode::CreativeModeFindPlayerStart(class AControll
 
 void UCreativeModeGameModeComponent::ReceiveCallPlayStateFunction()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameModeComponent.ReceiveCallPlayStateFunction");
 
@@ -9980,7 +10609,7 @@ void UCreativeModeGameModeComponent::ReceiveCallPlayStateFunction()
 
 void UCreativeModeGameObject::UnregisterLiteComponent(class ULiteComponent* Component, bool Destroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.UnregisterLiteComponent");
 
@@ -10005,7 +10634,7 @@ void UCreativeModeGameObject::UnregisterLiteComponent(class ULiteComponent* Comp
 
 void UCreativeModeGameObject::ReturnObjectToPool(class UObject* Obj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.ReturnObjectToPool");
 
@@ -10029,7 +10658,7 @@ void UCreativeModeGameObject::ReturnObjectToPool(class UObject* Obj)
 
 void UCreativeModeGameObject::ReturnObjectsToPool(TArray<class UObject*> Objs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.ReturnObjectsToPool");
 
@@ -10053,7 +10682,7 @@ void UCreativeModeGameObject::ReturnObjectsToPool(TArray<class UObject*> Objs)
 
 void UCreativeModeGameObject::RegisterLiteComponent(class ULiteComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.RegisterLiteComponent");
 
@@ -10075,7 +10704,7 @@ void UCreativeModeGameObject::RegisterLiteComponent(class ULiteComponent* Compon
 
 void UCreativeModeGameObject::ReceivePostBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.ReceivePostBeginPlay");
 
@@ -10097,7 +10726,7 @@ void UCreativeModeGameObject::ReceivePostBeginPlay()
 
 bool UCreativeModeGameObject::ReceiveIsDedicatedServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.ReceiveIsDedicatedServer");
 
@@ -10122,7 +10751,7 @@ bool UCreativeModeGameObject::ReceiveIsDedicatedServer()
 
 bool UCreativeModeGameObject::ReceiveHasAuthority()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.ReceiveHasAuthority");
 
@@ -10145,7 +10774,7 @@ bool UCreativeModeGameObject::ReceiveHasAuthority()
 
 void UCreativeModeGameObject::ReceiveEndPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.ReceiveEndPlay");
 
@@ -10165,7 +10794,7 @@ void UCreativeModeGameObject::ReceiveEndPlay()
 
 void UCreativeModeGameObject::ReceiveBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.ReceiveBeginPlay");
 
@@ -10188,7 +10817,7 @@ void UCreativeModeGameObject::ReceiveBeginPlay()
 
 TArray<class UObject*> UCreativeModeGameObject::GetObjectsFromPool(TArray<struct FCreativePoolGetObjectParamInfo>* ObjectParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.GetObjectsFromPool");
 
@@ -10219,7 +10848,7 @@ TArray<class UObject*> UCreativeModeGameObject::GetObjectsFromPool(TArray<struct
 
 class UObject* UCreativeModeGameObject::GetObjectFromPool(int PoolId, class UObject* NewOuter, struct FString* InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameObject.GetObjectFromPool");
 
@@ -10249,7 +10878,7 @@ class UObject* UCreativeModeGameObject::GetObjectFromPool(int PoolId, class UObj
 
 void UCreativeGameParameterManager::SetGameParameterResumeNodes(TArray<struct FCreativeGameParameter> GameParameterNodes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.SetGameParameterResumeNodes");
 
@@ -10274,7 +10903,7 @@ void UCreativeGameParameterManager::SetGameParameterResumeNodes(TArray<struct FC
 
 void UCreativeGameParameterManager::RemoveGameParameter(const struct FString& ParameterKey, const struct FString& TemplateID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.RemoveGameParameter");
 
@@ -10299,7 +10928,7 @@ void UCreativeGameParameterManager::RemoveGameParameter(const struct FString& Pa
 
 void UCreativeGameParameterManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.ReceiveOnGameStateBeginPlay");
 
@@ -10323,7 +10952,7 @@ void UCreativeGameParameterManager::ReceiveOnGameStateBeginPlay(class AGameState
 
 void UCreativeGameParameterManager::OnReceivePreGameParameterRemove(const struct FString& ParameterKey, const struct FString& TemplateID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.OnReceivePreGameParameterRemove");
 
@@ -10349,7 +10978,7 @@ void UCreativeGameParameterManager::OnReceivePreGameParameterRemove(const struct
 
 void UCreativeGameParameterManager::OnReceivePostGameParameterChange(const struct FString& ParameterKey, const struct FString& TemplateID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.OnReceivePostGameParameterChange");
 
@@ -10376,7 +11005,7 @@ void UCreativeGameParameterManager::OnReceivePostGameParameterChange(const struc
 
 void UCreativeGameParameterManager::OnReceivePostGameParameterAdd(const struct FString& ParameterKey, const struct FString& TemplateID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.OnReceivePostGameParameterAdd");
 
@@ -10401,7 +11030,7 @@ void UCreativeGameParameterManager::OnReceivePostGameParameterAdd(const struct F
 
 void UCreativeGameParameterManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.OnGameStateBeginPlay");
 
@@ -10426,7 +11055,7 @@ void UCreativeGameParameterManager::OnGameStateBeginPlay(class AGameStateBase* G
 
 TArray<struct FCreativeGameParameter> UCreativeGameParameterManager::GetGameParameterResumeNodes(TArray<uint32_t> ParameterHeadHashs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.GetGameParameterResumeNodes");
 
@@ -10455,7 +11084,7 @@ TArray<struct FCreativeGameParameter> UCreativeGameParameterManager::GetGamePara
 
 bool UCreativeGameParameterManager::GetGameParameterContent(const struct FString& ParameterKey, const struct FString& TemplateID, TArray<unsigned char>* OutContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.GetGameParameterContent");
 
@@ -10486,7 +11115,7 @@ bool UCreativeGameParameterManager::GetGameParameterContent(const struct FString
 
 class UCreativeGameParameterManager* UCreativeGameParameterManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.Get");
 
@@ -10514,7 +11143,7 @@ class UCreativeGameParameterManager* UCreativeGameParameterManager::Get(class UO
 
 void UCreativeGameParameterManager::ChangeGameParameter(const struct FString& ParameterKey, const struct FString& TemplateID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.ChangeGameParameter");
 
@@ -10542,7 +11171,7 @@ void UCreativeGameParameterManager::ChangeGameParameter(const struct FString& Pa
 
 void UCreativeGameParameterManager::AddGameParameter(const struct FString& ParameterKey, const struct FString& TemplateID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGameParameterManager.AddGameParameter");
 
@@ -10568,7 +11197,7 @@ void UCreativeGameParameterManager::AddGameParameter(const struct FString& Param
 
 void ACreativeModeGameState::UnregisterLiteComponent(class ULiteComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.UnregisterLiteComponent");
 
@@ -10592,7 +11221,7 @@ void ACreativeModeGameState::UnregisterLiteComponent(class ULiteComponent* Compo
 
 void ACreativeModeGameState::SetLiteComponentTickEnable(bool bEnabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.SetLiteComponentTickEnable");
 
@@ -10616,7 +11245,7 @@ void ACreativeModeGameState::SetLiteComponentTickEnable(bool bEnabled)
 
 void ACreativeModeGameState::SetCurrentGameType(ECreativeModeGameType NewGameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.SetCurrentGameType");
 
@@ -10641,7 +11270,7 @@ void ACreativeModeGameState::SetCurrentGameType(ECreativeModeGameType NewGameTyp
 
 void ACreativeModeGameState::RPC_Replay_SetInstanceDataContent(uint32_t InstanceID, const struct FCreativeInstanceDataContent& InstanceDataContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.RPC_Replay_SetInstanceDataContent");
 
@@ -10666,7 +11295,7 @@ void ACreativeModeGameState::RPC_Replay_SetInstanceDataContent(uint32_t Instance
 
 void ACreativeModeGameState::RPC_Replay_GeneraicUGC_LuaImpl(TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.RPC_Replay_GeneraicUGC_LuaImpl");
 
@@ -10689,7 +11318,7 @@ void ACreativeModeGameState::RPC_Replay_GeneraicUGC_LuaImpl(TArray<unsigned char
 
 void ACreativeModeGameState::RPC_Replay_GeneraicUGC(TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.RPC_Replay_GeneraicUGC");
 
@@ -10713,7 +11342,7 @@ void ACreativeModeGameState::RPC_Replay_GeneraicUGC(TArray<unsigned char> Conten
 
 void ACreativeModeGameState::RegisterLiteComponent(class ULiteComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.RegisterLiteComponent");
 
@@ -10735,7 +11364,7 @@ void ACreativeModeGameState::RegisterLiteComponent(class ULiteComponent* Compone
 
 void ACreativeModeGameState::ReceiveInitializeLiteComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.ReceiveInitializeLiteComponent");
 
@@ -10755,7 +11384,7 @@ void ACreativeModeGameState::ReceiveInitializeLiteComponent()
 
 void ACreativeModeGameState::ReceiveCreativeCollectGarbage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.ReceiveCreativeCollectGarbage");
 
@@ -10775,7 +11404,7 @@ void ACreativeModeGameState::ReceiveCreativeCollectGarbage()
 
 void ACreativeModeGameState::ReceiveAddContextDataToCrashKit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.ReceiveAddContextDataToCrashKit");
 
@@ -10798,7 +11427,7 @@ void ACreativeModeGameState::ReceiveAddContextDataToCrashKit()
 
 void ACreativeModeGameState::OnViewportSizeChanged(const struct FVector2D& OldViewportSize, const struct FVector2D& NewViewportSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnViewportSizeChanged");
 
@@ -10823,7 +11452,7 @@ void ACreativeModeGameState::OnViewportSizeChanged(const struct FVector2D& OldVi
 
 void ACreativeModeGameState::OnRep_InitializeGameType(ECreativeModeGameType LastInitializeGameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnRep_InitializeGameType");
 
@@ -10847,12 +11476,36 @@ void ACreativeModeGameState::OnRep_InitializeGameType(ECreativeModeGameType Last
 
 void ACreativeModeGameState::OnRep_CurrentStateComponent(class UCreativeModeGameStateBaseComponent* LastComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnRep_CurrentStateComponent");
 
 	ACreativeModeGameState_OnRep_CurrentStateComponent_Params params;
 	params.LastComponent = LastComponent;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Creative.CreativeModeGameState.OnRep_CurrentGameTypeReplicated
+// (Final, Native, Protected)
+// Parameters:
+// ECreativeModeGameType          LastCurrentGameTypeReplicated  (Parm, ZeroConstructor, IsPlainOldData)
+
+void ACreativeModeGameState::OnRep_CurrentGameTypeReplicated(ECreativeModeGameType LastCurrentGameTypeReplicated)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnRep_CurrentGameTypeReplicated");
+
+	ACreativeModeGameState_OnRep_CurrentGameTypeReplicated_Params params;
+	params.LastCurrentGameTypeReplicated = LastCurrentGameTypeReplicated;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -10871,7 +11524,7 @@ void ACreativeModeGameState::OnRep_CurrentStateComponent(class UCreativeModeGame
 
 void ACreativeModeGameState::OnRep_CreativeModTemplateId(int LastCreativeModTemplateId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnRep_CreativeModTemplateId");
 
@@ -10895,7 +11548,7 @@ void ACreativeModeGameState::OnRep_CreativeModTemplateId(int LastCreativeModTemp
 
 void ACreativeModeGameState::OnRep_CreativeModID(int LastCreativeModID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnRep_CreativeModID");
 
@@ -10919,7 +11572,7 @@ void ACreativeModeGameState::OnRep_CreativeModID(int LastCreativeModID)
 
 void ACreativeModeGameState::OnRep_BlockySlotStrings(TArray<struct FExtendedBlockySlotString>* BlockySlotStrings)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnRep_BlockySlotStrings");
 
@@ -10937,6 +11590,30 @@ void ACreativeModeGameState::OnRep_BlockySlotStrings(TArray<struct FExtendedBloc
 }
 
 
+// Function Creative.CreativeModeGameState.OnCurrentStateComponentChanged
+// (Final, Native, Protected)
+// Parameters:
+// class UCreativeModeGameStateBaseComponent* LastComponent                  (Parm, ZeroConstructor, IsPlainOldData)
+
+void ACreativeModeGameState::OnCurrentStateComponentChanged(class UCreativeModeGameStateBaseComponent* LastComponent)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnCurrentStateComponentChanged");
+
+	ACreativeModeGameState_OnCurrentStateComponentChanged_Params params;
+	params.LastComponent = LastComponent;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Creative.CreativeModeGameState.OnClientRecordingStateChange
 // (Final, Native, Public)
 // Parameters:
@@ -10944,7 +11621,7 @@ void ACreativeModeGameState::OnRep_BlockySlotStrings(TArray<struct FExtendedBloc
 
 void ACreativeModeGameState::OnClientRecordingStateChange(EClientRecordingType Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.OnClientRecordingStateChange");
 
@@ -10968,7 +11645,7 @@ void ACreativeModeGameState::OnClientRecordingStateChange(EClientRecordingType T
 
 bool ACreativeModeGameState::IsOfficialGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.IsOfficialGame");
 
@@ -10993,7 +11670,7 @@ bool ACreativeModeGameState::IsOfficialGame()
 
 bool ACreativeModeGameState::IsEditorMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.IsEditorMode");
 
@@ -11018,7 +11695,7 @@ bool ACreativeModeGameState::IsEditorMode()
 
 bool ACreativeModeGameState::IsDemoGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.IsDemoGame");
 
@@ -11043,7 +11720,7 @@ bool ACreativeModeGameState::IsDemoGame()
 
 bool ACreativeModeGameState::IsCreativeMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.IsCreativeMode");
 
@@ -11068,7 +11745,7 @@ bool ACreativeModeGameState::IsCreativeMode()
 
 bool ACreativeModeGameState::IsCreativeEditor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.IsCreativeEditor");
 
@@ -11093,7 +11770,7 @@ bool ACreativeModeGameState::IsCreativeEditor()
 
 bool ACreativeModeGameState::IsAIUseDynamicBehaviorTaskNode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.IsAIUseDynamicBehaviorTaskNode");
 
@@ -11119,7 +11796,7 @@ bool ACreativeModeGameState::IsAIUseDynamicBehaviorTaskNode()
 
 void ACreativeModeGameState::InitCreativeModID(int ModID, int TemplateID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.InitCreativeModID");
 
@@ -11144,7 +11821,7 @@ void ACreativeModeGameState::InitCreativeModID(int ModID, int TemplateID)
 
 ECreativeModePlayState ACreativeModeGameState::GetPlayState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetPlayState");
 
@@ -11169,7 +11846,7 @@ ECreativeModePlayState ACreativeModeGameState::GetPlayState()
 
 ECreativeModeGameType ACreativeModeGameState::GetInitializeGameType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetInitializeGameType");
 
@@ -11200,7 +11877,7 @@ ECreativeModeGameType ACreativeModeGameState::GetInitializeGameType()
 
 TArray<struct FString> ACreativeModeGameState::GetDisableDistanceLevelsOutsideBox(float X, float Y, int W, int L, float RotationAngle, bool bUseFilter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetDisableDistanceLevelsOutsideBox");
 
@@ -11231,11 +11908,36 @@ TArray<struct FString> ACreativeModeGameState::GetDisableDistanceLevelsOutsideBo
 
 class UCreativeModeGameStateBaseComponent* ACreativeModeGameState::GetCurrentStateComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCurrentStateComponent");
 
 	ACreativeModeGameState_GetCurrentStateComponent_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeModeGameState.GetCurrentGameTypeReplicated
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// ECreativeModeGameType          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+ECreativeModeGameType ACreativeModeGameState::GetCurrentGameTypeReplicated()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCurrentGameTypeReplicated");
+
+	ACreativeModeGameState_GetCurrentGameTypeReplicated_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -11256,7 +11958,7 @@ class UCreativeModeGameStateBaseComponent* ACreativeModeGameState::GetCurrentSta
 
 ECreativeModeGameType ACreativeModeGameState::GetCurrentGameType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCurrentGameType");
 
@@ -11281,7 +11983,7 @@ ECreativeModeGameType ACreativeModeGameState::GetCurrentGameType()
 
 int ACreativeModeGameState::GetCurCreativeType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCurCreativeType");
 
@@ -11306,7 +12008,7 @@ int ACreativeModeGameState::GetCurCreativeType()
 
 struct FString ACreativeModeGameState::GetCurCreativeModResList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCurCreativeModResList");
 
@@ -11330,7 +12032,7 @@ struct FString ACreativeModeGameState::GetCurCreativeModResList()
 
 struct FString ACreativeModeGameState::GetCurCreativeModMapID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCurCreativeModMapID");
 
@@ -11354,7 +12056,7 @@ struct FString ACreativeModeGameState::GetCurCreativeModMapID()
 
 int ACreativeModeGameState::GetCurCreativeModID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCurCreativeModID");
 
@@ -11379,7 +12081,7 @@ int ACreativeModeGameState::GetCurCreativeModID()
 
 int ACreativeModeGameState::GetCreativeModTemplateId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCreativeModTemplateId");
 
@@ -11404,7 +12106,7 @@ int ACreativeModeGameState::GetCreativeModTemplateId()
 
 int ACreativeModeGameState::GetCreativeModID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.GetCreativeModID");
 
@@ -11430,7 +12132,7 @@ int ACreativeModeGameState::GetCreativeModID()
 
 class ULiteComponent* ACreativeModeGameState::FindLiteComponentByClass(class UClass* ComponentClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.FindLiteComponentByClass");
 
@@ -11457,7 +12159,7 @@ class ULiteComponent* ACreativeModeGameState::FindLiteComponentByClass(class UCl
 
 bool ACreativeModeGameState::FilterLevelByName(const struct FName& LevelName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.FilterLevelByName");
 
@@ -11476,12 +12178,36 @@ bool ACreativeModeGameState::FilterLevelByName(const struct FName& LevelName)
 }
 
 
+// Function Creative.CreativeModeGameState.ClientSetCurrentStateComponent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UCreativeModeGameStateBaseComponent* CurStateComponent              (Parm, ZeroConstructor, IsPlainOldData)
+
+void ACreativeModeGameState::ClientSetCurrentStateComponent(class UCreativeModeGameStateBaseComponent* CurStateComponent)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.ClientSetCurrentStateComponent");
+
+	ACreativeModeGameState_ClientSetCurrentStateComponent_Params params;
+	params.CurStateComponent = CurStateComponent;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Creative.CreativeModeGameState.ClearInstance
 // (Final, Native, Public)
 
 void ACreativeModeGameState::ClearInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.ClearInstance");
 
@@ -11502,7 +12228,7 @@ void ACreativeModeGameState::ClearInstance()
 
 void ACreativeModeGameState::ClearAndReImportInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.ClearAndReImportInstance");
 
@@ -11526,7 +12252,7 @@ void ACreativeModeGameState::ClearAndReImportInstance()
 
 bool ACreativeModeGameState::CanShowDropEffectByItemID(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameState.CanShowDropEffectByItemID");
 
@@ -11552,7 +12278,7 @@ bool ACreativeModeGameState::CanShowDropEffectByItemID(int ItemId)
 
 void UCreativeModeGameStateComponent::SetPlayState(ECreativeModePlayState newPlayState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateComponent.SetPlayState");
 
@@ -11574,7 +12300,7 @@ void UCreativeModeGameStateComponent::SetPlayState(ECreativeModePlayState newPla
 
 void UCreativeModeGameStateComponent::OnRep_RuntimePlayerBattleDataObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateComponent.OnRep_RuntimePlayerBattleDataObject");
 
@@ -11595,7 +12321,7 @@ void UCreativeModeGameStateComponent::OnRep_RuntimePlayerBattleDataObject()
 
 void UCreativeModeGameStateComponent::OnRep_IntegralMechanismComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateComponent.OnRep_IntegralMechanismComponent");
 
@@ -11616,7 +12342,7 @@ void UCreativeModeGameStateComponent::OnRep_IntegralMechanismComponent()
 
 void UCreativeModeGameStateComponent::OnRep_CurPlayState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateComponent.OnRep_CurPlayState");
 
@@ -11639,7 +12365,7 @@ void UCreativeModeGameStateComponent::OnRep_CurPlayState()
 
 ECreativeModePlayState UCreativeModeGameStateComponent::GetPlayState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameStateComponent.GetPlayState");
 
@@ -11664,7 +12390,7 @@ ECreativeModePlayState UCreativeModeGameStateComponent::GetPlayState()
 
 void UCreativeGlobalApiObject::Print(const struct FString& LogText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGlobalApiObject.Print");
 
@@ -11691,7 +12417,7 @@ void UCreativeGlobalApiObject::Print(const struct FString& LogText)
 
 float UCreativeGlobalApiObject::CPPExecutionConsumptionTest(int A, float B, double C)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGlobalApiObject.CPPExecutionConsumptionTest");
 
@@ -11722,7 +12448,7 @@ float UCreativeGlobalApiObject::CPPExecutionConsumptionTest(int A, float B, doub
 
 void UCreativeGridLevelsManager::UpdateBatchActorInstances(const struct FString& GridName, int AssetId, int MaterialID, bool ReplaceAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.UpdateBatchActorInstances");
 
@@ -11750,7 +12476,7 @@ void UCreativeGridLevelsManager::UpdateBatchActorInstances(const struct FString&
 
 void UCreativeGridLevelsManager::UnLoadGridLevelsBatchActor(const struct FString& GridName, const struct FIntVector& CellIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.UnLoadGridLevelsBatchActor");
 
@@ -11775,7 +12501,7 @@ void UCreativeGridLevelsManager::UnLoadGridLevelsBatchActor(const struct FString
 
 void UCreativeGridLevelsManager::StaticMeshObjectRelieveBatch(struct FString* InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.StaticMeshObjectRelieveBatch");
 
@@ -11801,7 +12527,7 @@ void UCreativeGridLevelsManager::StaticMeshObjectRelieveBatch(struct FString* In
 
 void UCreativeGridLevelsManager::StaticMeshObjectReBatch(struct FString* InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.StaticMeshObjectReBatch");
 
@@ -11828,7 +12554,7 @@ void UCreativeGridLevelsManager::StaticMeshObjectReBatch(struct FString* Instanc
 
 bool UCreativeGridLevelsManager::RemoveObject(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.RemoveObject");
 
@@ -11852,7 +12578,7 @@ bool UCreativeGridLevelsManager::RemoveObject(const struct FString& InstanceID)
 
 void UCreativeGridLevelsManager::ReceiveRegistInstanceValueListener()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ReceiveRegistInstanceValueListener");
 
@@ -11878,7 +12604,7 @@ void UCreativeGridLevelsManager::ReceiveRegistInstanceValueListener()
 
 void UCreativeGridLevelsManager::ReceiveDelayUpdateBatchActorInstances(const struct FString& GridName, int AssetId, int MaterialID, bool ReplaceAll, float MoveForwardTimeStamp)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ReceiveDelayUpdateBatchActorInstances");
 
@@ -11904,7 +12630,7 @@ void UCreativeGridLevelsManager::ReceiveDelayUpdateBatchActorInstances(const str
 
 void UCreativeGridLevelsManager::ReceiveClearAllData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ReceiveClearAllData");
 
@@ -11927,7 +12653,7 @@ void UCreativeGridLevelsManager::ReceiveClearAllData()
 
 bool UCreativeGridLevelsManager::ReceiveCheckObjectCanBatch(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ReceiveCheckObjectCanBatch");
 
@@ -11954,7 +12680,7 @@ bool UCreativeGridLevelsManager::ReceiveCheckObjectCanBatch(const struct FString
 
 void UCreativeGridLevelsManager::ObjectAddToGridCellMap(const struct FString& GridName, const struct FIntVector& Index, const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ObjectAddToGridCellMap");
 
@@ -11981,7 +12707,7 @@ void UCreativeGridLevelsManager::ObjectAddToGridCellMap(const struct FString& Gr
 
 void UCreativeGridLevelsManager::LoadGridLevelsBatchActor(const struct FString& GridName, const struct FIntVector& CellIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.LoadGridLevelsBatchActor");
 
@@ -12006,7 +12732,7 @@ void UCreativeGridLevelsManager::LoadGridLevelsBatchActor(const struct FString& 
 
 bool UCreativeGridLevelsManager::IsCreativeEidtMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.IsCreativeEidtMode");
 
@@ -12033,7 +12759,7 @@ bool UCreativeGridLevelsManager::IsCreativeEidtMode()
 
 void UCreativeGridLevelsManager::GridCellMapRemoveObject(const struct FString& GridName, const struct FIntVector& Index, const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GridCellMapRemoveObject");
 
@@ -12059,7 +12785,7 @@ void UCreativeGridLevelsManager::GridCellMapRemoveObject(const struct FString& G
 
 struct FString UCreativeGridLevelsManager::GetStaticMeshBatchActorPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetStaticMeshBatchActorPath");
 
@@ -12083,7 +12809,7 @@ struct FString UCreativeGridLevelsManager::GetStaticMeshBatchActorPath()
 
 class ACreativeDestructibleMeshBatchActor* UCreativeGridLevelsManager::GetSingleDestructibleMeshBatchActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetSingleDestructibleMeshBatchActor");
 
@@ -12109,7 +12835,7 @@ class ACreativeDestructibleMeshBatchActor* UCreativeGridLevelsManager::GetSingle
 
 class ACreativeModeStaticMeshBatchActor* UCreativeGridLevelsManager::GetSingleBatchActor(const struct FString& GridName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetSingleBatchActor");
 
@@ -12135,7 +12861,7 @@ class ACreativeModeStaticMeshBatchActor* UCreativeGridLevelsManager::GetSingleBa
 
 float UCreativeGridLevelsManager::GetRelieveBatchDistance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetRelieveBatchDistance");
 
@@ -12160,7 +12886,7 @@ float UCreativeGridLevelsManager::GetRelieveBatchDistance()
 
 float UCreativeGridLevelsManager::GetReBatchDistance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetReBatchDistance");
 
@@ -12187,7 +12913,7 @@ float UCreativeGridLevelsManager::GetReBatchDistance()
 
 struct FIntVector UCreativeGridLevelsManager::GetOnCellIndex(const struct FString& GridName, const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetOnCellIndex");
 
@@ -12215,7 +12941,7 @@ struct FIntVector UCreativeGridLevelsManager::GetOnCellIndex(const struct FStrin
 
 struct FTransform UCreativeGridLevelsManager::GetObjectTransform(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetObjectTransform");
 
@@ -12242,7 +12968,7 @@ struct FTransform UCreativeGridLevelsManager::GetObjectTransform(const struct FS
 
 ECreativeModeActorStreamingType UCreativeGridLevelsManager::GetObjectStreamingType(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetObjectStreamingType");
 
@@ -12269,7 +12995,7 @@ ECreativeModeActorStreamingType UCreativeGridLevelsManager::GetObjectStreamingTy
 
 struct FString UCreativeGridLevelsManager::GetObjectRuntimeGrid(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetObjectRuntimeGrid");
 
@@ -12298,7 +13024,7 @@ struct FString UCreativeGridLevelsManager::GetObjectRuntimeGrid(const struct FSt
 
 struct FIntVector UCreativeGridLevelsManager::GetObjectOnCellIndexByLocation(const struct FString& InstanceID, const struct FString& GridName, const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetObjectOnCellIndexByLocation");
 
@@ -12327,7 +13053,7 @@ struct FIntVector UCreativeGridLevelsManager::GetObjectOnCellIndexByLocation(con
 
 struct FIntVector UCreativeGridLevelsManager::GetObjectOnCellIndex(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetObjectOnCellIndex");
 
@@ -12354,7 +13080,7 @@ struct FIntVector UCreativeGridLevelsManager::GetObjectOnCellIndex(const struct 
 
 bool UCreativeGridLevelsManager::GetObjectIsPrefab(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetObjectIsPrefab");
 
@@ -12381,7 +13107,7 @@ bool UCreativeGridLevelsManager::GetObjectIsPrefab(const struct FString& ID)
 
 int UCreativeGridLevelsManager::GetObjectAssetID(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetObjectAssetID");
 
@@ -12408,7 +13134,7 @@ int UCreativeGridLevelsManager::GetObjectAssetID(const struct FString& ID)
 
 float UCreativeGridLevelsManager::GetGridLoadingRange(const struct FString& GridName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetGridLoadingRange");
 
@@ -12434,7 +13160,7 @@ float UCreativeGridLevelsManager::GetGridLoadingRange(const struct FString& Grid
 
 TArray<struct FString> UCreativeGridLevelsManager::GetGridList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetGridList");
 
@@ -12459,7 +13185,7 @@ TArray<struct FString> UCreativeGridLevelsManager::GetGridList()
 
 struct FString UCreativeGridLevelsManager::GetDestructibleMeshBatchActorPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetDestructibleMeshBatchActorPath");
 
@@ -12483,7 +13209,7 @@ struct FString UCreativeGridLevelsManager::GetDestructibleMeshBatchActorPath()
 
 struct FString UCreativeGridLevelsManager::GetDefaultGridName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetDefaultGridName");
 
@@ -12508,7 +13234,7 @@ struct FString UCreativeGridLevelsManager::GetDefaultGridName()
 
 struct FVector2D UCreativeGridLevelsManager::GetCellWidthHeight(const struct FString& GridName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetCellWidthHeight");
 
@@ -12536,7 +13262,7 @@ struct FVector2D UCreativeGridLevelsManager::GetCellWidthHeight(const struct FSt
 
 struct FVector UCreativeGridLevelsManager::GetCellCenterLocation(const struct FString& GridName, const struct FIntVector& CellIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetCellCenterLocation");
 
@@ -12565,7 +13291,7 @@ struct FVector UCreativeGridLevelsManager::GetCellCenterLocation(const struct FS
 
 int UCreativeGridLevelsManager::GetAxisIndex(float Pos, float BlockLenght)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.GetAxisIndex");
 
@@ -12593,7 +13319,7 @@ int UCreativeGridLevelsManager::GetAxisIndex(float Pos, float BlockLenght)
 
 class UCreativeGridLevelsManager* UCreativeGridLevelsManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.Get");
 
@@ -12620,7 +13346,7 @@ class UCreativeGridLevelsManager* UCreativeGridLevelsManager::Get(class UObject*
 
 bool UCreativeGridLevelsManager::CheckObjectBeRelieveBatch(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.CheckObjectBeRelieveBatch");
 
@@ -12647,7 +13373,7 @@ bool UCreativeGridLevelsManager::CheckObjectBeRelieveBatch(const struct FString&
 
 bool UCreativeGridLevelsManager::CheckObjectBeBatch(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.CheckObjectBeBatch");
 
@@ -12674,7 +13400,7 @@ bool UCreativeGridLevelsManager::CheckObjectBeBatch(const struct FString& ID)
 
 bool UCreativeGridLevelsManager::CheckAndRemoveObjectForBatchData(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.CheckAndRemoveObjectForBatchData");
 
@@ -12701,7 +13427,7 @@ bool UCreativeGridLevelsManager::CheckAndRemoveObjectForBatchData(const struct F
 
 bool UCreativeGridLevelsManager::CheckAndAddObjectToBatchData(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.CheckAndAddObjectToBatchData");
 
@@ -12728,7 +13454,7 @@ bool UCreativeGridLevelsManager::CheckAndAddObjectToBatchData(const struct FStri
 
 bool UCreativeGridLevelsManager::ChangeObjectTransform(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ChangeObjectTransform");
 
@@ -12756,7 +13482,7 @@ bool UCreativeGridLevelsManager::ChangeObjectTransform(const struct FString& Ins
 
 bool UCreativeGridLevelsManager::ChangeObjectStreamingType(const struct FString& InstanceID, ECreativeModeActorStreamingType NewStremaingType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ChangeObjectStreamingType");
 
@@ -12783,7 +13509,7 @@ bool UCreativeGridLevelsManager::ChangeObjectStreamingType(const struct FString&
 
 bool UCreativeGridLevelsManager::ChangeObjectMaterialIds()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ChangeObjectMaterialIds");
 
@@ -12809,7 +13535,7 @@ bool UCreativeGridLevelsManager::ChangeObjectMaterialIds()
 
 bool UCreativeGridLevelsManager::ChangeObjectMaterialId(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ChangeObjectMaterialId");
 
@@ -12837,7 +13563,7 @@ bool UCreativeGridLevelsManager::ChangeObjectMaterialId(const struct FString& In
 
 bool UCreativeGridLevelsManager::ChangeObjectIsPrefab(const struct FString& InstanceID, bool bIsPrefab)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ChangeObjectIsPrefab");
 
@@ -12865,7 +13591,7 @@ bool UCreativeGridLevelsManager::ChangeObjectIsPrefab(const struct FString& Inst
 
 bool UCreativeGridLevelsManager::AddObjectToGridLevels(struct FString* InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.AddObjectToGridLevels");
 
@@ -12891,7 +13617,7 @@ bool UCreativeGridLevelsManager::AddObjectToGridLevels(struct FString* InstanceI
 
 void UCreativeGridLevelsManager::ActivateAllAlwaysLoadCellIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGridLevelsManager.ActivateAllAlwaysLoadCellIndex");
 
@@ -12915,7 +13641,7 @@ void UCreativeGridLevelsManager::ActivateAllAlwaysLoadCellIndex()
 
 class UCreativeGroupManager* UCreativeGroupManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGroupManager.Get");
 
@@ -12945,7 +13671,7 @@ class UCreativeGroupManager* UCreativeGroupManager::Get(class UObject* WorldCont
 
 bool UCreativeGuideComponent::SweepSingleByChannel(const struct FVector& Start, const struct FVector& End, TArray<class AActor*> IgnoreActors, struct FHitResult* OutHit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGuideComponent.SweepSingleByChannel");
 
@@ -12976,7 +13702,7 @@ bool UCreativeGuideComponent::SweepSingleByChannel(const struct FVector& Start, 
 
 void UCreativeGuideComponent::GenereateSplineMeshes(TArray<struct FVector> Points)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGuideComponent.GenereateSplineMeshes");
 
@@ -13002,7 +13728,7 @@ void UCreativeGuideComponent::GenereateSplineMeshes(TArray<struct FVector> Point
 
 bool UCreativeGuideMeshComponent::OnReturnToPool(class UObject* NewOuter, uint32_t RecycledSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGuideMeshComponent.OnReturnToPool");
 
@@ -13030,7 +13756,7 @@ bool UCreativeGuideMeshComponent::OnReturnToPool(class UObject* NewOuter, uint32
 
 void UCreativeGuideMeshComponent::OnPickFromPool(class UObject* NewOuter, const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeGuideMeshComponent.OnPickFromPool");
 
@@ -13055,7 +13781,7 @@ void UCreativeGuideMeshComponent::OnPickFromPool(class UObject* NewOuter, const 
 
 bool ACreativeModeInGameManagerCenter::GetIsBeginPlayEnded()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeInGameManagerCenter.GetIsBeginPlayEnded");
 
@@ -13078,7 +13804,7 @@ bool ACreativeModeInGameManagerCenter::GetIsBeginPlayEnded()
 
 void UCreativeInstanceManager::UpdateModBinInstanceCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.UpdateModBinInstanceCount");
 
@@ -13101,7 +13827,7 @@ void UCreativeInstanceManager::UpdateModBinInstanceCount()
 
 void UCreativeInstanceManager::SetModBinInstanceCount(int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.SetModBinInstanceCount");
 
@@ -13128,7 +13854,7 @@ void UCreativeInstanceManager::SetModBinInstanceCount(int Count)
 
 bool UCreativeInstanceManager::SetInstanceValue(const struct FString& InstanceID, const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.SetInstanceValue");
 
@@ -13156,7 +13882,7 @@ bool UCreativeInstanceManager::SetInstanceValue(const struct FString& InstanceID
 
 void UCreativeInstanceManager::SetInstanceDataContents(uint16_t Seq, TArray<struct FCreativeInstanceDataContent> InstanceDataContents)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.SetInstanceDataContents");
 
@@ -13182,7 +13908,7 @@ void UCreativeInstanceManager::SetInstanceDataContents(uint16_t Seq, TArray<stru
 
 void UCreativeInstanceManager::SetInstanceContainerContent(TArray<unsigned char> ContainerContent, uint32_t NewSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.SetInstanceContainerContent");
 
@@ -13207,7 +13933,7 @@ void UCreativeInstanceManager::SetInstanceContainerContent(TArray<unsigned char>
 
 void UCreativeInstanceManager::SendModBinaryDataToReplay(TArray<unsigned char>* InBinaryData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.SendModBinaryDataToReplay");
 
@@ -13231,7 +13957,7 @@ void UCreativeInstanceManager::SendModBinaryDataToReplay(TArray<unsigned char>* 
 
 void UCreativeInstanceManager::ReqInstanceContainerContentTimeoutCheck()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.ReqInstanceContainerContentTimeoutCheck");
 
@@ -13254,7 +13980,7 @@ void UCreativeInstanceManager::ReqInstanceContainerContentTimeoutCheck()
 
 void UCreativeInstanceManager::ReqInstanceContainerContentEnd(bool IsTimeout)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.ReqInstanceContainerContentEnd");
 
@@ -13279,7 +14005,7 @@ void UCreativeInstanceManager::ReqInstanceContainerContentEnd(bool IsTimeout)
 
 void UCreativeInstanceManager::RemoveInstance(const struct FString& ID, bool bSkipCheck)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.RemoveInstance");
 
@@ -13305,7 +14031,7 @@ void UCreativeInstanceManager::RemoveInstance(const struct FString& ID, bool bSk
 
 bool UCreativeInstanceManager::RemoveCppInstanceNode(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.RemoveCppInstanceNode");
 
@@ -13329,7 +14055,7 @@ bool UCreativeInstanceManager::RemoveCppInstanceNode(const struct FString& ID)
 
 void UCreativeInstanceManager::RecordAllInstanceDataByRPC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.RecordAllInstanceDataByRPC");
 
@@ -13352,7 +14078,7 @@ void UCreativeInstanceManager::RecordAllInstanceDataByRPC()
 
 void UCreativeInstanceManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.ReceiveOnGameStateBeginPlay");
 
@@ -13373,7 +14099,7 @@ void UCreativeInstanceManager::ReceiveOnGameStateBeginPlay(class AGameStateBase*
 
 void UCreativeInstanceManager::OnRep_RPCReplicatedInstanceContainerSeq()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnRep_RPCReplicatedInstanceContainerSeq");
 
@@ -13394,7 +14120,7 @@ void UCreativeInstanceManager::OnRep_RPCReplicatedInstanceContainerSeq()
 
 void UCreativeInstanceManager::OnRep_ModBinInstanceCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnRep_ModBinInstanceCount");
 
@@ -13418,7 +14144,7 @@ void UCreativeInstanceManager::OnRep_ModBinInstanceCount()
 
 void UCreativeInstanceManager::OnReceivePreInstanceRemove(const struct FString& ID, bool IsRollback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnReceivePreInstanceRemove");
 
@@ -13444,7 +14170,7 @@ void UCreativeInstanceManager::OnReceivePreInstanceRemove(const struct FString& 
 
 void UCreativeInstanceManager::OnReceivePostInstanceChange(const struct FString& ID, TArray<unsigned char> Content, bool IsRollback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnReceivePostInstanceChange");
 
@@ -13471,7 +14197,7 @@ void UCreativeInstanceManager::OnReceivePostInstanceChange(const struct FString&
 
 void UCreativeInstanceManager::OnReceivePostInstanceAdd(const struct FString& ID, TArray<unsigned char> Content, bool IsRollback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnReceivePostInstanceAdd");
 
@@ -13494,7 +14220,7 @@ void UCreativeInstanceManager::OnReceivePostInstanceAdd(const struct FString& ID
 
 void UCreativeInstanceManager::OnReceiveClearNotReplicatedData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnReceiveClearNotReplicatedData");
 
@@ -13514,7 +14240,7 @@ void UCreativeInstanceManager::OnReceiveClearNotReplicatedData()
 
 void UCreativeInstanceManager::OnReadyToAddInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnReadyToAddInstance");
 
@@ -13537,7 +14263,7 @@ void UCreativeInstanceManager::OnReadyToAddInstance()
 
 void UCreativeInstanceManager::OnPlayerControllerBeginPlay(class APlayerController* PlayerController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnPlayerControllerBeginPlay");
 
@@ -13562,7 +14288,7 @@ void UCreativeInstanceManager::OnPlayerControllerBeginPlay(class APlayerControll
 
 void UCreativeInstanceManager::OnGameTypeChanged(unsigned char LastGameType, unsigned char CurrentGameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnGameTypeChanged");
 
@@ -13587,7 +14313,7 @@ void UCreativeInstanceManager::OnGameTypeChanged(unsigned char LastGameType, uns
 
 void UCreativeInstanceManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.OnGameStateBeginPlay");
 
@@ -13611,7 +14337,7 @@ void UCreativeInstanceManager::OnGameStateBeginPlay(class AGameStateBase* GameSt
 
 bool UCreativeInstanceManager::IsInstanceReplicatTreeReplicateComplete()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.IsInstanceReplicatTreeReplicateComplete");
 
@@ -13636,7 +14362,7 @@ bool UCreativeInstanceManager::IsInstanceReplicatTreeReplicateComplete()
 
 bool UCreativeInstanceManager::IsInstanceDataTreeReplicateComplete()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.IsInstanceDataTreeReplicateComplete");
 
@@ -13662,7 +14388,7 @@ bool UCreativeInstanceManager::IsInstanceDataTreeReplicateComplete()
 
 bool UCreativeInstanceManager::IsAssetRuntimeObjectBox(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.IsAssetRuntimeObjectBox");
 
@@ -13689,7 +14415,7 @@ bool UCreativeInstanceManager::IsAssetRuntimeObjectBox(const struct FString& ID)
 
 void UCreativeInstanceManager::InitExpiredAndDebugAssetID(TArray<int>* ExpiredAssets, TArray<int>* DebugAssets)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.InitExpiredAndDebugAssetID");
 
@@ -13717,7 +14443,7 @@ void UCreativeInstanceManager::InitExpiredAndDebugAssetID(TArray<int>* ExpiredAs
 
 bool UCreativeInstanceManager::HasReadyToAddInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.HasReadyToAddInstance");
 
@@ -13742,7 +14468,7 @@ bool UCreativeInstanceManager::HasReadyToAddInstance()
 
 bool UCreativeInstanceManager::HasAuthorityOrReplay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.HasAuthorityOrReplay");
 
@@ -13768,7 +14494,7 @@ bool UCreativeInstanceManager::HasAuthorityOrReplay()
 
 struct FString UCreativeInstanceManager::GetObjectAssetPath(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetObjectAssetPath");
 
@@ -13794,7 +14520,7 @@ struct FString UCreativeInstanceManager::GetObjectAssetPath(const struct FString
 
 int UCreativeInstanceManager::GetModBinInstanceCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetModBinInstanceCount");
 
@@ -13820,7 +14546,7 @@ int UCreativeInstanceManager::GetModBinInstanceCount()
 
 bool UCreativeInstanceManager::GetModBinaryDataFromReplay(TArray<unsigned char> InBinaryData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetModBinaryDataFromReplay");
 
@@ -13847,7 +14573,7 @@ bool UCreativeInstanceManager::GetModBinaryDataFromReplay(TArray<unsigned char> 
 
 bool UCreativeInstanceManager::GetInstanceIsDestructible(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceIsDestructible");
 
@@ -13874,7 +14600,7 @@ bool UCreativeInstanceManager::GetInstanceIsDestructible(const struct FString& I
 
 bool UCreativeInstanceManager::GetInstanceIsCustomUI(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceIsCustomUI");
 
@@ -13900,7 +14626,7 @@ bool UCreativeInstanceManager::GetInstanceIsCustomUI(const struct FString& ID)
 
 int UCreativeInstanceManager::GetInstanceDataTreeCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceDataTreeCount");
 
@@ -13926,7 +14652,7 @@ int UCreativeInstanceManager::GetInstanceDataTreeCount()
 
 TArray<struct FCreativeInstanceRespondPullDataSegment> UCreativeInstanceManager::GetInstanceDataContents(TArray<uint32_t> InstanceIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceDataContents");
 
@@ -13953,7 +14679,7 @@ TArray<struct FCreativeInstanceRespondPullDataSegment> UCreativeInstanceManager:
 
 TArray<unsigned char> UCreativeInstanceManager::GetInstanceDataContent(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceDataContent");
 
@@ -13979,7 +14705,7 @@ TArray<unsigned char> UCreativeInstanceManager::GetInstanceDataContent(const str
 
 int UCreativeInstanceManager::GetInstanceContainerCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceContainerCount");
 
@@ -14006,7 +14732,7 @@ int UCreativeInstanceManager::GetInstanceContainerCount()
 
 TArray<unsigned char> UCreativeInstanceManager::GetInstanceContainerContent(uint32_t BaseSeq, uint32_t* OutSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceContainerContent");
 
@@ -14036,7 +14762,7 @@ TArray<unsigned char> UCreativeInstanceManager::GetInstanceContainerContent(uint
 
 struct FBox UCreativeInstanceManager::GetInstanceBox(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetInstanceBox");
 
@@ -14063,7 +14789,7 @@ struct FBox UCreativeInstanceManager::GetInstanceBox(const struct FString& ID)
 
 struct FCreativeInstanceNode UCreativeInstanceManager::GetCppInstanceNode(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetCppInstanceNode");
 
@@ -14090,7 +14816,7 @@ struct FCreativeInstanceNode UCreativeInstanceManager::GetCppInstanceNode(const 
 
 struct FBox UCreativeInstanceManager::GetAssetBox(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GetAssetBox");
 
@@ -14117,7 +14843,7 @@ struct FBox UCreativeInstanceManager::GetAssetBox(const struct FString& ID)
 
 class UCreativeInstanceManager* UCreativeInstanceManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.Get");
 
@@ -14144,7 +14870,7 @@ class UCreativeInstanceManager* UCreativeInstanceManager::Get(class UObject* Wor
 
 uint32_t UCreativeInstanceManager::GenerateDestructionUniqueID(uint32_t ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.GenerateDestructionUniqueID");
 
@@ -14171,7 +14897,7 @@ uint32_t UCreativeInstanceManager::GenerateDestructionUniqueID(uint32_t ID)
 
 struct FString UCreativeInstanceManager::DestroyInstance(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.DestroyInstance");
 
@@ -14197,7 +14923,7 @@ struct FString UCreativeInstanceManager::DestroyInstance(const struct FString& I
 
 void UCreativeInstanceManager::ClientPreAddInstance(const struct FString& ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.ClientPreAddInstance");
 
@@ -14220,7 +14946,7 @@ void UCreativeInstanceManager::ClientPreAddInstance(const struct FString& ID, TA
 
 void UCreativeInstanceManager::ClearInstanceTree()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.ClearInstanceTree");
 
@@ -14241,7 +14967,7 @@ void UCreativeInstanceManager::ClearInstanceTree()
 
 void UCreativeInstanceManager::CheckAndReqRPCReplicatedInstanceContainerContent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.CheckAndReqRPCReplicatedInstanceContainerContent");
 
@@ -14266,7 +14992,7 @@ void UCreativeInstanceManager::CheckAndReqRPCReplicatedInstanceContainerContent(
 
 void UCreativeInstanceManager::ChangeInstance(const struct FString& ID, TArray<unsigned char> Content, bool bCallReceiveChange)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.ChangeInstance");
 
@@ -14294,7 +15020,7 @@ void UCreativeInstanceManager::ChangeInstance(const struct FString& ID, TArray<u
 
 void UCreativeInstanceManager::ChangeCppInstanceNode(const struct FString& ID, const struct FString& Key, struct FCreativeInstanceNode* Node)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.ChangeCppInstanceNode");
 
@@ -14323,7 +15049,7 @@ void UCreativeInstanceManager::ChangeCppInstanceNode(const struct FString& ID, c
 
 void UCreativeInstanceManager::AddInstance(const struct FString& ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.AddInstance");
 
@@ -14349,7 +15075,7 @@ void UCreativeInstanceManager::AddInstance(const struct FString& ID, TArray<unsi
 
 void UCreativeInstanceManager::AddCppInstanceNode(const struct FString& ID, struct FCreativeInstanceNode* Node)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.AddCppInstanceNode");
 
@@ -14376,7 +15102,7 @@ void UCreativeInstanceManager::AddCppInstanceNode(const struct FString& ID, stru
 
 void UCreativeInstanceManager::AddBuildingFlag(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceManager.AddBuildingFlag");
 
@@ -14401,7 +15127,7 @@ void UCreativeInstanceManager::AddBuildingFlag(const struct FString& ID)
 
 void UCreativeInstanceStaticMeshComponent::UpdateAllInstanceByRelativeLocation(TArray<struct FVector> RelativeLocations, const struct FVector& Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceStaticMeshComponent.UpdateAllInstanceByRelativeLocation");
 
@@ -14424,7 +15150,7 @@ void UCreativeInstanceStaticMeshComponent::UpdateAllInstanceByRelativeLocation(T
 
 void UCreativeInstanceStaticMeshComponent::UnInitInstancedStaticMeshComponntByGroupBuild()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceStaticMeshComponent.UnInitInstancedStaticMeshComponntByGroupBuild");
 
@@ -14447,7 +15173,7 @@ void UCreativeInstanceStaticMeshComponent::UnInitInstancedStaticMeshComponntByGr
 
 void UCreativeInstanceStaticMeshComponent::SetISMMaterial(class UMaterialInterface* NewMaterial)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceStaticMeshComponent.SetISMMaterial");
 
@@ -14471,7 +15197,7 @@ void UCreativeInstanceStaticMeshComponent::SetISMMaterial(class UMaterialInterfa
 
 void UCreativeInstanceStaticMeshComponent::OnStaticMeshAsyncLoaded(const struct FSoftObjectPath& SoftObjectPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceStaticMeshComponent.OnStaticMeshAsyncLoaded");
 
@@ -14497,7 +15223,7 @@ void UCreativeInstanceStaticMeshComponent::OnStaticMeshAsyncLoaded(const struct 
 
 bool UCreativeInstanceStaticMeshComponent::OnReturnToPool(class UObject* NewOuter, uint32_t RecycledSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceStaticMeshComponent.OnReturnToPool");
 
@@ -14525,7 +15251,7 @@ bool UCreativeInstanceStaticMeshComponent::OnReturnToPool(class UObject* NewOute
 
 void UCreativeInstanceStaticMeshComponent::OnPickFromPool(class UObject* NewOuter, const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceStaticMeshComponent.OnPickFromPool");
 
@@ -14553,7 +15279,7 @@ void UCreativeInstanceStaticMeshComponent::OnPickFromPool(class UObject* NewOute
 
 void UCreativeInstanceStaticMeshComponent::InitInstancedStaticMeshComponntByGroupBuild(class USceneComponent* Parent, TArray<struct FTransform> InstanceTransforms, const struct FString& MeshPath, class UMaterialInterface* Material)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeInstanceStaticMeshComponent.InitInstancedStaticMeshComponntByGroupBuild");
 
@@ -14585,7 +15311,7 @@ void UCreativeInstanceStaticMeshComponent::InitInstancedStaticMeshComponntByGrou
 
 bool UCreativeModeIntegralMechanismComponent::SetPlayerIntegral(const struct FString& UID, int TeamID, int curIntegral, int curStageIntegral, int integralAddSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismComponent.SetPlayerIntegral");
 
@@ -14613,7 +15339,7 @@ bool UCreativeModeIntegralMechanismComponent::SetPlayerIntegral(const struct FSt
 
 void UCreativeModeIntegralMechanismComponent::OnRepPlayerIntegralsOverride()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismComponent.OnRepPlayerIntegralsOverride");
 
@@ -14633,7 +15359,7 @@ void UCreativeModeIntegralMechanismComponent::OnRepPlayerIntegralsOverride()
 
 void UCreativeModeIntegralMechanismComponent::OnRep_PlayerIntegrals()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismComponent.OnRep_PlayerIntegrals");
 
@@ -14654,7 +15380,7 @@ void UCreativeModeIntegralMechanismComponent::OnRep_PlayerIntegrals()
 
 void UCreativeModeIntegralMechanismComponent::ClearPlayerIntegrals()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismComponent.ClearPlayerIntegrals");
 
@@ -14683,7 +15409,7 @@ void UCreativeModeIntegralMechanismComponent::ClearPlayerIntegrals()
 
 bool UCreativeModeIntegralMechanismLiteComponent::SetPlayerIntegral(const struct FString& UID, int TeamID, int curIntegral, int curStageIntegral, int integralAddSeq, int curFunctionalIntegral)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismLiteComponent.SetPlayerIntegral");
 
@@ -14715,7 +15441,7 @@ bool UCreativeModeIntegralMechanismLiteComponent::SetPlayerIntegral(const struct
 
 bool UCreativeModeIntegralMechanismLiteComponent::PlayerIntegralContains(const struct FString& UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismLiteComponent.PlayerIntegralContains");
 
@@ -14739,7 +15465,7 @@ bool UCreativeModeIntegralMechanismLiteComponent::PlayerIntegralContains(const s
 
 void UCreativeModeIntegralMechanismLiteComponent::OnRepPlayerIntegralsOverride()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismLiteComponent.OnRepPlayerIntegralsOverride");
 
@@ -14761,7 +15487,7 @@ void UCreativeModeIntegralMechanismLiteComponent::OnRepPlayerIntegralsOverride()
 
 void UCreativeModeIntegralMechanismLiteComponent::OnRep_TestIndex(int LastIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismLiteComponent.OnRep_TestIndex");
 
@@ -14783,7 +15509,7 @@ void UCreativeModeIntegralMechanismLiteComponent::OnRep_TestIndex(int LastIndex)
 
 void UCreativeModeIntegralMechanismLiteComponent::OnRep_PlayerIntegrals()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismLiteComponent.OnRep_PlayerIntegrals");
 
@@ -14804,7 +15530,7 @@ void UCreativeModeIntegralMechanismLiteComponent::OnRep_PlayerIntegrals()
 
 void UCreativeModeIntegralMechanismLiteComponent::ClearPlayerIntegrals()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeIntegralMechanismLiteComponent.ClearPlayerIntegrals");
 
@@ -14827,7 +15553,7 @@ void UCreativeModeIntegralMechanismLiteComponent::ClearPlayerIntegrals()
 
 void UCreativeItemGeneratorComponent::SetWeightMul(TMap<struct FString, int> Weight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeItemGeneratorComponent.SetWeightMul");
 
@@ -14851,7 +15577,7 @@ void UCreativeItemGeneratorComponent::SetWeightMul(TMap<struct FString, int> Wei
 
 void UCreativeItemGeneratorComponent::SetAddSpotPercentMul(float percent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeItemGeneratorComponent.SetAddSpotPercentMul");
 
@@ -14873,7 +15599,7 @@ void UCreativeItemGeneratorComponent::SetAddSpotPercentMul(float percent)
 
 void UCreativeItemGeneratorComponent::ClearWeightMul()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeItemGeneratorComponent.ClearWeightMul");
 
@@ -14897,7 +15623,7 @@ void UCreativeItemGeneratorComponent::ClearWeightMul()
 
 void UCreativeLoadManager::UnloadSomeObjects(TArray<struct FString> InstanceIDs, bool bRemovePhysicsObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLoadManager.UnloadSomeObjects");
 
@@ -14923,7 +15649,7 @@ void UCreativeLoadManager::UnloadSomeObjects(TArray<struct FString> InstanceIDs,
 
 void UCreativeLoadManager::UnloadObject(const struct FString& InstanceID, bool bRemovePhysicsObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLoadManager.UnloadObject");
 
@@ -14949,7 +15675,7 @@ void UCreativeLoadManager::UnloadObject(const struct FString& InstanceID, bool b
 
 void UCreativeLoadManager::LoadSomeObjects(TArray<struct FString> InstanceIDs, bool bLoadImmediately)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLoadManager.LoadSomeObjects");
 
@@ -14974,7 +15700,7 @@ void UCreativeLoadManager::LoadSomeObjects(TArray<struct FString> InstanceIDs, b
 
 void UCreativeLoadManager::LoadObject(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLoadManager.LoadObject");
 
@@ -14999,7 +15725,7 @@ void UCreativeLoadManager::LoadObject(const struct FString& InstanceID)
 
 class UCreativeLoadManager* UCreativeLoadManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLoadManager.Get");
 
@@ -15026,7 +15752,7 @@ class UCreativeLoadManager* UCreativeLoadManager::Get(class UObject* WorldContex
 
 void UCreativeLoadManager::AddObject(const struct FString& InstanceID, const struct FCreativeInstanceNode& InstanceNode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLoadManager.AddObject");
 
@@ -15051,7 +15777,7 @@ void UCreativeLoadManager::AddObject(const struct FString& InstanceID, const str
 
 void UCreativeLuaCodeManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.ReceiveOnGameStateBeginPlay");
 
@@ -15072,7 +15798,7 @@ void UCreativeLuaCodeManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* 
 
 void UCreativeLuaCodeManager::OnRep_ReplicatedLuaCodeInfoMapSeq()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.OnRep_ReplicatedLuaCodeInfoMapSeq");
 
@@ -15093,7 +15819,7 @@ void UCreativeLuaCodeManager::OnRep_ReplicatedLuaCodeInfoMapSeq()
 
 void UCreativeLuaCodeManager::OnPreCreativeLuaVMUnLoad()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.OnPreCreativeLuaVMUnLoad");
 
@@ -15116,7 +15842,7 @@ void UCreativeLuaCodeManager::OnPreCreativeLuaVMUnLoad()
 
 void UCreativeLuaCodeManager::OnPlayerControllerBeginPlay(class APlayerController* PlayerController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.OnPlayerControllerBeginPlay");
 
@@ -15140,7 +15866,7 @@ void UCreativeLuaCodeManager::OnPlayerControllerBeginPlay(class APlayerControlle
 
 void UCreativeLuaCodeManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.OnGameStateBeginPlay");
 
@@ -15162,7 +15888,7 @@ void UCreativeLuaCodeManager::OnGameStateBeginPlay(class AGameStateBase* GameSta
 
 void UCreativeLuaCodeManager::OnCreativeLuaInitialized()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.OnCreativeLuaInitialized");
 
@@ -15183,7 +15909,7 @@ void UCreativeLuaCodeManager::OnCreativeLuaInitialized()
 
 void UCreativeLuaCodeManager::MarkReplicatedLuaCodeInfoMapDirty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.MarkReplicatedLuaCodeInfoMapDirty");
 
@@ -15207,7 +15933,7 @@ void UCreativeLuaCodeManager::MarkReplicatedLuaCodeInfoMapDirty()
 
 class UCreativeLuaCodeManager* UCreativeLuaCodeManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaCodeManager.Get");
 
@@ -15234,7 +15960,7 @@ class UCreativeLuaCodeManager* UCreativeLuaCodeManager::Get(class UObject* World
 
 class UObject* UCreativeLuaEntityManager::UUID2UObject(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.UUID2UObject");
 
@@ -15265,7 +15991,7 @@ class UObject* UCreativeLuaEntityManager::UUID2UObject(int64_t* UUID)
 
 bool UCreativeLuaEntityManager::UUID2Type(int64_t* UUID, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.UUID2Type");
 
@@ -15298,7 +16024,7 @@ bool UCreativeLuaEntityManager::UUID2Type(int64_t* UUID, EEntityType* Type, unsi
 
 uint32_t UCreativeLuaEntityManager::UUID2Key(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.UUID2Key");
 
@@ -15324,7 +16050,7 @@ uint32_t UCreativeLuaEntityManager::UUID2Key(int64_t* UUID)
 
 void UCreativeLuaEntityManager::ResetAll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.ResetAll");
 
@@ -15347,7 +16073,7 @@ void UCreativeLuaEntityManager::ResetAll()
 
 void UCreativeLuaEntityManager::RemoveUUID(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.RemoveUUID");
 
@@ -15374,7 +16100,7 @@ void UCreativeLuaEntityManager::RemoveUUID(int64_t* UUID)
 
 class UObject* UCreativeLuaEntityManager::LuaUUID2UObject(struct FString* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.LuaUUID2UObject");
 
@@ -15405,7 +16131,7 @@ class UObject* UCreativeLuaEntityManager::LuaUUID2UObject(struct FString* UUID)
 
 bool UCreativeLuaEntityManager::LuaUUID2Type(struct FString* UUID, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.LuaUUID2Type");
 
@@ -15440,7 +16166,7 @@ bool UCreativeLuaEntityManager::LuaUUID2Type(struct FString* UUID, EEntityType* 
 
 struct FString UCreativeLuaEntityManager::LuaUUID2Key(struct FString* UUID, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.LuaUUID2Key");
 
@@ -15472,7 +16198,7 @@ struct FString UCreativeLuaEntityManager::LuaUUID2Key(struct FString* UUID, EEnt
 
 void UCreativeLuaEntityManager::LuaRemoveUUID(struct FString* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.LuaRemoveUUID");
 
@@ -15501,7 +16227,7 @@ void UCreativeLuaEntityManager::LuaRemoveUUID(struct FString* UUID)
 
 struct FString UCreativeLuaEntityManager::LuaCreateEntityIfNotExistsFromUObject(class UObject* Object, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.LuaCreateEntityIfNotExistsFromUObject");
 
@@ -15533,7 +16259,7 @@ struct FString UCreativeLuaEntityManager::LuaCreateEntityIfNotExistsFromUObject(
 
 int64_t UCreativeLuaEntityManager::GetInstanceObjectUUID(int64_t* UUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.GetInstanceObjectUUID");
 
@@ -15562,7 +16288,7 @@ int64_t UCreativeLuaEntityManager::GetInstanceObjectUUID(int64_t* UUID)
 
 class UCreativeLuaEntityManager* UCreativeLuaEntityManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.Get");
 
@@ -15591,7 +16317,7 @@ class UCreativeLuaEntityManager* UCreativeLuaEntityManager::Get(class UObject* W
 
 int64_t UCreativeLuaEntityManager::GenUUID(struct FString* Key, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.GenUUID");
 
@@ -15626,7 +16352,7 @@ int64_t UCreativeLuaEntityManager::GenUUID(struct FString* Key, EEntityType* Typ
 
 int64_t UCreativeLuaEntityManager::CreateEntityIfNotExistsFromUObject(class UObject* Object, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.CreateEntityIfNotExistsFromUObject");
 
@@ -15660,7 +16386,7 @@ int64_t UCreativeLuaEntityManager::CreateEntityIfNotExistsFromUObject(class UObj
 
 int64_t UCreativeLuaEntityManager::CreateEntityIfNotExistsFromKey(uint32_t* Key, EEntityType* Type, unsigned char* SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaEntityManager.CreateEntityIfNotExistsFromKey");
 
@@ -15690,7 +16416,7 @@ int64_t UCreativeLuaEntityManager::CreateEntityIfNotExistsFromKey(uint32_t* Key,
 
 void UCreativeLuaSignalManager::SpawnApiObjectsByConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.SpawnApiObjectsByConfig");
 
@@ -15713,7 +16439,7 @@ void UCreativeLuaSignalManager::SpawnApiObjectsByConfig()
 
 void UCreativeLuaSignalManager::RegisterObject(class UCreativeApiObject* NewObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.RegisterObject");
 
@@ -15735,7 +16461,7 @@ void UCreativeLuaSignalManager::RegisterObject(class UCreativeApiObject* NewObje
 
 void UCreativeLuaSignalManager::OnPreCreativeLuaVMUnLoad()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.OnPreCreativeLuaVMUnLoad");
 
@@ -15756,7 +16482,7 @@ void UCreativeLuaSignalManager::OnPreCreativeLuaVMUnLoad()
 
 void UCreativeLuaSignalManager::OnCreativeLuaVMLoaded()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.OnCreativeLuaVMLoaded");
 
@@ -15780,7 +16506,7 @@ void UCreativeLuaSignalManager::OnCreativeLuaVMLoaded()
 
 class UCreativeApiObject* UCreativeLuaSignalManager::GetObject(const struct FString& ModuleName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.GetObject");
 
@@ -15806,7 +16532,7 @@ class UCreativeApiObject* UCreativeLuaSignalManager::GetObject(const struct FStr
 
 class UCreativeBridgeLuaVM* UCreativeLuaSignalManager::GetCreativeLuaVM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.GetCreativeLuaVM");
 
@@ -15832,7 +16558,7 @@ class UCreativeBridgeLuaVM* UCreativeLuaSignalManager::GetCreativeLuaVM()
 
 class UCreativeLuaSignalManager* UCreativeLuaSignalManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.Get");
 
@@ -15861,7 +16587,7 @@ class UCreativeLuaSignalManager* UCreativeLuaSignalManager::Get(class UObject* W
 
 int UCreativeLuaSignalManager::ExecuteAPI(class UCreativeBridgeLuaVM* VM, struct FString* ModuleName, struct FString* FuncName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.ExecuteAPI");
 
@@ -15890,7 +16616,7 @@ int UCreativeLuaSignalManager::ExecuteAPI(class UCreativeBridgeLuaVM* VM, struct
 
 void UCreativeLuaSignalManager::ClearAllObjects()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaSignalManager.ClearAllObjects");
 
@@ -15914,7 +16640,7 @@ void UCreativeLuaSignalManager::ClearAllObjects()
 
 TArray<struct FString> UCreativeLuaTraitManager::GetSupportEntitiesByTraits(TArray<struct FString> TraitNames)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaTraitManager.GetSupportEntitiesByTraits");
 
@@ -15940,7 +16666,7 @@ TArray<struct FString> UCreativeLuaTraitManager::GetSupportEntitiesByTraits(TArr
 
 TArray<struct FString> UCreativeLuaTraitManager::GetSupportEntitiesByTrait(const struct FString& TraitName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaTraitManager.GetSupportEntitiesByTrait");
 
@@ -15966,7 +16692,7 @@ TArray<struct FString> UCreativeLuaTraitManager::GetSupportEntitiesByTrait(const
 
 class UCreativeLuaTraitManager* UCreativeLuaTraitManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaTraitManager.Get");
 
@@ -15990,7 +16716,7 @@ class UCreativeLuaTraitManager* UCreativeLuaTraitManager::Get(class UObject* Wor
 
 void UCreativeLuaVMManager::UnRegisterGameTypePreChangedDelegate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.UnRegisterGameTypePreChangedDelegate");
 
@@ -16011,7 +16737,7 @@ void UCreativeLuaVMManager::UnRegisterGameTypePreChangedDelegate()
 
 void UCreativeLuaVMManager::RegisterGameTypePreChangedDelegate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.RegisterGameTypePreChangedDelegate");
 
@@ -16034,7 +16760,7 @@ void UCreativeLuaVMManager::RegisterGameTypePreChangedDelegate()
 
 void UCreativeLuaVMManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.ReceiveOnGameStateBeginPlay");
 
@@ -16055,7 +16781,7 @@ void UCreativeLuaVMManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* Ga
 
 void UCreativeLuaVMManager::ReceiveCheckAndLoadLuaVM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.ReceiveCheckAndLoadLuaVM");
 
@@ -16077,7 +16803,7 @@ void UCreativeLuaVMManager::ReceiveCheckAndLoadLuaVM()
 
 void UCreativeLuaVMManager::OnLuaVMAtPanic(const struct FString& ErrMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.OnLuaVMAtPanic");
 
@@ -16102,7 +16828,7 @@ void UCreativeLuaVMManager::OnLuaVMAtPanic(const struct FString& ErrMsg)
 
 void UCreativeLuaVMManager::OnGameTypePreChanged(unsigned char LastGameType, unsigned char CurrentGameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.OnGameTypePreChanged");
 
@@ -16127,7 +16853,7 @@ void UCreativeLuaVMManager::OnGameTypePreChanged(unsigned char LastGameType, uns
 
 void UCreativeLuaVMManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.OnGameStateBeginPlay");
 
@@ -16149,7 +16875,7 @@ void UCreativeLuaVMManager::OnGameStateBeginPlay(class AGameStateBase* GameState
 
 void UCreativeLuaVMManager::LoadLuaVM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.LoadLuaVM");
 
@@ -16172,7 +16898,7 @@ void UCreativeLuaVMManager::LoadLuaVM()
 
 class UCreativeBridgeLuaVM* UCreativeLuaVMManager::GetCreativeLuaVM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.GetCreativeLuaVM");
 
@@ -16198,7 +16924,7 @@ class UCreativeBridgeLuaVM* UCreativeLuaVMManager::GetCreativeLuaVM()
 
 class UCreativeLuaVMManager* UCreativeLuaVMManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.Get");
 
@@ -16224,7 +16950,7 @@ class UCreativeLuaVMManager* UCreativeLuaVMManager::Get(class UObject* WorldCont
 
 bool UCreativeLuaVMManager::CreativeLuaVMLoaded()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.CreativeLuaVMLoaded");
 
@@ -16249,7 +16975,7 @@ bool UCreativeLuaVMManager::CreativeLuaVMLoaded()
 
 bool UCreativeLuaVMManager::CreativeLuaInitialized()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeLuaVMManager.CreativeLuaInitialized");
 
@@ -16272,7 +16998,7 @@ bool UCreativeLuaVMManager::CreativeLuaInitialized()
 
 void UCreativeModeModDataCheckManager::ReceiveOnPreAddInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeModDataCheckManager.ReceiveOnPreAddInstance");
 
@@ -16292,7 +17018,7 @@ void UCreativeModeModDataCheckManager::ReceiveOnPreAddInstance()
 
 void UCreativeModeModDataCheckManager::ReceiveOnPostAddInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeModDataCheckManager.ReceiveOnPostAddInstance");
 
@@ -16312,7 +17038,7 @@ void UCreativeModeModDataCheckManager::ReceiveOnPostAddInstance()
 
 void UCreativeModeModDataCheckManager::OnPreAddInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeModDataCheckManager.OnPreAddInstance");
 
@@ -16333,7 +17059,7 @@ void UCreativeModeModDataCheckManager::OnPreAddInstance()
 
 void UCreativeModeModDataCheckManager::OnPostAddInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeModDataCheckManager.OnPostAddInstance");
 
@@ -16357,7 +17083,7 @@ void UCreativeModeModDataCheckManager::OnPostAddInstance()
 
 class UCreativeModeModDataCheckManager* UCreativeModeModDataCheckManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeModDataCheckManager.Get");
 
@@ -16381,7 +17107,7 @@ class UCreativeModeModDataCheckManager* UCreativeModeModDataCheckManager::Get(cl
 
 void UCreativeModeChatBubbleUI::TickLua()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeChatBubbleUI.TickLua");
 
@@ -16402,7 +17128,7 @@ void UCreativeModeChatBubbleUI::TickLua()
 
 void UCreativeModeChatBubbleUI::ForceUpdatePosition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeChatBubbleUI.ForceUpdatePosition");
 
@@ -16423,7 +17149,7 @@ void UCreativeModeChatBubbleUI::ForceUpdatePosition()
 
 void UCreativeModeGlobalManagerCenter::OnCreativeDelegateCreated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGlobalManagerCenter.OnCreativeDelegateCreated");
 
@@ -16449,7 +17175,7 @@ void UCreativeModeGlobalManagerCenter::OnCreativeDelegateCreated()
 
 void ACreativeModeStaticMeshBatchActor::SetISMStaticMeshAndMaterials(class UInstancedStaticMeshComponent* InstancedStaticMeshComponent, int AssetId, int StaticMeshIndex, int MaterialID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeStaticMeshBatchActor.SetISMStaticMeshAndMaterials");
 
@@ -16477,7 +17203,7 @@ void ACreativeModeStaticMeshBatchActor::SetISMStaticMeshAndMaterials(class UInst
 
 struct FEventReply UCreativeModeTouchWidget::OnHandleTouchStart(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeTouchWidget.OnHandleTouchStart");
 
@@ -16506,7 +17232,7 @@ struct FEventReply UCreativeModeTouchWidget::OnHandleTouchStart(const struct FGe
 
 struct FEventReply UCreativeModeTouchWidget::OnHandleTouchMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeTouchWidget.OnHandleTouchMove");
 
@@ -16535,7 +17261,7 @@ struct FEventReply UCreativeModeTouchWidget::OnHandleTouchMove(const struct FGeo
 
 struct FEventReply UCreativeModeTouchWidget::OnHandleTouchEnd(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeTouchWidget.OnHandleTouchEnd");
 
@@ -16565,7 +17291,7 @@ struct FEventReply UCreativeModeTouchWidget::OnHandleTouchEnd(const struct FGeom
 
 bool UCreativeModeTouchWidget::OnHandleTouch(int Type, int FingerIndex, const struct FVector2D& Pos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeTouchWidget.OnHandleTouch");
 
@@ -16593,7 +17319,7 @@ bool UCreativeModeTouchWidget::OnHandleTouch(int Type, int FingerIndex, const st
 
 void UTaskProgressItem::Update(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.Update");
 
@@ -16616,7 +17342,7 @@ void UTaskProgressItem::Update(float DeltaTime)
 
 void UTaskProgressItem::SetCurrentProgress(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.SetCurrentProgress");
 
@@ -16640,7 +17366,7 @@ void UTaskProgressItem::SetCurrentProgress(int Value)
 
 class UTaskInstance* UTaskProgressItem::GetTaskInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.GetTaskInstance");
 
@@ -16665,7 +17391,7 @@ class UTaskInstance* UTaskProgressItem::GetTaskInstance()
 
 class UStageRuntimeState* UTaskProgressItem::GetStageRuntimeState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.GetStageRuntimeState");
 
@@ -16690,7 +17416,7 @@ class UStageRuntimeState* UTaskProgressItem::GetStageRuntimeState()
 
 int UTaskProgressItem::GetProgressType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.GetProgressType");
 
@@ -16715,7 +17441,7 @@ int UTaskProgressItem::GetProgressType()
 
 int UTaskProgressItem::GetMaxProgress()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.GetMaxProgress");
 
@@ -16740,7 +17466,7 @@ int UTaskProgressItem::GetMaxProgress()
 
 int UTaskProgressItem::GetCurrentProgress()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.GetCurrentProgress");
 
@@ -16763,7 +17489,7 @@ int UTaskProgressItem::GetCurrentProgress()
 
 void UTaskProgressItem::Deactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.Deactivate");
 
@@ -16785,7 +17511,7 @@ void UTaskProgressItem::Deactivate()
 
 void UTaskProgressItem::AddProgress(int Delta)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.AddProgress");
 
@@ -16807,7 +17533,7 @@ void UTaskProgressItem::AddProgress(int Delta)
 
 void UTaskProgressItem::Activate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskProgressItem.Activate");
 
@@ -16830,7 +17556,7 @@ void UTaskProgressItem::Activate()
 
 bool UStageRuntimeState::Update(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.Update");
 
@@ -16855,7 +17581,7 @@ bool UStageRuntimeState::Update(float DeltaTime)
 
 int UStageRuntimeState::GetStageIdx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.GetStageIdx");
 
@@ -16880,7 +17606,7 @@ int UStageRuntimeState::GetStageIdx()
 
 TArray<class UTaskProgressItem*> UStageRuntimeState::GetProgressItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.GetProgressItems");
 
@@ -16905,7 +17631,7 @@ TArray<class UTaskProgressItem*> UStageRuntimeState::GetProgressItems()
 
 class UTaskInstance* UStageRuntimeState::GetOwnTaskInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.GetOwnTaskInstance");
 
@@ -16931,7 +17657,7 @@ class UTaskInstance* UStageRuntimeState::GetOwnTaskInstance()
 
 class UTaskProgressItem* UStageRuntimeState::FindProgressItemByConfigIndex(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.FindProgressItemByConfigIndex");
 
@@ -16955,7 +17681,7 @@ class UTaskProgressItem* UStageRuntimeState::FindProgressItemByConfigIndex(int I
 
 void UStageRuntimeState::Deactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.Deactivate");
 
@@ -16978,7 +17704,7 @@ void UStageRuntimeState::Deactivate()
 
 class UTaskProgressItem* UStageRuntimeState::AddProgressItem(int ProgressType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.AddProgressItem");
 
@@ -17002,7 +17728,7 @@ class UTaskProgressItem* UStageRuntimeState::AddProgressItem(int ProgressType)
 
 void UStageRuntimeState::Activate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.StageRuntimeState.Activate");
 
@@ -17025,7 +17751,7 @@ void UStageRuntimeState::Activate()
 
 bool UTaskInstance::Update(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.Update");
 
@@ -17050,7 +17776,7 @@ bool UTaskInstance::Update(float DeltaTime)
 
 void UTaskInstance::SetTaskStatus(ETaskStatus StatusVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.SetTaskStatus");
 
@@ -17074,7 +17800,7 @@ void UTaskInstance::SetTaskStatus(ETaskStatus StatusVal)
 
 void UTaskInstance::SetShouldReplicated(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.SetShouldReplicated");
 
@@ -17098,7 +17824,7 @@ void UTaskInstance::SetShouldReplicated(bool Val)
 
 void UTaskInstance::SetReservedString(const struct FString& Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.SetReservedString");
 
@@ -17122,7 +17848,7 @@ void UTaskInstance::SetReservedString(const struct FString& Val)
 
 void UTaskInstance::RemovePlayer(uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.RemovePlayer");
 
@@ -17147,7 +17873,7 @@ void UTaskInstance::RemovePlayer(uint32_t PlayerKey)
 
 void UTaskInstance::ReceiveSetTaskStatus(ETaskStatus PreviousStatusVal, ETaskStatus NextStatusVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.ReceiveSetTaskStatus");
 
@@ -17169,7 +17895,7 @@ void UTaskInstance::ReceiveSetTaskStatus(ETaskStatus PreviousStatusVal, ETaskSta
 
 void UTaskInstance::ReceiveOnDeactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.ReceiveOnDeactivate");
 
@@ -17189,7 +17915,7 @@ void UTaskInstance::ReceiveOnDeactivate()
 
 void UTaskInstance::MarkTaskDirty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.MarkTaskDirty");
 
@@ -17213,7 +17939,7 @@ void UTaskInstance::MarkTaskDirty()
 
 bool UTaskInstance::IsRefbyPlayer(uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.IsRefbyPlayer");
 
@@ -17237,7 +17963,7 @@ bool UTaskInstance::IsRefbyPlayer(uint32_t PlayerKey)
 
 void UTaskInstance::InitializeStageInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.InitializeStageInfo");
 
@@ -17259,7 +17985,7 @@ void UTaskInstance::InitializeStageInfo()
 
 struct FString UTaskInstance::GetTaskTypeID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.GetTaskTypeID");
 
@@ -17284,7 +18010,7 @@ struct FString UTaskInstance::GetTaskTypeID()
 
 TArray<uint32_t> UTaskInstance::GetPlayerKeys()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.GetPlayerKeys");
 
@@ -17309,7 +18035,7 @@ TArray<uint32_t> UTaskInstance::GetPlayerKeys()
 
 class UStageRuntimeState* UTaskInstance::GetCurrentStage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.GetCurrentStage");
 
@@ -17334,7 +18060,7 @@ class UStageRuntimeState* UTaskInstance::GetCurrentStage()
 
 void UTaskInstance::AdvanceToNextStage(class UStageRuntimeState* NewStageInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.AdvanceToNextStage");
 
@@ -17358,7 +18084,7 @@ void UTaskInstance::AdvanceToNextStage(class UStageRuntimeState* NewStageInfo)
 
 void UTaskInstance::AddPlayer(uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.AddPlayer");
 
@@ -17382,7 +18108,7 @@ void UTaskInstance::AddPlayer(uint32_t PlayerKey)
 
 class UStageRuntimeState* UTaskInstance::AddNewStage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.TaskInstance.AddNewStage");
 
@@ -17405,7 +18131,7 @@ class UStageRuntimeState* UTaskInstance::AddNewStage()
 
 void UCreativeModeGameTaskManager::Reset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.Reset");
 
@@ -17428,7 +18154,7 @@ void UCreativeModeGameTaskManager::Reset()
 
 void UCreativeModeGameTaskManager::RemoveTaskInstance(class UTaskInstance* TaskInstance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.RemoveTaskInstance");
 
@@ -17453,7 +18179,7 @@ void UCreativeModeGameTaskManager::RemoveTaskInstance(class UTaskInstance* TaskI
 
 struct FString UCreativeModeGameTaskManager::ReceiveGetProgressItemLuaPathByType(int ProgressType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.ReceiveGetProgressItemLuaPathByType");
 
@@ -17478,7 +18204,7 @@ struct FString UCreativeModeGameTaskManager::ReceiveGetProgressItemLuaPathByType
 
 struct FString UCreativeModeGameTaskManager::GetProgressItemLuaPathByType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.GetProgressItemLuaPathByType");
 
@@ -17503,7 +18229,7 @@ struct FString UCreativeModeGameTaskManager::GetProgressItemLuaPathByType()
 
 TArray<class UTaskInstance*> UCreativeModeGameTaskManager::GetAllTaskInstances()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.GetAllTaskInstances");
 
@@ -17529,7 +18255,7 @@ TArray<class UTaskInstance*> UCreativeModeGameTaskManager::GetAllTaskInstances()
 
 class UCreativeModeGameTaskManager* UCreativeModeGameTaskManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.Get");
 
@@ -17556,7 +18282,7 @@ class UCreativeModeGameTaskManager* UCreativeModeGameTaskManager::Get(class UObj
 
 class UTaskInstance* UCreativeModeGameTaskManager::FindTaskInstanceByType(const struct FString& TaskTypeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.FindTaskInstanceByType");
 
@@ -17583,7 +18309,7 @@ class UTaskInstance* UCreativeModeGameTaskManager::FindTaskInstanceByType(const 
 
 class UTaskInstance* UCreativeModeGameTaskManager::CreateTaskInstance(const struct FString& TaskTypeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeGameTaskManager.CreateTaskInstance");
 
@@ -17610,7 +18336,7 @@ class UTaskInstance* UCreativeModeGameTaskManager::CreateTaskInstance(const stru
 
 void UCreativeModeNavigationManager::SetTimeSliceConfig(int MaxTaskPerSlice, int SliceTimeLen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.SetTimeSliceConfig");
 
@@ -17635,7 +18361,7 @@ void UCreativeModeNavigationManager::SetTimeSliceConfig(int MaxTaskPerSlice, int
 
 void UCreativeModeNavigationManager::SetNavmeshBuildPolicy(int PolicyVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.SetNavmeshBuildPolicy");
 
@@ -17659,7 +18385,7 @@ void UCreativeModeNavigationManager::SetNavmeshBuildPolicy(int PolicyVal)
 
 void UCreativeModeNavigationManager::SetDynamicModeEnable(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.SetDynamicModeEnable");
 
@@ -17683,7 +18409,7 @@ void UCreativeModeNavigationManager::SetDynamicModeEnable(bool bEnable)
 
 void UCreativeModeNavigationManager::SetDebugOutputEnable(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.SetDebugOutputEnable");
 
@@ -17707,7 +18433,7 @@ void UCreativeModeNavigationManager::SetDebugOutputEnable(bool bEnable)
 
 void UCreativeModeNavigationManager::SetConcurrentTaskNum(int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.SetConcurrentTaskNum");
 
@@ -17733,7 +18459,7 @@ void UCreativeModeNavigationManager::SetConcurrentTaskNum(int Num)
 
 TArray<unsigned char> UCreativeModeNavigationManager::SerializeDynamicTileToByteArr(int MaxFileSize, int MaxTileToAdd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.SerializeDynamicTileToByteArr");
 
@@ -17758,7 +18484,7 @@ TArray<unsigned char> UCreativeModeNavigationManager::SerializeDynamicTileToByte
 
 void UCreativeModeNavigationManager::RevokePendingBuildingTasks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.RevokePendingBuildingTasks");
 
@@ -17779,7 +18505,7 @@ void UCreativeModeNavigationManager::RevokePendingBuildingTasks()
 
 void UCreativeModeNavigationManager::ReceiveOnUnInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ReceiveOnUnInit");
 
@@ -17799,7 +18525,7 @@ void UCreativeModeNavigationManager::ReceiveOnUnInit()
 
 void UCreativeModeNavigationManager::ReceiveOnInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ReceiveOnInit");
 
@@ -17821,7 +18547,7 @@ void UCreativeModeNavigationManager::ReceiveOnInit()
 
 void UCreativeModeNavigationManager::RebuildDynamicTilesByCoord(TArray<struct FIntPoint>* DynamicTiles)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.RebuildDynamicTilesByCoord");
 
@@ -17847,7 +18573,7 @@ void UCreativeModeNavigationManager::RebuildDynamicTilesByCoord(TArray<struct FI
 
 void UCreativeModeNavigationManager::RebuildDynamicTiles(TArray<class AActor*>* Actors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.RebuildDynamicTiles");
 
@@ -17873,7 +18599,7 @@ void UCreativeModeNavigationManager::RebuildDynamicTiles(TArray<class AActor*>* 
 
 bool UCreativeModeNavigationManager::IsBuildingInProgress()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.IsBuildingInProgress");
 
@@ -17898,7 +18624,7 @@ bool UCreativeModeNavigationManager::IsBuildingInProgress()
 
 void UCreativeModeNavigationManager::ImportDynamicTile(struct FString* Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ImportDynamicTile");
 
@@ -17926,7 +18652,7 @@ void UCreativeModeNavigationManager::ImportDynamicTile(struct FString* Path)
 
 void UCreativeModeNavigationManager::GetWalkableTrianglesInBox(const struct FBox& bBox, TArray<struct FVector>* OutVertices, TArray<int>* OutIndices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.GetWalkableTrianglesInBox");
 
@@ -17955,7 +18681,7 @@ void UCreativeModeNavigationManager::GetWalkableTrianglesInBox(const struct FBox
 
 int UCreativeModeNavigationManager::GetDynamicTilesCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.GetDynamicTilesCount");
 
@@ -17985,7 +18711,7 @@ int UCreativeModeNavigationManager::GetDynamicTilesCount()
 
 bool UCreativeModeNavigationManager::GetDynamicTileMemCost(int* Total, int* OctTree, int* TileCache, int* DynamicTile, int* DynamicTileCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.GetDynamicTileMemCost");
 
@@ -18022,7 +18748,7 @@ bool UCreativeModeNavigationManager::GetDynamicTileMemCost(int* Total, int* OctT
 
 struct FIntPoint UCreativeModeNavigationManager::GetDynamicTileCoordByPos(const struct FVector& Pos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.GetDynamicTileCoordByPos");
 
@@ -18048,7 +18774,7 @@ struct FIntPoint UCreativeModeNavigationManager::GetDynamicTileCoordByPos(const 
 
 TArray<class AActor*> UCreativeModeNavigationManager::GetAllAssociateActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.GetAllAssociateActors");
 
@@ -18074,7 +18800,7 @@ TArray<class AActor*> UCreativeModeNavigationManager::GetAllAssociateActors()
 
 class UCreativeModeNavigationManager* UCreativeModeNavigationManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.Get");
 
@@ -18100,7 +18826,7 @@ class UCreativeModeNavigationManager* UCreativeModeNavigationManager::Get(class 
 
 void UCreativeModeNavigationManager::ExportDynamicTile(struct FString* Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ExportDynamicTile");
 
@@ -18126,7 +18852,7 @@ void UCreativeModeNavigationManager::ExportDynamicTile(struct FString* Path)
 
 void UCreativeModeNavigationManager::DeserializeDynamicTileFromByteArr(TArray<unsigned char>* ByteArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.DeserializeDynamicTileFromByteArr");
 
@@ -18153,7 +18879,7 @@ void UCreativeModeNavigationManager::DeserializeDynamicTileFromByteArr(TArray<un
 
 float UCreativeModeNavigationManager::ComputeTotalWalkableSurfaceAreaInBox(const struct FBox& bBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ComputeTotalWalkableSurfaceAreaInBox");
 
@@ -18177,7 +18903,7 @@ float UCreativeModeNavigationManager::ComputeTotalWalkableSurfaceAreaInBox(const
 
 void UCreativeModeNavigationManager::ClearNavCollision()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ClearNavCollision");
 
@@ -18198,7 +18924,7 @@ void UCreativeModeNavigationManager::ClearNavCollision()
 
 void UCreativeModeNavigationManager::ClearDynamicOctreeData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ClearDynamicOctreeData");
 
@@ -18219,7 +18945,7 @@ void UCreativeModeNavigationManager::ClearDynamicOctreeData()
 
 void UCreativeModeNavigationManager::ClearDynamicNavMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ClearDynamicNavMesh");
 
@@ -18240,7 +18966,7 @@ void UCreativeModeNavigationManager::ClearDynamicNavMesh()
 
 void UCreativeModeNavigationManager::ClearAssociateActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.ClearAssociateActors");
 
@@ -18267,7 +18993,7 @@ void UCreativeModeNavigationManager::ClearAssociateActors()
 
 TArray<struct FVector> UCreativeModeNavigationManager::CalSamplePointsInBoxLegacy(const struct FVector& BoxMin, const struct FVector& BoxMax, float StepSize, int MaxPoints)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.CalSamplePointsInBoxLegacy");
 
@@ -18300,7 +19026,7 @@ TArray<struct FVector> UCreativeModeNavigationManager::CalSamplePointsInBoxLegac
 
 TArray<struct FVector> UCreativeModeNavigationManager::CalSamplePointsInBox(const struct FVector& BoxMin, const struct FVector& BoxMax, float StepSize, int MaxPoints)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.CalSamplePointsInBox");
 
@@ -18332,7 +19058,7 @@ TArray<struct FVector> UCreativeModeNavigationManager::CalSamplePointsInBox(cons
 
 TArray<struct FVector> UCreativeModeNavigationManager::CalSamplePoints(const struct FVector& StartPos, float StepSize, int MaxPoints)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.CalSamplePoints");
 
@@ -18360,7 +19086,7 @@ TArray<struct FVector> UCreativeModeNavigationManager::CalSamplePoints(const str
 
 void UCreativeModeNavigationManager::AddNavAffectedObjects(TArray<class AActor*> Actors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.AddNavAffectedObjects");
 
@@ -18384,7 +19110,7 @@ void UCreativeModeNavigationManager::AddNavAffectedObjects(TArray<class AActor*>
 
 void UCreativeModeNavigationManager::AddNavAffectedObject(class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeNavigationManager.AddNavAffectedObject");
 
@@ -18410,7 +19136,7 @@ void UCreativeModeNavigationManager::AddNavAffectedObject(class AActor* Actor)
 
 void ACreativeObjectEditAxisActor::StartEdit(int Axis, const struct FVector2D& Pos, const struct FVector& HitPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.StartEdit");
 
@@ -18436,7 +19162,7 @@ void ACreativeObjectEditAxisActor::StartEdit(int Axis, const struct FVector2D& P
 
 void ACreativeObjectEditAxisActor::SetForceHideAxis(const struct FVector& State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.SetForceHideAxis");
 
@@ -18460,7 +19186,7 @@ void ACreativeObjectEditAxisActor::SetForceHideAxis(const struct FVector& State)
 
 void ACreativeObjectEditAxisActor::SetFixedAxisSize(float FixedSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.SetFixedAxisSize");
 
@@ -18485,7 +19211,7 @@ void ACreativeObjectEditAxisActor::SetFixedAxisSize(float FixedSize)
 
 void ACreativeObjectEditAxisActor::SetEditType(int InEditType, int InEditSubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.SetEditType");
 
@@ -18511,7 +19237,7 @@ void ACreativeObjectEditAxisActor::SetEditType(int InEditType, int InEditSubType
 
 void ACreativeObjectEditAxisActor::SetComponentVisible(class USceneComponent* comp, bool bVisible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.SetComponentVisible");
 
@@ -18536,7 +19262,7 @@ void ACreativeObjectEditAxisActor::SetComponentVisible(class USceneComponent* co
 
 void ACreativeObjectEditAxisActor::SetAxisState(const struct FVector& State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.SetAxisState");
 
@@ -18560,7 +19286,7 @@ void ACreativeObjectEditAxisActor::SetAxisState(const struct FVector& State)
 
 void ACreativeObjectEditAxisActor::MarkEditing(bool bDoing)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.MarkEditing");
 
@@ -18585,7 +19311,7 @@ void ACreativeObjectEditAxisActor::MarkEditing(bool bDoing)
 
 void ACreativeObjectEditAxisActor::CalScale(const struct FVector2D& Pos, struct FVector* OutScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.CalScale");
 
@@ -18614,7 +19340,7 @@ void ACreativeObjectEditAxisActor::CalScale(const struct FVector2D& Pos, struct 
 
 float ACreativeObjectEditAxisActor::CalRotation(const struct FVector2D& Pos, struct FRotator* OutRot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.CalRotation");
 
@@ -18644,7 +19370,7 @@ float ACreativeObjectEditAxisActor::CalRotation(const struct FVector2D& Pos, str
 
 void ACreativeObjectEditAxisActor::CalLocation(const struct FVector2D& Pos, struct FVector* OutLoc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectEditAxisActor.CalLocation");
 
@@ -18671,7 +19397,7 @@ void ACreativeObjectEditAxisActor::CalLocation(const struct FVector2D& Pos, stru
 
 void UCreativeModeObjectInterface::ReceiveOnPostSetInstanceId(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeObjectInterface.ReceiveOnPostSetInstanceId");
 
@@ -18695,7 +19421,7 @@ void UCreativeModeObjectInterface::ReceiveOnPostSetInstanceId(const struct FStri
 
 void ACreativeObjectLocalAxisActor::SetAxisComponents(class USceneComponent* Axis, class USceneComponent* Grid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectLocalAxisActor.SetAxisComponents");
 
@@ -18718,7 +19444,7 @@ void ACreativeObjectLocalAxisActor::SetAxisComponents(class USceneComponent* Axi
 
 void ACreativeObjectLocalAxisActor::NeedUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectLocalAxisActor.NeedUpdate");
 
@@ -18741,7 +19467,7 @@ void ACreativeObjectLocalAxisActor::NeedUpdate()
 
 void UCreativeObjectManager::SpawnObjectForStreaming(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.SpawnObjectForStreaming");
 
@@ -18768,7 +19494,7 @@ void UCreativeObjectManager::SpawnObjectForStreaming(const struct FString& Insta
 
 class UObject* UCreativeObjectManager::SpawnObject(const struct FString& InstanceID, const struct FString& Path, const struct FTransform& SpawnTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.SpawnObject");
 
@@ -18798,7 +19524,7 @@ class UObject* UCreativeObjectManager::SpawnObject(const struct FString& Instanc
 
 bool UCreativeObjectManager::SetObjectTempStreamingType(const struct FString& InstanceID, ECreativeModeActorStreamingType TempStreamingType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.SetObjectTempStreamingType");
 
@@ -18826,7 +19552,7 @@ bool UCreativeObjectManager::SetObjectTempStreamingType(const struct FString& In
 
 bool UCreativeObjectManager::ResetObjectStreamingType(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.ResetObjectStreamingType");
 
@@ -18853,7 +19579,7 @@ bool UCreativeObjectManager::ResetObjectStreamingType(const struct FString& Inst
 
 bool UCreativeObjectManager::RemoveSpawnObjectInfoFormQueue(struct FString* InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.RemoveSpawnObjectInfoFormQueue");
 
@@ -18881,7 +19607,7 @@ bool UCreativeObjectManager::RemoveSpawnObjectInfoFormQueue(struct FString* Inst
 
 void UCreativeObjectManager::RemovePhysicsObject(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.RemovePhysicsObject");
 
@@ -18907,7 +19633,7 @@ void UCreativeObjectManager::RemovePhysicsObject(const struct FString& InstanceI
 
 bool UCreativeObjectManager::RemoveObject(const struct FString& InstanceID, bool bRemovePhysicsObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.RemoveObject");
 
@@ -18935,7 +19661,7 @@ bool UCreativeObjectManager::RemoveObject(const struct FString& InstanceID, bool
 
 bool UCreativeObjectManager::RemoveDestroyObjectInfoFormQueue(struct FString* InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.RemoveDestroyObjectInfoFormQueue");
 
@@ -18964,7 +19690,7 @@ bool UCreativeObjectManager::RemoveDestroyObjectInfoFormQueue(struct FString* In
 
 void UCreativeObjectManager::ReceiveUnregisterObject(const struct FString& InstanceID, class UObject* NewObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.ReceiveUnregisterObject");
 
@@ -18989,7 +19715,7 @@ void UCreativeObjectManager::ReceiveUnregisterObject(const struct FString& Insta
 
 void UCreativeObjectManager::ReceiveRegisterObject(const struct FString& InstanceID, class UObject* NewObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.ReceiveRegisterObject");
 
@@ -19013,7 +19739,7 @@ void UCreativeObjectManager::ReceiveRegisterObject(const struct FString& Instanc
 
 void UCreativeObjectManager::ReceiveOnPostLoadMapWithWorld(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.ReceiveOnPostLoadMapWithWorld");
 
@@ -19034,7 +19760,7 @@ void UCreativeObjectManager::ReceiveOnPostLoadMapWithWorld(class UWorld* World)
 
 void UCreativeObjectManager::ReceiveClearAllObjects()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.ReceiveClearAllObjects");
 
@@ -19056,7 +19782,7 @@ void UCreativeObjectManager::ReceiveClearAllObjects()
 
 void UCreativeObjectManager::OnPostLoadMapWithWorld(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.OnPostLoadMapWithWorld");
 
@@ -19080,7 +19806,7 @@ void UCreativeObjectManager::OnPostLoadMapWithWorld(class UWorld* World)
 
 void UCreativeObjectManager::OnObjectSpawnComplete(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.OnObjectSpawnComplete");
 
@@ -19104,7 +19830,7 @@ void UCreativeObjectManager::OnObjectSpawnComplete(const struct FString& ID)
 
 bool UCreativeObjectManager::IsLogicObject(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.IsLogicObject");
 
@@ -19131,7 +19857,7 @@ bool UCreativeObjectManager::IsLogicObject(const struct FString& ID)
 
 bool UCreativeObjectManager::IsGroupObject(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.IsGroupObject");
 
@@ -19158,7 +19884,7 @@ bool UCreativeObjectManager::IsGroupObject(const struct FString& ID)
 
 bool UCreativeObjectManager::IsCanBatchObject(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.IsCanBatchObject");
 
@@ -19185,7 +19911,7 @@ bool UCreativeObjectManager::IsCanBatchObject(const struct FString& ID)
 
 struct FTransform UCreativeObjectManager::GetObjectTransform(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.GetObjectTransform");
 
@@ -19211,7 +19937,7 @@ struct FTransform UCreativeObjectManager::GetObjectTransform(const struct FStrin
 
 uint32_t UCreativeObjectManager::GetObjectNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.GetObjectNum");
 
@@ -19237,7 +19963,7 @@ uint32_t UCreativeObjectManager::GetObjectNum()
 
 struct FString UCreativeObjectManager::GetObjectAssetPath(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.GetObjectAssetPath");
 
@@ -19264,7 +19990,7 @@ struct FString UCreativeObjectManager::GetObjectAssetPath(const struct FString& 
 
 int UCreativeObjectManager::GetObjectAssetID(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.GetObjectAssetID");
 
@@ -19291,7 +20017,7 @@ int UCreativeObjectManager::GetObjectAssetID(const struct FString& ID)
 
 class UObject* UCreativeObjectManager::GetObject(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.GetObject");
 
@@ -19317,7 +20043,7 @@ class UObject* UCreativeObjectManager::GetObject(const struct FString& InstanceI
 
 uint32_t UCreativeObjectManager::GetActiveObjectNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.GetActiveObjectNum");
 
@@ -19343,7 +20069,7 @@ uint32_t UCreativeObjectManager::GetActiveObjectNum()
 
 class UCreativeObjectManager* UCreativeObjectManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.Get");
 
@@ -19369,7 +20095,7 @@ class UCreativeObjectManager* UCreativeObjectManager::Get(class UObject* WorldCo
 
 void UCreativeObjectManager::DestroyObjectForStreaming(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.DestroyObjectForStreaming");
 
@@ -19394,7 +20120,7 @@ void UCreativeObjectManager::DestroyObjectForStreaming(const struct FString& Ins
 
 bool UCreativeObjectManager::DestroyObject(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.DestroyObject");
 
@@ -19421,7 +20147,7 @@ bool UCreativeObjectManager::DestroyObject(const struct FString& InstanceID)
 
 bool UCreativeObjectManager::CheckObjectBeBatch(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.CheckObjectBeBatch");
 
@@ -19449,7 +20175,7 @@ bool UCreativeObjectManager::CheckObjectBeBatch(const struct FString& ID)
 
 bool UCreativeObjectManager::ChangeObjectTransform(const struct FString& InstanceID, const struct FTransform& Transform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.ChangeObjectTransform");
 
@@ -19478,7 +20204,7 @@ bool UCreativeObjectManager::ChangeObjectTransform(const struct FString& Instanc
 
 void UCreativeObjectManager::AddSpawnObjectToQueue(const struct FString& InstanceID, const struct FString& Path, const struct FTransform& SpawnTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.AddSpawnObjectToQueue");
 
@@ -19506,7 +20232,7 @@ void UCreativeObjectManager::AddSpawnObjectToQueue(const struct FString& Instanc
 
 bool UCreativeObjectManager::AddObject(const struct FString& InstanceID, const struct FCreativeModeStreamingParameters& StreamingParameters)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.AddObject");
 
@@ -19533,7 +20259,7 @@ bool UCreativeObjectManager::AddObject(const struct FString& InstanceID, const s
 
 void UCreativeObjectManager::AddDestroyObjectToQueue(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectManager.AddDestroyObjectToQueue");
 
@@ -19557,7 +20283,7 @@ void UCreativeObjectManager::AddDestroyObjectToQueue(const struct FString& Insta
 
 void UCreativeObjectStateManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectStateManager.ReceiveOnGameStateBeginPlay");
 
@@ -19580,7 +20306,7 @@ void UCreativeObjectStateManager::ReceiveOnGameStateBeginPlay(class AGameStateBa
 
 void UCreativeObjectStateManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectStateManager.OnGameStateBeginPlay");
 
@@ -19605,7 +20331,7 @@ void UCreativeObjectStateManager::OnGameStateBeginPlay(class AGameStateBase* Gam
 
 class UCreativeObjectStateManager* UCreativeObjectStateManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeObjectStateManager.Get");
 
@@ -19634,7 +20360,7 @@ class UCreativeObjectStateManager* UCreativeObjectStateManager::Get(class UObjec
 
 bool UCreativeOctreeSyncManager::ShouldMergeData(const struct FOctreeData& ExistingData, const struct FOctreeData& NewData, float Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.ShouldMergeData");
 
@@ -19660,7 +20386,7 @@ bool UCreativeOctreeSyncManager::ShouldMergeData(const struct FOctreeData& Exist
 
 void UCreativeOctreeSyncManager::ResetTree()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.ResetTree");
 
@@ -19686,7 +20412,7 @@ void UCreativeOctreeSyncManager::ResetTree()
 
 int UCreativeOctreeSyncManager::RemoveDataInBoundsByActorRecursive(const struct FBox& BoundingBox, class AActor* Actor, struct FOctreeNode* Node)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.RemoveDataInBoundsByActorRecursive");
 
@@ -19717,7 +20443,7 @@ int UCreativeOctreeSyncManager::RemoveDataInBoundsByActorRecursive(const struct 
 
 void UCreativeOctreeSyncManager::RemoveDataInBoundsByActor(class AActor* Actor, struct FBox* BoundingBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.RemoveDataInBoundsByActor");
 
@@ -19742,7 +20468,7 @@ void UCreativeOctreeSyncManager::RemoveDataInBoundsByActor(class AActor* Actor, 
 
 void UCreativeOctreeSyncManager::RemoveDataByUIDs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.RemoveDataByUIDs");
 
@@ -19765,7 +20491,7 @@ void UCreativeOctreeSyncManager::RemoveDataByUIDs()
 
 void UCreativeOctreeSyncManager::RemoveDataByUID(int UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.RemoveDataByUID");
 
@@ -19789,7 +20515,7 @@ void UCreativeOctreeSyncManager::RemoveDataByUID(int UID)
 
 void UCreativeOctreeSyncManager::RemoveDataByPlayerKey(const struct FString& PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.RemoveDataByPlayerKey");
 
@@ -19813,7 +20539,7 @@ void UCreativeOctreeSyncManager::RemoveDataByPlayerKey(const struct FString& Pla
 
 void UCreativeOctreeSyncManager::InsertData(const struct FOctreeData& InData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.InsertData");
 
@@ -19840,7 +20566,7 @@ void UCreativeOctreeSyncManager::InsertData(const struct FOctreeData& InData)
 
 void UCreativeOctreeSyncManager::Initialize(float InCellSize, float InMergeDistance, int InMaxDepth, float InMinCellSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.Initialize");
 
@@ -19868,7 +20594,7 @@ void UCreativeOctreeSyncManager::Initialize(float InCellSize, float InMergeDista
 
 void UCreativeOctreeSyncManager::HookDecalManager(class ACreativeDecalManager* DecalManager, bool bRegister)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.HookDecalManager");
 
@@ -19895,7 +20621,7 @@ void UCreativeOctreeSyncManager::HookDecalManager(class ACreativeDecalManager* D
 
 bool UCreativeOctreeSyncManager::HasObstacleBetween(const struct FVector& Start, const struct FVector& End)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.HasObstacleBetween");
 
@@ -19924,7 +20650,7 @@ bool UCreativeOctreeSyncManager::HasObstacleBetween(const struct FVector& Start,
 
 struct FVector UCreativeOctreeSyncManager::GetOffsetLocationForObstacleCheck(const struct FVector& Location, const struct FVector& Forward)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.GetOffsetLocationForObstacleCheck");
 
@@ -19952,7 +20678,7 @@ struct FVector UCreativeOctreeSyncManager::GetOffsetLocationForObstacleCheck(con
 
 TArray<struct FOctreeData> UCreativeOctreeSyncManager::GetNodeData(const struct FOctreeNode& Node)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.GetNodeData");
 
@@ -19979,7 +20705,7 @@ TArray<struct FOctreeData> UCreativeOctreeSyncManager::GetNodeData(const struct 
 
 TArray<struct FOctreeNode> UCreativeOctreeSyncManager::GetNodeChildren(const struct FOctreeNode& Node)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.GetNodeChildren");
 
@@ -20010,7 +20736,7 @@ TArray<struct FOctreeNode> UCreativeOctreeSyncManager::GetNodeChildren(const str
 
 void UCreativeOctreeSyncManager::GetNearbyDataRecursive(const struct FOctreeNode& Node, const struct FVector& Location, float SearchRadius, int MaxCount, bool bExpandSearch, TArray<struct FOctreeData>* OutData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.GetNearbyDataRecursive");
 
@@ -20045,7 +20771,7 @@ void UCreativeOctreeSyncManager::GetNearbyDataRecursive(const struct FOctreeNode
 
 TArray<struct FOctreeData> UCreativeOctreeSyncManager::GetNearbyData(const struct FVector& Location, int MaxCount, bool bSortByDistance, bool bExpandSearch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.GetNearbyData");
 
@@ -20074,7 +20800,7 @@ TArray<struct FOctreeData> UCreativeOctreeSyncManager::GetNearbyData(const struc
 
 TArray<struct FOctreeData> UCreativeOctreeSyncManager::GetAllData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.GetAllData");
 
@@ -20100,7 +20826,7 @@ TArray<struct FOctreeData> UCreativeOctreeSyncManager::GetAllData()
 
 class UCreativeOctreeSyncManager* UCreativeOctreeSyncManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.Get");
 
@@ -20126,7 +20852,7 @@ class UCreativeOctreeSyncManager* UCreativeOctreeSyncManager::Get(class UObject*
 
 void UCreativeOctreeSyncManager::ExpandRootNode(const struct FVector& Point)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.ExpandRootNode");
 
@@ -20150,7 +20876,7 @@ void UCreativeOctreeSyncManager::ExpandRootNode(const struct FVector& Point)
 
 void UCreativeOctreeSyncManager::EnsureRootContainsPoint(const struct FVector& Point)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOctreeSyncManager.EnsureRootContainsPoint");
 
@@ -20172,7 +20898,7 @@ void UCreativeOctreeSyncManager::EnsureRootContainsPoint(const struct FVector& P
 
 void UCreativeOfflineBuildManager::ReceiveOnPostSetLuaEventBridgeInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOfflineBuildManager.ReceiveOnPostSetLuaEventBridgeInstance");
 
@@ -20192,7 +20918,7 @@ void UCreativeOfflineBuildManager::ReceiveOnPostSetLuaEventBridgeInstance()
 
 void UCreativeOfflineBuildManager::OnPostSetLuaEventBridgeInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOfflineBuildManager.OnPostSetLuaEventBridgeInstance");
 
@@ -20216,7 +20942,7 @@ void UCreativeOfflineBuildManager::OnPostSetLuaEventBridgeInstance()
 
 class UCreativeOfflineBuildManager* UCreativeOfflineBuildManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOfflineBuildManager.Get");
 
@@ -20240,7 +20966,7 @@ class UCreativeOfflineBuildManager* UCreativeOfflineBuildManager::Get(class UObj
 
 void UCreativeOverlapCheckComponent::StartOverlapCheck()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOverlapCheckComponent.StartOverlapCheck");
 
@@ -20264,7 +20990,7 @@ void UCreativeOverlapCheckComponent::StartOverlapCheck()
 
 bool UCreativeOverlapCheckComponent::IsOverlapClass(class AActor* OverlapActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOverlapCheckComponent.IsOverlapClass");
 
@@ -20290,7 +21016,7 @@ bool UCreativeOverlapCheckComponent::IsOverlapClass(class AActor* OverlapActor)
 
 void UCreativeOverlapCheckComponent::InitOverlapComponent(class UPrimitiveComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOverlapCheckComponent.InitOverlapComponent");
 
@@ -20312,7 +21038,7 @@ void UCreativeOverlapCheckComponent::InitOverlapComponent(class UPrimitiveCompon
 
 void UCreativeOverlapCheckComponent::EndOverlapCheck()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOverlapCheckComponent.EndOverlapCheck");
 
@@ -20333,7 +21059,7 @@ void UCreativeOverlapCheckComponent::EndOverlapCheck()
 
 void UCreativeOverlapCheckComponent::CheckOverlapActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOverlapCheckComponent.CheckOverlapActors");
 
@@ -20356,7 +21082,7 @@ void UCreativeOverlapCheckComponent::CheckOverlapActors()
 
 void UCreativeOverlapCheckComponent::AddOverlapClass(class UClass* OverlapClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeOverlapCheckComponent.AddOverlapClass");
 
@@ -20380,7 +21106,7 @@ void UCreativeOverlapCheckComponent::AddOverlapClass(class UClass* OverlapClass)
 
 void UCreativePerfManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.ReceiveOnGameStateBeginPlay");
 
@@ -20403,7 +21129,7 @@ void UCreativePerfManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* Gam
 
 void UCreativePerfManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.OnGameStateBeginPlay");
 
@@ -20427,7 +21153,7 @@ void UCreativePerfManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 
 TMap<struct FName, float> UCreativePerfManager::GetUObjectMemoryUsage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.GetUObjectMemoryUsage");
 
@@ -20452,7 +21178,7 @@ TMap<struct FName, float> UCreativePerfManager::GetUObjectMemoryUsage()
 
 TArray<struct FCreaitvePerfDataMap> UCreativePerfManager::GetResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.GetResult");
 
@@ -20477,7 +21203,7 @@ TArray<struct FCreaitvePerfDataMap> UCreativePerfManager::GetResult()
 
 struct FCreativeNetData UCreativePerfManager::GetNetData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.GetNetData");
 
@@ -20502,7 +21228,7 @@ struct FCreativeNetData UCreativePerfManager::GetNetData()
 
 struct FCreativeMemoryData UCreativePerfManager::GetMemoryData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.GetMemoryData");
 
@@ -20529,7 +21255,7 @@ struct FCreativeMemoryData UCreativePerfManager::GetMemoryData()
 
 void UCreativePerfManager::GetCPUUsage(int Type, float* OutCPUTimePct, float* OutCPUTimePctRelative)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.GetCPUUsage");
 
@@ -20559,7 +21285,7 @@ void UCreativePerfManager::GetCPUUsage(int Type, float* OutCPUTimePct, float* Ou
 
 class UCreativePerfManager* UCreativePerfManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.Get");
 
@@ -20583,7 +21309,7 @@ class UCreativePerfManager* UCreativePerfManager::Get(class UObject* WorldContex
 
 void UCreativePerfManager::EndSample()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.EndSample");
 
@@ -20604,7 +21330,7 @@ void UCreativePerfManager::EndSample()
 
 void UCreativePerfManager::BeginSample()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.BeginSample");
 
@@ -20629,7 +21355,7 @@ void UCreativePerfManager::BeginSample()
 
 void UCreativePerfManager::AddActorToRecord(class AActor* Actor, int AssetId, const struct FName& ScopeName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePerfManager.AddActorToRecord");
 
@@ -20655,7 +21381,7 @@ void UCreativePerfManager::AddActorToRecord(class AActor* Actor, int AssetId, co
 
 void UCreativePhotonDestructibleMeshComponent::SetInstanceActive(bool bActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.SetInstanceActive");
 
@@ -20679,7 +21405,7 @@ void UCreativePhotonDestructibleMeshComponent::SetInstanceActive(bool bActive)
 
 void UCreativePhotonDestructibleMeshComponent::SetDestructionParam(const struct FPhotonDestructionParam& Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.SetDestructionParam");
 
@@ -20703,7 +21429,7 @@ void UCreativePhotonDestructibleMeshComponent::SetDestructionParam(const struct 
 
 void UCreativePhotonDestructibleMeshComponent::SetCreativeServerDamagedDelegate(const struct FScriptDelegate& del)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.SetCreativeServerDamagedDelegate");
 
@@ -20727,7 +21453,7 @@ void UCreativePhotonDestructibleMeshComponent::SetCreativeServerDamagedDelegate(
 
 void UCreativePhotonDestructibleMeshComponent::SetCreativeClientFragmentStateChangedDelegate(const struct FScriptDelegate& del)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.SetCreativeClientFragmentStateChangedDelegate");
 
@@ -20752,7 +21478,7 @@ void UCreativePhotonDestructibleMeshComponent::SetCreativeClientFragmentStateCha
 
 bool UCreativePhotonDestructibleMeshComponent::RebornOneFragment(int FragmentIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.RebornOneFragment");
 
@@ -20778,7 +21504,7 @@ bool UCreativePhotonDestructibleMeshComponent::RebornOneFragment(int FragmentInd
 
 bool UCreativePhotonDestructibleMeshComponent::RebornInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.RebornInstance");
 
@@ -20803,7 +21529,7 @@ bool UCreativePhotonDestructibleMeshComponent::RebornInstance()
 
 bool UCreativePhotonDestructibleMeshComponent::RandomRecoverOneFragment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.RandomRecoverOneFragment");
 
@@ -20826,7 +21552,7 @@ bool UCreativePhotonDestructibleMeshComponent::RandomRecoverOneFragment()
 
 void UCreativePhotonDestructibleMeshComponent::RandomDestroyOneFragment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.RandomDestroyOneFragment");
 
@@ -20847,7 +21573,7 @@ void UCreativePhotonDestructibleMeshComponent::RandomDestroyOneFragment()
 
 void UCreativePhotonDestructibleMeshComponent::DestroyInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.DestroyInstance");
 
@@ -20871,7 +21597,7 @@ void UCreativePhotonDestructibleMeshComponent::DestroyInstance()
 
 bool UCreativePhotonDestructibleMeshComponent::CheckFragmentOverlap(int FragmentIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonDestructibleMeshComponent.CheckFragmentOverlap");
 
@@ -20897,7 +21623,7 @@ bool UCreativePhotonDestructibleMeshComponent::CheckFragmentOverlap(int Fragment
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetServerDamagedInstancedDelegate(const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.SetServerDamagedInstancedDelegate");
 
@@ -20922,7 +21648,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetServerDam
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetInstanceMaxHp(int InstanceIndex, float MaxHP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.SetInstanceMaxHp");
 
@@ -20948,7 +21674,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetInstanceM
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetInstanceActive(const struct FString& InstanceID, bool bActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.SetInstanceActive");
 
@@ -20974,7 +21700,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetInstanceA
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetDestructionParam(TArray<int> InstanceIndex, TArray<struct FPhotonDestructionParam> DestructionParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.SetDestructionParam");
 
@@ -21001,7 +21727,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::SetDestructi
 
 bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RebornOneFragment(const struct FString& InstanceID, int FragmentIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.RebornOneFragment");
 
@@ -21029,7 +21755,7 @@ bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RebornOneFra
 
 bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RebornInstance(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.RebornInstance");
 
@@ -21056,7 +21782,7 @@ bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RebornInstan
 
 bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RandomRecoverOneFragment(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.RandomRecoverOneFragment");
 
@@ -21082,7 +21808,7 @@ bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RandomRecove
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RandomDestroyOneFragment(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.RandomDestroyOneFragment");
 
@@ -21107,7 +21833,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::RandomDestro
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::OnClientInitial(int InstanceIndex, TArray<int> ImpactFragmentItemIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.OnClientInitial");
 
@@ -21136,7 +21862,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::OnClientInit
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::OnClientDamaged(int InstanceIndex, TArray<int> ImpactFragmentItemIndex, const struct FVector& LocalImpactPoint, const struct FVector& LocalVelocity, int HitType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.OnClientDamaged");
 
@@ -21165,7 +21891,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::OnClientDama
 
 struct FString UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::GetUGCInstanceID(int InstanceIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.GetUGCInstanceID");
 
@@ -21191,7 +21917,7 @@ struct FString UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::Ge
 
 void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::DestroyInstance(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.DestroyInstance");
 
@@ -21217,7 +21943,7 @@ void UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::DestroyInsta
 
 bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::CheckFragmentOverlap(int InstanceIndex, int FragmentIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonHierarchicalInstancedDestructibleMeshComponent.CheckFragmentOverlap");
 
@@ -21244,7 +21970,7 @@ bool UCreativePhotonHierarchicalInstancedDestructibleMeshComponent::CheckFragmen
 
 void UCreativePhotonInstancedDestructibleMeshComponent::SetServerDamagedInstancedDelegate(const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.SetServerDamagedInstancedDelegate");
 
@@ -21269,7 +21995,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::SetServerDamagedInstance
 
 void UCreativePhotonInstancedDestructibleMeshComponent::SetInstanceMaxHp(int InstanceIndex, float MaxHP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.SetInstanceMaxHp");
 
@@ -21295,7 +22021,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::SetInstanceMaxHp(int Ins
 
 void UCreativePhotonInstancedDestructibleMeshComponent::SetInstanceActive(const struct FString& InstanceID, bool bActive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.SetInstanceActive");
 
@@ -21321,7 +22047,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::SetInstanceActive(const 
 
 void UCreativePhotonInstancedDestructibleMeshComponent::SetDestructionParam(TArray<int> InstanceIndex, TArray<struct FPhotonDestructionParam> DestructionParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.SetDestructionParam");
 
@@ -21348,7 +22074,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::SetDestructionParam(TArr
 
 bool UCreativePhotonInstancedDestructibleMeshComponent::RebornOneFragment(const struct FString& InstanceID, int FragmentIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.RebornOneFragment");
 
@@ -21376,7 +22102,7 @@ bool UCreativePhotonInstancedDestructibleMeshComponent::RebornOneFragment(const 
 
 bool UCreativePhotonInstancedDestructibleMeshComponent::RebornInstance(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.RebornInstance");
 
@@ -21403,7 +22129,7 @@ bool UCreativePhotonInstancedDestructibleMeshComponent::RebornInstance(const str
 
 bool UCreativePhotonInstancedDestructibleMeshComponent::RandomRecoverOneFragment(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.RandomRecoverOneFragment");
 
@@ -21429,7 +22155,7 @@ bool UCreativePhotonInstancedDestructibleMeshComponent::RandomRecoverOneFragment
 
 void UCreativePhotonInstancedDestructibleMeshComponent::RandomDestroyOneFragment(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.RandomDestroyOneFragment");
 
@@ -21454,7 +22180,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::RandomDestroyOneFragment
 
 void UCreativePhotonInstancedDestructibleMeshComponent::OnClientInitial(int InstanceIndex, TArray<int> ImpactFragmentItemIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.OnClientInitial");
 
@@ -21483,7 +22209,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::OnClientInitial(int Inst
 
 void UCreativePhotonInstancedDestructibleMeshComponent::OnClientDamaged(int InstanceIndex, TArray<int> ImpactFragmentItemIndex, const struct FVector& LocalImpactPoint, const struct FVector& LocalVelocity, int HitType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.OnClientDamaged");
 
@@ -21512,7 +22238,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::OnClientDamaged(int Inst
 
 struct FString UCreativePhotonInstancedDestructibleMeshComponent::GetUGCInstanceID(int InstanceIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.GetUGCInstanceID");
 
@@ -21538,7 +22264,7 @@ struct FString UCreativePhotonInstancedDestructibleMeshComponent::GetUGCInstance
 
 void UCreativePhotonInstancedDestructibleMeshComponent::DestroyInstance(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.DestroyInstance");
 
@@ -21564,7 +22290,7 @@ void UCreativePhotonInstancedDestructibleMeshComponent::DestroyInstance(const st
 
 bool UCreativePhotonInstancedDestructibleMeshComponent::CheckFragmentOverlap(int InstanceIndex, int FragmentIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhotonInstancedDestructibleMeshComponent.CheckFragmentOverlap");
 
@@ -21592,7 +22318,7 @@ bool UCreativePhotonInstancedDestructibleMeshComponent::CheckFragmentOverlap(int
 
 void ACreativePhysicsBatchActor::UpdatePhysicsComponentMaterial(struct FString* ComponentID, struct FString* MaterialPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.UpdatePhysicsComponentMaterial");
 
@@ -21618,11 +22344,11 @@ void ACreativePhysicsBatchActor::UpdatePhysicsComponentMaterial(struct FString* 
 // Parameters:
 // struct FString                 ComponentID                    (Parm, OutParm, ZeroConstructor)
 // struct FTransform              Transform                      (Parm, IsPlainOldData)
-// TEnumAsByte<enum ECollisionEnabled> CollisionEnabled               (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECollisionEnabled> CollisionEnabled               (Parm, ZeroConstructor, IsPlainOldData)
 
-void ACreativePhysicsBatchActor::UpdatePhysicsComponent(const struct FTransform& Transform, TEnumAsByte<enum ECollisionEnabled> CollisionEnabled, struct FString* ComponentID)
+void ACreativePhysicsBatchActor::UpdatePhysicsComponent(const struct FTransform& Transform, TEnumAsByte<ECollisionEnabled> CollisionEnabled, struct FString* ComponentID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.UpdatePhysicsComponent");
 
@@ -21651,7 +22377,7 @@ void ACreativePhysicsBatchActor::UpdatePhysicsComponent(const struct FTransform&
 
 bool ACreativePhysicsBatchActor::UnRegisterPhysicsComponent(struct FString* ComponentID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.UnRegisterPhysicsComponent");
 
@@ -21676,11 +22402,11 @@ bool ACreativePhysicsBatchActor::UnRegisterPhysicsComponent(struct FString* Comp
 // (Final, Native, Public, HasOutParms)
 // Parameters:
 // struct FString                 ComponentID                    (Parm, OutParm, ZeroConstructor)
-// TEnumAsByte<enum ECollisionEnabled> CollisionEnabled               (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECollisionEnabled> CollisionEnabled               (Parm, ZeroConstructor, IsPlainOldData)
 
-void ACreativePhysicsBatchActor::SetPhysicsComponentEnabled(TEnumAsByte<enum ECollisionEnabled> CollisionEnabled, struct FString* ComponentID)
+void ACreativePhysicsBatchActor::SetPhysicsComponentEnabled(TEnumAsByte<ECollisionEnabled> CollisionEnabled, struct FString* ComponentID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.SetPhysicsComponentEnabled");
 
@@ -21711,7 +22437,7 @@ void ACreativePhysicsBatchActor::SetPhysicsComponentEnabled(TEnumAsByte<enum ECo
 
 void ACreativePhysicsBatchActor::RegisterPhysicsComponentByMesh(const struct FString& InstanceID, const struct FString& ComponentID, const struct FTransform& Transform, const struct FString& MeshPath, const struct FName& CollisionProfileName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.RegisterPhysicsComponentByMesh");
 
@@ -21740,7 +22466,7 @@ void ACreativePhysicsBatchActor::RegisterPhysicsComponentByMesh(const struct FSt
 
 void ACreativePhysicsBatchActor::OnLoadMeshSuccessByPath(class UObject* Obj, const struct FString& ComponentID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.OnLoadMeshSuccessByPath");
 
@@ -21766,7 +22492,7 @@ void ACreativePhysicsBatchActor::OnLoadMeshSuccessByPath(class UObject* Obj, con
 
 void ACreativePhysicsBatchActor::OnLoadMeshSuccess(class UObject* Obj, const struct FString& ComponentID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.OnLoadMeshSuccess");
 
@@ -21791,7 +22517,7 @@ void ACreativePhysicsBatchActor::OnLoadMeshSuccess(class UObject* Obj, const str
 
 bool ACreativePhysicsBatchActor::IsLoadFinish()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.IsLoadFinish");
 
@@ -21816,7 +22542,7 @@ bool ACreativePhysicsBatchActor::IsLoadFinish()
 
 int ACreativePhysicsBatchActor::GetRegisterNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.GetRegisterNum");
 
@@ -21842,7 +22568,7 @@ int ACreativePhysicsBatchActor::GetRegisterNum()
 
 class UCreativePhysicsComponent* ACreativePhysicsBatchActor::GetPhysicsComponent(struct FString* ComponentID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.GetPhysicsComponent");
 
@@ -21868,7 +22594,7 @@ class UCreativePhysicsComponent* ACreativePhysicsBatchActor::GetPhysicsComponent
 
 void ACreativePhysicsBatchActor::ClearAllPhysicsComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsBatchActor.ClearAllPhysicsComponent");
 
@@ -21891,7 +22617,7 @@ void ACreativePhysicsBatchActor::ClearAllPhysicsComponent()
 
 void UCreativePhysicsComponent::SetIsReplicatedOnly(bool ShouldReplicate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsComponent.SetIsReplicatedOnly");
 
@@ -21916,7 +22642,7 @@ void UCreativePhysicsComponent::SetIsReplicatedOnly(bool ShouldReplicate)
 
 void UCreativePhysicsComponent::OnLoadMaterialSuccess(class UObject* Obj, const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsComponent.OnLoadMaterialSuccess");
 
@@ -21943,7 +22669,7 @@ void UCreativePhysicsComponent::OnLoadMaterialSuccess(class UObject* Obj, const 
 
 void UCreativePhysicsManager::UpdatePhysicsObjectCellInfo(const struct FString& InstanceID, const struct FString& GridName, const struct FIntVector& CellIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.UpdatePhysicsObjectCellInfo");
 
@@ -21969,7 +22695,7 @@ void UCreativePhysicsManager::UpdatePhysicsObjectCellInfo(const struct FString& 
 
 void UCreativePhysicsManager::SetStreamingEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.SetStreamingEnable");
 
@@ -21995,7 +22721,7 @@ void UCreativePhysicsManager::SetStreamingEnable(bool Enable)
 
 void UCreativePhysicsManager::SetPhysicsActorVisible(const struct FString& GridName, const struct FIntVector& CellIndex, bool Visible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.SetPhysicsActorVisible");
 
@@ -22021,7 +22747,7 @@ void UCreativePhysicsManager::SetPhysicsActorVisible(const struct FString& GridN
 
 void UCreativePhysicsManager::RemovePhysicsObject(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.RemovePhysicsObject");
 
@@ -22046,7 +22772,7 @@ void UCreativePhysicsManager::RemovePhysicsObject(const struct FString& Instance
 
 bool UCreativePhysicsManager::PreAddPhysicsObjectCheck(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.PreAddPhysicsObjectCheck");
 
@@ -22070,7 +22796,7 @@ bool UCreativePhysicsManager::PreAddPhysicsObjectCheck(const struct FString& Ins
 
 void UCreativePhysicsManager::OnPhysicsBatchActorLoadFinish()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.OnPhysicsBatchActorLoadFinish");
 
@@ -22094,7 +22820,7 @@ void UCreativePhysicsManager::OnPhysicsBatchActorLoadFinish()
 
 bool UCreativePhysicsManager::IsPhysicsActorVisible(const struct FString& GridName, const struct FIntVector& CellIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.IsPhysicsActorVisible");
 
@@ -22122,7 +22848,7 @@ bool UCreativePhysicsManager::IsPhysicsActorVisible(const struct FString& GridNa
 
 class ACreativePhysicsBatchActor* UCreativePhysicsManager::GetPhysicsBatchActorByInstanceID(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.GetPhysicsBatchActorByInstanceID");
 
@@ -22150,7 +22876,7 @@ class ACreativePhysicsBatchActor* UCreativePhysicsManager::GetPhysicsBatchActorB
 
 class ACreativePhysicsBatchActor* UCreativePhysicsManager::GetPhysicsBatchActor(const struct FString& GridName, const struct FIntVector& Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.GetPhysicsBatchActor");
 
@@ -22177,7 +22903,7 @@ class ACreativePhysicsBatchActor* UCreativePhysicsManager::GetPhysicsBatchActor(
 
 class ACreativePhysicsBatchActor* UCreativePhysicsManager::GetGlobalPhysicsBatchActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.GetGlobalPhysicsBatchActor");
 
@@ -22202,7 +22928,7 @@ class ACreativePhysicsBatchActor* UCreativePhysicsManager::GetGlobalPhysicsBatch
 
 TArray<class ACreativePhysicsBatchActor*> UCreativePhysicsManager::GetAllPhysicsActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.GetAllPhysicsActor");
 
@@ -22228,7 +22954,7 @@ TArray<class ACreativePhysicsBatchActor*> UCreativePhysicsManager::GetAllPhysics
 
 class UCreativePhysicsManager* UCreativePhysicsManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.Get");
 
@@ -22252,7 +22978,7 @@ class UCreativePhysicsManager* UCreativePhysicsManager::Get(class UObject* World
 
 void UCreativePhysicsManager::ClearAllPhysicsBatchActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.ClearAllPhysicsBatchActor");
 
@@ -22276,7 +23002,7 @@ void UCreativePhysicsManager::ClearAllPhysicsBatchActor()
 
 void UCreativePhysicsManager::ChangePhysicsObjectIsPrefab(const struct FString& InstanceID, bool bIsPrefab)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.ChangePhysicsObjectIsPrefab");
 
@@ -22303,7 +23029,7 @@ void UCreativePhysicsManager::ChangePhysicsObjectIsPrefab(const struct FString& 
 
 void UCreativePhysicsManager::AddPhysicsObject(const struct FString& InstanceID, const struct FString& GridName, const struct FIntVector& CellIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePhysicsManager.AddPhysicsObject");
 
@@ -22331,7 +23057,7 @@ void UCreativePhysicsManager::AddPhysicsObject(const struct FString& InstanceID,
 
 bool UCreativePlayerAPIObject::SetPlayerDirection(int64_t PlayerUUID, const struct FVector& Direction)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.SetPlayerDirection");
 
@@ -22359,7 +23085,7 @@ bool UCreativePlayerAPIObject::SetPlayerDirection(int64_t PlayerUUID, const stru
 
 int UCreativePlayerAPIObject::GetPlayerTeamIndex(int64_t PlayerUUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.GetPlayerTeamIndex");
 
@@ -22387,7 +23113,7 @@ int UCreativePlayerAPIObject::GetPlayerTeamIndex(int64_t PlayerUUID)
 
 void UCreativePlayerAPIObject::GetPlayerTeamIDAndTeamIndexFromCPP(int64_t PlayerUUID, int* OutTeamID, int* OutTeamIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.GetPlayerTeamIDAndTeamIndexFromCPP");
 
@@ -22417,7 +23143,7 @@ void UCreativePlayerAPIObject::GetPlayerTeamIDAndTeamIndexFromCPP(int64_t Player
 
 int UCreativePlayerAPIObject::GetPlayerTeamID(int64_t PlayerUUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.GetPlayerTeamID");
 
@@ -22444,7 +23170,7 @@ int UCreativePlayerAPIObject::GetPlayerTeamID(int64_t PlayerUUID)
 
 float UCreativePlayerAPIObject::GetPlayerMaxHealth(int64_t PlayerUUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.GetPlayerMaxHealth");
 
@@ -22471,7 +23197,7 @@ float UCreativePlayerAPIObject::GetPlayerMaxHealth(int64_t PlayerUUID)
 
 struct FVector UCreativePlayerAPIObject::GetPlayerLocation(int64_t PlayerUUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.GetPlayerLocation");
 
@@ -22498,7 +23224,7 @@ struct FVector UCreativePlayerAPIObject::GetPlayerLocation(int64_t PlayerUUID)
 
 float UCreativePlayerAPIObject::GetPlayerHealth(int64_t PlayerUUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.GetPlayerHealth");
 
@@ -22525,7 +23251,7 @@ float UCreativePlayerAPIObject::GetPlayerHealth(int64_t PlayerUUID)
 
 struct FVector UCreativePlayerAPIObject::GetPlayerDirection(int64_t PlayerUUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.GetPlayerDirection");
 
@@ -22553,7 +23279,7 @@ struct FVector UCreativePlayerAPIObject::GetPlayerDirection(int64_t PlayerUUID)
 
 float UCreativePlayerAPIObject::AddPlayerHealth(int64_t PlayerUUID, float AddHealth)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePlayerAPIObject.AddPlayerHealth");
 
@@ -22580,7 +23306,7 @@ float UCreativePlayerAPIObject::AddPlayerHealth(int64_t PlayerUUID, float AddHea
 
 void ACreativeModePlayerState::ServerRemoveInstance(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModePlayerState.ServerRemoveInstance");
 
@@ -22606,7 +23332,7 @@ void ACreativeModePlayerState::ServerRemoveInstance(const struct FString& Instan
 
 TArray<unsigned char> ACreativeModePlayerState::ServerReceiveModifyContent(TArray<unsigned char> Content, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModePlayerState.ServerReceiveModifyContent");
 
@@ -22635,7 +23361,7 @@ TArray<unsigned char> ACreativeModePlayerState::ServerReceiveModifyContent(TArra
 
 void ACreativeModePlayerState::ServerAddInstanceAdvance(const struct FString& InstanceID, TArray<unsigned char> Content, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModePlayerState.ServerAddInstanceAdvance");
 
@@ -22662,7 +23388,7 @@ void ACreativeModePlayerState::ServerAddInstanceAdvance(const struct FString& In
 
 void ACreativeModePlayerState::ServerAddInstance(const struct FString& InstanceID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModePlayerState.ServerAddInstance");
 
@@ -22687,7 +23413,7 @@ void ACreativeModePlayerState::ServerAddInstance(const struct FString& InstanceI
 
 void UCreativePoolInterface::SetRecycleTime(float RecycleTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.SetRecycleTime");
 
@@ -22711,7 +23437,7 @@ void UCreativePoolInterface::SetRecycleTime(float RecycleTime)
 
 void UCreativePoolInterface::SetIsRecycled(bool IsRecycled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.SetIsRecycled");
 
@@ -22736,7 +23462,7 @@ void UCreativePoolInterface::SetIsRecycled(bool IsRecycled)
 
 void UCreativePoolInterface::ReceiveOnReturnToPool(class UObject* NewOuter, int RecycledSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.ReceiveOnReturnToPool");
 
@@ -22761,7 +23487,7 @@ void UCreativePoolInterface::ReceiveOnReturnToPool(class UObject* NewOuter, int 
 
 void UCreativePoolInterface::ReceiveOnPickFromPool(class UObject* NewOuter, const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.ReceiveOnPickFromPool");
 
@@ -22787,7 +23513,7 @@ void UCreativePoolInterface::ReceiveOnPickFromPool(class UObject* NewOuter, cons
 
 bool UCreativePoolInterface::OnReturnToPool(class UObject* NewOuter, uint32_t RecycledSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.OnReturnToPool");
 
@@ -22815,7 +23541,7 @@ bool UCreativePoolInterface::OnReturnToPool(class UObject* NewOuter, uint32_t Re
 
 void UCreativePoolInterface::OnPickFromPool(class UObject* NewOuter, const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.OnPickFromPool");
 
@@ -22842,7 +23568,7 @@ void UCreativePoolInterface::OnPickFromPool(class UObject* NewOuter, const struc
 
 struct FString UCreativePoolInterface::GetUnusedComponentName(class UObject* InOuter, struct FString* NamePrefix)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.GetUnusedComponentName");
 
@@ -22871,7 +23597,7 @@ struct FString UCreativePoolInterface::GetUnusedComponentName(class UObject* InO
 
 float UCreativePoolInterface::GetRecycleTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.GetRecycleTime");
 
@@ -22896,7 +23622,7 @@ float UCreativePoolInterface::GetRecycleTime()
 
 bool UCreativePoolInterface::CheckIsRecycled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolInterface.CheckIsRecycled");
 
@@ -22921,7 +23647,7 @@ bool UCreativePoolInterface::CheckIsRecycled()
 
 void UCreativePoolManager::SetPoolManagerEnable(bool bPoolManagerEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.SetPoolManagerEnable");
 
@@ -22946,7 +23672,7 @@ void UCreativePoolManager::SetPoolManagerEnable(bool bPoolManagerEnable)
 
 void UCreativePoolManager::ReturnObject(int PoolId, class UObject* Obj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.ReturnObject");
 
@@ -22972,7 +23698,7 @@ void UCreativePoolManager::ReturnObject(int PoolId, class UObject* Obj)
 
 void UCreativePoolManager::OnReceivePickObjectHandle(int ID, class UObject* InObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.OnReceivePickObjectHandle");
 
@@ -22997,7 +23723,7 @@ void UCreativePoolManager::OnReceivePickObjectHandle(int ID, class UObject* InOb
 
 void UCreativePoolManager::OnReceiveObjectReturnHandle(int ID, class UObject* InObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.OnReceiveObjectReturnHandle");
 
@@ -23023,7 +23749,7 @@ void UCreativePoolManager::OnReceiveObjectReturnHandle(int ID, class UObject* In
 
 bool UCreativePoolManager::OnReceiveDestroyHandle(int ID, class UObject* InObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.OnReceiveDestroyHandle");
 
@@ -23050,7 +23776,7 @@ bool UCreativePoolManager::OnReceiveDestroyHandle(int ID, class UObject* InObj)
 
 class UObject* UCreativePoolManager::OnReceiveCreateHandle(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.OnReceiveCreateHandle");
 
@@ -23078,7 +23804,7 @@ class UObject* UCreativePoolManager::OnReceiveCreateHandle(int ID)
 
 bool UCreativePoolManager::InitPool(int PoolId, bool bPoolEnable, struct FCreativeObjectPoolClassConfig* PoolConfig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.InitPool");
 
@@ -23110,7 +23836,7 @@ bool UCreativePoolManager::InitPool(int PoolId, bool bPoolEnable, struct FCreati
 
 struct FString UCreativePoolManager::GetUnusedComponentName(class UObject* InOuter, struct FString* NamePrefix)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.GetUnusedComponentName");
 
@@ -23142,7 +23868,7 @@ struct FString UCreativePoolManager::GetUnusedComponentName(class UObject* InOut
 
 class UObject* UCreativePoolManager::GetObject(int PoolId, class UObject* NewOuter, const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.GetObject");
 
@@ -23171,7 +23897,7 @@ class UObject* UCreativePoolManager::GetObject(int PoolId, class UObject* NewOut
 
 class UCreativePoolManager* UCreativePoolManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.Get");
 
@@ -23195,7 +23921,7 @@ class UCreativePoolManager* UCreativePoolManager::Get(class UObject* WorldContex
 
 void UCreativePoolManager::ClearPoolObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativePoolManager.ClearPoolObject");
 
@@ -23221,7 +23947,7 @@ void UCreativePoolManager::ClearPoolObject()
 
 bool ACreativeRuntimePlayerBattleDataObject::SetTeamGameOutcomeCondition(int TeamID, bool bPropagateToChildren, struct FRuntimeTeamGameOutcomeConditionInfo* TeamGameOutcomeCondition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.SetTeamGameOutcomeCondition");
 
@@ -23255,7 +23981,7 @@ bool ACreativeRuntimePlayerBattleDataObject::SetTeamGameOutcomeCondition(int Tea
 
 bool ACreativeRuntimePlayerBattleDataObject::SetPlayerBattleData(uint64_t UID, uint32_t PlayerKey, bool bPropagateToChildren, struct FRuntimePlayerBattleDataInfo* PlayerBattleData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.SetPlayerBattleData");
 
@@ -23286,7 +24012,7 @@ bool ACreativeRuntimePlayerBattleDataObject::SetPlayerBattleData(uint64_t UID, u
 
 bool ACreativeRuntimePlayerBattleDataObject::ResetCurRoundPlayerBattleDataList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.ResetCurRoundPlayerBattleDataList");
 
@@ -23311,7 +24037,7 @@ bool ACreativeRuntimePlayerBattleDataObject::ResetCurRoundPlayerBattleDataList()
 
 void ACreativeRuntimePlayerBattleDataObject::OnRepTeamGameOutcomeConditionInfo(int TeamID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.OnRepTeamGameOutcomeConditionInfo");
 
@@ -23337,7 +24063,7 @@ void ACreativeRuntimePlayerBattleDataObject::OnRepTeamGameOutcomeConditionInfo(i
 
 void ACreativeRuntimePlayerBattleDataObject::OnRepCurRoundPlayerBattleDataInfo(uint64_t PlayerUID, uint64_t PlayerKey, int ChangeTeamID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.OnRepCurRoundPlayerBattleDataInfo");
 
@@ -23364,7 +24090,7 @@ void ACreativeRuntimePlayerBattleDataObject::OnRepCurRoundPlayerBattleDataInfo(u
 
 struct FRuntimeTeamGameOutcomeConditionInfo ACreativeRuntimePlayerBattleDataObject::GetTeamGameOutcomeCondition(int TeamID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.GetTeamGameOutcomeCondition");
 
@@ -23392,7 +24118,7 @@ struct FRuntimeTeamGameOutcomeConditionInfo ACreativeRuntimePlayerBattleDataObje
 
 struct FRuntimePlayerBattleDataInfo ACreativeRuntimePlayerBattleDataObject::GetCurRoundPlayerBattleData(uint64_t PlayerUID, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.GetCurRoundPlayerBattleData");
 
@@ -23419,7 +24145,7 @@ struct FRuntimePlayerBattleDataInfo ACreativeRuntimePlayerBattleDataObject::GetC
 
 TArray<struct FRuntimePlayerBattleDataInfo> ACreativeRuntimePlayerBattleDataObject::GetCurRoundAllPlayerBattleData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.GetCurRoundAllPlayerBattleData");
 
@@ -23447,7 +24173,7 @@ TArray<struct FRuntimePlayerBattleDataInfo> ACreativeRuntimePlayerBattleDataObje
 
 struct FRuntimePlayerBattleDataInfo ACreativeRuntimePlayerBattleDataObject::GetCacheRoundPlayerBattleData(int RoundIndex, uint64_t PlayerUID, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.GetCacheRoundPlayerBattleData");
 
@@ -23476,7 +24202,7 @@ struct FRuntimePlayerBattleDataInfo ACreativeRuntimePlayerBattleDataObject::GetC
 
 struct FRuntimeCacheRoundBattleDataInfo ACreativeRuntimePlayerBattleDataObject::GetCacheRoundBattleData(int RoundIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.GetCacheRoundBattleData");
 
@@ -23504,7 +24230,7 @@ struct FRuntimeCacheRoundBattleDataInfo ACreativeRuntimePlayerBattleDataObject::
 
 struct FRuntimePlayerBattleDataInfo ACreativeRuntimePlayerBattleDataObject::GetAllRoundPlayerBattleData(uint64_t PlayerUID, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.GetAllRoundPlayerBattleData");
 
@@ -23531,7 +24257,7 @@ struct FRuntimePlayerBattleDataInfo ACreativeRuntimePlayerBattleDataObject::GetA
 
 void ACreativeRuntimePlayerBattleDataObject::CacheCurRoundBattleData(int RoundIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeRuntimePlayerBattleDataObject.CacheCurRoundBattleData");
 
@@ -23548,6 +24274,301 @@ void ACreativeRuntimePlayerBattleDataObject::CacheCurRoundBattleData(int RoundIn
 }
 
 
+// Function Creative.CreativeSceneDetectLib.CreativeGetStackDistanceFromMeshes
+// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// TArray<class UMeshComponent*>  MeshComponents                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UCreativeSceneDetectLib::CreativeGetStackDistanceFromMeshes(TArray<class UMeshComponent*> MeshComponents, const struct FVector& Direction)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeGetStackDistanceFromMeshes");
+
+	UCreativeSceneDetectLib_CreativeGetStackDistanceFromMeshes_Params params;
+	params.MeshComponents = MeshComponents;
+	params.Direction = Direction;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeGetStackDistance
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UStaticMesh*             Mesh                           (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// struct FVector                 Scale                          (Parm, IsPlainOldData)
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UCreativeSceneDetectLib::CreativeGetStackDistance(class UStaticMesh* Mesh, const struct FVector& Direction, const struct FVector& Scale)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeGetStackDistance");
+
+	UCreativeSceneDetectLib_CreativeGetStackDistance_Params params;
+	params.Mesh = Mesh;
+	params.Direction = Direction;
+	params.Scale = Scale;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeGetFurthestPointFromMeshes
+// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// TArray<class UMeshComponent*>  MeshComponents                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+
+struct FVector UCreativeSceneDetectLib::CreativeGetFurthestPointFromMeshes(TArray<class UMeshComponent*> MeshComponents, const struct FVector& Direction)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeGetFurthestPointFromMeshes");
+
+	UCreativeSceneDetectLib_CreativeGetFurthestPointFromMeshes_Params params;
+	params.MeshComponents = MeshComponents;
+	params.Direction = Direction;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeGetFurthestPoint
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class AActor*                  TargetActor                    (Parm, ZeroConstructor, IsPlainOldData)
+// class USceneComponent*         TargetComp                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+
+struct FVector UCreativeSceneDetectLib::CreativeGetFurthestPoint(class AActor* TargetActor, class USceneComponent* TargetComp, const struct FVector& Direction)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeGetFurthestPoint");
+
+	UCreativeSceneDetectLib_CreativeGetFurthestPoint_Params params;
+	params.TargetActor = TargetActor;
+	params.TargetComp = TargetComp;
+	params.Direction = Direction;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeFindPlacementPoints
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Start                          (Parm, IsPlainOldData)
+// struct FVector                 HalfExtent                     (Parm, IsPlainOldData)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// int                            Count                          (Parm, ZeroConstructor, IsPlainOldData)
+// float                          MaxDistance                    (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<struct FVector>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<struct FVector> UCreativeSceneDetectLib::CreativeFindPlacementPoints(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& HalfExtent, const struct FVector& Direction, int Count, float MaxDistance)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeFindPlacementPoints");
+
+	UCreativeSceneDetectLib_CreativeFindPlacementPoints_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Start = Start;
+	params.HalfExtent = HalfExtent;
+	params.Direction = Direction;
+	params.Count = Count;
+	params.MaxDistance = MaxDistance;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeDetectSpaceAdvanced
+// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Source                         (Parm, IsPlainOldData)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// float                          MaxDistance                    (Parm, ZeroConstructor, IsPlainOldData)
+// float                          MaxBoxExtent                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FCreativeDetectSpaceOptions Options                        (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FCreativeSpaceResult    ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FCreativeSpaceResult UCreativeSceneDetectLib::CreativeDetectSpaceAdvanced(class UObject* WorldContextObject, const struct FVector& Source, const struct FVector& Direction, float MaxDistance, float MaxBoxExtent, const struct FCreativeDetectSpaceOptions& Options)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeDetectSpaceAdvanced");
+
+	UCreativeSceneDetectLib_CreativeDetectSpaceAdvanced_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Source = Source;
+	params.Direction = Direction;
+	params.MaxDistance = MaxDistance;
+	params.MaxBoxExtent = MaxBoxExtent;
+	params.Options = Options;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeDetectSpace
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Source                         (Parm, IsPlainOldData)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// float                          MaxDistance                    (Parm, ZeroConstructor, IsPlainOldData)
+// float                          MaxBoxExtent                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FCreativeSpaceResult    ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FCreativeSpaceResult UCreativeSceneDetectLib::CreativeDetectSpace(class UObject* WorldContextObject, const struct FVector& Source, const struct FVector& Direction, float MaxDistance, float MaxBoxExtent)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeDetectSpace");
+
+	UCreativeSceneDetectLib_CreativeDetectSpace_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Source = Source;
+	params.Direction = Direction;
+	params.MaxDistance = MaxDistance;
+	params.MaxBoxExtent = MaxBoxExtent;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeCalculateSnapLocationFromMeshes
+// (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 Curr                           (ConstParm, Parm, IsPlainOldData)
+// TArray<class UMeshComponent*>  MeshComponents                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// struct FVector                 HookPoint                      (Parm, IsPlainOldData)
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+
+struct FVector UCreativeSceneDetectLib::CreativeCalculateSnapLocationFromMeshes(const struct FVector& Curr, TArray<class UMeshComponent*> MeshComponents, const struct FVector& Direction, const struct FVector& HookPoint)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeCalculateSnapLocationFromMeshes");
+
+	UCreativeSceneDetectLib_CreativeCalculateSnapLocationFromMeshes_Params params;
+	params.Curr = Curr;
+	params.MeshComponents = MeshComponents;
+	params.Direction = Direction;
+	params.HookPoint = HookPoint;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CreativeSceneDetectLib.CreativeCalculateSnapLocation
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class AActor*                  TargetActor                    (Parm, ZeroConstructor, IsPlainOldData)
+// class USceneComponent*         TargetComp                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FVector                 Direction                      (Parm, IsPlainOldData)
+// struct FVector                 HookPoint                      (Parm, IsPlainOldData)
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+
+struct FVector UCreativeSceneDetectLib::CreativeCalculateSnapLocation(class AActor* TargetActor, class USceneComponent* TargetComp, const struct FVector& Direction, const struct FVector& HookPoint)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneDetectLib.CreativeCalculateSnapLocation");
+
+	UCreativeSceneDetectLib_CreativeCalculateSnapLocation_Params params;
+	params.TargetActor = TargetActor;
+	params.TargetComp = TargetComp;
+	params.Direction = Direction;
+	params.HookPoint = HookPoint;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.CreativeSceneQueryManager.RemoveReplicateObject
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -23556,7 +24577,7 @@ void ACreativeRuntimePlayerBattleDataObject::CacheCurRoundBattleData(int RoundIn
 
 void UCreativeSceneQueryManager::RemoveReplicateObject(const struct FString& InstanceID, class UObject* Object)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.RemoveReplicateObject");
 
@@ -23581,7 +24602,7 @@ void UCreativeSceneQueryManager::RemoveReplicateObject(const struct FString& Ins
 
 void UCreativeSceneQueryManager::RemoveReplicateData(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.RemoveReplicateData");
 
@@ -23605,7 +24626,7 @@ void UCreativeSceneQueryManager::RemoveReplicateData(const struct FString& Insta
 
 void UCreativeSceneQueryManager::OnReceivePreReplicateDataRemove(const struct FString& ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.OnReceivePreReplicateDataRemove");
 
@@ -23629,7 +24650,7 @@ void UCreativeSceneQueryManager::OnReceivePreReplicateDataRemove(const struct FS
 
 void UCreativeSceneQueryManager::OnReceivePostReplicateDataChange(const struct FString& ID, TArray<class UObject*> Objects)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.OnReceivePostReplicateDataChange");
 
@@ -23654,7 +24675,7 @@ void UCreativeSceneQueryManager::OnReceivePostReplicateDataChange(const struct F
 
 void UCreativeSceneQueryManager::OnReceivePostReplicateDataAdd(const struct FString& ID, TArray<class UObject*> Objects)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.OnReceivePostReplicateDataAdd");
 
@@ -23679,7 +24700,7 @@ void UCreativeSceneQueryManager::OnReceivePostReplicateDataAdd(const struct FStr
 
 TArray<class UObject*> UCreativeSceneQueryManager::GetReplicatedObjects(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.GetReplicatedObjects");
 
@@ -23706,7 +24727,7 @@ TArray<class UObject*> UCreativeSceneQueryManager::GetReplicatedObjects(const st
 
 class UCreativeSceneQueryManager* UCreativeSceneQueryManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.Get");
 
@@ -23734,7 +24755,7 @@ class UCreativeSceneQueryManager* UCreativeSceneQueryManager::Get(class UObject*
 
 void UCreativeSceneQueryManager::AddReplicateObjectPostDeferred(const struct FString& InstanceID, const struct FTransform& SpawnTransform, class UObject* ReplicatedObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.AddReplicateObjectPostDeferred");
 
@@ -23765,7 +24786,7 @@ void UCreativeSceneQueryManager::AddReplicateObjectPostDeferred(const struct FSt
 
 class UObject* UCreativeSceneQueryManager::AddReplicateObjectDeferred(const struct FString& InstanceID, class UClass* ObjectClass, const struct FString& Name, const struct FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.AddReplicateObjectDeferred");
 
@@ -23800,7 +24821,7 @@ class UObject* UCreativeSceneQueryManager::AddReplicateObjectDeferred(const stru
 
 class UObject* UCreativeSceneQueryManager::AddReplicateObject(const struct FString& InstanceID, class UClass* ObjectClass, const struct FString& Name, const struct FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSceneQueryManager.AddReplicateObject");
 
@@ -23828,7 +24849,7 @@ class UObject* UCreativeSceneQueryManager::AddReplicateObject(const struct FStri
 
 void UCreativeScreenCaptureWidget::OnPanelInitialized()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeScreenCaptureWidget.OnPanelInitialized");
 
@@ -23852,7 +24873,7 @@ void UCreativeScreenCaptureWidget::OnPanelInitialized()
 
 class UCreativeModeSoftComponentManager* UCreativeModeSoftComponentManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeSoftComponentManager.Get");
 
@@ -23876,7 +24897,7 @@ class UCreativeModeSoftComponentManager* UCreativeModeSoftComponentManager::Get(
 
 void UCreativeModeSoftComponentManager::ClearAllLoading()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeModeSoftComponentManager.ClearAllLoading");
 
@@ -23900,7 +24921,7 @@ void UCreativeModeSoftComponentManager::ClearAllLoading()
 
 bool USoftStaticMeshComponent::SetSoftStaticMeshAsync(struct FString* NewMeshPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.SoftStaticMeshComponent.SetSoftStaticMeshAsync");
 
@@ -23930,7 +24951,7 @@ bool USoftStaticMeshComponent::SetSoftStaticMeshAsync(struct FString* NewMeshPat
 
 bool USoftStaticMeshComponent::SetSoftStaticMesh(class UStaticMesh* NewMesh, bool bSetStaticMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.SoftStaticMeshComponent.SetSoftStaticMesh");
 
@@ -23957,7 +24978,7 @@ bool USoftStaticMeshComponent::SetSoftStaticMesh(class UStaticMesh* NewMesh, boo
 
 void USoftStaticMeshComponent::SetComponentOnlyRender(bool bOnlyRender)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.SoftStaticMeshComponent.SetComponentOnlyRender");
 
@@ -23981,7 +25002,7 @@ void USoftStaticMeshComponent::SetComponentOnlyRender(bool bOnlyRender)
 
 void USoftStaticMeshComponent::OnClientAsyncLoaded(const struct FSoftObjectPath& SoftObjectPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.SoftStaticMeshComponent.OnClientAsyncLoaded");
 
@@ -24003,7 +25024,7 @@ void USoftStaticMeshComponent::OnClientAsyncLoaded(const struct FSoftObjectPath&
 
 void USoftStaticMeshComponent::LoadSoftStaticMeshImmediately()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.SoftStaticMeshComponent.LoadSoftStaticMeshImmediately");
 
@@ -24024,7 +25045,7 @@ void USoftStaticMeshComponent::LoadSoftStaticMeshImmediately()
 
 void USoftStaticMeshComponent::ClearOverrideMaterials()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.SoftStaticMeshComponent.ClearOverrideMaterials");
 
@@ -24049,7 +25070,7 @@ void USoftStaticMeshComponent::ClearOverrideMaterials()
 
 bool UCreativeSoftStaticMeshComponent::OnReturnToPool(class UObject* NewOuter, uint32_t RecycledSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSoftStaticMeshComponent.OnReturnToPool");
 
@@ -24077,7 +25098,7 @@ bool UCreativeSoftStaticMeshComponent::OnReturnToPool(class UObject* NewOuter, u
 
 void UCreativeSoftStaticMeshComponent::OnPickFromPool(class UObject* NewOuter, const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSoftStaticMeshComponent.OnPickFromPool");
 
@@ -24107,7 +25128,7 @@ void UCreativeSoftStaticMeshComponent::OnPickFromPool(class UObject* NewOuter, c
 
 class AActor* UCreativeSpawnManager::SpawnTower(int ConfigId, const struct FTransform& Transform, int TeamID, int Campid, int ParamsID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.SpawnTower");
 
@@ -24142,7 +25163,7 @@ class AActor* UCreativeSpawnManager::SpawnTower(int ConfigId, const struct FTran
 
 class AActor* UCreativeSpawnManager::SpawnHumanBot(int ConfigId, const struct FTransform& Transform, int TeamID, int Campid, int ParamsID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.SpawnHumanBot");
 
@@ -24177,7 +25198,7 @@ class AActor* UCreativeSpawnManager::SpawnHumanBot(int ConfigId, const struct FT
 
 class AActor* UCreativeSpawnManager::SpawnAIPlayer(int ConfigId, const struct FTransform& Transform, int TeamID, int Campid, int ParamsID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.SpawnAIPlayer");
 
@@ -24208,7 +25229,7 @@ class AActor* UCreativeSpawnManager::SpawnAIPlayer(int ConfigId, const struct FT
 
 void UCreativeSpawnManager::OnUnitSpawned(class AActor* NewUnit, ESpecType SpecType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.OnUnitSpawned");
 
@@ -24234,7 +25255,7 @@ void UCreativeSpawnManager::OnUnitSpawned(class AActor* NewUnit, ESpecType SpecT
 
 void UCreativeSpawnManager::OnDeadWithCategory(ESpecType Category, class AActor* DeadCharacter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.OnDeadWithCategory");
 
@@ -24256,11 +25277,11 @@ void UCreativeSpawnManager::OnDeadWithCategory(ESpecType Category, class AActor*
 // (Final, Native, Public)
 // Parameters:
 // class AActor*                  DestroyedCharacter             (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EEndPlayReason>    EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeSpawnManager::HandleTowerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason)
+void UCreativeSpawnManager::HandleTowerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.HandleTowerDestroyed");
 
@@ -24282,11 +25303,11 @@ void UCreativeSpawnManager::HandleTowerDestroyed(class AActor* DestroyedCharacte
 // (Final, Native, Public)
 // Parameters:
 // class AActor*                  DestroyedCharacter             (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EEndPlayReason>    EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeSpawnManager::HandleMonsterDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason)
+void UCreativeSpawnManager::HandleMonsterDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.HandleMonsterDestroyed");
 
@@ -24308,11 +25329,11 @@ void UCreativeSpawnManager::HandleMonsterDestroyed(class AActor* DestroyedCharac
 // (Final, Native, Public)
 // Parameters:
 // class AActor*                  DestroyedCharacter             (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EEndPlayReason>    EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeSpawnManager::HandleHumanBotDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason)
+void UCreativeSpawnManager::HandleHumanBotDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.HandleHumanBotDestroyed");
 
@@ -24334,11 +25355,11 @@ void UCreativeSpawnManager::HandleHumanBotDestroyed(class AActor* DestroyedChara
 // (Final, Native, Public)
 // Parameters:
 // class AActor*                  DestroyedCharacter             (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EEndPlayReason>    EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void UCreativeSpawnManager::HandleAIPlayerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<enum EEndPlayReason> EndPlayReason)
+void UCreativeSpawnManager::HandleAIPlayerDestroyed(class AActor* DestroyedCharacter, TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.HandleAIPlayerDestroyed");
 
@@ -24364,7 +25385,7 @@ void UCreativeSpawnManager::HandleAIPlayerDestroyed(class AActor* DestroyedChara
 
 class UCreativeSpawnManager* UCreativeSpawnManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeSpawnManager.Get");
 
@@ -24392,7 +25413,7 @@ class UCreativeSpawnManager* UCreativeSpawnManager::Get(class UObject* WorldCont
 
 bool UCreativeStaticMeshComponent::OnReturnToPool(class UObject* NewOuter, uint32_t RecycledSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStaticMeshComponent.OnReturnToPool");
 
@@ -24420,7 +25441,7 @@ bool UCreativeStaticMeshComponent::OnReturnToPool(class UObject* NewOuter, uint3
 
 void UCreativeStaticMeshComponent::OnPickFromPool(class UObject* NewOuter, const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStaticMeshComponent.OnPickFromPool");
 
@@ -24445,7 +25466,7 @@ void UCreativeStaticMeshComponent::OnPickFromPool(class UObject* NewOuter, const
 
 void UCreativeStreamingManager::UnregisterStreamingSource(class AActor* Source)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.UnregisterStreamingSource");
 
@@ -24469,7 +25490,7 @@ void UCreativeStreamingManager::UnregisterStreamingSource(class AActor* Source)
 
 bool UCreativeStreamingManager::StreamingManagerEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.StreamingManagerEnable");
 
@@ -24495,7 +25516,7 @@ bool UCreativeStreamingManager::StreamingManagerEnable()
 
 bool UCreativeStreamingManager::RemoveStreamingObject(const struct FString& InstanceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.RemoveStreamingObject");
 
@@ -24521,7 +25542,7 @@ bool UCreativeStreamingManager::RemoveStreamingObject(const struct FString& Inst
 
 void UCreativeStreamingManager::RegisterStreamingSource(class AActor* Source)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.RegisterStreamingSource");
 
@@ -24547,7 +25568,7 @@ void UCreativeStreamingManager::RegisterStreamingSource(class AActor* Source)
 
 struct FIntVector UCreativeStreamingManager::GetOnGridCellIndex(const struct FString& GridName, const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.GetOnGridCellIndex");
 
@@ -24575,7 +25596,7 @@ struct FIntVector UCreativeStreamingManager::GetOnGridCellIndex(const struct FSt
 
 float UCreativeStreamingManager::GetGridLoadingRange(const struct FString& GridName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.GetGridLoadingRange");
 
@@ -24601,7 +25622,7 @@ float UCreativeStreamingManager::GetGridLoadingRange(const struct FString& GridN
 
 TArray<struct FString> UCreativeStreamingManager::GetGridList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.GetGridList");
 
@@ -24627,7 +25648,7 @@ TArray<struct FString> UCreativeStreamingManager::GetGridList()
 
 struct FVector2D UCreativeStreamingManager::GetGridCellWidthHeight(const struct FString& GridName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.GetGridCellWidthHeight");
 
@@ -24653,7 +25674,7 @@ struct FVector2D UCreativeStreamingManager::GetGridCellWidthHeight(const struct 
 
 TArray<struct FVector> UCreativeStreamingManager::GetCreativeModeStreamingSourceList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.GetCreativeModeStreamingSourceList");
 
@@ -24679,7 +25700,7 @@ TArray<struct FVector> UCreativeStreamingManager::GetCreativeModeStreamingSource
 
 class UCreativeStreamingManager* UCreativeStreamingManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.Get");
 
@@ -24707,7 +25728,7 @@ class UCreativeStreamingManager* UCreativeStreamingManager::Get(class UObject* W
 
 ECreativeModeActorStreamingType UCreativeStreamingManager::ChangeStreamingObjectStreamingType(const struct FString& InstanceID, ECreativeModeActorStreamingType NewStremaingType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.ChangeStreamingObjectStreamingType");
 
@@ -24736,7 +25757,7 @@ ECreativeModeActorStreamingType UCreativeStreamingManager::ChangeStreamingObject
 
 bool UCreativeStreamingManager::AddStreamingObject(const struct FString& InstanceID, const struct FCreativeModeStreamingParameters& StreamingParameters)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeStreamingManager.AddStreamingObject");
 
@@ -24766,7 +25787,7 @@ bool UCreativeStreamingManager::AddStreamingObject(const struct FString& Instanc
 
 bool UCreativeTaskComponent::UpdateTaskProgress(const struct FString& TaskId, int NewProgress, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.UpdateTaskProgress");
 
@@ -24796,7 +25817,7 @@ bool UCreativeTaskComponent::UpdateTaskProgress(const struct FString& TaskId, in
 
 bool UCreativeTaskComponent::SetTaskVal(const struct FString& TaskId, struct FCreativeTaskViewItem* SetItemValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.SetTaskVal");
 
@@ -24827,7 +25848,7 @@ bool UCreativeTaskComponent::SetTaskVal(const struct FString& TaskId, struct FCr
 
 bool UCreativeTaskComponent::SetTaskStatus(const struct FString& TaskId, ETaskStatus TaskStatusVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.SetTaskStatus");
 
@@ -24856,7 +25877,7 @@ bool UCreativeTaskComponent::SetTaskStatus(const struct FString& TaskId, ETaskSt
 
 bool UCreativeTaskComponent::SetTaskStageReservedField(const struct FString& TaskId, const struct FString& Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.SetTaskStageReservedField");
 
@@ -24885,7 +25906,7 @@ bool UCreativeTaskComponent::SetTaskStageReservedField(const struct FString& Tas
 
 bool UCreativeTaskComponent::SetTaskStageIdx(const struct FString& TaskId, int TaskStageIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.SetTaskStageIdx");
 
@@ -24915,7 +25936,7 @@ bool UCreativeTaskComponent::SetTaskStageIdx(const struct FString& TaskId, int T
 
 bool UCreativeTaskComponent::SetTaskProgressStep(const struct FString& TaskId, const struct FCreativeTaskProgressItem& NewStep, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.SetTaskProgressStep");
 
@@ -24946,7 +25967,7 @@ bool UCreativeTaskComponent::SetTaskProgressStep(const struct FString& TaskId, c
 
 bool UCreativeTaskComponent::SetTaskConditionMet(const struct FString& TaskId, bool bMet, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.SetTaskConditionMet");
 
@@ -24976,7 +25997,7 @@ bool UCreativeTaskComponent::SetTaskConditionMet(const struct FString& TaskId, b
 
 bool UCreativeTaskComponent::SetMaxTaskProgressStep(const struct FString& TaskId, int MaxStep)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.SetMaxTaskProgressStep");
 
@@ -25004,7 +26025,7 @@ bool UCreativeTaskComponent::SetMaxTaskProgressStep(const struct FString& TaskId
 
 bool UCreativeTaskComponent::RemoveTask(const struct FString& TaskId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.RemoveTask");
 
@@ -25028,7 +26049,7 @@ bool UCreativeTaskComponent::RemoveTask(const struct FString& TaskId)
 
 void UCreativeTaskComponent::RemoveAllTask()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.RemoveAllTask");
 
@@ -25051,7 +26072,7 @@ void UCreativeTaskComponent::RemoveAllTask()
 
 void UCreativeTaskComponent::ReceiveOnTaskViewRemoved(const struct FCreativeTaskViewItem& TaskViewItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.ReceiveOnTaskViewRemoved");
 
@@ -25074,7 +26095,7 @@ void UCreativeTaskComponent::ReceiveOnTaskViewRemoved(const struct FCreativeTask
 
 void UCreativeTaskComponent::ReceiveOnTaskViewChanged(const struct FCreativeTaskViewItem& TaskViewItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.ReceiveOnTaskViewChanged");
 
@@ -25097,7 +26118,7 @@ void UCreativeTaskComponent::ReceiveOnTaskViewChanged(const struct FCreativeTask
 
 void UCreativeTaskComponent::ReceiveOnTaskViewAdded(const struct FCreativeTaskViewItem& TaskViewItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.ReceiveOnTaskViewAdded");
 
@@ -25120,7 +26141,7 @@ void UCreativeTaskComponent::ReceiveOnTaskViewAdded(const struct FCreativeTaskVi
 
 void UCreativeTaskComponent::ReceiveAddTask(struct FCreativeTaskViewItem* NewTask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.ReceiveAddTask");
 
@@ -25146,7 +26167,7 @@ void UCreativeTaskComponent::ReceiveAddTask(struct FCreativeTaskViewItem* NewTas
 
 struct FCreativeTaskProgressItem UCreativeTaskComponent::MakeDummyProgressStep(const struct FCreativeTaskProgressParams& Params)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.MakeDummyProgressStep");
 
@@ -25173,7 +26194,7 @@ struct FCreativeTaskProgressItem UCreativeTaskComponent::MakeDummyProgressStep(c
 
 bool UCreativeTaskComponent::IsTaskExists(const struct FString& TaskId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.IsTaskExists");
 
@@ -25201,7 +26222,7 @@ bool UCreativeTaskComponent::IsTaskExists(const struct FString& TaskId)
 
 bool UCreativeTaskComponent::IsProgressConditionMet(const struct FString& TaskId, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.IsProgressConditionMet");
 
@@ -25232,7 +26253,7 @@ bool UCreativeTaskComponent::IsProgressConditionMet(const struct FString& TaskId
 
 bool UCreativeTaskComponent::GetTaskProgress(const struct FString& TaskId, int idx, int* OutCurrent, int* OutMax)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.GetTaskProgress");
 
@@ -25264,7 +26285,7 @@ bool UCreativeTaskComponent::GetTaskProgress(const struct FString& TaskId, int i
 
 TArray<struct FCreativeTaskViewItem> UCreativeTaskComponent::GetAllTasks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.GetAllTasks");
 
@@ -25290,7 +26311,7 @@ TArray<struct FCreativeTaskViewItem> UCreativeTaskComponent::GetAllTasks()
 
 struct FCreativeTaskViewItem UCreativeTaskComponent::FindTaskByID(const struct FString& TaskId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.FindTaskByID");
 
@@ -25317,7 +26338,7 @@ struct FCreativeTaskViewItem UCreativeTaskComponent::FindTaskByID(const struct F
 
 bool UCreativeTaskComponent::AddTask(const struct FString& TaskId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTaskComponent.AddTask");
 
@@ -25341,7 +26362,7 @@ bool UCreativeTaskComponent::AddTask(const struct FString& TaskId)
 
 void UCreativeTimerApiObject::Clear()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTimerApiObject.Clear");
 
@@ -25364,7 +26385,7 @@ void UCreativeTimerApiObject::Clear()
 
 void ACreativeTriggerAreaActor::OnTakeDamage(class AActor* DamageCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeTriggerAreaActor.OnTakeDamage");
 
@@ -25388,7 +26409,7 @@ void ACreativeTriggerAreaActor::OnTakeDamage(class AActor* DamageCauser)
 
 void UCreativeWebSocketManager::SendMessage(const struct FString& Message)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.SendMessage");
 
@@ -25410,7 +26431,7 @@ void UCreativeWebSocketManager::SendMessage(const struct FString& Message)
 
 void UCreativeWebSocketManager::ReceiveOnPostSetLuaEventBridgeInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.ReceiveOnPostSetLuaEventBridgeInstance");
 
@@ -25430,7 +26451,7 @@ void UCreativeWebSocketManager::ReceiveOnPostSetLuaEventBridgeInstance()
 
 void UCreativeWebSocketManager::OnTickTimer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.OnTickTimer");
 
@@ -25451,7 +26472,7 @@ void UCreativeWebSocketManager::OnTickTimer()
 
 void UCreativeWebSocketManager::OnReceiveConnected()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.OnReceiveConnected");
 
@@ -25471,7 +26492,7 @@ void UCreativeWebSocketManager::OnReceiveConnected()
 
 void UCreativeWebSocketManager::OnPostSetLuaEventBridgeInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.OnPostSetLuaEventBridgeInstance");
 
@@ -25495,7 +26516,7 @@ void UCreativeWebSocketManager::OnPostSetLuaEventBridgeInstance()
 
 bool UCreativeWebSocketManager::OnMessageSent(const struct FString& Message)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.OnMessageSent");
 
@@ -25522,7 +26543,7 @@ bool UCreativeWebSocketManager::OnMessageSent(const struct FString& Message)
 
 bool UCreativeWebSocketManager::OnMessageReceived(const struct FString& Message)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.OnMessageReceived");
 
@@ -25547,7 +26568,7 @@ bool UCreativeWebSocketManager::OnMessageReceived(const struct FString& Message)
 
 bool UCreativeWebSocketManager::IsConnected()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.IsConnected");
 
@@ -25573,7 +26594,7 @@ bool UCreativeWebSocketManager::IsConnected()
 
 class UCreativeWebSocketManager* UCreativeWebSocketManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.Get");
 
@@ -25600,7 +26621,7 @@ class UCreativeWebSocketManager* UCreativeWebSocketManager::Get(class UObject* W
 
 void UCreativeWebSocketManager::ConnectServer(const struct FString& ServerURL, const struct FString& ServerProtocol)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWebSocketManager.ConnectServer");
 
@@ -25626,7 +26647,7 @@ void UCreativeWebSocketManager::ConnectServer(const struct FString& ServerURL, c
 
 void UCreativeWidgetObject::UnregisterLiteComponent(class ULiteComponent* Component, bool Destroy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.UnregisterLiteComponent");
 
@@ -25651,7 +26672,7 @@ void UCreativeWidgetObject::UnregisterLiteComponent(class ULiteComponent* Compon
 
 void UCreativeWidgetObject::ReturnObjectToPool(class UObject* Obj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.ReturnObjectToPool");
 
@@ -25675,7 +26696,7 @@ void UCreativeWidgetObject::ReturnObjectToPool(class UObject* Obj)
 
 void UCreativeWidgetObject::ReturnObjectsToPool(TArray<class UObject*> Objs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.ReturnObjectsToPool");
 
@@ -25699,7 +26720,7 @@ void UCreativeWidgetObject::ReturnObjectsToPool(TArray<class UObject*> Objs)
 
 void UCreativeWidgetObject::RegisterLiteComponent(class ULiteComponent* Component)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.RegisterLiteComponent");
 
@@ -25721,7 +26742,7 @@ void UCreativeWidgetObject::RegisterLiteComponent(class ULiteComponent* Componen
 
 void UCreativeWidgetObject::ReceivePostBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.ReceivePostBeginPlay");
 
@@ -25743,7 +26764,7 @@ void UCreativeWidgetObject::ReceivePostBeginPlay()
 
 bool UCreativeWidgetObject::ReceiveIsDedicatedServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.ReceiveIsDedicatedServer");
 
@@ -25768,7 +26789,7 @@ bool UCreativeWidgetObject::ReceiveIsDedicatedServer()
 
 bool UCreativeWidgetObject::ReceiveHasAuthority()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.ReceiveHasAuthority");
 
@@ -25791,7 +26812,7 @@ bool UCreativeWidgetObject::ReceiveHasAuthority()
 
 void UCreativeWidgetObject::ReceiveEndPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.ReceiveEndPlay");
 
@@ -25811,7 +26832,7 @@ void UCreativeWidgetObject::ReceiveEndPlay()
 
 void UCreativeWidgetObject::ReceiveBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.ReceiveBeginPlay");
 
@@ -25834,7 +26855,7 @@ void UCreativeWidgetObject::ReceiveBeginPlay()
 
 TArray<class UObject*> UCreativeWidgetObject::GetObjectsFromPool(TArray<struct FCreativePoolGetObjectParamInfo>* ObjectParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.GetObjectsFromPool");
 
@@ -25865,7 +26886,7 @@ TArray<class UObject*> UCreativeWidgetObject::GetObjectsFromPool(TArray<struct F
 
 class UObject* UCreativeWidgetObject::GetObjectFromPool(int PoolId, class UObject* NewOuter, struct FString* InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWidgetObject.GetObjectFromPool");
 
@@ -25895,7 +26916,7 @@ class UObject* UCreativeWidgetObject::GetObjectFromPool(int PoolId, class UObjec
 
 class AActor* UCreativeWorldSubSystem::GetManagerCenter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWorldSubSystem.GetManagerCenter");
 
@@ -25918,7 +26939,7 @@ class AActor* UCreativeWorldSubSystem::GetManagerCenter()
 
 void UCreativeWoWInactiveCheckComponent::ServerMarkPlayerActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWInactiveCheckComponent.ServerMarkPlayerActive");
 
@@ -25939,7 +26960,7 @@ void UCreativeWoWInactiveCheckComponent::ServerMarkPlayerActive()
 
 void UCreativeWoWInactiveCheckComponent::MarkPlayerActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWInactiveCheckComponent.MarkPlayerActive");
 
@@ -25960,7 +26981,7 @@ void UCreativeWoWInactiveCheckComponent::MarkPlayerActive()
 
 void UCreativeWoWInactiveCheckComponent::KickOutPlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWInactiveCheckComponent.KickOutPlayer");
 
@@ -25982,7 +27003,7 @@ void UCreativeWoWInactiveCheckComponent::KickOutPlayer()
 
 void UCreativeWoWInactiveCheckComponent::ClientShowKickOutTip(float RemainTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWInactiveCheckComponent.ClientShowKickOutTip");
 
@@ -26004,7 +27025,7 @@ void UCreativeWoWInactiveCheckComponent::ClientShowKickOutTip(float RemainTime)
 
 void UCreativeWoWInactiveCheckComponent::ClientCachedActiveState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWInactiveCheckComponent.ClientCachedActiveState");
 
@@ -26027,7 +27048,7 @@ void UCreativeWoWInactiveCheckComponent::ClientCachedActiveState()
 
 bool UCreativeWoWInactiveCheckComponent::CheckForMovement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWInactiveCheckComponent.CheckForMovement");
 
@@ -26050,7 +27071,7 @@ bool UCreativeWoWInactiveCheckComponent::CheckForMovement()
 
 void UCreativeWoWInactiveCheckComponent::CheckForInactive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWInactiveCheckComponent.CheckForInactive");
 
@@ -26073,7 +27094,7 @@ void UCreativeWoWInactiveCheckComponent::CheckForInactive()
 
 void UCreativeWoWManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWManager.ReceiveOnGameStateBeginPlay");
 
@@ -26096,7 +27117,7 @@ void UCreativeWoWManager::ReceiveOnGameStateBeginPlay(class AGameStateBase* Game
 
 void UCreativeWoWManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWManager.OnGameStateBeginPlay");
 
@@ -26121,7 +27142,7 @@ void UCreativeWoWManager::OnGameStateBeginPlay(class AGameStateBase* GameState)
 
 class UCreativeWoWManager* UCreativeWoWManager::Get(class UObject* WorldContext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CreativeWoWManager.Get");
 
@@ -26149,7 +27170,7 @@ class UCreativeWoWManager* UCreativeWoWManager::Get(class UObject* WorldContext)
 
 bool UCustomAssetUtilityObject::SaveArrayToFile(TArray<unsigned char> Content, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.SaveArrayToFile");
 
@@ -26176,7 +27197,7 @@ bool UCustomAssetUtilityObject::SaveArrayToFile(TArray<unsigned char> Content, c
 
 bool UCustomAssetUtilityObject::ReceiveIsDedicatedServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.ReceiveIsDedicatedServer");
 
@@ -26201,7 +27222,7 @@ bool UCustomAssetUtilityObject::ReceiveIsDedicatedServer()
 
 class UCustomAssetManager* UCustomAssetUtilityObject::ReceiveGetCustomAssetMgr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.ReceiveGetCustomAssetMgr");
 
@@ -26224,7 +27245,7 @@ class UCustomAssetManager* UCustomAssetUtilityObject::ReceiveGetCustomAssetMgr()
 
 void UCustomAssetUtilityObject::LuaConditionalBeginDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.LuaConditionalBeginDestroy");
 
@@ -26248,7 +27269,7 @@ void UCustomAssetUtilityObject::LuaConditionalBeginDestroy()
 
 TArray<unsigned char> UCustomAssetUtilityObject::LoadFileToArray(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.LoadFileToArray");
 
@@ -26275,7 +27296,7 @@ TArray<unsigned char> UCustomAssetUtilityObject::LoadFileToArray(const struct FS
 
 bool UCustomAssetUtilityObject::IsFileExistsInSaved(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.IsFileExistsInSaved");
 
@@ -26301,7 +27322,7 @@ bool UCustomAssetUtilityObject::IsFileExistsInSaved(const struct FString& Filena
 
 void UCustomAssetUtilityObject::InitUtilityObject(class UCustomAssetManager* CustomAssetManager)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.InitUtilityObject");
 
@@ -26325,7 +27346,7 @@ void UCustomAssetUtilityObject::InitUtilityObject(class UCustomAssetManager* Cus
 
 struct FString UCustomAssetUtilityObject::GetLastError()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.GetLastError");
 
@@ -26351,7 +27372,7 @@ struct FString UCustomAssetUtilityObject::GetLastError()
 
 TArray<struct FString> UCustomAssetUtilityObject::GetAllFilesInDirectoryRelative(const struct FString& TargetDirectory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.GetAllFilesInDirectoryRelative");
 
@@ -26378,7 +27399,7 @@ TArray<struct FString> UCustomAssetUtilityObject::GetAllFilesInDirectoryRelative
 
 bool UCustomAssetUtilityObject::DeleteFileInSaved(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.DeleteFileInSaved");
 
@@ -26405,7 +27426,7 @@ bool UCustomAssetUtilityObject::DeleteFileInSaved(const struct FString& Filename
 
 TArray<bool> UCustomAssetUtilityObject::AreFilesExistInSaved(TArray<struct FString> FileNameList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetUtilityObject.AreFilesExistInSaved");
 
@@ -26433,7 +27454,7 @@ TArray<bool> UCustomAssetUtilityObject::AreFilesExistInSaved(TArray<struct FStri
 
 void UCustomAssetDeserializer::DeserializeCompletedDelegate__DelegateSignature(class UCustomAssetDeserializer* uDeserializer, class UObject* OutAssetBytes, uint64_t DeserializeSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Creative.CustomAssetDeserializer.DeserializeCompletedDelegate__DelegateSignature");
 
@@ -26459,7 +27480,7 @@ void UCustomAssetDeserializer::DeserializeCompletedDelegate__DelegateSignature(c
 
 void UCustomAssetDeserializer::DeserializeCompleted(uint64_t DeserializeSeq, class UObject* OutAsset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetDeserializer.DeserializeCompleted");
 
@@ -26488,7 +27509,7 @@ void UCustomAssetDeserializer::DeserializeCompleted(uint64_t DeserializeSeq, cla
 
 bool UCustomAssetDeserializer::Deserialize(TArray<unsigned char> InBytes, const struct FString& SuffixType, uint64_t DeserializeSeq, class UObject* Outer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetDeserializer.Deserialize");
 
@@ -26518,7 +27539,7 @@ bool UCustomAssetDeserializer::Deserialize(TArray<unsigned char> InBytes, const 
 
 bool UCustomAssetAnimDeserializer::IsValidData(TArray<unsigned char> InBytes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetAnimDeserializer.IsValidData");
 
@@ -26537,12 +27558,461 @@ bool UCustomAssetAnimDeserializer::IsValidData(TArray<unsigned char> InBytes)
 }
 
 
+// Function Creative.CustomAssetImageDeserializer.IsValidData
+// (Native, Protected, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<unsigned char>          InBytes                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UCustomAssetImageDeserializer::IsValidData(TArray<unsigned char> InBytes)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageDeserializer.IsValidData");
+
+	UCustomAssetImageDeserializer_IsValidData_Params params;
+	params.InBytes = InBytes;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomImageDataWrapper.MakeUniqueName
+// (Final, Native, Static, Public)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UCustomImageDataWrapper::MakeUniqueName(class UObject* WorldContextObject)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomImageDataWrapper.MakeUniqueName");
+
+	UCustomImageDataWrapper_MakeUniqueName_Params params;
+	params.WorldContextObject = WorldContextObject;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomImageDataWrapper.GetImageWrapperOuter
+// (Final, Native, Static, Public)
+// Parameters:
+// class UObject*                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UObject* UCustomImageDataWrapper::GetImageWrapperOuter()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomImageDataWrapper.GetImageWrapperOuter");
+
+	UCustomImageDataWrapper_GetImageWrapperOuter_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.RemoveTextureRef
+// (Final, Native, Public)
+// Parameters:
+// uint64_t                       HashID                         (Parm, ZeroConstructor, IsPlainOldData)
+
+void UCustomAssetImageManager::RemoveTextureRef(uint64_t HashID)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.RemoveTextureRef");
+
+	UCustomAssetImageManager_RemoveTextureRef_Params params;
+	params.HashID = HashID;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Creative.CustomAssetImageManager.ReadPixelFormat
+// (Final, Native, Static, Public)
+// Parameters:
+// class UTexture2D*              Target                         (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EPixelFormat>      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+TEnumAsByte<EPixelFormat> UCustomAssetImageManager::ReadPixelFormat(class UTexture2D* Target)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.ReadPixelFormat");
+
+	UCustomAssetImageManager_ReadPixelFormat_Params params;
+	params.Target = Target;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.ReadImageSummary
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// TArray<unsigned char>          ImageData                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FImageSummary           ReturnValue                    (Parm, OutParm, ReturnParm)
+
+struct FImageSummary UCustomAssetImageManager::ReadImageSummary(TArray<unsigned char> ImageData)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.ReadImageSummary");
+
+	UCustomAssetImageManager_ReadImageSummary_Params params;
+	params.ImageData = ImageData;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.ReadImageRGBA
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// TArray<unsigned char>          ImageData                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<unsigned char>          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<unsigned char> UCustomAssetImageManager::ReadImageRGBA(TArray<unsigned char> ImageData)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.ReadImageRGBA");
+
+	UCustomAssetImageManager_ReadImageRGBA_Params params;
+	params.ImageData = ImageData;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.LuaUpdateTextureResource2
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// class UTexture2D*              Target                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            TexGroup                       (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            MipIndex                       (Parm, ZeroConstructor, IsPlainOldData)
+// int                            PixelFormat                    (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<unsigned char>          TexData                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void UCustomAssetImageManager::LuaUpdateTextureResource2(class UTexture2D* Target, int TexGroup, int Width, int Height, int MipIndex, int PixelFormat, TArray<unsigned char> TexData)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.LuaUpdateTextureResource2");
+
+	UCustomAssetImageManager_LuaUpdateTextureResource2_Params params;
+	params.Target = Target;
+	params.TexGroup = TexGroup;
+	params.Width = Width;
+	params.Height = Height;
+	params.MipIndex = MipIndex;
+	params.PixelFormat = PixelFormat;
+	params.TexData = TexData;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Creative.CustomAssetImageManager.LuaReserveTexture2
+// (Final, Native, Static, Public)
+// Parameters:
+// int                            PixelFormat                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            TexGroup                       (Parm, ZeroConstructor, IsPlainOldData)
+// class UTexture2D*              OtherTex                       (Parm, ZeroConstructor, IsPlainOldData)
+// class UTexture2D*              ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UTexture2D* UCustomAssetImageManager::LuaReserveTexture2(int PixelFormat, int TexGroup, class UTexture2D* OtherTex)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.LuaReserveTexture2");
+
+	UCustomAssetImageManager_LuaReserveTexture2_Params params;
+	params.PixelFormat = PixelFormat;
+	params.TexGroup = TexGroup;
+	params.OtherTex = OtherTex;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.LuaReserveTexture
+// (Final, Native, Static, Public)
+// Parameters:
+// int                            PixelFormat                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            TexGroup                       (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
+// class UTexture2D*              ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+class UTexture2D* UCustomAssetImageManager::LuaReserveTexture(int PixelFormat, int TexGroup, int Width, int Height)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.LuaReserveTexture");
+
+	UCustomAssetImageManager_LuaReserveTexture_Params params;
+	params.PixelFormat = PixelFormat;
+	params.TexGroup = TexGroup;
+	params.Width = Width;
+	params.Height = Height;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.IsValidImageSummary
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// struct FImageSummary           Summary                        (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UCustomAssetImageManager::IsValidImageSummary(const struct FImageSummary& Summary)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.IsValidImageSummary");
+
+	UCustomAssetImageManager_IsValidImageSummary_Params params;
+	params.Summary = Summary;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.GetPixelFormat
+// (Final, Native, Static, Public)
+// Parameters:
+// int                            PixelFormat                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EPixelFormat>      ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+TEnumAsByte<EPixelFormat> UCustomAssetImageManager::GetPixelFormat(int PixelFormat)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.GetPixelFormat");
+
+	UCustomAssetImageManager_GetPixelFormat_Params params;
+	params.PixelFormat = PixelFormat;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.GetPixelBlockSize
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// int                            PixelFormat                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            SizeX                          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// int                            SizeY                          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+
+void UCustomAssetImageManager::GetPixelBlockSize(int PixelFormat, int* SizeX, int* SizeY)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.GetPixelBlockSize");
+
+	UCustomAssetImageManager_GetPixelBlockSize_Params params;
+	params.PixelFormat = PixelFormat;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (SizeX != nullptr)
+		*SizeX = params.SizeX;
+	if (SizeY != nullptr)
+		*SizeY = params.SizeY;
+}
+
+
+// Function Creative.CustomAssetImageManager.GetObjectPath
+// (Final, Native, Static, Public)
+// Parameters:
+// class UObject*                 Object                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UCustomAssetImageManager::GetObjectPath(class UObject* Object)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.GetObjectPath");
+
+	UCustomAssetImageManager_GetObjectPath_Params params;
+	params.Object = Object;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.GetHeaderSize
+// (Final, Native, Static, Public)
+// Parameters:
+// TEnumAsByte<EPixelFormat>      Format                         (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UCustomAssetImageManager::GetHeaderSize(TEnumAsByte<EPixelFormat> Format)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.GetHeaderSize");
+
+	UCustomAssetImageManager_GetHeaderSize_Params params;
+	params.Format = Format;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetImageManager.AddTextureRef
+// (Final, Native, Public)
+// Parameters:
+// uint64_t                       HashID                         (Parm, ZeroConstructor, IsPlainOldData)
+// class UTexture2D*              Tex                            (Parm, ZeroConstructor, IsPlainOldData)
+
+void UCustomAssetImageManager::AddTextureRef(uint64_t HashID, class UTexture2D* Tex)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetImageManager.AddTextureRef");
+
+	UCustomAssetImageManager_AddTextureRef_Params params;
+	params.HashID = HashID;
+	params.Tex = Tex;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Creative.CustomAssetManager.TryBeginPlay
 // (Final, Native, Public)
 
 void UCustomAssetManager::TryBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.TryBeginPlay");
 
@@ -26565,7 +28035,7 @@ void UCustomAssetManager::TryBeginPlay()
 
 bool UCustomAssetManager::ReceiveIsDedicatedServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.ReceiveIsDedicatedServer");
 
@@ -26588,7 +28058,7 @@ bool UCustomAssetManager::ReceiveIsDedicatedServer()
 
 void UCustomAssetManager::PrintAliveCustomAssets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.PrintAliveCustomAssets");
 
@@ -26615,7 +28085,7 @@ void UCustomAssetManager::PrintAliveCustomAssets()
 
 bool UCustomAssetManager::ParseCustomAssetKeyHashID(uint64_t HashID, unsigned char ExpectedHashIDTag, unsigned char* OutCustomAssetType, uint32_t* OutUniqueId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.ParseCustomAssetKeyHashID");
 
@@ -26640,6 +28110,33 @@ bool UCustomAssetManager::ParseCustomAssetKeyHashID(uint64_t HashID, unsigned ch
 }
 
 
+// Function Creative.CustomAssetManager.GetHashByString
+// (Final, Native, Protected)
+// Parameters:
+// struct FString                 CustomAssetKey                 (Parm, ZeroConstructor)
+// uint32_t                       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+uint32_t UCustomAssetManager::GetHashByString(const struct FString& CustomAssetKey)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.GetHashByString");
+
+	UCustomAssetManager_GetHashByString_Params params;
+	params.CustomAssetKey = CustomAssetKey;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.CustomAssetManager.GetCustomAssetPathName
 // (Final, Native, Protected)
 // Parameters:
@@ -26648,7 +28145,7 @@ bool UCustomAssetManager::ParseCustomAssetKeyHashID(uint64_t HashID, unsigned ch
 
 struct FString UCustomAssetManager::GetCustomAssetPathName(class UObject* CustomAsset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.GetCustomAssetPathName");
 
@@ -26674,7 +28171,7 @@ struct FString UCustomAssetManager::GetCustomAssetPathName(class UObject* Custom
 
 class UObject* UCustomAssetManager::GetCustomAssetOuter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.GetCustomAssetOuter");
 
@@ -26700,12 +28197,37 @@ class UObject* UCustomAssetManager::GetCustomAssetOuter()
 
 class UObject* UCustomAssetManager::GetCustomAssetObjectFromTrackedMap(const struct FString& BytesMD5)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.GetCustomAssetObjectFromTrackedMap");
 
 	UCustomAssetManager_GetCustomAssetObjectFromTrackedMap_Params params;
 	params.BytesMD5 = BytesMD5;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Creative.CustomAssetManager.GetCurPlatformSuffixType
+// (Final, Native, Protected)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UCustomAssetManager::GetCurPlatformSuffixType()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.GetCurPlatformSuffixType");
+
+	UCustomAssetManager_GetCurPlatformSuffixType_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -26729,7 +28251,7 @@ class UObject* UCustomAssetManager::GetCustomAssetObjectFromTrackedMap(const str
 
 uint64_t UCustomAssetManager::GenerateHashIDByCustomAssetKey(const struct FString& CustomAssetKey, unsigned char CustomAssetType, unsigned char HashIDTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.GenerateHashIDByCustomAssetKey");
 
@@ -26755,7 +28277,7 @@ uint64_t UCustomAssetManager::GenerateHashIDByCustomAssetKey(const struct FStrin
 
 void UCustomAssetManager::CustomAssetMgrConditionalBeginDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.CustomAssetMgrConditionalBeginDestroy");
 
@@ -26776,7 +28298,7 @@ void UCustomAssetManager::CustomAssetMgrConditionalBeginDestroy()
 
 void UCustomAssetManager::CleanupStaleCustomAssets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.CleanupStaleCustomAssets");
 
@@ -26797,7 +28319,7 @@ void UCustomAssetManager::CleanupStaleCustomAssets()
 
 void UCustomAssetManager::CleanupAliveCustomAssetObjects()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.CleanupAliveCustomAssetObjects");
 
@@ -26822,7 +28344,7 @@ void UCustomAssetManager::CleanupAliveCustomAssetObjects()
 
 void UCustomAssetManager::AddCustomAssetObjectToTrackedMap(const struct FString& BytesMD5, class UObject* AssetObject, const struct FString& LoadStack)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetManager.AddCustomAssetObjectToTrackedMap");
 
@@ -26842,23 +28364,18 @@ void UCustomAssetManager::AddCustomAssetObjectToTrackedMap(const struct FString&
 
 
 // Function Creative.CustomAssetMountStateComponent.RemoveMountStatusInfo
-// (Final, Native, Public)
+// (Final, Native, Public, HasOutParms)
 // Parameters:
-// unsigned char                  AssetType                      (Parm, ZeroConstructor, IsPlainOldData)
-// uint32_t                       AssetSize                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 SHA256                         (Parm, ZeroConstructor)
+// struct FString                 AssetKey                       (Parm, OutParm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCustomAssetMountStateComponent::RemoveMountStatusInfo(unsigned char AssetType, uint32_t AssetSize, const struct FString& SHA256)
+bool UCustomAssetMountStateComponent::RemoveMountStatusInfo(struct FString* AssetKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetMountStateComponent.RemoveMountStatusInfo");
 
 	UCustomAssetMountStateComponent_RemoveMountStatusInfo_Params params;
-	params.AssetType = AssetType;
-	params.AssetSize = AssetSize;
-	params.SHA256 = SHA256;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -26867,6 +28384,9 @@ bool UCustomAssetMountStateComponent::RemoveMountStatusInfo(unsigned char AssetT
 	currentObj->ProcessEvent(pFunc, &params);
 
 	pFunc->FunctionFlags = flags;
+
+	if (AssetKey != nullptr)
+		*AssetKey = params.AssetKey;
 
 	return params.ReturnValue;
 }
@@ -26879,7 +28399,7 @@ bool UCustomAssetMountStateComponent::RemoveMountStatusInfo(unsigned char AssetT
 
 bool UCustomAssetMountStateComponent::ReceiveIsDedicatedServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetMountStateComponent.ReceiveIsDedicatedServer");
 
@@ -26904,7 +28424,7 @@ bool UCustomAssetMountStateComponent::ReceiveIsDedicatedServer()
 
 bool UCustomAssetMountStateComponent::ReceiveHasAuthority()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetMountStateComponent.ReceiveHasAuthority");
 
@@ -26923,25 +28443,20 @@ bool UCustomAssetMountStateComponent::ReceiveHasAuthority()
 
 
 // Function Creative.CustomAssetMountStateComponent.ChangeMountStatusInfo
-// (Final, Native, Public)
+// (Final, Native, Public, HasOutParms)
 // Parameters:
-// unsigned char                  AssetType                      (Parm, ZeroConstructor, IsPlainOldData)
-// uint32_t                       AssetSize                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 SHA256                         (Parm, ZeroConstructor)
+// struct FString                 AssetKey                       (Parm, OutParm, ZeroConstructor)
 // EMountStatus                   MountStatus                    (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<uint32_t>               MountingPlayerKeys             (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCustomAssetMountStateComponent::ChangeMountStatusInfo(unsigned char AssetType, uint32_t AssetSize, const struct FString& SHA256, EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys)
+bool UCustomAssetMountStateComponent::ChangeMountStatusInfo(EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys, struct FString* AssetKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetMountStateComponent.ChangeMountStatusInfo");
 
 	UCustomAssetMountStateComponent_ChangeMountStatusInfo_Params params;
-	params.AssetType = AssetType;
-	params.AssetSize = AssetSize;
-	params.SHA256 = SHA256;
 	params.MountStatus = MountStatus;
 	params.MountingPlayerKeys = MountingPlayerKeys;
 
@@ -26953,6 +28468,9 @@ bool UCustomAssetMountStateComponent::ChangeMountStatusInfo(unsigned char AssetT
 
 	pFunc->FunctionFlags = flags;
 
+	if (AssetKey != nullptr)
+		*AssetKey = params.AssetKey;
+
 	return params.ReturnValue;
 }
 
@@ -26960,25 +28478,20 @@ bool UCustomAssetMountStateComponent::ChangeMountStatusInfo(unsigned char AssetT
 // Function Creative.CustomAssetMountStateComponent.AddMountStatusInfo
 // (Final, Native, Public, HasOutParms)
 // Parameters:
-// unsigned char                  AssetType                      (Parm, ZeroConstructor, IsPlainOldData)
-// uint32_t                       AssetSize                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 SHA256                         (Parm, ZeroConstructor)
+// struct FString                 AssetKey                       (Parm, OutParm, ZeroConstructor)
 // EMountStatus                   MountStatus                    (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<uint32_t>               MountingPlayerKeys             (Parm, ZeroConstructor)
 // uint32_t                       MountedByPlayerKey             (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<unsigned char>          MappingInfoContent             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UCustomAssetMountStateComponent::AddMountStatusInfo(unsigned char AssetType, uint32_t AssetSize, const struct FString& SHA256, EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys, uint32_t MountedByPlayerKey, TArray<unsigned char> MappingInfoContent)
+bool UCustomAssetMountStateComponent::AddMountStatusInfo(EMountStatus MountStatus, TArray<uint32_t> MountingPlayerKeys, uint32_t MountedByPlayerKey, TArray<unsigned char> MappingInfoContent, struct FString* AssetKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetMountStateComponent.AddMountStatusInfo");
 
 	UCustomAssetMountStateComponent_AddMountStatusInfo_Params params;
-	params.AssetType = AssetType;
-	params.AssetSize = AssetSize;
-	params.SHA256 = SHA256;
 	params.MountStatus = MountStatus;
 	params.MountingPlayerKeys = MountingPlayerKeys;
 	params.MountedByPlayerKey = MountedByPlayerKey;
@@ -26991,6 +28504,9 @@ bool UCustomAssetMountStateComponent::AddMountStatusInfo(unsigned char AssetType
 	currentObj->ProcessEvent(pFunc, &params);
 
 	pFunc->FunctionFlags = flags;
+
+	if (AssetKey != nullptr)
+		*AssetKey = params.AssetKey;
 
 	return params.ReturnValue;
 }
@@ -27006,7 +28522,7 @@ bool UCustomAssetMountStateComponent::AddMountStatusInfo(unsigned char AssetType
 
 bool UCustomAssetPlatformBuilder::StartBuild(TArray<unsigned char> SourceBytes, uint64_t CurBuildSeq, class UObject* SourceObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetPlatformBuilder.StartBuild");
 
@@ -27036,7 +28552,7 @@ bool UCustomAssetPlatformBuilder::StartBuild(TArray<unsigned char> SourceBytes, 
 
 void UCustomAssetPlatformBuilder::PlatformBuilderCompletedDelegate__DelegateSignature(class UCustomAssetPlatformBuilder* uPlatformBuilder, TArray<struct FPlatformCustomAssetInfo> PlatformCustomAssetInfoList, uint64_t BuilderSeq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Creative.CustomAssetPlatformBuilder.PlatformBuilderCompletedDelegate__DelegateSignature");
 
@@ -27054,12 +28570,39 @@ void UCustomAssetPlatformBuilder::PlatformBuilderCompletedDelegate__DelegateSign
 }
 
 
+// Function Creative.CustomAssetStaticMeshDeserializer.IsValidData
+// (Native, Protected, HasOutParms, BlueprintCallable)
+// Parameters:
+// TArray<unsigned char>          InBytes                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UCustomAssetStaticMeshDeserializer::IsValidData(TArray<unsigned char> InBytes)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Creative.CustomAssetStaticMeshDeserializer.IsValidData");
+
+	UCustomAssetStaticMeshDeserializer_IsValidData_Params params;
+	params.InBytes = InBytes;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Creative.DancerDeviceActor.OnRep_SyncPlayerCharacter
 // (Final, Native, Protected)
 
 void ADancerDeviceActor::OnRep_SyncPlayerCharacter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DancerDeviceActor.OnRep_SyncPlayerCharacter");
 
@@ -27082,7 +28625,7 @@ void ADancerDeviceActor::OnRep_SyncPlayerCharacter()
 
 void UDataTransferComponent::StartTransfer(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.StartTransfer");
 
@@ -27106,7 +28649,7 @@ void UDataTransferComponent::StartTransfer(const struct FString& FilePath)
 
 void UDataTransferComponent::Server_RequestFile(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.Server_RequestFile");
 
@@ -27131,7 +28674,7 @@ void UDataTransferComponent::Server_RequestFile(const struct FString& FilePath)
 
 void UDataTransferComponent::Server_ReceivePacketAck(int16_t TaskId, int16_t Seq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.Server_ReceivePacketAck");
 
@@ -27156,7 +28699,7 @@ void UDataTransferComponent::Server_ReceivePacketAck(int16_t TaskId, int16_t Seq
 
 void UDataTransferComponent::Server_ReceivePacket(const struct FDTPacket& Packet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.Server_ReceivePacket");
 
@@ -27181,7 +28724,7 @@ void UDataTransferComponent::Server_ReceivePacket(const struct FDTPacket& Packet
 
 int UDataTransferComponent::SendData(TArray<unsigned char> fileData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.SendData");
 
@@ -27208,7 +28751,7 @@ int UDataTransferComponent::SendData(TArray<unsigned char> fileData)
 
 void UDataTransferComponent::ReceivePacketAck(int16_t TaskId, int16_t Seq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.ReceivePacketAck");
 
@@ -27233,7 +28776,7 @@ void UDataTransferComponent::ReceivePacketAck(int16_t TaskId, int16_t Seq)
 
 void UDataTransferComponent::ReceivePacket(const struct FDTPacket& Packet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.ReceivePacket");
 
@@ -27257,7 +28800,7 @@ void UDataTransferComponent::ReceivePacket(const struct FDTPacket& Packet)
 
 bool UDataTransferComponent::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.Init");
 
@@ -27282,7 +28825,7 @@ bool UDataTransferComponent::Init()
 
 void UDataTransferComponent::Client_RequestFile(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.Client_RequestFile");
 
@@ -27307,7 +28850,7 @@ void UDataTransferComponent::Client_RequestFile(const struct FString& FilePath)
 
 void UDataTransferComponent::Client_ReceivePacketAck(int16_t TaskId, int16_t Seq)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.Client_ReceivePacketAck");
 
@@ -27332,7 +28875,7 @@ void UDataTransferComponent::Client_ReceivePacketAck(int16_t TaskId, int16_t Seq
 
 void UDataTransferComponent::Client_ReceivePacket(const struct FDTPacket& Packet)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.DataTransferComponent.Client_ReceivePacket");
 
@@ -27354,7 +28897,7 @@ void UDataTransferComponent::Client_ReceivePacket(const struct FDTPacket& Packet
 
 void UGameModeStateFighting_CreativeMode::SetToInfinityTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.GameModeStateFighting_CreativeMode.SetToInfinityTime");
 
@@ -27375,7 +28918,7 @@ void UGameModeStateFighting_CreativeMode::SetToInfinityTime()
 
 void UGameModeStateFighting_CreativeMode::PlayersInfoRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.GameModeStateFighting_CreativeMode.PlayersInfoRecord");
 
@@ -27399,7 +28942,7 @@ void UGameModeStateFighting_CreativeMode::PlayersInfoRecord()
 
 void UGameProcessEventObject::ReceivePostEvent(int ProcessType, int Round)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.GameProcessEventObject.ReceivePostEvent");
 
@@ -27421,7 +28964,7 @@ void UGameProcessEventObject::ReceivePostEvent(int ProcessType, int Round)
 
 void UGameProcessEventObject::OnEnterPlayProcess()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.GameProcessEventObject.OnEnterPlayProcess");
 
@@ -27445,7 +28988,7 @@ void UGameProcessEventObject::OnEnterPlayProcess()
 
 struct FPaintVoxelCoord APaintScoreManager::WorldToVoxelBP(const struct FVector& WorldPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.WorldToVoxelBP");
 
@@ -27472,7 +29015,7 @@ struct FPaintVoxelCoord APaintScoreManager::WorldToVoxelBP(const struct FVector&
 
 struct FVector APaintScoreManager::VoxelToWorldBP(const struct FPaintVoxelCoord& VoxelCoord)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.VoxelToWorldBP");
 
@@ -27499,7 +29042,7 @@ struct FVector APaintScoreManager::VoxelToWorldBP(const struct FPaintVoxelCoord&
 
 void APaintScoreManager::UpdateUserAreaCache(int userID, float AreaDelta)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.UpdateUserAreaCache");
 
@@ -27527,7 +29070,7 @@ void APaintScoreManager::UpdateUserAreaCache(int userID, float AreaDelta)
 
 bool APaintScoreManager::TriangleIntersectsSphere(int TriangleIndex, const struct FVector& SphereCenter, float SphereRadius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.TriangleIntersectsSphere");
 
@@ -27555,7 +29098,7 @@ bool APaintScoreManager::TriangleIntersectsSphere(int TriangleIndex, const struc
 
 void APaintScoreManager::SubdivideOctreeNode(struct FPaintOctreeNode* Node)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.SubdivideOctreeNode");
 
@@ -27583,7 +29126,7 @@ void APaintScoreManager::SubdivideOctreeNode(struct FPaintOctreeNode* Node)
 
 bool APaintScoreManager::SetVoxelCellOwner(const struct FPaintVoxelCoord& VoxelCoord, int userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.SetVoxelCellOwner");
 
@@ -27612,7 +29155,7 @@ bool APaintScoreManager::SetVoxelCellOwner(const struct FPaintVoxelCoord& VoxelC
 
 bool APaintScoreManager::SetSmallTriangleOwner(int Index, int userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.SetSmallTriangleOwner");
 
@@ -27639,7 +29182,7 @@ bool APaintScoreManager::SetSmallTriangleOwner(int Index, int userID)
 
 void APaintScoreManager::SetOctreeRoot(const struct FPaintOctreeNode& NewRoot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.SetOctreeRoot");
 
@@ -27661,7 +29204,7 @@ void APaintScoreManager::SetOctreeRoot(const struct FPaintOctreeNode& NewRoot)
 
 void APaintScoreManager::Reset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.Reset");
 
@@ -27684,7 +29227,7 @@ void APaintScoreManager::Reset()
 
 void APaintScoreManager::RemoveUserPaint(const struct FString& UserName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.RemoveUserPaint");
 
@@ -27711,7 +29254,7 @@ void APaintScoreManager::RemoveUserPaint(const struct FString& UserName)
 
 void APaintScoreManager::QueryOctree(const struct FPaintOctreeNode& Node, const struct FVector& SphereCenter, float SphereRadius, TArray<int>* OutTriangleIndices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.QueryOctree");
 
@@ -27753,7 +29296,7 @@ void APaintScoreManager::QueryOctree(const struct FPaintOctreeNode& Node, const 
 
 bool APaintScoreManager::ProjectTriangleTo2D(const struct FVector& A, const struct FVector& B, const struct FVector& C, const struct FVector& SphereCenter, float SphereRadius, struct FVector2D* OutA2D, struct FVector2D* OutB2D, struct FVector2D* OutC2D, struct FVector2D* OutCenter2D, float* OutRadius2D, struct FVector* OutE1, struct FVector* OutE2, struct FVector* OutPlaneOrigin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProjectTriangleTo2D");
 
@@ -27802,7 +29345,7 @@ bool APaintScoreManager::ProjectTriangleTo2D(const struct FVector& A, const stru
 
 float APaintScoreManager::ProcessVoxelOwnershipTransfer(const struct FPaintVoxelCoord& VoxelCoord, int userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProcessVoxelOwnershipTransfer");
 
@@ -27831,7 +29374,7 @@ float APaintScoreManager::ProcessVoxelOwnershipTransfer(const struct FPaintVoxel
 
 float APaintScoreManager::ProcessVoxelCellsForPaint(const struct FVector& Center, int userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProcessVoxelCellsForPaint");
 
@@ -27861,7 +29404,7 @@ float APaintScoreManager::ProcessVoxelCellsForPaint(const struct FVector& Center
 
 void APaintScoreManager::ProcessTriangleWithCoverageMethod(int TriangleIndex, const struct FVector& Center, unsigned char InternalUserID, class UWorld* DebugWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProcessTriangleWithCoverageMethod");
 
@@ -27891,7 +29434,7 @@ void APaintScoreManager::ProcessTriangleWithCoverageMethod(int TriangleIndex, co
 
 void APaintScoreManager::ProcessTrianglesWithLinearSearch(const struct FVector& Center, float Radius, unsigned char InternalUserID, class UWorld* DebugWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProcessTrianglesWithLinearSearch");
 
@@ -27921,7 +29464,7 @@ void APaintScoreManager::ProcessTrianglesWithLinearSearch(const struct FVector& 
 
 float APaintScoreManager::ProcessTriangleOwnershipTransfer(int TriangleIndex, int userID, float ClippedArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProcessTriangleOwnershipTransfer");
 
@@ -27952,7 +29495,7 @@ float APaintScoreManager::ProcessTriangleOwnershipTransfer(int TriangleIndex, in
 
 float APaintScoreManager::ProcessSmallTrianglesForPaint(const struct FVector& Center, float Radius, int userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProcessSmallTrianglesForPaint");
 
@@ -27984,7 +29527,7 @@ float APaintScoreManager::ProcessSmallTrianglesForPaint(const struct FVector& Ce
 
 void APaintScoreManager::ProcessSingleTriangleForPaint(int TriangleIndex, const struct FVector& Center, float Radius, unsigned char InternalUserID, class UWorld* DebugWorld)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ProcessSingleTriangleForPaint");
 
@@ -28017,7 +29560,7 @@ void APaintScoreManager::ProcessSingleTriangleForPaint(int TriangleIndex, const 
 
 bool APaintScoreManager::PerformTwoPointSplit(int TriangleIndex, const struct FVector& SphereCenter, float SphereRadius, unsigned char NewOwnerID, float* OutTransferredArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.PerformTwoPointSplit");
 
@@ -28054,7 +29597,7 @@ bool APaintScoreManager::PerformTwoPointSplit(int TriangleIndex, const struct FV
 
 bool APaintScoreManager::IntersectSegmentCircle2D(const struct FVector2D& P0, const struct FVector2D& P1, const struct FVector2D& CircleCenter, float Radius, TArray<float>* OutT)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.IntersectSegmentCircle2D");
 
@@ -28087,7 +29630,7 @@ bool APaintScoreManager::IntersectSegmentCircle2D(const struct FVector2D& P0, co
 
 void APaintScoreManager::InsertTriangleIntoOctree(int TriangleIndex, struct FPaintOctreeNode* Node)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.InsertTriangleIntoOctree");
 
@@ -28115,7 +29658,7 @@ void APaintScoreManager::InsertTriangleIntoOctree(int TriangleIndex, struct FPai
 
 void APaintScoreManager::Initialize(TArray<struct FVector> Vertices, TArray<int> Indices)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.Initialize");
 
@@ -28140,7 +29683,7 @@ void APaintScoreManager::Initialize(TArray<struct FVector> Vertices, TArray<int>
 
 void APaintScoreManager::InitByNavManager(const struct FBox& Area)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.InitByNavManager");
 
@@ -28166,7 +29709,7 @@ void APaintScoreManager::InitByNavManager(const struct FBox& Area)
 
 bool APaintScoreManager::GetVoxelCellInfo(const struct FPaintVoxelCoord& VoxelCoord, struct FPaintVoxelCell* OutCell)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetVoxelCellInfo");
 
@@ -28196,7 +29739,7 @@ bool APaintScoreManager::GetVoxelCellInfo(const struct FPaintVoxelCoord& VoxelCo
 
 float APaintScoreManager::GetUserScore(const struct FString& UserName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetUserScore");
 
@@ -28223,7 +29766,7 @@ float APaintScoreManager::GetUserScore(const struct FString& UserName)
 
 struct FVector APaintScoreManager::GetTriangleCentroid(int TriangleIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetTriangleCentroid");
 
@@ -28249,7 +29792,7 @@ struct FVector APaintScoreManager::GetTriangleCentroid(int TriangleIndex)
 
 int APaintScoreManager::GetSmallTrianglesCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetSmallTrianglesCount");
 
@@ -28276,7 +29819,7 @@ int APaintScoreManager::GetSmallTrianglesCount()
 
 bool APaintScoreManager::GetSmallTriangleInfo(int Index, struct FPaintTriangleInfo* OutTriangle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetSmallTriangleInfo");
 
@@ -28305,7 +29848,7 @@ bool APaintScoreManager::GetSmallTriangleInfo(int Index, struct FPaintTriangleIn
 
 int APaintScoreManager::GetRegisteredUserCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetRegisteredUserCount");
 
@@ -28330,7 +29873,7 @@ int APaintScoreManager::GetRegisteredUserCount()
 
 TArray<struct FPaintVoxelCoord> APaintScoreManager::GetPrecomputedDiskOffsets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetPrecomputedDiskOffsets");
 
@@ -28355,7 +29898,7 @@ TArray<struct FPaintVoxelCoord> APaintScoreManager::GetPrecomputedDiskOffsets()
 
 struct FPaintOctreeNode APaintScoreManager::GetOctreeRoot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetOctreeRoot");
 
@@ -28380,7 +29923,7 @@ struct FPaintOctreeNode APaintScoreManager::GetOctreeRoot()
 
 struct FString APaintScoreManager::GetMemoryUsage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetMemoryUsage");
 
@@ -28406,7 +29949,7 @@ struct FString APaintScoreManager::GetMemoryUsage()
 
 void APaintScoreManager::GetAllUserScores(TArray<struct FString>* OutUsers, TArray<float>* OutScores)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.GetAllUserScores");
 
@@ -28434,7 +29977,7 @@ void APaintScoreManager::GetAllUserScores(TArray<struct FString>* OutUsers, TArr
 
 void APaintScoreManager::DrawVoxelCells(unsigned char TargetUserID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.DrawVoxelCells");
 
@@ -28458,7 +30001,7 @@ void APaintScoreManager::DrawVoxelCells(unsigned char TargetUserID)
 
 void APaintScoreManager::DrawSmallTriangles(unsigned char TargetUserID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.DrawSmallTriangles");
 
@@ -28482,7 +30025,7 @@ void APaintScoreManager::DrawSmallTriangles(unsigned char TargetUserID)
 
 void APaintScoreManager::DebugDrawOccupiedAreasForUserID(unsigned char TargetUserID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.DebugDrawOccupiedAreasForUserID");
 
@@ -28506,7 +30049,7 @@ void APaintScoreManager::DebugDrawOccupiedAreasForUserID(unsigned char TargetUse
 
 void APaintScoreManager::DebugDrawOccupiedAreas(const struct FString& UserName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.DebugDrawOccupiedAreas");
 
@@ -28532,7 +30075,7 @@ void APaintScoreManager::DebugDrawOccupiedAreas(const struct FString& UserName)
 
 float APaintScoreManager::ClipTriangleWithSphere(int TriangleIndex, const struct FVector& SphereCenter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.ClipTriangleWithSphere");
 
@@ -28563,7 +30106,7 @@ float APaintScoreManager::ClipTriangleWithSphere(int TriangleIndex, const struct
 
 float APaintScoreManager::CalculateTriangleVoxelIntersection(const struct FVector& V0, const struct FVector& v1, const struct FVector& v2, const struct FPaintVoxelCoord& VoxelCoord)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.CalculateTriangleVoxelIntersection");
 
@@ -28593,7 +30136,7 @@ float APaintScoreManager::CalculateTriangleVoxelIntersection(const struct FVecto
 
 void APaintScoreManager::CalculateSmallTrianglesBounds(struct FVector* OutMin, struct FVector* OutMax)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.CalculateSmallTrianglesBounds");
 
@@ -28619,7 +30162,7 @@ void APaintScoreManager::CalculateSmallTrianglesBounds(struct FVector* OutMin, s
 
 void APaintScoreManager::BuildOctree()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.BuildOctree");
 
@@ -28644,7 +30187,7 @@ void APaintScoreManager::BuildOctree()
 
 void APaintScoreManager::AddTriangleToPipeline(const struct FVector& A, const struct FVector& B, const struct FVector& C)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.AddTriangleToPipeline");
 
@@ -28671,7 +30214,7 @@ void APaintScoreManager::AddTriangleToPipeline(const struct FVector& A, const st
 
 void APaintScoreManager::AddPaint(const struct FVector& Center, const struct FString& UserName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PaintScoreManager.AddPaint");
 
@@ -28697,7 +30240,7 @@ void APaintScoreManager::AddPaint(const struct FVector& Center, const struct FSt
 
 void UPlayerListenerEventObject::OnCppRemovePlayerListener(class UObject* Content, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PlayerListenerEventObject.OnCppRemovePlayerListener");
 
@@ -28723,7 +30266,7 @@ void UPlayerListenerEventObject::OnCppRemovePlayerListener(class UObject* Conten
 
 void UPlayerListenerEventObject::OnCppAddPlayerListener(class UObject* Content, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PlayerListenerEventObject.OnCppAddPlayerListener");
 
@@ -28749,7 +30292,7 @@ void UPlayerListenerEventObject::OnCppAddPlayerListener(class UObject* Content, 
 
 void UPlayerAttachedToVehicleEventObject::OnOwnerAttachedToVehicle(class ASTExtraVehicleBase* InVehicle, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PlayerAttachedToVehicleEventObject.OnOwnerAttachedToVehicle");
 
@@ -28775,7 +30318,7 @@ void UPlayerAttachedToVehicleEventObject::OnOwnerAttachedToVehicle(class ASTExtr
 
 void UPlayerAttachedToVehicleEventObject::OnCppRemovePlayerListener(class UObject* Content, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PlayerAttachedToVehicleEventObject.OnCppRemovePlayerListener");
 
@@ -28801,7 +30344,7 @@ void UPlayerAttachedToVehicleEventObject::OnCppRemovePlayerListener(class UObjec
 
 void UPlayerAttachedToVehicleEventObject::OnCppAddPlayerListener(class UObject* Content, uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PlayerAttachedToVehicleEventObject.OnCppAddPlayerListener");
 
@@ -28826,7 +30369,7 @@ void UPlayerAttachedToVehicleEventObject::OnCppAddPlayerListener(class UObject* 
 
 void UPlayerAttachedProxy::OnProxyAttachedToVehicle(class ASTExtraVehicleBase* InVehicle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.PlayerAttachedProxy.OnProxyAttachedToVehicle");
 
@@ -28851,7 +30394,7 @@ void UPlayerAttachedProxy::OnProxyAttachedToVehicle(class ASTExtraVehicleBase* I
 
 void AShowAllPlayerManagerActor::TriggerRefresh(class ASTExtraBaseCharacter* Character, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.TriggerRefresh");
 
@@ -28874,7 +30417,7 @@ void AShowAllPlayerManagerActor::TriggerRefresh(class ASTExtraBaseCharacter* Cha
 
 void AShowAllPlayerManagerActor::RefreshTeamPoseData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.RefreshTeamPoseData");
 
@@ -28895,7 +30438,7 @@ void AShowAllPlayerManagerActor::RefreshTeamPoseData()
 
 void AShowAllPlayerManagerActor::RefreshMapMarkData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.RefreshMapMarkData");
 
@@ -28916,7 +30459,7 @@ void AShowAllPlayerManagerActor::RefreshMapMarkData()
 
 void AShowAllPlayerManagerActor::OnTeamPosDataChange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.OnTeamPosDataChange");
 
@@ -28937,7 +30480,7 @@ void AShowAllPlayerManagerActor::OnTeamPosDataChange()
 
 void AShowAllPlayerManagerActor::OnRep_TeamPosData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.OnRep_TeamPosData");
 
@@ -28961,7 +30504,7 @@ void AShowAllPlayerManagerActor::OnRep_TeamPosData()
 
 bool AShowAllPlayerManagerActor::IsCharacterValidForShow(class ASTExtraBaseCharacter* Character)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.IsCharacterValidForShow");
 
@@ -28988,7 +30531,7 @@ bool AShowAllPlayerManagerActor::IsCharacterValidForShow(class ASTExtraBaseChara
 
 void AShowAllPlayerManagerActor::FlushBatchData(int BatchSize, int CurExtraSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.FlushBatchData");
 
@@ -29013,7 +30556,7 @@ void AShowAllPlayerManagerActor::FlushBatchData(int BatchSize, int CurExtraSize)
 
 void AShowAllPlayerManagerActor::EnableRefresh(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.EnableRefresh");
 
@@ -29035,7 +30578,7 @@ void AShowAllPlayerManagerActor::EnableRefresh(bool bEnable)
 
 void AShowAllPlayerManagerActor::ClearAllMark()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Creative.ShowAllPlayerManagerActor.ClearAllMark");
 

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UAESharedModule.OwnBlackboardInterface.GetOwnBlackboardParameter
 // (Native, Event, Public, BlueprintCallable, BlueprintEvent)
@@ -15,7 +15,7 @@ namespace SDK
 
 TArray<struct FUAEBlackboardParameter> UOwnBlackboardInterface::GetOwnBlackboardParameter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.OwnBlackboardInterface.GetOwnBlackboardParameter");
 
@@ -40,7 +40,7 @@ TArray<struct FUAEBlackboardParameter> UOwnBlackboardInterface::GetOwnBlackboard
 
 class UUAEBlackboard* UOwnBlackboardInterface::GetOwnBlackboard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.OwnBlackboardInterface.GetOwnBlackboard");
 
@@ -67,7 +67,7 @@ class UUAEBlackboard* UOwnBlackboardInterface::GetOwnBlackboard()
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsWeakObject(const struct FUAEBlackboardKeySelector& Key, class UObject* ObjectValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsWeakObject");
 
@@ -97,7 +97,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsWeakObject(const struct F
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsVector(const struct FUAEBlackboardKeySelector& Key, const struct FVector& VectorValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsVector");
 
@@ -127,7 +127,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsVector(const struct FUAEB
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsString(const struct FUAEBlackboardKeySelector& Key, const struct FString& StringValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsString");
 
@@ -157,7 +157,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsString(const struct FUAEB
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsRotator(const struct FUAEBlackboardKeySelector& Key, const struct FRotator& RotatorValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsRotator");
 
@@ -187,7 +187,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsRotator(const struct FUAE
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsObject(const struct FUAEBlackboardKeySelector& Key, class UObject* ObjectValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsObject");
 
@@ -217,7 +217,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsObject(const struct FUAEB
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsName(const struct FUAEBlackboardKeySelector& Key, const struct FName& NameValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsName");
 
@@ -247,7 +247,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsName(const struct FUAEBla
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsInt(const struct FUAEBlackboardKeySelector& Key, int IntValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsInt");
 
@@ -277,7 +277,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsInt(const struct FUAEBlac
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsFloat(const struct FUAEBlackboardKeySelector& Key, float FloatValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsFloat");
 
@@ -307,7 +307,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsFloat(const struct FUAEBl
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsEnum(const struct FUAEBlackboardKeySelector& Key, unsigned char EnumValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsEnum");
 
@@ -337,7 +337,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsEnum(const struct FUAEBla
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsClass(const struct FUAEBlackboardKeySelector& Key, class UClass* ClassValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsClass");
 
@@ -367,7 +367,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsClass(const struct FUAEBl
 
 void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsBool(const struct FUAEBlackboardKeySelector& Key, bool BoolValue, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.SetValueAsBool");
 
@@ -397,7 +397,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::SetValueAsBool(const struct FUAEBla
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistWeakObject(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistWeakObject");
 
@@ -426,7 +426,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistWeakObject(const struct FUAE
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistVector(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistVector");
 
@@ -455,7 +455,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistVector(const struct FUAEBlac
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistString(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistString");
 
@@ -484,7 +484,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistString(const struct FUAEBlac
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistRotator(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistRotator");
 
@@ -513,7 +513,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistRotator(const struct FUAEBla
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistObject(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistObject");
 
@@ -542,7 +542,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistObject(const struct FUAEBlac
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistName(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistName");
 
@@ -571,7 +571,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistName(const struct FUAEBlackb
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistInt(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistInt");
 
@@ -600,7 +600,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistInt(const struct FUAEBlackbo
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistFloat(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistFloat");
 
@@ -629,7 +629,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistFloat(const struct FUAEBlack
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistEnum(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistEnum");
 
@@ -658,7 +658,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistEnum(const struct FUAEBlackb
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistClass(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistClass");
 
@@ -687,7 +687,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistClass(const struct FUAEBlack
 
 bool UUAEBlackboardBlueprintFunctionLibrary::IsExistBool(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.IsExistBool");
 
@@ -716,7 +716,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::IsExistBool(const struct FUAEBlackb
 
 class UObject* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsWeakObject(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsWeakObject");
 
@@ -745,7 +745,7 @@ class UObject* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsWeakObject(cons
 
 class AActor* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsWeakActor(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsWeakActor");
 
@@ -774,7 +774,7 @@ class AActor* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsWeakActor(const 
 
 struct FVector UUAEBlackboardBlueprintFunctionLibrary::GetValueAsVector(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsVector");
 
@@ -803,7 +803,7 @@ struct FVector UUAEBlackboardBlueprintFunctionLibrary::GetValueAsVector(const st
 
 struct FString UUAEBlackboardBlueprintFunctionLibrary::GetValueAsString(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsString");
 
@@ -832,7 +832,7 @@ struct FString UUAEBlackboardBlueprintFunctionLibrary::GetValueAsString(const st
 
 struct FRotator UUAEBlackboardBlueprintFunctionLibrary::GetValueAsRotator(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsRotator");
 
@@ -861,7 +861,7 @@ struct FRotator UUAEBlackboardBlueprintFunctionLibrary::GetValueAsRotator(const 
 
 class UObject* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsObject(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsObject");
 
@@ -890,7 +890,7 @@ class UObject* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsObject(const st
 
 struct FName UUAEBlackboardBlueprintFunctionLibrary::GetValueAsName(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsName");
 
@@ -919,7 +919,7 @@ struct FName UUAEBlackboardBlueprintFunctionLibrary::GetValueAsName(const struct
 
 int UUAEBlackboardBlueprintFunctionLibrary::GetValueAsInt(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsInt");
 
@@ -948,7 +948,7 @@ int UUAEBlackboardBlueprintFunctionLibrary::GetValueAsInt(const struct FUAEBlack
 
 float UUAEBlackboardBlueprintFunctionLibrary::GetValueAsFloat(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsFloat");
 
@@ -977,7 +977,7 @@ float UUAEBlackboardBlueprintFunctionLibrary::GetValueAsFloat(const struct FUAEB
 
 unsigned char UUAEBlackboardBlueprintFunctionLibrary::GetValueAsEnum(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsEnum");
 
@@ -1006,7 +1006,7 @@ unsigned char UUAEBlackboardBlueprintFunctionLibrary::GetValueAsEnum(const struc
 
 class UClass* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsClass(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsClass");
 
@@ -1035,7 +1035,7 @@ class UClass* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsClass(const stru
 
 bool UUAEBlackboardBlueprintFunctionLibrary::GetValueAsBool(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsBool");
 
@@ -1064,7 +1064,7 @@ bool UUAEBlackboardBlueprintFunctionLibrary::GetValueAsBool(const struct FUAEBla
 
 class AActor* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsActor(const struct FUAEBlackboardContainer& UAEBlackboardContainer, const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.GetValueAsActor");
 
@@ -1092,7 +1092,7 @@ class AActor* UUAEBlackboardBlueprintFunctionLibrary::GetValueAsActor(const stru
 
 void UUAEBlackboardBlueprintFunctionLibrary::FillBlackboardByBlackboard(struct FUAEBlackboardContainer* UAEBlackboardContainer, struct FUAEBlackboardContainer* OtherUAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.FillBlackboardByBlackboard");
 
@@ -1121,7 +1121,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::FillBlackboardByBlackboard(struct F
 
 void UUAEBlackboardBlueprintFunctionLibrary::FillBlackboard(TArray<struct FUAEBlackboardParameter> ParamList, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.FillBlackboard");
 
@@ -1149,7 +1149,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::FillBlackboard(TArray<struct FUAEBl
 
 void UUAEBlackboardBlueprintFunctionLibrary::AddValueByParam(const struct FUAEBlackboardParameter& NewParam, struct FUAEBlackboardContainer* UAEBlackboardContainer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboardBlueprintFunctionLibrary.AddValueByParam");
 
@@ -1177,7 +1177,7 @@ void UUAEBlackboardBlueprintFunctionLibrary::AddValueByParam(const struct FUAEBl
 
 void UUAEBlackboard::SetValueAsWeakObject(const struct FUAEBlackboardKeySelector& Key, class UObject* ObjectValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsWeakObject");
 
@@ -1203,7 +1203,7 @@ void UUAEBlackboard::SetValueAsWeakObject(const struct FUAEBlackboardKeySelector
 
 void UUAEBlackboard::SetValueAsVector(const struct FUAEBlackboardKeySelector& Key, const struct FVector& VectorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsVector");
 
@@ -1229,7 +1229,7 @@ void UUAEBlackboard::SetValueAsVector(const struct FUAEBlackboardKeySelector& Ke
 
 void UUAEBlackboard::SetValueAsString(const struct FUAEBlackboardKeySelector& Key, const struct FString& StringValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsString");
 
@@ -1255,7 +1255,7 @@ void UUAEBlackboard::SetValueAsString(const struct FUAEBlackboardKeySelector& Ke
 
 void UUAEBlackboard::SetValueAsRotator(const struct FUAEBlackboardKeySelector& Key, const struct FRotator& VectorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsRotator");
 
@@ -1281,7 +1281,7 @@ void UUAEBlackboard::SetValueAsRotator(const struct FUAEBlackboardKeySelector& K
 
 void UUAEBlackboard::SetValueAsObject(const struct FUAEBlackboardKeySelector& Key, class UObject* ObjectValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsObject");
 
@@ -1307,7 +1307,7 @@ void UUAEBlackboard::SetValueAsObject(const struct FUAEBlackboardKeySelector& Ke
 
 void UUAEBlackboard::SetValueAsName(const struct FUAEBlackboardKeySelector& Key, const struct FName& NameValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsName");
 
@@ -1333,7 +1333,7 @@ void UUAEBlackboard::SetValueAsName(const struct FUAEBlackboardKeySelector& Key,
 
 void UUAEBlackboard::SetValueAsInt(const struct FUAEBlackboardKeySelector& Key, int IntValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsInt");
 
@@ -1359,7 +1359,7 @@ void UUAEBlackboard::SetValueAsInt(const struct FUAEBlackboardKeySelector& Key, 
 
 void UUAEBlackboard::SetValueAsFloat(const struct FUAEBlackboardKeySelector& Key, float FloatValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsFloat");
 
@@ -1385,7 +1385,7 @@ void UUAEBlackboard::SetValueAsFloat(const struct FUAEBlackboardKeySelector& Key
 
 void UUAEBlackboard::SetValueAsEnum(const struct FUAEBlackboardKeySelector& Key, unsigned char EnumValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsEnum");
 
@@ -1411,7 +1411,7 @@ void UUAEBlackboard::SetValueAsEnum(const struct FUAEBlackboardKeySelector& Key,
 
 void UUAEBlackboard::SetValueAsClass(const struct FUAEBlackboardKeySelector& Key, class UClass* ClassValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsClass");
 
@@ -1437,7 +1437,7 @@ void UUAEBlackboard::SetValueAsClass(const struct FUAEBlackboardKeySelector& Key
 
 void UUAEBlackboard::SetValueAsBool(const struct FUAEBlackboardKeySelector& Key, bool BoolValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.SetValueAsBool");
 
@@ -1463,7 +1463,7 @@ void UUAEBlackboard::SetValueAsBool(const struct FUAEBlackboardKeySelector& Key,
 
 bool UUAEBlackboard::IsExistWeakObject(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistWeakObject");
 
@@ -1490,7 +1490,7 @@ bool UUAEBlackboard::IsExistWeakObject(const struct FUAEBlackboardKeySelector& K
 
 bool UUAEBlackboard::IsExistVector(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistVector");
 
@@ -1517,7 +1517,7 @@ bool UUAEBlackboard::IsExistVector(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistString(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistString");
 
@@ -1544,7 +1544,7 @@ bool UUAEBlackboard::IsExistString(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistRotator(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistRotator");
 
@@ -1571,7 +1571,7 @@ bool UUAEBlackboard::IsExistRotator(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistObject(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistObject");
 
@@ -1598,7 +1598,7 @@ bool UUAEBlackboard::IsExistObject(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistName(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistName");
 
@@ -1625,7 +1625,7 @@ bool UUAEBlackboard::IsExistName(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistInt(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistInt");
 
@@ -1652,7 +1652,7 @@ bool UUAEBlackboard::IsExistInt(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistFloat(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistFloat");
 
@@ -1679,7 +1679,7 @@ bool UUAEBlackboard::IsExistFloat(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistEnum(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistEnum");
 
@@ -1706,7 +1706,7 @@ bool UUAEBlackboard::IsExistEnum(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistClass(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistClass");
 
@@ -1733,7 +1733,7 @@ bool UUAEBlackboard::IsExistClass(const struct FUAEBlackboardKeySelector& Key)
 
 bool UUAEBlackboard::IsExistBool(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.IsExistBool");
 
@@ -1760,7 +1760,7 @@ bool UUAEBlackboard::IsExistBool(const struct FUAEBlackboardKeySelector& Key)
 
 class UObject* UUAEBlackboard::GetValueAsWeakObject(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsWeakObject");
 
@@ -1787,7 +1787,7 @@ class UObject* UUAEBlackboard::GetValueAsWeakObject(const struct FUAEBlackboardK
 
 class AActor* UUAEBlackboard::GetValueAsWeakActor(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsWeakActor");
 
@@ -1814,7 +1814,7 @@ class AActor* UUAEBlackboard::GetValueAsWeakActor(const struct FUAEBlackboardKey
 
 struct FVector UUAEBlackboard::GetValueAsVector(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsVector");
 
@@ -1841,7 +1841,7 @@ struct FVector UUAEBlackboard::GetValueAsVector(const struct FUAEBlackboardKeySe
 
 struct FString UUAEBlackboard::GetValueAsString(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsString");
 
@@ -1868,7 +1868,7 @@ struct FString UUAEBlackboard::GetValueAsString(const struct FUAEBlackboardKeySe
 
 struct FRotator UUAEBlackboard::GetValueAsRotator(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsRotator");
 
@@ -1895,7 +1895,7 @@ struct FRotator UUAEBlackboard::GetValueAsRotator(const struct FUAEBlackboardKey
 
 class UObject* UUAEBlackboard::GetValueAsObject(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsObject");
 
@@ -1922,7 +1922,7 @@ class UObject* UUAEBlackboard::GetValueAsObject(const struct FUAEBlackboardKeySe
 
 struct FName UUAEBlackboard::GetValueAsName(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsName");
 
@@ -1949,7 +1949,7 @@ struct FName UUAEBlackboard::GetValueAsName(const struct FUAEBlackboardKeySelect
 
 int UUAEBlackboard::GetValueAsInt(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsInt");
 
@@ -1976,7 +1976,7 @@ int UUAEBlackboard::GetValueAsInt(const struct FUAEBlackboardKeySelector& Key)
 
 float UUAEBlackboard::GetValueAsFloat(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsFloat");
 
@@ -2003,7 +2003,7 @@ float UUAEBlackboard::GetValueAsFloat(const struct FUAEBlackboardKeySelector& Ke
 
 unsigned char UUAEBlackboard::GetValueAsEnum(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsEnum");
 
@@ -2030,7 +2030,7 @@ unsigned char UUAEBlackboard::GetValueAsEnum(const struct FUAEBlackboardKeySelec
 
 class UClass* UUAEBlackboard::GetValueAsClass(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsClass");
 
@@ -2057,7 +2057,7 @@ class UClass* UUAEBlackboard::GetValueAsClass(const struct FUAEBlackboardKeySele
 
 bool UUAEBlackboard::GetValueAsBool(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsBool");
 
@@ -2084,7 +2084,7 @@ bool UUAEBlackboard::GetValueAsBool(const struct FUAEBlackboardKeySelector& Key)
 
 class AActor* UUAEBlackboard::GetValueAsActor(const struct FUAEBlackboardKeySelector& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.GetValueAsActor");
 
@@ -2110,7 +2110,7 @@ class AActor* UUAEBlackboard::GetValueAsActor(const struct FUAEBlackboardKeySele
 
 void UUAEBlackboard::AddValueByParam(const struct FUAEBlackboardParameter& NewParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UAESharedModule.UAEBlackboard.AddValueByParam");
 

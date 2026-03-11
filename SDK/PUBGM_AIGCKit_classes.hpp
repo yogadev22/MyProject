@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class AIGCKit.AIGCAnimData
 // 0x0020 (0x0048 - 0x0028)
@@ -21,7 +21,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIGCKit.AIGCAnimData");
 		return pStaticClass;
@@ -39,12 +39,12 @@ public:
 	bool                                               bUseAIGCAnimation;                                        // 0x03F8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x03F9(0x0003) MISSED OFFSET
 	float                                              CurrentAIGCAnimFrameIndex;                                // 0x03FC(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneModificationMode>            TranslationMode;                                          // 0x0400(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneModificationMode>            RotationMode;                                             // 0x0401(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneModificationMode>            ScaleMode;                                                // 0x0402(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneControlSpace>                TranslationSpace;                                         // 0x0403(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneControlSpace>                RotationSpace;                                            // 0x0404(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBoneControlSpace>                ScaleSpace;                                               // 0x0405(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 TranslationMode;                                          // 0x0400(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 RotationMode;                                             // 0x0401(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 ScaleMode;                                                // 0x0402(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     TranslationSpace;                                         // 0x0403(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     RotationSpace;                                            // 0x0404(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBoneControlSpace>                     ScaleSpace;                                               // 0x0405(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x2];                                       // 0x0406(0x0002) MISSED OFFSET
 	float                                              AIGCAnimFrameRate;                                        // 0x0408(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	struct FSkeletonModifyRule                         DefaultSkeletonModifyRule;                                // 0x040C(0x0006)
@@ -52,7 +52,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIGCKit.AIGCAnimInstance");
 		return pStaticClass;
@@ -71,7 +71,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIGCKit.AIGCKitFunctionLibrary");
 		return pStaticClass;
@@ -97,7 +97,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AIGCKit.AIGCKitSettings");
 		return pStaticClass;

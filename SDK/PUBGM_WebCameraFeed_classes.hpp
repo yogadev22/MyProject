@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class WebCameraFeed.WebCameraWidget
 // 0x0100 (0x0200 - 0x0100)
@@ -18,12 +18,12 @@ public:
 	int                                                requestedHeight;                                          // 0x0108(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData)
 	bool                                               ScanningQRCode;                                           // 0x010C(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x010D(0x0003) MISSED OFFSET
-	struct FScriptDelegate                             OnScanningSuccess;                                        // 0x0110(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnScanningSuccess;                                        // 0x0110(0x0010) (ZeroConstructor, InstancedReference)
 	unsigned char                                      UnknownData01[0xE0];                                      // 0x0120(0x00E0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class WebCameraFeed.WebCameraWidget");
 		return pStaticClass;

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class LevelSequence.LevelSequenceActor
 // 0x00A0 (0x0550 - 0x04B0)
@@ -35,7 +35,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class LevelSequence.LevelSequenceActor");
 		return pStaticClass;
@@ -68,7 +68,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class LevelSequence.DefaultLevelSequenceInstanceData");
 		return pStaticClass;
@@ -78,18 +78,18 @@ public:
 
 
 // Class LevelSequence.LevelSequence
-// 0x00F8 (0x03D8 - 0x02E0)
+// 0x00F8 (0x03E0 - 0x02E8)
 class ULevelSequence : public UMovieSceneSequence
 {
 public:
-	class UMovieScene*                                 MovieScene;                                               // 0x02E0(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FLevelSequenceObjectReferenceMap            ObjectReferences;                                         // 0x02E8(0x0050)
-	struct FLevelSequenceBindingReferences             BindingReferences;                                        // 0x0338(0x0050)
-	TMap<struct FString, struct FLevelSequenceObject>  PossessedObjects;                                         // 0x0388(0x0050) (ZeroConstructor, Deprecated)
+	class UMovieScene*                                 MovieScene;                                               // 0x02E8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FLevelSequenceObjectReferenceMap            ObjectReferences;                                         // 0x02F0(0x0050)
+	struct FLevelSequenceBindingReferences             BindingReferences;                                        // 0x0340(0x0050)
+	TMap<struct FString, struct FLevelSequenceObject>  PossessedObjects;                                         // 0x0390(0x0050) (ZeroConstructor, Deprecated)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class LevelSequence.LevelSequence");
 		return pStaticClass;
@@ -106,7 +106,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class LevelSequence.LevelSequenceBurnInInitSettings");
 		return pStaticClass;
@@ -127,7 +127,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class LevelSequence.LevelSequenceBurnInOptions");
 		return pStaticClass;
@@ -146,7 +146,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class LevelSequence.LevelSequenceBurnIn");
 		return pStaticClass;
@@ -171,7 +171,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class LevelSequence.LevelSequencePlayer");
 		return pStaticClass;

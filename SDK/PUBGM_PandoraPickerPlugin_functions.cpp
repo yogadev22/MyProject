@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.GetInstance
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 class UBP_PandoraPickerLibraryLibrary* UBP_PandoraPickerLibraryLibrary::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.GetInstance");
 
@@ -40,7 +40,7 @@ class UBP_PandoraPickerLibraryLibrary* UBP_PandoraPickerLibraryLibrary::GetInsta
 
 void UBP_PandoraPickerLibraryLibrary::BP_SetVideoExportQuality(int Quality)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_SetVideoExportQuality");
 
@@ -67,7 +67,7 @@ void UBP_PandoraPickerLibraryLibrary::BP_SetVideoExportQuality(int Quality)
 
 class UTexture2D* UBP_PandoraPickerLibraryLibrary::BP_PandoraPickerLoadImageTest(const struct FString& fImagePath, const struct FString& fOrgImagePath, class UTexture2D** orgTex2D)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_PandoraPickerLoadImageTest");
 
@@ -97,7 +97,7 @@ class UTexture2D* UBP_PandoraPickerLibraryLibrary::BP_PandoraPickerLoadImageTest
 
 int UBP_PandoraPickerLibraryLibrary::BP_PandoraPickerInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_PandoraPickerInit");
 
@@ -122,7 +122,7 @@ int UBP_PandoraPickerLibraryLibrary::BP_PandoraPickerInit()
 
 void UBP_PandoraPickerLibraryLibrary::BP_PandoraPickerGetSavedPath(struct FString* strSavePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_PandoraPickerGetSavedPath");
 
@@ -147,11 +147,11 @@ void UBP_PandoraPickerLibraryLibrary::BP_PandoraPickerGetSavedPath(struct FStrin
 // int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 SecretKey                      (Parm, ZeroConstructor)
-// struct FString                 savedPath                      (Parm, ZeroConstructor)
+// struct FString                 SavedPath                      (Parm, ZeroConstructor)
 
-void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryWithOrg(int Width, int Height, const struct FString& SecretKey, const struct FString& savedPath)
+void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryWithOrg(int Width, int Height, const struct FString& SecretKey, const struct FString& SavedPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_OpenImageLibraryWithOrg");
 
@@ -159,7 +159,7 @@ void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryWithOrg(int Width, int 
 	params.Width = Width;
 	params.Height = Height;
 	params.SecretKey = SecretKey;
-	params.savedPath = savedPath;
+	params.SavedPath = SavedPath;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -178,7 +178,7 @@ void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryWithOrg(int Width, int 
 
 void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryVideo(const struct FString& SecretKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_OpenImageLibraryVideo");
 
@@ -201,11 +201,11 @@ void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryVideo(const struct FStr
 // int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 SecretKey                      (Parm, ZeroConstructor)
-// struct FString                 savedPath                      (Parm, ZeroConstructor)
+// struct FString                 SavedPath                      (Parm, ZeroConstructor)
 
-void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryNoCut(int Width, int Height, const struct FString& SecretKey, const struct FString& savedPath)
+void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryNoCut(int Width, int Height, const struct FString& SecretKey, const struct FString& SavedPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_OpenImageLibraryNoCut");
 
@@ -213,7 +213,7 @@ void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryNoCut(int Width, int He
 	params.Width = Width;
 	params.Height = Height;
 	params.SecretKey = SecretKey;
-	params.savedPath = savedPath;
+	params.SavedPath = SavedPath;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -231,11 +231,11 @@ void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibraryNoCut(int Width, int He
 // int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 SecretKey                      (Parm, ZeroConstructor)
-// struct FString                 savedPath                      (Parm, ZeroConstructor)
+// struct FString                 SavedPath                      (Parm, ZeroConstructor)
 
-void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibrary(int Width, int Height, const struct FString& SecretKey, const struct FString& savedPath)
+void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibrary(int Width, int Height, const struct FString& SecretKey, const struct FString& SavedPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_OpenImageLibrary");
 
@@ -243,7 +243,7 @@ void UBP_PandoraPickerLibraryLibrary::BP_OpenImageLibrary(int Width, int Height,
 	params.Width = Width;
 	params.Height = Height;
 	params.SecretKey = SecretKey;
-	params.savedPath = savedPath;
+	params.SavedPath = SavedPath;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;

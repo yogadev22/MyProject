@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum ShadowTrackerExtra.ECircleInfo
 enum class ECircleInfo : uint8_t
@@ -144,8 +144,10 @@ enum class EPawnState : uint8_t
 	EPawnState__CoopVault          = 78,
 	EPawnState__AttachToOther      = 79,
 	EPawnState__CoopVaultPrepare   = 80,
-	EPawnState____MAX              = 81,
-	EPawnState__EPawnState_MAX     = 82
+	EPawnState__SpecialSuit        = 81,
+	EPawnState__StealingMonster    = 82,
+	EPawnState____MAX              = 83,
+	EPawnState__EPawnState_MAX     = 84
 };
 
 
@@ -369,6 +371,18 @@ enum class EWeaponHoldType : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.EVehicleInteractionType
+enum class EVehicleInteractionType : uint8_t
+{
+	EVehicleInteractionType__Enter = 0,
+	EVehicleInteractionType__Exit  = 1,
+	EVehicleInteractionType__ChangeSeat = 2,
+	EVehicleInteractionType__LeanOut = 3,
+	EVehicleInteractionType__NumTypes = 4,
+	EVehicleInteractionType__EVehicleInteractionType_MAX = 5
+};
+
+
 // Enum ShadowTrackerExtra.EVHSeatSideType
 enum class EVHSeatSideType : uint8_t
 {
@@ -434,6 +448,15 @@ enum class EVHSeatGUIType : uint8_t
 	EVHSeatGUIType__EVHSeatGUIType_Other = 2,
 	EVHSeatGUIType__EVHSeatGUIType_Self = 3,
 	EVHSeatGUIType__EVHSeatGUIType_Max = 4
+};
+
+
+// Enum ShadowTrackerExtra.EVHAirtightSpaceType
+enum class EVHAirtightSpaceType : uint8_t
+{
+	EVHAirtightSpaceType__EVAirtightType_Normal = 0,
+	EVHAirtightSpaceType__EVAirtightType_NoVechileWeapon = 1,
+	EVHAirtightSpaceType__EVAirtightType_Max = 2
 };
 
 
@@ -612,6 +635,16 @@ enum class EVehicleAudioDebugType : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.ESTExtraVehicleSyncState
+enum class ESTExtraVehicleSyncState : uint8_t
+{
+	ESTExtraVehicleSyncState__VSS_None = 0,
+	ESTExtraVehicleSyncState__VSS_Client = 1,
+	ESTExtraVehicleSyncState__VSS_ServerAuthorize = 2,
+	ESTExtraVehicleSyncState__VSS_MAX = 3
+};
+
+
 // Enum ShadowTrackerExtra.ESTExtraUAVVehicleOperateState
 enum class ESTExtraUAVVehicleOperateState : uint8_t
 {
@@ -762,7 +795,8 @@ enum class ECameraDataType : uint8_t
 	ECameraDataType_BoardMove      = 25,
 	ECameraDataType_UGC            = 26,
 	ECameraDataType_Transform      = 27,
-	ECameraDataType_Max            = 28
+	ECameraDataType_NitroBoost     = 28,
+	ECameraDataType_Max            = 29
 };
 
 
@@ -773,16 +807,6 @@ enum class ESTAINoiseType : uint8_t
 	ESTAINoiseType__VehicleRunSound = 1,
 	ESTAINoiseType__VehicleHornSound = 2,
 	ESTAINoiseType__ESTAINoiseType_MAX = 3
-};
-
-
-// Enum ShadowTrackerExtra.ESTExtraVehicleSyncState
-enum class ESTExtraVehicleSyncState : uint8_t
-{
-	ESTExtraVehicleSyncState__VSS_None = 0,
-	ESTExtraVehicleSyncState__VSS_Client = 1,
-	ESTExtraVehicleSyncState__VSS_ServerAuthorize = 2,
-	ESTExtraVehicleSyncState__VSS_MAX = 3
 };
 
 
@@ -885,9 +909,11 @@ enum class ESTExtraVehicleShapeType : uint8_t
 	ESTExtraVehicleShapeType__VST_UAVVine = 93,
 	ESTExtraVehicleShapeType__VST_PoliceCar = 94,
 	ESTExtraVehicleShapeType__VST_UAVGodView = 95,
-	ESTExtraVehicleShapeType__VST_PreparedVeh1 = 96,
-	ESTExtraVehicleShapeType__VST_PreparedVeh2 = 97,
-	ESTExtraVehicleShapeType__VST_MAX = 98
+	ESTExtraVehicleShapeType__VST_MTLB = 96,
+	ESTExtraVehicleShapeType__VST_QuadcopterDrone = 97,
+	ESTExtraVehicleShapeType__VST_PreparedVeh1 = 98,
+	ESTExtraVehicleShapeType__VST_PreparedVeh2 = 99,
+	ESTExtraVehicleShapeType__VST_MAX = 100
 };
 
 
@@ -1048,7 +1074,9 @@ enum class ESTExtraVehicleType : uint8_t
 	ESTExtraVehicleType__VT_UAVVine = 151,
 	ESTExtraVehicleType__VT_PoliceCar = 152,
 	ESTExtraVehicleType__VT_UAVGodView = 153,
-	ESTExtraVehicleType__VT_MAX    = 154
+	ESTExtraVehicleType__VT_MTLB   = 154,
+	ESTExtraVehicleType__VT_QuadcopterDrone = 155,
+	ESTExtraVehicleType__VT_MAX    = 156
 };
 
 
@@ -1481,6 +1509,24 @@ enum class EChangePetFailedReason : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.EPetState
+enum class EPetState : uint8_t
+{
+	PetStateNone                   = 0,
+	PetIdle                        = 1,
+	PetDisappear                   = 2,
+	PetParachute                   = 3,
+	PetFollow                      = 4,
+	PetFlyAround                   = 5,
+	PetFlyFollow                   = 6,
+	PetSwimming                    = 7,
+	PetSleeping                    = 8,
+	PetPlayingFeature              = 9,
+	PetStateCount                  = 10,
+	EPetState_MAX                  = 11
+};
+
+
 // Enum ShadowTrackerExtra.ETeleportPawnType
 enum class ETeleportPawnType : uint8_t
 {
@@ -1716,7 +1762,7 @@ enum class ECustomMovmentMode : uint8_t
 	CUSTOM_MOVE_GhostBalloon       = 32,
 	CUSTOM_MOVE_PenguinRocket      = 33,
 	CUSTOM_MOVE_FlowerWing         = 34,
-	CUSTOM_MOVE_MultipleJumpForNatureBow = 35,
+	CUSTOM_MOVE_JumpPack           = 35,
 	CUSTOM_MOVE_Max                = 36,
 	CUSTOM_MAX                     = 37
 };
@@ -1785,6 +1831,16 @@ enum class EFollowState : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.RescueState
+enum class ERescueState : uint8_t
+{
+	RescueState__ERescueState_Default = 0,
+	RescueState__ERescueState_NormalRescue = 1,
+	RescueState__ERescueState_MagicRescue = 2,
+	RescueState__ERescueState_MAX  = 3
+};
+
+
 // Enum ShadowTrackerExtra.ECharacterHealthStatus
 enum class ECharacterHealthStatus : uint8_t
 {
@@ -1829,7 +1885,7 @@ enum class ESpecialMovementType : uint8_t
 	ESpecialMovementType__SPECIAL_MOVE_GhostBalloon = 14,
 	ESpecialMovementType__SPECIAL_MOVE_PenguinRocket = 15,
 	ESpecialMovementType__SPECIAL_MOVE_FlowerWing = 16,
-	ESpecialMovementType__SPECIAL_MOVE_MultipleJumpForNatureBow = 17,
+	ESpecialMovementType__SPECIAL_MOVE_JumpPack = 17,
 	ESpecialMovementType__SPECIAL_MOVE_Max = 18
 };
 
@@ -1930,6 +1986,27 @@ enum class EFootprintType : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.EPerStepDamageType
+enum class EPerStepDamageType : uint8_t
+{
+	PSDT_Original                  = 0,
+	PSDT_AfterDCInterface          = 1,
+	PSDT_AfterDamageEvent          = 2,
+	PSDT_AfterTakeDamage           = 3,
+	PSDT_AfterRadialDmgModify      = 4,
+	PSDT_AfterBurnDmgModify        = 5,
+	PSDT_AfterGameModeModify       = 6,
+	PSDT_AfterEventPreTakeDamage   = 7,
+	PSDT_AfterBodyhurtDamage       = 8,
+	PSDT_AfterDamageReduceModify   = 9,
+	PSDT_AfterEventTakeDamage      = 10,
+	PSDT_AfterCustomBodyhurtDamage = 11,
+	PSDT_Final                     = 12,
+	PSDT_Num                       = 13,
+	PSDT_MAX                       = 14
+};
+
+
 // Enum ShadowTrackerExtra.ECanJumpError
 enum class ECanJumpError : uint8_t
 {
@@ -1995,7 +2072,8 @@ enum class EGameModeType : uint8_t
 	EGameModeType__ECreativeModeGameMode = 23,
 	EGameModeType__EPlanPHGameMode = 24,
 	EGameModeType__EMainCityGameMode = 25,
-	EGameModeType__EGameModeType_MAX = 26
+	EGameModeType__EPlanCHGameMode = 26,
+	EGameModeType__EGameModeType_MAX = 27
 };
 
 
@@ -2428,82 +2506,6 @@ enum class ETeamMateDisappearType : uint8_t
 };
 
 
-// Enum ShadowTrackerExtra.EQuickSignSubType
-enum class EQuickSignSubType : uint8_t
-{
-	EQuickSignSubType__Invalid     = 0,
-	EQuickSignSubType__SomebodyCame = 1,
-	EQuickSignSubType__AttackPos   = 2,
-	EQuickSignSubType__DefencePos  = 3,
-	EQuickSignSubType__AssemblePos = 4,
-	EQuickSignSubType__NeedAmmo    = 5,
-	EQuickSignSubType__NeedAttachment = 6,
-	EQuickSignSubType__ComeInVehicle = 7,
-	EQuickSignSubType__NeedMedicine = 8,
-	EQuickSignSubType__MarkVehicle = 9,
-	EQuickSignSubType__MarkOpenDoor = 10,
-	EQuickSignSubType__MarkAirDrop = 11,
-	EQuickSignSubType__MarkDeadBox = 12,
-	EQuickSignSubType__MarkSupply  = 13,
-	EQuickSignSubType__MarkPos     = 14,
-	EQuickSignSubType__Dangerous   = 15,
-	EQuickSignSubType__MarkPosSafeZone = 16,
-	EQuickSignSubType__NeedMuzzle  = 17,
-	EQuickSignSubType__NeedGrip    = 18,
-	EQuickSignSubType__NeedMag     = 19,
-	EQuickSignSubType__NeedStock   = 20,
-	EQuickSignSubType__NeedScope   = 21,
-	EQuickSignSubType__NeedSideScope = 22,
-	EQuickSignSubType__NeedWeapon  = 23,
-	EQuickSignSubType__NeedHelmet  = 24,
-	EQuickSignSubType__NeedArmor   = 25,
-	EQuickSignSubType__NeedBackpack = 26,
-	EQuickSignSubType__NeedNightVision = 27,
-	EQuickSignSubType__ResRoger    = 28,
-	EQuickSignSubType__ResComing   = 29,
-	EQuickSignSubType__ResIWant    = 30,
-	EQuickSignSubType__MarkClassicStore = 31,
-	EQuickSignSubType__MarkReviveTower = 32,
-	EQuickSignSubType__MarkZipline = 33,
-	EQuickSignSubType__ScannedActorTest = 34,
-	EQuickSignSubType__M_PlayerPawn = 35,
-	EQuickSignSubType__M_DollAirBalloon = 36,
-	EQuickSignSubType__MarkClosedDoor = 37,
-	EQuickSignSubType__M_EnergyChest = 38,
-	EQuickSignSubType__NeedBezel   = 39,
-	EQuickSignSubType__NeedGunLock = 40,
-	EQuickSignSubType__NeedTacticalAttach = 41,
-	EQuickSignSubType__NeedArmorAttach = 42,
-	EQuickSignSubType__NeedArmorAttachInTPlan = 43,
-	EQuickSignSubType__TreasureChest = 44,
-	EQuickSignSubType__PicnicMat   = 45,
-	EQuickSignSubType__Dynamotor   = 46,
-	EQuickSignSubType__SurpriseAirDropBoxActor = 47,
-	EQuickSignSubType__ExitPortal  = 48,
-	EQuickSignSubType__ExitGate    = 49,
-	EQuickSignSubType__Predator    = 50,
-	EQuickSignSubType__Dynamotor01 = 51,
-	EQuickSignSubType__M_NinjaPenguin = 52,
-	EQuickSignSubType__M_CraftsmanBear = 53,
-	EQuickSignSubType__M_IceMagicFox = 54,
-	EQuickSignSubType__M_AlchemistPenguin = 55,
-	EQuickSignSubType__M_CupidPenguin = 56,
-	EQuickSignSubType__M_CallPenguin = 57,
-	EQuickSignSubType__M_BarberFox = 58,
-	EQuickSignSubType__M_GiftPenguin = 59,
-	EQuickSignSubType__M_FixedPenguin = 60,
-	EQuickSignSubType__C_TreantAttack = 61,
-	EQuickSignSubType__C_TreantHeal = 62,
-	EQuickSignSubType__C_TreantDefend = 63,
-	EQuickSignSubType__C_TreantCarry = 64,
-	EQuickSignSubType__C_TreantSearch = 65,
-	EQuickSignSubType__C_TreantHide = 66,
-	EQuickSignSubType__C_TreantCancel = 67,
-	EQuickSignSubType__C_TreantCarryToSpecificPos = 68,
-	EQuickSignSubType__EQuickSignSubType_MAX = 69
-};
-
-
 // Enum ShadowTrackerExtra.EDriveCar
 enum class EDriveCar : uint8_t
 {
@@ -2524,24 +2526,6 @@ enum class ExtraPlayerLiveState : uint8_t
 	ExtraPlayerLiveState__InDied   = 5,
 	ExtraPlayerLiveState__Offline  = 6,
 	ExtraPlayerLiveState__ExtraPlayerLiveState_MAX = 7
-};
-
-
-// Enum ShadowTrackerExtra.EPetState
-enum class EPetState : uint8_t
-{
-	PetStateNone                   = 0,
-	PetIdle                        = 1,
-	PetDisappear                   = 2,
-	PetParachute                   = 3,
-	PetFollow                      = 4,
-	PetFlyAround                   = 5,
-	PetFlyFollow                   = 6,
-	PetSwimming                    = 7,
-	PetSleeping                    = 8,
-	PetPlayingFeature              = 9,
-	PetStateCount                  = 10,
-	EPetState_MAX                  = 11
 };
 
 
@@ -3211,17 +3195,6 @@ enum class ESTExtraVehicleUserState : uint8_t
 };
 
 
-// Enum ShadowTrackerExtra.EVehicleInteractionType
-enum class EVehicleInteractionType : uint8_t
-{
-	EVehicleInteractionType__Enter = 0,
-	EVehicleInteractionType__Exit  = 1,
-	EVehicleInteractionType__ChangeSeat = 2,
-	EVehicleInteractionType__NumTypes = 3,
-	EVehicleInteractionType__EVehicleInteractionType_MAX = 4
-};
-
-
 // Enum ShadowTrackerExtra.EEnterVehicleFailedReason
 enum class EEnterVehicleFailedReason : uint8_t
 {
@@ -3551,8 +3524,9 @@ enum class EObbyMoveType : uint8_t
 	EObbyMoveType__AlongSpline     = 4,
 	EObbyMoveType__TouchDrag       = 5,
 	EObbyMoveType__VariableSpeedLiner = 6,
-	EObbyMoveType__MoveType_MAX    = 7,
-	EObbyMoveType__EObbyMoveType_MAX = 8
+	EObbyMoveType__LinearScale     = 7,
+	EObbyMoveType__MoveType_MAX    = 8,
+	EObbyMoveType__EObbyMoveType_MAX = 9
 };
 
 
@@ -4754,7 +4728,8 @@ enum class ECharacterEffectTriggerCondition : uint8_t
 	ECharacterEffectTriggerCondition__Shake = 21,
 	ECharacterEffectTriggerCondition__Move = 22,
 	ECharacterEffectTriggerCondition__FootStep = 23,
-	ECharacterEffectTriggerCondition__ECharacterEffectTriggerCondition_MAX = 24
+	ECharacterEffectTriggerCondition__HandEmptySprint = 24,
+	ECharacterEffectTriggerCondition__ECharacterEffectTriggerCondition_MAX = 25
 };
 
 
@@ -4925,6 +4900,16 @@ enum class EDDMCFindType : uint8_t
 	DDMCFT_REP                     = 2,
 	DDMCFT_NONE                    = 3,
 	DDMCFT_MAX                     = 4
+};
+
+
+// Enum ShadowTrackerExtra.EDamageRelation
+enum class EDamageRelation : uint8_t
+{
+	EDamageRelation__Enemy         = 0,
+	EDamageRelation__Neutral       = 1,
+	EDamageRelation__Ally          = 2,
+	EDamageRelation__EDamageRelation_MAX = 3
 };
 
 
@@ -5441,9 +5426,7 @@ enum class EAllowFailedReason : uint8_t
 	AllowFailedReason__Occupied    = 2,
 	AllowFailedReason__Cooling     = 3,
 	AllowFailedReason__BlueprintFailed = 4,
-	AllowFailedReason__Blocked     = 5,
-	AllowFailedReason__InVehicle   = 6,
-	AllowFailedReason__AllowFailedReason_MAX = 7
+	AllowFailedReason__AllowFailedReason_MAX = 5
 };
 
 
@@ -5542,8 +5525,9 @@ enum class ELobbyPawnAnimPoseType : uint8_t
 	ELobbyPawnAnimPoseType__ELobbyPose_ReturnActivity = 5,
 	ELobbyPawnAnimPoseType__ELobbyPose_SpecialIdle = 6,
 	ELobbyPawnAnimPoseType__ELobbyPose_ClothesWeapon = 7,
-	ELobbyPawnAnimPoseType__ELobbyPose_None = 8,
-	ELobbyPawnAnimPoseType__ELobbyPose_MAX = 9
+	ELobbyPawnAnimPoseType__ELobbyPose_CollectionHall = 8,
+	ELobbyPawnAnimPoseType__ELobbyPose_None = 9,
+	ELobbyPawnAnimPoseType__ELobbyPose_MAX = 10
 };
 
 
@@ -5960,27 +5944,6 @@ enum class EReportMiscKey : uint8_t
 	EReportMiscKey__KillFrequentGeneral = 2,
 	EReportMiscKey__ShootIntervalAnomaly = 3,
 	EReportMiscKey__EReportMiscKey_MAX = 4
-};
-
-
-// Enum ShadowTrackerExtra.EPerStepDamageType
-enum class EPerStepDamageType : uint8_t
-{
-	PSDT_Original                  = 0,
-	PSDT_AfterDCInterface          = 1,
-	PSDT_AfterDamageEvent          = 2,
-	PSDT_AfterTakeDamage           = 3,
-	PSDT_AfterRadialDmgModify      = 4,
-	PSDT_AfterBurnDmgModify        = 5,
-	PSDT_AfterGameModeModify       = 6,
-	PSDT_AfterEventPreTakeDamage   = 7,
-	PSDT_AfterBodyhurtDamage       = 8,
-	PSDT_AfterDamageReduceModify   = 9,
-	PSDT_AfterEventTakeDamage      = 10,
-	PSDT_AfterCustomBodyhurtDamage = 11,
-	PSDT_Final                     = 12,
-	PSDT_Num                       = 13,
-	PSDT_MAX                       = 14
 };
 
 
@@ -6425,6 +6388,32 @@ enum class EPVSGameModeModType : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.EQuickSignSubType
+enum class EQuickSignSubType : uint8_t
+{
+	EQuickSignSubType__Invalid     = 0,
+	EQuickSignSubType__SomebodyCame = 1,
+	EQuickSignSubType__AttackPos   = 2,
+	EQuickSignSubType__DefencePos  = 3,
+	EQuickSignSubType__AssemblePos = 4,
+	EQuickSignSubType__NeedAmmo    = 5,
+	EQuickSignSubType__NeedAttachment = 6,
+	EQuickSignSubType__ComeInVehicle = 7,
+	EQuickSignSubType__NeedMedicine = 8,
+	EQuickSignSubType__MarkVehicle = 9,
+	EQuickSignSubType__MarkOpenDoor = 10,
+	EQuickSignSubType__MarkAirDrop = 11,
+	EQuickSignSubType__MarkDeadBox = 12,
+	EQuickSignSubType__MarkSupply  = 13,
+	EQuickSignSubType__MarkPos     = 14,
+	EQuickSignSubType__Dangerous   = 15,
+	EQuickSignSubType__MarkPosSafeZone = 16,
+	EQuickSignSubType__NeedMuzzle  = 17,
+	EQuickSignSubType___MAX        = 18,
+	EQuickSignSubType__EQuickSignSubType_MAX = 19
+};
+
+
 // Enum ShadowTrackerExtra.EQuickSignType
 enum class EQuickSignType : uint8_t
 {
@@ -6587,6 +6576,15 @@ enum class ETraceShootType : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.ESAutoScrollTextMode
+enum class ESAutoScrollTextMode : uint8_t
+{
+	ESAutoScrollTextMode__LeftToRight = 0,
+	ESAutoScrollTextMode__PingPong = 1,
+	ESAutoScrollTextMode__ESAutoScrollTextMode_MAX = 2
+};
+
+
 // Enum ShadowTrackerExtra.EEnvironmentType
 enum class EEnvironmentType : uint8_t
 {
@@ -6659,7 +6657,7 @@ enum class ESkirtSpecialPoseType : uint8_t
 	ESpecialSkirtPose_ExclusiveAircraft = 3,
 	ESpecialSkirtPose_SpecialIdle  = 4,
 	ESpecialSkirtPose_WeaponClothIdle = 5,
-	ESpecialSkirtPose_Type6        = 6,
+	ESpecialSkirtPose_SpecialMove  = 6,
 	ESpecialSkirtPose_Type7        = 7,
 	ESpecialSkirtPose_Type8        = 8,
 	ESpecialSkirtPose_Type9        = 9,
@@ -6917,16 +6915,6 @@ enum class EPlayShovelSoundType : uint8_t
 	Shovel_Exit                    = 1,
 	Shovel_Interrupt               = 2,
 	Shovel_MAX                     = 3
-};
-
-
-// Enum ShadowTrackerExtra.RescueState
-enum class ERescueState : uint8_t
-{
-	RescueState__ERescueState_Default = 0,
-	RescueState__ERescueState_NormalRescue = 1,
-	RescueState__ERescueState_MagicRescue = 2,
-	RescueState__ERescueState_MAX  = 3
 };
 
 
@@ -7767,6 +7755,25 @@ enum class ETouchEventType : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.EAmphibiousState
+enum class EAmphibiousState : uint8_t
+{
+	EAmphibiousState__OnLand       = 0,
+	EAmphibiousState__InWater      = 1,
+	EAmphibiousState__EAmphibiousState_MAX = 2
+};
+
+
+// Enum ShadowTrackerExtra.ETrackType
+enum class ETrackType : uint8_t
+{
+	ETrackType__Left               = 0,
+	ETrackType__Right              = 1,
+	ETrackType__NumTracks          = 2,
+	ETrackType__ETrackType_MAX     = 3
+};
+
+
 // Enum ShadowTrackerExtra.ETrailMarkType
 enum class ETrailMarkType : uint8_t
 {
@@ -7847,6 +7854,20 @@ enum class ESkillPickerQueryType : uint8_t
 	SPQT_Vehicle                   = 3,
 	SPQT_Teammate                  = 4,
 	SPQT_MAX                       = 5
+};
+
+
+// Enum ShadowTrackerExtra.EUAECheckPawnState
+enum class EUAECheckPawnState : uint8_t
+{
+	EUAECheckPawnState__EUAECheckPawnState_Any = 0,
+	EUAECheckPawnState__EUAECheckPawnState_NotAny = 1,
+	EUAECheckPawnState__EUAECheckPawnState_AnyOther = 2,
+	EUAECheckPawnState__EUAECheckPawnState_NotAnyOther = 3,
+	EUAECheckPawnState__EUAECheckPawnState_All = 4,
+	EUAECheckPawnState__EUAECheckPawnState_NotAll = 5,
+	EUAECheckPawnState__EUAECheckPawnState_MatchAll = 6,
+	EUAECheckPawnState__EUAECheckPawnState_MAX = 7
 };
 
 
@@ -8244,6 +8265,16 @@ enum class EFDropOffLocationType : uint8_t
 };
 
 
+// Enum ShadowTrackerExtra.EAutoAimRangeType
+enum class EAutoAimRangeType : uint8_t
+{
+	SCOPE                          = 0,
+	INNER                          = 1,
+	Outer                          = 2,
+	EAutoAimRangeType_MAX          = 3
+};
+
+
 // Enum ShadowTrackerExtra.EWeaponMuzzleEffectType
 enum class EWeaponMuzzleEffectType : uint8_t
 {
@@ -8327,7 +8358,8 @@ enum class EDriftMode : uint8_t
 {
 	EDriftMode__Default            = 0,
 	EDriftMode__ShootDrive         = 1,
-	EDriftMode__EDriftMode_MAX     = 2
+	EDriftMode__NitroBoost         = 2,
+	EDriftMode__EDriftMode_MAX     = 3
 };
 
 
@@ -8440,9 +8472,9 @@ enum class EWeatherPhaseIndex : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct ShadowTrackerExtra.ActivityParticleAsset
 // 0x0080
@@ -8532,10 +8564,10 @@ struct FAdditiveAndModifyAnimBlendParam
 };
 
 // ScriptStruct ShadowTrackerExtra.CharacterAnimStateInstanceProxy
-// 0x0000 (0x0580 - 0x0580)
+// 0x0000 (0x05D0 - 0x05D0)
 struct FCharacterAnimStateInstanceProxy : public FAnimInstanceProxy
 {
-	class UDataDriverAnimInstance*                     AnimInst;                                                 // 0x0578(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	class UDataDriverAnimInstance*                     AnimInst;                                                 // 0x05C8(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.RandomPlayerSeqEntry
@@ -8880,7 +8912,7 @@ struct FAircraftGravitySetup
 struct FAircraftAltitudeSetup
 {
 	float                                              MaxAltitude;                                              // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETraceTypeQuery>                  TraceChannel;                                             // 0x0004(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceTypeQuery>                       TraceChannel;                                             // 0x0004(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
 	float                                              TraceDistance;                                            // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              TimeInterval;                                             // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -8985,7 +9017,7 @@ struct FAircraftLoseControlSetup
 	float                                              AngularDamping;                                           // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              Duration;                                                 // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              BlockTimeInterval;                                        // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         CollisionTypes;                                           // 0x0010(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              CollisionTypes;                                           // 0x0010(0x0010) (Edit, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.AircraftTLogSetup
@@ -8993,7 +9025,7 @@ struct FAircraftLoseControlSetup
 struct FAircraftTLogSetup
 {
 	bool                                               bEnableTLog;                                              // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EObjectTypeQuery>                 TriggerType;                                              // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EObjectTypeQuery>                      TriggerType;                                              // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0002(0x0002) MISSED OFFSET
 	struct FVector2D                                   RollRange;                                                // 0x0004(0x0008) (Edit, IsPlainOldData)
 	struct FVector2D                                   PitchRange;                                               // 0x000C(0x0008) (Edit, IsPlainOldData)
@@ -9387,19 +9419,19 @@ struct FAnimationFloatCurveData : public FAnimationCurveData
 // 0x0048
 struct FAnimParam_Accumulate
 {
-	class UAnimSequence*                               AccumulateAnimSeq;                                        // 0x0000(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AccumulateAnimSeqNew;                                     // 0x0008(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAccumulateAnimSeqChange;                                 // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AccumulateAnimSeq;                                        // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UAnimSequence*                               AccumulateAnimSeqNew;                                     // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bAccumulateAnimSeqChange;                                 // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 	float                                              AccumulateAnimSeqChangeTimer;                             // 0x0014(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              AccumulateAnimSeqChangeTimerCounter;                      // 0x0018(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              AccumulateRealtime;                                       // 0x001C(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAccumulateRealTimeMax;                                   // 0x0020(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              AccumulateAnimSeqChangeTimerCounter;                      // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              AccumulateRealtime;                                       // 0x001C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bAccumulateRealTimeMax;                                   // 0x0020(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0021(0x0003) MISSED OFFSET
-	float                                              AccumulateRate;                                           // 0x0024(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAccumulateRate;                                          // 0x0028(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAccumulateRateMax;                                       // 0x0029(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bHasAccumulateRate;                                       // 0x002A(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              AccumulateRate;                                           // 0x0024(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bAccumulateRate;                                          // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bAccumulateRateMax;                                       // 0x0029(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bHasAccumulateRate;                                       // 0x002A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x1];                                       // 0x002B(0x0001) MISSED OFFSET
 	float                                              BlendInSpeed;                                             // 0x002C(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              BlendOutSpeed;                                            // 0x0030(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -9441,12 +9473,12 @@ struct FPlayerAnimList
 };
 
 // ScriptStruct ShadowTrackerExtra.STExtraAnimInstanceProxy
-// 0x0020 (0x05A0 - 0x0580)
+// 0x0020 (0x05F0 - 0x05D0)
 struct FSTExtraAnimInstanceProxy : public FAnimInstanceProxy
 {
-	class ASTExtraBaseCharacter*                       OwnerPawn;                                                // 0x0578(0x0008) (ZeroConstructor, IsPlainOldData)
-	class USTExtraAnimInstanceBase*                    ParentAnimInst;                                           // 0x0580(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0588(0x0018) MISSED OFFSET
+	class ASTExtraBaseCharacter*                       OwnerPawn;                                                // 0x05C8(0x0008) (ZeroConstructor, IsPlainOldData)
+	class USTExtraAnimInstanceBase*                    ParentAnimInst;                                           // 0x05D0(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x18];                                      // 0x05D8(0x0018) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.UseSpineAimSetting
@@ -9520,6 +9552,14 @@ struct FAnimNotifyState_ChangeMaterialParameter_Data
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
 	float                                              FloatValue;                                               // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                VectorValue;                                              // 0x0010(0x0010) (Edit, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.MaterialCurveParamConfig
+// 0x0018
+struct FMaterialCurveParamConfig
+{
+	struct FString                                     ParamName;                                                // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	class UCurveFloat*                                 Curve;                                                    // 0x0010(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.ActorSkeletalMeshAnim
@@ -9793,7 +9833,7 @@ struct FLoadMeshAssetRequest
 	TArray<struct FMeshAsset>                          MeshAsset;                                                // 0x0000(0x0010) (ZeroConstructor)
 	struct FMeshGroup                                  MeshGroup;                                                // 0x0010(0x0030)
 	class UMeshComponent*                              Outer;                                                    // 0x0040(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FScriptDelegate                             Callback;                                                 // 0x0048(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x0048(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct ShadowTrackerExtra.LoadParticleAssetRequest
@@ -9803,7 +9843,7 @@ struct FLoadParticleAssetRequest
 	TArray<struct FParticleAsset>                      ParticleAsset;                                            // 0x0000(0x0010) (ZeroConstructor)
 	struct FParticleGroup                              ParticleGroup;                                            // 0x0010(0x0030)
 	class UMeshComponent*                              Outer;                                                    // 0x0040(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FScriptDelegate                             Callback;                                                 // 0x0048(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x0048(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct ShadowTrackerExtra.WeaponAnimAsset
@@ -10058,7 +10098,7 @@ struct FCreateAvatarHandleAsyncRequest
 	struct FItemDefineID                               DefineID;                                                 // 0x0000(0x0018)
 	class UObject*                                     Outer;                                                    // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
 	struct FString                                     Path;                                                     // 0x0020(0x0010) (ZeroConstructor)
-	struct FScriptDelegate                             Callback;                                                 // 0x0030(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x0030(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct ShadowTrackerExtra.CreateAvatarHandleListAsyncRequest
@@ -10068,7 +10108,7 @@ struct FCreateAvatarHandleListAsyncRequest
 	TArray<struct FItemDefineID>                       DefineIDList;                                             // 0x0000(0x0010) (ZeroConstructor)
 	TArray<struct FString>                             PathList;                                                 // 0x0010(0x0010) (ZeroConstructor)
 	class UObject*                                     Outer;                                                    // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FScriptDelegate                             Callback;                                                 // 0x0028(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x0028(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct ShadowTrackerExtra.UpWeaponDataRow
@@ -10260,7 +10300,7 @@ struct FAvatarPendantConfig
 // 0x0018
 struct FAvatarAnimOverrideData
 {
-	TEnumAsByte<enum EAnimLayerType>                   Layer;                                                    // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EAnimLayerType>                        Layer;                                                    // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class UClass*                                      AnimListCompClass;                                        // 0x0008(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	class UUAECharAnimListCompBase*                    AnimListCompInstance;                                     // 0x0010(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
@@ -10360,7 +10400,7 @@ struct FRecoverKeepItemData
 // 0x0028 (0x0048 - 0x0020)
 struct FRecoverKeepWeaponData : public FRecoverKeepItemData
 {
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           WeaponSlot;                                               // 0x0020(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                WeaponSlot;                                               // 0x0020(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
 	TArray<struct FRecoverKeepItemData>                AttachmentDatas;                                          // 0x0028(0x0010) (Edit, ZeroConstructor)
 	int                                                ClipBulletNum;                                            // 0x0038(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -10705,7 +10745,7 @@ struct FDriftParticleSetup
 {
 	bool                                               IsValid;                                                  // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
-	TMap<TEnumAsByte<enum EPhysicalSurface>, struct FDriftWheelParticleSetup> WheelParticles;                                           // 0x0008(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TMap<TEnumAsByte<EPhysicalSurface>, struct FDriftWheelParticleSetup> WheelParticles;                                           // 0x0008(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0058(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.DriftParticleSetup.WheelHubParticle
 	TArray<struct FName>                               WheelHubSocketNames;                                      // 0x0080(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 };
@@ -10864,12 +10904,13 @@ struct FWeaponAttachmentAttrModify
 };
 
 // ScriptStruct ShadowTrackerExtra.WeaponAttachmentAttrListModifyWrapper
-// 0x0018
+// 0x0068
 struct FWeaponAttachmentAttrListModifyWrapper
 {
 	int                                                WeaponId;                                                 // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
-	TArray<struct FWeaponAttachmentAttrModify>         WeaponAttachmentAttrModifys;                              // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TMap<int, bool>                                    WeaponIDMap;                                              // 0x0008(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FWeaponAttachmentAttrModify>         WeaponAttachmentAttrModifys;                              // 0x0058(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 };
 
 // ScriptStruct ShadowTrackerExtra.WeaponAttachmentDesc
@@ -10978,6 +11019,14 @@ struct FWeaponPendantMap
 	int                                                WeaponId;                                                 // 0x0000(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
 	TArray<struct FWeaponPendantSocket>                PendantInfoList;                                          // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+};
+
+// ScriptStruct ShadowTrackerExtra.LevelSequenceBoundingBox2D
+// 0x0010
+struct FLevelSequenceBoundingBox2D
+{
+	struct FVector2D                                   Min;                                                      // 0x0000(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector2D                                   Max;                                                      // 0x0008(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.WeaponKillEffectCfg
@@ -11144,7 +11193,7 @@ struct FPlaneTypes
 // 0x0028
 struct FBulletImpactFXTargetCullingByQualityLeveConfigItem
 {
-	TEnumAsByte<enum ERenderQuality>                   QualityLevel;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ERenderQuality>                        QualityLevel;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x10];                                      // 0x0001(0x0010) UNKNOWN PROPERTY: ArrayProperty ShadowTrackerExtra.BulletImpactFXTargetCullingByQualityLeveConfigItem.TargetClassConfigList
 	TArray<class UClass*>                              CachedClassList;                                          // 0x0018(0x0010) (ZeroConstructor)
@@ -11329,10 +11378,10 @@ struct FApplyRadialDamageParams
 	class AActor*                                      DamageCauser;                                             // 0x00E0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	class AController*                                 InstigatedBy;                                             // 0x00E8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              CollisionFreeRadius;                                      // 0x00F0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                DamageChannel;                                            // 0x00F4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     DamageChannel;                                            // 0x00F4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x3];                                       // 0x00F5(0x0003) MISSED OFFSET
 	float                                              AddtionalDamage;                                          // 0x00F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EDamageType>                      DamageEventType;                                          // 0x00FC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EDamageType>                           DamageEventType;                                          // 0x00FC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData04[0x3];                                       // 0x00FD(0x0003) MISSED OFFSET
 	float                                              HorizontalCoverRatio;                                     // 0x0100(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              VerticalCoverRatio;                                       // 0x0104(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -11567,7 +11616,7 @@ struct FVisualFieldFeatureParam
 	TArray<struct FName>                               VisualCheckBoneList;                                      // 0x0008(0x0010) (Edit, ZeroConstructor)
 	float                                              DefaultFOVAngle;                                          // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        VisualCheckChanelList;                                    // 0x0020(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             VisualCheckChanelList;                                    // 0x0020(0x0010) (Edit, ZeroConstructor)
 	TArray<class UClass*>                              ExcludeCheckCharacterClass;                               // 0x0030(0x0010) (Edit, ZeroConstructor)
 };
 
@@ -11674,16 +11723,16 @@ struct FOneFlightInfo
 	struct FVector                                     AirplaneForceJumpLoc;                                     // 0x0034(0x000C) (IsPlainOldData)
 };
 
-// ScriptStruct ShadowTrackerExtra.ReConnectGameStateInfo
-// 0x0068
-struct FReConnectGameStateInfo
+// ScriptStruct ShadowTrackerExtra.ReConnectCircleInfo
+// 0x0044
+struct FReConnectCircleInfo
 {
 	bool                                               bIsLessning;                                              // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	float                                              CircleStateStartServerWorldSecond;                        // 0x0004(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	float                                              CircleStatusLastTime;                                     // 0x0008(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	float                                              CircleStatusElapsedTime;                                  // 0x000C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECircleInfo>                      CircleStatus;                                             // 0x0010(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECircleInfo>                           CircleStatus;                                             // 0x0010(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 	struct FVector                                     BlueCircle;                                               // 0x0014(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
 	struct FVector                                     OriginalBlueCircle;                                       // 0x0020(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
@@ -11692,12 +11741,6 @@ struct FReConnectGameStateInfo
 	unsigned char                                      UnknownData02[0x3];                                       // 0x0039(0x0003) MISSED OFFSET
 	float                                              ScreenSizeFactor;                                         // 0x003C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	float                                              ExtraRadius;                                              // 0x0040(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	EAirAttackInfo                                     AirAttackStatus;                                          // 0x0044(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x0045(0x0003) MISSED OFFSET
-	struct FVector                                     AirAttackArea;                                            // 0x0048(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	int                                                AirAttackWave;                                            // 0x0054(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	int                                                BossCountDown;                                            // 0x0058(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     BossBornPos;                                              // 0x005C(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.GetCircleInfo
@@ -11709,7 +11752,7 @@ struct FGetCircleInfo
 	float                                              CircleStateStartServerWorldSecond;                        // 0x0004(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	float                                              CircleStatusLastTime;                                     // 0x0008(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	float                                              CircleStatusElapsedTime;                                  // 0x000C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECircleInfo>                      CircleStatus;                                             // 0x0010(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECircleInfo>                           CircleStatus;                                             // 0x0010(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 	struct FVector                                     BlueCircle;                                               // 0x0014(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
 	struct FVector                                     OriginalBlueCircle;                                       // 0x0020(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
@@ -11904,7 +11947,7 @@ struct FVisualFieldInfo
 // 0x0018
 struct FDriveCarNotify
 {
-	TEnumAsByte<enum EDriveCar>                        DriveCar;                                                 // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDriveCar>                             DriveCar;                                                 // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class ASTExtraBaseCharacter*                       Character;                                                // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
 	class ASTExtraWheeledVehicle*                      Vehicle;                                                  // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData)
@@ -11973,8 +12016,8 @@ struct FQuickSignMsg
 	int                                                RelationID;                                               // 0x005C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	uint32_t                                           PlayerKey;                                                // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                MiniMapIconTypeId;                                        // 0x0064(0x0004) (ZeroConstructor, IsPlainOldData)
-	EQuickSignSubType                                  MsgType;                                                  // 0x0068(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x0069(0x0007) MISSED OFFSET
+	int                                                MsgType;                                                  // 0x0068(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x006C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.InGameChatMsg
@@ -12431,7 +12474,7 @@ struct FCharacterJumpDebugInfo
 	unsigned char                                      CurrentJumpCount;                                         // 0x0002(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      MaxJumpCount;                                             // 0x0003(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      MovementmodeChangeCount;                                  // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    CurrentMovementMode;                                      // 0x0005(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         CurrentMovementMode;                                      // 0x0005(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      JumpDebugFlag;                                            // 0x0006(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x1];                                       // 0x0007(0x0001) MISSED OFFSET
 	float                                              JumpKeyHoldTime;                                          // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -12531,6 +12574,17 @@ struct FReplayExceptionData
 struct FPlayerReplayExceptionData
 {
 	TMap<int, struct FReplayExceptionData>             Datas;                                                    // 0x0000(0x0050) (ZeroConstructor)
+};
+
+// ScriptStruct ShadowTrackerExtra.ViewPitchLimitReplayData
+// 0x0020
+struct FViewPitchLimitReplayData
+{
+	float                                              PitchMin;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              PitchMax;                                                 // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              SetTime;                                                  // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
+	struct FString                                     CallerInfo;                                               // 0x0010(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.SettingReportItem_Bool
@@ -12636,7 +12690,7 @@ struct FCharacterThrowData
 // 0x0028
 struct FThrowReplaceCharAnimData
 {
-	TEnumAsByte<enum ECharacterAnimType>               CharacterAnimType;                                        // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimType>                    CharacterAnimType;                                        // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<class UAnimationAsset*>                     PoseAnimList;                                             // 0x0008(0x0010) (Edit, ZeroConstructor)
 	TArray<class UAnimationAsset*>                     FPPPoseAnimList;                                          // 0x0018(0x0010) (Edit, ZeroConstructor)
@@ -12725,8 +12779,8 @@ struct FWeaponReconnectReplicateData
 	struct FBulletInClip                               WeaponBulletInClip;                                       // 0x0030(0x0018) (BlueprintVisible)
 	uint32_t                                           WeaponShootID;                                            // 0x0048(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                WeaponClipID;                                             // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFreshWeaponStateType>            CurWeaponState;                                           // 0x0050(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEWeaponShootType>              CurShootType;                                             // 0x0051(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 CurWeaponState;                                           // 0x0050(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEWeaponShootType>                   CurShootType;                                             // 0x0051(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x2];                                       // 0x0052(0x0002) MISSED OFFSET
 	int                                                CurShootTotalType;                                        // 0x0054(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FItemDefineID                               DefineID;                                                 // 0x0058(0x0018) (BlueprintVisible)
@@ -12847,7 +12901,7 @@ struct FCircleWarningConfig
 struct FCirCleCfg
 {
 	int                                                CircleID;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              DelayTime;                                                // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              delayTime;                                                // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              RadiusWhenDestoryMap;                                     // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              SafeZoneAppeartime;                                       // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bIsCircleWarningUseFilter;                                // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
@@ -12964,7 +13018,7 @@ struct FSingleStrategyRecordFullInfo
 };
 
 // ScriptStruct ShadowTrackerExtra.DeathReplayData
-// 0x0128
+// 0x0138
 struct FDeathReplayData
 {
 	bool                                               IsValidDeathReplay;                                       // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -13001,6 +13055,7 @@ struct FDeathReplayData
 	struct FDeathReplayHitInfo                         OtherHitInfo;                                             // 0x00E4(0x0020) (Edit, BlueprintVisible)
 	struct FDeathReplayHitInfo                         SelfHitInfo;                                              // 0x0104(0x0020) (Edit, BlueprintVisible)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x0124(0x0004) MISSED OFFSET
+	TArray<unsigned char>                              CustomInfo;                                               // 0x0128(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.BattleDeathPlaybackInfo
@@ -13024,11 +13079,11 @@ struct FBattleDeathPlaybackInfo
 };
 
 // ScriptStruct ShadowTrackerExtra.DeathHistoryInfo
-// 0x01A8
+// 0x01B8
 struct FDeathHistoryInfo
 {
 	struct FBattleDeathPlaybackInfo                    BattleDeathPlaybackInfo;                                  // 0x0000(0x0080)
-	struct FDeathReplayData                            DeathReplayData;                                          // 0x0080(0x0128)
+	struct FDeathReplayData                            DeathReplayData;                                          // 0x0080(0x0138)
 };
 
 // ScriptStruct ShadowTrackerExtra.DeathPeriodInfo
@@ -13068,7 +13123,7 @@ struct FWonderfulTypeInfo
 };
 
 // ScriptStruct ShadowTrackerExtra.WonderfulPeriodInfo
-// 0x0028
+// 0x0038
 struct FWonderfulPeriodInfo
 {
 	float                                              WonderfulStartTime;                                       // 0x0000(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -13076,6 +13131,7 @@ struct FWonderfulPeriodInfo
 	int                                                WonderfulPeriodIndex;                                     // 0x0008(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
 	struct FWonderfulTypeInfo                          WondefulTypeInfo;                                         // 0x0010(0x0018) (BlueprintVisible, BlueprintReadOnly)
+	TArray<unsigned char>                              CustomInfo;                                               // 0x0028(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.WonderfulSubTypeInfo
@@ -13096,7 +13152,7 @@ struct FWonderfulPeriodSubTypeInfo
 };
 
 // ScriptStruct ShadowTrackerExtra.BattleWonderfulInfo
-// 0x0090
+// 0x00A0
 struct FBattleWonderfulInfo
 {
 	uint64_t                                           UID;                                                      // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
@@ -13105,6 +13161,7 @@ struct FBattleWonderfulInfo
 	struct FString                                     OpenID;                                                   // 0x0020(0x0010) (ZeroConstructor)
 	TArray<struct FWonderfulPeriodInfo>                WonderfulPeriodInfoArray;                                 // 0x0030(0x0010) (ZeroConstructor)
 	TMap<int, struct FWonderfulPeriodSubTypeInfo>      WonderfulPeriodSubTypeInfoMap;                            // 0x0040(0x0050) (ZeroConstructor)
+	TArray<unsigned char>                              CustomInfo;                                               // 0x0090(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.WonderfulWeSeeInfo
@@ -13425,8 +13482,8 @@ struct FHUDRenderObject_Text : public FHUDRenderObject
 	bool                                               bDrawOutline;                                             // 0x0088(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x0089(0x0003) MISSED OFFSET
 	struct FLinearColor                                OutlineColor;                                             // 0x008C(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum ETextHorzPos>                     HorzPosition;                                             // 0x009C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETextVertPos>                     VertPosition;                                             // 0x009D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextHorzPos>                          HorzPosition;                                             // 0x009C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextVertPos>                          VertPosition;                                             // 0x009D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x2];                                       // 0x009E(0x0002) MISSED OFFSET
 };
 
@@ -13586,7 +13643,7 @@ struct FScreenAppearanceCfg
 	bool                                               UseScreenAppearance;                                      // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     ScreenAppearanceName;                                     // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<enum EScreenParticleEffectType>        ParticleType;                                             // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EScreenParticleEffectType>             ParticleType;                                             // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
 	float                                              ScreenAppearanceConcentration;                            // 0x001C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FName                                       ShaderName;                                               // 0x0020(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -13750,7 +13807,7 @@ struct FDynamicOptimizeComponentFull
 	bool                                               bShouldUpdateOverLaps;                                    // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bShouldUpdatePhysicsVolume;                               // 0x0005(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bNoSkeletonUpdate;                                        // 0x0006(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionEnabled>                CollisionType;                                            // 0x0007(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     CollisionType;                                            // 0x0007(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bVisible;                                                 // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bHide;                                                    // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x000A(0x0006) MISSED OFFSET
@@ -13968,7 +14025,7 @@ struct FExplosionCameraShakeFunction
 	class UClass*                                      RightShake;                                               // 0x0010(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	class UClass*                                      LeftShake;                                                // 0x0018(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	class UCurveFloat*                                 ShakeIntensityCurve;                                      // 0x0020(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECameraAnimPlaySpace>             CameraAnimPlaySpace;                                      // 0x0028(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ECameraAnimPlaySpace>                  CameraAnimPlaySpace;                                      // 0x0028(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
 };
 
@@ -14087,7 +14144,7 @@ struct FEmoteCollisionData
 };
 
 // ScriptStruct ShadowTrackerExtra.MapImageMarkData
-// 0x0040
+// 0x0038
 struct FMapImageMarkData
 {
 	int                                                ConfigId;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -14095,13 +14152,13 @@ struct FMapImageMarkData
 	class UImage*                                      Image;                                                    // 0x0008(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 	struct FVector                                     CurrentWorldPos;                                          // 0x0010(0x000C) (IsPlainOldData)
 	struct FVector2D                                   OriginalSize;                                             // 0x001C(0x0008) (IsPlainOldData)
-	bool                                               bIsUpdateSize;                                            // 0x0024(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0025(0x0003) MISSED OFFSET
-	struct FVector2D                                   MaxSize;                                                  // 0x0028(0x0008) (IsPlainOldData)
-	TWeakObjectPtr<class AActor>                       BindingActor;                                             // 0x0030(0x0008) (ZeroConstructor, IsPlainOldData)
-	float                                              MaxShowDistance;                                          // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               bIsBindActor;                                             // 0x003C(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x003D(0x0003) MISSED OFFSET
+	bool                                               bIsBigPOI;                                                // 0x0024(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bCanHighlight;                                            // 0x0025(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0026(0x0002) MISSED OFFSET
+	TWeakObjectPtr<class AActor>                       BindingActor;                                             // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData)
+	float                                              MaxShowDistance;                                          // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               bIsBindActor;                                             // 0x0034(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0035(0x0003) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.UIBPAsyncParams
@@ -14117,7 +14174,7 @@ struct FUIBPAsyncParams
 };
 
 // ScriptStruct ShadowTrackerExtra.MapMarkConfig
-// 0x0060
+// 0x0058
 struct FMapMarkConfig
 {
 	int                                                ConfigId;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -14126,17 +14183,18 @@ struct FMapMarkConfig
 	bool                                               bIsIcon;                                                  // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
 	struct FVector2D                                   Size;                                                     // 0x001C(0x0008) (IsPlainOldData)
-	bool                                               bIsUpdateSize;                                            // 0x0024(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0025(0x0003) MISSED OFFSET
-	struct FVector2D                                   MaxSize;                                                  // 0x0028(0x0008) (IsPlainOldData)
-	int                                                ZOrder;                                                   // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               bIsControlByLegend;                                       // 0x0034(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x0035(0x0003) MISSED OFFSET
-	struct FString                                     LegendTags;                                               // 0x0038(0x0010) (ZeroConstructor)
-	bool                                               bIsBindActor;                                             // 0x0048(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x0049(0x0003) MISSED OFFSET
-	float                                              MaxShowDistance;                                          // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FString                                     MountTags;                                                // 0x0050(0x0010) (ZeroConstructor)
+	bool                                               bIsBigPOI;                                                // 0x0024(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bIsUpdateSize;                                            // 0x0025(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bCanHighlight;                                            // 0x0026(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x1];                                       // 0x0027(0x0001) MISSED OFFSET
+	int                                                ZOrder;                                                   // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               bIsControlByLegend;                                       // 0x002C(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x002D(0x0003) MISSED OFFSET
+	struct FString                                     LegendTags;                                               // 0x0030(0x0010) (ZeroConstructor)
+	bool                                               bIsBindActor;                                             // 0x0040(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x0041(0x0003) MISSED OFFSET
+	float                                              MaxShowDistance;                                          // 0x0044(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FString                                     MountTags;                                                // 0x0048(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.AirDropPathData
@@ -14546,7 +14604,7 @@ struct FSingleLevelObjArray
 struct FAliveMonsterNum
 {
 	int                                                Num;                                                      // 0x0000(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMonsterSpawnSourceType>          SourceType;                                               // 0x0004(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMonsterSpawnSourceType>               SourceType;                                               // 0x0004(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
 };
 
@@ -14587,7 +14645,7 @@ struct FMonsterParams
 	class APawn*                                       CallPawn;                                                 // 0x0040(0x0008) (ZeroConstructor, IsPlainOldData)
 	uint32_t                                           CallPawnKey;                                              // 0x0048(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                CallType;                                                 // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMonsterSpawnSourceType>          SourceType;                                               // 0x0050(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMonsterSpawnSourceType>               SourceType;                                               // 0x0050(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bForceSpawn;                                              // 0x0051(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0052(0x0002) MISSED OFFSET
 	int                                                ProduceID;                                                // 0x0054(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -14640,7 +14698,7 @@ struct FAirAttackOuterConfig
 	float                                              MapRadius;                                                // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              FlightHeight;                                             // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              SeaLevelHeight;                                           // 0x0014(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              DelayTime;                                                // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              delayTime;                                                // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                WaveCount;                                                // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
 	EAirAttackGenerateType                             DefaultAirAttackGenerateType;                             // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
@@ -14812,8 +14870,8 @@ struct FGridPickupData : public FFastArraySerializerItem
 // 0x0018
 struct FGPProfileMatchItem
 {
-	TEnumAsByte<enum EGPSourceType>                    SourceType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EGPCompareType>                   CompareType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGPSourceType>                         SourceType;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGPCompareType>                        CompareType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0002(0x0006) MISSED OFFSET
 	struct FString                                     MatchString;                                              // 0x0008(0x0010) (ZeroConstructor)
 };
@@ -14924,6 +14982,29 @@ struct FHardPointSwitchConfig
 struct FHardPointSwitchConfigData
 {
 	TArray<struct FHardPointSwitchConfig>              SwitchConfigList;                                         // 0x0000(0x0010) (Edit, ZeroConstructor)
+};
+
+// ScriptStruct ShadowTrackerExtra.DynamicHurtAppearanceData
+// 0x0038
+struct FDynamicHurtAppearanceData
+{
+	class UParticleSystem*                             OverrideParticle;                                         // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAkAudioEvent*                               OverrideAudioEvent;                                       // 0x0008(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UScreenAppearanceProvider*                   ScreenAppearanceProvider;                                 // 0x0010(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	bool                                               bShouldPlayHitNotify;                                     // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bShouldPlayHitAnim;                                       // 0x0019(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x001A(0x0006) MISSED OFFSET
+	TArray<struct FWeaponCrossHairIconData>            IconList;                                                 // 0x0020(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	class UAkAudioEvent*                               HitFeedBackAudioEvent;                                    // 0x0030(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.HurtAppearanceResourceEntry
+// 0x0040
+struct FHurtAppearanceResourceEntry
+{
+	struct FDynamicHurtAppearanceData                  Data;                                                     // 0x0000(0x0038)
+	int                                                RefCount;                                                 // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.IdeaDecalInfo
@@ -15113,7 +15194,7 @@ struct FVehicleAnimData
 // 0x0008 (0x0088 - 0x0080)
 struct FPawnAnimDataEx : public FPawnAnimData
 {
-	TEnumAsByte<enum ECharacterAnimType>               AnimType;                                                 // 0x0080(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimType>                    AnimType;                                                 // 0x0080(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0081(0x0007) MISSED OFFSET
 };
 
@@ -15140,7 +15221,7 @@ struct FAnimSkillData
 // 0x0038
 struct FWidgetHPCheckParam
 {
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         CheckObjectTypes;                                         // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              CheckObjectTypes;                                         // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	TArray<class UClass*>                              ValidActorClass;                                          // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	float                                              SphereCheckRadius;                                        // 0x0020(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              CheckDistance;                                            // 0x0024(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -15337,7 +15418,7 @@ struct FHeadShoulderOffsetTable
 // 0x004C
 struct FServerCheckBox
 {
-	TEnumAsByte<enum ESTEPoseState>                    PoseID;                                                   // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         PoseID;                                                   // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	struct FVector                                     BodyBoundBoxExtent;                                       // 0x0004(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector                                     HeadBoundBoxExtent;                                       // 0x0010(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
@@ -15355,14 +15436,14 @@ struct FServerCheckBox
 // 0x0050
 struct FPingVerifyData
 {
-	TMap<TEnumAsByte<enum EVerifyDataType>, float>     Data;                                                     // 0x0000(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
+	TMap<TEnumAsByte<EVerifyDataType>, float>          Data;                                                     // 0x0000(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.PingSectionData
 // 0x0050
 struct FPingSectionData
 {
-	TMap<TEnumAsByte<enum EPingSectionType>, struct FPingVerifyData> Data;                                                     // 0x0000(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
+	TMap<TEnumAsByte<EPingSectionType>, struct FPingVerifyData> Data;                                                     // 0x0000(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.ShootVerifyParameter
@@ -15401,7 +15482,7 @@ struct FMovementRecordData
 	struct FRotator                                    VehicleRotation;                                          // 0x0050(0x000C) (IsPlainOldData)
 	struct FVector                                     VehicleRotVelocity;                                       // 0x005C(0x000C) (IsPlainOldData)
 	bool                                               VehicleIsCorrecting;                                      // 0x0068(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEPoseState>                    PoseState;                                                // 0x0069(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         PoseState;                                                // 0x0069(0x0001) (ZeroConstructor, IsPlainOldData)
 	EMoveBaseSpeedType                                 MoveBaseState;                                            // 0x006A(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x1];                                       // 0x006B(0x0001) MISSED OFFSET
 	float                                              PingMillisecond;                                          // 0x006C(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -15461,8 +15542,8 @@ struct FCharacterHistoryData
 	uint32_t                                           LastAckBadMoveSequence;                                   // 0x00A4(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              MoveServerTimeNew;                                        // 0x00A8(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              MoveServerTimeOld;                                        // 0x00AC(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEPoseState>                    PoseStateNew;                                             // 0x00B0(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEPoseState>                    PoseStateOld;                                             // 0x00B1(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         PoseStateNew;                                             // 0x00B0(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         PoseStateOld;                                             // 0x00B1(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x2];                                       // 0x00B2(0x0002) MISSED OFFSET
 	float                                              PitchAngle;                                               // 0x00B4(0x0004) (ZeroConstructor, IsPlainOldData)
 	EMoveBaseSpeedType                                 MoveBaseState;                                            // 0x00B8(0x0001) (ZeroConstructor, IsPlainOldData)
@@ -15615,7 +15696,7 @@ struct FLobbyPlayEmoteComponentTickFunction : public FTickFunction
 struct FGenderMapping
 {
 	struct FName                                       GenderStr;                                                // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ELobbyCharacterAnimType>          GenderType;                                               // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELobbyCharacterAnimType>               GenderType;                                               // 0x0008(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 };
 
@@ -15644,7 +15725,7 @@ struct FMarkDispatchAction
 	TWeakObjectPtr<class ASTExtraPlayerState>          WeakPlayerState;                                          // 0x0068(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              DispatchTime;                                             // 0x0070(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0074(0x0004) MISSED OFFSET
-	struct FScriptDelegate                             OnMapAlertSet;                                            // 0x0078(0x0016) (BlueprintVisible, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnMapAlertSet;                                            // 0x0078(0x0010) (BlueprintVisible, ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct ShadowTrackerExtra.MarkUpdateData
@@ -16207,33 +16288,49 @@ struct FDistanceRelevantInternal
 	float                                              BehideInternal;                                           // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
+// ScriptStruct ShadowTrackerExtra.AngleRelevantInternalRate
+// 0x0008
+struct FAngleRelevantInternalRate
+{
+	float                                              Costheta;                                                 // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              InternalRate;                                             // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+};
+
 // ScriptStruct ShadowTrackerExtra.MoveData
-// 0x0050
+// 0x0068
 struct FMoveData
 {
 	bool                                               bRepDeltaError;                                           // 0x0000(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	int8_t                                             PacketID;                                                 // 0x0001(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      Ping;                                                     // 0x0002(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1];                                       // 0x0003(0x0001) MISSED OFFSET
-	float                                              Yaw;                                                      // 0x0004(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	float                                              ViewYaw;                                                  // 0x0008(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	float                                              Pitch;                                                    // 0x000C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	float                                              RemoteViewPitch;                                          // 0x0010(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	float                                              ReplicatedServerLastTransformUpdateTimeStamp;             // 0x0014(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	struct FVector                                     Location;                                                 // 0x0018(0x000C) (Transient, IsPlainOldData)
-	struct FVector                                     LinearVelocity;                                           // 0x0024(0x000C) (Transient, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0030(0x0008) MISSED OFFSET
-	struct FVector                                     RelativeLocation;                                         // 0x0038(0x000C) (IsPlainOldData)
-	float                                              RelativeYaw;                                              // 0x0044(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x8];                                       // 0x0048(0x0008) MISSED OFFSET
+	bool                                               bHighSpeed;                                               // 0x0001(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	bool                                               bRepVehicle;                                              // 0x0002(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	bool                                               bSimulatedPhysicSleep;                                    // 0x0003(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	bool                                               bRepPhysics;                                              // 0x0004(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	bool                                               bPhysicsHit;                                              // 0x0005(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	bool                                               bFreeCamera;                                              // 0x0006(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	int8_t                                             PacketID;                                                 // 0x0007(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      Ping;                                                     // 0x0008(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
+	float                                              Yaw;                                                      // 0x000C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	float                                              ViewYaw;                                                  // 0x0010(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	float                                              Pitch;                                                    // 0x0014(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	float                                              Roll;                                                     // 0x0018(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	float                                              RemoteViewPitch;                                          // 0x001C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	float                                              ReplicatedServerLastTransformUpdateTimeStamp;             // 0x0020(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	struct FVector                                     Location;                                                 // 0x0024(0x000C) (Transient, IsPlainOldData)
+	struct FVector                                     LinearVelocity;                                           // 0x0030(0x000C) (Transient, IsPlainOldData)
+	struct FVector                                     AngularVelocity;                                          // 0x003C(0x000C) (Transient, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0048(0x0008) MISSED OFFSET
+	struct FVector                                     RelativeLocation;                                         // 0x0050(0x000C) (IsPlainOldData)
+	float                                              RelativeYaw;                                              // 0x005C(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x0060(0x0008) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.MoveBatchData
-// 0x2808
+// 0x3408
 struct FMoveBatchData
 {
-	struct FMoveData                                   MoveBatchDataArray[0x80];                                 // 0x0000(0x0050)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x2800(0x0008) MISSED OFFSET
+	struct FMoveData                                   MoveBatchDataArray[0x80];                                 // 0x0000(0x0068)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x3400(0x0008) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.ItemLayoutInfo
@@ -16357,6 +16454,19 @@ struct FEnvReponseObstacle
 	struct FVector                                     TopPoint;                                                 // 0x0034(0x000C) (IsPlainOldData)
 };
 
+// ScriptStruct ShadowTrackerExtra.LeanOutVehicleSetup
+// 0x0014
+struct FLeanOutVehicleSetup
+{
+	bool                                               bPreAnimate;                                              // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	float                                              PreAnimateTime;                                           // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bCanLeanOutUpsideDown;                                    // 0x0008(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
+	float                                              TimeIntervalToCheckLeanOut;                               // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              GunCollosionScale;                                        // 0x0010(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+};
+
 // ScriptStruct ShadowTrackerExtra.STExtraVehicleWeaponConfig
 // 0x0068
 struct FSTExtraVehicleWeaponConfig
@@ -16383,7 +16493,7 @@ struct FSTExtraVehicleWeaponConfig
 };
 
 // ScriptStruct ShadowTrackerExtra.STExtraVehicleSeat
-// 0x0090
+// 0x00A8
 struct FSTExtraVehicleSeat
 {
 	ESTExtraVehicleSeatType                            SeatType;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -16393,30 +16503,33 @@ struct FSTExtraVehicleSeat
 	struct FName                                       LeaveVehicleSocket;                                       // 0x0018(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bHasUpPerform;                                            // 0x0020(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	bool                                               bHasDownPerform;                                          // 0x0021(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    OccupyMovementMode;                                       // 0x0022(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         OccupyMovementMode;                                       // 0x0022(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	EVHSeatWeaponHoldType                              HoldWeaponType;                                           // 0x0023(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bUseWeaponIDBlackList;                                    // 0x0024(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0025(0x0003) MISSED OFFSET
 	TArray<int>                                        HoldWeaponIDBlackList;                                    // 0x0028(0x0010) (Edit, ZeroConstructor)
 	EVHSeatSpecialType                                 SeatSpecialType;                                          // 0x0038(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               IsCanLeanOut;                                             // 0x0039(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               NarrowSeatNeedUseCommomAimAnim;                           // 0x003A(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x1];                                       // 0x003B(0x0001) MISSED OFFSET
-	int                                                GUIDisplayIndex;                                          // 0x003C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UCurveFloat*                                 MinViewPitchCurve;                                        // 0x0040(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FVector2D                                   ViewPitchLimit;                                           // 0x0048(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
-	struct FRotator                                    CharRotVsVehiRot;                                         // 0x0050(0x000C) (Edit, IsPlainOldData)
-	EVHSeatSideType                                    SeatSideType;                                             // 0x005C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableVehicleWeapon;                                     // 0x005D(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableUsedAsFreeFireSeat;                                // 0x005E(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableChangeFreeFireSeat;                                // 0x005F(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TArray<struct FSTExtraVehicleWeaponConfig>         VehicleWeaponConfig;                                      // 0x0060(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	bool                                               bDefaultControlWeapon;                                    // 0x0070(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
-	struct FName                                       VehicleWeaponSeatSocket;                                  // 0x0078(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              OnSeatCameraSpringArmLength;                              // 0x0080(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	struct FVector2D                                   CharacterPitchLimit;                                      // 0x0084(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
-	float                                              ThrottleInput;                                            // 0x008C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x2];                                       // 0x003A(0x0002) MISSED OFFSET
+	struct FLeanOutVehicleSetup                        LeanOutSetup;                                             // 0x003C(0x0014) (Edit)
+	bool                                               NarrowSeatNeedUseCommomAimAnim;                           // 0x0050(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x0051(0x0003) MISSED OFFSET
+	int                                                GUIDisplayIndex;                                          // 0x0054(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UCurveFloat*                                 MinViewPitchCurve;                                        // 0x0058(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	struct FVector2D                                   ViewPitchLimit;                                           // 0x0060(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FRotator                                    CharRotVsVehiRot;                                         // 0x0068(0x000C) (Edit, IsPlainOldData)
+	EVHSeatSideType                                    SeatSideType;                                             // 0x0074(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableVehicleWeapon;                                     // 0x0075(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableUsedAsFreeFireSeat;                                // 0x0076(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableChangeFreeFireSeat;                                // 0x0077(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TArray<struct FSTExtraVehicleWeaponConfig>         VehicleWeaponConfig;                                      // 0x0078(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	bool                                               bDefaultControlWeapon;                                    // 0x0088(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x0089(0x0003) MISSED OFFSET
+	int                                                WeaponIndexForSocket;                                     // 0x008C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	struct FName                                       VehicleWeaponSeatSocket;                                  // 0x0090(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              OnSeatCameraSpringArmLength;                              // 0x0098(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FVector2D                                   CharacterPitchLimit;                                      // 0x009C(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
+	float                                              ThrottleInput;                                            // 0x00A4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.SeatShootVerifyConfig
@@ -16428,7 +16541,8 @@ struct FSeatShootVerifyConfig
 	struct FVector                                     HitBoxScale;                                              // 0x0004(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector                                     HitBoxOffset;                                             // 0x0010(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	bool                                               IsAirtightSpace;                                          // 0x001C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
+	EVHAirtightSpaceType                               AirtightSpaceType;                                        // 0x001D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x001E(0x0002) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.STExtraVehicleWeaponsOnSeat
@@ -16454,11 +16568,12 @@ struct FLeaveVehicleConfig
 	unsigned char                                      bCheckVehicleCenterLineTraceToEnterPosWithStandPosOffset : 1;// 0x0000(0x0001)
 	unsigned char                                      bCheckVehicleCenterLineTraceToLeavePos : 1;               // 0x0000(0x0001)
 	unsigned char                                      bCheckLeavePosCapsuleOverlap : 1;                         // 0x0000(0x0001)
+	unsigned char                                      bCheckLeavePosCapsuleOverlapVer2 : 1;                     // 0x0000(0x0001)
 	unsigned char                                      bCheckEnterPosLineTraceToLeavePos : 1;                    // 0x0000(0x0001)
 	unsigned char                                      bCheckLeavePosUnderGround : 1;                            // 0x0000(0x0001)
 	unsigned char                                      bCheckCharacterUnderLeavePos : 1;                         // 0x0000(0x0001)
 	unsigned char                                      bCheckEnterPosCapsuleOverlap : 1;                         // 0x0000(0x0001)
-	unsigned char                                      bCheckEnterPosSweepToLeavePos : 1;                        // 0x0000(0x0001)
+	unsigned char                                      bCheckEnterPosSweepToLeavePos : 1;                        // 0x0001(0x0001)
 	unsigned char                                      bCheckPhysCenterSweepToLeavePos : 1;                      // 0x0001(0x0001)
 	unsigned char                                      bShouldCollisionRspIgnorePawn : 1;                        // 0x0001(0x0001)
 	unsigned char                                      bShouldCollisionRspIgnoreVehicle : 1;                     // 0x0001(0x0001)
@@ -16599,12 +16714,12 @@ struct FNewbieGuideItem
 	int                                                ID;                                                       // 0x0000(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
 	struct FString                                     Name;                                                     // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	TEnumAsByte<enum ENewbieGuideType>                 Type;                                                     // 0x0018(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ENewbieGuideType>                      Type;                                                     // 0x0018(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
 	int                                                MaxGuideCounts;                                           // 0x001C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                MaxGuideLevel;                                            // 0x0020(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
-	TArray<TEnumAsByte<enum ENewbieGuidePlayerCategory>> SubjectPlayerTypes;                                       // 0x0028(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<TEnumAsByte<ENewbieGuidePlayerCategory>>    SubjectPlayerTypes;                                       // 0x0028(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	int                                                Priority;                                                 // 0x0038(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	int                                                MuteFlag;                                                 // 0x003C(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	int                                                PreconditionID;                                           // 0x0040(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -16676,7 +16791,7 @@ struct FMLAIDestroyBulletInfo
 };
 
 // ScriptStruct ShadowTrackerExtra.ScreenMarkInstanceData
-// 0x0030
+// 0x0038
 struct FScreenMarkInstanceData
 {
 	TWeakObjectPtr<class AActor>                       Actor;                                                    // 0x0000(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -16685,6 +16800,8 @@ struct FScreenMarkInstanceData
 	float                                              CustomFloat;                                              // 0x0018(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
 	struct FString                                     CustomString;                                             // 0x0020(0x0010) (BlueprintVisible, ZeroConstructor)
+	bool                                               bIsValid;                                                 // 0x0030(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0031(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.OverrideAudioEventMap
@@ -16737,15 +16854,16 @@ struct FObbyMoveMode
 };
 
 // ScriptStruct ShadowTrackerExtra.ObbyRepMovement
-// 0x0024
+// 0x0030
 struct FObbyRepMovement
 {
 	struct FVector                                     Location;                                                 // 0x0000(0x000C) (Transient, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // 0x000C(0x000C) (Transient, IsPlainOldData)
-	float                                              PlayTimeRepValue;                                         // 0x0018(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      SyncFlag;                                                 // 0x001C(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-	uint32_t                                           RepComponentGUID;                                         // 0x0020(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	struct FVector                                     Scale;                                                    // 0x0018(0x000C) (Transient, IsPlainOldData)
+	float                                              PlayTimeRepValue;                                         // 0x0024(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      SyncFlag;                                                 // 0x0028(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
+	uint32_t                                           RepComponentGUID;                                         // 0x002C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.VehicleParticleParachute
@@ -17135,7 +17253,7 @@ struct FPetMontageConfig
 struct FPetEventPlayerStateTypeSt
 {
 	EPawnState                                         PawnState;                                                // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPawnStateChangeType>             StateChangeType;                                          // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPawnStateChangeType>                  StateChangeType;                                          // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.PetEventItemIns
@@ -17275,7 +17393,7 @@ struct FSyncPlatformMovement
 // 0x0003
 struct FTempleItemCollisionData
 {
-	TEnumAsByte<enum ECollisionEnabled>                CollisionType;                                            // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     CollisionType;                                            // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bEnable;                                                  // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bSpecialItemToClose;                                      // 0x0002(0x0001) (ZeroConstructor, IsPlainOldData)
 };
@@ -17421,7 +17539,7 @@ struct FReplaceWeaponData
 // 0x0050
 struct FReplaceWeaponDataMap
 {
-	TMap<TEnumAsByte<enum ESurviveWeaponPropSlot>, struct FReplaceWeaponData> ReplaceWeaponDataMap;                                     // 0x0000(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ESurviveWeaponPropSlot>, struct FReplaceWeaponData> ReplaceWeaponDataMap;                                     // 0x0000(0x0050) (ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.RespawnIgnoreItemType
@@ -17446,7 +17564,7 @@ struct FRespawnKeepItemData
 // 0x0028 (0x0048 - 0x0020)
 struct FRespawnKeepWeaponData : public FRespawnKeepItemData
 {
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           WeaponSlot;                                               // 0x0020(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                WeaponSlot;                                               // 0x0020(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
 	TArray<struct FRespawnKeepItemData>                AttachmentDatas;                                          // 0x0028(0x0010) (Edit, ZeroConstructor)
 	int                                                ClipBulletNum;                                            // 0x0038(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -17558,15 +17676,14 @@ struct FReportQuickSignMsg
 {
 	struct FVector                                     HitPos;                                                   // 0x0000(0x000C) (IsPlainOldData)
 	uint32_t                                           ItemId;                                                   // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
-	EQuickSignSubType                                  MsgType;                                                  // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
+	int                                                MsgType;                                                  // 0x0010(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.IntelligentSignCheckParam
 // 0x00D8
 struct FIntelligentSignCheckParam
 {
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         CheckObjectTypes;                                         // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              CheckObjectTypes;                                         // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	TMap<class UClass*, int>                           ValidActorClass;                                          // 0x0010(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
 	TMap<struct FString, int>                          ValidActorTags;                                           // 0x0060(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
 	float                                              SphereCheckRadius;                                        // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -18123,15 +18240,17 @@ struct FCachedWheelData
 };
 
 // ScriptStruct ShadowTrackerExtra.WheeledVehicleLowSpeedSleepSetup
-// 0x0014
+// 0x001C
 struct FWheeledVehicleLowSpeedSleepSetup
 {
 	bool                                               bEnabled;                                                 // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
-	float                                              minSpeed;                                                 // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              MinOmega;                                                 // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              CompressedSuspensionRatio;                                // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              PhysicsContactCoolDown;                                   // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              SpeedThreshold;                                           // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              VelZThreshold;                                            // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              OmegaThreshold;                                           // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              ChassisScale;                                             // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              CompressedSuspensionRatio;                                // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              PhysicsContactCoolDown;                                   // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.WheeledVehiclePivotPhysicsSetup
@@ -18223,7 +18342,7 @@ struct FWheeledVehicleExitDriftSetup
 	float                                              MinAngle;                                                 // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              MaxAngle;                                                 // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
-	TArray<TEnumAsByte<enum ECollisionChannel>>        IgnoreChannels;                                           // 0x0010(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<ECollisionChannel>>             IgnoreChannels;                                           // 0x0010(0x0010) (Edit, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.WheeledVehicleDriftTLogSetup
@@ -18252,40 +18371,39 @@ struct FWheeledVehicleShootDriveSetup
 };
 
 // ScriptStruct ShadowTrackerExtra.RigidVehicleMovement
-// 0x0038
+// 0x0034
 struct FRigidVehicleMovement
 {
-	bool                                               IsValid;                                                  // 0x0000(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
-	struct FVector                                     Location;                                                 // 0x0004(0x000C) (Transient, IsPlainOldData)
-	struct FRotator                                    Rotation;                                                 // 0x0010(0x000C) (Transient, IsPlainOldData)
-	struct FVector                                     LinVel;                                                   // 0x001C(0x000C) (Transient, IsPlainOldData)
-	struct FVector                                     AngVel;                                                   // 0x0028(0x000C) (Transient, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
+	struct FVector                                     Location;                                                 // 0x0000(0x000C) (Transient, IsPlainOldData)
+	struct FRotator                                    Rotation;                                                 // 0x000C(0x000C) (Transient, IsPlainOldData)
+	struct FVector                                     LinVel;                                                   // 0x0018(0x000C) (Transient, IsPlainOldData)
+	struct FVector                                     AngVel;                                                   // 0x0024(0x000C) (Transient, IsPlainOldData)
+	bool                                               IsBoosting;                                               // 0x0030(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0031(0x0003) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.VehicleNetMovement4W
-// 0x0078
+// 0x0070
 struct FVehicleNetMovement4W
 {
 	unsigned char                                      IsInAir : 1;                                              // 0x0000(0x0001) (Transient)
 	EWheeledVehicleMovementType                        MovementType;                                             // 0x0001(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      SubMovementType;                                          // 0x0002(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x1];                                       // 0x0003(0x0001) MISSED OFFSET
-	struct FRigidVehicleMovement                       Movement;                                                 // 0x0004(0x0038) (Transient)
-	struct FRigidVehicleMovement                       LandMovement;                                             // 0x003C(0x0038) (Transient)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0074(0x0004) MISSED OFFSET
+	struct FRigidVehicleMovement                       Movement;                                                 // 0x0004(0x0034) (Transient)
+	struct FRigidVehicleMovement                       LandMovement;                                             // 0x0038(0x0034) (Transient)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x006C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.VehicleNetMovement4WInReplay
-// 0x0090
+// 0x0088
 struct FVehicleNetMovement4WInReplay
 {
 	float                                              Time;                                                     // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
 	EVehicleCorrectionReason                           RejectReason;                                             // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
 	struct FString                                     ExtraData;                                                // 0x0008(0x0010) (ZeroConstructor)
-	struct FVehicleNetMovement4W                       ClientMovement;                                           // 0x0018(0x0078)
+	struct FVehicleNetMovement4W                       ClientMovement;                                           // 0x0018(0x0070)
 };
 
 // ScriptStruct ShadowTrackerExtra.WheeledVehicleReplicaSetup
@@ -18398,7 +18516,7 @@ struct FSkillRayData
 	float                                              ExplodeOuterRadius;                                       // 0x0024(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              ExplodeFalloff;                                           // 0x0028(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                ExplodeBuffID;                                            // 0x002C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TMap<TEnumAsByte<enum EAdditionDamageSubType>, float> AddtionalDamage;                                          // 0x0030(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
+	TMap<TEnumAsByte<EAdditionDamageSubType>, float>   AddtionalDamage;                                          // 0x0030(0x0050) (Edit, BlueprintVisible, ZeroConstructor)
 	unsigned char                                      UnknownData00[0x28];                                      // 0x0080(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.SkillRayData.ExplodeEffect_SoftPtr
 	unsigned char                                      UnknownData01[0x28];                                      // 0x00A8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.SkillRayData.HitAkEvent_SoftPtr
 	float                                              HitEffectInterval;                                        // 0x00D0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -18718,7 +18836,7 @@ struct FBuildingConsumeData
 // 0x0028
 struct FSkillReplaceCharAnimData
 {
-	TEnumAsByte<enum ECharacterAnimType>               CharacterAnimType;                                        // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterAnimType>                    CharacterAnimType;                                        // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x10];                                      // 0x0001(0x0010) UNKNOWN PROPERTY: ArrayProperty ShadowTrackerExtra.SkillReplaceCharAnimData.PoseAnimList
 	unsigned char                                      UnknownData02[0x10];                                      // 0x0018(0x0010) UNKNOWN PROPERTY: ArrayProperty ShadowTrackerExtra.SkillReplaceCharAnimData.FPPPoseAnimList
@@ -18728,12 +18846,12 @@ struct FSkillReplaceCharAnimData
 // 0x0020
 struct FCharacterFollowInfo
 {
-	TEnumAsByte<enum ECharacterFollowType>             Type;                                                     // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterFollowType>                  Type;                                                     // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class USTCharacterFollowComponent*                 LeaderCom;                                                // 0x0008(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
 	uint32_t                                           LeaderPlayerKey;                                          // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                QueueIndex;                                               // 0x0014(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterLeaderMoveType>         LeaderMoveType;                                           // 0x0018(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterLeaderMoveType>              LeaderMoveType;                                           // 0x0018(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0019(0x0007) MISSED OFFSET
 };
 
@@ -18775,7 +18893,7 @@ struct FCharacterDistanceSquareTickInternal
 };
 
 // ScriptStruct ShadowTrackerExtra.DirectMoveData
-// 0x0060
+// 0x0068
 struct FDirectMoveData
 {
 	bool                                               bOverrideZ;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
@@ -18783,18 +18901,22 @@ struct FDirectMoveData
 	bool                                               bGravityZ;                                                // 0x0002(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bHandleHit;                                               // 0x0003(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	bool                                               bManualExit;                                              // 0x0004(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EDirectMoveType>                  DirectMoveType;                                           // 0x0005(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bPlayerCanControRotate;                                   // 0x0005(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
-	float                                              InertiaRatio;                                             // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               bResetToCachedVel;                                        // 0x000C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x000D(0x0003) MISSED OFFSET
-	float                                              Distance;                                                 // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              TotalTime;                                                // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	class UCurveFloat*                                 SpeedCurve;                                               // 0x0018(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x24];                                      // 0x0020(0x0024) MISSED OFFSET
-	struct FVector                                     BaseSpeed;                                                // 0x0044(0x000C) (BlueprintVisible, IsPlainOldData)
-	struct FVector                                     DestinationLocation;                                      // 0x0050(0x000C) (BlueprintVisible, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x005C(0x0004) MISSED OFFSET
+	float                                              RotateInterpSpeed;                                        // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bStopWhenHit;                                             // 0x000C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bStopWhenNotFindFloor;                                    // 0x000D(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDirectMoveType>                       DirectMoveType;                                           // 0x000E(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x1];                                       // 0x000F(0x0001) MISSED OFFSET
+	float                                              InertiaRatio;                                             // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bResetToCachedVel;                                        // 0x0014(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
+	float                                              Distance;                                                 // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              TotalTime;                                                // 0x001C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	class UCurveFloat*                                 SpeedCurve;                                               // 0x0020(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x28];                                      // 0x0028(0x0028) MISSED OFFSET
+	struct FVector                                     BaseSpeed;                                                // 0x0050(0x000C) (BlueprintVisible, IsPlainOldData)
+	struct FVector                                     DestinationLocation;                                      // 0x005C(0x000C) (BlueprintVisible, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.SimulateRepData
@@ -19130,7 +19252,7 @@ struct FDecorationCircle
 // 0x000C
 struct FWeaponSlotSwitchTimeData
 {
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           EquipSlot;                                                // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                EquipSlot;                                                // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	float                                              TotalTime;                                                // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              AttachWeaponTime;                                         // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -19184,7 +19306,7 @@ struct FSimViewData
 // 0x0002
 struct FSwitchWeaponDisable
 {
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           WeaponPropSlot;                                           // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                WeaponPropSlot;                                           // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	int8_t                                             Disabled;                                                 // 0x0001(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 };
 
@@ -19205,19 +19327,19 @@ struct FAnimParamList
 	int                                                FrameCounter;                                             // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Velocity;                                                 // 0x0004(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector                                     movedir;                                                  // 0x0010(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    MovementMode;                                             // 0x001C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECustomMovmentMode>               CustomMovementMode;                                       // 0x001D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               PoseType;                                                 // 0x001E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         MovementMode;                                             // 0x001C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECustomMovmentMode>                    CustomMovementMode;                                       // 0x001D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    PoseType;                                                 // 0x001E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x1];                                       // 0x001F(0x0001) MISSED OFFSET
 	struct FRotator                                    ViewRotation;                                             // 0x0020(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FRotator                                    ControlRotation;                                          // 0x002C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EWeaponType>                      WeaponType;                                               // 0x0038(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWeaponTypeNew>                   WeaponTypeNew;                                            // 0x0039(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWeaponHoldType>                  WeaponHoldType;                                           // 0x003A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFreshWeaponStateType>            WeaponState;                                              // 0x003B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWeaponReloadMethod>              WeaponReloadMethod;                                       // 0x003C(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponType>                           WeaponType;                                               // 0x0038(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponTypeNew>                        WeaponTypeNew;                                            // 0x0039(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponHoldType>                       WeaponHoldType;                                           // 0x003A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 WeaponState;                                              // 0x003B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponReloadMethod>                   WeaponReloadMethod;                                       // 0x003C(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	bool                                               bScopeInBoltActionEnable;                                 // 0x003D(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESightType>                       SightType;                                                // 0x003E(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ESightType>                            SightType;                                                // 0x003E(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x1];                                       // 0x003F(0x0001) MISSED OFFSET
 	float                                              RecoilKick;                                               // 0x0040(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              RecoilKickADS;                                            // 0x0044(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -19244,7 +19366,7 @@ struct FAnimParamList
 	struct FVector                                     HurtDir;                                                  // 0x00E8(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	bool                                               IsDying;                                                  // 0x00F4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsJumping;                                                // 0x00F5(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterJumpType>               JumpType;                                                 // 0x00F6(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterJumpType>                    JumpType;                                                 // 0x00F6(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsTurning;                                                // 0x00F7(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsOnVehicle;                                              // 0x00F8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsDisableAim;                                             // 0x00F9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -19340,7 +19462,7 @@ struct FCharacterEnergyData
 struct FHealthPredictShowData
 {
 	struct FString                                     ShowDataKey;                                              // 0x0000(0x0010) (Edit, ZeroConstructor)
-	TEnumAsByte<enum EHealthPredictShowType>           ShowType;                                                 // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHealthPredictShowType>                ShowType;                                                 // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 	float                                              Value;                                                    // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              LimitValue;                                               // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -19423,7 +19545,7 @@ struct FCharacterCompOutOfVisionOptimizationItem
 	bool                                               bVisible;                                                 // 0x0005(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
 	struct FVector                                     Location;                                                 // 0x0008(0x000C) (BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum ECollisionEnabled>                EnableCollisionType;                                      // 0x0014(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     EnableCollisionType;                                      // 0x0014(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
 };
 
@@ -19465,10 +19587,10 @@ struct FCharacterHide
 // 0x0050
 struct FInjuryParticleAttachOffset
 {
-	TEnumAsByte<enum EMovementMode>                    MovementMode;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         MovementMode;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0xF];                                       // 0x0001(0x000F) MISSED OFFSET
 	struct FTransform                                  AttachTransform;                                          // 0x0010(0x0030) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EAttachLocation>                  AttachLocationType;                                       // 0x0040(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       AttachLocationType;                                       // 0x0040(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0xF];                                       // 0x0041(0x000F) MISSED OFFSET
 };
 
@@ -19614,13 +19736,13 @@ struct FClientFatalDamageRecordData
 	bool                                               IsHeadshot;                                               // 0x0070(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0071(0x0003) MISSED OFFSET
 	int                                                ResultHealthStatus;                                       // 0x0074(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFatalDamageRelationShip>         RecordRelationShip;                                       // 0x0078(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFatalDamageRelationShip>              RecordRelationShip;                                       // 0x0078(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0079(0x0003) MISSED OFFSET
 	int                                                PreviousHealthStatus;                                     // 0x007C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	struct FString                                     RealKillerName;                                           // 0x0080(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	int                                                RealKillNum;                                              // 0x0090(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFatalDamageCharacterType>        CauserType;                                               // 0x0094(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EFatalDamageCharacterType>        VictimType;                                               // 0x0095(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFatalDamageCharacterType>             CauserType;                                               // 0x0094(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFatalDamageCharacterType>             VictimType;                                               // 0x0095(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x2];                                       // 0x0096(0x0002) MISSED OFFSET
 	int                                                CauserTeamID;                                             // 0x0098(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	int                                                VictimTeamID;                                             // 0x009C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -19667,14 +19789,15 @@ struct FDotDamageEvent : public FSTPointDamageEvent
 };
 
 // ScriptStruct ShadowTrackerExtra.ComponentIsVisibleParams
-// 0x000C
+// 0x0010
 struct FComponentIsVisibleParams
 {
 	bool                                               DrawVisibleTraceDebugLine;                                // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               IsConsideringVehicleBlock;                                // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               IsIgnoreHitActorSelf;                                     // 0x0002(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               IsDoubleSideQuery;                                        // 0x0003(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0004(0x0008) MISSED OFFSET
+	bool                                               IsIgnoreTargetVehicleBlock;                               // 0x0002(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               IsIgnoreHitActorSelf;                                     // 0x0003(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               IsDoubleSideQuery;                                        // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0xB];                                       // 0x0005(0x000B) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.SimulateThresholds
@@ -19757,7 +19880,7 @@ struct FBuildingSearchPath
 };
 
 // ScriptStruct ShadowTrackerExtra.BuffApplierConditionPair
-// 0x0080
+// 0x0090
 struct FBuffApplierConditionPair
 {
 	EBuffApplierCondition                              ConditionVar;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -19767,14 +19890,15 @@ struct FBuffApplierConditionPair
 	float                                              InnerRangeDistance;                                       // 0x0008(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
 	class UCurveFloat*                                 CurveExpirePerDistance;                                   // 0x0010(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TArray<int>                                        BuffIDArray;                                              // 0x0018(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	TArray<int>                                        BuffIDArrayForZombie;                                     // 0x0028(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	TArray<int>                                        BuffSkillIdArray;                                         // 0x0038(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	TArray<int>                                        BuffSkillIdArrayForZombie;                                // 0x0048(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     IgnorePawnAttrName;                                       // 0x0058(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	float                                              ResidenceTimeOnRemove;                                    // 0x0068(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x006C(0x0004) MISSED OFFSET
-	TArray<class UUTSkillPickerFilter*>                PickerFilters;                                            // 0x0070(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
+	struct FString                                     Description;                                              // 0x0018(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<int>                                        BuffIDArray;                                              // 0x0028(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<int>                                        BuffIDArrayForZombie;                                     // 0x0038(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<int>                                        BuffSkillIdArray;                                         // 0x0048(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<int>                                        BuffSkillIdArrayForZombie;                                // 0x0058(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     IgnorePawnAttrName;                                       // 0x0068(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	float                                              ResidenceTimeOnRemove;                                    // 0x0078(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x007C(0x0004) MISSED OFFSET
+	TArray<class UUTSkillPickerFilter*>                PickerFilters;                                            // 0x0080(0x0010) (Edit, BlueprintVisible, ExportObject, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.MainWeaponTableStruct
@@ -19852,6 +19976,13 @@ struct FSimulateBulletHitInfoData
 	unsigned char                                      HitBodyType;                                              // 0x0044(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      ImpactEffectMask;                                         // 0x0045(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x2];                                       // 0x0046(0x0002) MISSED OFFSET
+};
+
+// ScriptStruct ShadowTrackerExtra.StringArray
+// 0x0010
+struct FStringArray
+{
+	TArray<struct FString>                             Strings;                                                  // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.WeaponAttrModifyData
@@ -19943,8 +20074,8 @@ struct FStartFireInfo
 	uint32_t                                           CurShootID;                                               // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                CurClipID;                                                // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                CurBulletNumInClip;                                       // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EShootWeaponShootMode>            ShootMode;                                                // 0x000C(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEWeaponShootType>              ShootType;                                                // 0x000D(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EShootWeaponShootMode>                 ShootMode;                                                // 0x000C(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEWeaponShootType>                   ShootType;                                                // 0x000D(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x000E(0x0002) MISSED OFFSET
 	float                                              StartFireTime;                                            // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                StartFireID;                                              // 0x0014(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -20028,8 +20159,8 @@ struct FAIControllerShootInfo
 // 0x0008
 struct FRenderQualitySettings
 {
-	TEnumAsByte<enum ERenderQuality>                   RenderQualitySetting;                                     // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERenderStyle>                     RenderStyleSetting;                                       // 0x0001(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERenderQuality>                        RenderQualitySetting;                                     // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERenderStyle>                          RenderStyleSetting;                                       // 0x0001(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               RenderMSAASetting;                                        // 0x0002(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x1];                                       // 0x0003(0x0001) MISSED OFFSET
 	int                                                RenderMSAAValue;                                          // 0x0004(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -20068,7 +20199,7 @@ struct FRenderItem
 // 0x0040
 struct FRenderStyleParameterInMaps
 {
-	TEnumAsByte<enum ERenderDynamicStyle>              DynamicStyleName;                                         // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERenderDynamicStyle>                   DynamicStyleName;                                         // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<struct FString>                             PostProcessParams;                                        // 0x0008(0x0010) (ZeroConstructor)
 	struct FACESParameter                              ACESParams;                                               // 0x0018(0x0028)
@@ -20216,7 +20347,7 @@ struct FWeaponDurabilityConfig
 };
 
 // ScriptStruct ShadowTrackerExtra.NetBunchQueueClassConfig
-// 0x0024
+// 0x0040
 struct FNetBunchQueueClassConfig
 {
 	ENetBunchQueueTopStrategy                          TopStrategy;                                              // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
@@ -20231,13 +20362,16 @@ struct FNetBunchQueueClassConfig
 	unsigned char                                      UnknownData02[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
 	int                                                NFramesLaterValue;                                        // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              NSecondsLaterValue;                                       // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
+	struct FName                                       SpecificGameState;                                        // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FString                                     ExtraParam;                                               // 0x0030(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.NewBuffApplierConditionPair
 // 0x0030
 struct FNewBuffApplierConditionPair
 {
-	TEnumAsByte<enum ENewBuffApplierCondition>         ConditionVar;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ENewBuffApplierCondition>              ConditionVar;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               IsShowDebugLine;                                          // 0x0001(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0002(0x0002) MISSED OFFSET
 	float                                              InSightCheckAngle;                                        // 0x0004(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -20277,7 +20411,7 @@ struct FSpringArmParams
 	struct FVector                                     TargetOffset;                                             // 0x0028(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
 	struct FVector                                     RelativeLocation;                                         // 0x0034(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData)
 	float                                              ProbeSize;                                                // 0x0040(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                ProbeChannel;                                             // 0x0044(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     ProbeChannel;                                             // 0x0044(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bDoCollisionTest;                                         // 0x0045(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bUsePawnControlRotation;                                  // 0x0046(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bEnableCameraLag;                                         // 0x0047(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -20297,7 +20431,7 @@ struct FActivityAnimationRepData
 // 0x0002
 struct FAngledSightRepData
 {
-	TEnumAsByte<enum EAngledSightType>                 AngledSightType;                                          // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAngledSightType>                      AngledSightType;                                          // 0x0000(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsOnlyTurn;                                               // 0x0001(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
@@ -20383,7 +20517,7 @@ struct FSensibilityConfig
 // 0x00B0
 struct FKillOrPutDownMessage
 {
-	TEnumAsByte<enum EKillOrPutDownMessageType>        MsgType;                                                  // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EKillOrPutDownMessageType>             MsgType;                                                  // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     AttackActionName;                                         // 0x0008(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 	struct FString                                     AttackName;                                               // 0x0018(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
@@ -20591,7 +20725,7 @@ struct FTrailMarkActorBlock
 // 0x0058
 struct FParachuteAnimAssetData
 {
-	TMap<TEnumAsByte<enum ECharacterParachuteAnimType>, class UAnimationAsset*> AnimAssetCache;                                           // 0x0000(0x0050) (ZeroConstructor)
+	TMap<TEnumAsByte<ECharacterParachuteAnimType>, class UAnimationAsset*> AnimAssetCache;                                           // 0x0000(0x0050) (ZeroConstructor)
 	bool                                               IsAnimCached;                                             // 0x0050(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
 };
@@ -20658,7 +20792,7 @@ struct FSimpleCharAnimParamList
 {
 	struct FVector                                     Velocity;                                                 // 0x0000(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	struct FVector                                     movedir;                                                  // 0x000C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    MovementMode;                                             // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         MovementMode;                                             // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0019(0x0003) MISSED OFFSET
 	struct FRotator                                    ViewRotation;                                             // 0x001C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
 	bool                                               IsHurting;                                                // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -20731,7 +20865,7 @@ struct FTextrueAsyncRequest
 	class UObject*                                     ImageOuter;                                               // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData)
 	bool                                               KeepSize;                                                 // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0019(0x0007) MISSED OFFSET
-	struct FScriptDelegate                             Callback;                                                 // 0x0020(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x0020(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct ShadowTrackerExtra.WidgetAsyncCreateData
@@ -20742,7 +20876,7 @@ struct FWidgetAsyncCreateData
 	TWeakObjectPtr<class UObject>                      Outer;                                                    // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData)
 	int                                                InstID;                                                   // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-	struct FScriptDelegate                             Callback;                                                 // 0x0020(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             Callback;                                                 // 0x0020(0x0010) (ZeroConstructor, InstancedReference)
 };
 
 // ScriptStruct ShadowTrackerExtra.CustomUnderWaterConfig
@@ -20814,6 +20948,63 @@ struct FAutoDriveAIDataRow
 	unsigned char                                      UnknownData02[0x28];                                      // 0x0050(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.AutoDriveAIDataRow.BlackboardDataAsset
 };
 
+// ScriptStruct ShadowTrackerExtra.BufferedSuspensionState
+// 0x0024
+struct FBufferedSuspensionState
+{
+	struct FVector                                     LineStart;                                                // 0x0000(0x000C) (IsPlainOldData)
+	struct FVector                                     LineDirection;                                            // 0x000C(0x000C) (IsPlainOldData)
+	float                                              LineLength;                                               // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Jounce;                                                   // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              SpringForce;                                              // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.BufferedWheelState
+// 0x0040
+struct FBufferedWheelState
+{
+	float                                              SteerAngle;                                               // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0xC];                                       // 0x0004(0x000C) MISSED OFFSET
+	struct FTransform                                  Transform;                                                // 0x0010(0x0030) (IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.BufferedTireState
+// 0x0024
+struct FBufferedTireState
+{
+	float                                              Friction;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FVector                                     LongitudinalDirection;                                    // 0x0004(0x000C) (IsPlainOldData)
+	struct FVector                                     LateralDirection;                                         // 0x0010(0x000C) (IsPlainOldData)
+	float                                              LongitudinalSlip;                                         // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              LateralSlip;                                              // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.BufferedContactState
+// 0x0038
+struct FBufferedContactState
+{
+	struct FVector                                     ContactNormal;                                            // 0x0000(0x000C) (IsPlainOldData)
+	struct FVector                                     ContactPoint;                                             // 0x000C(0x000C) (IsPlainOldData)
+	TWeakObjectPtr<class AActor>                       ContactActor;                                             // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
+	TWeakObjectPtr<class UPrimitiveComponent>          ContactComponent;                                         // 0x0020(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FName                                       ContactBone;                                              // 0x0028(0x0008) (ZeroConstructor, IsPlainOldData)
+	TWeakObjectPtr<class UPhysicalMaterial>            ContactMaterial;                                          // 0x0030(0x0008) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.BufferedWheelSimState
+// 0x00D0
+struct FBufferedWheelSimState
+{
+	bool                                               IsInAir;                                                  // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	struct FBufferedSuspensionState                    SuspensionState;                                          // 0x0004(0x0024)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
+	struct FBufferedWheelState                         WheelState;                                               // 0x0030(0x0040)
+	struct FBufferedTireState                          TireState;                                                // 0x0070(0x0024)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x0094(0x0004) MISSED OFFSET
+	struct FBufferedContactState                       ContactState;                                             // 0x0098(0x0038)
+};
+
 // ScriptStruct ShadowTrackerExtra.LootProjectileRepMovement
 // 0x0054
 struct FLootProjectileRepMovement
@@ -20838,6 +21029,15 @@ struct FSTProjectileStateParam
 	struct FVector                                     VectorValue;                                              // 0x0014(0x000C) (BlueprintVisible, IsPlainOldData)
 	struct FRotator                                    RotatorValue;                                             // 0x0020(0x000C) (BlueprintVisible, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct ShadowTrackerExtra.TagKeyFloatValue
+// 0x0010
+struct FTagKeyFloatValue
+{
+	struct FGameplayTag                                Key;                                                      // 0x0000(0x0008) (Edit, BlueprintVisible)
+	float                                              Value;                                                    // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.STProjectileState
@@ -20932,7 +21132,7 @@ struct FAppearanceMeshData
 // 0x0080
 struct FScreenParticleEffectData
 {
-	TEnumAsByte<enum EScreenParticleEffectType>        EffectType;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EScreenParticleEffectType>             EffectType;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     ScreenParticleEffectName;                                 // 0x0008(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0018(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.ScreenParticleEffectData.ParticleEffect
@@ -20946,7 +21146,7 @@ struct FScreenParticleEffectData
 	bool                                               IsShowing;                                                // 0x0072(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x1];                                       // 0x0073(0x0001) MISSED OFFSET
 	float                                              CurrentParamValue;                                        // 0x0074(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EPlatformDeviceLevel>             DisableDeviceLevel;                                       // 0x0078(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EPlatformDeviceLevel>                  DisableDeviceLevel;                                       // 0x0078(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData04[0x7];                                       // 0x0079(0x0007) MISSED OFFSET
 };
 
@@ -20968,7 +21168,7 @@ struct FMltAppearanceMatData
 	bool                                               IsShowIn;                                                 // 0x0072(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x1];                                       // 0x0073(0x0001) MISSED OFFSET
 	float                                              GradualFrag;                                              // 0x0074(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              DelayTime;                                                // 0x0078(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              delayTime;                                                // 0x0078(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData03[0x4];                                       // 0x007C(0x0004) MISSED OFFSET
 };
 
@@ -20981,7 +21181,7 @@ struct FMultiAppearanceMeshData
 };
 
 // ScriptStruct ShadowTrackerExtra.HitPerformData
-// 0x00A8
+// 0x00B0
 struct FHitPerformData
 {
 	TArray<struct FWeaponCrossHairIconData>            IconList;                                                 // 0x0000(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
@@ -21007,7 +21207,7 @@ struct FHitPerformData
 	class UAkAudioEvent*                               DyingShotSound;                                           // 0x0088(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	class UAkAudioEvent*                               DeadlyShotSound;                                          // 0x0090(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              CurCrosshairSpread;                                       // 0x0098(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0xC];                                       // 0x009C(0x000C) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x14];                                      // 0x009C(0x0014) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.SimpleCrossHairData
@@ -21024,7 +21224,7 @@ struct FSimpleCrossHairData
 // 0x0040
 struct FTankTrackEffect
 {
-	TArray<TEnumAsByte<enum EPhysicalSurface>>         TrackEffectMatList;                                       // 0x0000(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	TArray<TEnumAsByte<EPhysicalSurface>>              TrackEffectMatList;                                       // 0x0000(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	class UParticleSystem*                             MoveFx;                                                   // 0x0010(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	TArray<struct FTransform>                          EffectTransforms;                                         // 0x0018(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 	int                                                ValidDeviceLevel;                                         // 0x0028(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -21053,7 +21253,7 @@ struct FTickListItem
 // 0x0020
 struct FRegisterDelayTime
 {
-	float                                              DelayTime;                                                // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              delayTime;                                                // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
 	TArray<int>                                        CallBackPar;                                              // 0x0008(0x0010) (ZeroConstructor)
 	bool                                               IsDone;                                                   // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData)
@@ -21066,6 +21266,166 @@ struct FRegisterTimerInfo
 {
 	TArray<struct FRegisterDelayTime>                  DelayTimes;                                               // 0x0000(0x0010) (ZeroConstructor)
 	unsigned char                                      UnknownData00[0x10];                                      // 0x0010(0x0010) MISSED OFFSET
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackCollisionSetup
+// 0x0038
+struct FTrackCollisionSetup
+{
+	bool                                               bUseShapeCollision;                                       // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	TArray<TEnumAsByte<ECollisionChannel>>             CollisionChannels;                                        // 0x0008(0x0010) (Edit, ZeroConstructor)
+	TArray<struct FName>                               BoneNames;                                                // 0x0018(0x0010) (Edit, ZeroConstructor)
+	TArray<int>                                        ShapeIndices;                                             // 0x0028(0x0010) (Edit, ZeroConstructor)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehicleBoostSetup
+// 0x0008
+struct FTrackedVehicleBoostSetup
+{
+	float                                              OmegaScale;                                               // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              PowerScale;                                               // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehicleInputState
+// 0x0010
+struct FTrackedVehicleInputState
+{
+	float                                              SteeringInput;                                            // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              ThrottleInput;                                            // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              BrakeInput;                                               // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                CurrentGear;                                              // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackRollAnimSetup
+// 0x0020
+struct FTrackRollAnimSetup
+{
+	struct FName                                       MatSlotName;                                              // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	struct FName                                       MatParamNames[0x2];                                       // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              AnimSpeedScale;                                           // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECustomTickIntervel>                   TickInterval;                                             // 0x001C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackMarkSetup
+// 0x0088
+struct FTrackMarkSetup
+{
+	bool                                               bEnable;                                                  // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x50];                                      // 0x0001(0x0050) UNKNOWN PROPERTY: MapProperty ShadowTrackerExtra.TrackMarkSetup.MarkClassMap
+	struct FVector                                     LocationOffset;                                           // 0x0058(0x000C) (Edit, IsPlainOldData)
+	TEnumAsByte<ECustomTickIntervel>                   TickInterval;                                             // 0x0064(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0065(0x0003) MISSED OFFSET
+	float                                              minSpeed;                                                 // 0x0068(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x006C(0x0004) MISSED OFFSET
+	class UCurveFloat*                                 CurveAlpha;                                               // 0x0070(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	TArray<class UClass*>                              MarkClasses;                                              // 0x0078(0x0010) (ZeroConstructor, Transient)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehicleEngineSetup
+// 0x0020
+struct FTrackedVehicleEngineSetup
+{
+	class UCurveFloat*                                 TorqueCurve;                                              // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              MaxRPM;                                                   // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              MOI;                                                      // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              DampingRateFullThrottle;                                  // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              DampingRateZeroThrottleClutchEngaged;                     // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              DampingRateZeroThrottleClutchDisengaged;                  // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehicleGearData
+// 0x000C
+struct FTrackedVehicleGearData
+{
+	float                                              Ratio;                                                    // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              DownRatio;                                                // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              UpRatio;                                                  // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehicleTransmissionSetup
+// 0x0028
+struct FTrackedVehicleTransmissionSetup
+{
+	bool                                               bUseGearAutoBox;                                          // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	float                                              GearSwitchTime;                                           // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              GearAutoBoxLatency;                                       // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              FinalRatio;                                               // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	TArray<struct FTrackedVehicleGearData>             ForwardGears;                                             // 0x0010(0x0010) (Edit, ZeroConstructor)
+	float                                              ReverseGearRatio;                                         // 0x0020(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              NeutralGearUpRatio;                                       // 0x0024(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehicleTrackSetup
+// 0x0038
+struct FTrackedVehicleTrackSetup
+{
+	class UClass*                                      DriveWheel;                                               // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class UCurveVector*                                LongSlipGraph;                                            // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class UCurveFloat*                                 LatSlipGraph;                                             // 0x0010(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class UCurveFloat*                                 LatSlipRecoveryGraph;                                     // 0x0018(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class UCurveVector*                                SlipGraph;                                                // 0x0020(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableSleepAtLowSpeed;                                   // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
+	float                                              SleepSpeedThreshold;                                      // 0x002C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              SleepAngularThreshold;                                    // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              LowSpeedDuration;                                         // 0x0034(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehicleSuspensionSetup
+// 0x0004
+struct FTrackedVehicleSuspensionSetup
+{
+	int                                                MinDeviceLevelForSweep;                                   // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.TrackedVehiclePivotSetup
+// 0x0010
+struct FTrackedVehiclePivotSetup
+{
+	float                                              MinSteeringInput;                                         // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
+	class UCurveFloat*                                 CurveThrottleInput;                                       // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.VehicleCorrectionSetup
+// 0x0004
+struct FVehicleCorrectionSetup
+{
+	float                                              TimeInterval;                                             // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.RigidMovementSentSetup
+// 0x0014
+struct FRigidMovementSentSetup
+{
+	float                                              Distance;                                                 // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              Angle;                                                    // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              Speed;                                                    // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              Omega;                                                    // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              TimeInterval;                                             // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.RigidHitSentSetup
+// 0x0004
+struct FRigidHitSentSetup
+{
+	float                                              TimeInterval;                                             // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.RigidNetValidationSetup
+// 0x0014
+struct FRigidNetValidationSetup
+{
+	float                                              MaxDistanceError;                                         // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              ChassisScale;                                             // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              SpeedScale;                                               // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              VelSinTolerance;                                          // 0x000C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              AbnormalVelZ;                                             // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.TrailMarkInputData
@@ -21153,7 +21513,7 @@ struct FRepeatItemCfg
 struct FSpawnItemCfg
 {
 	ESpawnActorCollisionHandlingMethod                 SpawnActorCollisionHandlingMethod;                        // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum ESpawnItemFunction>               SpawnItemFunction;                                        // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<ESpawnItemFunction>                    SpawnItemFunction;                                        // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0002(0x0006) MISSED OFFSET
 	TArray<struct FSecondsSegment>                     SecondsSegmentCondition;                                  // 0x0008(0x0010) (Edit, ZeroConstructor)
 	TArray<struct FString>                             LineTracePlaceInclude;                                    // 0x0018(0x0010) (Edit, ZeroConstructor)
@@ -21313,7 +21673,7 @@ struct FTurretRotation
 // 0x0028
 struct FSkillReplaceJumpAnimData
 {
-	TEnumAsByte<enum ECharacterJumpType>               JumpAnimType;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterJumpType>                    JumpAnimType;                                             // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x10];                                      // 0x0001(0x0010) UNKNOWN PROPERTY: ArrayProperty ShadowTrackerExtra.SkillReplaceJumpAnimData.JumpAnimList
 	unsigned char                                      UnknownData02[0x10];                                      // 0x0018(0x0010) UNKNOWN PROPERTY: ArrayProperty ShadowTrackerExtra.SkillReplaceJumpAnimData.FPPJumpAnimList
@@ -21344,7 +21704,7 @@ struct FUIElemLayoutSimple
 // 0x0030
 struct FMonsterAnimPhaseData
 {
-	TEnumAsByte<enum EMonsterPoseType>                 PosType;                                                  // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EMonsterPoseType>                      PosType;                                                  // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	unsigned char                                      UnknownData01[0x28];                                      // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.MonsterAnimPhaseData.PhaseAnimSoftPtr
 };
@@ -21353,7 +21713,7 @@ struct FMonsterAnimPhaseData
 // 0x0001
 struct FMonsterAsyncloadAnimParams
 {
-	TEnumAsByte<enum EMonsterPoseType>                 PosType;                                                  // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMonsterPoseType>                      PosType;                                                  // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.PVELinkLevelData
@@ -21385,7 +21745,7 @@ struct FUTSkillPicker_BoxCreateData
 	bool                                               bIgnoreInSmoke;                                           // 0x003E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bSortByAngle;                                             // 0x003F(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	TArray<class UClass*>                              IgnoredActors;                                            // 0x0040(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<enum ECollisionChannel>                ClientCollisionChannel;                                   // 0x0050(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     ClientCollisionChannel;                                   // 0x0050(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bForwardHitAim;                                           // 0x0051(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bDoubleSideQuery;                                         // 0x0052(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x5];                                       // 0x0053(0x0005) MISSED OFFSET
@@ -21437,7 +21797,7 @@ struct FUTSkillPicker_FanCreateData
 	bool                                               bSortByAngle;                                             // 0x004B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x004C(0x0004) MISSED OFFSET
 	TArray<class UClass*>                              IgnoredActors;                                            // 0x0050(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<enum ECollisionChannel>                ClientCollisionChannel;                                   // 0x0060(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     ClientCollisionChannel;                                   // 0x0060(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bForwardHitAim;                                           // 0x0061(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bDoubleSideQuery;                                         // 0x0062(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x5];                                       // 0x0063(0x0005) MISSED OFFSET
@@ -21655,6 +22015,15 @@ struct FBackupVehicleShapeAnimAssets
 	TMap<struct FName, struct FBackupSeatAnimAssets>   BackupAssetsBySeatTag;                                    // 0x0000(0x0050) (Edit, ZeroConstructor, DisableEditOnInstance)
 };
 
+// ScriptStruct ShadowTrackerExtra.ExtraDriveData
+// 0x0008
+struct FExtraDriveData
+{
+	bool                                               bFuelEcoMode;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	float                                              ShieldResistance;                                         // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+};
+
 // ScriptStruct ShadowTrackerExtra.VehicleBoneHp
 // 0x0010
 struct FVehicleBoneHp
@@ -21717,7 +22086,7 @@ struct FVehicleCustomImpulseFilter
 	float                                              ImpulseStrength;                                          // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              RadialImpulseStrength;                                    // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              ImpulseRadius;                                            // 0x001C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ERadialImpulseFalloff>            ImpulseFalloffType;                                       // 0x0020(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERadialImpulseFalloff>                 ImpulseFalloffType;                                       // 0x0020(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
 };
 
@@ -21753,7 +22122,7 @@ struct FVehicleHitCharacterInReplay
 // 0x0028
 struct FSTVehicleWheelDust
 {
-	TEnumAsByte<enum EPhysicalSurface>                 ContactSurface;                                           // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      ContactSurface;                                           // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class UParticleSystem*                             MoveFx;                                                   // 0x0008(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	class UParticleSystem*                             SlipFx;                                                   // 0x0010(0x0008) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -21778,7 +22147,7 @@ struct FSTVehicleSingleWheelFx
 // 0x0018
 struct FSTVehicleSlipWheelDust
 {
-	TEnumAsByte<enum EPhysicalSurface>                 ContactSurface;                                           // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      ContactSurface;                                           // 0x0000(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	TArray<struct FSTVehicleSingleWheelFx>             WheelFx;                                                  // 0x0008(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
 };
@@ -21814,11 +22183,13 @@ struct FUGCTankEnemyEffectSwitcher
 };
 
 // ScriptStruct ShadowTrackerExtra.VehicleHitCharacterTriggerSetup
-// 0x0010
+// 0x0018
 struct FVehicleHitCharacterTriggerSetup
 {
 	struct FName                                       CollisionProfileName;                                     // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	struct FName                                       Tag;                                                      // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bGenerateEvents;                                          // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.LicenseStruct
@@ -21970,7 +22341,7 @@ struct FLeaveVehicleProtectionSetup
 {
 	bool                                               bEnabled;                                                 // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
-	TArray<TEnumAsByte<enum EObjectTypeQuery>>         ObjectTypes;                                              // 0x0008(0x0010) (Edit, ZeroConstructor)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // 0x0008(0x0010) (Edit, ZeroConstructor)
 	float                                              CheckInterval;                                            // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              LastCheckedTime;                                          // 0x001C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
 };
@@ -22029,7 +22400,7 @@ struct FVehicleReplayRecordData
 struct FDriverSwitchWeapnStruct
 {
 	int                                                mType;                                                    // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           mWeaponSlot;                                              // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                mWeaponSlot;                                              // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
 	int                                                mGrenadeID;                                               // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
@@ -22102,7 +22473,8 @@ struct FVehicleNetHit4W
 	class AActor*                                      OtherActor;                                               // 0x0000(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 	struct FVector                                     Impulse;                                                  // 0x0008(0x000C) (Transient, IsPlainOldData)
 	struct FVector                                     ImpactPoint;                                              // 0x0014(0x000C) (Transient, IsPlainOldData)
-	struct FRigidVehicleMovement                       Movement;                                                 // 0x0020(0x0038) (Transient)
+	struct FRigidVehicleMovement                       Movement;                                                 // 0x0020(0x0034) (Transient)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.NetAircraftMovementState
@@ -22294,12 +22666,12 @@ struct FGuidActorsArray
 };
 
 // ScriptStruct ShadowTrackerExtra.AutoAimEnemyInfo
-// 0x0020
+// 0x0028
 struct FAutoAimEnemyInfo
 {
 	class ASTExtraPlayerCharacter*                     EnemyPawn;                                                // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0008(0x0010) MISSED OFFSET
-	struct FName                                       BoneName;                                                 // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0008(0x0018) MISSED OFFSET
+	struct FName                                       BoneName;                                                 // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.HandleMeshPack
@@ -22316,6 +22688,13 @@ struct FDIYEnableLevel
 {
 	int                                                DeviceLevel;                                              // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
 	int                                                EnableLevel;                                              // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct ShadowTrackerExtra.ObjectListWrapper
+// 0x0010
+struct FObjectListWrapper
+{
+	TArray<class UObject*>                             Objects;                                                  // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.MuzzleOffsetData
@@ -22387,7 +22766,7 @@ struct FShootWeaponReplayRecordData
 };
 
 // ScriptStruct ShadowTrackerExtra.WeaponAttrReloadTableStruct
-// 0x03F0
+// 0x0408
 struct FWeaponAttrReloadTableStruct
 {
 	int                                                KeyID;                                                    // 0x0000(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
@@ -22488,67 +22867,70 @@ struct FWeaponAttrReloadTableStruct
 	float                                              RangeModifier;                                            // 0x01A0(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              ReferenceDistance;                                        // 0x01A4(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              IgnoreRangeAttenuatDis;                                   // 0x01A8(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              ReloadTime;                                               // 0x01AC(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              ReloadTimeTactical;                                       // 0x01B0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              ReloadTimeMagOut;                                         // 0x01B4(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              ReloadTimeMagIn;                                          // 0x01B8(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              ReloadDurationStart;                                      // 0x01BC(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              ReloadDurationLoop;                                       // 0x01C0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              MaxBulletNumInOneClip;                                    // 0x01C4(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              InitBulletInClip;                                         // 0x01C8(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              BulletFireSpeed;                                          // 0x01CC(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              ImpactEffectSkipDistance;                                 // 0x01D0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              MaxImpactEffectSkipTime;                                  // 0x01D4(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	int                                                bEnableVehicleShoot;                                      // 0x01D8(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                bEnableLeanOutHolding;                                    // 0x01DC(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Bullet_RadialDamageParams_BaseDamage;                     // 0x01E0(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Bullet_RadialDamageParams_MinimumDamage;                  // 0x01E4(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Bullet_RadialDamageParams_DamageInnerRadius;              // 0x01E8(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Bullet_RadialDamageParams_DamageOuterRadius;              // 0x01EC(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Bullet_RadialDamageParams_DamageFalloff;                  // 0x01F0(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Bullet_MaxNoGravityRange;                                 // 0x01F4(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              Bullet_LaunchGravityScale;                                // 0x01F8(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x01FC(0x0004) MISSED OFFSET
-	struct FString                                     Bullet_RadialDamageParams_DamageTypeClass;                // 0x0200(0x0010) (ZeroConstructor)
-	struct FString                                     ImpactActorTemplatePath;                                  // 0x0210(0x0010) (ZeroConstructor)
-	struct FString                                     BulletTemplatePath;                                       // 0x0220(0x0010) (ZeroConstructor)
-	int                                                ReloadWithNoCost;                                         // 0x0230(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x0234(0x0004) MISSED OFFSET
-	struct FString                                     MuzzleFX;                                                 // 0x0238(0x0010) (ZeroConstructor)
-	struct FString                                     ScopeMuzzleFX;                                            // 0x0248(0x0010) (ZeroConstructor)
-	struct FString                                     RemoteMuzzleFX;                                           // 0x0258(0x0010) (ZeroConstructor)
-	struct FString                                     LocalSilencerMuzzleFX;                                    // 0x0268(0x0010) (ZeroConstructor)
-	struct FString                                     ScopeSilencerMuzzleFX;                                    // 0x0278(0x0010) (ZeroConstructor)
-	struct FString                                     RemoteSilencerMuzzleFX;                                   // 0x0288(0x0010) (ZeroConstructor)
-	struct FString                                     LocalFiringSuppressorMuzzleFX;                            // 0x0298(0x0010) (ZeroConstructor)
-	struct FString                                     ScopeFiringSuppressorMuzzleFX;                            // 0x02A8(0x0010) (ZeroConstructor)
-	struct FString                                     RemoteFiringSuppressorMuzzleFX;                           // 0x02B8(0x0010) (ZeroConstructor)
-	struct FString                                     LocalCompensatorMuzzleFX;                                 // 0x02C8(0x0010) (ZeroConstructor)
-	struct FString                                     ScopeCompensatorMuzzleFX;                                 // 0x02D8(0x0010) (ZeroConstructor)
-	struct FString                                     RemoteCompensatorMuzzleFX;                                // 0x02E8(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_AutonomousFPPFX;                                   // 0x02F8(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_AutonomousTPPFX;                                   // 0x0308(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_AutonomousGunADSFX;                                // 0x0318(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_OBFPPFX;                                           // 0x0328(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_OBTPPFX;                                           // 0x0338(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_OBGunADSFX;                                        // 0x0348(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_ReplayFPPFX;                                       // 0x0358(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_ReplayTPPFX;                                       // 0x0368(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_ReplayGunADSFX;                                    // 0x0378(0x0010) (ZeroConstructor)
-	struct FString                                     Bullet_DefaultFX;                                         // 0x0388(0x0010) (ZeroConstructor)
-	int                                                bSimulateBulletOptimize;                                  // 0x0398(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                BulletTrackDistanceFix;                                   // 0x039C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                BulletLaunchRangeFromMuzzleMin;                           // 0x03A0(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                BulletLaunchRangeFromMuzzleMax;                           // 0x03A4(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                SimulateBulletLaunchRangeFromMuzzleMin;                   // 0x03A8(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                SimulateBulletLaunchRangeFromMuzzleMax;                   // 0x03AC(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              AnimationKick;                                            // 0x03B0(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              VehicleDamageScale;                                       // 0x03B4(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                WeaponDurability;                                         // 0x03B8(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                ShootReduceDurabilityAmount;                              // 0x03BC(0x0004) (ZeroConstructor, IsPlainOldData)
-	struct FString                                     CameraShakeNormalPath;                                    // 0x03C0(0x0010) (ZeroConstructor)
-	struct FString                                     CameraShakeNearPath;                                      // 0x03D0(0x0010) (ZeroConstructor)
-	struct FString                                     CameraShakeAimPath;                                       // 0x03E0(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x01AC(0x0004) MISSED OFFSET
+	struct FString                                     BaseDamageDistanceCurve;                                  // 0x01B0(0x0010) (ZeroConstructor)
+	float                                              ReloadTime;                                               // 0x01C0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              ReloadTimeTactical;                                       // 0x01C4(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              ReloadTimeMagOut;                                         // 0x01C8(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              ReloadTimeMagIn;                                          // 0x01CC(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              ReloadDurationStart;                                      // 0x01D0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              ReloadDurationLoop;                                       // 0x01D4(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              MaxBulletNumInOneClip;                                    // 0x01D8(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              InitBulletInClip;                                         // 0x01DC(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              BulletFireSpeed;                                          // 0x01E0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              ImpactEffectSkipDistance;                                 // 0x01E4(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              MaxImpactEffectSkipTime;                                  // 0x01E8(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	int                                                bEnableVehicleShoot;                                      // 0x01EC(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                bEnableLeanOutHolding;                                    // 0x01F0(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Bullet_RadialDamageParams_BaseDamage;                     // 0x01F4(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Bullet_RadialDamageParams_MinimumDamage;                  // 0x01F8(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Bullet_RadialDamageParams_DamageInnerRadius;              // 0x01FC(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Bullet_RadialDamageParams_DamageOuterRadius;              // 0x0200(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Bullet_RadialDamageParams_DamageFalloff;                  // 0x0204(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Bullet_MaxNoGravityRange;                                 // 0x0208(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              Bullet_LaunchGravityScale;                                // 0x020C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              ShootInterval;                                            // 0x0210(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x0214(0x0004) MISSED OFFSET
+	struct FString                                     Bullet_RadialDamageParams_DamageTypeClass;                // 0x0218(0x0010) (ZeroConstructor)
+	struct FString                                     ImpactActorTemplatePath;                                  // 0x0228(0x0010) (ZeroConstructor)
+	struct FString                                     BulletTemplatePath;                                       // 0x0238(0x0010) (ZeroConstructor)
+	int                                                ReloadWithNoCost;                                         // 0x0248(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x024C(0x0004) MISSED OFFSET
+	struct FString                                     MuzzleFX;                                                 // 0x0250(0x0010) (ZeroConstructor)
+	struct FString                                     ScopeMuzzleFX;                                            // 0x0260(0x0010) (ZeroConstructor)
+	struct FString                                     RemoteMuzzleFX;                                           // 0x0270(0x0010) (ZeroConstructor)
+	struct FString                                     LocalSilencerMuzzleFX;                                    // 0x0280(0x0010) (ZeroConstructor)
+	struct FString                                     ScopeSilencerMuzzleFX;                                    // 0x0290(0x0010) (ZeroConstructor)
+	struct FString                                     RemoteSilencerMuzzleFX;                                   // 0x02A0(0x0010) (ZeroConstructor)
+	struct FString                                     LocalFiringSuppressorMuzzleFX;                            // 0x02B0(0x0010) (ZeroConstructor)
+	struct FString                                     ScopeFiringSuppressorMuzzleFX;                            // 0x02C0(0x0010) (ZeroConstructor)
+	struct FString                                     RemoteFiringSuppressorMuzzleFX;                           // 0x02D0(0x0010) (ZeroConstructor)
+	struct FString                                     LocalCompensatorMuzzleFX;                                 // 0x02E0(0x0010) (ZeroConstructor)
+	struct FString                                     ScopeCompensatorMuzzleFX;                                 // 0x02F0(0x0010) (ZeroConstructor)
+	struct FString                                     RemoteCompensatorMuzzleFX;                                // 0x0300(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_AutonomousFPPFX;                                   // 0x0310(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_AutonomousTPPFX;                                   // 0x0320(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_AutonomousGunADSFX;                                // 0x0330(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_OBFPPFX;                                           // 0x0340(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_OBTPPFX;                                           // 0x0350(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_OBGunADSFX;                                        // 0x0360(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_ReplayFPPFX;                                       // 0x0370(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_ReplayTPPFX;                                       // 0x0380(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_ReplayGunADSFX;                                    // 0x0390(0x0010) (ZeroConstructor)
+	struct FString                                     Bullet_DefaultFX;                                         // 0x03A0(0x0010) (ZeroConstructor)
+	int                                                bSimulateBulletOptimize;                                  // 0x03B0(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                BulletTrackDistanceFix;                                   // 0x03B4(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                BulletLaunchRangeFromMuzzleMin;                           // 0x03B8(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                BulletLaunchRangeFromMuzzleMax;                           // 0x03BC(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                SimulateBulletLaunchRangeFromMuzzleMin;                   // 0x03C0(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                SimulateBulletLaunchRangeFromMuzzleMax;                   // 0x03C4(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              AnimationKick;                                            // 0x03C8(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              VehicleDamageScale;                                       // 0x03CC(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                WeaponDurability;                                         // 0x03D0(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                ShootReduceDurabilityAmount;                              // 0x03D4(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FString                                     CameraShakeNormalPath;                                    // 0x03D8(0x0010) (ZeroConstructor)
+	struct FString                                     CameraShakeNearPath;                                      // 0x03E8(0x0010) (ZeroConstructor)
+	struct FString                                     CameraShakeAimPath;                                       // 0x03F8(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct ShadowTrackerExtra.WarmAttrModifyCell
@@ -22610,7 +22992,7 @@ struct FWonderfulCutOutputData
 {
 	float                                              BeginTimeSecs;                                            // 0x0000(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	float                                              EndTimeSecs;                                              // 0x0004(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
-	TEnumAsByte<enum EWonderfulCutOutputType>          WonderfulCutType;                                         // 0x0008(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
+	TEnumAsByte<EWonderfulCutOutputType>               WonderfulCutType;                                         // 0x0008(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
 	float                                              ShootDistance;                                            // 0x000C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData)
 	struct FString                                     causerName;                                               // 0x0010(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst)
@@ -22631,8 +23013,8 @@ struct FWonderfulCutContinuousKillOutputData
 struct FWonderfulCut_OneShootDamage
 {
 	bool                                               bVictimAI;                                                // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWonderfulCutCaptureType>         CaptureType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWonderfulCutShootDamageType>     ShootDamageType;                                          // 0x0002(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWonderfulCutCaptureType>              CaptureType;                                              // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWonderfulCutShootDamageType>          ShootDamageType;                                          // 0x0002(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x1];                                       // 0x0003(0x0001) MISSED OFFSET
 	float                                              DamageTimeSecs;                                           // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              ShootDistance;                                            // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -22656,8 +23038,8 @@ struct FWonderfulCutShootDamageSortData
 	float                                              DamageIntervalSecs;                                       // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
 	float                                              DamageTimeSecs;                                           // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 	bool                                               bVictimAI;                                                // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWonderfulCutCaptureType>         CaptureType;                                              // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWonderfulCutShootDamageType>     ShootDamageType;                                          // 0x000A(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWonderfulCutCaptureType>              CaptureType;                                              // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWonderfulCutShootDamageType>          ShootDamageType;                                          // 0x000A(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x1];                                       // 0x000B(0x0001) MISSED OFFSET
 	float                                              ShootDistance;                                            // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData)
 	struct FString                                     causerName;                                               // 0x0010(0x0010) (ZeroConstructor)
@@ -22682,7 +23064,7 @@ struct FWorldActorFlagList
 // 0x0038
 struct FKilledTipsBlock
 {
-	TEnumAsByte<enum EDamageType>                      DamageType;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDamageType>                           DamageType;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     attackerName;                                             // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	struct FString                                     WeaponName;                                               // 0x0018(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
@@ -22768,7 +23150,7 @@ struct FAIAttributeTableRow
 // 0x0048
 struct FEnemyInfo
 {
-	TEnumAsByte<enum EEnemyType>                       EnemyType;                                                // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEnemyType>                            EnemyType;                                                // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FName                                       Tag;                                                      // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	float                                              MemoryTime;                                               // 0x0010(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
@@ -22968,16 +23350,15 @@ struct FAvatarAction_ApplyVehicleDIYPattern : public FAvatarActionBase
 };
 
 // ScriptStruct ShadowTrackerExtra.AvatarAction_ApplyWeaponHandle
-// 0x00E8 (0x0118 - 0x0030)
+// 0x0098 (0x00C8 - 0x0030)
 struct FAvatarAction_ApplyWeaponHandle : public FAvatarAction_ApplyItemHandle
 {
 	TMap<EWeaponMeshType, struct FMeshAsset>           CachedMeshAssets;                                         // 0x0030(0x0050) (ZeroConstructor)
 	EWeaponMeshType                                    CurMeshType;                                              // 0x0080(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0081(0x0007) MISSED OFFSET
-	TMap<struct FSoftObjectPath, class UObject*>       CachedMeshes;                                             // 0x0088(0x0050) (ZeroConstructor)
-	TArray<struct FMaterialAsset>                      CachedMatAsset;                                           // 0x00D8(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData01[0x28];                                      // 0x00E8(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.AvatarAction_ApplyWeaponHandle.CachedLightAsset
-	unsigned char                                      UnknownData02[0x8];                                       // 0x0110(0x0008) MISSED OFFSET
+	TArray<struct FMaterialAsset>                      CachedMatAsset;                                           // 0x0088(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData01[0x28];                                      // 0x0098(0x0028) UNKNOWN PROPERTY: SoftObjectProperty ShadowTrackerExtra.AvatarAction_ApplyWeaponHandle.CachedLightAsset
+	unsigned char                                      UnknownData02[0x8];                                       // 0x00C0(0x0008) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.AvatarAction_SampleCurveToMPC
@@ -23057,7 +23438,7 @@ struct FSuitDIYColorInfo
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                SuitID;                                                   // 0x0004(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                PlanID;                                                   // 0x0008(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
+	int                                                OriginPlanID;                                             // 0x000C(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	TArray<int>                                        PartColorList;                                            // 0x0010(0x0010) (BlueprintVisible, ZeroConstructor)
 };
 
@@ -23784,7 +24165,7 @@ struct FLuaBattleGoodsInfo
 // 0x0038
 struct FCurrencyInfo
 {
-	TEnumAsByte<enum ECurrencyType>                    Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECurrencyType>                         Type;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     Name;                                                     // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 	struct FString                                     Icon;                                                     // 0x0018(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
@@ -23945,6 +24326,19 @@ struct FMapMarksUpdateInfo
 	float                                              Opacity;                                                  // 0x0014(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
+// ScriptStruct ShadowTrackerExtra.MapMarkTempInfo
+// 0x0020
+struct FMapMarkTempInfo
+{
+	int                                                InstanceID;                                               // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FVector                                     WorldPos;                                                 // 0x0004(0x000C) (IsPlainOldData)
+	TWeakObjectPtr<class AActor>                       BindingActor;                                             // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData)
+	bool                                               bIsBindActor;                                             // 0x0018(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bCanHighlight;                                            // 0x0019(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x001A(0x0002) MISSED OFFSET
+	float                                              CustomSize;                                               // 0x001C(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
 // ScriptStruct ShadowTrackerExtra.MarkActorInstInfo
 // 0x0004
 struct FMarkActorInstInfo
@@ -23956,7 +24350,7 @@ struct FMarkActorInstInfo
 // 0x0010
 struct FSingleMarkInfo
 {
-	TEnumAsByte<enum EUIMarkState>                     MarkState;                                                // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUIMarkState>                          MarkState;                                                // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class UMapUIMarkBaseWidget*                        pWidget;                                                  // 0x0008(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
@@ -24003,7 +24397,7 @@ struct FWeaponAttachmentSlot
 // 0x0008
 struct FSwitchWeaponReplicatedToOwnerData
 {
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           Slot;                                                     // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                Slot;                                                     // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                OperationIndex;                                           // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
 };
@@ -24048,7 +24442,7 @@ struct FSRangeAttenuateConfig
 struct FWeaponNotifyActionData
 {
 	int                                                OperationIndex;                                           // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWeaponAction>                    Action;                                                   // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponAction>                         Action;                                                   // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
 };
 
@@ -24073,7 +24467,7 @@ struct FParticleDistance
 // 0x0038
 struct FPenetrateSurfaceResult
 {
-	TEnumAsByte<enum EPhysicalSurface>                 SurfaceType;                                              // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EPhysicalSurface>                      SurfaceType;                                              // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	struct FVector                                     InPoint;                                                  // 0x0004(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
 	struct FVector                                     OutPoint;                                                 // 0x0010(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
@@ -24119,7 +24513,7 @@ struct FPickupWrapperInfo
 };
 
 // ScriptStruct ShadowTrackerExtra.CharacterTakeDamageResult
-// 0x0160
+// 0x0168
 struct FCharacterTakeDamageResult
 {
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
@@ -24134,28 +24528,30 @@ struct FCharacterTakeDamageResult
 	unsigned char                                      UnknownData02[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
 	uint64_t                                           VictimLastStates;                                         // 0x0040(0x0008) (ZeroConstructor, IsPlainOldData)
 	float                                              VictimLastHealth;                                         // 0x0048(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              VictimLastMoveSpeed;                                      // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
-	class ASTExtraCharacter*                           AttackerCharacter;                                        // 0x0050(0x0008) (ZeroConstructor, IsPlainOldData)
-	class ASTExtraBaseCharacter*                       AttackerBaseCharacter;                                    // 0x0058(0x0008) (ZeroConstructor, IsPlainOldData)
-	class AController*                                 AttackController;                                         // 0x0060(0x0008) (ZeroConstructor, IsPlainOldData)
-	class ASTExtraPlayerController*                    AttackerPC;                                               // 0x0068(0x0008) (ZeroConstructor, IsPlainOldData)
-	class ASTExtraPlayerState*                         AttackerPlayerState;                                      // 0x0070(0x0008) (ZeroConstructor, IsPlainOldData)
-	bool                                               AttackerIsTeammate;                                       // 0x0078(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x0079(0x0003) MISSED OFFSET
-	float                                              DamageValue[0xD];                                         // 0x007C(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                ExtractDamageType;                                        // 0x00B0(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                DamageItemID;                                             // 0x00B4(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               bHeadShoot;                                               // 0x00B8(0x0001) (ZeroConstructor, IsPlainOldData)
-	EAvatarDamagePosition                              DamageHitPos;                                             // 0x00B9(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x2];                                       // 0x00BA(0x0002) MISSED OFFSET
-	struct FVector                                     HitImpulseDir;                                            // 0x00BC(0x000C) (IsPlainOldData)
-	struct FHitResult                                  HitInfo;                                                  // 0x00C8(0x0088) (IsPlainOldData)
-	float                                              ConsumeHp;                                                // 0x0150(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                ConsumeDamageRet;                                         // 0x0154(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               IsMakeDeath;                                              // 0x0158(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               IsMakeDying;                                              // 0x0159(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x2];                                       // 0x015A(0x0002) MISSED OFFSET
-	int                                                HSChangeMargin;                                           // 0x015C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              VictimLastBreath;                                         // 0x004C(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              VictimLastMoveSpeed;                                      // 0x0050(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
+	class ASTExtraCharacter*                           AttackerCharacter;                                        // 0x0058(0x0008) (ZeroConstructor, IsPlainOldData)
+	class ASTExtraBaseCharacter*                       AttackerBaseCharacter;                                    // 0x0060(0x0008) (ZeroConstructor, IsPlainOldData)
+	class AController*                                 AttackController;                                         // 0x0068(0x0008) (ZeroConstructor, IsPlainOldData)
+	class ASTExtraPlayerController*                    AttackerPC;                                               // 0x0070(0x0008) (ZeroConstructor, IsPlainOldData)
+	class ASTExtraPlayerState*                         AttackerPlayerState;                                      // 0x0078(0x0008) (ZeroConstructor, IsPlainOldData)
+	bool                                               AttackerIsTeammate;                                       // 0x0080(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x0081(0x0003) MISSED OFFSET
+	float                                              DamageValue[0xD];                                         // 0x0084(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                ExtractDamageType;                                        // 0x00B8(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                DamageItemID;                                             // 0x00BC(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               bHeadShoot;                                               // 0x00C0(0x0001) (ZeroConstructor, IsPlainOldData)
+	EAvatarDamagePosition                              DamageHitPos;                                             // 0x00C1(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x2];                                       // 0x00C2(0x0002) MISSED OFFSET
+	struct FVector                                     HitImpulseDir;                                            // 0x00C4(0x000C) (IsPlainOldData)
+	struct FHitResult                                  HitInfo;                                                  // 0x00D0(0x0088) (IsPlainOldData)
+	float                                              ConsumeHp;                                                // 0x0158(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                ConsumeDamageRet;                                         // 0x015C(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               IsMakeDeath;                                              // 0x0160(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               IsMakeDying;                                              // 0x0161(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData06[0x2];                                       // 0x0162(0x0002) MISSED OFFSET
+	int                                                HSChangeMargin;                                           // 0x0164(0x0004) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.ExtractDamageParam
@@ -24378,7 +24774,7 @@ struct FPickUpActionReplicatedDataBroadcast
 {
 	int                                                ActionID;                                                 // 0x0000(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	int                                                TargetPickUpItemID;                                       // 0x0004(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EHandlePickUpActionReplicatedDataActionType> ActionType;                                               // 0x0008(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHandlePickUpActionReplicatedDataActionType> ActionType;                                               // 0x0008(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
 };
 
@@ -24390,7 +24786,7 @@ struct FPickUpActionReplicatedData
 	int                                                TargetPickUpItemID;                                       // 0x0004(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	class AActor*                                      ServerTargetActor;                                        // 0x0008(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	class AActor*                                      WrapperActor;                                             // 0x0010(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EHandlePickUpActionReplicatedDataActionType> ActionType;                                               // 0x0018(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHandlePickUpActionReplicatedDataActionType> ActionType;                                               // 0x0018(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0019(0x0007) MISSED OFFSET
 };
 
@@ -24406,7 +24802,7 @@ struct FSurviveTableRowBase : public FTableRowBase
 // 0x01A0 (0x01B0 - 0x0010)
 struct FPickUpGlobalDataTableRow : public FSurviveTableRowBase
 {
-	TEnumAsByte<enum ESurvivePickUpGlobalCategory>     SurvivePickUpGlobalCategory;                              // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurvivePickUpGlobalCategory>          SurvivePickUpGlobalCategory;                              // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 	struct FSlateBrush                                 SmallProfileImage;                                        // 0x0018(0x00B8) (Edit, BlueprintVisible)
 	struct FSlateBrush                                 LargerProfileImage;                                       // 0x00D0(0x00B8) (Edit, BlueprintVisible)
@@ -24421,7 +24817,7 @@ struct FPickUpGlobalDataTableRow : public FSurviveTableRowBase
 struct FWeaponComponentDataTableRow : public FSurviveTableRowBase
 {
 	int                                                WeaponComponentID;                                        // 0x0010(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EWeaponComponentType>             Type;                                                     // 0x0014(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EWeaponComponentType>                  Type;                                                     // 0x0014(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
 	class UStaticMesh*                                 ShowMesh;                                                 // 0x0018(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 };
@@ -24439,7 +24835,7 @@ struct FWeaponComponentItemData
 struct FPlayerEquipmentDataTableRow : public FSurviveTableRowBase
 {
 	int                                                PlayerEquipmentID;                                        // 0x0010(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EPlayerEquipmentSlotType>         Type;                                                     // 0x0014(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EPlayerEquipmentSlotType>              Type;                                                     // 0x0014(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
 	float                                              DamageMultiplyAdditionalRate;                             // 0x0018(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	bool                                               bIsAvata;                                                 // 0x001C(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
@@ -24461,7 +24857,7 @@ struct FWeaponDataTableRow : public FSurviveTableRowBase
 	int                                                WeaponId;                                                 // 0x0010(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0014(0x0004) MISSED OFFSET
 	class UClass*                                      WeaponTemplate;                                           // 0x0018(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESurvivePickUpCategory>           SurvivePickUpCategory;                                    // 0x0020(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurvivePickUpCategory>                SurvivePickUpCategory;                                    // 0x0020(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
 };
 
@@ -24478,7 +24874,7 @@ struct FMainSlotItemData
 // 0x0001
 struct FUseBackpackItemParams
 {
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           TargetEquipWeaponComponentMainSlot;                       // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                TargetEquipWeaponComponentMainSlot;                       // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.BackpackItemData
@@ -24491,7 +24887,7 @@ struct FBackpackItemData
 	bool                                               bIsUsing;                                                 // 0x01B8(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x01B9(0x0003) MISSED OFFSET
 	float                                              FinishPercentage;                                         // 0x01BC(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESurvivePickUpGlobalCategory>     SurvivePickUpGlobalCategory;                              // 0x01C0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurvivePickUpGlobalCategory>          SurvivePickUpGlobalCategory;                              // 0x01C0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x7];                                       // 0x01C1(0x0007) MISSED OFFSET
 };
 
@@ -24509,7 +24905,7 @@ struct FReplayPawnInfo
 // 0x0018
 struct FReplayPreInfo
 {
-	TEnumAsByte<enum EDemoType>                        ReplayType;                                               // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EDemoType>                             ReplayType;                                               // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	struct FString                                     ReplayNameStr;                                            // 0x0008(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
 };
@@ -24569,7 +24965,7 @@ struct FTraceShootData
 	struct FRotator                                    ShootRotate;                                              // 0x0004(0x000C) (IsPlainOldData)
 	struct FVector                                     TraceStart;                                               // 0x0010(0x000C) (IsPlainOldData)
 	struct FVector                                     TraceEnd;                                                 // 0x001C(0x000C) (IsPlainOldData)
-	TEnumAsByte<enum ETraceShootType>                  ShootMode;                                                // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETraceShootType>                       ShootMode;                                                // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
 	struct FVector                                     ShootTargetLoc;                                           // 0x002C(0x000C) (IsPlainOldData)
 	float                                              Deviation;                                                // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -24646,8 +25042,8 @@ struct FSkirtChainData
 // 0x001C
 struct FSkirtBoneModifyData
 {
-	TEnumAsByte<enum EBoneModificationMode>            TranslationMode;                                          // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EBoneModificationMode>            RotationMode;                                             // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 TranslationMode;                                          // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EBoneModificationMode>                 RotationMode;                                             // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x2];                                       // 0x0002(0x0002) MISSED OFFSET
 	struct FVector                                     Translation;                                              // 0x0004(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // 0x0010(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
@@ -24782,7 +25178,7 @@ struct FEmoteData
 // 0x00D8
 struct FClientLeftUIInfoRecordData
 {
-	TEnumAsByte<enum ELeftUIInfoRecordType>            RecordType;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELeftUIInfoRecordType>                 RecordType;                                               // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                PhaseMark;                                                // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FClientFatalDamageRecordData                DamageInfo;                                               // 0x0008(0x00D0) (Edit, BlueprintVisible)
@@ -24982,7 +25378,7 @@ struct FMonsterSpawnInfo
 	int                                                PosRadius;                                                // 0x0038(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
 	TArray<struct FRoadPointInfo>                      RoadPoints;                                               // 0x0040(0x0010) (BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<enum EMonsterSpawnSourceType>          SourceType;                                               // 0x0050(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMonsterSpawnSourceType>               SourceType;                                               // 0x0050(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
 	class APawn*                                       CallPawn;                                                 // 0x0058(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	uint32_t                                           CallPawnKey;                                              // 0x0060(0x0004) (ZeroConstructor, IsPlainOldData)
@@ -25124,8 +25520,8 @@ struct FAnimUpdateRateParamDebugOptions
 // 0x0002
 struct FSkillEventTypes
 {
-	TEnumAsByte<enum EUAESkillEvent>                   UAESkillEventType;                                        // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EUTSkillEventType>                SkillEventType;                                           // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUAESkillEvent>                        UAESkillEventType;                                        // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EUTSkillEventType>                     SkillEventType;                                           // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct ShadowTrackerExtra.NewSkillTableRow
@@ -25218,7 +25614,7 @@ struct FAirdropPauseState
 };
 
 // ScriptStruct ShadowTrackerExtra.VehicleAnimInstanceProxyTank
-// 0x0000 (0x0590 - 0x0590)
+// 0x0000 (0x05E0 - 0x05E0)
 struct FVehicleAnimInstanceProxyTank : public FVehicleAnimInstanceProxy
 {
 
@@ -25240,6 +25636,17 @@ struct FVehicleFeatureEntry
 struct FVehicleFeatureData
 {
 	TArray<struct FVehicleFeatureEntry>                FeatureEntries;                                           // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor)
+};
+
+// ScriptStruct ShadowTrackerExtra.RigidVehicleNetHit
+// 0x0058
+struct FRigidVehicleNetHit
+{
+	class AActor*                                      OtherActor;                                               // 0x0000(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	struct FVector                                     Impulse;                                                  // 0x0008(0x000C) (Transient, IsPlainOldData)
+	struct FVector                                     ImpactPoint;                                              // 0x0014(0x000C) (Transient, IsPlainOldData)
+	struct FRigidVehicleMovement                       Movement;                                                 // 0x0020(0x0034) (Transient)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0054(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct ShadowTrackerExtra.VehicleHitInOneFrame

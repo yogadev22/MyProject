@@ -1,143 +1,143 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class MainCity.CarryBackMCAnimInstance
-// 0x0050 (0x0AF0 - 0x0AA0)
+// 0x0050 (0x0B40 - 0x0AF0)
 class UCarryBackMCAnimInstance : public UCharacterAnimStateBase
 {
 public:
-	class UBlendSpace*                                 BS_beCarryBackMove;                                       // 0x0AA0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	ECarryBackAnimState                                CurrentCarryBackState;                                    // 0x0AA8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0AA9(0x0007) MISSED OFFSET
-	float                                              CarryBackTimeAccumulator;                                 // 0x0AB0(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bCarryBackState;                                          // 0x0AB4(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bBeCarryBackState;                                        // 0x0AB5(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x0AB6(0x0002) MISSED OFFSET
-	int                                                SubStateID;                                               // 0x0AB8(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x0ABC(0x0004) MISSED OFFSET
-	class ASTExtraBaseCharacter*                       AttachParentCharacter;                                    // 0x0AC0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     AttachParentPawnMoveVelocity;                             // 0x0AC8(0x000C) (BlueprintVisible, IsPlainOldData)
-	struct FVector                                     PreAnimVelocity;                                          // 0x0AD4(0x000C) (BlueprintVisible, IsPlainOldData)
-	class USTExtraAnimInstanceBase*                    MainInstance;                                             // 0x0AE0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x0AE8(0x0008) MISSED OFFSET
+	class UBlendSpace*                                 BS_beCarryBackMove;                                       // 0x0AF0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	ECarryBackAnimState                                CurrentCarryBackState;                                    // 0x0AF8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0AF9(0x0007) MISSED OFFSET
+	float                                              CarryBackTimeAccumulator;                                 // 0x0B00(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bCarryBackState;                                          // 0x0B04(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bBeCarryBackState;                                        // 0x0B05(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0B06(0x0002) MISSED OFFSET
+	int                                                SubStateID;                                               // 0x0B08(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x0B0C(0x0004) MISSED OFFSET
+	class ASTExtraBaseCharacter*                       AttachParentCharacter;                                    // 0x0B10(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     AttachParentPawnMoveVelocity;                             // 0x0B18(0x000C) (BlueprintVisible, IsPlainOldData)
+	struct FVector                                     PreAnimVelocity;                                          // 0x0B24(0x000C) (BlueprintVisible, IsPlainOldData)
+	class USTExtraAnimInstanceBase*                    MainInstance;                                             // 0x0B30(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x8];                                       // 0x0B38(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.CarryBackMCAnimInstance");
 		return pStaticClass;
 	}
 
 
-	void HandlePlayerPoseChange(TEnumAsByte<enum ESTEPoseState> LastPose, TEnumAsByte<enum ESTEPoseState> NewPose);
+	void HandlePlayerPoseChange(TEnumAsByte<ESTEPoseState> LastPose, TEnumAsByte<ESTEPoseState> NewPose);
 };
 
 
 // Class MainCity.CharLocomotionMCAnimInstance
-// 0x0250 (0x0CF0 - 0x0AA0)
+// 0x0250 (0x0D40 - 0x0AF0)
 class UCharLocomotionMCAnimInstance : public UCharacterAnimStateBase
 {
 public:
-	class UBlendSpace*                                 BS_MovementCrouch;                                        // 0x0AA0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UBlendSpace*                                 BS_MovementProne;                                         // 0x0AA8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UBlendSpace*                                 BS_MovementStandDest;                                     // 0x0AB0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UBlendSpace*                                 BS_MovementCrouchDest;                                    // 0x0AB8(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UBlendSpace*                                 BS_MovementProneDest;                                     // 0x0AC0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_StandScopeBlend;                                       // 0x0AC8(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_CrouchScopeBlend;                                      // 0x0AD0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TMap<struct FName, float>                          MovementStand_SourceTransTime;                            // 0x0AD8(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	TMap<struct FName, float>                          MovementStand_DestTransTime;                              // 0x0B28(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	TMap<TEnumAsByte<enum ECustomMovmentMode>, float>  CustomMovement_BlendTime;                                 // 0x0B78(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	class UAnimSequence*                               AS_SwitchPose_StandToCrouch;                              // 0x0BC8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_StandToProne;                               // 0x0BD0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_CrouchToStand;                              // 0x0BD8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_CrouchToProne;                              // 0x0BE0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_ProneToStand;                               // 0x0BE8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_ProneToCrouch;                              // 0x0BF0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_StandToCrouchDest;                          // 0x0BF8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_StandToProneDest;                           // 0x0C00(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_CrouchToStandDest;                          // 0x0C08(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_CrouchToProneDest;                          // 0x0C10(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_ProneToStandDest;                           // 0x0C18(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               AS_SwitchPose_ProneToCrouchDest;                          // 0x0C20(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     moveVelocity;                                             // 0x0C28(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               PoseType;                                                 // 0x0C34(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EWeaponType>                      WeaponType;                                               // 0x0C35(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               InterruptCachePose;                                       // 0x0C36(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               RecoverCharPose;                                          // 0x0C37(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0C38(0x0008) MISSED OFFSET
-	bool                                               bIsOnVehicle;                                             // 0x0C40(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bScoping;                                                 // 0x0C41(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bIsMoving;                                                // 0x0C42(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bMovementChanged;                                         // 0x0C43(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x1];                                       // 0x0C44(0x0001) MISSED OFFSET
-	bool                                               bMovementChangedAndNotSwitchingPose;                      // 0x0C45(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x1];                                       // 0x0C46(0x0001) MISSED OFFSET
-	bool                                               bWithoutWeapon;                                           // 0x0C47(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bIsSwitchingPose;                                         // 0x0C48(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseInterruptPose;                                        // 0x0C49(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bEmptyToCrouch;                                           // 0x0C4A(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bEmptyToProne;                                            // 0x0C4B(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bEmptyToStand;                                            // 0x0C4C(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bStandToProne;                                            // 0x0C4D(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bStandToCrouchNotMove;                                    // 0x0C4E(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bStandToCrouchMove;                                       // 0x0C4F(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bStandTo_StandToProne;                                    // 0x0C50(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bStandTo_StandToCrouch;                                   // 0x0C51(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bCrouchToProne;                                           // 0x0C52(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bCrouchToStandNotMove;                                    // 0x0C53(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bCrouchToStandMove;                                       // 0x0C54(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bCrouchTo_CrouchToProne;                                  // 0x0C55(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bCrouchTo_CrouchToStand;                                  // 0x0C56(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bProneToStand;                                            // 0x0C57(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bProneToCrouch;                                           // 0x0C58(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bProneTo_ProneToCrouch;                                   // 0x0C59(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bProneTo_ProneToStand;                                    // 0x0C5A(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bProneToStand_ToStand;                                    // 0x0C5B(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bStandToProne_ToProne;                                    // 0x0C5C(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bCrouchToProne_ToProne;                                   // 0x0C5D(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bProneToCrouch_ToCrouch;                                  // 0x0C5E(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x1];                                       // 0x0C5F(0x0001) MISSED OFFSET
-	float                                              StandSwitchToPronePoseAnimDuration;                       // 0x0C60(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              StandSwitchFromPronePoseAnimDuration;                     // 0x0C64(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              CrouchSwitchToPronePoseAnimDuration;                      // 0x0C68(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              CrouchSwitchFromPronePoseAnimDuration;                    // 0x0C6C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              StandSwitchToPronePoseAnimDelay;                          // 0x0C70(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              StandSwitchFromPronePoseAnimDelay;                        // 0x0C74(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              CrouchSwitchToPronePoseAnimDelay;                         // 0x0C78(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              CrouchSwitchFromPronePoseAnimDelay;                       // 0x0C7C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              MovementBlendTime;                                        // 0x0C80(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              SwitchPoseTransTime;                                      // 0x0C84(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              SwitchingPoseTimer;                                       // 0x0C88(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              SwitchingPoseTimerInternal;                               // 0x0C8C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              InterruptPoseInternal;                                    // 0x0C90(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              SwitchPoseAnimStartPosition;                              // 0x0C94(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              CustomMovementBlendTime;                                  // 0x0C98(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              ScopeVelocityInterpSpeed;                                 // 0x0C9C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              SprintToPronePlayRate;                                    // 0x0CA0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bCarryBackState;                                          // 0x0CA4(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x7];                                       // 0x0CA5(0x0007) MISSED OFFSET
-	float                                              CarryBackTimeAccumulator;                                 // 0x0CAC(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TArray<struct FCharacterViewPointConfig>           PoseStatusViewPointConfig;                                // 0x0CB0(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
-	unsigned char                                      UnknownData05[0x10];                                      // 0x0CC0(0x0010) MISSED OFFSET
-	float                                              LeaveStateTimerInternal;                                  // 0x0CD0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              GunSprintToProneDefaultPlayRate;                          // 0x0CD4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              CommonSprintToProneDefaultPlayRate;                       // 0x0CD8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x4];                                       // 0x0CDC(0x0004) MISSED OFFSET
-	struct FName                                       JumpProneBlendCurveName;                                  // 0x0CE0(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class USTExtraAnimInstanceBase*                    MainInstance;                                             // 0x0CE8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementCrouch;                                        // 0x0AF0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementProne;                                         // 0x0AF8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementStandDest;                                     // 0x0B00(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementCrouchDest;                                    // 0x0B08(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementProneDest;                                     // 0x0B10(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_StandScopeBlend;                                       // 0x0B18(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_CrouchScopeBlend;                                      // 0x0B20(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TMap<struct FName, float>                          MovementStand_SourceTransTime;                            // 0x0B28(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	TMap<struct FName, float>                          MovementStand_DestTransTime;                              // 0x0B78(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	TMap<TEnumAsByte<ECustomMovmentMode>, float>       CustomMovement_BlendTime;                                 // 0x0BC8(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	class UAnimSequence*                               AS_SwitchPose_StandToCrouch;                              // 0x0C18(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_StandToProne;                               // 0x0C20(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_CrouchToStand;                              // 0x0C28(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_CrouchToProne;                              // 0x0C30(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_ProneToStand;                               // 0x0C38(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_ProneToCrouch;                              // 0x0C40(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_StandToCrouchDest;                          // 0x0C48(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_StandToProneDest;                           // 0x0C50(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_CrouchToStandDest;                          // 0x0C58(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_CrouchToProneDest;                          // 0x0C60(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_ProneToStandDest;                           // 0x0C68(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               AS_SwitchPose_ProneToCrouchDest;                          // 0x0C70(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     moveVelocity;                                             // 0x0C78(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    PoseType;                                                 // 0x0C84(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWeaponType>                           WeaponType;                                               // 0x0C85(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    InterruptCachePose;                                       // 0x0C86(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    RecoverCharPose;                                          // 0x0C87(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0C88(0x0008) MISSED OFFSET
+	bool                                               bIsOnVehicle;                                             // 0x0C90(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bScoping;                                                 // 0x0C91(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsMoving;                                                // 0x0C92(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bMovementChanged;                                         // 0x0C93(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x1];                                       // 0x0C94(0x0001) MISSED OFFSET
+	bool                                               bMovementChangedAndNotSwitchingPose;                      // 0x0C95(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x1];                                       // 0x0C96(0x0001) MISSED OFFSET
+	bool                                               bWithoutWeapon;                                           // 0x0C97(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsSwitchingPose;                                         // 0x0C98(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseInterruptPose;                                        // 0x0C99(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bEmptyToCrouch;                                           // 0x0C9A(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bEmptyToProne;                                            // 0x0C9B(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bEmptyToStand;                                            // 0x0C9C(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bStandToProne;                                            // 0x0C9D(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bStandToCrouchNotMove;                                    // 0x0C9E(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bStandToCrouchMove;                                       // 0x0C9F(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bStandTo_StandToProne;                                    // 0x0CA0(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bStandTo_StandToCrouch;                                   // 0x0CA1(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bCrouchToProne;                                           // 0x0CA2(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bCrouchToStandNotMove;                                    // 0x0CA3(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bCrouchToStandMove;                                       // 0x0CA4(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bCrouchTo_CrouchToProne;                                  // 0x0CA5(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bCrouchTo_CrouchToStand;                                  // 0x0CA6(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bProneToStand;                                            // 0x0CA7(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bProneToCrouch;                                           // 0x0CA8(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bProneTo_ProneToCrouch;                                   // 0x0CA9(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bProneTo_ProneToStand;                                    // 0x0CAA(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bProneToStand_ToStand;                                    // 0x0CAB(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bStandToProne_ToProne;                                    // 0x0CAC(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bCrouchToProne_ToProne;                                   // 0x0CAD(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bProneToCrouch_ToCrouch;                                  // 0x0CAE(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x1];                                       // 0x0CAF(0x0001) MISSED OFFSET
+	float                                              StandSwitchToPronePoseAnimDuration;                       // 0x0CB0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              StandSwitchFromPronePoseAnimDuration;                     // 0x0CB4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              CrouchSwitchToPronePoseAnimDuration;                      // 0x0CB8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              CrouchSwitchFromPronePoseAnimDuration;                    // 0x0CBC(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              StandSwitchToPronePoseAnimDelay;                          // 0x0CC0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              StandSwitchFromPronePoseAnimDelay;                        // 0x0CC4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              CrouchSwitchToPronePoseAnimDelay;                         // 0x0CC8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              CrouchSwitchFromPronePoseAnimDelay;                       // 0x0CCC(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              MovementBlendTime;                                        // 0x0CD0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              SwitchPoseTransTime;                                      // 0x0CD4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              SwitchingPoseTimer;                                       // 0x0CD8(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              SwitchingPoseTimerInternal;                               // 0x0CDC(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              InterruptPoseInternal;                                    // 0x0CE0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              SwitchPoseAnimStartPosition;                              // 0x0CE4(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              CustomMovementBlendTime;                                  // 0x0CE8(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              ScopeVelocityInterpSpeed;                                 // 0x0CEC(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              SprintToPronePlayRate;                                    // 0x0CF0(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bCarryBackState;                                          // 0x0CF4(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x7];                                       // 0x0CF5(0x0007) MISSED OFFSET
+	float                                              CarryBackTimeAccumulator;                                 // 0x0CFC(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TArray<struct FCharacterViewPointConfig>           PoseStatusViewPointConfig;                                // 0x0D00(0x0010) (Edit, ZeroConstructor, DisableEditOnInstance)
+	unsigned char                                      UnknownData05[0x10];                                      // 0x0D10(0x0010) MISSED OFFSET
+	float                                              LeaveStateTimerInternal;                                  // 0x0D20(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              GunSprintToProneDefaultPlayRate;                          // 0x0D24(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              CommonSprintToProneDefaultPlayRate;                       // 0x0D28(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData06[0x4];                                       // 0x0D2C(0x0004) MISSED OFFSET
+	struct FName                                       JumpProneBlendCurveName;                                  // 0x0D30(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class USTExtraAnimInstanceBase*                    MainInstance;                                             // 0x0D38(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.CharLocomotionMCAnimInstance");
 		return pStaticClass;
@@ -146,80 +146,80 @@ public:
 
 	void SwitchingPoseFinishCallback();
 	void SetViewPointLimitByPoseStatus(ECharacterAnimBlendPoseType InPoseType, bool bEnter);
-	void SetInterruptPose(bool bUseInterruptPose, TEnumAsByte<enum ECharacterPoseType> InterruptPose);
+	void SetInterruptPose(bool bUseInterruptPose, TEnumAsByte<ECharacterPoseType> InterruptPose);
 	void LeaveStateCallback();
 	void HandleStateLeave(EPawnState LeaveState);
-	void HandlePlayerPoseChange(TEnumAsByte<enum ESTEPoseState> LastPose, TEnumAsByte<enum ESTEPoseState> NewPose);
+	void HandlePlayerPoseChange(TEnumAsByte<ESTEPoseState> LastPose, TEnumAsByte<ESTEPoseState> NewPose);
 };
 
 
 // Class MainCity.CharMainMCAnimInstance
-// 0x00E0 (0x0B80 - 0x0AA0)
+// 0x00E0 (0x0BD0 - 0x0AF0)
 class UCharMainMCAnimInstance : public UCharacterAnimStateBase
 {
 public:
-	class UAnimSequence*                               C_JumpStart;                                              // 0x0AA0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               C_LandLight;                                              // 0x0AA8(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UAnimSequence*                               C_LandHeavy;                                              // 0x0AB0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UBlendSpace1D*                               C_FallingBS;                                              // 0x0AB8(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseCustomBS;                                             // 0x0AC0(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0AC1(0x0007) MISSED OFFSET
-	class UAnimSequence*                               C_JumpCustom;                                             // 0x0AC8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UBlendSpace1D*                               C_FallingCustom;                                          // 0x0AD0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_Scoping;                                                // 0x0AD8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0AD9(0x0003) MISSED OFFSET
-	float                                              C_CharacterYawRotateRate;                                 // 0x0ADC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              C_CharacterYawRotateRate_Reverse;                         // 0x0AE0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              ScopeVelocityInterpSpeed;                                 // 0x0AE4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              b_WalkAdditiveAlpha;                                      // 0x0AE8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               b_UnarmedFallingToRifleFallLandingHard;                   // 0x0AEC(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               b_WalkToRifleJumpStationStart;                            // 0x0AED(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               C_IdleAddtiveValid;                                       // 0x0AEE(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               C_ShouldPauseAnim;                                        // 0x0AEF(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bWalkToJumpStart;                                         // 0x0AF0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               C_Move;                                                   // 0x0AF1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2];                                       // 0x0AF2(0x0002) MISSED OFFSET
-	struct FVector                                     C_MoveVelocity;                                           // 0x0AF4(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	float                                              f_C_MoveVelocityLengthSquard;                             // 0x0B00(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EWeaponType>                      C_WeaponType;                                             // 0x0B04(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               b_C_LastMovementMode_NEQ_Falling_OR_HoldGrenade;          // 0x0B05(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               b_WalkToUnarmedFalling;                                   // 0x0B06(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               b_UnarmedFallingToRifleCombatFallLanding;                 // 0x0B07(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              f_FallingVelocityZFactor;                                 // 0x0B08(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              MaxFallingVelocityThreshold;                              // 0x0B0C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              f_C_MoveVelocity_X_FallingZFactor;                        // 0x0B10(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              C_MaxFallingSpeed;                                        // 0x0B14(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               MovingOnGround;                                           // 0x0B18(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_MovingOnGroundAndMovbale;                               // 0x0B19(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterPoseType>               C_PoseType;                                               // 0x0B1A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    C_LastMovementMode;                                       // 0x0B1B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               C_IsJumping;                                              // 0x0B1C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               bIsLandingHard;                                           // 0x0B1D(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bAlwaysLandLight;                                         // 0x0B1E(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x1];                                       // 0x0B1F(0x0001) MISSED OFFSET
-	struct FVector                                     moveVelocity;                                             // 0x0B20(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
-	bool                                               C_ClimbAnimSwitch;                                        // 0x0B2C(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x0B2D(0x0003) MISSED OFFSET
-	float                                              C_ClimbAnimTransTime;                                     // 0x0B30(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              C_ClimbAnimTime_A;                                        // 0x0B34(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              C_ClimbAnimTime_B;                                        // 0x0B38(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x4];                                       // 0x0B3C(0x0004) MISSED OFFSET
-	class UAnimSequence*                               C_Climb_FrameAnim_A;                                      // 0x0B40(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               C_Climb_FrameAnim_B;                                      // 0x0B48(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               C_PlayerUseSeesaw;                                        // 0x0B50(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bIsLinkMotionLayer;                                       // 0x0B51(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x6];                                       // 0x0B52(0x0006) MISSED OFFSET
-	struct FName                                       LinkMotionLayerTagName;                                   // 0x0B58(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               bHasCarryBacK;                                            // 0x0B60(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECustomMovmentMode>               C_CustomMovementMode;                                     // 0x0B61(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData07[0x6];                                       // 0x0B62(0x0006) MISSED OFFSET
-	class USTExtraAnimInstanceBase*                    MainInstance;                                             // 0x0B68(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UAnimInstanceContainer*                      LocomotionAnimContainer;                                  // 0x0B70(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData)
-	class UClass*                                      TargetLocomotionBP;                                       // 0x0B78(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UAnimSequence*                               C_JumpStart;                                              // 0x0AF0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               C_LandLight;                                              // 0x0AF8(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UAnimSequence*                               C_LandHeavy;                                              // 0x0B00(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace1D*                               C_FallingBS;                                              // 0x0B08(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseCustomBS;                                             // 0x0B10(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0B11(0x0007) MISSED OFFSET
+	class UAnimSequence*                               C_JumpCustom;                                             // 0x0B18(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace1D*                               C_FallingCustom;                                          // 0x0B20(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_Scoping;                                                // 0x0B28(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0B29(0x0003) MISSED OFFSET
+	float                                              C_CharacterYawRotateRate;                                 // 0x0B2C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              C_CharacterYawRotateRate_Reverse;                         // 0x0B30(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              ScopeVelocityInterpSpeed;                                 // 0x0B34(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              b_WalkAdditiveAlpha;                                      // 0x0B38(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               b_UnarmedFallingToRifleFallLandingHard;                   // 0x0B3C(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               b_WalkToRifleJumpStationStart;                            // 0x0B3D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               C_IdleAddtiveValid;                                       // 0x0B3E(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               C_ShouldPauseAnim;                                        // 0x0B3F(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bWalkToJumpStart;                                         // 0x0B40(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               C_Move;                                                   // 0x0B41(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x2];                                       // 0x0B42(0x0002) MISSED OFFSET
+	struct FVector                                     C_MoveVelocity;                                           // 0x0B44(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	float                                              f_C_MoveVelocityLengthSquard;                             // 0x0B50(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EWeaponType>                           C_WeaponType;                                             // 0x0B54(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               b_C_LastMovementMode_NEQ_Falling_OR_HoldGrenade;          // 0x0B55(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               b_WalkToUnarmedFalling;                                   // 0x0B56(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               b_UnarmedFallingToRifleCombatFallLanding;                 // 0x0B57(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              f_FallingVelocityZFactor;                                 // 0x0B58(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              MaxFallingVelocityThreshold;                              // 0x0B5C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              f_C_MoveVelocity_X_FallingZFactor;                        // 0x0B60(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              C_MaxFallingSpeed;                                        // 0x0B64(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               MovingOnGround;                                           // 0x0B68(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_MovingOnGroundAndMovbale;                               // 0x0B69(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterPoseType>                    C_PoseType;                                               // 0x0B6A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         C_LastMovementMode;                                       // 0x0B6B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               C_IsJumping;                                              // 0x0B6C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bIsLandingHard;                                           // 0x0B6D(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bAlwaysLandLight;                                         // 0x0B6E(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x1];                                       // 0x0B6F(0x0001) MISSED OFFSET
+	struct FVector                                     moveVelocity;                                             // 0x0B70(0x000C) (BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
+	bool                                               C_ClimbAnimSwitch;                                        // 0x0B7C(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x0B7D(0x0003) MISSED OFFSET
+	float                                              C_ClimbAnimTransTime;                                     // 0x0B80(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              C_ClimbAnimTime_A;                                        // 0x0B84(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              C_ClimbAnimTime_B;                                        // 0x0B88(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x4];                                       // 0x0B8C(0x0004) MISSED OFFSET
+	class UAnimSequence*                               C_Climb_FrameAnim_A;                                      // 0x0B90(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UAnimSequence*                               C_Climb_FrameAnim_B;                                      // 0x0B98(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               C_PlayerUseSeesaw;                                        // 0x0BA0(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsLinkMotionLayer;                                       // 0x0BA1(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData06[0x6];                                       // 0x0BA2(0x0006) MISSED OFFSET
+	struct FName                                       LinkMotionLayerTagName;                                   // 0x0BA8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bHasCarryBacK;                                            // 0x0BB0(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECustomMovmentMode>                    C_CustomMovementMode;                                     // 0x0BB1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData07[0x6];                                       // 0x0BB2(0x0006) MISSED OFFSET
+	class USTExtraAnimInstanceBase*                    MainInstance;                                             // 0x0BB8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAnimInstanceContainer*                      LocomotionAnimContainer;                                  // 0x0BC0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData)
+	class UClass*                                      TargetLocomotionBP;                                       // 0x0BC8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.CharMainMCAnimInstance");
 		return pStaticClass;
@@ -234,38 +234,38 @@ public:
 
 
 // Class MainCity.CharSeesawMCAnimInstance
-// 0x0030 (0x0CF0 - 0x0CC0)
+// 0x0030 (0x0CB0 - 0x0C80)
 class UCharSeesawMCAnimInstance : public USTExtraAnimInstanceBase
 {
 public:
-	class UAssetPlayerSyncNode*                        AssetPlayerSyncNode;                                      // 0x0CC0(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               C_IsActivate;                                             // 0x0CC8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_IsLooping;                                              // 0x0CC9(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x0CCA(0x0002) MISSED OFFSET
-	int                                                C_CurSeatState;                                           // 0x0CCC(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	int                                                C_OtherSeatState;                                         // 0x0CD0(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	int                                                C_SeesawState;                                            // 0x0CD4(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SitAtA;                                                 // 0x0CD8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SelfKnockUp;                                            // 0x0CD9(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_OtherKnockUp;                                           // 0x0CDA(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SelfIdle;                                               // 0x0CDB(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SelfWaiting;                                            // 0x0CDC(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SelfEntering;                                           // 0x0CDD(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SelfEntered;                                            // 0x0CDE(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_SelfExiting;                                            // 0x0CDF(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_OtherIdle;                                              // 0x0CE0(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_OtherWaiting;                                           // 0x0CE1(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_OtherEntering;                                          // 0x0CE2(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_OtherEntered;                                           // 0x0CE3(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_OtherExiting;                                           // 0x0CE4(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_IsEnterField;                                           // 0x0CE5(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_IsInGame;                                               // 0x0CE6(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               C_IsSpeedUp;                                              // 0x0CE7(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0CE8(0x0008) MISSED OFFSET
+	class UAssetPlayerSyncNode*                        AssetPlayerSyncNode;                                      // 0x0C80(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	bool                                               C_IsActivate;                                             // 0x0C88(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_IsLooping;                                              // 0x0C89(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x0C8A(0x0002) MISSED OFFSET
+	int                                                C_CurSeatState;                                           // 0x0C8C(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                C_OtherSeatState;                                         // 0x0C90(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                C_SeesawState;                                            // 0x0C94(0x0004) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SitAtA;                                                 // 0x0C98(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SelfKnockUp;                                            // 0x0C99(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_OtherKnockUp;                                           // 0x0C9A(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SelfIdle;                                               // 0x0C9B(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SelfWaiting;                                            // 0x0C9C(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SelfEntering;                                           // 0x0C9D(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SelfEntered;                                            // 0x0C9E(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_SelfExiting;                                            // 0x0C9F(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_OtherIdle;                                              // 0x0CA0(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_OtherWaiting;                                           // 0x0CA1(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_OtherEntering;                                          // 0x0CA2(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_OtherEntered;                                           // 0x0CA3(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_OtherExiting;                                           // 0x0CA4(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_IsEnterField;                                           // 0x0CA5(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_IsInGame;                                               // 0x0CA6(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               C_IsSpeedUp;                                              // 0x0CA7(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0CA8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.CharSeesawMCAnimInstance");
 		return pStaticClass;
@@ -306,7 +306,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.FollowerSysDataAsset");
 		return pStaticClass;
@@ -316,54 +316,54 @@ public:
 
 
 // Class MainCity.HoldingHandsMCAnimInstance
-// 0x00E0 (0x0B80 - 0x0AA0)
+// 0x00E0 (0x0BD0 - 0x0AF0)
 class UHoldingHandsMCAnimInstance : public UCharacterAnimStateBase
 {
 public:
-	class UBlendSpace*                                 BS_HoldingHoldsFollower;                                  // 0x0AA0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     HoldingHandsTargetLoc;                                    // 0x0AA8(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	struct FRotator                                    HoldingHandsTargetRot;                                    // 0x0AB4(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	struct FVector                                     LeaderHoldingHandsTargetLoc;                              // 0x0AC0(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	struct FVector                                     FollowerHoldingHandsTargetLoc;                            // 0x0ACC(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	bool                                               bIsFollower;                                              // 0x0AD8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0AD9(0x0003) MISSED OFFSET
-	struct FVector                                     OffsetSover1;                                             // 0x0ADC(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	float                                              OffsetSoverParms1;                                        // 0x0AE8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0AEC(0x0004) MISSED OFFSET
-	class UFollowerSysDataAsset*                       FollowerDA;                                               // 0x0AF0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UFollowerSysDataAsset*                       LeaderDA;                                                 // 0x0AF8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              PullW;                                                    // 0x0B00(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               NormalizePull;                                            // 0x0B04(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0B05(0x0003) MISSED OFFSET
-	struct FVector                                     PositivePullFactor;                                       // 0x0B08(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	struct FVector                                     NegativePullFactor;                                       // 0x0B14(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	bool                                               RotateBone;                                               // 0x0B20(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               RotateLimb;                                               // 0x0B21(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x2];                                       // 0x0B22(0x0002) MISSED OFFSET
-	float                                              DeltaSmoothSpeed;                                         // 0x0B24(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              AngularDeltaSmoothSpeed;                                  // 0x0B28(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              F_PullW;                                                  // 0x0B2C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               F_NormalizePull;                                          // 0x0B30(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x0B31(0x0003) MISSED OFFSET
-	struct FVector                                     F_PositivePullFactor;                                     // 0x0B34(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	struct FVector                                     F_NegativePullFactor;                                     // 0x0B40(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	bool                                               F_RotateBone;                                             // 0x0B4C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               F_RotateLimb;                                             // 0x0B4D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x2];                                       // 0x0B4E(0x0002) MISSED OFFSET
-	float                                              F_DeltaSmoothSpeed;                                       // 0x0B50(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              F_AngularDeltaSmoothSpeed;                                // 0x0B54(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECharacterFollowType>             FollowType;                                               // 0x0B58(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EHoldingHandsIKMode>              EHandIKMode;                                              // 0x0B59(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x2];                                       // 0x0B5A(0x0002) MISSED OFFSET
-	struct FVector                                     followerVelocity;                                         // 0x0B5C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
-	bool                                               bUsePredictVelocity;                                      // 0x0B68(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData07[0x3];                                       // 0x0B69(0x0003) MISSED OFFSET
-	float                                              followerSpeed;                                            // 0x0B6C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData08[0x10];                                      // 0x0B70(0x0010) MISSED OFFSET
+	class UBlendSpace*                                 BS_HoldingHoldsFollower;                                  // 0x0AF0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     HoldingHandsTargetLoc;                                    // 0x0AF8(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	struct FRotator                                    HoldingHandsTargetRot;                                    // 0x0B04(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	struct FVector                                     LeaderHoldingHandsTargetLoc;                              // 0x0B10(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	struct FVector                                     FollowerHoldingHandsTargetLoc;                            // 0x0B1C(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
+	bool                                               bIsFollower;                                              // 0x0B28(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0B29(0x0003) MISSED OFFSET
+	struct FVector                                     OffsetSover1;                                             // 0x0B2C(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              OffsetSoverParms1;                                        // 0x0B38(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0B3C(0x0004) MISSED OFFSET
+	class UFollowerSysDataAsset*                       FollowerDA;                                               // 0x0B40(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	class UFollowerSysDataAsset*                       LeaderDA;                                                 // 0x0B48(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              PullW;                                                    // 0x0B50(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               NormalizePull;                                            // 0x0B54(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0B55(0x0003) MISSED OFFSET
+	struct FVector                                     PositivePullFactor;                                       // 0x0B58(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector                                     NegativePullFactor;                                       // 0x0B64(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	bool                                               RotateBone;                                               // 0x0B70(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               RotateLimb;                                               // 0x0B71(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x2];                                       // 0x0B72(0x0002) MISSED OFFSET
+	float                                              DeltaSmoothSpeed;                                         // 0x0B74(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              AngularDeltaSmoothSpeed;                                  // 0x0B78(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              F_PullW;                                                  // 0x0B7C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               F_NormalizePull;                                          // 0x0B80(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x0B81(0x0003) MISSED OFFSET
+	struct FVector                                     F_PositivePullFactor;                                     // 0x0B84(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector                                     F_NegativePullFactor;                                     // 0x0B90(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	bool                                               F_RotateBone;                                             // 0x0B9C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               F_RotateLimb;                                             // 0x0B9D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x2];                                       // 0x0B9E(0x0002) MISSED OFFSET
+	float                                              F_DeltaSmoothSpeed;                                       // 0x0BA0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              F_AngularDeltaSmoothSpeed;                                // 0x0BA4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECharacterFollowType>                  FollowType;                                               // 0x0BA8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EHoldingHandsIKMode>                   EHandIKMode;                                              // 0x0BA9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData06[0x2];                                       // 0x0BAA(0x0002) MISSED OFFSET
+	struct FVector                                     followerVelocity;                                         // 0x0BAC(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	bool                                               bUsePredictVelocity;                                      // 0x0BB8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData07[0x3];                                       // 0x0BB9(0x0003) MISSED OFFSET
+	float                                              followerSpeed;                                            // 0x0BBC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData08[0x10];                                      // 0x0BC0(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.HoldingHandsMCAnimInstance");
 		return pStaticClass;
@@ -373,23 +373,23 @@ public:
 
 
 // Class MainCity.MainCityGameMode
-// 0x0080 (0x2318 - 0x2298)
+// 0x0080 (0x2310 - 0x2290)
 class AMainCityGameMode : public ABattleRoyaleGameMode
 {
 public:
-	unsigned char                                      UnknownData00[0x54];                                      // 0x2298(0x0054) MISSED OFFSET
-	uint32_t                                           MaxAcceptOneFrame;                                        // 0x22EC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              MinAcceptTimeDelta;                                       // 0x22F0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              UpdateDistTimeDelta;                                      // 0x22F4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	TArray<float>                                      RelevantDistArray;                                        // 0x22F8(0x0010) (ZeroConstructor, Config)
-	float                                              TickTimeDelta;                                            // 0x2308(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              RelevantDataLifeTime;                                     // 0x230C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              ForceRelevantTimeDelta;                                   // 0x2310(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x2314(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x54];                                      // 0x2290(0x0054) MISSED OFFSET
+	uint32_t                                           MaxAcceptOneFrame;                                        // 0x22E4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              MinAcceptTimeDelta;                                       // 0x22E8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              UpdateDistTimeDelta;                                      // 0x22EC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	TArray<float>                                      RelevantDistArray;                                        // 0x22F0(0x0010) (ZeroConstructor, Config)
+	float                                              TickTimeDelta;                                            // 0x2300(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              RelevantDataLifeTime;                                     // 0x2304(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              ForceRelevantTimeDelta;                                   // 0x2308(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x230C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityGameMode");
 		return pStaticClass;
@@ -413,7 +413,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityGameModeStateActive");
 		return pStaticClass;
@@ -430,7 +430,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityGameModeStateFighting");
 		return pStaticClass;
@@ -447,7 +447,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityGameModeStateFinished");
 		return pStaticClass;
@@ -464,7 +464,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityGameModeStateReady");
 		return pStaticClass;
@@ -481,7 +481,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityGameplayStatics");
 		return pStaticClass;
@@ -493,19 +493,19 @@ public:
 
 
 // Class MainCity.MainCityGameState
-// 0x0018 (0x15B8 - 0x15A0)
+// 0x0018 (0x15E8 - 0x15D0)
 class AMainCityGameState : public ASTExtraGameStateBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnMainCityPlayerStateChangedDelegate;                     // 0x15A0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	bool                                               bEnableTimeUpdate;                                        // 0x15B0(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bEnableTimeOffset;                                        // 0x15B1(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x15B2(0x0002) MISSED OFFSET
-	float                                              ReplicatedWorldTimeSecondsOffset;                         // 0x15B4(0x0004) (ZeroConstructor, IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnMainCityPlayerStateChangedDelegate;                     // 0x15D0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	bool                                               bEnableTimeUpdate;                                        // 0x15E0(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bEnableTimeOffset;                                        // 0x15E1(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x15E2(0x0002) MISSED OFFSET
+	float                                              ReplicatedWorldTimeSecondsOffset;                         // 0x15E4(0x0004) (ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityGameState");
 		return pStaticClass;
@@ -522,7 +522,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityHelper");
 		return pStaticClass;
@@ -541,7 +541,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCityPlayerState");
 		return pStaticClass;
@@ -583,7 +583,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCitySeesawAnimInstance");
 		return pStaticClass;
@@ -608,7 +608,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MainCitySubsystem");
 		return pStaticClass;
@@ -633,16 +633,18 @@ public:
 
 
 // Class MainCity.MCAnimInstanceLocomotion
-// 0x0010 (0x0D30 - 0x0D20)
+// 0x0020 (0x0D90 - 0x0D70)
 class UMCAnimInstanceLocomotion : public UAnimInstanceLocomotion
 {
 public:
-	class UBlendSpace*                                 BS_MovementCrouchCustom;                                  // 0x0D20(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class UBlendSpace*                                 BS_MovementProneCustom;                                   // 0x0D28(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementStandCustom;                                   // 0x0D70(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementCrouchCustom;                                  // 0x0D78(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UBlendSpace*                                 BS_MovementProneCustom;                                   // 0x0D80(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0D88(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.MCAnimInstanceLocomotion");
 		return pStaticClass;
@@ -667,7 +669,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MainCity.ReplayRecoverSubsystem");
 		return pStaticClass;

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CinematicCamera.CineCameraActor.GetCineCameraComponent
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
@@ -15,7 +15,7 @@ namespace SDK
 
 class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraActor.GetCineCameraComponent");
 
@@ -40,7 +40,7 @@ class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 
 void UCineCameraComponent::SetLensPresetByName(const struct FString& InPresetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.SetLensPresetByName");
 
@@ -64,7 +64,7 @@ void UCineCameraComponent::SetLensPresetByName(const struct FString& InPresetNam
 
 void UCineCameraComponent::SetFilmbackPresetByName(const struct FString& InPresetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName");
 
@@ -88,7 +88,7 @@ void UCineCameraComponent::SetFilmbackPresetByName(const struct FString& InPrese
 
 float UCineCameraComponent::GetVerticalFieldOfView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView");
 
@@ -113,7 +113,7 @@ float UCineCameraComponent::GetVerticalFieldOfView()
 
 struct FString UCineCameraComponent::GetLensPresetName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetLensPresetName");
 
@@ -138,7 +138,7 @@ struct FString UCineCameraComponent::GetLensPresetName()
 
 float UCineCameraComponent::GetHorizontalFieldOfView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView");
 
@@ -163,7 +163,7 @@ float UCineCameraComponent::GetHorizontalFieldOfView()
 
 struct FString UCineCameraComponent::GetFilmbackPresetName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName");
 

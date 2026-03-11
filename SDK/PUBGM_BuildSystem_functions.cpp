@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function BuildSystem.BuildingActorBase.SpawnDestroyParticle
 // (Final, Native, Static, Public, HasOutParms, HasDefaults)
@@ -18,7 +18,7 @@ namespace SDK
 
 void ABuildingActorBase::SpawnDestroyParticle(bool bSpawnParticle, const struct FTransform& Loc, const struct FSoftObjectPath& DestroyBuildingEffectPath, class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.SpawnDestroyParticle");
 
@@ -45,7 +45,7 @@ void ABuildingActorBase::SpawnDestroyParticle(bool bSpawnParticle, const struct 
 
 void ABuildingActorBase::PlayDestroyAnimation(bool bUseParticle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.PlayDestroyAnimation");
 
@@ -73,7 +73,7 @@ void ABuildingActorBase::PlayDestroyAnimation(bool bUseParticle)
 
 void ABuildingActorBase::OnTakeDamageFromVehicle(class UPrimitiveComponent* MyPrimitiveComp, float ForwardSpeed, float DamageAmount, class AActor* DamageCauser, class AController* EventInstigator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.OnTakeDamageFromVehicle");
 
@@ -98,7 +98,7 @@ void ABuildingActorBase::OnTakeDamageFromVehicle(class UPrimitiveComponent* MyPr
 
 void ABuildingActorBase::OnRep_Health()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.OnRep_Health");
 
@@ -121,7 +121,7 @@ void ABuildingActorBase::OnRep_Health()
 
 void ABuildingActorBase::OnPlayDestroyAnimation(bool bUseParticle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.OnPlayDestroyAnimation");
 
@@ -144,7 +144,7 @@ void ABuildingActorBase::OnPlayDestroyAnimation(bool bUseParticle)
 
 void ABuildingActorBase::OnBuildingActorDamaged(float Health)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.OnBuildingActorDamaged");
 
@@ -166,7 +166,7 @@ void ABuildingActorBase::OnBuildingActorDamaged(float Health)
 
 void ABuildingActorBase::OnBornAnimationPlayEndInClient()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.OnBornAnimationPlayEndInClient");
 
@@ -188,7 +188,7 @@ void ABuildingActorBase::OnBornAnimationPlayEndInClient()
 
 int ABuildingActorBase::GetBuildID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.GetBuildID");
 
@@ -211,7 +211,7 @@ int ABuildingActorBase::GetBuildID()
 
 void ABuildingActorBase::BPOnOwnerChanged()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorBase.BPOnOwnerChanged");
 
@@ -234,7 +234,7 @@ void ABuildingActorBase::BPOnOwnerChanged()
 
 void UBuildSystemComponent::TryAttachToMoveablePlatform(class AActor* SpawnedBuilding, const struct FVector& BuildLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.TryAttachToMoveablePlatform");
 
@@ -256,7 +256,7 @@ void UBuildSystemComponent::TryAttachToMoveablePlatform(class AActor* SpawnedBui
 
 void UBuildSystemComponent::ToggleDebugDraw()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.ToggleDebugDraw");
 
@@ -277,7 +277,7 @@ void UBuildSystemComponent::ToggleDebugDraw()
 
 void UBuildSystemComponent::StopPlaceBuilding()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.StopPlaceBuilding");
 
@@ -302,7 +302,7 @@ void UBuildSystemComponent::StopPlaceBuilding()
 
 void UBuildSystemComponent::StartPrePlaceBuilding(int InBuildID, int AvatarID, EBuildingViewType viewType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.StartPrePlaceBuilding");
 
@@ -329,7 +329,7 @@ void UBuildSystemComponent::StartPrePlaceBuilding(int InBuildID, int AvatarID, E
 
 void UBuildSystemComponent::SkipCDTimeByBuildID(int InBuildID, float IncreaseRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.SkipCDTimeByBuildID");
 
@@ -354,7 +354,7 @@ void UBuildSystemComponent::SkipCDTimeByBuildID(int InBuildID, float IncreaseRat
 
 bool UBuildSystemComponent::ShouldEnableDoubleTouchMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.ShouldEnableDoubleTouchMode");
 
@@ -380,7 +380,7 @@ bool UBuildSystemComponent::ShouldEnableDoubleTouchMode()
 
 void UBuildSystemComponent::SetPrebuildEnabled(bool CanBePlaced, bool IsVisible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.SetPrebuildEnabled");
 
@@ -405,7 +405,7 @@ void UBuildSystemComponent::SetPrebuildEnabled(bool CanBePlaced, bool IsVisible)
 
 void UBuildSystemComponent::SetBuildingDataModeID(int ModeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.SetBuildingDataModeID");
 
@@ -430,7 +430,7 @@ void UBuildSystemComponent::SetBuildingDataModeID(int ModeID)
 
 void UBuildSystemComponent::SetBuildingData(int Index, const struct FBuildingData& InData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.SetBuildingData");
 
@@ -458,7 +458,7 @@ void UBuildSystemComponent::SetBuildingData(int Index, const struct FBuildingDat
 
 bool UBuildSystemComponent::ServerLineTraceCheck(class UClass* BuildingClass, const struct FVector& CheckLocation, const struct FRotator& CheckRotation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.ServerLineTraceCheck");
 
@@ -487,7 +487,7 @@ bool UBuildSystemComponent::ServerLineTraceCheck(class UClass* BuildingClass, co
 
 void UBuildSystemComponent::ResetBuildngCDByBuildID(int InBuildID, float InNewCDTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.ResetBuildngCDByBuildID");
 
@@ -510,7 +510,7 @@ void UBuildSystemComponent::ResetBuildngCDByBuildID(int InBuildID, float InNewCD
 
 void UBuildSystemComponent::ResetBuildList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.ResetBuildList");
 
@@ -539,7 +539,7 @@ void UBuildSystemComponent::ResetBuildList()
 
 bool UBuildSystemComponent::ProccessNothingHitTraceOverlap(const struct FVector& DestLocation, const struct FRotator& DestRotation, float MaxBuildDist, int buildIndex, const struct FVector& ViewLocation, struct FVector* OutLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.ProccessNothingHitTraceOverlap");
 
@@ -573,7 +573,7 @@ bool UBuildSystemComponent::ProccessNothingHitTraceOverlap(const struct FVector&
 
 void UBuildSystemComponent::PlaceBuildingWithIndex(int buildIndex, int AvatarID, bool bRelative)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.PlaceBuildingWithIndex");
 
@@ -601,7 +601,7 @@ void UBuildSystemComponent::PlaceBuildingWithIndex(int buildIndex, int AvatarID,
 
 void UBuildSystemComponent::PlaceBuildingAtLocation(int buildIndex, const struct FVector& Loc, const struct FRotator& Rot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.PlaceBuildingAtLocation");
 
@@ -628,7 +628,7 @@ void UBuildSystemComponent::PlaceBuildingAtLocation(int buildIndex, const struct
 
 void UBuildSystemComponent::PlaceBuilding(int AvatarID, bool bRelative)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.PlaceBuilding");
 
@@ -656,7 +656,7 @@ void UBuildSystemComponent::PlaceBuilding(int AvatarID, bool bRelative)
 
 bool UBuildSystemComponent::PickLocationByBuildID(int InBuildID, struct FVector* OutLocation, struct FRotator* OutRotation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.PickLocationByBuildID");
 
@@ -690,7 +690,7 @@ bool UBuildSystemComponent::PickLocationByBuildID(int InBuildID, struct FVector*
 
 void UBuildSystemComponent::OverriveDeploymentTransform(const struct FRotator& rotIn, const struct FVector& locIn, struct FRotator* rotOut, struct FVector* locOut)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OverriveDeploymentTransform");
 
@@ -722,7 +722,7 @@ void UBuildSystemComponent::OverriveDeploymentTransform(const struct FRotator& r
 
 void UBuildSystemComponent::OverrideBuildingMaxBuildDistance(float BuildingMaxDistance, bool SetAll, int BuildingID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OverrideBuildingMaxBuildDistance");
 
@@ -744,12 +744,12 @@ void UBuildSystemComponent::OverrideBuildingMaxBuildDistance(float BuildingMaxDi
 // Function BuildSystem.BuildSystemComponent.OnTouchedConstructableBoxEnded
 // (Native, Public)
 // Parameters:
-// TEnumAsByte<enum ETouchIndex>  FingerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETouchIndex>       FingerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // class UPrimitiveComponent*     TouchedComponent               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
-void UBuildSystemComponent::OnTouchedConstructableBoxEnded(TEnumAsByte<enum ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent)
+void UBuildSystemComponent::OnTouchedConstructableBoxEnded(TEnumAsByte<ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OnTouchedConstructableBoxEnded");
 
@@ -770,12 +770,12 @@ void UBuildSystemComponent::OnTouchedConstructableBoxEnded(TEnumAsByte<enum ETou
 // Function BuildSystem.BuildSystemComponent.OnTouchedConstructableBox
 // (Native, Public)
 // Parameters:
-// TEnumAsByte<enum ETouchIndex>  FingerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETouchIndex>       FingerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // class UPrimitiveComponent*     TouchedComponent               (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 
-void UBuildSystemComponent::OnTouchedConstructableBox(TEnumAsByte<enum ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent)
+void UBuildSystemComponent::OnTouchedConstructableBox(TEnumAsByte<ETouchIndex> FingerIndex, class UPrimitiveComponent* TouchedComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OnTouchedConstructableBox");
 
@@ -801,7 +801,7 @@ void UBuildSystemComponent::OnTouchedConstructableBox(TEnumAsByte<enum ETouchInd
 
 void UBuildSystemComponent::OnTouchActorBuild(const struct FVector2D& ScreenPosition, class APlayerController* Controller)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OnTouchActorBuild");
 
@@ -826,7 +826,7 @@ void UBuildSystemComponent::OnTouchActorBuild(const struct FVector2D& ScreenPosi
 
 void UBuildSystemComponent::OnAsyncLoadingMeshFinished(int buildIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OnAsyncLoadingMeshFinished");
 
@@ -850,7 +850,7 @@ void UBuildSystemComponent::OnAsyncLoadingMeshFinished(int buildIndex)
 
 void UBuildSystemComponent::OnAsyncLoadingEffectFinished(int buildIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OnAsyncLoadingEffectFinished");
 
@@ -874,7 +874,7 @@ void UBuildSystemComponent::OnAsyncLoadingEffectFinished(int buildIndex)
 
 void UBuildSystemComponent::OnAsyncLoadingBuildingFinished(int buildIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.OnAsyncLoadingBuildingFinished");
 
@@ -899,7 +899,7 @@ void UBuildSystemComponent::OnAsyncLoadingBuildingFinished(int buildIndex)
 
 bool UBuildSystemComponent::IsValidAvatar(int AvatarID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.IsValidAvatar");
 
@@ -926,7 +926,7 @@ bool UBuildSystemComponent::IsValidAvatar(int AvatarID)
 
 bool UBuildSystemComponent::IsParticlePreBuildingEffect(int InBuildID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.IsParticlePreBuildingEffect");
 
@@ -954,7 +954,7 @@ bool UBuildSystemComponent::IsParticlePreBuildingEffect(int InBuildID)
 
 bool UBuildSystemComponent::IsOverlayBuildHeightValid(const struct FVector& BuildLocation, float OverlayMaxHeightFromGround)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.IsOverlayBuildHeightValid");
 
@@ -980,7 +980,7 @@ bool UBuildSystemComponent::IsOverlayBuildHeightValid(const struct FVector& Buil
 
 bool UBuildSystemComponent::IsInPreBuildingMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.IsInPreBuildingMode");
 
@@ -1006,7 +1006,7 @@ bool UBuildSystemComponent::IsInPreBuildingMode()
 
 bool UBuildSystemComponent::IsCanPlaceBuildingBP(int InBuildID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.IsCanPlaceBuildingBP");
 
@@ -1029,12 +1029,12 @@ bool UBuildSystemComponent::IsCanPlaceBuildingBP(int InBuildID)
 // (Native, Public, BlueprintCallable)
 // Parameters:
 // int                            InBuildID                      (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EBuildingActionType> _TYPE                          (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBuildingActionType> _TYPE                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UBuildSystemComponent::IsCanPlaceBuilding(int InBuildID, TEnumAsByte<enum EBuildingActionType> _TYPE)
+bool UBuildSystemComponent::IsCanPlaceBuilding(int InBuildID, TEnumAsByte<EBuildingActionType> _TYPE)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.IsCanPlaceBuilding");
 
@@ -1062,7 +1062,7 @@ bool UBuildSystemComponent::IsCanPlaceBuilding(int InBuildID, TEnumAsByte<enum E
 
 bool UBuildSystemComponent::IsActorProhibited(class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.IsActorProhibited");
 
@@ -1089,7 +1089,7 @@ bool UBuildSystemComponent::IsActorProhibited(class AActor* Actor)
 
 struct FRotator UBuildSystemComponent::GetPreBuildingEffectRotation(int InBuildID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetPreBuildingEffectRotation");
 
@@ -1117,7 +1117,7 @@ struct FRotator UBuildSystemComponent::GetPreBuildingEffectRotation(int InBuildI
 
 struct FSoftObjectPath UBuildSystemComponent::GetPreBuildingEffectPath(int InBuildID, int AvatarID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetPreBuildingEffectPath");
 
@@ -1144,7 +1144,7 @@ struct FSoftObjectPath UBuildSystemComponent::GetPreBuildingEffectPath(int InBui
 
 struct FVector UBuildSystemComponent::GetPreBuildingEffectOffset(int InBuildID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetPreBuildingEffectOffset");
 
@@ -1170,7 +1170,7 @@ struct FVector UBuildSystemComponent::GetPreBuildingEffectOffset(int InBuildID)
 
 class APlayerController* UBuildSystemComponent::GetOwnerPlayerController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetOwnerPlayerController");
 
@@ -1195,7 +1195,7 @@ class APlayerController* UBuildSystemComponent::GetOwnerPlayerController()
 
 float UBuildSystemComponent::GetMaxDistance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetMaxDistance");
 
@@ -1220,7 +1220,7 @@ float UBuildSystemComponent::GetMaxDistance()
 
 bool UBuildSystemComponent::GetIsHasInitData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetIsHasInitData");
 
@@ -1246,7 +1246,7 @@ bool UBuildSystemComponent::GetIsHasInitData()
 
 int UBuildSystemComponent::GetIndexByBuildingID(int BuildID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetIndexByBuildingID");
 
@@ -1268,11 +1268,11 @@ int UBuildSystemComponent::GetIndexByBuildingID(int BuildID)
 // Function BuildSystem.BuildSystemComponent.GetCurrentBuildType
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<enum EBuildingType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBuildingType>     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBuildingType> UBuildSystemComponent::GetCurrentBuildType()
+TEnumAsByte<EBuildingType> UBuildSystemComponent::GetCurrentBuildType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetCurrentBuildType");
 
@@ -1298,7 +1298,7 @@ TEnumAsByte<enum EBuildingType> UBuildSystemComponent::GetCurrentBuildType()
 
 class AActor* UBuildSystemComponent::GetCDOByIndex(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetCDOByIndex");
 
@@ -1324,7 +1324,7 @@ class AActor* UBuildSystemComponent::GetCDOByIndex(int Index)
 
 TArray<struct FBuildingData> UBuildSystemComponent::GetBuildingList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetBuildingList");
 
@@ -1349,7 +1349,7 @@ TArray<struct FBuildingData> UBuildSystemComponent::GetBuildingList()
 
 int UBuildSystemComponent::GetBuildingDataModeID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.GetBuildingDataModeID");
 
@@ -1375,7 +1375,7 @@ int UBuildSystemComponent::GetBuildingDataModeID()
 
 void UBuildSystemComponent::EnableBuildingByID(int BuildID, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.EnableBuildingByID");
 
@@ -1399,13 +1399,13 @@ void UBuildSystemComponent::EnableBuildingByID(int BuildID, bool bEnable)
 // int                            buildIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector2D               ScreenPostion                  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 // int                            PointerIndex                   (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EBuildingActionType> _TYPE                          (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBuildingActionType> _TYPE                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsBegin                        (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EBuildingActionType> CustomBuildEvent               (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBuildingActionType> CustomBuildEvent               (Parm, ZeroConstructor, IsPlainOldData)
 
-void UBuildSystemComponent::DoSceenTouchBuild(int buildIndex, const struct FVector2D& ScreenPostion, int PointerIndex, TEnumAsByte<enum EBuildingActionType> _TYPE, bool IsBegin, TEnumAsByte<enum EBuildingActionType> CustomBuildEvent)
+void UBuildSystemComponent::DoSceenTouchBuild(int buildIndex, const struct FVector2D& ScreenPostion, int PointerIndex, TEnumAsByte<EBuildingActionType> _TYPE, bool IsBegin, TEnumAsByte<EBuildingActionType> CustomBuildEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.DoSceenTouchBuild");
 
@@ -1435,7 +1435,7 @@ void UBuildSystemComponent::DoSceenTouchBuild(int buildIndex, const struct FVect
 
 bool UBuildSystemComponent::DensityCheck(const struct FBuildingActorDensityCheck& DensityCheckParmas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.DensityCheck");
 
@@ -1463,7 +1463,7 @@ bool UBuildSystemComponent::DensityCheck(const struct FBuildingActorDensityCheck
 
 bool UBuildSystemComponent::CheckShouldSkipByVisibility(class UPrimitiveComponent* _comp, int buildIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.CheckShouldSkipByVisibility");
 
@@ -1495,7 +1495,7 @@ bool UBuildSystemComponent::CheckShouldSkipByVisibility(class UPrimitiveComponen
 
 bool UBuildSystemComponent::CheckPlacementWithPitch(const struct FHitResult& Hit, const struct FVector& BoxExtent, const struct FBuildingData& CurBuildData, struct FVector* OutLocation, struct FRotator* OutRotation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.CheckPlacementWithPitch");
 
@@ -1535,7 +1535,7 @@ bool UBuildSystemComponent::CheckPlacementWithPitch(const struct FHitResult& Hit
 
 bool UBuildSystemComponent::CheckPlacementOverlap(TArray<struct FHitResult> HitArray, const struct FVector& ViewLocation, const struct FVector& BoxExtent, const struct FBuildingData& CurBuildData, const struct FRotator& BuildRotation, const struct FRotator& ControlRot, struct FVector* OutLocation, bool* HasForbiddenObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.CheckPlacementOverlap");
 
@@ -1571,7 +1571,7 @@ bool UBuildSystemComponent::CheckPlacementOverlap(TArray<struct FHitResult> HitA
 
 bool UBuildSystemComponent::CheckPlaceBuildingWithIndex(int buildIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.CheckPlaceBuildingWithIndex");
 
@@ -1599,7 +1599,7 @@ bool UBuildSystemComponent::CheckPlaceBuildingWithIndex(int buildIndex)
 
 bool UBuildSystemComponent::CheckObjectIsOneOfTheTemplate(class UObject* Obj, TArray<class UClass*> _ActorFilterTemplates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.CheckObjectIsOneOfTheTemplate");
 
@@ -1627,7 +1627,7 @@ bool UBuildSystemComponent::CheckObjectIsOneOfTheTemplate(class UObject* Obj, TA
 
 bool UBuildSystemComponent::CheckCollisionNeedSkipOwner(int buildIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.CheckCollisionNeedSkipOwner");
 
@@ -1653,12 +1653,12 @@ bool UBuildSystemComponent::CheckCollisionNeedSkipOwner(int buildIndex)
 // struct FTransform              tranx                          (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 // struct FVector                 EndLocation                    (Parm, IsPlainOldData)
 // bool                           bUseTrace                      (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EBuildingActionType> BuildType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBuildingActionType> BuildType                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UBuildSystemComponent::BuildAtWorldLoc(int buildIndex, const struct FTransform& tranx, const struct FVector& EndLocation, bool bUseTrace, TEnumAsByte<enum EBuildingActionType> BuildType)
+bool UBuildSystemComponent::BuildAtWorldLoc(int buildIndex, const struct FTransform& tranx, const struct FVector& EndLocation, bool bUseTrace, TEnumAsByte<EBuildingActionType> BuildType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.BuildAtWorldLoc");
 
@@ -1688,7 +1688,7 @@ bool UBuildSystemComponent::BuildAtWorldLoc(int buildIndex, const struct FTransf
 
 void UBuildSystemComponent::AddBuildingData(const struct FBuildingData& InData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildSystemComponent.AddBuildingData");
 
@@ -1712,7 +1712,7 @@ void UBuildSystemComponent::AddBuildingData(const struct FBuildingData& InData)
 
 bool UBuildingActorInterface::UseFixedLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.UseFixedLocation");
 
@@ -1737,7 +1737,7 @@ bool UBuildingActorInterface::UseFixedLocation()
 
 bool UBuildingActorInterface::UseCachedBuildLocation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.UseCachedBuildLocation");
 
@@ -1762,7 +1762,7 @@ bool UBuildingActorInterface::UseCachedBuildLocation()
 
 bool UBuildingActorInterface::ShouldUseExtraRotation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.ShouldUseExtraRotation");
 
@@ -1787,7 +1787,7 @@ bool UBuildingActorInterface::ShouldUseExtraRotation()
 
 bool UBuildingActorInterface::ShouldUseExtraOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.ShouldUseExtraOffset");
 
@@ -1812,7 +1812,7 @@ bool UBuildingActorInterface::ShouldUseExtraOffset()
 
 bool UBuildingActorInterface::ShouldSnapToGrid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.ShouldSnapToGrid");
 
@@ -1837,7 +1837,7 @@ bool UBuildingActorInterface::ShouldSnapToGrid()
 
 bool UBuildingActorInterface::ShouldSkipCheckOwnerCollision()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.ShouldSkipCheckOwnerCollision");
 
@@ -1862,7 +1862,7 @@ bool UBuildingActorInterface::ShouldSkipCheckOwnerCollision()
 
 bool UBuildingActorInterface::ShouldCustomBlockingChannels()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.ShouldCustomBlockingChannels");
 
@@ -1887,7 +1887,7 @@ bool UBuildingActorInterface::ShouldCustomBlockingChannels()
 
 bool UBuildingActorInterface::ShouldCheckVisibilityTypes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.ShouldCheckVisibilityTypes");
 
@@ -1912,7 +1912,7 @@ bool UBuildingActorInterface::ShouldCheckVisibilityTypes()
 
 bool UBuildingActorInterface::ShouldAttachToMovementPlatform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.ShouldAttachToMovementPlatform");
 
@@ -1937,7 +1937,7 @@ bool UBuildingActorInterface::ShouldAttachToMovementPlatform()
 
 void UBuildingActorInterface::SetBuildingActorID(int BuildID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.SetBuildingActorID");
 
@@ -1962,7 +1962,7 @@ void UBuildingActorInterface::SetBuildingActorID(int BuildID)
 
 void UBuildingActorInterface::PrebuildCDOBodyInstance(class UWorld* World, const struct FTransform& tranx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.PrebuildCDOBodyInstance");
 
@@ -1985,7 +1985,7 @@ void UBuildingActorInterface::PrebuildCDOBodyInstance(class UWorld* World, const
 
 void UBuildingActorInterface::NonCullingBeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.NonCullingBeginPlay");
 
@@ -2008,7 +2008,7 @@ void UBuildingActorInterface::NonCullingBeginPlay()
 
 float UBuildingActorInterface::MaxUnderWaterBuildDepth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.MaxUnderWaterBuildDepth");
 
@@ -2033,7 +2033,7 @@ float UBuildingActorInterface::MaxUnderWaterBuildDepth()
 
 bool UBuildingActorInterface::IsEnablePitchRotatePlace()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.IsEnablePitchRotatePlace");
 
@@ -2058,7 +2058,7 @@ bool UBuildingActorInterface::IsEnablePitchRotatePlace()
 
 bool UBuildingActorInterface::IsEnableOverlayPlace()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.IsEnableOverlayPlace");
 
@@ -2083,7 +2083,7 @@ bool UBuildingActorInterface::IsEnableOverlayPlace()
 
 bool UBuildingActorInterface::IsBuildOnlyOnLandscape()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.IsBuildOnlyOnLandscape");
 
@@ -2108,7 +2108,7 @@ bool UBuildingActorInterface::IsBuildOnlyOnLandscape()
 
 bool UBuildingActorInterface::IsBuildOnEdge()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.IsBuildOnEdge");
 
@@ -2133,7 +2133,7 @@ bool UBuildingActorInterface::IsBuildOnEdge()
 
 bool UBuildingActorInterface::IsAutoPickValidPlace()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.IsAutoPickValidPlace");
 
@@ -2158,7 +2158,7 @@ bool UBuildingActorInterface::IsAutoPickValidPlace()
 
 void UBuildingActorInterface::HandleBuildingDestroyed(class AController* InstigatedBy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.HandleBuildingDestroyed");
 
@@ -2182,7 +2182,7 @@ void UBuildingActorInterface::HandleBuildingDestroyed(class AController* Instiga
 
 void UBuildingActorInterface::HandleBuildingConstructed(class AController* InstigatedBy)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.HandleBuildingConstructed");
 
@@ -2206,7 +2206,7 @@ void UBuildingActorInterface::HandleBuildingConstructed(class AController* Insti
 
 struct FBuildingActorWorldSnapSetup UBuildingActorInterface::GetWorldSnapSetup()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetWorldSnapSetup");
 
@@ -2231,7 +2231,7 @@ struct FBuildingActorWorldSnapSetup UBuildingActorInterface::GetWorldSnapSetup()
 
 TArray<class UClass*> UBuildingActorInterface::GetVisibilitySkipTypes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetVisibilitySkipTypes");
 
@@ -2256,7 +2256,7 @@ TArray<class UClass*> UBuildingActorInterface::GetVisibilitySkipTypes()
 
 struct FVector UBuildingActorInterface::GetViewLocationOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetViewLocationOffset");
 
@@ -2281,7 +2281,7 @@ struct FVector UBuildingActorInterface::GetViewLocationOffset()
 
 TArray<class UClass*> UBuildingActorInterface::GetProhibitedActorTemplateList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetProhibitedActorTemplateList");
 
@@ -2306,7 +2306,7 @@ TArray<class UClass*> UBuildingActorInterface::GetProhibitedActorTemplateList()
 
 struct FVector UBuildingActorInterface::GetPreBuildingEffectScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetPreBuildingEffectScale");
 
@@ -2331,7 +2331,7 @@ struct FVector UBuildingActorInterface::GetPreBuildingEffectScale()
 
 struct FRotator UBuildingActorInterface::GetPreBuildingEffectRotation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetPreBuildingEffectRotation");
 
@@ -2356,7 +2356,7 @@ struct FRotator UBuildingActorInterface::GetPreBuildingEffectRotation()
 
 struct FSoftObjectPath UBuildingActorInterface::GetPreBuildingEffectPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetPreBuildingEffectPath");
 
@@ -2381,7 +2381,7 @@ struct FSoftObjectPath UBuildingActorInterface::GetPreBuildingEffectPath()
 
 struct FVector UBuildingActorInterface::GetPreBuildingEffectOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetPreBuildingEffectOffset");
 
@@ -2406,7 +2406,7 @@ struct FVector UBuildingActorInterface::GetPreBuildingEffectOffset()
 
 float UBuildingActorInterface::GetOverlayPlaceHeight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetOverlayPlaceHeight");
 
@@ -2431,7 +2431,7 @@ float UBuildingActorInterface::GetOverlayPlaceHeight()
 
 float UBuildingActorInterface::GetOverlayMaxHeightFromGround()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetOverlayMaxHeightFromGround");
 
@@ -2456,7 +2456,7 @@ float UBuildingActorInterface::GetOverlayMaxHeightFromGround()
 
 float UBuildingActorInterface::GetMaxTraceDepth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetMaxTraceDepth");
 
@@ -2481,7 +2481,7 @@ float UBuildingActorInterface::GetMaxTraceDepth()
 
 float UBuildingActorInterface::GetMaxOffectHight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetMaxOffectHight");
 
@@ -2506,7 +2506,7 @@ float UBuildingActorInterface::GetMaxOffectHight()
 
 float UBuildingActorInterface::GetMaxDeviation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetMaxDeviation");
 
@@ -2531,7 +2531,7 @@ float UBuildingActorInterface::GetMaxDeviation()
 
 struct FBuildingActorDSBuildCheck UBuildingActorInterface::GetDSBuildCheckConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetDSBuildCheckConfig");
 
@@ -2556,7 +2556,7 @@ struct FBuildingActorDSBuildCheck UBuildingActorInterface::GetDSBuildCheckConfig
 
 float UBuildingActorInterface::GetDetectDeath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetDetectDeath");
 
@@ -2581,7 +2581,7 @@ float UBuildingActorInterface::GetDetectDeath()
 
 struct FTransform UBuildingActorInterface::GetDestroyedParticleTransformOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetDestroyedParticleTransformOffset");
 
@@ -2607,7 +2607,7 @@ struct FTransform UBuildingActorInterface::GetDestroyedParticleTransformOffset()
 
 struct FBuildingActorDensityCheck UBuildingActorInterface::GetDensityParams(const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetDensityParams");
 
@@ -2629,11 +2629,11 @@ struct FBuildingActorDensityCheck UBuildingActorInterface::GetDensityParams(cons
 // Function BuildSystem.BuildingActorInterface.GetCustomBlockingChannels
 // (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
-// TArray<TEnumAsByte<enum ECollisionChannel>> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// TArray<TEnumAsByte<ECollisionChannel>> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 
-TArray<TEnumAsByte<enum ECollisionChannel>> UBuildingActorInterface::GetCustomBlockingChannels()
+TArray<TEnumAsByte<ECollisionChannel>> UBuildingActorInterface::GetCustomBlockingChannels()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetCustomBlockingChannels");
 
@@ -2654,11 +2654,11 @@ TArray<TEnumAsByte<enum ECollisionChannel>> UBuildingActorInterface::GetCustomBl
 // Function BuildSystem.BuildingActorInterface.GetConstructingMode
 // (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
-// TEnumAsByte<enum EBuildingActorConstructingMode> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBuildingActorConstructingMode> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBuildingActorConstructingMode> UBuildingActorInterface::GetConstructingMode()
+TEnumAsByte<EBuildingActorConstructingMode> UBuildingActorInterface::GetConstructingMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetConstructingMode");
 
@@ -2683,7 +2683,7 @@ TEnumAsByte<enum EBuildingActorConstructingMode> UBuildingActorInterface::GetCon
 
 float UBuildingActorInterface::GetBuildOnEdgeUpLength()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetBuildOnEdgeUpLength");
 
@@ -2708,7 +2708,7 @@ float UBuildingActorInterface::GetBuildOnEdgeUpLength()
 
 float UBuildingActorInterface::GetBuildOnEdgeFrontLength()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetBuildOnEdgeFrontLength");
 
@@ -2733,7 +2733,7 @@ float UBuildingActorInterface::GetBuildOnEdgeFrontLength()
 
 int UBuildingActorInterface::GetBuildingActorID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetBuildingActorID");
 
@@ -2758,7 +2758,7 @@ int UBuildingActorInterface::GetBuildingActorID()
 
 struct FRotator UBuildingActorInterface::GetActorCollisionBoxRotator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetActorCollisionBoxRotator");
 
@@ -2783,7 +2783,7 @@ struct FRotator UBuildingActorInterface::GetActorCollisionBoxRotator()
 
 struct FVector UBuildingActorInterface::GetActorCollisionBoxExtern()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetActorCollisionBoxExtern");
 
@@ -2808,7 +2808,7 @@ struct FVector UBuildingActorInterface::GetActorCollisionBoxExtern()
 
 struct FVector UBuildingActorInterface::GetActorCollisionBoxCenter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.GetActorCollisionBoxCenter");
 
@@ -2833,7 +2833,7 @@ struct FVector UBuildingActorInterface::GetActorCollisionBoxCenter()
 
 bool UBuildingActorInterface::CanDoQuadTrace()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.CanDoQuadTrace");
 
@@ -2858,7 +2858,7 @@ bool UBuildingActorInterface::CanDoQuadTrace()
 
 bool UBuildingActorInterface::CanBuildUnderWater()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.CanBuildUnderWater");
 
@@ -2888,7 +2888,7 @@ bool UBuildingActorInterface::CanBuildUnderWater()
 
 bool UBuildingActorInterface::BPCheckPlacement(class UWorld* World, const struct FTransform& tranx, int CheckType, int CurrentAvatarID, class AActor* Builder)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.BPCheckPlacement");
 
@@ -2920,7 +2920,7 @@ bool UBuildingActorInterface::BPCheckPlacement(class UWorld* World, const struct
 
 bool UBuildingActorInterface::BP_DSFinalCheckPlacement(const struct FTransform& Transform, class AActor* Builder)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorInterface.BP_DSFinalCheckPlacement");
 
@@ -2948,7 +2948,7 @@ bool UBuildingActorInterface::BP_DSFinalCheckPlacement(const struct FTransform& 
 
 void ABuildingActorMgr::OnBuildingActorSpawned(class AActor* InOwnerActor, class ABuildingActorBase* InBuildingActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorMgr.OnBuildingActorSpawned");
 
@@ -2973,7 +2973,7 @@ void ABuildingActorMgr::OnBuildingActorSpawned(class AActor* InOwnerActor, class
 
 void ABuildingActorMgr::OnBuildingActorDestroyed(class ABuildingActorBase* InBuildingActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorMgr.OnBuildingActorDestroyed");
 
@@ -2998,7 +2998,7 @@ void ABuildingActorMgr::OnBuildingActorDestroyed(class ABuildingActorBase* InBui
 
 class ABuildingActorMgr* ABuildingActorMgr::GetInstance(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.BuildingActorMgr.GetInstance");
 
@@ -3024,7 +3024,7 @@ class ABuildingActorMgr* ABuildingActorMgr::GetInstance(class UObject* WorldCont
 
 void ASelectBuildActor::SetSelectActorTemplateScale(const struct FVector& inScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.SetSelectActorTemplateScale");
 
@@ -3049,7 +3049,7 @@ void ASelectBuildActor::SetSelectActorTemplateScale(const struct FVector& inScal
 
 void ASelectBuildActor::SetSelectActorTemplateOffsetAndRotation(const struct FVector& InOffset, const struct FRotator& InRotation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.SetSelectActorTemplateOffsetAndRotation");
 
@@ -3074,7 +3074,7 @@ void ASelectBuildActor::SetSelectActorTemplateOffsetAndRotation(const struct FVe
 
 void ASelectBuildActor::SetSelectActorTemplate(class UParticleSystem* Template)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.SetSelectActorTemplate");
 
@@ -3099,7 +3099,7 @@ void ASelectBuildActor::SetSelectActorTemplate(class UParticleSystem* Template)
 
 void ASelectBuildActor::SetSelectActorPlacementEnable(bool PlacementEnable, bool IsVisible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.SetSelectActorPlacementEnable");
 
@@ -3124,7 +3124,7 @@ void ASelectBuildActor::SetSelectActorPlacementEnable(bool PlacementEnable, bool
 
 void ASelectBuildActor::SetSelectActorMesh(class UStaticMesh* InMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.SetSelectActorMesh");
 
@@ -3148,7 +3148,7 @@ void ASelectBuildActor::SetSelectActorMesh(class UStaticMesh* InMesh)
 
 void ASelectBuildActor::SetIsPlacementEnable(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.SetIsPlacementEnable");
 
@@ -3170,7 +3170,7 @@ void ASelectBuildActor::SetIsPlacementEnable(bool Val)
 
 void ASelectBuildActor::OnParticleLoaded()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.OnParticleLoaded");
 
@@ -3193,7 +3193,7 @@ void ASelectBuildActor::OnParticleLoaded()
 
 bool ASelectBuildActor::IsCurrentPlacementEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.IsCurrentPlacementEnable");
 
@@ -3218,7 +3218,7 @@ bool ASelectBuildActor::IsCurrentPlacementEnable()
 
 bool ASelectBuildActor::GetIsPlacementEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.GetIsPlacementEnable");
 
@@ -3243,7 +3243,7 @@ bool ASelectBuildActor::GetIsPlacementEnable()
 
 bool ASelectBuildActor::GetIsParticleEffect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BuildSystem.SelectBuildActor.GetIsParticleEffect");
 

@@ -1,14 +1,43 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+
+// Function QDevKit.FilePicker.UnInitialize
+struct UFilePicker_UnInitialize_Params
+{
+};
+
+// Function QDevKit.FilePicker.OpenFilePicker
+struct UFilePicker_OpenFilePicker_Params
+{
+	struct FString                                     InParamJson;                                              // (Parm, ZeroConstructor)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function QDevKit.FilePicker.Initialize
+struct UFilePicker_Initialize_Params
+{
+};
+
+// Function QDevKit.FilePicker.GetInstance
+struct UFilePicker_GetInstance_Params
+{
+	class UFilePicker*                                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// DelegateFunction QDevKit.FilePicker.FileSelectionCompleteDelegate__DelegateSignature
+struct UFilePicker_FileSelectionCompleteDelegate__DelegateSignature_Params
+{
+	struct FString                                     ResultJson;                                               // (Parm, ZeroConstructor)
+};
 
 // Function QDevKit.FirebaseHelper.SetConsent
 struct UFirebaseHelper_SetConsent_Params
@@ -198,6 +227,35 @@ struct USystemPermissionHelper_AndroidHasDefinePermission_Params
 {
 	struct FString                                     InPermssionName;                                          // (Parm, ZeroConstructor)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function QDevKit.TouchTransmission.UnInitialize
+struct UTouchTransmission_UnInitialize_Params
+{
+};
+
+// DelegateFunction QDevKit.TouchTransmission.TransmissionCompleteDelegate__DelegateSignature
+struct UTouchTransmission_TransmissionCompleteDelegate__DelegateSignature_Params
+{
+	struct FString                                     ResultJson;                                               // (Parm, ZeroConstructor)
+};
+
+// Function QDevKit.TouchTransmission.Initialize
+struct UTouchTransmission_Initialize_Params
+{
+};
+
+// Function QDevKit.TouchTransmission.HandleReceivedPakFiles
+struct UTouchTransmission_HandleReceivedPakFiles_Params
+{
+	struct FString                                     InParamJson;                                              // (Parm, ZeroConstructor)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function QDevKit.TouchTransmission.GetInstance
+struct UTouchTransmission_GetInstance_Params
+{
+	class UTouchTransmission*                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 }

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class PandoraVideoPlayer.BP_PixVideoLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PandoraVideoPlayer.BP_PixVideoLibrary");
 		return pStaticClass;
@@ -39,7 +39,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PandoraVideoPlayer.PVideoImage");
 		return pStaticClass;
@@ -57,6 +57,7 @@ public:
 	void SetNextVideo(const struct FString& strUrl, bool bLoop);
 	void SetNeedVideoTexture(bool needVideoTexture);
 	void SetNeedPlayAudio(bool needPlayAudio);
+	bool SetMediaCodecMaxBufferGap(int maxBufferGap);
 	int SetDecryptionKey(const struct FString& decryptionKey);
 	void SetDataUpdateCallback(const TScriptInterface<class UPVideoPlayerInterface>& dataUpdateInterface);
 	void SetAutoPlay(bool doAutoPlay);
@@ -96,7 +97,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PandoraVideoPlayer.PVideoPlayerInterface");
 		return pStaticClass;
@@ -120,7 +121,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PandoraVideoPlayer.PVideoPlayer");
 		return pStaticClass;
@@ -137,6 +138,7 @@ public:
 	void SetNextVideo(const struct FString& strUrl, bool bLoop);
 	void SetNeedVideoTexture(bool bNeedVideoTexture);
 	void SetNeedPlayAudio(bool bNeedPlayAudio);
+	static bool SetMediaCodecMaxBufferGap(int maxBufferGap);
 	static void SetHardwareDecodec(bool bHareware);
 	int SetDecryptionKey(const struct FString& decryptionKey);
 	void SetDataUpdateCallback(const TScriptInterface<class UPVideoPlayerInterface>& dataUpdateInterface);
@@ -185,7 +187,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class PandoraVideoPlayer.VideoPlayerWidget");
 		return pStaticClass;
@@ -202,6 +204,7 @@ public:
 	void SetNextVideo(const struct FString& strUrl, bool bLoop);
 	void SetNeedVideoTexture(bool needVideoTexture);
 	void SetNeedPlayAudio(bool needPlayAudio);
+	bool SetMediaCodecMaxBufferGap(int maxBufferGap);
 	void SetHardwareDecodec(bool bHardWare);
 	int SetDecryptionKey(const struct FString& decryptionKey);
 	void SetDataUpdateCallback(const TScriptInterface<class UPVideoPlayerInterface>& dataUpdateInterface);

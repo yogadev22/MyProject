@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class OceanPlugin.AdvancedBuoyancyComponent
 // 0x0110 (0x04B0 - 0x03A0)
@@ -40,7 +40,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.AdvancedBuoyancyComponent");
 		return pStaticClass;
@@ -88,7 +88,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.BuoyancyComponent");
 		return pStaticClass;
@@ -136,7 +136,7 @@ public:
 	unsigned char                                      UnknownData03[0x3];                                       // 0x0449(0x0003) MISSED OFFSET
 	float                                              WaveForceMultiplier;                                      // 0x044C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	class USceneComponent*                             UpdatedComponent;                                         // 0x0450(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum ETickingGroup>                    TickGroup;                                                // 0x0458(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETickingGroup>                         TickGroup;                                                // 0x0458(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               EnableCustomWaveForce;                                    // 0x0459(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData04[0x2];                                       // 0x045A(0x0002) MISSED OFFSET
 	struct FVector                                     CustomWaveForceTestPointOffset;                           // 0x045C(0x000C) (Edit, IsPlainOldData)
@@ -149,7 +149,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.BuoyancyForceComponent");
 		return pStaticClass;
@@ -202,7 +202,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.BuoyantMeshComponent");
 		return pStaticClass;
@@ -230,7 +230,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.FishManager");
 		return pStaticClass;
@@ -287,7 +287,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.FlockFish");
 		return pStaticClass;
@@ -315,7 +315,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.InfiniteSystemComponent");
 		return pStaticClass;
@@ -358,7 +358,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.OceanManager");
 		return pStaticClass;
@@ -383,7 +383,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.SegmentOceanManager");
 		return pStaticClass;
@@ -436,7 +436,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.TimeManager");
 		return pStaticClass;
@@ -460,32 +460,32 @@ public:
 
 
 // Class OceanPlugin.WaterBoxComponent
-// 0x00B0 (0x0A00 - 0x0950)
+// 0x00C0 (0x0A10 - 0x0950)
 class UWaterBoxComponent : public UBoxComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0950(0x0004) MISSED OFFSET
-	float                                              SpeedValue;                                               // 0x0954(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              WaveForceMultiplier;                                      // 0x0958(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x095C(0x0004) MISSED OFFSET
-	TArray<struct FTrippleWaveParameter>               TrippleWaveClusters;                                      // 0x0960(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	float                                              TimeScaleOffset;                                          // 0x0970(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              Offset;                                                   // 0x0974(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               UseSplineDirection;                                       // 0x0978(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0979(0x0003) MISSED OFFSET
-	float                                              SpeedAttenuationFromSpline;                               // 0x097C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               UseSplineZ;                                               // 0x0980(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x0981(0x0003) MISSED OFFSET
-	float                                              ZOffset;                                                  // 0x0984(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              CellSizeX;                                                // 0x0988(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              CellSizeY;                                                // 0x098C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	TMap<float, struct FWaterBoxCell>                  Cells;                                                    // 0x0990(0x0050) (Edit, ZeroConstructor)
-	int                                                KeyFactor;                                                // 0x09E0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x1C];                                      // 0x09E4(0x001C) MISSED OFFSET
+	struct FVector                                     Direction;                                                // 0x0950(0x000C) (Edit, DisableEditOnInstance, IsPlainOldData)
+	float                                              SpeedValue;                                               // 0x095C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              WaveForceMultiplier;                                      // 0x0960(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0964(0x0004) MISSED OFFSET
+	TArray<struct FTrippleWaveParameter>               TrippleWaveClusters;                                      // 0x0968(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	float                                              TimeScaleOffset;                                          // 0x0978(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              Offset;                                                   // 0x097C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               UseSplineDirection;                                       // 0x0980(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0981(0x0003) MISSED OFFSET
+	float                                              SpeedAttenuationFromSpline;                               // 0x0984(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               UseSplineZ;                                               // 0x0988(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0989(0x0003) MISSED OFFSET
+	float                                              ZOffset;                                                  // 0x098C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              CellSizeX;                                                // 0x0990(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              CellSizeY;                                                // 0x0994(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	TMap<float, struct FWaterBoxCell>                  Cells;                                                    // 0x0998(0x0050) (Edit, ZeroConstructor)
+	int                                                KeyFactor;                                                // 0x09E8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x24];                                      // 0x09EC(0x0024) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.WaterBoxComponent");
 		return pStaticClass;
@@ -510,7 +510,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class OceanPlugin.WaterHeightmapComponent");
 		return pStaticClass;

@@ -1,42 +1,41 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Niagara.NiagaraComponent
-// 0x01D0 (0x0AF0 - 0x0920)
+// 0x01C0 (0x0AF0 - 0x0930)
 class UNiagaraComponent : public UFXSystemComponent
 {
 public:
-	class UNiagaraSystem*                              Asset;                                                    // 0x0920(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	struct FNiagaraUserRedirectionParameterStore       OverrideParameters;                                       // 0x0928(0x0138) (Edit)
-	unsigned char                                      bForceSolo : 1;                                           // 0x0A60(0x0001) (Edit)
-	unsigned char                                      UnknownData00[0x24];                                      // 0x0A61(0x0024) MISSED OFFSET
-	unsigned char                                      bAutoDestroy : 1;                                         // 0x0A85(0x0001)
-	unsigned char                                      bRenderingEnabled : 1;                                    // 0x0A85(0x0001)
-	unsigned char                                      bAutoManageAttachment : 1;                                // 0x0A85(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x0A86(0x0002) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnSystemFinished;                                         // 0x0A88(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	TWeakObjectPtr<class USceneComponent>              AutoAttachParent;                                         // 0x0A98(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, EditConst, InstancedReference, IsPlainOldData)
-	struct FName                                       AutoAttachSocketName;                                     // 0x0AA0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EAttachmentRule                                    AutoAttachLocationRule;                                   // 0x0AA8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EAttachmentRule                                    AutoAttachRotationRule;                                   // 0x0AA9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EAttachmentRule                                    AutoAttachScaleRule;                                      // 0x0AAA(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x1];                                       // 0x0AAB(0x0001) MISSED OFFSET
-	int                                                PreviewDetailLevel;                                       // 0x0AAC(0x0004) (Edit, ZeroConstructor, Transient, IsPlainOldData)
-	float                                              PreviewLODDistance;                                       // 0x0AB0(0x0004) (Edit, ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      bEnablePreviewDetailLevel : 1;                            // 0x0AB4(0x0001) (Edit, Transient)
-	unsigned char                                      bEnablePreviewLODDistance : 1;                            // 0x0AB4(0x0001) (Edit, Transient)
-	unsigned char                                      UnknownData03[0x3B];                                      // 0x0AB5(0x003B) MISSED OFFSET
+	struct FNiagaraUserRedirectionParameterStore       OverrideParameters;                                       // 0x0930(0x0138) (Edit)
+	unsigned char                                      bForceSolo : 1;                                           // 0x0A68(0x0001) (Edit)
+	unsigned char                                      UnknownData00[0x24];                                      // 0x0A69(0x0024) MISSED OFFSET
+	unsigned char                                      bAutoDestroy : 1;                                         // 0x0A8D(0x0001)
+	unsigned char                                      bRenderingEnabled : 1;                                    // 0x0A8D(0x0001)
+	unsigned char                                      bAutoManageAttachment : 1;                                // 0x0A8D(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0A8E(0x0002) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSystemFinished;                                         // 0x0A90(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	TWeakObjectPtr<class USceneComponent>              AutoAttachParent;                                         // 0x0AA0(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, EditConst, InstancedReference, IsPlainOldData)
+	struct FName                                       AutoAttachSocketName;                                     // 0x0AA8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EAttachmentRule                                    AutoAttachLocationRule;                                   // 0x0AB0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EAttachmentRule                                    AutoAttachRotationRule;                                   // 0x0AB1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EAttachmentRule                                    AutoAttachScaleRule;                                      // 0x0AB2(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x1];                                       // 0x0AB3(0x0001) MISSED OFFSET
+	int                                                PreviewDetailLevel;                                       // 0x0AB4(0x0004) (Edit, ZeroConstructor, Transient, IsPlainOldData)
+	float                                              PreviewLODDistance;                                       // 0x0AB8(0x0004) (Edit, ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      bEnablePreviewDetailLevel : 1;                            // 0x0ABC(0x0001) (Edit, Transient)
+	unsigned char                                      bEnablePreviewLODDistance : 1;                            // 0x0ABC(0x0001) (Edit, Transient)
+	unsigned char                                      UnknownData03[0x33];                                      // 0x0ABD(0x0033) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraComponent");
 		return pStaticClass;
@@ -93,7 +92,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraTrack");
 		return pStaticClass;
@@ -111,7 +110,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraParameterTrack");
 		return pStaticClass;
@@ -128,7 +127,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraBoolParameterTrack");
 		return pStaticClass;
@@ -145,7 +144,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraColorParameterTrack");
 		return pStaticClass;
@@ -162,7 +161,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraFloatParameterTrack");
 		return pStaticClass;
@@ -179,7 +178,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraIntegerParameterTrack");
 		return pStaticClass;
@@ -196,7 +195,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraSystemSpawnSection");
 		return pStaticClass;
@@ -213,7 +212,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraSystemTrack");
 		return pStaticClass;
@@ -232,7 +231,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.MovieSceneNiagaraVectorParameterTrack");
 		return pStaticClass;
@@ -250,7 +249,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraActor");
 		return pStaticClass;
@@ -268,7 +267,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterface");
 		return pStaticClass;
@@ -291,7 +290,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceCurveBase");
 		return pStaticClass;
@@ -309,7 +308,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceCollisionQuery");
 		return pStaticClass;
@@ -330,7 +329,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceColorCurve");
 		return pStaticClass;
@@ -349,7 +348,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceCurlNoise");
 		return pStaticClass;
@@ -367,7 +366,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceCurve");
 		return pStaticClass;
@@ -385,7 +384,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceParticleRead");
 		return pStaticClass;
@@ -405,7 +404,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceRWBase");
 		return pStaticClass;
@@ -422,7 +421,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceSimpleCounter");
 		return pStaticClass;
@@ -456,7 +455,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceSkeletalMesh");
 		return pStaticClass;
@@ -474,7 +473,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceSpline");
 		return pStaticClass;
@@ -496,7 +495,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceStaticMesh");
 		return pStaticClass;
@@ -514,7 +513,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceTexture");
 		return pStaticClass;
@@ -533,7 +532,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceVector2DCurve");
 		return pStaticClass;
@@ -554,7 +553,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceVector4Curve");
 		return pStaticClass;
@@ -574,7 +573,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceVectorCurve");
 		return pStaticClass;
@@ -596,7 +595,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDataInterfaceVectorField");
 		return pStaticClass;
@@ -616,7 +615,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraRendererProperties");
 		return pStaticClass;
@@ -642,7 +641,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraDecalRendererProperties");
 		return pStaticClass;
@@ -659,7 +658,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraEditorDataBase");
 		return pStaticClass;
@@ -711,7 +710,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraEmitter");
 		return pStaticClass;
@@ -728,7 +727,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraEventReceiverEmitterAction");
 		return pStaticClass;
@@ -747,7 +746,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraEventReceiverEmitterAction_SpawnParticles");
 		return pStaticClass;
@@ -764,14 +763,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraFunctionLibrary");
 		return pStaticClass;
 	}
 
 
-	static class UNiagaraComponent* SpawnSystemAttached(class UNiagaraSystem* SystemTemplate, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TEnumAsByte<enum EAttachLocation> LocationType, bool bAutoDestroy);
+	static class UNiagaraComponent* SpawnSystemAttached(class UNiagaraSystem* SystemTemplate, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TEnumAsByte<EAttachLocation> LocationType, bool bAutoDestroy);
 	static class UNiagaraComponent* SpawnSystemAtLocation(class UObject* WorldContextObject, class UNiagaraSystem* SystemTemplate, const struct FVector& Location, const struct FRotator& Rotation, bool bAutoDestroy);
 	static void OverrideSystemUserVariableStaticMeshComponent(class UNiagaraComponent* NiagaraSystem, const struct FString& OverrideName, class UStaticMeshComponent* StaticMeshComponent);
 	static void OverrideSystemUserVariableStaticMesh(class UNiagaraComponent* NiagaraSystem, const struct FString& OverrideName, class UStaticMesh* StaticMesh);
@@ -802,7 +801,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraLightRendererProperties");
 		return pStaticClass;
@@ -839,7 +838,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraMeshRendererProperties");
 		return pStaticClass;
@@ -859,7 +858,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraParameterCollectionInstance");
 		return pStaticClass;
@@ -897,7 +896,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraParameterCollection");
 		return pStaticClass;
@@ -914,7 +913,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewBase");
 		return pStaticClass;
@@ -934,7 +933,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis");
 		return pStaticClass;
@@ -957,7 +956,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis_InterpParamBase");
 		return pStaticClass;
@@ -976,7 +975,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis_InterpParamInt32");
 		return pStaticClass;
@@ -995,7 +994,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis_InterpParamFloat");
 		return pStaticClass;
@@ -1015,7 +1014,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis_InterpParamVector2D");
 		return pStaticClass;
@@ -1035,7 +1034,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis_InterpParamVector");
 		return pStaticClass;
@@ -1054,7 +1053,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis_InterpParamVector4");
 		return pStaticClass;
@@ -1074,7 +1073,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewAxis_InterpParamLinearColor");
 		return pStaticClass;
@@ -1103,7 +1102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraPreviewGrid");
 		return pStaticClass;
@@ -1160,7 +1159,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraRibbonRendererProperties");
 		return pStaticClass;
@@ -1190,7 +1189,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraScript");
 		return pStaticClass;
@@ -1210,7 +1209,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraScriptSourceBase");
 		return pStaticClass;
@@ -1230,7 +1229,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraSettings");
 		return pStaticClass;
@@ -1280,7 +1279,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraSpriteRendererProperties");
 		return pStaticClass;
@@ -1316,7 +1315,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Niagara.NiagaraSystem");
 		return pStaticClass;

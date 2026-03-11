@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UnrealArchExt.UAEUserWidget.Visible
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 bool UUAEUserWidget::Visible()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.Visible");
 
@@ -38,7 +38,7 @@ bool UUAEUserWidget::Visible()
 
 void UUAEUserWidget::UnRegistFromGameFrontendHUD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.UnRegistFromGameFrontendHUD");
 
@@ -59,7 +59,7 @@ void UUAEUserWidget::UnRegistFromGameFrontendHUD()
 
 void UUAEUserWidget::SynchronizeBlueprintProperties()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.SynchronizeBlueprintProperties");
 
@@ -79,7 +79,7 @@ void UUAEUserWidget::SynchronizeBlueprintProperties()
 
 void UUAEUserWidget::Show()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.Show");
 
@@ -102,7 +102,7 @@ void UUAEUserWidget::Show()
 
 void UUAEUserWidget::SetParentWidgetRecursive(class UUAEUserWidget* InParentWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.SetParentWidgetRecursive");
 
@@ -126,7 +126,7 @@ void UUAEUserWidget::SetParentWidgetRecursive(class UUAEUserWidget* InParentWidg
 
 void UUAEUserWidget::SetParentWidget(class UUAEUserWidget* InParentWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.SetParentWidget");
 
@@ -150,7 +150,7 @@ void UUAEUserWidget::SetParentWidget(class UUAEUserWidget* InParentWidget)
 
 void UUAEUserWidget::SetOnWidgetShow(const struct FScriptDelegate& onShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.SetOnWidgetShow");
 
@@ -174,7 +174,7 @@ void UUAEUserWidget::SetOnWidgetShow(const struct FScriptDelegate& onShow)
 
 void UUAEUserWidget::SetOnWidgetHide(const struct FScriptDelegate& OnHide)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.SetOnWidgetHide");
 
@@ -198,7 +198,7 @@ void UUAEUserWidget::SetOnWidgetHide(const struct FScriptDelegate& OnHide)
 
 void UUAEUserWidget::SetOnClearUIStack(const struct FScriptDelegate& onClear)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.SetOnClearUIStack");
 
@@ -225,7 +225,7 @@ void UUAEUserWidget::SetOnClearUIStack(const struct FScriptDelegate& onClear)
 
 void UUAEUserWidget::SetAdapation(float Left, float Top, float Right, float Bottom)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.SetAdapation");
 
@@ -252,7 +252,7 @@ void UUAEUserWidget::SetAdapation(float Left, float Top, float Right, float Bott
 
 void UUAEUserWidget::RegistToGameFrontendHUD(class UFrontendHUD* GameFrontHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.RegistToGameFrontendHUD");
 
@@ -277,7 +277,7 @@ void UUAEUserWidget::RegistToGameFrontendHUD(class UFrontendHUD* GameFrontHUD)
 
 void UUAEUserWidget::Register(class ULogicManagerBase* LogicManager, bool bAddToViewport)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.Register");
 
@@ -300,7 +300,7 @@ void UUAEUserWidget::Register(class ULogicManagerBase* LogicManager, bool bAddTo
 
 void UUAEUserWidget::ReceiveShow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ReceiveShow");
 
@@ -320,7 +320,7 @@ void UUAEUserWidget::ReceiveShow()
 
 void UUAEUserWidget::ReceiveHide()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ReceiveHide");
 
@@ -340,7 +340,7 @@ void UUAEUserWidget::ReceiveHide()
 
 void UUAEUserWidget::ReceivedMountWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ReceivedMountWidget");
 
@@ -361,7 +361,7 @@ void UUAEUserWidget::ReceivedMountWidget()
 
 void UUAEUserWidget::ReceivedInitWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ReceivedInitWidget");
 
@@ -381,7 +381,7 @@ void UUAEUserWidget::ReceivedInitWidget()
 
 void UUAEUserWidget::ReCachedUIMsgFunction()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ReCachedUIMsgFunction");
 
@@ -404,7 +404,7 @@ void UUAEUserWidget::ReCachedUIMsgFunction()
 
 void UUAEUserWidget::PushOpenedUIStack(const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.PushOpenedUIStack");
 
@@ -428,7 +428,7 @@ void UUAEUserWidget::PushOpenedUIStack(const struct FString& Name)
 
 void UUAEUserWidget::PopOpenedUIStack(const struct FString& curOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.PopOpenedUIStack");
 
@@ -452,7 +452,7 @@ void UUAEUserWidget::PopOpenedUIStack(const struct FString& curOpen)
 
 void UUAEUserWidget::OnWidgetShow__DelegateSignature(const struct FString& ClassName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction UnrealArchExt.UAEUserWidget.OnWidgetShow__DelegateSignature");
 
@@ -475,7 +475,7 @@ void UUAEUserWidget::OnWidgetShow__DelegateSignature(const struct FString& Class
 
 void UUAEUserWidget::OnWidgetHide__DelegateSignature(const struct FString& ClassName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction UnrealArchExt.UAEUserWidget.OnWidgetHide__DelegateSignature");
 
@@ -498,7 +498,7 @@ void UUAEUserWidget::OnWidgetHide__DelegateSignature(const struct FString& Class
 
 void UUAEUserWidget::OnRightClicked(const struct FVector2D& TempScreenPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.OnRightClicked");
 
@@ -519,7 +519,7 @@ void UUAEUserWidget::OnRightClicked(const struct FVector2D& TempScreenPos)
 
 void UUAEUserWidget::OnFadeOutFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.OnFadeOutFinished");
 
@@ -540,7 +540,7 @@ void UUAEUserWidget::OnFadeOutFinished()
 
 void UUAEUserWidget::OnFadeInFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.OnFadeInFinished");
 
@@ -563,7 +563,7 @@ void UUAEUserWidget::OnFadeInFinished()
 
 void UUAEUserWidget::OnDoubleClicked(const struct FVector2D& TempScreenPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.OnDoubleClicked");
 
@@ -586,7 +586,7 @@ void UUAEUserWidget::OnDoubleClicked(const struct FVector2D& TempScreenPos)
 
 void UUAEUserWidget::OnClicked(const struct FVector2D& TempScreenPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.OnClicked");
 
@@ -607,7 +607,7 @@ void UUAEUserWidget::OnClicked(const struct FVector2D& TempScreenPos)
 
 void UUAEUserWidget::OnClearUIStack__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction UnrealArchExt.UAEUserWidget.OnClearUIStack__DelegateSignature");
 
@@ -632,7 +632,7 @@ void UUAEUserWidget::OnClearUIStack__DelegateSignature()
 
 bool UUAEUserWidget::IntCompare(int A, int B, EWidgetCompareType CompareType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.IntCompare");
 
@@ -660,7 +660,7 @@ bool UUAEUserWidget::IntCompare(int A, int B, EWidgetCompareType CompareType)
 
 void UUAEUserWidget::InitWidget(bool Recursive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.InitWidget");
 
@@ -685,7 +685,7 @@ void UUAEUserWidget::InitWidget(bool Recursive)
 
 void UUAEUserWidget::InitCustomWidget(class AActor* OwnerActor, class UWidgetComponent* WidgetComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.InitCustomWidget");
 
@@ -708,7 +708,7 @@ void UUAEUserWidget::InitCustomWidget(class AActor* OwnerActor, class UWidgetCom
 
 void UUAEUserWidget::Hide()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.Hide");
 
@@ -731,7 +731,7 @@ void UUAEUserWidget::Hide()
 
 void UUAEUserWidget::HandleUIMessageBattle(const struct FString& UIMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.HandleUIMessageBattle");
 
@@ -755,7 +755,7 @@ void UUAEUserWidget::HandleUIMessageBattle(const struct FString& UIMessage)
 
 void UUAEUserWidget::HandleUIMessage(const struct FString& UIMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.HandleUIMessage");
 
@@ -782,7 +782,7 @@ void UUAEUserWidget::HandleUIMessage(const struct FString& UIMessage)
 
 class UWidget* UUAEUserWidget::GetWidgetsByName(const struct FString& WidgetName, const struct FString& OuterName, bool bUseContains)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetWidgetsByName");
 
@@ -811,7 +811,7 @@ class UWidget* UUAEUserWidget::GetWidgetsByName(const struct FString& WidgetName
 
 class UWidget* UUAEUserWidget::GetWidgetContainsName(const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetWidgetContainsName");
 
@@ -837,7 +837,7 @@ class UWidget* UUAEUserWidget::GetWidgetContainsName(const struct FString& Name)
 
 class UUAEUserWidget* UUAEUserWidget::GetParentWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetParentWidget");
 
@@ -862,7 +862,7 @@ class UUAEUserWidget* UUAEUserWidget::GetParentWidget()
 
 class APlayerController* UUAEUserWidget::GetOwningPlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetOwningPlayer");
 
@@ -887,7 +887,7 @@ class APlayerController* UUAEUserWidget::GetOwningPlayer()
 
 class ULogicManagerBase* UUAEUserWidget::GetOwningLogicManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetOwningLogicManager");
 
@@ -912,7 +912,7 @@ class ULogicManagerBase* UUAEUserWidget::GetOwningLogicManager()
 
 class UFrontendHUD* UUAEUserWidget::GetOwningFrontendHUD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetOwningFrontendHUD");
 
@@ -938,7 +938,7 @@ class UFrontendHUD* UUAEUserWidget::GetOwningFrontendHUD()
 
 class UMaterialInstanceDynamic* UUAEUserWidget::GetImgDynamicMaterial(class UImage* ImageMat)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetImgDynamicMaterial");
 
@@ -967,7 +967,7 @@ class UMaterialInstanceDynamic* UUAEUserWidget::GetImgDynamicMaterial(class UIma
 
 class UUserWidget* UUAEUserWidget::GetChildWidgetByEqualPolitics(const struct FString& ChildName, EUserWidgetNameEqualPolitics EqualPolitics, int RecursiveDepth)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetChildWidgetByEqualPolitics");
 
@@ -996,7 +996,7 @@ class UUserWidget* UUAEUserWidget::GetChildWidgetByEqualPolitics(const struct FS
 
 class UUserWidget* UUAEUserWidget::GetChildWidget(const struct FString& WName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetChildWidget");
 
@@ -1022,7 +1022,7 @@ class UUserWidget* UUAEUserWidget::GetChildWidget(const struct FString& WName)
 
 struct FMargin UUAEUserWidget::GetAdapation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.GetAdapation");
 
@@ -1050,7 +1050,7 @@ struct FMargin UUAEUserWidget::GetAdapation()
 
 bool UUAEUserWidget::FloatCompare(float A, float B, EWidgetCompareType CompareType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.FloatCompare");
 
@@ -1078,7 +1078,7 @@ bool UUAEUserWidget::FloatCompare(float A, float B, EWidgetCompareType CompareTy
 
 void UUAEUserWidget::DynamicRegistUIMsgToCache(class UUAEUserWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.DynamicRegistUIMsgToCache");
 
@@ -1100,7 +1100,7 @@ void UUAEUserWidget::DynamicRegistUIMsgToCache(class UUAEUserWidget* Widget)
 
 void UUAEUserWidget::DestroyWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.DestroyWidget");
 
@@ -1121,7 +1121,7 @@ void UUAEUserWidget::DestroyWidget()
 
 void UUAEUserWidget::ClearOpenedUIStack()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ClearOpenedUIStack");
 
@@ -1144,7 +1144,7 @@ void UUAEUserWidget::ClearOpenedUIStack()
 
 void UUAEUserWidget::ClearFunctionCacheByMsgName(const struct FString& InUIMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ClearFunctionCacheByMsgName");
 
@@ -1166,7 +1166,7 @@ void UUAEUserWidget::ClearFunctionCacheByMsgName(const struct FString& InUIMsg)
 
 void UUAEUserWidget::ClearFunctionCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ClearFunctionCache");
 
@@ -1187,7 +1187,7 @@ void UUAEUserWidget::ClearFunctionCache()
 
 void UUAEUserWidget::ClearClassWidgetTree()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.ClearClassWidgetTree");
 
@@ -1211,7 +1211,7 @@ void UUAEUserWidget::ClearClassWidgetTree()
 
 void UUAEUserWidget::BindCustomUserEvent(class AActor* OwnerActor, class UWidgetComponent* WidgetComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidget.BindCustomUserEvent");
 
@@ -1234,7 +1234,7 @@ void UUAEUserWidget::BindCustomUserEvent(class AActor* OwnerActor, class UWidget
 
 void UUAECanvasPanel::ReceiveInitCanvasPanel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAECanvasPanel.ReceiveInitCanvasPanel");
 
@@ -1258,7 +1258,7 @@ void UUAECanvasPanel::ReceiveInitCanvasPanel()
 
 class UFrontendHUD* UBackendHUD::GetFrontendHUDByGameInstance(class UGameInstance* GameInstance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.BackendHUD.GetFrontendHUDByGameInstance");
 
@@ -1285,7 +1285,7 @@ class UFrontendHUD* UBackendHUD::GetFrontendHUDByGameInstance(class UGameInstanc
 
 class UFrontendHUD* UBackendHUD::GetFrontendHUD(int FrontendHUDIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.BackendHUD.GetFrontendHUD");
 
@@ -1311,7 +1311,7 @@ class UFrontendHUD* UBackendHUD::GetFrontendHUD(int FrontendHUDIndex)
 
 void ULogicManagerBase::SetEnableRemoveDynamicWidgets(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.SetEnableRemoveDynamicWidgets");
 
@@ -1335,7 +1335,7 @@ void ULogicManagerBase::SetEnableRemoveDynamicWidgets(bool bEnable)
 
 void ULogicManagerBase::MarkWidgetClassPendingKill(class UUAEUserWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.MarkWidgetClassPendingKill");
 
@@ -1359,7 +1359,7 @@ void ULogicManagerBase::MarkWidgetClassPendingKill(class UUAEUserWidget* Widget)
 
 bool ULogicManagerBase::IsEnableRemoveDynamicWidgets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.IsEnableRemoveDynamicWidgets");
 
@@ -1384,7 +1384,7 @@ bool ULogicManagerBase::IsEnableRemoveDynamicWidgets()
 
 TArray<class UUAEUserWidget*> ULogicManagerBase::GetWidgetList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.GetWidgetList");
 
@@ -1410,7 +1410,7 @@ TArray<class UUAEUserWidget*> ULogicManagerBase::GetWidgetList()
 
 class UUAEUserWidget* ULogicManagerBase::GetWidgetByName(const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.GetWidgetByName");
 
@@ -1437,7 +1437,7 @@ class UUAEUserWidget* ULogicManagerBase::GetWidgetByName(const struct FString& I
 
 class UUAEUserWidget* ULogicManagerBase::GetWidgetByClass(class UClass* InClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.GetWidgetByClass");
 
@@ -1463,7 +1463,7 @@ class UUAEUserWidget* ULogicManagerBase::GetWidgetByClass(class UClass* InClass)
 
 class UFrontendHUD* ULogicManagerBase::GetOwningFrontendHUD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.GetOwningFrontendHUD");
 
@@ -1488,7 +1488,7 @@ class UFrontendHUD* ULogicManagerBase::GetOwningFrontendHUD()
 
 int ULogicManagerBase::GetDefaultSceneCamera()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.GetDefaultSceneCamera");
 
@@ -1515,7 +1515,7 @@ int ULogicManagerBase::GetDefaultSceneCamera()
 
 void ULogicManagerBase::DispatchUIMessage(const struct FString& UIMessage, class UObject* Source, class UUAEUserWidget* Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.LogicManagerBase.DispatchUIMessage");
 
@@ -1541,7 +1541,7 @@ void ULogicManagerBase::DispatchUIMessage(const struct FString& UIMessage, class
 
 void UFrontendHUD::SwitchUIStatus(const struct FString& InUIStatus)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.SwitchUIStatus");
 
@@ -1566,7 +1566,7 @@ void UFrontendHUD::SwitchUIStatus(const struct FString& InUIStatus)
 
 void UFrontendHUD::SwitchGameStatus(const struct FString& GameStatus, const struct FString& Options)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.SwitchGameStatus");
 
@@ -1592,7 +1592,7 @@ void UFrontendHUD::SwitchGameStatus(const struct FString& GameStatus, const stru
 
 void UFrontendHUD::StandAloneSwitchGameStatus(const struct FString& InGameStatus, const struct FString& Options)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.StandAloneSwitchGameStatus");
 
@@ -1617,7 +1617,7 @@ void UFrontendHUD::StandAloneSwitchGameStatus(const struct FString& InGameStatus
 
 void UFrontendHUD::OnRenderQualityChanged(bool bLoadMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.OnRenderQualityChanged");
 
@@ -1641,7 +1641,7 @@ void UFrontendHUD::OnRenderQualityChanged(bool bLoadMap)
 
 void UFrontendHUD::OnPreLoadMap(const struct FString& MapName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.OnPreLoadMap");
 
@@ -1665,7 +1665,7 @@ void UFrontendHUD::OnPreLoadMap(const struct FString& MapName)
 
 void UFrontendHUD::OnPostLoadMapWithWorld(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.OnPostLoadMapWithWorld");
 
@@ -1687,7 +1687,7 @@ void UFrontendHUD::OnPostLoadMapWithWorld(class UWorld* World)
 
 void UFrontendHUD::OnGameViewportClientCreated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.OnGameViewportClientCreated");
 
@@ -1710,7 +1710,7 @@ void UFrontendHUD::OnGameViewportClientCreated()
 
 class UWorld* UFrontendHUD::GetWorld()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetWorld");
 
@@ -1735,7 +1735,7 @@ class UWorld* UFrontendHUD::GetWorld()
 
 class UFrontendUtils* UFrontendHUD::GetUtils()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetUtils");
 
@@ -1760,7 +1760,7 @@ class UFrontendUtils* UFrontendHUD::GetUtils()
 
 class APlayerController* UFrontendHUD::GetPlayerController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetPlayerController");
 
@@ -1786,7 +1786,7 @@ class APlayerController* UFrontendHUD::GetPlayerController()
 
 class ULogicManagerBase* UFrontendHUD::GetLogicManagerByName(const struct FString& LogicManagerTagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetLogicManagerByName");
 
@@ -1813,7 +1813,7 @@ class ULogicManagerBase* UFrontendHUD::GetLogicManagerByName(const struct FStrin
 
 class ULogicManagerBase* UFrontendHUD::GetLogicManager(int LogicManagerIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetLogicManager");
 
@@ -1839,7 +1839,7 @@ class ULogicManagerBase* UFrontendHUD::GetLogicManager(int LogicManagerIndex)
 
 class UGameViewportClient* UFrontendHUD::GetGameViewportClient()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetGameViewportClient");
 
@@ -1864,7 +1864,7 @@ class UGameViewportClient* UFrontendHUD::GetGameViewportClient()
 
 class AGameMode* UFrontendHUD::GetGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetGameMode");
 
@@ -1889,7 +1889,7 @@ class AGameMode* UFrontendHUD::GetGameMode()
 
 class UGameInstance* UFrontendHUD::GetGameInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.GetGameInstance");
 
@@ -1916,7 +1916,7 @@ class UGameInstance* UFrontendHUD::GetGameInstance()
 
 TArray<TWeakObjectPtr<class UObject>> UFrontendHUD::FindRegistedUIFunctionList(const struct FString& strMsg, const struct FString& moduleMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.FindRegistedUIFunctionList");
 
@@ -1943,7 +1943,7 @@ TArray<TWeakObjectPtr<class UObject>> UFrontendHUD::FindRegistedUIFunctionList(c
 
 void UFrontendHUD::EnableGuiTest(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.EnableGuiTest");
 
@@ -1968,7 +1968,7 @@ void UFrontendHUD::EnableGuiTest(bool bEnable)
 
 void UFrontendHUD::DynamicRegistUIMsgToCache(class UUAEUserWidget* Widget, const struct FString& module)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.DynamicRegistUIMsgToCache");
 
@@ -1994,7 +1994,7 @@ void UFrontendHUD::DynamicRegistUIMsgToCache(class UUAEUserWidget* Widget, const
 
 void UFrontendHUD::ClearLogicManagerListByStatus(const struct FName& PendingStatus, bool bIsForceDelete)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.ClearLogicManagerListByStatus");
 
@@ -2019,7 +2019,7 @@ void UFrontendHUD::ClearLogicManagerListByStatus(const struct FName& PendingStat
 
 void UFrontendHUD::ClearLogicManagerByName(const struct FString& managerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendHUD.ClearLogicManagerByName");
 
@@ -2040,15 +2040,15 @@ void UFrontendHUD::ClearLogicManagerByName(const struct FString& managerName)
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // struct FTransform              targetTrans                    (Parm, IsPlainOldData)
-// TEnumAsByte<enum ECameraProjectionMode> ProjectionMode                 (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECameraProjectionMode> ProjectionMode                 (Parm, ZeroConstructor, IsPlainOldData)
 // float                          FOV                            (Parm, ZeroConstructor, IsPlainOldData)
 // float                          BlendTime                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bForce                         (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bAutoFixAspect                 (Parm, ZeroConstructor, IsPlainOldData)
 
-void UFrontendUtils::SwitchSceneCameraToTransform(const struct FTransform& targetTrans, TEnumAsByte<enum ECameraProjectionMode> ProjectionMode, float FOV, float BlendTime, bool bForce, bool bAutoFixAspect)
+void UFrontendUtils::SwitchSceneCameraToTransform(const struct FTransform& targetTrans, TEnumAsByte<ECameraProjectionMode> ProjectionMode, float FOV, float BlendTime, bool bForce, bool bAutoFixAspect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.SwitchSceneCameraToTransform");
 
@@ -2079,7 +2079,7 @@ void UFrontendUtils::SwitchSceneCameraToTransform(const struct FTransform& targe
 
 void UFrontendUtils::SwitchSceneCamera(const struct FName& SceneCameraName, float BlendTime, bool bForce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.SwitchSceneCamera");
 
@@ -2108,7 +2108,7 @@ void UFrontendUtils::SwitchSceneCamera(const struct FName& SceneCameraName, floa
 
 void UFrontendUtils::SetSceneSkyLightProperty(const struct FName& sceneLightName, const struct FTransform& targetTrans, float Intensity, const struct FLinearColor& Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.SetSceneSkyLightProperty");
 
@@ -2140,7 +2140,7 @@ void UFrontendUtils::SetSceneSkyLightProperty(const struct FName& sceneLightName
 
 void UFrontendUtils::SetScenePointLightProperty(const struct FName& sceneLightName, const struct FTransform& targetTrans, float Intensity, const struct FLinearColor& Color, int inverseSquareFalloff, float Radius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.SetScenePointLightProperty");
 
@@ -2173,7 +2173,7 @@ void UFrontendUtils::SetScenePointLightProperty(const struct FName& sceneLightNa
 
 void UFrontendUtils::SetSceneDirectionalLightProperty(const struct FName& sceneLightName, const struct FTransform& targetTrans, float Intensity, const struct FLinearColor& Color, const struct FLightingChannels& Channel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.SetSceneDirectionalLightProperty");
 
@@ -2202,7 +2202,7 @@ void UFrontendUtils::SetSceneDirectionalLightProperty(const struct FName& sceneL
 
 void UFrontendUtils::SetAutoFixFovByAspectRatio(class ACameraActor* CameraActor, bool bInAutoFixFov)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.SetAutoFixFovByAspectRatio");
 
@@ -2228,7 +2228,7 @@ void UFrontendUtils::SetAutoFixFovByAspectRatio(class ACameraActor* CameraActor,
 
 void UFrontendUtils::RegisterSceneSkyLight(const struct FName& sceneLightName, class ASkyLight* Light)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.RegisterSceneSkyLight");
 
@@ -2254,7 +2254,7 @@ void UFrontendUtils::RegisterSceneSkyLight(const struct FName& sceneLightName, c
 
 void UFrontendUtils::RegisterScenePointLight(const struct FName& sceneLightName, class APointLight* Light)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.RegisterScenePointLight");
 
@@ -2280,7 +2280,7 @@ void UFrontendUtils::RegisterScenePointLight(const struct FName& sceneLightName,
 
 void UFrontendUtils::RegisterSceneDirectionalLight(const struct FName& sceneLightName, class ADirectionalLight* Light)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.RegisterSceneDirectionalLight");
 
@@ -2306,7 +2306,7 @@ void UFrontendUtils::RegisterSceneDirectionalLight(const struct FName& sceneLigh
 
 void UFrontendUtils::RegisterSceneCamera(const struct FName& SceneCameraName, class ACameraActor* SceneCamera)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.RegisterSceneCamera");
 
@@ -2329,7 +2329,7 @@ void UFrontendUtils::RegisterSceneCamera(const struct FName& SceneCameraName, cl
 
 void UFrontendUtils::PopAllPushedUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.PopAllPushedUI");
 
@@ -2350,7 +2350,7 @@ void UFrontendUtils::PopAllPushedUI()
 
 void UFrontendUtils::OnAllSceneCamerasRegistered()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.OnAllSceneCamerasRegistered");
 
@@ -2374,7 +2374,7 @@ void UFrontendUtils::OnAllSceneCamerasRegistered()
 
 bool UFrontendUtils::IsPushedPanel(const struct FName& managerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.IsPushedPanel");
 
@@ -2400,7 +2400,7 @@ bool UFrontendUtils::IsPushedPanel(const struct FName& managerName)
 
 bool UFrontendUtils::IsNoRenderClient()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.IsNoRenderClient");
 
@@ -2425,7 +2425,7 @@ bool UFrontendUtils::IsNoRenderClient()
 
 struct FString UFrontendUtils::GetUIStackTopSrcTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetUIStackTopSrcTag");
 
@@ -2450,7 +2450,7 @@ struct FString UFrontendUtils::GetUIStackTopSrcTag()
 
 struct FString UFrontendUtils::GetUIStackTopDstTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetUIStackTopDstTag");
 
@@ -2475,11 +2475,36 @@ struct FString UFrontendUtils::GetUIStackTopDstTag()
 
 struct FString UFrontendUtils::GetUIStackTop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetUIStackTop");
 
 	UFrontendUtils_GetUIStackTop_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UnrealArchExt.FrontendUtils.GetSceneCameraComponent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UCameraComponent*        ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+
+class UCameraComponent* UFrontendUtils::GetSceneCameraComponent()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetSceneCameraComponent");
+
+	UFrontendUtils_GetSceneCameraComponent_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -2500,7 +2525,7 @@ struct FString UFrontendUtils::GetUIStackTop()
 
 class ACameraActor* UFrontendUtils::GetSceneCamera()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetSceneCamera");
 
@@ -2525,7 +2550,7 @@ class ACameraActor* UFrontendUtils::GetSceneCamera()
 
 class UFrontendHUD* UFrontendUtils::GetOwningFrontendHUD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetOwningFrontendHUD");
 
@@ -2551,7 +2576,7 @@ class UFrontendHUD* UFrontendUtils::GetOwningFrontendHUD()
 
 class UUAEWidgetContainer* UFrontendUtils::GetGlobalUIContainer(const struct FName& ContainerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetGlobalUIContainer");
 
@@ -2578,7 +2603,7 @@ class UUAEWidgetContainer* UFrontendUtils::GetGlobalUIContainer(const struct FNa
 
 void UFrontendUtils::GetAllActorsFromLevel(class ULevel* Level, TArray<class AActor*>* OutActors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.GetAllActorsFromLevel");
 
@@ -2605,7 +2630,7 @@ void UFrontendUtils::GetAllActorsFromLevel(class ULevel* Level, TArray<class AAc
 
 void UFrontendUtils::EnableLobbyMainLight(bool NewEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.EnableLobbyMainLight");
 
@@ -2627,7 +2652,7 @@ void UFrontendUtils::EnableLobbyMainLight(bool NewEnable)
 
 void UFrontendUtils::ClearAllSceneCameras()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.FrontendUtils.ClearAllSceneCameras");
 
@@ -2653,7 +2678,7 @@ void UFrontendUtils::ClearAllSceneCameras()
 
 bool UUAEDataTable::SetTableData_String(const struct FString& KeyValue, const struct FString& TagName, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEDataTable.SetTableData_String");
 
@@ -2684,7 +2709,7 @@ bool UUAEDataTable::SetTableData_String(const struct FString& KeyValue, const st
 
 bool UUAEDataTable::SetTableData_Int32(const struct FString& KeyValue, const struct FString& TagName, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEDataTable.SetTableData_Int32");
 
@@ -2715,7 +2740,7 @@ bool UUAEDataTable::SetTableData_Int32(const struct FString& KeyValue, const str
 
 bool UUAEDataTable::SetTableData_Float(const struct FString& KeyValue, const struct FString& TagName, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEDataTable.SetTableData_Float");
 
@@ -2743,7 +2768,7 @@ bool UUAEDataTable::SetTableData_Float(const struct FString& KeyValue, const str
 
 struct FString UUAEDataTable::GetTableName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEDataTable.GetTableName");
 
@@ -2769,7 +2794,7 @@ struct FString UUAEDataTable::GetTableName()
 
 struct FString UUAEDataTable::GetRealTableName(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEDataTable.GetRealTableName");
 
@@ -2796,7 +2821,7 @@ struct FString UUAEDataTable::GetRealTableName(const struct FString& tableName)
 
 bool UUAEDataTable::ConditionAddEmptyRow(const struct FName& RowName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEDataTable.ConditionAddEmptyRow");
 
@@ -2822,7 +2847,7 @@ bool UUAEDataTable::ConditionAddEmptyRow(const struct FName& RowName)
 
 void UUAEUserWidgetForDrag::OnDragged(class UDragDropOperation* Operation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEUserWidgetForDrag.OnDragged");
 
@@ -2846,7 +2871,7 @@ void UUAEUserWidgetForDrag::OnDragged(class UDragDropOperation* Operation)
 
 void UUAEWidgetContainer::RemoveWidgetInternal(class UWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEWidgetContainer.RemoveWidgetInternal");
 
@@ -2870,7 +2895,7 @@ void UUAEWidgetContainer::RemoveWidgetInternal(class UWidget* Widget)
 
 void UUAEWidgetContainer::RemoveWidget(class UWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEWidgetContainer.RemoveWidget");
 
@@ -2895,7 +2920,7 @@ void UUAEWidgetContainer::RemoveWidget(class UWidget* Widget)
 
 void UUAEWidgetContainer::AddWidgetWithZOrderInternal(class UWidget* Widget, int ZOrder)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEWidgetContainer.AddWidgetWithZOrderInternal");
 
@@ -2921,7 +2946,7 @@ void UUAEWidgetContainer::AddWidgetWithZOrderInternal(class UWidget* Widget, int
 
 void UUAEWidgetContainer::AddWidgetWithZOrder(class UWidget* Widget, int ZOrder)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEWidgetContainer.AddWidgetWithZOrder");
 
@@ -2946,7 +2971,7 @@ void UUAEWidgetContainer::AddWidgetWithZOrder(class UWidget* Widget, int ZOrder)
 
 void UUAEWidgetContainer::AddWidgetInternal(class UWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEWidgetContainer.AddWidgetInternal");
 
@@ -2970,7 +2995,7 @@ void UUAEWidgetContainer::AddWidgetInternal(class UWidget* Widget)
 
 void UUAEWidgetContainer::AddWidget(class UWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function UnrealArchExt.UAEWidgetContainer.AddWidget");
 

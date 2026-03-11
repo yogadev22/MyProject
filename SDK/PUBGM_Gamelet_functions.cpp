@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Gamelet.Gamelet.UpdateProductConfig
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 int UGamelet::UpdateProductConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.UpdateProductConfig");
 
@@ -38,7 +38,7 @@ int UGamelet::UpdateProductConfig()
 
 void UGamelet::StopTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.StopTick");
 
@@ -59,7 +59,7 @@ void UGamelet::StopTick()
 
 void UGamelet::StartTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.StartTick");
 
@@ -82,7 +82,7 @@ void UGamelet::StartTick()
 
 void UGamelet::SetTickIntervalSec(float TickIntervalSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SetTickIntervalSec");
 
@@ -107,7 +107,7 @@ void UGamelet::SetTickIntervalSec(float TickIntervalSec)
 
 int UGamelet::SetScriptExternalLoadDir(const struct FString& ExternalLoadDir)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SetScriptExternalLoadDir");
 
@@ -135,7 +135,7 @@ int UGamelet::SetScriptExternalLoadDir(const struct FString& ExternalLoadDir)
 
 int UGamelet::SetFont(const struct FString& FontName, const struct FString& FontPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SetFont");
 
@@ -163,7 +163,7 @@ int UGamelet::SetFont(const struct FString& FontName, const struct FString& Font
 
 int UGamelet::SetDefaultFont(const struct FString& FontName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SetDefaultFont");
 
@@ -190,7 +190,7 @@ int UGamelet::SetDefaultFont(const struct FString& FontName)
 
 int UGamelet::SetBuiltinResConfig(const struct FString& ResConfig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SetBuiltinResConfig");
 
@@ -218,7 +218,7 @@ int UGamelet::SetBuiltinResConfig(const struct FString& ResConfig)
 
 int UGamelet::SetAppVisibility(const struct FString& AppID, bool Visible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SetAppVisibility");
 
@@ -248,7 +248,7 @@ int UGamelet::SetAppVisibility(const struct FString& AppID, bool Visible)
 
 int UGamelet::SetAppPageVisibility(const struct FString& AppID, const struct FString& AppPage, bool Visible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SetAppPageVisibility");
 
@@ -277,7 +277,7 @@ int UGamelet::SetAppPageVisibility(const struct FString& AppID, const struct FSt
 
 int UGamelet::SendMessageToSdk(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SendMessageToSdk");
 
@@ -305,7 +305,7 @@ int UGamelet::SendMessageToSdk(const struct FString& Msg)
 
 int UGamelet::SendMessageToApp(const struct FString& AppID, const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.SendMessageToApp");
 
@@ -333,7 +333,7 @@ int UGamelet::SendMessageToApp(const struct FString& AppID, const struct FString
 
 int UGamelet::RefreshUserdata(TMap<struct FString, struct FString> UserData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.RefreshUserdata");
 
@@ -355,13 +355,13 @@ int UGamelet::RefreshUserdata(TMap<struct FString, struct FString> UserData)
 // Function Gamelet.Gamelet.OpenBeforeLoginWithGameVersion
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EGameletEnvironment> Environment                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EGameletEnvironment> Environment                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 GameVersion                    (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-int UGamelet::OpenBeforeLoginWithGameVersion(TEnumAsByte<enum EGameletEnvironment> Environment, const struct FString& GameVersion)
+int UGamelet::OpenBeforeLoginWithGameVersion(TEnumAsByte<EGameletEnvironment> Environment, const struct FString& GameVersion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.OpenBeforeLoginWithGameVersion");
 
@@ -384,12 +384,12 @@ int UGamelet::OpenBeforeLoginWithGameVersion(TEnumAsByte<enum EGameletEnvironmen
 // Function Gamelet.Gamelet.OpenBeforeLogin
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EGameletEnvironment> Environment                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EGameletEnvironment> Environment                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-int UGamelet::OpenBeforeLogin(TEnumAsByte<enum EGameletEnvironment> Environment)
+int UGamelet::OpenBeforeLogin(TEnumAsByte<EGameletEnvironment> Environment)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.OpenBeforeLogin");
 
@@ -417,7 +417,7 @@ int UGamelet::OpenBeforeLogin(TEnumAsByte<enum EGameletEnvironment> Environment)
 
 int UGamelet::OpenApp(const struct FString& AppID, const struct FString& OpenArgs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.OpenApp");
 
@@ -440,13 +440,13 @@ int UGamelet::OpenApp(const struct FString& AppID, const struct FString& OpenArg
 // Function Gamelet.Gamelet.Open
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EGameletEnvironment> Environment                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EGameletEnvironment> Environment                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // TMap<struct FString, struct FString> UserData                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-int UGamelet::Open(TEnumAsByte<enum EGameletEnvironment> Environment, TMap<struct FString, struct FString> UserData)
+int UGamelet::Open(TEnumAsByte<EGameletEnvironment> Environment, TMap<struct FString, struct FString> UserData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.Open");
 
@@ -474,7 +474,7 @@ int UGamelet::Open(TEnumAsByte<enum EGameletEnvironment> Environment, TMap<struc
 
 int UGamelet::Initialize(class UGameletSettings* Settings)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.Initialize");
 
@@ -500,7 +500,7 @@ int UGamelet::Initialize(class UGameletSettings* Settings)
 
 struct FString UGamelet::GetProductConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.GetProductConfig");
 
@@ -518,6 +518,31 @@ struct FString UGamelet::GetProductConfig()
 }
 
 
+// Function Gamelet.Gamelet.GetIsProductEnvironment
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UGamelet::GetIsProductEnvironment()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.GetIsProductEnvironment");
+
+	UGamelet_GetIsProductEnvironment_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Gamelet.Gamelet.GetGlobalSettings
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -525,7 +550,7 @@ struct FString UGamelet::GetProductConfig()
 
 class UGameletSettings* UGamelet::GetGlobalSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.GetGlobalSettings");
 
@@ -551,7 +576,7 @@ class UGameletSettings* UGamelet::GetGlobalSettings()
 
 int UGamelet::GetBackTrace(struct FString* TraceInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.GetBackTrace");
 
@@ -579,7 +604,7 @@ int UGamelet::GetBackTrace(struct FString* TraceInfo)
 
 class UGamelet* UGamelet::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.Get");
 
@@ -605,7 +630,7 @@ class UGamelet* UGamelet::Get()
 
 int UGamelet::ExecOnSDKMessage(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.ExecOnSDKMessage");
 
@@ -633,7 +658,7 @@ int UGamelet::ExecOnSDKMessage(const struct FString& Msg)
 
 int UGamelet::ExecOnReportData(const struct FString& EventName, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.ExecOnReportData");
 
@@ -660,7 +685,7 @@ int UGamelet::ExecOnReportData(const struct FString& EventName, const struct FSt
 
 int UGamelet::ExecOnRefreshUserdata()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.ExecOnRefreshUserdata");
 
@@ -685,7 +710,7 @@ int UGamelet::ExecOnRefreshUserdata()
 
 void UGamelet::EnableLog(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.EnableLog");
 
@@ -709,7 +734,7 @@ void UGamelet::EnableLog(bool Enable)
 
 int UGamelet::Deinitialize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.Deinitialize");
 
@@ -736,7 +761,7 @@ int UGamelet::Deinitialize()
 
 void UGamelet::CollectPixUILogOutput(EPxLogGroups PixUILogType, EPxLogLevels PixUILogLevel, const struct FString& logContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.CollectPixUILogOutput");
 
@@ -764,7 +789,7 @@ void UGamelet::CollectPixUILogOutput(EPxLogGroups PixUILogType, EPxLogLevels Pix
 
 int UGamelet::CloseAppPage(const struct FString& AppID, const struct FString& AppPage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.CloseAppPage");
 
@@ -792,7 +817,7 @@ int UGamelet::CloseAppPage(const struct FString& AppID, const struct FString& Ap
 
 int UGamelet::CloseApp(const struct FString& AppID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.CloseApp");
 
@@ -818,7 +843,7 @@ int UGamelet::CloseApp(const struct FString& AppID)
 
 int UGamelet::Close()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.Close");
 
@@ -843,7 +868,7 @@ int UGamelet::Close()
 
 int UGamelet::AllAssetsGC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.Gamelet.AllAssetsGC");
 
@@ -869,7 +894,7 @@ int UGamelet::AllAssetsGC()
 
 int UGameletEnvMgr::OnEnvToGameMessage(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletEnvMgr.OnEnvToGameMessage");
 
@@ -896,7 +921,7 @@ int UGameletEnvMgr::OnEnvToGameMessage(const struct FString& Msg)
 
 int UGameletEnvMgr::OnEnvToEntryMessage(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletEnvMgr.OnEnvToEntryMessage");
 
@@ -924,7 +949,7 @@ int UGameletEnvMgr::OnEnvToEntryMessage(const struct FString& Msg)
 
 int UGameletEnvMgr::OnEnvReportData(const struct FString& EventName, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletEnvMgr.OnEnvReportData");
 
@@ -951,7 +976,7 @@ int UGameletEnvMgr::OnEnvReportData(const struct FString& EventName, const struc
 
 int UGameletEnvMgr::OnEnvRefreshUserdata()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletEnvMgr.OnEnvRefreshUserdata");
 
@@ -977,7 +1002,7 @@ int UGameletEnvMgr::OnEnvRefreshUserdata()
 
 void UGameletEnvMgr::OnEnvLoaded(const struct FString& URL, int ErrorCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletEnvMgr.OnEnvLoaded");
 
@@ -1003,7 +1028,7 @@ void UGameletEnvMgr::OnEnvLoaded(const struct FString& URL, int ErrorCode)
 
 void UGameletEnvMgr::OnEnvInternalError(int ErrorCode, const struct FString& ErrorMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletEnvMgr.OnEnvInternalError");
 
@@ -1028,7 +1053,7 @@ void UGameletEnvMgr::OnEnvInternalError(int ErrorCode, const struct FString& Err
 
 struct FString UGameletEnvMgr::GetBackTrace()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletEnvMgr.GetBackTrace");
 
@@ -1055,7 +1080,7 @@ struct FString UGameletEnvMgr::GetBackTrace()
 
 bool UGameletFile::WriteFile(const struct FString& Path, const struct FGameletArrayBuffer& ArrayBuffer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.WriteFile");
 
@@ -1084,7 +1109,7 @@ bool UGameletFile::WriteFile(const struct FString& Path, const struct FGameletAr
 
 bool UGameletFile::SaveStringToFile(const struct FString& Path, const struct FString& Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.SaveStringToFile");
 
@@ -1112,7 +1137,7 @@ bool UGameletFile::SaveStringToFile(const struct FString& Path, const struct FSt
 
 struct FGameletArrayBuffer UGameletFile::ReadFile(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.ReadFile");
 
@@ -1139,7 +1164,7 @@ struct FGameletArrayBuffer UGameletFile::ReadFile(const struct FString& Path)
 
 struct FString UGameletFile::LoadFileToString(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.LoadFileToString");
 
@@ -1166,7 +1191,7 @@ struct FString UGameletFile::LoadFileToString(const struct FString& Path)
 
 struct FString UGameletFile::GetFileMd5(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.GetFileMd5");
 
@@ -1193,7 +1218,7 @@ struct FString UGameletFile::GetFileMd5(const struct FString& Path)
 
 int64_t UGameletFile::FileSize(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.FileSize");
 
@@ -1220,7 +1245,7 @@ int64_t UGameletFile::FileSize(const struct FString& Path)
 
 bool UGameletFile::FileExists(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.FileExists");
 
@@ -1247,7 +1272,7 @@ bool UGameletFile::FileExists(const struct FString& Path)
 
 bool UGameletFile::DirectoryExists(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.DirectoryExists");
 
@@ -1274,7 +1299,7 @@ bool UGameletFile::DirectoryExists(const struct FString& Path)
 
 bool UGameletFile::DeleteFile(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.DeleteFile");
 
@@ -1301,7 +1326,7 @@ bool UGameletFile::DeleteFile(const struct FString& Path)
 
 bool UGameletFile::DeleteDirectory(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.DeleteDirectory");
 
@@ -1328,7 +1353,7 @@ bool UGameletFile::DeleteDirectory(const struct FString& Path)
 
 bool UGameletFile::CreateDirectory(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletFile.CreateDirectory");
 
@@ -1355,7 +1380,7 @@ bool UGameletFile::CreateDirectory(const struct FString& Path)
 
 struct FString UGameletPaths::ToAbsolutePathForWrite(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ToAbsolutePathForWrite");
 
@@ -1382,7 +1407,7 @@ struct FString UGameletPaths::ToAbsolutePathForWrite(const struct FString& Path)
 
 struct FString UGameletPaths::ToAbsolutePathForRead(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ToAbsolutePathForRead");
 
@@ -1408,7 +1433,7 @@ struct FString UGameletPaths::ToAbsolutePathForRead(const struct FString& Path)
 
 struct FString UGameletPaths::RootDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.RootDir");
 
@@ -1433,7 +1458,7 @@ struct FString UGameletPaths::RootDir()
 
 struct FString UGameletPaths::ProjectUserDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ProjectUserDir");
 
@@ -1458,7 +1483,7 @@ struct FString UGameletPaths::ProjectUserDir()
 
 struct FString UGameletPaths::ProjectSavedDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ProjectSavedDir");
 
@@ -1483,7 +1508,7 @@ struct FString UGameletPaths::ProjectSavedDir()
 
 struct FString UGameletPaths::ProjectModsDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ProjectModsDir");
 
@@ -1508,7 +1533,7 @@ struct FString UGameletPaths::ProjectModsDir()
 
 struct FString UGameletPaths::ProjectIntermediateDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ProjectIntermediateDir");
 
@@ -1533,7 +1558,7 @@ struct FString UGameletPaths::ProjectIntermediateDir()
 
 struct FString UGameletPaths::ProjectDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ProjectDir");
 
@@ -1558,7 +1583,7 @@ struct FString UGameletPaths::ProjectDir()
 
 struct FString UGameletPaths::ProjectContentDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ProjectContentDir");
 
@@ -1583,7 +1608,7 @@ struct FString UGameletPaths::ProjectContentDir()
 
 struct FString UGameletPaths::ProjectConfigDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.ProjectConfigDir");
 
@@ -1608,7 +1633,7 @@ struct FString UGameletPaths::ProjectConfigDir()
 
 struct FString UGameletPaths::LaunchDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.LaunchDir");
 
@@ -1633,7 +1658,7 @@ struct FString UGameletPaths::LaunchDir()
 
 struct FString UGameletPaths::GetPuertsScriptFolderName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GetPuertsScriptFolderName");
 
@@ -1659,7 +1684,7 @@ struct FString UGameletPaths::GetPuertsScriptFolderName()
 
 struct FString UGameletPaths::GetPuertsEntrancePath(const struct FString& PakName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GetPuertsEntrancePath");
 
@@ -1686,7 +1711,7 @@ struct FString UGameletPaths::GetPuertsEntrancePath(const struct FString& PakNam
 
 struct FString UGameletPaths::GetPuertsAppScriptPath(const struct FString& AppFolderName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GetPuertsAppScriptPath");
 
@@ -1713,7 +1738,7 @@ struct FString UGameletPaths::GetPuertsAppScriptPath(const struct FString& AppFo
 
 struct FString UGameletPaths::GetPuertsAppNameByPakName(const struct FString& PakName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GetPuertsAppNameByPakName");
 
@@ -1740,7 +1765,7 @@ struct FString UGameletPaths::GetPuertsAppNameByPakName(const struct FString& Pa
 
 struct FString UGameletPaths::GetPuertsAppIndexPath(const struct FString& AppFolderName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GetPuertsAppIndexPath");
 
@@ -1766,7 +1791,7 @@ struct FString UGameletPaths::GetPuertsAppIndexPath(const struct FString& AppFol
 
 struct FString UGameletPaths::GameletSavedRoot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GameletSavedRoot");
 
@@ -1791,7 +1816,7 @@ struct FString UGameletPaths::GameletSavedRoot()
 
 struct FString UGameletPaths::GameletFolderName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GameletFolderName");
 
@@ -1816,7 +1841,7 @@ struct FString UGameletPaths::GameletFolderName()
 
 struct FString UGameletPaths::GameletContentRoot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GameletContentRoot");
 
@@ -1842,7 +1867,7 @@ struct FString UGameletPaths::GameletContentRoot()
 
 struct FString UGameletPaths::GameletAppArchiveRoot(const struct FString& AppID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPaths.GameletAppArchiveRoot");
 
@@ -1866,7 +1891,7 @@ struct FString UGameletPaths::GameletAppArchiveRoot(const struct FString& AppID)
 
 void UGameletPuertsEnvMgr::OnEnvScriptStateInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsEnvMgr.OnEnvScriptStateInit");
 
@@ -1889,7 +1914,7 @@ void UGameletPuertsEnvMgr::OnEnvScriptStateInit()
 
 void UGameletPuertsEnvMgr::OnEnvMessage(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsEnvMgr.OnEnvMessage");
 
@@ -1914,7 +1939,7 @@ void UGameletPuertsEnvMgr::OnEnvMessage(const struct FString& Msg)
 
 void UGameletPuertsEnvMgr::OnEnvLoaded(const struct FString& URL, int ErrorCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsEnvMgr.OnEnvLoaded");
 
@@ -1939,7 +1964,7 @@ void UGameletPuertsEnvMgr::OnEnvLoaded(const struct FString& URL, int ErrorCode)
 
 class UGameletPuertsEnvMgr* UGameletPuertsEnvMgr::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsEnvMgr.Get");
 
@@ -1964,7 +1989,7 @@ class UGameletPuertsEnvMgr* UGameletPuertsEnvMgr::Get()
 
 void UGameletPuertsUtilities::UpdateTextureResources(class UTexture2D* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.UpdateTextureResources");
 
@@ -1989,7 +2014,7 @@ void UGameletPuertsUtilities::UpdateTextureResources(class UTexture2D* Texture)
 
 int UGameletPuertsUtilities::UnmountPak(const struct FString& pakPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.UnmountPak");
 
@@ -2016,7 +2041,7 @@ int UGameletPuertsUtilities::UnmountPak(const struct FString& pakPath)
 
 void UGameletPuertsUtilities::RemoveUserWidgetFromGame(class UUserWidget* UserWidget, const struct FString& PanelInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.RemoveUserWidgetFromGame");
 
@@ -2041,7 +2066,7 @@ void UGameletPuertsUtilities::RemoveUserWidgetFromGame(class UUserWidget* UserWi
 
 void UGameletPuertsUtilities::ReleaseTextureResource(class UTexture2D* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.ReleaseTextureResource");
 
@@ -2066,7 +2091,7 @@ void UGameletPuertsUtilities::ReleaseTextureResource(class UTexture2D* Texture)
 
 int UGameletPuertsUtilities::MountPak(const struct FString& pakPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.MountPak");
 
@@ -2094,7 +2119,7 @@ int UGameletPuertsUtilities::MountPak(const struct FString& pakPath)
 
 class UUserWidget* UGameletPuertsUtilities::LoadUI(const struct FString& Ref, class UObject* Obj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.LoadUI");
 
@@ -2118,13 +2143,13 @@ class UUserWidget* UGameletPuertsUtilities::LoadUI(const struct FString& Ref, cl
 // (Final, Native, Static, Public)
 // Parameters:
 // struct FString                 Path                           (Parm, ZeroConstructor)
-// TEnumAsByte<enum ETextureGroup> LODGroup                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETextureGroup>     LODGroup                       (Parm, ZeroConstructor, IsPlainOldData)
 // unsigned char                  IsSRGB                         (Parm, ZeroConstructor, IsPlainOldData)
 // class UTexture2D*              ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-class UTexture2D* UGameletPuertsUtilities::LoadImageToTexture2D(const struct FString& Path, TEnumAsByte<enum ETextureGroup> LODGroup, unsigned char IsSRGB)
+class UTexture2D* UGameletPuertsUtilities::LoadImageToTexture2D(const struct FString& Path, TEnumAsByte<ETextureGroup> LODGroup, unsigned char IsSRGB)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.LoadImageToTexture2D");
 
@@ -2152,7 +2177,7 @@ class UTexture2D* UGameletPuertsUtilities::LoadImageToTexture2D(const struct FSt
 
 bool UGameletPuertsUtilities::IsWithEditor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.IsWithEditor");
 
@@ -2175,7 +2200,7 @@ bool UGameletPuertsUtilities::IsWithEditor()
 
 void UGameletPuertsUtilities::HelloWorld()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.HelloWorld");
 
@@ -2200,7 +2225,7 @@ void UGameletPuertsUtilities::HelloWorld()
 
 class UWidgetAnimation* UGameletPuertsUtilities::GetWidgetAnimationByName(class UUserWidget* Widget, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.GetWidgetAnimationByName");
 
@@ -2227,7 +2252,7 @@ class UWidgetAnimation* UGameletPuertsUtilities::GetWidgetAnimationByName(class 
 
 struct FString UGameletPuertsUtilities::GetSDKVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.GetSDKVersion");
 
@@ -2252,7 +2277,7 @@ struct FString UGameletPuertsUtilities::GetSDKVersion()
 
 struct FString UGameletPuertsUtilities::GetPlatformDesc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.GetPlatformDesc");
 
@@ -2277,11 +2302,36 @@ struct FString UGameletPuertsUtilities::GetPlatformDesc()
 
 unsigned char UGameletPuertsUtilities::GetNetWorkType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.GetNetWorkType");
 
 	UGameletPuertsUtilities_GetNetWorkType_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Gamelet.GameletPuertsUtilities.GetIsProductEnvironment
+// (Final, Native, Static, Public)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UGameletPuertsUtilities::GetIsProductEnvironment()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.GetIsProductEnvironment");
+
+	UGameletPuertsUtilities_GetIsProductEnvironment_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -2302,7 +2352,7 @@ unsigned char UGameletPuertsUtilities::GetNetWorkType()
 
 struct FString UGameletPuertsUtilities::GetHardwareInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.GetHardwareInfo");
 
@@ -2327,7 +2377,7 @@ struct FString UGameletPuertsUtilities::GetHardwareInfo()
 
 struct FString UGameletPuertsUtilities::GetEngineVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.GetEngineVersion");
 
@@ -2350,11 +2400,41 @@ struct FString UGameletPuertsUtilities::GetEngineVersion()
 
 void UGameletPuertsUtilities::FlushPuertsVMMessages()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.FlushPuertsVMMessages");
 
 	UGameletPuertsUtilities_FlushPuertsVMMessages_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Gamelet.GameletPuertsUtilities.CallCommonFunc
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// struct FString                 Type                           (Parm, ZeroConstructor)
+// struct FString                 ParamJson                      (Parm, ZeroConstructor)
+// class UWidget*                 Widget                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FScriptDelegate         Callback                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void UGameletPuertsUtilities::CallCommonFunc(const struct FString& Type, const struct FString& ParamJson, class UWidget* Widget, const struct FScriptDelegate& Callback)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.CallCommonFunc");
+
+	UGameletPuertsUtilities_CallCommonFunc_Params params;
+	params.Type = Type;
+	params.ParamJson = ParamJson;
+	params.Widget = Widget;
+	params.Callback = Callback;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -2374,7 +2454,7 @@ void UGameletPuertsUtilities::FlushPuertsVMMessages()
 
 void UGameletPuertsUtilities::AddUserWidgetToGame(class UUserWidget* UserWidget, const struct FString& PanelInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletPuertsUtilities.AddUserWidgetToGame");
 
@@ -2399,7 +2479,7 @@ void UGameletPuertsUtilities::AddUserWidgetToGame(class UUserWidget* UserWidget,
 
 bool UGameletSettings::IsValidSetting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletSettings.IsValidSetting");
 
@@ -2424,7 +2504,7 @@ bool UGameletSettings::IsValidSetting()
 
 class UGameletSettings* UGameletSettings::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletSettings.Get");
 
@@ -2449,7 +2529,7 @@ class UGameletSettings* UGameletSettings::Get()
 
 void UGameletWidget::SetWidgetOffset(const struct FMargin& OffsetData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.SetWidgetOffset");
 
@@ -2473,7 +2553,7 @@ void UGameletWidget::SetWidgetOffset(const struct FMargin& OffsetData)
 
 void UGameletWidget::SetWidgetAnchor(const struct FAnchors& AnchorData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.SetWidgetAnchor");
 
@@ -2497,7 +2577,7 @@ void UGameletWidget::SetWidgetAnchor(const struct FAnchors& AnchorData)
 
 void UGameletWidget::SetUseSRGB(bool EnableSRGB)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.SetUseSRGB");
 
@@ -2521,7 +2601,7 @@ void UGameletWidget::SetUseSRGB(bool EnableSRGB)
 
 void UGameletWidget::SetRHIConfigured(bool Configured)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.SetRHIConfigured");
 
@@ -2545,7 +2625,7 @@ void UGameletWidget::SetRHIConfigured(bool Configured)
 
 void UGameletWidget::SetBackgroundWidgetOffset(const struct FMargin& OffsetData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.SetBackgroundWidgetOffset");
 
@@ -2569,7 +2649,7 @@ void UGameletWidget::SetBackgroundWidgetOffset(const struct FMargin& OffsetData)
 
 void UGameletWidget::SetBackgroundWidgetAnchor(const struct FAnchors& AnchorData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.SetBackgroundWidgetAnchor");
 
@@ -2593,7 +2673,7 @@ void UGameletWidget::SetBackgroundWidgetAnchor(const struct FAnchors& AnchorData
 
 void UGameletWidget::SetBackgroundImage(const struct FString& ImagePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.SetBackgroundImage");
 
@@ -2617,7 +2697,7 @@ void UGameletWidget::SetBackgroundImage(const struct FString& ImagePath)
 
 TWeakObjectPtr<class UPixUIWidget> UGameletWidget::GetPixUIWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWidget.GetPixUIWidget");
 
@@ -2640,7 +2720,7 @@ TWeakObjectPtr<class UPixUIWidget> UGameletWidget::GetPixUIWidget()
 
 void UGameletWindow::OnPxWidgetScriptStateInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWindow.OnPxWidgetScriptStateInit");
 
@@ -2661,7 +2741,7 @@ void UGameletWindow::OnPxWidgetScriptStateInit()
 
 void UGameletWindow::OnPxWidgetScriptStateDone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWindow.OnPxWidgetScriptStateDone");
 
@@ -2688,7 +2768,7 @@ void UGameletWindow::OnPxWidgetScriptStateDone()
 
 bool UGameletWindow::OnPxWidgetRequestOpen(const struct FString& URL, const struct FString& Name, const struct FString& Features, bool bReplace)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWindow.OnPxWidgetRequestOpen");
 
@@ -2717,7 +2797,7 @@ bool UGameletWindow::OnPxWidgetRequestOpen(const struct FString& URL, const stru
 
 void UGameletWindow::OnPxWidgetMessage(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWindow.OnPxWidgetMessage");
 
@@ -2742,7 +2822,7 @@ void UGameletWindow::OnPxWidgetMessage(const struct FString& Msg)
 
 void UGameletWindow::OnPxWidgetLoaded(const struct FString& URL, int ErrorCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWindow.OnPxWidgetLoaded");
 
@@ -2768,7 +2848,7 @@ void UGameletWindow::OnPxWidgetLoaded(const struct FString& URL, int ErrorCode)
 
 void UGameletWindow::OnPxWidgetInternalError(int ErrorCode, const struct FString& ErrorMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWindow.OnPxWidgetInternalError");
 
@@ -2791,7 +2871,7 @@ void UGameletWindow::OnPxWidgetInternalError(int ErrorCode, const struct FString
 
 void UGameletWindow::OnPxWidgetClose()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gamelet.GameletWindow.OnPxWidgetClose");
 

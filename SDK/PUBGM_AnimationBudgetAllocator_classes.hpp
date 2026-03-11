@@ -1,27 +1,27 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class AnimationBudgetAllocator.SkeletalMeshComponentBudgeted
-// 0x0020 (0x11F0 - 0x11D0)
+// 0x0020 (0x1200 - 0x11E0)
 class USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x18];                                      // 0x11D0(0x0018) MISSED OFFSET
-	unsigned char                                      bAutoRegisterWithBudgetAllocator : 1;                     // 0x11E8(0x0001) (Edit, BlueprintVisible)
-	unsigned char                                      bAutoCalculateSignificance : 1;                           // 0x11E8(0x0001) (Edit)
-	unsigned char                                      bShouldUseActorRenderedFlag : 1;                          // 0x11E8(0x0001) (Edit)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x11E9(0x0007) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x18];                                      // 0x11E0(0x0018) MISSED OFFSET
+	unsigned char                                      bAutoRegisterWithBudgetAllocator : 1;                     // 0x11F8(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      bAutoCalculateSignificance : 1;                           // 0x11F8(0x0001) (Edit)
+	unsigned char                                      bShouldUseActorRenderedFlag : 1;                          // 0x11F8(0x0001) (Edit)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x11F9(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AnimationBudgetAllocator.SkeletalMeshComponentBudgeted");
 		return pStaticClass;
@@ -40,7 +40,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class AnimationBudgetAllocator.AnimationBudgetBlueprintLibrary");
 		return pStaticClass;

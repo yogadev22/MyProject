@@ -1,14 +1,23 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
+
+// Function Creative.AIGCAudioManager.WemCutByAssetKey
+struct UAIGCAudioManager_WemCutByAssetKey_Params
+{
+	uint64_t                                           AssetKey;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                StartTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EndTime;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	uint64_t                                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
 
 // Function Creative.AIGCAudioManager.SeekOnEvent
 struct UAIGCAudioManager_SeekOnEvent_Params
@@ -27,6 +36,12 @@ struct UAIGCAudioManager_Get_Params
 {
 	class UObject*                                     WorldContext;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	class UAIGCAudioManager*                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.AIGCAudioManager.AllocateTempAssetKey
+struct UAIGCAudioManager_AllocateTempAssetKey_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Creative.CreateBackpackRepActor.InitCustomItemDataInfo
@@ -180,6 +195,13 @@ struct UCreativeModeActorInteractionComponent_SetCrossHairPickActor_Params
 	class AActor*                                      PickActor;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Creative.CreativeModeActorInteractionComponent.SectorCheckImplement
+struct UCreativeModeActorInteractionComponent_SectorCheckImplement_Params
+{
+	float                                              CheckDistance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              CheckAngle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Creative.CreativeModeActorInteractionComponent.GetSectorCheckIntervalCfg
 struct UCreativeModeActorInteractionComponent_GetSectorCheckIntervalCfg_Params
 {
@@ -232,6 +254,12 @@ struct UCreativeModeActorInteractionComponent_GetCrossHairCheckIntervalCfg_Param
 struct UCreativeModeActorInteractionComponent_GetCrossHairCheckDistanceCfg_Params
 {
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeModeActorInteractionComponent.CrossHairCheckImplement
+struct UCreativeModeActorInteractionComponent_CrossHairCheckImplement_Params
+{
+	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeActorInteractionComponent.ClearCanEditParamsObjs
@@ -443,6 +471,42 @@ struct UCreativeAssetManager_AddAssetInfo_Params
 {
 	int                                                AssetId;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	struct FCreativeAssetInfo                          AssetInfo;                                                // (ConstParm, Parm, OutParm, ReferenceParm)
+};
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.SaveWemToConvert
+struct UCreativeAudioBlueprintFunctionLibrary_SaveWemToConvert_Params
+{
+	TArray<unsigned char>                              WemData;                                                  // (Parm, ZeroConstructor)
+	struct FString                                     SavePath;                                                 // (Parm, ZeroConstructor)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.RegisterWwiseBaseDir
+struct UCreativeAudioBlueprintFunctionLibrary_RegisterWwiseBaseDir_Params
+{
+	struct FString                                     BaseDir;                                                  // (Parm, ZeroConstructor)
+};
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.GetWavLength
+struct UCreativeAudioBlueprintFunctionLibrary_GetWavLength_Params
+{
+	TArray<unsigned char>                              WavData;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.GetMp3Length
+struct UCreativeAudioBlueprintFunctionLibrary_GetMp3Length_Params
+{
+	TArray<unsigned char>                              Mp3Data;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeAudioBlueprintFunctionLibrary.GetAudioWaveform
+struct UCreativeAudioBlueprintFunctionLibrary_GetAudioWaveform_Params
+{
+	uint32_t                                           WemMediaID;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              SampleInterval;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FScriptDelegate                             Callback;                                                 // (Parm, ZeroConstructor)
 };
 
 // Function Creative.CreativeAutoGenComponent.GetNodeSegmentContent
@@ -930,6 +994,21 @@ struct UCreativeModeBlueprintLibrary_ZSTDCompressData_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Creative.CreativeModeBlueprintLibrary.WindowsReadFileSummary
+struct UCreativeModeBlueprintLibrary_WindowsReadFileSummary_Params
+{
+	struct FString                                     FilePath;                                                 // (Parm, ZeroConstructor)
+	TArray<struct FString>                             Properties;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.WindowsPickFile
+struct UCreativeModeBlueprintLibrary_WindowsPickFile_Params
+{
+	struct FString                                     filter;                                                   // (Parm, ZeroConstructor)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Creative.CreativeModeBlueprintLibrary.WidgetAbsoluteSizeToLocalSize
 struct UCreativeModeBlueprintLibrary_WidgetAbsoluteSizeToLocalSize_Params
 {
@@ -1014,7 +1093,7 @@ struct UCreativeModeBlueprintLibrary_SphereOverlapComponentsByChannel_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     SpherePos;                                                // (Parm, IsPlainOldData)
 	float                                              SphereRadius;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<ECollisionChannel>>             Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ComponentClassFilter;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UPrimitiveComponent*>                 OutComponents;                                            // (Parm, OutParm, ZeroConstructor)
@@ -1027,7 +1106,7 @@ struct UCreativeModeBlueprintLibrary_SphereOverlapActorsByChannel_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     SpherePos;                                                // (Parm, IsPlainOldData)
 	float                                              SphereRadius;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<ECollisionChannel>>             Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ActorClassFilter;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class AActor*>                              OutActors;                                                // (Parm, OutParm, ZeroConstructor)
@@ -1060,7 +1139,7 @@ struct UCreativeModeBlueprintLibrary_SetWidgetVisiblePass_Params
 struct UCreativeModeBlueprintLibrary_SetStaticMeshMobility_Params
 {
 	class UStaticMeshComponent*                        StaticMeshComponent;                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EComponentMobility>               NewMobility;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EComponentMobility>                    NewMobility;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.SetSpeedOverLimit
@@ -1103,7 +1182,7 @@ struct UCreativeModeBlueprintLibrary_SetCommandLineValue_Params
 struct UCreativeModeBlueprintLibrary_SetCollisionMobility_Params
 {
 	class UShapeComponent*                             Component;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EComponentMobility>               NewMobility;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EComponentMobility>                    NewMobility;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.SaveStringToFile
@@ -1111,6 +1190,13 @@ struct UCreativeModeBlueprintLibrary_SaveStringToFile_Params
 {
 	struct FString                                     String;                                                   // (Parm, ZeroConstructor)
 	struct FString                                     Filename;                                                 // (Parm, ZeroConstructor)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.SaveRawStringToFile
+struct UCreativeModeBlueprintLibrary_SaveRawStringToFile_Params
+{
+	TArray<unsigned char>                              Content;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FString                                     FilePath;                                                 // (Parm, ZeroConstructor)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.SaveAssetStringToFile
@@ -1201,7 +1287,7 @@ struct UCreativeModeBlueprintLibrary_MoveComponentToNoLatent_Params
 	bool                                               bEaseIn;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              OverTime;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bForceShortestRotationPath;                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMoveComponentAction>             MoveAction;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMoveComponentAction>                  MoveAction;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.MoveComponentTo
@@ -1214,7 +1300,7 @@ struct UCreativeModeBlueprintLibrary_MoveComponentTo_Params
 	bool                                               bEaseIn;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              OverTime;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bForceShortestRotationPath;                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMoveComponentAction>             MoveAction;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMoveComponentAction>                  MoveAction;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.MinAreaRectangle
@@ -1259,6 +1345,13 @@ struct UCreativeModeBlueprintLibrary_Lz4CompressData_Params
 	TArray<unsigned char>                              UncompressedData;                                         // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<unsigned char>                              CompressedData;                                           // (Parm, OutParm, ZeroConstructor)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.LoadRawFileToString
+struct UCreativeModeBlueprintLibrary_LoadRawFileToString_Params
+{
+	struct FString                                     FilePath;                                                 // (Parm, ZeroConstructor)
+	TArray<unsigned char>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.LoadFileToStringByFullPath
@@ -1310,6 +1403,12 @@ struct UCreativeModeBlueprintLibrary_LineTraceInstance_Params
 	struct FVector                                     End;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	TArray<class AActor*>                              IgnoreActors;                                             // (Parm, ZeroConstructor)
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.IsWindows
+struct UCreativeModeBlueprintLibrary_IsWindows_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.IsPointWithinRotatedBounds
@@ -1385,6 +1484,17 @@ struct UCreativeModeBlueprintLibrary_IsBoxOverlapWithRotatedBox_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Creative.CreativeModeBlueprintLibrary.IsAABBVisible
+struct UCreativeModeBlueprintLibrary_IsAABBVisible_Params
+{
+	TArray<struct FBox>                                TargetBoxs;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FString>                             InstanceIDs;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FVector                                     FarPlanePoint;                                            // (Parm, IsPlainOldData)
+	struct FVector                                     CameraForward;                                            // (Parm, IsPlainOldData)
+	TArray<float>                                      PlanesParams;                                             // (Parm, OutParm, ZeroConstructor)
+	TArray<struct FString>                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Creative.CreativeModeBlueprintLibrary.IgnoreClientMovementErrorChecksAndCorrection
 struct UCreativeModeBlueprintLibrary_IgnoreClientMovementErrorChecksAndCorrection_Params
 {
@@ -1425,6 +1535,13 @@ struct UCreativeModeBlueprintLibrary_GetUrlValue_Params
 struct UCreativeModeBlueprintLibrary_GetUObjAssetPath_Params
 {
 	class UObject*                                     Level;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.GetUClassName
+struct UCreativeModeBlueprintLibrary_GetUClassName_Params
+{
+	class UClass*                                      UClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
@@ -1481,6 +1598,13 @@ struct UCreativeModeBlueprintLibrary_GetObjectMap_Params
 	TMap<struct FString, class UObject*>               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function Creative.CreativeModeBlueprintLibrary.GetObjectInheritanceChain
+struct UCreativeModeBlueprintLibrary_GetObjectInheritanceChain_Params
+{
+	class UObject*                                     Object;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<class UClass*>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Creative.CreativeModeBlueprintLibrary.GetMinFovForAABB
 struct UCreativeModeBlueprintLibrary_GetMinFovForAABB_Params
 {
@@ -1503,6 +1627,14 @@ struct UCreativeModeBlueprintLibrary_GetInstanceSpaceBoundingBox_Params
 	struct FString                                     InstanceID;                                               // (Parm, ZeroConstructor)
 	float                                              Yaw;                                                      // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	class UCreativeAbilitySystemComponent*             Component;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.GetImageSize
+struct UCreativeModeBlueprintLibrary_GetImageSize_Params
+{
+	TArray<unsigned char>                              ImageBuffer;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	int                                                Format;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector2D                                   ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.GetGroupInstanceSpaceBoundingBox
@@ -1599,12 +1731,26 @@ struct UCreativeModeBlueprintLibrary_GetCommandLineValue_Params
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function Creative.CreativeModeBlueprintLibrary.GetClassInheritanceChain
+struct UCreativeModeBlueprintLibrary_GetClassInheritanceChain_Params
+{
+	class UClass*                                      UClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<class UClass*>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
 // Function Creative.CreativeModeBlueprintLibrary.GetCharacterSocketPos
 struct UCreativeModeBlueprintLibrary_GetCharacterSocketPos_Params
 {
 	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       SocketName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.GetCameraFrustumPlane
+struct UCreativeModeBlueprintLibrary_GetCameraFrustumPlane_Params
+{
+	class UObject*                                     WorldContext;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TArray<struct FVector4>                            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.GetBoundingBoxOfInstances
@@ -1659,6 +1805,23 @@ struct UCreativeModeBlueprintLibrary_GetAllInstanceInBox_Params
 	struct FVector                                     Extent;                                                   // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	struct FRotator                                    Rotator;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	TArray<struct FString>                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CreativeModeBlueprintLibrary.GetActorsInCameraFrustumByLayer
+struct UCreativeModeBlueprintLibrary_GetActorsInCameraFrustumByLayer_Params
+{
+	class UWorld*                                      World;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     Origin;                                                   // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FRotator                                    CameraRot;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	float                                              MaxDistance;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              AngleWidth;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              AngleHeight;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                NumLayers;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<TEnumAsByte<EObjectTypeQuery>>              ObjectTypes;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	bool                                               bDrawDebug;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FColor                                      DebugColor;                                               // (Parm, IsPlainOldData)
+	float                                              DebugLifeTime;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<struct FOverlapResult>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Creative.CreativeModeBlueprintLibrary.GetActorMeshBoundsByTag
@@ -1795,6 +1958,16 @@ struct UCreativeModeBlueprintLibrary_DecryptFromBase64_Params
 	TArray<unsigned char>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
+// Function Creative.CreativeModeBlueprintLibrary.DarwCameraFrustumDebugLine
+struct UCreativeModeBlueprintLibrary_DarwCameraFrustumDebugLine_Params
+{
+	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     FarPlanePoint;                                            // (Parm, IsPlainOldData)
+	struct FVector                                     CameraForward;                                            // (Parm, IsPlainOldData)
+	TArray<float>                                      PlanesParams;                                             // (Parm, OutParm, ZeroConstructor)
+	float                                              Duration;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Creative.CreativeModeBlueprintLibrary.CreativeInstanceDataContent
 struct UCreativeModeBlueprintLibrary_CreativeInstanceDataContent_Params
 {
@@ -1807,7 +1980,7 @@ struct UCreativeModeBlueprintLibrary_CreateCreativeMovingAudio_Params
 {
 	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Sequence;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                ConfigId;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	uint64_t                                           ConfigId;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bShowMark;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Duration;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Volume;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1841,7 +2014,7 @@ struct UCreativeModeBlueprintLibrary_CheckWidgetsOverlap_Params
 // Function Creative.CreativeModeBlueprintLibrary.CharacterPlayCreativeDynamicMontage
 struct UCreativeModeBlueprintLibrary_CharacterPlayCreativeDynamicMontage_Params
 {
-	class ASTExtraCharacter*                           CharacterOwner;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	class ACharacter*                                  CharacterOwner;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAnimSequenceBase*                           Asset;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendInTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              BlendOutTime;                                             // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1870,7 +2043,7 @@ struct UCreativeModeBlueprintLibrary_BoxOverlapComponentsByChannel_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     BoxPos;                                                   // (Parm, IsPlainOldData)
 	struct FVector                                     BoxExtent;                                                // (Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<ECollisionChannel>>             Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ComponentClassFilter;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UPrimitiveComponent*>                 OutComponents;                                            // (Parm, OutParm, ZeroConstructor)
@@ -1896,7 +2069,7 @@ struct UCreativeModeBlueprintLibrary_BoxOverlapActorsByChannel_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     BoxPos;                                                   // (Parm, IsPlainOldData)
 	struct FVector                                     BoxExtent;                                                // (Parm, IsPlainOldData)
-	TArray<TEnumAsByte<enum ECollisionChannel>>        Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<TEnumAsByte<ECollisionChannel>>             Channels;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UClass*                                      ActorClassFilter;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<class AActor*>                              ActorsToIgnore;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class AActor*>                              OutActors;                                                // (Parm, OutParm, ZeroConstructor)
@@ -1925,7 +2098,7 @@ struct UCreativeModeBlueprintLibrary_BlueprintSuggestProjectileVelocity_Params
 	struct FVector                                     EndLocation;                                              // (Parm, IsPlainOldData)
 	float                                              LaunchSpeed;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              OverrideGravityZ;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESuggestProjVelocityTraceOption>  TraceOption;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESuggestProjVelocityTraceOption>       TraceOption;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              CollisionRadius;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bFavorHighArc;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bDrawDebug;                                               // (Parm, ZeroConstructor, IsPlainOldData)
@@ -2905,6 +3078,12 @@ struct ACreativeModeGameState_OnRep_CurrentStateComponent_Params
 	class UCreativeModeGameStateBaseComponent*         LastComponent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Creative.CreativeModeGameState.OnRep_CurrentGameTypeReplicated
+struct ACreativeModeGameState_OnRep_CurrentGameTypeReplicated_Params
+{
+	ECreativeModeGameType                              LastCurrentGameTypeReplicated;                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Creative.CreativeModeGameState.OnRep_CreativeModTemplateId
 struct ACreativeModeGameState_OnRep_CreativeModTemplateId_Params
 {
@@ -2921,6 +3100,12 @@ struct ACreativeModeGameState_OnRep_CreativeModID_Params
 struct ACreativeModeGameState_OnRep_BlockySlotStrings_Params
 {
 	TArray<struct FExtendedBlockySlotString>           BlockySlotStrings;                                        // (Parm, OutParm, ZeroConstructor)
+};
+
+// Function Creative.CreativeModeGameState.OnCurrentStateComponentChanged
+struct ACreativeModeGameState_OnCurrentStateComponentChanged_Params
+{
+	class UCreativeModeGameStateBaseComponent*         LastComponent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeGameState.OnClientRecordingStateChange
@@ -3002,6 +3187,12 @@ struct ACreativeModeGameState_GetCurrentStateComponent_Params
 	class UCreativeModeGameStateBaseComponent*         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Creative.CreativeModeGameState.GetCurrentGameTypeReplicated
+struct ACreativeModeGameState_GetCurrentGameTypeReplicated_Params
+{
+	ECreativeModeGameType                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Creative.CreativeModeGameState.GetCurrentGameType
 struct ACreativeModeGameState_GetCurrentGameType_Params
 {
@@ -3056,6 +3247,12 @@ struct ACreativeModeGameState_FilterLevelByName_Params
 {
 	struct FName                                       LevelName;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeModeGameState.ClientSetCurrentStateComponent
+struct ACreativeModeGameState_ClientSetCurrentStateComponent_Params
+{
+	class UCreativeModeGameStateBaseComponent*         CurStateComponent;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeModeGameState.ClearInstance
@@ -5672,7 +5869,7 @@ struct ACreativePhysicsBatchActor_UpdatePhysicsComponent_Params
 {
 	struct FString                                     ComponentID;                                              // (Parm, OutParm, ZeroConstructor)
 	struct FTransform                                  Transform;                                                // (Parm, IsPlainOldData)
-	TEnumAsByte<enum ECollisionEnabled>                CollisionEnabled;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     CollisionEnabled;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativePhysicsBatchActor.UnRegisterPhysicsComponent
@@ -5686,7 +5883,7 @@ struct ACreativePhysicsBatchActor_UnRegisterPhysicsComponent_Params
 struct ACreativePhysicsBatchActor_SetPhysicsComponentEnabled_Params
 {
 	struct FString                                     ComponentID;                                              // (Parm, OutParm, ZeroConstructor)
-	TEnumAsByte<enum ECollisionEnabled>                CollisionEnabled;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionEnabled>                     CollisionEnabled;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativePhysicsBatchActor.RegisterPhysicsComponentByMesh
@@ -6178,6 +6375,95 @@ struct ACreativeRuntimePlayerBattleDataObject_CacheCurRoundBattleData_Params
 	int                                                RoundIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Creative.CreativeSceneDetectLib.CreativeGetStackDistanceFromMeshes
+struct UCreativeSceneDetectLib_CreativeGetStackDistanceFromMeshes_Params
+{
+	TArray<class UMeshComponent*>                      MeshComponents;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeGetStackDistance
+struct UCreativeSceneDetectLib_CreativeGetStackDistance_Params
+{
+	class UStaticMesh*                                 Mesh;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	struct FVector                                     Scale;                                                    // (Parm, IsPlainOldData)
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeGetFurthestPointFromMeshes
+struct UCreativeSceneDetectLib_CreativeGetFurthestPointFromMeshes_Params
+{
+	TArray<class UMeshComponent*>                      MeshComponents;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeGetFurthestPoint
+struct UCreativeSceneDetectLib_CreativeGetFurthestPoint_Params
+{
+	class AActor*                                      TargetActor;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	class USceneComponent*                             TargetComp;                                               // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeFindPlacementPoints
+struct UCreativeSceneDetectLib_CreativeFindPlacementPoints_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     Start;                                                    // (Parm, IsPlainOldData)
+	struct FVector                                     HalfExtent;                                               // (Parm, IsPlainOldData)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	int                                                Count;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              MaxDistance;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<struct FVector>                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeDetectSpaceAdvanced
+struct UCreativeSceneDetectLib_CreativeDetectSpaceAdvanced_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     Source;                                                   // (Parm, IsPlainOldData)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	float                                              MaxDistance;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              MaxBoxExtent;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FCreativeDetectSpaceOptions                 Options;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FCreativeSpaceResult                        ReturnValue;                                              // (Parm, OutParm, ReturnParm)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeDetectSpace
+struct UCreativeSceneDetectLib_CreativeDetectSpace_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     Source;                                                   // (Parm, IsPlainOldData)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	float                                              MaxDistance;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              MaxBoxExtent;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FCreativeSpaceResult                        ReturnValue;                                              // (Parm, OutParm, ReturnParm)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeCalculateSnapLocationFromMeshes
+struct UCreativeSceneDetectLib_CreativeCalculateSnapLocationFromMeshes_Params
+{
+	struct FVector                                     Curr;                                                     // (ConstParm, Parm, IsPlainOldData)
+	TArray<class UMeshComponent*>                      MeshComponents;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	struct FVector                                     HookPoint;                                                // (Parm, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CreativeSceneDetectLib.CreativeCalculateSnapLocation
+struct UCreativeSceneDetectLib_CreativeCalculateSnapLocation_Params
+{
+	class AActor*                                      TargetActor;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	class USceneComponent*                             TargetComp;                                               // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FVector                                     Direction;                                                // (Parm, IsPlainOldData)
+	struct FVector                                     HookPoint;                                                // (Parm, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
 // Function Creative.CreativeSceneQueryManager.RemoveReplicateObject
 struct UCreativeSceneQueryManager_RemoveReplicateObject_Params
 {
@@ -6375,28 +6661,28 @@ struct UCreativeSpawnManager_OnDeadWithCategory_Params
 struct UCreativeSpawnManager_HandleTowerDestroyed_Params
 {
 	class AActor*                                      DestroyedCharacter;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeSpawnManager.HandleMonsterDestroyed
 struct UCreativeSpawnManager_HandleMonsterDestroyed_Params
 {
 	class AActor*                                      DestroyedCharacter;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeSpawnManager.HandleHumanBotDestroyed
 struct UCreativeSpawnManager_HandleHumanBotDestroyed_Params
 {
 	class AActor*                                      DestroyedCharacter;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeSpawnManager.HandleAIPlayerDestroyed
 struct UCreativeSpawnManager_HandleAIPlayerDestroyed_Params
 {
 	class AActor*                                      DestroyedCharacter;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EEndPlayReason>                   EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EEndPlayReason>                        EndPlayReason;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Creative.CreativeSpawnManager.Get
@@ -6963,6 +7249,127 @@ struct UCustomAssetAnimDeserializer_IsValidData_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Creative.CustomAssetImageDeserializer.IsValidData
+struct UCustomAssetImageDeserializer_IsValidData_Params
+{
+	TArray<unsigned char>                              InBytes;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomImageDataWrapper.MakeUniqueName
+struct UCustomImageDataWrapper_MakeUniqueName_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CustomImageDataWrapper.GetImageWrapperOuter
+struct UCustomImageDataWrapper_GetImageWrapperOuter_Params
+{
+	class UObject*                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.RemoveTextureRef
+struct UCustomAssetImageManager_RemoveTextureRef_Params
+{
+	uint64_t                                           HashID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.ReadPixelFormat
+struct UCustomAssetImageManager_ReadPixelFormat_Params
+{
+	class UTexture2D*                                  Target;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPixelFormat>                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.ReadImageSummary
+struct UCustomAssetImageManager_ReadImageSummary_Params
+{
+	TArray<unsigned char>                              ImageData;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FImageSummary                               ReturnValue;                                              // (Parm, OutParm, ReturnParm)
+};
+
+// Function Creative.CustomAssetImageManager.ReadImageRGBA
+struct UCustomAssetImageManager_ReadImageRGBA_Params
+{
+	TArray<unsigned char>                              ImageData;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<unsigned char>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CustomAssetImageManager.LuaUpdateTextureResource2
+struct UCustomAssetImageManager_LuaUpdateTextureResource2_Params
+{
+	class UTexture2D*                                  Target;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                TexGroup;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                MipIndex;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                PixelFormat;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<unsigned char>                              TexData;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+};
+
+// Function Creative.CustomAssetImageManager.LuaReserveTexture2
+struct UCustomAssetImageManager_LuaReserveTexture2_Params
+{
+	int                                                PixelFormat;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                TexGroup;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	class UTexture2D*                                  OtherTex;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	class UTexture2D*                                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.LuaReserveTexture
+struct UCustomAssetImageManager_LuaReserveTexture_Params
+{
+	int                                                PixelFormat;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                TexGroup;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class UTexture2D*                                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.IsValidImageSummary
+struct UCustomAssetImageManager_IsValidImageSummary_Params
+{
+	struct FImageSummary                               Summary;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.GetPixelFormat
+struct UCustomAssetImageManager_GetPixelFormat_Params
+{
+	int                                                PixelFormat;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPixelFormat>                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.GetPixelBlockSize
+struct UCustomAssetImageManager_GetPixelBlockSize_Params
+{
+	int                                                PixelFormat;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SizeX;                                                    // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	int                                                SizeY;                                                    // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.GetObjectPath
+struct UCustomAssetImageManager_GetObjectPath_Params
+{
+	class UObject*                                     Object;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Creative.CustomAssetImageManager.GetHeaderSize
+struct UCustomAssetImageManager_GetHeaderSize_Params
+{
+	TEnumAsByte<EPixelFormat>                          Format;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetImageManager.AddTextureRef
+struct UCustomAssetImageManager_AddTextureRef_Params
+{
+	uint64_t                                           HashID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class UTexture2D*                                  Tex;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Creative.CustomAssetManager.TryBeginPlay
 struct UCustomAssetManager_TryBeginPlay_Params
 {
@@ -6989,6 +7396,13 @@ struct UCustomAssetManager_ParseCustomAssetKeyHashID_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Creative.CustomAssetManager.GetHashByString
+struct UCustomAssetManager_GetHashByString_Params
+{
+	struct FString                                     CustomAssetKey;                                           // (Parm, ZeroConstructor)
+	uint32_t                                           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Creative.CustomAssetManager.GetCustomAssetPathName
 struct UCustomAssetManager_GetCustomAssetPathName_Params
 {
@@ -7007,6 +7421,12 @@ struct UCustomAssetManager_GetCustomAssetObjectFromTrackedMap_Params
 {
 	struct FString                                     BytesMD5;                                                 // (Parm, ZeroConstructor)
 	class UObject*                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetManager.GetCurPlatformSuffixType
+struct UCustomAssetManager_GetCurPlatformSuffixType_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function Creative.CustomAssetManager.GenerateHashIDByCustomAssetKey
@@ -7044,9 +7464,7 @@ struct UCustomAssetManager_AddCustomAssetObjectToTrackedMap_Params
 // Function Creative.CustomAssetMountStateComponent.RemoveMountStatusInfo
 struct UCustomAssetMountStateComponent_RemoveMountStatusInfo_Params
 {
-	unsigned char                                      AssetType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	uint32_t                                           AssetSize;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     SHA256;                                                   // (Parm, ZeroConstructor)
+	struct FString                                     AssetKey;                                                 // (Parm, OutParm, ZeroConstructor)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -7065,9 +7483,7 @@ struct UCustomAssetMountStateComponent_ReceiveHasAuthority_Params
 // Function Creative.CustomAssetMountStateComponent.ChangeMountStatusInfo
 struct UCustomAssetMountStateComponent_ChangeMountStatusInfo_Params
 {
-	unsigned char                                      AssetType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	uint32_t                                           AssetSize;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     SHA256;                                                   // (Parm, ZeroConstructor)
+	struct FString                                     AssetKey;                                                 // (Parm, OutParm, ZeroConstructor)
 	EMountStatus                                       MountStatus;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<uint32_t>                                   MountingPlayerKeys;                                       // (Parm, ZeroConstructor)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -7076,9 +7492,7 @@ struct UCustomAssetMountStateComponent_ChangeMountStatusInfo_Params
 // Function Creative.CustomAssetMountStateComponent.AddMountStatusInfo
 struct UCustomAssetMountStateComponent_AddMountStatusInfo_Params
 {
-	unsigned char                                      AssetType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	uint32_t                                           AssetSize;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     SHA256;                                                   // (Parm, ZeroConstructor)
+	struct FString                                     AssetKey;                                                 // (Parm, OutParm, ZeroConstructor)
 	EMountStatus                                       MountStatus;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<uint32_t>                                   MountingPlayerKeys;                                       // (Parm, ZeroConstructor)
 	uint32_t                                           MountedByPlayerKey;                                       // (Parm, ZeroConstructor, IsPlainOldData)
@@ -7101,6 +7515,13 @@ struct UCustomAssetPlatformBuilder_PlatformBuilderCompletedDelegate__DelegateSig
 	class UCustomAssetPlatformBuilder*                 uPlatformBuilder;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	TArray<struct FPlatformCustomAssetInfo>            PlatformCustomAssetInfoList;                              // (Parm, ZeroConstructor)
 	uint64_t                                           BuilderSeq;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Creative.CustomAssetStaticMeshDeserializer.IsValidData
+struct UCustomAssetStaticMeshDeserializer_IsValidData_Params
+{
+	TArray<unsigned char>                              InBytes;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Creative.DancerDeviceActor.OnRep_SyncPlayerCharacter

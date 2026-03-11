@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PhotonDestructible.PhotonDestructibleSurfaceComponent.Server_ProcessHit
 // (Final, Native, Public, HasOutParms)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UPhotonDestructibleSurfaceComponent::Server_ProcessHit(const struct FPhotonDestructibleSurfaceHitData& HitData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructibleSurfaceComponent.Server_ProcessHit");
 
@@ -37,7 +37,7 @@ void UPhotonDestructibleSurfaceComponent::Server_ProcessHit(const struct FPhoton
 
 void UPhotonDestructibleSurfaceComponent::OnRep_SurfaceNetData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructibleSurfaceComponent.OnRep_SurfaceNetData");
 
@@ -60,7 +60,7 @@ void UPhotonDestructibleSurfaceComponent::OnRep_SurfaceNetData()
 
 void UPhotonDestructibleSurfaceComponent::Client_OnProcessHit(const struct FPhotonDestructibleSurfaceHitData& HitData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructibleSurfaceComponent.Client_OnProcessHit");
 
@@ -84,7 +84,7 @@ void UPhotonDestructibleSurfaceComponent::Client_OnProcessHit(const struct FPhot
 
 void UPhotonDestructibleInstancedSurfaceComponent::Server_ProcessHit(const struct FPhotonDestructibleSurfaceHitData& HitData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructibleInstancedSurfaceComponent.Server_ProcessHit");
 
@@ -106,7 +106,7 @@ void UPhotonDestructibleInstancedSurfaceComponent::Server_ProcessHit(const struc
 
 void UPhotonDestructibleInstancedSurfaceComponent::OnRep_SurfaceNetData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructibleInstancedSurfaceComponent.OnRep_SurfaceNetData");
 
@@ -129,7 +129,7 @@ void UPhotonDestructibleInstancedSurfaceComponent::OnRep_SurfaceNetData()
 
 void UPhotonDestructibleInstancedSurfaceComponent::Client_OnProcessHit(const struct FPhotonDestructibleSurfaceHitData& HitData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructibleInstancedSurfaceComponent.Client_OnProcessHit");
 
@@ -153,7 +153,7 @@ void UPhotonDestructibleInstancedSurfaceComponent::Client_OnProcessHit(const str
 
 void UPhotonDestructiblePuppet::TriggerPuppetEvent(int EventID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructiblePuppet.TriggerPuppetEvent");
 
@@ -178,7 +178,7 @@ void UPhotonDestructiblePuppet::TriggerPuppetEvent(int EventID)
 
 void UPhotonDestructiblePuppetContainer::TriggerPuppetEvent(const struct FString& ObjectName, int EventID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructiblePuppetContainer.TriggerPuppetEvent");
 
@@ -204,7 +204,7 @@ void UPhotonDestructiblePuppetContainer::TriggerPuppetEvent(const struct FString
 
 void UPhotonDestructiblePuppetMgr::Client_TriggerPuppetEvent(const struct FGuid& PuppetGUID, int EventID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PhotonDestructible.PhotonDestructiblePuppetMgr.Client_TriggerPuppetEvent");
 

@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum GameplayAbilities.EGameplayEffectGrantedAbilityRemovePolicy
 enum class EGameplayEffectGrantedAbilityRemovePolicy : uint8_t
@@ -339,9 +339,9 @@ enum class EGameplayModEvaluationChannel : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct GameplayAbilities.GameplayAbilityTargetDataHandle
 // 0x0020
@@ -396,7 +396,7 @@ struct FGameplayTargetDataFilter
 {
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
 	class AActor*                                      SelfActor;                                                // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ETargetDataFilterSelf>            SelfFilter;                                               // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETargetDataFilterSelf>                 SelfFilter;                                               // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 	class UClass*                                      RequiredActorClass;                                       // 0x0018(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bReverseFilter;                                           // 0x0020(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -454,7 +454,7 @@ struct FGameplayTagRequirements
 struct FGameplayAbilityTargetingLocationInfo
 {
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
-	TEnumAsByte<enum EGameplayAbilityTargetingLocationType> LocationType;                                             // 0x0008(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayAbilityTargetingLocationType> LocationType;                                             // 0x0008(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	struct FTransform                                  LiteralTransform;                                         // 0x0010(0x0030) (BlueprintVisible, IsPlainOldData)
 	class AActor*                                      SourceActor;                                              // 0x0040(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
@@ -495,7 +495,7 @@ struct FPredictionKey
 // 0x0020
 struct FGameplayAbilityActivationInfo
 {
-	TEnumAsByte<enum EGameplayAbilityActivationMode>   ActivationMode;                                           // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayAbilityActivationMode>        ActivationMode;                                           // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      bCanBeEndedByOtherInstance : 1;                           // 0x0001(0x0001)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0002(0x0006) MISSED OFFSET
 	struct FPredictionKey                              PredictionKeyWhenActivated;                               // 0x0008(0x0018)
@@ -739,7 +739,7 @@ struct FReplicatedPredictionKeyMap : public FFastArraySerializer
 struct FGameplayEffectQuery
 {
 	unsigned char                                      UnknownData00[0x10];                                      // 0x0000(0x0010) MISSED OFFSET
-	struct FScriptDelegate                             CustomMatchDelegate_BP;                                   // 0x0010(0x0016) (Edit, BlueprintVisible, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             CustomMatchDelegate_BP;                                   // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor, InstancedReference)
 	struct FGameplayTagQuery                           OwningTagQuery;                                           // 0x0020(0x0048) (Edit, BlueprintVisible)
 	struct FGameplayTagQuery                           EffectTagQuery;                                           // 0x0068(0x0048) (Edit, BlueprintVisible)
 	struct FGameplayTagQuery                           SourceTagQuery;                                           // 0x00B0(0x0048) (Edit, BlueprintVisible)
@@ -777,7 +777,7 @@ struct FGameplayEffectRemovalInfo
 struct FAbilityTriggerData
 {
 	struct FGameplayTag                                TriggerTag;                                               // 0x0000(0x0008) (Edit)
-	TEnumAsByte<enum EGameplayAbilityTriggerSource>    TriggerSource;                                            // 0x0008(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayAbilityTriggerSource>         TriggerSource;                                            // 0x0008(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 };
 
@@ -799,7 +799,7 @@ struct FGameplayAbilityActorInfo
 // 0x0010
 struct FGameplayAbilityBindInfo
 {
-	TEnumAsByte<enum EGameplayAbilityInputBinds>       Command;                                                  // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayAbilityInputBinds>            Command;                                                  // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
 	class UClass*                                      GameplayAbilityClass;                                     // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 };
@@ -920,7 +920,7 @@ struct FGameplayModEvaluationChannelSettings
 struct FGameplayModifierInfo
 {
 	struct FGameplayAttribute                          Attribute;                                                // 0x0000(0x0020) (Edit, DisableEditOnInstance)
-	TEnumAsByte<enum EGameplayModOp>                   ModifierOp;                                               // 0x0020(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EGameplayModOp>                        ModifierOp;                                               // 0x0020(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
 	struct FScalableFloat                              Magnitude;                                                // 0x0028(0x0028)
 	struct FGameplayEffectModifierMagnitude            ModifierMagnitude;                                        // 0x0050(0x01C8) (Edit, DisableEditOnInstance)
@@ -935,7 +935,7 @@ struct FGameplayModifierInfo
 struct FGameplayEffectExecutionScopedModifierInfo
 {
 	struct FGameplayEffectAttributeCaptureDefinition   CapturedAttribute;                                        // 0x0000(0x0028) (Edit, DisableEditOnInstance, EditConst)
-	TEnumAsByte<enum EGameplayModOp>                   ModifierOp;                                               // 0x0028(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	TEnumAsByte<EGameplayModOp>                        ModifierOp;                                               // 0x0028(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
 	struct FGameplayEffectModifierMagnitude            ModifierMagnitude;                                        // 0x0030(0x01C8) (Edit, DisableEditOnInstance)
 	struct FGameplayModEvaluationChannelSettings       EvaluationChannelSettings;                                // 0x01F8(0x0001) (Edit, DisableEditOnInstance)
@@ -994,7 +994,7 @@ struct FGameplayEffectCustomExecutionParameters
 struct FGameplayModifierEvaluatedData
 {
 	struct FGameplayAttribute                          Attribute;                                                // 0x0000(0x0020)
-	TEnumAsByte<enum EGameplayModOp>                   ModifierOp;                                               // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayModOp>                        ModifierOp;                                               // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0021(0x0003) MISSED OFFSET
 	float                                              Magnitude;                                                // 0x0024(0x0004) (ZeroConstructor, IsPlainOldData)
 	struct FActiveGameplayEffectHandle                 Handle;                                                   // 0x0028(0x0008)

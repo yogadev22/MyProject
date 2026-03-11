@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function SGameplayAbilities.AbilityTask_Tick_WaitAbilityActivate.WaitForAbilityActivateWithTagRequirementsInTick
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -19,7 +19,7 @@ namespace SDK
 
 class UAbilityTask_Tick_WaitAbilityActivate* UAbilityTask_Tick_WaitAbilityActivate::WaitForAbilityActivateWithTagRequirementsInTick(class UGameplayAbility* OwningAbility, const struct FGameplayTagRequirements& TagRequirements, bool IncludeTriggeredAbilities, bool TriggerOnce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.AbilityTask_Tick_WaitAbilityActivate.WaitForAbilityActivateWithTagRequirementsInTick");
 
@@ -52,7 +52,7 @@ class UAbilityTask_Tick_WaitAbilityActivate* UAbilityTask_Tick_WaitAbilityActiva
 
 class UAbilityTask_Tick_WaitAbilityActivate* UAbilityTask_Tick_WaitAbilityActivate::WaitForAbilityActivateInTick_Query(class UGameplayAbility* OwningAbility, const struct FGameplayTagQuery& Query, bool IncludeTriggeredAbilities, bool TriggerOnce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.AbilityTask_Tick_WaitAbilityActivate.WaitForAbilityActivateInTick_Query");
 
@@ -86,7 +86,7 @@ class UAbilityTask_Tick_WaitAbilityActivate* UAbilityTask_Tick_WaitAbilityActiva
 
 class UAbilityTask_Tick_WaitAbilityActivate* UAbilityTask_Tick_WaitAbilityActivate::WaitForAbilityActivateInTick(class UGameplayAbility* OwningAbility, const struct FGameplayTag& WithTag, const struct FGameplayTag& WithoutTag, bool IncludeTriggeredAbilities, bool TriggerOnce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.AbilityTask_Tick_WaitAbilityActivate.WaitForAbilityActivateInTick");
 
@@ -118,7 +118,7 @@ class UAbilityTask_Tick_WaitAbilityActivate* UAbilityTask_Tick_WaitAbilityActiva
 
 struct FGameplayTag USAbilitySystemBlueprintLibrary::RequestGameplayTag(const struct FString& InTagName, bool ErrorIfNotFound)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SAbilitySystemBlueprintLibrary.RequestGameplayTag");
 
@@ -146,7 +146,7 @@ struct FGameplayTag USAbilitySystemBlueprintLibrary::RequestGameplayTag(const st
 
 struct FGameplayTagContainer USAbilitySystemBlueprintLibrary::CreateGameplayTagContainer(TArray<struct FGameplayTag> SourceTags)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SAbilitySystemBlueprintLibrary.CreateGameplayTagContainer");
 
@@ -174,7 +174,7 @@ struct FGameplayTagContainer USAbilitySystemBlueprintLibrary::CreateGameplayTagC
 
 bool USAbilitySystemComponent::TryActivateAbilitiesByTagString(const struct FString& AbilityTag, bool bAllowRemoteActivation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SAbilitySystemComponent.TryActivateAbilitiesByTagString");
 
@@ -199,7 +199,7 @@ bool USAbilitySystemComponent::TryActivateAbilitiesByTagString(const struct FStr
 
 void USAbilitySystemComponent::ReloadAbilities()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SAbilitySystemComponent.ReloadAbilities");
 
@@ -223,7 +223,7 @@ void USAbilitySystemComponent::ReloadAbilities()
 
 struct FGameplayAbilitySpecHandle USAbilitySystemComponent::GiveAbilityByClass(class UClass* AbilityClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SAbilitySystemComponent.GiveAbilityByClass");
 
@@ -249,7 +249,7 @@ struct FGameplayAbilitySpecHandle USAbilitySystemComponent::GiveAbilityByClass(c
 
 void USAbilitySystemComponent::CancelAbilitiesByTagString(const struct FString& AbilityTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SAbilitySystemComponent.CancelAbilitiesByTagString");
 
@@ -274,7 +274,7 @@ void USAbilitySystemComponent::CancelAbilitiesByTagString(const struct FString& 
 
 void USGameplayAbility::K2_OnGiveAbility(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayAbilitySpec& Spec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.K2_OnGiveAbility");
 
@@ -298,7 +298,7 @@ void USGameplayAbility::K2_OnGiveAbility(const struct FGameplayAbilityActorInfo&
 
 void USGameplayAbility::AddTargetRequiredTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddTargetRequiredTag");
 
@@ -322,7 +322,7 @@ void USGameplayAbility::AddTargetRequiredTag(const struct FString& TagName)
 
 void USGameplayAbility::AddTargetBlockedTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddTargetBlockedTag");
 
@@ -346,7 +346,7 @@ void USGameplayAbility::AddTargetBlockedTag(const struct FString& TagName)
 
 void USGameplayAbility::AddSourceRequiredTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddSourceRequiredTag");
 
@@ -370,7 +370,7 @@ void USGameplayAbility::AddSourceRequiredTag(const struct FString& TagName)
 
 void USGameplayAbility::AddSourceBlockedTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddSourceBlockedTag");
 
@@ -394,7 +394,7 @@ void USGameplayAbility::AddSourceBlockedTag(const struct FString& TagName)
 
 void USGameplayAbility::AddCancelAbilityTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddCancelAbilityTag");
 
@@ -418,7 +418,7 @@ void USGameplayAbility::AddCancelAbilityTag(const struct FString& TagName)
 
 void USGameplayAbility::AddBlockAbilityTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddBlockAbilityTag");
 
@@ -442,7 +442,7 @@ void USGameplayAbility::AddBlockAbilityTag(const struct FString& TagName)
 
 void USGameplayAbility::AddActivationRequiredTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddActivationRequiredTag");
 
@@ -466,7 +466,7 @@ void USGameplayAbility::AddActivationRequiredTag(const struct FString& TagName)
 
 void USGameplayAbility::AddActivationOwnedTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddActivationOwnedTag");
 
@@ -490,7 +490,7 @@ void USGameplayAbility::AddActivationOwnedTag(const struct FString& TagName)
 
 void USGameplayAbility::AddActivationBlockedTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddActivationBlockedTag");
 
@@ -514,7 +514,7 @@ void USGameplayAbility::AddActivationBlockedTag(const struct FString& TagName)
 
 void USGameplayAbility::AddAbilityTag(const struct FString& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function SGameplayAbilities.SGameplayAbility.AddAbilityTag");
 

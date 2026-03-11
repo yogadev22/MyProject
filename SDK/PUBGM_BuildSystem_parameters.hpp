@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function BuildSystem.BuildingActorBase.SpawnDestroyParticle
 struct ABuildingActorBase_SpawnDestroyParticle_Params
@@ -211,14 +211,14 @@ struct UBuildSystemComponent_OverrideBuildingMaxBuildDistance_Params
 // Function BuildSystem.BuildSystemComponent.OnTouchedConstructableBoxEnded
 struct UBuildSystemComponent_OnTouchedConstructableBoxEnded_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class UPrimitiveComponent*                         TouchedComponent;                                         // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // Function BuildSystem.BuildSystemComponent.OnTouchedConstructableBox
 struct UBuildSystemComponent_OnTouchedConstructableBox_Params
 {
-	TEnumAsByte<enum ETouchIndex>                      FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETouchIndex>                           FingerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class UPrimitiveComponent*                         TouchedComponent;                                         // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
@@ -286,7 +286,7 @@ struct UBuildSystemComponent_IsCanPlaceBuildingBP_Params
 struct UBuildSystemComponent_IsCanPlaceBuilding_Params
 {
 	int                                                InBuildID;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBuildingActionType>              _TYPE;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBuildingActionType>                   _TYPE;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -347,7 +347,7 @@ struct UBuildSystemComponent_GetIndexByBuildingID_Params
 // Function BuildSystem.BuildSystemComponent.GetCurrentBuildType
 struct UBuildSystemComponent_GetCurrentBuildType_Params
 {
-	TEnumAsByte<enum EBuildingType>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBuildingType>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BuildSystem.BuildSystemComponent.GetCDOByIndex
@@ -382,9 +382,9 @@ struct UBuildSystemComponent_DoSceenTouchBuild_Params
 	int                                                buildIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector2D                                   ScreenPostion;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	int                                                PointerIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBuildingActionType>              _TYPE;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBuildingActionType>                   _TYPE;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               IsBegin;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBuildingActionType>              CustomBuildEvent;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBuildingActionType>                   CustomBuildEvent;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BuildSystem.BuildSystemComponent.DensityCheck
@@ -456,7 +456,7 @@ struct UBuildSystemComponent_BuildAtWorldLoc_Params
 	struct FTransform                                  tranx;                                                    // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	struct FVector                                     EndLocation;                                              // (Parm, IsPlainOldData)
 	bool                                               bUseTrace;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EBuildingActionType>              BuildType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBuildingActionType>                   BuildType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -692,13 +692,13 @@ struct UBuildingActorInterface_GetDensityParams_Params
 // Function BuildSystem.BuildingActorInterface.GetCustomBlockingChannels
 struct UBuildingActorInterface_GetCustomBlockingChannels_Params
 {
-	TArray<TEnumAsByte<enum ECollisionChannel>>        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+	TArray<TEnumAsByte<ECollisionChannel>>             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
 // Function BuildSystem.BuildingActorInterface.GetConstructingMode
 struct UBuildingActorInterface_GetConstructingMode_Params
 {
-	TEnumAsByte<enum EBuildingActorConstructingMode>   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EBuildingActorConstructingMode>        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function BuildSystem.BuildingActorInterface.GetBuildOnEdgeUpLength

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Landscape.LandscapeProxy.SetLandScapeRenderMask
 // (Final, RequiredAPI, Native, Public, BlueprintCallable)
@@ -17,7 +17,7 @@ namespace SDK
 
 void ALandscapeProxy::SetLandScapeRenderMask(int Index, bool bUseRenderMask, unsigned char RenderMask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.SetLandScapeRenderMask");
 
@@ -53,7 +53,7 @@ void ALandscapeProxy::SetLandScapeRenderMask(int Index, bool bUseRenderMask, uns
 
 void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, class ULandscapeLayerInfoObject* PaintLayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.EditorApplySpline");
 
@@ -85,7 +85,7 @@ void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponen
 
 void ALandscapeProxy::ChangeLODDistributionSettingConsoleVariable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeLODDistributionSettingConsoleVariable");
 
@@ -108,7 +108,7 @@ void ALandscapeProxy::ChangeLODDistributionSettingConsoleVariable()
 
 void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeLODDistanceFactor");
 
@@ -130,7 +130,7 @@ void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
 
 void ALandscapeProxy::ChangeLOD0DistributionSettingConsoleVariable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeLOD0DistributionSettingConsoleVariable");
 
@@ -153,7 +153,7 @@ void ALandscapeProxy::ChangeLOD0DistributionSettingConsoleVariable()
 
 void ALandscapeProxy::ChangebUseScreenSizeLOD(bool InbUseScreenSizeLOD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangebUseScreenSizeLOD");
 
@@ -177,7 +177,7 @@ void ALandscapeProxy::ChangebUseScreenSizeLOD(bool InbUseScreenSizeLOD)
 
 void UIdeaGrassFieldFunctionLibrary::IdeaGrassRenderForceTextureTrample(const struct FIdeaGrassFieldData& GrassFieldData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.IdeaGrassFieldFunctionLibrary.IdeaGrassRenderForceTextureTrample");
 
@@ -201,7 +201,7 @@ void UIdeaGrassFieldFunctionLibrary::IdeaGrassRenderForceTextureTrample(const st
 
 void UIdeaGrassFieldFunctionLibrary::IdeaGrassRenderForceTextureSkill(const struct FIdeaGrassFieldData& GrassFieldData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.IdeaGrassFieldFunctionLibrary.IdeaGrassRenderForceTextureSkill");
 
@@ -225,7 +225,7 @@ void UIdeaGrassFieldFunctionLibrary::IdeaGrassRenderForceTextureSkill(const stru
 
 void UIdeaGrassFieldFunctionLibrary::IdeaGrassRenderForceTextureFade(const struct FIdeaGrassFieldData& GrassFieldData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.IdeaGrassFieldFunctionLibrary.IdeaGrassRenderForceTextureFade");
 
@@ -249,7 +249,7 @@ void UIdeaGrassFieldFunctionLibrary::IdeaGrassRenderForceTextureFade(const struc
 
 void UIdeaGrassFieldFunctionLibrary::IdeaGrassRenderForceTexture(const struct FIdeaGrassFieldData& GrassFieldData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Landscape.IdeaGrassFieldFunctionLibrary.IdeaGrassRenderForceTexture");
 

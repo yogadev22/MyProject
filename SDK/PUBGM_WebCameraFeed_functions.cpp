@@ -1,19 +1,19 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function WebCameraFeed.WebCameraWidget.UnLockScreenOrientation
 // (Final, Native, Public, BlueprintCallable)
 
 void UWebCameraWidget::UnLockScreenOrientation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.UnLockScreenOrientation");
 
@@ -36,7 +36,7 @@ void UWebCameraWidget::UnLockScreenOrientation()
 
 bool UWebCameraWidget::SwitchFrontAndBackCamera()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.SwitchFrontAndBackCamera");
 
@@ -61,7 +61,7 @@ bool UWebCameraWidget::SwitchFrontAndBackCamera()
 
 void UWebCameraWidget::SetDeviceId(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.SetDeviceId");
 
@@ -85,7 +85,7 @@ void UWebCameraWidget::SetDeviceId(int ID)
 
 void UWebCameraWidget::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.SetColorAndOpacity");
 
@@ -110,7 +110,7 @@ void UWebCameraWidget::SetColorAndOpacity(const struct FLinearColor& InColorAndO
 
 bool UWebCameraWidget::SaveAsImage(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.SaveAsImage");
 
@@ -134,7 +134,7 @@ bool UWebCameraWidget::SaveAsImage(const struct FString& Filename)
 
 void UWebCameraWidget::ReleaseVideoGrabber()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.ReleaseVideoGrabber");
 
@@ -155,7 +155,7 @@ void UWebCameraWidget::ReleaseVideoGrabber()
 
 void UWebCameraWidget::LockScreenOrientation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.LockScreenOrientation");
 
@@ -176,7 +176,7 @@ void UWebCameraWidget::LockScreenOrientation()
 
 void UWebCameraWidget::InitVideoGrabber()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.InitVideoGrabber");
 
@@ -199,7 +199,7 @@ void UWebCameraWidget::InitVideoGrabber()
 
 int UWebCameraWidget::GetFrontCameraId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.GetFrontCameraId");
 
@@ -224,7 +224,7 @@ int UWebCameraWidget::GetFrontCameraId()
 
 int UWebCameraWidget::GetBackCameraId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function WebCameraFeed.WebCameraWidget.GetBackCameraId");
 

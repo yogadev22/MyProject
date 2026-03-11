@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum Paper2D.EFlipbookCollisionMode
 enum class EFlipbookCollisionMode : uint8_t
@@ -88,9 +88,9 @@ enum class ESpriteCollisionMode : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct Paper2D.PaperFlipbookKeyFrame
 // 0x0010
@@ -174,7 +174,7 @@ struct FSpriteGeometryShape
 struct FSpriteGeometryCollection
 {
 	TArray<struct FSpriteGeometryShape>                Shapes;                                                   // 0x0000(0x0010) (Edit, ZeroConstructor)
-	TEnumAsByte<enum ESpritePolygonMode>               GeometryType;                                             // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESpritePolygonMode>                    GeometryType;                                             // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 	int                                                PixelsPerSubdivisionX;                                    // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
 	int                                                PixelsPerSubdivisionY;                                    // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData)

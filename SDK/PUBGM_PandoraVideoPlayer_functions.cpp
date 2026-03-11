@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PandoraVideoPlayer.BP_PixVideoLibrary.SetPixVideoLibraryPath
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -16,7 +16,7 @@ namespace SDK
 
 bool UBP_PixVideoLibrary::SetPixVideoLibraryPath(const struct FString& LibPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.BP_PixVideoLibrary.SetPixVideoLibraryPath");
 
@@ -43,7 +43,7 @@ bool UBP_PixVideoLibrary::SetPixVideoLibraryPath(const struct FString& LibPath)
 
 class UUserWidget* UBP_PixVideoLibrary::CreatePlayerWidget(const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.BP_PixVideoLibrary.CreatePlayerWidget");
 
@@ -72,7 +72,7 @@ class UUserWidget* UBP_PixVideoLibrary::CreatePlayerWidget(const struct FString&
 
 void UPVideoImage::VideoPlayerEvent__DelegateSignature(int EventCode, int nParam1, int nParam2, const struct FString& strMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction PandoraVideoPlayer.PVideoImage.VideoPlayerEvent__DelegateSignature");
 
@@ -98,7 +98,7 @@ void UPVideoImage::VideoPlayerEvent__DelegateSignature(int EventCode, int nParam
 
 void UPVideoImage::UseFileDelegate(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.UseFileDelegate");
 
@@ -120,7 +120,7 @@ void UPVideoImage::UseFileDelegate(bool bEnable)
 
 void UPVideoImage::Update()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.Update");
 
@@ -143,7 +143,7 @@ void UPVideoImage::Update()
 
 void UPVideoImage::SetVolume(int nVolume)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetVolume");
 
@@ -167,7 +167,7 @@ void UPVideoImage::SetVolume(int nVolume)
 
 void UPVideoImage::SetVideoAlpha(float FAlpha)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetVideoAlpha");
 
@@ -191,7 +191,7 @@ void UPVideoImage::SetVideoAlpha(float FAlpha)
 
 void UPVideoImage::SetStopAsyn(int stopAsyn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetStopAsyn");
 
@@ -215,7 +215,7 @@ void UPVideoImage::SetStopAsyn(int stopAsyn)
 
 void UPVideoImage::SetRate(float nRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetRate");
 
@@ -239,7 +239,7 @@ void UPVideoImage::SetRate(float nRate)
 
 void UPVideoImage::SetOnlyPlayType(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetOnlyPlayType");
 
@@ -264,7 +264,7 @@ void UPVideoImage::SetOnlyPlayType(int Type)
 
 void UPVideoImage::SetNextVideo(const struct FString& strUrl, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetNextVideo");
 
@@ -289,7 +289,7 @@ void UPVideoImage::SetNextVideo(const struct FString& strUrl, bool bLoop)
 
 void UPVideoImage::SetNeedVideoTexture(bool needVideoTexture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetNeedVideoTexture");
 
@@ -313,7 +313,7 @@ void UPVideoImage::SetNeedVideoTexture(bool needVideoTexture)
 
 void UPVideoImage::SetNeedPlayAudio(bool needPlayAudio)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetNeedPlayAudio");
 
@@ -330,6 +330,33 @@ void UPVideoImage::SetNeedPlayAudio(bool needPlayAudio)
 }
 
 
+// Function PandoraVideoPlayer.PVideoImage.SetMediaCodecMaxBufferGap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            maxBufferGap                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPVideoImage::SetMediaCodecMaxBufferGap(int maxBufferGap)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetMediaCodecMaxBufferGap");
+
+	UPVideoImage_SetMediaCodecMaxBufferGap_Params params;
+	params.maxBufferGap = maxBufferGap;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function PandoraVideoPlayer.PVideoImage.SetDecryptionKey
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -338,7 +365,7 @@ void UPVideoImage::SetNeedPlayAudio(bool needPlayAudio)
 
 int UPVideoImage::SetDecryptionKey(const struct FString& decryptionKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetDecryptionKey");
 
@@ -364,7 +391,7 @@ int UPVideoImage::SetDecryptionKey(const struct FString& decryptionKey)
 
 void UPVideoImage::SetDataUpdateCallback(const TScriptInterface<class UPVideoPlayerInterface>& dataUpdateInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetDataUpdateCallback");
 
@@ -388,7 +415,7 @@ void UPVideoImage::SetDataUpdateCallback(const TScriptInterface<class UPVideoPla
 
 void UPVideoImage::SetAutoPlay(bool doAutoPlay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SetAutoPlay");
 
@@ -412,7 +439,7 @@ void UPVideoImage::SetAutoPlay(bool doAutoPlay)
 
 void UPVideoImage::SeekMs(int millisec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SeekMs");
 
@@ -436,7 +463,7 @@ void UPVideoImage::SeekMs(int millisec)
 
 void UPVideoImage::SeekAndPause(int nMilliSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.SeekAndPause");
 
@@ -460,7 +487,7 @@ void UPVideoImage::SeekAndPause(int nMilliSec)
 
 void UPVideoImage::Seek(int nSecond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.Seek");
 
@@ -482,7 +509,7 @@ void UPVideoImage::Seek(int nSecond)
 
 void UPVideoImage::Resume()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.Resume");
 
@@ -507,7 +534,7 @@ void UPVideoImage::Resume()
 
 int UPVideoImage::PlayWithFd(int nFd, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.PlayWithFd");
 
@@ -537,7 +564,7 @@ int UPVideoImage::PlayWithFd(int nFd, bool bLoop)
 
 int UPVideoImage::PlayOnceAndLoopBetween(const struct FString& strUrl, int nStartMs, int nEndMs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.PlayOnceAndLoopBetween");
 
@@ -567,7 +594,7 @@ int UPVideoImage::PlayOnceAndLoopBetween(const struct FString& strUrl, int nStar
 
 int UPVideoImage::Play(const struct FString& strUrl, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.Play");
 
@@ -592,7 +619,7 @@ int UPVideoImage::Play(const struct FString& strUrl, bool bLoop)
 
 void UPVideoImage::Pause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.Pause");
 
@@ -615,7 +642,7 @@ void UPVideoImage::Pause()
 
 bool UPVideoImage::IsTextureUpdated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.IsTextureUpdated");
 
@@ -640,7 +667,7 @@ bool UPVideoImage::IsTextureUpdated()
 
 bool UPVideoImage::IsPlaying()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.IsPlaying");
 
@@ -665,7 +692,7 @@ bool UPVideoImage::IsPlaying()
 
 bool UPVideoImage::IsPause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.IsPause");
 
@@ -690,7 +717,7 @@ bool UPVideoImage::IsPause()
 
 bool UPVideoImage::IsAlphaVideo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.IsAlphaVideo");
 
@@ -715,7 +742,7 @@ bool UPVideoImage::IsAlphaVideo()
 
 int UPVideoImage::GetYUVFormat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetYUVFormat");
 
@@ -741,7 +768,7 @@ int UPVideoImage::GetYUVFormat()
 
 void UPVideoImage::GetVideoTime(float* fCurTime, float* fTotalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetVideoTime");
 
@@ -770,7 +797,7 @@ void UPVideoImage::GetVideoTime(float* fCurTime, float* fTotalTime)
 
 class UTexture2D* UPVideoImage::GetVideoTexture(int nIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetVideoTexture");
 
@@ -796,7 +823,7 @@ class UTexture2D* UPVideoImage::GetVideoTexture(int nIdx)
 
 float UPVideoImage::GetVideoAlpha()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetVideoAlpha");
 
@@ -821,7 +848,7 @@ float UPVideoImage::GetVideoAlpha()
 
 struct FLinearColor UPVideoImage::GetRgbParameter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetRgbParameter");
 
@@ -847,7 +874,7 @@ struct FLinearColor UPVideoImage::GetRgbParameter()
 
 void UPVideoImage::GetResolution(int* nWidth, int* nHeight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetResolution");
 
@@ -875,7 +902,7 @@ void UPVideoImage::GetResolution(int* nWidth, int* nHeight)
 
 int UPVideoImage::GetPlayStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetPlayStatus");
 
@@ -900,7 +927,7 @@ int UPVideoImage::GetPlayStatus()
 
 int UPVideoImage::GetMediaType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetMediaType");
 
@@ -925,7 +952,7 @@ int UPVideoImage::GetMediaType()
 
 int UPVideoImage::GetDuration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetDuration");
 
@@ -950,7 +977,7 @@ int UPVideoImage::GetDuration()
 
 int UPVideoImage::GetCurrentPosition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetCurrentPosition");
 
@@ -975,7 +1002,7 @@ int UPVideoImage::GetCurrentPosition()
 
 struct FLinearColor UPVideoImage::GetAlphaParameter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.GetAlphaParameter");
 
@@ -1001,7 +1028,7 @@ struct FLinearColor UPVideoImage::GetAlphaParameter()
 
 void UPVideoImage::EnableCacheResource(bool bEnable, const struct FString& cachePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.EnableCacheResource");
 
@@ -1024,7 +1051,7 @@ void UPVideoImage::EnableCacheResource(bool bEnable, const struct FString& cache
 
 void UPVideoImage::Close()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoImage.Close");
 
@@ -1053,7 +1080,7 @@ void UPVideoImage::Close()
 
 bool UPVideoPlayerInterface::OnAudioDataUpdateCallback(TArray<unsigned char> AudioData, int Size, int Samples, int Channels, int sample_rate, float clock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayerInterface.OnAudioDataUpdateCallback");
 
@@ -1083,7 +1110,7 @@ bool UPVideoPlayerInterface::OnAudioDataUpdateCallback(TArray<unsigned char> Aud
 
 void UPVideoPlayer::UseFileDelegate(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.UseFileDelegate");
 
@@ -1105,7 +1132,7 @@ void UPVideoPlayer::UseFileDelegate(bool bEnable)
 
 void UPVideoPlayer::Update()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.Update");
 
@@ -1128,7 +1155,7 @@ void UPVideoPlayer::Update()
 
 void UPVideoPlayer::SetVolume(int nVolume)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetVolume");
 
@@ -1152,7 +1179,7 @@ void UPVideoPlayer::SetVolume(int nVolume)
 
 void UPVideoPlayer::SetVideoAlpha(float FAlpha)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetVideoAlpha");
 
@@ -1176,7 +1203,7 @@ void UPVideoPlayer::SetVideoAlpha(float FAlpha)
 
 void UPVideoPlayer::SetStopAsyn(int stopAsyn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetStopAsyn");
 
@@ -1200,7 +1227,7 @@ void UPVideoPlayer::SetStopAsyn(int stopAsyn)
 
 void UPVideoPlayer::SetRate(float nRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetRate");
 
@@ -1224,7 +1251,7 @@ void UPVideoPlayer::SetRate(float nRate)
 
 void UPVideoPlayer::SetOnlyPlayType(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetOnlyPlayType");
 
@@ -1249,7 +1276,7 @@ void UPVideoPlayer::SetOnlyPlayType(int Type)
 
 void UPVideoPlayer::SetNextVideo(const struct FString& strUrl, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetNextVideo");
 
@@ -1274,7 +1301,7 @@ void UPVideoPlayer::SetNextVideo(const struct FString& strUrl, bool bLoop)
 
 void UPVideoPlayer::SetNeedVideoTexture(bool bNeedVideoTexture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetNeedVideoTexture");
 
@@ -1298,7 +1325,7 @@ void UPVideoPlayer::SetNeedVideoTexture(bool bNeedVideoTexture)
 
 void UPVideoPlayer::SetNeedPlayAudio(bool bNeedPlayAudio)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetNeedPlayAudio");
 
@@ -1315,6 +1342,33 @@ void UPVideoPlayer::SetNeedPlayAudio(bool bNeedPlayAudio)
 }
 
 
+// Function PandoraVideoPlayer.PVideoPlayer.SetMediaCodecMaxBufferGap
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int                            maxBufferGap                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPVideoPlayer::SetMediaCodecMaxBufferGap(int maxBufferGap)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetMediaCodecMaxBufferGap");
+
+	UPVideoPlayer_SetMediaCodecMaxBufferGap_Params params;
+	params.maxBufferGap = maxBufferGap;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function PandoraVideoPlayer.PVideoPlayer.SetHardwareDecodec
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1322,7 +1376,7 @@ void UPVideoPlayer::SetNeedPlayAudio(bool bNeedPlayAudio)
 
 void UPVideoPlayer::SetHardwareDecodec(bool bHareware)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetHardwareDecodec");
 
@@ -1347,7 +1401,7 @@ void UPVideoPlayer::SetHardwareDecodec(bool bHareware)
 
 int UPVideoPlayer::SetDecryptionKey(const struct FString& decryptionKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetDecryptionKey");
 
@@ -1373,7 +1427,7 @@ int UPVideoPlayer::SetDecryptionKey(const struct FString& decryptionKey)
 
 void UPVideoPlayer::SetDataUpdateCallback(const TScriptInterface<class UPVideoPlayerInterface>& dataUpdateInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetDataUpdateCallback");
 
@@ -1397,7 +1451,7 @@ void UPVideoPlayer::SetDataUpdateCallback(const TScriptInterface<class UPVideoPl
 
 void UPVideoPlayer::SetCachePacketSize(int nSizeMb)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetCachePacketSize");
 
@@ -1421,7 +1475,7 @@ void UPVideoPlayer::SetCachePacketSize(int nSizeMb)
 
 void UPVideoPlayer::SetAutoPlay(bool bAutoPlay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SetAutoPlay");
 
@@ -1445,7 +1499,7 @@ void UPVideoPlayer::SetAutoPlay(bool bAutoPlay)
 
 void UPVideoPlayer::SeekMs(int millisec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SeekMs");
 
@@ -1469,7 +1523,7 @@ void UPVideoPlayer::SeekMs(int millisec)
 
 void UPVideoPlayer::SeekAndPause(int nMilliSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.SeekAndPause");
 
@@ -1493,7 +1547,7 @@ void UPVideoPlayer::SeekAndPause(int nMilliSec)
 
 void UPVideoPlayer::Seek(int nSecond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.Seek");
 
@@ -1515,7 +1569,7 @@ void UPVideoPlayer::Seek(int nSecond)
 
 void UPVideoPlayer::Resume()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.Resume");
 
@@ -1541,7 +1595,7 @@ void UPVideoPlayer::Resume()
 
 int UPVideoPlayer::PlayOnceAndLoopBetween(const struct FString& strUrl, int nStartMs, int nEndMs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.PlayOnceAndLoopBetween");
 
@@ -1571,7 +1625,7 @@ int UPVideoPlayer::PlayOnceAndLoopBetween(const struct FString& strUrl, int nSta
 
 int UPVideoPlayer::Play(const struct FString& strUrl, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.Play");
 
@@ -1596,7 +1650,7 @@ int UPVideoPlayer::Play(const struct FString& strUrl, bool bLoop)
 
 void UPVideoPlayer::Pause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.Pause");
 
@@ -1622,7 +1676,7 @@ void UPVideoPlayer::Pause()
 
 void UPVideoPlayer::MediaPlayerEvent__DelegateSignature(int EventCode, int nParam1, int nParam2, const struct FString& strMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction PandoraVideoPlayer.PVideoPlayer.MediaPlayerEvent__DelegateSignature");
 
@@ -1648,7 +1702,7 @@ void UPVideoPlayer::MediaPlayerEvent__DelegateSignature(int EventCode, int nPara
 
 bool UPVideoPlayer::IsTextureUpdated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.IsTextureUpdated");
 
@@ -1673,7 +1727,7 @@ bool UPVideoPlayer::IsTextureUpdated()
 
 bool UPVideoPlayer::IsPlaying()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.IsPlaying");
 
@@ -1698,7 +1752,7 @@ bool UPVideoPlayer::IsPlaying()
 
 bool UPVideoPlayer::IsPause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.IsPause");
 
@@ -1723,7 +1777,7 @@ bool UPVideoPlayer::IsPause()
 
 bool UPVideoPlayer::IsAlphaVideo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.IsAlphaVideo");
 
@@ -1748,7 +1802,7 @@ bool UPVideoPlayer::IsAlphaVideo()
 
 bool UPVideoPlayer::InitPVideo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.InitPVideo");
 
@@ -1773,7 +1827,7 @@ bool UPVideoPlayer::InitPVideo()
 
 int UPVideoPlayer::GetYUVFormat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetYUVFormat");
 
@@ -1799,7 +1853,7 @@ int UPVideoPlayer::GetYUVFormat()
 
 void UPVideoPlayer::GetVideoTime(float* fCurTime, float* fTotalTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetVideoTime");
 
@@ -1828,7 +1882,7 @@ void UPVideoPlayer::GetVideoTime(float* fCurTime, float* fTotalTime)
 
 class UTexture2D* UPVideoPlayer::GetVideoTexture(int nIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetVideoTexture");
 
@@ -1854,7 +1908,7 @@ class UTexture2D* UPVideoPlayer::GetVideoTexture(int nIdx)
 
 float UPVideoPlayer::GetVideoAlpha()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetVideoAlpha");
 
@@ -1879,7 +1933,7 @@ float UPVideoPlayer::GetVideoAlpha()
 
 struct FLinearColor UPVideoPlayer::GetRgbParameter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetRgbParameter");
 
@@ -1905,7 +1959,7 @@ struct FLinearColor UPVideoPlayer::GetRgbParameter()
 
 void UPVideoPlayer::GetResolution(int* nWidth, int* nHeight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetResolution");
 
@@ -1933,7 +1987,7 @@ void UPVideoPlayer::GetResolution(int* nWidth, int* nHeight)
 
 float UPVideoPlayer::GetRate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetRate");
 
@@ -1958,7 +2012,7 @@ float UPVideoPlayer::GetRate()
 
 int UPVideoPlayer::GetPlayStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetPlayStatus");
 
@@ -1983,7 +2037,7 @@ int UPVideoPlayer::GetPlayStatus()
 
 int UPVideoPlayer::GetMediaType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetMediaType");
 
@@ -2008,7 +2062,7 @@ int UPVideoPlayer::GetMediaType()
 
 int UPVideoPlayer::GetDuration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetDuration");
 
@@ -2033,7 +2087,7 @@ int UPVideoPlayer::GetDuration()
 
 int UPVideoPlayer::GetCurrentPosition()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetCurrentPosition");
 
@@ -2058,7 +2112,7 @@ int UPVideoPlayer::GetCurrentPosition()
 
 struct FLinearColor UPVideoPlayer::GetAlphaParameter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.GetAlphaParameter");
 
@@ -2084,7 +2138,7 @@ struct FLinearColor UPVideoPlayer::GetAlphaParameter()
 
 void UPVideoPlayer::EnableCacheResource(bool bEnable, const struct FString& cachePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.EnableCacheResource");
 
@@ -2107,7 +2161,7 @@ void UPVideoPlayer::EnableCacheResource(bool bEnable, const struct FString& cach
 
 void UPVideoPlayer::Close()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.Close");
 
@@ -2130,7 +2184,7 @@ void UPVideoPlayer::Close()
 
 void UPVideoPlayer::ClearCacheResource(const struct FString& cachePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.ClearCacheResource");
 
@@ -2152,7 +2206,7 @@ void UPVideoPlayer::ClearCacheResource(const struct FString& cachePath)
 
 void UPVideoPlayer::BlueTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.BlueTick");
 
@@ -2172,7 +2226,7 @@ void UPVideoPlayer::BlueTick()
 
 void UPVideoPlayer::BeginPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.PVideoPlayer.BeginPlay");
 
@@ -2197,7 +2251,7 @@ void UPVideoPlayer::BeginPlay()
 
 void UVideoPlayerWidget::VideoPlayerEvent__DelegateSignature(int nEvent, int nArg1, int nArg2, const struct FString& sMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction PandoraVideoPlayer.VideoPlayerWidget.VideoPlayerEvent__DelegateSignature");
 
@@ -2223,7 +2277,7 @@ void UVideoPlayerWidget::VideoPlayerEvent__DelegateSignature(int nEvent, int nAr
 
 void UVideoPlayerWidget::UseFileDelegate(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.UseFileDelegate");
 
@@ -2247,7 +2301,7 @@ void UVideoPlayerWidget::UseFileDelegate(bool bEnable)
 
 void UVideoPlayerWidget::SetVolume(int nVolume)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetVolume");
 
@@ -2271,7 +2325,7 @@ void UVideoPlayerWidget::SetVolume(int nVolume)
 
 void UVideoPlayerWidget::SetVideoAlpha(float FAlpha)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetVideoAlpha");
 
@@ -2295,7 +2349,7 @@ void UVideoPlayerWidget::SetVideoAlpha(float FAlpha)
 
 void UVideoPlayerWidget::SetStopAsyn(int stopAsyn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetStopAsyn");
 
@@ -2319,7 +2373,7 @@ void UVideoPlayerWidget::SetStopAsyn(int stopAsyn)
 
 void UVideoPlayerWidget::SetRate(float nRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetRate");
 
@@ -2343,7 +2397,7 @@ void UVideoPlayerWidget::SetRate(float nRate)
 
 void UVideoPlayerWidget::SetOnlyPlayType(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetOnlyPlayType");
 
@@ -2368,7 +2422,7 @@ void UVideoPlayerWidget::SetOnlyPlayType(int Type)
 
 void UVideoPlayerWidget::SetNextVideo(const struct FString& strUrl, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetNextVideo");
 
@@ -2393,7 +2447,7 @@ void UVideoPlayerWidget::SetNextVideo(const struct FString& strUrl, bool bLoop)
 
 void UVideoPlayerWidget::SetNeedVideoTexture(bool needVideoTexture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetNeedVideoTexture");
 
@@ -2417,7 +2471,7 @@ void UVideoPlayerWidget::SetNeedVideoTexture(bool needVideoTexture)
 
 void UVideoPlayerWidget::SetNeedPlayAudio(bool needPlayAudio)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetNeedPlayAudio");
 
@@ -2434,6 +2488,33 @@ void UVideoPlayerWidget::SetNeedPlayAudio(bool needPlayAudio)
 }
 
 
+// Function PandoraVideoPlayer.VideoPlayerWidget.SetMediaCodecMaxBufferGap
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int                            maxBufferGap                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UVideoPlayerWidget::SetMediaCodecMaxBufferGap(int maxBufferGap)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetMediaCodecMaxBufferGap");
+
+	UVideoPlayerWidget_SetMediaCodecMaxBufferGap_Params params;
+	params.maxBufferGap = maxBufferGap;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function PandoraVideoPlayer.VideoPlayerWidget.SetHardwareDecodec
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2441,7 +2522,7 @@ void UVideoPlayerWidget::SetNeedPlayAudio(bool needPlayAudio)
 
 void UVideoPlayerWidget::SetHardwareDecodec(bool bHardWare)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetHardwareDecodec");
 
@@ -2466,7 +2547,7 @@ void UVideoPlayerWidget::SetHardwareDecodec(bool bHardWare)
 
 int UVideoPlayerWidget::SetDecryptionKey(const struct FString& decryptionKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetDecryptionKey");
 
@@ -2492,7 +2573,7 @@ int UVideoPlayerWidget::SetDecryptionKey(const struct FString& decryptionKey)
 
 void UVideoPlayerWidget::SetDataUpdateCallback(const TScriptInterface<class UPVideoPlayerInterface>& dataUpdateInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetDataUpdateCallback");
 
@@ -2516,7 +2597,7 @@ void UVideoPlayerWidget::SetDataUpdateCallback(const TScriptInterface<class UPVi
 
 void UVideoPlayerWidget::SetAutoPlay(bool doAutoPlay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SetAutoPlay");
 
@@ -2540,7 +2621,7 @@ void UVideoPlayerWidget::SetAutoPlay(bool doAutoPlay)
 
 void UVideoPlayerWidget::SeekMs(int nMilliSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SeekMs");
 
@@ -2564,7 +2645,7 @@ void UVideoPlayerWidget::SeekMs(int nMilliSec)
 
 void UVideoPlayerWidget::SeekAndPause(int nMilliSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.SeekAndPause");
 
@@ -2588,7 +2669,7 @@ void UVideoPlayerWidget::SeekAndPause(int nMilliSec)
 
 void UVideoPlayerWidget::Seek(int nSecond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.Seek");
 
@@ -2610,7 +2691,7 @@ void UVideoPlayerWidget::Seek(int nSecond)
 
 void UVideoPlayerWidget::Resume()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.Resume");
 
@@ -2635,7 +2716,7 @@ void UVideoPlayerWidget::Resume()
 
 int UVideoPlayerWidget::PlayWithFd(int nFd, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.PlayWithFd");
 
@@ -2665,7 +2746,7 @@ int UVideoPlayerWidget::PlayWithFd(int nFd, bool bLoop)
 
 int UVideoPlayerWidget::PlayOnceAndLoopBetween(const struct FString& strUrl, int nStartMs, int nEndMs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.PlayOnceAndLoopBetween");
 
@@ -2695,7 +2776,7 @@ int UVideoPlayerWidget::PlayOnceAndLoopBetween(const struct FString& strUrl, int
 
 int UVideoPlayerWidget::Play1(const struct FString& strUrl, bool bLoop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.Play1");
 
@@ -2720,7 +2801,7 @@ int UVideoPlayerWidget::Play1(const struct FString& strUrl, bool bLoop)
 
 void UVideoPlayerWidget::Pause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.Pause");
 
@@ -2746,7 +2827,7 @@ void UVideoPlayerWidget::Pause()
 
 void UVideoPlayerWidget::OnPlayerEvent(int EventCode, int nParam1, int nParam2, const struct FString& strMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.OnPlayerEvent");
 
@@ -2773,7 +2854,7 @@ void UVideoPlayerWidget::OnPlayerEvent(int EventCode, int nParam1, int nParam2, 
 
 float UVideoPlayerWidget::GetVideoAlpha()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.GetVideoAlpha");
 
@@ -2798,7 +2879,7 @@ float UVideoPlayerWidget::GetVideoAlpha()
 
 int UVideoPlayerWidget::GetPlayStatus1()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.GetPlayStatus1");
 
@@ -2823,7 +2904,7 @@ int UVideoPlayerWidget::GetPlayStatus1()
 
 int UVideoPlayerWidget::GetDuration1()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.GetDuration1");
 
@@ -2848,7 +2929,7 @@ int UVideoPlayerWidget::GetDuration1()
 
 int UVideoPlayerWidget::GetCurrentPosition1()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.GetCurrentPosition1");
 
@@ -2874,7 +2955,7 @@ int UVideoPlayerWidget::GetCurrentPosition1()
 
 void UVideoPlayerWidget::EnableCacheResource(bool bEnable, const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.EnableCacheResource");
 
@@ -2897,7 +2978,7 @@ void UVideoPlayerWidget::EnableCacheResource(bool bEnable, const struct FString&
 
 void UVideoPlayerWidget::Close()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.Close");
 
@@ -2920,7 +3001,7 @@ void UVideoPlayerWidget::Close()
 
 void UVideoPlayerWidget::ClearCacheResource(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PandoraVideoPlayer.VideoPlayerWidget.ClearCacheResource");
 

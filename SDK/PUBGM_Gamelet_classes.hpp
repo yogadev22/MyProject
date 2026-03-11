@@ -1,23 +1,23 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class Gamelet.Gamelet
-// 0x0020 (0x0048 - 0x0028)
+// 0x0028 (0x0050 - 0x0028)
 class UGamelet : public UObject
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x0028(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0028(0x0028) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.Gamelet");
 		return pStaticClass;
@@ -37,12 +37,13 @@ public:
 	int SendMessageToSdk(const struct FString& Msg);
 	int SendMessageToApp(const struct FString& AppID, const struct FString& Msg);
 	int RefreshUserdata(TMap<struct FString, struct FString> UserData);
-	int OpenBeforeLoginWithGameVersion(TEnumAsByte<enum EGameletEnvironment> Environment, const struct FString& GameVersion);
-	int OpenBeforeLogin(TEnumAsByte<enum EGameletEnvironment> Environment);
+	int OpenBeforeLoginWithGameVersion(TEnumAsByte<EGameletEnvironment> Environment, const struct FString& GameVersion);
+	int OpenBeforeLogin(TEnumAsByte<EGameletEnvironment> Environment);
 	int OpenApp(const struct FString& AppID, const struct FString& OpenArgs);
-	int Open(TEnumAsByte<enum EGameletEnvironment> Environment, TMap<struct FString, struct FString> UserData);
+	int Open(TEnumAsByte<EGameletEnvironment> Environment, TMap<struct FString, struct FString> UserData);
 	int Initialize(class UGameletSettings* Settings);
 	static struct FString GetProductConfig();
+	bool GetIsProductEnvironment();
 	class UGameletSettings* GetGlobalSettings();
 	int GetBackTrace(struct FString* TraceInfo);
 	static class UGamelet* Get();
@@ -68,7 +69,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletMatBrush");
 		return pStaticClass;
@@ -86,7 +87,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletEnvMgr");
 		return pStaticClass;
@@ -111,7 +112,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletFile");
 		return pStaticClass;
@@ -140,7 +141,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletPaths");
 		return pStaticClass;
@@ -180,7 +181,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletPuertsEnvMgr");
 		return pStaticClass;
@@ -202,7 +203,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletPuertsUtilities");
 		return pStaticClass;
@@ -215,43 +216,46 @@ public:
 	static void ReleaseTextureResource(class UTexture2D* Texture);
 	static int MountPak(const struct FString& pakPath);
 	static class UUserWidget* LoadUI(const struct FString& Ref, class UObject* Obj);
-	static class UTexture2D* LoadImageToTexture2D(const struct FString& Path, TEnumAsByte<enum ETextureGroup> LODGroup, unsigned char IsSRGB);
+	static class UTexture2D* LoadImageToTexture2D(const struct FString& Path, TEnumAsByte<ETextureGroup> LODGroup, unsigned char IsSRGB);
 	static bool IsWithEditor();
 	static void HelloWorld();
 	static class UWidgetAnimation* GetWidgetAnimationByName(class UUserWidget* Widget, const struct FString& Name);
 	static struct FString GetSDKVersion();
 	static struct FString GetPlatformDesc();
 	static unsigned char GetNetWorkType();
+	static bool GetIsProductEnvironment();
 	static struct FString GetHardwareInfo();
 	static struct FString GetEngineVersion();
 	static void FlushPuertsVMMessages();
+	static void CallCommonFunc(const struct FString& Type, const struct FString& ParamJson, class UWidget* Widget, const struct FScriptDelegate& Callback);
 	static void AddUserWidgetToGame(class UUserWidget* UserWidget, const struct FString& PanelInfo);
 };
 
 
 // Class Gamelet.GameletSettings
-// 0x0078 (0x00A0 - 0x0028)
+// 0x0088 (0x00B0 - 0x0028)
 class UGameletSettings : public UObject
 {
 public:
-	struct FScriptDelegate                             OnSDKMessage;                                             // 0x0028(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnRefreshUserdata;                                        // 0x0038(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnViewCreated;                                            // 0x0048(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnViewAboutToDestroy;                                     // 0x0058(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnReportData;                                             // 0x0068(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	struct FScriptDelegate                             OnProfileJSSDKMessage;                                    // 0x0078(0x0016) (Edit, ZeroConstructor, InstancedReference)
-	bool                                               DisableJsErrReport;                                       // 0x0088(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               DisableGetBackTrace;                                      // 0x0089(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               DelayWndCallMsg;                                          // 0x008A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               SupportUseEngineFont;                                     // 0x008B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               UseSRGB;                                                  // 0x008C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               ForbiddenSyncServerLogConf;                               // 0x008D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x008E(0x0002) MISSED OFFSET
-	struct FScriptDelegate                             OnCoreCodeLoad;                                           // 0x0090(0x0016) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnSDKMessage;                                             // 0x0028(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnRefreshUserdata;                                        // 0x0038(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnViewCreated;                                            // 0x0048(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnViewAboutToDestroy;                                     // 0x0058(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnReportData;                                             // 0x0068(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnProfileJSSDKMessage;                                    // 0x0078(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnPuertsCommonFuncDelegate;                               // 0x0088(0x0010) (Edit, ZeroConstructor, InstancedReference)
+	bool                                               DisableJsErrReport;                                       // 0x0098(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               DisableGetBackTrace;                                      // 0x0099(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               DelayWndCallMsg;                                          // 0x009A(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               SupportUseEngineFont;                                     // 0x009B(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               UseSRGB;                                                  // 0x009C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               ForbiddenSyncServerLogConf;                               // 0x009D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x009E(0x0002) MISSED OFFSET
+	struct FScriptDelegate                             OnCoreCodeLoad;                                           // 0x00A0(0x0010) (Edit, ZeroConstructor, InstancedReference)
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletSettings");
 		return pStaticClass;
@@ -272,7 +276,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletWidget");
 		return pStaticClass;
@@ -299,7 +303,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class Gamelet.GameletWindow");
 		return pStaticClass;

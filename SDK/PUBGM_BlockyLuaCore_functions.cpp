@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function BlockyLuaCore.BlockBase.SetIsDisable
 // (Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UBlockBase::SetIsDisable(bool Disable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockBase.SetIsDisable");
 
@@ -39,7 +39,7 @@ void UBlockBase::SetIsDisable(bool Disable)
 
 bool UBlockBase::IsEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockBase.IsEvent");
 
@@ -64,7 +64,7 @@ bool UBlockBase::IsEvent()
 
 struct FVector2D UBlockBase::GetCenterPos()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockBase.GetCenterPos");
 
@@ -89,7 +89,7 @@ struct FVector2D UBlockBase::GetCenterPos()
 
 bool UExecuteable::SupportFuncVar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.Executeable.SupportFuncVar");
 
@@ -114,7 +114,7 @@ bool UExecuteable::SupportFuncVar()
 
 void UExecuteable::ReEditFuncVar(class UNamedVar* var)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.Executeable.ReEditFuncVar");
 
@@ -138,7 +138,7 @@ void UExecuteable::ReEditFuncVar(class UNamedVar* var)
 
 void UExecuteable::DeleteFuncVar(class UNamedVar* var)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.Executeable.DeleteFuncVar");
 
@@ -160,7 +160,7 @@ void UExecuteable::DeleteFuncVar(class UNamedVar* var)
 
 void UExecuteable::CreateFuncVar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.Executeable.CreateFuncVar");
 
@@ -183,7 +183,7 @@ void UExecuteable::CreateFuncVar()
 
 void UExpressionBase::ReleaseExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExpressionBase.ReleaseExpression");
 
@@ -207,7 +207,7 @@ void UExpressionBase::ReleaseExpression(const struct FBlockyLuaHandle& ptr)
 
 struct FBlockyLuaHandle UExpressionBase::CreateExpressionBase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExpressionBase.CreateExpressionBase");
 
@@ -233,7 +233,7 @@ struct FBlockyLuaHandle UExpressionBase::CreateExpressionBase()
 
 void UArrayLengthExpression::SetTarget(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ArrayLengthExpression.SetTarget");
 
@@ -259,7 +259,7 @@ void UArrayLengthExpression::SetTarget(const struct FBlockyLuaHandle& ptr, const
 
 struct FBlockyLuaHandle UArrayLengthExpression::GetTarget(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ArrayLengthExpression.GetTarget");
 
@@ -285,7 +285,7 @@ struct FBlockyLuaHandle UArrayLengthExpression::GetTarget(const struct FBlockyLu
 
 struct FBlockyLuaHandle UArrayLengthExpression::CreateArrayLengthExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ArrayLengthExpression.CreateArrayLengthExpression");
 
@@ -310,7 +310,7 @@ struct FBlockyLuaHandle UArrayLengthExpression::CreateArrayLengthExpression()
 
 void UNamedVar::UpdateColor(const struct FLinearColor& Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.UpdateColor");
 
@@ -333,7 +333,7 @@ void UNamedVar::UpdateColor(const struct FLinearColor& Color)
 
 void UNamedVar::SetNameVarColor(const struct FLinearColor& Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.SetNameVarColor");
 
@@ -357,7 +357,7 @@ void UNamedVar::SetNameVarColor(const struct FLinearColor& Color)
 
 void UNamedVar::SetIsArray(bool IsArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.SetIsArray");
 
@@ -381,7 +381,7 @@ void UNamedVar::SetIsArray(bool IsArray)
 
 void UNamedVar::SetInitValueString(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.SetInitValueString");
 
@@ -405,7 +405,7 @@ void UNamedVar::SetInitValueString(const struct FString& Value)
 
 void UNamedVar::SetDefiner(class UVarDefiner* Definer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.SetDefiner");
 
@@ -425,11 +425,11 @@ void UNamedVar::SetDefiner(class UVarDefiner* Definer)
 // Function BlockyLuaCore.NamedVar.SetAccessType
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EBlockyAccessType> Access                         (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBlockyAccessType> Access                         (Parm, ZeroConstructor, IsPlainOldData)
 
-void UNamedVar::SetAccessType(TEnumAsByte<enum EBlockyAccessType> Access)
+void UNamedVar::SetAccessType(TEnumAsByte<EBlockyAccessType> Access)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.SetAccessType");
 
@@ -453,7 +453,7 @@ void UNamedVar::SetAccessType(TEnumAsByte<enum EBlockyAccessType> Access)
 
 bool UNamedVar::IsGlobalVar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.IsGlobalVar");
 
@@ -478,7 +478,7 @@ bool UNamedVar::IsGlobalVar()
 
 bool UNamedVar::IsCustomColor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.IsCustomColor");
 
@@ -503,7 +503,7 @@ bool UNamedVar::IsCustomColor()
 
 bool UNamedVar::IsArray()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.IsArray");
 
@@ -526,7 +526,7 @@ bool UNamedVar::IsArray()
 
 void UNamedVar::InitColorDesc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.InitColorDesc");
 
@@ -551,7 +551,7 @@ void UNamedVar::InitColorDesc()
 
 class UColorDesc* UNamedVar::GetNameVarColorDesc(int idx, bool IsArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.GetNameVarColorDesc");
 
@@ -580,7 +580,7 @@ class UColorDesc* UNamedVar::GetNameVarColorDesc(int idx, bool IsArray)
 
 struct FLinearColor UNamedVar::GetNameVarColor(int idx, bool IsArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.GetNameVarColor");
 
@@ -607,7 +607,7 @@ struct FLinearColor UNamedVar::GetNameVarColor(int idx, bool IsArray)
 
 struct FString UNamedVar::GetInitValueString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.GetInitValueString");
 
@@ -632,7 +632,7 @@ struct FString UNamedVar::GetInitValueString()
 
 class UVarDefiner* UNamedVar::GetDefiner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.GetDefiner");
 
@@ -659,7 +659,7 @@ class UVarDefiner* UNamedVar::GetDefiner()
 
 struct FString UNamedVar::GetColorStr(int idx, bool IsArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.GetColorStr");
 
@@ -682,11 +682,11 @@ struct FString UNamedVar::GetColorStr(int idx, bool IsArray)
 // Function BlockyLuaCore.NamedVar.GetAccessType
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<enum EBlockyAccessType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyAccessType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyAccessType> UNamedVar::GetAccessType()
+TEnumAsByte<EBlockyAccessType> UNamedVar::GetAccessType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.GetAccessType");
 
@@ -712,7 +712,7 @@ TEnumAsByte<enum EBlockyAccessType> UNamedVar::GetAccessType()
 
 void UNamedVar::CallCustomSelectObject(int idx, bool IsArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.CallCustomSelectObject");
 
@@ -735,7 +735,7 @@ void UNamedVar::CallCustomSelectObject(int idx, bool IsArray)
 
 void UNamedVar::AddColorToArray()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NamedVar.AddColorToArray");
 
@@ -759,7 +759,7 @@ void UNamedVar::AddColorToArray()
 
 void UBinaryOperatorExpression::SetWithParentheses(const struct FBlockyLuaHandle& ptr, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.SetWithParentheses");
 
@@ -785,7 +785,7 @@ void UBinaryOperatorExpression::SetWithParentheses(const struct FBlockyLuaHandle
 
 void UBinaryOperatorExpression::SetRight(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.SetRight");
 
@@ -807,11 +807,11 @@ void UBinaryOperatorExpression::SetRight(const struct FBlockyLuaHandle& ptr, con
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyBinaryOperation> BlockyOp                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBlockyBinaryOperation> BlockyOp                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UBinaryOperatorExpression::SetOperation(const struct FBlockyLuaHandle& ptr, TEnumAsByte<enum EBlockyBinaryOperation> BlockyOp)
+void UBinaryOperatorExpression::SetOperation(const struct FBlockyLuaHandle& ptr, TEnumAsByte<EBlockyBinaryOperation> BlockyOp)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.SetOperation");
 
@@ -837,7 +837,7 @@ void UBinaryOperatorExpression::SetOperation(const struct FBlockyLuaHandle& ptr,
 
 void UBinaryOperatorExpression::SetLeft(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.SetLeft");
 
@@ -863,7 +863,7 @@ void UBinaryOperatorExpression::SetLeft(const struct FBlockyLuaHandle& ptr, cons
 
 bool UBinaryOperatorExpression::GetWithParentheses(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.GetWithParentheses");
 
@@ -890,7 +890,7 @@ bool UBinaryOperatorExpression::GetWithParentheses(const struct FBlockyLuaHandle
 
 struct FBlockyLuaHandle UBinaryOperatorExpression::GetRight(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.GetRight");
 
@@ -913,11 +913,11 @@ struct FBlockyLuaHandle UBinaryOperatorExpression::GetRight(const struct FBlocky
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyBinaryOperation> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyBinaryOperation> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyBinaryOperation> UBinaryOperatorExpression::GetOperation(const struct FBlockyLuaHandle& ptr)
+TEnumAsByte<EBlockyBinaryOperation> UBinaryOperatorExpression::GetOperation(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.GetOperation");
 
@@ -944,7 +944,7 @@ TEnumAsByte<enum EBlockyBinaryOperation> UBinaryOperatorExpression::GetOperation
 
 struct FBlockyLuaHandle UBinaryOperatorExpression::GetLeft(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.GetLeft");
 
@@ -970,7 +970,7 @@ struct FBlockyLuaHandle UBinaryOperatorExpression::GetLeft(const struct FBlockyL
 
 struct FBlockyLuaHandle UBinaryOperatorExpression::CreateBinaryOperatorExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BinaryOperatorExpression.CreateBinaryOperatorExpression");
 
@@ -995,7 +995,7 @@ struct FBlockyLuaHandle UBinaryOperatorExpression::CreateBinaryOperatorExpressio
 
 struct FString UCategoryDefiner::GetCurrentLocateShowName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CategoryDefiner.GetCurrentLocateShowName");
 
@@ -1020,7 +1020,7 @@ struct FString UCategoryDefiner::GetCurrentLocateShowName()
 
 void UBlockyCategoryItemObject::SetShowRedDotVar(bool var)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyCategoryItemObject.SetShowRedDotVar");
 
@@ -1044,7 +1044,7 @@ void UBlockyCategoryItemObject::SetShowRedDotVar(bool var)
 
 void UBlockyCategoryItemObject::InitShowRedDotVar(const struct FString& BlockName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyCategoryItemObject.InitShowRedDotVar");
 
@@ -1068,7 +1068,7 @@ void UBlockyCategoryItemObject::InitShowRedDotVar(const struct FString& BlockNam
 
 struct FSlateBrush UBlockyCategoryItemObject::GetSelectedIconBrush()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyCategoryItemObject.GetSelectedIconBrush");
 
@@ -1093,7 +1093,7 @@ struct FSlateBrush UBlockyCategoryItemObject::GetSelectedIconBrush()
 
 int UBlockyCategoryItemObject::GetNewBlockNums()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyCategoryItemObject.GetNewBlockNums");
 
@@ -1118,7 +1118,7 @@ int UBlockyCategoryItemObject::GetNewBlockNums()
 
 struct FSlateBrush UBlockyCategoryItemObject::GetIconBrush()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyCategoryItemObject.GetIconBrush");
 
@@ -1141,7 +1141,7 @@ struct FSlateBrush UBlockyCategoryItemObject::GetIconBrush()
 
 void UBlockyGraph::UpdateCustomBlockName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.UpdateCustomBlockName");
 
@@ -1164,7 +1164,7 @@ void UBlockyGraph::UpdateCustomBlockName()
 
 void UBlockyGraph::TryAdjustingBlockIntoView(class UBlockyGraphData* GraphData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.TryAdjustingBlockIntoView");
 
@@ -1188,7 +1188,7 @@ void UBlockyGraph::TryAdjustingBlockIntoView(class UBlockyGraphData* GraphData)
 
 void UBlockyGraph::SetIsDisable(bool Disable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.SetIsDisable");
 
@@ -1213,7 +1213,7 @@ void UBlockyGraph::SetIsDisable(bool Disable)
 
 void UBlockyGraph::SaveGraphToFile(const struct FString& Filename, bool IsNewFile)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.SaveGraphToFile");
 
@@ -1239,7 +1239,7 @@ void UBlockyGraph::SaveGraphToFile(const struct FString& Filename, bool IsNewFil
 
 bool UBlockyGraph::SaveGraphAsTemplate(TArray<unsigned char>* OutData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.SaveGraphAsTemplate");
 
@@ -1268,7 +1268,7 @@ bool UBlockyGraph::SaveGraphAsTemplate(TArray<unsigned char>* OutData)
 
 void UBlockyGraph::LoadGraphFromTemplate(TArray<unsigned char> Data, bool IsLoadPresetsInGraph)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.LoadGraphFromTemplate");
 
@@ -1293,7 +1293,7 @@ void UBlockyGraph::LoadGraphFromTemplate(TArray<unsigned char> Data, bool IsLoad
 
 bool UBlockyGraph::IsCustomTemplateGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.IsCustomTemplateGraph");
 
@@ -1318,7 +1318,7 @@ bool UBlockyGraph::IsCustomTemplateGraph()
 
 bool UBlockyGraph::IsCustomGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.IsCustomGraph");
 
@@ -1343,7 +1343,7 @@ bool UBlockyGraph::IsCustomGraph()
 
 bool UBlockyGraph::IsBasicTemplateGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.IsBasicTemplateGraph");
 
@@ -1368,7 +1368,7 @@ bool UBlockyGraph::IsBasicTemplateGraph()
 
 TArray<class UBlockBase*> UBlockyGraph::GetTriggerItemsByRootBlocks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.GetTriggerItemsByRootBlocks");
 
@@ -1393,7 +1393,7 @@ TArray<class UBlockBase*> UBlockyGraph::GetTriggerItemsByRootBlocks()
 
 int UBlockyGraph::GetTotalBlockNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.GetTotalBlockNum");
 
@@ -1420,7 +1420,7 @@ int UBlockyGraph::GetTotalBlockNum()
 
 class UTexture2D* UBlockyGraph::CaptureScreenWithShot(class UUserWidget* Widget, const struct FVector2D& rect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.CaptureScreenWithShot");
 
@@ -1447,7 +1447,7 @@ class UTexture2D* UBlockyGraph::CaptureScreenWithShot(class UUserWidget* Widget,
 
 void UBlockyGraph::CaptureScreenShot(class UUserWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.CaptureScreenShot");
 
@@ -1472,7 +1472,7 @@ void UBlockyGraph::CaptureScreenShot(class UUserWidget* Widget)
 
 bool UBlockyGraph::CanSaveAsTemplate(struct FString* OutFailedReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.CanSaveAsTemplate");
 
@@ -1501,7 +1501,7 @@ bool UBlockyGraph::CanSaveAsTemplate(struct FString* OutFailedReason)
 
 bool UBlockyGraph::CanBeRemove(class UBlockyGraphData* GraphData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.CanBeRemove");
 
@@ -1527,7 +1527,7 @@ bool UBlockyGraph::CanBeRemove(class UBlockyGraphData* GraphData)
 
 bool UBlockyGraph::CanBeDuplicated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraph.CanBeDuplicated");
 
@@ -1552,7 +1552,7 @@ bool UBlockyGraph::CanBeDuplicated()
 
 void UBlockyGraphData::UseTemplate(class UBlockyGraph* templateGraph)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.UseTemplate");
 
@@ -1574,7 +1574,7 @@ void UBlockyGraphData::UseTemplate(class UBlockyGraph* templateGraph)
 
 void UBlockyGraphData::UpdateVariableMenu()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.UpdateVariableMenu");
 
@@ -1597,7 +1597,7 @@ void UBlockyGraphData::UpdateVariableMenu()
 
 TArray<struct FText> UBlockyGraphData::UpdateVariableItemNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.UpdateVariableItemNames");
 
@@ -1620,7 +1620,7 @@ TArray<struct FText> UBlockyGraphData::UpdateVariableItemNames()
 
 void UBlockyGraphData::UpdateCustomMenu()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.UpdateCustomMenu");
 
@@ -1643,7 +1643,7 @@ void UBlockyGraphData::UpdateCustomMenu()
 
 TArray<struct FText> UBlockyGraphData::UpdateCustomItemNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.UpdateCustomItemNames");
 
@@ -1666,7 +1666,7 @@ TArray<struct FText> UBlockyGraphData::UpdateCustomItemNames()
 
 void UBlockyGraphData::UpdateAllPresetInGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.UpdateAllPresetInGraph");
 
@@ -1687,7 +1687,7 @@ void UBlockyGraphData::UpdateAllPresetInGraph()
 
 void UBlockyGraphData::UpdateAfterLoadBin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.UpdateAfterLoadBin");
 
@@ -1708,7 +1708,7 @@ void UBlockyGraphData::UpdateAfterLoadBin()
 
 void UBlockyGraphData::Undo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Undo");
 
@@ -1729,7 +1729,7 @@ void UBlockyGraphData::Undo()
 
 void UBlockyGraphData::TryCloseItemList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.TryCloseItemList");
 
@@ -1752,7 +1752,7 @@ void UBlockyGraphData::TryCloseItemList()
 
 void UBlockyGraphData::ShowTips(const struct FText& Tips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ShowTips");
 
@@ -1774,7 +1774,7 @@ void UBlockyGraphData::ShowTips(const struct FText& Tips)
 
 void UBlockyGraphData::ShowBlockSettingPop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ShowBlockSettingPop");
 
@@ -1797,7 +1797,7 @@ void UBlockyGraphData::ShowBlockSettingPop()
 
 void UBlockyGraphData::SetSlotString(const struct FBlockySlotString& slotStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetSlotString");
 
@@ -1821,7 +1821,7 @@ void UBlockyGraphData::SetSlotString(const struct FBlockySlotString& slotStr)
 
 void UBlockyGraphData::SetGraphStrings(const struct FGraphString& graphStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetGraphStrings");
 
@@ -1845,7 +1845,7 @@ void UBlockyGraphData::SetGraphStrings(const struct FGraphString& graphStr)
 
 void UBlockyGraphData::SetCustomVariableString(const struct FCustomVariableString& variableStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetCustomVariableString");
 
@@ -1869,7 +1869,7 @@ void UBlockyGraphData::SetCustomVariableString(const struct FCustomVariableStrin
 
 void UBlockyGraphData::SetCustomConfigString(const struct FCustomConfigString& configStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetCustomConfigString");
 
@@ -1893,7 +1893,7 @@ void UBlockyGraphData::SetCustomConfigString(const struct FCustomConfigString& c
 
 void UBlockyGraphData::SetCurrentSubGraph(const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetCurrentSubGraph");
 
@@ -1917,7 +1917,7 @@ void UBlockyGraphData::SetCurrentSubGraph(const struct FString& InName)
 
 void UBlockyGraphData::SetCacheData(TMap<struct FString, struct FString> Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetCacheData");
 
@@ -1944,7 +1944,7 @@ void UBlockyGraphData::SetCacheData(TMap<struct FString, struct FString> Data)
 
 void UBlockyGraphData::SetBlockLogText(EBlockyLogMsgMode Mode, class UBlockBase* BlockSource, const struct FString& SlotID, const struct FString& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetBlockLogText");
 
@@ -1972,7 +1972,7 @@ void UBlockyGraphData::SetBlockLogText(EBlockyLogMsgMode Mode, class UBlockBase*
 
 void UBlockyGraphData::SetBlockLogTabNum(int Mode, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetBlockLogTabNum");
 
@@ -1998,7 +1998,7 @@ void UBlockyGraphData::SetBlockLogTabNum(int Mode, int Num)
 
 void UBlockyGraphData::SetBlockLogNum(int Mode, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SetBlockLogNum");
 
@@ -2023,7 +2023,7 @@ void UBlockyGraphData::SetBlockLogNum(int Mode, int Num)
 
 struct FString UBlockyGraphData::SaveGraphToJsonText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SaveGraphToJsonText");
 
@@ -2048,7 +2048,7 @@ struct FString UBlockyGraphData::SaveGraphToJsonText()
 
 void UBlockyGraphData::SaveGraphToBinFile(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SaveGraphToBinFile");
 
@@ -2072,7 +2072,7 @@ void UBlockyGraphData::SaveGraphToBinFile(const struct FString& FilePath)
 
 TArray<unsigned char> UBlockyGraphData::SaveGraphToBin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SaveGraphToBin");
 
@@ -2097,7 +2097,7 @@ TArray<unsigned char> UBlockyGraphData::SaveGraphToBin()
 
 struct FString UBlockyGraphData::SaveGlobalVarToJsonText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SaveGlobalVarToJsonText");
 
@@ -2122,7 +2122,7 @@ struct FString UBlockyGraphData::SaveGlobalVarToJsonText()
 
 TArray<unsigned char> UBlockyGraphData::SaveGlobalVarToBin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SaveGlobalVarToBin");
 
@@ -2145,7 +2145,7 @@ TArray<unsigned char> UBlockyGraphData::SaveGlobalVarToBin()
 
 void UBlockyGraphData::SaveCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.SaveCustom");
 
@@ -2166,7 +2166,7 @@ void UBlockyGraphData::SaveCustom()
 
 void UBlockyGraphData::Save()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Save");
 
@@ -2187,7 +2187,7 @@ void UBlockyGraphData::Save()
 
 void UBlockyGraphData::ReturnToPreviewGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ReturnToPreviewGraph");
 
@@ -2208,7 +2208,7 @@ void UBlockyGraphData::ReturnToPreviewGraph()
 
 void UBlockyGraphData::ReturnToMainGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ReturnToMainGraph");
 
@@ -2229,7 +2229,7 @@ void UBlockyGraphData::ReturnToMainGraph()
 
 void UBlockyGraphData::ResetGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ResetGraph");
 
@@ -2252,7 +2252,7 @@ void UBlockyGraphData::ResetGraph()
 
 void UBlockyGraphData::RemoveSubGraph(const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.RemoveSubGraph");
 
@@ -2274,7 +2274,7 @@ void UBlockyGraphData::RemoveSubGraph(const struct FString& InName)
 
 void UBlockyGraphData::RefreshFont()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.RefreshFont");
 
@@ -2297,7 +2297,7 @@ void UBlockyGraphData::RefreshFont()
 
 void UBlockyGraphData::ReEditVariable(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ReEditVariable");
 
@@ -2319,7 +2319,7 @@ void UBlockyGraphData::ReEditVariable(int Index)
 
 void UBlockyGraphData::Redo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Redo");
 
@@ -2342,7 +2342,7 @@ void UBlockyGraphData::Redo()
 
 void UBlockyGraphData::QuoteVariable(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.QuoteVariable");
 
@@ -2364,7 +2364,7 @@ void UBlockyGraphData::QuoteVariable(int Index)
 
 void UBlockyGraphData::QuoteCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.QuoteCustom");
 
@@ -2385,7 +2385,7 @@ void UBlockyGraphData::QuoteCustom()
 
 void UBlockyGraphData::Quote()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Quote");
 
@@ -2406,7 +2406,7 @@ void UBlockyGraphData::Quote()
 
 void UBlockyGraphData::Paste()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Paste");
 
@@ -2427,7 +2427,7 @@ void UBlockyGraphData::Paste()
 
 void UBlockyGraphData::OpenGuideWebUrl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.OpenGuideWebUrl");
 
@@ -2448,7 +2448,7 @@ void UBlockyGraphData::OpenGuideWebUrl()
 
 void UBlockyGraphData::OnLoadFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.OnLoadFinished");
 
@@ -2469,7 +2469,7 @@ void UBlockyGraphData::OnLoadFinished()
 
 void UBlockyGraphData::MarkGraphDirty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.MarkGraphDirty");
 
@@ -2492,7 +2492,7 @@ void UBlockyGraphData::MarkGraphDirty()
 
 void UBlockyGraphData::LoadGraphFromJsonText(const struct FString& JsonStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.LoadGraphFromJsonText");
 
@@ -2516,7 +2516,7 @@ void UBlockyGraphData::LoadGraphFromJsonText(const struct FString& JsonStr)
 
 void UBlockyGraphData::LoadGraphFromBinFile(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.LoadGraphFromBinFile");
 
@@ -2540,7 +2540,7 @@ void UBlockyGraphData::LoadGraphFromBinFile(const struct FString& FilePath)
 
 void UBlockyGraphData::LoadGlobalVarFromJsonText(const struct FString& JsonStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.LoadGlobalVarFromJsonText");
 
@@ -2562,7 +2562,7 @@ void UBlockyGraphData::LoadGlobalVarFromJsonText(const struct FString& JsonStr)
 
 void UBlockyGraphData::LoadByTicker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.LoadByTicker");
 
@@ -2583,7 +2583,7 @@ void UBlockyGraphData::LoadByTicker()
 
 void UBlockyGraphData::Load()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Load");
 
@@ -2608,7 +2608,7 @@ void UBlockyGraphData::Load()
 
 class UBlockBase* UBlockyGraphData::JumpToFocusSlotByIdStrAndIdx(const struct FString& blockId, unsigned char idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.JumpToFocusSlotByIdStrAndIdx");
 
@@ -2637,7 +2637,7 @@ class UBlockBase* UBlockyGraphData::JumpToFocusSlotByIdStrAndIdx(const struct FS
 
 class UBlockBase* UBlockyGraphData::JumpToFocusSlotByIdStr(const struct FString& blockId, const struct FString& TargetSlotIdStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.JumpToFocusSlotByIdStr");
 
@@ -2665,7 +2665,7 @@ class UBlockBase* UBlockyGraphData::JumpToFocusSlotByIdStr(const struct FString&
 
 class UBlockBase* UBlockyGraphData::JumpToFocusBlockByIdStr(const struct FString& blockId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.JumpToFocusBlockByIdStr");
 
@@ -2692,7 +2692,7 @@ class UBlockBase* UBlockyGraphData::JumpToFocusBlockByIdStr(const struct FString
 
 bool UBlockyGraphData::ItemHasOpend(const struct FString& ItemStringName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ItemHasOpend");
 
@@ -2718,7 +2718,7 @@ bool UBlockyGraphData::ItemHasOpend(const struct FString& ItemStringName)
 
 bool UBlockyGraphData::IsGraphChanged()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.IsGraphChanged");
 
@@ -2743,7 +2743,7 @@ bool UBlockyGraphData::IsGraphChanged()
 
 bool UBlockyGraphData::IsFirstGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.IsFirstGraph");
 
@@ -2768,7 +2768,7 @@ bool UBlockyGraphData::IsFirstGraph()
 
 bool UBlockyGraphData::IsBlockGuideButton()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.IsBlockGuideButton");
 
@@ -2793,7 +2793,7 @@ bool UBlockyGraphData::IsBlockGuideButton()
 
 bool UBlockyGraphData::HasExecutableCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.HasExecutableCode");
 
@@ -2816,7 +2816,7 @@ bool UBlockyGraphData::HasExecutableCode()
 
 void UBlockyGraphData::GM_LoadGraph_DS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GM_LoadGraph_DS");
 
@@ -2840,7 +2840,7 @@ void UBlockyGraphData::GM_LoadGraph_DS()
 
 void UBlockyGraphData::GM_GenerateAllBlocks(int CombinedBlocksNum, int GraphBlocksNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GM_GenerateAllBlocks");
 
@@ -2865,7 +2865,7 @@ void UBlockyGraphData::GM_GenerateAllBlocks(int CombinedBlocksNum, int GraphBloc
 
 TArray<struct FString> UBlockyGraphData::GetTriggerList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetTriggerList");
 
@@ -2890,7 +2890,7 @@ TArray<struct FString> UBlockyGraphData::GetTriggerList()
 
 TArray<struct FString> UBlockyGraphData::GetTLogType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetTLogType");
 
@@ -2915,7 +2915,7 @@ TArray<struct FString> UBlockyGraphData::GetTLogType()
 
 TMap<struct FString, struct FString> UBlockyGraphData::GetTLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetTLog");
 
@@ -2941,7 +2941,7 @@ TMap<struct FString, struct FString> UBlockyGraphData::GetTLog()
 
 TArray<class UBlockBase*> UBlockyGraphData::GetQuoteVariableItem(class UBlockyGraph* Graph)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetQuoteVariableItem");
 
@@ -2968,7 +2968,7 @@ TArray<class UBlockBase*> UBlockyGraphData::GetQuoteVariableItem(class UBlockyGr
 
 TArray<class UBlockyGraph*> UBlockyGraphData::GetQuoteVariableGraph(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetQuoteVariableGraph");
 
@@ -2995,7 +2995,7 @@ TArray<class UBlockyGraph*> UBlockyGraphData::GetQuoteVariableGraph(int Index)
 
 TArray<class UPresetDesc*> UBlockyGraphData::GetPresetDescArray(bool LocalOnly)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetPresetDescArray");
 
@@ -3022,7 +3022,7 @@ TArray<class UPresetDesc*> UBlockyGraphData::GetPresetDescArray(bool LocalOnly)
 
 int UBlockyGraphData::GetNewBlocksNumWithMenu(const struct FString& menuItemName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetNewBlocksNumWithMenu");
 
@@ -3048,7 +3048,7 @@ int UBlockyGraphData::GetNewBlocksNumWithMenu(const struct FString& menuItemName
 
 bool UBlockyGraphData::GetIsDisableComment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetIsDisableComment");
 
@@ -3073,7 +3073,7 @@ bool UBlockyGraphData::GetIsDisableComment()
 
 TArray<struct FGraphString> UBlockyGraphData::GetGraphStrings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetGraphStrings");
 
@@ -3098,7 +3098,7 @@ TArray<struct FGraphString> UBlockyGraphData::GetGraphStrings()
 
 TMap<struct FString, struct FString> UBlockyGraphData::GetGraphMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetGraphMap");
 
@@ -3123,7 +3123,7 @@ TMap<struct FString, struct FString> UBlockyGraphData::GetGraphMap()
 
 TArray<class UFunctionDesc*> UBlockyGraphData::GetFunctionDescArray()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetFunctionDescArray");
 
@@ -3148,7 +3148,7 @@ TArray<class UFunctionDesc*> UBlockyGraphData::GetFunctionDescArray()
 
 void UBlockyGraphData::GetDeleteBlockUIRect(float InRectWidth)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetDeleteBlockUIRect");
 
@@ -3172,7 +3172,7 @@ void UBlockyGraphData::GetDeleteBlockUIRect(float InRectWidth)
 
 TArray<struct FCustomVariableString> UBlockyGraphData::GetCustomVariableStrings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCustomVariableStrings");
 
@@ -3197,7 +3197,7 @@ TArray<struct FCustomVariableString> UBlockyGraphData::GetCustomVariableStrings(
 
 TArray<struct FText> UBlockyGraphData::GetCustomNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCustomNames");
 
@@ -3223,7 +3223,7 @@ TArray<struct FText> UBlockyGraphData::GetCustomNames()
 
 TArray<class UCustomConfig*> UBlockyGraphData::GetCustomEventConfigs(bool isCloudGameEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCustomEventConfigs");
 
@@ -3249,7 +3249,7 @@ TArray<class UCustomConfig*> UBlockyGraphData::GetCustomEventConfigs(bool isClou
 
 TArray<struct FCustomConfigString> UBlockyGraphData::GetCustomConfigStrings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCustomConfigStrings");
 
@@ -3275,7 +3275,7 @@ TArray<struct FCustomConfigString> UBlockyGraphData::GetCustomConfigStrings()
 
 int UBlockyGraphData::GetCurrentGraphBlockyNumberByType(EBlockyCurrentGraphBlockyNumberType Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCurrentGraphBlockyNumberByType");
 
@@ -3301,7 +3301,7 @@ int UBlockyGraphData::GetCurrentGraphBlockyNumberByType(EBlockyCurrentGraphBlock
 
 class UBlockyGraph* UBlockyGraphData::GetCurrentGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCurrentGraph");
 
@@ -3328,7 +3328,7 @@ class UBlockyGraph* UBlockyGraphData::GetCurrentGraph()
 
 int UBlockyGraphData::GetCurrentBlockyNumByMune(const struct FString& Menu, const struct FString& Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCurrentBlockyNumByMune");
 
@@ -3355,7 +3355,7 @@ int UBlockyGraphData::GetCurrentBlockyNumByMune(const struct FString& Menu, cons
 
 TMap<struct FString, struct FString> UBlockyGraphData::GetCacheData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetCacheData");
 
@@ -3380,7 +3380,7 @@ TMap<struct FString, struct FString> UBlockyGraphData::GetCacheData()
 
 TArray<struct FBlockySlotString> UBlockyGraphData::GetBlockyStringDatasInPair()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetBlockyStringDatasInPair");
 
@@ -3405,7 +3405,7 @@ TArray<struct FBlockySlotString> UBlockyGraphData::GetBlockyStringDatasInPair()
 
 TArray<class UBlockBase*> UBlockyGraphData::GetBlocks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetBlocks");
 
@@ -3430,11 +3430,36 @@ TArray<class UBlockBase*> UBlockyGraphData::GetBlocks()
 
 TArray<class UBlockBase*> UBlockyGraphData::GetAllBlockyInGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetAllBlockyInGraph");
 
 	UBlockyGraphData_GetAllBlockyInGraph_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function BlockyLuaCore.BlockyGraphData.GetAllBlockIdStrings
+// (Final, Native, Public)
+// Parameters:
+// TArray<struct FString>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<struct FString> UBlockyGraphData::GetAllBlockIdStrings()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetAllBlockIdStrings");
+
+	UBlockyGraphData_GetAllBlockIdStrings_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -3455,7 +3480,7 @@ TArray<class UBlockBase*> UBlockyGraphData::GetAllBlockyInGraph()
 
 TMap<struct FString, int> UBlockyGraphData::GetAllBlockByKeyName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.GetAllBlockByKeyName");
 
@@ -3481,7 +3506,7 @@ TMap<struct FString, int> UBlockyGraphData::GetAllBlockByKeyName()
 
 class UBlockBase* UBlockyGraphData::FocusToSlotByBlockySlotId(const struct FBlockySlotString& SlotID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.FocusToSlotByBlockySlotId");
 
@@ -3508,7 +3533,7 @@ class UBlockBase* UBlockyGraphData::FocusToSlotByBlockySlotId(const struct FBloc
 
 void UBlockyGraphData::FocusToSlot(class UBlockBase* TargetBlock, const struct FString& TargetSlotIdStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.FocusToSlot");
 
@@ -3533,7 +3558,7 @@ void UBlockyGraphData::FocusToSlot(class UBlockBase* TargetBlock, const struct F
 
 void UBlockyGraphData::FocusTo(class UBlockBase* TargetBlock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.FocusTo");
 
@@ -3558,7 +3583,7 @@ void UBlockyGraphData::FocusTo(class UBlockBase* TargetBlock)
 
 void UBlockyGraphData::FinishVariableEdit(bool bSaveVar, bool bReEdit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.FinishVariableEdit");
 
@@ -3583,7 +3608,7 @@ void UBlockyGraphData::FinishVariableEdit(bool bSaveVar, bool bReEdit)
 
 void UBlockyGraphData::FinishCustomEdit(bool bSave)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.FinishCustomEdit");
 
@@ -3607,7 +3632,7 @@ void UBlockyGraphData::FinishCustomEdit(bool bSave)
 
 void UBlockyGraphData::FinishBlockSetting(bool bSaveVar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.FinishBlockSetting");
 
@@ -3632,7 +3657,7 @@ void UBlockyGraphData::FinishBlockSetting(bool bSaveVar)
 
 class UBlockBase* UBlockyGraphData::FindBlockByIdStr(const struct FString& blockId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.FindBlockByIdStr");
 
@@ -3656,7 +3681,7 @@ class UBlockBase* UBlockyGraphData::FindBlockByIdStr(const struct FString& block
 
 void UBlockyGraphData::EmptyListItemSeleceted()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.EmptyListItemSeleceted");
 
@@ -3677,7 +3702,7 @@ void UBlockyGraphData::EmptyListItemSeleceted()
 
 void UBlockyGraphData::Eject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Eject");
 
@@ -3698,7 +3723,7 @@ void UBlockyGraphData::Eject()
 
 void UBlockyGraphData::EditVariable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.EditVariable");
 
@@ -3719,7 +3744,7 @@ void UBlockyGraphData::EditVariable()
 
 void UBlockyGraphData::EditCustumBlockGraph()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.EditCustumBlockGraph");
 
@@ -3740,7 +3765,7 @@ void UBlockyGraphData::EditCustumBlockGraph()
 
 void UBlockyGraphData::EditCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.EditCustom");
 
@@ -3763,7 +3788,7 @@ void UBlockyGraphData::EditCustom()
 
 void UBlockyGraphData::DuplicateSubGraph(const struct FString& SrcName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DuplicateSubGraph");
 
@@ -3787,7 +3812,7 @@ void UBlockyGraphData::DuplicateSubGraph(const struct FString& SrcName)
 
 void UBlockyGraphData::DuplicateBlock(class UBlockBase* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DuplicateBlock");
 
@@ -3809,7 +3834,7 @@ void UBlockyGraphData::DuplicateBlock(class UBlockBase* bLock)
 
 void UBlockyGraphData::Disable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Disable");
 
@@ -3832,7 +3857,7 @@ void UBlockyGraphData::Disable()
 
 void UBlockyGraphData::DeleteVariableListItem(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteVariableListItem");
 
@@ -3854,7 +3879,7 @@ void UBlockyGraphData::DeleteVariableListItem(int Index)
 
 void UBlockyGraphData::DeleteSelected()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteSelected");
 
@@ -3875,7 +3900,7 @@ void UBlockyGraphData::DeleteSelected()
 
 void UBlockyGraphData::DeleteCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteCustom");
 
@@ -3896,7 +3921,7 @@ void UBlockyGraphData::DeleteCustom()
 
 void UBlockyGraphData::DeleteBlocks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteBlocks");
 
@@ -3920,7 +3945,7 @@ void UBlockyGraphData::DeleteBlocks()
 
 void UBlockyGraphData::DeleteBlockInGraph(class UBlockyGraph* InGraph, class UBlockBase* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteBlockInGraph");
 
@@ -3946,7 +3971,7 @@ void UBlockyGraphData::DeleteBlockInGraph(class UBlockyGraph* InGraph, class UBl
 
 void UBlockyGraphData::DeleteBlockAndNextInGraph(class UBlockyGraph* InGraph, class UBlockBase* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteBlockAndNextInGraph");
 
@@ -3971,7 +3996,7 @@ void UBlockyGraphData::DeleteBlockAndNextInGraph(class UBlockyGraph* InGraph, cl
 
 void UBlockyGraphData::DeleteBlockAndNext(class UBlockBase* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteBlockAndNext");
 
@@ -3995,7 +4020,7 @@ void UBlockyGraphData::DeleteBlockAndNext(class UBlockBase* bLock)
 
 void UBlockyGraphData::DeleteBlock(class UBlockBase* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DeleteBlock");
 
@@ -4017,7 +4042,7 @@ void UBlockyGraphData::DeleteBlock(class UBlockBase* bLock)
 
 void UBlockyGraphData::DefineCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.DefineCustom");
 
@@ -4038,7 +4063,7 @@ void UBlockyGraphData::DefineCustom()
 
 void UBlockyGraphData::Define()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Define");
 
@@ -4057,12 +4082,12 @@ void UBlockyGraphData::Define()
 // Function BlockyLuaCore.BlockyGraphData.CustomNumByType
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ECustomBlockType> CustomType                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECustomBlockType>  CustomType                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-int UBlockyGraphData::CustomNumByType(TEnumAsByte<enum ECustomBlockType> CustomType)
+int UBlockyGraphData::CustomNumByType(TEnumAsByte<ECustomBlockType> CustomType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.CustomNumByType");
 
@@ -4088,7 +4113,7 @@ int UBlockyGraphData::CustomNumByType(TEnumAsByte<enum ECustomBlockType> CustomT
 
 TArray<class UBlockyGraph*> UBlockyGraphData::CurSelectSubBlockyGraphs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.CurSelectSubBlockyGraphs");
 
@@ -4111,7 +4136,7 @@ TArray<class UBlockyGraph*> UBlockyGraphData::CurSelectSubBlockyGraphs()
 
 void UBlockyGraphData::Copy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Copy");
 
@@ -4132,7 +4157,7 @@ void UBlockyGraphData::Copy()
 
 void UBlockyGraphData::Comment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Comment");
 
@@ -4153,7 +4178,7 @@ void UBlockyGraphData::Comment()
 
 void UBlockyGraphData::Clone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.Clone");
 
@@ -4174,7 +4199,7 @@ void UBlockyGraphData::Clone()
 
 void UBlockyGraphData::ClearUndoRedoDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ClearUndoRedoDatas");
 
@@ -4195,7 +4220,7 @@ void UBlockyGraphData::ClearUndoRedoDatas()
 
 void UBlockyGraphData::ClearTextSizeCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ClearTextSizeCache");
 
@@ -4216,7 +4241,7 @@ void UBlockyGraphData::ClearTextSizeCache()
 
 void UBlockyGraphData::ClearGraphDirty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ClearGraphDirty");
 
@@ -4237,7 +4262,7 @@ void UBlockyGraphData::ClearGraphDirty()
 
 void UBlockyGraphData::ClearBlockLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.ClearBlockLog");
 
@@ -4260,7 +4285,7 @@ void UBlockyGraphData::ClearBlockLog()
 
 bool UBlockyGraphData::CheckReports()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.CheckReports");
 
@@ -4286,7 +4311,7 @@ bool UBlockyGraphData::CheckReports()
 
 void UBlockyGraphData::AsyncLoadGraphFromBinFile(const struct FString& FilePath, const struct FScriptDelegate& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.AsyncLoadGraphFromBinFile");
 
@@ -4313,7 +4338,7 @@ void UBlockyGraphData::AsyncLoadGraphFromBinFile(const struct FString& FilePath,
 
 struct FString UBlockyGraphData::AddSubGraph(const struct FString& InName, const struct FString& InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.AddSubGraph");
 
@@ -4340,7 +4365,7 @@ struct FString UBlockyGraphData::AddSubGraph(const struct FString& InName, const
 
 void UBlockyGraphData::AddOpendNameToArr(const struct FString& ItemStringName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.AddOpendNameToArr");
 
@@ -4366,7 +4391,7 @@ void UBlockyGraphData::AddOpendNameToArr(const struct FString& ItemStringName)
 
 class UBlockyGraph* UBlockyGraphData::AddGraph(const struct FString& InName, const struct FString& InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.AddGraph");
 
@@ -4391,7 +4416,7 @@ class UBlockyGraph* UBlockyGraphData::AddGraph(const struct FString& InName, con
 
 void UBlockyGraphData::AddGlobalComment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyGraphData.AddGlobalComment");
 
@@ -4414,7 +4439,7 @@ void UBlockyGraphData::AddGlobalComment()
 
 void UBlockyLuaConfig::SetCustomDefaultFont(struct FSlateFontInfo* DefaultFont)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.SetCustomDefaultFont");
 
@@ -4441,7 +4466,7 @@ void UBlockyLuaConfig::SetCustomDefaultFont(struct FSlateFontInfo* DefaultFont)
 
 struct FString UBlockyLuaConfig::ReplaceChCharToMaskChar(const struct FString& Source)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.ReplaceChCharToMaskChar");
 
@@ -4467,7 +4492,7 @@ struct FString UBlockyLuaConfig::ReplaceChCharToMaskChar(const struct FString& S
 
 void UBlockyLuaConfig::PlayPresetSound(const struct FString& SoundPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.PlayPresetSound");
 
@@ -4492,7 +4517,7 @@ void UBlockyLuaConfig::PlayPresetSound(const struct FString& SoundPath)
 
 bool UBlockyLuaConfig::IsNameStringValid(const struct FString& NameString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.IsNameStringValid");
 
@@ -4519,7 +4544,7 @@ bool UBlockyLuaConfig::IsNameStringValid(const struct FString& NameString)
 
 bool UBlockyLuaConfig::IsBlackboardVar(class UVarDefiner* Definer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.IsBlackboardVar");
 
@@ -4546,7 +4571,7 @@ bool UBlockyLuaConfig::IsBlackboardVar(class UVarDefiner* Definer)
 
 struct FString UBlockyLuaConfig::GetValidString(const struct FString& CheckString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.GetValidString");
 
@@ -4573,7 +4598,7 @@ struct FString UBlockyLuaConfig::GetValidString(const struct FString& CheckStrin
 
 struct FString UBlockyLuaConfig::GetTranslateStringTest(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.GetTranslateStringTest");
 
@@ -4600,7 +4625,7 @@ struct FString UBlockyLuaConfig::GetTranslateStringTest(const struct FString& Ke
 
 struct FString UBlockyLuaConfig::GetTranslateString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.GetTranslateString");
 
@@ -4627,7 +4652,7 @@ struct FString UBlockyLuaConfig::GetTranslateString(const struct FString& KeyStr
 
 struct FString UBlockyLuaConfig::GetLocaleString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.GetLocaleString");
 
@@ -4654,7 +4679,7 @@ struct FString UBlockyLuaConfig::GetLocaleString(const struct FString& KeyString
 
 class UBlackboardDefiner* UBlockyLuaConfig::GetBlackboardDefiner(class UVarDefiner* Definer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.GetBlackboardDefiner");
 
@@ -4678,7 +4703,7 @@ class UBlackboardDefiner* UBlockyLuaConfig::GetBlackboardDefiner(class UVarDefin
 
 void UBlockyLuaConfig::ClearCustomDefaultFont()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.ClearCustomDefaultFont");
 
@@ -4699,7 +4724,7 @@ void UBlockyLuaConfig::ClearCustomDefaultFont()
 
 void UBlockyLuaConfig::ClearAsyncTextureHandleMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.ClearAsyncTextureHandleMap");
 
@@ -4723,7 +4748,7 @@ void UBlockyLuaConfig::ClearAsyncTextureHandleMap()
 
 void UBlockyLuaConfig::CheckStringValidTest(const struct FString& CheckString, const struct FCheckStringHandleData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaConfig.CheckStringValidTest");
 
@@ -4749,7 +4774,7 @@ void UBlockyLuaConfig::CheckStringValidTest(const struct FString& CheckString, c
 
 void UBlockyLuaUtility::WriteUInt8(const struct FBlockyLuaHandle& ar, unsigned char Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteUInt8");
 
@@ -4775,7 +4800,7 @@ void UBlockyLuaUtility::WriteUInt8(const struct FBlockyLuaHandle& ar, unsigned c
 
 void UBlockyLuaUtility::WriteUInt64(const struct FBlockyLuaHandle& ar, uint64_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteUInt64");
 
@@ -4801,7 +4826,7 @@ void UBlockyLuaUtility::WriteUInt64(const struct FBlockyLuaHandle& ar, uint64_t 
 
 void UBlockyLuaUtility::WriteUInt32(const struct FBlockyLuaHandle& ar, uint32_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteUInt32");
 
@@ -4827,7 +4852,7 @@ void UBlockyLuaUtility::WriteUInt32(const struct FBlockyLuaHandle& ar, uint32_t 
 
 void UBlockyLuaUtility::WriteUInt16(const struct FBlockyLuaHandle& ar, uint16_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteUInt16");
 
@@ -4853,7 +4878,7 @@ void UBlockyLuaUtility::WriteUInt16(const struct FBlockyLuaHandle& ar, uint16_t 
 
 void UBlockyLuaUtility::WriteString(const struct FBlockyLuaHandle& ar, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteString");
 
@@ -4879,7 +4904,7 @@ void UBlockyLuaUtility::WriteString(const struct FBlockyLuaHandle& ar, const str
 
 void UBlockyLuaUtility::WriteSingle(const struct FBlockyLuaHandle& ar, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteSingle");
 
@@ -4905,7 +4930,7 @@ void UBlockyLuaUtility::WriteSingle(const struct FBlockyLuaHandle& ar, float Val
 
 void UBlockyLuaUtility::WriteObjectPtr(const struct FBlockyLuaHandle& ar, class UObject* Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteObjectPtr");
 
@@ -4931,7 +4956,7 @@ void UBlockyLuaUtility::WriteObjectPtr(const struct FBlockyLuaHandle& ar, class 
 
 void UBlockyLuaUtility::WriteInt8(const struct FBlockyLuaHandle& ar, int8_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteInt8");
 
@@ -4957,7 +4982,7 @@ void UBlockyLuaUtility::WriteInt8(const struct FBlockyLuaHandle& ar, int8_t Valu
 
 void UBlockyLuaUtility::WriteInt64(const struct FBlockyLuaHandle& ar, int64_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteInt64");
 
@@ -4983,7 +5008,7 @@ void UBlockyLuaUtility::WriteInt64(const struct FBlockyLuaHandle& ar, int64_t Va
 
 void UBlockyLuaUtility::WriteInt32(const struct FBlockyLuaHandle& ar, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteInt32");
 
@@ -5009,7 +5034,7 @@ void UBlockyLuaUtility::WriteInt32(const struct FBlockyLuaHandle& ar, int Value)
 
 void UBlockyLuaUtility::WriteInt16(const struct FBlockyLuaHandle& ar, int16_t Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteInt16");
 
@@ -5035,7 +5060,7 @@ void UBlockyLuaUtility::WriteInt16(const struct FBlockyLuaHandle& ar, int16_t Va
 
 void UBlockyLuaUtility::WriteHandle(const struct FBlockyLuaHandle& ar, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteHandle");
 
@@ -5061,7 +5086,7 @@ void UBlockyLuaUtility::WriteHandle(const struct FBlockyLuaHandle& ar, const str
 
 void UBlockyLuaUtility::WriteDouble(const struct FBlockyLuaHandle& ar, double Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteDouble");
 
@@ -5087,7 +5112,7 @@ void UBlockyLuaUtility::WriteDouble(const struct FBlockyLuaHandle& ar, double Va
 
 void UBlockyLuaUtility::WriteBool(const struct FBlockyLuaHandle& ar, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.WriteBool");
 
@@ -5113,7 +5138,7 @@ void UBlockyLuaUtility::WriteBool(const struct FBlockyLuaHandle& ar, bool Value)
 
 unsigned char UBlockyLuaUtility::ReadUInt8(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadUInt8");
 
@@ -5140,7 +5165,7 @@ unsigned char UBlockyLuaUtility::ReadUInt8(const struct FBlockyLuaHandle& ar)
 
 uint64_t UBlockyLuaUtility::ReadUInt64(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadUInt64");
 
@@ -5167,7 +5192,7 @@ uint64_t UBlockyLuaUtility::ReadUInt64(const struct FBlockyLuaHandle& ar)
 
 uint32_t UBlockyLuaUtility::ReadUInt32(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadUInt32");
 
@@ -5194,7 +5219,7 @@ uint32_t UBlockyLuaUtility::ReadUInt32(const struct FBlockyLuaHandle& ar)
 
 uint16_t UBlockyLuaUtility::ReadUInt16(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadUInt16");
 
@@ -5221,7 +5246,7 @@ uint16_t UBlockyLuaUtility::ReadUInt16(const struct FBlockyLuaHandle& ar)
 
 struct FString UBlockyLuaUtility::ReadString(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadString");
 
@@ -5248,7 +5273,7 @@ struct FString UBlockyLuaUtility::ReadString(const struct FBlockyLuaHandle& ar)
 
 float UBlockyLuaUtility::ReadSingle(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadSingle");
 
@@ -5275,7 +5300,7 @@ float UBlockyLuaUtility::ReadSingle(const struct FBlockyLuaHandle& ar)
 
 class UObject* UBlockyLuaUtility::ReadObjectPtr(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadObjectPtr");
 
@@ -5302,7 +5327,7 @@ class UObject* UBlockyLuaUtility::ReadObjectPtr(const struct FBlockyLuaHandle& a
 
 int8_t UBlockyLuaUtility::ReadInt8(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadInt8");
 
@@ -5329,7 +5354,7 @@ int8_t UBlockyLuaUtility::ReadInt8(const struct FBlockyLuaHandle& ar)
 
 int64_t UBlockyLuaUtility::ReadInt64(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadInt64");
 
@@ -5356,7 +5381,7 @@ int64_t UBlockyLuaUtility::ReadInt64(const struct FBlockyLuaHandle& ar)
 
 int UBlockyLuaUtility::ReadInt32(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadInt32");
 
@@ -5383,7 +5408,7 @@ int UBlockyLuaUtility::ReadInt32(const struct FBlockyLuaHandle& ar)
 
 int16_t UBlockyLuaUtility::ReadInt16(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadInt16");
 
@@ -5410,7 +5435,7 @@ int16_t UBlockyLuaUtility::ReadInt16(const struct FBlockyLuaHandle& ar)
 
 struct FBlockyLuaHandle UBlockyLuaUtility::ReadHandle(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadHandle");
 
@@ -5437,7 +5462,7 @@ struct FBlockyLuaHandle UBlockyLuaUtility::ReadHandle(const struct FBlockyLuaHan
 
 double UBlockyLuaUtility::ReadDouble(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadDouble");
 
@@ -5464,7 +5489,7 @@ double UBlockyLuaUtility::ReadDouble(const struct FBlockyLuaHandle& ar)
 
 bool UBlockyLuaUtility::ReadBool(const struct FBlockyLuaHandle& ar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.ReadBool");
 
@@ -5490,7 +5515,7 @@ bool UBlockyLuaUtility::ReadBool(const struct FBlockyLuaHandle& ar)
 
 void UBlockyLuaUtility::DestroyReturnWriter(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.DestroyReturnWriter");
 
@@ -5514,7 +5539,7 @@ void UBlockyLuaUtility::DestroyReturnWriter(const struct FBlockyLuaHandle& ptr)
 
 void UBlockyLuaUtility::DestroyArgumentsReader(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.DestroyArgumentsReader");
 
@@ -5539,7 +5564,7 @@ void UBlockyLuaUtility::DestroyArgumentsReader(const struct FBlockyLuaHandle& pt
 
 struct FBlockyLuaHandle UBlockyLuaUtility::CreateReturnWriter(const struct FBlockyLuaHandle& stubHandle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.CreateReturnWriter");
 
@@ -5566,7 +5591,7 @@ struct FBlockyLuaHandle UBlockyLuaUtility::CreateReturnWriter(const struct FBloc
 
 struct FBlockyLuaHandle UBlockyLuaUtility::CreateArgumentsReader(const struct FBlockyLuaHandle& stubHandle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyLuaUtility.CreateArgumentsReader");
 
@@ -5592,7 +5617,7 @@ struct FBlockyLuaHandle UBlockyLuaUtility::CreateArgumentsReader(const struct FB
 
 void UBlockyMenuItemObject::SetShowRedDotVar(bool var)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject.SetShowRedDotVar");
 
@@ -5614,7 +5639,7 @@ void UBlockyMenuItemObject::SetShowRedDotVar(bool var)
 
 void UBlockyMenuItemObject::InitShowRedDotVar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject.InitShowRedDotVar");
 
@@ -5635,7 +5660,7 @@ void UBlockyMenuItemObject::InitShowRedDotVar()
 
 void UBlockyMenuItemObject_Custom::NewCustom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Custom.NewCustom");
 
@@ -5658,7 +5683,7 @@ void UBlockyMenuItemObject_Custom::NewCustom()
 
 bool UBlockyMenuItemObject_Custom::IsCurrentCategoryEmpty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Custom.IsCurrentCategoryEmpty");
 
@@ -5679,11 +5704,11 @@ bool UBlockyMenuItemObject_Custom::IsCurrentCategoryEmpty()
 // Function BlockyLuaCore.BlockyMenuItemObject_Custom.GetCustomType
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<enum ECustomBlockType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<ECustomBlockType>  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum ECustomBlockType> UBlockyMenuItemObject_Custom::GetCustomType()
+TEnumAsByte<ECustomBlockType> UBlockyMenuItemObject_Custom::GetCustomType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Custom.GetCustomType");
 
@@ -5706,7 +5731,7 @@ TEnumAsByte<enum ECustomBlockType> UBlockyMenuItemObject_Custom::GetCustomType()
 
 void UBlockyMenuItemObject_Custom::ClosePopUp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Custom.ClosePopUp");
 
@@ -5727,7 +5752,7 @@ void UBlockyMenuItemObject_Custom::ClosePopUp()
 
 void UBlockyMenuItemObject_Variable::NewVariable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.NewVariable");
 
@@ -5750,7 +5775,7 @@ void UBlockyMenuItemObject_Variable::NewVariable()
 
 bool UBlockyMenuItemObject_Variable::IsSlotCustomVarToShow()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.IsSlotCustomVarToShow");
 
@@ -5775,7 +5800,7 @@ bool UBlockyMenuItemObject_Variable::IsSlotCustomVarToShow()
 
 bool UBlockyMenuItemObject_Variable::IsPlayerBlackboard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.IsPlayerBlackboard");
 
@@ -5800,7 +5825,7 @@ bool UBlockyMenuItemObject_Variable::IsPlayerBlackboard()
 
 bool UBlockyMenuItemObject_Variable::IsCurrentCategoryEmpty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.IsCurrentCategoryEmpty");
 
@@ -5825,7 +5850,7 @@ bool UBlockyMenuItemObject_Variable::IsCurrentCategoryEmpty()
 
 bool UBlockyMenuItemObject_Variable::IsBlackBoardVariable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.IsBlackBoardVariable");
 
@@ -5850,7 +5875,7 @@ bool UBlockyMenuItemObject_Variable::IsBlackBoardVariable()
 
 void UBlockyMenuItemObject_Variable::FilterBlackboard(bool bIsPlayerVar)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.FilterBlackboard");
 
@@ -5870,11 +5895,11 @@ void UBlockyMenuItemObject_Variable::FilterBlackboard(bool bIsPlayerVar)
 // Function BlockyLuaCore.BlockyMenuItemObject_Variable.FilterAccess
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EBlockyAccessType> InAccess                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBlockyAccessType> InAccess                       (Parm, ZeroConstructor, IsPlainOldData)
 
-void UBlockyMenuItemObject_Variable::FilterAccess(TEnumAsByte<enum EBlockyAccessType> InAccess)
+void UBlockyMenuItemObject_Variable::FilterAccess(TEnumAsByte<EBlockyAccessType> InAccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.FilterAccess");
 
@@ -5900,7 +5925,7 @@ void UBlockyMenuItemObject_Variable::FilterAccess(TEnumAsByte<enum EBlockyAccess
 
 void UBlockyMenuItemObject_Variable::CanSeeCustomVar(bool* IsConfigContain, bool* IsOnlyShowCustom, bool* IsHiddenCustom)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BlockyMenuItemObject_Variable.CanSeeCustomVar");
 
@@ -5931,7 +5956,7 @@ void UBlockyMenuItemObject_Variable::CanSeeCustomVar(bool* IsConfigContain, bool
 
 void UCastExpression::SetTargetType(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CastExpression.SetTargetType");
 
@@ -5957,7 +5982,7 @@ void UCastExpression::SetTargetType(const struct FBlockyLuaHandle& ptr, const st
 
 void UCastExpression::SetExpression(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Target)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CastExpression.SetExpression");
 
@@ -5983,7 +6008,7 @@ void UCastExpression::SetExpression(const struct FBlockyLuaHandle& ptr, const st
 
 struct FBlockyLuaHandle UCastExpression::GetTargetType(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CastExpression.GetTargetType");
 
@@ -6010,7 +6035,7 @@ struct FBlockyLuaHandle UCastExpression::GetTargetType(const struct FBlockyLuaHa
 
 struct FBlockyLuaHandle UCastExpression::GetExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CastExpression.GetExpression");
 
@@ -6038,7 +6063,7 @@ struct FBlockyLuaHandle UCastExpression::GetExpression(const struct FBlockyLuaHa
 
 struct FBlockyLuaHandle UCastExpression::CreateCastExpression2(const struct FBlockyLuaHandle& TargetType, const struct FBlockyLuaHandle& expression)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CastExpression.CreateCastExpression2");
 
@@ -6065,7 +6090,7 @@ struct FBlockyLuaHandle UCastExpression::CreateCastExpression2(const struct FBlo
 
 struct FBlockyLuaHandle UCastExpression::CreateCastExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CastExpression.CreateCastExpression");
 
@@ -6091,7 +6116,7 @@ struct FBlockyLuaHandle UCastExpression::CreateCastExpression()
 
 void UClassReferenceExpression::SetClass(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& klass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ClassReferenceExpression.SetClass");
 
@@ -6117,7 +6142,7 @@ void UClassReferenceExpression::SetClass(const struct FBlockyLuaHandle& ptr, con
 
 struct FBlockyLuaHandle UClassReferenceExpression::GetClass(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ClassReferenceExpression.GetClass");
 
@@ -6144,7 +6169,7 @@ struct FBlockyLuaHandle UClassReferenceExpression::GetClass(const struct FBlocky
 
 struct FBlockyLuaHandle UClassReferenceExpression::CreateClassReferenceExpression(const struct FBlockyLuaHandle& klass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ClassReferenceExpression.CreateClassReferenceExpression");
 
@@ -6171,7 +6196,7 @@ struct FBlockyLuaHandle UClassReferenceExpression::CreateClassReferenceExpressio
 
 bool UColorDesc::NameContainsString(const struct FString& filter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ColorDesc.NameContainsString");
 
@@ -6197,7 +6222,7 @@ bool UColorDesc::NameContainsString(const struct FString& filter)
 
 bool UColorDesc::IsNameEmpty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ColorDesc.IsNameEmpty");
 
@@ -6222,7 +6247,7 @@ bool UColorDesc::IsNameEmpty()
 
 bool UColorDesc::IsCodeNameEmpty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ColorDesc.IsCodeNameEmpty");
 
@@ -6247,7 +6272,7 @@ bool UColorDesc::IsCodeNameEmpty()
 
 struct FType UColorDesc::GetType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ColorDesc.GetType");
 
@@ -6272,7 +6297,7 @@ struct FType UColorDesc::GetType()
 
 struct FString UColorDesc::GetLocaleName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ColorDesc.GetLocaleName");
 
@@ -6297,7 +6322,7 @@ struct FString UColorDesc::GetLocaleName()
 
 struct FString UColorDesc::GetHSVStr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ColorDesc.GetHSVStr");
 
@@ -6322,7 +6347,7 @@ struct FString UColorDesc::GetHSVStr()
 
 struct FLinearColor UColorDesc::GetColor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ColorDesc.GetColor");
 
@@ -6348,7 +6373,7 @@ struct FLinearColor UColorDesc::GetColor()
 
 bool UCommonUIFunctionLibrary::VarDefinerTypeCanBeArray(class UVarDefiner* Definer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.VarDefinerTypeCanBeArray");
 
@@ -6374,7 +6399,7 @@ bool UCommonUIFunctionLibrary::VarDefinerTypeCanBeArray(class UVarDefiner* Defin
 
 void UCommonUIFunctionLibrary::SetIsVirtualKeyboardVisible(bool Visible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.SetIsVirtualKeyboardVisible");
 
@@ -6401,7 +6426,7 @@ void UCommonUIFunctionLibrary::SetIsVirtualKeyboardVisible(bool Visible)
 
 bool UCommonUIFunctionLibrary::LimitTextLength(const struct FText& InputText, int MaxCharCount, struct FText* OutText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.LimitTextLength");
 
@@ -6432,7 +6457,7 @@ bool UCommonUIFunctionLibrary::LimitTextLength(const struct FText& InputText, in
 
 struct FText UCommonUIFunctionLibrary::LimitTextEmojiInput(const struct FText& InputText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.LimitTextEmojiInput");
 
@@ -6459,7 +6484,7 @@ struct FText UCommonUIFunctionLibrary::LimitTextEmojiInput(const struct FText& I
 
 bool UCommonUIFunctionLibrary::IsNameStringValid(const struct FString& NameString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.IsNameStringValid");
 
@@ -6486,7 +6511,7 @@ bool UCommonUIFunctionLibrary::IsNameStringValid(const struct FString& NameStrin
 
 bool UCommonUIFunctionLibrary::IsFuncDisabled(const struct FString& FuncName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.IsFuncDisabled");
 
@@ -6512,7 +6537,7 @@ bool UCommonUIFunctionLibrary::IsFuncDisabled(const struct FString& FuncName)
 
 bool UCommonUIFunctionLibrary::IsDeveloperMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.IsDeveloperMode");
 
@@ -6538,7 +6563,7 @@ bool UCommonUIFunctionLibrary::IsDeveloperMode()
 
 struct FString UCommonUIFunctionLibrary::GetTranslateString_BP(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetTranslateString_BP");
 
@@ -6565,7 +6590,7 @@ struct FString UCommonUIFunctionLibrary::GetTranslateString_BP(const struct FStr
 
 struct FString UCommonUIFunctionLibrary::GetTranslateString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetTranslateString");
 
@@ -6592,7 +6617,7 @@ struct FString UCommonUIFunctionLibrary::GetTranslateString(const struct FString
 
 int UCommonUIFunctionLibrary::GetTextLen(const struct FText& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetTextLen");
 
@@ -6619,7 +6644,7 @@ int UCommonUIFunctionLibrary::GetTextLen(const struct FText& Text)
 
 TArray<class UPresetDesc*> UCommonUIFunctionLibrary::GetPresetDescs(class UVarDefiner* Definer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetPresetDescs");
 
@@ -6646,7 +6671,7 @@ TArray<class UPresetDesc*> UCommonUIFunctionLibrary::GetPresetDescs(class UVarDe
 
 struct FText UCommonUIFunctionLibrary::GetLocaleText(const struct FText& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetLocaleText");
 
@@ -6673,7 +6698,7 @@ struct FText UCommonUIFunctionLibrary::GetLocaleText(const struct FText& KeyStri
 
 struct FString UCommonUIFunctionLibrary::GetLocaleString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetLocaleString");
 
@@ -6699,7 +6724,7 @@ struct FString UCommonUIFunctionLibrary::GetLocaleString(const struct FString& K
 
 bool UCommonUIFunctionLibrary::GetIsVirtualKeyboardVisible()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetIsVirtualKeyboardVisible");
 
@@ -6724,7 +6749,7 @@ bool UCommonUIFunctionLibrary::GetIsVirtualKeyboardVisible()
 
 int UCommonUIFunctionLibrary::GetCustomVarNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetCustomVarNum");
 
@@ -6749,7 +6774,7 @@ int UCommonUIFunctionLibrary::GetCustomVarNum()
 
 struct FString UCommonUIFunctionLibrary::GetArrayInitStringStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetArrayInitStringStart");
 
@@ -6774,7 +6799,7 @@ struct FString UCommonUIFunctionLibrary::GetArrayInitStringStart()
 
 struct FString UCommonUIFunctionLibrary::GetArrayInitStringEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetArrayInitStringEnd");
 
@@ -6799,7 +6824,7 @@ struct FString UCommonUIFunctionLibrary::GetArrayInitStringEnd()
 
 TArray<class UVarDefiner*> UCommonUIFunctionLibrary::GetAllDefiners()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GetAllDefiners");
 
@@ -6827,7 +6852,7 @@ TArray<class UVarDefiner*> UCommonUIFunctionLibrary::GetAllDefiners()
 
 struct FString UCommonUIFunctionLibrary::GenerateNextNameWithSuffix(TArray<struct FString> ExistingNames, const struct FString& InputName, bool InDuplicate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.GenerateNextNameWithSuffix");
 
@@ -6856,7 +6881,7 @@ struct FString UCommonUIFunctionLibrary::GenerateNextNameWithSuffix(TArray<struc
 
 struct FString UCommonUIFunctionLibrary::FormatNumber(const struct FString& Input)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.FormatNumber");
 
@@ -6883,7 +6908,7 @@ struct FString UCommonUIFunctionLibrary::FormatNumber(const struct FString& Inpu
 
 struct FString UCommonUIFunctionLibrary::DisplayNameToTranslate(class UBlockBase* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.DisplayNameToTranslate");
 
@@ -6907,7 +6932,7 @@ struct FString UCommonUIFunctionLibrary::DisplayNameToTranslate(class UBlockBase
 
 void UCommonUIFunctionLibrary::CollectAllObjects()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.CollectAllObjects");
 
@@ -6932,7 +6957,7 @@ void UCommonUIFunctionLibrary::CollectAllObjects()
 
 bool UCommonUIFunctionLibrary::CheckNameValid(const struct FString& InName, struct FText* ErrorMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.CheckNameValid");
 
@@ -6962,7 +6987,7 @@ bool UCommonUIFunctionLibrary::CheckNameValid(const struct FString& InName, stru
 
 bool UCommonUIFunctionLibrary::CheckNameHasInvalidChar(const struct FString& InName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommonUIFunctionLibrary.CheckNameHasInvalidChar");
 
@@ -6988,7 +7013,7 @@ bool UCommonUIFunctionLibrary::CheckNameHasInvalidChar(const struct FString& InN
 
 void UConfigDataAsset::SaveToAsset(const struct FString& PackageName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ConfigDataAsset.SaveToAsset");
 
@@ -7013,7 +7038,7 @@ void UConfigDataAsset::SaveToAsset(const struct FString& PackageName)
 
 void UCreateObjectExpression::SetTypeName(const struct FBlockyLuaHandle& ptr, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CreateObjectExpression.SetTypeName");
 
@@ -7039,7 +7064,7 @@ void UCreateObjectExpression::SetTypeName(const struct FBlockyLuaHandle& ptr, co
 
 void UCreateObjectExpression::SetParameters(const struct FBlockyLuaHandle& ptr, TArray<struct FBlockyLuaHandle> Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CreateObjectExpression.SetParameters");
 
@@ -7065,7 +7090,7 @@ void UCreateObjectExpression::SetParameters(const struct FBlockyLuaHandle& ptr, 
 
 struct FString UCreateObjectExpression::GetTypeName(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CreateObjectExpression.GetTypeName");
 
@@ -7092,7 +7117,7 @@ struct FString UCreateObjectExpression::GetTypeName(const struct FBlockyLuaHandl
 
 TArray<struct FBlockyLuaHandle> UCreateObjectExpression::GetParameters(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CreateObjectExpression.GetParameters");
 
@@ -7119,7 +7144,7 @@ TArray<struct FBlockyLuaHandle> UCreateObjectExpression::GetParameters(const str
 
 struct FBlockyLuaHandle UCreateObjectExpression::CreateCreateObjectExpression(const struct FString& TypeName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CreateObjectExpression.CreateCreateObjectExpression");
 
@@ -7145,7 +7170,7 @@ struct FBlockyLuaHandle UCreateObjectExpression::CreateCreateObjectExpression(co
 
 void UCustomParam::CopyFrom(class UCustomParam* Other)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomParam.CopyFrom");
 
@@ -7167,7 +7192,7 @@ void UCustomParam::CopyFrom(class UCustomParam* Other)
 
 void UCustomConfig::UpdateDesc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomConfig.UpdateDesc");
 
@@ -7190,7 +7215,7 @@ void UCustomConfig::UpdateDesc()
 
 void UCustomConfig::SetParamNum(int paramNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomConfig.SetParamNum");
 
@@ -7214,7 +7239,7 @@ void UCustomConfig::SetParamNum(int paramNum)
 
 class UCustomParam* UCustomConfig::InitResult()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomConfig.InitResult");
 
@@ -7237,7 +7262,7 @@ class UCustomParam* UCustomConfig::InitResult()
 
 void UCustomConfig::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomConfig.Init");
 
@@ -7261,7 +7286,7 @@ void UCustomConfig::Init()
 
 class UCustomParam* UCustomConfig::GetParam(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomConfig.GetParam");
 
@@ -7287,7 +7312,7 @@ class UCustomParam* UCustomConfig::GetParam(int idx)
 
 struct FString UCustomConfig::GetCustomGraphName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomConfig.GetCustomGraphName");
 
@@ -7312,7 +7337,7 @@ struct FString UCustomConfig::GetCustomGraphName()
 
 void UCustomConfig::CopyFrom(class UCustomConfig* Other)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CustomConfig.CopyFrom");
 
@@ -7337,7 +7362,7 @@ void UCustomConfig::CopyFrom(class UCustomConfig* Other)
 
 void UDefaultValueExpression::SetType(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.DefaultValueExpression.SetType");
 
@@ -7363,7 +7388,7 @@ void UDefaultValueExpression::SetType(const struct FBlockyLuaHandle& ptr, const 
 
 struct FBlockyLuaHandle UDefaultValueExpression::GetType(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.DefaultValueExpression.GetType");
 
@@ -7390,7 +7415,7 @@ struct FBlockyLuaHandle UDefaultValueExpression::GetType(const struct FBlockyLua
 
 struct FBlockyLuaHandle UDefaultValueExpression::CreateDefaultValueExpression2(const struct FBlockyLuaHandle& typeRef)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.DefaultValueExpression.CreateDefaultValueExpression2");
 
@@ -7417,7 +7442,7 @@ struct FBlockyLuaHandle UDefaultValueExpression::CreateDefaultValueExpression2(c
 
 struct FBlockyLuaHandle UDefaultValueExpression::CreateDefaultValueExpression(const struct FBlockyLuaHandle& typeClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.DefaultValueExpression.CreateDefaultValueExpression");
 
@@ -7440,11 +7465,11 @@ struct FBlockyLuaHandle UDefaultValueExpression::CreateDefaultValueExpression(co
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyFunctionArgumentAttribute> Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBlockyFunctionArgumentAttribute> Value                          (Parm, ZeroConstructor, IsPlainOldData)
 
-void UFunctionInvokeArgumentExpression::SetOperationType(const struct FBlockyLuaHandle& ptr, TEnumAsByte<enum EBlockyFunctionArgumentAttribute> Value)
+void UFunctionInvokeArgumentExpression::SetOperationType(const struct FBlockyLuaHandle& ptr, TEnumAsByte<EBlockyFunctionArgumentAttribute> Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeArgumentExpression.SetOperationType");
 
@@ -7470,7 +7495,7 @@ void UFunctionInvokeArgumentExpression::SetOperationType(const struct FBlockyLua
 
 void UFunctionInvokeArgumentExpression::SetExpression(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeArgumentExpression.SetExpression");
 
@@ -7496,7 +7521,7 @@ void UFunctionInvokeArgumentExpression::SetExpression(const struct FBlockyLuaHan
 
 void UFunctionInvokeArgumentExpression::SetAdditionPostCode(const struct FBlockyLuaHandle& ptr, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeArgumentExpression.SetAdditionPostCode");
 
@@ -7518,11 +7543,11 @@ void UFunctionInvokeArgumentExpression::SetAdditionPostCode(const struct FBlocky
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyFunctionArgumentAttribute> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyFunctionArgumentAttribute> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyFunctionArgumentAttribute> UFunctionInvokeArgumentExpression::GetOperationType(const struct FBlockyLuaHandle& ptr)
+TEnumAsByte<EBlockyFunctionArgumentAttribute> UFunctionInvokeArgumentExpression::GetOperationType(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeArgumentExpression.GetOperationType");
 
@@ -7549,7 +7574,7 @@ TEnumAsByte<enum EBlockyFunctionArgumentAttribute> UFunctionInvokeArgumentExpres
 
 struct FBlockyLuaHandle UFunctionInvokeArgumentExpression::GetExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeArgumentExpression.GetExpression");
 
@@ -7576,7 +7601,7 @@ struct FBlockyLuaHandle UFunctionInvokeArgumentExpression::GetExpression(const s
 
 struct FString UFunctionInvokeArgumentExpression::GetAdditionPostCode(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeArgumentExpression.GetAdditionPostCode");
 
@@ -7602,7 +7627,7 @@ struct FString UFunctionInvokeArgumentExpression::GetAdditionPostCode(const stru
 
 struct FBlockyLuaHandle UFunctionInvokeArgumentExpression::CreateFunctionInvokeArgumentExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeArgumentExpression.CreateFunctionInvokeArgumentExpression");
 
@@ -7628,7 +7653,7 @@ struct FBlockyLuaHandle UFunctionInvokeArgumentExpression::CreateFunctionInvokeA
 
 void UFunctionInvokeExpression::SetReturnValue(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.SetReturnValue");
 
@@ -7654,7 +7679,7 @@ void UFunctionInvokeExpression::SetReturnValue(const struct FBlockyLuaHandle& pt
 
 void UFunctionInvokeExpression::SetHost(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.SetHost");
 
@@ -7680,7 +7705,7 @@ void UFunctionInvokeExpression::SetHost(const struct FBlockyLuaHandle& ptr, cons
 
 void UFunctionInvokeExpression::SetFunctionName(const struct FBlockyLuaHandle& ptr, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.SetFunctionName");
 
@@ -7706,7 +7731,7 @@ void UFunctionInvokeExpression::SetFunctionName(const struct FBlockyLuaHandle& p
 
 void UFunctionInvokeExpression::SetComment(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.SetComment");
 
@@ -7732,7 +7757,7 @@ void UFunctionInvokeExpression::SetComment(const struct FBlockyLuaHandle& ptr, c
 
 void UFunctionInvokeExpression::SetArguments(const struct FBlockyLuaHandle& ptr, TArray<struct FBlockyLuaHandle> Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.SetArguments");
 
@@ -7758,7 +7783,7 @@ void UFunctionInvokeExpression::SetArguments(const struct FBlockyLuaHandle& ptr,
 
 struct FBlockyLuaHandle UFunctionInvokeExpression::GetReturnValue(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.GetReturnValue");
 
@@ -7785,7 +7810,7 @@ struct FBlockyLuaHandle UFunctionInvokeExpression::GetReturnValue(const struct F
 
 struct FBlockyLuaHandle UFunctionInvokeExpression::GetHost(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.GetHost");
 
@@ -7812,7 +7837,7 @@ struct FBlockyLuaHandle UFunctionInvokeExpression::GetHost(const struct FBlockyL
 
 struct FString UFunctionInvokeExpression::GetFunctionName(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.GetFunctionName");
 
@@ -7839,7 +7864,7 @@ struct FString UFunctionInvokeExpression::GetFunctionName(const struct FBlockyLu
 
 struct FBlockyLuaHandle UFunctionInvokeExpression::GetComment(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.GetComment");
 
@@ -7866,7 +7891,7 @@ struct FBlockyLuaHandle UFunctionInvokeExpression::GetComment(const struct FBloc
 
 TArray<struct FBlockyLuaHandle> UFunctionInvokeExpression::GetArguments(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.GetArguments");
 
@@ -7892,7 +7917,7 @@ TArray<struct FBlockyLuaHandle> UFunctionInvokeExpression::GetArguments(const st
 
 struct FBlockyLuaHandle UFunctionInvokeExpression::CreateFunctionInvokeExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.FunctionInvokeExpression.CreateFunctionInvokeExpression");
 
@@ -7918,7 +7943,7 @@ struct FBlockyLuaHandle UFunctionInvokeExpression::CreateFunctionInvokeExpressio
 
 struct FString UHotfixUtility::UVarDefiner_GetCurrentLocateShowName(class UVarDefiner* pThis)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UVarDefiner_GetCurrentLocateShowName");
 
@@ -7945,7 +7970,7 @@ struct FString UHotfixUtility::UVarDefiner_GetCurrentLocateShowName(class UVarDe
 
 struct FString UHotfixUtility::UPresetDesc_GetLocaleName(class UPresetDesc* PresetDesc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UPresetDesc_GetLocaleName");
 
@@ -7973,7 +7998,7 @@ struct FString UHotfixUtility::UPresetDesc_GetLocaleName(class UPresetDesc* Pres
 
 struct FString UHotfixUtility::UNumFromTo_UpdateParameterDisplayName_Index_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UNumFromTo_UpdateParameterDisplayName_Index_DisplayName");
 
@@ -8002,7 +8027,7 @@ struct FString UHotfixUtility::UNumFromTo_UpdateParameterDisplayName_Index_Displ
 
 struct FString UHotfixUtility::UNumFromTo_UpdateParameterDisplayName_CurrNum_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UNumFromTo_UpdateParameterDisplayName_CurrNum_DisplayName");
 
@@ -8032,7 +8057,7 @@ struct FString UHotfixUtility::UNumFromTo_UpdateParameterDisplayName_CurrNum_Dis
 
 struct FString UHotfixUtility::UNumFromTo_SetFunctionDesc_NamedVarBlock_DisplayName(class UFunctionDesc* Desc, int ParamIdx, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UNumFromTo_SetFunctionDesc_NamedVarBlock_DisplayName");
 
@@ -8062,7 +8087,7 @@ struct FString UHotfixUtility::UNumFromTo_SetFunctionDesc_NamedVarBlock_DisplayN
 
 struct FString UHotfixUtility::UNumFromTo_InitializeBlock_IndexBlock_Name(class UNumFromTo* NumFromTo, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UNumFromTo_InitializeBlock_IndexBlock_Name");
 
@@ -8091,7 +8116,7 @@ struct FString UHotfixUtility::UNumFromTo_InitializeBlock_IndexBlock_Name(class 
 
 struct FString UHotfixUtility::UNumFromTo_InitializeBlock_CurrentBlock_Name(class UNumFromTo* NumFromTo, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UNumFromTo_InitializeBlock_CurrentBlock_Name");
 
@@ -8119,7 +8144,7 @@ struct FString UHotfixUtility::UNumFromTo_InitializeBlock_CurrentBlock_Name(clas
 
 struct FString UHotfixUtility::UNamedVar_UpdateFormater_VarFormatNameText(class UNamedVar* var)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UNamedVar_UpdateFormater_VarFormatNameText");
 
@@ -8147,7 +8172,7 @@ struct FString UHotfixUtility::UNamedVar_UpdateFormater_VarFormatNameText(class 
 
 struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ForeachIndex_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_UpdateParameterDisplayName_ForeachIndex_DisplayName");
 
@@ -8176,7 +8201,7 @@ struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ForeachIndex_
 
 struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ForeachElement_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_UpdateParameterDisplayName_ForeachElement_DisplayName");
 
@@ -8205,7 +8230,7 @@ struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ForeachElemen
 
 struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ElementNormalDisplay(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_UpdateParameterDisplayName_ElementNormalDisplay");
 
@@ -8234,7 +8259,7 @@ struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ElementNormal
 
 struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ElementDisableDisplay(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_UpdateParameterDisplayName_ElementDisableDisplay");
 
@@ -8263,7 +8288,7 @@ struct FString UHotfixUtility::UForEach_UpdateParameterDisplayName_ElementDisabl
 
 struct FString UHotfixUtility::UForEach_SetFunctionDesc_ForeachIndex_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_SetFunctionDesc_ForeachIndex_DisplayName");
 
@@ -8292,7 +8317,7 @@ struct FString UHotfixUtility::UForEach_SetFunctionDesc_ForeachIndex_DisplayName
 
 struct FString UHotfixUtility::UForEach_SetFunctionDesc_ForeachElement_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_SetFunctionDesc_ForeachElement_DisplayName");
 
@@ -8321,7 +8346,7 @@ struct FString UHotfixUtility::UForEach_SetFunctionDesc_ForeachElement_DisplayNa
 
 struct FString UHotfixUtility::UForEach_SetFunctionDesc_ElementNormalDisplay(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_SetFunctionDesc_ElementNormalDisplay");
 
@@ -8350,7 +8375,7 @@ struct FString UHotfixUtility::UForEach_SetFunctionDesc_ElementNormalDisplay(cla
 
 struct FString UHotfixUtility::UForEach_SetFunctionDesc_ElementDisableDisplay(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UForEach_SetFunctionDesc_ElementDisableDisplay");
 
@@ -8380,7 +8405,7 @@ struct FString UHotfixUtility::UForEach_SetFunctionDesc_ElementDisableDisplay(cl
 
 struct FString UHotfixUtility::UExecuteable_SetFunctionDesc_ParamDisplayName(class UFunctionDesc* Desc, int ParamIdx, const struct FString& ParamDisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UExecuteable_SetFunctionDesc_ParamDisplayName");
 
@@ -8412,7 +8437,7 @@ struct FString UHotfixUtility::UExecuteable_SetFunctionDesc_ParamDisplayName(cla
 
 struct FString UHotfixUtility::UEnumDesc_GetCurrentLocaleEnumValueName(class UEnumDesc* EnumDesc, const struct FName& enumValueName, const struct FString& enumValueLocName, bool useDefaultWhenNotFound)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UEnumDesc_GetCurrentLocaleEnumValueName");
 
@@ -8444,7 +8469,7 @@ struct FString UHotfixUtility::UEnumDesc_GetCurrentLocaleEnumValueName(class UEn
 
 struct FString UHotfixUtility::UEnumDesc_GetCurrentLocaleEnumTypeName(class UEnumDesc* EnumDesc, const struct FString& EnumTypeName, bool useDefaultWhenNotFound)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UEnumDesc_GetCurrentLocaleEnumTypeName");
 
@@ -8474,7 +8499,7 @@ struct FString UHotfixUtility::UEnumDesc_GetCurrentLocaleEnumTypeName(class UEnu
 
 struct FString UHotfixUtility::UDoNum_UpdateParameterDisplayName_CurrentIndexSlotDisplayName(class UFunctionDesc* Desc, const struct FString& CurrentIndexDisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UDoNum_UpdateParameterDisplayName_CurrentIndexSlotDisplayName");
 
@@ -8503,7 +8528,7 @@ struct FString UHotfixUtility::UDoNum_UpdateParameterDisplayName_CurrentIndexSlo
 
 struct FString UHotfixUtility::UDoNum_SetFunctionDesc_CurrentIndexSlotDisplayName(class UFunctionDesc* Desc, const struct FString& CurrentIndexDisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UDoNum_SetFunctionDesc_CurrentIndexSlotDisplayName");
 
@@ -8533,7 +8558,7 @@ struct FString UHotfixUtility::UDoNum_SetFunctionDesc_CurrentIndexSlotDisplayNam
 
 struct FString UHotfixUtility::UDefineFunction_SetFunctionDesc_ParamName(class UFunctionDesc* Desc, int ParamIdx, const struct FString& ParamName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UDefineFunction_SetFunctionDesc_ParamName");
 
@@ -8562,7 +8587,7 @@ struct FString UHotfixUtility::UDefineFunction_SetFunctionDesc_ParamName(class U
 
 struct FString UHotfixUtility::UCommonUIFunctionLibrary_GetTranslateString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UCommonUIFunctionLibrary_GetTranslateString");
 
@@ -8589,7 +8614,7 @@ struct FString UHotfixUtility::UCommonUIFunctionLibrary_GetTranslateString(const
 
 struct FString UHotfixUtility::UCommonUIFunctionLibrary_GetLocaleString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UCommonUIFunctionLibrary_GetLocaleString");
 
@@ -8616,7 +8641,7 @@ struct FString UHotfixUtility::UCommonUIFunctionLibrary_GetLocaleString(const st
 
 struct FString UHotfixUtility::UColorDesc_GetLocaleName(class UColorDesc* ColorDesc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UColorDesc_GetLocaleName");
 
@@ -8644,7 +8669,7 @@ struct FString UHotfixUtility::UColorDesc_GetLocaleName(class UColorDesc* ColorD
 
 struct FString UHotfixUtility::UBlockyTimer_UpdateParameterDisplayName_CurrentCount_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyTimer_UpdateParameterDisplayName_CurrentCount_DisplayName");
 
@@ -8673,7 +8698,7 @@ struct FString UHotfixUtility::UBlockyTimer_UpdateParameterDisplayName_CurrentCo
 
 struct FString UHotfixUtility::UBlockyTimer_SetFunctionDesc_CurrentCount_DisplayName(class UFunctionDesc* Desc, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyTimer_SetFunctionDesc_CurrentCount_DisplayName");
 
@@ -8701,7 +8726,7 @@ struct FString UHotfixUtility::UBlockyTimer_SetFunctionDesc_CurrentCount_Display
 
 struct FString UHotfixUtility::UBlockySearchWidget_RefreshTabContainerView_ContentName(class UUserWidget* pThis)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockySearchWidget_RefreshTabContainerView_ContentName");
 
@@ -8729,7 +8754,7 @@ struct FString UHotfixUtility::UBlockySearchWidget_RefreshTabContainerView_Conte
 
 struct FString UHotfixUtility::UBlockySearchWidget_RefreshTabContainerView_CategoryName(class UUserWidget* pThis, class UBlockyCategoryItemObject* Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockySearchWidget_RefreshTabContainerView_CategoryName");
 
@@ -8758,7 +8783,7 @@ struct FString UHotfixUtility::UBlockySearchWidget_RefreshTabContainerView_Categ
 
 struct FString UHotfixUtility::UBlockyMenuWidget_UpdateMenus_MenuWidgetName(class UUserWidget* pThis, class UBlockyMenuItemObject* MenuItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyMenuWidget_UpdateMenus_MenuWidgetName");
 
@@ -8787,7 +8812,7 @@ struct FString UHotfixUtility::UBlockyMenuWidget_UpdateMenus_MenuWidgetName(clas
 
 struct FString UHotfixUtility::UBlockyMenuItemObject_Search_SearchMatchingResults_ItemObjectString(class UBlockyMenuItemObject_Search* MenuItem, class UBlockyBlockListItemObject* ItemObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyMenuItemObject_Search_SearchMatchingResults_ItemObjectString");
 
@@ -8816,7 +8841,7 @@ struct FString UHotfixUtility::UBlockyMenuItemObject_Search_SearchMatchingResult
 
 struct FString UHotfixUtility::UBlockyMenuItemObject_Search_PaintSearchedItems_CategoryName(class UBlockyMenuItemObject_Search* MenuItem, class UBlockyCategoryItemObject* CategoryItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyMenuItemObject_Search_PaintSearchedItems_CategoryName");
 
@@ -8843,7 +8868,7 @@ struct FString UHotfixUtility::UBlockyMenuItemObject_Search_PaintSearchedItems_C
 
 struct FString UHotfixUtility::UBlockyMenuItemObject_Search_PaintSearchedContentTitle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyMenuItemObject_Search_PaintSearchedContentTitle");
 
@@ -8869,7 +8894,7 @@ struct FString UHotfixUtility::UBlockyMenuItemObject_Search_PaintSearchedContent
 
 struct FString UHotfixUtility::UBlockyMenuItemObject_Search_GetBlockSearchString_NamedVarName(class UNamedVar* var)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyMenuItemObject_Search_GetBlockSearchString_NamedVarName");
 
@@ -8896,7 +8921,7 @@ struct FString UHotfixUtility::UBlockyMenuItemObject_Search_GetBlockSearchString
 
 struct FString UHotfixUtility::UBlockyMenuItemObject_Search_GetBlockSearchString_Block(class UBlockBase* InBlock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyMenuItemObject_Search_GetBlockSearchString_Block");
 
@@ -8924,7 +8949,7 @@ struct FString UHotfixUtility::UBlockyMenuItemObject_Search_GetBlockSearchString
 
 struct FString UHotfixUtility::UBlockyMenuItemObject_Paint_CategoryName(class UBlockyMenuItemObject* MenuItem, class UBlockyCategoryItemObject* CategoryItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyMenuItemObject_Paint_CategoryName");
 
@@ -8952,7 +8977,7 @@ struct FString UHotfixUtility::UBlockyMenuItemObject_Paint_CategoryName(class UB
 
 struct FString UHotfixUtility::UBlockyGraphData_GetCustomNames_CustomName(class UCustomConfig* Custom)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyGraphData_GetCustomNames_CustomName");
 
@@ -8979,7 +9004,7 @@ struct FString UHotfixUtility::UBlockyGraphData_GetCustomNames_CustomName(class 
 
 void UHotfixUtility::UBlockyGraph_LoadGraphFromXnd_OnLocalVarBlockLoaded(class UBlockyGraph* pThis, class UNamedVar* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyGraph_LoadGraphFromXnd_OnLocalVarBlockLoaded");
 
@@ -9005,7 +9030,7 @@ void UHotfixUtility::UBlockyGraph_LoadGraphFromXnd_OnLocalVarBlockLoaded(class U
 
 void UHotfixUtility::UBlockyGraph_LoadGraphFromXnd_OnBlockLoaded(class UBlockyGraph* pThis, class UBlockBase* bLock)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyGraph_LoadGraphFromXnd_OnBlockLoaded");
 
@@ -9033,7 +9058,7 @@ void UHotfixUtility::UBlockyGraph_LoadGraphFromXnd_OnBlockLoaded(class UBlockyGr
 
 struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_TypeFilterMenuName(class UBlockBase* slotHost, const struct FHotFixSlotHandle& Handle, const struct FString& menuName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyEditor_OnClickSlot_TypeFilterMenuName");
 
@@ -9064,7 +9089,7 @@ struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_TypeFilterMenuName(clas
 
 struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_TypeFilterCategoryName(class UBlockBase* slotHost, const struct FHotFixSlotHandle& Handle, const struct FString& CategoryName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyEditor_OnClickSlot_TypeFilterCategoryName");
 
@@ -9095,7 +9120,7 @@ struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_TypeFilterCategoryName(
 
 struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_SelectFromSceneWidget_DefaultShowName(class UBlockBase* slotHost, const struct FHotFixSlotHandle& Handle, const struct FString& slotCustomClickTypeName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyEditor_OnClickSlot_SelectFromSceneWidget_DefaultShowName");
 
@@ -9127,7 +9152,7 @@ struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_SelectFromSceneWidget_D
 
 struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_EnumName(class UBlockBase* slotHost, class UEnumDesc* EnumDesc, const struct FName& EnumName, const struct FString& EnumString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyEditor_OnClickSlot_EnumName");
 
@@ -9158,7 +9183,7 @@ struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_EnumName(class UBlockBa
 
 struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_CategoryItemName(class UBlockBase* slotHost, const struct FString& CategoryName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyEditor_OnClickSlot_CategoryItemName");
 
@@ -9187,7 +9212,7 @@ struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_CategoryItemName(class 
 
 struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_BPMenuItemName(class UBlockBase* slotHost, const struct FString& menuName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyEditor_OnClickSlot_BPMenuItemName");
 
@@ -9215,7 +9240,7 @@ struct FString UHotfixUtility::UBlockyEditor_OnClickSlot_BPMenuItemName(class UB
 
 struct FString UHotfixUtility::UBlockyEditor_GetLocaleString(const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyEditor_GetLocaleString");
 
@@ -9243,7 +9268,7 @@ struct FString UHotfixUtility::UBlockyEditor_GetLocaleString(const struct FStrin
 
 struct FString UHotfixUtility::UBlockyCategoryWidget_FilterWithBlockyMenuItem_WidgetName(class UUserWidget* pThis, class UBlockyCategoryItemObject* Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyCategoryWidget_FilterWithBlockyMenuItem_WidgetName");
 
@@ -9271,7 +9296,7 @@ struct FString UHotfixUtility::UBlockyCategoryWidget_FilterWithBlockyMenuItem_Wi
 
 struct FString UHotfixUtility::UBlockyBlockListItemObject_Variable_GetStingUsedToSearch(class UBlockyBlockListItemObject_Variable* ItemObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyBlockListItemObject_Variable_GetStingUsedToSearch");
 
@@ -9298,7 +9323,7 @@ struct FString UHotfixUtility::UBlockyBlockListItemObject_Variable_GetStingUsedT
 
 struct FString UHotfixUtility::UBlockyBlockListItemObject_GetStingUsedToSearch(class UBlockyBlockListItemObject* ItemObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyBlockListItemObject_GetStingUsedToSearch");
 
@@ -9325,7 +9350,7 @@ struct FString UHotfixUtility::UBlockyBlockListItemObject_GetStingUsedToSearch(c
 
 struct FString UHotfixUtility::UBlockyBlockListItemObject_Custom_GetStingUsedToSearch(class UBlockyBlockListItemObject_Custom* ItemObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.UBlockyBlockListItemObject_Custom_GetStingUsedToSearch");
 
@@ -9353,7 +9378,7 @@ struct FString UHotfixUtility::UBlockyBlockListItemObject_Custom_GetStingUsedToS
 
 bool UHotfixUtility::Slot_IsValidPreset(const struct FHotFixSlotHandle& Handle, class UPresetDesc* Preset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_IsValidPreset");
 
@@ -9382,7 +9407,7 @@ bool UHotfixUtility::Slot_IsValidPreset(const struct FHotFixSlotHandle& Handle, 
 
 bool UHotfixUtility::Slot_IsValidItem(const struct FHotFixSlotHandle& Handle, class UBlockyBlockListItemObject* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_IsValidItem");
 
@@ -9410,7 +9435,7 @@ bool UHotfixUtility::Slot_IsValidItem(const struct FHotFixSlotHandle& Handle, cl
 
 bool UHotfixUtility::Slot_IsValidHandle(const struct FHotFixSlotHandle& Handle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_IsValidHandle");
 
@@ -9438,7 +9463,7 @@ bool UHotfixUtility::Slot_IsValidHandle(const struct FHotFixSlotHandle& Handle)
 
 bool UHotfixUtility::Slot_IsValidBlock(const struct FHotFixSlotHandle& Handle, class UBlockBase* blk)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_IsValidBlock");
 
@@ -9467,7 +9492,7 @@ bool UHotfixUtility::Slot_IsValidBlock(const struct FHotFixSlotHandle& Handle, c
 
 bool UHotfixUtility::Slot_HasClickType(const struct FHotFixSlotHandle& Handle, int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_HasClickType");
 
@@ -9495,7 +9520,7 @@ bool UHotfixUtility::Slot_HasClickType(const struct FHotFixSlotHandle& Handle, i
 
 class UPresetDesc* UHotfixUtility::Slot_GetSlotPresetDesc(const struct FHotFixSlotHandle& Handle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotPresetDesc");
 
@@ -9523,7 +9548,7 @@ class UPresetDesc* UHotfixUtility::Slot_GetSlotPresetDesc(const struct FHotFixSl
 
 bool UHotfixUtility::Slot_GetSlotName(const struct FHotFixSlotHandle& Handle, struct FText* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotName");
 
@@ -9554,7 +9579,7 @@ bool UHotfixUtility::Slot_GetSlotName(const struct FHotFixSlotHandle& Handle, st
 
 bool UHotfixUtility::Slot_GetSlotItemType(const struct FHotFixSlotHandle& Handle, struct FType* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotItemType");
 
@@ -9585,7 +9610,7 @@ bool UHotfixUtility::Slot_GetSlotItemType(const struct FHotFixSlotHandle& Handle
 
 bool UHotfixUtility::Slot_GetSlotGetColorValue(const struct FHotFixSlotHandle& Handle, struct FLinearColor* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotGetColorValue");
 
@@ -9616,7 +9641,7 @@ bool UHotfixUtility::Slot_GetSlotGetColorValue(const struct FHotFixSlotHandle& H
 
 bool UHotfixUtility::Slot_GetSlotDisplayName(const struct FHotFixSlotHandle& Handle, struct FString* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotDisplayName");
 
@@ -9647,7 +9672,7 @@ bool UHotfixUtility::Slot_GetSlotDisplayName(const struct FHotFixSlotHandle& Han
 
 bool UHotfixUtility::Slot_GetSlotDefaultValue(const struct FHotFixSlotHandle& Handle, struct FString* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotDefaultValue");
 
@@ -9678,7 +9703,7 @@ bool UHotfixUtility::Slot_GetSlotDefaultValue(const struct FHotFixSlotHandle& Ha
 
 bool UHotfixUtility::Slot_GetSlotCustomClickTypeName(const struct FHotFixSlotHandle& Handle, struct FString* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotCustomClickTypeName");
 
@@ -9709,7 +9734,7 @@ bool UHotfixUtility::Slot_GetSlotCustomClickTypeName(const struct FHotFixSlotHan
 
 bool UHotfixUtility::Slot_GetSlotCustomClickType(const struct FHotFixSlotHandle& Handle, struct FString* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotCustomClickType");
 
@@ -9739,7 +9764,7 @@ bool UHotfixUtility::Slot_GetSlotCustomClickType(const struct FHotFixSlotHandle&
 
 class UColorDesc* UHotfixUtility::Slot_GetSlotColorDesc(const struct FHotFixSlotHandle& Handle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotColorDesc");
 
@@ -9767,7 +9792,7 @@ class UColorDesc* UHotfixUtility::Slot_GetSlotColorDesc(const struct FHotFixSlot
 
 bool UHotfixUtility::Slot_GetSlotClickType(const struct FHotFixSlotHandle& Handle, int* OutValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetSlotClickType");
 
@@ -9797,7 +9822,7 @@ bool UHotfixUtility::Slot_GetSlotClickType(const struct FHotFixSlotHandle& Handl
 
 class UBlockBase* UHotfixUtility::Slot_GetHostBlock(const struct FHotFixSlotHandle& Handle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_GetHostBlock");
 
@@ -9826,7 +9851,7 @@ class UBlockBase* UHotfixUtility::Slot_GetHostBlock(const struct FHotFixSlotHand
 
 bool UHotfixUtility::Slot_CanSetBlock(const struct FHotFixSlotHandle& Handle, class UBlockBase* Host, class UBlockBase* blk)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.Slot_CanSetBlock");
 
@@ -9855,7 +9880,7 @@ bool UHotfixUtility::Slot_CanSetBlock(const struct FHotFixSlotHandle& Handle, cl
 
 void UHotfixUtility::SetTypeValue(int NewValue, struct FType* Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.SetTypeValue");
 
@@ -9883,7 +9908,7 @@ void UHotfixUtility::SetTypeValue(int NewValue, struct FType* Type)
 
 int UHotfixUtility::GetTypeValue(const struct FType& Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.GetTypeValue");
 
@@ -9910,7 +9935,7 @@ int UHotfixUtility::GetTypeValue(const struct FType& Type)
 
 struct FString UHotfixUtility::GetTranslateString_ShowTips(const struct FString& Tip)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.GetTranslateString_ShowTips");
 
@@ -9937,7 +9962,7 @@ struct FString UHotfixUtility::GetTranslateString_ShowTips(const struct FString&
 
 struct FString UHotfixUtility::GetTranslateString(const struct FString& String)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.GetTranslateString");
 
@@ -9966,7 +9991,7 @@ struct FString UHotfixUtility::GetTranslateString(const struct FString& String)
 
 struct FString UHotfixUtility::GetDisplayNameString_SlotDisplayName(const struct FHotFixSlotHandle& Handle, const struct FString& slotDisplayName, const struct FString& SlotName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.GetDisplayNameString_SlotDisplayName");
 
@@ -9995,7 +10020,7 @@ struct FString UHotfixUtility::GetDisplayNameString_SlotDisplayName(const struct
 
 struct FString UHotfixUtility::FPresetTypeData_GetLocalTypeName(const struct FPresetTypeData& PresetTypeData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FPresetTypeData_GetLocalTypeName");
 
@@ -10024,7 +10049,7 @@ struct FString UHotfixUtility::FPresetTypeData_GetLocalTypeName(const struct FPr
 
 struct FString UHotfixUtility::FMsgData_CreateMessageData_InfoString_ReplaceTriggerName(class UFunctionDesc* Desc, const struct FString& ListItemFormatString, struct FString* InfoString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FMsgData_CreateMessageData_InfoString_ReplaceTriggerName");
 
@@ -10057,7 +10082,7 @@ struct FString UHotfixUtility::FMsgData_CreateMessageData_InfoString_ReplaceTrig
 
 struct FString UHotfixUtility::FMsgData_CreateMessageData_InfoString_ReplaceBlockName(class UBlockBase* bLock, const struct FString& ListItemFormatString, struct FString* InfoString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FMsgData_CreateMessageData_InfoString_ReplaceBlockName");
 
@@ -10090,7 +10115,7 @@ struct FString UHotfixUtility::FMsgData_CreateMessageData_InfoString_ReplaceBloc
 
 struct FString UHotfixUtility::FMsgData_CreateMessageData_GetInfoTranslateString(class UBlockBase* bLock, const struct FHotFixSlotHandle& Slot, const struct FString& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FMsgData_CreateMessageData_GetInfoTranslateString");
 
@@ -10119,7 +10144,7 @@ struct FString UHotfixUtility::FMsgData_CreateMessageData_GetInfoTranslateString
 
 struct FString UHotfixUtility::FLocaleFormatter_UpdateVarFormatters_SeparatorStr(const struct FString& str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FLocaleFormatter_UpdateVarFormatters_SeparatorStr");
 
@@ -10147,7 +10172,7 @@ struct FString UHotfixUtility::FLocaleFormatter_UpdateVarFormatters_SeparatorStr
 
 struct FString UHotfixUtility::FLocaleFormatter_InitializeListItemFormats_ListItemFormatString(const struct FString& ListItemFormatString, bool bNeedLocalization)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FLocaleFormatter_InitializeListItemFormats_ListItemFormatString");
 
@@ -10176,7 +10201,7 @@ struct FString UHotfixUtility::FLocaleFormatter_InitializeListItemFormats_ListIt
 
 struct FString UHotfixUtility::FLocaleFormatter_InitializeFormats_FormatString(const struct FString& FormatString, bool bNeedLocalization)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FLocaleFormatter_InitializeFormats_FormatString");
 
@@ -10206,7 +10231,7 @@ struct FString UHotfixUtility::FLocaleFormatter_InitializeFormats_FormatString(c
 
 struct FString UHotfixUtility::FLocaleFormatter_FFormatData_SlotIdx_OnPaintListItem_ParamDisplayName(class UBlockyBlockListItemObject* ListItemObject, int ParamIdx, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FLocaleFormatter_FFormatData_SlotIdx_OnPaintListItem_ParamDisplayName");
 
@@ -10237,7 +10262,7 @@ struct FString UHotfixUtility::FLocaleFormatter_FFormatData_SlotIdx_OnPaintListI
 
 struct FString UHotfixUtility::FLocaleFormatter_FFormatData_SlotIdx_OnArrangeListItem_ParamDisplayName(class UBlockyBlockListItemObject* ListItemObject, int ParamIdx, const struct FString& DisplayName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.HotfixUtility.FLocaleFormatter_FFormatData_SlotIdx_OnArrangeListItem_ParamDisplayName");
 
@@ -10266,7 +10291,7 @@ struct FString UHotfixUtility::FLocaleFormatter_FFormatData_SlotIdx_OnArrangeLis
 
 void UIndexerOperatorExpression::SetTarget(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IndexerOperatorExpression.SetTarget");
 
@@ -10292,7 +10317,7 @@ void UIndexerOperatorExpression::SetTarget(const struct FBlockyLuaHandle& ptr, c
 
 void UIndexerOperatorExpression::SetIndices(const struct FBlockyLuaHandle& ptr, TArray<struct FBlockyLuaHandle> Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IndexerOperatorExpression.SetIndices");
 
@@ -10318,7 +10343,7 @@ void UIndexerOperatorExpression::SetIndices(const struct FBlockyLuaHandle& ptr, 
 
 struct FBlockyLuaHandle UIndexerOperatorExpression::GetTarget(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IndexerOperatorExpression.GetTarget");
 
@@ -10345,7 +10370,7 @@ struct FBlockyLuaHandle UIndexerOperatorExpression::GetTarget(const struct FBloc
 
 TArray<struct FBlockyLuaHandle> UIndexerOperatorExpression::GetIndices(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IndexerOperatorExpression.GetIndices");
 
@@ -10371,7 +10396,7 @@ TArray<struct FBlockyLuaHandle> UIndexerOperatorExpression::GetIndices(const str
 
 struct FBlockyLuaHandle UIndexerOperatorExpression::CreateIndexerOperatorExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IndexerOperatorExpression.CreateIndexerOperatorExpression");
 
@@ -10396,7 +10421,7 @@ struct FBlockyLuaHandle UIndexerOperatorExpression::CreateIndexerOperatorExpress
 
 struct FBlockyLuaHandle UNullExpression::CreateNullExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.NullExpression.CreateNullExpression");
 
@@ -10422,7 +10447,7 @@ struct FBlockyLuaHandle UNullExpression::CreateNullExpression()
 
 bool UPresetDesc::NameContainsString(const struct FString& filter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PresetDesc.NameContainsString");
 
@@ -10448,7 +10473,7 @@ bool UPresetDesc::NameContainsString(const struct FString& filter)
 
 bool UPresetDesc::IsNameEmpty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PresetDesc.IsNameEmpty");
 
@@ -10473,7 +10498,7 @@ bool UPresetDesc::IsNameEmpty()
 
 bool UPresetDesc::IsCodeNameEmpty()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PresetDesc.IsCodeNameEmpty");
 
@@ -10498,7 +10523,7 @@ bool UPresetDesc::IsCodeNameEmpty()
 
 bool UPresetDesc::HasIcon()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PresetDesc.HasIcon");
 
@@ -10523,7 +10548,7 @@ bool UPresetDesc::HasIcon()
 
 struct FType UPresetDesc::GetType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PresetDesc.GetType");
 
@@ -10548,7 +10573,7 @@ struct FType UPresetDesc::GetType()
 
 struct FString UPresetDesc::GetLocaleName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PresetDesc.GetLocaleName");
 
@@ -10570,11 +10595,11 @@ struct FString UPresetDesc::GetLocaleName()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyValueType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyValueType>  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyValueType> UPrimitiveExpression::GetValueType(const struct FBlockyLuaHandle& ptr)
+TEnumAsByte<EBlockyValueType> UPrimitiveExpression::GetValueType(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.GetValueType");
 
@@ -10601,7 +10626,7 @@ TEnumAsByte<enum EBlockyValueType> UPrimitiveExpression::GetValueType(const stru
 
 void UPrimitiveExpression::GetValueString(const struct FBlockyLuaHandle& ptr, struct FString* str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.GetValueString");
 
@@ -10629,7 +10654,7 @@ void UPrimitiveExpression::GetValueString(const struct FBlockyLuaHandle& ptr, st
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt8(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_UInt8");
 
@@ -10656,7 +10681,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt8(in
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt64(const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_UInt64");
 
@@ -10683,7 +10708,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt64(c
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt32(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_UInt32");
 
@@ -10710,7 +10735,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt32(i
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt16(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_UInt16");
 
@@ -10737,7 +10762,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_UInt16(i
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Str(const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Str");
 
@@ -10764,7 +10789,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Str(cons
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int8(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Int8");
 
@@ -10791,7 +10816,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int8(int
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int64(const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Int64");
 
@@ -10818,7 +10843,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int64(co
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int32(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Int32");
 
@@ -10845,7 +10870,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int32(in
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int16(int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Int16");
 
@@ -10872,7 +10897,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Int16(in
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Float(float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Float");
 
@@ -10899,7 +10924,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Float(fl
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Double(const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Double");
 
@@ -10926,7 +10951,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Double(c
 
 struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Bool(bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.CreatePrimitiveExpression_Bool");
 
@@ -10952,7 +10977,7 @@ struct FBlockyLuaHandle UPrimitiveExpression::CreatePrimitiveExpression_Bool(boo
 
 void UPrimitiveExpression::Clear(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.PrimitiveExpression.Clear");
 
@@ -10976,7 +11001,7 @@ void UPrimitiveExpression::Clear(const struct FBlockyLuaHandle& ptr)
 
 bool USelectionData::IsCurrentSlot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.SelectionData.IsCurrentSlot");
 
@@ -11001,7 +11026,7 @@ bool USelectionData::IsCurrentSlot()
 
 struct FBlockyLuaHandle USelfReferenceExpression::CreateSelfReferenceExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.SelfReferenceExpression.CreateSelfReferenceExpression");
 
@@ -11027,7 +11052,7 @@ struct FBlockyLuaHandle USelfReferenceExpression::CreateSelfReferenceExpression(
 
 struct FString USnippetExpression::GetSnippetString(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.SnippetExpression.GetSnippetString");
 
@@ -11054,7 +11079,7 @@ struct FString USnippetExpression::GetSnippetString(const struct FBlockyLuaHandl
 
 TArray<struct FBlockyLuaHandle> USnippetExpression::GetParameters(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.SnippetExpression.GetParameters");
 
@@ -11080,7 +11105,7 @@ TArray<struct FBlockyLuaHandle> USnippetExpression::GetParameters(const struct F
 
 struct FBlockyLuaHandle USnippetExpression::CreateDefaultValueExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.SnippetExpression.CreateDefaultValueExpression");
 
@@ -11106,7 +11131,7 @@ struct FBlockyLuaHandle USnippetExpression::CreateDefaultValueExpression()
 
 void UStatementBase::SetNextExpr(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& nextExpr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StatementBase.SetNextExpr");
 
@@ -11131,7 +11156,7 @@ void UStatementBase::SetNextExpr(const struct FBlockyLuaHandle& ptr, const struc
 
 void UStatementBase::ReleaseExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StatementBase.ReleaseExpression");
 
@@ -11156,7 +11181,7 @@ void UStatementBase::ReleaseExpression(const struct FBlockyLuaHandle& ptr)
 
 struct FBlockyLuaHandle UStatementBase::GetNextExpr(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StatementBase.GetNextExpr");
 
@@ -11182,7 +11207,7 @@ struct FBlockyLuaHandle UStatementBase::GetNextExpr(const struct FBlockyLuaHandl
 
 struct FBlockyLuaHandle UStatementBase::CreateStatementBase()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StatementBase.CreateStatementBase");
 
@@ -11204,11 +11229,11 @@ struct FBlockyLuaHandle UStatementBase::CreateStatementBase()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyVisitMode> visitMode                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBlockyVisitMode>  visitMode                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UVariableDeclaration::SetVisitMode(const struct FBlockyLuaHandle& ptr, TEnumAsByte<enum EBlockyVisitMode> visitMode)
+void UVariableDeclaration::SetVisitMode(const struct FBlockyLuaHandle& ptr, TEnumAsByte<EBlockyVisitMode> visitMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.SetVisitMode");
 
@@ -11234,7 +11259,7 @@ void UVariableDeclaration::SetVisitMode(const struct FBlockyLuaHandle& ptr, TEnu
 
 void UVariableDeclaration::SetVariableName(const struct FBlockyLuaHandle& ptr, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.SetVariableName");
 
@@ -11260,7 +11285,7 @@ void UVariableDeclaration::SetVariableName(const struct FBlockyLuaHandle& ptr, c
 
 void UVariableDeclaration::SetInitValue(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& initValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.SetInitValue");
 
@@ -11286,7 +11311,7 @@ void UVariableDeclaration::SetInitValue(const struct FBlockyLuaHandle& ptr, cons
 
 void UVariableDeclaration::SetComment(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Comment)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.SetComment");
 
@@ -11308,11 +11333,11 @@ void UVariableDeclaration::SetComment(const struct FBlockyLuaHandle& ptr, const 
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyVisitMode> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyVisitMode>  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyVisitMode> UVariableDeclaration::GetVisitMode(const struct FBlockyLuaHandle& ptr)
+TEnumAsByte<EBlockyVisitMode> UVariableDeclaration::GetVisitMode(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.GetVisitMode");
 
@@ -11339,7 +11364,7 @@ TEnumAsByte<enum EBlockyVisitMode> UVariableDeclaration::GetVisitMode(const stru
 
 struct FString UVariableDeclaration::GetVariableName(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.GetVariableName");
 
@@ -11366,7 +11391,7 @@ struct FString UVariableDeclaration::GetVariableName(const struct FBlockyLuaHand
 
 struct FBlockyLuaHandle UVariableDeclaration::GetInitValue(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.GetInitValue");
 
@@ -11393,7 +11418,7 @@ struct FBlockyLuaHandle UVariableDeclaration::GetInitValue(const struct FBlockyL
 
 struct FBlockyLuaHandle UVariableDeclaration::GetComment(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.GetComment");
 
@@ -11419,7 +11444,7 @@ struct FBlockyLuaHandle UVariableDeclaration::GetComment(const struct FBlockyLua
 
 struct FBlockyLuaHandle UVariableDeclaration::CreateVariableDeclaration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableDeclaration.CreateVariableDeclaration");
 
@@ -11441,17 +11466,17 @@ struct FBlockyLuaHandle UVariableDeclaration::CreateVariableDeclaration()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// struct FBlockyLuaHandle        to                             (Parm)
+// struct FBlockyLuaHandle        To                             (Parm)
 
-void UAssignOperatorStatement::SetTo(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& to)
+void UAssignOperatorStatement::SetTo(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& To)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.AssignOperatorStatement.SetTo");
 
 	UAssignOperatorStatement_SetTo_Params params;
 	params.ptr = ptr;
-	params.to = to;
+	params.To = To;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -11467,17 +11492,17 @@ void UAssignOperatorStatement::SetTo(const struct FBlockyLuaHandle& ptr, const s
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// struct FBlockyLuaHandle        from                           (Parm)
+// struct FBlockyLuaHandle        From                           (Parm)
 
-void UAssignOperatorStatement::SetFrom(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& from)
+void UAssignOperatorStatement::SetFrom(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& From)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.AssignOperatorStatement.SetFrom");
 
 	UAssignOperatorStatement_SetFrom_Params params;
 	params.ptr = ptr;
-	params.from = from;
+	params.From = From;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -11497,7 +11522,7 @@ void UAssignOperatorStatement::SetFrom(const struct FBlockyLuaHandle& ptr, const
 
 struct FBlockyLuaHandle UAssignOperatorStatement::GetTo(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.AssignOperatorStatement.GetTo");
 
@@ -11524,7 +11549,7 @@ struct FBlockyLuaHandle UAssignOperatorStatement::GetTo(const struct FBlockyLuaH
 
 struct FBlockyLuaHandle UAssignOperatorStatement::GetFrom(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.AssignOperatorStatement.GetFrom");
 
@@ -11550,7 +11575,7 @@ struct FBlockyLuaHandle UAssignOperatorStatement::GetFrom(const struct FBlockyLu
 
 struct FBlockyLuaHandle UAssignOperatorStatement::CreateAssignOperatorStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.AssignOperatorStatement.CreateAssignOperatorStatement");
 
@@ -11576,7 +11601,7 @@ struct FBlockyLuaHandle UAssignOperatorStatement::CreateAssignOperatorStatement(
 
 void UExecuteSequenceStatement::SetSequence(const struct FBlockyLuaHandle& ptr, TArray<struct FBlockyLuaHandle> Sequence)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExecuteSequenceStatement.SetSequence");
 
@@ -11602,7 +11627,7 @@ void UExecuteSequenceStatement::SetSequence(const struct FBlockyLuaHandle& ptr, 
 
 TArray<struct FBlockyLuaHandle> UExecuteSequenceStatement::GetSequence(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExecuteSequenceStatement.GetSequence");
 
@@ -11628,7 +11653,7 @@ TArray<struct FBlockyLuaHandle> UExecuteSequenceStatement::GetSequence(const str
 
 struct FBlockyLuaHandle UExecuteSequenceStatement::CreateExecuteSequenceStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExecuteSequenceStatement.CreateExecuteSequenceStatement");
 
@@ -11653,7 +11678,7 @@ struct FBlockyLuaHandle UExecuteSequenceStatement::CreateExecuteSequenceStatemen
 
 struct FBlockyLuaHandle UReturnStatement::CreateReturnStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ReturnStatement.CreateReturnStatement");
 
@@ -11679,7 +11704,7 @@ struct FBlockyLuaHandle UReturnStatement::CreateReturnStatement()
 
 void UIfStatement::SetTrueStatement(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& trueStatement)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.SetTrueStatement");
 
@@ -11705,7 +11730,7 @@ void UIfStatement::SetTrueStatement(const struct FBlockyLuaHandle& ptr, const st
 
 void UIfStatement::SetFalseStatement(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& falseStatement)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.SetFalseStatement");
 
@@ -11731,7 +11756,7 @@ void UIfStatement::SetFalseStatement(const struct FBlockyLuaHandle& ptr, const s
 
 void UIfStatement::SetElseIfs(const struct FBlockyLuaHandle& ptr, TArray<struct FBlockyLuaHandle> elseIfs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.SetElseIfs");
 
@@ -11757,7 +11782,7 @@ void UIfStatement::SetElseIfs(const struct FBlockyLuaHandle& ptr, TArray<struct 
 
 void UIfStatement::SetCondition(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Condition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.SetCondition");
 
@@ -11783,7 +11808,7 @@ void UIfStatement::SetCondition(const struct FBlockyLuaHandle& ptr, const struct
 
 struct FBlockyLuaHandle UIfStatement::GetTrueStatement(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.GetTrueStatement");
 
@@ -11810,7 +11835,7 @@ struct FBlockyLuaHandle UIfStatement::GetTrueStatement(const struct FBlockyLuaHa
 
 struct FBlockyLuaHandle UIfStatement::GetFalseStatement(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.GetFalseStatement");
 
@@ -11837,7 +11862,7 @@ struct FBlockyLuaHandle UIfStatement::GetFalseStatement(const struct FBlockyLuaH
 
 TArray<struct FBlockyLuaHandle> UIfStatement::GetElseIfs(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.GetElseIfs");
 
@@ -11864,7 +11889,7 @@ TArray<struct FBlockyLuaHandle> UIfStatement::GetElseIfs(const struct FBlockyLua
 
 struct FBlockyLuaHandle UIfStatement::GetCondition(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.GetCondition");
 
@@ -11890,7 +11915,7 @@ struct FBlockyLuaHandle UIfStatement::GetCondition(const struct FBlockyLuaHandle
 
 struct FBlockyLuaHandle UIfStatement::CreateIfStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.IfStatement.CreateIfStatement");
 
@@ -11916,7 +11941,7 @@ struct FBlockyLuaHandle UIfStatement::CreateIfStatement()
 
 void UForLoopStatement::SetStepExpression(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& stepExpression)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.SetStepExpression");
 
@@ -11942,7 +11967,7 @@ void UForLoopStatement::SetStepExpression(const struct FBlockyLuaHandle& ptr, co
 
 void UForLoopStatement::SetLoopIndexName(const struct FBlockyLuaHandle& ptr, const struct FString& loopIndexName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.SetLoopIndexName");
 
@@ -11968,7 +11993,7 @@ void UForLoopStatement::SetLoopIndexName(const struct FBlockyLuaHandle& ptr, con
 
 void UForLoopStatement::SetLoopBody(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& loopBody)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.SetLoopBody");
 
@@ -11994,7 +12019,7 @@ void UForLoopStatement::SetLoopBody(const struct FBlockyLuaHandle& ptr, const st
 
 void UForLoopStatement::SetEndExpression(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& endExpression)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.SetEndExpression");
 
@@ -12020,7 +12045,7 @@ void UForLoopStatement::SetEndExpression(const struct FBlockyLuaHandle& ptr, con
 
 void UForLoopStatement::SetBeginExpression(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& beginExpression)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.SetBeginExpression");
 
@@ -12046,7 +12071,7 @@ void UForLoopStatement::SetBeginExpression(const struct FBlockyLuaHandle& ptr, c
 
 struct FBlockyLuaHandle UForLoopStatement::GetStepExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.GetStepExpression");
 
@@ -12073,7 +12098,7 @@ struct FBlockyLuaHandle UForLoopStatement::GetStepExpression(const struct FBlock
 
 struct FString UForLoopStatement::GetLoopIndexName(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.GetLoopIndexName");
 
@@ -12100,7 +12125,7 @@ struct FString UForLoopStatement::GetLoopIndexName(const struct FBlockyLuaHandle
 
 struct FBlockyLuaHandle UForLoopStatement::GetLoopBody(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.GetLoopBody");
 
@@ -12127,7 +12152,7 @@ struct FBlockyLuaHandle UForLoopStatement::GetLoopBody(const struct FBlockyLuaHa
 
 struct FBlockyLuaHandle UForLoopStatement::GetEndExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.GetEndExpression");
 
@@ -12154,7 +12179,7 @@ struct FBlockyLuaHandle UForLoopStatement::GetEndExpression(const struct FBlocky
 
 struct FBlockyLuaHandle UForLoopStatement::GetBeginExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.GetBeginExpression");
 
@@ -12180,7 +12205,7 @@ struct FBlockyLuaHandle UForLoopStatement::GetBeginExpression(const struct FBloc
 
 struct FBlockyLuaHandle UForLoopStatement::CreateForLoopStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForLoopStatement.CreateForLoopStatement");
 
@@ -12206,7 +12231,7 @@ struct FBlockyLuaHandle UForLoopStatement::CreateForLoopStatement()
 
 void UForeachLoopStatement::SetLoopItemName(const struct FBlockyLuaHandle& ptr, const struct FString& loopIndexName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.SetLoopItemName");
 
@@ -12232,7 +12257,7 @@ void UForeachLoopStatement::SetLoopItemName(const struct FBlockyLuaHandle& ptr, 
 
 void UForeachLoopStatement::SetLoopItemExp(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& loopItemExp)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.SetLoopItemExp");
 
@@ -12258,7 +12283,7 @@ void UForeachLoopStatement::SetLoopItemExp(const struct FBlockyLuaHandle& ptr, c
 
 void UForeachLoopStatement::SetLoopIndexName(const struct FBlockyLuaHandle& ptr, const struct FString& loopIndexName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.SetLoopIndexName");
 
@@ -12284,7 +12309,7 @@ void UForeachLoopStatement::SetLoopIndexName(const struct FBlockyLuaHandle& ptr,
 
 void UForeachLoopStatement::SetLoopBody(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& loopBody)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.SetLoopBody");
 
@@ -12310,7 +12335,7 @@ void UForeachLoopStatement::SetLoopBody(const struct FBlockyLuaHandle& ptr, cons
 
 struct FString UForeachLoopStatement::GetLoopItemName(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.GetLoopItemName");
 
@@ -12337,7 +12362,7 @@ struct FString UForeachLoopStatement::GetLoopItemName(const struct FBlockyLuaHan
 
 struct FBlockyLuaHandle UForeachLoopStatement::GetLoopItemExp(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.GetLoopItemExp");
 
@@ -12364,7 +12389,7 @@ struct FBlockyLuaHandle UForeachLoopStatement::GetLoopItemExp(const struct FBloc
 
 struct FString UForeachLoopStatement::GetLoopIndexName(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.GetLoopIndexName");
 
@@ -12391,7 +12416,7 @@ struct FString UForeachLoopStatement::GetLoopIndexName(const struct FBlockyLuaHa
 
 struct FBlockyLuaHandle UForeachLoopStatement::GetLoopBody(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.GetLoopBody");
 
@@ -12417,7 +12442,7 @@ struct FBlockyLuaHandle UForeachLoopStatement::GetLoopBody(const struct FBlockyL
 
 struct FBlockyLuaHandle UForeachLoopStatement::CreateForeachLoopStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ForeachLoopStatement.CreateForeachLoopStatement");
 
@@ -12443,7 +12468,7 @@ struct FBlockyLuaHandle UForeachLoopStatement::CreateForeachLoopStatement()
 
 void UWhileLoopStatement::SetLoopBody(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& loopBody)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.WhileLoopStatement.SetLoopBody");
 
@@ -12469,7 +12494,7 @@ void UWhileLoopStatement::SetLoopBody(const struct FBlockyLuaHandle& ptr, const 
 
 void UWhileLoopStatement::SetCondition(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Condition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.WhileLoopStatement.SetCondition");
 
@@ -12495,7 +12520,7 @@ void UWhileLoopStatement::SetCondition(const struct FBlockyLuaHandle& ptr, const
 
 struct FBlockyLuaHandle UWhileLoopStatement::GetLoopBody(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.WhileLoopStatement.GetLoopBody");
 
@@ -12522,7 +12547,7 @@ struct FBlockyLuaHandle UWhileLoopStatement::GetLoopBody(const struct FBlockyLua
 
 struct FBlockyLuaHandle UWhileLoopStatement::GetCondition(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.WhileLoopStatement.GetCondition");
 
@@ -12548,7 +12573,7 @@ struct FBlockyLuaHandle UWhileLoopStatement::GetCondition(const struct FBlockyLu
 
 struct FBlockyLuaHandle UWhileLoopStatement::CreateWhileLoopStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.WhileLoopStatement.CreateWhileLoopStatement");
 
@@ -12573,7 +12598,7 @@ struct FBlockyLuaHandle UWhileLoopStatement::CreateWhileLoopStatement()
 
 struct FBlockyLuaHandle UContinueStatement::CreateContinueStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ContinueStatement.CreateContinueStatement");
 
@@ -12598,7 +12623,7 @@ struct FBlockyLuaHandle UContinueStatement::CreateContinueStatement()
 
 struct FBlockyLuaHandle UBreakStatement::CreateBreakStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.BreakStatement.CreateBreakStatement");
 
@@ -12624,7 +12649,7 @@ struct FBlockyLuaHandle UBreakStatement::CreateBreakStatement()
 
 void UCommentStatement::SetNewLine(const struct FBlockyLuaHandle& ptr, bool newLine)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommentStatement.SetNewLine");
 
@@ -12650,7 +12675,7 @@ void UCommentStatement::SetNewLine(const struct FBlockyLuaHandle& ptr, bool newL
 
 void UCommentStatement::SetCommentString(const struct FBlockyLuaHandle& ptr, const struct FString& commentString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommentStatement.SetCommentString");
 
@@ -12676,7 +12701,7 @@ void UCommentStatement::SetCommentString(const struct FBlockyLuaHandle& ptr, con
 
 bool UCommentStatement::GetNewLine(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommentStatement.GetNewLine");
 
@@ -12703,7 +12728,7 @@ bool UCommentStatement::GetNewLine(const struct FBlockyLuaHandle& ptr)
 
 struct FString UCommentStatement::GetCommentString(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommentStatement.GetCommentString");
 
@@ -12729,7 +12754,7 @@ struct FString UCommentStatement::GetCommentString(const struct FBlockyLuaHandle
 
 struct FBlockyLuaHandle UCommentStatement::CreateCommentStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.CommentStatement.CreateCommentStatement");
 
@@ -12755,7 +12780,7 @@ struct FBlockyLuaHandle UCommentStatement::CreateCommentStatement()
 
 void UExpressionStatement::SetNextStatement(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& nextStatement)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExpressionStatement.SetNextStatement");
 
@@ -12781,7 +12806,7 @@ void UExpressionStatement::SetNextStatement(const struct FBlockyLuaHandle& ptr, 
 
 void UExpressionStatement::SetExpression(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& expression)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExpressionStatement.SetExpression");
 
@@ -12807,7 +12832,7 @@ void UExpressionStatement::SetExpression(const struct FBlockyLuaHandle& ptr, con
 
 struct FBlockyLuaHandle UExpressionStatement::GetNextStatement(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExpressionStatement.GetNextStatement");
 
@@ -12834,7 +12859,7 @@ struct FBlockyLuaHandle UExpressionStatement::GetNextStatement(const struct FBlo
 
 struct FBlockyLuaHandle UExpressionStatement::GetExpression(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExpressionStatement.GetExpression");
 
@@ -12860,7 +12885,7 @@ struct FBlockyLuaHandle UExpressionStatement::GetExpression(const struct FBlocky
 
 struct FBlockyLuaHandle UExpressionStatement::CreateExpressionStatement()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.ExpressionStatement.CreateExpressionStatement");
 
@@ -12886,7 +12911,7 @@ struct FBlockyLuaHandle UExpressionStatement::CreateExpressionStatement()
 
 void UStringAppendExpression::SetRight(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StringAppendExpression.SetRight");
 
@@ -12912,7 +12937,7 @@ void UStringAppendExpression::SetRight(const struct FBlockyLuaHandle& ptr, const
 
 void UStringAppendExpression::SetLeft(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StringAppendExpression.SetLeft");
 
@@ -12938,7 +12963,7 @@ void UStringAppendExpression::SetLeft(const struct FBlockyLuaHandle& ptr, const 
 
 void UStringAppendExpression::SetExtras(const struct FBlockyLuaHandle& ptr, TArray<struct FBlockyLuaHandle> Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StringAppendExpression.SetExtras");
 
@@ -12964,7 +12989,7 @@ void UStringAppendExpression::SetExtras(const struct FBlockyLuaHandle& ptr, TArr
 
 struct FBlockyLuaHandle UStringAppendExpression::GetRight(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StringAppendExpression.GetRight");
 
@@ -12991,7 +13016,7 @@ struct FBlockyLuaHandle UStringAppendExpression::GetRight(const struct FBlockyLu
 
 struct FBlockyLuaHandle UStringAppendExpression::GetLeft(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StringAppendExpression.GetLeft");
 
@@ -13018,7 +13043,7 @@ struct FBlockyLuaHandle UStringAppendExpression::GetLeft(const struct FBlockyLua
 
 TArray<struct FBlockyLuaHandle> UStringAppendExpression::GetExtras(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StringAppendExpression.GetExtras");
 
@@ -13044,7 +13069,7 @@ TArray<struct FBlockyLuaHandle> UStringAppendExpression::GetExtras(const struct 
 
 struct FBlockyLuaHandle UStringAppendExpression::CreateStringAppendExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.StringAppendExpression.CreateStringAppendExpression");
 
@@ -13070,7 +13095,7 @@ struct FBlockyLuaHandle UStringAppendExpression::CreateStringAppendExpression()
 
 void UTypeReference::SetTypeName(const struct FBlockyLuaHandle& Self, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.TypeReference.SetTypeName");
 
@@ -13095,7 +13120,7 @@ void UTypeReference::SetTypeName(const struct FBlockyLuaHandle& Self, const stru
 
 void UTypeReference::ReleaseTypeReference(const struct FBlockyLuaHandle& Self)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.TypeReference.ReleaseTypeReference");
 
@@ -13120,7 +13145,7 @@ void UTypeReference::ReleaseTypeReference(const struct FBlockyLuaHandle& Self)
 
 struct FString UTypeReference::GetTypeName(const struct FBlockyLuaHandle& Self)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.TypeReference.GetTypeName");
 
@@ -13147,7 +13172,7 @@ struct FString UTypeReference::GetTypeName(const struct FBlockyLuaHandle& Self)
 
 struct FBlockyLuaHandle UTypeReference::FindClass(const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.TypeReference.FindClass");
 
@@ -13176,7 +13201,7 @@ struct FBlockyLuaHandle UTypeReference::FindClass(const struct FString& Name)
 
 struct FBlockyLuaHandle UTypeReference::CreateTypeReference3(const struct FBlockyLuaHandle& klass, int numOfPointer, bool isRefer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.TypeReference.CreateTypeReference3");
 
@@ -13204,7 +13229,7 @@ struct FBlockyLuaHandle UTypeReference::CreateTypeReference3(const struct FBlock
 
 struct FBlockyLuaHandle UTypeReference::CreateTypeReference()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.TypeReference.CreateTypeReference");
 
@@ -13230,7 +13255,7 @@ struct FBlockyLuaHandle UTypeReference::CreateTypeReference()
 
 struct FBlockyLuaStub UTypeReference::AsStub(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.TypeReference.AsStub");
 
@@ -13257,7 +13282,7 @@ struct FBlockyLuaStub UTypeReference::AsStub(const struct FBlockyLuaHandle& ptr)
 
 void UUnaryOperatorExpression::SetValue(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.UnaryOperatorExpression.SetValue");
 
@@ -13279,11 +13304,11 @@ void UUnaryOperatorExpression::SetValue(const struct FBlockyLuaHandle& ptr, cons
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyUnaryOperation> Op                             (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBlockyUnaryOperation> Op                             (Parm, ZeroConstructor, IsPlainOldData)
 
-void UUnaryOperatorExpression::SetOperation(const struct FBlockyLuaHandle& ptr, TEnumAsByte<enum EBlockyUnaryOperation> Op)
+void UUnaryOperatorExpression::SetOperation(const struct FBlockyLuaHandle& ptr, TEnumAsByte<EBlockyUnaryOperation> Op)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.UnaryOperatorExpression.SetOperation");
 
@@ -13309,7 +13334,7 @@ void UUnaryOperatorExpression::SetOperation(const struct FBlockyLuaHandle& ptr, 
 
 struct FBlockyLuaHandle UUnaryOperatorExpression::GetValue(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.UnaryOperatorExpression.GetValue");
 
@@ -13332,11 +13357,11 @@ struct FBlockyLuaHandle UUnaryOperatorExpression::GetValue(const struct FBlockyL
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FBlockyLuaHandle        ptr                            (Parm)
-// TEnumAsByte<enum EBlockyUnaryOperation> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyUnaryOperation> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyUnaryOperation> UUnaryOperatorExpression::GetOperation(const struct FBlockyLuaHandle& ptr)
+TEnumAsByte<EBlockyUnaryOperation> UUnaryOperatorExpression::GetOperation(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.UnaryOperatorExpression.GetOperation");
 
@@ -13362,7 +13387,7 @@ TEnumAsByte<enum EBlockyUnaryOperation> UUnaryOperatorExpression::GetOperation(c
 
 struct FBlockyLuaHandle UUnaryOperatorExpression::CreateUnaryOperatorExpression()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.UnaryOperatorExpression.CreateUnaryOperatorExpression");
 
@@ -13387,7 +13412,7 @@ struct FBlockyLuaHandle UUnaryOperatorExpression::CreateUnaryOperatorExpression(
 
 void UVarDefiner::SetType(const struct FType& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VarDefiner.SetType");
 
@@ -13407,11 +13432,11 @@ void UVarDefiner::SetType(const struct FType& Value)
 // Function BlockyLuaCore.VarDefiner.GetVarTypeEnum
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<enum EBlockyVariableType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyVariableType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyVariableType> UVarDefiner::GetVarTypeEnum()
+TEnumAsByte<EBlockyVariableType> UVarDefiner::GetVarTypeEnum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VarDefiner.GetVarTypeEnum");
 
@@ -13432,11 +13457,11 @@ TEnumAsByte<enum EBlockyVariableType> UVarDefiner::GetVarTypeEnum()
 // Function BlockyLuaCore.VarDefiner.GetTypeEnum
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TEnumAsByte<enum EBlockyListItemType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<EBlockyListItemType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum EBlockyListItemType> UVarDefiner::GetTypeEnum()
+TEnumAsByte<EBlockyListItemType> UVarDefiner::GetTypeEnum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VarDefiner.GetTypeEnum");
 
@@ -13461,7 +13486,7 @@ TEnumAsByte<enum EBlockyListItemType> UVarDefiner::GetTypeEnum()
 
 struct FType UVarDefiner::GetType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VarDefiner.GetType");
 
@@ -13486,7 +13511,7 @@ struct FType UVarDefiner::GetType()
 
 struct FString UVarDefiner::GetFirstShowName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VarDefiner.GetFirstShowName");
 
@@ -13511,7 +13536,7 @@ struct FString UVarDefiner::GetFirstShowName()
 
 struct FString UVarDefiner::GetCurrentLocateShowName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VarDefiner.GetCurrentLocateShowName");
 
@@ -13537,7 +13562,7 @@ struct FString UVarDefiner::GetCurrentLocateShowName()
 
 void UVariableReferenceExpression::SetVariableName(const struct FBlockyLuaHandle& ptr, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableReferenceExpression.SetVariableName");
 
@@ -13563,7 +13588,7 @@ void UVariableReferenceExpression::SetVariableName(const struct FBlockyLuaHandle
 
 void UVariableReferenceExpression::SetHost(const struct FBlockyLuaHandle& ptr, const struct FBlockyLuaHandle& Host)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableReferenceExpression.SetHost");
 
@@ -13589,7 +13614,7 @@ void UVariableReferenceExpression::SetHost(const struct FBlockyLuaHandle& ptr, c
 
 struct FString UVariableReferenceExpression::GetVariableName(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableReferenceExpression.GetVariableName");
 
@@ -13616,7 +13641,7 @@ struct FString UVariableReferenceExpression::GetVariableName(const struct FBlock
 
 struct FBlockyLuaHandle UVariableReferenceExpression::GetHost(const struct FBlockyLuaHandle& ptr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableReferenceExpression.GetHost");
 
@@ -13644,7 +13669,7 @@ struct FBlockyLuaHandle UVariableReferenceExpression::GetHost(const struct FBloc
 
 struct FBlockyLuaHandle UVariableReferenceExpression::CreateVariableReferenceExpression2(const struct FBlockyLuaHandle& Host, const struct FString& VariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableReferenceExpression.CreateVariableReferenceExpression2");
 
@@ -13672,7 +13697,7 @@ struct FBlockyLuaHandle UVariableReferenceExpression::CreateVariableReferenceExp
 
 struct FBlockyLuaHandle UVariableReferenceExpression::CreateVariableReferenceExpression(const struct FString& VariableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function BlockyLuaCore.VariableReferenceExpression.CreateVariableReferenceExpression");
 

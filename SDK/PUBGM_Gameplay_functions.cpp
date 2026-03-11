@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Gameplay.UAECharacter.SetNetCullDistanceSquared
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void AUAECharacter::SetNetCullDistanceSquared(float fNetCullDistanceSquared)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.SetNetCullDistanceSquared");
 
@@ -39,7 +39,7 @@ void AUAECharacter::SetNetCullDistanceSquared(float fNetCullDistanceSquared)
 
 void AUAECharacter::SetMEnsure(bool bMValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.SetMEnsure");
 
@@ -63,7 +63,7 @@ void AUAECharacter::SetMEnsure(bool bMValue)
 
 void AUAECharacter::SetEnsure(bool bValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.SetEnsure");
 
@@ -88,7 +88,7 @@ void AUAECharacter::SetEnsure(bool bValue)
 
 void AUAECharacter::SendLuaDSToClient(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.SendLuaDSToClient");
 
@@ -114,7 +114,7 @@ void AUAECharacter::SendLuaDSToClient(int ID, TArray<unsigned char> Content)
 
 void AUAECharacter::RPC_LuaDSToClient(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.RPC_LuaDSToClient");
 
@@ -137,7 +137,7 @@ void AUAECharacter::RPC_LuaDSToClient(int ID, TArray<unsigned char> Content)
 
 void AUAECharacter::PostRep_PlayerUID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.PostRep_PlayerUID");
 
@@ -158,7 +158,7 @@ void AUAECharacter::PostRep_PlayerUID()
 
 void AUAECharacter::OnRep_UseWholeModel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.OnRep_UseWholeModel");
 
@@ -179,7 +179,7 @@ void AUAECharacter::OnRep_UseWholeModel()
 
 void AUAECharacter::OnRep_TeamID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.OnRep_TeamID");
 
@@ -200,7 +200,7 @@ void AUAECharacter::OnRep_TeamID()
 
 void AUAECharacter::OnRep_ResId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.OnRep_ResId");
 
@@ -221,7 +221,7 @@ void AUAECharacter::OnRep_ResId()
 
 void AUAECharacter::OnRep_PlayerUID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.OnRep_PlayerUID");
 
@@ -242,7 +242,7 @@ void AUAECharacter::OnRep_PlayerUID()
 
 void AUAECharacter::OnRep_PlayerKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.OnRep_PlayerKey");
 
@@ -263,7 +263,7 @@ void AUAECharacter::OnRep_PlayerKey()
 
 void AUAECharacter::OnRep_CampID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.OnRep_CampID");
 
@@ -286,7 +286,7 @@ void AUAECharacter::OnRep_CampID()
 
 bool AUAECharacter::IsDefaultCharType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.IsDefaultCharType");
 
@@ -311,7 +311,7 @@ bool AUAECharacter::IsDefaultCharType()
 
 int AUAECharacter::GetTeamId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetTeamId");
 
@@ -336,7 +336,7 @@ int AUAECharacter::GetTeamId()
 
 bool AUAECharacter::GetRepMEnsure()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetRepMEnsure");
 
@@ -361,7 +361,7 @@ bool AUAECharacter::GetRepMEnsure()
 
 bool AUAECharacter::GetRepEnsure()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetRepEnsure");
 
@@ -386,7 +386,7 @@ bool AUAECharacter::GetRepEnsure()
 
 struct FString AUAECharacter::GetPlayerKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetPlayerKey");
 
@@ -411,7 +411,7 @@ struct FString AUAECharacter::GetPlayerKey()
 
 int AUAECharacter::GetPhysicsType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetPhysicsType");
 
@@ -436,7 +436,7 @@ int AUAECharacter::GetPhysicsType()
 
 TArray<class UActorComponent*> AUAECharacter::GetNonSimulatedComponents_OnFighting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetNonSimulatedComponents_OnFighting");
 
@@ -461,7 +461,7 @@ TArray<class UActorComponent*> AUAECharacter::GetNonSimulatedComponents_OnFighti
 
 TArray<class UActorComponent*> AUAECharacter::GetNonSimulatedComponents_NonTeammates()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetNonSimulatedComponents_NonTeammates");
 
@@ -486,7 +486,7 @@ TArray<class UActorComponent*> AUAECharacter::GetNonSimulatedComponents_NonTeamm
 
 TArray<class UActorComponent*> AUAECharacter::GetNonSimulatedComponents()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetNonSimulatedComponents");
 
@@ -511,7 +511,7 @@ TArray<class UActorComponent*> AUAECharacter::GetNonSimulatedComponents()
 
 TArray<class UActorComponent*> AUAECharacter::GetNonDedicatedComponents()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetNonDedicatedComponents");
 
@@ -536,7 +536,7 @@ TArray<class UActorComponent*> AUAECharacter::GetNonDedicatedComponents()
 
 class UPrimitiveComponent* AUAECharacter::GetMovementBaseComponent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetMovementBaseComponent");
 
@@ -561,7 +561,7 @@ class UPrimitiveComponent* AUAECharacter::GetMovementBaseComponent()
 
 bool AUAECharacter::GetMEnsure()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetMEnsure");
 
@@ -586,7 +586,7 @@ bool AUAECharacter::GetMEnsure()
 
 bool AUAECharacter::GetEnsure()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetEnsure");
 
@@ -611,7 +611,7 @@ bool AUAECharacter::GetEnsure()
 
 int AUAECharacter::GetCampId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.GetCampId");
 
@@ -636,7 +636,7 @@ int AUAECharacter::GetCampId()
 
 void AUAECharacter::ClientAcknowledgeReconnection_3(uint32_t Token)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacter.ClientAcknowledgeReconnection_3");
 
@@ -658,7 +658,7 @@ void AUAECharacter::ClientAcknowledgeReconnection_3(uint32_t Token)
 
 void AUAEGameMode::WriteStatistics()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.WriteStatistics");
 
@@ -679,7 +679,7 @@ void AUAEGameMode::WriteStatistics()
 
 void AUAEGameMode::SyncPlayerNames()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SyncPlayerNames");
 
@@ -702,7 +702,7 @@ void AUAEGameMode::SyncPlayerNames()
 
 void AUAEGameMode::SyncNewCorpsData(TArray<struct FDSCorpsInfo> OutCorpsData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SyncNewCorpsData");
 
@@ -728,7 +728,7 @@ void AUAEGameMode::SyncNewCorpsData(TArray<struct FDSCorpsInfo> OutCorpsData)
 
 class APawn* AUAEGameMode::SpawnUAEPawnFor(class AController* NewPlayer, const struct FTransform& Trans)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SpawnUAEPawnFor");
 
@@ -756,7 +756,7 @@ class APawn* AUAEGameMode::SpawnUAEPawnFor(class AController* NewPlayer, const s
 
 void AUAEGameMode::SetVehicleReportEntry(uint32_t InUniqueID, const struct FVehicleReportEntry& InEntry)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SetVehicleReportEntry");
 
@@ -782,7 +782,7 @@ void AUAEGameMode::SetVehicleReportEntry(uint32_t InUniqueID, const struct FVehi
 
 void AUAEGameMode::SetPlayerOpenId(uint32_t InPlayerKey, const struct FString& InPlayerOpenID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SetPlayerOpenId");
 
@@ -807,7 +807,7 @@ void AUAEGameMode::SetPlayerOpenId(uint32_t InPlayerKey, const struct FString& I
 
 void AUAEGameMode::SetMaxWeaponReportNum(int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SetMaxWeaponReportNum");
 
@@ -832,7 +832,7 @@ void AUAEGameMode::SetMaxWeaponReportNum(int Num)
 
 void AUAEGameMode::SetKillerPlayerKey(class AController* VictimPlayer, uint32_t KillerPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SetKillerPlayerKey");
 
@@ -855,7 +855,7 @@ void AUAEGameMode::SetKillerPlayerKey(class AController* VictimPlayer, uint32_t 
 
 void AUAEGameMode::SetGameEndReportData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.SetGameEndReportData");
 
@@ -879,7 +879,7 @@ void AUAEGameMode::SetGameEndReportData()
 
 struct FGameModeTeamBattleResultData AUAEGameMode::RetrieveTeamBattleResultData(int TeamID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RetrieveTeamBattleResultData");
 
@@ -905,7 +905,7 @@ struct FGameModeTeamBattleResultData AUAEGameMode::RetrieveTeamBattleResultData(
 
 void AUAEGameMode::RetrieveBattleData(struct FBattleData* OutBattleData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RetrieveBattleData");
 
@@ -932,7 +932,7 @@ void AUAEGameMode::RetrieveBattleData(struct FBattleData* OutBattleData)
 
 void AUAEGameMode::RestartPlayerAtPlayerStart(class AController* NewPlayer, class AActor* StartSpot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RestartPlayerAtPlayerStart");
 
@@ -955,7 +955,7 @@ void AUAEGameMode::RestartPlayerAtPlayerStart(class AController* NewPlayer, clas
 
 void AUAEGameMode::ResetGameParamsFromGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.ResetGameParamsFromGameMode");
 
@@ -979,7 +979,7 @@ void AUAEGameMode::ResetGameParamsFromGameMode()
 
 void AUAEGameMode::Rescue(class APawn* RescueWho, class APawn* Hero)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.Rescue");
 
@@ -1005,7 +1005,7 @@ void AUAEGameMode::Rescue(class APawn* RescueWho, class APawn* Hero)
 
 void AUAEGameMode::RegisterItemGroupSpotsByTag(const struct FName& Tag, class UGroupSpotSceneComponent* GroupSpotComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RegisterItemGroupSpotsByTag");
 
@@ -1030,7 +1030,7 @@ void AUAEGameMode::RegisterItemGroupSpotsByTag(const struct FName& Tag, class UG
 
 void AUAEGameMode::RegisterItemGroupSpots(class UGroupSpotSceneComponent* GroupSpotComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RegisterItemGroupSpots");
 
@@ -1052,7 +1052,7 @@ void AUAEGameMode::RegisterItemGroupSpots(class UGroupSpotSceneComponent* GroupS
 
 void AUAEGameMode::RefreshWorldActiveRange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RefreshWorldActiveRange");
 
@@ -1076,7 +1076,7 @@ void AUAEGameMode::RefreshWorldActiveRange()
 
 void AUAEGameMode::RefreshWatchTeammates(class AUAEPlayerController* InController, int InTeamID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RefreshWatchTeammates");
 
@@ -1106,7 +1106,7 @@ void AUAEGameMode::RefreshWatchTeammates(class AUAEPlayerController* InControlle
 
 void AUAEGameMode::RefreshPlayerNames(uint32_t InPlayerKey, const struct FString& InPlayerName, int TeamID, bool IsLogin, uint64_t UID, int IdxInTeam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RefreshPlayerNames");
 
@@ -1135,7 +1135,7 @@ void AUAEGameMode::RefreshPlayerNames(uint32_t InPlayerKey, const struct FString
 
 int AUAEGameMode::RecoardAlivePlayerNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.RecoardAlivePlayerNum");
 
@@ -1161,7 +1161,7 @@ int AUAEGameMode::RecoardAlivePlayerNum()
 
 class APlayerController* AUAEGameMode::PreCreatePlayerController(uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.PreCreatePlayerController");
 
@@ -1185,7 +1185,7 @@ class APlayerController* AUAEGameMode::PreCreatePlayerController(uint32_t Player
 
 void AUAEGameMode::OnStandAloneGameEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnStandAloneGameEnd");
 
@@ -1206,7 +1206,7 @@ void AUAEGameMode::OnStandAloneGameEnd()
 
 void AUAEGameMode::OnReportNetworkData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnReportNetworkData");
 
@@ -1229,7 +1229,7 @@ void AUAEGameMode::OnReportNetworkData()
 
 void AUAEGameMode::OnPlayerFiring(uint32_t InPlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnPlayerFiring");
 
@@ -1253,7 +1253,7 @@ void AUAEGameMode::OnPlayerFiring(uint32_t InPlayerKey)
 
 void AUAEGameMode::OnPlayerControlDestroyEnd(uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnPlayerControlDestroyEnd");
 
@@ -1278,7 +1278,7 @@ void AUAEGameMode::OnPlayerControlDestroyEnd(uint32_t PlayerKey)
 
 void AUAEGameMode::OnPlayerBreathChange(uint32_t InPlayerKey, float InBreath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnPlayerBreathChange");
 
@@ -1303,7 +1303,7 @@ void AUAEGameMode::OnPlayerBreathChange(uint32_t InPlayerKey, float InBreath)
 
 void AUAEGameMode::OnObserverLogout(class AUAEPlayerController* InController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnObserverLogout");
 
@@ -1327,7 +1327,7 @@ void AUAEGameMode::OnObserverLogout(class AUAEPlayerController* InController)
 
 void AUAEGameMode::OnObserverLogin(class AUAEPlayerController* InController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnObserverLogin");
 
@@ -1351,7 +1351,7 @@ void AUAEGameMode::OnObserverLogin(class AUAEPlayerController* InController)
 
 void AUAEGameMode::OnMsg(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnMsg");
 
@@ -1376,7 +1376,7 @@ void AUAEGameMode::OnMsg(const struct FString& Msg)
 
 void AUAEGameMode::OnAirDropBoxLanded(int boxId, const struct FVector& Pos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnAirDropBoxLanded");
 
@@ -1401,7 +1401,7 @@ void AUAEGameMode::OnAirDropBoxLanded(int boxId, const struct FVector& Pos)
 
 void AUAEGameMode::OnAirDropBoxEmpty(int boxId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.OnAirDropBoxEmpty");
 
@@ -1427,7 +1427,7 @@ void AUAEGameMode::OnAirDropBoxEmpty(int boxId)
 
 void AUAEGameMode::NotifyPlayerExitWhenNotStarted(uint32_t PlayerKey, const struct FName& PlayerType, const struct FString& Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyPlayerExitWhenNotStarted");
 
@@ -1460,7 +1460,7 @@ void AUAEGameMode::NotifyPlayerExitWhenNotStarted(uint32_t PlayerKey, const stru
 
 void AUAEGameMode::NotifyPlayerExit(uint32_t PlayerKey, const struct FName& PlayerType, bool bDestroyPlayerController, bool bDestroyCharacter, bool bSendFailure, const struct FString& FailureMessage, const struct FName& ParamState, const struct FString& ParamReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyPlayerExit");
 
@@ -1492,7 +1492,7 @@ void AUAEGameMode::NotifyPlayerExit(uint32_t PlayerKey, const struct FName& Play
 
 void AUAEGameMode::NotifyPlayerAbleToExitSafely(uint32_t PlayerKey, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyPlayerAbleToExitSafely");
 
@@ -1517,7 +1517,7 @@ void AUAEGameMode::NotifyPlayerAbleToExitSafely(uint32_t PlayerKey, const struct
 
 void AUAEGameMode::NotifyGameModeParamsChanged(const struct FGameModeParams& GameModeParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyGameModeParamsChanged");
 
@@ -1542,7 +1542,7 @@ void AUAEGameMode::NotifyGameModeParamsChanged(const struct FGameModeParams& Gam
 
 void AUAEGameMode::NotifyGameModeLuckmate(int64_t MyUID, int64_t LuckmateUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyGameModeLuckmate");
 
@@ -1565,7 +1565,7 @@ void AUAEGameMode::NotifyGameModeLuckmate(int64_t MyUID, int64_t LuckmateUID)
 
 void AUAEGameMode::NotifyGameModeInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyGameModeInit");
 
@@ -1588,7 +1588,7 @@ void AUAEGameMode::NotifyGameModeInit()
 
 void AUAEGameMode::NotifyExistPlayerReEnter(uint32_t PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyExistPlayerReEnter");
 
@@ -1614,7 +1614,7 @@ void AUAEGameMode::NotifyExistPlayerReEnter(uint32_t PlayerKey)
 
 void AUAEGameMode::NotifyAIPlayerEnter(uint32_t PlayerKey, bool IsMLAI, bool bTeammateAI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyAIPlayerEnter");
 
@@ -1641,7 +1641,7 @@ void AUAEGameMode::NotifyAIPlayerEnter(uint32_t PlayerKey, bool IsMLAI, bool bTe
 
 void AUAEGameMode::NotifyAIDropInfo(int NewAI, const struct FDSAIDropInfo& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.NotifyAIDropInfo");
 
@@ -1671,7 +1671,7 @@ void AUAEGameMode::NotifyAIDropInfo(int NewAI, const struct FDSAIDropInfo& Info)
 
 float AUAEGameMode::ModifyVehicleDamage(float Damage, const struct FDamageEvent& DamageEvent, class AController* EventInstigator, class AActor* VictimVehicle, class AActor* DamageCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.ModifyVehicleDamage");
 
@@ -1706,7 +1706,7 @@ float AUAEGameMode::ModifyVehicleDamage(float Damage, const struct FDamageEvent&
 
 float AUAEGameMode::ModifyDamage(float Damage, const struct FDamageEvent& DamageEvent, class AController* EventInstigator, class AController* VictimController, class AActor* DamageCauser)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.ModifyDamage");
 
@@ -1740,7 +1740,7 @@ float AUAEGameMode::ModifyDamage(float Damage, const struct FDamageEvent& Damage
 
 void AUAEGameMode::Killed(class AController* Killer, class AController* VictimPlayer, class AActor* DamageCauser, class APawn* VictimPawn, const struct FDamageEvent& DamageEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.Killed");
 
@@ -1768,7 +1768,7 @@ void AUAEGameMode::Killed(class AController* Killer, class AController* VictimPl
 
 bool AUAEGameMode::IsStandAloneGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.IsStandAloneGameMode");
 
@@ -1794,7 +1794,7 @@ bool AUAEGameMode::IsStandAloneGameMode()
 
 bool AUAEGameMode::IsSatisfyGeneratorArea(const struct FVector& Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.IsSatisfyGeneratorArea");
 
@@ -1820,7 +1820,7 @@ bool AUAEGameMode::IsSatisfyGeneratorArea(const struct FVector& Location)
 
 bool AUAEGameMode::IsCollectingOBData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.IsCollectingOBData");
 
@@ -1843,7 +1843,7 @@ bool AUAEGameMode::IsCollectingOBData()
 
 void AUAEGameMode::InitWorldActiveRange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitWorldActiveRange");
 
@@ -1864,7 +1864,7 @@ void AUAEGameMode::InitWorldActiveRange()
 
 void AUAEGameMode::InitSeasonStatue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitSeasonStatue");
 
@@ -1885,7 +1885,7 @@ void AUAEGameMode::InitSeasonStatue()
 
 void AUAEGameMode::InitMissionBoard()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitMissionBoard");
 
@@ -1906,7 +1906,7 @@ void AUAEGameMode::InitMissionBoard()
 
 void AUAEGameMode::InitGenerator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitGenerator");
 
@@ -1927,7 +1927,7 @@ void AUAEGameMode::InitGenerator()
 
 void AUAEGameMode::InitGameParamsFromGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitGameParamsFromGameMode");
 
@@ -1948,7 +1948,7 @@ void AUAEGameMode::InitGameParamsFromGameMode()
 
 void AUAEGameMode::InitDynamicTriggers()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitDynamicTriggers");
 
@@ -1969,7 +1969,7 @@ void AUAEGameMode::InitDynamicTriggers()
 
 void AUAEGameMode::InitDynamicBuildingGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitDynamicBuildingGroups");
 
@@ -1990,7 +1990,7 @@ void AUAEGameMode::InitDynamicBuildingGroups()
 
 void AUAEGameMode::InitBornWithApple()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.InitBornWithApple");
 
@@ -2011,7 +2011,7 @@ void AUAEGameMode::InitBornWithApple()
 
 void AUAEGameMode::Heartbeat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.Heartbeat");
 
@@ -2035,7 +2035,7 @@ void AUAEGameMode::Heartbeat()
 
 bool AUAEGameMode::HasVehicleReportEntry(uint32_t InUniqueID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.HasVehicleReportEntry");
 
@@ -2061,7 +2061,7 @@ bool AUAEGameMode::HasVehicleReportEntry(uint32_t InUniqueID)
 
 bool AUAEGameMode::HasDynamicBuildingGroup()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.HasDynamicBuildingGroup");
 
@@ -2090,7 +2090,7 @@ bool AUAEGameMode::HasDynamicBuildingGroup()
 
 void AUAEGameMode::HandlePlayerPaintDecalResponse(uint32_t PlayerKey, const struct FName& PlayerType, int Result, int DecalId, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.HandlePlayerPaintDecalResponse");
 
@@ -2119,7 +2119,7 @@ void AUAEGameMode::HandlePlayerPaintDecalResponse(uint32_t PlayerKey, const stru
 
 void AUAEGameMode::GotoNearDeath(class AController* DamageInstigator, class APawn* VictimPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GotoNearDeath");
 
@@ -2145,7 +2145,7 @@ void AUAEGameMode::GotoNearDeath(class AController* DamageInstigator, class APaw
 
 struct FOnePlayerWeapon AUAEGameMode::GetWeaponReportByWeaponRecord(const struct FString& PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetWeaponReportByWeaponRecord");
 
@@ -2172,7 +2172,7 @@ struct FOnePlayerWeapon AUAEGameMode::GetWeaponReportByWeaponRecord(const struct
 
 float AUAEGameMode::GetWeaponDamageFromRecord(const struct FString& PlayerKey, int TargetWeaponType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetWeaponDamageFromRecord");
 
@@ -2199,7 +2199,7 @@ float AUAEGameMode::GetWeaponDamageFromRecord(const struct FString& PlayerKey, i
 
 struct FVehicleReportEntry AUAEGameMode::GetVehicleReportEntry(uint32_t InUniqueID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetVehicleReportEntry");
 
@@ -2225,7 +2225,7 @@ struct FVehicleReportEntry AUAEGameMode::GetVehicleReportEntry(uint32_t InUnique
 
 int AUAEGameMode::GetSurvivingTeamCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetSurvivingTeamCount");
 
@@ -2250,7 +2250,7 @@ int AUAEGameMode::GetSurvivingTeamCount()
 
 int AUAEGameMode::GetSurvivingCharacterCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetSurvivingCharacterCount");
 
@@ -2277,7 +2277,7 @@ int AUAEGameMode::GetSurvivingCharacterCount()
 
 float AUAEGameMode::GetRescueDuration(class AActor* WhoRescue, class AActor* RescueWho)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetRescueDuration");
 
@@ -2305,7 +2305,7 @@ float AUAEGameMode::GetRescueDuration(class AActor* WhoRescue, class AActor* Res
 
 int AUAEGameMode::GetPlayerTotalShootNum(const struct FString& PlayerKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetPlayerTotalShootNum");
 
@@ -2332,7 +2332,7 @@ int AUAEGameMode::GetPlayerTotalShootNum(const struct FString& PlayerKey)
 
 TArray<class AUAEPlayerState*> AUAEGameMode::GetPlayerStateListWithTeamID(int TeamID, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetPlayerStateListWithTeamID");
 
@@ -2360,7 +2360,7 @@ TArray<class AUAEPlayerState*> AUAEGameMode::GetPlayerStateListWithTeamID(int Te
 
 void AUAEGameMode::GetPlayerRealtimeVerifyInfo(uint32_t PlayerKey, struct FRealtimeVerifyInfo* RealtimeVerifyInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetPlayerRealtimeVerifyInfo");
 
@@ -2388,7 +2388,7 @@ void AUAEGameMode::GetPlayerRealtimeVerifyInfo(uint32_t PlayerKey, struct FRealt
 
 class AUAEPlayerController* AUAEGameMode::GetPlayerControllerWithUID(uint64_t UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetPlayerControllerWithUID");
 
@@ -2416,7 +2416,7 @@ class AUAEPlayerController* AUAEGameMode::GetPlayerControllerWithUID(uint64_t UI
 
 TArray<class AUAEPlayerController*> AUAEGameMode::GetPlayerControllerListWithTeamID(int TeamID, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetPlayerControllerListWithTeamID");
 
@@ -2443,7 +2443,7 @@ TArray<class AUAEPlayerController*> AUAEGameMode::GetPlayerControllerListWithTea
 
 void AUAEGameMode::GetPlayerAndRealAiNum(struct FHeartBeatData* Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetPlayerAndRealAiNum");
 
@@ -2469,7 +2469,7 @@ void AUAEGameMode::GetPlayerAndRealAiNum(struct FHeartBeatData* Data)
 
 TArray<class AUAEPlayerController*> AUAEGameMode::GetObserverControllerList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetObserverControllerList");
 
@@ -2494,7 +2494,7 @@ TArray<class AUAEPlayerController*> AUAEGameMode::GetObserverControllerList()
 
 void AUAEGameMode::GetMonsterNum(struct FHeartBeatData* Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetMonsterNum");
 
@@ -2520,7 +2520,7 @@ void AUAEGameMode::GetMonsterNum(struct FHeartBeatData* Data)
 
 int AUAEGameMode::GetMaxWeaponReportNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetMaxWeaponReportNum");
 
@@ -2545,7 +2545,7 @@ int AUAEGameMode::GetMaxWeaponReportNum()
 
 struct FVector AUAEGameMode::GetClassicPlaneDirection()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.GetClassicPlaneDirection");
 
@@ -2572,7 +2572,7 @@ struct FVector AUAEGameMode::GetClassicPlaneDirection()
 
 class AUAEPlayerState* AUAEGameMode::FindPlayerStateWithPlayerKey(uint32_t PlayerKey, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.FindPlayerStateWithPlayerKey");
 
@@ -2601,7 +2601,7 @@ class AUAEPlayerState* AUAEGameMode::FindPlayerStateWithPlayerKey(uint32_t Playe
 
 class AUAEPlayerController* AUAEGameMode::FindPlayerControllerWithPlayerKey(uint32_t PlayerKey, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.FindPlayerControllerWithPlayerKey");
 
@@ -2629,7 +2629,7 @@ class AUAEPlayerController* AUAEGameMode::FindPlayerControllerWithPlayerKey(uint
 
 class APlayerController* AUAEGameMode::FindPlayerControllerByUId(uint64_t UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.FindPlayerControllerByUId");
 
@@ -2657,7 +2657,7 @@ class APlayerController* AUAEGameMode::FindPlayerControllerByUId(uint64_t UID)
 
 class AController* AUAEGameMode::FindControllerWithPlayerKey(uint32_t PlayerKey, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.FindControllerWithPlayerKey");
 
@@ -2685,7 +2685,7 @@ class AController* AUAEGameMode::FindControllerWithPlayerKey(uint32_t PlayerKey,
 
 void AUAEGameMode::DestroyNoActiveWorldActor(struct FVector* Location, float* Radius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.DestroyNoActiveWorldActor");
 
@@ -2713,7 +2713,7 @@ void AUAEGameMode::DestroyNoActiveWorldActor(struct FVector* Location, float* Ra
 
 void AUAEGameMode::DestroyCharacterForPlayerController(class APlayerController* PC)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.DestroyCharacterForPlayerController");
 
@@ -2735,7 +2735,7 @@ void AUAEGameMode::DestroyCharacterForPlayerController(class APlayerController* 
 
 void AUAEGameMode::DestroyAllPickUpObjs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.DestroyAllPickUpObjs");
 
@@ -2756,7 +2756,7 @@ void AUAEGameMode::DestroyAllPickUpObjs()
 
 void AUAEGameMode::DeleteSeasonStatue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.DeleteSeasonStatue");
 
@@ -2777,7 +2777,7 @@ void AUAEGameMode::DeleteSeasonStatue()
 
 void AUAEGameMode::DeleteDynamicLoadItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.DeleteDynamicLoadItem");
 
@@ -2800,7 +2800,7 @@ void AUAEGameMode::DeleteDynamicLoadItem()
 
 void AUAEGameMode::DebugEnterFriendObserver(class AUAEPlayerController* InController)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.DebugEnterFriendObserver");
 
@@ -2824,7 +2824,7 @@ void AUAEGameMode::DebugEnterFriendObserver(class AUAEPlayerController* InContro
 
 void AUAEGameMode::CreateDynamicBuildingGroups(const struct FVector& Offset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.CreateDynamicBuildingGroups");
 
@@ -2850,7 +2850,7 @@ void AUAEGameMode::CreateDynamicBuildingGroups(const struct FVector& Offset)
 
 void AUAEGameMode::ChangeName(class AController* Controller, const struct FString& NewName, bool bNameChange)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.ChangeName");
 
@@ -2877,7 +2877,7 @@ void AUAEGameMode::ChangeName(class AController* Controller, const struct FStrin
 
 void AUAEGameMode::AddAirDropBox(int boxId, const struct FVector& Pos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameMode.AddAirDropBox");
 
@@ -2903,7 +2903,7 @@ void AUAEGameMode::AddAirDropBox(int boxId, const struct FVector& Pos)
 
 void AUAEGameState::SendLuaDSToClient(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameState.SendLuaDSToClient");
 
@@ -2929,7 +2929,7 @@ void AUAEGameState::SendLuaDSToClient(int ID, TArray<unsigned char> Content)
 
 void AUAEGameState::RPC_LuaDSToClient(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameState.RPC_LuaDSToClient");
 
@@ -2955,7 +2955,7 @@ void AUAEGameState::RPC_LuaDSToClient(int ID, TArray<unsigned char> Content)
 
 bool AUAEGameState::HasTimeIDSwitch(int TimeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameState.HasTimeIDSwitch");
 
@@ -2982,7 +2982,7 @@ bool AUAEGameState::HasTimeIDSwitch(int TimeID)
 
 bool AUAEGameState::CheckDSSwitchOpen(int SwitchId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameState.CheckDSSwitchOpen");
 
@@ -3009,7 +3009,7 @@ bool AUAEGameState::CheckDSSwitchOpen(int SwitchId)
 
 void AUAEPlayerState::SetRankAndPersonalRank(int TempRank, int TempPersonalRank)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.SetRankAndPersonalRank");
 
@@ -3034,7 +3034,7 @@ void AUAEPlayerState::SetRankAndPersonalRank(int TempRank, int TempPersonalRank)
 
 void AUAEPlayerState::SetGVMemberIDServerCall(int memberID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.SetGVMemberIDServerCall");
 
@@ -3058,7 +3058,7 @@ void AUAEPlayerState::SetGVMemberIDServerCall(int memberID)
 
 void AUAEPlayerState::SetGVMemberID(int memberID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.SetGVMemberID");
 
@@ -3084,7 +3084,7 @@ void AUAEPlayerState::SetGVMemberID(int memberID)
 
 void AUAEPlayerState::SetDeliveryResult(uint32_t InDeliverPlayerKey, bool bInSuccess, int EventTypeId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.SetDeliveryResult");
 
@@ -3111,7 +3111,7 @@ void AUAEPlayerState::SetDeliveryResult(uint32_t InDeliverPlayerKey, bool bInSuc
 
 void AUAEPlayerState::SendLuaDSToClient(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.SendLuaDSToClient");
 
@@ -3138,7 +3138,7 @@ void AUAEPlayerState::SendLuaDSToClient(int ID, TArray<unsigned char> Content)
 
 void AUAEPlayerState::RPC_ServerAddGeneralCount(int ID, int InCount, bool bReset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.RPC_ServerAddGeneralCount");
 
@@ -3165,7 +3165,7 @@ void AUAEPlayerState::RPC_ServerAddGeneralCount(int ID, int InCount, bool bReset
 
 void AUAEPlayerState::RPC_LuaDSToClient(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.RPC_LuaDSToClient");
 
@@ -3190,7 +3190,7 @@ void AUAEPlayerState::RPC_LuaDSToClient(int ID, TArray<unsigned char> Content)
 
 void AUAEPlayerState::RPC_ChangeOnlyTeamChat(int NewPreTeamChatState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.RPC_ChangeOnlyTeamChat");
 
@@ -3215,7 +3215,7 @@ void AUAEPlayerState::RPC_ChangeOnlyTeamChat(int NewPreTeamChatState)
 
 void AUAEPlayerState::ReportTaskExtInfo(int TaskId, const struct FString& ExtInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportTaskExtInfo");
 
@@ -3241,7 +3241,7 @@ void AUAEPlayerState::ReportTaskExtInfo(int TaskId, const struct FString& ExtInf
 
 void AUAEPlayerState::ReportTaskData(int TaskId, int process)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportTaskData");
 
@@ -3267,7 +3267,7 @@ void AUAEPlayerState::ReportTaskData(int TaskId, int process)
 
 void AUAEPlayerState::ReportSpecialCollection(int ItemId, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportSpecialCollection");
 
@@ -3292,7 +3292,7 @@ void AUAEPlayerState::ReportSpecialCollection(int ItemId, int Count)
 
 void AUAEPlayerState::ReportSecretAreaID(int SecretAreaID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportSecretAreaID");
 
@@ -3317,7 +3317,7 @@ void AUAEPlayerState::ReportSecretAreaID(int SecretAreaID)
 
 void AUAEPlayerState::ReportLikeTeammate(int64_t BeLikeUID, int LikeType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportLikeTeammate");
 
@@ -3342,7 +3342,7 @@ void AUAEPlayerState::ReportLikeTeammate(int64_t BeLikeUID, int LikeType)
 
 void AUAEPlayerState::ReportLikeSwitch(int SwitchSetting)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportLikeSwitch");
 
@@ -3366,7 +3366,7 @@ void AUAEPlayerState::ReportLikeSwitch(int SwitchSetting)
 
 void AUAEPlayerState::ReportLikeSelf(int LikeType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportLikeSelf");
 
@@ -3390,7 +3390,7 @@ void AUAEPlayerState::ReportLikeSelf(int LikeType)
 
 void AUAEPlayerState::ReportLandLocType(int TouchDownLocType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportLandLocType");
 
@@ -3414,7 +3414,7 @@ void AUAEPlayerState::ReportLandLocType(int TouchDownLocType)
 
 void AUAEPlayerState::ReportLandAreaList(TArray<int>* TouchDownAreaIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportLandAreaList");
 
@@ -3440,7 +3440,7 @@ void AUAEPlayerState::ReportLandAreaList(TArray<int>* TouchDownAreaIDs)
 
 void AUAEPlayerState::ReportLandArea(int TouchDownArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportLandArea");
 
@@ -3465,7 +3465,7 @@ void AUAEPlayerState::ReportLandArea(int TouchDownArea)
 
 void AUAEPlayerState::ReportLabelCheck(int TeammateUID, int Result)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ReportLabelCheck");
 
@@ -3490,7 +3490,7 @@ void AUAEPlayerState::ReportLabelCheck(int TeammateUID, int Result)
 
 void AUAEPlayerState::RecordUseHelicoper(uint32_t UseHelicoperId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.RecordUseHelicoper");
 
@@ -3512,7 +3512,7 @@ void AUAEPlayerState::RecordUseHelicoper(uint32_t UseHelicoperId)
 
 void AUAEPlayerState::OnRepCampIDBP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRepCampIDBP");
 
@@ -3532,7 +3532,7 @@ void AUAEPlayerState::OnRepCampIDBP()
 
 void AUAEPlayerState::OnRep_VeteranRecruitIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_VeteranRecruitIndex");
 
@@ -3553,7 +3553,7 @@ void AUAEPlayerState::OnRep_VeteranRecruitIndex()
 
 void AUAEPlayerState::OnRep_UpdateKillMonsterNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_UpdateKillMonsterNum");
 
@@ -3574,7 +3574,7 @@ void AUAEPlayerState::OnRep_UpdateKillMonsterNum()
 
 void AUAEPlayerState::OnRep_UID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_UID");
 
@@ -3595,7 +3595,7 @@ void AUAEPlayerState::OnRep_UID()
 
 void AUAEPlayerState::OnRep_TeamID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_TeamID");
 
@@ -3616,7 +3616,7 @@ void AUAEPlayerState::OnRep_TeamID()
 
 void AUAEPlayerState::OnRep_RescueTimesChange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_RescueTimesChange");
 
@@ -3637,7 +3637,7 @@ void AUAEPlayerState::OnRep_RescueTimesChange()
 
 void AUAEPlayerState::OnRep_PreTeamID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_PreTeamID");
 
@@ -3658,7 +3658,7 @@ void AUAEPlayerState::OnRep_PreTeamID()
 
 void AUAEPlayerState::OnRep_PlayerKillsChange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_PlayerKillsChange");
 
@@ -3679,7 +3679,7 @@ void AUAEPlayerState::OnRep_PlayerKillsChange()
 
 void AUAEPlayerState::OnRep_PlayerKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_PlayerKey");
 
@@ -3700,7 +3700,7 @@ void AUAEPlayerState::OnRep_PlayerKey()
 
 void AUAEPlayerState::OnRep_MLAIDisplayUID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_MLAIDisplayUID");
 
@@ -3721,7 +3721,7 @@ void AUAEPlayerState::OnRep_MLAIDisplayUID()
 
 void AUAEPlayerState::OnRep_MatchLabel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_MatchLabel");
 
@@ -3742,7 +3742,7 @@ void AUAEPlayerState::OnRep_MatchLabel()
 
 void AUAEPlayerState::OnRep_CollectItemRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_CollectItemRecord");
 
@@ -3763,7 +3763,7 @@ void AUAEPlayerState::OnRep_CollectItemRecord()
 
 void AUAEPlayerState::OnRep_CampID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_CampID");
 
@@ -3784,7 +3784,7 @@ void AUAEPlayerState::OnRep_CampID()
 
 void AUAEPlayerState::OnRep_bOnlyPreTeamChat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_bOnlyPreTeamChat");
 
@@ -3805,7 +3805,7 @@ void AUAEPlayerState::OnRep_bOnlyPreTeamChat()
 
 void AUAEPlayerState::OnRep_AliasInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnRep_AliasInfo");
 
@@ -3826,7 +3826,7 @@ void AUAEPlayerState::OnRep_AliasInfo()
 
 void AUAEPlayerState::OnClientVeteranRecruitIndexUpdated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.OnClientVeteranRecruitIndexUpdated");
 
@@ -3850,7 +3850,7 @@ void AUAEPlayerState::OnClientVeteranRecruitIndexUpdated()
 
 bool AUAEPlayerState::IsSpecialPickItemCollectionCompleted(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.IsSpecialPickItemCollectionCompleted");
 
@@ -3877,7 +3877,7 @@ bool AUAEPlayerState::IsSpecialPickItemCollectionCompleted(int ItemId)
 
 bool AUAEPlayerState::IsSpecialPickItem(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.IsSpecialPickItem");
 
@@ -3903,7 +3903,7 @@ bool AUAEPlayerState::IsSpecialPickItem(int ItemId)
 
 bool AUAEPlayerState::IsNearDeathDamageInfoValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.IsNearDeathDamageInfoValid");
 
@@ -3929,7 +3929,7 @@ bool AUAEPlayerState::IsNearDeathDamageInfoValid()
 
 bool AUAEPlayerState::IsItemForbidMerge(int ItemResId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.IsItemForbidMerge");
 
@@ -3955,7 +3955,7 @@ bool AUAEPlayerState::IsItemForbidMerge(int ItemResId)
 
 bool AUAEPlayerState::IsDeathDamageInfoValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.IsDeathDamageInfoValid");
 
@@ -3980,7 +3980,7 @@ bool AUAEPlayerState::IsDeathDamageInfoValid()
 
 struct FOnePlayerWeapon AUAEPlayerState::GetWeaponReportByWeaponRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetWeaponReportByWeaponRecord");
 
@@ -4004,7 +4004,7 @@ struct FOnePlayerWeapon AUAEPlayerState::GetWeaponReportByWeaponRecord()
 
 void AUAEPlayerState::GetWeaponRecordData(struct FOnePlayerWeapon* OutWeaponInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetWeaponRecordData");
 
@@ -4030,7 +4030,7 @@ void AUAEPlayerState::GetWeaponRecordData(struct FOnePlayerWeapon* OutWeaponInfo
 
 int AUAEPlayerState::GetVeteranPlayerLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetVeteranPlayerLevel");
 
@@ -4056,7 +4056,7 @@ int AUAEPlayerState::GetVeteranPlayerLevel()
 
 uint32_t AUAEPlayerState::GetUserIDByMemberID(int memberID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetUserIDByMemberID");
 
@@ -4082,7 +4082,7 @@ uint32_t AUAEPlayerState::GetUserIDByMemberID(int memberID)
 
 struct FString AUAEPlayerState::GetUIDString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetUIDString");
 
@@ -4107,7 +4107,7 @@ struct FString AUAEPlayerState::GetUIDString()
 
 struct FGameModeTeammateBattleResultData AUAEPlayerState::GetTeammateBattleResultData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetTeammateBattleResultData");
 
@@ -4132,7 +4132,7 @@ struct FGameModeTeammateBattleResultData AUAEPlayerState::GetTeammateBattleResul
 
 int AUAEPlayerState::GetTeamId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetTeamId");
 
@@ -4157,7 +4157,7 @@ int AUAEPlayerState::GetTeamId()
 
 int AUAEPlayerState::GetRank()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetRank");
 
@@ -4182,7 +4182,7 @@ int AUAEPlayerState::GetRank()
 
 int AUAEPlayerState::GetPlayerTotalShootNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetPlayerTotalShootNum");
 
@@ -4207,7 +4207,7 @@ int AUAEPlayerState::GetPlayerTotalShootNum()
 
 uint32_t AUAEPlayerState::GetPlayerKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetPlayerKey");
 
@@ -4232,7 +4232,7 @@ uint32_t AUAEPlayerState::GetPlayerKey()
 
 struct FGameModePlayerBattleResultData_SuperCold AUAEPlayerState::GetPlayerBattleResultData_SuperCold()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetPlayerBattleResultData_SuperCold");
 
@@ -4257,7 +4257,7 @@ struct FGameModePlayerBattleResultData_SuperCold AUAEPlayerState::GetPlayerBattl
 
 struct FGameModePlayerBattleResultData AUAEPlayerState::GetPlayerBattleResultData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetPlayerBattleResultData");
 
@@ -4282,7 +4282,7 @@ struct FGameModePlayerBattleResultData AUAEPlayerState::GetPlayerBattleResultDat
 
 EMentorPlayerType AUAEPlayerState::GetMentorPlayerType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.GetMentorPlayerType");
 
@@ -4305,7 +4305,7 @@ EMentorPlayerType AUAEPlayerState::GetMentorPlayerType()
 
 void AUAEPlayerState::ForceUpdateCampCharacterList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ForceUpdateCampCharacterList");
 
@@ -4326,7 +4326,7 @@ void AUAEPlayerState::ForceUpdateCampCharacterList()
 
 void AUAEPlayerState::CopyNearDeathDamageInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.CopyNearDeathDamageInfo");
 
@@ -4347,7 +4347,7 @@ void AUAEPlayerState::CopyNearDeathDamageInfo()
 
 void AUAEPlayerState::CopyDeathDamageInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.CopyDeathDamageInfo");
 
@@ -4368,7 +4368,7 @@ void AUAEPlayerState::CopyDeathDamageInfo()
 
 void AUAEPlayerState::ClearTlogData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ClearTlogData");
 
@@ -4389,7 +4389,7 @@ void AUAEPlayerState::ClearTlogData()
 
 void AUAEPlayerState::ClearKillNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ClearKillNum");
 
@@ -4413,7 +4413,7 @@ void AUAEPlayerState::ClearKillNum()
 
 void AUAEPlayerState::ChangeCollectItemRecord(int InItemID, bool InNewState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.ChangeCollectItemRecord");
 
@@ -4440,7 +4440,7 @@ void AUAEPlayerState::ChangeCollectItemRecord(int InItemID, bool InNewState)
 
 void AUAEPlayerState::AddGeneralTLogJustForDelegate(int ID, int DeltaCnt, int CurrValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.AddGeneralTLogJustForDelegate");
 
@@ -4468,7 +4468,7 @@ void AUAEPlayerState::AddGeneralTLogJustForDelegate(int ID, int DeltaCnt, int Cu
 
 void AUAEPlayerState::AddGeneralCount(int ID, int InCount, bool bReset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.AddGeneralCount");
 
@@ -4496,7 +4496,7 @@ void AUAEPlayerState::AddGeneralCount(int ID, int InCount, bool bReset)
 
 void AUAEPlayerState::AddEventCount(unsigned char EventID, int InCount, bool bReset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerState.AddEventCount");
 
@@ -4522,7 +4522,7 @@ void AUAEPlayerState::AddEventCount(unsigned char EventID, int InCount, bool bRe
 
 void UGroupSpotSceneComponent::SetGroupValid(bool Valid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GroupSpotSceneComponent.SetGroupValid");
 
@@ -4546,7 +4546,7 @@ void UGroupSpotSceneComponent::SetGroupValid(bool Valid)
 
 bool UGroupSpotSceneComponent::IsValidGroup()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GroupSpotSceneComponent.IsValidGroup");
 
@@ -4571,7 +4571,7 @@ bool UGroupSpotSceneComponent::IsValidGroup()
 
 int UGroupSpotSceneComponent::FindWorldCompositionID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GroupSpotSceneComponent.FindWorldCompositionID");
 
@@ -4594,7 +4594,7 @@ int UGroupSpotSceneComponent::FindWorldCompositionID()
 
 void UGroupSpotSceneComponent::DoPickUp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GroupSpotSceneComponent.DoPickUp");
 
@@ -4618,7 +4618,7 @@ void UGroupSpotSceneComponent::DoPickUp()
 
 void UItemGroupSpotSceneComponent::SetGroupProperty(class UItemGeneratorComponent* Generator, const struct FSpotGroupProperty& Property)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupSpotSceneComponent.SetGroupProperty");
 
@@ -4641,7 +4641,7 @@ void UItemGroupSpotSceneComponent::SetGroupProperty(class UItemGeneratorComponen
 
 void UItemGroupSpotSceneComponent::RepeatSpots()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupSpotSceneComponent.RepeatSpots");
 
@@ -4664,7 +4664,7 @@ void UItemGroupSpotSceneComponent::RepeatSpots()
 
 void UItemGroupSpotSceneComponent::RepeatSingleSpot(class UItemSpotSceneComponent* Spot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupSpotSceneComponent.RepeatSingleSpot");
 
@@ -4684,13 +4684,13 @@ void UItemGroupSpotSceneComponent::RepeatSingleSpot(class UItemSpotSceneComponen
 // Function Gameplay.ItemGroupSpotSceneComponent.RandomSpotByType
 // (Final, Native, Protected, HasOutParms)
 // Parameters:
-// TEnumAsByte<enum ESpotType>    SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESpotType>         SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<class UItemSpotSceneComponent*> AllSpots                       (Parm, OutParm, ZeroConstructor)
 // struct FSpotTypeProperty       Property                       (ConstParm, Parm, OutParm, ReferenceParm)
 
-void UItemGroupSpotSceneComponent::RandomSpotByType(TEnumAsByte<enum ESpotType> SpotType, const struct FSpotTypeProperty& Property, TArray<class UItemSpotSceneComponent*>* AllSpots)
+void UItemGroupSpotSceneComponent::RandomSpotByType(TEnumAsByte<ESpotType> SpotType, const struct FSpotTypeProperty& Property, TArray<class UItemSpotSceneComponent*>* AllSpots)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupSpotSceneComponent.RandomSpotByType");
 
@@ -4719,7 +4719,7 @@ void UItemGroupSpotSceneComponent::RandomSpotByType(TEnumAsByte<enum ESpotType> 
 
 void UItemGroupSpotSceneComponent::RandomSingleSpot(const struct FSpotTypeProperty& Property, TArray<class UItemSpotSceneComponent*>* Spots)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupSpotSceneComponent.RandomSingleSpot");
 
@@ -4747,7 +4747,7 @@ void UItemGroupSpotSceneComponent::RandomSingleSpot(const struct FSpotTypeProper
 
 float UItemGroupSpotSceneComponent::RandomRepeatGenerateItemCD(const struct FSpotGroupProperty& GroupProperty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupSpotSceneComponent.RandomRepeatGenerateItemCD");
 
@@ -4773,7 +4773,7 @@ float UItemGroupSpotSceneComponent::RandomRepeatGenerateItemCD(const struct FSpo
 
 void USpotSceneComponent::SetSpotValid(bool Valid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.SpotSceneComponent.SetSpotValid");
 
@@ -4804,7 +4804,7 @@ void USpotSceneComponent::SetSpotValid(bool Valid)
 
 bool USpotSceneComponent::LineTraceSingle(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, bool bTraceComplex, TArray<class AActor*> ActorsToIgnore, bool bIgnoreSelf, struct FHitResult* OutHit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.SpotSceneComponent.LineTraceSingle");
 
@@ -4838,7 +4838,7 @@ bool USpotSceneComponent::LineTraceSingle(class UObject* WorldContextObject, con
 
 bool USpotSceneComponent::IsSpotValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.SpotSceneComponent.IsSpotValid");
 
@@ -4864,7 +4864,7 @@ bool USpotSceneComponent::IsSpotValid()
 
 struct FString USpotSceneComponent::GetRandomCategory(TArray<struct FSpotWeight> SpotWeights)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.SpotSceneComponent.GetRandomCategory");
 
@@ -4890,7 +4890,7 @@ struct FString USpotSceneComponent::GetRandomCategory(TArray<struct FSpotWeight>
 
 bool USpotSceneComponent::GenerateSpot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.SpotSceneComponent.GenerateSpot");
 
@@ -4919,7 +4919,7 @@ bool USpotSceneComponent::GenerateSpot()
 
 class AActor* USpotSceneComponent::GenerateActor(class UClass* ActorClass, ESpawnActorCollisionHandlingMethod SpawnActorCollisionHandlingMethod, struct FVector* ActorLocation, struct FRotator* ActorRotator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.SpotSceneComponent.GenerateActor");
 
@@ -4948,15 +4948,15 @@ class AActor* USpotSceneComponent::GenerateActor(class UClass* ActorClass, ESpaw
 // (Final, Native, Public, HasOutParms)
 // Parameters:
 // int                            CompositionID                  (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ESpotGroupType> GroupType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESpotGroupType>    GroupType                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UItemGeneratorComponent* Generator                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // struct FSpotTypeProperty       Property                       (ConstParm, Parm, OutParm, ReferenceParm)
 // class UGroupSpotSceneComponent* Component                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // bool                           RepeatGenerateItem             (Parm, ZeroConstructor, IsPlainOldData)
 
-void UItemSpotSceneComponent::SetSpotProperty(int CompositionID, TEnumAsByte<enum ESpotGroupType> GroupType, class UItemGeneratorComponent* Generator, const struct FSpotTypeProperty& Property, class UGroupSpotSceneComponent* Component, bool RepeatGenerateItem)
+void UItemSpotSceneComponent::SetSpotProperty(int CompositionID, TEnumAsByte<ESpotGroupType> GroupType, class UItemGeneratorComponent* Generator, const struct FSpotTypeProperty& Property, class UGroupSpotSceneComponent* Component, bool RepeatGenerateItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemSpotSceneComponent.SetSpotProperty");
 
@@ -4985,7 +4985,7 @@ void UItemSpotSceneComponent::SetSpotProperty(int CompositionID, TEnumAsByte<enu
 
 void UItemSpotSceneComponent::RepeatSpotProperty(const struct FSpotTypeProperty& Property)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemSpotSceneComponent.RepeatSpotProperty");
 
@@ -5009,7 +5009,7 @@ void UItemSpotSceneComponent::RepeatSpotProperty(const struct FSpotTypeProperty&
 
 bool UItemSpotSceneComponent::GenerateSpot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemSpotSceneComponent.GenerateSpot");
 
@@ -5034,7 +5034,7 @@ bool UItemSpotSceneComponent::GenerateSpot()
 
 void UItemSpotSceneComponent::GenerateItems(TArray<struct FItemGenerateSpawnClass>* AllItemClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemSpotSceneComponent.GenerateItems");
 
@@ -5061,7 +5061,7 @@ void UItemSpotSceneComponent::GenerateItems(TArray<struct FItemGenerateSpawnClas
 
 void UItemSpotSceneComponent::DoPickUp(const struct FString& ItemValue, const struct FString& ItemCategory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemSpotSceneComponent.DoPickUp");
 
@@ -5086,7 +5086,7 @@ void UItemSpotSceneComponent::DoPickUp(const struct FString& ItemValue, const st
 
 int UItemSpotSceneComponent::CountCacheItemValeCategory()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemSpotSceneComponent.CountCacheItemValeCategory");
 
@@ -5109,7 +5109,7 @@ int UItemSpotSceneComponent::CountCacheItemValeCategory()
 
 void UItemSpotSceneComponent::ClearCacheItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemSpotSceneComponent.ClearCacheItems");
 
@@ -5132,7 +5132,7 @@ void UItemSpotSceneComponent::ClearCacheItems()
 
 void AUAEHouseActor::RecordBreakWindowTlog(class APlayerController* EventInstigator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEHouseActor.RecordBreakWindowTlog");
 
@@ -5154,7 +5154,7 @@ void AUAEHouseActor::RecordBreakWindowTlog(class APlayerController* EventInstiga
 
 void AUAEHouseActor::ProcessWindowCreateList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEHouseActor.ProcessWindowCreateList");
 
@@ -5175,7 +5175,7 @@ void AUAEHouseActor::ProcessWindowCreateList()
 
 void AUAEHouseActor::OnRep_WindowList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEHouseActor.OnRep_WindowList");
 
@@ -5196,7 +5196,7 @@ void AUAEHouseActor::OnRep_WindowList()
 
 void AUAEHouseActor::ClearWindowList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEHouseActor.ClearWindowList");
 
@@ -5219,7 +5219,7 @@ void AUAEHouseActor::ClearWindowList()
 
 void AUAEHouseActor::BroadcastWindowRepDataUpdated(const struct FUAEWindowRepData& InRepData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEHouseActor.BroadcastWindowRepDataUpdated");
 
@@ -5244,7 +5244,7 @@ void AUAEHouseActor::BroadcastWindowRepDataUpdated(const struct FUAEWindowRepDat
 
 class UGameplayDelegates* UUAEGameplayStatics::GetGameBridge(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayStatics.GetGameBridge");
 
@@ -5271,7 +5271,7 @@ class UGameplayDelegates* UUAEGameplayStatics::GetGameBridge(class UObject* Worl
 
 void AUAEProjectile::WorkAsBuffApplierEvent(const struct FString& BuffName, class APawn* BuffTarget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.WorkAsBuffApplierEvent");
 
@@ -5294,7 +5294,7 @@ void AUAEProjectile::WorkAsBuffApplierEvent(const struct FString& BuffName, clas
 
 void AUAEProjectile::TimeoutExplodeMulticast_CPP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.TimeoutExplodeMulticast_CPP");
 
@@ -5315,7 +5315,7 @@ void AUAEProjectile::TimeoutExplodeMulticast_CPP()
 
 void AUAEProjectile::TimeoutExplodeMulticast_BPEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.TimeoutExplodeMulticast_BPEvent");
 
@@ -5338,11 +5338,11 @@ void AUAEProjectile::TimeoutExplodeMulticast_BPEvent()
 // struct FVector                 StandOffset                    (Parm, IsPlainOldData)
 // struct FVector                 CrouchOffset                   (Parm, IsPlainOldData)
 // struct FVector                 ProneOffset                    (Parm, IsPlainOldData)
-// TEnumAsByte<enum ECharacterPoseType> PrevoisOwnerPose               (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECharacterPoseType> PrevoisOwnerPose               (Parm, ZeroConstructor, IsPlainOldData)
 
-void AUAEProjectile::SetActorInitialRelativeOffset(const struct FVector& Offset, const struct FVector& StandOffset, const struct FVector& CrouchOffset, const struct FVector& ProneOffset, TEnumAsByte<enum ECharacterPoseType> PrevoisOwnerPose)
+void AUAEProjectile::SetActorInitialRelativeOffset(const struct FVector& Offset, const struct FVector& StandOffset, const struct FVector& CrouchOffset, const struct FVector& ProneOffset, TEnumAsByte<ECharacterPoseType> PrevoisOwnerPose)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.SetActorInitialRelativeOffset");
 
@@ -5368,7 +5368,7 @@ void AUAEProjectile::SetActorInitialRelativeOffset(const struct FVector& Offset,
 
 void AUAEProjectile::ServerNotifyGroundEventOnClient()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.ServerNotifyGroundEventOnClient");
 
@@ -5388,7 +5388,7 @@ void AUAEProjectile::ServerNotifyGroundEventOnClient()
 
 void AUAEProjectile::OnRep_IsServerAlreadyExplodedCpp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.OnRep_IsServerAlreadyExplodedCpp");
 
@@ -5409,7 +5409,7 @@ void AUAEProjectile::OnRep_IsServerAlreadyExplodedCpp()
 
 void AUAEProjectile::OnRep_IsGroundedOnServerCpp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.OnRep_IsGroundedOnServerCpp");
 
@@ -5430,7 +5430,7 @@ void AUAEProjectile::OnRep_IsGroundedOnServerCpp()
 
 void AUAEProjectile::OnProjectileStopOnServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.OnProjectileStopOnServer");
 
@@ -5451,7 +5451,7 @@ void AUAEProjectile::OnProjectileStopOnServer()
 
 void AUAEProjectile::OnProjectileStopOnClient()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.OnProjectileStopOnClient");
 
@@ -5472,7 +5472,7 @@ void AUAEProjectile::OnProjectileStopOnClient()
 
 void AUAEProjectile::IsServerAlreadyExplodedCppNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.IsServerAlreadyExplodedCppNotify");
 
@@ -5495,7 +5495,7 @@ void AUAEProjectile::IsServerAlreadyExplodedCppNotify()
 
 bool AUAEProjectile::IsOwnerAutomous()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.IsOwnerAutomous");
 
@@ -5521,7 +5521,7 @@ bool AUAEProjectile::IsOwnerAutomous()
 
 void AUAEProjectile::GlassDetect(const struct FVector& Start, const struct FVector& End)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.GlassDetect");
 
@@ -5546,7 +5546,7 @@ void AUAEProjectile::GlassDetect(const struct FVector& Start, const struct FVect
 
 float AUAEProjectile::GetRemainingEffectTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.GetRemainingEffectTime");
 
@@ -5571,7 +5571,7 @@ float AUAEProjectile::GetRemainingEffectTime()
 
 void AUAEProjectile::ChangeGrenadeMarkerState(bool bNewState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.ChangeGrenadeMarkerState");
 
@@ -5593,7 +5593,7 @@ void AUAEProjectile::ChangeGrenadeMarkerState(bool bNewState)
 
 void AUAEProjectile::CallExplode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.CallExplode");
 
@@ -5614,7 +5614,7 @@ void AUAEProjectile::CallExplode()
 
 void AUAEProjectile::BroadcastClientExplode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEProjectile.BroadcastClientExplode");
 
@@ -5637,7 +5637,7 @@ void AUAEProjectile::BroadcastClientExplode()
 
 bool AUAEPlayerController::UseingWeaponScheme()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.UseingWeaponScheme");
 
@@ -5660,7 +5660,7 @@ bool AUAEPlayerController::UseingWeaponScheme()
 
 void AUAEPlayerController::TestShowLongTimeNoOperation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.TestShowLongTimeNoOperation");
 
@@ -5685,7 +5685,7 @@ void AUAEPlayerController::TestShowLongTimeNoOperation()
 
 void AUAEPlayerController::TestCastUIMsgWithPara(const struct FString& strMsg, const struct FString& module, int TestID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.TestCastUIMsgWithPara");
 
@@ -5711,7 +5711,7 @@ void AUAEPlayerController::TestCastUIMsgWithPara(const struct FString& strMsg, c
 
 void AUAEPlayerController::SyncDailyTaskStoreInfo(TArray<struct FDailyTaskStoreInfo> NewDailyTaskStoreList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SyncDailyTaskStoreInfo");
 
@@ -5735,7 +5735,7 @@ void AUAEPlayerController::SyncDailyTaskStoreInfo(TArray<struct FDailyTaskStoreI
 
 void AUAEPlayerController::SetUsedSimulationCVar(bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SetUsedSimulationCVar");
 
@@ -5760,7 +5760,7 @@ void AUAEPlayerController::SetUsedSimulationCVar(bool Value)
 
 void AUAEPlayerController::SetTargetMsgReceiveDelegate(class UGameInstance* InGameInstance, const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SetTargetMsgReceiveDelegate");
 
@@ -5785,7 +5785,7 @@ void AUAEPlayerController::SetTargetMsgReceiveDelegate(class UGameInstance* InGa
 
 void AUAEPlayerController::SetPanels(TArray<class UUAEUserWidget*> panels)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SetPanels");
 
@@ -5809,7 +5809,7 @@ void AUAEPlayerController::SetPanels(TArray<class UUAEUserWidget*> panels)
 
 void AUAEPlayerController::SetIsInPetSpectator(bool inIsInPetSpectator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SetIsInPetSpectator");
 
@@ -5833,7 +5833,7 @@ void AUAEPlayerController::SetIsInPetSpectator(bool inIsInPetSpectator)
 
 void AUAEPlayerController::SetDSMsgReceiveDelegate(const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SetDSMsgReceiveDelegate");
 
@@ -5858,7 +5858,7 @@ void AUAEPlayerController::SetDSMsgReceiveDelegate(const struct FScriptDelegate&
 
 void AUAEPlayerController::SetClientMsgReceiveDelegate(class UGameInstance* InGameInstance, const struct FScriptDelegate& InDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SetClientMsgReceiveDelegate");
 
@@ -5884,7 +5884,7 @@ void AUAEPlayerController::SetClientMsgReceiveDelegate(class UGameInstance* InGa
 
 void AUAEPlayerController::ServerUpdateLevelVisibility(const struct FName& PackageName, bool bIsVisible)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerUpdateLevelVisibility");
 
@@ -5909,7 +5909,7 @@ void AUAEPlayerController::ServerUpdateLevelVisibility(const struct FName& Packa
 
 void AUAEPlayerController::ServerSetVoiceId(int VoiceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerSetVoiceId");
 
@@ -5933,7 +5933,7 @@ void AUAEPlayerController::ServerSetVoiceId(int VoiceID)
 
 void AUAEPlayerController::ServerRepListDispatch(class UObject* InObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerRepListDispatch");
 
@@ -5957,7 +5957,7 @@ void AUAEPlayerController::ServerRepListDispatch(class UObject* InObject)
 
 void AUAEPlayerController::ServerRepComponentsDispatch(class UObject* InObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerRepComponentsDispatch");
 
@@ -5979,7 +5979,7 @@ void AUAEPlayerController::ServerRepComponentsDispatch(class UObject* InObject)
 
 void AUAEPlayerController::ServerKickSelf()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerKickSelf");
 
@@ -6002,7 +6002,7 @@ void AUAEPlayerController::ServerKickSelf()
 
 void AUAEPlayerController::ServerGotoSpectating(class APawn* ViewTarget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerGotoSpectating");
 
@@ -6024,7 +6024,7 @@ void AUAEPlayerController::ServerGotoSpectating(class APawn* ViewTarget)
 
 void AUAEPlayerController::ServerExitGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerExitGame");
 
@@ -6047,7 +6047,7 @@ void AUAEPlayerController::ServerExitGame()
 
 void AUAEPlayerController::ServerAcknowledgeReconnection_2(uint32_t Token)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ServerAcknowledgeReconnection_2");
 
@@ -6071,7 +6071,7 @@ void AUAEPlayerController::ServerAcknowledgeReconnection_2(uint32_t Token)
 
 void AUAEPlayerController::SendNetObjectPathNameMappingHashToServer(uint32_t VersionHash)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SendNetObjectPathNameMappingHashToServer");
 
@@ -6097,7 +6097,7 @@ void AUAEPlayerController::SendNetObjectPathNameMappingHashToServer(uint32_t Ver
 
 void AUAEPlayerController::SendLuaDSToClient(int ID, TArray<unsigned char> Content, bool IsUnreliable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SendLuaDSToClient");
 
@@ -6125,7 +6125,7 @@ void AUAEPlayerController::SendLuaDSToClient(int ID, TArray<unsigned char> Conte
 
 void AUAEPlayerController::SendLuaClientToDS(int ID, TArray<unsigned char> Content, bool IsUnreliable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.SendLuaClientToDS");
 
@@ -6153,7 +6153,7 @@ void AUAEPlayerController::SendLuaClientToDS(int ID, TArray<unsigned char> Conte
 
 void AUAEPlayerController::RPC_Server_SyncClientNetInfo(int InLoss, int OutLoss, int InNetworkType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.RPC_Server_SyncClientNetInfo");
 
@@ -6187,7 +6187,7 @@ void AUAEPlayerController::RPC_Server_SyncClientNetInfo(int InLoss, int OutLoss,
 
 void AUAEPlayerController::RPC_Server_ReportClientNetInfo(int AvgPing, int MaxPing, int MinPing, int LostPackRate, int AvgNoOutlier, int StdNoOutlier, int NumNoOutlier, int InLoss, int OutLoss)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.RPC_Server_ReportClientNetInfo");
 
@@ -6220,7 +6220,7 @@ void AUAEPlayerController::RPC_Server_ReportClientNetInfo(int AvgPing, int MaxPi
 
 void AUAEPlayerController::RPC_LuaDSToClient_NR(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.RPC_LuaDSToClient_NR");
 
@@ -6246,7 +6246,7 @@ void AUAEPlayerController::RPC_LuaDSToClient_NR(int ID, TArray<unsigned char> Co
 
 void AUAEPlayerController::RPC_LuaDSToClient(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.RPC_LuaDSToClient");
 
@@ -6272,7 +6272,7 @@ void AUAEPlayerController::RPC_LuaDSToClient(int ID, TArray<unsigned char> Conte
 
 void AUAEPlayerController::RPC_LuaClientToDS_NR(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.RPC_LuaClientToDS_NR");
 
@@ -6298,7 +6298,7 @@ void AUAEPlayerController::RPC_LuaClientToDS_NR(int ID, TArray<unsigned char> Co
 
 void AUAEPlayerController::RPC_LuaClientToDS(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.RPC_LuaClientToDS");
 
@@ -6321,7 +6321,7 @@ void AUAEPlayerController::RPC_LuaClientToDS(int ID, TArray<unsigned char> Conte
 
 void AUAEPlayerController::Respawn()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.Respawn");
 
@@ -6342,7 +6342,7 @@ void AUAEPlayerController::Respawn()
 
 void AUAEPlayerController::ResetUsedSimulationCVar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ResetUsedSimulationCVar");
 
@@ -6363,7 +6363,7 @@ void AUAEPlayerController::ResetUsedSimulationCVar()
 
 void AUAEPlayerController::ReleaseInGameUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ReleaseInGameUI");
 
@@ -6384,7 +6384,7 @@ void AUAEPlayerController::ReleaseInGameUI()
 
 void AUAEPlayerController::ReceivePostLoginInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ReceivePostLoginInit");
 
@@ -6404,7 +6404,7 @@ void AUAEPlayerController::ReceivePostLoginInit()
 
 void AUAEPlayerController::PrintStatistics()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.PrintStatistics");
 
@@ -6425,7 +6425,7 @@ void AUAEPlayerController::PrintStatistics()
 
 void AUAEPlayerController::PlayerStartIDReceived()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.PlayerStartIDReceived");
 
@@ -6446,7 +6446,7 @@ void AUAEPlayerController::PlayerStartIDReceived()
 
 void AUAEPlayerController::OnRep_WeaponAvatarDataList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_WeaponAvatarDataList");
 
@@ -6467,7 +6467,7 @@ void AUAEPlayerController::OnRep_WeaponAvatarDataList()
 
 void AUAEPlayerController::OnRep_UsingOodleNetworkDicPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_UsingOodleNetworkDicPath");
 
@@ -6488,7 +6488,7 @@ void AUAEPlayerController::OnRep_UsingOodleNetworkDicPath()
 
 void AUAEPlayerController::OnRep_UsingNetObjectPathNameMappingCSV()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_UsingNetObjectPathNameMappingCSV");
 
@@ -6509,7 +6509,7 @@ void AUAEPlayerController::OnRep_UsingNetObjectPathNameMappingCSV()
 
 void AUAEPlayerController::OnRep_UsedSimulation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_UsedSimulation");
 
@@ -6530,7 +6530,7 @@ void AUAEPlayerController::OnRep_UsedSimulation()
 
 void AUAEPlayerController::OnRep_PveLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_PveLevel");
 
@@ -6551,7 +6551,7 @@ void AUAEPlayerController::OnRep_PveLevel()
 
 void AUAEPlayerController::OnRep_PlayerOBInfoList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_PlayerOBInfoList");
 
@@ -6572,7 +6572,7 @@ void AUAEPlayerController::OnRep_PlayerOBInfoList()
 
 void AUAEPlayerController::OnRep_PlayerKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_PlayerKey");
 
@@ -6593,7 +6593,7 @@ void AUAEPlayerController::OnRep_PlayerKey()
 
 void AUAEPlayerController::OnRep_LobbyWatchInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_LobbyWatchInfo");
 
@@ -6614,7 +6614,7 @@ void AUAEPlayerController::OnRep_LobbyWatchInfo()
 
 void AUAEPlayerController::OnRep_LastGameResultTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_LastGameResultTime");
 
@@ -6635,7 +6635,7 @@ void AUAEPlayerController::OnRep_LastGameResultTime()
 
 void AUAEPlayerController::OnRep_IsSpectatingEnemy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_IsSpectatingEnemy");
 
@@ -6656,7 +6656,7 @@ void AUAEPlayerController::OnRep_IsSpectatingEnemy()
 
 void AUAEPlayerController::OnRep_IsSpectating()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_IsSpectating");
 
@@ -6677,7 +6677,7 @@ void AUAEPlayerController::OnRep_IsSpectating()
 
 void AUAEPlayerController::OnRep_IsObserver()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_IsObserver");
 
@@ -6698,7 +6698,7 @@ void AUAEPlayerController::OnRep_IsObserver()
 
 void AUAEPlayerController::OnRep_InitialWeaponSchemeInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_InitialWeaponSchemeInfo");
 
@@ -6719,7 +6719,7 @@ void AUAEPlayerController::OnRep_InitialWeaponSchemeInfo()
 
 void AUAEPlayerController::OnRep_InitialEquipmentAvatar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_InitialEquipmentAvatar");
 
@@ -6740,7 +6740,7 @@ void AUAEPlayerController::OnRep_InitialEquipmentAvatar()
 
 void AUAEPlayerController::OnRep_InitialEffectItemInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_InitialEffectItemInfo");
 
@@ -6761,7 +6761,7 @@ void AUAEPlayerController::OnRep_InitialEffectItemInfo()
 
 void AUAEPlayerController::OnRep_InitialConsumableAvatar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_InitialConsumableAvatar");
 
@@ -6782,7 +6782,7 @@ void AUAEPlayerController::OnRep_InitialConsumableAvatar()
 
 void AUAEPlayerController::OnRep_FriendObservers()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_FriendObservers");
 
@@ -6803,7 +6803,7 @@ void AUAEPlayerController::OnRep_FriendObservers()
 
 void AUAEPlayerController::OnRep_CurWeaponSchemeIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_CurWeaponSchemeIndex");
 
@@ -6824,7 +6824,7 @@ void AUAEPlayerController::OnRep_CurWeaponSchemeIndex()
 
 void AUAEPlayerController::OnRep_bRoomOwner()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnRep_bRoomOwner");
 
@@ -6845,7 +6845,7 @@ void AUAEPlayerController::OnRep_bRoomOwner()
 
 void AUAEPlayerController::OnPlayerKeyRepDelegate__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Gameplay.UAEPlayerController.OnPlayerKeyRepDelegate__DelegateSignature");
 
@@ -6865,7 +6865,7 @@ void AUAEPlayerController::OnPlayerKeyRepDelegate__DelegateSignature()
 
 void AUAEPlayerController::OnNetObjectPathNameMappingTableAsyncLoad()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnNetObjectPathNameMappingTableAsyncLoad");
 
@@ -6890,7 +6890,7 @@ void AUAEPlayerController::OnNetObjectPathNameMappingTableAsyncLoad()
 
 void AUAEPlayerController::OnMemberVoice(int Member, int status, const struct FString& UserInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.OnMemberVoice");
 
@@ -6914,7 +6914,7 @@ void AUAEPlayerController::OnMemberVoice(int Member, int status, const struct FS
 
 void AUAEPlayerController::NotifyEnterBattle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.NotifyEnterBattle");
 
@@ -6938,7 +6938,7 @@ void AUAEPlayerController::NotifyEnterBattle()
 
 void AUAEPlayerController::LuaDSToClient_Implementation(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.LuaDSToClient_Implementation");
 
@@ -6964,7 +6964,7 @@ void AUAEPlayerController::LuaDSToClient_Implementation(int ID, TArray<unsigned 
 
 void AUAEPlayerController::LuaClientToDS_Implementation(int ID, TArray<unsigned char> Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.LuaClientToDS_Implementation");
 
@@ -6987,7 +6987,7 @@ void AUAEPlayerController::LuaClientToDS_Implementation(int ID, TArray<unsigned 
 
 void AUAEPlayerController::KickSelf()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.KickSelf");
 
@@ -7010,7 +7010,7 @@ void AUAEPlayerController::KickSelf()
 
 bool AUAEPlayerController::IsTeammateSpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsTeammateSpectator");
 
@@ -7035,7 +7035,7 @@ bool AUAEPlayerController::IsTeammateSpectator()
 
 bool AUAEPlayerController::IsSpectatorOrDemoPlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsSpectatorOrDemoPlayer");
 
@@ -7060,7 +7060,7 @@ bool AUAEPlayerController::IsSpectatorOrDemoPlayer()
 
 bool AUAEPlayerController::IsSpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsSpectator");
 
@@ -7085,7 +7085,7 @@ bool AUAEPlayerController::IsSpectator()
 
 bool AUAEPlayerController::IsRoomMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsRoomMode");
 
@@ -7110,7 +7110,7 @@ bool AUAEPlayerController::IsRoomMode()
 
 bool AUAEPlayerController::IsPureSpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsPureSpectator");
 
@@ -7135,7 +7135,7 @@ bool AUAEPlayerController::IsPureSpectator()
 
 bool AUAEPlayerController::IsObserver()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsObserver");
 
@@ -7160,7 +7160,7 @@ bool AUAEPlayerController::IsObserver()
 
 bool AUAEPlayerController::IsInSpectatingEnemy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsInSpectatingEnemy");
 
@@ -7185,7 +7185,7 @@ bool AUAEPlayerController::IsInSpectatingEnemy()
 
 bool AUAEPlayerController::IsInSpectating()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsInSpectating");
 
@@ -7210,7 +7210,7 @@ bool AUAEPlayerController::IsInSpectating()
 
 bool AUAEPlayerController::IsInPetSpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsInPetSpectator");
 
@@ -7235,7 +7235,7 @@ bool AUAEPlayerController::IsInPetSpectator()
 
 bool AUAEPlayerController::IsHawkEyeSpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsHawkEyeSpectator");
 
@@ -7260,7 +7260,7 @@ bool AUAEPlayerController::IsHawkEyeSpectator()
 
 bool AUAEPlayerController::IsFriendOrEnemySpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsFriendOrEnemySpectator");
 
@@ -7285,7 +7285,7 @@ bool AUAEPlayerController::IsFriendOrEnemySpectator()
 
 bool AUAEPlayerController::IsFriendObserver()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsFriendObserver");
 
@@ -7310,7 +7310,7 @@ bool AUAEPlayerController::IsFriendObserver()
 
 bool AUAEPlayerController::IsFriendNotHawkEyeObserver()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsFriendNotHawkEyeObserver");
 
@@ -7335,7 +7335,7 @@ bool AUAEPlayerController::IsFriendNotHawkEyeObserver()
 
 bool AUAEPlayerController::IsExited()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsExited");
 
@@ -7360,7 +7360,7 @@ bool AUAEPlayerController::IsExited()
 
 bool AUAEPlayerController::IsDemoRecSpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsDemoRecSpectator");
 
@@ -7385,7 +7385,7 @@ bool AUAEPlayerController::IsDemoRecSpectator()
 
 bool AUAEPlayerController::IsDemoPlaySpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsDemoPlaySpectator");
 
@@ -7410,7 +7410,7 @@ bool AUAEPlayerController::IsDemoPlaySpectator()
 
 bool AUAEPlayerController::IsDemoPlayGlobalObserver()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsDemoPlayGlobalObserver");
 
@@ -7435,7 +7435,7 @@ bool AUAEPlayerController::IsDemoPlayGlobalObserver()
 
 bool AUAEPlayerController::IsDeathSpectator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.IsDeathSpectator");
 
@@ -7460,7 +7460,7 @@ bool AUAEPlayerController::IsDeathSpectator()
 
 void AUAEPlayerController::InitWithPlayerParams(const struct FGameModePlayerParams& Params)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitWithPlayerParams");
 
@@ -7482,7 +7482,7 @@ void AUAEPlayerController::InitWithPlayerParams(const struct FGameModePlayerPara
 
 void AUAEPlayerController::InitWeaponAvatarItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitWeaponAvatarItems");
 
@@ -7503,7 +7503,7 @@ void AUAEPlayerController::InitWeaponAvatarItems()
 
 void AUAEPlayerController::InitVehicleMusicList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitVehicleMusicList");
 
@@ -7524,7 +7524,7 @@ void AUAEPlayerController::InitVehicleMusicList()
 
 void AUAEPlayerController::InitVehicleAvatarSkinList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitVehicleAvatarSkinList");
 
@@ -7545,7 +7545,7 @@ void AUAEPlayerController::InitVehicleAvatarSkinList()
 
 void AUAEPlayerController::InitVehicleAvatarList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitVehicleAvatarList");
 
@@ -7566,7 +7566,7 @@ void AUAEPlayerController::InitVehicleAvatarList()
 
 void AUAEPlayerController::InitVehicleAdvanceAvatarList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitVehicleAdvanceAvatarList");
 
@@ -7587,7 +7587,7 @@ void AUAEPlayerController::InitVehicleAdvanceAvatarList()
 
 void AUAEPlayerController::InitIngameUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitIngameUI");
 
@@ -7610,7 +7610,7 @@ void AUAEPlayerController::InitIngameUI()
 
 void AUAEPlayerController::InitGrenadeAvatarList(bool ReInitial)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.InitGrenadeAvatarList");
 
@@ -7635,7 +7635,7 @@ void AUAEPlayerController::InitGrenadeAvatarList(bool ReInitial)
 
 bool AUAEPlayerController::HasAnySpectatorReplayFlag(uint32_t InFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.HasAnySpectatorReplayFlag");
 
@@ -7662,7 +7662,7 @@ bool AUAEPlayerController::HasAnySpectatorReplayFlag(uint32_t InFlag)
 
 int AUAEPlayerController::GotoSpectating(int PlayerID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GotoSpectating");
 
@@ -7690,7 +7690,7 @@ int AUAEPlayerController::GotoSpectating(int PlayerID)
 
 bool AUAEPlayerController::GetWeaponPandentReflect(int wraponID, int* pendantID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetWeaponPandentReflect");
 
@@ -7720,7 +7720,7 @@ bool AUAEPlayerController::GetWeaponPandentReflect(int wraponID, int* pendantID)
 
 int AUAEPlayerController::GetWeaponAvatarItemId(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetWeaponAvatarItemId");
 
@@ -7746,7 +7746,7 @@ int AUAEPlayerController::GetWeaponAvatarItemId(int ID)
 
 void AUAEPlayerController::GetVisibleLevelsLoadedName(TArray<struct FString>* VisibleLevels)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetVisibleLevelsLoadedName");
 
@@ -7772,7 +7772,7 @@ void AUAEPlayerController::GetVisibleLevelsLoadedName(TArray<struct FString>* Vi
 
 struct FString AUAEPlayerController::GetLobbyWatchedPlayerKeyAsString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetLobbyWatchedPlayerKeyAsString");
 
@@ -7798,7 +7798,7 @@ struct FString AUAEPlayerController::GetLobbyWatchedPlayerKeyAsString()
 
 struct FPlayerEffectItemInfo AUAEPlayerController::GetEffectItemBySlot(unsigned char SlotIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetEffectItemBySlot");
 
@@ -7825,7 +7825,7 @@ struct FPlayerEffectItemInfo AUAEPlayerController::GetEffectItemBySlot(unsigned 
 
 struct FDailyTaskStoreInfo AUAEPlayerController::GetDailyTaskStoreInfoByTaskId(int TaskId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetDailyTaskStoreInfoByTaskId");
 
@@ -7851,7 +7851,7 @@ struct FDailyTaskStoreInfo AUAEPlayerController::GetDailyTaskStoreInfoByTaskId(i
 
 int AUAEPlayerController::GetCurrentWeaponSchemeMainSlotItemId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetCurrentWeaponSchemeMainSlotItemId");
 
@@ -7876,7 +7876,7 @@ int AUAEPlayerController::GetCurrentWeaponSchemeMainSlotItemId()
 
 struct FGameModePlayerPetInfo AUAEPlayerController::GetCurrentPetInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetCurrentPetInfo");
 
@@ -7901,7 +7901,7 @@ struct FGameModePlayerPetInfo AUAEPlayerController::GetCurrentPetInfo()
 
 uint32_t AUAEPlayerController::GetCurrentOBPlayerKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetCurrentOBPlayerKey");
 
@@ -7926,7 +7926,7 @@ uint32_t AUAEPlayerController::GetCurrentOBPlayerKey()
 
 int AUAEPlayerController::GetCurrentOBPlayerInfoIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GetCurrentOBPlayerInfoIndex");
 
@@ -7953,7 +7953,7 @@ int AUAEPlayerController::GetCurrentOBPlayerInfoIndex()
 
 int AUAEPlayerController::GenerateKillBroadcastItemID(int ClothAvatarID, int PlayerUID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.GenerateKillBroadcastItemID");
 
@@ -7977,7 +7977,7 @@ int AUAEPlayerController::GenerateKillBroadcastItemID(int ClothAvatarID, int Pla
 
 void AUAEPlayerController::ForceNetReady()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ForceNetReady");
 
@@ -7998,7 +7998,7 @@ void AUAEPlayerController::ForceNetReady()
 
 void AUAEPlayerController::ExitGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ExitGame");
 
@@ -8019,7 +8019,7 @@ void AUAEPlayerController::ExitGame()
 
 void AUAEPlayerController::ExhaustCPU()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ExhaustCPU");
 
@@ -8042,7 +8042,7 @@ void AUAEPlayerController::ExhaustCPU()
 
 void AUAEPlayerController::ExecDSCommand(const struct FString& DSCommand)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ExecDSCommand");
 
@@ -8067,7 +8067,7 @@ void AUAEPlayerController::ExecDSCommand(const struct FString& DSCommand)
 
 void AUAEPlayerController::ExcuteIntRecord(const struct FString& Key, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ExcuteIntRecord");
 
@@ -8093,7 +8093,7 @@ void AUAEPlayerController::ExcuteIntRecord(const struct FString& Key, int Count)
 
 void AUAEPlayerController::ExcuteIntCounterRecord(const struct FString& Key, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ExcuteIntCounterRecord");
 
@@ -8116,7 +8116,7 @@ void AUAEPlayerController::ExcuteIntCounterRecord(const struct FString& Key, int
 
 void AUAEPlayerController::EnableInGameUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.EnableInGameUI");
 
@@ -8137,7 +8137,7 @@ void AUAEPlayerController::EnableInGameUI()
 
 void AUAEPlayerController::DumpUAENetActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DumpUAENetActors");
 
@@ -8158,7 +8158,7 @@ void AUAEPlayerController::DumpUAENetActors()
 
 void AUAEPlayerController::DumpRegions()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DumpRegions");
 
@@ -8179,7 +8179,7 @@ void AUAEPlayerController::DumpRegions()
 
 void AUAEPlayerController::DumpNetActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DumpNetActors");
 
@@ -8200,7 +8200,7 @@ void AUAEPlayerController::DumpNetActors()
 
 void AUAEPlayerController::DumpCharacters()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DumpCharacters");
 
@@ -8221,7 +8221,7 @@ void AUAEPlayerController::DumpCharacters()
 
 void AUAEPlayerController::DumpAllUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DumpAllUI");
 
@@ -8242,7 +8242,7 @@ void AUAEPlayerController::DumpAllUI()
 
 void AUAEPlayerController::DumpAllObjects()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DumpAllObjects");
 
@@ -8263,7 +8263,7 @@ void AUAEPlayerController::DumpAllObjects()
 
 void AUAEPlayerController::DumpAllActors()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DumpAllActors");
 
@@ -8284,7 +8284,7 @@ void AUAEPlayerController::DumpAllActors()
 
 void AUAEPlayerController::DoCrash()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DoCrash");
 
@@ -8305,7 +8305,7 @@ void AUAEPlayerController::DoCrash()
 
 void AUAEPlayerController::DisableInGameUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DisableInGameUI");
 
@@ -8326,7 +8326,7 @@ void AUAEPlayerController::DisableInGameUI()
 
 void AUAEPlayerController::DelayEnterBattleCheck()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DelayEnterBattleCheck");
 
@@ -8349,7 +8349,7 @@ void AUAEPlayerController::DelayEnterBattleCheck()
 
 void AUAEPlayerController::DealWithPickUpFailed(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.DealWithPickUpFailed");
 
@@ -8371,7 +8371,7 @@ void AUAEPlayerController::DealWithPickUpFailed(const struct FItemDefineID& Defi
 
 void AUAEPlayerController::ClientShowTeammateEscapeNotice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientShowTeammateEscapeNotice");
 
@@ -8392,7 +8392,7 @@ void AUAEPlayerController::ClientShowTeammateEscapeNotice()
 
 void AUAEPlayerController::ClientSendOodleNetworkAckToServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientSendOodleNetworkAckToServer");
 
@@ -8419,7 +8419,7 @@ void AUAEPlayerController::ClientSendOodleNetworkAckToServer()
 
 void AUAEPlayerController::ClientRPC_CastUIMsgWithStrings(const struct FString& strMsg, const struct FString& module, int TipsID, const struct FString& Param1, const struct FString& Param2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientRPC_CastUIMsgWithStrings");
 
@@ -8449,7 +8449,7 @@ void AUAEPlayerController::ClientRPC_CastUIMsgWithStrings(const struct FString& 
 
 void AUAEPlayerController::ClientRPC_CastUIMsgParams(const struct FString& strMsg, const struct FString& module, int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientRPC_CastUIMsgParams");
 
@@ -8476,7 +8476,7 @@ void AUAEPlayerController::ClientRPC_CastUIMsgParams(const struct FString& strMs
 
 void AUAEPlayerController::ClientRPC_CastUIMsg(const struct FString& strMsg, const struct FString& module)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientRPC_CastUIMsg");
 
@@ -8501,7 +8501,7 @@ void AUAEPlayerController::ClientRPC_CastUIMsg(const struct FString& strMsg, con
 
 void AUAEPlayerController::ClientRepListReq(class UObject* InObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientRepListReq");
 
@@ -8525,7 +8525,7 @@ void AUAEPlayerController::ClientRepListReq(class UObject* InObject)
 
 void AUAEPlayerController::ClientRepComponentsReq(class UObject* InObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientRepComponentsReq");
 
@@ -8547,7 +8547,7 @@ void AUAEPlayerController::ClientRepComponentsReq(class UObject* InObject)
 
 void AUAEPlayerController::ClientInitPlayerOBInfoButton()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientInitPlayerOBInfoButton");
 
@@ -8568,7 +8568,7 @@ void AUAEPlayerController::ClientInitPlayerOBInfoButton()
 
 void AUAEPlayerController::ClientBroadcastRespawnComplete()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientBroadcastRespawnComplete");
 
@@ -8589,7 +8589,7 @@ void AUAEPlayerController::ClientBroadcastRespawnComplete()
 
 void AUAEPlayerController::ClientBroadcastReconnectionSuccessful()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientBroadcastReconnectionSuccessful");
 
@@ -8612,7 +8612,7 @@ void AUAEPlayerController::ClientBroadcastReconnectionSuccessful()
 
 void AUAEPlayerController::ClientAcknowledgeReconnection_4(uint32_t Token)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.ClientAcknowledgeReconnection_4");
 
@@ -8634,7 +8634,7 @@ void AUAEPlayerController::ClientAcknowledgeReconnection_4(uint32_t Token)
 
 void AUAEPlayerController::CheckPlayerOBInfoButtonInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.CheckPlayerOBInfoButtonInit");
 
@@ -8658,7 +8658,7 @@ void AUAEPlayerController::CheckPlayerOBInfoButtonInit()
 
 bool AUAEPlayerController::CheckAcknowledgedPawn(class APawn* InPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.CheckAcknowledgedPawn");
 
@@ -8685,7 +8685,7 @@ bool AUAEPlayerController::CheckAcknowledgedPawn(class APawn* InPawn)
 
 void AUAEPlayerController::CastUIMsg(const struct FString& strMsg, const struct FString& module)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.CastUIMsg");
 
@@ -8711,7 +8711,7 @@ void AUAEPlayerController::CastUIMsg(const struct FString& strMsg, const struct 
 
 EPickUpCheckResult AUAEPlayerController::CanPickUpItem(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.CanPickUpItem");
 
@@ -8740,7 +8740,7 @@ EPickUpCheckResult AUAEPlayerController::CanPickUpItem(const struct FItemDefineI
 
 void AUAEPlayerController::BroadcastUIMessage(const struct FString& MessageName, int TipsIDOrType, const struct FString& Param1, const struct FString& Param2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.BroadcastUIMessage");
 
@@ -8765,7 +8765,7 @@ void AUAEPlayerController::BroadcastUIMessage(const struct FString& MessageName,
 
 void AUAEPlayerController::BroadcastRespawnComplete()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEPlayerController.BroadcastRespawnComplete");
 
@@ -8791,7 +8791,7 @@ void AUAEPlayerController::BroadcastRespawnComplete()
 
 bool UBackpackComponent::UseItem(const struct FItemDefineID& DefineID, const struct FBattleItemUseTarget& Target, EBattleItemUseReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.UseItem");
 
@@ -8821,7 +8821,7 @@ bool UBackpackComponent::UseItem(const struct FItemDefineID& DefineID, const str
 
 float UBackpackComponent::UpdateStoreAreaOccupiedCapacity(EItemStoreArea InItemStoreArea, float* StoreAreaOccupiedCapacity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.UpdateStoreAreaOccupiedCapacity");
 
@@ -8848,7 +8848,7 @@ float UBackpackComponent::UpdateStoreAreaOccupiedCapacity(EItemStoreArea InItemS
 
 void UBackpackComponent::UpdateOccupiedCapacity()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.UpdateOccupiedCapacity");
 
@@ -8871,7 +8871,7 @@ void UBackpackComponent::UpdateOccupiedCapacity()
 
 float UBackpackComponent::UpdateCapacity()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.UpdateCapacity");
 
@@ -8894,7 +8894,7 @@ float UBackpackComponent::UpdateCapacity()
 
 void UBackpackComponent::UnlockUpdateItemListReceive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.UnlockUpdateItemListReceive");
 
@@ -8918,7 +8918,7 @@ void UBackpackComponent::UnlockUpdateItemListReceive()
 
 void UBackpackComponent::TryMergeItemHandles(const struct FItemDefineID& DefineID, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.TryMergeItemHandles");
 
@@ -8946,7 +8946,7 @@ void UBackpackComponent::TryMergeItemHandles(const struct FItemDefineID& DefineI
 
 int UBackpackComponent::TakeItem(const struct FItemDefineID& DefineID, int Count, bool bCallHandleDrop)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.TakeItem");
 
@@ -8976,7 +8976,7 @@ int UBackpackComponent::TakeItem(const struct FItemDefineID& DefineID, int Count
 
 bool UBackpackComponent::SwapItem(const struct FItemDefineID& DefineID1, const struct FItemDefineID& DefineID2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.SwapItem");
 
@@ -9003,7 +9003,7 @@ bool UBackpackComponent::SwapItem(const struct FItemDefineID& DefineID1, const s
 
 void UBackpackComponent::SetForceAutoEquipAim(bool bInAutoEquipAim)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.SetForceAutoEquipAim");
 
@@ -9027,7 +9027,7 @@ void UBackpackComponent::SetForceAutoEquipAim(bool bInAutoEquipAim)
 
 void UBackpackComponent::SetChangeWeaponSchemeState(bool bInIsChangeWeaponScheme)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.SetChangeWeaponSchemeState");
 
@@ -9051,7 +9051,7 @@ void UBackpackComponent::SetChangeWeaponSchemeState(bool bInIsChangeWeaponScheme
 
 void UBackpackComponent::ServerSetShowBounty(bool bInShowBounty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ServerSetShowBounty");
 
@@ -9075,7 +9075,7 @@ void UBackpackComponent::ServerSetShowBounty(bool bInShowBounty)
 
 void UBackpackComponent::ServerSetDropMeelWeapon(bool NewValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ServerSetDropMeelWeapon");
 
@@ -9102,7 +9102,7 @@ void UBackpackComponent::ServerSetDropMeelWeapon(bool NewValue)
 
 void UBackpackComponent::ServerSetCustomAccessories(int WeaponItemId, int Index, int ItemId, bool bIsSetOrRemove)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ServerSetCustomAccessories");
 
@@ -9130,7 +9130,7 @@ void UBackpackComponent::ServerSetCustomAccessories(int WeaponItemId, int Index,
 
 void UBackpackComponent::ServerEnableItem(const struct FItemDefineID& DefineID, bool bUse)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ServerEnableItem");
 
@@ -9155,7 +9155,7 @@ void UBackpackComponent::ServerEnableItem(const struct FItemDefineID& DefineID, 
 
 void UBackpackComponent::RPC_Multicast_AllItem(const struct FIncNetArray& Items)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.RPC_Multicast_AllItem");
 
@@ -9182,7 +9182,7 @@ void UBackpackComponent::RPC_Multicast_AllItem(const struct FIncNetArray& Items)
 
 int UBackpackComponent::ReturnItem(const struct FItemDefineID& DefineID, int Count, bool bCallHandlePickup)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ReturnItem");
 
@@ -9211,7 +9211,7 @@ int UBackpackComponent::ReturnItem(const struct FItemDefineID& DefineID, int Cou
 
 bool UBackpackComponent::RemoveItemHandle(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.RemoveItemHandle");
 
@@ -9235,7 +9235,7 @@ bool UBackpackComponent::RemoveItemHandle(const struct FItemDefineID& DefineID)
 
 void UBackpackComponent::ReceiveItemList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ReceiveItemList");
 
@@ -9256,7 +9256,7 @@ void UBackpackComponent::ReceiveItemList()
 
 void UBackpackComponent::ReceiveCapacity()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ReceiveCapacity");
 
@@ -9282,7 +9282,7 @@ void UBackpackComponent::ReceiveCapacity()
 
 int UBackpackComponent::PreCheckCanPickupBagAvatar(class UBattleItemHandleBase* NewHandle, class UBattleItemHandleBase* OldHandle, EBattleItemUseReason reson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PreCheckCanPickupBagAvatar");
 
@@ -9311,7 +9311,7 @@ int UBackpackComponent::PreCheckCanPickupBagAvatar(class UBattleItemHandleBase* 
 
 void UBackpackComponent::PostItemHandleEquippingState(const struct FItemDefineID& DefineID, bool bEquipping)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PostItemHandleEquippingState");
 
@@ -9340,7 +9340,7 @@ void UBackpackComponent::PostItemHandleEquippingState(const struct FItemDefineID
 
 bool UBackpackComponent::PickupItemFromWrapperDetail(const struct FItemDefineID& DefineID, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason, EBattleItemClientPickupType BattleItemClientPickupType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PickupItemFromWrapperDetail");
 
@@ -9372,7 +9372,7 @@ bool UBackpackComponent::PickupItemFromWrapperDetail(const struct FItemDefineID&
 
 bool UBackpackComponent::PickUpItem_Default(const struct FItemDefineID& DefineID, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PickUpItem_Default");
 
@@ -9404,7 +9404,7 @@ bool UBackpackComponent::PickUpItem_Default(const struct FItemDefineID& DefineID
 
 bool UBackpackComponent::PickupItem(const struct FItemDefineID& DefineID, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason, EBattleItemClientPickupType BattleItemClientPickupType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PickupItem");
 
@@ -9431,7 +9431,7 @@ bool UBackpackComponent::PickupItem(const struct FItemDefineID& DefineID, const 
 
 void UBackpackComponent::PickupBattleItemOnPlane()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PickupBattleItemOnPlane");
 
@@ -9457,7 +9457,7 @@ void UBackpackComponent::PickupBattleItemOnPlane()
 
 bool UBackpackComponent::PickItem_IntoSafetyBox(const struct FItemDefineID& DefineID, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PickItem_IntoSafetyBox");
 
@@ -9488,7 +9488,7 @@ bool UBackpackComponent::PickItem_IntoSafetyBox(const struct FItemDefineID& Defi
 
 bool UBackpackComponent::PickItem_IntoBackpack(const struct FItemDefineID& DefineID, const struct FBattleItemPickupInfo& PickupInfo, EBattleItemPickupReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.PickItem_IntoBackpack");
 
@@ -9514,7 +9514,7 @@ bool UBackpackComponent::PickItem_IntoBackpack(const struct FItemDefineID& Defin
 
 void UBackpackComponent::OnRep_specialCountLimit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.OnRep_specialCountLimit");
 
@@ -9535,7 +9535,7 @@ void UBackpackComponent::OnRep_specialCountLimit()
 
 void UBackpackComponent::OnRep_ItemListNet()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.OnRep_ItemListNet");
 
@@ -9556,7 +9556,7 @@ void UBackpackComponent::OnRep_ItemListNet()
 
 void UBackpackComponent::OnRep_CoinsNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.OnRep_CoinsNum");
 
@@ -9577,7 +9577,7 @@ void UBackpackComponent::OnRep_CoinsNum()
 
 void UBackpackComponent::OnRep_Capacity()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.OnRep_Capacity");
 
@@ -9600,7 +9600,7 @@ void UBackpackComponent::OnRep_Capacity()
 
 void UBackpackComponent::NotifyItemUpdated(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.NotifyItemUpdated");
 
@@ -9624,7 +9624,7 @@ void UBackpackComponent::NotifyItemUpdated(const struct FItemDefineID& DefineID)
 
 void UBackpackComponent::NotifyItemRemoved(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.NotifyItemRemoved");
 
@@ -9646,7 +9646,7 @@ void UBackpackComponent::NotifyItemRemoved(const struct FItemDefineID& DefineID)
 
 void UBackpackComponent::NotifyItemListUpdated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.NotifyItemListUpdated");
 
@@ -9667,7 +9667,7 @@ void UBackpackComponent::NotifyItemListUpdated()
 
 void UBackpackComponent::NotifyCapacityUpdated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.NotifyCapacityUpdated");
 
@@ -9691,7 +9691,7 @@ void UBackpackComponent::NotifyCapacityUpdated()
 
 class UBattleItemHandleBase* UBackpackComponent::NewItemHandle(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.NewItemHandle");
 
@@ -9718,7 +9718,7 @@ class UBattleItemHandleBase* UBackpackComponent::NewItemHandle(const struct FIte
 
 struct FItemDefineID UBackpackComponent::NewItemDefineID(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.NewItemDefineID");
 
@@ -9745,7 +9745,7 @@ struct FItemDefineID UBackpackComponent::NewItemDefineID(const struct FItemDefin
 
 void UBackpackComponent::ModifyItemHandleEquippingState(class UItemHandleBase* ItemHandle, bool bEquipping)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ModifyItemHandleEquippingState");
 
@@ -9771,7 +9771,7 @@ void UBackpackComponent::ModifyItemHandleEquippingState(class UItemHandleBase* I
 
 void UBackpackComponent::ModifyItemHandleCount(class UItemHandleBase* ItemHandle, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ModifyItemHandleCount");
 
@@ -9796,7 +9796,7 @@ void UBackpackComponent::ModifyItemHandleCount(class UItemHandleBase* ItemHandle
 
 void UBackpackComponent::ModifyAutoPickClipType(int InAutoPickClipType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ModifyAutoPickClipType");
 
@@ -9820,7 +9820,7 @@ void UBackpackComponent::ModifyAutoPickClipType(int InAutoPickClipType)
 
 void UBackpackComponent::ModifyAimNotAutoUse(bool bAdd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ModifyAimNotAutoUse");
 
@@ -9842,7 +9842,7 @@ void UBackpackComponent::ModifyAimNotAutoUse(bool bAdd)
 
 void UBackpackComponent::LockUpdateItemListReceive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.LockUpdateItemListReceive");
 
@@ -9866,7 +9866,7 @@ void UBackpackComponent::LockUpdateItemListReceive()
 
 struct FBattleItemData UBackpackComponent::ItemNet2Data(const struct FNetArrayUnit& NetItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ItemNet2Data");
 
@@ -9893,7 +9893,7 @@ struct FBattleItemData UBackpackComponent::ItemNet2Data(const struct FNetArrayUn
 
 bool UBackpackComponent::IsNeedToShowInBackpack(int TypeDefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsNeedToShowInBackpack");
 
@@ -9920,7 +9920,7 @@ bool UBackpackComponent::IsNeedToShowInBackpack(int TypeDefineID)
 
 bool UBackpackComponent::IsItemListUpdatedHasSomeItemTypes(TArray<int> ItemTypes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsItemListUpdatedHasSomeItemTypes");
 
@@ -9947,7 +9947,7 @@ bool UBackpackComponent::IsItemListUpdatedHasSomeItemTypes(TArray<int> ItemTypes
 
 bool UBackpackComponent::IsItemListUpdatedHasSomeItemSubTypes(TArray<int> ItemSubTypes)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsItemListUpdatedHasSomeItemSubTypes");
 
@@ -9974,7 +9974,7 @@ bool UBackpackComponent::IsItemListUpdatedHasSomeItemSubTypes(TArray<int> ItemSu
 
 bool UBackpackComponent::IsItemListUpdatedHasSomeItems(TArray<int> ItemTypeSpecificIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsItemListUpdatedHasSomeItems");
 
@@ -10001,7 +10001,7 @@ bool UBackpackComponent::IsItemListUpdatedHasSomeItems(TArray<int> ItemTypeSpeci
 
 bool UBackpackComponent::IsItemListUpdatedHasOneItemType(int itemType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsItemListUpdatedHasOneItemType");
 
@@ -10028,7 +10028,7 @@ bool UBackpackComponent::IsItemListUpdatedHasOneItemType(int itemType)
 
 bool UBackpackComponent::IsItemListUpdatedHasOneItemSubType(int ItemSubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsItemListUpdatedHasOneItemSubType");
 
@@ -10055,7 +10055,7 @@ bool UBackpackComponent::IsItemListUpdatedHasOneItemSubType(int ItemSubType)
 
 bool UBackpackComponent::IsItemListUpdatedHasOneItem(int ItemTypeSpecificID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsItemListUpdatedHasOneItem");
 
@@ -10082,7 +10082,7 @@ bool UBackpackComponent::IsItemListUpdatedHasOneItem(int ItemTypeSpecificID)
 
 bool UBackpackComponent::IsItemExist(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsItemExist");
 
@@ -10108,7 +10108,7 @@ bool UBackpackComponent::IsItemExist(const struct FItemDefineID& DefineID)
 
 bool UBackpackComponent::IsEnableWeaponAttachmentBindToWeapon()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsEnableWeaponAttachmentBindToWeapon");
 
@@ -10133,7 +10133,7 @@ bool UBackpackComponent::IsEnableWeaponAttachmentBindToWeapon()
 
 bool UBackpackComponent::IsEnableBackpackRepActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsEnableBackpackRepActor");
 
@@ -10160,7 +10160,7 @@ bool UBackpackComponent::IsEnableBackpackRepActor()
 
 bool UBackpackComponent::IsCustomIgnoreAccessories(int WeaponId, int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsCustomIgnoreAccessories");
 
@@ -10189,7 +10189,7 @@ bool UBackpackComponent::IsCustomIgnoreAccessories(int WeaponId, int Index)
 
 bool UBackpackComponent::IsCustomAccessories(int WeaponId, int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsCustomAccessories");
 
@@ -10216,7 +10216,7 @@ bool UBackpackComponent::IsCustomAccessories(int WeaponId, int ItemId)
 
 bool UBackpackComponent::IsChangeWeaponScheme()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsChangeWeaponScheme");
 
@@ -10242,7 +10242,7 @@ bool UBackpackComponent::IsChangeWeaponScheme()
 
 bool UBackpackComponent::IsBackPackContainItemId(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsBackPackContainItemId");
 
@@ -10269,7 +10269,7 @@ bool UBackpackComponent::IsBackPackContainItemId(int ItemId)
 
 bool UBackpackComponent::IsAutoUse(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.IsAutoUse");
 
@@ -10296,7 +10296,7 @@ bool UBackpackComponent::IsAutoUse(int ItemId)
 
 bool UBackpackComponent::HasUnEquipItemByDefindIdRange(int LowValue, int HighValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HasUnEquipItemByDefindIdRange");
 
@@ -10325,7 +10325,7 @@ bool UBackpackComponent::HasUnEquipItemByDefindIdRange(int LowValue, int HighVal
 
 bool UBackpackComponent::HasTagSub(int ItemId, const struct FName& TagName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HasTagSub");
 
@@ -10352,7 +10352,7 @@ bool UBackpackComponent::HasTagSub(int ItemId, const struct FName& TagName)
 
 bool UBackpackComponent::HasItemBySubType(int SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HasItemBySubType");
 
@@ -10379,7 +10379,7 @@ bool UBackpackComponent::HasItemBySubType(int SubType)
 
 bool UBackpackComponent::HasItemBySpecificID(int SpecificID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HasItemBySpecificID");
 
@@ -10406,7 +10406,7 @@ bool UBackpackComponent::HasItemBySpecificID(int SpecificID)
 
 bool UBackpackComponent::HasItemByDefineID(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HasItemByDefineID");
 
@@ -10434,7 +10434,7 @@ bool UBackpackComponent::HasItemByDefineID(const struct FItemDefineID& DefineID)
 
 bool UBackpackComponent::HasItemByDefindIdRange(int LowValue, int HighValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HasItemByDefindIdRange");
 
@@ -10463,7 +10463,7 @@ bool UBackpackComponent::HasItemByDefindIdRange(int LowValue, int HighValue)
 
 TArray<int> UBackpackComponent::HasAllItem(TArray<struct FBattleItemData> ItemDataArray, bool bExcludeEquippingItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HasAllItem");
 
@@ -10493,7 +10493,7 @@ TArray<int> UBackpackComponent::HasAllItem(TArray<struct FBattleItemData> ItemDa
 
 void UBackpackComponent::HandleDropInDisuse(const struct FItemDefineID& DefineID, class UBattleItemHandleBase* ItemHandle, EBattleItemDisuseReason Reason, float OccupiedCapacityBeforeDisuse)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.HandleDropInDisuse");
 
@@ -10520,7 +10520,7 @@ void UBackpackComponent::HandleDropInDisuse(const struct FItemDefineID& DefineID
 
 class UWorld* UBackpackComponent::GetWorld_BP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetWorld_BP");
 
@@ -10546,7 +10546,7 @@ class UWorld* UBackpackComponent::GetWorld_BP()
 
 int UBackpackComponent::GetUnEquipItemNumByItemId(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetUnEquipItemNumByItemId");
 
@@ -10573,7 +10573,7 @@ int UBackpackComponent::GetUnEquipItemNumByItemId(int ItemId)
 
 struct FSpecialPickInfo UBackpackComponent::GetSpecialItemNow(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetSpecialItemNow");
 
@@ -10600,7 +10600,7 @@ struct FSpecialPickInfo UBackpackComponent::GetSpecialItemNow(const struct FItem
 
 struct FSpecialPickInfo UBackpackComponent::GetSpecialItemBefore(int ItemResId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetSpecialItemBefore");
 
@@ -10626,7 +10626,7 @@ struct FSpecialPickInfo UBackpackComponent::GetSpecialItemBefore(int ItemResId)
 
 float UBackpackComponent::GetSafetyBoxCapacity()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetSafetyBoxCapacity");
 
@@ -10653,7 +10653,7 @@ float UBackpackComponent::GetSafetyBoxCapacity()
 
 struct FBattleItemData UBackpackComponent::GetLeastElectrictyBattleItemData(const struct FItemDefineID& DefineID, EBattleItemAdditionalDataType AdditionalDataNameType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetLeastElectrictyBattleItemData");
 
@@ -10681,7 +10681,7 @@ struct FBattleItemData UBackpackComponent::GetLeastElectrictyBattleItemData(cons
 
 int UBackpackComponent::GetItemSubType(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemSubType");
 
@@ -10709,7 +10709,7 @@ int UBackpackComponent::GetItemSubType(int ItemId)
 
 TArray<struct FBattleItemData> UBackpackComponent::GetItemListBySpecialID(TArray<int> SpecialIDArray, bool bIgnoreEquipping, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemListBySpecialID");
 
@@ -10738,7 +10738,7 @@ TArray<struct FBattleItemData> UBackpackComponent::GetItemListBySpecialID(TArray
 
 TArray<struct FBattleItemData> UBackpackComponent::GetItemListByDefineID(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemListByDefineID");
 
@@ -10764,7 +10764,7 @@ TArray<struct FBattleItemData> UBackpackComponent::GetItemListByDefineID(const s
 
 TMap<struct FItemDefineID, class UItemHandleBase*> UBackpackComponent::GetItemHandleMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemHandleMap");
 
@@ -10789,7 +10789,7 @@ TMap<struct FItemDefineID, class UItemHandleBase*> UBackpackComponent::GetItemHa
 
 TArray<class UItemHandleBase*> UBackpackComponent::GetItemHandleList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemHandleList");
 
@@ -10815,7 +10815,7 @@ TArray<class UItemHandleBase*> UBackpackComponent::GetItemHandleList()
 
 int UBackpackComponent::GetItemCountByType(int InItemType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemCountByType");
 
@@ -10842,7 +10842,7 @@ int UBackpackComponent::GetItemCountByType(int InItemType)
 
 int UBackpackComponent::GetItemCountByItemSpecialID(int InItemSpecialID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemCountByItemSpecialID");
 
@@ -10869,7 +10869,7 @@ int UBackpackComponent::GetItemCountByItemSpecialID(int InItemSpecialID)
 
 struct FBattleItemData UBackpackComponent::GetItemByDefineID(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemByDefineID");
 
@@ -10896,7 +10896,7 @@ struct FBattleItemData UBackpackComponent::GetItemByDefineID(const struct FItemD
 
 int UBackpackComponent::GetItemAttrsFlag(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemAttrsFlag");
 
@@ -10923,7 +10923,7 @@ int UBackpackComponent::GetItemAttrsFlag(int ItemId)
 
 float UBackpackComponent::GetItemAssociateWeights(const struct FBattleItemData& InItemData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetItemAssociateWeights");
 
@@ -10950,7 +10950,7 @@ float UBackpackComponent::GetItemAssociateWeights(const struct FBattleItemData& 
 
 struct FBattleItemData UBackpackComponent::GetFirstItemBySubType(int SubType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetFirstItemBySubType");
 
@@ -10977,7 +10977,7 @@ struct FBattleItemData UBackpackComponent::GetFirstItemBySubType(int SubType)
 
 struct FBattleItemData UBackpackComponent::GetFirstItemByDefineIDIgnoreInstance(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetFirstItemByDefineIDIgnoreInstance");
 
@@ -11003,7 +11003,7 @@ struct FBattleItemData UBackpackComponent::GetFirstItemByDefineIDIgnoreInstance(
 
 struct FItemDefineID UBackpackComponent::GetCurrentPickupItemDefineID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetCurrentPickupItemDefineID");
 
@@ -11029,7 +11029,7 @@ struct FItemDefineID UBackpackComponent::GetCurrentPickupItemDefineID()
 
 struct FBattleItemFeatureData UBackpackComponent::GetBattleItemFeatureDataByDefineID(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetBattleItemFeatureDataByDefineID");
 
@@ -11056,7 +11056,7 @@ struct FBattleItemFeatureData UBackpackComponent::GetBattleItemFeatureDataByDefi
 
 TArray<struct FBattleItemData> UBackpackComponent::GetAllItemList(EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetAllItemList");
 
@@ -11083,7 +11083,7 @@ TArray<struct FBattleItemData> UBackpackComponent::GetAllItemList(EItemStoreArea
 
 EBattleItemClientPickupType UBackpackComponent::GetAIPickupType(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.GetAIPickupType");
 
@@ -11107,7 +11107,7 @@ EBattleItemClientPickupType UBackpackComponent::GetAIPickupType(int ItemId)
 
 void UBackpackComponent::ForceNetUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ForceNetUpdate");
 
@@ -11133,7 +11133,7 @@ void UBackpackComponent::ForceNetUpdate()
 
 bool UBackpackComponent::DropItem(const struct FItemDefineID& DefineID, int Count, EBattleItemDropReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.DropItem");
 
@@ -11163,7 +11163,7 @@ bool UBackpackComponent::DropItem(const struct FItemDefineID& DefineID, int Coun
 
 bool UBackpackComponent::DisuseItem(const struct FItemDefineID& DefineID, EBattleItemDisuseReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.DisuseItem");
 
@@ -11191,7 +11191,7 @@ bool UBackpackComponent::DisuseItem(const struct FItemDefineID& DefineID, EBattl
 
 class UBattleItemHandleBase* UBackpackComponent::CreateItemHandleInternal(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CreateItemHandleInternal");
 
@@ -11218,7 +11218,7 @@ class UBattleItemHandleBase* UBackpackComponent::CreateItemHandleInternal(const 
 
 class UItemHandleBase* UBackpackComponent::CreateItemHandle(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CreateItemHandle");
 
@@ -11246,7 +11246,7 @@ class UItemHandleBase* UBackpackComponent::CreateItemHandle(const struct FItemDe
 
 int UBackpackComponent::ConsumeItem(const struct FItemDefineID& DefineID, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ConsumeItem");
 
@@ -11275,7 +11275,7 @@ int UBackpackComponent::ConsumeItem(const struct FItemDefineID& DefineID, int Co
 
 void UBackpackComponent::ClientBroadcastItemOperationFailedDelegate(const struct FItemDefineID& DefineID, EBattleItemOperationType OperationType, EBattleItemOperationFailedReason FailedReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ClientBroadcastItemOperationFailedDelegate");
 
@@ -11303,7 +11303,7 @@ void UBackpackComponent::ClientBroadcastItemOperationFailedDelegate(const struct
 
 void UBackpackComponent::ClientBroadcastItemOperationDelegate(const struct FItemDefineID& DefineID, EBattleItemOperationType OperationType, unsigned char Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ClientBroadcastItemOperationDelegate");
 
@@ -11332,7 +11332,7 @@ void UBackpackComponent::ClientBroadcastItemOperationDelegate(const struct FItem
 
 void UBackpackComponent::ClientBroadcastItemChangeAreaDelegate(int TypeSpecificID, EBattleItemChangeAreaType OperationType, int Num, bool bToSafeBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ClientBroadcastItemChangeAreaDelegate");
 
@@ -11361,7 +11361,7 @@ void UBackpackComponent::ClientBroadcastItemChangeAreaDelegate(int TypeSpecificI
 
 int UBackpackComponent::CheckSpecialMaxCountForItem(const struct FItemDefineID& DefineID, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CheckSpecialMaxCountForItem");
 
@@ -11390,7 +11390,7 @@ int UBackpackComponent::CheckSpecialMaxCountForItem(const struct FItemDefineID& 
 
 bool UBackpackComponent::CheckSkillPropItemCanBePickup(class UBackpackComponent* BackpackComp, const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CheckSkillPropItemCanBePickup");
 
@@ -11420,7 +11420,7 @@ bool UBackpackComponent::CheckSkillPropItemCanBePickup(class UBackpackComponent*
 
 bool UBackpackComponent::CheckPickUpItemDefaultSuccess(const struct FItemDefineID& DefineID, bool bPickupSucc, bool bAutoEquip)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CheckPickUpItemDefaultSuccess");
 
@@ -11450,7 +11450,7 @@ bool UBackpackComponent::CheckPickUpItemDefaultSuccess(const struct FItemDefineI
 
 int UBackpackComponent::CheckLeftLimitCountForItem(int InItemID, int InCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CheckLeftLimitCountForItem");
 
@@ -11477,7 +11477,7 @@ int UBackpackComponent::CheckLeftLimitCountForItem(int InItemID, int InCount)
 
 void UBackpackComponent::CheckItemEmptyInBackpack(int InItemID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CheckItemEmptyInBackpack");
 
@@ -11503,7 +11503,7 @@ void UBackpackComponent::CheckItemEmptyInBackpack(int InItemID)
 
 bool UBackpackComponent::CheckItemAttrsFlag(int ItemId, EItemAttrs ItemAttrEnum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CheckItemAttrsFlag");
 
@@ -11533,7 +11533,7 @@ bool UBackpackComponent::CheckItemAttrsFlag(int ItemId, EItemAttrs ItemAttrEnum)
 
 int UBackpackComponent::CheckCapacityForItem(const struct FItemDefineID& DefineID, int Count, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CheckCapacityForItem");
 
@@ -11564,7 +11564,7 @@ int UBackpackComponent::CheckCapacityForItem(const struct FItemDefineID& DefineI
 
 bool UBackpackComponent::ChangeItemStoreAreaNew(const struct FItemDefineID& DefineID, int InItemNum, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ChangeItemStoreAreaNew");
 
@@ -11595,7 +11595,7 @@ bool UBackpackComponent::ChangeItemStoreAreaNew(const struct FItemDefineID& Defi
 
 bool UBackpackComponent::ChangeItemStoreArea(const struct FItemDefineID& DefineID, int InItemNum, EItemStoreArea InItemStoreArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.ChangeItemStoreArea");
 
@@ -11623,7 +11623,7 @@ bool UBackpackComponent::ChangeItemStoreArea(const struct FItemDefineID& DefineI
 
 bool UBackpackComponent::CantDrop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CantDrop");
 
@@ -11649,7 +11649,7 @@ bool UBackpackComponent::CantDrop()
 
 bool UBackpackComponent::CanDisuseToBackpack(const struct FItemDefineID& DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CanDisuseToBackpack");
 
@@ -11677,7 +11677,7 @@ bool UBackpackComponent::CanDisuseToBackpack(const struct FItemDefineID& DefineI
 
 bool UBackpackComponent::CacheItemAssociationBeforeDisuse(const struct FItemDefineID& DefineID, EBattleItemDisuseReason Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.CacheItemAssociationBeforeDisuse");
 
@@ -11706,7 +11706,7 @@ bool UBackpackComponent::CacheItemAssociationBeforeDisuse(const struct FItemDefi
 
 void UBackpackComponent::BroadcastItemOperCountDelegate(const struct FItemDefineID& DefineID, EBattleItemOperationType OperationType, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.BroadcastItemOperCountDelegate");
 
@@ -11732,7 +11732,7 @@ void UBackpackComponent::BroadcastItemOperCountDelegate(const struct FItemDefine
 
 void UBackpackComponent::BroadcastItemOperationInfoDelegate(const struct FItemOperationInfo& ItemOperationInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.BroadcastItemOperationInfoDelegate");
 
@@ -11758,7 +11758,7 @@ void UBackpackComponent::BroadcastItemOperationInfoDelegate(const struct FItemOp
 
 void UBackpackComponent::BroadcastItemOperationFailedDelegate(const struct FItemDefineID& DefineID, EBattleItemOperationType OperationType, EBattleItemOperationFailedReason FailedReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.BroadcastItemOperationFailedDelegate");
 
@@ -11786,7 +11786,7 @@ void UBackpackComponent::BroadcastItemOperationFailedDelegate(const struct FItem
 
 void UBackpackComponent::BroadcastItemOperationDelegate(const struct FItemDefineID& DefineID, EBattleItemOperationType OperationType, unsigned char Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.BroadcastItemOperationDelegate");
 
@@ -11815,7 +11815,7 @@ void UBackpackComponent::BroadcastItemOperationDelegate(const struct FItemDefine
 
 void UBackpackComponent::BroadcastItemChangeAreaDelegate(int TypeSpecificID, EBattleItemChangeAreaType OperationType, int Num, bool bToSafeBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.BroadcastItemChangeAreaDelegate");
 
@@ -11843,7 +11843,7 @@ void UBackpackComponent::BroadcastItemChangeAreaDelegate(int TypeSpecificID, EBa
 
 bool UBackpackComponent::AlternativePickupItem(struct FItemDefineID* DefineID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.AlternativePickupItem");
 
@@ -11873,7 +11873,7 @@ bool UBackpackComponent::AlternativePickupItem(struct FItemDefineID* DefineID)
 
 bool UBackpackComponent::AddItemHandle(const struct FItemDefineID& DefineID, class UItemHandleBase* ItemHandle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.AddItemHandle");
 
@@ -11903,7 +11903,7 @@ bool UBackpackComponent::AddItemHandle(const struct FItemDefineID& DefineID, cla
 
 void UBackpackComponent::AddBattleItemPickupOnPlane(EBattleItemPickupReason Reason, EBattleItemClientPickupType BattleItemClientPickupType, struct FItemDefineID* DefineID, struct FBattleItemPickupInfo* PickupInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackComponent.AddBattleItemPickupOnPlane");
 
@@ -11931,7 +11931,7 @@ void UBackpackComponent::AddBattleItemPickupOnPlane(EBattleItemPickupReason Reas
 
 void ABackpackRepActor::OnRep_ItemListNet()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackRepActor.OnRep_ItemListNet");
 
@@ -11955,7 +11955,7 @@ void ABackpackRepActor::OnRep_ItemListNet()
 
 void ABackpackRepActor::NotifyItemUpdated(const struct FItemDefineID& DefineID, const struct FBattleItemData& ItemData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackRepActor.NotifyItemUpdated");
 
@@ -11981,7 +11981,7 @@ void ABackpackRepActor::NotifyItemUpdated(const struct FItemDefineID& DefineID, 
 
 void ABackpackRepActor::NotifyItemRemoved(const struct FItemDefineID& DefineID, const struct FBattleItemData& ItemData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackRepActor.NotifyItemRemoved");
 
@@ -12006,7 +12006,7 @@ void ABackpackRepActor::NotifyItemRemoved(const struct FItemDefineID& DefineID, 
 
 void ABackpackRepActor::NotifyItemEmpty(int Slack)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackRepActor.NotifyItemEmpty");
 
@@ -12031,7 +12031,7 @@ void ABackpackRepActor::NotifyItemEmpty(int Slack)
 
 void ABackpackRepActor::NotifyItemAdded(const struct FItemDefineID& DefineID, const struct FBattleItemData& ItemData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BackpackRepActor.NotifyItemAdded");
 
@@ -12056,7 +12056,7 @@ void ABackpackRepActor::NotifyItemAdded(const struct FItemDefineID& DefineID, co
 
 void UBaseGeneratorComponent::RegisterWorldTileSpot(class USpotSceneComponent* Spot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.RegisterWorldTileSpot");
 
@@ -12080,7 +12080,7 @@ void UBaseGeneratorComponent::RegisterWorldTileSpot(class USpotSceneComponent* S
 
 void UBaseGeneratorComponent::RegisterSpotComponentToTick(class USpotSceneComponent* SpotComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.RegisterSpotComponentToTick");
 
@@ -12104,7 +12104,7 @@ void UBaseGeneratorComponent::RegisterSpotComponentToTick(class USpotSceneCompon
 
 void UBaseGeneratorComponent::RegisterGroupSpotComponent(class UGroupSpotSceneComponent* GroupSpotComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.RegisterGroupSpotComponent");
 
@@ -12129,7 +12129,7 @@ void UBaseGeneratorComponent::RegisterGroupSpotComponent(class UGroupSpotSceneCo
 
 struct FString UBaseGeneratorComponent::GetRandomCategory(TArray<struct FSpotWeight> SpotWeights)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.GetRandomCategory");
 
@@ -12155,7 +12155,7 @@ struct FString UBaseGeneratorComponent::GetRandomCategory(TArray<struct FSpotWei
 
 void UBaseGeneratorComponent::GeneratorWorldTileSpots(struct FWorldTileSpotArray* SpotArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.GeneratorWorldTileSpots");
 
@@ -12179,7 +12179,7 @@ void UBaseGeneratorComponent::GeneratorWorldTileSpots(struct FWorldTileSpotArray
 
 void UBaseGeneratorComponent::GenerateSpots()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.GenerateSpots");
 
@@ -12202,7 +12202,7 @@ void UBaseGeneratorComponent::GenerateSpots()
 
 void UBaseGeneratorComponent::GenerateSpotOnTick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.GenerateSpotOnTick");
 
@@ -12231,7 +12231,7 @@ void UBaseGeneratorComponent::GenerateSpotOnTick(float DeltaTime)
 
 class AActor* UBaseGeneratorComponent::GeneratePickupActor(class UClass* ActorClass, ESpawnActorCollisionHandlingMethod SpawnActorCollisionHandlingMethod, const struct FItemGenerateSpawnClass& ItemData, struct FVector* ActorLocation, struct FRotator* ActorRotator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.GeneratePickupActor");
 
@@ -12262,7 +12262,7 @@ class AActor* UBaseGeneratorComponent::GeneratePickupActor(class UClass* ActorCl
 
 void UBaseGeneratorComponent::CheckTileLevelsVisible()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.BaseGeneratorComponent.CheckTileLevelsVisible");
 
@@ -12283,7 +12283,7 @@ void UBaseGeneratorComponent::CheckTileLevelsVisible()
 
 void UDynamicSpotContainerComponent::UseSerializeData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.DynamicSpotContainerComponent.UseSerializeData");
 
@@ -12308,7 +12308,7 @@ void UDynamicSpotContainerComponent::UseSerializeData()
 
 void UGeneratorActorAIInterface::RegisterAIPickupPoint(const struct FVector& BuildingLoc, const struct FVector& SpotLoc, class AActor* PickUpActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorActorAIInterface.RegisterAIPickupPoint");
 
@@ -12335,7 +12335,7 @@ void UGeneratorActorAIInterface::RegisterAIPickupPoint(const struct FVector& Bui
 
 void UGeneratorActorInterface::SetExtendData(const struct FString& Key, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorActorInterface.SetExtendData");
 
@@ -12360,7 +12360,7 @@ void UGeneratorActorInterface::SetExtendData(const struct FString& Key, int Valu
 
 void UGeneratorActorInterface::SetAttachedActor(class AActor* AttachedActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorActorInterface.SetAttachedActor");
 
@@ -12388,7 +12388,7 @@ void UGeneratorActorInterface::SetAttachedActor(class AActor* AttachedActor)
 
 void UGeneratorActorInterface::InitDataNew(int ItemCount, const struct FString& Value, const struct FString& Category, bool RepeatGenerateItem, int SpotDataIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorActorInterface.InitDataNew");
 
@@ -12420,7 +12420,7 @@ void UGeneratorActorInterface::InitDataNew(int ItemCount, const struct FString& 
 
 void UGeneratorActorInterface::InitData(class UItemSpotSceneComponent* ItemSpotSceneComponent, int ItemCount, const struct FString& Value, const struct FString& Category, bool RepeatGenerateItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorActorInterface.InitData");
 
@@ -12448,7 +12448,7 @@ void UGeneratorActorInterface::InitData(class UItemSpotSceneComponent* ItemSpotS
 
 int UGeneratorActorInterface::GetItemId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorActorInterface.GetItemId");
 
@@ -12473,7 +12473,7 @@ int UGeneratorActorInterface::GetItemId()
 
 void UGeneratorVehicleInterface::SetSafeSpawn(bool ab_IsSafeSpawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorVehicleInterface.SetSafeSpawn");
 
@@ -12498,7 +12498,7 @@ void UGeneratorVehicleInterface::SetSafeSpawn(bool ab_IsSafeSpawn)
 
 void UGeneratorVehicleInterface::ServerDetachAllPlayerFromSeatByGenerator(bool bMustExit, bool bApplyVehicleVelocity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorVehicleInterface.ServerDetachAllPlayerFromSeatByGenerator");
 
@@ -12525,7 +12525,7 @@ void UGeneratorVehicleInterface::ServerDetachAllPlayerFromSeatByGenerator(bool b
 
 void UGeneratorVehicleInterface::InitVehicle(int FuelPercent, bool bEngineOn, bool bInHouse)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorVehicleInterface.InitVehicle");
 
@@ -12552,7 +12552,7 @@ void UGeneratorVehicleInterface::InitVehicle(int FuelPercent, bool bEngineOn, bo
 
 void UGeneratorVehicleInterface::CheckSpawnLocation(const struct FVector& SpawnLocation, float MaxSpawnDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GeneratorVehicleInterface.CheckSpawnLocation");
 
@@ -12575,7 +12575,7 @@ void UGeneratorVehicleInterface::CheckSpawnLocation(const struct FVector& SpawnL
 
 void AGlobalConfigActor::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.GlobalConfigActor.Init");
 
@@ -12599,7 +12599,7 @@ void AGlobalConfigActor::Init()
 
 struct FItemRegionCircle UImplItemRegionInterface::GetRegion(const struct FString& Tag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ImplItemRegionInterface.GetRegion");
 
@@ -12626,7 +12626,7 @@ struct FItemRegionCircle UImplItemRegionInterface::GetRegion(const struct FStrin
 
 void UItemConfigActorComponent::RegisterGroupSceneComponent(int GroupType, class USceneComponent* GroupSceneComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemConfigActorComponent.RegisterGroupSceneComponent");
 
@@ -12653,7 +12653,7 @@ void UItemConfigActorComponent::RegisterGroupSceneComponent(int GroupType, class
 
 TArray<struct FItemSpawnClass> UItemConfigActorComponent::RandomItemSpawnClass(const struct FString& ItemValue, const struct FString& ItemCategory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemConfigActorComponent.RandomItemSpawnClass");
 
@@ -12682,7 +12682,7 @@ TArray<struct FItemSpawnClass> UItemConfigActorComponent::RandomItemSpawnClass(c
 
 TArray<class USceneComponent*> UItemConfigActorComponent::RandomGroupSceneComponents(int GroupType, int Persent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemConfigActorComponent.RandomGroupSceneComponents");
 
@@ -12710,7 +12710,7 @@ TArray<class USceneComponent*> UItemConfigActorComponent::RandomGroupSceneCompon
 
 class USceneComponent* UItemConfigActorComponent::RandomGroupSceneComponent(TArray<class USceneComponent*> AllGroups)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemConfigActorComponent.RandomGroupSceneComponent");
 
@@ -12737,7 +12737,7 @@ class USceneComponent* UItemConfigActorComponent::RandomGroupSceneComponent(TArr
 
 class UClass* UItemConfigActorComponent::LoadActorClass(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemConfigActorComponent.LoadActorClass");
 
@@ -12764,7 +12764,7 @@ class UClass* UItemConfigActorComponent::LoadActorClass(const struct FString& Pa
 
 TArray<struct FItemSpawnClass> UItemConfigActorComponent::GetItemSpawnClass(const struct FItemSpawnData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemConfigActorComponent.GetItemSpawnClass");
 
@@ -12791,7 +12791,7 @@ TArray<struct FItemSpawnClass> UItemConfigActorComponent::GetItemSpawnClass(cons
 
 bool AItemCountArea::IsInArea(struct FVector* Position)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemCountArea.IsInArea");
 
@@ -12817,7 +12817,7 @@ bool AItemCountArea::IsInArea(struct FVector* Position)
 
 void UItemGeneratorComponent::WriteItemSpotStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteItemSpotStatisticsDatas");
 
@@ -12838,7 +12838,7 @@ void UItemGeneratorComponent::WriteItemSpotStatisticsDatas()
 
 void UItemGeneratorComponent::WriteItemClassStatisticsDatas_V15()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteItemClassStatisticsDatas_V15");
 
@@ -12859,7 +12859,7 @@ void UItemGeneratorComponent::WriteItemClassStatisticsDatas_V15()
 
 void UItemGeneratorComponent::WriteItemClassStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteItemClassStatisticsDatas");
 
@@ -12880,7 +12880,7 @@ void UItemGeneratorComponent::WriteItemClassStatisticsDatas()
 
 void UItemGeneratorComponent::WriteGroupStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteGroupStatisticsDatas");
 
@@ -12901,7 +12901,7 @@ void UItemGeneratorComponent::WriteGroupStatisticsDatas()
 
 void UItemGeneratorComponent::WriteBuildingStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteBuildingStatisticsDatas");
 
@@ -12922,7 +12922,7 @@ void UItemGeneratorComponent::WriteBuildingStatisticsDatas()
 
 void UItemGeneratorComponent::WriteAreaItemStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteAreaItemStatisticsDatas");
 
@@ -12943,7 +12943,7 @@ void UItemGeneratorComponent::WriteAreaItemStatisticsDatas()
 
 void UItemGeneratorComponent::WriteAllStatisticsDatasToLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteAllStatisticsDatasToLog");
 
@@ -12964,7 +12964,7 @@ void UItemGeneratorComponent::WriteAllStatisticsDatasToLog()
 
 void UItemGeneratorComponent::WriteAllStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.WriteAllStatisticsDatas");
 
@@ -12988,7 +12988,7 @@ void UItemGeneratorComponent::WriteAllStatisticsDatas()
 
 bool UItemGeneratorComponent::TryLoadItemSpawnTableByTableMgr(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.TryLoadItemSpawnTableByTableMgr");
 
@@ -13014,7 +13014,7 @@ bool UItemGeneratorComponent::TryLoadItemSpawnTableByTableMgr(const struct FStri
 
 void UItemGeneratorComponent::SetRandomSeed(int Seed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.SetRandomSeed");
 
@@ -13038,7 +13038,7 @@ void UItemGeneratorComponent::SetRandomSeed(int Seed)
 
 void UItemGeneratorComponent::SetCatetoryRate(TMap<struct FString, float> Rates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.SetCatetoryRate");
 
@@ -13063,7 +13063,7 @@ void UItemGeneratorComponent::SetCatetoryRate(TMap<struct FString, float> Rates)
 
 bool UItemGeneratorComponent::RemoveSpotInfo(bool bFirstEnterState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RemoveSpotInfo");
 
@@ -13087,7 +13087,7 @@ bool UItemGeneratorComponent::RemoveSpotInfo(bool bFirstEnterState)
 
 void UItemGeneratorComponent::RemoveItemOnTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RemoveItemOnTick");
 
@@ -13111,7 +13111,7 @@ void UItemGeneratorComponent::RemoveItemOnTick()
 
 bool UItemGeneratorComponent::RemoveDropGround(bool bFirstEnterState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RemoveDropGround");
 
@@ -13137,7 +13137,7 @@ bool UItemGeneratorComponent::RemoveDropGround(bool bFirstEnterState)
 
 void UItemGeneratorComponent::RegisterItemGenerateSpawnData(const struct FItemGenerateSpawnData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RegisterItemGenerateSpawnData");
 
@@ -13161,7 +13161,7 @@ void UItemGeneratorComponent::RegisterItemGenerateSpawnData(const struct FItemGe
 
 void UItemGeneratorComponent::RegisterBornIslandItem(class AActor* Item)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RegisterBornIslandItem");
 
@@ -13186,7 +13186,7 @@ void UItemGeneratorComponent::RegisterBornIslandItem(class AActor* Item)
 
 class UUAEDataTable* UItemGeneratorComponent::ReadItemGenerateTable(const struct FString& TablePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.ReadItemGenerateTable");
 
@@ -13210,7 +13210,7 @@ class UUAEDataTable* UItemGeneratorComponent::ReadItemGenerateTable(const struct
 
 void UItemGeneratorComponent::ReAddAllSpot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.ReAddAllSpot");
 
@@ -13235,7 +13235,7 @@ void UItemGeneratorComponent::ReAddAllSpot()
 
 class UItemGroupSpotSceneComponent* UItemGeneratorComponent::RandomSingleGroup(const struct FSpotGroupProperty& GroupProperty, TArray<class UGroupSpotSceneComponent*>* Groups)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RandomSingleGroup");
 
@@ -13264,7 +13264,7 @@ class UItemGroupSpotSceneComponent* UItemGeneratorComponent::RandomSingleGroup(c
 
 void UItemGeneratorComponent::RandomGroupsByType(const struct FSpotGroupProperty& GroupProperty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RandomGroupsByType");
 
@@ -13286,7 +13286,7 @@ void UItemGeneratorComponent::RandomGroupsByType(const struct FSpotGroupProperty
 
 void UItemGeneratorComponent::RandomBornIslandGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.RandomBornIslandGroups");
 
@@ -13309,7 +13309,7 @@ void UItemGeneratorComponent::RandomBornIslandGroups()
 
 void UItemGeneratorComponent::OnAsyncLoadItemClassFinish(const struct FItemGenerateSpawnClass& SpawnClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.OnAsyncLoadItemClassFinish");
 
@@ -13334,7 +13334,7 @@ void UItemGeneratorComponent::OnAsyncLoadItemClassFinish(const struct FItemGener
 
 void UItemGeneratorComponent::LuaCustomFunctionAfterGenerate(class AActor* ItemActor, struct FItemGenerateSpawnClass* SpawnClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.LuaCustomFunctionAfterGenerate");
 
@@ -13362,7 +13362,7 @@ void UItemGeneratorComponent::LuaCustomFunctionAfterGenerate(class AActor* ItemA
 
 bool UItemGeneratorComponent::LuaAddRandomItemClassArray(const struct FItemGenerateSpawnClass& SpawnClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.LuaAddRandomItemClassArray");
 
@@ -13386,7 +13386,7 @@ bool UItemGeneratorComponent::LuaAddRandomItemClassArray(const struct FItemGener
 
 void UItemGeneratorComponent::LoadItemGenerateTable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.LoadItemGenerateTable");
 
@@ -13409,7 +13409,7 @@ void UItemGeneratorComponent::LoadItemGenerateTable()
 
 bool UItemGeneratorComponent::IsCatetoryEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.IsCatetoryEnabled");
 
@@ -13432,7 +13432,7 @@ bool UItemGeneratorComponent::IsCatetoryEnabled()
 
 void UItemGeneratorComponent::InitCatetorys()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.InitCatetorys");
 
@@ -13453,7 +13453,7 @@ void UItemGeneratorComponent::InitCatetorys()
 
 void UItemGeneratorComponent::InitCategoryEx()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.InitCategoryEx");
 
@@ -13482,7 +13482,7 @@ void UItemGeneratorComponent::InitCategoryEx()
 
 TArray<struct FVector> UItemGeneratorComponent::GMTrackGroundCheck(class UClass* CheckClass, float FloatUp, float FloatDown, float SinkUp, float SinkTop, bool bCheckBounds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GMTrackGroundCheck");
 
@@ -13514,7 +13514,7 @@ TArray<struct FVector> UItemGeneratorComponent::GMTrackGroundCheck(class UClass*
 
 bool UItemGeneratorComponent::GMGenerateAllSpot(const struct FString& ItemPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GMGenerateAllSpot");
 
@@ -13540,7 +13540,7 @@ bool UItemGeneratorComponent::GMGenerateAllSpot(const struct FString& ItemPath)
 
 void UItemGeneratorComponent::GMEnableRefreshAllSpotWithSeed(int Seed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GMEnableRefreshAllSpotWithSeed");
 
@@ -13564,7 +13564,7 @@ void UItemGeneratorComponent::GMEnableRefreshAllSpotWithSeed(int Seed)
 
 TArray<struct FString> UItemGeneratorComponent::GetSpotTags()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetSpotTags");
 
@@ -13590,7 +13590,7 @@ TArray<struct FString> UItemGeneratorComponent::GetSpotTags()
 
 TArray<struct FVector> UItemGeneratorComponent::GetSpotLocsByTag(const struct FString& ExTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetSpotLocsByTag");
 
@@ -13619,7 +13619,7 @@ TArray<struct FVector> UItemGeneratorComponent::GetSpotLocsByTag(const struct FS
 
 int UItemGeneratorComponent::GetSpotLocInPolygon(TArray<struct FVector> Anchors, int RandomNum, TArray<struct FVector>* OutLocs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetSpotLocInPolygon");
 
@@ -13653,7 +13653,7 @@ int UItemGeneratorComponent::GetSpotLocInPolygon(TArray<struct FVector> Anchors,
 
 int UItemGeneratorComponent::GetSpotLocInCircle(const struct FVector& Center, float Radius, int RandomNum, TArray<struct FVector>* OutLocs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetSpotLocInCircle");
 
@@ -13680,12 +13680,12 @@ int UItemGeneratorComponent::GetSpotLocInCircle(const struct FVector& Center, fl
 // Function Gameplay.ItemGeneratorComponent.GetSpotGroupPropertyByGroupType
 // (Final, Native, Public)
 // Parameters:
-// TEnumAsByte<enum ESpotGroupType> SpotGroupType                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESpotGroupType>    SpotGroupType                  (Parm, ZeroConstructor, IsPlainOldData)
 // struct FSpotGroupProperty      ReturnValue                    (Parm, OutParm, ReturnParm)
 
-struct FSpotGroupProperty UItemGeneratorComponent::GetSpotGroupPropertyByGroupType(TEnumAsByte<enum ESpotGroupType> SpotGroupType)
+struct FSpotGroupProperty UItemGeneratorComponent::GetSpotGroupPropertyByGroupType(TEnumAsByte<ESpotGroupType> SpotGroupType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetSpotGroupPropertyByGroupType");
 
@@ -13716,7 +13716,7 @@ struct FSpotGroupProperty UItemGeneratorComponent::GetSpotGroupPropertyByGroupTy
 
 bool UItemGeneratorComponent::GetRandomItemClassArray(bool RepeatGenerateItem, class UItemSpotSceneComponent* SpotComponent, struct FString* Value, struct FString* Category, TArray<struct FItemGenerateSpawnClass>* Results)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetRandomItemClassArray");
 
@@ -13751,7 +13751,7 @@ bool UItemGeneratorComponent::GetRandomItemClassArray(bool RepeatGenerateItem, c
 
 struct FString UItemGeneratorComponent::GetRandomCategory(TArray<struct FSpotWeight> SpotWeights)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetRandomCategory");
 
@@ -13778,7 +13778,7 @@ struct FString UItemGeneratorComponent::GetRandomCategory(TArray<struct FSpotWei
 
 int UItemGeneratorComponent::GetItemDefineID(class UClass* PickUpClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetItemDefineID");
 
@@ -13804,7 +13804,7 @@ int UItemGeneratorComponent::GetItemDefineID(class UClass* PickUpClass)
 
 float UItemGeneratorComponent::GetCatetoryRate(const struct FString& Catetory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GetCatetoryRate");
 
@@ -13830,7 +13830,7 @@ float UItemGeneratorComponent::GetCatetoryRate(const struct FString& Catetory)
 
 void UItemGeneratorComponent::GenerateSpotOnTick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GenerateSpotOnTick");
 
@@ -13852,7 +13852,7 @@ void UItemGeneratorComponent::GenerateSpotOnTick(float DeltaTime)
 
 void UItemGeneratorComponent::GenerateNewRandomSeed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.GenerateNewRandomSeed");
 
@@ -13877,7 +13877,7 @@ void UItemGeneratorComponent::GenerateNewRandomSeed()
 
 struct FVector UItemGeneratorComponent::FindASpawnLoc(class UWorld* InWorld, const struct FVector& TraceStart)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.FindASpawnLoc");
 
@@ -13902,7 +13902,7 @@ struct FVector UItemGeneratorComponent::FindASpawnLoc(class UWorld* InWorld, con
 
 void UItemGeneratorComponent::EnableRemoveItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.EnableRemoveItem");
 
@@ -13923,7 +13923,7 @@ void UItemGeneratorComponent::EnableRemoveItem()
 
 void UItemGeneratorComponent::EnableRefreshAllSpot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.EnableRefreshAllSpot");
 
@@ -13947,7 +13947,7 @@ void UItemGeneratorComponent::EnableRefreshAllSpot()
 
 void UItemGeneratorComponent::EnablePrimeItemPolygon(TArray<struct FVector> Anchors, int PrimeConfigIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.EnablePrimeItemPolygon");
 
@@ -13974,7 +13974,7 @@ void UItemGeneratorComponent::EnablePrimeItemPolygon(TArray<struct FVector> Anch
 
 void UItemGeneratorComponent::EnablePrimeItemCircle(const struct FVector& Center, float Radius, int PrimeConfigIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.EnablePrimeItemCircle");
 
@@ -14000,7 +14000,7 @@ void UItemGeneratorComponent::EnablePrimeItemCircle(const struct FVector& Center
 
 void UItemGeneratorComponent::EnableDynamicSpotConfigByIndex(int DynamicIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.EnableDynamicSpotConfigByIndex");
 
@@ -14026,7 +14026,7 @@ void UItemGeneratorComponent::EnableDynamicSpotConfigByIndex(int DynamicIndex)
 
 void UItemGeneratorComponent::DoPickUp(int ItemSpotDataIndex, const struct FString& Value, const struct FString& Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.DoPickUp");
 
@@ -14050,7 +14050,7 @@ void UItemGeneratorComponent::DoPickUp(int ItemSpotDataIndex, const struct FStri
 
 void UItemGeneratorComponent::DeleteBornIslandItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.DeleteBornIslandItems");
 
@@ -14074,7 +14074,7 @@ void UItemGeneratorComponent::DeleteBornIslandItems()
 
 bool UItemGeneratorComponent::CheckShouldGenerateItem(int ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.CheckShouldGenerateItem");
 
@@ -14098,7 +14098,7 @@ bool UItemGeneratorComponent::CheckShouldGenerateItem(int ItemId)
 
 void UItemGeneratorComponent::CheckRecoverItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.CheckRecoverItems");
 
@@ -14123,7 +14123,7 @@ void UItemGeneratorComponent::CheckRecoverItems()
 
 bool UItemGeneratorComponent::CheckInPolygon(const struct FVector& Pos, TArray<struct FVector> Anchors)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.CheckInPolygon");
 
@@ -14153,7 +14153,7 @@ bool UItemGeneratorComponent::CheckInPolygon(const struct FVector& Pos, TArray<s
 
 bool UItemGeneratorComponent::CheckInCircle(const struct FVector& Pos, const struct FVector& Center, float* Radius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.CheckInCircle");
 
@@ -14183,7 +14183,7 @@ bool UItemGeneratorComponent::CheckInCircle(const struct FVector& Pos, const str
 
 void UItemGeneratorComponent::AddIgnoreItemClassPath(TArray<struct FString> IgnoreItemClassList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.AddIgnoreItemClassPath");
 
@@ -14207,7 +14207,7 @@ void UItemGeneratorComponent::AddIgnoreItemClassPath(TArray<struct FString> Igno
 
 void UItemGeneratorComponent::AddDropGround(class AActor* InActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGeneratorComponent.AddDropGround");
 
@@ -14229,7 +14229,7 @@ void UItemGeneratorComponent::AddDropGround(class AActor* InActor)
 
 void UItemGroupRepeatSpotComponent::Stop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupRepeatSpotComponent.Stop");
 
@@ -14250,7 +14250,7 @@ void UItemGroupRepeatSpotComponent::Stop()
 
 void UItemGroupRepeatSpotComponent::SetPropertySpotAll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupRepeatSpotComponent.SetPropertySpotAll");
 
@@ -14273,7 +14273,7 @@ void UItemGroupRepeatSpotComponent::SetPropertySpotAll()
 
 class AUAEGameMode* UItemGroupRepeatSpotComponent::GetGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupRepeatSpotComponent.GetGameMode");
 
@@ -14296,7 +14296,7 @@ class AUAEGameMode* UItemGroupRepeatSpotComponent::GetGameMode()
 
 void UItemGroupRepeatSpotComponent::GenerateSpotAll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupRepeatSpotComponent.GenerateSpotAll");
 
@@ -14317,7 +14317,7 @@ void UItemGroupRepeatSpotComponent::GenerateSpotAll()
 
 void UItemGroupRepeatSpotComponent::ClearAllSpotItems()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.ItemGroupRepeatSpotComponent.ClearAllSpotItems");
 
@@ -14342,7 +14342,7 @@ void UItemGroupRepeatSpotComponent::ClearAllSpotItems()
 
 void ULuaBTDecoratorBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveTickAI");
 
@@ -14368,7 +14368,7 @@ void ULuaBTDecoratorBase::ReceiveTickAI(class AAIController* OwnerController, cl
 
 void ULuaBTDecoratorBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveTick");
 
@@ -14393,7 +14393,7 @@ void ULuaBTDecoratorBase::ReceiveTick(class AActor* OwnerActor, float DeltaSecon
 
 void ULuaBTDecoratorBase::ReceiveObserverDeactivatedAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveObserverDeactivatedAI");
 
@@ -14417,7 +14417,7 @@ void ULuaBTDecoratorBase::ReceiveObserverDeactivatedAI(class AAIController* Owne
 
 void ULuaBTDecoratorBase::ReceiveObserverDeactivated(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveObserverDeactivated");
 
@@ -14441,7 +14441,7 @@ void ULuaBTDecoratorBase::ReceiveObserverDeactivated(class AActor* OwnerActor)
 
 void ULuaBTDecoratorBase::ReceiveObserverActivatedAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveObserverActivatedAI");
 
@@ -14465,7 +14465,7 @@ void ULuaBTDecoratorBase::ReceiveObserverActivatedAI(class AAIController* OwnerC
 
 void ULuaBTDecoratorBase::ReceiveObserverActivated(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveObserverActivated");
 
@@ -14489,7 +14489,7 @@ void ULuaBTDecoratorBase::ReceiveObserverActivated(class AActor* OwnerActor)
 
 void ULuaBTDecoratorBase::ReceiveExecutionStartAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveExecutionStartAI");
 
@@ -14513,7 +14513,7 @@ void ULuaBTDecoratorBase::ReceiveExecutionStartAI(class AAIController* OwnerCont
 
 void ULuaBTDecoratorBase::ReceiveExecutionStart(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveExecutionStart");
 
@@ -14534,11 +14534,11 @@ void ULuaBTDecoratorBase::ReceiveExecutionStart(class AActor* OwnerActor)
 // Parameters:
 // class AAIController*           OwnerController                (Parm, ZeroConstructor, IsPlainOldData)
 // class APawn*                   ControlledPawn                 (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EBTNodeResult> NodeResult                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBTNodeResult>     NodeResult                     (Parm, ZeroConstructor, IsPlainOldData)
 
-void ULuaBTDecoratorBase::ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, TEnumAsByte<enum EBTNodeResult> NodeResult)
+void ULuaBTDecoratorBase::ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, TEnumAsByte<EBTNodeResult> NodeResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveExecutionFinishAI");
 
@@ -14560,11 +14560,11 @@ void ULuaBTDecoratorBase::ReceiveExecutionFinishAI(class AAIController* OwnerCon
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class AActor*                  OwnerActor                     (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EBTNodeResult> NodeResult                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EBTNodeResult>     NodeResult                     (Parm, ZeroConstructor, IsPlainOldData)
 
-void ULuaBTDecoratorBase::ReceiveExecutionFinish(class AActor* OwnerActor, TEnumAsByte<enum EBTNodeResult> NodeResult)
+void ULuaBTDecoratorBase::ReceiveExecutionFinish(class AActor* OwnerActor, TEnumAsByte<EBTNodeResult> NodeResult)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.ReceiveExecutionFinish");
 
@@ -14590,7 +14590,7 @@ void ULuaBTDecoratorBase::ReceiveExecutionFinish(class AActor* OwnerActor, TEnum
 
 bool ULuaBTDecoratorBase::PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.PerformConditionCheckAI");
 
@@ -14617,7 +14617,7 @@ bool ULuaBTDecoratorBase::PerformConditionCheckAI(class AAIController* OwnerCont
 
 bool ULuaBTDecoratorBase::PerformConditionCheck(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.PerformConditionCheck");
 
@@ -14642,7 +14642,7 @@ bool ULuaBTDecoratorBase::PerformConditionCheck(class AActor* OwnerActor)
 
 bool ULuaBTDecoratorBase::IsDecoratorObserverActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.IsDecoratorObserverActive");
 
@@ -14667,7 +14667,7 @@ bool ULuaBTDecoratorBase::IsDecoratorObserverActive()
 
 bool ULuaBTDecoratorBase::IsDecoratorExecutionActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTDecoratorBase.IsDecoratorExecutionActive");
 
@@ -14693,7 +14693,7 @@ bool ULuaBTDecoratorBase::IsDecoratorExecutionActive()
 
 void ULuaBTNodeInterface::SetValueAsVector(const struct FName& KeyName, const struct FVector& VectorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsVector");
 
@@ -14719,7 +14719,7 @@ void ULuaBTNodeInterface::SetValueAsVector(const struct FName& KeyName, const st
 
 void ULuaBTNodeInterface::SetValueAsString(const struct FName& KeyName, const struct FString& StringValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsString");
 
@@ -14745,7 +14745,7 @@ void ULuaBTNodeInterface::SetValueAsString(const struct FName& KeyName, const st
 
 void ULuaBTNodeInterface::SetValueAsRotator(const struct FName& KeyName, const struct FRotator& RotatorValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsRotator");
 
@@ -14771,7 +14771,7 @@ void ULuaBTNodeInterface::SetValueAsRotator(const struct FName& KeyName, const s
 
 void ULuaBTNodeInterface::SetValueAsObject(const struct FName& KeyName, class UObject* ObjectValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsObject");
 
@@ -14797,7 +14797,7 @@ void ULuaBTNodeInterface::SetValueAsObject(const struct FName& KeyName, class UO
 
 void ULuaBTNodeInterface::SetValueAsName(const struct FName& KeyName, const struct FName& NameValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsName");
 
@@ -14823,7 +14823,7 @@ void ULuaBTNodeInterface::SetValueAsName(const struct FName& KeyName, const stru
 
 void ULuaBTNodeInterface::SetValueAsInt(const struct FName& KeyName, int IntValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsInt");
 
@@ -14849,7 +14849,7 @@ void ULuaBTNodeInterface::SetValueAsInt(const struct FName& KeyName, int IntValu
 
 void ULuaBTNodeInterface::SetValueAsFloat(const struct FName& KeyName, float FloatValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsFloat");
 
@@ -14875,7 +14875,7 @@ void ULuaBTNodeInterface::SetValueAsFloat(const struct FName& KeyName, float Flo
 
 void ULuaBTNodeInterface::SetValueAsEnum(const struct FName& KeyName, unsigned char EnumValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsEnum");
 
@@ -14901,7 +14901,7 @@ void ULuaBTNodeInterface::SetValueAsEnum(const struct FName& KeyName, unsigned c
 
 void ULuaBTNodeInterface::SetValueAsClass(const struct FName& KeyName, class UClass* ClassValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsClass");
 
@@ -14927,7 +14927,7 @@ void ULuaBTNodeInterface::SetValueAsClass(const struct FName& KeyName, class UCl
 
 void ULuaBTNodeInterface::SetValueAsBool(const struct FName& KeyName, bool BoolValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.SetValueAsBool");
 
@@ -14953,7 +14953,7 @@ void ULuaBTNodeInterface::SetValueAsBool(const struct FName& KeyName, bool BoolV
 
 bool ULuaBTNodeInterface::IsVectorValueSet(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.IsVectorValueSet");
 
@@ -14980,7 +14980,7 @@ bool ULuaBTNodeInterface::IsVectorValueSet(const struct FName& KeyName)
 
 struct FVector ULuaBTNodeInterface::GetValueAsVector(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsVector");
 
@@ -15007,7 +15007,7 @@ struct FVector ULuaBTNodeInterface::GetValueAsVector(const struct FName& KeyName
 
 struct FString ULuaBTNodeInterface::GetValueAsString(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsString");
 
@@ -15034,7 +15034,7 @@ struct FString ULuaBTNodeInterface::GetValueAsString(const struct FName& KeyName
 
 struct FRotator ULuaBTNodeInterface::GetValueAsRotator(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsRotator");
 
@@ -15061,7 +15061,7 @@ struct FRotator ULuaBTNodeInterface::GetValueAsRotator(const struct FName& KeyNa
 
 class UObject* ULuaBTNodeInterface::GetValueAsObject(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsObject");
 
@@ -15088,7 +15088,7 @@ class UObject* ULuaBTNodeInterface::GetValueAsObject(const struct FName& KeyName
 
 struct FName ULuaBTNodeInterface::GetValueAsName(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsName");
 
@@ -15115,7 +15115,7 @@ struct FName ULuaBTNodeInterface::GetValueAsName(const struct FName& KeyName)
 
 int ULuaBTNodeInterface::GetValueAsInt(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsInt");
 
@@ -15142,7 +15142,7 @@ int ULuaBTNodeInterface::GetValueAsInt(const struct FName& KeyName)
 
 float ULuaBTNodeInterface::GetValueAsFloat(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsFloat");
 
@@ -15169,7 +15169,7 @@ float ULuaBTNodeInterface::GetValueAsFloat(const struct FName& KeyName)
 
 unsigned char ULuaBTNodeInterface::GetValueAsEnum(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsEnum");
 
@@ -15196,7 +15196,7 @@ unsigned char ULuaBTNodeInterface::GetValueAsEnum(const struct FName& KeyName)
 
 class UClass* ULuaBTNodeInterface::GetValueAsClass(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsClass");
 
@@ -15223,7 +15223,7 @@ class UClass* ULuaBTNodeInterface::GetValueAsClass(const struct FName& KeyName)
 
 bool ULuaBTNodeInterface::GetValueAsBool(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.GetValueAsBool");
 
@@ -15249,7 +15249,7 @@ bool ULuaBTNodeInterface::GetValueAsBool(const struct FName& KeyName)
 
 void ULuaBTNodeInterface::ClearValue(const struct FName& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTNodeInterface.ClearValue");
 
@@ -15275,7 +15275,7 @@ void ULuaBTNodeInterface::ClearValue(const struct FName& KeyName)
 
 void ULuaBTServiceBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveTickAI");
 
@@ -15301,7 +15301,7 @@ void ULuaBTServiceBase::ReceiveTickAI(class AAIController* OwnerController, clas
 
 void ULuaBTServiceBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveTick");
 
@@ -15326,7 +15326,7 @@ void ULuaBTServiceBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds
 
 void ULuaBTServiceBase::ReceiveSearchStartAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveSearchStartAI");
 
@@ -15350,7 +15350,7 @@ void ULuaBTServiceBase::ReceiveSearchStartAI(class AAIController* OwnerControlle
 
 void ULuaBTServiceBase::ReceiveSearchStart(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveSearchStart");
 
@@ -15374,7 +15374,7 @@ void ULuaBTServiceBase::ReceiveSearchStart(class AActor* OwnerActor)
 
 void ULuaBTServiceBase::ReceiveDeactivationAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveDeactivationAI");
 
@@ -15398,7 +15398,7 @@ void ULuaBTServiceBase::ReceiveDeactivationAI(class AAIController* OwnerControll
 
 void ULuaBTServiceBase::ReceiveDeactivation(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveDeactivation");
 
@@ -15422,7 +15422,7 @@ void ULuaBTServiceBase::ReceiveDeactivation(class AActor* OwnerActor)
 
 void ULuaBTServiceBase::ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveActivationAI");
 
@@ -15446,7 +15446,7 @@ void ULuaBTServiceBase::ReceiveActivationAI(class AAIController* OwnerController
 
 void ULuaBTServiceBase::ReceiveActivation(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.ReceiveActivation");
 
@@ -15469,7 +15469,7 @@ void ULuaBTServiceBase::ReceiveActivation(class AActor* OwnerActor)
 
 bool ULuaBTServiceBase::IsServiceActive()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTServiceBase.IsServiceActive");
 
@@ -15495,7 +15495,7 @@ bool ULuaBTServiceBase::IsServiceActive()
 
 void ULuaBTTaskBase::SetFinishOnMessageWithId(const struct FName& MessageName, int RequestID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.SetFinishOnMessageWithId");
 
@@ -15520,7 +15520,7 @@ void ULuaBTTaskBase::SetFinishOnMessageWithId(const struct FName& MessageName, i
 
 void ULuaBTTaskBase::SetFinishOnMessage(const struct FName& MessageName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.SetFinishOnMessage");
 
@@ -15546,7 +15546,7 @@ void ULuaBTTaskBase::SetFinishOnMessage(const struct FName& MessageName)
 
 void ULuaBTTaskBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.ReceiveTickAI");
 
@@ -15572,7 +15572,7 @@ void ULuaBTTaskBase::ReceiveTickAI(class AAIController* OwnerController, class A
 
 void ULuaBTTaskBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.ReceiveTick");
 
@@ -15597,7 +15597,7 @@ void ULuaBTTaskBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 
 void ULuaBTTaskBase::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.ReceiveExecuteAI");
 
@@ -15621,7 +15621,7 @@ void ULuaBTTaskBase::ReceiveExecuteAI(class AAIController* OwnerController, clas
 
 void ULuaBTTaskBase::ReceiveExecute(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.ReceiveExecute");
 
@@ -15645,7 +15645,7 @@ void ULuaBTTaskBase::ReceiveExecute(class AActor* OwnerActor)
 
 void ULuaBTTaskBase::ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.ReceiveAbortAI");
 
@@ -15669,7 +15669,7 @@ void ULuaBTTaskBase::ReceiveAbortAI(class AAIController* OwnerController, class 
 
 void ULuaBTTaskBase::ReceiveAbort(class AActor* OwnerActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.ReceiveAbort");
 
@@ -15692,7 +15692,7 @@ void ULuaBTTaskBase::ReceiveAbort(class AActor* OwnerActor)
 
 bool ULuaBTTaskBase::IsTaskExecuting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.IsTaskExecuting");
 
@@ -15717,7 +15717,7 @@ bool ULuaBTTaskBase::IsTaskExecuting()
 
 bool ULuaBTTaskBase::IsTaskAborting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.IsTaskAborting");
 
@@ -15742,7 +15742,7 @@ bool ULuaBTTaskBase::IsTaskAborting()
 
 void ULuaBTTaskBase::FinishExecute(bool bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.FinishExecute");
 
@@ -15764,7 +15764,7 @@ void ULuaBTTaskBase::FinishExecute(bool bSuccess)
 
 void ULuaBTTaskBase::FinishAbort()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.LuaBTTaskBase.FinishAbort");
 
@@ -15785,7 +15785,7 @@ void ULuaBTTaskBase::FinishAbort()
 
 void UMissionBoardComponent::OnRep_Config()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.MissionBoardComponent.OnRep_Config");
 
@@ -15808,7 +15808,7 @@ void UMissionBoardComponent::OnRep_Config()
 
 int UMissionBoardComponent::GetUtcLeftSecondsByConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.MissionBoardComponent.GetUtcLeftSecondsByConfig");
 
@@ -15834,7 +15834,7 @@ int UMissionBoardComponent::GetUtcLeftSecondsByConfig()
 
 void ANetworkReportActor::RPC_Server_SyncClientPkgLossArrayInfo(TArray<unsigned char> InLoss, TArray<unsigned char> OutLoss)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.NetworkReportActor.RPC_Server_SyncClientPkgLossArrayInfo");
 
@@ -15857,7 +15857,7 @@ void ANetworkReportActor::RPC_Server_SyncClientPkgLossArrayInfo(TArray<unsigned 
 
 void ANetworkReportActor::ResetAllNetworkData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.NetworkReportActor.ResetAllNetworkData");
 
@@ -15878,7 +15878,7 @@ void ANetworkReportActor::ResetAllNetworkData()
 
 void UNewWeatherComponent::LuaInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.NewWeatherComponent.LuaInit");
 
@@ -15900,7 +15900,7 @@ void UNewWeatherComponent::LuaInit()
 
 void AUAEAdvertisementActor::SetStaticMeshPath(const struct FString& InMeshPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.SetStaticMeshPath");
 
@@ -15924,7 +15924,7 @@ void AUAEAdvertisementActor::SetStaticMeshPath(const struct FString& InMeshPath)
 
 void AUAEAdvertisementActor::SetStaticMesh(class UStaticMesh* InStaticMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.SetStaticMesh");
 
@@ -15948,7 +15948,7 @@ void AUAEAdvertisementActor::SetStaticMesh(class UStaticMesh* InStaticMesh)
 
 void AUAEAdvertisementActor::SetScale(const struct FVector& inScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.SetScale");
 
@@ -15972,7 +15972,7 @@ void AUAEAdvertisementActor::SetScale(const struct FVector& inScale)
 
 void AUAEAdvertisementActor::SetId(int InputID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.SetId");
 
@@ -15996,7 +15996,7 @@ void AUAEAdvertisementActor::SetId(int InputID)
 
 void AUAEAdvertisementActor::SetCulDistance(float CulDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.SetCulDistance");
 
@@ -16020,7 +16020,7 @@ void AUAEAdvertisementActor::SetCulDistance(float CulDistance)
 
 void AUAEAdvertisementActor::RequestHttpImageByUrl(const struct FString& PicUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.RequestHttpImageByUrl");
 
@@ -16044,7 +16044,7 @@ void AUAEAdvertisementActor::RequestHttpImageByUrl(const struct FString& PicUrl)
 
 void AUAEAdvertisementActor::ReplaceTexture(class UTexture2D* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.ReplaceTexture");
 
@@ -16069,7 +16069,7 @@ void AUAEAdvertisementActor::ReplaceTexture(class UTexture2D* Texture)
 
 void AUAEAdvertisementActor::OnRequestImgSuccess(class UTexture2D* Texture, const struct FString& RequestedURL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.OnRequestImgSuccess");
 
@@ -16092,7 +16092,7 @@ void AUAEAdvertisementActor::OnRequestImgSuccess(class UTexture2D* Texture, cons
 
 void AUAEAdvertisementActor::OnRep_MeshPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.OnRep_MeshPath");
 
@@ -16112,7 +16112,7 @@ void AUAEAdvertisementActor::OnRep_MeshPath()
 
 void AUAEAdvertisementActor::OnRep_Id()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.OnRep_Id");
 
@@ -16132,7 +16132,7 @@ void AUAEAdvertisementActor::OnRep_Id()
 
 void AUAEAdvertisementActor::OnClientLoadMesh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.OnClientLoadMesh");
 
@@ -16152,7 +16152,7 @@ void AUAEAdvertisementActor::OnClientLoadMesh()
 
 void AUAEAdvertisementActor::InitImageDownloadUtil()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEAdvertisementActor.InitImageDownloadUtil");
 
@@ -16175,7 +16175,7 @@ void AUAEAdvertisementActor::InitImageDownloadUtil()
 
 void ARegionableAdvertisementActor::ReceivedPlayerActiveRegionsChanged(bool bEnter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.RegionableAdvertisementActor.ReceivedPlayerActiveRegionsChanged");
 
@@ -16198,7 +16198,7 @@ void ARegionableAdvertisementActor::ReceivedPlayerActiveRegionsChanged(bool bEnt
 
 class AController* AUAEBuffApplierActor::GetTheInstigatorController()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEBuffApplierActor.GetTheInstigatorController");
 
@@ -16223,7 +16223,7 @@ class AController* AUAEBuffApplierActor::GetTheInstigatorController()
 
 void UUAEChaCustomAnimListComponent::SetCharacterAnimOverrideType(int AnimOverrideType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.SetCharacterAnimOverrideType");
 
@@ -16245,7 +16245,7 @@ void UUAEChaCustomAnimListComponent::SetCharacterAnimOverrideType(int AnimOverri
 
 void UUAEChaCustomAnimListComponent::ReleaseCustomAnimAssets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.ReleaseCustomAnimAssets");
 
@@ -16268,7 +16268,7 @@ void UUAEChaCustomAnimListComponent::ReleaseCustomAnimAssets()
 
 bool UUAEChaCustomAnimListComponent::HasAnimAsyncLoadingFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.HasAnimAsyncLoadingFinished");
 
@@ -16293,7 +16293,7 @@ bool UUAEChaCustomAnimListComponent::HasAnimAsyncLoadingFinished()
 
 struct FString UUAEChaCustomAnimListComponent::GetOwnerName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetOwnerName");
 
@@ -16319,7 +16319,7 @@ struct FString UUAEChaCustomAnimListComponent::GetOwnerName()
 
 class UClass* UUAEChaCustomAnimListComponent::GetCharacterCustomAnimInstance(const struct FString& AnimName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetCharacterCustomAnimInstance");
 
@@ -16346,7 +16346,7 @@ class UClass* UUAEChaCustomAnimListComponent::GetCharacterCustomAnimInstance(con
 
 class UAnimationAsset* UUAEChaCustomAnimListComponent::GetCharacterCustomAnim(const struct FString& AnimName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetCharacterCustomAnim");
 
@@ -16373,7 +16373,7 @@ class UAnimationAsset* UUAEChaCustomAnimListComponent::GetCharacterCustomAnim(co
 
 class UBlendSpace1D* UUAEChaCustomAnimListComponent::GetBlendSpace1D(const struct FString& AnimAssetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetBlendSpace1D");
 
@@ -16400,7 +16400,7 @@ class UBlendSpace1D* UUAEChaCustomAnimListComponent::GetBlendSpace1D(const struc
 
 class UBlendSpace* UUAEChaCustomAnimListComponent::GetBlendSpace(const struct FString& AnimAssetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetBlendSpace");
 
@@ -16427,7 +16427,7 @@ class UBlendSpace* UUAEChaCustomAnimListComponent::GetBlendSpace(const struct FS
 
 class UAnimSequence* UUAEChaCustomAnimListComponent::GetAnimSequence(const struct FString& AnimAssetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetAnimSequence");
 
@@ -16454,7 +16454,7 @@ class UAnimSequence* UUAEChaCustomAnimListComponent::GetAnimSequence(const struc
 
 class UAnimMontage* UUAEChaCustomAnimListComponent::GetAnimMontage(const struct FString& AnimAssetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetAnimMontage");
 
@@ -16481,7 +16481,7 @@ class UAnimMontage* UUAEChaCustomAnimListComponent::GetAnimMontage(const struct 
 
 class UAimOffsetBlendSpace* UUAEChaCustomAnimListComponent::GetAimOffsetBlendSpace(const struct FString& AnimAssetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.GetAimOffsetBlendSpace");
 
@@ -16505,7 +16505,7 @@ class UAimOffsetBlendSpace* UUAEChaCustomAnimListComponent::GetAimOffsetBlendSpa
 
 void UUAEChaCustomAnimListComponent::CallRequestLoadAnimAssets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaCustomAnimListComponent.CallRequestLoadAnimAssets");
 
@@ -16526,7 +16526,7 @@ void UUAEChaCustomAnimListComponent::CallRequestLoadAnimAssets()
 
 void UUAEChaParachuteAnimListComponent::ReleaseParachuteAnimAssets()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaParachuteAnimListComponent.ReleaseParachuteAnimAssets");
 
@@ -16549,7 +16549,7 @@ void UUAEChaParachuteAnimListComponent::ReleaseParachuteAnimAssets()
 
 void UUAEChaParachuteAnimListComponent::OnParachuteAnimAsyncLoadingFinished(const struct FString& AnimLoaded)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaParachuteAnimListComponent.OnParachuteAnimAsyncLoadingFinished");
 
@@ -16571,7 +16571,7 @@ void UUAEChaParachuteAnimListComponent::OnParachuteAnimAsyncLoadingFinished(cons
 
 void UUAEChaParachuteAnimListComponent::OnAnimListAsyncLoadingFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaParachuteAnimListComponent.OnAnimListAsyncLoadingFinished");
 
@@ -16594,7 +16594,7 @@ void UUAEChaParachuteAnimListComponent::OnAnimListAsyncLoadingFinished()
 
 bool UUAEChaParachuteAnimListComponent::HasAnimAsyncLoadingFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaParachuteAnimListComponent.HasAnimAsyncLoadingFinished");
 
@@ -16617,7 +16617,7 @@ bool UUAEChaParachuteAnimListComponent::HasAnimAsyncLoadingFinished()
 
 void UUAEChaParachuteAnimListComponent::HandleAsyncLoadingFinishedEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaParachuteAnimListComponent.HandleAsyncLoadingFinishedEvent");
 
@@ -16640,7 +16640,7 @@ void UUAEChaParachuteAnimListComponent::HandleAsyncLoadingFinishedEvent()
 
 struct FString UUAEChaParachuteAnimListComponent::GetOwnerName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaParachuteAnimListComponent.GetOwnerName");
 
@@ -16661,13 +16661,13 @@ struct FString UUAEChaParachuteAnimListComponent::GetOwnerName()
 // Function Gameplay.UAEChaParachuteAnimListComponent.GetCharacterParachuteAnim
 // (Final, Native, Public, Const)
 // Parameters:
-// TEnumAsByte<enum ECharacterParachuteAnimType> AnimType                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECharacterParachuteAnimType> AnimType                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            AnimOverrideType               (Parm, ZeroConstructor, IsPlainOldData)
 // class UAnimationAsset*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-class UAnimationAsset* UUAEChaParachuteAnimListComponent::GetCharacterParachuteAnim(TEnumAsByte<enum ECharacterParachuteAnimType> AnimType, int AnimOverrideType)
+class UAnimationAsset* UUAEChaParachuteAnimListComponent::GetCharacterParachuteAnim(TEnumAsByte<ECharacterParachuteAnimType> AnimType, int AnimOverrideType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaParachuteAnimListComponent.GetCharacterParachuteAnim");
 
@@ -16694,7 +16694,7 @@ class UAnimationAsset* UUAEChaParachuteAnimListComponent::GetCharacterParachuteA
 
 void UUAECharacterAnimListComponent::SetAnimListMapValueData(struct FAnimListMapValueData* AnimListValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.SetAnimListMapValueData");
 
@@ -16721,7 +16721,7 @@ void UUAECharacterAnimListComponent::SetAnimListMapValueData(struct FAnimListMap
 
 bool UUAECharacterAnimListComponent::OnPreLoadingFinished(const struct FAsyncLoadCharAnimParams& LoadingParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.OnPreLoadingFinished");
 
@@ -16747,7 +16747,7 @@ bool UUAECharacterAnimListComponent::OnPreLoadingFinished(const struct FAsyncLoa
 
 void UUAECharacterAnimListComponent::OnAsyncLoadingFinishedNew2(const struct FAsyncLoadCharAnimParams& LoadingParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.OnAsyncLoadingFinishedNew2");
 
@@ -16771,7 +16771,7 @@ void UUAECharacterAnimListComponent::OnAsyncLoadingFinishedNew2(const struct FAs
 
 void UUAECharacterAnimListComponent::OnAsyncLoadingFinishedNew(const struct FAsyncLoadCharAnimParams& LoadingParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.OnAsyncLoadingFinishedNew");
 
@@ -16795,7 +16795,7 @@ void UUAECharacterAnimListComponent::OnAsyncLoadingFinishedNew(const struct FAsy
 
 void UUAECharacterAnimListComponent::InitAnimListMap(bool IsFPP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.InitAnimListMap");
 
@@ -16819,7 +16819,7 @@ void UUAECharacterAnimListComponent::InitAnimListMap(bool IsFPP)
 
 TArray<struct FPlayerAnimData> UUAECharacterAnimListComponent::GetCharacterShovelAnim()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.GetCharacterShovelAnim");
 
@@ -16840,12 +16840,12 @@ TArray<struct FPlayerAnimData> UUAECharacterAnimListComponent::GetCharacterShove
 // Function Gameplay.UAECharacterAnimListComponent.GetCharacterJumpAnim
 // (Final, Native, Public, Const)
 // Parameters:
-// TEnumAsByte<enum ECharacterJumpType> JumpType                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECharacterJumpType> JumpType                       (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<struct FPlayerAnimData> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 
-TArray<struct FPlayerAnimData> UUAECharacterAnimListComponent::GetCharacterJumpAnim(TEnumAsByte<enum ECharacterJumpType> JumpType)
+TArray<struct FPlayerAnimData> UUAECharacterAnimListComponent::GetCharacterJumpAnim(TEnumAsByte<ECharacterJumpType> JumpType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.GetCharacterJumpAnim");
 
@@ -16871,7 +16871,7 @@ TArray<struct FPlayerAnimData> UUAECharacterAnimListComponent::GetCharacterJumpA
 
 class UAnimationAsset* UUAECharacterAnimListComponent::GetAnimationAsset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAECharacterAnimListComponent.GetAnimationAsset");
 
@@ -16896,7 +16896,7 @@ class UAnimationAsset* UUAECharacterAnimListComponent::GetAnimationAsset()
 
 void UUAEChaVehAnimListComponent::SetVehCharAnimDataList(TArray<struct FVehCharAnimData> InVehCharAnimDataList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaVehAnimListComponent.SetVehCharAnimDataList");
 
@@ -16918,7 +16918,7 @@ void UUAEChaVehAnimListComponent::SetVehCharAnimDataList(TArray<struct FVehCharA
 
 void UUAEChaVehAnimListComponent::OnIdleAnimListAsyncLoadingFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaVehAnimListComponent.OnIdleAnimListAsyncLoadingFinished");
 
@@ -16941,7 +16941,7 @@ void UUAEChaVehAnimListComponent::OnIdleAnimListAsyncLoadingFinished()
 
 void UUAEChaVehAnimListComponent::OnAnimListAsyncLoadingFinished(const struct FAsyncLoadCharVehAnimParams& LoadingParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaVehAnimListComponent.OnAnimListAsyncLoadingFinished");
 
@@ -16965,7 +16965,7 @@ void UUAEChaVehAnimListComponent::OnAnimListAsyncLoadingFinished(const struct FA
 
 void UUAEChaVehAnimListComponent::ChangeAnimData(TArray<struct FVehCharAnimData> InAnimData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEChaVehAnimListComponent.ChangeAnimData");
 
@@ -16982,537 +16982,12 @@ void UUAEChaVehAnimListComponent::ChangeAnimData(TArray<struct FVehCharAnimData>
 }
 
 
-// Function Gameplay.UAEGameplayTagEventNodeBase.Validate
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                  NodeTarget                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UObject*                 Observer                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UUAEGameplayTagEventNodeBase::Validate(class AActor* NodeTarget, class UObject* Observer)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagEventNodeBase.Validate");
-
-	UUAEGameplayTagEventNodeBase_Validate_Params params;
-	params.NodeTarget = NodeTarget;
-	params.Observer = Observer;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagEventNodeBase.OnUnregistered
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                  NodeTarget                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UObject*                 Observer                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UUAEGameplayTagEventNodeBase::OnUnregistered(class AActor* NodeTarget, class UObject* Observer)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagEventNodeBase.OnUnregistered");
-
-	UUAEGameplayTagEventNodeBase_OnUnregistered_Params params;
-	params.NodeTarget = NodeTarget;
-	params.Observer = Observer;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagEventNodeBase.OnRegistered
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                  NodeTarget                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UObject*                 Observer                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UUAEGameplayTagEventNodeBase::OnRegistered(class AActor* NodeTarget, class UObject* Observer)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagEventNodeBase.OnRegistered");
-
-	UUAEGameplayTagEventNodeBase_OnRegistered_Params params;
-	params.NodeTarget = NodeTarget;
-	params.Observer = Observer;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagEventNodeBase.Invalidate
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                  NodeTarget                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UObject*                 Observer                       (Parm, ZeroConstructor, IsPlainOldData)
-
-void UUAEGameplayTagEventNodeBase::Invalidate(class AActor* NodeTarget, class UObject* Observer)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagEventNodeBase.Invalidate");
-
-	UUAEGameplayTagEventNodeBase_Invalidate_Params params;
-	params.NodeTarget = NodeTarget;
-	params.Observer = Observer;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.OnActorEndPlay
-// (Final, Native, Protected)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum EEndPlayReason> EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
-
-void UUAEGameplayTagImposerSubsystem::OnActorEndPlay(class AActor* Actor, TEnumAsByte<enum EEndPlayReason> EndPlayReason)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.OnActorEndPlay");
-
-	UUAEGameplayTagImposerSubsystem_OnActorEndPlay_Params params;
-	params.Actor = Actor;
-	params.EndPlayReason = EndPlayReason;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_UntagActor
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FGameplayTag            Tag                            (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UUAEGameplayTagImposerSubsystem::K2_UntagActor(class AActor* Actor, const struct FGameplayTag& Tag)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_UntagActor");
-
-	UUAEGameplayTagImposerSubsystem_K2_UntagActor_Params params;
-	params.Actor = Actor;
-	params.Tag = Tag;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_UnregisterActorTagChangedEvent
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FGameplayTag            InTag                          (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FScriptDelegate         InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UUAEGameplayTagImposerSubsystem::K2_UnregisterActorTagChangedEvent(class AActor* Actor, const struct FGameplayTag& InTag, const struct FScriptDelegate& InDelegate)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_UnregisterActorTagChangedEvent");
-
-	UUAEGameplayTagImposerSubsystem_K2_UnregisterActorTagChangedEvent_Params params;
-	params.Actor = Actor;
-	params.InTag = InTag;
-	params.InDelegate = InDelegate;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_TagActor
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FGameplayTag            Tag                            (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UUAEGameplayTagImposerSubsystem::K2_TagActor(class AActor* Actor, const struct FGameplayTag& Tag)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_TagActor");
-
-	UUAEGameplayTagImposerSubsystem_K2_TagActor_Params params;
-	params.Actor = Actor;
-	params.Tag = Tag;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RemoveAllMatchingTags
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FGameplayTag            Tag                            (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UUAEGameplayTagImposerSubsystem::K2_RemoveAllMatchingTags(class AActor* Actor, const struct FGameplayTag& Tag)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RemoveAllMatchingTags");
-
-	UUAEGameplayTagImposerSubsystem_K2_RemoveAllMatchingTags_Params params;
-	params.Actor = Actor;
-	params.Tag = Tag;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RemoveActorTagEventNode
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Handle                         (Parm, ZeroConstructor, IsPlainOldData)
-
-void UUAEGameplayTagImposerSubsystem::K2_RemoveActorTagEventNode(class UObject* WorldContextObject, int Handle)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RemoveActorTagEventNode");
-
-	UUAEGameplayTagImposerSubsystem_K2_RemoveActorTagEventNode_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.Handle = Handle;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RegisterActorTagChangedEvent
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FGameplayTag            InTag                          (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FScriptDelegate         InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UUAEGameplayTagImposerSubsystem::K2_RegisterActorTagChangedEvent(class AActor* Actor, const struct FGameplayTag& InTag, const struct FScriptDelegate& InDelegate)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_RegisterActorTagChangedEvent");
-
-	UUAEGameplayTagImposerSubsystem_K2_RegisterActorTagChangedEvent_Params params;
-	params.Actor = Actor;
-	params.InTag = InTag;
-	params.InDelegate = InDelegate;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_MultipleUntagActor
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<struct FGameplayTag>    InTags                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-
-void UUAEGameplayTagImposerSubsystem::K2_MultipleUntagActor(class AActor* Actor, TArray<struct FGameplayTag> InTags)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_MultipleUntagActor");
-
-	UUAEGameplayTagImposerSubsystem_K2_MultipleUntagActor_Params params;
-	params.Actor = Actor;
-	params.InTags = InTags;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_MultipleTagActor
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<struct FGameplayTag>    InTags                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-
-void UUAEGameplayTagImposerSubsystem::K2_MultipleTagActor(class AActor* Actor, TArray<struct FGameplayTag> InTags)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_MultipleTagActor");
-
-	UUAEGameplayTagImposerSubsystem_K2_MultipleTagActor_Params params;
-	params.Actor = Actor;
-	params.InTags = InTags;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ClearActorTags
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bNotifyAll                     (Parm, ZeroConstructor, IsPlainOldData)
-
-void UUAEGameplayTagImposerSubsystem::K2_ClearActorTags(class AActor* Actor, bool bNotifyAll)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ClearActorTags");
-
-	UUAEGameplayTagImposerSubsystem_K2_ClearActorTags_Params params;
-	params.Actor = Actor;
-	params.bNotifyAll = bNotifyAll;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ApplyActorTagEventNode
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                  TargetActor                    (Parm, ZeroConstructor, IsPlainOldData)
-// class UObject*                 NodeOwner                      (Parm, ZeroConstructor, IsPlainOldData)
-// class UUAEGameplayTagEventNodeBase* NodeBase                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-int UUAEGameplayTagImposerSubsystem::K2_ApplyActorTagEventNode(class AActor* TargetActor, class UObject* NodeOwner, class UUAEGameplayTagEventNodeBase* NodeBase)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ApplyActorTagEventNode");
-
-	UUAEGameplayTagImposerSubsystem_K2_ApplyActorTagEventNode_Params params;
-	params.TargetActor = TargetActor;
-	params.NodeOwner = NodeOwner;
-	params.NodeBase = NodeBase;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasMatchingTag
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FGameplayTag            TagToCheck                     (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UUAEGameplayTagImposerSubsystem::K2_ActorHasMatchingTag(class AActor* Actor, const struct FGameplayTag& TagToCheck, bool bExactMatch)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasMatchingTag");
-
-	UUAEGameplayTagImposerSubsystem_K2_ActorHasMatchingTag_Params params;
-	params.Actor = Actor;
-	params.TagToCheck = TagToCheck;
-	params.bExactMatch = bExactMatch;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasAnyTags
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<struct FGameplayTag>    InTags                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UUAEGameplayTagImposerSubsystem::K2_ActorHasAnyTags(class AActor* Actor, TArray<struct FGameplayTag> InTags, bool bExactMatch)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasAnyTags");
-
-	UUAEGameplayTagImposerSubsystem_K2_ActorHasAnyTags_Params params;
-	params.Actor = Actor;
-	params.InTags = InTags;
-	params.bExactMatch = bExactMatch;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasAllTags
-// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<struct FGameplayTag>    InTags                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool UUAEGameplayTagImposerSubsystem::K2_ActorHasAllTags(class AActor* Actor, TArray<struct FGameplayTag> InTags, bool bExactMatch)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.K2_ActorHasAllTags");
-
-	UUAEGameplayTagImposerSubsystem_K2_ActorHasAllTags_Params params;
-	params.Actor = Actor;
-	params.InTags = InTags;
-	params.bExactMatch = bExactMatch;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Gameplay.UAEGameplayTagImposerSubsystem.Get
-// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// class UUAEGameplayTagImposerSubsystem* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-class UUAEGameplayTagImposerSubsystem* UUAEGameplayTagImposerSubsystem::Get(class UObject* WorldContextObject)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEGameplayTagImposerSubsystem.Get");
-
-	UUAEGameplayTagImposerSubsystem_Get_Params params;
-	params.WorldContextObject = WorldContextObject;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function Gameplay.UAELevelSequenceActor.UpdateTrackBindingData
 // (Final, Native, Public, BlueprintCallable)
 
 void AUAELevelSequenceActor::UpdateTrackBindingData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.UpdateTrackBindingData");
 
@@ -17535,7 +17010,7 @@ void AUAELevelSequenceActor::UpdateTrackBindingData()
 
 void AUAELevelSequenceActor::UpdateSequence(const struct FString& LevelSequencePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.UpdateSequence");
 
@@ -17562,7 +17037,7 @@ void AUAELevelSequenceActor::UpdateSequence(const struct FString& LevelSequenceP
 
 void AUAELevelSequenceActor::UpdatePlayback(bool bRestoreState, bool bDisableMovementInput, bool bDisableLookAtInput, bool bHidePlayer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.UpdatePlayback");
 
@@ -17590,7 +17065,7 @@ void AUAELevelSequenceActor::UpdatePlayback(bool bRestoreState, bool bDisableMov
 
 void AUAELevelSequenceActor::UpdateInstanceData(const struct FVector& OffsetVector, const struct FRotator& OffsetRotation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.UpdateInstanceData");
 
@@ -17615,7 +17090,7 @@ void AUAELevelSequenceActor::UpdateInstanceData(const struct FVector& OffsetVect
 
 void AUAELevelSequenceActor::StopMontageParticle(const struct FName& SlotName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.StopMontageParticle");
 
@@ -17637,7 +17112,7 @@ void AUAELevelSequenceActor::StopMontageParticle(const struct FName& SlotName)
 
 void AUAELevelSequenceActor::Stop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.Stop");
 
@@ -17660,7 +17135,7 @@ void AUAELevelSequenceActor::Stop()
 
 void AUAELevelSequenceActor::SetUseSelfTransformOrigin(bool bInUse)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.SetUseSelfTransformOrigin");
 
@@ -17684,7 +17159,7 @@ void AUAELevelSequenceActor::SetUseSelfTransformOrigin(bool bInUse)
 
 void AUAELevelSequenceActor::SetTrackBindingInfo(TMap<struct FString, struct FString> TrackBindingInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.SetTrackBindingInfo");
 
@@ -17707,7 +17182,7 @@ void AUAELevelSequenceActor::SetTrackBindingInfo(TMap<struct FString, struct FSt
 
 void AUAELevelSequenceActor::SetTrackBindingData(TArray<struct FSeqActorBindingData> InTrackBindingData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.SetTrackBindingData");
 
@@ -17733,7 +17208,7 @@ void AUAELevelSequenceActor::SetTrackBindingData(TArray<struct FSeqActorBindingD
 
 void AUAELevelSequenceActor::SetNetSyncBinding(const struct FMovieSceneObjectBindingID& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.SetNetSyncBinding");
 
@@ -17759,7 +17234,7 @@ void AUAELevelSequenceActor::SetNetSyncBinding(const struct FMovieSceneObjectBin
 
 void AUAELevelSequenceActor::SetLevelSequenceAssetPath(const struct FString& InLevelSequenceAssetPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.SetLevelSequenceAssetPath");
 
@@ -17781,7 +17256,7 @@ void AUAELevelSequenceActor::SetLevelSequenceAssetPath(const struct FString& InL
 
 void AUAELevelSequenceActor::ResetNetSyncBindings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ResetNetSyncBindings");
 
@@ -17804,7 +17279,7 @@ void AUAELevelSequenceActor::ResetNetSyncBindings()
 
 void AUAELevelSequenceActor::ResetNetSyncBinding(const struct FMovieSceneObjectBindingID& Binding)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ResetNetSyncBinding");
 
@@ -17829,7 +17304,7 @@ void AUAELevelSequenceActor::ResetNetSyncBinding(const struct FMovieSceneObjectB
 
 void AUAELevelSequenceActor::RemoveNetSyncBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.RemoveNetSyncBinding");
 
@@ -17852,7 +17327,7 @@ void AUAELevelSequenceActor::RemoveNetSyncBinding(const struct FMovieSceneObject
 
 void AUAELevelSequenceActor::ReleaseCameraCutTrack()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReleaseCameraCutTrack");
 
@@ -17873,7 +17348,7 @@ void AUAELevelSequenceActor::ReleaseCameraCutTrack()
 
 void AUAELevelSequenceActor::ReceiveOnStop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReceiveOnStop");
 
@@ -17893,7 +17368,7 @@ void AUAELevelSequenceActor::ReceiveOnStop()
 
 void AUAELevelSequenceActor::ReceiveOnPreStop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReceiveOnPreStop");
 
@@ -17913,7 +17388,7 @@ void AUAELevelSequenceActor::ReceiveOnPreStop()
 
 void AUAELevelSequenceActor::ReceiveOnPlayReverse()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReceiveOnPlayReverse");
 
@@ -17933,7 +17408,7 @@ void AUAELevelSequenceActor::ReceiveOnPlayReverse()
 
 void AUAELevelSequenceActor::ReceiveOnPlay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReceiveOnPlay");
 
@@ -17953,7 +17428,7 @@ void AUAELevelSequenceActor::ReceiveOnPlay()
 
 void AUAELevelSequenceActor::ReceiveOnPause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReceiveOnPause");
 
@@ -17976,7 +17451,7 @@ void AUAELevelSequenceActor::ReceiveOnPause()
 
 void AUAELevelSequenceActor::ReceiveOnObjectSpawned(class UObject* InObject, const struct FGuid& InBindingID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReceiveOnObjectSpawned");
 
@@ -17998,7 +17473,7 @@ void AUAELevelSequenceActor::ReceiveOnObjectSpawned(class UObject* InObject, con
 
 void AUAELevelSequenceActor::ReceiveOnFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.ReceiveOnFinished");
 
@@ -18020,7 +17495,7 @@ void AUAELevelSequenceActor::ReceiveOnFinished()
 
 void AUAELevelSequenceActor::Play(float InPlaytime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.Play");
 
@@ -18042,7 +17517,7 @@ void AUAELevelSequenceActor::Play(float InPlaytime)
 
 void AUAELevelSequenceActor::OnSequenceFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.OnSequenceFinished");
 
@@ -18063,7 +17538,7 @@ void AUAELevelSequenceActor::OnSequenceFinished()
 
 void AUAELevelSequenceActor::OnRep_NetSyncBindingData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.OnRep_NetSyncBindingData");
 
@@ -18084,7 +17559,7 @@ void AUAELevelSequenceActor::OnRep_NetSyncBindingData()
 
 void AUAELevelSequenceActor::OnRep_LevelSequenceAssetPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.OnRep_LevelSequenceAssetPath");
 
@@ -18105,7 +17580,7 @@ void AUAELevelSequenceActor::OnRep_LevelSequenceAssetPath()
 
 void AUAELevelSequenceActor::OnRep_bUseSelfTransformOrigin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.OnRep_bUseSelfTransformOrigin");
 
@@ -18126,7 +17601,7 @@ void AUAELevelSequenceActor::OnRep_bUseSelfTransformOrigin()
 
 void AUAELevelSequenceActor::OnRep_AuthorityStartPlayTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.OnRep_AuthorityStartPlayTime");
 
@@ -18151,7 +17626,7 @@ void AUAELevelSequenceActor::OnRep_AuthorityStartPlayTime()
 
 void AUAELevelSequenceActor::OnObjectSpawnedEvent(class UObject* InObject, const struct FGuid& InBindingID, const struct FMovieSceneSequenceID& InSequenceID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.OnObjectSpawnedEvent");
 
@@ -18175,7 +17650,7 @@ void AUAELevelSequenceActor::OnObjectSpawnedEvent(class UObject* InObject, const
 
 void AUAELevelSequenceActor::HandleOwnerReady()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.HandleOwnerReady");
 
@@ -18196,7 +17671,7 @@ void AUAELevelSequenceActor::HandleOwnerReady()
 
 void AUAELevelSequenceActor::GoToEndAndStop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.GoToEndAndStop");
 
@@ -18220,7 +17695,7 @@ void AUAELevelSequenceActor::GoToEndAndStop()
 
 struct FMovieSceneObjectBindingID AUAELevelSequenceActor::GetPossessableOrSpawnableByName(const struct FString& NameKeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.GetPossessableOrSpawnableByName");
 
@@ -18246,7 +17721,7 @@ struct FMovieSceneObjectBindingID AUAELevelSequenceActor::GetPossessableOrSpawna
 
 struct FMovieSceneObjectBindingID AUAELevelSequenceActor::GetFirstPossessableTrack()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.GetFirstPossessableTrack");
 
@@ -18275,7 +17750,7 @@ struct FMovieSceneObjectBindingID AUAELevelSequenceActor::GetFirstPossessableTra
 
 class ULevelSequencePlayer* AUAELevelSequenceActor::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* InLevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class AUAELevelSequenceActor** OutActor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.CreateLevelSequencePlayer");
 
@@ -18306,7 +17781,7 @@ class ULevelSequencePlayer* AUAELevelSequenceActor::CreateLevelSequencePlayer(cl
 
 bool AUAELevelSequenceActor::CheckStartPlayValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.CheckStartPlayValid");
 
@@ -18333,7 +17808,7 @@ bool AUAELevelSequenceActor::CheckStartPlayValid()
 
 void AUAELevelSequenceActor::AddNetSyncBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAELevelSequenceActor.AddNetSyncBinding");
 
@@ -18359,7 +17834,7 @@ void AUAELevelSequenceActor::AddNetSyncBinding(const struct FMovieSceneObjectBin
 
 void UAELobbyCharAnimListComp::OnAsyncLoadingFinished(const struct FLobbyAsyncLoadCharAnimParams& LoadingParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.AELobbyCharAnimListComp.OnAsyncLoadingFinished");
 
@@ -18384,7 +17859,7 @@ void UAELobbyCharAnimListComp::OnAsyncLoadingFinished(const struct FLobbyAsyncLo
 
 void UAELobbyCharAnimListComp::InitPendingList(TArray<struct FLobbyCharacterWeaponAnimData>* animEditList, TArray<struct FSoftObjectPath>* PendingList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.AELobbyCharAnimListComp.InitPendingList");
 
@@ -18408,15 +17883,15 @@ void UAELobbyCharAnimListComp::InitPendingList(TArray<struct FLobbyCharacterWeap
 // Function Gameplay.AELobbyCharAnimListComp.GetCharacterAnim
 // (Final, Native, Public, Const)
 // Parameters:
-// TEnumAsByte<enum ELobbyCharacterPosIndex> PosIdx                         (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ELobbyCharacterAnimType> GenderType                     (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ELobbyCharacterPosIndex> PosIdx                         (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ELobbyCharacterAnimType> GenderType                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            WeaponAnimType                 (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<enum ECharacterShowSceneType> sceneType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECharacterShowSceneType> sceneType                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UAnimationAsset*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-class UAnimationAsset* UAELobbyCharAnimListComp::GetCharacterAnim(TEnumAsByte<enum ELobbyCharacterPosIndex> PosIdx, TEnumAsByte<enum ELobbyCharacterAnimType> GenderType, int WeaponAnimType, TEnumAsByte<enum ECharacterShowSceneType> sceneType)
+class UAnimationAsset* UAELobbyCharAnimListComp::GetCharacterAnim(TEnumAsByte<ELobbyCharacterPosIndex> PosIdx, TEnumAsByte<ELobbyCharacterAnimType> GenderType, int WeaponAnimType, TEnumAsByte<ECharacterShowSceneType> sceneType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.AELobbyCharAnimListComp.GetCharacterAnim");
 
@@ -18442,11 +17917,11 @@ class UAnimationAsset* UAELobbyCharAnimListComp::GetCharacterAnim(TEnumAsByte<en
 // (Final, Native, Public, HasOutParms)
 // Parameters:
 // TArray<struct FLobbyCharacterWeaponAnimData> AnimList                       (Parm, OutParm, ZeroConstructor)
-// TEnumAsByte<enum ECharacterShowSceneType> sceneType                      (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ECharacterShowSceneType> sceneType                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UAELobbyCharAnimListComp::BuildAnimMap(TEnumAsByte<enum ECharacterShowSceneType> sceneType, TArray<struct FLobbyCharacterWeaponAnimData>* AnimList)
+void UAELobbyCharAnimListComp::BuildAnimMap(TEnumAsByte<ECharacterShowSceneType> sceneType, TArray<struct FLobbyCharacterWeaponAnimData>* AnimList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.AELobbyCharAnimListComp.BuildAnimMap");
 
@@ -18474,7 +17949,7 @@ void UAELobbyCharAnimListComp::BuildAnimMap(TEnumAsByte<enum ECharacterShowScene
 
 class AActor* UUAESpawnActorComponent::UAESpawnActor(const struct FUAESpawnActorParam& Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAESpawnActorComponent.UAESpawnActor");
 
@@ -18501,7 +17976,7 @@ class AActor* UUAESpawnActorComponent::UAESpawnActor(const struct FUAESpawnActor
 
 class UClass* UUAESpawnActorComponent::PrepareSpawnData(int TemplateID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAESpawnActorComponent.PrepareSpawnData");
 
@@ -18528,7 +18003,7 @@ class UClass* UUAESpawnActorComponent::PrepareSpawnData(int TemplateID)
 
 void UUAESpawnActorComponent::InitializeActor(class AActor* InActor, int TemplateID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAESpawnActorComponent.InitializeActor");
 
@@ -18553,7 +18028,7 @@ void UUAESpawnActorComponent::InitializeActor(class AActor* InActor, int Templat
 
 void UUAEWindowComponent::NotifyServerBroken(class APlayerController* Instigator)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEWindowComponent.NotifyServerBroken");
 
@@ -18577,7 +18052,7 @@ void UUAEWindowComponent::NotifyServerBroken(class APlayerController* Instigator
 
 void UUAEWindowComponent::NotifyRepDataUpdated(bool bInitial, bool bLocal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEWindowComponent.NotifyRepDataUpdated");
 
@@ -18603,7 +18078,7 @@ void UUAEWindowComponent::NotifyRepDataUpdated(bool bInitial, bool bLocal)
 
 void UUAEWindowComponent::LocalHandleWindowBrokenBP(bool bInitial, bool bLocal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEWindowComponent.LocalHandleWindowBrokenBP");
 
@@ -18628,7 +18103,7 @@ void UUAEWindowComponent::LocalHandleWindowBrokenBP(bool bInitial, bool bLocal)
 
 void UUAEWindowComponent::LocalHandleWindowBroken(bool bInitial, bool bLocal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEWindowComponent.LocalHandleWindowBroken");
 
@@ -18654,7 +18129,7 @@ void UUAEWindowComponent::LocalHandleWindowBroken(bool bInitial, bool bLocal)
 
 void UUAEWindowComponent::HandleBroken(class APlayerController* Instigator, bool bLocal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEWindowComponent.HandleBroken");
 
@@ -18679,7 +18154,7 @@ void UUAEWindowComponent::HandleBroken(class APlayerController* Instigator, bool
 
 struct FUAEWindowRepData UUAEWindowComponent::GetRepData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.UAEWindowComponent.GetRepData");
 
@@ -18705,7 +18180,7 @@ struct FUAEWindowRepData UUAEWindowComponent::GetRepData()
 
 class UClass* UVehicleConfigActorComponent::LoadActorClass(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleConfigActorComponent.LoadActorClass");
 
@@ -18729,7 +18204,7 @@ class UClass* UVehicleConfigActorComponent::LoadActorClass(const struct FString&
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleSpotStatisticsFromSpotFile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteVehicleSpotStatisticsFromSpotFile");
 
@@ -18750,7 +18225,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleSpotStatisticsFromSpo
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleSpotStatisticsDatas_V15()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteVehicleSpotStatisticsDatas_V15");
 
@@ -18771,7 +18246,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleSpotStatisticsDatas_V
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleSpotStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteVehicleSpotStatisticsDatas");
 
@@ -18792,7 +18267,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleSpotStatisticsDatas()
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleClassStatisticsDatas_V15()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteVehicleClassStatisticsDatas_V15");
 
@@ -18813,7 +18288,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleClassStatisticsDatas_
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleClassStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteVehicleClassStatisticsDatas");
 
@@ -18834,7 +18309,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteVehicleClassStatisticsDatas(
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteAllVehicleStatisticsDatasToLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteAllVehicleStatisticsDatasToLog");
 
@@ -18855,7 +18330,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteAllVehicleStatisticsDatasToL
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteAllVehicleStatisticsDatas_V15()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteAllVehicleStatisticsDatas_V15");
 
@@ -18876,7 +18351,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteAllVehicleStatisticsDatas_V1
 
 void UVehicleAndTreasureBoxGeneratorComponent::WriteAllVehicleStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.WriteAllVehicleStatisticsDatas");
 
@@ -18899,7 +18374,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::WriteAllVehicleStatisticsDatas()
 
 void UVehicleAndTreasureBoxGeneratorComponent::SetAllVehicleNumRate(TMap<struct FString, float> Rates)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.SetAllVehicleNumRate");
 
@@ -18921,7 +18396,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::SetAllVehicleNumRate(TMap<struct 
 
 void UVehicleAndTreasureBoxGeneratorComponent::ResumeGenerate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.ResumeGenerate");
 
@@ -18944,7 +18419,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::ResumeGenerate()
 
 void UVehicleAndTreasureBoxGeneratorComponent::RegisterVehicleGenerateSpawnData(const struct FVehicleGenerateSpawnData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RegisterVehicleGenerateSpawnData");
 
@@ -18968,7 +18443,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RegisterVehicleGenerateSpawnData(
 
 void UVehicleAndTreasureBoxGeneratorComponent::RegisterSpotFromSingleFile(const struct FString& SpotFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RegisterSpotFromSingleFile");
 
@@ -18992,7 +18467,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RegisterSpotFromSingleFile(const 
 
 void UVehicleAndTreasureBoxGeneratorComponent::RegisterGroupSpotComponent(class UGroupSpotSceneComponent* GroupSpotComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RegisterGroupSpotComponent");
 
@@ -19017,7 +18492,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RegisterGroupSpotComponent(class 
 
 void UVehicleAndTreasureBoxGeneratorComponent::RandomTreasureBoxSpotsByType(struct FTreasureBoxSpotProperty* Property, struct FVehicleSpotComponentArray* Spots)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RandomTreasureBoxSpotsByType");
 
@@ -19046,7 +18521,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RandomTreasureBoxSpotsByType(stru
 
 void UVehicleAndTreasureBoxGeneratorComponent::RandomTreasureBoxSingleSpots(TArray<class UVehicleSpotSceneComponent*>* AllSpots, struct FTreasureBoxSpotProperty* Property)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RandomTreasureBoxSingleSpots");
 
@@ -19075,7 +18550,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RandomTreasureBoxSingleSpots(TArr
 
 void UVehicleAndTreasureBoxGeneratorComponent::RandomSpotsByType(struct FVehicleSpotProperty* Property, struct FVehicleSpotComponentArray* Spots)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RandomSpotsByType");
 
@@ -19104,7 +18579,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RandomSpotsByType(struct FVehicle
 
 void UVehicleAndTreasureBoxGeneratorComponent::RandomSingleSpots(TArray<class UVehicleSpotSceneComponent*>* AllSpots, struct FVehicleSpotProperty* Property)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RandomSingleSpots");
 
@@ -19130,7 +18605,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RandomSingleSpots(TArray<class UV
 
 void UVehicleAndTreasureBoxGeneratorComponent::RandomGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.RandomGroups");
 
@@ -19151,7 +18626,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::RandomGroups()
 
 void UVehicleAndTreasureBoxGeneratorComponent::PauseGenerate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.PauseGenerate");
 
@@ -19172,7 +18647,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::PauseGenerate()
 
 void UVehicleAndTreasureBoxGeneratorComponent::LoadVehicleGenerateTable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.LoadVehicleGenerateTable");
 
@@ -19195,7 +18670,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::LoadVehicleGenerateTable()
 
 bool UVehicleAndTreasureBoxGeneratorComponent::GMGenerateAllVehicleSpot(const struct FString& VehiclePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GMGenerateAllVehicleSpot");
 
@@ -19223,7 +18698,7 @@ bool UVehicleAndTreasureBoxGeneratorComponent::GMGenerateAllVehicleSpot(const st
 
 struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetVehicleSpotRandomInfoWithCategory(const struct FString& Category, struct FVehicleSpotProperty* SpotProperty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetVehicleSpotRandomInfoWithCategory");
 
@@ -19248,13 +18723,13 @@ struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetV
 // Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetVehicleSpotRandomInfoBySpotType
 // (Final, Native, Public)
 // Parameters:
-// TEnumAsByte<enum ESpotType>    SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESpotType>         SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 InCategory                     (Parm, ZeroConstructor)
 // struct FVehicleGenerateRandomInfo ReturnValue                    (Parm, OutParm, ReturnParm)
 
-struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<enum ESpotType> SpotType, const struct FString& InCategory)
+struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<ESpotType> SpotType, const struct FString& InCategory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetVehicleSpotRandomInfoBySpotType");
 
@@ -19283,7 +18758,7 @@ struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetV
 
 struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetVehicleSpotRandomInfo(const struct FVehicleSpotProperty& SpotProperty, const struct FString& InCategory)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetVehicleSpotRandomInfo");
 
@@ -19311,7 +18786,7 @@ struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetV
 
 struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetTreasureBoxSpotRandomInfo(struct FTreasureBoxSpotProperty* SpotProperty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetTreasureBoxSpotRandomInfo");
 
@@ -19341,7 +18816,7 @@ struct FVehicleGenerateRandomInfo UVehicleAndTreasureBoxGeneratorComponent::GetT
 
 struct FString UVehicleAndTreasureBoxGeneratorComponent::GetTraceLevelName(const struct FString& SpotFileName, int16_t LevelIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetTraceLevelName");
 
@@ -19369,7 +18844,7 @@ struct FString UVehicleAndTreasureBoxGeneratorComponent::GetTraceLevelName(const
 
 struct FVehicleGenerateSpawnData UVehicleAndTreasureBoxGeneratorComponent::GetRandomVehicleClass(const struct FString& Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetRandomVehicleClass");
 
@@ -19396,7 +18871,7 @@ struct FVehicleGenerateSpawnData UVehicleAndTreasureBoxGeneratorComponent::GetRa
 
 struct FString UVehicleAndTreasureBoxGeneratorComponent::GetRandomCategory(TArray<struct FSpotWeight> SpotWeights)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetRandomCategory");
 
@@ -19422,7 +18897,7 @@ struct FString UVehicleAndTreasureBoxGeneratorComponent::GetRandomCategory(TArra
 
 int UVehicleAndTreasureBoxGeneratorComponent::GetAlreadyGeneratedVehicleNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GetAlreadyGeneratedVehicleNum");
 
@@ -19447,7 +18922,7 @@ int UVehicleAndTreasureBoxGeneratorComponent::GetAlreadyGeneratedVehicleNum()
 
 void UVehicleAndTreasureBoxGeneratorComponent::GenerateSpotOnTick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.GenerateSpotOnTick");
 
@@ -19469,7 +18944,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::GenerateSpotOnTick(float DeltaTim
 
 void UVehicleAndTreasureBoxGeneratorComponent::EndGenerate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.EndGenerate");
 
@@ -19490,7 +18965,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::EndGenerate()
 
 void UVehicleAndTreasureBoxGeneratorComponent::EnableRemovableMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.EnableRemovableMode");
 
@@ -19515,7 +18990,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::EnableRemovableMode()
 
 bool UVehicleAndTreasureBoxGeneratorComponent::DynamicSpawnVehicleBySpotId(int ID, const struct FString& Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.DynamicSpawnVehicleBySpotId");
 
@@ -19540,7 +19015,7 @@ bool UVehicleAndTreasureBoxGeneratorComponent::DynamicSpawnVehicleBySpotId(int I
 
 void UVehicleAndTreasureBoxGeneratorComponent::DeleteGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.DeleteGroups");
 
@@ -19566,7 +19041,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::DeleteGroups()
 
 bool UVehicleAndTreasureBoxGeneratorComponent::CanDynamicSpawnVehicle(const struct FVector& SpawnLocation, const struct FVector& TestLocationOffset, const struct FVector& TestBoxSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.CanDynamicSpawnVehicle");
 
@@ -19590,15 +19065,15 @@ bool UVehicleAndTreasureBoxGeneratorComponent::CanDynamicSpawnVehicle(const stru
 // Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.AddVehicleSpotCount
 // (Final, Native, Protected)
 // Parameters:
-// TEnumAsByte<enum ESpotType>    SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESpotType>         SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 Path                           (Parm, ZeroConstructor)
 // float                          LocationX                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          LocationY                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          LocationZ                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UVehicleAndTreasureBoxGeneratorComponent::AddVehicleSpotCount(TEnumAsByte<enum ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ)
+void UVehicleAndTreasureBoxGeneratorComponent::AddVehicleSpotCount(TEnumAsByte<ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.AddVehicleSpotCount");
 
@@ -19628,7 +19103,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::AddVehicleSpotCount(TEnumAsByte<e
 
 void UVehicleAndTreasureBoxGeneratorComponent::AddVehicleClassCount(const struct FString& Path, bool IsValid, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.AddVehicleClassCount");
 
@@ -19654,7 +19129,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::AddVehicleClassCount(const struct
 
 void UVehicleAndTreasureBoxGeneratorComponent::AddIgnoreClassPath(TArray<struct FString> IgnoreItemClassList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleAndTreasureBoxGeneratorComponent.AddIgnoreClassPath");
 
@@ -19676,7 +19151,7 @@ void UVehicleAndTreasureBoxGeneratorComponent::AddIgnoreClassPath(TArray<struct 
 
 void UVehicleGeneratorComponent::WriteVehicleSpotStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.WriteVehicleSpotStatisticsDatas");
 
@@ -19697,7 +19172,7 @@ void UVehicleGeneratorComponent::WriteVehicleSpotStatisticsDatas()
 
 void UVehicleGeneratorComponent::WriteVehicleClassStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.WriteVehicleClassStatisticsDatas");
 
@@ -19718,7 +19193,7 @@ void UVehicleGeneratorComponent::WriteVehicleClassStatisticsDatas()
 
 void UVehicleGeneratorComponent::WriteAllVehicleStatisticsDatas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.WriteAllVehicleStatisticsDatas");
 
@@ -19741,7 +19216,7 @@ void UVehicleGeneratorComponent::WriteAllVehicleStatisticsDatas()
 
 void UVehicleGeneratorComponent::RegisterVehicleGenerateSpawnData(const struct FVehicleGenerateSpawnData& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.RegisterVehicleGenerateSpawnData");
 
@@ -19765,7 +19240,7 @@ void UVehicleGeneratorComponent::RegisterVehicleGenerateSpawnData(const struct F
 
 void UVehicleGeneratorComponent::RegisterGroupSpotComponent(class UGroupSpotSceneComponent* GroupSpotComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.RegisterGroupSpotComponent");
 
@@ -19790,7 +19265,7 @@ void UVehicleGeneratorComponent::RegisterGroupSpotComponent(class UGroupSpotScen
 
 void UVehicleGeneratorComponent::RandomSpotsByType(struct FVehicleSpotProperty* Property, struct FVehicleSpotComponentArray* Spots)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.RandomSpotsByType");
 
@@ -19819,7 +19294,7 @@ void UVehicleGeneratorComponent::RandomSpotsByType(struct FVehicleSpotProperty* 
 
 void UVehicleGeneratorComponent::RandomSingleSpots(TArray<class UVehicleSpotSceneComponent*>* AllSpots, struct FVehicleSpotProperty* Property)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.RandomSingleSpots");
 
@@ -19845,7 +19320,7 @@ void UVehicleGeneratorComponent::RandomSingleSpots(TArray<class UVehicleSpotScen
 
 void UVehicleGeneratorComponent::RandomGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.RandomGroups");
 
@@ -19866,7 +19341,7 @@ void UVehicleGeneratorComponent::RandomGroups()
 
 void UVehicleGeneratorComponent::LoadVehicleGenerateTable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.LoadVehicleGenerateTable");
 
@@ -19885,12 +19360,12 @@ void UVehicleGeneratorComponent::LoadVehicleGenerateTable()
 // Function Gameplay.VehicleGeneratorComponent.GetVehicleSpotRandomInfoBySpotType
 // (Final, Native, Public)
 // Parameters:
-// TEnumAsByte<enum ESpotType>    SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESpotType>         SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVehicleGenerateRandomInfo ReturnValue                    (Parm, OutParm, ReturnParm)
 
-struct FVehicleGenerateRandomInfo UVehicleGeneratorComponent::GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<enum ESpotType> SpotType)
+struct FVehicleGenerateRandomInfo UVehicleGeneratorComponent::GetVehicleSpotRandomInfoBySpotType(TEnumAsByte<ESpotType> SpotType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.GetVehicleSpotRandomInfoBySpotType");
 
@@ -19917,7 +19392,7 @@ struct FVehicleGenerateRandomInfo UVehicleGeneratorComponent::GetVehicleSpotRand
 
 struct FVehicleGenerateRandomInfo UVehicleGeneratorComponent::GetVehicleSpotRandomInfo(struct FVehicleSpotProperty* SpotProperty)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.GetVehicleSpotRandomInfo");
 
@@ -19946,7 +19421,7 @@ struct FVehicleGenerateRandomInfo UVehicleGeneratorComponent::GetVehicleSpotRand
 
 struct FVehicleGenerateSpawnData UVehicleGeneratorComponent::GetRandomVehicleClass(const struct FString& Category)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.GetRandomVehicleClass");
 
@@ -19973,7 +19448,7 @@ struct FVehicleGenerateSpawnData UVehicleGeneratorComponent::GetRandomVehicleCla
 
 struct FString UVehicleGeneratorComponent::GetRandomCategory(TArray<struct FSpotWeight> SpotWeights)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.GetRandomCategory");
 
@@ -19999,7 +19474,7 @@ struct FString UVehicleGeneratorComponent::GetRandomCategory(TArray<struct FSpot
 
 void UVehicleGeneratorComponent::GenerateSpotOnTick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.GenerateSpotOnTick");
 
@@ -20021,7 +19496,7 @@ void UVehicleGeneratorComponent::GenerateSpotOnTick(float DeltaTime)
 
 void UVehicleGeneratorComponent::DeleteGroups()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.DeleteGroups");
 
@@ -20040,15 +19515,15 @@ void UVehicleGeneratorComponent::DeleteGroups()
 // Function Gameplay.VehicleGeneratorComponent.AddVehicleSpotCount
 // (Final, Native, Protected)
 // Parameters:
-// TEnumAsByte<enum ESpotType>    SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESpotType>         SpotType                       (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 Path                           (Parm, ZeroConstructor)
 // float                          LocationX                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          LocationY                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          LocationZ                      (Parm, ZeroConstructor, IsPlainOldData)
 
-void UVehicleGeneratorComponent::AddVehicleSpotCount(TEnumAsByte<enum ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ)
+void UVehicleGeneratorComponent::AddVehicleSpotCount(TEnumAsByte<ESpotType> SpotType, const struct FString& Path, float LocationX, float LocationY, float LocationZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.AddVehicleSpotCount");
 
@@ -20078,7 +19553,7 @@ void UVehicleGeneratorComponent::AddVehicleSpotCount(TEnumAsByte<enum ESpotType>
 
 void UVehicleGeneratorComponent::AddVehicleClassCount(const struct FString& Path, bool IsValid, int Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleGeneratorComponent.AddVehicleClassCount");
 
@@ -20102,7 +19577,7 @@ void UVehicleGeneratorComponent::AddVehicleClassCount(const struct FString& Path
 
 void UVehicleSpotObject::OnVehicleGenerateEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleSpotObject.OnVehicleGenerateEnd");
 
@@ -20123,7 +19598,7 @@ void UVehicleSpotObject::OnVehicleGenerateEnd()
 
 void UVehicleSpotObject::OnTraceLevelShown()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleSpotObject.OnTraceLevelShown");
 
@@ -20146,7 +19621,7 @@ void UVehicleSpotObject::OnTraceLevelShown()
 
 void UVehicleSpotSceneComponent::SetSpotRandomInfo(struct FVehicleGenerateRandomInfo* RandomInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleSpotSceneComponent.SetSpotRandomInfo");
 
@@ -20172,7 +19647,7 @@ void UVehicleSpotSceneComponent::SetSpotRandomInfo(struct FVehicleGenerateRandom
 
 bool UVehicleSpotSceneComponent::GenerateSpot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Gameplay.VehicleSpotSceneComponent.GenerateSpot");
 

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PixUI.PixUIBPLibrary.PixUI_Version
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 struct FString UPixUIBPLibrary::PixUI_Version()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_Version");
 
@@ -40,7 +40,7 @@ struct FString UPixUIBPLibrary::PixUI_Version()
 
 void UPixUIBPLibrary::PixUI_Tick(float fDeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_Tick");
 
@@ -66,7 +66,7 @@ void UPixUIBPLibrary::PixUI_Tick(float fDeltaTime)
 
 bool UPixUIBPLibrary::PixUI_StartupEx(const struct FString& strCachePathForWrite, bool bSupportAsyncModel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_StartupEx");
 
@@ -94,7 +94,7 @@ bool UPixUIBPLibrary::PixUI_StartupEx(const struct FString& strCachePathForWrite
 
 bool UPixUIBPLibrary::PixUI_Startup(const struct FString& strCachePathForWrite)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_Startup");
 
@@ -120,7 +120,7 @@ bool UPixUIBPLibrary::PixUI_Startup(const struct FString& strCachePathForWrite)
 
 bool UPixUIBPLibrary::PixUI_Shutdown()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_Shutdown");
 
@@ -145,7 +145,7 @@ bool UPixUIBPLibrary::PixUI_Shutdown()
 
 void UPixUIBPLibrary::PixUI_SetTickIntervalSec(float fTickIntervalSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetTickIntervalSec");
 
@@ -169,7 +169,7 @@ void UPixUIBPLibrary::PixUI_SetTickIntervalSec(float fTickIntervalSec)
 
 void UPixUIBPLibrary::PixUI_SetSupportTextShape(bool beSupportTextShape)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetSupportTextShape");
 
@@ -193,7 +193,7 @@ void UPixUIBPLibrary::PixUI_SetSupportTextShape(bool beSupportTextShape)
 
 void UPixUIBPLibrary::PixUI_SetSupportEngineFont(bool bSupportEngineFont)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetSupportEngineFont");
 
@@ -217,7 +217,7 @@ void UPixUIBPLibrary::PixUI_SetSupportEngineFont(bool bSupportEngineFont)
 
 void UPixUIBPLibrary::PixUI_SetSpecialCapability(const struct FString& strCapability)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetSpecialCapability");
 
@@ -241,7 +241,7 @@ void UPixUIBPLibrary::PixUI_SetSpecialCapability(const struct FString& strCapabi
 
 void UPixUIBPLibrary::PixUI_SetSecretKey(const struct FString& strSecretKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetSecretKey");
 
@@ -265,7 +265,7 @@ void UPixUIBPLibrary::PixUI_SetSecretKey(const struct FString& strSecretKey)
 
 void UPixUIBPLibrary::PixUI_SetPxLibDefaultVersionTag(int nNewPxLibVersionTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetPxLibDefaultVersionTag");
 
@@ -289,7 +289,7 @@ void UPixUIBPLibrary::PixUI_SetPxLibDefaultVersionTag(int nNewPxLibVersionTag)
 
 void UPixUIBPLibrary::PixUI_SetPixUIMaxLayerId(int nMaxLayerId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetPixUIMaxLayerId");
 
@@ -313,7 +313,7 @@ void UPixUIBPLibrary::PixUI_SetPixUIMaxLayerId(int nMaxLayerId)
 
 void UPixUIBPLibrary::PixUI_SetPixUIMaxDynamicTextureTotalSize(int nMaxDynamicTextureTotalSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetPixUIMaxDynamicTextureTotalSize");
 
@@ -337,7 +337,7 @@ void UPixUIBPLibrary::PixUI_SetPixUIMaxDynamicTextureTotalSize(int nMaxDynamicTe
 
 void UPixUIBPLibrary::PixUI_SetPixUIMaxDynamicTextureGCSize(int nMaxDynamicTextureGCSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetPixUIMaxDynamicTextureGCSize");
 
@@ -361,7 +361,7 @@ void UPixUIBPLibrary::PixUI_SetPixUIMaxDynamicTextureGCSize(int nMaxDynamicTextu
 
 void UPixUIBPLibrary::PixUI_SetPixUIMaxDynamicTextureGCRate(float fMaxGCRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetPixUIMaxDynamicTextureGCRate");
 
@@ -385,7 +385,7 @@ void UPixUIBPLibrary::PixUI_SetPixUIMaxDynamicTextureGCRate(float fMaxGCRate)
 
 void UPixUIBPLibrary::PixUI_SetMobileUseTouchEvent(bool bUseTouchEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetMobileUseTouchEvent");
 
@@ -409,7 +409,7 @@ void UPixUIBPLibrary::PixUI_SetMobileUseTouchEvent(bool bUseTouchEvent)
 
 void UPixUIBPLibrary::PixUI_SetMatRootPath(const struct FString& strMatRootPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetMatRootPath");
 
@@ -433,7 +433,7 @@ void UPixUIBPLibrary::PixUI_SetMatRootPath(const struct FString& strMatRootPath)
 
 void UPixUIBPLibrary::PixUI_SetMatBasePath(const struct FString& strMatBasePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetMatBasePath");
 
@@ -457,7 +457,7 @@ void UPixUIBPLibrary::PixUI_SetMatBasePath(const struct FString& strMatBasePath)
 
 void UPixUIBPLibrary::PixUI_SetMatAsyncLoad(bool bMatAsyncLoad)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetMatAsyncLoad");
 
@@ -481,7 +481,7 @@ void UPixUIBPLibrary::PixUI_SetMatAsyncLoad(bool bMatAsyncLoad)
 
 void UPixUIBPLibrary::PixUI_SetJsGCThreshold(int nGCThreshold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetJsGCThreshold");
 
@@ -505,7 +505,7 @@ void UPixUIBPLibrary::PixUI_SetJsGCThreshold(int nGCThreshold)
 
 void UPixUIBPLibrary::PixUI_SetGradientBrushCallFlushCommands(bool beGradientBrushCallFlushCommands)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetGradientBrushCallFlushCommands");
 
@@ -531,7 +531,7 @@ void UPixUIBPLibrary::PixUI_SetGradientBrushCallFlushCommands(bool beGradientBru
 
 void UPixUIBPLibrary::PixUI_SetFontTypeFaceName(const struct FString& strFontName, EPxFontFaceType ePxFontTypeFace, const struct FString& strFontTypeFaceName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetFontTypeFaceName");
 
@@ -557,7 +557,7 @@ void UPixUIBPLibrary::PixUI_SetFontTypeFaceName(const struct FString& strFontNam
 
 void UPixUIBPLibrary::PixUI_SetExternalInterface(const TScriptInterface<class UPixUIExternalInterface>& scriptInterfaceExternal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetExternalInterface");
 
@@ -581,7 +581,7 @@ void UPixUIBPLibrary::PixUI_SetExternalInterface(const TScriptInterface<class UP
 
 void UPixUIBPLibrary::PixUI_SetExtBpCallSupportThrowException(bool bSupportThrowException)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetExtBpCallSupportThrowException");
 
@@ -605,7 +605,7 @@ void UPixUIBPLibrary::PixUI_SetExtBpCallSupportThrowException(bool bSupportThrow
 
 void UPixUIBPLibrary::PixUI_SetDynamicTextureUpdateMode(EPxDynamicTextureUpdateMode eUpdateMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetDynamicTextureUpdateMode");
 
@@ -625,11 +625,11 @@ void UPixUIBPLibrary::PixUI_SetDynamicTextureUpdateMode(EPxDynamicTextureUpdateM
 // Function PixUI.PixUIBPLibrary.PixUI_SetDynamicTextureFilter
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ETextureFilter> eTextureFilter                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ETextureFilter>    eTextureFilter                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 
-void UPixUIBPLibrary::PixUI_SetDynamicTextureFilter(TEnumAsByte<enum ETextureFilter> eTextureFilter)
+void UPixUIBPLibrary::PixUI_SetDynamicTextureFilter(TEnumAsByte<ETextureFilter> eTextureFilter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetDynamicTextureFilter");
 
@@ -654,7 +654,7 @@ void UPixUIBPLibrary::PixUI_SetDynamicTextureFilter(TEnumAsByte<enum ETextureFil
 
 bool UPixUIBPLibrary::PixUI_SetDynamicLibraryPath(struct FString* strDynamicLibraryPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetDynamicLibraryPath");
 
@@ -682,7 +682,7 @@ bool UPixUIBPLibrary::PixUI_SetDynamicLibraryPath(struct FString* strDynamicLibr
 
 void UPixUIBPLibrary::PixUI_SetDynamicFixFontSize(bool bOpenDynamicFix)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetDynamicFixFontSize");
 
@@ -706,7 +706,7 @@ void UPixUIBPLibrary::PixUI_SetDynamicFixFontSize(bool bOpenDynamicFix)
 
 void UPixUIBPLibrary::PixUI_SetDrawEffectNoPixelSnapping(bool bNoPixelSnapping)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetDrawEffectNoPixelSnapping");
 
@@ -730,7 +730,7 @@ void UPixUIBPLibrary::PixUI_SetDrawEffectNoPixelSnapping(bool bNoPixelSnapping)
 
 void UPixUIBPLibrary::PixUI_SetDefaultFontSize(int nFontSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetDefaultFontSize");
 
@@ -754,7 +754,7 @@ void UPixUIBPLibrary::PixUI_SetDefaultFontSize(int nFontSize)
 
 void UPixUIBPLibrary::PixUI_SetDefaultFont(const struct FString& strFontName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetDefaultFont");
 
@@ -778,7 +778,7 @@ void UPixUIBPLibrary::PixUI_SetDefaultFont(const struct FString& strFontName)
 
 void UPixUIBPLibrary::PixUI_SetCoreTickDuration(int nDurationCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetCoreTickDuration");
 
@@ -804,7 +804,7 @@ void UPixUIBPLibrary::PixUI_SetCoreTickDuration(int nDurationCount)
 
 bool UPixUIBPLibrary::PixUI_SetCoreLibValidByTag(int nVersionTag, bool bValid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetCoreLibValidByTag");
 
@@ -831,7 +831,7 @@ bool UPixUIBPLibrary::PixUI_SetCoreLibValidByTag(int nVersionTag, bool bValid)
 
 void UPixUIBPLibrary::PixUI_SetAutoTick(bool bAutoTick)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetAutoTick");
 
@@ -855,7 +855,7 @@ void UPixUIBPLibrary::PixUI_SetAutoTick(bool bAutoTick)
 
 void UPixUIBPLibrary::PixUI_SetAsyncMode(bool beRunAsyncMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetAsyncMode");
 
@@ -879,7 +879,7 @@ void UPixUIBPLibrary::PixUI_SetAsyncMode(bool beRunAsyncMode)
 
 void UPixUIBPLibrary::PixUI_SetAsyncBpCallWaitOutTime(float fTimeOutSecond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_SetAsyncBpCallWaitOutTime");
 
@@ -903,7 +903,7 @@ void UPixUIBPLibrary::PixUI_SetAsyncBpCallWaitOutTime(float fTimeOutSecond)
 
 int UPixUIBPLibrary::PixUI_RHIShaderPlatform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_RHIShaderPlatform");
 
@@ -928,7 +928,7 @@ int UPixUIBPLibrary::PixUI_RHIShaderPlatform()
 
 int UPixUIBPLibrary::PixUI_RHIShaderLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_RHIShaderLevel");
 
@@ -953,7 +953,7 @@ int UPixUIBPLibrary::PixUI_RHIShaderLevel()
 
 void UPixUIBPLibrary::PixUI_RemoveSystemFont(const struct FString& strFontName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_RemoveSystemFont");
 
@@ -978,7 +978,7 @@ void UPixUIBPLibrary::PixUI_RemoveSystemFont(const struct FString& strFontName)
 
 void UPixUIBPLibrary::PixUI_PublicCapabilitySwitch(EPxPublicCapability EPxDebugInfo, bool bOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_PublicCapabilitySwitch");
 
@@ -1001,7 +1001,7 @@ void UPixUIBPLibrary::PixUI_PublicCapabilitySwitch(EPxPublicCapability EPxDebugI
 
 void UPixUIBPLibrary::PixUI_PrintProfilerInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_PrintProfilerInfo");
 
@@ -1024,7 +1024,7 @@ void UPixUIBPLibrary::PixUI_PrintProfilerInfo()
 
 float UPixUIBPLibrary::PixUI_PlatformOSVersionCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_PlatformOSVersionCode");
 
@@ -1049,7 +1049,7 @@ float UPixUIBPLibrary::PixUI_PlatformOSVersionCode()
 
 struct FString UPixUIBPLibrary::PixUI_PlatformOSVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_PlatformOSVersion");
 
@@ -1074,7 +1074,7 @@ struct FString UPixUIBPLibrary::PixUI_PlatformOSVersion()
 
 int UPixUIBPLibrary::PixUI_PlatformCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_PlatformCode");
 
@@ -1099,7 +1099,7 @@ int UPixUIBPLibrary::PixUI_PlatformCode()
 
 struct FString UPixUIBPLibrary::PixUI_Platform()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_Platform");
 
@@ -1124,7 +1124,7 @@ struct FString UPixUIBPLibrary::PixUI_Platform()
 
 bool UPixUIBPLibrary::PixUI_IsSupportTextShape()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsSupportTextShape");
 
@@ -1149,7 +1149,7 @@ bool UPixUIBPLibrary::PixUI_IsSupportTextShape()
 
 bool UPixUIBPLibrary::PixUI_IsStartUp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsStartUp");
 
@@ -1174,7 +1174,7 @@ bool UPixUIBPLibrary::PixUI_IsStartUp()
 
 bool UPixUIBPLibrary::PixUI_IsRHIShaderVulkan()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsRHIShaderVulkan");
 
@@ -1199,7 +1199,7 @@ bool UPixUIBPLibrary::PixUI_IsRHIShaderVulkan()
 
 bool UPixUIBPLibrary::PixUI_IsRHIShaderOpenGLES2()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsRHIShaderOpenGLES2");
 
@@ -1224,7 +1224,7 @@ bool UPixUIBPLibrary::PixUI_IsRHIShaderOpenGLES2()
 
 bool UPixUIBPLibrary::PixUI_IsRHIShaderOpenGL()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsRHIShaderOpenGL");
 
@@ -1249,7 +1249,7 @@ bool UPixUIBPLibrary::PixUI_IsRHIShaderOpenGL()
 
 bool UPixUIBPLibrary::PixUI_IsRHIShaderMetal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsRHIShaderMetal");
 
@@ -1274,7 +1274,7 @@ bool UPixUIBPLibrary::PixUI_IsRHIShaderMetal()
 
 bool UPixUIBPLibrary::PixUI_IsRHIShaderDX()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsRHIShaderDX");
 
@@ -1299,7 +1299,7 @@ bool UPixUIBPLibrary::PixUI_IsRHIShaderDX()
 
 bool UPixUIBPLibrary::PixUI_IsOsBit64()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsOsBit64");
 
@@ -1324,7 +1324,7 @@ bool UPixUIBPLibrary::PixUI_IsOsBit64()
 
 bool UPixUIBPLibrary::PixUI_IsOsBit32()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsOsBit32");
 
@@ -1349,7 +1349,7 @@ bool UPixUIBPLibrary::PixUI_IsOsBit32()
 
 bool UPixUIBPLibrary::PixUI_IsMobileUseTouchEvent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsMobileUseTouchEvent");
 
@@ -1374,7 +1374,7 @@ bool UPixUIBPLibrary::PixUI_IsMobileUseTouchEvent()
 
 bool UPixUIBPLibrary::PixUI_IsDynamicFixFontSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsDynamicFixFontSize");
 
@@ -1399,7 +1399,7 @@ bool UPixUIBPLibrary::PixUI_IsDynamicFixFontSize()
 
 bool UPixUIBPLibrary::PixUI_IsAutoTick()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_IsAutoTick");
 
@@ -1426,7 +1426,7 @@ bool UPixUIBPLibrary::PixUI_IsAutoTick()
 
 class UObject* UPixUIBPLibrary::PixUI_GetWindowSlotObject(int nWindowID, const struct FString& strTagId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetWindowSlotObject");
 
@@ -1453,7 +1453,7 @@ class UObject* UPixUIBPLibrary::PixUI_GetWindowSlotObject(int nWindowID, const s
 
 int UPixUIBPLibrary::PixUI_GetTotalFontCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetTotalFontCount");
 
@@ -1478,7 +1478,7 @@ int UPixUIBPLibrary::PixUI_GetTotalFontCount()
 
 float UPixUIBPLibrary::PixUI_GetTickIntervalSec()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetTickIntervalSec");
 
@@ -1503,7 +1503,7 @@ float UPixUIBPLibrary::PixUI_GetTickIntervalSec()
 
 void UPixUIBPLibrary::PixUI_GetSupportPxLibVersionTagArray(TArray<int>* arraySupportPxLibVersionTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetSupportPxLibVersionTagArray");
 
@@ -1529,7 +1529,7 @@ void UPixUIBPLibrary::PixUI_GetSupportPxLibVersionTagArray(TArray<int>* arraySup
 
 bool UPixUIBPLibrary::PixUI_GetSupportEngineFont()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetSupportEngineFont");
 
@@ -1555,7 +1555,7 @@ bool UPixUIBPLibrary::PixUI_GetSupportEngineFont()
 
 class UPixUIScriptVM* UPixUIBPLibrary::PixUI_GetScriptVMByID(int nScriptVmId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetScriptVMByID");
 
@@ -1581,7 +1581,7 @@ class UPixUIScriptVM* UPixUIBPLibrary::PixUI_GetScriptVMByID(int nScriptVmId)
 
 int UPixUIBPLibrary::PixUI_GetPxLibDefaultVersionTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetPxLibDefaultVersionTag");
 
@@ -1608,7 +1608,7 @@ int UPixUIBPLibrary::PixUI_GetPxLibDefaultVersionTag()
 
 class UObject* UPixUIBPLibrary::PixUI_GetPixUIWidgetSlotObject(int nPxWidgetID, const struct FString& strSlotTagId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetPixUIWidgetSlotObject");
 
@@ -1636,7 +1636,7 @@ class UObject* UPixUIBPLibrary::PixUI_GetPixUIWidgetSlotObject(int nPxWidgetID, 
 
 class UPixUIWidget* UPixUIBPLibrary::PixUI_GetPixUIWidgetByID(int nPxWidgetID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetPixUIWidgetByID");
 
@@ -1662,7 +1662,7 @@ class UPixUIWidget* UPixUIBPLibrary::PixUI_GetPixUIWidgetByID(int nPxWidgetID)
 
 int UPixUIBPLibrary::PixUI_GetPixUIMaxLayerId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetPixUIMaxLayerId");
 
@@ -1687,7 +1687,7 @@ int UPixUIBPLibrary::PixUI_GetPixUIMaxLayerId()
 
 int UPixUIBPLibrary::PixUI_GetPixUIMaxDynamicTextureTotalSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetPixUIMaxDynamicTextureTotalSize");
 
@@ -1712,7 +1712,7 @@ int UPixUIBPLibrary::PixUI_GetPixUIMaxDynamicTextureTotalSize()
 
 int UPixUIBPLibrary::PixUI_GetPixUIMaxDynamicTextureGCSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetPixUIMaxDynamicTextureGCSize");
 
@@ -1737,7 +1737,7 @@ int UPixUIBPLibrary::PixUI_GetPixUIMaxDynamicTextureGCSize()
 
 float UPixUIBPLibrary::PixUI_GetPixUIMaxDynamicTextureGCRate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetPixUIMaxDynamicTextureGCRate");
 
@@ -1762,7 +1762,7 @@ float UPixUIBPLibrary::PixUI_GetPixUIMaxDynamicTextureGCRate()
 
 struct FString UPixUIBPLibrary::PixUI_GetMatRootPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetMatRootPath");
 
@@ -1787,7 +1787,7 @@ struct FString UPixUIBPLibrary::PixUI_GetMatRootPath()
 
 struct FString UPixUIBPLibrary::PixUI_GetMatBasePath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetMatBasePath");
 
@@ -1812,7 +1812,7 @@ struct FString UPixUIBPLibrary::PixUI_GetMatBasePath()
 
 bool UPixUIBPLibrary::PixUI_GetMatAsyncLoad()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetMatAsyncLoad");
 
@@ -1837,7 +1837,7 @@ bool UPixUIBPLibrary::PixUI_GetMatAsyncLoad()
 
 int UPixUIBPLibrary::PixUI_GetJsGCThreshold()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetJsGCThreshold");
 
@@ -1862,7 +1862,7 @@ int UPixUIBPLibrary::PixUI_GetJsGCThreshold()
 
 bool UPixUIBPLibrary::PixUI_GetGradientBrushCallFlushCommands()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetGradientBrushCallFlushCommands");
 
@@ -1889,7 +1889,7 @@ bool UPixUIBPLibrary::PixUI_GetGradientBrushCallFlushCommands()
 
 struct FString UPixUIBPLibrary::PixUI_GetFontTypeFaceName(const struct FString& strFontName, EPxFontFaceType ePxFontTypeFace)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetFontTypeFaceName");
 
@@ -1917,7 +1917,7 @@ struct FString UPixUIBPLibrary::PixUI_GetFontTypeFaceName(const struct FString& 
 
 struct FString UPixUIBPLibrary::PixUI_GetFontPathByIndex(int nIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetFontPathByIndex");
 
@@ -1945,7 +1945,7 @@ struct FString UPixUIBPLibrary::PixUI_GetFontPathByIndex(int nIndex)
 
 bool UPixUIBPLibrary::PixUI_GetFontPath(const struct FString& strFontName, struct FString* strOutFontPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetFontPath");
 
@@ -1975,7 +1975,7 @@ bool UPixUIBPLibrary::PixUI_GetFontPath(const struct FString& strFontName, struc
 
 struct FString UPixUIBPLibrary::PixUI_GetFontNameByIndex(int nIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetFontNameByIndex");
 
@@ -2001,7 +2001,7 @@ struct FString UPixUIBPLibrary::PixUI_GetFontNameByIndex(int nIndex)
 
 bool UPixUIBPLibrary::PixUI_GetExtBpCallSupportThrowException()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetExtBpCallSupportThrowException");
 
@@ -2026,7 +2026,7 @@ bool UPixUIBPLibrary::PixUI_GetExtBpCallSupportThrowException()
 
 EPxDynamicTextureUpdateMode UPixUIBPLibrary::PixUI_GetDynamicTextureUpdateMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetDynamicTextureUpdateMode");
 
@@ -2047,11 +2047,11 @@ EPxDynamicTextureUpdateMode UPixUIBPLibrary::PixUI_GetDynamicTextureUpdateMode()
 // Function PixUI.PixUIBPLibrary.PixUI_GetDynamicTextureFilter
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum ETextureFilter> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// TEnumAsByte<ETextureFilter>    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-TEnumAsByte<enum ETextureFilter> UPixUIBPLibrary::PixUI_GetDynamicTextureFilter()
+TEnumAsByte<ETextureFilter> UPixUIBPLibrary::PixUI_GetDynamicTextureFilter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetDynamicTextureFilter");
 
@@ -2076,7 +2076,7 @@ TEnumAsByte<enum ETextureFilter> UPixUIBPLibrary::PixUI_GetDynamicTextureFilter(
 
 bool UPixUIBPLibrary::PixUI_GetDrawEffectNoPixelSnapping()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetDrawEffectNoPixelSnapping");
 
@@ -2101,7 +2101,7 @@ bool UPixUIBPLibrary::PixUI_GetDrawEffectNoPixelSnapping()
 
 void UPixUIBPLibrary::PixUI_GetDefaultFontSize(int* nOutFontSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetDefaultFontSize");
 
@@ -2127,7 +2127,7 @@ void UPixUIBPLibrary::PixUI_GetDefaultFontSize(int* nOutFontSize)
 
 void UPixUIBPLibrary::PixUI_GetDefaultFont(struct FString* strFontName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetDefaultFont");
 
@@ -2153,7 +2153,7 @@ void UPixUIBPLibrary::PixUI_GetDefaultFont(struct FString* strFontName)
 
 int UPixUIBPLibrary::PixUI_GetCoreTickDuration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetCoreTickDuration");
 
@@ -2179,7 +2179,7 @@ int UPixUIBPLibrary::PixUI_GetCoreTickDuration()
 
 int UPixUIBPLibrary::PixUI_GetCoreLibVersionTagByIndex(int nIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetCoreLibVersionTagByIndex");
 
@@ -2205,7 +2205,7 @@ int UPixUIBPLibrary::PixUI_GetCoreLibVersionTagByIndex(int nIndex)
 
 int UPixUIBPLibrary::PixUI_GetCoreLibCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetCoreLibCount");
 
@@ -2230,7 +2230,7 @@ int UPixUIBPLibrary::PixUI_GetCoreLibCount()
 
 void UPixUIBPLibrary::PixUI_GetCachePath(struct FString* strOutCachePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetCachePath");
 
@@ -2256,7 +2256,7 @@ void UPixUIBPLibrary::PixUI_GetCachePath(struct FString* strOutCachePath)
 
 bool UPixUIBPLibrary::PixUI_GetAsyncMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetAsyncMode");
 
@@ -2281,7 +2281,7 @@ bool UPixUIBPLibrary::PixUI_GetAsyncMode()
 
 float UPixUIBPLibrary::PixUI_GetAsyncBpCallWaitOutTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_GetAsyncBpCallWaitOutTime");
 
@@ -2307,7 +2307,7 @@ float UPixUIBPLibrary::PixUI_GetAsyncBpCallWaitOutTime()
 
 class UPixUIWidget* UPixUIBPLibrary::PixUI_FindByWindowID(int nWindowID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_FindByWindowID");
 
@@ -2334,7 +2334,7 @@ class UPixUIWidget* UPixUIBPLibrary::PixUI_FindByWindowID(int nWindowID)
 
 void UPixUIBPLibrary::PixUI_DebugInfoSwitch(EPxDebugInfo EPxDebugInfo, bool bOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_DebugInfoSwitch");
 
@@ -2359,7 +2359,7 @@ void UPixUIBPLibrary::PixUI_DebugInfoSwitch(EPxDebugInfo EPxDebugInfo, bool bOpe
 
 class UPixUIWidget* UPixUIBPLibrary::PixUI_CreateWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CreateWidget");
 
@@ -2384,7 +2384,7 @@ class UPixUIWidget* UPixUIBPLibrary::PixUI_CreateWidget()
 
 class UPixUIViewPortWidget* UPixUIBPLibrary::PixUI_CreateViewPortWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CreateViewPortWidget");
 
@@ -2410,7 +2410,7 @@ class UPixUIViewPortWidget* UPixUIBPLibrary::PixUI_CreateViewPortWidget()
 
 class UPixUIViewPortWidget* UPixUIBPLibrary::PixUI_CreateViewPortAddToCanvasEx(class UCanvasPanel* pParentCanvas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CreateViewPortAddToCanvasEx");
 
@@ -2439,7 +2439,7 @@ class UPixUIViewPortWidget* UPixUIBPLibrary::PixUI_CreateViewPortAddToCanvasEx(c
 
 class UPixUIViewPortWidget* UPixUIBPLibrary::PixUI_CreateViewPortAddToCanvas(class UCanvasPanel* pParentCanvas, const struct FAnchors& Anchors, const struct FMargin& Margin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CreateViewPortAddToCanvas");
 
@@ -2467,7 +2467,7 @@ class UPixUIViewPortWidget* UPixUIBPLibrary::PixUI_CreateViewPortAddToCanvas(cla
 
 class UPixUIScriptVM* UPixUIBPLibrary::PixUI_CreateScriptVM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CreateScriptVM");
 
@@ -2493,7 +2493,7 @@ class UPixUIScriptVM* UPixUIBPLibrary::PixUI_CreateScriptVM()
 
 class UPixUIWidget* UPixUIBPLibrary::PixUI_CreateAddToCanvasEx(class UCanvasPanel* pParentCanvas)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CreateAddToCanvasEx");
 
@@ -2522,7 +2522,7 @@ class UPixUIWidget* UPixUIBPLibrary::PixUI_CreateAddToCanvasEx(class UCanvasPane
 
 class UPixUIWidget* UPixUIBPLibrary::PixUI_CreateAddToCanvas(class UCanvasPanel* p_ParentCanvas, const struct FAnchors& Anchors, const struct FMargin& Margin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CreateAddToCanvas");
 
@@ -2548,7 +2548,7 @@ class UPixUIWidget* UPixUIBPLibrary::PixUI_CreateAddToCanvas(class UCanvasPanel*
 
 void UPixUIBPLibrary::PixUI_ClearCacheFile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_ClearCacheFile");
 
@@ -2572,7 +2572,7 @@ void UPixUIBPLibrary::PixUI_ClearCacheFile()
 
 bool UPixUIBPLibrary::PixUI_CallPixUIAssetGC(int nViewId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_CallPixUIAssetGC");
 
@@ -2599,7 +2599,7 @@ bool UPixUIBPLibrary::PixUI_CallPixUIAssetGC(int nViewId)
 
 bool UPixUIBPLibrary::PixUI_BePublicCapabilityOpen(EPxPublicCapability EPxDebugInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_BePublicCapabilityOpen");
 
@@ -2626,7 +2626,7 @@ bool UPixUIBPLibrary::PixUI_BePublicCapabilityOpen(EPxPublicCapability EPxDebugI
 
 bool UPixUIBPLibrary::PixUI_BeDebugInfoOpen(EPxDebugInfo EPxDebugInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_BeDebugInfoOpen");
 
@@ -2653,7 +2653,7 @@ bool UPixUIBPLibrary::PixUI_BeDebugInfoOpen(EPxDebugInfo EPxDebugInfo)
 
 void UPixUIBPLibrary::PixUI_AddSystemFont(const struct FString& strFontName, const struct FString& strFontPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIBPLibrary.PixUI_AddSystemFont");
 
@@ -2671,6 +2671,32 @@ void UPixUIBPLibrary::PixUI_AddSystemFont(const struct FString& strFontName, con
 }
 
 
+// Function PixUI.PixUIExternalInterface.OnWidgetUnload
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UWidget*                 pWidget                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UPixUIExternalInterface::OnWidgetUnload(class UWidget* pWidget)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIExternalInterface.OnWidgetUnload");
+
+	UPixUIExternalInterface_OnWidgetUnload_Params params;
+	params.pWidget = pWidget;
+
+	auto flags = pFunc->FunctionFlags;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function PixUI.PixUIExternalInterface.OnWidgetLoad
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -2680,7 +2706,7 @@ void UPixUIBPLibrary::PixUI_AddSystemFont(const struct FString& strFontName, con
 
 class UWidget* UPixUIExternalInterface::OnWidgetLoad(const struct FString& strWidgetPath, const struct FString& strWidgetTag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIExternalInterface.OnWidgetLoad");
 
@@ -2707,7 +2733,7 @@ class UWidget* UPixUIExternalInterface::OnWidgetLoad(const struct FString& strWi
 
 class UPixUIBrushWrapper* UPixUIExternalInterface::OnSlateBrushLoad(const struct FString& strBrushPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIExternalInterface.OnSlateBrushLoad");
 
@@ -2734,7 +2760,7 @@ class UPixUIBrushWrapper* UPixUIExternalInterface::OnSlateBrushLoad(const struct
 
 bool UPixUIExternalInterface::OnFileLoad(const struct FString& StrFilePath, const struct FScriptDelegate& callDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIExternalInterface.OnFileLoad");
 
@@ -2761,7 +2787,7 @@ bool UPixUIExternalInterface::OnFileLoad(const struct FString& StrFilePath, cons
 
 bool UPixUIExternalInterface::OnFileCanLoad(const struct FString& StrFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIExternalInterface.OnFileCanLoad");
 
@@ -2789,7 +2815,7 @@ bool UPixUIExternalInterface::OnFileCanLoad(const struct FString& StrFilePath)
 
 void UPixUIInput::OnInputText(const struct FString& strInsert, bool bEndInput, bool bLostFocus, bool bReplace)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIInput.OnInputText");
 
@@ -2816,7 +2842,7 @@ void UPixUIInput::OnInputText(const struct FString& strInsert, bool bEndInput, b
 
 class UPixUIInput* UPixUIInput::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIInput.Get");
 
@@ -2841,7 +2867,7 @@ class UPixUIInput* UPixUIInput::Get()
 
 void UPixUIRenderTarget::SetTickIntervalSec(float fTickIntervalSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.SetTickIntervalSec");
 
@@ -2865,7 +2891,7 @@ void UPixUIRenderTarget::SetTickIntervalSec(float fTickIntervalSec)
 
 void UPixUIRenderTarget::SetExternalRenderTarget2D(class UTextureRenderTarget2D* pTextureRenderTarget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.SetExternalRenderTarget2D");
 
@@ -2889,7 +2915,7 @@ void UPixUIRenderTarget::SetExternalRenderTarget2D(class UTextureRenderTarget2D*
 
 void UPixUIRenderTarget::SetBeSupportEventCallNested(bool bSupportEventCallNested)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.SetBeSupportEventCallNested");
 
@@ -2913,7 +2939,7 @@ void UPixUIRenderTarget::SetBeSupportEventCallNested(bool bSupportEventCallNeste
 
 void UPixUIRenderTarget::SetBeDelayCallMessage(bool bDelayMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.SetBeDelayCallMessage");
 
@@ -2938,7 +2964,7 @@ void UPixUIRenderTarget::SetBeDelayCallMessage(bool bDelayMessage)
 
 struct FString UPixUIRenderTarget::SendPxMessage(const struct FString& strMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.SendPxMessage");
 
@@ -2965,7 +2991,7 @@ struct FString UPixUIRenderTarget::SendPxMessage(const struct FString& strMessag
 
 void UPixUIRenderTarget::ReSize(int nNewWidth, int nNewHeight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.ReSize");
 
@@ -2990,7 +3016,7 @@ void UPixUIRenderTarget::ReSize(int nNewWidth, int nNewHeight)
 
 void UPixUIRenderTarget::ReScale(float fScale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.ReScale");
 
@@ -3015,7 +3041,7 @@ void UPixUIRenderTarget::ReScale(float fScale)
 
 int UPixUIRenderTarget::PostPxMessage(const struct FString& strMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.PostPxMessage");
 
@@ -3043,7 +3069,7 @@ int UPixUIRenderTarget::PostPxMessage(const struct FString& strMessage)
 
 void UPixUIRenderTarget::OnExternalTouchEvent(const struct FVector2D& v2dPosTouch, int nPointerIndex, EPxTouchType ETouchType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.OnExternalTouchEvent");
 
@@ -3072,7 +3098,7 @@ void UPixUIRenderTarget::OnExternalTouchEvent(const struct FVector2D& v2dPosTouc
 
 void UPixUIRenderTarget::OnExternalTextInput(const struct FString& strNewInput, bool beEndInput, bool beLostFocus, bool beReplace)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.OnExternalTextInput");
 
@@ -3102,7 +3128,7 @@ void UPixUIRenderTarget::OnExternalTextInput(const struct FString& strNewInput, 
 
 void UPixUIRenderTarget::OnExternalMouseEvent(const struct FVector2D& v2dPosMouse, const struct FVector2D& v2dOffsetWheel, EPxMouseType eMouseType, EPxKeyEventType uEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.OnExternalMouseEvent");
 
@@ -3130,7 +3156,7 @@ void UPixUIRenderTarget::OnExternalMouseEvent(const struct FVector2D& v2dPosMous
 
 void UPixUIRenderTarget::OnExternalKeyBoardEvent(const struct FKeyEvent& KeyEvent, EPxKeyEventType eEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.OnExternalKeyBoardEvent");
 
@@ -3156,7 +3182,7 @@ void UPixUIRenderTarget::OnExternalKeyBoardEvent(const struct FKeyEvent& KeyEven
 
 void UPixUIRenderTarget::OnExternalGamepadEvent(const struct FKeyEvent& KeyEvent, EPxKeyEventType eEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.OnExternalGamepadEvent");
 
@@ -3182,7 +3208,7 @@ void UPixUIRenderTarget::OnExternalGamepadEvent(const struct FKeyEvent& KeyEvent
 
 void UPixUIRenderTarget::OnExternalGamepadAnalogEvent(const struct FAnalogInputEvent& AnalogInputEvent, EPxKeyEventType eEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.OnExternalGamepadAnalogEvent");
 
@@ -3208,7 +3234,7 @@ void UPixUIRenderTarget::OnExternalGamepadAnalogEvent(const struct FAnalogInputE
 
 int UPixUIRenderTarget::LoadPageFromUrl(const struct FString& strUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.LoadPageFromUrl");
 
@@ -3235,7 +3261,7 @@ int UPixUIRenderTarget::LoadPageFromUrl(const struct FString& strUrl)
 
 int UPixUIRenderTarget::LoadPageFromGameAssetPath(const struct FString& strAssetPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.LoadPageFromGameAssetPath");
 
@@ -3263,7 +3289,7 @@ int UPixUIRenderTarget::LoadPageFromGameAssetPath(const struct FString& strAsset
 
 int UPixUIRenderTarget::LoadPageFromData(const struct FString& strBasePath, TArray<unsigned char>* arrayData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.LoadPageFromData");
 
@@ -3292,7 +3318,7 @@ int UPixUIRenderTarget::LoadPageFromData(const struct FString& strBasePath, TArr
 
 bool UPixUIRenderTarget::IsPxViewValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.IsPxViewValid");
 
@@ -3317,7 +3343,7 @@ bool UPixUIRenderTarget::IsPxViewValid()
 
 void UPixUIRenderTarget::HistoryGo(int nStep)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.HistoryGo");
 
@@ -3341,7 +3367,7 @@ void UPixUIRenderTarget::HistoryGo(int nStep)
 
 int UPixUIRenderTarget::GetRenderTarget2DWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.GetRenderTarget2DWidth");
 
@@ -3366,7 +3392,7 @@ int UPixUIRenderTarget::GetRenderTarget2DWidth()
 
 int UPixUIRenderTarget::GetRenderTarget2DHeight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.GetRenderTarget2DHeight");
 
@@ -3391,7 +3417,7 @@ int UPixUIRenderTarget::GetRenderTarget2DHeight()
 
 class UTextureRenderTarget2D* UPixUIRenderTarget::GetRenderTarget2D()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.GetRenderTarget2D");
 
@@ -3416,7 +3442,7 @@ class UTextureRenderTarget2D* UPixUIRenderTarget::GetRenderTarget2D()
 
 struct FString UPixUIRenderTarget::GetCoreLibVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.GetCoreLibVersion");
 
@@ -3439,7 +3465,7 @@ struct FString UPixUIRenderTarget::GetCoreLibVersion()
 
 void UPixUIRenderTarget::DestroyPage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.DestroyPage");
 
@@ -3469,7 +3495,7 @@ void UPixUIRenderTarget::DestroyPage()
 
 int UPixUIRenderTarget::Create(int nWidth, int nHeight, float fScale, bool bAsyncModel, bool bCoreLibAsyncModel, bool bGammaSpace, bool bAntiAliasing)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.Create");
 
@@ -3499,7 +3525,7 @@ int UPixUIRenderTarget::Create(int nWidth, int nHeight, float fScale, bool bAsyn
 
 void UPixUIRenderTarget::ClosePage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIRenderTarget.ClosePage");
 
@@ -3522,7 +3548,7 @@ void UPixUIRenderTarget::ClosePage()
 
 void UPixUIScriptVM::SetTickIntervalSec(float fTickIntervalSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SetTickIntervalSec");
 
@@ -3548,7 +3574,7 @@ void UPixUIScriptVM::SetTickIntervalSec(float fTickIntervalSec)
 
 void UPixUIScriptVM::SetScriptGlobalString(const struct FString& StrName, const struct FString& strKey, const struct FString& strValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SetScriptGlobalString");
 
@@ -3576,7 +3602,7 @@ void UPixUIScriptVM::SetScriptGlobalString(const struct FString& StrName, const 
 
 void UPixUIScriptVM::SetScriptGlobalNumber(const struct FString& StrName, const struct FString& strKey, float fValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SetScriptGlobalNumber");
 
@@ -3604,7 +3630,7 @@ void UPixUIScriptVM::SetScriptGlobalNumber(const struct FString& StrName, const 
 
 void UPixUIScriptVM::SetScriptGlobalBoolean(const struct FString& StrName, const struct FString& strKey, bool bValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SetScriptGlobalBoolean");
 
@@ -3630,7 +3656,7 @@ void UPixUIScriptVM::SetScriptGlobalBoolean(const struct FString& StrName, const
 
 void UPixUIScriptVM::SetJsGCThreshold(int nGCThreshold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SetJsGCThreshold");
 
@@ -3654,7 +3680,7 @@ void UPixUIScriptVM::SetJsGCThreshold(int nGCThreshold)
 
 void UPixUIScriptVM::SetBeSupportEventCallNested(bool bSupportEventCallNested)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SetBeSupportEventCallNested");
 
@@ -3678,7 +3704,7 @@ void UPixUIScriptVM::SetBeSupportEventCallNested(bool bSupportEventCallNested)
 
 void UPixUIScriptVM::SetBeDelayCallMessage(bool bDelayMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SetBeDelayCallMessage");
 
@@ -3704,7 +3730,7 @@ void UPixUIScriptVM::SetBeDelayCallMessage(bool bDelayMessage)
 
 struct FString UPixUIScriptVM::SendPxMessage(const struct FString& strMessage, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.SendPxMessage");
 
@@ -3733,7 +3759,7 @@ struct FString UPixUIScriptVM::SendPxMessage(const struct FString& strMessage, i
 
 int UPixUIScriptVM::PostPxMessage(const struct FString& strMessage, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.PostPxMessage");
 
@@ -3762,7 +3788,7 @@ int UPixUIScriptVM::PostPxMessage(const struct FString& strMessage, int nWaitMS)
 
 int UPixUIScriptVM::LoadURL(const struct FString& strUrl, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.LoadURL");
 
@@ -3789,7 +3815,7 @@ int UPixUIScriptVM::LoadURL(const struct FString& strUrl, int nWaitMS)
 
 bool UPixUIScriptVM::IsValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.IsValid");
 
@@ -3814,7 +3840,7 @@ bool UPixUIScriptVM::IsValid()
 
 bool UPixUIScriptVM::IsPxVmValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.IsPxVmValid");
 
@@ -3841,7 +3867,7 @@ bool UPixUIScriptVM::IsPxVmValid()
 
 struct FString UPixUIScriptVM::GetScriptGlobalString(const struct FString& StrName, const struct FString& strKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.GetScriptGlobalString");
 
@@ -3870,7 +3896,7 @@ struct FString UPixUIScriptVM::GetScriptGlobalString(const struct FString& StrNa
 
 float UPixUIScriptVM::GetScriptGlobalNumber(const struct FString& StrName, const struct FString& strKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.GetScriptGlobalNumber");
 
@@ -3899,7 +3925,7 @@ float UPixUIScriptVM::GetScriptGlobalNumber(const struct FString& StrName, const
 
 bool UPixUIScriptVM::GetScriptGlobalBoolean(const struct FString& StrName, const struct FString& strKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.GetScriptGlobalBoolean");
 
@@ -3926,7 +3952,7 @@ bool UPixUIScriptVM::GetScriptGlobalBoolean(const struct FString& StrName, const
 
 int UPixUIScriptVM::GetPxVMId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.GetPxVMId");
 
@@ -3951,7 +3977,7 @@ int UPixUIScriptVM::GetPxVMId()
 
 struct FString UPixUIScriptVM::GetCoreLibVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.GetCoreLibVersion");
 
@@ -3978,7 +4004,7 @@ struct FString UPixUIScriptVM::GetCoreLibVersion()
 
 int UPixUIScriptVM::DoFile(const struct FString& StrFilePath, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.DoFile");
 
@@ -4009,7 +4035,7 @@ int UPixUIScriptVM::DoFile(const struct FString& StrFilePath, int nWaitMS)
 
 int UPixUIScriptVM::DoBufferByAssetPath(const struct FString& strAssetPath, const struct FString& StrName, const struct FString& strModuleName, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.DoBufferByAssetPath");
 
@@ -4043,7 +4069,7 @@ int UPixUIScriptVM::DoBufferByAssetPath(const struct FString& strAssetPath, cons
 
 int UPixUIScriptVM::DoBuffer(TArray<unsigned char> arrayData, const struct FString& strBasePath, const struct FString& StrName, const struct FString& strModuleName, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.DoBuffer");
 
@@ -4074,7 +4100,7 @@ int UPixUIScriptVM::DoBuffer(TArray<unsigned char> arrayData, const struct FStri
 
 int UPixUIScriptVM::DestroyVM(int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.DestroyVM");
 
@@ -4100,7 +4126,7 @@ int UPixUIScriptVM::DestroyVM(int nWaitMS)
 
 void UPixUIScriptVM::CreateScriptGlobal(const struct FString& StrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.CreateScriptGlobal");
 
@@ -4127,7 +4153,7 @@ void UPixUIScriptVM::CreateScriptGlobal(const struct FString& StrName)
 
 int UPixUIScriptVM::CreateEx(bool bAsyncMode, bool bCoreLibAsyncMode, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.CreateEx");
 
@@ -4157,7 +4183,7 @@ int UPixUIScriptVM::CreateEx(bool bAsyncMode, bool bCoreLibAsyncMode, int nWaitM
 
 int UPixUIScriptVM::Create(bool bAsyncMode, int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.Create");
 
@@ -4185,7 +4211,7 @@ int UPixUIScriptVM::Create(bool bAsyncMode, int nWaitMS)
 
 int UPixUIScriptVM::CloseVM(int nWaitMS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIScriptVM.CloseVM");
 
@@ -4212,7 +4238,7 @@ int UPixUIScriptVM::CloseVM(int nWaitMS)
 
 struct FString UPixUIViewPortWidget::SendPxMessage(const struct FString& strMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.SendPxMessage");
 
@@ -4238,7 +4264,7 @@ struct FString UPixUIViewPortWidget::SendPxMessage(const struct FString& strMess
 
 void UPixUIViewPortWidget::PostPxViewMessage(const struct FString& strMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.PostPxViewMessage");
 
@@ -4263,7 +4289,7 @@ void UPixUIViewPortWidget::PostPxViewMessage(const struct FString& strMessage)
 
 int UPixUIViewPortWidget::PostPxMessage(const struct FString& strMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.PostPxMessage");
 
@@ -4291,7 +4317,7 @@ int UPixUIViewPortWidget::PostPxMessage(const struct FString& strMessage)
 
 void UPixUIViewPortWidget::OnPixUITransformDelegate(EPxWidgetTransformType EPxWidgetTransformType, int nParam1, int nParam2)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.OnPixUITransformDelegate");
 
@@ -4319,7 +4345,7 @@ void UPixUIViewPortWidget::OnPixUITransformDelegate(EPxWidgetTransformType EPxWi
 
 struct FString UPixUIViewPortWidget::OnPixUIPromptDelegate(const struct FString& strTip, const struct FString& strDefault)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.OnPixUIPromptDelegate");
 
@@ -4350,7 +4376,7 @@ struct FString UPixUIViewPortWidget::OnPixUIPromptDelegate(const struct FString&
 
 int UPixUIViewPortWidget::OnPixUIOpenDelegate(const struct FString& strUrl, const struct FString& StrName, const struct FString& strFeatures, bool bReplace)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.OnPixUIOpenDelegate");
 
@@ -4380,7 +4406,7 @@ int UPixUIViewPortWidget::OnPixUIOpenDelegate(const struct FString& strUrl, cons
 
 bool UPixUIViewPortWidget::OnPixUIConfirmDelegate(const struct FString& strConfirmMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.OnPixUIConfirmDelegate");
 
@@ -4407,7 +4433,7 @@ bool UPixUIViewPortWidget::OnPixUIConfirmDelegate(const struct FString& strConfi
 
 int UPixUIViewPortWidget::LoadPxViewFromUrl(const struct FString& strUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.LoadPxViewFromUrl");
 
@@ -4434,7 +4460,7 @@ int UPixUIViewPortWidget::LoadPxViewFromUrl(const struct FString& strUrl)
 
 int UPixUIViewPortWidget::LoadPxViewFromGameAssetPath(const struct FString& strAssetPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.LoadPxViewFromGameAssetPath");
 
@@ -4462,7 +4488,7 @@ int UPixUIViewPortWidget::LoadPxViewFromGameAssetPath(const struct FString& strA
 
 int UPixUIViewPortWidget::LoadPxViewFromData(const struct FString& strRootPath, TArray<unsigned char>* arrayData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.LoadPxViewFromData");
 
@@ -4492,7 +4518,7 @@ int UPixUIViewPortWidget::LoadPxViewFromData(const struct FString& strRootPath, 
 
 int UPixUIViewPortWidget::LoadPageFromUrl(const struct FString& strUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.LoadPageFromUrl");
 
@@ -4519,7 +4545,7 @@ int UPixUIViewPortWidget::LoadPageFromUrl(const struct FString& strUrl)
 
 int UPixUIViewPortWidget::LoadPageFromGameAssetPath(const struct FString& strAssetPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.LoadPageFromGameAssetPath");
 
@@ -4547,7 +4573,7 @@ int UPixUIViewPortWidget::LoadPageFromGameAssetPath(const struct FString& strAss
 
 int UPixUIViewPortWidget::LoadPageFromData(const struct FString& strRootPath, TArray<unsigned char>* arrayData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.LoadPageFromData");
 
@@ -4576,7 +4602,7 @@ int UPixUIViewPortWidget::LoadPageFromData(const struct FString& strRootPath, TA
 
 class UPixUIWidget* UPixUIViewPortWidget::GetPixUIWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.GetPixUIWidget");
 
@@ -4599,7 +4625,7 @@ class UPixUIWidget* UPixUIViewPortWidget::GetPixUIWidget()
 
 void UPixUIViewPortWidget::ClosePxView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.ClosePxView");
 
@@ -4620,7 +4646,7 @@ void UPixUIViewPortWidget::ClosePxView()
 
 void UPixUIViewPortWidget::ClosePage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIViewPortWidget.ClosePage");
 
@@ -4641,7 +4667,7 @@ void UPixUIViewPortWidget::ClosePage()
 
 void UPixUIWidget::ShowNextDrawItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.ShowNextDrawItem");
 
@@ -4662,7 +4688,7 @@ void UPixUIWidget::ShowNextDrawItem()
 
 void UPixUIWidget::ShowNextDrawBatch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.ShowNextDrawBatch");
 
@@ -4683,7 +4709,7 @@ void UPixUIWidget::ShowNextDrawBatch()
 
 void UPixUIWidget::ShowAllDrawItem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.ShowAllDrawItem");
 
@@ -4704,7 +4730,7 @@ void UPixUIWidget::ShowAllDrawItem()
 
 void UPixUIWidget::ShowAllDrawBatch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.ShowAllDrawBatch");
 
@@ -4727,7 +4753,7 @@ void UPixUIWidget::ShowAllDrawBatch()
 
 void UPixUIWidget::SetTickMode(EPxTickMode eTickMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetTickMode");
 
@@ -4751,7 +4777,7 @@ void UPixUIWidget::SetTickMode(EPxTickMode eTickMode)
 
 void UPixUIWidget::SetTickIntervalSec(float fTickIntervalSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetTickIntervalSec");
 
@@ -4777,7 +4803,7 @@ void UPixUIWidget::SetTickIntervalSec(float fTickIntervalSec)
 
 void UPixUIWidget::SetScriptGlobalString(const struct FString& StrName, const struct FString& strKey, const struct FString& strValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetScriptGlobalString");
 
@@ -4805,7 +4831,7 @@ void UPixUIWidget::SetScriptGlobalString(const struct FString& StrName, const st
 
 void UPixUIWidget::SetScriptGlobalNumber(const struct FString& StrName, const struct FString& strKey, float fValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetScriptGlobalNumber");
 
@@ -4833,7 +4859,7 @@ void UPixUIWidget::SetScriptGlobalNumber(const struct FString& StrName, const st
 
 void UPixUIWidget::SetScriptGlobalBoolean(const struct FString& StrName, const struct FString& strKey, bool bValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetScriptGlobalBoolean");
 
@@ -4859,7 +4885,7 @@ void UPixUIWidget::SetScriptGlobalBoolean(const struct FString& StrName, const s
 
 void UPixUIWidget::SetJsGCThreshold(int nGCThreshold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetJsGCThreshold");
 
@@ -4883,7 +4909,7 @@ void UPixUIWidget::SetJsGCThreshold(int nGCThreshold)
 
 void UPixUIWidget::SetBeSupportEventCallNested(bool bSupportEventCallNested)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetBeSupportEventCallNested");
 
@@ -4907,7 +4933,7 @@ void UPixUIWidget::SetBeSupportEventCallNested(bool bSupportEventCallNested)
 
 void UPixUIWidget::SetBeDelayCallMessage(bool bDelayMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetBeDelayCallMessage");
 
@@ -4931,7 +4957,7 @@ void UPixUIWidget::SetBeDelayCallMessage(bool bDelayMessage)
 
 void UPixUIWidget::SetBackgroundBlur(float fBlurStrength)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetBackgroundBlur");
 
@@ -4955,7 +4981,7 @@ void UPixUIWidget::SetBackgroundBlur(float fBlurStrength)
 
 void UPixUIWidget::SetAutoTransform(bool bAutoTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SetAutoTransform");
 
@@ -4980,7 +5006,7 @@ void UPixUIWidget::SetAutoTransform(bool bAutoTransform)
 
 struct FString UPixUIWidget::SendPxMessage(const struct FString& strMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.SendPxMessage");
 
@@ -5007,7 +5033,7 @@ struct FString UPixUIWidget::SendPxMessage(const struct FString& strMessage)
 
 int UPixUIWidget::PostPxMessage(const struct FString& strMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.PostPxMessage");
 
@@ -5034,7 +5060,7 @@ int UPixUIWidget::PostPxMessage(const struct FString& strMessage)
 
 int UPixUIWidget::OpenPageFromUrl(const struct FString& strUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OpenPageFromUrl");
 
@@ -5061,7 +5087,7 @@ int UPixUIWidget::OpenPageFromUrl(const struct FString& strUrl)
 
 int UPixUIWidget::OpenPageFromGameAssetPath(const struct FString& strAssetPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OpenPageFromGameAssetPath");
 
@@ -5089,7 +5115,7 @@ int UPixUIWidget::OpenPageFromGameAssetPath(const struct FString& strAssetPath)
 
 int UPixUIWidget::OpenPageFromData(const struct FString& strBasePath, TArray<unsigned char>* arrayData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OpenPageFromData");
 
@@ -5120,7 +5146,7 @@ int UPixUIWidget::OpenPageFromData(const struct FString& strBasePath, TArray<uns
 
 void UPixUIWidget::OnExternalTouchEvent(const struct FVector2D& v2dPosTouch, int nPointerIndex, EPxTouchType ETouchType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OnExternalTouchEvent");
 
@@ -5149,7 +5175,7 @@ void UPixUIWidget::OnExternalTouchEvent(const struct FVector2D& v2dPosTouch, int
 
 void UPixUIWidget::OnExternalTextInput(const struct FString& strNewInput, bool beEndInput, bool beLostFocus, bool beReplace)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OnExternalTextInput");
 
@@ -5179,7 +5205,7 @@ void UPixUIWidget::OnExternalTextInput(const struct FString& strNewInput, bool b
 
 void UPixUIWidget::OnExternalMouseEvent(const struct FVector2D& v2dPosMouse, const struct FVector2D& v2dOffsetWheel, EPxMouseType eMouseType, EPxKeyEventType uEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OnExternalMouseEvent");
 
@@ -5207,7 +5233,7 @@ void UPixUIWidget::OnExternalMouseEvent(const struct FVector2D& v2dPosMouse, con
 
 void UPixUIWidget::OnExternalKeyBoardEvent(const struct FKeyEvent& KeyEvent, EPxKeyEventType eEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OnExternalKeyBoardEvent");
 
@@ -5233,7 +5259,7 @@ void UPixUIWidget::OnExternalKeyBoardEvent(const struct FKeyEvent& KeyEvent, EPx
 
 void UPixUIWidget::OnExternalGamepadEvent(const struct FKeyEvent& KeyEvent, EPxKeyEventType eEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OnExternalGamepadEvent");
 
@@ -5259,7 +5285,7 @@ void UPixUIWidget::OnExternalGamepadEvent(const struct FKeyEvent& KeyEvent, EPxK
 
 void UPixUIWidget::OnExternalGamepadAnalogEvent(const struct FAnalogInputEvent& AnalogInputEvent, EPxKeyEventType eEventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.OnExternalGamepadAnalogEvent");
 
@@ -5285,7 +5311,7 @@ void UPixUIWidget::OnExternalGamepadAnalogEvent(const struct FAnalogInputEvent& 
 
 int UPixUIWidget::LoadPageFromUrl(const struct FString& strUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.LoadPageFromUrl");
 
@@ -5312,7 +5338,7 @@ int UPixUIWidget::LoadPageFromUrl(const struct FString& strUrl)
 
 int UPixUIWidget::LoadPageFromGameAssetPath(const struct FString& strAssetPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.LoadPageFromGameAssetPath");
 
@@ -5340,7 +5366,7 @@ int UPixUIWidget::LoadPageFromGameAssetPath(const struct FString& strAssetPath)
 
 int UPixUIWidget::LoadPageFromData(const struct FString& strBasePath, TArray<unsigned char>* arrayData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.LoadPageFromData");
 
@@ -5369,7 +5395,7 @@ int UPixUIWidget::LoadPageFromData(const struct FString& strBasePath, TArray<uns
 
 bool UPixUIWidget::IsPxViewValid()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.IsPxViewValid");
 
@@ -5394,7 +5420,7 @@ bool UPixUIWidget::IsPxViewValid()
 
 void UPixUIWidget::HistoryGo(int nStep)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.HistoryGo");
 
@@ -5419,7 +5445,7 @@ void UPixUIWidget::HistoryGo(int nStep)
 
 class UObject* UPixUIWidget::GetSlotObjectByTagId(const struct FString& strSlotTagId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.GetSlotObjectByTagId");
 
@@ -5447,7 +5473,7 @@ class UObject* UPixUIWidget::GetSlotObjectByTagId(const struct FString& strSlotT
 
 struct FString UPixUIWidget::GetScriptGlobalString(const struct FString& StrName, const struct FString& strKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.GetScriptGlobalString");
 
@@ -5476,7 +5502,7 @@ struct FString UPixUIWidget::GetScriptGlobalString(const struct FString& StrName
 
 float UPixUIWidget::GetScriptGlobalNumber(const struct FString& StrName, const struct FString& strKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.GetScriptGlobalNumber");
 
@@ -5505,7 +5531,7 @@ float UPixUIWidget::GetScriptGlobalNumber(const struct FString& StrName, const s
 
 bool UPixUIWidget::GetScriptGlobalBoolean(const struct FString& StrName, const struct FString& strKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.GetScriptGlobalBoolean");
 
@@ -5532,7 +5558,7 @@ bool UPixUIWidget::GetScriptGlobalBoolean(const struct FString& StrName, const s
 
 int UPixUIWidget::GetPxWinId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.GetPxWinId");
 
@@ -5557,7 +5583,7 @@ int UPixUIWidget::GetPxWinId()
 
 class UWidget* UPixUIWidget::GetCtrlWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.GetCtrlWidget");
 
@@ -5582,7 +5608,7 @@ class UWidget* UPixUIWidget::GetCtrlWidget()
 
 struct FString UPixUIWidget::GetCoreLibVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.GetCoreLibVersion");
 
@@ -5605,7 +5631,7 @@ struct FString UPixUIWidget::GetCoreLibVersion()
 
 void UPixUIWidget::DestroyPage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.DestroyPage");
 
@@ -5628,7 +5654,7 @@ void UPixUIWidget::DestroyPage()
 
 void UPixUIWidget::CreateScriptGlobal(const struct FString& StrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.CreateScriptGlobal");
 
@@ -5650,7 +5676,7 @@ void UPixUIWidget::CreateScriptGlobal(const struct FString& StrName)
 
 void UPixUIWidget::ClosePage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PixUIWidget.ClosePage");
 
@@ -5671,7 +5697,7 @@ void UPixUIWidget::ClosePage()
 
 void UPxCustomDelegate::OnPxCustomDelegate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PxCustomDelegate.OnPxCustomDelegate");
 
@@ -5695,7 +5721,7 @@ void UPxCustomDelegate::OnPxCustomDelegate()
 
 class UPxCustomDelegate* UPxCustomDelegate::MakeCustomDelegate(const struct FString& strCustomDelegateName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PxCustomDelegate.MakeCustomDelegate");
 
@@ -5723,7 +5749,7 @@ class UPxCustomDelegate* UPxCustomDelegate::MakeCustomDelegate(const struct FStr
 
 class UPxCustomInterfaceDyImp* UPxCustomInterfaceDyImp::MakeCustomInterface(const struct FString& strCustomInterfaceName, class UClass* pOverrideBaseClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PxCustomInterfaceDyImp.MakeCustomInterface");
 
@@ -5750,7 +5776,7 @@ class UPxCustomInterfaceDyImp* UPxCustomInterfaceDyImp::MakeCustomInterface(cons
 
 void UPxFileLoad::OnFileLoad(TArray<unsigned char> arrayFileData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PixUI.PxFileLoad.OnFileLoad");
 

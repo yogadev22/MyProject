@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasOrigin
 struct UAbilitySystemBlueprintLibrary_TargetDataHasOrigin_Params
@@ -355,7 +355,7 @@ struct UAbilitySystemBlueprintLibrary_GetAbilitySystemComponent_Params
 struct UAbilitySystemBlueprintLibrary_ForwardGameplayCueToTarget_Params
 {
 	TScriptInterface<class UGameplayCueInterface>      TargetCueInterface;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EGameplayCueEvent>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayCueEvent>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayCueParameters                      Parameters;                                               // (Parm)
 };
 
@@ -691,7 +691,7 @@ struct UAbilitySystemComponent_ServerSetReplicatedTargetData_Params
 // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEventWithPayload
 struct UAbilitySystemComponent_ServerSetReplicatedEventWithPayload_Params
 {
-	TEnumAsByte<enum EAbilityGenericReplicatedEvent>   EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAbilityGenericReplicatedEvent>        EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayAbilitySpecHandle                  AbilityHandle;                                            // (Parm)
 	struct FPredictionKey                              AbilityOriginalPredictionKey;                             // (Parm)
 	struct FPredictionKey                              CurrentPredictionKey;                                     // (Parm)
@@ -701,7 +701,7 @@ struct UAbilitySystemComponent_ServerSetReplicatedEventWithPayload_Params
 // Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEvent
 struct UAbilitySystemComponent_ServerSetReplicatedEvent_Params
 {
-	TEnumAsByte<enum EAbilityGenericReplicatedEvent>   EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAbilityGenericReplicatedEvent>        EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayAbilitySpecHandle                  AbilityHandle;                                            // (Parm)
 	struct FPredictionKey                              AbilityOriginalPredictionKey;                             // (Parm)
 	struct FPredictionKey                              CurrentPredictionKey;                                     // (Parm)
@@ -983,7 +983,7 @@ struct UAbilitySystemComponent_ClientTryActivateAbility_Params
 // Function GameplayAbilities.AbilitySystemComponent.ClientSetReplicatedEvent
 struct UAbilitySystemComponent_ClientSetReplicatedEvent_Params
 {
-	TEnumAsByte<enum EAbilityGenericReplicatedEvent>   EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAbilityGenericReplicatedEvent>        EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayAbilitySpecHandle                  AbilityHandle;                                            // (Parm)
 	struct FPredictionKey                              AbilityOriginalPredictionKey;                             // (Parm)
 };
@@ -1158,7 +1158,7 @@ struct UAbilityTask_ApplyRootMotionMoveToActorForce_ApplyRootMotionMoveToTargetD
 	class UCurveFloat*                                 TargetLerpSpeedHorizontal;                                // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCurveFloat*                                 TargetLerpSpeedVertical;                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bSetNewMovementMode;                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    MovementMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         MovementMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bRestrictSpeedToExpected;                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCurveVector*                                PathOffsetCurve;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCurveFloat*                                 TimeMappingCurve;                                         // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1181,7 +1181,7 @@ struct UAbilityTask_ApplyRootMotionMoveToActorForce_ApplyRootMotionMoveToActorFo
 	class UCurveFloat*                                 TargetLerpSpeedHorizontal;                                // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCurveFloat*                                 TargetLerpSpeedVertical;                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bSetNewMovementMode;                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    MovementMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         MovementMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bRestrictSpeedToExpected;                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCurveVector*                                PathOffsetCurve;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCurveFloat*                                 TimeMappingCurve;                                         // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1200,7 +1200,7 @@ struct UAbilityTask_ApplyRootMotionMoveToForce_ApplyRootMotionMoveToForce_Params
 	struct FVector                                     TargetLocation;                                           // (Parm, IsPlainOldData)
 	float                                              Duration;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bSetNewMovementMode;                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    MovementMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         MovementMode;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bRestrictSpeedToExpected;                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCurveVector*                                PathOffsetCurve;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	ERootMotionFinishVelocityMode                      VelocityOnFinishMode;                                     // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1439,7 +1439,7 @@ struct UAbilityTask_WaitAttributeChange_WaitForAttributeChangeWithComparison_Par
 	struct FGameplayAttribute                          InAttribute;                                              // (Parm)
 	struct FGameplayTag                                InWithTag;                                                // (Parm)
 	struct FGameplayTag                                InWithoutTag;                                             // (Parm)
-	TEnumAsByte<enum EWaitAttributeChangeComparison>   InComparisonType;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWaitAttributeChangeComparison>        InComparisonType;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              InComparisonValue;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               TriggerOnce;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAbilityTask_WaitAttributeChange*            ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -1462,7 +1462,7 @@ struct UAbilityTask_WaitAttributeChangeRatioThreshold_WaitForAttributeChangeRati
 	class UGameplayAbility*                            OwningAbility;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayAttribute                          AttributeNumerator;                                       // (Parm)
 	struct FGameplayAttribute                          AttributeDenominator;                                     // (Parm)
-	TEnumAsByte<enum EWaitAttributeChangeComparison>   ComparisonType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWaitAttributeChangeComparison>        ComparisonType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ComparisonValue;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTriggerOnce;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAbilityTask_WaitAttributeChangeRatioThreshold* ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -1473,7 +1473,7 @@ struct UAbilityTask_WaitAttributeChangeThreshold_WaitForAttributeChangeThreshold
 {
 	class UGameplayAbility*                            OwningAbility;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayAttribute                          Attribute;                                                // (Parm)
-	TEnumAsByte<enum EWaitAttributeChangeComparison>   ComparisonType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EWaitAttributeChangeComparison>        ComparisonType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ComparisonValue;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bTriggerOnce;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAbilityTask_WaitAttributeChangeThreshold*   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
@@ -1712,7 +1712,7 @@ struct UAbilityTask_WaitInputRelease_OnReleaseCallback_Params
 struct UAbilityTask_WaitMovementModeChange_OnMovementModeChange_Params
 {
 	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -1720,7 +1720,7 @@ struct UAbilityTask_WaitMovementModeChange_OnMovementModeChange_Params
 struct UAbilityTask_WaitMovementModeChange_CreateWaitMovementModeChange_Params
 {
 	class UGameplayAbility*                            OwningAbility;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    NewMode;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMode;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAbilityTask_WaitMovementModeChange*         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -1746,7 +1746,7 @@ struct UAbilityTask_WaitTargetData_WaitTargetDataUsingActor_Params
 {
 	class UGameplayAbility*                            OwningAbility;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       TaskInstanceName;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EGameplayTargetingConfirmation>   ConfirmationType;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayTargetingConfirmation>        ConfirmationType;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	class AGameplayAbilityTargetActor*                 TargetActor;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAbilityTask_WaitTargetData*                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -1756,7 +1756,7 @@ struct UAbilityTask_WaitTargetData_WaitTargetData_Params
 {
 	class UGameplayAbility*                            OwningAbility;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       TaskInstanceName;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EGameplayTargetingConfirmation>   ConfirmationType;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayTargetingConfirmation>        ConfirmationType;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	class UClass*                                      Class;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAbilityTask_WaitTargetData*                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -2176,7 +2176,7 @@ struct UGameplayCueInterface_ForwardGameplayCueToParent_Params
 // Function GameplayAbilities.GameplayCueInterface.BlueprintCustomHandler
 struct UGameplayCueInterface_BlueprintCustomHandler_Params
 {
-	TEnumAsByte<enum EGameplayCueEvent>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayCueEvent>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayCueParameters                      Parameters;                                               // (Parm)
 };
 
@@ -2222,7 +2222,7 @@ struct AGameplayCueNotify_Actor_OnActive_Params
 struct AGameplayCueNotify_Actor_K2_HandleGameplayCue_Params
 {
 	class AActor*                                      MyTarget;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EGameplayCueEvent>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayCueEvent>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayCueParameters                      Parameters;                                               // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
@@ -2267,7 +2267,7 @@ struct UGameplayCueNotify_Static_OnActive_Params
 struct UGameplayCueNotify_Static_K2_HandleGameplayCue_Params
 {
 	class AActor*                                      MyTarget;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EGameplayCueEvent>                EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EGameplayCueEvent>                     EventType;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FGameplayCueParameters                      Parameters;                                               // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 

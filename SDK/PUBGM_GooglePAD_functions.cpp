@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function GooglePAD.GooglePADFunctionLibrary.ShowCellularDataConfirmation
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::ShowCellularDataConfirmation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.ShowCellularDataConfirmation");
 
@@ -41,7 +41,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::ShowCellularDataConfirmation()
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::RequestRemoval(const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.RequestRemoval");
 
@@ -68,7 +68,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::RequestRemoval(const struct FStri
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::RequestInfo(TArray<struct FString> AssetPacks)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.RequestInfo");
 
@@ -95,7 +95,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::RequestInfo(TArray<struct FString
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::RequestDownload(TArray<struct FString> AssetPacks)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.RequestDownload");
 
@@ -121,7 +121,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::RequestDownload(TArray<struct FSt
 
 void UGooglePADFunctionLibrary::ReleaseDownloadState(int State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.ReleaseDownloadState");
 
@@ -145,7 +145,7 @@ void UGooglePADFunctionLibrary::ReleaseDownloadState(int State)
 
 void UGooglePADFunctionLibrary::ReleaseAssetPackLocation(int Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.ReleaseAssetPackLocation");
 
@@ -170,7 +170,7 @@ void UGooglePADFunctionLibrary::ReleaseAssetPackLocation(int Location)
 
 int UGooglePADFunctionLibrary::GetTotalBytesToDownload(int State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetTotalBytesToDownload");
 
@@ -197,7 +197,7 @@ int UGooglePADFunctionLibrary::GetTotalBytesToDownload(int State)
 
 EGooglePADStorageMethod UGooglePADFunctionLibrary::GetStorageMethod(int Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetStorageMethod");
 
@@ -224,7 +224,7 @@ EGooglePADStorageMethod UGooglePADFunctionLibrary::GetStorageMethod(int Location
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::GetShowCellularDataConfirmationStatus(EGooglePADCellularDataConfirmStatus* status)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetShowCellularDataConfirmationStatus");
 
@@ -253,7 +253,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::GetShowCellularDataConfirmationSt
 
 EGooglePADDownloadStatus UGooglePADFunctionLibrary::GetDownloadStatus(int State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetDownloadStatus");
 
@@ -281,7 +281,7 @@ EGooglePADDownloadStatus UGooglePADFunctionLibrary::GetDownloadStatus(int State)
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::GetDownloadState(const struct FString& Name, int* State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetDownloadState");
 
@@ -311,7 +311,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::GetDownloadState(const struct FSt
 
 int UGooglePADFunctionLibrary::GetBytesDownloaded(int State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetBytesDownloaded");
 
@@ -338,7 +338,7 @@ int UGooglePADFunctionLibrary::GetBytesDownloaded(int State)
 
 struct FString UGooglePADFunctionLibrary::GetAssetsPath(int Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetAssetsPath");
 
@@ -366,7 +366,7 @@ struct FString UGooglePADFunctionLibrary::GetAssetsPath(int Location)
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::GetAssetPackLocation(const struct FString& Name, int* Location)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.GetAssetPackLocation");
 
@@ -396,7 +396,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::GetAssetPackLocation(const struct
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::CancelDownload(TArray<struct FString> AssetPacks)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function GooglePAD.GooglePADFunctionLibrary.CancelDownload");
 

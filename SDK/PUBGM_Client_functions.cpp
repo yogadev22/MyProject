@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Client.AsyncLoadHelper.SetMaxTaskNum
 // (Final, Native, Public)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UAsyncLoadHelper::SetMaxTaskNum(int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadHelper.SetMaxTaskNum");
 
@@ -37,7 +37,7 @@ void UAsyncLoadHelper::SetMaxTaskNum(int Num)
 
 void UAsyncLoadHelper::RunNextTask()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadHelper.RunNextTask");
 
@@ -60,7 +60,7 @@ void UAsyncLoadHelper::RunNextTask()
 
 void UAsyncLoadHelper::OnLoadCallBack(const struct FSoftObjectPath& softObjPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadHelper.OnLoadCallBack");
 
@@ -84,7 +84,7 @@ void UAsyncLoadHelper::OnLoadCallBack(const struct FSoftObjectPath& softObjPath)
 
 void UAsyncLoadHelper::ClearOneTask(const struct FString& ObjectPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadHelper.ClearOneTask");
 
@@ -106,7 +106,7 @@ void UAsyncLoadHelper::ClearOneTask(const struct FString& ObjectPath)
 
 void UAsyncLoadHelper::ClearAllTask()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadHelper.ClearAllTask");
 
@@ -130,7 +130,7 @@ void UAsyncLoadHelper::ClearAllTask()
 
 void UAsyncLoadHelper::AddTask(const struct FString& ObjectPath, int LoadPriority)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadHelper.AddTask");
 
@@ -153,7 +153,7 @@ void UAsyncLoadHelper::AddTask(const struct FString& ObjectPath, int LoadPriorit
 
 void UAsyncLoadWidgetBlueprint::Cancel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadWidgetBlueprint.Cancel");
 
@@ -178,7 +178,7 @@ void UAsyncLoadWidgetBlueprint::Cancel()
 
 class UAsyncLoadWidgetBlueprint* UAsyncLoadWidgetBlueprint::AsyncLoadWidgetBlueprint(const struct FString& BlueprintPath, int Priority)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadWidgetBlueprint.AsyncLoadWidgetBlueprint");
 
@@ -205,7 +205,7 @@ class UAsyncLoadWidgetBlueprint* UAsyncLoadWidgetBlueprint::AsyncLoadWidgetBluep
 
 void UAsyncLoadWidgetBlueprint::AfterLoadCallback(struct FSoftObjectPath* SoftObjectPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadWidgetBlueprint.AfterLoadCallback");
 
@@ -229,7 +229,7 @@ void UAsyncLoadWidgetBlueprint::AfterLoadCallback(struct FSoftObjectPath* SoftOb
 
 void UAsyncLoadWidgetBlueprint::Activate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncLoadWidgetBlueprint.Activate");
 
@@ -256,7 +256,7 @@ void UAsyncLoadWidgetBlueprint::Activate()
 
 class UAsyncTaskCDNDownloader* UAsyncTaskCDNDownloader::DownloadCDNContent(const struct FString& URL, int loaderType, const struct FString& savedDir, bool breakpointContinualTransfer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncTaskCDNDownloader.DownloadCDNContent");
 
@@ -289,7 +289,7 @@ class UAsyncTaskCDNDownloader* UAsyncTaskCDNDownloader::DownloadCDNContent(const
 
 class UAsyncTaskDownloader* UAsyncTaskDownloader::DownloadContent(const struct FString& URL, int loaderType, const struct FString& savedDir, bool breakpointContinualTransfer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AsyncTaskDownloader.DownloadContent");
 
@@ -321,7 +321,7 @@ class UAsyncTaskDownloader* UAsyncTaskDownloader::DownloadContent(const struct F
 
 uint32_t UBattleScriptHelper::SyncNewBattlePlayer(class UBattleUtils* Utils, uint64_t UID, const struct FPlayerInfoData& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleScriptHelper.SyncNewBattlePlayer");
 
@@ -350,7 +350,7 @@ uint32_t UBattleScriptHelper::SyncNewBattlePlayer(class UBattleUtils* Utils, uin
 
 void UBattleScriptHelper::SyncGameInfo(class UBattleUtils* Utils, const struct FBattleGameInfo& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleScriptHelper.SyncGameInfo");
 
@@ -375,7 +375,7 @@ void UBattleScriptHelper::SyncGameInfo(class UBattleUtils* Utils, const struct F
 
 void UBattleScriptHelper::SyncGameExit(class UBattleUtils* Utils)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleScriptHelper.SyncGameExit");
 
@@ -402,7 +402,7 @@ void UBattleScriptHelper::SyncGameExit(class UBattleUtils* Utils)
 
 void UBattleScriptHelper::SyncBattlePlayerExit(class UBattleUtils* Utils, uint64_t UID, const struct FName& PlayerType, const struct FString& Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleScriptHelper.SyncBattlePlayerExit");
 
@@ -431,7 +431,7 @@ void UBattleScriptHelper::SyncBattlePlayerExit(class UBattleUtils* Utils, uint64
 
 void UBattleScriptHelper::ResponPlayerWeaponDIYData(class UBattleUtils* Utils, uint64_t PlayerUID, const struct FWeaponDIYData& InWeaponDIYData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleScriptHelper.ResponPlayerWeaponDIYData");
 
@@ -458,7 +458,7 @@ void UBattleScriptHelper::ResponPlayerWeaponDIYData(class UBattleUtils* Utils, u
 
 void UBattleScriptHelper::GenerateAIPlayerParams(class UBattleUtils* Utils, const struct FPlayerInfoData& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleScriptHelper.GenerateAIPlayerParams");
 
@@ -483,7 +483,7 @@ void UBattleScriptHelper::GenerateAIPlayerParams(class UBattleUtils* Utils, cons
 
 struct FGameModePlayerParams UBattlePlayer::ExtractGameModePlayerParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattlePlayer.ExtractGameModePlayerParams");
 
@@ -508,7 +508,7 @@ struct FGameModePlayerParams UBattlePlayer::ExtractGameModePlayerParams()
 
 struct FGameModeAIPlayerParams UBattleAIPlayer::ExtractGameModeAIPlayerParams()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleAIPlayer.ExtractGameModeAIPlayerParams");
 
@@ -535,7 +535,7 @@ struct FGameModeAIPlayerParams UBattleAIPlayer::ExtractGameModeAIPlayerParams()
 
 uint32_t UBattleUtils::SyncNewBattlePlayer(uint64_t UID, const struct FPlayerInfoData& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.SyncNewBattlePlayer");
 
@@ -562,7 +562,7 @@ uint32_t UBattleUtils::SyncNewBattlePlayer(uint64_t UID, const struct FPlayerInf
 
 void UBattleUtils::SyncGameInfo(const struct FBattleGameInfo& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.SyncGameInfo");
 
@@ -584,7 +584,7 @@ void UBattleUtils::SyncGameInfo(const struct FBattleGameInfo& Info)
 
 void UBattleUtils::SyncGameExit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.SyncGameExit");
 
@@ -609,7 +609,7 @@ void UBattleUtils::SyncGameExit()
 
 void UBattleUtils::SyncBattlePlayerExit(uint64_t UID, const struct FName& PlayerType, const struct FString& Reason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.SyncBattlePlayerExit");
 
@@ -636,7 +636,7 @@ void UBattleUtils::SyncBattlePlayerExit(uint64_t UID, const struct FName& Player
 
 struct FGameModePlayerParams UBattleUtils::RetrievePlayerParams(const struct FPlayerID& PlayerID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.RetrievePlayerParams");
 
@@ -663,7 +663,7 @@ struct FGameModePlayerParams UBattleUtils::RetrievePlayerParams(const struct FPl
 
 struct FGameModeAIPlayerParams UBattleUtils::RetrieveAIPlayerParams(const struct FPlayerID& PlayerID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.RetrieveAIPlayerParams");
 
@@ -690,7 +690,7 @@ struct FGameModeAIPlayerParams UBattleUtils::RetrieveAIPlayerParams(const struct
 
 void UBattleUtils::ResponPlayerWeaponDIYData(uint64_t PlayerUID, const struct FWeaponDIYData& InWeaponDIYData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.ResponPlayerWeaponDIYData");
 
@@ -716,7 +716,7 @@ void UBattleUtils::ResponPlayerWeaponDIYData(uint64_t PlayerUID, const struct FW
 
 void UBattleUtils::RequestSomePlayersBattleData(TArray<uint64_t> PlayerUIDList, unsigned char DataType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.RequestSomePlayersBattleData");
 
@@ -743,7 +743,7 @@ void UBattleUtils::RequestSomePlayersBattleData(TArray<uint64_t> PlayerUIDList, 
 
 void UBattleUtils::RequestPlayerWeaponDIYData(uint64_t PlayerUID, int WeaponSkinID, int PlanID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.RequestPlayerWeaponDIYData");
 
@@ -770,7 +770,7 @@ void UBattleUtils::RequestPlayerWeaponDIYData(uint64_t PlayerUID, int WeaponSkin
 
 void UBattleUtils::RequestOnePlayersBattleData(uint64_t PlayerUID, unsigned char DataType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.RequestOnePlayersBattleData");
 
@@ -795,7 +795,7 @@ void UBattleUtils::RequestOnePlayersBattleData(uint64_t PlayerUID, unsigned char
 
 void UBattleUtils::RequestAllPlayersBattleData(unsigned char DataType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.RequestAllPlayersBattleData");
 
@@ -819,7 +819,7 @@ void UBattleUtils::RequestAllPlayersBattleData(unsigned char DataType)
 
 void UBattleUtils::OnPostLoadMapWithWorld(class UWorld* World)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.OnPostLoadMapWithWorld");
 
@@ -843,7 +843,7 @@ void UBattleUtils::OnPostLoadMapWithWorld(class UWorld* World)
 
 class UBattlePlayer* UBattleUtils::NewBattlePlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.NewBattlePlayer");
 
@@ -868,7 +868,7 @@ class UBattlePlayer* UBattleUtils::NewBattlePlayer()
 
 class UBattleAIPlayer* UBattleUtils::NewBattleAIPlayer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.NewBattleAIPlayer");
 
@@ -893,7 +893,7 @@ class UBattleAIPlayer* UBattleUtils::NewBattleAIPlayer()
 
 void UBattleUtils::HandleGameModeStateChanged(const struct FGameModeStateChangedParams& Params)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.HandleGameModeStateChanged");
 
@@ -917,7 +917,7 @@ void UBattleUtils::HandleGameModeStateChanged(const struct FGameModeStateChanged
 
 class AUAEGameMode* UBattleUtils::GetBattleGameMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.GetBattleGameMode");
 
@@ -942,7 +942,7 @@ class AUAEGameMode* UBattleUtils::GetBattleGameMode()
 
 void UBattleUtils::GenerateAIPlayerParams(const struct FPlayerInfoData& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.GenerateAIPlayerParams");
 
@@ -968,7 +968,7 @@ void UBattleUtils::GenerateAIPlayerParams(const struct FPlayerInfoData& Info)
 
 class UBattlePlayer* UBattleUtils::FindPlayerByUID(uint64_t UID, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.FindPlayerByUID");
 
@@ -997,7 +997,7 @@ class UBattlePlayer* UBattleUtils::FindPlayerByUID(uint64_t UID, const struct FN
 
 class UBattlePlayer* UBattleUtils::FindPlayerByPlayerName(const struct FString& PlayerName, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.FindPlayerByPlayerName");
 
@@ -1026,7 +1026,7 @@ class UBattlePlayer* UBattleUtils::FindPlayerByPlayerName(const struct FString& 
 
 class UBattlePlayer* UBattleUtils::FindPlayerByPlayerKey(uint32_t PlayerKey, const struct FName& PlayerType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleUtils.FindPlayerByPlayerKey");
 
@@ -1055,7 +1055,7 @@ class UBattlePlayer* UBattleUtils::FindPlayerByPlayerKey(uint32_t PlayerKey, con
 
 void UBattleWindowMgr::ShowUI(class UObject* WorldContextObject, const struct FString& WindowName, class UObject* ObjectParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleWindowMgr.ShowUI");
 
@@ -1082,7 +1082,7 @@ void UBattleWindowMgr::ShowUI(class UObject* WorldContextObject, const struct FS
 
 void UBattleWindowMgr::SetInstance(class UBattleWindowMgrLuaUtils* InInstance, class ULuaStateWrapper* InLuaStateWrapper)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleWindowMgr.SetInstance");
 
@@ -1108,7 +1108,7 @@ void UBattleWindowMgr::SetInstance(class UBattleWindowMgrLuaUtils* InInstance, c
 
 void UBattleWindowMgr::HideUI(class UObject* WorldContextObject, const struct FString& WindowName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleWindowMgr.HideUI");
 
@@ -1135,7 +1135,7 @@ void UBattleWindowMgr::HideUI(class UObject* WorldContextObject, const struct FS
 
 bool UBattleWindowMgr::CheckWindowOpen(class UObject* WorldContextObject, const struct FString& WindowName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BattleWindowMgr.CheckWindowOpen");
 
@@ -1167,7 +1167,7 @@ bool UBattleWindowMgr::CheckWindowOpen(class UObject* WorldContextObject, const 
 
 void UBugReporter::SendScreenShot(const struct FString& ErrorReason, const struct FString& errorDescription, const struct FString& ImagePath, float X, float Y, float Z)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BugReporter.SendScreenShot");
 
@@ -1202,7 +1202,7 @@ void UBugReporter::SendScreenShot(const struct FString& ErrorReason, const struc
 
 void UBugReporter::SendLog(const struct FString& ErrorReason, const struct FString& errorDescription, float X, float Y, float Z, bool pullAll, bool zipLogUpload)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BugReporter.SendLog");
 
@@ -1232,7 +1232,7 @@ void UBugReporter::SendLog(const struct FString& ErrorReason, const struct FStri
 
 void UBugReporter::ReadZipLog(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BugReporter.ReadZipLog");
 
@@ -1257,7 +1257,7 @@ void UBugReporter::ReadZipLog(const struct FString& Filename)
 
 TArray<unsigned char> UBugReporter::CompressLog(bool pullAllLog)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BugReporter.CompressLog");
 
@@ -1286,7 +1286,7 @@ TArray<unsigned char> UBugReporter::CompressLog(bool pullAllLog)
 
 struct FString UBusinessHelper::XorEncryptDecrypt(const struct FString& Data, bool bEncrypt, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.XorEncryptDecrypt");
 
@@ -1315,7 +1315,7 @@ struct FString UBusinessHelper::XorEncryptDecrypt(const struct FString& Data, bo
 
 class UObject* UBusinessHelper::UIGetResWithPath(const struct FString& DesManagerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.UIGetResWithPath");
 
@@ -1343,7 +1343,7 @@ class UObject* UBusinessHelper::UIGetResWithPath(const struct FString& DesManage
 
 class ALuaClassObj* UBusinessHelper::UIGetLuaManagerByName(class UUAEUserWidget* pUIClass, const struct FString& InManagerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.UIGetLuaManagerByName");
 
@@ -1371,7 +1371,7 @@ class ALuaClassObj* UBusinessHelper::UIGetLuaManagerByName(class UUAEUserWidget*
 
 class ALuaClassObj* UBusinessHelper::UIGetLuaManager(class UUAEUserWidget* pUIClass)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.UIGetLuaManager");
 
@@ -1398,7 +1398,7 @@ class ALuaClassObj* UBusinessHelper::UIGetLuaManager(class UUAEUserWidget* pUICl
 
 void UBusinessHelper::StopUIStat(const struct FString& UIName, bool bReport)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.StopUIStat");
 
@@ -1423,7 +1423,7 @@ void UBusinessHelper::StopUIStat(const struct FString& UIName, bool bReport)
 
 float UBusinessHelper::StopTimeWatch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.StopTimeWatch");
 
@@ -1448,7 +1448,7 @@ float UBusinessHelper::StopTimeWatch()
 
 void UBusinessHelper::StartUIStat(const struct FString& UIName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.StartUIStat");
 
@@ -1470,7 +1470,7 @@ void UBusinessHelper::StartUIStat(const struct FString& UIName)
 
 void UBusinessHelper::StartTimeWatch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.StartTimeWatch");
 
@@ -1494,7 +1494,7 @@ void UBusinessHelper::StartTimeWatch()
 
 struct FString UBusinessHelper::SpecialBase64Encode(const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.SpecialBase64Encode");
 
@@ -1521,7 +1521,7 @@ struct FString UBusinessHelper::SpecialBase64Encode(const struct FString& Data)
 
 struct FString UBusinessHelper::SpecialBase64Decode(const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.SpecialBase64Decode");
 
@@ -1547,7 +1547,7 @@ struct FString UBusinessHelper::SpecialBase64Decode(const struct FString& Data)
 
 void UBusinessHelper::SetUIStatMaxClickTimes(int Times)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.SetUIStatMaxClickTimes");
 
@@ -1572,7 +1572,7 @@ void UBusinessHelper::SetUIStatMaxClickTimes(int Times)
 
 class UObject* UBusinessHelper::LoadAssetFromPath(const struct FString& DesManagerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.LoadAssetFromPath");
 
@@ -1598,7 +1598,7 @@ class UObject* UBusinessHelper::LoadAssetFromPath(const struct FString& DesManag
 
 bool UBusinessHelper::IsSplitMiniPakVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.IsSplitMiniPakVersion");
 
@@ -1623,7 +1623,7 @@ bool UBusinessHelper::IsSplitMiniPakVersion()
 
 bool UBusinessHelper::IsSplitMapPakVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.IsSplitMapPakVersion");
 
@@ -1648,7 +1648,7 @@ bool UBusinessHelper::IsSplitMapPakVersion()
 
 bool UBusinessHelper::IsFit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.IsFit");
 
@@ -1675,7 +1675,7 @@ bool UBusinessHelper::IsFit()
 
 bool UBusinessHelper::IsClassOf(class UObject* Object, class UClass* Class)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.IsClassOf");
 
@@ -1704,7 +1704,7 @@ bool UBusinessHelper::IsClassOf(class UObject* Object, class UClass* Class)
 
 bool UBusinessHelper::IsChildOf(class UClass* ChildClass, class UClass* Class)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.IsChildOf");
 
@@ -1731,7 +1731,7 @@ bool UBusinessHelper::IsChildOf(class UClass* ChildClass, class UClass* Class)
 
 bool UBusinessHelper::IsCEVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.IsCEVersion");
 
@@ -1756,7 +1756,7 @@ bool UBusinessHelper::IsCEVersion()
 
 bool UBusinessHelper::IsAppFromStore()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.IsAppFromStore");
 
@@ -1781,7 +1781,7 @@ bool UBusinessHelper::IsAppFromStore()
 
 bool UBusinessHelper::HasDownloadedBasePak()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.HasDownloadedBasePak");
 
@@ -1806,7 +1806,7 @@ bool UBusinessHelper::HasDownloadedBasePak()
 
 struct FString UBusinessHelper::GetXORKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetXORKey");
 
@@ -1834,7 +1834,7 @@ struct FString UBusinessHelper::GetXORKey()
 
 class UUAEUserWidget* UBusinessHelper::GetWidgetByName(class UUAEUserWidget* pUIClass, const struct FString& InManagerName, const struct FString& InWidgtName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetWidgetByName");
 
@@ -1862,7 +1862,7 @@ class UUAEUserWidget* UBusinessHelper::GetWidgetByName(class UUAEUserWidget* pUI
 
 uint64_t UBusinessHelper::GetVoiceSdkGameId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetVoiceSdkGameId");
 
@@ -1887,7 +1887,7 @@ uint64_t UBusinessHelper::GetVoiceSdkGameId()
 
 int UBusinessHelper::GetTSSGameId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetTSSGameId");
 
@@ -1912,7 +1912,7 @@ int UBusinessHelper::GetTSSGameId()
 
 float UBusinessHelper::GetTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetTime");
 
@@ -1937,7 +1937,7 @@ float UBusinessHelper::GetTime()
 
 struct FString UBusinessHelper::GetSplitMapConfigInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetSplitMapConfigInfo");
 
@@ -1962,7 +1962,7 @@ struct FString UBusinessHelper::GetSplitMapConfigInfo()
 
 int UBusinessHelper::GetPublishRegionID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetPublishRegionID");
 
@@ -1987,7 +1987,7 @@ int UBusinessHelper::GetPublishRegionID()
 
 struct FString UBusinessHelper::GetPublishRegion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetPublishRegion");
 
@@ -2014,7 +2014,7 @@ struct FString UBusinessHelper::GetPublishRegion()
 
 struct FString UBusinessHelper::GetPathFromUserWidgetToViewport(class UUserWidget* UserWidget, bool withObjectNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetPathFromUserWidgetToViewport");
 
@@ -2041,7 +2041,7 @@ struct FString UBusinessHelper::GetPathFromUserWidgetToViewport(class UUserWidge
 
 struct FString UBusinessHelper::GetPackChannel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetPackChannel");
 
@@ -2066,7 +2066,7 @@ struct FString UBusinessHelper::GetPackChannel()
 
 struct FString UBusinessHelper::GetOpenId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetOpenId");
 
@@ -2092,7 +2092,7 @@ struct FString UBusinessHelper::GetOpenId()
 
 struct FString UBusinessHelper::GetObjectClassName(class UObject* Object)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetObjectClassName");
 
@@ -2119,7 +2119,7 @@ struct FString UBusinessHelper::GetObjectClassName(class UObject* Object)
 
 struct FString UBusinessHelper::GetMobileBasePath(const struct FString& InPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetMobileBasePath");
 
@@ -2147,7 +2147,7 @@ struct FString UBusinessHelper::GetMobileBasePath(const struct FString& InPath)
 
 class ALuaClassObj* UBusinessHelper::GetLuaManagerByName(class UUAEUserWidget* pUIClass, const struct FString& InManagerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetLuaManagerByName");
 
@@ -2174,7 +2174,7 @@ class ALuaClassObj* UBusinessHelper::GetLuaManagerByName(class UUAEUserWidget* p
 
 struct FString UBusinessHelper::GetITopGameId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetITopGameId");
 
@@ -2199,7 +2199,7 @@ struct FString UBusinessHelper::GetITopGameId()
 
 struct FString UBusinessHelper::GetInGameLocalConnectURL()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetInGameLocalConnectURL");
 
@@ -2224,7 +2224,7 @@ struct FString UBusinessHelper::GetInGameLocalConnectURL()
 
 int UBusinessHelper::GetIMSDKEnv()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetIMSDKEnv");
 
@@ -2249,7 +2249,7 @@ int UBusinessHelper::GetIMSDKEnv()
 
 int UBusinessHelper::GetDeviceQualityLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetDeviceQualityLevel");
 
@@ -2274,7 +2274,7 @@ int UBusinessHelper::GetDeviceQualityLevel()
 
 int UBusinessHelper::GetDeviceOrientation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetDeviceOrientation");
 
@@ -2300,7 +2300,7 @@ int UBusinessHelper::GetDeviceOrientation()
 
 class UUAEDataTable* UBusinessHelper::GetDataTable(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetDataTable");
 
@@ -2326,7 +2326,7 @@ class UUAEDataTable* UBusinessHelper::GetDataTable(const struct FString& tableNa
 
 int UBusinessHelper::GetCurrentNetworkState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetCurrentNetworkState");
 
@@ -2353,7 +2353,7 @@ int UBusinessHelper::GetCurrentNetworkState()
 
 class UWidget* UBusinessHelper::GetChildByName(class UUserWidget* pParent, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetChildByName");
 
@@ -2380,7 +2380,7 @@ class UWidget* UBusinessHelper::GetChildByName(class UUserWidget* pParent, const
 
 struct FString UBusinessHelper::GetBuildURL()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetBuildURL");
 
@@ -2405,7 +2405,7 @@ struct FString UBusinessHelper::GetBuildURL()
 
 struct FString UBusinessHelper::GetBuildNo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetBuildNo");
 
@@ -2430,7 +2430,7 @@ struct FString UBusinessHelper::GetBuildNo()
 
 struct FString UBusinessHelper::GetBranchName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetBranchName");
 
@@ -2455,7 +2455,7 @@ struct FString UBusinessHelper::GetBranchName()
 
 struct FString UBusinessHelper::GetBase64Key()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetBase64Key");
 
@@ -2480,7 +2480,7 @@ struct FString UBusinessHelper::GetBase64Key()
 
 struct FString UBusinessHelper::GetAppVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetAppVersion");
 
@@ -2505,7 +2505,7 @@ struct FString UBusinessHelper::GetAppVersion()
 
 int UBusinessHelper::GetAOSSHOPID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetAOSSHOPID");
 
@@ -2530,7 +2530,7 @@ int UBusinessHelper::GetAOSSHOPID()
 
 struct FString UBusinessHelper::GetAOSSHOP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.GetAOSSHOP");
 
@@ -2553,7 +2553,7 @@ struct FString UBusinessHelper::GetAOSSHOP()
 
 void UBusinessHelper::FullGC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.FullGC");
 
@@ -2574,7 +2574,7 @@ void UBusinessHelper::FullGC()
 
 void UBusinessHelper::ClearDisplayLookupTable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.ClearDisplayLookupTable");
 
@@ -2599,7 +2599,7 @@ void UBusinessHelper::ClearDisplayLookupTable()
 
 void UBusinessHelper::BroadCastMSG(class UFrontendHUD* FrontendHUD, const struct FString& DesManagerName, const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.BroadCastMSG");
 
@@ -2626,7 +2626,7 @@ void UBusinessHelper::BroadCastMSG(class UFrontendHUD* FrontendHUD, const struct
 
 struct FString UBusinessHelper::Base64Encode(const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.Base64Encode");
 
@@ -2653,7 +2653,7 @@ struct FString UBusinessHelper::Base64Encode(const struct FString& Data)
 
 struct FString UBusinessHelper::Base64Decode(const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.BusinessHelper.Base64Decode");
 
@@ -2679,7 +2679,7 @@ struct FString UBusinessHelper::Base64Decode(const struct FString& Data)
 
 void UIntlHelper::UpdateXGPushNightTag(bool bInit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.UpdateXGPushNightTag");
 
@@ -2703,7 +2703,7 @@ void UIntlHelper::UpdateXGPushNightTag(bool bInit)
 
 void UIntlHelper::UpdateXGPushDayTag(bool bInit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.UpdateXGPushDayTag");
 
@@ -2727,7 +2727,7 @@ void UIntlHelper::UpdateXGPushDayTag(bool bInit)
 
 void UIntlHelper::UpdateVoiceUrl(const struct FString& regionVoiceUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.UpdateVoiceUrl");
 
@@ -2749,7 +2749,7 @@ void UIntlHelper::UpdateVoiceUrl(const struct FString& regionVoiceUrl)
 
 void UIntlHelper::UnInitTweenMaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.UnInitTweenMaker");
 
@@ -2776,7 +2776,7 @@ void UIntlHelper::UnInitTweenMaker()
 
 struct FString UIntlHelper::TimeFormatString(const struct FString& Format, int hours, int Mins, int secs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.TimeFormatString");
 
@@ -2807,7 +2807,7 @@ struct FString UIntlHelper::TimeFormatString(const struct FString& Format, int h
 
 void UIntlHelper::SaveXGTags(const struct FString& Language, const struct FString& timezone, const struct FString& Region)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.SaveXGTags");
 
@@ -2831,7 +2831,7 @@ void UIntlHelper::SaveXGTags(const struct FString& Language, const struct FStrin
 
 void UIntlHelper::OnSwitchLanguage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.OnSwitchLanguage");
 
@@ -2856,7 +2856,7 @@ void UIntlHelper::OnSwitchLanguage()
 
 void UIntlHelper::OnChoosingZone(int ZoneID, const struct FString& AddrIP, const struct FString& regionVoiceUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.OnChoosingZone");
 
@@ -2882,7 +2882,7 @@ void UIntlHelper::OnChoosingZone(int ZoneID, const struct FString& AddrIP, const
 
 bool UIntlHelper::IsRemoteNotificationsEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.IsRemoteNotificationsEnabled");
 
@@ -2907,7 +2907,7 @@ bool UIntlHelper::IsRemoteNotificationsEnabled()
 
 bool UIntlHelper::IsHelpshiftEnable4CurrentChannel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.IsHelpshiftEnable4CurrentChannel");
 
@@ -2932,7 +2932,7 @@ bool UIntlHelper::IsHelpshiftEnable4CurrentChannel()
 
 bool UIntlHelper::IsHelpshiftEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.IsHelpshiftEnable");
 
@@ -2957,7 +2957,7 @@ bool UIntlHelper::IsHelpshiftEnable()
 
 bool UIntlHelper::IsAwakedByAdjust()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.IsAwakedByAdjust");
 
@@ -2980,7 +2980,7 @@ bool UIntlHelper::IsAwakedByAdjust()
 
 void UIntlHelper::InitTweenMaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.InitTweenMaker");
 
@@ -3001,7 +3001,7 @@ void UIntlHelper::InitTweenMaker()
 
 void UIntlHelper::HelpshiftUploadLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftUploadLog");
 
@@ -3027,7 +3027,7 @@ void UIntlHelper::HelpshiftUploadLog()
 
 void UIntlHelper::HelpshiftShowSingleFAQWithInfo(const struct FString& publishID, TMap<struct FString, struct FString> hsMetaInfo, const struct FString& ExtraTags, const struct FString& hsIssueFieldsJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftShowSingleFAQWithInfo");
 
@@ -3056,7 +3056,7 @@ void UIntlHelper::HelpshiftShowSingleFAQWithInfo(const struct FString& publishID
 
 void UIntlHelper::HelpshiftShowFAQsWithInfo(TMap<struct FString, struct FString> hsMetaInfo, const struct FString& ExtraTags, const struct FString& hsIssueFieldsJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftShowFAQsWithInfo");
 
@@ -3080,7 +3080,7 @@ void UIntlHelper::HelpshiftShowFAQsWithInfo(TMap<struct FString, struct FString>
 
 void UIntlHelper::HelpshiftShowFAQs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftShowFAQs");
 
@@ -3104,7 +3104,7 @@ void UIntlHelper::HelpshiftShowFAQs()
 
 void UIntlHelper::HelpshiftShowConversionWithInfo(TMap<struct FString, struct FString> hsMetaInfo, const struct FString& hsIssueFieldsJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftShowConversionWithInfo");
 
@@ -3127,7 +3127,7 @@ void UIntlHelper::HelpshiftShowConversionWithInfo(TMap<struct FString, struct FS
 
 void UIntlHelper::HelpshiftShowConversion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftShowConversion");
 
@@ -3148,7 +3148,7 @@ void UIntlHelper::HelpshiftShowConversion()
 
 void UIntlHelper::HelpshiftRequestUnreadMessagesCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftRequestUnreadMessagesCount");
 
@@ -3171,7 +3171,7 @@ void UIntlHelper::HelpshiftRequestUnreadMessagesCount()
 
 int UIntlHelper::HelpshiftGetUnreadMessgesCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftGetUnreadMessgesCount");
 
@@ -3194,7 +3194,7 @@ int UIntlHelper::HelpshiftGetUnreadMessgesCount()
 
 void UIntlHelper::HelpshiftClearUnreadMessgesCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.HelpshiftClearUnreadMessgesCount");
 
@@ -3218,7 +3218,7 @@ void UIntlHelper::HelpshiftClearUnreadMessgesCount()
 
 struct FString UIntlHelper::GetTranslationText(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetTranslationText");
 
@@ -3244,7 +3244,7 @@ struct FString UIntlHelper::GetTranslationText(const struct FString& Key)
 
 struct FString UIntlHelper::GetSavedXGTimezoneTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetSavedXGTimezoneTag");
 
@@ -3269,7 +3269,7 @@ struct FString UIntlHelper::GetSavedXGTimezoneTag()
 
 struct FString UIntlHelper::GetSavedXGRegionTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetSavedXGRegionTag");
 
@@ -3294,7 +3294,7 @@ struct FString UIntlHelper::GetSavedXGRegionTag()
 
 struct FString UIntlHelper::GetSavedXGPushNightTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetSavedXGPushNightTag");
 
@@ -3319,7 +3319,7 @@ struct FString UIntlHelper::GetSavedXGPushNightTag()
 
 struct FString UIntlHelper::GetSavedXGPushDayTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetSavedXGPushDayTag");
 
@@ -3344,7 +3344,7 @@ struct FString UIntlHelper::GetSavedXGPushDayTag()
 
 struct FString UIntlHelper::GetSavedXGLanguageTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetSavedXGLanguageTag");
 
@@ -3369,7 +3369,7 @@ struct FString UIntlHelper::GetSavedXGLanguageTag()
 
 struct FString UIntlHelper::GetPlayerUCLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetPlayerUCLevel");
 
@@ -3394,7 +3394,7 @@ struct FString UIntlHelper::GetPlayerUCLevel()
 
 int UIntlHelper::GetLocalTimezone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalTimezone");
 
@@ -3425,7 +3425,7 @@ int UIntlHelper::GetLocalTimezone()
 
 struct FString UIntlHelper::GetLocalizeStringWithString(const struct FString& sourceString, int numStringIndex, const struct FString& string1, const struct FString& string2, const struct FString& string3, const struct FString& string4)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalizeStringWithString");
 
@@ -3462,7 +3462,7 @@ struct FString UIntlHelper::GetLocalizeStringWithString(const struct FString& so
 
 struct FString UIntlHelper::GetLocalizeStringWithNum(int ID, int numStringIndex, const struct FString& string1, const struct FString& string2, const struct FString& string3, const struct FString& string4)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalizeStringWithNum");
 
@@ -3498,7 +3498,7 @@ struct FString UIntlHelper::GetLocalizeStringWithNum(int ID, int numStringIndex,
 
 struct FString UIntlHelper::GetLocalizeStrByStr(const struct FString& Source, const struct FString& string1, const struct FString& string2, const struct FString& string3, const struct FString& string4)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalizeStrByStr");
 
@@ -3533,7 +3533,7 @@ struct FString UIntlHelper::GetLocalizeStrByStr(const struct FString& Source, co
 
 struct FString UIntlHelper::GetLocalizeStrByID(int ID, const struct FString& string1, const struct FString& string2, const struct FString& string3, const struct FString& string4)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalizeStrByID");
 
@@ -3564,7 +3564,7 @@ struct FString UIntlHelper::GetLocalizeStrByID(int ID, const struct FString& str
 
 struct FString UIntlHelper::GetLocalizationStringWithID(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalizationStringWithID");
 
@@ -3591,7 +3591,7 @@ struct FString UIntlHelper::GetLocalizationStringWithID(int ID)
 
 struct FString UIntlHelper::GetLocalizationString(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalizationString");
 
@@ -3618,7 +3618,7 @@ struct FString UIntlHelper::GetLocalizationString(const struct FString& Key)
 
 struct FString UIntlHelper::GetLocalizationBattleStringWithID(int ID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetLocalizationBattleStringWithID");
 
@@ -3644,7 +3644,7 @@ struct FString UIntlHelper::GetLocalizationBattleStringWithID(int ID)
 
 struct FString UIntlHelper::GetHistoryErrorCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetHistoryErrorCode");
 
@@ -3669,7 +3669,7 @@ struct FString UIntlHelper::GetHistoryErrorCode()
 
 struct FString UIntlHelper::GetGameMasterVID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetGameMasterVID");
 
@@ -3694,7 +3694,7 @@ struct FString UIntlHelper::GetGameMasterVID()
 
 struct FString UIntlHelper::GetDeepLinkUrl()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetDeepLinkUrl");
 
@@ -3719,7 +3719,7 @@ struct FString UIntlHelper::GetDeepLinkUrl()
 
 int UIntlHelper::GetCurrentZoneID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.GetCurrentZoneID");
 
@@ -3746,7 +3746,7 @@ int UIntlHelper::GetCurrentZoneID()
 
 struct FString UIntlHelper::FormatLocalizeStrByStr(const struct FString& Source, TArray<struct FString> stringArr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.FormatLocalizeStrByStr");
 
@@ -3771,7 +3771,7 @@ struct FString UIntlHelper::FormatLocalizeStrByStr(const struct FString& Source,
 
 void UIntlHelper::DirectToNotificationSetup()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.DirectToNotificationSetup");
 
@@ -3792,7 +3792,7 @@ void UIntlHelper::DirectToNotificationSetup()
 
 void UIntlHelper::ClearAdjustDeepLink()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.ClearAdjustDeepLink");
 
@@ -3813,7 +3813,7 @@ void UIntlHelper::ClearAdjustDeepLink()
 
 void UIntlHelper::AdjustParaAnalysis()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.AdjustParaAnalysis");
 
@@ -3836,7 +3836,7 @@ void UIntlHelper::AdjustParaAnalysis()
 
 void UIntlHelper::AddErrorCodeToHistory(const struct FString& InErrorCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlHelper.AddErrorCodeToHistory");
 
@@ -3858,7 +3858,7 @@ void UIntlHelper::AddErrorCodeToHistory(const struct FString& InErrorCode)
 
 void ATestHUD::TestFunctionNOParam()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.TestFunctionNOParam");
 
@@ -3881,7 +3881,7 @@ void ATestHUD::TestFunctionNOParam()
 
 float ATestHUD::TestFunctionBP_LUA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.TestFunctionBP_LUA");
 
@@ -3905,7 +3905,7 @@ float ATestHUD::TestFunctionBP_LUA()
 
 float ATestHUD::TestFunctionBP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.TestFunctionBP");
 
@@ -3929,7 +3929,7 @@ float ATestHUD::TestFunctionBP()
 
 float ATestHUD::Function_Lua()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_Lua");
 
@@ -3954,7 +3954,7 @@ float ATestHUD::Function_Lua()
 
 float ATestHUD::Function_CPlus_Call()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_CPlus_Call");
 
@@ -3979,7 +3979,7 @@ float ATestHUD::Function_CPlus_Call()
 
 float ATestHUD::Function_CPlus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_CPlus");
 
@@ -4004,7 +4004,7 @@ float ATestHUD::Function_CPlus()
 
 float ATestHUD::Function_BP_CPP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_BP_CPP");
 
@@ -4028,7 +4028,7 @@ float ATestHUD::Function_BP_CPP()
 
 float ATestHUD::Function_BP_Call_LUA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_BP_Call_LUA");
 
@@ -4053,7 +4053,7 @@ float ATestHUD::Function_BP_Call_LUA()
 
 float ATestHUD::Function_BP_Call_CPP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_BP_Call_CPP");
 
@@ -4077,7 +4077,7 @@ float ATestHUD::Function_BP_Call_CPP()
 
 float ATestHUD::Function_BP_Call_CPlus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_BP_Call_CPlus");
 
@@ -4102,7 +4102,7 @@ float ATestHUD::Function_BP_Call_CPlus()
 
 float ATestHUD::Function_BP_Call()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_BP_Call");
 
@@ -4127,7 +4127,7 @@ float ATestHUD::Function_BP_Call()
 
 float ATestHUD::Function_BP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TestHUD.Function_BP");
 
@@ -4150,7 +4150,7 @@ float ATestHUD::Function_BP()
 
 void UCDNUpdate::StartUpdateApp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.StartUpdateApp");
 
@@ -4173,7 +4173,7 @@ void UCDNUpdate::StartUpdateApp()
 
 void UCDNUpdate::StartAppUpdate(bool StartGrayUpdate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.StartAppUpdate");
 
@@ -4197,7 +4197,7 @@ void UCDNUpdate::StartAppUpdate(bool StartGrayUpdate)
 
 void UCDNUpdate::OnRequestProgress(const struct FCDNDownloaderInfo& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.OnRequestProgress");
 
@@ -4221,7 +4221,7 @@ void UCDNUpdate::OnRequestProgress(const struct FCDNDownloaderInfo& Info)
 
 void UCDNUpdate::OnRequestComplete(const struct FCDNDownloaderInfo& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.OnRequestComplete");
 
@@ -4245,7 +4245,7 @@ void UCDNUpdate::OnRequestComplete(const struct FCDNDownloaderInfo& Info)
 
 bool UCDNUpdate::IsUpdating()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.IsUpdating");
 
@@ -4270,7 +4270,7 @@ bool UCDNUpdate::IsUpdating()
 
 bool UCDNUpdate::IsGrayUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.IsGrayUpdate");
 
@@ -4298,7 +4298,7 @@ bool UCDNUpdate::IsGrayUpdate()
 
 int UCDNUpdate::GetCurStage(float* percent, int* GetCurVal, int* GetMaxVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.GetCurStage");
 
@@ -4328,7 +4328,7 @@ int UCDNUpdate::GetCurStage(float* percent, int* GetCurVal, int* GetMaxVal)
 
 void UCDNUpdate::FinishUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.FinishUpdate");
 
@@ -4349,7 +4349,7 @@ void UCDNUpdate::FinishUpdate()
 
 void UCDNUpdate::ContinueUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.ContinueUpdate");
 
@@ -4370,7 +4370,7 @@ void UCDNUpdate::ContinueUpdate()
 
 void UCDNUpdate::CancelUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CDNUpdate.CancelUpdate");
 
@@ -4391,7 +4391,7 @@ void UCDNUpdate::CancelUpdate()
 
 void UCentauriManager::TickCentauriPackage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.TickCentauriPackage");
 
@@ -4414,7 +4414,7 @@ void UCentauriManager::TickCentauriPackage()
 
 void UCentauriManager::Tick(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.Tick");
 
@@ -4438,7 +4438,7 @@ void UCentauriManager::Tick(float DeltaTime)
 
 void UCentauriManager::SwitchPayChannel(ECentauriMultiPayChannelSwitch switchChannel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.SwitchPayChannel");
 
@@ -4472,7 +4472,7 @@ void UCentauriManager::SwitchPayChannel(ECentauriMultiPayChannelSwitch switchCha
 
 void UCentauriManager::Subscribe(const struct FString& productid, const struct FString& InPayItem, const struct FString& Country, const struct FString& currency, const struct FString& serviceCode, const struct FString& serviceName, bool autoPay, const struct FString& basePlanId, const struct FString& gwOfferId, const struct FString& InChannelExtras, const struct FString& InAppExtends)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.Subscribe");
 
@@ -4507,7 +4507,7 @@ void UCentauriManager::Subscribe(const struct FString& productid, const struct F
 
 void UCentauriManager::SetZoneID(const struct FString& inZoneID, const struct FString& inGoodsZoneID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.SetZoneID");
 
@@ -4533,7 +4533,7 @@ void UCentauriManager::SetZoneID(const struct FString& inZoneID, const struct FS
 
 void UCentauriManager::SetRoleInfo(int InChannel, const struct FString& OpenID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.SetRoleInfo");
 
@@ -4558,7 +4558,7 @@ void UCentauriManager::SetRoleInfo(int InChannel, const struct FString& OpenID)
 
 void UCentauriManager::SetFrontendHUD(class UGameFrontendHUD* InFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.SetFrontendHUD");
 
@@ -4582,7 +4582,7 @@ void UCentauriManager::SetFrontendHUD(class UGameFrontendHUD* InFrontendHUD)
 
 void UCentauriManager::SetCentauriIDC(const struct FString& idc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.SetCentauriIDC");
 
@@ -4604,7 +4604,7 @@ void UCentauriManager::SetCentauriIDC(const struct FString& idc)
 
 void UCentauriManager::Reprovide()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.Reprovide");
 
@@ -4632,7 +4632,7 @@ void UCentauriManager::Reprovide()
 
 void UCentauriManager::Pay(const struct FString& productid, const struct FString& InPayItem, const struct FString& Country, const struct FString& currency, const struct FString& InChannelExtras, const struct FString& InAppExtends)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.Pay");
 
@@ -4670,7 +4670,7 @@ void UCentauriManager::Pay(const struct FString& productid, const struct FString
 
 void UCentauriManager::ModifySubscribe(const struct FString& newProductid, const struct FString& Country, const struct FString& currency, const struct FString& serviceCode, const struct FString& serviceName, bool autoPay, const struct FString& basePlanId, const struct FString& gwOfferId, const struct FString& InChannelExtras, const struct FString& InAppExtends)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.ModifySubscribe");
 
@@ -4703,7 +4703,7 @@ void UCentauriManager::ModifySubscribe(const struct FString& newProductid, const
 
 bool UCentauriManager::IsH5PayEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.IsH5PayEnable");
 
@@ -4728,7 +4728,7 @@ bool UCentauriManager::IsH5PayEnable()
 
 void UCentauriManager::Initialize(ECentauriMultiPayChannelSwitch envior)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.Initialize");
 
@@ -4754,7 +4754,7 @@ void UCentauriManager::Initialize(ECentauriMultiPayChannelSwitch envior)
 
 void UCentauriManager::H5Pay(const struct FString& Country, const struct FString& InChannelExtras, const struct FString& InAppExtends)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.H5Pay");
 
@@ -4787,7 +4787,7 @@ void UCentauriManager::H5Pay(const struct FString& Country, const struct FString
 
 void UCentauriManager::GoodsPresent(const struct FString& productid, const struct FString& InPayItem, const struct FString& Price, const struct FString& Country, const struct FString& currency, const struct FString& MetaData, const struct FString& InChannelExtras, const struct FString& InAppExtends)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GoodsPresent");
 
@@ -4824,7 +4824,7 @@ void UCentauriManager::GoodsPresent(const struct FString& productid, const struc
 
 void UCentauriManager::Goods(const struct FString& productid, const struct FString& InPayItem, const struct FString& Price, const struct FString& Country, const struct FString& currency, const struct FString& InChannelExtras, const struct FString& InAppExtends)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.Goods");
 
@@ -4854,7 +4854,7 @@ void UCentauriManager::Goods(const struct FString& productid, const struct FStri
 
 void UCentauriManager::GetProductInfo(TMap<struct FString, struct FString> listProductID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetProductInfo");
 
@@ -4878,7 +4878,7 @@ void UCentauriManager::GetProductInfo(TMap<struct FString, struct FString> listP
 
 struct FString UCentauriManager::getPF()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.getPF");
 
@@ -4903,7 +4903,7 @@ struct FString UCentauriManager::getPF()
 
 struct FString UCentauriManager::GetPaymentProductId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetPaymentProductId");
 
@@ -4928,7 +4928,7 @@ struct FString UCentauriManager::GetPaymentProductId()
 
 struct FString UCentauriManager::GetPayEnvironment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetPayEnvironment");
 
@@ -4953,7 +4953,7 @@ struct FString UCentauriManager::GetPayEnvironment()
 
 struct FString UCentauriManager::GetPayChannel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetPayChannel");
 
@@ -4978,7 +4978,7 @@ struct FString UCentauriManager::GetPayChannel()
 
 struct FString UCentauriManager::GetPackChannel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetPackChannel");
 
@@ -5003,7 +5003,7 @@ struct FString UCentauriManager::GetPackChannel()
 
 struct FString UCentauriManager::GetOfferID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetOfferID");
 
@@ -5028,7 +5028,7 @@ struct FString UCentauriManager::GetOfferID()
 
 struct FString UCentauriManager::GetNativePackageTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetNativePackageTag");
 
@@ -5056,7 +5056,7 @@ struct FString UCentauriManager::GetNativePackageTag()
 
 void UCentauriManager::GetMPInfo(const struct FString& Country, const struct FString& currency, const struct FString& InAppExtends, const struct FString& InDrmInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetMPInfo");
 
@@ -5083,7 +5083,7 @@ void UCentauriManager::GetMPInfo(const struct FString& Country, const struct FSt
 
 void UCentauriManager::GetIntroPrice(TMap<struct FString, struct FString> listProductID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetIntroPrice");
 
@@ -5107,7 +5107,7 @@ void UCentauriManager::GetIntroPrice(TMap<struct FString, struct FString> listPr
 
 class UCentauriManager* UCentauriManager::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetInstance");
 
@@ -5132,7 +5132,7 @@ class UCentauriManager* UCentauriManager::GetInstance()
 
 struct FString UCentauriManager::GetInIDC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetInIDC");
 
@@ -5157,7 +5157,7 @@ struct FString UCentauriManager::GetInIDC()
 
 int UCentauriManager::GetAOSSHOP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CentauriManager.GetAOSSHOP");
 
@@ -5183,7 +5183,7 @@ int UCentauriManager::GetAOSSHOP()
 
 class UTexture2D* UCompressTextureHelper::TestGetTexture2DFromDisk_KTX2(const struct FString& PathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CompressTextureHelper.TestGetTexture2DFromDisk_KTX2");
 
@@ -5209,7 +5209,7 @@ class UTexture2D* UCompressTextureHelper::TestGetTexture2DFromDisk_KTX2(const st
 
 void UCustomLayoutProxy::UnregisterCustomPanel(class UCustomPanel* InCustomizePanel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.UnregisterCustomPanel");
 
@@ -5233,7 +5233,7 @@ void UCustomLayoutProxy::UnregisterCustomPanel(class UCustomPanel* InCustomizePa
 
 void UCustomLayoutProxy::RegisterCustomPanel(class UCustomPanel* InCustomizePanel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.RegisterCustomPanel");
 
@@ -5255,7 +5255,7 @@ void UCustomLayoutProxy::RegisterCustomPanel(class UCustomPanel* InCustomizePane
 
 void UCustomLayoutProxy::OnReleaseInGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.OnReleaseInGame");
 
@@ -5276,7 +5276,7 @@ void UCustomLayoutProxy::OnReleaseInGame()
 
 void UCustomLayoutProxy::OnInitInGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.OnInitInGame");
 
@@ -5301,7 +5301,7 @@ void UCustomLayoutProxy::OnInitInGame()
 
 bool UCustomLayoutProxy::LoadSaveGameBySaveType(class UCustomLayoutSaveGame* SaveGame, unsigned char InSaveType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.LoadSaveGameBySaveType");
 
@@ -5330,7 +5330,7 @@ bool UCustomLayoutProxy::LoadSaveGameBySaveType(class UCustomLayoutSaveGame* Sav
 
 bool UCustomLayoutProxy::LoadSaveGameByCustomType(class UCustomLayoutSaveGame* SaveGame, int InCustomType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.LoadSaveGameByCustomType");
 
@@ -5357,7 +5357,7 @@ bool UCustomLayoutProxy::LoadSaveGameByCustomType(class UCustomLayoutSaveGame* S
 
 void UCustomLayoutProxy::HandleTouchStatEvent(const struct FTouchStatInfo& TouchStatInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.HandleTouchStatEvent");
 
@@ -5379,7 +5379,7 @@ void UCustomLayoutProxy::HandleTouchStatEvent(const struct FTouchStatInfo& Touch
 
 void UCustomLayoutProxy::ClearTouchStatArray()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.ClearTouchStatArray");
 
@@ -5402,7 +5402,7 @@ void UCustomLayoutProxy::ClearTouchStatArray()
 
 void UCustomLayoutProxy::ClearCacheBySaveType(unsigned char InSaveType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.ClearCacheBySaveType");
 
@@ -5428,7 +5428,7 @@ void UCustomLayoutProxy::ClearCacheBySaveType(unsigned char InSaveType)
 
 bool UCustomLayoutProxy::CheckLayoutDetail(int InCustomType, unsigned char InSaveType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.CheckLayoutDetail");
 
@@ -5455,7 +5455,7 @@ bool UCustomLayoutProxy::CheckLayoutDetail(int InCustomType, unsigned char InSav
 
 void UCustomLayoutProxy::BroadcastCustomLayoutChangeBySaveType(unsigned char InSaveType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.BroadcastCustomLayoutChangeBySaveType");
 
@@ -5479,7 +5479,7 @@ void UCustomLayoutProxy::BroadcastCustomLayoutChangeBySaveType(unsigned char InS
 
 void UCustomLayoutProxy::BroadcastCustomLayoutChangeByCustomTypeList(TArray<int> InCustomTypeList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.BroadcastCustomLayoutChangeByCustomTypeList");
 
@@ -5504,7 +5504,7 @@ void UCustomLayoutProxy::BroadcastCustomLayoutChangeByCustomTypeList(TArray<int>
 
 void UCustomLayoutProxy::BroadcastCustomLayoutChangeByCustomType(int InCustomType, bool bNotCheck)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutProxy.BroadcastCustomLayoutChangeByCustomType");
 
@@ -5529,7 +5529,7 @@ void UCustomLayoutProxy::BroadcastCustomLayoutChangeByCustomType(int InCustomTyp
 
 void UCustomLayoutSaveGame::SetTimeTagFromString(const struct FString& inString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.SetTimeTagFromString");
 
@@ -5554,7 +5554,7 @@ void UCustomLayoutSaveGame::SetTimeTagFromString(const struct FString& inString)
 
 void UCustomLayoutSaveGame::SetDataByLayoutDetail(int InCustomType, const struct FUIElemLayoutDetail& InData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.SetDataByLayoutDetail");
 
@@ -5579,7 +5579,7 @@ void UCustomLayoutSaveGame::SetDataByLayoutDetail(int InCustomType, const struct
 
 void UCustomLayoutSaveGame::RemoveData(int InCustomType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.RemoveData");
 
@@ -5603,7 +5603,7 @@ void UCustomLayoutSaveGame::RemoveData(int InCustomType)
 
 struct FString UCustomLayoutSaveGame::GetTimeTagAsString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.GetTimeTagAsString");
 
@@ -5628,7 +5628,7 @@ struct FString UCustomLayoutSaveGame::GetTimeTagAsString()
 
 struct FString UCustomLayoutSaveGame::GetNewTimeTagAsString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.GetNewTimeTagAsString");
 
@@ -5653,7 +5653,7 @@ struct FString UCustomLayoutSaveGame::GetNewTimeTagAsString()
 
 uint64_t UCustomLayoutSaveGame::GetLayoutCodeCheckSum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.GetLayoutCodeCheckSum");
 
@@ -5679,7 +5679,7 @@ uint64_t UCustomLayoutSaveGame::GetLayoutCodeCheckSum()
 
 struct FUIElemLayoutDetail UCustomLayoutSaveGame::GetDataAsLayoutDetail(int InCustomType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.GetDataAsLayoutDetail");
 
@@ -5706,7 +5706,7 @@ struct FUIElemLayoutDetail UCustomLayoutSaveGame::GetDataAsLayoutDetail(int InCu
 
 bool UCustomLayoutSaveGame::Contains(int InCustomType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomLayoutSaveGame.Contains");
 
@@ -5732,7 +5732,7 @@ bool UCustomLayoutSaveGame::Contains(int InCustomType)
 
 void UCustomPanel::TryApplyLayoutData(const struct FUIElemLayoutDetail& LayoutDetail)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.CustomPanel.TryApplyLayoutData");
 
@@ -5757,7 +5757,7 @@ void UCustomPanel::TryApplyLayoutData(const struct FUIElemLayoutDetail& LayoutDe
 
 class UDynamicCustomIndexer* UDynamicCustomIndexer::GetIndexer(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.DynamicCustomIndexer.GetIndexer");
 
@@ -5781,18 +5781,20 @@ class UDynamicCustomIndexer* UDynamicCustomIndexer::GetIndexer(const struct FStr
 // Parameters:
 // TArray<int>                    InCustomTypeList               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // TMap<int, class UUAECustomizePanel*> CustomPanelMap                 (Parm, OutParm, ZeroConstructor)
-// TArray<class UCanvasPanel*>    Containers                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class UCanvasPanel*            Container                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// bool                           bIgnoreDPIScale                (Parm, ZeroConstructor, IsPlainOldData)
 // TMap<int, class UUAECustomizePanel*> ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm)
 
-TMap<int, class UUAECustomizePanel*> UDynamicCustomIndexer::CreateDynamicCustomWidgets(TArray<int> InCustomTypeList, TArray<class UCanvasPanel*> Containers, TMap<int, class UUAECustomizePanel*>* CustomPanelMap)
+TMap<int, class UUAECustomizePanel*> UDynamicCustomIndexer::CreateDynamicCustomWidgets(TArray<int> InCustomTypeList, class UCanvasPanel* Container, bool bIgnoreDPIScale, TMap<int, class UUAECustomizePanel*>* CustomPanelMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.DynamicCustomIndexer.CreateDynamicCustomWidgets");
 
 	UDynamicCustomIndexer_CreateDynamicCustomWidgets_Params params;
 	params.InCustomTypeList = InCustomTypeList;
-	params.Containers = Containers;
+	params.Container = Container;
+	params.bIgnoreDPIScale = bIgnoreDPIScale;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -5816,7 +5818,7 @@ TMap<int, class UUAECustomizePanel*> UDynamicCustomIndexer::CreateDynamicCustomW
 
 class UUAETableManager* UGameBackendUtils::GetTableManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBackendUtils.GetTableManager");
 
@@ -5841,7 +5843,7 @@ class UUAETableManager* UGameBackendUtils::GetTableManager()
 
 class UGameBackendUtils* UGameBackendHUD::GetUtils()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBackendHUD.GetUtils");
 
@@ -5866,7 +5868,7 @@ class UGameBackendUtils* UGameBackendHUD::GetUtils()
 
 class UGameBackendHUD* UGameBackendHUD::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBackendHUD.GetInstance");
 
@@ -5892,7 +5894,7 @@ class UGameBackendHUD* UGameBackendHUD::GetInstance()
 
 class UGameFrontendHUD* UGameBackendHUD::GetGameFrontendHUDByGameInstance(class UGameInstance* GameInstance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBackendHUD.GetGameFrontendHUDByGameInstance");
 
@@ -5919,7 +5921,7 @@ class UGameFrontendHUD* UGameBackendHUD::GetGameFrontendHUDByGameInstance(class 
 
 class UGameFrontendHUD* UGameBackendHUD::GetFirstGameFrontendHUD(class UObject* WorldContextObject)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBackendHUD.GetFirstGameFrontendHUD");
 
@@ -5946,7 +5948,7 @@ class UGameFrontendHUD* UGameBackendHUD::GetFirstGameFrontendHUD(class UObject* 
 
 class UUAEUserWidget* UGameBusinessManager::GetWidget(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBusinessManager.GetWidget");
 
@@ -5972,7 +5974,7 @@ class UUAEUserWidget* UGameBusinessManager::GetWidget(int Index)
 
 class ALuaClassObj* UGameBusinessManager::GetLuaObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBusinessManager.GetLuaObject");
 
@@ -5997,7 +5999,7 @@ class ALuaClassObj* UGameBusinessManager::GetLuaObject()
 
 class UGameFrontendHUD* UGameBusinessManager::GetGameFrontendHUD()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameBusinessManager.GetGameFrontendHUD");
 
@@ -6022,7 +6024,7 @@ class UGameFrontendHUD* UGameBusinessManager::GetGameFrontendHUD()
 
 void UGameFrontendHUD::UnRegisterUIShowHideEventDelegate(const struct FString& Source)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.UnRegisterUIShowHideEventDelegate");
 
@@ -6047,7 +6049,7 @@ void UGameFrontendHUD::UnRegisterUIShowHideEventDelegate(const struct FString& S
 
 void UGameFrontendHUD::TimeStatisticStop(int Type, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.TimeStatisticStop");
 
@@ -6072,7 +6074,7 @@ void UGameFrontendHUD::TimeStatisticStop(int Type, const struct FString& Name)
 
 void UGameFrontendHUD::TimeStatisticStart(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.TimeStatisticStart");
 
@@ -6096,7 +6098,7 @@ void UGameFrontendHUD::TimeStatisticStart(int Type)
 
 void UGameFrontendHUD::TickUdpCollector(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.TickUdpCollector");
 
@@ -6120,7 +6122,7 @@ void UGameFrontendHUD::TickUdpCollector(float DeltaTime)
 
 void UGameFrontendHUD::StatisVisibilityWidget(class UWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.StatisVisibilityWidget");
 
@@ -6144,7 +6146,7 @@ void UGameFrontendHUD::StatisVisibilityWidget(class UWidget* Widget)
 
 void UGameFrontendHUD::StatisLoadedTexture(class UTexture* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.StatisLoadedTexture");
 
@@ -6168,7 +6170,7 @@ void UGameFrontendHUD::StatisLoadedTexture(class UTexture* Texture)
 
 bool UGameFrontendHUD::StartUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.StartUpdate");
 
@@ -6193,7 +6195,7 @@ bool UGameFrontendHUD::StartUpdate()
 
 bool UGameFrontendHUD::StartGrayUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.StartGrayUpdate");
 
@@ -6216,7 +6218,7 @@ bool UGameFrontendHUD::StartGrayUpdate()
 
 void UGameFrontendHUD::StartDolphinUpdateAfterCDNUpdateFailed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.StartDolphinUpdateAfterCDNUpdateFailed");
 
@@ -6237,7 +6239,7 @@ void UGameFrontendHUD::StartDolphinUpdateAfterCDNUpdateFailed()
 
 void UGameFrontendHUD::StartCDNUpdateAfterDolphinUpdateFailed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.StartCDNUpdateAfterDolphinUpdateFailed");
 
@@ -6258,7 +6260,7 @@ void UGameFrontendHUD::StartCDNUpdateAfterDolphinUpdateFailed()
 
 void UGameFrontendHUD::ShutdownUnrealNetwork()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.ShutdownUnrealNetwork");
 
@@ -6281,7 +6283,7 @@ void UGameFrontendHUD::ShutdownUnrealNetwork()
 
 void UGameFrontendHUD::SetShouldShowAdaptTipInLobby(bool bShoudShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.SetShouldShowAdaptTipInLobby");
 
@@ -6305,7 +6307,7 @@ void UGameFrontendHUD::SetShouldShowAdaptTipInLobby(bool bShoudShow)
 
 void UGameFrontendHUD::SetGameSubMode(const struct FString& SubMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.SetGameSubMode");
 
@@ -6329,7 +6331,7 @@ void UGameFrontendHUD::SetGameSubMode(const struct FString& SubMode)
 
 void UGameFrontendHUD::SetGameStatusMap(TMap<struct FString, struct FString>* InGameStatusMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.SetGameStatusMap");
 
@@ -6355,7 +6357,7 @@ void UGameFrontendHUD::SetGameStatusMap(TMap<struct FString, struct FString>* In
 
 void UGameFrontendHUD::SetClientEnterBattleStage(const struct FString& InStageStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.SetClientEnterBattleStage");
 
@@ -6383,7 +6385,7 @@ void UGameFrontendHUD::SetClientEnterBattleStage(const struct FString& InStageSt
 
 void UGameFrontendHUD::SetAccountByWebLogin(int Channel, const struct FString& OpenID, const struct FString& userID, const struct FString& TokenID, int expireTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.SetAccountByWebLogin");
 
@@ -6409,7 +6411,7 @@ void UGameFrontendHUD::SetAccountByWebLogin(int Channel, const struct FString& O
 
 void UGameFrontendHUD::RetryDownload()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.RetryDownload");
 
@@ -6430,7 +6432,7 @@ void UGameFrontendHUD::RetryDownload()
 
 void UGameFrontendHUD::RetryCDNDownload()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.RetryCDNDownload");
 
@@ -6453,7 +6455,7 @@ void UGameFrontendHUD::RetryCDNDownload()
 
 void UGameFrontendHUD::RequestPhotoPermission(const struct FScriptDelegate& PermissionResultEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.RequestPhotoPermission");
 
@@ -6477,7 +6479,7 @@ void UGameFrontendHUD::RequestPhotoPermission(const struct FScriptDelegate& Perm
 
 void UGameFrontendHUD::RequestCameraPermission(const struct FScriptDelegate& PermissionResultEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.RequestCameraPermission");
 
@@ -6499,7 +6501,7 @@ void UGameFrontendHUD::RequestCameraPermission(const struct FScriptDelegate& Per
 
 void UGameFrontendHUD::ReportNetContinuousSaturate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.ReportNetContinuousSaturate");
 
@@ -6522,7 +6524,7 @@ void UGameFrontendHUD::ReportNetContinuousSaturate()
 
 void UGameFrontendHUD::RemoveSuppotAdaptationBind(class UPanelSlot* PanelSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.RemoveSuppotAdaptationBind");
 
@@ -6544,7 +6546,7 @@ void UGameFrontendHUD::RemoveSuppotAdaptationBind(class UPanelSlot* PanelSlot)
 
 void UGameFrontendHUD::ReleaseLuaBlueprintSysMgr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.ReleaseLuaBlueprintSysMgr");
 
@@ -6565,7 +6567,7 @@ void UGameFrontendHUD::ReleaseLuaBlueprintSysMgr()
 
 void UGameFrontendHUD::ReleaseInGameUIManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.ReleaseInGameUIManager");
 
@@ -6586,7 +6588,7 @@ void UGameFrontendHUD::ReleaseInGameUIManager()
 
 void UGameFrontendHUD::ReleaseBattleUtils()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.ReleaseBattleUtils");
 
@@ -6609,7 +6611,7 @@ void UGameFrontendHUD::ReleaseBattleUtils()
 
 void UGameFrontendHUD::RegisterUserSettingsDelegate(const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.RegisterUserSettingsDelegate");
 
@@ -6634,7 +6636,7 @@ void UGameFrontendHUD::RegisterUserSettingsDelegate(const struct FScriptDelegate
 
 void UGameFrontendHUD::RegisterUIShowHideEventDelegate(const struct FString& Source, const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.RegisterUIShowHideEventDelegate");
 
@@ -6661,7 +6663,7 @@ void UGameFrontendHUD::RegisterUIShowHideEventDelegate(const struct FString& Sou
 
 void UGameFrontendHUD::PickVideo(const struct FScriptDelegate& VideoPickEvent, int MaxSize, float MaxDuration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.PickVideo");
 
@@ -6687,7 +6689,7 @@ void UGameFrontendHUD::PickVideo(const struct FScriptDelegate& VideoPickEvent, i
 
 void UGameFrontendHUD::PickImageDetectQRCode(const struct FScriptDelegate& ImagePickDetectEvent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.PickImageDetectQRCode");
 
@@ -6711,7 +6713,7 @@ void UGameFrontendHUD::PickImageDetectQRCode(const struct FScriptDelegate& Image
 
 void UGameFrontendHUD::OnWebviewNotify(const struct FWebviewInfoWrapper& webviewinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnWebviewNotify");
 
@@ -6735,7 +6737,7 @@ void UGameFrontendHUD::OnWebviewNotify(const struct FWebviewInfoWrapper& webview
 
 void UGameFrontendHUD::OnWebviewActionNotify(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnWebviewActionNotify");
 
@@ -6759,7 +6761,7 @@ void UGameFrontendHUD::OnWebviewActionNotify(const struct FString& URL)
 
 void UGameFrontendHUD::OnUAAssistantEvent(const struct FUAAssistantInfoWrapper& UAAssistentInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnUAAssistantEvent");
 
@@ -6783,7 +6785,7 @@ void UGameFrontendHUD::OnUAAssistantEvent(const struct FUAAssistantInfoWrapper& 
 
 void UGameFrontendHUD::OnSDKCallbackEvent(const struct FSDKCallbackInfoWrapper& sdkCallbackInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnSDKCallbackEvent");
 
@@ -6807,7 +6809,7 @@ void UGameFrontendHUD::OnSDKCallbackEvent(const struct FSDKCallbackInfoWrapper& 
 
 void UGameFrontendHUD::OnRequestComplete(const struct FCDNDownloaderInfo& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnRequestComplete");
 
@@ -6833,7 +6835,7 @@ void UGameFrontendHUD::OnRequestComplete(const struct FCDNDownloaderInfo& Info)
 
 void UGameFrontendHUD::OnRefreshAccountInfo(bool Result, int InChannel, const struct FString& InOpenid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnRefreshAccountInfo");
 
@@ -6859,7 +6861,7 @@ void UGameFrontendHUD::OnRefreshAccountInfo(bool Result, int InChannel, const st
 
 void UGameFrontendHUD::OnQuickLoginNotify(const struct FWakeupInfoWrapper& wakeupinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnQuickLoginNotify");
 
@@ -6883,7 +6885,7 @@ void UGameFrontendHUD::OnQuickLoginNotify(const struct FWakeupInfoWrapper& wakeu
 
 void UGameFrontendHUD::OnPlatformFriendNotify(const struct FPlatformFriendInfoMap& PlatformFriendInfoMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnPlatformFriendNotify");
 
@@ -6905,7 +6907,7 @@ void UGameFrontendHUD::OnPlatformFriendNotify(const struct FPlatformFriendInfoMa
 
 void UGameFrontendHUD::OnNotUpdateFinished()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnNotUpdateFinished");
 
@@ -6930,7 +6932,7 @@ void UGameFrontendHUD::OnNotUpdateFinished()
 
 void UGameFrontendHUD::OnLoginFlowNotify(int _Flow, int _Param, const struct FString& ExtraData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnLoginFlowNotify");
 
@@ -6957,7 +6959,7 @@ void UGameFrontendHUD::OnLoginFlowNotify(int _Flow, int _Param, const struct FSt
 
 void UGameFrontendHUD::OnHttpImgResponse(class UTexture2D* Texture, class UImageDownloader* downloader)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnHttpImgResponse");
 
@@ -6982,7 +6984,7 @@ void UGameFrontendHUD::OnHttpImgResponse(class UTexture2D* Texture, class UImage
 
 void UGameFrontendHUD::OnGroupNotify(const struct FGroupInfoWrapper& groupInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnGroupNotify");
 
@@ -7006,7 +7008,7 @@ void UGameFrontendHUD::OnGroupNotify(const struct FGroupInfoWrapper& groupInfo)
 
 void UGameFrontendHUD::OnGetTicketNotify(const struct FString& Ticket)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnGetTicketNotify");
 
@@ -7031,7 +7033,7 @@ void UGameFrontendHUD::OnGetTicketNotify(const struct FString& Ticket)
 
 void UGameFrontendHUD::OnGetShortUrlNotify(int Ret, const struct FString& ShortUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnGetShortUrlNotify");
 
@@ -7056,7 +7058,7 @@ void UGameFrontendHUD::OnGetShortUrlNotify(int Ret, const struct FString& ShortU
 
 void UGameFrontendHUD::OnGetCountryNoNotify(int Country)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnGetCountryNoNotify");
 
@@ -7082,7 +7084,7 @@ void UGameFrontendHUD::OnGetCountryNoNotify(int Country)
 
 void UGameFrontendHUD::OnGenQRImgNotify(int Ret, int Size, const struct FString& imgPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnGenQRImgNotify");
 
@@ -7109,7 +7111,7 @@ void UGameFrontendHUD::OnGenQRImgNotify(int Ret, int Size, const struct FString&
 
 void UGameFrontendHUD::OnGameMasterEvent(const struct FString& EventName, int Ret)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnGameMasterEvent");
 
@@ -7137,7 +7139,7 @@ void UGameFrontendHUD::OnGameMasterEvent(const struct FString& EventName, int Re
 
 void UGameFrontendHUD::OnConnectorNetStateChangeNotify(int State, int EventParam1, int EventParam2, int EventParam3)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnConnectorNetStateChangeNotify");
 
@@ -7164,7 +7166,7 @@ void UGameFrontendHUD::OnConnectorNetStateChangeNotify(int State, int EventParam
 
 void UGameFrontendHUD::OnCheckUpdateStateFinished(const struct FDownloaderInfo& Info)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnCheckUpdateStateFinished");
 
@@ -7188,7 +7190,7 @@ void UGameFrontendHUD::OnCheckUpdateStateFinished(const struct FDownloaderInfo& 
 
 void UGameFrontendHUD::OnAreaChanged(const struct FString& InArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.OnAreaChanged");
 
@@ -7212,7 +7214,7 @@ void UGameFrontendHUD::OnAreaChanged(const struct FString& InArea)
 
 void UGameFrontendHUD::NotifyLoadingUIOperation(int OperationType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.NotifyLoadingUIOperation");
 
@@ -7236,7 +7238,7 @@ void UGameFrontendHUD::NotifyLoadingUIOperation(int OperationType)
 
 void UGameFrontendHUD::MakeToSuppotAdaptation(class UPanelSlot* PanelSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.MakeToSuppotAdaptation");
 
@@ -7260,7 +7262,7 @@ void UGameFrontendHUD::MakeToSuppotAdaptation(class UPanelSlot* PanelSlot)
 
 void UGameFrontendHUD::LuaDoString(const struct FString& LuaString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.LuaDoString");
 
@@ -7284,7 +7286,7 @@ void UGameFrontendHUD::LuaDoString(const struct FString& LuaString)
 
 bool UGameFrontendHUD::IsWindowOB()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.IsWindowOB");
 
@@ -7309,7 +7311,7 @@ bool UGameFrontendHUD::IsWindowOB()
 
 bool UGameFrontendHUD::IsODPaksBinLoaded()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.IsODPaksBinLoaded");
 
@@ -7335,7 +7337,7 @@ bool UGameFrontendHUD::IsODPaksBinLoaded()
 
 bool UGameFrontendHUD::IsInstallPlatform(const struct FString& Platform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.IsInstallPlatform");
 
@@ -7361,7 +7363,7 @@ bool UGameFrontendHUD::IsInstallPlatform(const struct FString& Platform)
 
 bool UGameFrontendHUD::IsCEHideLobbyUI()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.IsCEHideLobbyUI");
 
@@ -7386,7 +7388,7 @@ bool UGameFrontendHUD::IsCEHideLobbyUI()
 
 bool UGameFrontendHUD::HasAnyNetMsgToHandle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.HasAnyNetMsgToHandle");
 
@@ -7411,7 +7413,7 @@ bool UGameFrontendHUD::HasAnyNetMsgToHandle()
 
 bool UGameFrontendHUD::GetWidgetRenderCanChange()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetWidgetRenderCanChange");
 
@@ -7436,7 +7438,7 @@ bool UGameFrontendHUD::GetWidgetRenderCanChange()
 
 class UVoiceSDKInterface* UGameFrontendHUD::GetVoiceSDKInterface()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetVoiceSDKInterface");
 
@@ -7461,7 +7463,7 @@ class UVoiceSDKInterface* UGameFrontendHUD::GetVoiceSDKInterface()
 
 class USaveGame* UGameFrontendHUD::GetUserSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetUserSettings");
 
@@ -7486,7 +7488,7 @@ class USaveGame* UGameFrontendHUD::GetUserSettings()
 
 class UGDolphinUpdater* UGameFrontendHUD::GetUpdater()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetUpdater");
 
@@ -7511,7 +7513,7 @@ class UGDolphinUpdater* UGameFrontendHUD::GetUpdater()
 
 class UTranslator* UGameFrontendHUD::GetTranslator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetTranslator");
 
@@ -7536,7 +7538,7 @@ class UTranslator* UGameFrontendHUD::GetTranslator()
 
 bool UGameFrontendHUD::GetShouldShowAdaptTipInLobby()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetShouldShowAdaptTipInLobby");
 
@@ -7561,7 +7563,7 @@ bool UGameFrontendHUD::GetShouldShowAdaptTipInLobby()
 
 class USettingSubsystem* UGameFrontendHUD::GetSettingSubsystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetSettingSubsystem");
 
@@ -7586,7 +7588,7 @@ class USettingSubsystem* UGameFrontendHUD::GetSettingSubsystem()
 
 class UGCPufferDownloader* UGameFrontendHUD::GetPufferDownloader()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetPufferDownloader");
 
@@ -7611,7 +7613,7 @@ class UGCPufferDownloader* UGameFrontendHUD::GetPufferDownloader()
 
 struct FString UGameFrontendHUD::GetPlayerStatusReportInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetPlayerStatusReportInfo");
 
@@ -7636,7 +7638,7 @@ struct FString UGameFrontendHUD::GetPlayerStatusReportInfo()
 
 struct FString UGameFrontendHUD::GetPingReportInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetPingReportInfo");
 
@@ -7661,7 +7663,7 @@ struct FString UGameFrontendHUD::GetPingReportInfo()
 
 int UGameFrontendHUD::GetPhotoPermission()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetPhotoPermission");
 
@@ -7686,7 +7688,7 @@ int UGameFrontendHUD::GetPhotoPermission()
 
 struct FString UGameFrontendHUD::GetPacketLossReportInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetPacketLossReportInfo");
 
@@ -7711,7 +7713,7 @@ struct FString UGameFrontendHUD::GetPacketLossReportInfo()
 
 class ULuaStateWrapper* UGameFrontendHUD::GetLuaStateWrapper()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetLuaStateWrapper");
 
@@ -7736,7 +7738,7 @@ class ULuaStateWrapper* UGameFrontendHUD::GetLuaStateWrapper()
 
 class ULuaEventBridge* UGameFrontendHUD::GetLuaEventBridge()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetLuaEventBridge");
 
@@ -7761,7 +7763,7 @@ class ULuaEventBridge* UGameFrontendHUD::GetLuaEventBridge()
 
 class ULuaBlueprintMgr* UGameFrontendHUD::GetLuaBlueprintSysMgr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetLuaBlueprintSysMgr");
 
@@ -7786,7 +7788,7 @@ class ULuaBlueprintMgr* UGameFrontendHUD::GetLuaBlueprintSysMgr()
 
 class UHttpWrapper* UGameFrontendHUD::GetHttpWrapper()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetHttpWrapper");
 
@@ -7811,7 +7813,7 @@ class UHttpWrapper* UGameFrontendHUD::GetHttpWrapper()
 
 struct FString UGameFrontendHUD::GetGameSubMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetGameSubMode");
 
@@ -7836,7 +7838,7 @@ struct FString UGameFrontendHUD::GetGameSubMode()
 
 class AGameStateBase* UGameFrontendHUD::GetGameState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetGameState");
 
@@ -7861,7 +7863,7 @@ class AGameStateBase* UGameFrontendHUD::GetGameState()
 
 struct FString UGameFrontendHUD::GetFPSReportInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetFPSReportInfo");
 
@@ -7886,7 +7888,7 @@ struct FString UGameFrontendHUD::GetFPSReportInfo()
 
 class UEffectSettingMgr* UGameFrontendHUD::GetEffectSettingMgr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetEffectSettingMgr");
 
@@ -7911,7 +7913,7 @@ class UEffectSettingMgr* UGameFrontendHUD::GetEffectSettingMgr()
 
 int UGameFrontendHUD::GetDetailNetInfoFromDPM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetDetailNetInfoFromDPM");
 
@@ -7936,7 +7938,7 @@ int UGameFrontendHUD::GetDetailNetInfoFromDPM()
 
 class UColorBlindnessMgr* UGameFrontendHUD::GetColorBlindnessMgr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetColorBlindnessMgr");
 
@@ -7961,7 +7963,7 @@ class UColorBlindnessMgr* UGameFrontendHUD::GetColorBlindnessMgr()
 
 class UObject* UGameFrontendHUD::GetClientNetObj()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetClientNetObj");
 
@@ -7986,7 +7988,7 @@ class UObject* UGameFrontendHUD::GetClientNetObj()
 
 struct FString UGameFrontendHUD::GetClientEnterBattleStageCostTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetClientEnterBattleStageCostTime");
 
@@ -8011,7 +8013,7 @@ struct FString UGameFrontendHUD::GetClientEnterBattleStageCostTime()
 
 struct FString UGameFrontendHUD::GetClientEnterBattleStage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetClientEnterBattleStage");
 
@@ -8036,7 +8038,7 @@ struct FString UGameFrontendHUD::GetClientEnterBattleStage()
 
 int UGameFrontendHUD::GetCameraPermission()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetCameraPermission");
 
@@ -8061,7 +8063,7 @@ int UGameFrontendHUD::GetCameraPermission()
 
 class UBugReporter* UGameFrontendHUD::GetBugReporter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetBugReporter");
 
@@ -8086,7 +8088,7 @@ class UBugReporter* UGameFrontendHUD::GetBugReporter()
 
 class UBattleUtils* UGameFrontendHUD::GetBattleUtils()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetBattleUtils");
 
@@ -8111,7 +8113,7 @@ class UBattleUtils* UGameFrontendHUD::GetBattleUtils()
 
 struct FString UGameFrontendHUD::GetBattleIDHexStr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetBattleIDHexStr");
 
@@ -8136,7 +8138,7 @@ struct FString UGameFrontendHUD::GetBattleIDHexStr()
 
 class UAsyncLoadHelper* UGameFrontendHUD::GetAsyncLoadHelper()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.GetAsyncLoadHelper");
 
@@ -8159,7 +8161,7 @@ class UAsyncLoadHelper* UGameFrontendHUD::GetAsyncLoadHelper()
 
 void UGameFrontendHUD::FinishModifyUserSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.FinishModifyUserSettings");
 
@@ -8182,7 +8184,7 @@ void UGameFrontendHUD::FinishModifyUserSettings()
 
 bool UGameFrontendHUD::EnableLobbyEntry()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.EnableLobbyEntry");
 
@@ -8207,7 +8209,7 @@ bool UGameFrontendHUD::EnableLobbyEntry()
 
 void UGameFrontendHUD::EnableFPSAndMemoryLog(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.EnableFPSAndMemoryLog");
 
@@ -8231,7 +8233,7 @@ void UGameFrontendHUD::EnableFPSAndMemoryLog(bool bEnable)
 
 void UGameFrontendHUD::DispatchLongTimeNoOperation(int TimeOutCounter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.DispatchLongTimeNoOperation");
 
@@ -8253,7 +8255,7 @@ void UGameFrontendHUD::DispatchLongTimeNoOperation(int TimeOutCounter)
 
 void UGameFrontendHUD::DestroyDolphin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.DestroyDolphin");
 
@@ -8278,7 +8280,7 @@ void UGameFrontendHUD::DestroyDolphin()
 
 float UGameFrontendHUD::CvmRotateClockwise(float Yaw, float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.CvmRotateClockwise");
 
@@ -8306,7 +8308,7 @@ float UGameFrontendHUD::CvmRotateClockwise(float Yaw, float DeltaTime)
 
 class UTexture2D* UGameFrontendHUD::CreateQRCodeTexture(const struct FString& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.CreateQRCodeTexture");
 
@@ -8330,7 +8332,7 @@ class UTexture2D* UGameFrontendHUD::CreateQRCodeTexture(const struct FString& Te
 
 void UGameFrontendHUD::CreateInGameUIManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.CreateInGameUIManager");
 
@@ -8351,7 +8353,7 @@ void UGameFrontendHUD::CreateInGameUIManager()
 
 void UGameFrontendHUD::CreateBattleUtils()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.CreateBattleUtils");
 
@@ -8375,7 +8377,7 @@ void UGameFrontendHUD::CreateBattleUtils()
 
 void UGameFrontendHUD::CallGlobalScriptFunctionWithString(const struct FString& InFunctionName, const struct FString& Arg1)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.CallGlobalScriptFunctionWithString");
 
@@ -8400,7 +8402,7 @@ void UGameFrontendHUD::CallGlobalScriptFunctionWithString(const struct FString& 
 
 void UGameFrontendHUD::CallGlobalScriptFunction(const struct FString& InFunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.CallGlobalScriptFunction");
 
@@ -8422,7 +8424,7 @@ void UGameFrontendHUD::CallGlobalScriptFunction(const struct FString& InFunction
 
 void UGameFrontendHUD::BeginModifyUserSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.BeginModifyUserSettings");
 
@@ -8443,7 +8445,7 @@ void UGameFrontendHUD::BeginModifyUserSettings()
 
 void UGameFrontendHUD::BattleUtilsGameEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.BattleUtilsGameEnd");
 
@@ -8464,7 +8466,7 @@ void UGameFrontendHUD::BattleUtilsGameEnd()
 
 void UGameFrontendHUD::AfterLoadedEditorLogin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.AfterLoadedEditorLogin");
 
@@ -8487,7 +8489,7 @@ void UGameFrontendHUD::AfterLoadedEditorLogin()
 
 void UGameFrontendHUD::AddAdaptationWidgetDelegateEx(class UPanelSlot* PanelSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.AddAdaptationWidgetDelegateEx");
 
@@ -8511,7 +8513,7 @@ void UGameFrontendHUD::AddAdaptationWidgetDelegateEx(class UPanelSlot* PanelSlot
 
 void UGameFrontendHUD::AddAdaptationWidgetDelegate(class UPanelSlot* PanelSlot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameFrontendHUD.AddAdaptationWidgetDelegate");
 
@@ -8535,7 +8537,7 @@ void UGameFrontendHUD::AddAdaptationWidgetDelegate(class UPanelSlot* PanelSlot)
 
 void UGameJoyInterface::ShareVideo(int Channel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.ShareVideo");
 
@@ -8559,7 +8561,7 @@ void UGameJoyInterface::ShareVideo(int Channel)
 
 void UGameJoyInterface::SetGameFrontendHUD(class UGameFrontendHUD* InHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.SetGameFrontendHUD");
 
@@ -8583,7 +8585,7 @@ void UGameJoyInterface::SetGameFrontendHUD(class UGameFrontendHUD* InHUD)
 
 void UGameJoyInterface::OnVideoShare(const struct FString& Msg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.OnVideoShare");
 
@@ -8607,7 +8609,7 @@ void UGameJoyInterface::OnVideoShare(const struct FString& Msg)
 
 void UGameJoyInterface::OnShowVideoPlayer(int IsShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.OnShowVideoPlayer");
 
@@ -8631,7 +8633,7 @@ void UGameJoyInterface::OnShowVideoPlayer(int IsShow)
 
 void UGameJoyInterface::OnRecordingStart(int status)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.OnRecordingStart");
 
@@ -8655,7 +8657,7 @@ void UGameJoyInterface::OnRecordingStart(int status)
 
 void UGameJoyInterface::OnRecordingEnd(int64_t Duration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.OnRecordingEnd");
 
@@ -8679,7 +8681,7 @@ void UGameJoyInterface::OnRecordingEnd(int64_t Duration)
 
 void UGameJoyInterface::OnManualRecordingStart(int status)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.OnManualRecordingStart");
 
@@ -8703,7 +8705,7 @@ void UGameJoyInterface::OnManualRecordingStart(int status)
 
 void UGameJoyInterface::OnCheckSDKPermission(bool IsSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.OnCheckSDKPermission");
 
@@ -8727,7 +8729,7 @@ void UGameJoyInterface::OnCheckSDKPermission(bool IsSuccess)
 
 void UGameJoyInterface::OnCheckSDKFeature(int sdkFeatureInt)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.OnCheckSDKFeature");
 
@@ -8751,7 +8753,7 @@ void UGameJoyInterface::OnCheckSDKFeature(int sdkFeatureInt)
 
 bool UGameJoyInterface::IsSDKFeatureSupport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.IsSDKFeatureSupport");
 
@@ -8776,7 +8778,7 @@ bool UGameJoyInterface::IsSDKFeatureSupport()
 
 class UGameJoyInterface* UGameJoyInterface::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GameJoyInterface.GetInstance");
 
@@ -8799,7 +8801,7 @@ class UGameJoyInterface* UGameJoyInterface::GetInstance()
 
 void UGDolphinUpdater::StartAppUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.StartAppUpdate");
 
@@ -8822,7 +8824,7 @@ void UGDolphinUpdater::StartAppUpdate()
 
 void UGDolphinUpdater::SetEnableCDNGetVersion(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.SetEnableCDNGetVersion");
 
@@ -8847,7 +8849,7 @@ void UGDolphinUpdater::SetEnableCDNGetVersion(bool Enable)
 
 void UGDolphinUpdater::OnUpdateError(int curVersionStage, int ErrorCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.OnUpdateError");
 
@@ -8870,7 +8872,7 @@ void UGDolphinUpdater::OnUpdateError(int curVersionStage, int ErrorCode)
 
 void UGDolphinUpdater::OnDolphinBGDownloadDone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.OnDolphinBGDownloadDone");
 
@@ -8893,7 +8895,7 @@ void UGDolphinUpdater::OnDolphinBGDownloadDone()
 
 void UGDolphinUpdater::OnAreaChanged(const struct FString& InArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.OnAreaChanged");
 
@@ -8917,7 +8919,7 @@ void UGDolphinUpdater::OnAreaChanged(const struct FString& InArea)
 
 bool UGDolphinUpdater::IsUpdating()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.IsUpdating");
 
@@ -8942,7 +8944,7 @@ bool UGDolphinUpdater::IsUpdating()
 
 bool UGDolphinUpdater::IsGrayUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.IsGrayUpdate");
 
@@ -8967,7 +8969,7 @@ bool UGDolphinUpdater::IsGrayUpdate()
 
 bool UGDolphinUpdater::IsExamine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.IsExamine");
 
@@ -8990,7 +8992,7 @@ bool UGDolphinUpdater::IsExamine()
 
 void UGDolphinUpdater::Install()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.Install");
 
@@ -9013,7 +9015,7 @@ void UGDolphinUpdater::Install()
 
 int UGDolphinUpdater::GetTotalValue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.GetTotalValue");
 
@@ -9038,7 +9040,7 @@ int UGDolphinUpdater::GetTotalValue()
 
 int UGDolphinUpdater::GetCurValue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.GetCurValue");
 
@@ -9066,7 +9068,7 @@ int UGDolphinUpdater::GetCurValue()
 
 int UGDolphinUpdater::GetCurStage(float* percent, int* GetCurVal, int* GetMaxVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.GetCurStage");
 
@@ -9098,7 +9100,7 @@ int UGDolphinUpdater::GetCurStage(float* percent, int* GetCurVal, int* GetMaxVal
 
 float UGDolphinUpdater::GetCurPercent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.GetCurPercent");
 
@@ -9124,7 +9126,7 @@ float UGDolphinUpdater::GetCurPercent()
 
 uint32_t UGDolphinUpdater::GetChannelIDWithHUD(class UGameFrontendHUD* InGameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.GetChannelIDWithHUD");
 
@@ -9150,7 +9152,7 @@ uint32_t UGDolphinUpdater::GetChannelIDWithHUD(class UGameFrontendHUD* InGameFro
 
 uint32_t UGDolphinUpdater::GetChannelID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.GetChannelID");
 
@@ -9173,7 +9175,7 @@ uint32_t UGDolphinUpdater::GetChannelID()
 
 void UGDolphinUpdater::FinishUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.FinishUpdate");
 
@@ -9194,7 +9196,7 @@ void UGDolphinUpdater::FinishUpdate()
 
 void UGDolphinUpdater::FinishPufferUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.FinishPufferUpdate");
 
@@ -9217,7 +9219,7 @@ void UGDolphinUpdater::FinishPufferUpdate()
 
 void UGDolphinUpdater::EnableIOSBGDownload4G(bool bEnableCellularAccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.EnableIOSBGDownload4G");
 
@@ -9241,7 +9243,7 @@ void UGDolphinUpdater::EnableIOSBGDownload4G(bool bEnableCellularAccess)
 
 bool UGDolphinUpdater::EnableCDNGetVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.EnableCDNGetVersion");
 
@@ -9266,7 +9268,7 @@ bool UGDolphinUpdater::EnableCDNGetVersion()
 
 void UGDolphinUpdater::DynamicAdjustDolphinSystemParameter(TMap<int, struct FString> InConiguration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.DynamicAdjustDolphinSystemParameter");
 
@@ -9288,7 +9290,7 @@ void UGDolphinUpdater::DynamicAdjustDolphinSystemParameter(TMap<int, struct FStr
 
 void UGDolphinUpdater::ContinueUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.ContinueUpdate");
 
@@ -9309,7 +9311,7 @@ void UGDolphinUpdater::ContinueUpdate()
 
 void UGDolphinUpdater::CancelUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.CancelUpdate");
 
@@ -9330,7 +9332,7 @@ void UGDolphinUpdater::CancelUpdate()
 
 void UGDolphinUpdater::CancelAppUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GDolphinUpdater.CancelAppUpdate");
 
@@ -9355,7 +9357,7 @@ void UGDolphinUpdater::CancelAppUpdate()
 
 void UAvatarItemDownloadPuffer::StartDownloadItem(uint32_t ItemId, uint32_t Priority, const struct FScriptDelegate& OnItemDownloadDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AvatarItemDownloadPuffer.StartDownloadItem");
 
@@ -9383,7 +9385,7 @@ void UAvatarItemDownloadPuffer::StartDownloadItem(uint32_t ItemId, uint32_t Prio
 
 void UAvatarItemDownloadPuffer::StartBatchDownloadItem(TArray<uint32_t> ItemIDs, uint32_t Priority, const struct FScriptDelegate& OnBatchItemDownloadDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AvatarItemDownloadPuffer.StartBatchDownloadItem");
 
@@ -9410,7 +9412,7 @@ void UAvatarItemDownloadPuffer::StartBatchDownloadItem(TArray<uint32_t> ItemIDs,
 
 bool UGCPufferDownloader::StopTask(uint64_t TaskId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StopTask");
 
@@ -9437,7 +9439,7 @@ bool UGCPufferDownloader::StopTask(uint64_t TaskId)
 
 int UGCPufferDownloader::StopMergeBinDiffPak(int outterTaskID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StopMergeBinDiffPak");
 
@@ -9464,7 +9466,7 @@ int UGCPufferDownloader::StopMergeBinDiffPak(int outterTaskID)
 
 bool UGCPufferDownloader::StopCheckDownloadFileFraming(int outterTaskID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StopCheckDownloadFileFraming");
 
@@ -9488,7 +9490,7 @@ bool UGCPufferDownloader::StopCheckDownloadFileFraming(int outterTaskID)
 
 void UGCPufferDownloader::StopBGDownloadNotification()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StopBGDownloadNotification");
 
@@ -9511,7 +9513,7 @@ void UGCPufferDownloader::StopBGDownloadNotification()
 
 bool UGCPufferDownloader::StopAllTask()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StopAllTask");
 
@@ -9538,7 +9540,7 @@ bool UGCPufferDownloader::StopAllTask()
 
 void UGCPufferDownloader::StartDownloadItem(uint32_t ItemId, uint32_t Priority, const struct FScriptDelegate& downloadDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StartDownloadItem");
 
@@ -9564,7 +9566,7 @@ void UGCPufferDownloader::StartDownloadItem(uint32_t ItemId, uint32_t Priority, 
 
 void UGCPufferDownloader::StartBGDownloadNotification(uint64_t InDownloadedSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StartBGDownloadNotification");
 
@@ -9590,7 +9592,7 @@ void UGCPufferDownloader::StartBGDownloadNotification(uint64_t InDownloadedSize)
 
 void UGCPufferDownloader::StartBatchDownloadItem(TArray<uint32_t> ItemIDs, uint32_t Priority, const struct FScriptDelegate& OnBatchItemDownloadDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.StartBatchDownloadItem");
 
@@ -9616,7 +9618,7 @@ void UGCPufferDownloader::StartBatchDownloadItem(TArray<uint32_t> ItemIDs, uint3
 
 void UGCPufferDownloader::SetTempProductIdBase(int ProductIdRaw)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetTempProductIdBase");
 
@@ -9646,7 +9648,7 @@ void UGCPufferDownloader::SetTempProductIdBase(int ProductIdRaw)
 
 void UGCPufferDownloader::SetPrefetchConfig(bool pakEnable, bool fileClearEnable, bool convertEnable, int reserveredDiskSpace, const struct FString& FileList, int InPreFetchODPaksMaxNum, int InPreFetchODPaksBatchSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetPrefetchConfig");
 
@@ -9679,7 +9681,7 @@ void UGCPufferDownloader::SetPrefetchConfig(bool pakEnable, bool fileClearEnable
 
 void UGCPufferDownloader::SetIOSBGDownloadAttribute(bool bEnableCellularAccess, bool bEnableResumeData, int nMinFileSize, int nMaxTasks)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetIOSBGDownloadAttribute");
 
@@ -9707,7 +9709,7 @@ void UGCPufferDownloader::SetIOSBGDownloadAttribute(bool bEnableCellularAccess, 
 
 bool UGCPufferDownloader::SetImmDLPollingTime(int InPollingTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetImmDLPollingTime");
 
@@ -9734,7 +9736,7 @@ bool UGCPufferDownloader::SetImmDLPollingTime(int InPollingTime)
 
 bool UGCPufferDownloader::SetImmDLMaxTask(int InMaxTask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetImmDLMaxTask");
 
@@ -9761,7 +9763,7 @@ bool UGCPufferDownloader::SetImmDLMaxTask(int InMaxTask)
 
 bool UGCPufferDownloader::SetImmDLMaxSpeed(uint64_t MaxSpeed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetImmDLMaxSpeed");
 
@@ -9788,7 +9790,7 @@ bool UGCPufferDownloader::SetImmDLMaxSpeed(uint64_t MaxSpeed)
 
 bool UGCPufferDownloader::SetImmDLMaxDownloadsPerTask(int InMaxDownloadsPerTask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetImmDLMaxDownloadsPerTask");
 
@@ -9815,7 +9817,7 @@ bool UGCPufferDownloader::SetImmDLMaxDownloadsPerTask(int InMaxDownloadsPerTask)
 
 bool UGCPufferDownloader::SetImmDLGapSize(int InGapSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetImmDLGapSize");
 
@@ -9841,7 +9843,7 @@ bool UGCPufferDownloader::SetImmDLGapSize(int InGapSize)
 
 void UGCPufferDownloader::SetBattleDownloadSwitch(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.SetBattleDownloadSwitch");
 
@@ -9865,7 +9867,7 @@ void UGCPufferDownloader::SetBattleDownloadSwitch(bool Enable)
 
 int UGCPufferDownloader::ReturnSplitMiniPakFilelist_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ReturnSplitMiniPakFilelist_LuaState");
 
@@ -9890,7 +9892,7 @@ int UGCPufferDownloader::ReturnSplitMiniPakFilelist_LuaState()
 
 int UGCPufferDownloader::ReturnLocalFiles_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ReturnLocalFiles_LuaState");
 
@@ -9918,7 +9920,7 @@ int UGCPufferDownloader::ReturnLocalFiles_LuaState()
 
 uint64_t UGCPufferDownloader::RequestFile(const struct FString& FilePath, bool ForceUpdate, const struct FString& InUA)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.RequestFile");
 
@@ -9946,7 +9948,7 @@ uint64_t UGCPufferDownloader::RequestFile(const struct FString& FilePath, bool F
 
 bool UGCPufferDownloader::RemountPakFiles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.RemountPakFiles");
 
@@ -9972,7 +9974,7 @@ bool UGCPufferDownloader::RemountPakFiles()
 
 struct FString UGCPufferDownloader::ReadFile(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ReadFile");
 
@@ -9998,7 +10000,7 @@ struct FString UGCPufferDownloader::ReadFile(const struct FString& Filename)
 
 bool UGCPufferDownloader::PreFetchPakFiles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.PreFetchPakFiles");
 
@@ -10023,7 +10025,7 @@ bool UGCPufferDownloader::PreFetchPakFiles()
 
 int UGCPufferDownloader::PreFetchODPakFilesUpdate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.PreFetchODPakFilesUpdate");
 
@@ -10049,7 +10051,7 @@ int UGCPufferDownloader::PreFetchODPakFilesUpdate()
 
 bool UGCPufferDownloader::PreFetchODPakFilesPreProcess(bool Start)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.PreFetchODPakFilesPreProcess");
 
@@ -10076,7 +10078,7 @@ bool UGCPufferDownloader::PreFetchODPakFilesPreProcess(bool Start)
 
 bool UGCPufferDownloader::PreFetchODPakFilesPostProcess(int ErrorCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.PreFetchODPakFilesPostProcess");
 
@@ -10103,7 +10105,7 @@ bool UGCPufferDownloader::PreFetchODPakFilesPostProcess(int ErrorCode)
 
 bool UGCPufferDownloader::PreFetchODPakFiles(bool Start)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.PreFetchODPakFiles");
 
@@ -10130,7 +10132,7 @@ bool UGCPufferDownloader::PreFetchODPakFiles(bool Start)
 
 void UGCPufferDownloader::OnItemDownloadedInFighting(const struct FString& PackHash, const struct FString& ErrorCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.OnItemDownloadedInFighting");
 
@@ -10156,7 +10158,7 @@ void UGCPufferDownloader::OnItemDownloadedInFighting(const struct FString& PackH
 
 void UGCPufferDownloader::OnHashGenerateFinished(int outterTaskID, const struct FString& hashCode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.OnHashGenerateFinished");
 
@@ -10178,20 +10180,20 @@ void UGCPufferDownloader::OnHashGenerateFinished(int outterTaskID, const struct 
 // (Final, Native, Public)
 // Parameters:
 // struct FString                 Filename                       (Parm, ZeroConstructor)
-// struct FString                 from                           (Parm, ZeroConstructor)
-// struct FString                 to                             (Parm, ZeroConstructor)
+// struct FString                 From                           (Parm, ZeroConstructor)
+// struct FString                 To                             (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-int UGCPufferDownloader::MoveFileTo(const struct FString& Filename, const struct FString& from, const struct FString& to)
+int UGCPufferDownloader::MoveFileTo(const struct FString& Filename, const struct FString& From, const struct FString& To)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.MoveFileTo");
 
 	UGCPufferDownloader_MoveFileTo_Params params;
 	params.Filename = Filename;
-	params.from = from;
-	params.to = to;
+	params.From = From;
+	params.To = To;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -10208,19 +10210,19 @@ int UGCPufferDownloader::MoveFileTo(const struct FString& Filename, const struct
 // Function Client.GCPufferDownloader.MoveFile
 // (Final, Native, Public)
 // Parameters:
-// struct FString                 from                           (Parm, ZeroConstructor)
-// struct FString                 to                             (Parm, ZeroConstructor)
+// struct FString                 From                           (Parm, ZeroConstructor)
+// struct FString                 To                             (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-int UGCPufferDownloader::MoveFile(const struct FString& from, const struct FString& to)
+int UGCPufferDownloader::MoveFile(const struct FString& From, const struct FString& To)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.MoveFile");
 
 	UGCPufferDownloader_MoveFile_Params params;
-	params.from = from;
-	params.to = to;
+	params.From = From;
+	params.To = To;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -10246,7 +10248,7 @@ int UGCPufferDownloader::MoveFile(const struct FString& from, const struct FStri
 
 int UGCPufferDownloader::MergeBinDiffPak(int outterTaskID, const struct FString& PakFilenameOld, const struct FString& PakFilenameDiff, const struct FString& PakFilenameNew, bool fast)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.MergeBinDiffPak");
 
@@ -10277,7 +10279,7 @@ int UGCPufferDownloader::MergeBinDiffPak(int outterTaskID, const struct FString&
 
 bool UGCPufferDownloader::IsODPaks(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.IsODPaks");
 
@@ -10304,7 +10306,7 @@ bool UGCPufferDownloader::IsODPaks(const struct FString& FilePath)
 
 bool UGCPufferDownloader::IsODFileExists(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.IsODFileExists");
 
@@ -10330,7 +10332,7 @@ bool UGCPufferDownloader::IsODFileExists(const struct FString& Path)
 
 bool UGCPufferDownloader::IsInitSuccess()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.IsInitSuccess");
 
@@ -10356,7 +10358,7 @@ bool UGCPufferDownloader::IsInitSuccess()
 
 bool UGCPufferDownloader::IsFileReady(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.IsFileReady");
 
@@ -10384,7 +10386,7 @@ bool UGCPufferDownloader::IsFileReady(const struct FString& FilePath)
 
 bool UGCPufferDownloader::IsFileExist(const struct FString& Filename, const struct FString& extension)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.IsFileExist");
 
@@ -10411,7 +10413,7 @@ bool UGCPufferDownloader::IsFileExist(const struct FString& Filename, const stru
 
 bool UGCPufferDownloader::InitializeODPaks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.InitializeODPaks");
 
@@ -10436,7 +10438,7 @@ bool UGCPufferDownloader::InitializeODPaks()
 
 struct FString UGCPufferDownloader::GetTempWorkPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetTempWorkPath");
 
@@ -10461,7 +10463,7 @@ struct FString UGCPufferDownloader::GetTempWorkPath()
 
 void UGCPufferDownloader::GetProductIDBase(TArray<int>* ProductIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetProductIDBase");
 
@@ -10487,7 +10489,7 @@ void UGCPufferDownloader::GetProductIDBase(TArray<int>* ProductIDs)
 
 void UGCPufferDownloader::GetProductID(TArray<int>* ProductIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetProductID");
 
@@ -10513,7 +10515,7 @@ void UGCPufferDownloader::GetProductID(TArray<int>* ProductIDs)
 
 int UGCPufferDownloader::GetODPakNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetODPakNum");
 
@@ -10539,7 +10541,7 @@ int UGCPufferDownloader::GetODPakNum()
 
 struct FString UGCPufferDownloader::GetODPakName(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetODPakName");
 
@@ -10565,7 +10567,7 @@ struct FString UGCPufferDownloader::GetODPakName(const struct FString& Path)
 
 uint32_t UGCPufferDownloader::GetInitErrcode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetInitErrcode");
 
@@ -10591,7 +10593,7 @@ uint32_t UGCPufferDownloader::GetInitErrcode()
 
 uint64_t UGCPufferDownloader::GetFileSizeCompressed(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetFileSizeCompressed");
 
@@ -10618,7 +10620,7 @@ uint64_t UGCPufferDownloader::GetFileSizeCompressed(const struct FString& FilePa
 
 float UGCPufferDownloader::GetFileSize(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetFileSize");
 
@@ -10644,7 +10646,7 @@ float UGCPufferDownloader::GetFileSize(const struct FString& Filename)
 
 struct FString UGCPufferDownloader::GetDownloadPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetDownloadPath");
 
@@ -10669,7 +10671,7 @@ struct FString UGCPufferDownloader::GetDownloadPath()
 
 float UGCPufferDownloader::GetCurrentSpeed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetCurrentSpeed");
 
@@ -10694,7 +10696,7 @@ float UGCPufferDownloader::GetCurrentSpeed()
 
 int UGCPufferDownloader::GetBatchODPaksDownloadList_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.GetBatchODPaksDownloadList_LuaState");
 
@@ -10719,7 +10721,7 @@ int UGCPufferDownloader::GetBatchODPaksDownloadList_LuaState()
 
 void UGCPufferDownloader::EnableUseOldInterface(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.EnableUseOldInterface");
 
@@ -10744,7 +10746,7 @@ void UGCPufferDownloader::EnableUseOldInterface(bool Enable)
 
 void UGCPufferDownloader::DynamicAdjustPufferSystemParameter(int InPufferParameterKey, const struct FString& InPufferParameterValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.DynamicAdjustPufferSystemParameter");
 
@@ -10770,7 +10772,7 @@ void UGCPufferDownloader::DynamicAdjustPufferSystemParameter(int InPufferParamet
 
 bool UGCPufferDownloader::DeleteFileEvenIfUnfinished(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.DeleteFileEvenIfUnfinished");
 
@@ -10797,7 +10799,7 @@ bool UGCPufferDownloader::DeleteFileEvenIfUnfinished(const struct FString& FileP
 
 bool UGCPufferDownloader::DeleteFile(const struct FString& fullPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.DeleteFile");
 
@@ -10823,7 +10825,7 @@ bool UGCPufferDownloader::DeleteFile(const struct FString& fullPath)
 
 bool UGCPufferDownloader::ConvertPreFetchFiles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ConvertPreFetchFiles");
 
@@ -10849,7 +10851,7 @@ bool UGCPufferDownloader::ConvertPreFetchFiles()
 
 struct FString UGCPufferDownloader::ConvertItemIdToPakName(uint32_t ItemId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ConvertItemIdToPakName");
 
@@ -10875,7 +10877,7 @@ struct FString UGCPufferDownloader::ConvertItemIdToPakName(uint32_t ItemId)
 
 bool UGCPufferDownloader::ClearUselessODPaks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ClearUselessODPaks");
 
@@ -10900,7 +10902,7 @@ bool UGCPufferDownloader::ClearUselessODPaks()
 
 bool UGCPufferDownloader::ClearPreFetchODPaksFiles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ClearPreFetchODPaksFiles");
 
@@ -10925,7 +10927,7 @@ bool UGCPufferDownloader::ClearPreFetchODPaksFiles()
 
 bool UGCPufferDownloader::ClearPreFetchFiles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.ClearPreFetchFiles");
 
@@ -10953,7 +10955,7 @@ bool UGCPufferDownloader::ClearPreFetchFiles()
 
 bool UGCPufferDownloader::CheckDownloadFileFraming(int outterTaskID, const struct FString& Filename, int chunkSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GCPufferDownloader.CheckDownloadFileFraming");
 
@@ -10981,7 +10983,7 @@ bool UGCPufferDownloader::CheckDownloadFileFraming(int outterTaskID, const struc
 
 void UGMLogShare::ShareLogFile(const struct FString& InLogFileName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GMLogShare.ShareLogFile");
 
@@ -11003,7 +11005,7 @@ void UGMLogShare::ShareLogFile(const struct FString& InLogFileName)
 
 void UGMLogShare::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.GMLogShare.Init");
 
@@ -11027,7 +11029,7 @@ void UGMLogShare::Init()
 
 TArray<struct FIMSDKNoticeInfo> UIMSDKNotice::GetNotice(const struct FString& Scene)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IMSDKNotice.GetNotice");
 
@@ -11053,7 +11055,7 @@ TArray<struct FIMSDKNoticeInfo> UIMSDKNotice::GetNotice(const struct FString& Sc
 
 class UIMSDKNotice* UIMSDKNotice::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IMSDKNotice.GetInstance");
 
@@ -11076,7 +11078,7 @@ class UIMSDKNotice* UIMSDKNotice::GetInstance()
 
 void UIMSDKNotice::ClearNotice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IMSDKNotice.ClearNotice");
 
@@ -11102,7 +11104,7 @@ void UIMSDKNotice::ClearNotice()
 
 void UHttpWrapper::SimplePostForLua(const struct FString& URL, const struct FString& Content, int Priority, int QueueType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.SimplePostForLua");
 
@@ -11130,7 +11132,7 @@ void UHttpWrapper::SimplePostForLua(const struct FString& URL, const struct FStr
 
 void UHttpWrapper::SetQueueSize(int QueueType, int InSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.SetQueueSize");
 
@@ -11155,7 +11157,7 @@ void UHttpWrapper::SetQueueSize(int QueueType, int InSize)
 
 void UHttpWrapper::SetQueueEnable(bool InEnableQueue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.SetQueueEnable");
 
@@ -11179,7 +11181,7 @@ void UHttpWrapper::SetQueueEnable(bool InEnableQueue)
 
 void UHttpWrapper::SetPoolEnable(bool InEnablePool)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.SetPoolEnable");
 
@@ -11209,7 +11211,7 @@ void UHttpWrapper::SetPoolEnable(bool InEnablePool)
 
 int UHttpWrapper::RequestForLua(const struct FString& URL, const struct FString& Verb, const struct FString& Content, int Priority, int QueueType, TMap<struct FString, struct FString>* Headers)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.RequestForLua");
 
@@ -11247,7 +11249,7 @@ int UHttpWrapper::RequestForLua(const struct FString& URL, const struct FString&
 
 int UHttpWrapper::ImageDownloadRequestForLua(const struct FString& URL, const struct FString& Verb, const struct FString& Content, int Priority, TMap<struct FString, struct FString>* Headers)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.ImageDownloadRequestForLua");
 
@@ -11279,7 +11281,7 @@ int UHttpWrapper::ImageDownloadRequestForLua(const struct FString& URL, const st
 
 bool UHttpWrapper::GetQueueEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.GetQueueEnable");
 
@@ -11304,7 +11306,7 @@ bool UHttpWrapper::GetQueueEnable()
 
 bool UHttpWrapper::GetPoolEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.GetPoolEnable");
 
@@ -11329,7 +11331,7 @@ bool UHttpWrapper::GetPoolEnable()
 
 int UHttpWrapper::GetInternalIndex()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.GetInternalIndex");
 
@@ -11354,7 +11356,7 @@ int UHttpWrapper::GetInternalIndex()
 
 void UHttpWrapper::CancelRequestAll(int QueueType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.CancelRequestAll");
 
@@ -11379,7 +11381,7 @@ void UHttpWrapper::CancelRequestAll(int QueueType)
 
 void UHttpWrapper::CancelRequest(int QueueType, int ReqIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.HttpWrapper.CancelRequest");
 
@@ -11404,7 +11406,7 @@ void UHttpWrapper::CancelRequest(int QueueType, int ReqIndex)
 
 void UImageDownloader::Start(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloader.Start");
 
@@ -11428,7 +11430,7 @@ void UImageDownloader::Start(const struct FString& URL)
 
 class UImageDownloader* UImageDownloader::MakeDownloaderInGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloader.MakeDownloaderInGame");
 
@@ -11453,7 +11455,7 @@ class UImageDownloader* UImageDownloader::MakeDownloaderInGame()
 
 class UImageDownloader* UImageDownloader::MakeDownloader()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloader.MakeDownloader");
 
@@ -11479,7 +11481,7 @@ class UImageDownloader* UImageDownloader::MakeDownloader()
 
 class UTexture2D* UImageDownloader::GetTextureFromUrlWithoutDownload(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloader.GetTextureFromUrlWithoutDownload");
 
@@ -11506,7 +11508,7 @@ class UTexture2D* UImageDownloader::GetTextureFromUrlWithoutDownload(const struc
 
 struct FString UImageDownloader::CheckAndGetEncryptUrl(struct FString* InURL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloader.CheckAndGetEncryptUrl");
 
@@ -11535,7 +11537,7 @@ struct FString UImageDownloader::CheckAndGetEncryptUrl(struct FString* InURL)
 
 void UImageDownloadUtil::SaveImageDownloadDiskFile(TArray<unsigned char> OutArray, const struct FString& SavePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloadUtil.SaveImageDownloadDiskFile");
 
@@ -11561,7 +11563,7 @@ void UImageDownloadUtil::SaveImageDownloadDiskFile(TArray<unsigned char> OutArra
 
 class UTexture2D* UImageDownloadUtil::GetTextureFromMemory(const struct FString& PathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloadUtil.GetTextureFromMemory");
 
@@ -11589,7 +11591,7 @@ class UTexture2D* UImageDownloadUtil::GetTextureFromMemory(const struct FString&
 
 class UTexture2D* UImageDownloadUtil::GetTexture2DFromDisk(const struct FString& SavePath, bool IsCompressed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloadUtil.GetTexture2DFromDisk");
 
@@ -11618,7 +11620,7 @@ class UTexture2D* UImageDownloadUtil::GetTexture2DFromDisk(const struct FString&
 
 class UTexture2D* UImageDownloadUtil::GetTexture2DFromArray(TArray<unsigned char> OutArray, bool IsCompressed)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloadUtil.GetTexture2DFromArray");
 
@@ -11646,7 +11648,7 @@ class UTexture2D* UImageDownloadUtil::GetTexture2DFromArray(TArray<unsigned char
 
 int UImageDownloadUtil::GetLocalImageFormat(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloadUtil.GetLocalImageFormat");
 
@@ -11673,7 +11675,7 @@ int UImageDownloadUtil::GetLocalImageFormat(const struct FString& Path)
 
 void UImageDownloadUtil::CheckDiskFile(const struct FString& ImgDir, const struct FString& SubDir)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ImageDownloadUtil.CheckDiskFile");
 
@@ -11703,7 +11705,7 @@ void UImageDownloadUtil::CheckDiskFile(const struct FString& ImgDir, const struc
 
 void UInGameUIManager::SubUIWidgetListWithMountData(TArray<struct FInGameWidgetData> InGameWidgetDataList, TArray<struct FString> GameStatusStrList, bool InPersistentUI, bool InUsedByControler, bool InOberverOnly, int inUIControlState)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.SubUIWidgetListWithMountData");
 
@@ -11736,7 +11738,7 @@ void UInGameUIManager::SubUIWidgetListWithMountData(TArray<struct FInGameWidgetD
 
 void UInGameUIManager::SubUIWidgetList(TArray<struct FGameWidgetConfig> InWidgetConfigList, TArray<struct FString> GameStatusStrList, bool InPersistentUI, bool InUsedByControler, bool InOberverOnly)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.SubUIWidgetList");
 
@@ -11764,7 +11766,7 @@ void UInGameUIManager::SubUIWidgetList(TArray<struct FGameWidgetConfig> InWidget
 
 void UInGameUIManager::SubDynamicUIWidgetList(TArray<struct FDynamicWidgetData> DynamicWidgetMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.SubDynamicUIWidgetList");
 
@@ -11789,7 +11791,7 @@ void UInGameUIManager::SubDynamicUIWidgetList(TArray<struct FDynamicWidgetData> 
 
 void UInGameUIManager::OnAsyncLoadWidgetClassObj(class UObject* InClassObj, int RequestID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.OnAsyncLoadWidgetClassObj");
 
@@ -11814,7 +11816,7 @@ void UInGameUIManager::OnAsyncLoadWidgetClassObj(class UObject* InClassObj, int 
 
 void UInGameUIManager::HandleUIMessage(const struct FString& UIMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.HandleUIMessage");
 
@@ -11838,7 +11840,7 @@ void UInGameUIManager::HandleUIMessage(const struct FString& UIMessage)
 
 void UInGameUIManager::HandleMountWidget(class UInGameUIManager* IngameManager)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.HandleMountWidget");
 
@@ -11860,7 +11862,7 @@ void UInGameUIManager::HandleMountWidget(class UInGameUIManager* IngameManager)
 
 void UInGameUIManager::HandleDynamicDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.HandleDynamicDestroy");
 
@@ -11883,7 +11885,7 @@ void UInGameUIManager::HandleDynamicDestroy()
 
 void UInGameUIManager::HandleDynamicCreation(bool isAsyncLoad)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.HandleDynamicCreation");
 
@@ -11908,7 +11910,7 @@ void UInGameUIManager::HandleDynamicCreation(bool isAsyncLoad)
 
 void UInGameUIManager::GetWidgetHandleAsyncWithCallBack(const struct FString& WidgetKey, const struct FScriptDelegate& InCallback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.GetWidgetHandleAsyncWithCallBack");
 
@@ -11934,7 +11936,7 @@ void UInGameUIManager::GetWidgetHandleAsyncWithCallBack(const struct FString& Wi
 
 class UUAEUserWidget* UInGameUIManager::GetWidgetHandle(const struct FString& WidgetKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.GetWidgetHandle");
 
@@ -11962,7 +11964,7 @@ class UUAEUserWidget* UInGameUIManager::GetWidgetHandle(const struct FString& Wi
 
 class UCanvasPanel* UInGameUIManager::GetMountCanvasPanel(const struct FString& MountOuterName, const struct FString& MountName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.GetMountCanvasPanel");
 
@@ -11989,7 +11991,7 @@ class UCanvasPanel* UInGameUIManager::GetMountCanvasPanel(const struct FString& 
 
 void UInGameUIManager::ChangeSubUIWidgetList(TArray<struct FGameWidgetConfig> InWidgetConfigList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.ChangeSubUIWidgetList");
 
@@ -12013,7 +12015,7 @@ void UInGameUIManager::ChangeSubUIWidgetList(TArray<struct FGameWidgetConfig> In
 
 void UInGameUIManager::ChangeInvalidWorldNameList(TArray<struct FString> InList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.InGameUIManager.ChangeInvalidWorldNameList");
 
@@ -12038,7 +12040,7 @@ void UInGameUIManager::ChangeInvalidWorldNameList(TArray<struct FString> InList)
 
 bool UIntlSDKComplianceHelper::SetUserProfile(const struct FString& InRegion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.SetUserProfile");
 
@@ -12064,7 +12066,7 @@ bool UIntlSDKComplianceHelper::SetUserProfile(const struct FString& InRegion)
 
 void UIntlSDKComplianceHelper::SetParentStatus(int ParentCertificateStatus)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.SetParentStatus");
 
@@ -12090,7 +12092,7 @@ void UIntlSDKComplianceHelper::SetParentStatus(int ParentCertificateStatus)
 
 void UIntlSDKComplianceHelper::SetLogConfig(bool enableConsoleLog, bool enableFileLog, int LogLevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.SetLogConfig");
 
@@ -12116,7 +12118,7 @@ void UIntlSDKComplianceHelper::SetLogConfig(bool enableConsoleLog, bool enableFi
 
 void UIntlSDKComplianceHelper::SetEUAgreeStatus(int AgreeStatus)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.SetEUAgreeStatus");
 
@@ -12140,7 +12142,7 @@ void UIntlSDKComplianceHelper::SetEUAgreeStatus(int AgreeStatus)
 
 void UIntlSDKComplianceHelper::SetAdulthood(int AgeStatus)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.SetAdulthood");
 
@@ -12165,7 +12167,7 @@ void UIntlSDKComplianceHelper::SetAdulthood(int AgeStatus)
 
 void UIntlSDKComplianceHelper::SendVoiceControlEmail(const struct FString& InEmail, const struct FString& InUserName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.SendVoiceControlEmail");
 
@@ -12188,16 +12190,18 @@ void UIntlSDKComplianceHelper::SendVoiceControlEmail(const struct FString& InEma
 // Parameters:
 // struct FString                 InEmail                        (Parm, ZeroConstructor)
 // struct FString                 UserName                       (Parm, ZeroConstructor)
+// int                            InScene                        (Parm, ZeroConstructor, IsPlainOldData)
 
-void UIntlSDKComplianceHelper::SendEmail(const struct FString& InEmail, const struct FString& UserName)
+void UIntlSDKComplianceHelper::SendEmail(const struct FString& InEmail, const struct FString& UserName, int InScene)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.SendEmail");
 
 	UIntlSDKComplianceHelper_SendEmail_Params params;
 	params.InEmail = InEmail;
 	params.UserName = UserName;
+	params.InScene = InScene;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -12214,7 +12218,7 @@ void UIntlSDKComplianceHelper::SendEmail(const struct FString& InEmail, const st
 
 void UIntlSDKComplianceHelper::QueryUserStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.QueryUserStatus");
 
@@ -12237,7 +12241,7 @@ void UIntlSDKComplianceHelper::QueryUserStatus()
 
 void UIntlSDKComplianceHelper::QueryIsEEA(const struct FString& InRegion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.QueryIsEEA");
 
@@ -12259,7 +12263,7 @@ void UIntlSDKComplianceHelper::QueryIsEEA(const struct FString& InRegion)
 
 void UIntlSDKComplianceHelper::QueryConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.QueryConfig");
 
@@ -12282,7 +12286,7 @@ void UIntlSDKComplianceHelper::QueryConfig()
 
 void UIntlSDKComplianceHelper::OnMSDKEvnSwitched(int Env)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.OnMSDKEvnSwitched");
 
@@ -12306,7 +12310,7 @@ void UIntlSDKComplianceHelper::OnMSDKEvnSwitched(int Env)
 
 class UIntlSDKComplianceHelper* UIntlSDKComplianceHelper::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.GetInstance");
 
@@ -12329,7 +12333,7 @@ class UIntlSDKComplianceHelper* UIntlSDKComplianceHelper::GetInstance()
 
 void UIntlSDKComplianceHelper::ComplianceInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.ComplianceInit");
 
@@ -12352,7 +12356,7 @@ void UIntlSDKComplianceHelper::ComplianceInit()
 
 void UIntlSDKComplianceHelper::CommitBirthday(const struct FString& InBirthday)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.CommitBirthday");
 
@@ -12376,7 +12380,7 @@ void UIntlSDKComplianceHelper::CommitBirthday(const struct FString& InBirthday)
 
 void UIntlSDKComplianceHelper::ChangeRegion(const struct FString& InRegion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.IntlSDKComplianceHelper.ChangeRegion");
 
@@ -12400,7 +12404,7 @@ void UIntlSDKComplianceHelper::ChangeRegion(const struct FString& InRegion)
 
 void ULiveBroadcast::SetFullScreen(bool FullScreen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LiveBroadcast.SetFullScreen");
 
@@ -12425,7 +12429,7 @@ void ULiveBroadcast::SetFullScreen(bool FullScreen)
 
 void ULiveBroadcast::OpenLiveBroadcast(const struct FString& URL, float Margin)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LiveBroadcast.OpenLiveBroadcast");
 
@@ -12450,7 +12454,7 @@ void ULiveBroadcast::OpenLiveBroadcast(const struct FString& URL, float Margin)
 
 class ULiveBroadcast* ULiveBroadcast::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LiveBroadcast.GetInstance");
 
@@ -12473,7 +12477,7 @@ class ULiveBroadcast* ULiveBroadcast::GetInstance()
 
 void ULiveBroadcast::CloseWebView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LiveBroadcast.CloseWebView");
 
@@ -12496,7 +12500,7 @@ void ULiveBroadcast::CloseWebView()
 
 void ULiveBroadcast::C2JSetString(const struct FString& str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LiveBroadcast.C2JSetString");
 
@@ -12520,7 +12524,7 @@ void ULiveBroadcast::C2JSetString(const struct FString& str)
 
 void ULiveBroadcast::C2JSetIndex(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LiveBroadcast.C2JSetIndex");
 
@@ -12548,7 +12552,7 @@ void ULiveBroadcast::C2JSetIndex(int Index)
 
 class UTexture2D* ULoadTexture::LoadTexture2D(const struct FString& ImagePath, bool* IsValid, int* OutWidth, int* OutHeight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LoadTexture.LoadTexture2D");
 
@@ -12582,7 +12586,7 @@ class UTexture2D* ULoadTexture::LoadTexture2D(const struct FString& ImagePath, b
 
 class UTexture2D* ULoadTexture::GetTexture2DFromDiskFile(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LoadTexture.GetTexture2DFromDiskFile");
 
@@ -12609,7 +12613,7 @@ class UTexture2D* ULoadTexture::GetTexture2DFromDiskFile(const struct FString& F
 
 struct FString ULobbyChatSecurity::GetKey(const struct FString& OpenID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyChatSecurity.GetKey");
 
@@ -12631,18 +12635,18 @@ struct FString ULobbyChatSecurity::GetKey(const struct FString& OpenID)
 // Function Client.LobbyDecalBakingComponent.SwitchDecalParam
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            from                           (Parm, ZeroConstructor, IsPlainOldData)
-// int                            to                             (Parm, ZeroConstructor, IsPlainOldData)
+// int                            From                           (Parm, ZeroConstructor, IsPlainOldData)
+// int                            To                             (Parm, ZeroConstructor, IsPlainOldData)
 
-void ULobbyDecalBakingComponent::SwitchDecalParam(int from, int to)
+void ULobbyDecalBakingComponent::SwitchDecalParam(int From, int To)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyDecalBakingComponent.SwitchDecalParam");
 
 	ULobbyDecalBakingComponent_SwitchDecalParam_Params params;
-	params.from = from;
-	params.to = to;
+	params.From = From;
+	params.To = To;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -12664,7 +12668,7 @@ void ULobbyDecalBakingComponent::SwitchDecalParam(int from, int to)
 
 bool ULobbyDecalBakingComponent::SavePng(class USceneCaptureComponent2D* SceneCapComp, const struct FString& ImagePath, const struct FLinearColor& ClearColor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyDecalBakingComponent.SavePng");
 
@@ -12694,7 +12698,7 @@ bool ULobbyDecalBakingComponent::SavePng(class USceneCaptureComponent2D* SceneCa
 
 void ULobbyDecalBakingComponent::ReplaceOneDecalParam(class UStaticMeshComponent* MeshComp, int Index, class UDecalBakingParameterComponent* DecalParamComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyDecalBakingComponent.ReplaceOneDecalParam");
 
@@ -12718,7 +12722,7 @@ void ULobbyDecalBakingComponent::ReplaceOneDecalParam(class UStaticMeshComponent
 
 void ULobbyDecalBakingComponent::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyDecalBakingComponent.Init");
 
@@ -12741,7 +12745,7 @@ void ULobbyDecalBakingComponent::Init()
 
 void ULobbyDecalBakingComponent::DelOneDecalParam(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyDecalBakingComponent.DelOneDecalParam");
 
@@ -12767,7 +12771,7 @@ void ULobbyDecalBakingComponent::DelOneDecalParam(int Index)
 
 void ULobbyDecalBakingComponent::Baking(class UStaticMeshComponent* MeshComp, class UMaterial* DecaledMaterial, bool Async)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyDecalBakingComponent.Baking");
 
@@ -12794,7 +12798,7 @@ void ULobbyDecalBakingComponent::Baking(class UStaticMeshComponent* MeshComp, cl
 
 void ULobbyDecalBakingComponent::AddOneDecalParam(class UStaticMeshComponent* MeshComp, class UDecalBakingParameterComponent* DecalParamComponent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyDecalBakingComponent.AddOneDecalParam");
 
@@ -12819,7 +12823,7 @@ void ULobbyDecalBakingComponent::AddOneDecalParam(class UStaticMeshComponent* Me
 
 void ALobbyMatChgActor::ChangeMaterialToIdx(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyMatChgActor.ChangeMaterialToIdx");
 
@@ -12843,7 +12847,7 @@ void ALobbyMatChgActor::ChangeMaterialToIdx(int idx)
 
 void ULobbyModelUtils::TickAndRefreshBoneForGivenSkMeshComp(class USkeletalMeshComponent* InSkMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyModelUtils.TickAndRefreshBoneForGivenSkMeshComp");
 
@@ -12869,7 +12873,7 @@ void ULobbyModelUtils::TickAndRefreshBoneForGivenSkMeshComp(class USkeletalMeshC
 
 struct FAABBBox ULobbyModelUtils::GetActorBoundingBox(class AActor* InActor, bool EnableDrawDebugBox)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyModelUtils.GetActorBoundingBox");
 
@@ -12900,7 +12904,7 @@ struct FAABBBox ULobbyModelUtils::GetActorBoundingBox(class AActor* InActor, boo
 
 bool ULobbyModelUtils::DeprojectScreenToWorldFast(class APlayerController* Player, const struct FVector2D& ScreenPosition, struct FVector* WorldPosition, struct FVector* WorldDirection)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbyModelUtils.DeprojectScreenToWorldFast");
 
@@ -12930,7 +12934,7 @@ bool ULobbyModelUtils::DeprojectScreenToWorldFast(class APlayerController* Playe
 
 void ALobbySceneCaptureActor::ResizeRT()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbySceneCaptureActor.ResizeRT");
 
@@ -12953,7 +12957,7 @@ void ALobbySceneCaptureActor::ResizeRT()
 
 void ALobbySceneCaptureActor::LogError(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbySceneCaptureActor.LogError");
 
@@ -12975,7 +12979,7 @@ void ALobbySceneCaptureActor::LogError(const struct FString& FilePath)
 
 void ALobbySceneCaptureActor::Capture()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LobbySceneCaptureActor.Capture");
 
@@ -13000,7 +13004,7 @@ void ALobbySceneCaptureActor::Capture()
 
 struct FLuaBPVar ULuaBlueprintLibrary::StringToLVar(class UObject* WorldContextObject, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.StringToLVar");
 
@@ -13037,7 +13041,7 @@ struct FLuaBPVar ULuaBlueprintLibrary::StringToLVar(class UObject* WorldContextO
 
 void ULuaBlueprintLibrary::RequireAndCallLuaWithArgs(class UObject* WorldContextObject, const struct FLuaBPVar& InD, const struct FLuaBPVar& InC, const struct FLuaBPVar& InA, const struct FLuaBPVar& InB, struct FString* FunctionName, struct FString* ModulePath, struct FLuaBPVar* OutA, struct FLuaBPVar* OutB, struct FLuaBPVar* OutC, struct FLuaBPVar* OutD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.RequireAndCallLuaWithArgs");
 
@@ -13080,7 +13084,7 @@ void ULuaBlueprintLibrary::RequireAndCallLuaWithArgs(class UObject* WorldContext
 
 struct FLuaBPVar ULuaBlueprintLibrary::ObjectToLVar(class UObject* WorldContextObject, class UObject* O)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.ObjectToLVar");
 
@@ -13109,7 +13113,7 @@ struct FLuaBPVar ULuaBlueprintLibrary::ObjectToLVar(class UObject* WorldContextO
 
 struct FString ULuaBlueprintLibrary::LVarToString(class UObject* WorldContextObject, const struct FLuaBPVar& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.LVarToString");
 
@@ -13138,7 +13142,7 @@ struct FString ULuaBlueprintLibrary::LVarToString(class UObject* WorldContextObj
 
 class UObject* ULuaBlueprintLibrary::LVarToObject(class UObject* WorldContextObject, const struct FLuaBPVar& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.LVarToObject");
 
@@ -13167,7 +13171,7 @@ class UObject* ULuaBlueprintLibrary::LVarToObject(class UObject* WorldContextObj
 
 int ULuaBlueprintLibrary::LVarToInt(class UObject* WorldContextObject, const struct FLuaBPVar& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.LVarToInt");
 
@@ -13196,7 +13200,7 @@ int ULuaBlueprintLibrary::LVarToInt(class UObject* WorldContextObject, const str
 
 float ULuaBlueprintLibrary::LVarToFloat(class UObject* WorldContextObject, const struct FLuaBPVar& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.LVarToFloat");
 
@@ -13225,7 +13229,7 @@ float ULuaBlueprintLibrary::LVarToFloat(class UObject* WorldContextObject, const
 
 bool ULuaBlueprintLibrary::LVarToBool(class UObject* WorldContextObject, const struct FLuaBPVar& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.LVarToBool");
 
@@ -13254,7 +13258,7 @@ bool ULuaBlueprintLibrary::LVarToBool(class UObject* WorldContextObject, const s
 
 struct FLuaBPVar ULuaBlueprintLibrary::IntToLVar(class UObject* WorldContextObject, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.IntToLVar");
 
@@ -13283,7 +13287,7 @@ struct FLuaBPVar ULuaBlueprintLibrary::IntToLVar(class UObject* WorldContextObje
 
 struct FLuaBPVar ULuaBlueprintLibrary::FloatToLVar(class UObject* WorldContextObject, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.FloatToLVar");
 
@@ -13321,7 +13325,7 @@ struct FLuaBPVar ULuaBlueprintLibrary::FloatToLVar(class UObject* WorldContextOb
 
 void ULuaBlueprintLibrary::CallLuaWithMultiArgs(class UObject* WorldContextObject, const struct FLuaBPVar& InF, const struct FLuaBPVar& InA, const struct FLuaBPVar& InB, const struct FLuaBPVar& InC, const struct FLuaBPVar& InD, const struct FLuaBPVar& InE, struct FString* Function, struct FLuaBPVar* OutA, struct FLuaBPVar* OutB, struct FLuaBPVar* OutC, struct FLuaBPVar* OutD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.CallLuaWithMultiArgs");
 
@@ -13372,7 +13376,7 @@ void ULuaBlueprintLibrary::CallLuaWithMultiArgs(class UObject* WorldContextObjec
 
 void ULuaBlueprintLibrary::CallLuaWithHUD(class UObject* WorldContextObject, class UGameFrontendHUD* GameFrontendHUD, const struct FLuaBPVar& InD, const struct FLuaBPVar& InA, const struct FLuaBPVar& InB, const struct FLuaBPVar& InC, struct FString* Function, struct FLuaBPVar* OutA, struct FLuaBPVar* OutB, struct FLuaBPVar* OutC, struct FLuaBPVar* OutD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.CallLuaWithHUD");
 
@@ -13421,7 +13425,7 @@ void ULuaBlueprintLibrary::CallLuaWithHUD(class UObject* WorldContextObject, cla
 
 void ULuaBlueprintLibrary::CallLuaWithArgs(class UObject* WorldContextObject, const struct FLuaBPVar& InD, const struct FLuaBPVar& InA, const struct FLuaBPVar& InB, const struct FLuaBPVar& InC, struct FString* Function, struct FLuaBPVar* OutA, struct FLuaBPVar* OutB, struct FLuaBPVar* OutC, struct FLuaBPVar* OutD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.CallLuaWithArgs");
 
@@ -13465,7 +13469,7 @@ void ULuaBlueprintLibrary::CallLuaWithArgs(class UObject* WorldContextObject, co
 
 void ULuaBlueprintLibrary::CallLua(class UObject* WorldContextObject, struct FString* Function, struct FLuaBPVar* OutA, struct FLuaBPVar* OutB, struct FLuaBPVar* OutC, struct FLuaBPVar* OutD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.CallLua");
 
@@ -13502,7 +13506,7 @@ void ULuaBlueprintLibrary::CallLua(class UObject* WorldContextObject, struct FSt
 
 struct FLuaBPVar ULuaBlueprintLibrary::BoolToLVar(class UObject* WorldContextObject, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintLibrary.BoolToLVar");
 
@@ -13530,7 +13534,7 @@ struct FLuaBPVar ULuaBlueprintLibrary::BoolToLVar(class UObject* WorldContextObj
 
 class ULuaBluepirntSys* ULuaBlueprintMgr::GetSystemByName(const struct FString& SystemName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintMgr.GetSystemByName");
 
@@ -13557,7 +13561,7 @@ class ULuaBluepirntSys* ULuaBlueprintMgr::GetSystemByName(const struct FString& 
 
 void ULuaBlueprintMgr::AddSystem(const struct FString& SystemName, const struct FString& BPPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBlueprintMgr.AddSystem");
 
@@ -13580,7 +13584,7 @@ void ULuaBlueprintMgr::AddSystem(const struct FString& SystemName, const struct 
 
 void ULuaBluepirntSys::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaBluepirntSys.Init");
 
@@ -13607,7 +13611,7 @@ void ULuaBluepirntSys::Init()
 
 void ALuaClassObj::SubUIWidgetList(TArray<struct FGameWidgetConfig> InWidgetConfigList, TArray<struct FString> GameStatusStrList, bool bPersistentUI, bool InStatusConcern, bool bDynamicWidget, bool bKeepDynamicWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.SubUIWidgetList");
 
@@ -13636,7 +13640,7 @@ void ALuaClassObj::SubUIWidgetList(TArray<struct FGameWidgetConfig> InWidgetConf
 
 void ALuaClassObj::SubShowHideEvent(TArray<struct FString> WidgetPathList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.SubShowHideEvent");
 
@@ -13660,7 +13664,7 @@ void ALuaClassObj::SubShowHideEvent(TArray<struct FString> WidgetPathList)
 
 void ALuaClassObj::SubDefaultSceneCamera(int sceneCameraIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.SubDefaultSceneCamera");
 
@@ -13684,7 +13688,7 @@ void ALuaClassObj::SubDefaultSceneCamera(int sceneCameraIndex)
 
 void ALuaClassObj::SubDefaultChildUI(TArray<struct FString> childList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.SubDefaultChildUI");
 
@@ -13708,7 +13712,7 @@ void ALuaClassObj::SubDefaultChildUI(TArray<struct FString> childList)
 
 void ALuaClassObj::SubDefaultBaseUI(const struct FString& baseUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.SubDefaultBaseUI");
 
@@ -13733,7 +13737,7 @@ void ALuaClassObj::SubDefaultBaseUI(const struct FString& baseUI)
 
 void ALuaClassObj::SubCollapseWidgetList(const struct FString& RootWidgetName, TArray<struct FString>* ChildWidgetNames)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.SubCollapseWidgetList");
 
@@ -13761,7 +13765,7 @@ void ALuaClassObj::SubCollapseWidgetList(const struct FString& RootWidgetName, T
 
 void ALuaClassObj::SetWidgetZorder(int Index, int ZOrder)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.SetWidgetZorder");
 
@@ -13786,7 +13790,7 @@ void ALuaClassObj::SetWidgetZorder(int Index, int ZOrder)
 
 void ALuaClassObj::RestoreWidgetZorder(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.RestoreWidgetZorder");
 
@@ -13808,7 +13812,7 @@ void ALuaClassObj::RestoreWidgetZorder(int Index)
 
 void ALuaClassObj::RestoreAllWidgetZorder()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.RestoreAllWidgetZorder");
 
@@ -13831,7 +13835,7 @@ void ALuaClassObj::RestoreAllWidgetZorder()
 
 bool ALuaClassObj::IsTopStackPanel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.IsTopStackPanel");
 
@@ -13856,7 +13860,7 @@ bool ALuaClassObj::IsTopStackPanel()
 
 bool ALuaClassObj::IsPushedPanel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.IsPushedPanel");
 
@@ -13881,7 +13885,7 @@ bool ALuaClassObj::IsPushedPanel()
 
 void ALuaClassObj::HandleUIMessageNoFetch(const struct FString& UIMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.HandleUIMessageNoFetch");
 
@@ -13905,7 +13909,7 @@ void ALuaClassObj::HandleUIMessageNoFetch(const struct FString& UIMessage)
 
 void ALuaClassObj::HandleUIMessage(const struct FString& UIMessage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.HandleUIMessage");
 
@@ -13927,7 +13931,7 @@ void ALuaClassObj::HandleUIMessage(const struct FString& UIMessage)
 
 void ALuaClassObj::HandleStopAsyncLoad()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.HandleStopAsyncLoad");
 
@@ -13948,7 +13952,7 @@ void ALuaClassObj::HandleStopAsyncLoad()
 
 void ALuaClassObj::HandleDynamicDestroy()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.HandleDynamicDestroy");
 
@@ -13971,7 +13975,7 @@ void ALuaClassObj::HandleDynamicDestroy()
 
 void ALuaClassObj::HandleDynamicCreationInternal(bool isAsyncLoad)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.HandleDynamicCreationInternal");
 
@@ -13995,7 +13999,7 @@ void ALuaClassObj::HandleDynamicCreationInternal(bool isAsyncLoad)
 
 void ALuaClassObj::HandleDynamicCreation(bool isAsyncLoad)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.HandleDynamicCreation");
 
@@ -14019,7 +14023,7 @@ void ALuaClassObj::HandleDynamicCreation(bool isAsyncLoad)
 
 void ALuaClassObj::HandleCollapseWidgetList(const struct FString& RootWidgetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.HandleCollapseWidgetList");
 
@@ -14043,7 +14047,7 @@ void ALuaClassObj::HandleCollapseWidgetList(const struct FString& RootWidgetName
 
 struct FString ALuaClassObj::GetTopStackPanelSrcTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.GetTopStackPanelSrcTag");
 
@@ -14068,7 +14072,7 @@ struct FString ALuaClassObj::GetTopStackPanelSrcTag()
 
 struct FString ALuaClassObj::GetTopStackPanelDstTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.GetTopStackPanelDstTag");
 
@@ -14093,7 +14097,7 @@ struct FString ALuaClassObj::GetTopStackPanelDstTag()
 
 struct FString ALuaClassObj::GetGameStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.GetGameStatus");
 
@@ -14118,7 +14122,7 @@ struct FString ALuaClassObj::GetGameStatus()
 
 void ALuaClassObj::ChangeSubUIWidgetList(TArray<struct FGameWidgetConfig> InWidgetConfigList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.ChangeSubUIWidgetList");
 
@@ -14140,7 +14144,7 @@ void ALuaClassObj::ChangeSubUIWidgetList(TArray<struct FGameWidgetConfig> InWidg
 
 void ALuaClassObj::AddToTopStackPanel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.LuaClassObj.AddToTopStackPanel");
 
@@ -14163,7 +14167,7 @@ void ALuaClassObj::AddToTopStackPanel()
 
 void UMaskBox::SetMaskTransformScale(const struct FVector2D& Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskBox.SetMaskTransformScale");
 
@@ -14187,7 +14191,7 @@ void UMaskBox::SetMaskTransformScale(const struct FVector2D& Scale)
 
 void UMaskBox::SetMaskTransformPivot(const struct FVector2D& Pivot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskBox.SetMaskTransformPivot");
 
@@ -14211,7 +14215,7 @@ void UMaskBox::SetMaskTransformPivot(const struct FVector2D& Pivot)
 
 void UMaskBox::SetMaskTransformAngle(float Angle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskBox.SetMaskTransformAngle");
 
@@ -14235,7 +14239,7 @@ void UMaskBox::SetMaskTransformAngle(float Angle)
 
 void UMaskBox::SetMaskMaterial(class UMaterialInterface* EffectMaterial)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskBox.SetMaskMaterial");
 
@@ -14259,7 +14263,7 @@ void UMaskBox::SetMaskMaterial(class UMaterialInterface* EffectMaterial)
 
 void UMaskBox::SetBrushFromTexture(class UTexture2D* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskBox.SetBrushFromTexture");
 
@@ -14283,7 +14287,7 @@ void UMaskBox::SetBrushFromTexture(class UTexture2D* Texture)
 
 struct FVector2D UMaskBox::GetVector2D__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.MaskBox.GetVector2D__DelegateSignature");
 
@@ -14307,7 +14311,7 @@ struct FVector2D UMaskBox::GetVector2D__DelegateSignature()
 
 class UMaterialInstanceDynamic* UMaskBox::GetMaskMaterial()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskBox.GetMaskMaterial");
 
@@ -14332,7 +14336,7 @@ class UMaterialInstanceDynamic* UMaskBox::GetMaskMaterial()
 
 void UMaskImage::SetMaskTransformScale(const struct FVector2D& Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskImage.SetMaskTransformScale");
 
@@ -14356,7 +14360,7 @@ void UMaskImage::SetMaskTransformScale(const struct FVector2D& Scale)
 
 void UMaskImage::SetMaskTransformPivot(const struct FVector2D& Pivot)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskImage.SetMaskTransformPivot");
 
@@ -14380,7 +14384,7 @@ void UMaskImage::SetMaskTransformPivot(const struct FVector2D& Pivot)
 
 void UMaskImage::SetMaskTransformAngle(float Angle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskImage.SetMaskTransformAngle");
 
@@ -14404,7 +14408,7 @@ void UMaskImage::SetMaskTransformAngle(float Angle)
 
 void UMaskImage::SetMaskTexture(class UTexture2D* Texture)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskImage.SetMaskTexture");
 
@@ -14428,7 +14432,7 @@ void UMaskImage::SetMaskTexture(class UTexture2D* Texture)
 
 void UMaskImage::SetMaskMaterial(class UMaterialInterface* InEffectMaterial)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskImage.SetMaskMaterial");
 
@@ -14452,7 +14456,7 @@ void UMaskImage::SetMaskMaterial(class UMaterialInterface* InEffectMaterial)
 
 class UMaterialInstanceDynamic* UMaskImage::GetMaskMaterial()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.MaskImage.GetMaskMaterial");
 
@@ -14477,7 +14481,7 @@ class UMaterialInstanceDynamic* UMaskImage::GetMaskMaterial()
 
 void UNewButton::SetClickSound(EButtonClickSoundTypes inSoundType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.NewButton.SetClickSound");
 
@@ -14501,7 +14505,7 @@ void UNewButton::SetClickSound(EButtonClickSoundTypes inSoundType)
 
 void UPandoraV2Helper::SetUserData(TMap<struct FString, struct FString> InUserdata)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.SetUserData");
 
@@ -14525,7 +14529,7 @@ void UPandoraV2Helper::SetUserData(TMap<struct FString, struct FString> InUserda
 
 void UPandoraV2Helper::SetSDKVersion(int InSDKVer)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.SetSDKVersion");
 
@@ -14549,7 +14553,7 @@ void UPandoraV2Helper::SetSDKVersion(int InSDKVer)
 
 void UPandoraV2Helper::SetSDKCoreDataPath(const struct FString& InPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.SetSDKCoreDataPath");
 
@@ -14573,7 +14577,7 @@ void UPandoraV2Helper::SetSDKCoreDataPath(const struct FString& InPath)
 
 void UPandoraV2Helper::SetPandoraEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.SetPandoraEnable");
 
@@ -14598,7 +14602,7 @@ void UPandoraV2Helper::SetPandoraEnable(bool Enable)
 
 bool UPandoraV2Helper::SetLuaCoreData(const struct FString& InFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.SetLuaCoreData");
 
@@ -14624,7 +14628,7 @@ bool UPandoraV2Helper::SetLuaCoreData(const struct FString& InFilePath)
 
 void UPandoraV2Helper::SetLogEnable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.SetLogEnable");
 
@@ -14646,7 +14650,7 @@ void UPandoraV2Helper::SetLogEnable(bool Enable)
 
 void UPandoraV2Helper::ResumeLuaGC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.ResumeLuaGC");
 
@@ -14667,7 +14671,7 @@ void UPandoraV2Helper::ResumeLuaGC()
 
 void UPandoraV2Helper::RefreshUserDataTokens()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.RefreshUserDataTokens");
 
@@ -14688,7 +14692,7 @@ void UPandoraV2Helper::RefreshUserDataTokens()
 
 void UPandoraV2Helper::PauseLuaGC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.PauseLuaGC");
 
@@ -14713,7 +14717,7 @@ void UPandoraV2Helper::PauseLuaGC()
 
 void UPandoraV2Helper::Init(bool InEnable, int InEnv, bool InEnablePixUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.Init");
 
@@ -14739,7 +14743,7 @@ void UPandoraV2Helper::Init(bool InEnable, int InEnv, bool InEnablePixUI)
 
 int UPandoraV2Helper::GetSDKVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.GetSDKVersion");
 
@@ -14764,7 +14768,7 @@ int UPandoraV2Helper::GetSDKVersion()
 
 class UPandoraV2Helper* UPandoraV2Helper::Get()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.Get");
 
@@ -14790,7 +14794,7 @@ class UPandoraV2Helper* UPandoraV2Helper::Get()
 
 void UPandoraV2Helper::Do(const struct FString& InCmdJson, int InMsgType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.Do");
 
@@ -14813,7 +14817,7 @@ void UPandoraV2Helper::Do(const struct FString& InCmdJson, int InMsgType)
 
 void UPandoraV2Helper::Deinit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.Deinit");
 
@@ -14834,7 +14838,7 @@ void UPandoraV2Helper::Deinit()
 
 void UPandoraV2Helper::Close()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PandoraV2Helper.Close");
 
@@ -14857,7 +14861,7 @@ void UPandoraV2Helper::Close()
 
 void UPublishAreaMgr::SelectArea(const struct FString& InArea)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PublishAreaMgr.SelectArea");
 
@@ -14881,7 +14885,7 @@ void UPublishAreaMgr::SelectArea(const struct FString& InArea)
 
 bool UPublishAreaMgr::IsMultiAreaBuild()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PublishAreaMgr.IsMultiAreaBuild");
 
@@ -14908,7 +14912,7 @@ bool UPublishAreaMgr::IsMultiAreaBuild()
 
 struct FString UPublishAreaMgr::GetString(const struct FString& InKey, const struct FString& InDefaultValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PublishAreaMgr.GetString");
 
@@ -14935,7 +14939,7 @@ struct FString UPublishAreaMgr::GetString(const struct FString& InKey, const str
 
 struct FString UPublishAreaMgr::GetPublishAreas()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PublishAreaMgr.GetPublishAreas");
 
@@ -14962,7 +14966,7 @@ struct FString UPublishAreaMgr::GetPublishAreas()
 
 int UPublishAreaMgr::GetInt(const struct FString& InKey, int InDefaultValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PublishAreaMgr.GetInt");
 
@@ -14991,7 +14995,7 @@ int UPublishAreaMgr::GetInt(const struct FString& InKey, int InDefaultValue)
 
 bool UPublishAreaMgr::GetBool(const struct FString& InKey, bool InDefaultValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PublishAreaMgr.GetBool");
 
@@ -15018,7 +15022,7 @@ bool UPublishAreaMgr::GetBool(const struct FString& InKey, bool InDefaultValue)
 
 struct FString UPublishAreaMgr::GetArea()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.PublishAreaMgr.GetArea");
 
@@ -15045,7 +15049,7 @@ struct FString UPublishAreaMgr::GetArea()
 
 int USavedFileUtil::LoadFileToArrayAsync(const struct FString& AssetPath, const struct FSluaBPVar& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.LoadFileToArrayAsync");
 
@@ -15073,7 +15077,7 @@ int USavedFileUtil::LoadFileToArrayAsync(const struct FString& AssetPath, const 
 
 int64_t USavedFileUtil::GetFileCreationTime(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.GetFileCreationTime");
 
@@ -15101,7 +15105,7 @@ int64_t USavedFileUtil::GetFileCreationTime(const struct FString& Filename)
 
 void USavedFileUtil::GetDirSizeAsync(const struct FString& Dir, bool Recursive, const struct FSluaBPVar& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.GetDirSizeAsync");
 
@@ -15129,7 +15133,7 @@ void USavedFileUtil::GetDirSizeAsync(const struct FString& Dir, bool Recursive, 
 
 int64_t USavedFileUtil::GetDirSize(const struct FString& Dir, bool Recursive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.GetDirSize");
 
@@ -15159,7 +15163,7 @@ int64_t USavedFileUtil::GetDirSize(const struct FString& Dir, bool Recursive)
 
 void USavedFileUtil::FindFilesAsync(const struct FString& Dir, const struct FString& Pattern, bool Recursive, const struct FSluaBPVar& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.FindFilesAsync");
 
@@ -15189,7 +15193,7 @@ void USavedFileUtil::FindFilesAsync(const struct FString& Dir, const struct FStr
 
 TArray<struct FString> USavedFileUtil::FindFiles(const struct FString& dirPath, const struct FString& extension, bool Recursive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.FindFiles");
 
@@ -15218,7 +15222,7 @@ TArray<struct FString> USavedFileUtil::FindFiles(const struct FString& dirPath, 
 
 void USavedFileUtil::DeleteDirectoryAsync(const struct FString& Dir, const struct FSluaBPVar& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.DeleteDirectoryAsync");
 
@@ -15246,7 +15250,7 @@ void USavedFileUtil::DeleteDirectoryAsync(const struct FString& Dir, const struc
 
 bool USavedFileUtil::CleanupDirectoryBySize(const struct FString& Dir, int MaxSize, const struct FString& extension)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.CleanupDirectoryBySize");
 
@@ -15275,7 +15279,7 @@ bool USavedFileUtil::CleanupDirectoryBySize(const struct FString& Dir, int MaxSi
 
 bool USavedFileUtil::CancelLoadSavedFile(int Handle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SavedFileUtil.CancelLoadSavedFile");
 
@@ -15301,7 +15305,7 @@ bool USavedFileUtil::CancelLoadSavedFile(int Handle)
 
 void UScatterPlot::SetPoints(TArray<struct FScatterPlotPoint> InPoints)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.SetPoints");
 
@@ -15325,7 +15329,7 @@ void UScatterPlot::SetPoints(TArray<struct FScatterPlotPoint> InPoints)
 
 void UScatterPlot::SetPointBrush(const struct FSlateBrush& InBrush)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.SetPointBrush");
 
@@ -15350,7 +15354,7 @@ void UScatterPlot::SetPointBrush(const struct FSlateBrush& InBrush)
 
 float UScatterPlot::MapWeightToScale(float Weight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.MapWeightToScale");
 
@@ -15377,7 +15381,7 @@ float UScatterPlot::MapWeightToScale(float Weight)
 
 struct FLinearColor UScatterPlot::MapWeightToColor(float Weight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.MapWeightToColor");
 
@@ -15404,7 +15408,7 @@ struct FLinearColor UScatterPlot::MapWeightToColor(float Weight)
 
 void UScatterPlot::LoadScreenPoints(TArray<float> PlainPositions, float NearestDistance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.LoadScreenPoints");
 
@@ -15429,7 +15433,7 @@ void UScatterPlot::LoadScreenPoints(TArray<float> PlainPositions, float NearestD
 
 void UScatterPlot::Empty(int Slack)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.Empty");
 
@@ -15451,7 +15455,7 @@ void UScatterPlot::Empty(int Slack)
 
 void UScatterPlot::Apply()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.Apply");
 
@@ -15474,7 +15478,7 @@ void UScatterPlot::Apply()
 
 void UScatterPlot::Add(const struct FScatterPlotPoint& InPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScatterPlot.Add");
 
@@ -15496,7 +15500,7 @@ void UScatterPlot::Add(const struct FScatterPlotPoint& InPoint)
 
 void UScreenInput::Shutdown()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenInput.Shutdown");
 
@@ -15517,7 +15521,7 @@ void UScreenInput::Shutdown()
 
 void UScreenInput::OnScreenTouch__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ScreenInput.OnScreenTouch__DelegateSignature");
 
@@ -15539,7 +15543,7 @@ void UScreenInput::OnScreenTouch__DelegateSignature()
 
 void UScreenInput::OnMouseButtonDown__DelegateSignature(const struct FVector2D& ContainerPos)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ScreenInput.OnMouseButtonDown__DelegateSignature");
 
@@ -15565,7 +15569,7 @@ void UScreenInput::OnMouseButtonDown__DelegateSignature(const struct FVector2D& 
 
 void UScreenInput::OnMotionDetected__DelegateSignature(const struct FVector& Tilt, const struct FVector& RotationRate, const struct FVector& Gravity, const struct FVector& Acceleration)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ScreenInput.OnMotionDetected__DelegateSignature");
 
@@ -15589,7 +15593,7 @@ void UScreenInput::OnMotionDetected__DelegateSignature(const struct FVector& Til
 
 void UScreenInput::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenInput.Init");
 
@@ -15612,7 +15616,7 @@ void UScreenInput::Init()
 
 void UScreenshotMaker::SetDefaultShowUI(bool ShowUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.SetDefaultShowUI");
 
@@ -15637,7 +15641,7 @@ void UScreenshotMaker::SetDefaultShowUI(bool ShowUI)
 
 bool UScreenshotMaker::SaveToPhotosAlbumEx(const struct FString& pathStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.SaveToPhotosAlbumEx");
 
@@ -15664,7 +15668,7 @@ bool UScreenshotMaker::SaveToPhotosAlbumEx(const struct FString& pathStr)
 
 bool UScreenshotMaker::SaveToPhotosAlbum(const struct FString& pathStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.SaveToPhotosAlbum");
 
@@ -15692,7 +15696,7 @@ bool UScreenshotMaker::SaveToPhotosAlbum(const struct FString& pathStr)
 
 void UScreenshotMaker::ResizePicture(const struct FString& pathStr, float Scale, const struct FString& savePathStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.ResizePicture");
 
@@ -15719,7 +15723,7 @@ void UScreenshotMaker::ResizePicture(const struct FString& pathStr, float Scale,
 
 void UScreenshotMaker::ReMakePicture(const struct FString& pathStr, const struct FVector4& Vector4)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.ReMakePicture");
 
@@ -15746,7 +15750,7 @@ void UScreenshotMaker::ReMakePicture(const struct FString& pathStr, const struct
 
 struct FString UScreenshotMaker::ReMakeMomentPicture(const struct FString& srcPath, const struct FVector4& Vector4)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.ReMakeMomentPicture");
 
@@ -15777,7 +15781,7 @@ struct FString UScreenshotMaker::ReMakeMomentPicture(const struct FString& srcPa
 
 bool UScreenshotMaker::MosaicPictureByLocalImage(TArray<struct FString> Paths, const struct FString& toPath, int Width, float Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.MosaicPictureByLocalImage");
 
@@ -15809,7 +15813,7 @@ bool UScreenshotMaker::MosaicPictureByLocalImage(TArray<struct FString> Paths, c
 
 class UTextureRenderTarget2D* UScreenshotMaker::MakeWidgetScreenshot(class UWidget* Widget, const struct FVector2D& DrawSize, float Scale)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.MakeWidgetScreenshot");
 
@@ -15838,7 +15842,7 @@ class UTextureRenderTarget2D* UScreenshotMaker::MakeWidgetScreenshot(class UWidg
 
 struct FString UScreenshotMaker::MakePictureWithName(const struct FString& PicName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.MakePictureWithName");
 
@@ -15868,7 +15872,7 @@ struct FString UScreenshotMaker::MakePictureWithName(const struct FString& PicNa
 
 struct FString UScreenshotMaker::MakePictureToLua(class UGameFrontendHUD* InFrontendHUD, const struct FString& tableName, const struct FString& FunctionName, bool isShowUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.MakePictureToLua");
 
@@ -15899,7 +15903,7 @@ struct FString UScreenshotMaker::MakePictureToLua(class UGameFrontendHUD* InFron
 
 struct FString UScreenshotMaker::MakePictureByName(const struct FString& PicName, bool ShowUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.MakePictureByName");
 
@@ -15927,7 +15931,7 @@ struct FString UScreenshotMaker::MakePictureByName(const struct FString& PicName
 
 struct FString UScreenshotMaker::MakePicture(bool isShowUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.MakePicture");
 
@@ -15954,7 +15958,7 @@ struct FString UScreenshotMaker::MakePicture(bool isShowUI)
 
 struct FString UScreenshotMaker::MakeBugReprotPic(bool isShowUI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.MakeBugReprotPic");
 
@@ -15981,7 +15985,7 @@ struct FString UScreenshotMaker::MakeBugReprotPic(bool isShowUI)
 
 bool UScreenshotMaker::HasCaptured(const struct FString& pathStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.HasCaptured");
 
@@ -16007,7 +16011,7 @@ bool UScreenshotMaker::HasCaptured(const struct FString& pathStr)
 
 int UScreenshotMaker::GetSaveStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.GetSaveStatus");
 
@@ -16034,7 +16038,7 @@ int UScreenshotMaker::GetSaveStatus()
 
 int UScreenshotMaker::GetPhotoHash(const struct FString& pathStr, int algorithmVersion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.GetPhotoHash");
 
@@ -16061,7 +16065,7 @@ int UScreenshotMaker::GetPhotoHash(const struct FString& pathStr, int algorithmV
 
 TArray<struct FString> UScreenshotMaker::GetMomentThumbPictureFullPathFiles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.GetMomentThumbPictureFullPathFiles");
 
@@ -16086,7 +16090,7 @@ TArray<struct FString> UScreenshotMaker::GetMomentThumbPictureFullPathFiles()
 
 TArray<struct FString> UScreenshotMaker::GetMomentPictureFullPathFiles()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.GetMomentPictureFullPathFiles");
 
@@ -16113,7 +16117,7 @@ TArray<struct FString> UScreenshotMaker::GetMomentPictureFullPathFiles()
 
 int UScreenshotMaker::GetHashFromArray(TArray<unsigned char> inArray, int algorithmVersion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.GetHashFromArray");
 
@@ -16144,7 +16148,7 @@ int UScreenshotMaker::GetHashFromArray(TArray<unsigned char> inArray, int algori
 
 void UScreenshotMaker::CropAndResizePicture(const struct FString& pathStr, float Scale, float cropWidthScale, float cropHeightScale, const struct FString& savePathStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScreenshotMaker.CropAndResizePicture");
 
@@ -16165,70 +16169,12 @@ void UScreenshotMaker::CropAndResizePicture(const struct FString& pathStr, float
 }
 
 
-// Function Client.ScriptHelperClient.ZLIBDecompress
-// (Final, Native, Static, Public)
-// Parameters:
-// struct FString                 CompressedData                 (Parm, ZeroConstructor)
-// int                            CompressedSize                 (Parm, ZeroConstructor, IsPlainOldData)
-// int                            UnCompressedSize               (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           IsHEX                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-
-struct FString UScriptHelperClient::ZLIBDecompress(const struct FString& CompressedData, int CompressedSize, int UnCompressedSize, bool IsHEX)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ZLIBDecompress");
-
-	UScriptHelperClient_ZLIBDecompress_Params params;
-	params.CompressedData = CompressedData;
-	params.CompressedSize = CompressedSize;
-	params.UnCompressedSize = UnCompressedSize;
-	params.IsHEX = IsHEX;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Client.ScriptHelperClient.ZLIBCompress_LuaState
-// (Final, Native, Static, Public)
-// Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-int UScriptHelperClient::ZLIBCompress_LuaState()
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ZLIBCompress_LuaState");
-
-	UScriptHelperClient_ZLIBCompress_LuaState_Params params;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function Client.ScriptHelperClient.WakeupFromSuspendSound
 // (Final, Native, Static, Public, BlueprintCallable)
 
 void UScriptHelperClient::WakeupFromSuspendSound()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.WakeupFromSuspendSound");
 
@@ -16251,7 +16197,7 @@ void UScriptHelperClient::WakeupFromSuspendSound()
 
 int UScriptHelperClient::VPNTearDown()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNTearDown");
 
@@ -16279,7 +16225,7 @@ int UScriptHelperClient::VPNTearDown()
 
 int UScriptHelperClient::VPNSetUserInfo(const struct FString& InUserId, const struct FString& InUserToken, const struct FString& InAppId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNSetUserInfo");
 
@@ -16309,7 +16255,7 @@ int UScriptHelperClient::VPNSetUserInfo(const struct FString& InUserId, const st
 
 int UScriptHelperClient::VPNSetPortRange(int Min, int Max)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNSetPortRange");
 
@@ -16337,7 +16283,7 @@ int UScriptHelperClient::VPNSetPortRange(int Min, int Max)
 
 int UScriptHelperClient::VPNSetNodelist(const struct FString& InNodelist)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNSetNodelist");
 
@@ -16363,7 +16309,7 @@ int UScriptHelperClient::VPNSetNodelist(const struct FString& InNodelist)
 
 int UScriptHelperClient::VPNPrepare()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNPrepare");
 
@@ -16388,7 +16334,7 @@ int UScriptHelperClient::VPNPrepare()
 
 int UScriptHelperClient::VPNHandUp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNHandUp");
 
@@ -16413,7 +16359,7 @@ int UScriptHelperClient::VPNHandUp()
 
 struct FString UScriptHelperClient::VPNGetNodeRegionList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNGetNodeRegionList");
 
@@ -16439,7 +16385,7 @@ struct FString UScriptHelperClient::VPNGetNodeRegionList()
 
 int UScriptHelperClient::VPNDialUp(const struct FString& InRegion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VPNDialUp");
 
@@ -16465,7 +16411,7 @@ int UScriptHelperClient::VPNDialUp(const struct FString& InRegion)
 
 void UScriptHelperClient::Vibrate(int Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.Vibrate");
 
@@ -16493,7 +16439,7 @@ void UScriptHelperClient::Vibrate(int Param)
 
 bool UScriptHelperClient::VerifySavFileData(int CompressedSize, int UnCompressedSize, int ToCheckEndWithCDLength, TArray<unsigned char>* ByteArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.VerifySavFileData");
 
@@ -16524,7 +16470,7 @@ bool UScriptHelperClient::VerifySavFileData(int CompressedSize, int UnCompressed
 
 bool UScriptHelperClient::USFSIsNewestVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSIsNewestVersion");
 
@@ -16549,7 +16495,7 @@ bool UScriptHelperClient::USFSIsNewestVersion()
 
 TArray<struct FString> UScriptHelperClient::USFSGetUpgradeDiffList()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSGetUpgradeDiffList");
 
@@ -16574,7 +16520,7 @@ TArray<struct FString> UScriptHelperClient::USFSGetUpgradeDiffList()
 
 void UScriptHelperClient::USFSDeletePkg_V2(const struct FString& PkgOrig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSDeletePkg_V2");
 
@@ -16598,7 +16544,7 @@ void UScriptHelperClient::USFSDeletePkg_V2(const struct FString& PkgOrig)
 
 void UScriptHelperClient::USFSDeletePkg(const struct FString& PkgOrig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSDeletePkg");
 
@@ -16622,7 +16568,7 @@ void UScriptHelperClient::USFSDeletePkg(const struct FString& PkgOrig)
 
 void UScriptHelperClient::USFSCacheSysContextUpdatePkgPatch(TMap<struct FString, int> PkgPaths)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextUpdatePkgPatch");
 
@@ -16646,7 +16592,7 @@ void UScriptHelperClient::USFSCacheSysContextUpdatePkgPatch(TMap<struct FString,
 
 void UScriptHelperClient::USFSCacheSysContextUpdatePkgDiff(TArray<struct FString> PkgDiffPaths)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextUpdatePkgDiff");
 
@@ -16670,7 +16616,7 @@ void UScriptHelperClient::USFSCacheSysContextUpdatePkgDiff(TArray<struct FString
 
 void UScriptHelperClient::USFSCacheSysContextUpdatePkgBinDiff(TArray<struct FString> PkgDiffPaths)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextUpdatePkgBinDiff");
 
@@ -16694,7 +16640,7 @@ void UScriptHelperClient::USFSCacheSysContextUpdatePkgBinDiff(TArray<struct FStr
 
 void UScriptHelperClient::USFSCacheSysContextUpdatePkg(TArray<struct FString> PkgPaths)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextUpdatePkg");
 
@@ -16718,7 +16664,7 @@ void UScriptHelperClient::USFSCacheSysContextUpdatePkg(TArray<struct FString> Pk
 
 void UScriptHelperClient::USFSCacheSysContextSwitchWrite(bool bSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextSwitchWrite");
 
@@ -16742,7 +16688,7 @@ void UScriptHelperClient::USFSCacheSysContextSwitchWrite(bool bSwitch)
 
 void UScriptHelperClient::USFSCacheSysContextSwitchAll(bool bSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextSwitchAll");
 
@@ -16764,7 +16710,7 @@ void UScriptHelperClient::USFSCacheSysContextSwitchAll(bool bSwitch)
 
 void UScriptHelperClient::USFSCacheSysContextStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextStart");
 
@@ -16787,7 +16733,7 @@ void UScriptHelperClient::USFSCacheSysContextStart()
 
 void UScriptHelperClient::USFSCacheSysContextChangePkgName(TArray<struct FString> PkgChgInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContextChangePkgName");
 
@@ -16811,7 +16757,7 @@ void UScriptHelperClient::USFSCacheSysContextChangePkgName(TArray<struct FString
 
 void UScriptHelperClient::USFSCacheSysContexInit(TMap<struct FString, struct FString> PkgNameToConHash)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.USFSCacheSysContexInit");
 
@@ -16835,7 +16781,7 @@ void UScriptHelperClient::USFSCacheSysContexInit(TMap<struct FString, struct FSt
 
 struct FString UScriptHelperClient::UserName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UserName");
 
@@ -16861,7 +16807,7 @@ struct FString UScriptHelperClient::UserName()
 
 struct FString UScriptHelperClient::UrlEncode(const struct FString& UnencodedString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UrlEncode");
 
@@ -16887,7 +16833,7 @@ struct FString UScriptHelperClient::UrlEncode(const struct FString& UnencodedStr
 
 void UScriptHelperClient::UQMSetAppVersion(const struct FString& Version)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UQMSetAppVersion");
 
@@ -16912,7 +16858,7 @@ void UScriptHelperClient::UQMSetAppVersion(const struct FString& Version)
 
 void UScriptHelperClient::UQMCrashPutUserData(const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UQMCrashPutUserData");
 
@@ -16941,7 +16887,7 @@ void UScriptHelperClient::UQMCrashPutUserData(const struct FString& Key, const s
 
 void UScriptHelperClient::UQMCrashPostExceptionFull(int Category, const struct FString& Name, const struct FString& Msg, const struct FString& stack, int dumpNativeType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UQMCrashPostExceptionFull");
 
@@ -16971,7 +16917,7 @@ void UScriptHelperClient::UQMCrashPostExceptionFull(int Category, const struct F
 
 void UScriptHelperClient::UQMCrashPostException(int Category, const struct FString& Reason, int dumpNativeType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UQMCrashPostException");
 
@@ -17000,7 +16946,7 @@ void UScriptHelperClient::UQMCrashPostException(int Category, const struct FStri
 
 void UScriptHelperClient::UQMCrashLog(int Level, const struct FString& Tag, const struct FString& Log, bool needDump)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UQMCrashLog");
 
@@ -17025,7 +16971,7 @@ void UScriptHelperClient::UQMCrashLog(int Level, const struct FString& Tag, cons
 
 void UScriptHelperClient::UploadGainCrashLogBackground()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UploadGainCrashLogBackground");
 
@@ -17046,7 +16992,7 @@ void UScriptHelperClient::UploadGainCrashLogBackground()
 
 void UScriptHelperClient::UpdateServerTimeInSec()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UpdateServerTimeInSec");
 
@@ -17067,7 +17013,7 @@ void UScriptHelperClient::UpdateServerTimeInSec()
 
 void UScriptHelperClient::UpdatePublishRegionForBattle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UpdatePublishRegionForBattle");
 
@@ -17092,7 +17038,7 @@ void UScriptHelperClient::UpdatePublishRegionForBattle()
 
 bool UScriptHelperClient::UpdatePkgCompressionInfo(TArray<struct FString> PkgList, const struct FString& CompressMethod)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UpdatePkgCompressionInfo");
 
@@ -17120,7 +17066,7 @@ bool UScriptHelperClient::UpdatePkgCompressionInfo(TArray<struct FString> PkgLis
 
 void UScriptHelperClient::UpdateMemResource(const struct FString& ResType, const struct FString& KeyWord)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UpdateMemResource");
 
@@ -17145,7 +17091,7 @@ void UScriptHelperClient::UpdateMemResource(const struct FString& ResType, const
 
 void UScriptHelperClient::UpdateAkAudioDeviceBluetoothDelay(int InDelayTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UpdateAkAudioDeviceBluetoothDelay");
 
@@ -17169,7 +17115,7 @@ void UScriptHelperClient::UpdateAkAudioDeviceBluetoothDelay(int InDelayTime)
 
 void UScriptHelperClient::UnsubscribeFromTopic(const struct FString& Topic)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UnsubscribeFromTopic");
 
@@ -17194,7 +17140,7 @@ void UScriptHelperClient::UnsubscribeFromTopic(const struct FString& Topic)
 
 bool UScriptHelperClient::UnmountPakFile(const struct FString& InPakFilename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UnmountPakFile");
 
@@ -17218,7 +17164,7 @@ bool UScriptHelperClient::UnmountPakFile(const struct FString& InPakFilename)
 
 void UScriptHelperClient::UnmapUnusedMap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UnmapUnusedMap");
 
@@ -17243,7 +17189,7 @@ void UScriptHelperClient::UnmapUnusedMap()
 
 void UScriptHelperClient::UnitTestODPaksOpen(int fileCount, int Times, int threadNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.UnitTestODPaksOpen");
 
@@ -17267,7 +17213,7 @@ void UScriptHelperClient::UnitTestODPaksOpen(int fileCount, int Times, int threa
 
 void UScriptHelperClient::TVMacroTesting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TVMacroTesting");
 
@@ -17288,7 +17234,7 @@ void UScriptHelperClient::TVMacroTesting()
 
 void UScriptHelperClient::TrimEngineMemory()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TrimEngineMemory");
 
@@ -17313,7 +17259,7 @@ void UScriptHelperClient::TrimEngineMemory()
 
 void UScriptHelperClient::TriggerTouchEvent(float X, float Y, int event_type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TriggerTouchEvent");
 
@@ -17339,7 +17285,7 @@ void UScriptHelperClient::TriggerTouchEvent(float X, float Y, int event_type)
 
 void UScriptHelperClient::TriggerTestCmd(const struct FString& Cmd)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TriggerTestCmd");
 
@@ -17361,7 +17307,7 @@ void UScriptHelperClient::TriggerTestCmd(const struct FString& Cmd)
 
 void UScriptHelperClient::TriggerOOMCrash()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TriggerOOMCrash");
 
@@ -17386,7 +17332,7 @@ void UScriptHelperClient::TriggerOOMCrash()
 
 void UScriptHelperClient::TriggerNativeDump(int DumpCount, double Timespan, int NativeDumpType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TriggerNativeDump");
 
@@ -17412,7 +17358,7 @@ void UScriptHelperClient::TriggerNativeDump(int DumpCount, double Timespan, int 
 
 void UScriptHelperClient::TriggerLoginCrashTest(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TriggerLoginCrashTest");
 
@@ -17436,7 +17382,7 @@ void UScriptHelperClient::TriggerLoginCrashTest(int Type)
 
 void UScriptHelperClient::TriggerLobbyCrashTest(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TriggerLobbyCrashTest");
 
@@ -17458,7 +17404,7 @@ void UScriptHelperClient::TriggerLobbyCrashTest(int Type)
 
 void UScriptHelperClient::TriggerBlockAndroidANR()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TriggerBlockAndroidANR");
 
@@ -17483,7 +17429,7 @@ void UScriptHelperClient::TriggerBlockAndroidANR()
 
 void UScriptHelperClient::TPerforPlatReport(int Type, const struct FString& ExtraInfo, bool Send)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TPerforPlatReport");
 
@@ -17511,7 +17457,7 @@ void UScriptHelperClient::TPerforPlatReport(int Type, const struct FString& Extr
 
 void UScriptHelperClient::TPerforPlatPostLargeValueS(const struct FString& catgory, const struct FString& Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TPerforPlatPostLargeValueS");
 
@@ -17537,7 +17483,7 @@ void UScriptHelperClient::TPerforPlatPostLargeValueS(const struct FString& catgo
 
 void UScriptHelperClient::TPerforPlatMarkTime(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TPerforPlatMarkTime");
 
@@ -17562,7 +17508,7 @@ void UScriptHelperClient::TPerforPlatMarkTime(int Type)
 
 void UScriptHelperClient::TPerforPlatMarkLevelLoad(const struct FString& SceneName, int DeviceLevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TPerforPlatMarkLevelLoad");
 
@@ -17585,7 +17531,7 @@ void UScriptHelperClient::TPerforPlatMarkLevelLoad(const struct FString& SceneNa
 
 void UScriptHelperClient::TPerforPlatMarkLevelFin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TPerforPlatMarkLevelFin");
 
@@ -17609,7 +17555,7 @@ void UScriptHelperClient::TPerforPlatMarkLevelFin()
 
 void UScriptHelperClient::TPerforPlatDisconnectReport(class UGameFrontendHUD* GameFrontendHUD, int EventID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TPerforPlatDisconnectReport");
 
@@ -17636,7 +17582,7 @@ void UScriptHelperClient::TPerforPlatDisconnectReport(class UGameFrontendHUD* Ga
 
 void UScriptHelperClient::TPerforPlatDataReport(class UGameFrontendHUD* GameFrontendHUD, int EventID, const struct FString& EventInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TPerforPlatDataReport");
 
@@ -17662,7 +17608,7 @@ void UScriptHelperClient::TPerforPlatDataReport(class UGameFrontendHUD* GameFron
 
 void UScriptHelperClient::TMFPSwitchRichTapMode(const struct FString& Mode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TMFPSwitchRichTapMode");
 
@@ -17684,7 +17630,7 @@ void UScriptHelperClient::TMFPSwitchRichTapMode(const struct FString& Mode)
 
 void UScriptHelperClient::TMFPStopRichTap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TMFPStopRichTap");
 
@@ -17708,7 +17654,7 @@ void UScriptHelperClient::TMFPStopRichTap()
 
 void UScriptHelperClient::TMFPStartRichTapWithData(const struct FString& InKey, TMap<struct FString, struct FString> InMapData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TMFPStartRichTapWithData");
 
@@ -17733,7 +17679,7 @@ void UScriptHelperClient::TMFPStartRichTapWithData(const struct FString& InKey, 
 
 void UScriptHelperClient::TMFPStartRichTap(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TMFPStartRichTap");
 
@@ -17758,7 +17704,7 @@ void UScriptHelperClient::TMFPStartRichTap(const struct FString& Filename)
 
 struct FString UScriptHelperClient::TMFPLoadHeFile(const struct FString& StrFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TMFPLoadHeFile");
 
@@ -17784,7 +17730,7 @@ struct FString UScriptHelperClient::TMFPLoadHeFile(const struct FString& StrFile
 
 struct FString UScriptHelperClient::TMFPGetRichTapSupport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TMFPGetRichTapSupport");
 
@@ -17809,7 +17755,7 @@ struct FString UScriptHelperClient::TMFPGetRichTapSupport()
 
 struct FString UScriptHelperClient::TMFPGetRichTapAmplitudeSupport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TMFPGetRichTapAmplitudeSupport");
 
@@ -17836,7 +17782,7 @@ struct FString UScriptHelperClient::TMFPGetRichTapAmplitudeSupport()
 
 void UScriptHelperClient::TestSaveStringToFile(const struct FString& String, const struct FString& TargetDir, const struct FString& FullPathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TestSaveStringToFile");
 
@@ -17860,7 +17806,7 @@ void UScriptHelperClient::TestSaveStringToFile(const struct FString& String, con
 
 void UScriptHelperClient::TestLoadGameSlotMultiThread()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TestLoadGameSlotMultiThread");
 
@@ -17881,7 +17827,7 @@ void UScriptHelperClient::TestLoadGameSlotMultiThread()
 
 void UScriptHelperClient::TestLoadGameSlot()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TestLoadGameSlot");
 
@@ -17906,7 +17852,7 @@ void UScriptHelperClient::TestLoadGameSlot()
 
 uint64_t UScriptHelperClient::TestCallCvmFuncWithVarArg(int FuncID, TArray<struct FString> Arguments)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.TestCallCvmFuncWithVarArg");
 
@@ -17933,7 +17879,7 @@ uint64_t UScriptHelperClient::TestCallCvmFuncWithVarArg(int FuncID, TArray<struc
 
 int UScriptHelperClient::Tea2Encrypt_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.Tea2Encrypt_LuaState");
 
@@ -17958,7 +17904,7 @@ int UScriptHelperClient::Tea2Encrypt_LuaState()
 
 int UScriptHelperClient::Tea2Decrypt_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.Tea2Decrypt_LuaState");
 
@@ -17983,7 +17929,7 @@ int UScriptHelperClient::Tea2Decrypt_LuaState()
 
 struct FString UScriptHelperClient::SystemLanguageId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SystemLanguageId");
 
@@ -18008,7 +17954,7 @@ struct FString UScriptHelperClient::SystemLanguageId()
 
 void UScriptHelperClient::SyncLoadPackageUpdateCurrentWorldStage(const struct FString& WorldStage)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SyncLoadPackageUpdateCurrentWorldStage");
 
@@ -18032,7 +17978,7 @@ void UScriptHelperClient::SyncLoadPackageUpdateCurrentWorldStage(const struct FS
 
 void UScriptHelperClient::SyncLoadPackageUpdateCurrentWorldName(const struct FString& WorldName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SyncLoadPackageUpdateCurrentWorldName");
 
@@ -18057,7 +18003,7 @@ void UScriptHelperClient::SyncLoadPackageUpdateCurrentWorldName(const struct FSt
 
 void UScriptHelperClient::SyncLoadPackageInfoCollect(const struct FString& PackageName, const struct FString& WorldName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SyncLoadPackageInfoCollect");
 
@@ -18083,7 +18029,7 @@ void UScriptHelperClient::SyncLoadPackageInfoCollect(const struct FString& Packa
 
 TArray<struct FString> UScriptHelperClient::SyncLoadPackageGetPackageListForWorld(const struct FString& WorldName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SyncLoadPackageGetPackageListForWorld");
 
@@ -18107,7 +18053,7 @@ TArray<struct FString> UScriptHelperClient::SyncLoadPackageGetPackageListForWorl
 
 void UScriptHelperClient::SyncLoadInfoCollector_Reset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SyncLoadInfoCollector_Reset");
 
@@ -18128,7 +18074,7 @@ void UScriptHelperClient::SyncLoadInfoCollector_Reset()
 
 void UScriptHelperClient::SyncLoadInfoCollector_OnLevelStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SyncLoadInfoCollector_OnLevelStart");
 
@@ -18149,7 +18095,7 @@ void UScriptHelperClient::SyncLoadInfoCollector_OnLevelStart()
 
 void UScriptHelperClient::SyncLoadInfoCollector_OnLevelEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SyncLoadInfoCollector_OnLevelEnd");
 
@@ -18173,7 +18119,7 @@ void UScriptHelperClient::SyncLoadInfoCollector_OnLevelEnd()
 
 void UScriptHelperClient::SwitchUser(bool useExternalAccount, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SwitchUser");
 
@@ -18203,7 +18149,7 @@ void UScriptHelperClient::SwitchUser(bool useExternalAccount, TScriptInterface<c
 
 void UScriptHelperClient::SwitchSceneCamera(class UGameFrontendHUD* GameFrontendHUD, const struct FString& SceneCameraName, float BlendTime, bool bForce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SwitchSceneCamera");
 
@@ -18228,7 +18174,7 @@ void UScriptHelperClient::SwitchSceneCamera(class UGameFrontendHUD* GameFrontend
 
 void UScriptHelperClient::SwitchOutputDeviceFileLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SwitchOutputDeviceFileLog");
 
@@ -18251,7 +18197,7 @@ void UScriptHelperClient::SwitchOutputDeviceFileLog()
 
 void UScriptHelperClient::SwitchMapMangedTickProfile(int MapID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SwitchMapMangedTickProfile");
 
@@ -18273,7 +18219,7 @@ void UScriptHelperClient::SwitchMapMangedTickProfile(int MapID)
 
 void UScriptHelperClient::SuspendSound()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SuspendSound");
 
@@ -18294,7 +18240,7 @@ void UScriptHelperClient::SuspendSound()
 
 void UScriptHelperClient::SuppressSwap()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SuppressSwap");
 
@@ -18317,7 +18263,7 @@ void UScriptHelperClient::SuppressSwap()
 
 void UScriptHelperClient::SubscribeToTopic(const struct FString& Topic)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SubscribeToTopic");
 
@@ -18342,7 +18288,7 @@ void UScriptHelperClient::SubscribeToTopic(const struct FString& Topic)
 
 struct FString UScriptHelperClient::StringToJsonString(const struct FString& String)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StringToJsonString");
 
@@ -18369,7 +18315,7 @@ struct FString UScriptHelperClient::StringToJsonString(const struct FString& Str
 
 struct FMargin UScriptHelperClient::StringToFMargin(const struct FString& MarginStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StringToFMargin");
 
@@ -18396,7 +18342,7 @@ struct FMargin UScriptHelperClient::StringToFMargin(const struct FString& Margin
 
 void UScriptHelperClient::StopUIStat(const struct FString& UIName, bool bReport)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopUIStat");
 
@@ -18421,7 +18367,7 @@ void UScriptHelperClient::StopUIStat(const struct FString& UIName, bool bReport)
 
 struct FTouchInputRecord UScriptHelperClient::StopTouchRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopTouchRecord");
 
@@ -18448,7 +18394,7 @@ struct FTouchInputRecord UScriptHelperClient::StopTouchRecord()
 
 bool UScriptHelperClient::StopTask(class UGameFrontendHUD* GameFrontendHUD, uint64_t TaskId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopTask");
 
@@ -18475,7 +18421,7 @@ bool UScriptHelperClient::StopTask(class UGameFrontendHUD* GameFrontendHUD, uint
 
 bool UScriptHelperClient::StopShaderPrecompile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopShaderPrecompile");
 
@@ -18500,7 +18446,7 @@ bool UScriptHelperClient::StopShaderPrecompile()
 
 void UScriptHelperClient::StopPuffer(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopPuffer");
 
@@ -18522,7 +18468,7 @@ void UScriptHelperClient::StopPuffer(class UGameFrontendHUD* GameFrontendHUD)
 
 void UScriptHelperClient::StopMonitorFileModified()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopMonitorFileModified");
 
@@ -18543,7 +18489,7 @@ void UScriptHelperClient::StopMonitorFileModified()
 
 void UScriptHelperClient::StopHapticsEngine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopHapticsEngine");
 
@@ -18564,7 +18510,7 @@ void UScriptHelperClient::StopHapticsEngine()
 
 void UScriptHelperClient::StopH5Downloading()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StopH5Downloading");
 
@@ -18587,7 +18533,7 @@ void UScriptHelperClient::StopH5Downloading()
 
 void UScriptHelperClient::StartUIStat(const struct FString& UIName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartUIStat");
 
@@ -18615,7 +18561,7 @@ void UScriptHelperClient::StartUIStat(const struct FString& UIName)
 
 void UScriptHelperClient::StartTrace(const struct FString& InHost, int InStartTTL, int InMaxTTL, int InCount, const struct FString& InExtraData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartTrace");
 
@@ -18641,7 +18587,7 @@ void UScriptHelperClient::StartTrace(const struct FString& InHost, int InStartTT
 
 void UScriptHelperClient::StartTouchRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartTouchRecord");
 
@@ -18664,7 +18610,7 @@ void UScriptHelperClient::StartTouchRecord()
 
 bool UScriptHelperClient::StartShaderPrecompile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartShaderPrecompile");
 
@@ -18690,7 +18636,7 @@ bool UScriptHelperClient::StartShaderPrecompile()
 
 void UScriptHelperClient::StartOpenReadCollect(class UGameFrontendHUD* GameFrontendHUD, bool bStart)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartOpenReadCollect");
 
@@ -18716,7 +18662,7 @@ void UScriptHelperClient::StartOpenReadCollect(class UGameFrontendHUD* GameFront
 
 void UScriptHelperClient::StartMonitorFileModified(const struct FString& Filename, int Mask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartMonitorFileModified");
 
@@ -18741,7 +18687,7 @@ void UScriptHelperClient::StartMonitorFileModified(const struct FString& Filenam
 
 void UScriptHelperClient::StartHapticsEngine(const struct FScriptDelegate& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartHapticsEngine");
 
@@ -18766,7 +18712,7 @@ void UScriptHelperClient::StartHapticsEngine(const struct FScriptDelegate& Callb
 
 bool UScriptHelperClient::StartGrayUpdate(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartGrayUpdate");
 
@@ -18794,7 +18740,7 @@ bool UScriptHelperClient::StartGrayUpdate(class UGameFrontendHUD* GameFrontendHU
 
 void UScriptHelperClient::StartDownloadItem(uint32_t ItemId, uint32_t Priority, const struct FScriptDelegate& OnItemDownloadDelegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartDownloadItem");
 
@@ -18820,7 +18766,7 @@ void UScriptHelperClient::StartDownloadItem(uint32_t ItemId, uint32_t Priority, 
 
 void UScriptHelperClient::StartDolphinResourceUpdate(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartDolphinResourceUpdate");
 
@@ -18844,7 +18790,7 @@ void UScriptHelperClient::StartDolphinResourceUpdate(class UGameFrontendHUD* Gam
 
 void UScriptHelperClient::StartCDNUpdateAfterDolphinUpdateFailed(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartCDNUpdateAfterDolphinUpdateFailed");
 
@@ -18870,7 +18816,7 @@ void UScriptHelperClient::StartCDNUpdateAfterDolphinUpdateFailed(class UGameFron
 
 void UScriptHelperClient::StartBatchDownloadItem(uint32_t Priority, const struct FScriptDelegate& OnBatchItemDownloadDelegate, TArray<uint32_t>* ItemIDs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.StartBatchDownloadItem");
 
@@ -18899,7 +18845,7 @@ void UScriptHelperClient::StartBatchDownloadItem(uint32_t Priority, const struct
 
 void UScriptHelperClient::SimpleXOREncryptDecrypt(unsigned char Key, TArray<unsigned char>* Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SimpleXOREncryptDecrypt");
 
@@ -18926,7 +18872,7 @@ void UScriptHelperClient::SimpleXOREncryptDecrypt(unsigned char Key, TArray<unsi
 
 void UScriptHelperClient::ShutdownUnrealNetwork(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShutdownUnrealNetwork");
 
@@ -18950,7 +18896,7 @@ void UScriptHelperClient::ShutdownUnrealNetwork(class UGameFrontendHUD* GameFron
 
 void UScriptHelperClient::ShutdownPuffer(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShutdownPuffer");
 
@@ -18972,7 +18918,7 @@ void UScriptHelperClient::ShutdownPuffer(class UGameFrontendHUD* GameFrontendHUD
 
 void UScriptHelperClient::ShrinkUObjectHashTables()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShrinkUObjectHashTables");
 
@@ -18993,7 +18939,7 @@ void UScriptHelperClient::ShrinkUObjectHashTables()
 
 void UScriptHelperClient::ShrinkDrawBuffer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShrinkDrawBuffer");
 
@@ -19016,7 +18962,7 @@ void UScriptHelperClient::ShrinkDrawBuffer()
 
 void UScriptHelperClient::ShowWebView(bool Show)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShowWebView");
 
@@ -19041,7 +18987,7 @@ void UScriptHelperClient::ShowWebView(bool Show)
 
 void UScriptHelperClient::ShowVLink(const struct FString& jsonString, const struct FString& signString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShowVLink");
 
@@ -19064,7 +19010,7 @@ void UScriptHelperClient::ShowVLink(const struct FString& jsonString, const stru
 
 void UScriptHelperClient::ShowVideoListDialog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShowVideoListDialog");
 
@@ -19087,7 +19033,7 @@ void UScriptHelperClient::ShowVideoListDialog()
 
 void UScriptHelperClient::ShowScreenDebugMessage(const struct FString& Message)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShowScreenDebugMessage");
 
@@ -19109,7 +19055,7 @@ void UScriptHelperClient::ShowScreenDebugMessage(const struct FString& Message)
 
 void UScriptHelperClient::ShowH5WebView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShowH5WebView");
 
@@ -19132,7 +19078,7 @@ void UScriptHelperClient::ShowH5WebView()
 
 void UScriptHelperClient::ShorterStreamingDistanceWhenGameEnd(uint32_t Distance)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShorterStreamingDistanceWhenGameEnd");
 
@@ -19162,7 +19108,7 @@ void UScriptHelperClient::ShorterStreamingDistanceWhenGameEnd(uint32_t Distance)
 
 void UScriptHelperClient::ShareWithPhotoByChannel(const struct FString& _messageExt, const struct FString& _imgPath, const struct FString& _mediaTagName, const struct FString& _url, const struct FString& _messageAction, int _channel, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShareWithPhotoByChannel");
 
@@ -19194,7 +19140,7 @@ void UScriptHelperClient::ShareWithPhotoByChannel(const struct FString& _message
 
 void UScriptHelperClient::ShareLogFile(const struct FString& InLogFileName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ShareLogFile");
 
@@ -19219,7 +19165,7 @@ void UScriptHelperClient::ShareLogFile(const struct FString& InLogFileName)
 
 struct FString UScriptHelperClient::SHA256Bytes(TArray<unsigned char> inArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SHA256Bytes");
 
@@ -19246,7 +19192,7 @@ struct FString UScriptHelperClient::SHA256Bytes(TArray<unsigned char> inArray)
 
 struct FString UScriptHelperClient::SHA256(const struct FString& str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SHA256");
 
@@ -19273,7 +19219,7 @@ struct FString UScriptHelperClient::SHA256(const struct FString& str)
 
 struct FString UScriptHelperClient::SHA1(const struct FString& str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SHA1");
 
@@ -19302,7 +19248,7 @@ struct FString UScriptHelperClient::SHA1(const struct FString& str)
 
 void UScriptHelperClient::SetWebviewPosition(int X, int Y, int W, int H)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetWebviewPosition");
 
@@ -19329,7 +19275,7 @@ void UScriptHelperClient::SetWebviewPosition(int X, int Y, int W, int H)
 
 void UScriptHelperClient::SetWebViewCacheInfoDelegate(const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetWebViewCacheInfoDelegate");
 
@@ -19355,7 +19301,7 @@ void UScriptHelperClient::SetWebViewCacheInfoDelegate(const struct FScriptDelega
 
 bool UScriptHelperClient::SetVpnServiceStrategy(const struct FString& InKey, int InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetVpnServiceStrategy");
 
@@ -19385,7 +19331,7 @@ bool UScriptHelperClient::SetVpnServiceStrategy(const struct FString& InKey, int
 
 void UScriptHelperClient::SetVoiceSwitch(class UGameFrontendHUD* GameFrontendHUD, bool FirstVoicePopupSwitch, bool GDPRForbidVoiceSwitch, bool GDPRSettingSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetVoiceSwitch");
 
@@ -19414,7 +19360,7 @@ void UScriptHelperClient::SetVoiceSwitch(class UGameFrontendHUD* GameFrontendHUD
 
 void UScriptHelperClient::SetVoiceReEneterInfo(class UGameFrontendHUD* GameFrontendHUD, float Duration, int MaxCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetVoiceReEneterInfo");
 
@@ -19440,7 +19386,7 @@ void UScriptHelperClient::SetVoiceReEneterInfo(class UGameFrontendHUD* GameFront
 
 void UScriptHelperClient::SetUserVulkanSetting(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUserVulkanSetting");
 
@@ -19464,7 +19410,7 @@ void UScriptHelperClient::SetUserVulkanSetting(bool Enable)
 
 void UScriptHelperClient::SetUserTMFPTapEnableFlag(int EnableFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUserTMFPTapEnableFlag");
 
@@ -19489,7 +19435,7 @@ void UScriptHelperClient::SetUserTMFPTapEnableFlag(int EnableFlag)
 
 void UScriptHelperClient::SetUserProperty(const struct FString& propertyKey, const struct FString& propertyValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUserProperty");
 
@@ -19514,7 +19460,7 @@ void UScriptHelperClient::SetUserProperty(const struct FString& propertyKey, con
 
 void UScriptHelperClient::SetUseMouseForTouch(bool bUse)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUseMouseForTouch");
 
@@ -19540,7 +19486,7 @@ void UScriptHelperClient::SetUseMouseForTouch(bool bUse)
 
 bool UScriptHelperClient::SetUpdatedSoPatchFile(const struct FString& InSourceFile, int InABI)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUpdatedSoPatchFile");
 
@@ -19565,7 +19511,7 @@ bool UScriptHelperClient::SetUpdatedSoPatchFile(const struct FString& InSourceFi
 
 void UScriptHelperClient::SetupAkAudioDeviceListener()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetupAkAudioDeviceListener");
 
@@ -19588,7 +19534,7 @@ void UScriptHelperClient::SetupAkAudioDeviceListener()
 
 void UScriptHelperClient::SetUIStatMaxClickTimes(int Times)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUIStatMaxClickTimes");
 
@@ -19612,7 +19558,7 @@ void UScriptHelperClient::SetUIStatMaxClickTimes(int Times)
 
 void UScriptHelperClient::SetUIRectOffset(const struct FString& uirect)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUIRectOffset");
 
@@ -19637,7 +19583,7 @@ void UScriptHelperClient::SetUIRectOffset(const struct FString& uirect)
 
 void UScriptHelperClient::SetUIElemLayoutJsonConfigSwitch(class UGameFrontendHUD* GameFrontendHUD, bool UIElemLayoutJsonConfigSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUIElemLayoutJsonConfigSwitch");
 
@@ -19662,7 +19608,7 @@ void UScriptHelperClient::SetUIElemLayoutJsonConfigSwitch(class UGameFrontendHUD
 
 void UScriptHelperClient::SetUIConfigTMFPTapEnableFlag(int uiEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUIConfigTMFPTapEnableFlag");
 
@@ -19687,7 +19633,7 @@ void UScriptHelperClient::SetUIConfigTMFPTapEnableFlag(int uiEnable)
 
 void UScriptHelperClient::SetUDPPingControlFlag(int Lock, int BindType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetUDPPingControlFlag");
 
@@ -19713,7 +19659,7 @@ void UScriptHelperClient::SetUDPPingControlFlag(int Lock, int BindType)
 
 void UScriptHelperClient::SetTssNetworkStatus(class UGameFrontendHUD* GameFrontendHUD, int status)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetTssNetworkStatus");
 
@@ -19738,7 +19684,7 @@ void UScriptHelperClient::SetTssNetworkStatus(class UGameFrontendHUD* GameFronte
 
 void UScriptHelperClient::SetTMFPTapWhiteListFlag(int TapWhiteList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetTMFPTapWhiteListFlag");
 
@@ -19763,7 +19709,7 @@ void UScriptHelperClient::SetTMFPTapWhiteListFlag(int TapWhiteList)
 
 void UScriptHelperClient::SetTextureGroupLODBias(unsigned char GroupID, int MipBias)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetTextureGroupLODBias");
 
@@ -19791,7 +19737,7 @@ void UScriptHelperClient::SetTextureGroupLODBias(unsigned char GroupID, int MipB
 
 void UScriptHelperClient::SetTestEditorNum(int PlayerCount, const struct FString& Num, const struct FString& SceneName, int Platform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetTestEditorNum");
 
@@ -19819,7 +19765,7 @@ void UScriptHelperClient::SetTestEditorNum(int PlayerCount, const struct FString
 
 bool UScriptHelperClient::SetSoundEffectQuality(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetSoundEffectQuality");
 
@@ -19846,7 +19792,7 @@ bool UScriptHelperClient::SetSoundEffectQuality(int Type)
 
 void UScriptHelperClient::SetShowFriendObservers(class UGameFrontendHUD* GameFrontendHUD, bool bShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetShowFriendObservers");
 
@@ -19871,7 +19817,7 @@ void UScriptHelperClient::SetShowFriendObservers(class UGameFrontendHUD* GameFro
 
 void UScriptHelperClient::SetServerTimeInSec(int64_t InServerTimeInSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetServerTimeInSec");
 
@@ -19896,7 +19842,7 @@ void UScriptHelperClient::SetServerTimeInSec(int64_t InServerTimeInSec)
 
 void UScriptHelperClient::SetSelfieSwitch(class UGameFrontendHUD* GameFrontendHUD, bool SelfieSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetSelfieSwitch");
 
@@ -19924,7 +19870,7 @@ void UScriptHelperClient::SetSelfieSwitch(class UGameFrontendHUD* GameFrontendHU
 
 int UScriptHelperClient::SetSdkIoctl(class UGameFrontendHUD* GameFrontendHUD, int request, struct FString* Token)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetSdkIoctl");
 
@@ -19955,7 +19901,7 @@ int UScriptHelperClient::SetSdkIoctl(class UGameFrontendHUD* GameFrontendHUD, in
 
 void UScriptHelperClient::SetReportBugSwitch(class UGameFrontendHUD* GameFrontendHUD, bool ReportBugSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetReportBugSwitch");
 
@@ -19981,7 +19927,7 @@ void UScriptHelperClient::SetReportBugSwitch(class UGameFrontendHUD* GameFronten
 
 void UScriptHelperClient::SetRemoteResource(class UObject* DescObj, struct FString* AssetId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetRemoteResource");
 
@@ -20009,7 +19955,7 @@ void UScriptHelperClient::SetRemoteResource(class UObject* DescObj, struct FStri
 
 void UScriptHelperClient::SetRegionNoByLua(int regionNo, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetRegionNoByLua");
 
@@ -20036,7 +19982,7 @@ void UScriptHelperClient::SetRegionNoByLua(int regionNo, TScriptInterface<class 
 
 void UScriptHelperClient::SetRedBloodSwitch(bool redBloodSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetRedBloodSwitch");
 
@@ -20061,7 +20007,7 @@ void UScriptHelperClient::SetRedBloodSwitch(bool redBloodSwitch)
 
 void UScriptHelperClient::SetPufferBuildInfo(const struct FString& PipeLineID, const struct FString& BuildNo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetPufferBuildInfo");
 
@@ -20086,7 +20032,7 @@ void UScriptHelperClient::SetPufferBuildInfo(const struct FString& PipeLineID, c
 
 void UScriptHelperClient::SetPublishRegion(const struct FString& Region)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetPublishRegion");
 
@@ -20114,7 +20060,7 @@ void UScriptHelperClient::SetPublishRegion(const struct FString& Region)
 
 void UScriptHelperClient::SetPlayerBaseInfo(class UGameFrontendHUD* GameFrontendHUD, const struct FString& OpenID, uint64_t RoleID, const struct FString& PlayerName, const struct FString& HeadIconUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetPlayerBaseInfo");
 
@@ -20145,7 +20091,7 @@ void UScriptHelperClient::SetPlayerBaseInfo(class UGameFrontendHUD* GameFrontend
 
 void UScriptHelperClient::SetNationSwitch(class UGameFrontendHUD* GameFrontendHUD, bool NationAllSwitch, bool NationBattleSwitch, bool NationRankSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetNationSwitch");
 
@@ -20173,7 +20119,7 @@ void UScriptHelperClient::SetNationSwitch(class UGameFrontendHUD* GameFrontendHU
 
 void UScriptHelperClient::SetMyFriendObserversDetail(class UGameFrontendHUD* GameFrontendHUD, TArray<struct FFriendObserver>* FriendObserversDetails)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetMyFriendObserversDetail");
 
@@ -20201,7 +20147,7 @@ void UScriptHelperClient::SetMyFriendObserversDetail(class UGameFrontendHUD* Gam
 
 void UScriptHelperClient::SetMiniGameFinalAwardResId(class UGameFrontendHUD* GameFrontendHUD, int AwardResId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetMiniGameFinalAwardResId");
 
@@ -20226,7 +20172,7 @@ void UScriptHelperClient::SetMiniGameFinalAwardResId(class UGameFrontendHUD* Gam
 
 void UScriptHelperClient::SetMatchNoAuthMode(bool bUsingNoAuth)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetMatchNoAuthMode");
 
@@ -20250,7 +20196,7 @@ void UScriptHelperClient::SetMatchNoAuthMode(bool bUsingNoAuth)
 
 void UScriptHelperClient::SetLuaFastGCMode(int Mode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetLuaFastGCMode");
 
@@ -20281,7 +20227,7 @@ void UScriptHelperClient::SetLuaFastGCMode(int Mode)
 
 bool UScriptHelperClient::SetLinkStyle(const struct FString& StyleName, int FontSize, const struct FString& FontPath, const struct FString& FontColor, bool ShowUnderline, const struct FString& PathHyperLinkNormalBrush, const struct FString& PathHyperLinkHoveredrBrush)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetLinkStyle");
 
@@ -20313,7 +20259,7 @@ bool UScriptHelperClient::SetLinkStyle(const struct FString& StyleName, int Font
 
 void UScriptHelperClient::SetLevelStreamingUnloadTimeslice(bool Enabled)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetLevelStreamingUnloadTimeslice");
 
@@ -20338,7 +20284,7 @@ void UScriptHelperClient::SetLevelStreamingUnloadTimeslice(bool Enabled)
 
 void UScriptHelperClient::SetLevelGamePlayLoadPriority(class ULevelStreaming* TargetLevel, int Priority)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetLevelGamePlayLoadPriority");
 
@@ -20363,7 +20309,7 @@ void UScriptHelperClient::SetLevelGamePlayLoadPriority(class ULevelStreaming* Ta
 
 void UScriptHelperClient::SetiTOPLbsDelay(int Delay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetiTOPLbsDelay");
 
@@ -20387,7 +20333,7 @@ void UScriptHelperClient::SetiTOPLbsDelay(int Delay)
 
 void UScriptHelperClient::SetIPRegion(int region_no)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetIPRegion");
 
@@ -20411,7 +20357,7 @@ void UScriptHelperClient::SetIPRegion(int region_no)
 
 void UScriptHelperClient::SetIosStuckEnableByServerConfig(int bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetIosStuckEnableByServerConfig");
 
@@ -20439,7 +20385,7 @@ void UScriptHelperClient::SetIosStuckEnableByServerConfig(int bEnable)
 
 void UScriptHelperClient::SetIOSBGDownloadAttribute(class UGameFrontendHUD* GameFrontendHUD, bool bEnableCellularAccess, bool bEnableResumeData, int nMinFileSize, int nMaxTasks)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetIOSBGDownloadAttribute");
 
@@ -20468,7 +20414,7 @@ void UScriptHelperClient::SetIOSBGDownloadAttribute(class UGameFrontendHUD* Game
 
 void UScriptHelperClient::SetImageVersionString(const struct FString& oldVersion, const struct FString& newVersion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetImageVersionString");
 
@@ -20498,7 +20444,7 @@ void UScriptHelperClient::SetImageVersionString(const struct FString& oldVersion
 
 bool UScriptHelperClient::SetImageStyle(const struct FString& StyleName, int ImageSize, const struct FString& ImagePath, const struct FString& ImageColor, bool bPreLoad)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetImageStyle");
 
@@ -20528,7 +20474,7 @@ bool UScriptHelperClient::SetImageStyle(const struct FString& StyleName, int Ima
 
 void UScriptHelperClient::SetIGProxyData(const struct FString& InJsonData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetIGProxyData");
 
@@ -20552,7 +20498,7 @@ void UScriptHelperClient::SetIGProxyData(const struct FString& InJsonData)
 
 void UScriptHelperClient::SetHapticsEngineEnable(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetHapticsEngineEnable");
 
@@ -20576,7 +20522,7 @@ void UScriptHelperClient::SetHapticsEngineEnable(bool bEnable)
 
 void UScriptHelperClient::SetGlobalRedBloodSwitch(bool redBloodSwitch)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetGlobalRedBloodSwitch");
 
@@ -20601,7 +20547,7 @@ void UScriptHelperClient::SetGlobalRedBloodSwitch(bool redBloodSwitch)
 
 void UScriptHelperClient::SetGDPRUserType(class UGameFrontendHUD* GameFrontendHUD, int GDPRUserType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetGDPRUserType");
 
@@ -20626,7 +20572,7 @@ void UScriptHelperClient::SetGDPRUserType(class UGameFrontendHUD* GameFrontendHU
 
 void UScriptHelperClient::SetGameThreadPriority(int NewPriority)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetGameThreadPriority");
 
@@ -20650,7 +20596,7 @@ void UScriptHelperClient::SetGameThreadPriority(int NewPriority)
 
 void UScriptHelperClient::SetGameThreadName(const struct FString& GameThreadName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetGameThreadName");
 
@@ -20675,7 +20621,7 @@ void UScriptHelperClient::SetGameThreadName(const struct FString& GameThreadName
 
 void UScriptHelperClient::SetGameStatusMap(class UGameFrontendHUD* GameFrontendHUD, TMap<struct FString, struct FString>* GameStatusMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetGameStatusMap");
 
@@ -20703,7 +20649,7 @@ void UScriptHelperClient::SetGameStatusMap(class UGameFrontendHUD* GameFrontendH
 
 void UScriptHelperClient::SetGameSrvID(class UGameFrontendHUD* GameFrontendHUD, int GameSrvID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetGameSrvID");
 
@@ -20728,7 +20674,7 @@ void UScriptHelperClient::SetGameSrvID(class UGameFrontendHUD* GameFrontendHUD, 
 
 void UScriptHelperClient::SetForceVulkanAvailable(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetForceVulkanAvailable");
 
@@ -20758,7 +20704,7 @@ void UScriptHelperClient::SetForceVulkanAvailable(bool Enable)
 
 bool UScriptHelperClient::SetFontStyle(const struct FString& StyleName, int FontSize, const struct FString& FontPath, const struct FString& FontColor, bool UseShadow, bool IsBold)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetFontStyle");
 
@@ -20789,7 +20735,7 @@ bool UScriptHelperClient::SetFontStyle(const struct FString& StyleName, int Font
 
 void UScriptHelperClient::SetFixPostLoadSubojbectsBugEnable(int Option)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetFixPostLoadSubojbectsBugEnable");
 
@@ -20813,7 +20759,7 @@ void UScriptHelperClient::SetFixPostLoadSubojbectsBugEnable(int Option)
 
 void UScriptHelperClient::SetFileHideKeywords(TArray<struct FString> Keywords)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetFileHideKeywords");
 
@@ -20837,7 +20783,7 @@ void UScriptHelperClient::SetFileHideKeywords(TArray<struct FString> Keywords)
 
 void UScriptHelperClient::SetExtraLocalizationMap(TMap<struct FString, struct FString> translationMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetExtraLocalizationMap");
 
@@ -20861,7 +20807,7 @@ void UScriptHelperClient::SetExtraLocalizationMap(TMap<struct FString, struct FS
 
 void UScriptHelperClient::SetExtraItemTableMappingByFix(TMap<int, struct FItemFixTableItem> ItemFixMap)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetExtraItemTableMappingByFix");
 
@@ -20887,7 +20833,7 @@ void UScriptHelperClient::SetExtraItemTableMappingByFix(TMap<int, struct FItemFi
 
 void UScriptHelperClient::SetEncryptKey(int KeyChainId, int KeyIndex, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetEncryptKey");
 
@@ -20914,7 +20860,7 @@ void UScriptHelperClient::SetEncryptKey(int KeyChainId, int KeyIndex, const stru
 
 void UScriptHelperClient::SetDynamicLevels(class UGameFrontendHUD* GameFrontendHUD, TArray<struct FString>* DynamicLevels)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetDynamicLevels");
 
@@ -20941,7 +20887,7 @@ void UScriptHelperClient::SetDynamicLevels(class UGameFrontendHUD* GameFrontendH
 
 void UScriptHelperClient::SetDumpShaderCompile(int iDumpVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetDumpShaderCompile");
 
@@ -20965,7 +20911,7 @@ void UScriptHelperClient::SetDumpShaderCompile(int iDumpVal)
 
 void UScriptHelperClient::SetDownLoadLanguageName(const struct FString& Language)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetDownLoadLanguageName");
 
@@ -20990,7 +20936,7 @@ void UScriptHelperClient::SetDownLoadLanguageName(const struct FString& Language
 
 bool UScriptHelperClient::SetDisableGyrSensor(bool InDisableSensor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetDisableGyrSensor");
 
@@ -21016,7 +20962,7 @@ bool UScriptHelperClient::SetDisableGyrSensor(bool InDisableSensor)
 
 void UScriptHelperClient::SetCrashContextReportLevel(int Level)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetCrashContextReportLevel");
 
@@ -21043,7 +20989,7 @@ void UScriptHelperClient::SetCrashContextReportLevel(int Level)
 
 void UScriptHelperClient::SetConfigString(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetConfigString");
 
@@ -21073,7 +21019,7 @@ void UScriptHelperClient::SetConfigString(const struct FString& IniFileName, con
 
 void UScriptHelperClient::SetConfigInt(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetConfigInt");
 
@@ -21103,7 +21049,7 @@ void UScriptHelperClient::SetConfigInt(const struct FString& IniFileName, const 
 
 void UScriptHelperClient::SetConfigBool(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName, bool Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetConfigBool");
 
@@ -21130,7 +21076,7 @@ void UScriptHelperClient::SetConfigBool(const struct FString& IniFileName, const
 
 int UScriptHelperClient::SetCentauriZoneID_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetCentauriZoneID_LuaState");
 
@@ -21155,7 +21101,7 @@ int UScriptHelperClient::SetCentauriZoneID_LuaState()
 
 void UScriptHelperClient::SetCentauriIDC(const struct FString& CentauriIdc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetCentauriIDC");
 
@@ -21180,7 +21126,7 @@ void UScriptHelperClient::SetCentauriIDC(const struct FString& CentauriIdc)
 
 void UScriptHelperClient::SetCanWatchEnemy(class UGameFrontendHUD* GameFrontendHUD, bool bCan)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetCanWatchEnemy");
 
@@ -21203,7 +21149,7 @@ void UScriptHelperClient::SetCanWatchEnemy(class UGameFrontendHUD* GameFrontendH
 
 void UScriptHelperClient::SetBtnClickInCdFunc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetBtnClickInCdFunc");
 
@@ -21226,7 +21172,7 @@ void UScriptHelperClient::SetBtnClickInCdFunc()
 
 void UScriptHelperClient::SetAppDetailInfo(const struct FString& appInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetAppDetailInfo");
 
@@ -21248,7 +21194,7 @@ void UScriptHelperClient::SetAppDetailInfo(const struct FString& appInfo)
 
 void UScriptHelperClient::SetAllLinkStyle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetAllLinkStyle");
 
@@ -21269,7 +21215,7 @@ void UScriptHelperClient::SetAllLinkStyle()
 
 void UScriptHelperClient::SetAllImageStyle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetAllImageStyle");
 
@@ -21290,7 +21236,7 @@ void UScriptHelperClient::SetAllImageStyle()
 
 void UScriptHelperClient::SetAllFontStyle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetAllFontStyle");
 
@@ -21314,7 +21260,7 @@ void UScriptHelperClient::SetAllFontStyle()
 
 void UScriptHelperClient::SetActivePufferTick(class UGameFrontendHUD* GameFrontendHUD, bool ActivePufferTick)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetActivePufferTick");
 
@@ -21339,36 +21285,12 @@ void UScriptHelperClient::SetActivePufferTick(class UGameFrontendHUD* GameFronte
 
 void UScriptHelperClient::SetAccountRegion(const struct FString& Region)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SetAccountRegion");
 
 	UScriptHelperClient_SetAccountRegion_Params params;
 	params.Region = Region;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	static auto defaultObj = StaticClass()->GetDefaultObject();
-	defaultObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-}
-
-
-// Function Client.ScriptHelperClient.SendRetriveBeginnerFinisheGuideReq
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UGameFrontendHUD*        GameFrontendHUD                (Parm, ZeroConstructor, IsPlainOldData)
-
-void UScriptHelperClient::SendRetriveBeginnerFinisheGuideReq(class UGameFrontendHUD* GameFrontendHUD)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SendRetriveBeginnerFinisheGuideReq");
-
-	UScriptHelperClient_SendRetriveBeginnerFinisheGuideReq_Params params;
-	params.GameFrontendHUD = GameFrontendHUD;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -21388,7 +21310,7 @@ void UScriptHelperClient::SendRetriveBeginnerFinisheGuideReq(class UGameFrontend
 
 void UScriptHelperClient::SendRecordFinishedGuideReq(class UGameFrontendHUD* GameFrontendHUD, const struct FString& TipsID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SendRecordFinishedGuideReq");
 
@@ -21414,7 +21336,7 @@ void UScriptHelperClient::SendRecordFinishedGuideReq(class UGameFrontendHUD* Gam
 
 void UScriptHelperClient::SendPlayEmote(class UGameFrontendHUD* GameFrontendHUD, int EmoteIndex)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SendPlayEmote");
 
@@ -21441,7 +21363,7 @@ void UScriptHelperClient::SendPlayEmote(class UGameFrontendHUD* GameFrontendHUD,
 
 void UScriptHelperClient::SendLobbyChat(class UGameFrontendHUD* GameFrontendHUD, const struct FString& gid, const struct FString& Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SendLobbyChat");
 
@@ -21470,7 +21392,7 @@ void UScriptHelperClient::SendLobbyChat(class UGameFrontendHUD* GameFrontendHUD,
 
 void UScriptHelperClient::SendDirtyToFilter(class UGameFrontendHUD* GameFrontendHUD, const struct FString& dirtyString, const struct FString& prefixString, int UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SendDirtyToFilter");
 
@@ -21500,7 +21422,7 @@ void UScriptHelperClient::SendDirtyToFilter(class UGameFrontendHUD* GameFrontend
 
 void UScriptHelperClient::SendClientLog(class UGameFrontendHUD* GameFrontendHUD, const struct FString& ErrorReason, const struct FString& errorDescription, bool pullAll)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SendClientLog");
 
@@ -21537,7 +21459,7 @@ void UScriptHelperClient::SendClientLog(class UGameFrontendHUD* GameFrontendHUD,
 
 void UScriptHelperClient::ScheduleLocalNotificationAtTime(int Year, int Month, int Day, int Hour, int Minute, int Second, bool LocalTime, const struct FString& Title, const struct FString& Body, const struct FString& Action, int NotificationID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ScheduleLocalNotificationAtTime");
 
@@ -21564,6 +21486,32 @@ void UScriptHelperClient::ScheduleLocalNotificationAtTime(int Year, int Month, i
 }
 
 
+// Function Client.ScriptHelperClient.SaveToSharedPreferences
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 Key                            (Parm, ZeroConstructor)
+// struct FString                 Value                          (Parm, ZeroConstructor)
+
+void UScriptHelperClient::SaveToSharedPreferences(const struct FString& Key, const struct FString& Value)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveToSharedPreferences");
+
+	UScriptHelperClient_SaveToSharedPreferences_Params params;
+	params.Key = Key;
+	params.Value = Value;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Client.ScriptHelperClient.SaveStringToIntermediateFile
 // (Final, Native, Static, Public)
 // Parameters:
@@ -21572,7 +21520,7 @@ void UScriptHelperClient::ScheduleLocalNotificationAtTime(int Year, int Month, i
 
 void UScriptHelperClient::SaveStringToIntermediateFile(const struct FString& String, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveStringToIntermediateFile");
 
@@ -21599,7 +21547,7 @@ void UScriptHelperClient::SaveStringToIntermediateFile(const struct FString& Str
 
 void UScriptHelperClient::SaveStringToFileWithEncoding(const struct FString& String, const struct FString& Filename, int EncodingOptions)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveStringToFileWithEncoding");
 
@@ -21626,7 +21574,7 @@ void UScriptHelperClient::SaveStringToFileWithEncoding(const struct FString& Str
 
 void UScriptHelperClient::SaveStringToFile(const struct FString& String, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveStringToFile");
 
@@ -21652,7 +21600,7 @@ void UScriptHelperClient::SaveStringToFile(const struct FString& String, const s
 
 void UScriptHelperClient::SaveStringArrayToFile(TArray<struct FString> Lines, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveStringArrayToFile");
 
@@ -21675,7 +21623,7 @@ void UScriptHelperClient::SaveStringArrayToFile(TArray<struct FString> Lines, co
 
 void UScriptHelperClient::SaveSMapsFile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveSMapsFile");
 
@@ -21702,7 +21650,7 @@ void UScriptHelperClient::SaveSMapsFile()
 
 bool UScriptHelperClient::SaveSavFileByByteArray(const struct FString& Filename, int CompressedSize, int UnCompressedSize, TArray<unsigned char>* ByteArray)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveSavFileByByteArray");
 
@@ -21738,7 +21686,7 @@ bool UScriptHelperClient::SaveSavFileByByteArray(const struct FString& Filename,
 
 bool UScriptHelperClient::SaveSavFile(const struct FString& CompressedData, const struct FString& Filename, int CompressedSize, int UnCompressedSize, bool IsHEX)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveSavFile");
 
@@ -21770,7 +21718,7 @@ bool UScriptHelperClient::SaveSavFile(const struct FString& CompressedData, cons
 
 void UScriptHelperClient::SaveLuaMemoryFile(const struct FString& Filename, const struct FString& InputContent, bool RmExistFile)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveLuaMemoryFile");
 
@@ -21794,7 +21742,7 @@ void UScriptHelperClient::SaveLuaMemoryFile(const struct FString& Filename, cons
 
 void UScriptHelperClient::SaveLoadGameSlotCrashFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveLoadGameSlotCrashFlag");
 
@@ -21815,7 +21763,7 @@ void UScriptHelperClient::SaveLoadGameSlotCrashFlag()
 
 void UScriptHelperClient::SaveGameSlotMultiThread()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveGameSlotMultiThread");
 
@@ -21840,7 +21788,7 @@ void UScriptHelperClient::SaveGameSlotMultiThread()
 
 bool UScriptHelperClient::SaveArrayToFileByFullPath(TArray<unsigned char> Content, const struct FString& FullPathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveArrayToFileByFullPath");
 
@@ -21869,7 +21817,7 @@ bool UScriptHelperClient::SaveArrayToFileByFullPath(TArray<unsigned char> Conten
 
 bool UScriptHelperClient::SaveArrayToFile(TArray<unsigned char> Content, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveArrayToFile");
 
@@ -21894,7 +21842,7 @@ bool UScriptHelperClient::SaveArrayToFile(TArray<unsigned char> Content, const s
 
 void UScriptHelperClient::SaveAOSMemMapsInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.SaveAOSMemMapsInfo");
 
@@ -21915,11 +21863,32 @@ void UScriptHelperClient::SaveAOSMemMapsInfo()
 
 void UScriptHelperClient::RunTestCreateLobbyActor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RunTestCreateLobbyActor");
 
 	UScriptHelperClient_RunTestCreateLobbyActor_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Client.ScriptHelperClient.RunFileLockHelper
+// (Final, Native, Static, Public)
+
+void UScriptHelperClient::RunFileLockHelper()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RunFileLockHelper");
+
+	UScriptHelperClient_RunFileLockHelper_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -21938,7 +21907,7 @@ void UScriptHelperClient::RunTestCreateLobbyActor()
 
 uint64_t UScriptHelperClient::RunCvmTestCases()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RunCvmTestCases");
 
@@ -21964,7 +21933,7 @@ uint64_t UScriptHelperClient::RunCvmTestCases()
 
 struct FString UScriptHelperClient::RunConsoleCommondAndGetString(const struct FString& commond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RunConsoleCommondAndGetString");
 
@@ -21990,7 +21959,7 @@ struct FString UScriptHelperClient::RunConsoleCommondAndGetString(const struct F
 
 void UScriptHelperClient::RunConsoleCommond(const struct FString& commond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RunConsoleCommond");
 
@@ -22014,7 +21983,7 @@ void UScriptHelperClient::RunConsoleCommond(const struct FString& commond)
 
 int UScriptHelperClient::RSAPubEncrypt_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RSAPubEncrypt_LuaState");
 
@@ -22039,7 +22008,7 @@ int UScriptHelperClient::RSAPubEncrypt_LuaState()
 
 int UScriptHelperClient::RSAPubDecrypt_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RSAPubDecrypt_LuaState");
 
@@ -22064,7 +22033,7 @@ int UScriptHelperClient::RSAPubDecrypt_LuaState()
 
 int UScriptHelperClient::RSAPriEncrypt_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RSAPriEncrypt_LuaState");
 
@@ -22089,7 +22058,7 @@ int UScriptHelperClient::RSAPriEncrypt_LuaState()
 
 int UScriptHelperClient::RSAPriDecrypt_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RSAPriDecrypt_LuaState");
 
@@ -22114,7 +22083,7 @@ int UScriptHelperClient::RSAPriDecrypt_LuaState()
 
 void UScriptHelperClient::RoomOwnerInterruptGame(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RoomOwnerInterruptGame");
 
@@ -22138,7 +22107,7 @@ void UScriptHelperClient::RoomOwnerInterruptGame(class UGameFrontendHUD* GameFro
 
 void UScriptHelperClient::ReturnToLobby(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReturnToLobby");
 
@@ -22160,7 +22129,7 @@ void UScriptHelperClient::ReturnToLobby(class UGameFrontendHUD* GameFrontendHUD)
 
 void UScriptHelperClient::RestartShaderPrecompileBackend()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RestartShaderPrecompileBackend");
 
@@ -22181,7 +22150,7 @@ void UScriptHelperClient::RestartShaderPrecompileBackend()
 
 void UScriptHelperClient::RestartShaderPrecompile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RestartShaderPrecompile");
 
@@ -22215,7 +22184,7 @@ void UScriptHelperClient::RestartShaderPrecompile()
 
 void UScriptHelperClient::RestartPuffer(class UGameFrontendHUD* GameFrontendHUD, bool needCheck, int maxDownloadsPerTask, int maxDownTask, int maxDownloadSpeed, bool useOldInterface, bool removeOldWhenUpdate, int versionType, const struct FString& InDownloadFuncDict, int InDnsType, int InDownloadStage, int InDownloadEngine)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RestartPuffer");
 
@@ -22248,7 +22217,7 @@ void UScriptHelperClient::RestartPuffer(class UGameFrontendHUD* GameFrontendHUD,
 
 void UScriptHelperClient::RestartGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RestartGame");
 
@@ -22273,7 +22242,7 @@ void UScriptHelperClient::RestartGame()
 
 TArray<struct FString> UScriptHelperClient::ResolveDNSWithServerIP(const struct FString& DomainName, const struct FString& ServerIP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ResolveDNSWithServerIP");
 
@@ -22301,7 +22270,7 @@ TArray<struct FString> UScriptHelperClient::ResolveDNSWithServerIP(const struct 
 
 TArray<struct FString> UScriptHelperClient::ResolveDNS(const struct FString& DomainName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ResolveDNS");
 
@@ -22327,7 +22296,7 @@ TArray<struct FString> UScriptHelperClient::ResolveDNS(const struct FString& Dom
 
 void UScriptHelperClient::ResetSlateTickEveryFrame(int SlateUIID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ResetSlateTickEveryFrame");
 
@@ -22349,7 +22318,7 @@ void UScriptHelperClient::ResetSlateTickEveryFrame(int SlateUIID)
 
 void UScriptHelperClient::ResetAllSlateTickEveryFrame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ResetAllSlateTickEveryFrame");
 
@@ -22372,7 +22341,7 @@ void UScriptHelperClient::ResetAllSlateTickEveryFrame()
 
 void UScriptHelperClient::RequireSlateTickEveryFrameBeforeTargetFrame(int FrameNum)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RequireSlateTickEveryFrameBeforeTargetFrame");
 
@@ -22396,7 +22365,7 @@ void UScriptHelperClient::RequireSlateTickEveryFrameBeforeTargetFrame(int FrameN
 
 void UScriptHelperClient::RequireSlateTickEveryFrame(int SlateUIID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RequireSlateTickEveryFrame");
 
@@ -22424,7 +22393,7 @@ void UScriptHelperClient::RequireSlateTickEveryFrame(int SlateUIID)
 
 uint64_t UScriptHelperClient::RequestFile(class UGameFrontendHUD* GameFrontendHUD, const struct FString& FilePath, bool ForceUpdate, const struct FString& InUA)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RequestFile");
 
@@ -22456,7 +22425,7 @@ uint64_t UScriptHelperClient::RequestFile(class UGameFrontendHUD* GameFrontendHU
 
 void UScriptHelperClient::ReportFirebaseEventWithString(const struct FString& eventTypeString, const struct FString& bundleExtraKey, const struct FString& bundleExtraValue, bool isUnique)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportFirebaseEventWithString");
 
@@ -22485,7 +22454,7 @@ void UScriptHelperClient::ReportFirebaseEventWithString(const struct FString& ev
 
 void UScriptHelperClient::ReportFirebaseEventWithParam(const struct FString& eventTypeString, TMap<struct FString, struct FString> _params, bool isUnique)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportFirebaseEventWithParam");
 
@@ -22509,7 +22478,7 @@ void UScriptHelperClient::ReportFirebaseEventWithParam(const struct FString& eve
 
 void UScriptHelperClient::ReportEventRegisterCompleted()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportEventRegisterCompleted");
 
@@ -22530,7 +22499,7 @@ void UScriptHelperClient::ReportEventRegisterCompleted()
 
 void UScriptHelperClient::ReportEventPurchaseConsider()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportEventPurchaseConsider");
 
@@ -22551,7 +22520,7 @@ void UScriptHelperClient::ReportEventPurchaseConsider()
 
 void UScriptHelperClient::ReportEventLoadingCompleted()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportEventLoadingCompleted");
 
@@ -22574,7 +22543,7 @@ void UScriptHelperClient::ReportEventLoadingCompleted()
 
 void UScriptHelperClient::ReportCrashLogWithFDNum(const struct FString& baseLogInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportCrashLogWithFDNum");
 
@@ -22598,7 +22567,7 @@ void UScriptHelperClient::ReportCrashLogWithFDNum(const struct FString& baseLogI
 
 void UScriptHelperClient::ReportContextValuesOnCrash(const struct FString& Json)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportContextValuesOnCrash");
 
@@ -22624,7 +22593,7 @@ void UScriptHelperClient::ReportContextValuesOnCrash(const struct FString& Json)
 
 void UScriptHelperClient::ReportBattleChat(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Msg, int MsgExtraParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReportBattleChat");
 
@@ -22652,7 +22621,7 @@ void UScriptHelperClient::ReportBattleChat(class UGameFrontendHUD* GameFrontendH
 
 void UScriptHelperClient::ReplyInvite(class UGameFrontendHUD* GameFrontendHUD, const struct FString& gid, bool bReply)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReplyInvite");
 
@@ -22678,7 +22647,7 @@ void UScriptHelperClient::ReplyInvite(class UGameFrontendHUD* GameFrontendHUD, c
 
 bool UScriptHelperClient::RemoveWebView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RemoveWebView");
 
@@ -22703,7 +22672,7 @@ bool UScriptHelperClient::RemoveWebView()
 
 void UScriptHelperClient::RemoveKnownMissingPackageRefObjectByObj(class UObject* BindObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RemoveKnownMissingPackageRefObjectByObj");
 
@@ -22727,7 +22696,7 @@ void UScriptHelperClient::RemoveKnownMissingPackageRefObjectByObj(class UObject*
 
 void UScriptHelperClient::RemoveKnownMissingPackage(const struct FString& PackageName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RemoveKnownMissingPackage");
 
@@ -22749,7 +22718,7 @@ void UScriptHelperClient::RemoveKnownMissingPackage(const struct FString& Packag
 
 void UScriptHelperClient::RemoveBPClassManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RemoveBPClassManager");
 
@@ -22773,7 +22742,7 @@ void UScriptHelperClient::RemoveBPClassManager()
 
 bool UScriptHelperClient::RemountPakFiles(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RemountPakFiles");
 
@@ -22800,7 +22769,7 @@ bool UScriptHelperClient::RemountPakFiles(class UGameFrontendHUD* GameFrontendHU
 
 void UScriptHelperClient::RemapMemMap(const struct FString& Name, int NewSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RemapMemMap");
 
@@ -22823,7 +22792,7 @@ void UScriptHelperClient::RemapMemMap(const struct FString& Name, int NewSize)
 
 void UScriptHelperClient::ReleaseSplashScreenImage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReleaseSplashScreenImage");
 
@@ -22846,7 +22815,7 @@ void UScriptHelperClient::ReleaseSplashScreenImage()
 
 void UScriptHelperClient::ReleaseSlateTickEveryFrame(int SlateUIID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReleaseSlateTickEveryFrame");
 
@@ -22868,7 +22837,7 @@ void UScriptHelperClient::ReleaseSlateTickEveryFrame(int SlateUIID)
 
 void UScriptHelperClient::ReleaseRTPoolSnapShots()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReleaseRTPoolSnapShots");
 
@@ -22889,7 +22858,7 @@ void UScriptHelperClient::ReleaseRTPoolSnapShots()
 
 void UScriptHelperClient::ReleaseRTPoolResources()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReleaseRTPoolResources");
 
@@ -22912,7 +22881,7 @@ void UScriptHelperClient::ReleaseRTPoolResources()
 
 void UScriptHelperClient::ReleaseGameEnginePlaybackComp(int Option)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReleaseGameEnginePlaybackComp");
 
@@ -22934,7 +22903,7 @@ void UScriptHelperClient::ReleaseGameEnginePlaybackComp(int Option)
 
 void UScriptHelperClient::ReleaseAllTables()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReleaseAllTables");
 
@@ -22968,7 +22937,7 @@ void UScriptHelperClient::ReleaseAllTables()
 
 void UScriptHelperClient::ReInitializePuffer(class UGameFrontendHUD* GameFrontendHUD, bool needCheck, int maxDownloadsPerTask, int maxDownTask, int maxDownloadSpeed, bool useOldInterface, bool removeOldWhenUpdate, int versionType, const struct FString& InDownloadFuncDict, int InDnsType, int InDownloadStage, int InDownloadEngine)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReInitializePuffer");
 
@@ -23003,7 +22972,7 @@ void UScriptHelperClient::ReInitializePuffer(class UGameFrontendHUD* GameFronten
 
 bool UScriptHelperClient::ReInitializeCvm()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReInitializeCvm");
 
@@ -23028,7 +22997,7 @@ bool UScriptHelperClient::ReInitializeCvm()
 
 void UScriptHelperClient::RegisterMemoryWarningHandle(const struct FScriptDelegate& OnMemoryWarning)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RegisterMemoryWarningHandle");
 
@@ -23050,7 +23019,7 @@ void UScriptHelperClient::RegisterMemoryWarningHandle(const struct FScriptDelega
 
 void UScriptHelperClient::RefershAllManagedTickConfigWhenFPSChanged()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RefershAllManagedTickConfigWhenFPSChanged");
 
@@ -23074,7 +23043,7 @@ void UScriptHelperClient::RefershAllManagedTickConfigWhenFPSChanged()
 
 void UScriptHelperClient::ReduceVirMem(int Low, int Dec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReduceVirMem");
 
@@ -23099,7 +23068,7 @@ void UScriptHelperClient::ReduceVirMem(int Low, int Dec)
 
 bool UScriptHelperClient::RecoverWebView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RecoverWebView");
 
@@ -23125,7 +23094,7 @@ bool UScriptHelperClient::RecoverWebView()
 
 bool UScriptHelperClient::RecoverShrunkODPaksBins(TMap<uint32_t, struct FString> Keys)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RecoverShrunkODPaksBins");
 
@@ -23149,7 +23118,7 @@ bool UScriptHelperClient::RecoverShrunkODPaksBins(TMap<uint32_t, struct FString>
 
 void UScriptHelperClient::RecordVirMemInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RecordVirMemInfo");
 
@@ -23170,7 +23139,7 @@ void UScriptHelperClient::RecordVirMemInfo()
 
 void UScriptHelperClient::RecordThreadIndexByGameThreadIOS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RecordThreadIndexByGameThreadIOS");
 
@@ -23193,7 +23162,7 @@ void UScriptHelperClient::RecordThreadIndexByGameThreadIOS()
 
 void UScriptHelperClient::RecordLuaExceptionInfo(const struct FString& exception)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RecordLuaExceptionInfo");
 
@@ -23219,7 +23188,7 @@ void UScriptHelperClient::RecordLuaExceptionInfo(const struct FString& exception
 
 void UScriptHelperClient::RebuildHISM(class UHierarchicalInstancedStaticMeshComponent* comp, bool Async, bool ForceUpdate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.RebuildHISM");
 
@@ -23243,7 +23212,7 @@ void UScriptHelperClient::RebuildHISM(class UHierarchicalInstancedStaticMeshComp
 
 void UScriptHelperClient::ReadManagedTickMapSwitchers()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ReadManagedTickMapSwitchers");
 
@@ -23266,7 +23235,7 @@ void UScriptHelperClient::ReadManagedTickMapSwitchers()
 
 void UScriptHelperClient::QuitFightChat(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.QuitFightChat");
 
@@ -23291,7 +23260,7 @@ void UScriptHelperClient::QuitFightChat(class UGameFrontendHUD* GameFrontendHUD)
 
 void UScriptHelperClient::QuickLogin(int refreshTokenBeforeExpDays, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.QuickLogin");
 
@@ -23311,6 +23280,31 @@ void UScriptHelperClient::QuickLogin(int refreshTokenBeforeExpDays, TScriptInter
 }
 
 
+// Function Client.ScriptHelperClient.ProjectUserDir
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UScriptHelperClient::ProjectUserDir()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ProjectUserDir");
+
+	UScriptHelperClient_ProjectUserDir_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Client.ScriptHelperClient.ProjectSavedDir
 // (Final, Native, Static, Public)
 // Parameters:
@@ -23318,7 +23312,7 @@ void UScriptHelperClient::QuickLogin(int refreshTokenBeforeExpDays, TScriptInter
 
 struct FString UScriptHelperClient::ProjectSavedDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ProjectSavedDir");
 
@@ -23343,7 +23337,7 @@ struct FString UScriptHelperClient::ProjectSavedDir()
 
 struct FString UScriptHelperClient::ProjectDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ProjectDir");
 
@@ -23368,7 +23362,7 @@ struct FString UScriptHelperClient::ProjectDir()
 
 struct FString UScriptHelperClient::ProjectContentDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ProjectContentDir");
 
@@ -23394,7 +23388,7 @@ struct FString UScriptHelperClient::ProjectContentDir()
 
 bool UScriptHelperClient::ProcessSoPatch(const struct FString& InAppVerStr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ProcessSoPatch");
 
@@ -23422,7 +23416,7 @@ bool UScriptHelperClient::ProcessSoPatch(const struct FString& InAppVerStr)
 
 void UScriptHelperClient::ProcessServerRelationChainError(const struct FString& ErrorMsg, int iForceLoginInterval, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ProcessServerRelationChainError");
 
@@ -23448,7 +23442,7 @@ void UScriptHelperClient::ProcessServerRelationChainError(const struct FString& 
 
 void UScriptHelperClient::PrintUAEDataTableManagerMemDetail()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.PrintUAEDataTableManagerMemDetail");
 
@@ -23473,7 +23467,7 @@ void UScriptHelperClient::PrintUAEDataTableManagerMemDetail()
 
 void UScriptHelperClient::PostGameStatusToTMFPSMap(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Key, TMap<struct FString, struct FString>* mapData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.PostGameStatusToTMFPSMap");
 
@@ -23503,7 +23497,7 @@ void UScriptHelperClient::PostGameStatusToTMFPSMap(class UGameFrontendHUD* GameF
 
 void UScriptHelperClient::PlayHapticsFile(const struct FString& FilePath, int Duration, const struct FScriptDelegate& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.PlayHapticsFile");
 
@@ -23522,6 +23516,58 @@ void UScriptHelperClient::PlayHapticsFile(const struct FString& FilePath, int Du
 }
 
 
+// Function Client.ScriptHelperClient.PerfReportSetLabel
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// struct FString                 str                            (Parm, OutParm, ZeroConstructor)
+
+void UScriptHelperClient::PerfReportSetLabel(struct FString* str)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.PerfReportSetLabel");
+
+	UScriptHelperClient_PerfReportSetLabel_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (str != nullptr)
+		*str = params.str;
+}
+
+
+// Function Client.ScriptHelperClient.PerfReportAddNote
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// struct FString                 str                            (Parm, OutParm, ZeroConstructor)
+
+void UScriptHelperClient::PerfReportAddNote(struct FString* str)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.PerfReportAddNote");
+
+	UScriptHelperClient_PerfReportAddNote_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (str != nullptr)
+		*str = params.str;
+}
+
+
 // Function Client.ScriptHelperClient.OpenWebviewInGameProcess
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -23533,7 +23579,7 @@ void UScriptHelperClient::PlayHapticsFile(const struct FString& FilePath, int Du
 
 void UScriptHelperClient::OpenWebviewInGameProcess(const struct FString& URL, int Left, int Top, int Right, int Bottom)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OpenWebviewInGameProcess");
 
@@ -23565,7 +23611,7 @@ void UScriptHelperClient::OpenWebviewInGameProcess(const struct FString& URL, in
 
 void UScriptHelperClient::OpenURLInSDK(const struct FString& InURL, bool InVisibleToolbar, bool InSystemWebBrowser, bool InFullScreen, const struct FString& ExtraJson)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OpenURLInSDK");
 
@@ -23575,6 +23621,48 @@ void UScriptHelperClient::OpenURLInSDK(const struct FString& InURL, bool InVisib
 	params.InSystemWebBrowser = InSystemWebBrowser;
 	params.InFullScreen = InFullScreen;
 	params.ExtraJson = ExtraJson;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Client.ScriptHelperClient.OpenSystemStorage
+// (Final, Native, Static, Public)
+
+void UScriptHelperClient::OpenSystemStorage()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OpenSystemStorage");
+
+	UScriptHelperClient_OpenSystemStorage_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Client.ScriptHelperClient.OpenSystemSettings
+// (Final, Native, Static, Public)
+
+void UScriptHelperClient::OpenSystemSettings()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OpenSystemSettings");
+
+	UScriptHelperClient_OpenSystemSettings_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -23596,7 +23684,7 @@ void UScriptHelperClient::OpenURLInSDK(const struct FString& InURL, bool InVisib
 
 bool UScriptHelperClient::OpenShaderCodeLibrary(const struct FString& Path, const struct FString& VersionNum, bool bForceOpen)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OpenShaderCodeLibrary");
 
@@ -23631,7 +23719,7 @@ bool UScriptHelperClient::OpenShaderCodeLibrary(const struct FString& Path, cons
 
 void UScriptHelperClient::OpenH5FromCache(class UGameFrontendHUD* GameFrontendHUD, const struct FString& ModuleName, const struct FString& Language, int netType, int Top, int Left, int Right, const struct FString& ViewParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OpenH5FromCache");
 
@@ -23662,7 +23750,7 @@ void UScriptHelperClient::OpenH5FromCache(class UGameFrontendHUD* GameFrontendHU
 
 void UScriptHelperClient::OnWebViewCacheInfoDelegate__DelegateSignature(int code)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ScriptHelperClient.OnWebViewCacheInfoDelegate__DelegateSignature");
 
@@ -23685,7 +23773,7 @@ void UScriptHelperClient::OnWebViewCacheInfoDelegate__DelegateSignature(int code
 
 void UScriptHelperClient::OnWebViewCache(int code)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnWebViewCache");
 
@@ -23709,7 +23797,7 @@ void UScriptHelperClient::OnWebViewCache(int code)
 
 void UScriptHelperClient::OnPakFileCRCCheck(const struct FString& PakFileName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnPakFileCRCCheck");
 
@@ -23734,7 +23822,7 @@ void UScriptHelperClient::OnPakFileCRCCheck(const struct FString& PakFileName)
 
 void UScriptHelperClient::OnNotifyFightFriendChat(class UGameFrontendHUD* GameFrontendHUD, const struct FFightFriendChat& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnNotifyFightFriendChat");
 
@@ -23760,7 +23848,7 @@ void UScriptHelperClient::OnNotifyFightFriendChat(class UGameFrontendHUD* GameFr
 
 void UScriptHelperClient::OnIslandPlayerInfoNotify(class UGameFrontendHUD* GameFrontendHUD, int LandId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnIslandPlayerInfoNotify");
 
@@ -23788,7 +23876,7 @@ void UScriptHelperClient::OnIslandPlayerInfoNotify(class UGameFrontendHUD* GameF
 
 bool UScriptHelperClient::OnInviteNextBattle(class UGameFrontendHUD* GameFrontendHUD, const struct FString& gid, const struct FString& Name)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnInviteNextBattle");
 
@@ -23817,7 +23905,7 @@ bool UScriptHelperClient::OnInviteNextBattle(class UGameFrontendHUD* GameFronten
 
 void UScriptHelperClient::OnGetUpdateStateCDNConfigUrl(class UGameFrontendHUD* GameFrontendHUD, const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnGetUpdateStateCDNConfigUrl");
 
@@ -23843,7 +23931,7 @@ void UScriptHelperClient::OnGetUpdateStateCDNConfigUrl(class UGameFrontendHUD* G
 
 struct FString UScriptHelperClient::OnGetItemBigIcon__DelegateSignature(const struct FString& strPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ScriptHelperClient.OnGetItemBigIcon__DelegateSignature");
 
@@ -23869,7 +23957,7 @@ struct FString UScriptHelperClient::OnGetItemBigIcon__DelegateSignature(const st
 
 void UScriptHelperClient::OnFilterFinish(class UGameFrontendHUD* GameFrontendHUD, const struct FString& filterText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnFilterFinish");
 
@@ -23894,7 +23982,7 @@ void UScriptHelperClient::OnFilterFinish(class UGameFrontendHUD* GameFrontendHUD
 
 void UScriptHelperClient::OnEnterLobbyReloadLocalizationResource(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnEnterLobbyReloadLocalizationResource");
 
@@ -23918,7 +24006,7 @@ void UScriptHelperClient::OnEnterLobbyReloadLocalizationResource(class UGameFron
 
 void UScriptHelperClient::OnEnterGameReleaseLocalizationResource(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnEnterGameReleaseLocalizationResource");
 
@@ -23942,7 +24030,7 @@ void UScriptHelperClient::OnEnterGameReleaseLocalizationResource(class UGameFron
 
 void UScriptHelperClient::OnDolphinAppUpdateFinished(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnDolphinAppUpdateFinished");
 
@@ -23967,7 +24055,7 @@ void UScriptHelperClient::OnDolphinAppUpdateFinished(class UGameFrontendHUD* Gam
 
 void UScriptHelperClient::OnCombatHitFeedback(class UGameFrontendHUD* GameFrontendHUD, bool bCombatHitFeedbackEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnCombatHitFeedback");
 
@@ -23993,7 +24081,7 @@ void UScriptHelperClient::OnCombatHitFeedback(class UGameFrontendHUD* GameFronte
 
 void UScriptHelperClient::OnBattleResultCallBack(class UGameFrontendHUD* GameFrontendHUD, struct FBattleResultData* BattleResultData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnBattleResultCallBack");
 
@@ -24021,7 +24109,7 @@ void UScriptHelperClient::OnBattleResultCallBack(class UGameFrontendHUD* GameFro
 
 void UScriptHelperClient::OnBattleResult(class UGameFrontendHUD* GameFrontendHUD, struct FBattleResultData* BattleResultData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.OnBattleResult");
 
@@ -24048,7 +24136,7 @@ void UScriptHelperClient::OnBattleResult(class UGameFrontendHUD* GameFrontendHUD
 
 void UScriptHelperClient::ObjectPoolServerSwitch(bool bSwitchOn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ObjectPoolServerSwitch");
 
@@ -24076,7 +24164,7 @@ void UScriptHelperClient::ObjectPoolServerSwitch(bool bSwitchOn)
 
 void UScriptHelperClient::NotifyBeginnerFinishedGuideUpdated(class UGameFrontendHUD* GameFrontendHUD, bool GuideSwitch, TArray<struct FPlayerFinishedGuide> finished_guide, int player_level, int player_exp_type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.NotifyBeginnerFinishedGuideUpdated");
 
@@ -24109,7 +24197,7 @@ void UScriptHelperClient::NotifyBeginnerFinishedGuideUpdated(class UGameFrontend
 
 void UScriptHelperClient::NoschatShareWithUrlInfo(const struct FString& _descShare, const struct FString& _titleShare, const struct FString& _imgPath, const struct FString& _url, int _shareScene, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.NoschatShareWithUrlInfo");
 
@@ -24147,7 +24235,7 @@ void UScriptHelperClient::NoschatShareWithUrlInfo(const struct FString& _descSha
 
 void UScriptHelperClient::NoschatShareToFriend(const struct FString& mediaId, const struct FString& OpenID, const struct FString& Title, const struct FString& Desc, const struct FString& msdkExtInfo, const struct FString& messageExt, const struct FString& mediaTagName, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.NoschatShareToFriend");
 
@@ -24185,7 +24273,7 @@ void UScriptHelperClient::NoschatShareToFriend(const struct FString& mediaId, co
 
 void UScriptHelperClient::NoschatShare(const struct FString& _descShare, const struct FString& _titleShare, const struct FString& _imgPath, const struct FString& _mediaTagName, const struct FString& _messageExt, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.NoschatShare");
 
@@ -24216,7 +24304,7 @@ void UScriptHelperClient::NoschatShare(const struct FString& _descShare, const s
 
 void UScriptHelperClient::MSDKWebViewCallJS(const struct FString& strJS)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MSDKWebViewCallJS");
 
@@ -24242,7 +24330,7 @@ void UScriptHelperClient::MSDKWebViewCallJS(const struct FString& strJS)
 
 void UScriptHelperClient::MoveFollowTarget(class UGameFrontendHUD* GameFrontendHUD, int FollowType, uint64_t UID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MoveFollowTarget");
 
@@ -24270,7 +24358,7 @@ void UScriptHelperClient::MoveFollowTarget(class UGameFrontendHUD* GameFrontendH
 
 bool UScriptHelperClient::MoveFile(const struct FString& SrcFullPath, const struct FString& DesFullPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MoveFile");
 
@@ -24299,7 +24387,7 @@ bool UScriptHelperClient::MoveFile(const struct FString& SrcFullPath, const stru
 
 bool UScriptHelperClient::MountPakFile(const struct FString& InPakFilename, const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MountPakFile");
 
@@ -24327,7 +24415,7 @@ bool UScriptHelperClient::MountPakFile(const struct FString& InPakFilename, cons
 
 void UScriptHelperClient::MessageBoxExt(const struct FString& Caption, const struct FString& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MessageBoxExt");
 
@@ -24352,7 +24440,7 @@ void UScriptHelperClient::MessageBoxExt(const struct FString& Caption, const str
 
 void UScriptHelperClient::MemOption(int Option)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MemOption");
 
@@ -24372,18 +24460,18 @@ void UScriptHelperClient::MemOption(int Option)
 // Function Client.ScriptHelperClient.MediaCopyFromPakToLocal
 // (Final, Native, Static, Public)
 // Parameters:
-// struct FString                 from                           (Parm, ZeroConstructor)
+// struct FString                 From                           (Parm, ZeroConstructor)
 // bool                           bForce                         (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 
-bool UScriptHelperClient::MediaCopyFromPakToLocal(const struct FString& from, bool bForce)
+bool UScriptHelperClient::MediaCopyFromPakToLocal(const struct FString& From, bool bForce)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MediaCopyFromPakToLocal");
 
 	UScriptHelperClient_MediaCopyFromPakToLocal_Params params;
-	params.from = from;
+	params.From = From;
 	params.bForce = bForce;
 
 	auto flags = pFunc->FunctionFlags;
@@ -24405,7 +24493,7 @@ bool UScriptHelperClient::MediaCopyFromPakToLocal(const struct FString& from, bo
 
 int UScriptHelperClient::MD5LuaString_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MD5LuaString_LuaState");
 
@@ -24431,7 +24519,7 @@ int UScriptHelperClient::MD5LuaString_LuaState()
 
 struct FString UScriptHelperClient::MD5HashAnsiString(const struct FString& str)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.MD5HashAnsiString");
 
@@ -24457,7 +24545,7 @@ struct FString UScriptHelperClient::MD5HashAnsiString(const struct FString& str)
 
 void UScriptHelperClient::ManualSleep(float Seconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ManualSleep");
 
@@ -24474,6 +24562,31 @@ void UScriptHelperClient::ManualSleep(float Seconds)
 }
 
 
+// Function Client.ScriptHelperClient.LuaSnapShot_LuaState
+// (Final, Native, Static, Public)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UScriptHelperClient::LuaSnapShot_LuaState()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LuaSnapShot_LuaState");
+
+	UScriptHelperClient_LuaSnapShot_LuaState_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Client.ScriptHelperClient.LuaLoadFileToString
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -24482,12 +24595,37 @@ void UScriptHelperClient::ManualSleep(float Seconds)
 
 struct FString UScriptHelperClient::LuaLoadFileToString(const struct FString& InFileName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LuaLoadFileToString");
 
 	UScriptHelperClient_LuaLoadFileToString_Params params;
 	params.InFileName = InFileName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.LowMemoryInGB
+// (Final, Native, Static, Public)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UScriptHelperClient::LowMemoryInGB()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LowMemoryInGB");
+
+	UScriptHelperClient_LowMemoryInGB_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -24508,7 +24646,7 @@ struct FString UScriptHelperClient::LuaLoadFileToString(const struct FString& In
 
 void UScriptHelperClient::LogoutAllDevices(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LogoutAllDevices");
 
@@ -24534,7 +24672,7 @@ void UScriptHelperClient::LogoutAllDevices(TScriptInterface<class UClientNetInte
 
 void UScriptHelperClient::Logout(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.Logout");
 
@@ -24563,7 +24701,7 @@ void UScriptHelperClient::Logout(TScriptInterface<class UClientNetInterface>* Cl
 
 void UScriptHelperClient::LoginWithExtraInfo(uint32_t Channel, const struct FString& InExtraJson, bool SkipLocalCacheCheck, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoginWithExtraInfo");
 
@@ -24593,7 +24731,7 @@ void UScriptHelperClient::LoginWithExtraInfo(uint32_t Channel, const struct FStr
 
 void UScriptHelperClient::Login(uint32_t Channel, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.Login");
 
@@ -24620,7 +24758,7 @@ void UScriptHelperClient::Login(uint32_t Channel, TScriptInterface<class UClient
 
 void UScriptHelperClient::LobbySetUserRegion(int InRegion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LobbySetUserRegion");
 
@@ -24644,7 +24782,7 @@ void UScriptHelperClient::LobbySetUserRegion(int InRegion)
 
 void UScriptHelperClient::LobbySetProxyPortlist(const struct FString& InNodePortList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LobbySetProxyPortlist");
 
@@ -24668,7 +24806,7 @@ void UScriptHelperClient::LobbySetProxyPortlist(const struct FString& InNodePort
 
 void UScriptHelperClient::LobbySetProxyNodelist(const struct FString& InNodeIpList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LobbySetProxyNodelist");
 
@@ -24692,7 +24830,7 @@ void UScriptHelperClient::LobbySetProxyNodelist(const struct FString& InNodeIpLi
 
 void UScriptHelperClient::LobbySetEchoPortlist(const struct FString& InEchoPortList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LobbySetEchoPortlist");
 
@@ -24718,7 +24856,7 @@ void UScriptHelperClient::LobbySetEchoPortlist(const struct FString& InEchoPortL
 
 bool UScriptHelperClient::LobbyIsLinkProxy(const struct FString& InIp, int InPort)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LobbyIsLinkProxy");
 
@@ -24747,7 +24885,7 @@ bool UScriptHelperClient::LobbyIsLinkProxy(const struct FString& InIp, int InPor
 
 void UScriptHelperClient::LobbyAddAddress(const struct FString& InProtocol, const struct FString& InIp, int InPort)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LobbyAddAddress");
 
@@ -24773,7 +24911,7 @@ void UScriptHelperClient::LobbyAddAddress(const struct FString& InProtocol, cons
 
 bool UScriptHelperClient::LoadSOFromOBB()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadSOFromOBB");
 
@@ -24799,7 +24937,7 @@ bool UScriptHelperClient::LoadSOFromOBB()
 
 struct FSavFileData UScriptHelperClient::LoadSavFileAsByteArray(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadSavFileAsByteArray");
 
@@ -24825,11 +24963,38 @@ struct FSavFileData UScriptHelperClient::LoadSavFileAsByteArray(const struct FSt
 
 int UScriptHelperClient::LoadSavFile_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadSavFile_LuaState");
 
 	UScriptHelperClient_LoadSavFile_LuaState_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.LoadSavedFileToStringArray
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 Filename                       (Parm, ZeroConstructor)
+// TArray<struct FString>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+TArray<struct FString> UScriptHelperClient::LoadSavedFileToStringArray(const struct FString& Filename)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadSavedFileToStringArray");
+
+	UScriptHelperClient_LoadSavedFileToStringArray_Params params;
+	params.Filename = Filename;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -24851,7 +25016,7 @@ int UScriptHelperClient::LoadSavFile_LuaState()
 
 struct FString UScriptHelperClient::LoadIntermediateFileToString(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadIntermediateFileToString");
 
@@ -24884,7 +25049,7 @@ struct FString UScriptHelperClient::LoadIntermediateFileToString(const struct FS
 
 void UScriptHelperClient::LoadH5FromCache(class UGameFrontendHUD* GameFrontendHUD, const struct FString& ModuleName, const struct FString& Language, int netType, int Top, int Left, int Right, const struct FString& ViewParam)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadH5FromCache");
 
@@ -24916,7 +25081,7 @@ void UScriptHelperClient::LoadH5FromCache(class UGameFrontendHUD* GameFrontendHU
 
 struct FString UScriptHelperClient::LoadFileToStringByFullPath(const struct FString& FullPathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadFileToStringByFullPath");
 
@@ -24943,7 +25108,7 @@ struct FString UScriptHelperClient::LoadFileToStringByFullPath(const struct FStr
 
 struct FString UScriptHelperClient::LoadFileToString(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadFileToString");
 
@@ -24970,7 +25135,7 @@ struct FString UScriptHelperClient::LoadFileToString(const struct FString& Filen
 
 TArray<unsigned char> UScriptHelperClient::LoadFileToArrayByFullPath(const struct FString& FullPathName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadFileToArrayByFullPath");
 
@@ -24997,7 +25162,7 @@ TArray<unsigned char> UScriptHelperClient::LoadFileToArrayByFullPath(const struc
 
 TArray<unsigned char> UScriptHelperClient::LoadFileToArray(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadFileToArray");
 
@@ -25024,7 +25189,7 @@ TArray<unsigned char> UScriptHelperClient::LoadFileToArray(const struct FString&
 
 bool UScriptHelperClient::LoadAmendODs(TMap<uint32_t, struct FString> Keys)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadAmendODs");
 
@@ -25048,7 +25213,7 @@ bool UScriptHelperClient::LoadAmendODs(TMap<uint32_t, struct FString> Keys)
 
 void UScriptHelperClient::LoadAFDTranslation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LoadAFDTranslation");
 
@@ -25072,7 +25237,7 @@ void UScriptHelperClient::LoadAFDTranslation()
 
 TArray<struct FString> UScriptHelperClient::ListDirectoryFiles(const struct FString& DirectoryPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ListDirectoryFiles");
 
@@ -25096,7 +25261,7 @@ TArray<struct FString> UScriptHelperClient::ListDirectoryFiles(const struct FStr
 
 void UScriptHelperClient::ListAllLoadedSymbols()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ListAllLoadedSymbols");
 
@@ -25119,7 +25284,7 @@ void UScriptHelperClient::ListAllLoadedSymbols()
 
 void UScriptHelperClient::LaunchUrl(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.LaunchUrl");
 
@@ -25144,7 +25309,7 @@ void UScriptHelperClient::LaunchUrl(const struct FString& URL)
 
 bool UScriptHelperClient::IsWindowsClientReplay(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsWindowsClientReplay");
 
@@ -25170,7 +25335,7 @@ bool UScriptHelperClient::IsWindowsClientReplay(class UGameFrontendHUD* GameFron
 
 bool UScriptHelperClient::IsWindows()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsWindows");
 
@@ -25196,7 +25361,7 @@ bool UScriptHelperClient::IsWindows()
 
 bool UScriptHelperClient::IsWindowOB(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsWindowOB");
 
@@ -25222,7 +25387,7 @@ bool UScriptHelperClient::IsWindowOB(class UGameFrontendHUD* GameFrontendHUD)
 
 bool UScriptHelperClient::IsUsingBluetooth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsUsingBluetooth");
 
@@ -25248,7 +25413,7 @@ bool UScriptHelperClient::IsUsingBluetooth()
 
 bool UScriptHelperClient::IsUseTypicalResultFlowMode(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsUseTypicalResultFlowMode");
 
@@ -25275,7 +25440,7 @@ bool UScriptHelperClient::IsUseTypicalResultFlowMode(class UGameFrontendHUD* Gam
 
 bool UScriptHelperClient::IsUpdateSkip(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsUpdateSkip");
 
@@ -25301,7 +25466,7 @@ bool UScriptHelperClient::IsUpdateSkip(class UGameFrontendHUD* GameFrontendHUD)
 
 bool UScriptHelperClient::IsUEPUBGM()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsUEPUBGM");
 
@@ -25327,7 +25492,7 @@ bool UScriptHelperClient::IsUEPUBGM()
 
 bool UScriptHelperClient::IsTypicalMode(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsTypicalMode");
 
@@ -25353,7 +25518,7 @@ bool UScriptHelperClient::IsTypicalMode(class UGameFrontendHUD* GameFrontendHUD)
 
 bool UScriptHelperClient::IsTest()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsTest");
 
@@ -25378,7 +25543,7 @@ bool UScriptHelperClient::IsTest()
 
 bool UScriptHelperClient::IsSystemVPNOpened()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsSystemVPNOpened");
 
@@ -25403,7 +25568,7 @@ bool UScriptHelperClient::IsSystemVPNOpened()
 
 bool UScriptHelperClient::IsSupportVulkan()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsSupportVulkan");
 
@@ -25428,7 +25593,7 @@ bool UScriptHelperClient::IsSupportVulkan()
 
 bool UScriptHelperClient::IsSplitMiniPakVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsSplitMiniPakVersion");
 
@@ -25453,7 +25618,7 @@ bool UScriptHelperClient::IsSplitMiniPakVersion()
 
 bool UScriptHelperClient::IsSplitMapPakVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsSplitMapPakVersion");
 
@@ -25479,7 +25644,7 @@ bool UScriptHelperClient::IsSplitMapPakVersion()
 
 bool UScriptHelperClient::isSkipUpdateByRepair(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.isSkipUpdateByRepair");
 
@@ -25505,7 +25670,7 @@ bool UScriptHelperClient::isSkipUpdateByRepair(class UGameFrontendHUD* GameFront
 
 bool UScriptHelperClient::IsShipping()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsShipping");
 
@@ -25535,7 +25700,7 @@ bool UScriptHelperClient::IsShipping()
 
 bool UScriptHelperClient::IsSavFileData(const struct FString& CompressedData, int CompressedSize, int UnCompressedSize, int ToCheckEndWithCDLenght, bool IsHEX)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsSavFileData");
 
@@ -25566,7 +25731,7 @@ bool UScriptHelperClient::IsSavFileData(const struct FString& CompressedData, in
 
 bool UScriptHelperClient::IsRuningOnVulkan(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsRuningOnVulkan");
 
@@ -25593,7 +25758,7 @@ bool UScriptHelperClient::IsRuningOnVulkan(class UGameFrontendHUD* GameFrontendH
 
 bool UScriptHelperClient::IsReleaseVersion(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsReleaseVersion");
 
@@ -25622,7 +25787,7 @@ bool UScriptHelperClient::IsReleaseVersion(TScriptInterface<class UClientNetInte
 
 bool UScriptHelperClient::IsPVEMode(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsPVEMode");
 
@@ -25648,7 +25813,7 @@ bool UScriptHelperClient::IsPVEMode(class UGameFrontendHUD* GameFrontendHUD)
 
 bool UScriptHelperClient::IsPerformanceLimitedStat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsPerformanceLimitedStat");
 
@@ -25673,7 +25838,7 @@ bool UScriptHelperClient::IsPerformanceLimitedStat()
 
 bool UScriptHelperClient::IsOpenAOS90FPSConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsOpenAOS90FPSConfig");
 
@@ -25698,7 +25863,7 @@ bool UScriptHelperClient::IsOpenAOS90FPSConfig()
 
 int UScriptHelperClient::IsOpenAOS120FPSConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsOpenAOS120FPSConfig");
 
@@ -25724,7 +25889,7 @@ int UScriptHelperClient::IsOpenAOS120FPSConfig()
 
 bool UScriptHelperClient::IsODPakMonted(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsODPakMonted");
 
@@ -25750,7 +25915,7 @@ bool UScriptHelperClient::IsODPakMonted(const struct FString& Filename)
 
 bool UScriptHelperClient::IsNotificationEnabled()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsNotificationEnabled");
 
@@ -25775,7 +25940,7 @@ bool UScriptHelperClient::IsNotificationEnabled()
 
 bool UScriptHelperClient::IsNoAuthMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsNoAuthMode");
 
@@ -25800,7 +25965,7 @@ bool UScriptHelperClient::IsNoAuthMode()
 
 bool UScriptHelperClient::IsNetworkReachable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsNetworkReachable");
 
@@ -25826,7 +25991,7 @@ bool UScriptHelperClient::IsNetworkReachable()
 
 bool UScriptHelperClient::IsMounted(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsMounted");
 
@@ -25852,7 +26017,7 @@ bool UScriptHelperClient::IsMounted(const struct FString& Filename)
 
 bool UScriptHelperClient::IsMlAIDebug()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsMlAIDebug");
 
@@ -25877,7 +26042,7 @@ bool UScriptHelperClient::IsMlAIDebug()
 
 bool UScriptHelperClient::IsMatchVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsMatchVersion");
 
@@ -25902,7 +26067,7 @@ bool UScriptHelperClient::IsMatchVersion()
 
 bool UScriptHelperClient::IsMatchNoAuthMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsMatchNoAuthMode");
 
@@ -25927,7 +26092,7 @@ bool UScriptHelperClient::IsMatchNoAuthMode()
 
 bool UScriptHelperClient::IsLowMemoryDevice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsLowMemoryDevice");
 
@@ -25952,7 +26117,7 @@ bool UScriptHelperClient::IsLowMemoryDevice()
 
 bool UScriptHelperClient::IsLaunchedByLocalNotification()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsLaunchedByLocalNotification");
 
@@ -25977,7 +26142,7 @@ bool UScriptHelperClient::IsLaunchedByLocalNotification()
 
 bool UScriptHelperClient::IsLastSessionCrash()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsLastSessionCrash");
 
@@ -26002,7 +26167,7 @@ bool UScriptHelperClient::IsLastSessionCrash()
 
 bool UScriptHelperClient::IsJaguar()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsJaguar");
 
@@ -26027,7 +26192,7 @@ bool UScriptHelperClient::IsJaguar()
 
 bool UScriptHelperClient::IsIPhoneFiveSOriginal()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsIPhoneFiveSOriginal");
 
@@ -26053,7 +26218,7 @@ bool UScriptHelperClient::IsIPhoneFiveSOriginal()
 
 bool UScriptHelperClient::IsIPhoneFiveS(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsIPhoneFiveS");
 
@@ -26079,7 +26244,7 @@ bool UScriptHelperClient::IsIPhoneFiveS(class UGameFrontendHUD* GameFrontendHUD)
 
 bool UScriptHelperClient::IsIOSVersionAbove13()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsIOSVersionAbove13");
 
@@ -26105,7 +26270,7 @@ bool UScriptHelperClient::IsIOSVersionAbove13()
 
 bool UScriptHelperClient::IsInstallWX(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallWX");
 
@@ -26134,7 +26299,7 @@ bool UScriptHelperClient::IsInstallWX(TScriptInterface<class UClientNetInterface
 
 bool UScriptHelperClient::IsInstallWhatsapp(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallWhatsapp");
 
@@ -26163,7 +26328,7 @@ bool UScriptHelperClient::IsInstallWhatsapp(TScriptInterface<class UClientNetInt
 
 bool UScriptHelperClient::IsInstallVK(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallVK");
 
@@ -26192,7 +26357,7 @@ bool UScriptHelperClient::IsInstallVK(TScriptInterface<class UClientNetInterface
 
 bool UScriptHelperClient::IsInstallTwitter(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallTwitter");
 
@@ -26221,7 +26386,7 @@ bool UScriptHelperClient::IsInstallTwitter(TScriptInterface<class UClientNetInte
 
 bool UScriptHelperClient::IsInstallTikTok(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallTikTok");
 
@@ -26250,7 +26415,7 @@ bool UScriptHelperClient::IsInstallTikTok(TScriptInterface<class UClientNetInter
 
 bool UScriptHelperClient::IsInstallOpenRec(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallOpenRec");
 
@@ -26279,7 +26444,7 @@ bool UScriptHelperClient::IsInstallOpenRec(TScriptInterface<class UClientNetInte
 
 bool UScriptHelperClient::IsInstallMirrativ(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallMirrativ");
 
@@ -26308,7 +26473,7 @@ bool UScriptHelperClient::IsInstallMirrativ(TScriptInterface<class UClientNetInt
 
 bool UScriptHelperClient::IsInstallMessenger(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallMessenger");
 
@@ -26337,7 +26502,7 @@ bool UScriptHelperClient::IsInstallMessenger(TScriptInterface<class UClientNetIn
 
 bool UScriptHelperClient::IsInstallLite(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallLite");
 
@@ -26366,7 +26531,7 @@ bool UScriptHelperClient::IsInstallLite(TScriptInterface<class UClientNetInterfa
 
 bool UScriptHelperClient::IsInstallLine(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallLine");
 
@@ -26395,7 +26560,7 @@ bool UScriptHelperClient::IsInstallLine(TScriptInterface<class UClientNetInterfa
 
 bool UScriptHelperClient::IsInstallFaceBook(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallFaceBook");
 
@@ -26424,7 +26589,7 @@ bool UScriptHelperClient::IsInstallFaceBook(TScriptInterface<class UClientNetInt
 
 bool UScriptHelperClient::IsInstallDiscord(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallDiscord");
 
@@ -26453,7 +26618,7 @@ bool UScriptHelperClient::IsInstallDiscord(TScriptInterface<class UClientNetInte
 
 bool UScriptHelperClient::IsInstallBgBgByiTOP(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInstallBgBgByiTOP");
 
@@ -26482,7 +26647,7 @@ bool UScriptHelperClient::IsInstallBgBgByiTOP(TScriptInterface<class UClientNetI
 
 bool UScriptHelperClient::IsInReplayState(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsInReplayState");
 
@@ -26508,7 +26673,7 @@ bool UScriptHelperClient::IsInReplayState(class UGameFrontendHUD* GameFrontendHU
 
 bool UScriptHelperClient::IsHOS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsHOS");
 
@@ -26533,7 +26698,7 @@ bool UScriptHelperClient::IsHOS()
 
 bool UScriptHelperClient::IsHapticsEngineEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsHapticsEngineEnable");
 
@@ -26559,7 +26724,7 @@ bool UScriptHelperClient::IsHapticsEngineEnable()
 
 bool UScriptHelperClient::IsGameFileExistsWithPakCheck(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsGameFileExistsWithPakCheck");
 
@@ -26585,7 +26750,7 @@ bool UScriptHelperClient::IsGameFileExistsWithPakCheck(const struct FString& Fil
 
 bool UScriptHelperClient::IsForCE()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsForCE");
 
@@ -26612,7 +26777,7 @@ bool UScriptHelperClient::IsForCE()
 
 bool UScriptHelperClient::IsFileReady(class UGameFrontendHUD* GameFrontendHUD, const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileReady");
 
@@ -26640,7 +26805,7 @@ bool UScriptHelperClient::IsFileReady(class UGameFrontendHUD* GameFrontendHUD, c
 
 bool UScriptHelperClient::IsFileExistsWithPakCheckMatchExt(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExistsWithPakCheckMatchExt");
 
@@ -26667,7 +26832,7 @@ bool UScriptHelperClient::IsFileExistsWithPakCheckMatchExt(const struct FString&
 
 bool UScriptHelperClient::IsFileExistsWithPakCheck(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExistsWithPakCheck");
 
@@ -26694,7 +26859,7 @@ bool UScriptHelperClient::IsFileExistsWithPakCheck(const struct FString& Filenam
 
 bool UScriptHelperClient::IsFileExistsWithOutPakCheck(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExistsWithOutPakCheck");
 
@@ -26721,7 +26886,7 @@ bool UScriptHelperClient::IsFileExistsWithOutPakCheck(const struct FString& Path
 
 bool UScriptHelperClient::IsFileExistInCSCWithCheckRaw(const struct FString& PkgName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExistInCSCWithCheckRaw");
 
@@ -26748,7 +26913,7 @@ bool UScriptHelperClient::IsFileExistInCSCWithCheckRaw(const struct FString& Pkg
 
 bool UScriptHelperClient::IsFileExistInCSCWithCheck(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExistInCSCWithCheck");
 
@@ -26775,7 +26940,7 @@ bool UScriptHelperClient::IsFileExistInCSCWithCheck(const struct FString& Path)
 
 bool UScriptHelperClient::IsFileExistByFileName(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExistByFileName");
 
@@ -26804,7 +26969,7 @@ bool UScriptHelperClient::IsFileExistByFileName(const struct FString& Filename)
 
 bool UScriptHelperClient::IsFileExistByExtension(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Filename, const struct FString& fileExtension)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExistByExtension");
 
@@ -26834,7 +26999,7 @@ bool UScriptHelperClient::IsFileExistByExtension(class UGameFrontendHUD* GameFro
 
 bool UScriptHelperClient::IsFileExist(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsFileExist");
 
@@ -26862,7 +27027,7 @@ bool UScriptHelperClient::IsFileExist(class UGameFrontendHUD* GameFrontendHUD, c
 
 bool UScriptHelperClient::IsEnableDSGrayPublishFlag(uint64_t nGrayPublishFlag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsEnableDSGrayPublishFlag");
 
@@ -26888,7 +27053,7 @@ bool UScriptHelperClient::IsEnableDSGrayPublishFlag(uint64_t nGrayPublishFlag)
 
 bool UScriptHelperClient::IsEmulatorWhenInit()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsEmulatorWhenInit");
 
@@ -26913,7 +27078,7 @@ bool UScriptHelperClient::IsEmulatorWhenInit()
 
 bool UScriptHelperClient::IsEmulator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsEmulator");
 
@@ -26938,7 +27103,7 @@ bool UScriptHelperClient::IsEmulator()
 
 bool UScriptHelperClient::IsEditorDedicatedServer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsEditorDedicatedServer");
 
@@ -26963,7 +27128,7 @@ bool UScriptHelperClient::IsEditorDedicatedServer()
 
 bool UScriptHelperClient::IsEditor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsEditor");
 
@@ -26988,7 +27153,7 @@ bool UScriptHelperClient::IsEditor()
 
 int UScriptHelperClient::IsEarlyZPassEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsEarlyZPassEnable");
 
@@ -27013,7 +27178,7 @@ int UScriptHelperClient::IsEarlyZPassEnable()
 
 bool UScriptHelperClient::IsDolbyAtmosSupported()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsDolbyAtmosSupported");
 
@@ -27038,7 +27203,7 @@ bool UScriptHelperClient::IsDolbyAtmosSupported()
 
 bool UScriptHelperClient::IsDeviceSupportsViberation()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsDeviceSupportsViberation");
 
@@ -27063,7 +27228,7 @@ bool UScriptHelperClient::IsDeviceSupportsViberation()
 
 bool UScriptHelperClient::IsDeviceSupportsHapticsEngine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsDeviceSupportsHapticsEngine");
 
@@ -27088,7 +27253,7 @@ bool UScriptHelperClient::IsDeviceSupportsHapticsEngine()
 
 bool UScriptHelperClient::IsDeviceSupportGyrSensor()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsDeviceSupportGyrSensor");
 
@@ -27113,7 +27278,7 @@ bool UScriptHelperClient::IsDeviceSupportGyrSensor()
 
 bool UScriptHelperClient::IsDeviceOverheat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsDeviceOverheat");
 
@@ -27138,7 +27303,7 @@ bool UScriptHelperClient::IsDeviceOverheat()
 
 bool UScriptHelperClient::IsDeviceHWSupportVulkan()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsDeviceHWSupportVulkan");
 
@@ -27163,11 +27328,36 @@ bool UScriptHelperClient::IsDeviceHWSupportVulkan()
 
 bool UScriptHelperClient::IsDevelopment()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsDevelopment");
 
 	UScriptHelperClient_IsDevelopment_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.IsCPUArchMisMatch
+// (Final, Native, Static, Public)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UScriptHelperClient::IsCPUArchMisMatch()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsCPUArchMisMatch");
+
+	UScriptHelperClient_IsCPUArchMisMatch_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -27189,7 +27379,7 @@ bool UScriptHelperClient::IsDevelopment()
 
 bool UScriptHelperClient::IsConnected(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsConnected");
 
@@ -27217,7 +27407,7 @@ bool UScriptHelperClient::IsConnected(TScriptInterface<class UClientNetInterface
 
 bool UScriptHelperClient::IsCloudVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsCloudVersion");
 
@@ -27242,7 +27432,7 @@ bool UScriptHelperClient::IsCloudVersion()
 
 bool UScriptHelperClient::IsCEVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsCEVersion");
 
@@ -27268,7 +27458,7 @@ bool UScriptHelperClient::IsCEVersion()
 
 bool UScriptHelperClient::IsCEHideLobbyUI(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsCEHideLobbyUI");
 
@@ -27295,7 +27485,7 @@ bool UScriptHelperClient::IsCEHideLobbyUI(class UGameFrontendHUD* GameFrontendHU
 
 bool UScriptHelperClient::IsBlueprintEnum(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsBlueprintEnum");
 
@@ -27321,7 +27511,7 @@ bool UScriptHelperClient::IsBlueprintEnum(const struct FString& Path)
 
 bool UScriptHelperClient::IsBasePrefecthOpen()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsBasePrefecthOpen");
 
@@ -27346,7 +27536,7 @@ bool UScriptHelperClient::IsBasePrefecthOpen()
 
 bool UScriptHelperClient::IsAsanVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsAsanVersion");
 
@@ -27371,7 +27561,7 @@ bool UScriptHelperClient::IsAsanVersion()
 
 bool UScriptHelperClient::IsAndroidHasGyr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.IsAndroidHasGyr");
 
@@ -27398,7 +27588,7 @@ bool UScriptHelperClient::IsAndroidHasGyr()
 
 void UScriptHelperClient::InviteWhatsappOfflineFriends(const struct FString& Title, const struct FString& Content, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InviteWhatsappOfflineFriends");
 
@@ -27428,7 +27618,7 @@ void UScriptHelperClient::InviteWhatsappOfflineFriends(const struct FString& Tit
 
 void UScriptHelperClient::InviteSystemOfflineFriends(const struct FString& Title, const struct FString& Content, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InviteSystemOfflineFriends");
 
@@ -27457,7 +27647,7 @@ void UScriptHelperClient::InviteSystemOfflineFriends(const struct FString& Title
 
 void UScriptHelperClient::InviteSMSOfflineFriends(const struct FString& Content, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InviteSMSOfflineFriends");
 
@@ -27486,7 +27676,7 @@ void UScriptHelperClient::InviteSMSOfflineFriends(const struct FString& Content,
 
 void UScriptHelperClient::InviteLineOfflineFriends(const struct FString& Title, const struct FString& Content, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InviteLineOfflineFriends");
 
@@ -27517,7 +27707,7 @@ void UScriptHelperClient::InviteLineOfflineFriends(const struct FString& Title, 
 
 void UScriptHelperClient::InviteFBOfflineFriends(const struct FString& Title, const struct FString& Content, const struct FString& link, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InviteFBOfflineFriends");
 
@@ -27546,7 +27736,7 @@ void UScriptHelperClient::InviteFBOfflineFriends(const struct FString& Title, co
 
 void UScriptHelperClient::InstallNewApp(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InstallNewApp");
 
@@ -27568,7 +27758,7 @@ void UScriptHelperClient::InstallNewApp(class UGameFrontendHUD* GameFrontendHUD)
 
 void UScriptHelperClient::InitWebViewManager()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitWebViewManager");
 
@@ -27593,7 +27783,7 @@ void UScriptHelperClient::InitWebViewManager()
 
 int UScriptHelperClient::InitVPN(const struct FString& InVPNGUID, const struct FString& InClientVersion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitVPN");
 
@@ -27618,7 +27808,7 @@ int UScriptHelperClient::InitVPN(const struct FString& InVPNGUID, const struct F
 
 void UScriptHelperClient::InitVlink()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitVlink");
 
@@ -27639,7 +27829,7 @@ void UScriptHelperClient::InitVlink()
 
 void UScriptHelperClient::InitQPlatformMisc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitQPlatformMisc");
 
@@ -27664,7 +27854,7 @@ void UScriptHelperClient::InitQPlatformMisc()
 
 void UScriptHelperClient::InitLoginAccount(uint64_t AccUin, const struct FString& AccPswd, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitLoginAccount");
 
@@ -27690,7 +27880,7 @@ void UScriptHelperClient::InitLoginAccount(uint64_t AccUin, const struct FString
 
 void UScriptHelperClient::InitJavaFunctions()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitJavaFunctions");
 
@@ -27711,7 +27901,7 @@ void UScriptHelperClient::InitJavaFunctions()
 
 void UScriptHelperClient::InitIOSNotchSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitIOSNotchSize");
 
@@ -27735,7 +27925,7 @@ void UScriptHelperClient::InitIOSNotchSize()
 
 void UScriptHelperClient::InitIMSDKEnv(uint32_t iEnv, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitIMSDKEnv");
 
@@ -27773,7 +27963,7 @@ void UScriptHelperClient::InitIMSDKEnv(uint32_t iEnv, TScriptInterface<class UCl
 
 void UScriptHelperClient::InitializePuffer(class UGameFrontendHUD* GameFrontendHUD, bool needCheck, int maxDownloadsPerTask, int maxDownTask, int maxDownloadSpeed, bool useOldInterface, bool removeOldWhenUpdate, int versionType, const struct FString& InDownloadFuncDict, int InDnsType, int InDownloadStage, int InDownloadEngine)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitializePuffer");
 
@@ -27809,7 +27999,7 @@ void UScriptHelperClient::InitializePuffer(class UGameFrontendHUD* GameFrontendH
 
 void UScriptHelperClient::InitializeLaggingReporter(class UGameFrontendHUD* GameFrontendHUD, bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitializeLaggingReporter");
 
@@ -27834,7 +28024,7 @@ void UScriptHelperClient::InitializeLaggingReporter(class UGameFrontendHUD* Game
 
 void UScriptHelperClient::InitializeCvmWithRunPhase(int RunPhase)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitializeCvmWithRunPhase");
 
@@ -27856,7 +28046,7 @@ void UScriptHelperClient::InitializeCvmWithRunPhase(int RunPhase)
 
 void UScriptHelperClient::InitHF()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitHF");
 
@@ -27877,7 +28067,7 @@ void UScriptHelperClient::InitHF()
 
 void UScriptHelperClient::InitHDmpveRemoteConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitHDmpveRemoteConfig");
 
@@ -27903,7 +28093,7 @@ void UScriptHelperClient::InitHDmpveRemoteConfig()
 
 int UScriptHelperClient::InitDH(const struct FString& gen, const struct FString& prime, int v_srand)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InitDH");
 
@@ -27932,7 +28122,7 @@ int UScriptHelperClient::InitDH(const struct FString& gen, const struct FString&
 
 void UScriptHelperClient::InfinityGauntletWithPrefix(const struct FString& ClsName, const struct FString& Prefix)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InfinityGauntletWithPrefix");
 
@@ -27957,7 +28147,7 @@ void UScriptHelperClient::InfinityGauntletWithPrefix(const struct FString& ClsNa
 
 void UScriptHelperClient::InfinityGauntlet(const struct FString& ClsName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.InfinityGauntlet");
 
@@ -27982,7 +28172,7 @@ void UScriptHelperClient::InfinityGauntlet(const struct FString& ClsName)
 
 struct FString UScriptHelperClient::HtmlEncode(const struct FString& UnencodedString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HtmlEncode");
 
@@ -28006,7 +28196,7 @@ struct FString UScriptHelperClient::HtmlEncode(const struct FString& UnencodedSt
 
 void UScriptHelperClient::HideH5WebView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HideH5WebView");
 
@@ -28027,7 +28217,7 @@ void UScriptHelperClient::HideH5WebView()
 
 void UScriptHelperClient::HDmpveRemoteConfigStartOnce()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigStartOnce");
 
@@ -28050,7 +28240,7 @@ void UScriptHelperClient::HDmpveRemoteConfigStartOnce()
 
 void UScriptHelperClient::HDmpveRemoteConfigSetUrl(const struct FString& InRemoteConfigUrl)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigSetUrl");
 
@@ -28075,7 +28265,7 @@ void UScriptHelperClient::HDmpveRemoteConfigSetUrl(const struct FString& InRemot
 
 struct FString UScriptHelperClient::HDmpveRemoteConfigGetStringNotDefalut(const struct FString& InKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigGetStringNotDefalut");
 
@@ -28103,7 +28293,7 @@ struct FString UScriptHelperClient::HDmpveRemoteConfigGetStringNotDefalut(const 
 
 struct FString UScriptHelperClient::HDmpveRemoteConfigGetString(const struct FString& InKey, const struct FString& InDefaultValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigGetString");
 
@@ -28131,7 +28321,7 @@ struct FString UScriptHelperClient::HDmpveRemoteConfigGetString(const struct FSt
 
 int UScriptHelperClient::HDmpveRemoteConfigGetIntNotDefalut(const struct FString& InKe)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigGetIntNotDefalut");
 
@@ -28159,7 +28349,7 @@ int UScriptHelperClient::HDmpveRemoteConfigGetIntNotDefalut(const struct FString
 
 int UScriptHelperClient::HDmpveRemoteConfigGetInt(const struct FString& InKey, int InDefaultValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigGetInt");
 
@@ -28187,7 +28377,7 @@ int UScriptHelperClient::HDmpveRemoteConfigGetInt(const struct FString& InKey, i
 
 bool UScriptHelperClient::HDmpveRemoteConfigGetBoolNotDefalut(const struct FString& InKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigGetBoolNotDefalut");
 
@@ -28215,7 +28405,7 @@ bool UScriptHelperClient::HDmpveRemoteConfigGetBoolNotDefalut(const struct FStri
 
 bool UScriptHelperClient::HDmpveRemoteConfigGetBool(const struct FString& InKey, bool InDefaultValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigGetBool");
 
@@ -28240,7 +28430,7 @@ bool UScriptHelperClient::HDmpveRemoteConfigGetBool(const struct FString& InKey,
 
 void UScriptHelperClient::HDmpveRemoteConfigClear()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HDmpveRemoteConfigClear");
 
@@ -28263,7 +28453,7 @@ void UScriptHelperClient::HDmpveRemoteConfigClear()
 
 bool UScriptHelperClient::HaveReceivedNoticeCallback()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HaveReceivedNoticeCallback");
 
@@ -28288,7 +28478,7 @@ bool UScriptHelperClient::HaveReceivedNoticeCallback()
 
 bool UScriptHelperClient::HasRemoteConfigReady()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HasRemoteConfigReady");
 
@@ -28315,7 +28505,7 @@ bool UScriptHelperClient::HasRemoteConfigReady()
 
 bool UScriptHelperClient::HasNotice(int Type, const struct FString& Scene)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HasNotice");
 
@@ -28342,7 +28532,7 @@ bool UScriptHelperClient::HasNotice(int Type, const struct FString& Scene)
 
 bool UScriptHelperClient::HasNotchInScreen()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HasNotchInScreen");
 
@@ -28367,7 +28557,7 @@ bool UScriptHelperClient::HasNotchInScreen()
 
 bool UScriptHelperClient::HasLoadGameSlotCrashFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HasLoadGameSlotCrashFlag");
 
@@ -28392,7 +28582,7 @@ bool UScriptHelperClient::HasLoadGameSlotCrashFlag()
 
 bool UScriptHelperClient::HasDownloadedBasePak()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HasDownloadedBasePak");
 
@@ -28417,7 +28607,7 @@ bool UScriptHelperClient::HasDownloadedBasePak()
 
 bool UScriptHelperClient::HasActiveWifi()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.HasActiveWifi");
 
@@ -28440,7 +28630,7 @@ bool UScriptHelperClient::HasActiveWifi()
 
 void UScriptHelperClient::GuestLogin()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GuestLogin");
 
@@ -28463,7 +28653,7 @@ void UScriptHelperClient::GuestLogin()
 
 int UScriptHelperClient::GRromelinkRecreateGameSocket()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GRromelinkRecreateGameSocket");
 
@@ -28486,7 +28676,7 @@ int UScriptHelperClient::GRromelinkRecreateGameSocket()
 
 void UScriptHelperClient::GotoPlatformAppraise()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GotoPlatformAppraise");
 
@@ -28510,7 +28700,7 @@ void UScriptHelperClient::GotoPlatformAppraise()
 
 void UScriptHelperClient::GMTestAllocUObjs(class UGameFrontendHUD* GameFrontendHUD, int Num)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GMTestAllocUObjs");
 
@@ -28535,7 +28725,7 @@ void UScriptHelperClient::GMTestAllocUObjs(class UGameFrontendHUD* GameFrontendH
 
 void UScriptHelperClient::GMH5Enable(bool flag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GMH5Enable");
 
@@ -28559,7 +28749,7 @@ void UScriptHelperClient::GMH5Enable(bool flag)
 
 int UScriptHelperClient::GetYYXDeviceModel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetYYXDeviceModel");
 
@@ -28586,7 +28776,7 @@ int UScriptHelperClient::GetYYXDeviceModel()
 
 void UScriptHelperClient::GetWidgetsByClass(class UWidget* Parent, class UClass* Type, TArray<class UWidget*>* Children)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetWidgetsByClass");
 
@@ -28615,7 +28805,7 @@ void UScriptHelperClient::GetWidgetsByClass(class UWidget* Parent, class UClass*
 
 struct FString UScriptHelperClient::GetWebViewTicket(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetWebViewTicket");
 
@@ -28645,7 +28835,7 @@ struct FString UScriptHelperClient::GetWebViewTicket(TScriptInterface<class UCli
 
 struct FString UScriptHelperClient::GetWebviewFullScreenSize(int* OutSurfaceWidth, int* OutSurfaceHeight)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetWebviewFullScreenSize");
 
@@ -28681,7 +28871,7 @@ struct FString UScriptHelperClient::GetWebviewFullScreenSize(int* OutSurfaceWidt
 
 struct FString UScriptHelperClient::GetWeaponDIYIconPath(const struct FString& PlayerUID, int WeaponId, const struct FString& PlanID, bool relativePath, int Width, int Height)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetWeaponDIYIconPath");
 
@@ -28713,7 +28903,7 @@ struct FString UScriptHelperClient::GetWeaponDIYIconPath(const struct FString& P
 
 int UScriptHelperClient::GetVolume(int InStreamType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetVolume");
 
@@ -28740,7 +28930,7 @@ int UScriptHelperClient::GetVolume(int InStreamType)
 
 void UScriptHelperClient::GetVoiceSdkReconnectInfo(class UGameFrontendHUD* GameFrontendHUD, TMap<struct FString, struct FString> Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetVoiceSdkReconnectInfo");
 
@@ -28765,7 +28955,7 @@ void UScriptHelperClient::GetVoiceSdkReconnectInfo(class UGameFrontendHUD* GameF
 
 bool UScriptHelperClient::GetUserVulkanSetting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUserVulkanSetting");
 
@@ -28790,7 +28980,7 @@ bool UScriptHelperClient::GetUserVulkanSetting()
 
 int UScriptHelperClient::GetUserTMFPTapEnableFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUserTMFPTapEnableFlag");
 
@@ -28815,7 +29005,7 @@ int UScriptHelperClient::GetUserTMFPTapEnableFlag()
 
 bool UScriptHelperClient::GetUseMouseForTouch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUseMouseForTouch");
 
@@ -28841,7 +29031,7 @@ bool UScriptHelperClient::GetUseMouseForTouch()
 
 struct FString UScriptHelperClient::GetUObjectName(class UObject* uObj)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUObjectName");
 
@@ -28868,7 +29058,7 @@ struct FString UScriptHelperClient::GetUObjectName(class UObject* uObj)
 
 struct FString UScriptHelperClient::GetUnrealNetworkStatus(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUnrealNetworkStatus");
 
@@ -28894,7 +29084,7 @@ struct FString UScriptHelperClient::GetUnrealNetworkStatus(class UGameFrontendHU
 
 struct FString UScriptHelperClient::GetUIRectOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUIRectOffset");
 
@@ -28919,7 +29109,7 @@ struct FString UScriptHelperClient::GetUIRectOffset()
 
 struct FString UScriptHelperClient::GetUEPUBGMServerName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUEPUBGMServerName");
 
@@ -28944,7 +29134,7 @@ struct FString UScriptHelperClient::GetUEPUBGMServerName()
 
 struct FString UScriptHelperClient::GetUEPUBGMCPName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetUEPUBGMCPName");
 
@@ -28970,7 +29160,7 @@ struct FString UScriptHelperClient::GetUEPUBGMCPName()
 
 struct FString UScriptHelperClient::GetToken(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetToken");
 
@@ -28998,7 +29188,7 @@ struct FString UScriptHelperClient::GetToken(TScriptInterface<class UClientNetIn
 
 int UScriptHelperClient::GetTMFPTapDeviceSupportFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetTMFPTapDeviceSupportFlag");
 
@@ -29023,7 +29213,7 @@ int UScriptHelperClient::GetTMFPTapDeviceSupportFlag()
 
 struct FString UScriptHelperClient::GetTimezoneName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetTimezoneName");
 
@@ -29048,7 +29238,7 @@ struct FString UScriptHelperClient::GetTimezoneName()
 
 float UScriptHelperClient::GetTimeInMiliSeconds()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetTimeInMiliSeconds");
 
@@ -29074,7 +29264,7 @@ float UScriptHelperClient::GetTimeInMiliSeconds()
 
 int UScriptHelperClient::GetTextureGroupLODBias(unsigned char GroupID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetTextureGroupLODBias");
 
@@ -29100,7 +29290,7 @@ int UScriptHelperClient::GetTextureGroupLODBias(unsigned char GroupID)
 
 struct FString UScriptHelperClient::GetTelecomSvr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetTelecomSvr");
 
@@ -29125,7 +29315,7 @@ struct FString UScriptHelperClient::GetTelecomSvr()
 
 int UScriptHelperClient::GetTCDeviceLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetTCDeviceLevel");
 
@@ -29151,7 +29341,7 @@ int UScriptHelperClient::GetTCDeviceLevel()
 
 int UScriptHelperClient::GetTableCount(const struct FString& tableName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetTableCount");
 
@@ -29178,7 +29368,7 @@ int UScriptHelperClient::GetTableCount(const struct FString& tableName)
 
 struct FString UScriptHelperClient::GetSystemProperty(const struct FString& InKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSystemProperty");
 
@@ -29204,7 +29394,7 @@ struct FString UScriptHelperClient::GetSystemProperty(const struct FString& InKe
 
 int UScriptHelperClient::GetSystemLanguage_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSystemLanguage_LuaState");
 
@@ -29229,7 +29419,7 @@ int UScriptHelperClient::GetSystemLanguage_LuaState()
 
 uint32_t UScriptHelperClient::GetSubsideFeatureLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSubsideFeatureLevel");
 
@@ -29254,7 +29444,7 @@ uint32_t UScriptHelperClient::GetSubsideFeatureLevel()
 
 struct FString UScriptHelperClient::GetSrcVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSrcVersion");
 
@@ -29279,7 +29469,7 @@ struct FString UScriptHelperClient::GetSrcVersion()
 
 struct FString UScriptHelperClient::GetSplitMapConfigInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSplitMapConfigInfo");
 
@@ -29304,7 +29494,7 @@ struct FString UScriptHelperClient::GetSplitMapConfigInfo()
 
 struct FString UScriptHelperClient::GetSpecialData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSpecialData");
 
@@ -29329,7 +29519,7 @@ struct FString UScriptHelperClient::GetSpecialData()
 
 int UScriptHelperClient::GetSoundEffectQuality()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSoundEffectQuality");
 
@@ -29354,7 +29544,7 @@ int UScriptHelperClient::GetSoundEffectQuality()
 
 struct FString UScriptHelperClient::GetSOStoredPath()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetSOStoredPath");
 
@@ -29379,7 +29569,7 @@ struct FString UScriptHelperClient::GetSOStoredPath()
 
 int UScriptHelperClient::GetShaderPrecompileProgress()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetShaderPrecompileProgress");
 
@@ -29405,7 +29595,7 @@ int UScriptHelperClient::GetShaderPrecompileProgress()
 
 int UScriptHelperClient::GetServerDelay(const struct FString& ServerAddress)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetServerDelay");
 
@@ -29431,7 +29621,7 @@ int UScriptHelperClient::GetServerDelay(const struct FString& ServerAddress)
 
 int UScriptHelperClient::GetScreenWidthForWebview()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetScreenWidthForWebview");
 
@@ -29456,7 +29646,7 @@ int UScriptHelperClient::GetScreenWidthForWebview()
 
 int UScriptHelperClient::GetScreenWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetScreenWidth");
 
@@ -29481,7 +29671,7 @@ int UScriptHelperClient::GetScreenWidth()
 
 int UScriptHelperClient::GetScreenHight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetScreenHight");
 
@@ -29506,7 +29696,7 @@ int UScriptHelperClient::GetScreenHight()
 
 int UScriptHelperClient::GetScreenHeightForWebview()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetScreenHeightForWebview");
 
@@ -29531,11 +29721,36 @@ int UScriptHelperClient::GetScreenHeightForWebview()
 
 int UScriptHelperClient::GetScreenDensity()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetScreenDensity");
 
 	UScriptHelperClient_GetScreenDensity_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetRootDir
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UScriptHelperClient::GetRootDir()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetRootDir");
+
+	UScriptHelperClient_GetRootDir_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -29556,7 +29771,7 @@ int UScriptHelperClient::GetScreenDensity()
 
 int UScriptHelperClient::GetRingMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetRingMode");
 
@@ -29584,7 +29799,7 @@ int UScriptHelperClient::GetRingMode()
 
 struct FString UScriptHelperClient::GetRemarkNameByGIDWithObj(class UObject* Obj, const struct FString& gid, const struct FString& PlayerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetRemarkNameByGIDWithObj");
 
@@ -29615,7 +29830,7 @@ struct FString UScriptHelperClient::GetRemarkNameByGIDWithObj(class UObject* Obj
 
 struct FString UScriptHelperClient::GetRemarkNameByGID(class UGameFrontendHUD* GameFrontendHUD, const struct FString& gid, const struct FString& PlayerName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetRemarkNameByGID");
 
@@ -29644,7 +29859,7 @@ struct FString UScriptHelperClient::GetRemarkNameByGID(class UGameFrontendHUD* G
 
 struct FString UScriptHelperClient::GetRegisterChannelID(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetRegisterChannelID");
 
@@ -29672,7 +29887,7 @@ struct FString UScriptHelperClient::GetRegisterChannelID(TScriptInterface<class 
 
 bool UScriptHelperClient::GetRedFlameSwitch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetRedFlameSwitch");
 
@@ -29697,7 +29912,7 @@ bool UScriptHelperClient::GetRedFlameSwitch()
 
 bool UScriptHelperClient::GetRedBloodSwitch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetRedBloodSwitch");
 
@@ -29722,7 +29937,7 @@ bool UScriptHelperClient::GetRedBloodSwitch()
 
 struct FString UScriptHelperClient::GetPureIOSDocumentsDirectory()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPureIOSDocumentsDirectory");
 
@@ -29748,7 +29963,7 @@ struct FString UScriptHelperClient::GetPureIOSDocumentsDirectory()
 
 bool UScriptHelperClient::GetPufferInitResult(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPufferInitResult");
 
@@ -29775,7 +29990,7 @@ bool UScriptHelperClient::GetPufferInitResult(class UGameFrontendHUD* GameFronte
 
 uint32_t UScriptHelperClient::GetPufferInitErrCode(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPufferInitErrCode");
 
@@ -29801,7 +30016,7 @@ uint32_t UScriptHelperClient::GetPufferInitErrCode(class UGameFrontendHUD* GameF
 
 struct FString UScriptHelperClient::GetPublishRegion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPublishRegion");
 
@@ -29827,7 +30042,7 @@ struct FString UScriptHelperClient::GetPublishRegion()
 
 struct FString UScriptHelperClient::GetPublicKey(const struct FString& cli_pri_key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPublicKey");
 
@@ -29854,7 +30069,7 @@ struct FString UScriptHelperClient::GetPublicKey(const struct FString& cli_pri_k
 
 struct FString UScriptHelperClient::GetPUBGModuleBaseAddr(const struct FString& ParamModuleName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPUBGModuleBaseAddr");
 
@@ -29880,7 +30095,7 @@ struct FString UScriptHelperClient::GetPUBGModuleBaseAddr(const struct FString& 
 
 struct FString UScriptHelperClient::GetPrivateKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPrivateKey");
 
@@ -29907,7 +30122,7 @@ struct FString UScriptHelperClient::GetPrivateKey()
 
 TArray<struct FString> UScriptHelperClient::GetPkgsFromDir(bool bUseCheck, const struct FString& InDir)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPkgsFromDir");
 
@@ -29935,7 +30150,7 @@ TArray<struct FString> UScriptHelperClient::GetPkgsFromDir(bool bUseCheck, const
 
 struct FString UScriptHelperClient::GetPingReportInfo(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPingReportInfo");
 
@@ -29962,7 +30177,7 @@ struct FString UScriptHelperClient::GetPingReportInfo(class UGameFrontendHUD* Ga
 
 struct FString UScriptHelperClient::GetPingReportData(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPingReportData");
 
@@ -29988,7 +30203,7 @@ struct FString UScriptHelperClient::GetPingReportData(class UGameFrontendHUD* Ga
 
 int UScriptHelperClient::GetPhysicalScreenWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPhysicalScreenWidth");
 
@@ -30013,7 +30228,7 @@ int UScriptHelperClient::GetPhysicalScreenWidth()
 
 int UScriptHelperClient::GetPhysicalScreenHeight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPhysicalScreenHeight");
 
@@ -30039,7 +30254,7 @@ int UScriptHelperClient::GetPhysicalScreenHeight()
 
 int64_t UScriptHelperClient::GetPhysicalFileTime(const struct FString& InPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPhysicalFileTime");
 
@@ -30065,7 +30280,7 @@ int64_t UScriptHelperClient::GetPhysicalFileTime(const struct FString& InPath)
 
 struct FString UScriptHelperClient::GetPhoneType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPhoneType");
 
@@ -30090,7 +30305,7 @@ struct FString UScriptHelperClient::GetPhoneType()
 
 struct FString UScriptHelperClient::GetPhoneDeviceID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPhoneDeviceID");
 
@@ -30115,7 +30330,7 @@ struct FString UScriptHelperClient::GetPhoneDeviceID()
 
 struct FString UScriptHelperClient::GetPhoneAdvertisingID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPhoneAdvertisingID");
 
@@ -30140,7 +30355,7 @@ struct FString UScriptHelperClient::GetPhoneAdvertisingID()
 
 struct FString UScriptHelperClient::GetPackChannel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetPackChannel");
 
@@ -30165,7 +30380,7 @@ struct FString UScriptHelperClient::GetPackChannel()
 
 struct FString UScriptHelperClient::GetOSVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetOSVersion");
 
@@ -30190,7 +30405,7 @@ struct FString UScriptHelperClient::GetOSVersion()
 
 struct FString UScriptHelperClient::GetOperator()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetOperator");
 
@@ -30216,7 +30431,7 @@ struct FString UScriptHelperClient::GetOperator()
 
 TArray<struct FString> UScriptHelperClient::GetODPaksFileUseTime(const struct FString& DumpFilename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetODPaksFileUseTime");
 
@@ -30243,7 +30458,7 @@ TArray<struct FString> UScriptHelperClient::GetODPaksFileUseTime(const struct FS
 
 struct FString UScriptHelperClient::GetODPakName(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetODPakName");
 
@@ -30269,11 +30484,36 @@ struct FString UScriptHelperClient::GetODPakName(const struct FString& Path)
 
 int UScriptHelperClient::GetObjectArrayNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetObjectArrayNum");
 
 	UScriptHelperClient_GetObjectArrayNum_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetObbFilePath
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UScriptHelperClient::GetObbFilePath()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetObbFilePath");
+
+	UScriptHelperClient_GetObbFilePath_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -30294,7 +30534,7 @@ int UScriptHelperClient::GetObjectArrayNum()
 
 TArray<int> UScriptHelperClient::GetNotchSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetNotchSize");
 
@@ -30319,7 +30559,7 @@ TArray<int> UScriptHelperClient::GetNotchSize()
 
 struct FString UScriptHelperClient::GetNetWorkType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetNetWorkType");
 
@@ -30344,7 +30584,7 @@ struct FString UScriptHelperClient::GetNetWorkType()
 
 struct FString UScriptHelperClient::GetNativeVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetNativeVersion");
 
@@ -30369,7 +30609,7 @@ struct FString UScriptHelperClient::GetNativeVersion()
 
 struct FString UScriptHelperClient::GetNativePackageTag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetNativePackageTag");
 
@@ -30395,7 +30635,7 @@ struct FString UScriptHelperClient::GetNativePackageTag()
 
 TArray<struct FString> UScriptHelperClient::GetMyFriendObservers(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetMyFriendObservers");
 
@@ -30421,7 +30661,7 @@ TArray<struct FString> UScriptHelperClient::GetMyFriendObservers(class UGameFron
 
 TArray<struct FString> UScriptHelperClient::GetMountedPaks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetMountedPaks");
 
@@ -30446,7 +30686,7 @@ TArray<struct FString> UScriptHelperClient::GetMountedPaks()
 
 int UScriptHelperClient::GetMemoryStats_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetMemoryStats_LuaState");
 
@@ -30471,7 +30711,7 @@ int UScriptHelperClient::GetMemoryStats_LuaState()
 
 int UScriptHelperClient::GetMemorySize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetMemorySize");
 
@@ -30496,7 +30736,7 @@ int UScriptHelperClient::GetMemorySize()
 
 TArray<int> UScriptHelperClient::GetMaxFPSConfigByQuality()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetMaxFPSConfigByQuality");
 
@@ -30521,7 +30761,7 @@ TArray<int> UScriptHelperClient::GetMaxFPSConfigByQuality()
 
 int UScriptHelperClient::GetLuaTableSize_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetLuaTableSize_LuaState");
 
@@ -30546,7 +30786,7 @@ int UScriptHelperClient::GetLuaTableSize_LuaState()
 
 struct FString UScriptHelperClient::GetLuaRootDir()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetLuaRootDir");
 
@@ -30572,7 +30812,7 @@ struct FString UScriptHelperClient::GetLuaRootDir()
 
 int UScriptHelperClient::GetLoginChannel(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetLoginChannel");
 
@@ -30600,7 +30840,7 @@ int UScriptHelperClient::GetLoginChannel(TScriptInterface<class UClientNetInterf
 
 struct FString UScriptHelperClient::GetLoadGameSlotCrashInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetLoadGameSlotCrashInfo");
 
@@ -30625,7 +30865,7 @@ struct FString UScriptHelperClient::GetLoadGameSlotCrashInfo()
 
 struct FString UScriptHelperClient::GetLoadCostUseTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetLoadCostUseTime");
 
@@ -30650,7 +30890,7 @@ struct FString UScriptHelperClient::GetLoadCostUseTime()
 
 struct FString UScriptHelperClient::GetLaunchLocalNotificationID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetLaunchLocalNotificationID");
 
@@ -30675,7 +30915,7 @@ struct FString UScriptHelperClient::GetLaunchLocalNotificationID()
 
 struct FString UScriptHelperClient::GetLastSessionUserId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetLastSessionUserId");
 
@@ -30702,7 +30942,7 @@ struct FString UScriptHelperClient::GetLastSessionUserId()
 
 TArray<struct FString> UScriptHelperClient::GetKnownMissingPackage(const struct FString& PackageName, const struct FString& DumpFilename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetKnownMissingPackage");
 
@@ -30729,7 +30969,7 @@ TArray<struct FString> UScriptHelperClient::GetKnownMissingPackage(const struct 
 
 int UScriptHelperClient::GetiTOPLbsDelay()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetiTOPLbsDelay");
 
@@ -30755,7 +30995,7 @@ int UScriptHelperClient::GetiTOPLbsDelay()
 
 struct FString UScriptHelperClient::GetITopGameId(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetITopGameId");
 
@@ -30783,7 +31023,7 @@ struct FString UScriptHelperClient::GetITopGameId(TScriptInterface<class UClient
 
 int UScriptHelperClient::GetIsSecretVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetIsSecretVersion");
 
@@ -30808,7 +31048,7 @@ int UScriptHelperClient::GetIsSecretVersion()
 
 bool UScriptHelperClient::GetIsPlayerUsingVPN()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetIsPlayerUsingVPN");
 
@@ -30834,7 +31074,7 @@ bool UScriptHelperClient::GetIsPlayerUsingVPN()
 
 bool UScriptHelperClient::GetIsOpenBattlePlayback(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetIsOpenBattlePlayback");
 
@@ -30860,7 +31100,7 @@ bool UScriptHelperClient::GetIsOpenBattlePlayback(class UGameFrontendHUD* GameFr
 
 int UScriptHelperClient::GetIPRegion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetIPRegion");
 
@@ -30886,7 +31126,7 @@ int UScriptHelperClient::GetIPRegion()
 
 struct FString UScriptHelperClient::GetIpAddrByHost(const struct FString& Host)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetIpAddrByHost");
 
@@ -30912,7 +31152,7 @@ struct FString UScriptHelperClient::GetIpAddrByHost(const struct FString& Host)
 
 struct FString UScriptHelperClient::GetIpAddr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetIpAddr");
 
@@ -30938,7 +31178,7 @@ struct FString UScriptHelperClient::GetIpAddr()
 
 struct FString UScriptHelperClient::GetInstallChannelID(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetInstallChannelID");
 
@@ -30966,7 +31206,7 @@ struct FString UScriptHelperClient::GetInstallChannelID(TScriptInterface<class U
 
 int UScriptHelperClient::GetIMSDKEnv()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetIMSDKEnv");
 
@@ -30991,7 +31231,7 @@ int UScriptHelperClient::GetIMSDKEnv()
 
 struct FString UScriptHelperClient::GetHDmpveInstanceId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetHDmpveInstanceId");
 
@@ -31017,7 +31257,7 @@ struct FString UScriptHelperClient::GetHDmpveInstanceId()
 
 bool UScriptHelperClient::GetH5CacheStatus(const struct FString& ModuleName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetH5CacheStatus");
 
@@ -31045,7 +31285,7 @@ bool UScriptHelperClient::GetH5CacheStatus(const struct FString& ModuleName)
 
 struct FGroupInfoWrapper UScriptHelperClient::GetGroupInfo(int SnsAction, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGroupInfo");
 
@@ -31074,7 +31314,7 @@ struct FGroupInfoWrapper UScriptHelperClient::GetGroupInfo(int SnsAction, TScrip
 
 struct FString UScriptHelperClient::GetGPUFamily()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGPUFamily");
 
@@ -31099,7 +31339,7 @@ struct FString UScriptHelperClient::GetGPUFamily()
 
 int UScriptHelperClient::GetGoogleServiceVersionCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGoogleServiceVersionCode");
 
@@ -31124,7 +31364,7 @@ int UScriptHelperClient::GetGoogleServiceVersionCode()
 
 struct FString UScriptHelperClient::GetGLVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGLVersion");
 
@@ -31149,7 +31389,7 @@ struct FString UScriptHelperClient::GetGLVersion()
 
 struct FString UScriptHelperClient::GetGLType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGLType");
 
@@ -31175,7 +31415,7 @@ struct FString UScriptHelperClient::GetGLType()
 
 struct FString UScriptHelperClient::GetGameStatus(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGameStatus");
 
@@ -31202,7 +31442,7 @@ struct FString UScriptHelperClient::GetGameStatus(class UGameFrontendHUD* GameFr
 
 struct FString UScriptHelperClient::GetGameModeID(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGameModeID");
 
@@ -31228,11 +31468,40 @@ struct FString UScriptHelperClient::GetGameModeID(class UGameFrontendHUD* GameFr
 
 struct FString UScriptHelperClient::GetGameMasterGUID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetGameMasterGUID");
 
 	UScriptHelperClient_GetGameMasterGUID_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetFromSharedPreferences
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 Key                            (Parm, ZeroConstructor)
+// struct FString                 DefaultValue                   (Parm, ZeroConstructor)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UScriptHelperClient::GetFromSharedPreferences(const struct FString& Key, const struct FString& DefaultValue)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFromSharedPreferences");
+
+	UScriptHelperClient_GetFromSharedPreferences_Params params;
+	params.Key = Key;
+	params.DefaultValue = DefaultValue;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -31253,7 +31522,7 @@ struct FString UScriptHelperClient::GetGameMasterGUID()
 
 int64_t UScriptHelperClient::GetFrameCounter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFrameCounter");
 
@@ -31278,7 +31547,7 @@ int64_t UScriptHelperClient::GetFrameCounter()
 
 float UScriptHelperClient::GetFPS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFPS");
 
@@ -31303,7 +31572,7 @@ float UScriptHelperClient::GetFPS()
 
 bool UScriptHelperClient::GetForceVulkanAvailable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetForceVulkanAvailable");
 
@@ -31328,7 +31597,7 @@ bool UScriptHelperClient::GetForceVulkanAvailable()
 
 struct FString UScriptHelperClient::GetFocusedSlateName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFocusedSlateName");
 
@@ -31353,11 +31622,38 @@ struct FString UScriptHelperClient::GetFocusedSlateName()
 
 struct FString UScriptHelperClient::GetFireBaseFCMToken()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFireBaseFCMToken");
 
 	UScriptHelperClient_GetFireBaseFCMToken_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetFileSizeOutsideSandbox
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 FilePath                       (Parm, ZeroConstructor)
+// int64_t                        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int64_t UScriptHelperClient::GetFileSizeOutsideSandbox(const struct FString& FilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFileSizeOutsideSandbox");
+
+	UScriptHelperClient_GetFileSizeOutsideSandbox_Params params;
+	params.FilePath = FilePath;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -31379,7 +31675,7 @@ struct FString UScriptHelperClient::GetFireBaseFCMToken()
 
 int64_t UScriptHelperClient::GetFileSizeOnDiskBytes(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFileSizeOnDiskBytes");
 
@@ -31406,7 +31702,7 @@ int64_t UScriptHelperClient::GetFileSizeOnDiskBytes(const struct FString& FilePa
 
 uint32_t UScriptHelperClient::GetFileSizeOnDisk(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFileSizeOnDisk");
 
@@ -31434,7 +31730,7 @@ uint32_t UScriptHelperClient::GetFileSizeOnDisk(const struct FString& FilePath)
 
 uint64_t UScriptHelperClient::GetFileSizeCompressed(class UGameFrontendHUD* GameFrontendHUD, const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFileSizeCompressed");
 
@@ -31462,7 +31758,7 @@ uint64_t UScriptHelperClient::GetFileSizeCompressed(class UGameFrontendHUD* Game
 
 struct FString UScriptHelperClient::GetFileHash(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFileHash");
 
@@ -31489,7 +31785,7 @@ struct FString UScriptHelperClient::GetFileHash(const struct FString& FilePath)
 
 struct FString UScriptHelperClient::GetFileDirPath(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFileDirPath");
 
@@ -31519,7 +31815,7 @@ struct FString UScriptHelperClient::GetFileDirPath(const struct FString& FilePat
 
 void UScriptHelperClient::GetFBFriendsUnregistered(uint32_t page, uint32_t Count, uint32_t Type, const struct FString& extend, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetFBFriendsUnregistered");
 
@@ -31549,7 +31845,7 @@ void UScriptHelperClient::GetFBFriendsUnregistered(uint32_t page, uint32_t Count
 
 TArray<int> UScriptHelperClient::GetExpandMaxFPSConfigByQuality()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetExpandMaxFPSConfigByQuality");
 
@@ -31574,7 +31870,7 @@ TArray<int> UScriptHelperClient::GetExpandMaxFPSConfigByQuality()
 
 int UScriptHelperClient::GetExactDeviceLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetExactDeviceLevel");
 
@@ -31600,7 +31896,7 @@ int UScriptHelperClient::GetExactDeviceLevel()
 
 struct FString UScriptHelperClient::GetEncodeUrl(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetEncodeUrl");
 
@@ -31626,7 +31922,7 @@ struct FString UScriptHelperClient::GetEncodeUrl(const struct FString& URL)
 
 struct FString UScriptHelperClient::GetEmulatorName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetEmulatorName");
 
@@ -31652,7 +31948,7 @@ struct FString UScriptHelperClient::GetEmulatorName()
 
 struct FString UScriptHelperClient::GetDSVersion(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDSVersion");
 
@@ -31678,7 +31974,7 @@ struct FString UScriptHelperClient::GetDSVersion(class UGameFrontendHUD* GameFro
 
 int UScriptHelperClient::GetDSConnectionState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDSConnectionState");
 
@@ -31703,7 +31999,7 @@ int UScriptHelperClient::GetDSConnectionState()
 
 struct FString UScriptHelperClient::GetDSConnectionIP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDSConnectionIP");
 
@@ -31728,11 +32024,36 @@ struct FString UScriptHelperClient::GetDSConnectionIP()
 
 struct FString UScriptHelperClient::GetDownLoadLanguageName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDownLoadLanguageName");
 
 	UScriptHelperClient_GetDownLoadLanguageName_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetDownloadDirPath
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+
+struct FString UScriptHelperClient::GetDownloadDirPath()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDownloadDirPath");
+
+	UScriptHelperClient_GetDownloadDirPath_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -31753,7 +32074,7 @@ struct FString UScriptHelperClient::GetDownLoadLanguageName()
 
 struct FString UScriptHelperClient::GetDeviceXID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceXID");
 
@@ -31778,7 +32099,7 @@ struct FString UScriptHelperClient::GetDeviceXID()
 
 int UScriptHelperClient::GetDeviceQualityLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceQualityLevel");
 
@@ -31803,7 +32124,7 @@ int UScriptHelperClient::GetDeviceQualityLevel()
 
 struct FString UScriptHelperClient::GetDevicePlatformName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDevicePlatformName");
 
@@ -31828,7 +32149,7 @@ struct FString UScriptHelperClient::GetDevicePlatformName()
 
 struct FString UScriptHelperClient::GetDeviceName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceName");
 
@@ -31853,7 +32174,7 @@ struct FString UScriptHelperClient::GetDeviceName()
 
 struct FString UScriptHelperClient::GetDeviceModel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceModel");
 
@@ -31878,7 +32199,7 @@ struct FString UScriptHelperClient::GetDeviceModel()
 
 int UScriptHelperClient::GetDeviceMaxSupportSoundEffect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceMaxSupportSoundEffect");
 
@@ -31903,7 +32224,7 @@ int UScriptHelperClient::GetDeviceMaxSupportSoundEffect()
 
 struct FString UScriptHelperClient::GetDeviceMake()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceMake");
 
@@ -31928,7 +32249,7 @@ struct FString UScriptHelperClient::GetDeviceMake()
 
 struct FString UScriptHelperClient::GetDeviceInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceInfo");
 
@@ -31953,7 +32274,7 @@ struct FString UScriptHelperClient::GetDeviceInfo()
 
 uint64_t UScriptHelperClient::GetDeviceFreeSpace()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceFreeSpace");
 
@@ -31978,7 +32299,7 @@ uint64_t UScriptHelperClient::GetDeviceFreeSpace()
 
 struct FString UScriptHelperClient::GetDeviceABIInfoJson()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeviceABIInfoJson");
 
@@ -32003,7 +32324,7 @@ struct FString UScriptHelperClient::GetDeviceABIInfoJson()
 
 struct FString UScriptHelperClient::GetDeivceNickName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDeivceNickName");
 
@@ -32028,7 +32349,7 @@ struct FString UScriptHelperClient::GetDeivceNickName()
 
 struct FString UScriptHelperClient::GetDataTime_MDHMS()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetDataTime_MDHMS");
 
@@ -32054,7 +32375,7 @@ struct FString UScriptHelperClient::GetDataTime_MDHMS()
 
 struct FString UScriptHelperClient::GetCurrentRHILevel(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCurrentRHILevel");
 
@@ -32080,7 +32401,7 @@ struct FString UScriptHelperClient::GetCurrentRHILevel(class UGameFrontendHUD* G
 
 int UScriptHelperClient::GetCurrentLanguage_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCurrentLanguage_LuaState");
 
@@ -32106,7 +32427,7 @@ int UScriptHelperClient::GetCurrentLanguage_LuaState()
 
 int UScriptHelperClient::GetCurrentChannel(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCurrentChannel");
 
@@ -32132,11 +32453,86 @@ int UScriptHelperClient::GetCurrentChannel(class UGameFrontendHUD* GameFrontendH
 
 struct FString UScriptHelperClient::GetCpuType()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCpuType");
 
 	UScriptHelperClient_GetCpuType_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetCPUMaxFrequency
+// (Final, Native, Static, Public)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UScriptHelperClient::GetCPUMaxFrequency()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCPUMaxFrequency");
+
+	UScriptHelperClient_GetCPUMaxFrequency_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetCPUCoreCount
+// (Final, Native, Static, Public)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UScriptHelperClient::GetCPUCoreCount()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCPUCoreCount");
+
+	UScriptHelperClient_GetCPUCoreCount_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetCPUClockCycles
+// (Final, Native, Static, Public)
+// Parameters:
+// uint64_t                       ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+uint64_t UScriptHelperClient::GetCPUClockCycles()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCPUClockCycles");
+
+	UScriptHelperClient_GetCPUClockCycles_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -32160,7 +32556,7 @@ struct FString UScriptHelperClient::GetCpuType()
 
 struct FString UScriptHelperClient::GetConfigString(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetConfigString");
 
@@ -32191,7 +32587,7 @@ struct FString UScriptHelperClient::GetConfigString(const struct FString& IniFil
 
 int UScriptHelperClient::GetConfigInt(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetConfigInt");
 
@@ -32222,7 +32618,7 @@ int UScriptHelperClient::GetConfigInt(const struct FString& IniFileName, const s
 
 bool UScriptHelperClient::GetConfigBool(const struct FString& IniFileName, const struct FString& SectionName, const struct FString& KeyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetConfigBool");
 
@@ -32251,7 +32647,7 @@ bool UScriptHelperClient::GetConfigBool(const struct FString& IniFileName, const
 
 struct FString UScriptHelperClient::GetCleanFileName(struct FString* FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCleanFileName");
 
@@ -32279,7 +32675,7 @@ struct FString UScriptHelperClient::GetCleanFileName(struct FString* FilePath)
 
 int UScriptHelperClient::GetCentauriPF_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCentauriPF_LuaState");
 
@@ -32304,7 +32700,7 @@ int UScriptHelperClient::GetCentauriPF_LuaState()
 
 int UScriptHelperClient::GetCentauriPayChannel_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCentauriPayChannel_LuaState");
 
@@ -32330,7 +32726,7 @@ int UScriptHelperClient::GetCentauriPayChannel_LuaState()
 
 void UScriptHelperClient::GetCDNUpdateInfo(class UGameFrontendHUD* GameFrontendHUD, TMap<struct FString, struct FString> Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCDNUpdateInfo");
 
@@ -32355,7 +32751,7 @@ void UScriptHelperClient::GetCDNUpdateInfo(class UGameFrontendHUD* GameFrontendH
 
 struct FString UScriptHelperClient::GetCarrierInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetCarrierInfo");
 
@@ -32380,7 +32776,7 @@ struct FString UScriptHelperClient::GetCarrierInfo()
 
 struct FString UScriptHelperClient::GetBuildVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetBuildVersion");
 
@@ -32408,7 +32804,7 @@ struct FString UScriptHelperClient::GetBuildVersion()
 
 uint32_t UScriptHelperClient::GetBlockCRC(const struct FString& Filename, int64_t Offset, uint32_t Size)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetBlockCRC");
 
@@ -32438,7 +32834,7 @@ uint32_t UScriptHelperClient::GetBlockCRC(const struct FString& Filename, int64_
 
 struct FString UScriptHelperClient::GetBattleKey(const struct FString& svr_pub_key, const struct FString& cli_pri_key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetBattleKey");
 
@@ -32465,7 +32861,7 @@ struct FString UScriptHelperClient::GetBattleKey(const struct FString& svr_pub_k
 
 struct FString UScriptHelperClient::GetAreaIPNo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAreaIPNo");
 
@@ -32490,7 +32886,7 @@ struct FString UScriptHelperClient::GetAreaIPNo()
 
 struct FString UScriptHelperClient::GetAppVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAppVersion");
 
@@ -32508,6 +32904,60 @@ struct FString UScriptHelperClient::GetAppVersion()
 }
 
 
+// Function Client.ScriptHelperClient.GetAppStartupTrackerCurrentTime
+// (Final, Native, Static, Public)
+// Parameters:
+// int64_t                        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int64_t UScriptHelperClient::GetAppStartupTrackerCurrentTime()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAppStartupTrackerCurrentTime");
+
+	UScriptHelperClient_GetAppStartupTrackerCurrentTime_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.GetAppStartupStageTime
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// struct FString                 str                            (Parm, OutParm, ZeroConstructor)
+// int64_t                        ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int64_t UScriptHelperClient::GetAppStartupStageTime(struct FString* str)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAppStartupStageTime");
+
+	UScriptHelperClient_GetAppStartupStageTime_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (str != nullptr)
+		*str = params.str;
+
+	return params.ReturnValue;
+}
+
+
 // Function Client.ScriptHelperClient.GetAppMountHandleInfo
 // (Final, Native, Static, Public)
 // Parameters:
@@ -32515,7 +32965,7 @@ struct FString UScriptHelperClient::GetAppVersion()
 
 struct FString UScriptHelperClient::GetAppMountHandleInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAppMountHandleInfo");
 
@@ -32540,7 +32990,7 @@ struct FString UScriptHelperClient::GetAppMountHandleInfo()
 
 struct FString UScriptHelperClient::GetApplicationVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetApplicationVersion");
 
@@ -32565,7 +33015,7 @@ struct FString UScriptHelperClient::GetApplicationVersion()
 
 struct FString UScriptHelperClient::GetAOSSHOP()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAOSSHOP");
 
@@ -32590,7 +33040,7 @@ struct FString UScriptHelperClient::GetAOSSHOP()
 
 struct FString UScriptHelperClient::GetAndroidVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAndroidVersion");
 
@@ -32615,7 +33065,7 @@ struct FString UScriptHelperClient::GetAndroidVersion()
 
 struct FString UScriptHelperClient::GetAndroidSysInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAndroidSysInfo");
 
@@ -32640,7 +33090,7 @@ struct FString UScriptHelperClient::GetAndroidSysInfo()
 
 int UScriptHelperClient::GetAndroidSOVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAndroidSOVersion");
 
@@ -32665,7 +33115,7 @@ int UScriptHelperClient::GetAndroidSOVersion()
 
 uint32_t UScriptHelperClient::GetAndroidMaxStackSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAndroidMaxStackSize");
 
@@ -32690,7 +33140,7 @@ uint32_t UScriptHelperClient::GetAndroidMaxStackSize()
 
 uint32_t UScriptHelperClient::GetAndroidMaxFDNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAndroidMaxFDNum");
 
@@ -32715,7 +33165,7 @@ uint32_t UScriptHelperClient::GetAndroidMaxFDNum()
 
 uint32_t UScriptHelperClient::GetAndroidCurrentFDNum()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAndroidCurrentFDNum");
 
@@ -32740,7 +33190,7 @@ uint32_t UScriptHelperClient::GetAndroidCurrentFDNum()
 
 int UScriptHelperClient::GetAndroidBuildForArm()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAndroidBuildForArm");
 
@@ -32765,7 +33215,7 @@ int UScriptHelperClient::GetAndroidBuildForArm()
 
 TArray<int> UScriptHelperClient::GetAllLocalNotificationIDs()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAllLocalNotificationIDs");
 
@@ -32792,7 +33242,7 @@ TArray<int> UScriptHelperClient::GetAllLocalNotificationIDs()
 
 TArray<struct FString> UScriptHelperClient::GetAllFilesInDir(const struct FString& Dir, const struct FString& Pattern)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAllFilesInDir");
 
@@ -32819,7 +33269,7 @@ TArray<struct FString> UScriptHelperClient::GetAllFilesInDir(const struct FStrin
 
 struct FString UScriptHelperClient::GetActiveProfileName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetActiveProfileName");
 
@@ -32844,7 +33294,7 @@ struct FString UScriptHelperClient::GetActiveProfileName()
 
 struct FString UScriptHelperClient::GetAccountRegion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAccountRegion");
 
@@ -32870,7 +33320,7 @@ struct FString UScriptHelperClient::GetAccountRegion()
 
 struct FString UScriptHelperClient::GetAccessToken(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GetAccessToken");
 
@@ -32902,7 +33352,7 @@ struct FString UScriptHelperClient::GetAccessToken(TScriptInterface<class UClien
 
 void UScriptHelperClient::GenerateQRImage(int Tag, int Size, const struct FString& Content, const struct FString& logoPath, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GenerateQRImage");
 
@@ -32935,7 +33385,7 @@ void UScriptHelperClient::GenerateQRImage(int Tag, int Size, const struct FStrin
 
 void UScriptHelperClient::GEMReportSubEvent(class UGameFrontendHUD* GameFrontendHUD, const struct FString& EventName, const struct FString& SubEventName, TArray<struct FString> eventParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GEMReportSubEvent");
 
@@ -32965,7 +33415,7 @@ void UScriptHelperClient::GEMReportSubEvent(class UGameFrontendHUD* GameFrontend
 
 void UScriptHelperClient::GEMReportLobbyCustomEvent(class UGameFrontendHUD* GameFrontendHUD, int EventID, bool IsSuccess, const struct FString& strDesc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GEMReportLobbyCustomEvent");
 
@@ -32994,7 +33444,7 @@ void UScriptHelperClient::GEMReportLobbyCustomEvent(class UGameFrontendHUD* Game
 
 void UScriptHelperClient::GEMReportEvent(class UGameFrontendHUD* GameFrontendHUD, const struct FString& EventName, TMap<struct FString, struct FString>* eventParams)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GEMReportEvent");
 
@@ -33024,7 +33474,7 @@ void UScriptHelperClient::GEMReportEvent(class UGameFrontendHUD* GameFrontendHUD
 
 void UScriptHelperClient::GEMReportEnterLobbyEvent(class UGameFrontendHUD* GameFrontendHUD, bool IsSuccess, const struct FString& strDesc)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GEMReportEnterLobbyEvent");
 
@@ -33048,7 +33498,7 @@ void UScriptHelperClient::GEMReportEnterLobbyEvent(class UGameFrontendHUD* GameF
 
 void UScriptHelperClient::GameRegisterGRomeLink()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameRegisterGRomeLink");
 
@@ -33073,7 +33523,7 @@ void UScriptHelperClient::GameRegisterGRomeLink()
 
 void UScriptHelperClient::GameMasterSetUserInfo(const struct FString& InPaidInfo, const struct FString& InUserToken, const struct FString& InAppId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterSetUserInfo");
 
@@ -33099,7 +33549,7 @@ void UScriptHelperClient::GameMasterSetUserInfo(const struct FString& InPaidInfo
 
 void UScriptHelperClient::GameMasterSetUsableRegion(const struct FString& InRegion)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterSetUsableRegion");
 
@@ -33123,7 +33573,7 @@ void UScriptHelperClient::GameMasterSetUsableRegion(const struct FString& InRegi
 
 void UScriptHelperClient::GameMasterSetUdpEchoPort(int InPort)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterSetUdpEchoPort");
 
@@ -33147,7 +33597,7 @@ void UScriptHelperClient::GameMasterSetUdpEchoPort(int InPort)
 
 void UScriptHelperClient::GameMasterSetOnlyWifiAccel(bool InOn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterSetOnlyWifiAccel");
 
@@ -33171,7 +33621,7 @@ void UScriptHelperClient::GameMasterSetOnlyWifiAccel(bool InOn)
 
 void UScriptHelperClient::GameMasterSetFreeFlowUser(int InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterSetFreeFlowUser");
 
@@ -33195,7 +33645,7 @@ void UScriptHelperClient::GameMasterSetFreeFlowUser(int InType)
 
 void UScriptHelperClient::GameMasterOnNetDelay(int InMillis)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterOnNetDelay");
 
@@ -33219,7 +33669,7 @@ void UScriptHelperClient::GameMasterOnNetDelay(int InMillis)
 
 bool UScriptHelperClient::GameMasterIsAccelOpened()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterIsAccelOpened");
 
@@ -33248,7 +33698,7 @@ bool UScriptHelperClient::GameMasterIsAccelOpened()
 
 int UScriptHelperClient::GameMasterInit(int InHookType, const struct FString& InGuid, const struct FString& InLibs, int InEchoPort)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterInit");
 
@@ -33278,7 +33728,7 @@ int UScriptHelperClient::GameMasterInit(int InHookType, const struct FString& In
 
 struct FString UScriptHelperClient::GameMasterGetWebUIUrl(int InType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterGetWebUIUrl");
 
@@ -33304,7 +33754,7 @@ struct FString UScriptHelperClient::GameMasterGetWebUIUrl(int InType)
 
 struct FString UScriptHelperClient::GameMasterGetVIPValidTime()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterGetVIPValidTime");
 
@@ -33329,7 +33779,7 @@ struct FString UScriptHelperClient::GameMasterGetVIPValidTime()
 
 struct FString UScriptHelperClient::GameMasterGetUserID()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterGetUserID");
 
@@ -33354,7 +33804,7 @@ struct FString UScriptHelperClient::GameMasterGetUserID()
 
 int UScriptHelperClient::GameMasterGetAccelerationStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterGetAccelerationStatus");
 
@@ -33377,7 +33827,7 @@ int UScriptHelperClient::GameMasterGetAccelerationStatus()
 
 void UScriptHelperClient::GameMasterClearAccelAddr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterClearAccelAddr");
 
@@ -33401,7 +33851,7 @@ void UScriptHelperClient::GameMasterClearAccelAddr()
 
 void UScriptHelperClient::GameMasterBeginRound(const struct FString& InOpenid, const struct FString& InPvpId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterBeginRound");
 
@@ -33428,7 +33878,7 @@ void UScriptHelperClient::GameMasterBeginRound(const struct FString& InOpenid, c
 
 void UScriptHelperClient::GameMasterAddNewArenaAddress(const struct FString& InProtocol, const struct FString& InIp, int InPort)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterAddNewArenaAddress");
 
@@ -33456,7 +33906,7 @@ void UScriptHelperClient::GameMasterAddNewArenaAddress(const struct FString& InP
 
 void UScriptHelperClient::GameMasterAddAccelAddr(const struct FString& InProtocol, const struct FString& InIp, int InPort)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameMasterAddAccelAddr");
 
@@ -33482,7 +33932,7 @@ void UScriptHelperClient::GameMasterAddAccelAddr(const struct FString& InProtoco
 
 void UScriptHelperClient::GameJoySwitchOn(int isOn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoySwitchOn");
 
@@ -33504,7 +33954,7 @@ void UScriptHelperClient::GameJoySwitchOn(int isOn)
 
 void UScriptHelperClient::GameJoyStopManualRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoyStopManualRecord");
 
@@ -33525,7 +33975,7 @@ void UScriptHelperClient::GameJoyStopManualRecord()
 
 void UScriptHelperClient::GameJoyStartMomentsRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoyStartMomentsRecord");
 
@@ -33546,7 +33996,7 @@ void UScriptHelperClient::GameJoyStartMomentsRecord()
 
 void UScriptHelperClient::GameJoyStartManualRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoyStartManualRecord");
 
@@ -33569,7 +34019,7 @@ void UScriptHelperClient::GameJoyStartManualRecord()
 
 void UScriptHelperClient::GameJoySetVideoQuality(int Quality)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoySetVideoQuality");
 
@@ -33593,7 +34043,7 @@ void UScriptHelperClient::GameJoySetVideoQuality(int Quality)
 
 void UScriptHelperClient::GameJoySetMomentRecordSwitchOn(int isOn)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoySetMomentRecordSwitchOn");
 
@@ -33615,7 +34065,7 @@ void UScriptHelperClient::GameJoySetMomentRecordSwitchOn(int isOn)
 
 void UScriptHelperClient::GameJoySetLuaguage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoySetLuaguage");
 
@@ -33639,7 +34089,7 @@ void UScriptHelperClient::GameJoySetLuaguage()
 
 void UScriptHelperClient::GameJoySetCurrentRecorderPosition(float X, float Y)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoySetCurrentRecorderPosition");
 
@@ -33664,7 +34114,7 @@ void UScriptHelperClient::GameJoySetCurrentRecorderPosition(float X, float Y)
 
 bool UScriptHelperClient::GameJoyIsSDKFeatureSupport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoyIsSDKFeatureSupport");
 
@@ -33687,7 +34137,7 @@ bool UScriptHelperClient::GameJoyIsSDKFeatureSupport()
 
 void UScriptHelperClient::GameJoyEndMomentsRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoyEndMomentsRecord");
 
@@ -33708,7 +34158,7 @@ void UScriptHelperClient::GameJoyEndMomentsRecord()
 
 void UScriptHelperClient::GameJoyClearMomentsVideo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GameJoyClearMomentsVideo");
 
@@ -33731,7 +34181,7 @@ void UScriptHelperClient::GameJoyClearMomentsVideo()
 
 int UScriptHelperClient::GainSystemLog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.GainSystemLog");
 
@@ -33757,7 +34207,7 @@ int UScriptHelperClient::GainSystemLog()
 
 bool UScriptHelperClient::FullPathFileExist(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FullPathFileExist");
 
@@ -33783,7 +34233,7 @@ bool UScriptHelperClient::FullPathFileExist(const struct FString& Filename)
 
 void UScriptHelperClient::FullGC(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FullGC");
 
@@ -33807,7 +34257,7 @@ void UScriptHelperClient::FullGC(class UGameFrontendHUD* GameFrontendHUD)
 
 void UScriptHelperClient::FlushPressedKeys(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FlushPressedKeys");
 
@@ -33829,7 +34279,7 @@ void UScriptHelperClient::FlushPressedKeys(class UGameFrontendHUD* GameFrontendH
 
 void UScriptHelperClient::FlushKnownMissingPackageRefObject()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FlushKnownMissingPackageRefObject");
 
@@ -33852,7 +34302,7 @@ void UScriptHelperClient::FlushKnownMissingPackageRefObject()
 
 bool UScriptHelperClient::FlushAndroidWindowMemory()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FlushAndroidWindowMemory");
 
@@ -33878,7 +34328,7 @@ bool UScriptHelperClient::FlushAndroidWindowMemory()
 
 void UScriptHelperClient::FinishPufferUpdateInDolphin(class UGameFrontendHUD* GameFrontendHUD, bool IsFinished)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FinishPufferUpdateInDolphin");
 
@@ -33904,7 +34354,7 @@ void UScriptHelperClient::FinishPufferUpdateInDolphin(class UGameFrontendHUD* Ga
 
 class UObject* UScriptHelperClient::FindObjectByPath(const struct FString& ObjectPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FindObjectByPath");
 
@@ -33932,7 +34382,7 @@ class UObject* UScriptHelperClient::FindObjectByPath(const struct FString& Objec
 
 TArray<struct FString> UScriptHelperClient::FindFilesRecursiveSkipPakPlatform(const struct FString& Dir, const struct FString& Pattern)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FindFilesRecursiveSkipPakPlatform");
 
@@ -33960,7 +34410,7 @@ TArray<struct FString> UScriptHelperClient::FindFilesRecursiveSkipPakPlatform(co
 
 bool UScriptHelperClient::FindFileInPakFiles(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FindFileInPakFiles");
 
@@ -33987,7 +34437,7 @@ bool UScriptHelperClient::FindFileInPakFiles(const struct FString& Filename)
 
 class UClass* UScriptHelperClient::FindClassByPath(const struct FString& ObjectPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FindClassByPath");
 
@@ -34013,7 +34463,7 @@ class UClass* UScriptHelperClient::FindClassByPath(const struct FString& ObjectP
 
 void UScriptHelperClient::FileSystemTesting(uint32_t Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FileSystemTesting");
 
@@ -34040,7 +34490,7 @@ void UScriptHelperClient::FileSystemTesting(uint32_t Count)
 
 int UScriptHelperClient::FetchFileFromPAK(const struct FString& InFilePathInPak, const struct FString& InLocalFilePath, bool Override)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.FetchFileFromPAK");
 
@@ -34061,12 +34511,64 @@ int UScriptHelperClient::FetchFileFromPAK(const struct FString& InFilePathInPak,
 }
 
 
+// Function Client.ScriptHelperClient.ExportLocalUsage_3
+// (Final, Native, Static, Public, HasOutParms)
+// Parameters:
+// struct FString                 DestDir                        (Parm, OutParm, ZeroConstructor)
+// struct FString                 DumpFilePath                   (Parm, ZeroConstructor)
+
+void UScriptHelperClient::ExportLocalUsage_3(const struct FString& DumpFilePath, struct FString* DestDir)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ExportLocalUsage_3");
+
+	UScriptHelperClient_ExportLocalUsage_3_Params params;
+	params.DumpFilePath = DumpFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	if (DestDir != nullptr)
+		*DestDir = params.DestDir;
+}
+
+
+// Function Client.ScriptHelperClient.ExportLocalUsage
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 DumpFilePath                   (Parm, ZeroConstructor)
+
+void UScriptHelperClient::ExportLocalUsage(const struct FString& DumpFilePath)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ExportLocalUsage");
+
+	UScriptHelperClient_ExportLocalUsage_Params params;
+	params.DumpFilePath = DumpFilePath;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Client.ScriptHelperClient.ExitGameForSafety
 // (Final, Native, Static, Public)
 
 void UScriptHelperClient::ExitGameForSafety()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ExitGameForSafety");
 
@@ -34087,7 +34589,7 @@ void UScriptHelperClient::ExitGameForSafety()
 
 void UScriptHelperClient::ExitGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ExitGame");
 
@@ -34108,7 +34610,7 @@ void UScriptHelperClient::ExitGame()
 
 void UScriptHelperClient::ExeMemoryWarningHandle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ExeMemoryWarningHandle");
 
@@ -34131,7 +34633,7 @@ void UScriptHelperClient::ExeMemoryWarningHandle()
 
 void UScriptHelperClient::EnterLoading(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnterLoading");
 
@@ -34156,7 +34658,7 @@ void UScriptHelperClient::EnterLoading(class UGameFrontendHUD* GameFrontendHUD)
 
 void UScriptHelperClient::EnterFightChat(class UGameFrontendHUD* GameFrontendHUD, const struct FString& gid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnterFightChat");
 
@@ -34187,7 +34689,7 @@ void UScriptHelperClient::EnterFightChat(class UGameFrontendHUD* GameFrontendHUD
 
 void UScriptHelperClient::EnterBattleStandAlone(class UGameFrontendHUD* GameFrontendHUD, const struct FString& MapPath, uint32_t PlayerKey, const struct FString& PlayerName, const struct FString& DynamicLevelsOp, const struct FString& AdditionalURLSuffixes, uint32_t ModeID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnterBattleStandAlone");
 
@@ -34229,7 +34731,7 @@ void UScriptHelperClient::EnterBattleStandAlone(class UGameFrontendHUD* GameFron
 
 void UScriptHelperClient::EnterBattle(class UGameFrontendHUD* GameFrontendHUD, const struct FString& URL, const struct FString& HostnameOrIP, uint32_t Port, uint32_t PlayerKey, const struct FString& PacketKey, uint64_t GameID, bool IsObserver, uint32_t MainModeID, int WaterType, uint32_t WaterUserID, uint32_t ModeID, TMap<int, struct FString>* AdvConfig)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnterBattle");
 
@@ -34269,7 +34771,7 @@ void UScriptHelperClient::EnterBattle(class UGameFrontendHUD* GameFrontendHUD, c
 
 struct FString UScriptHelperClient::EncryptUID(const struct FString& sUid, const struct FString& sKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EncryptUID");
 
@@ -34296,7 +34798,7 @@ struct FString UScriptHelperClient::EncryptUID(const struct FString& sUid, const
 
 void UScriptHelperClient::EncryptItemData(TArray<int> EncryptionItemList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EncryptItemData");
 
@@ -34321,7 +34823,7 @@ void UScriptHelperClient::EncryptItemData(TArray<int> EncryptionItemList)
 
 void UScriptHelperClient::EnableUseOldInterface(class UGameFrontendHUD* GameFrontendHUD, bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableUseOldInterface");
 
@@ -34346,7 +34848,7 @@ void UScriptHelperClient::EnableUseOldInterface(class UGameFrontendHUD* GameFron
 
 void UScriptHelperClient::EnableUrlCheck(bool bShouldEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableUrlCheck");
 
@@ -34368,7 +34870,7 @@ void UScriptHelperClient::EnableUrlCheck(bool bShouldEnable)
 
 void UScriptHelperClient::EnableTxtCheck()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableTxtCheck");
 
@@ -34391,11 +34893,38 @@ void UScriptHelperClient::EnableTxtCheck()
 
 bool UScriptHelperClient::EnableSubMountPoint()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableSubMountPoint");
 
 	UScriptHelperClient_EnableSubMountPoint_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.EnableShaderGroupAsync
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 GroupNames                     (Parm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+bool UScriptHelperClient::EnableShaderGroupAsync(const struct FString& GroupNames)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableShaderGroupAsync");
+
+	UScriptHelperClient_EnableShaderGroupAsync_Params params;
+	params.GroupNames = GroupNames;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -34417,12 +34946,37 @@ bool UScriptHelperClient::EnableSubMountPoint()
 
 bool UScriptHelperClient::EnableShaderGroup(const struct FString& GroupName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableShaderGroup");
 
 	UScriptHelperClient_EnableShaderGroup_Params params;
 	params.GroupName = GroupName;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.ScriptHelperClient.EnableShaderFinishPersent
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+float UScriptHelperClient::EnableShaderFinishPersent()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableShaderFinishPersent");
+
+	UScriptHelperClient_EnableShaderFinishPersent_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -34450,7 +35004,7 @@ bool UScriptHelperClient::EnableShaderGroup(const struct FString& GroupName)
 
 void UScriptHelperClient::EnableReportVoiceSdkEvent(class UGameFrontendHUD* GameFrontendHUD, bool InitVoiceSdkComponentReportEnable, bool VoiceSdkJoinRoomReportEnable, bool VoiceSdkQuitRoomReportEnable, bool VoiceSdkJoinLbsRoomReportEnable, bool VoiceSdkQuitLbsRoomReportEnable, bool VoiceSdkOnJoinTeamRoomReportEnable, bool VoiceSdkOnJoinLbsRoomReportEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableReportVoiceSdkEvent");
 
@@ -34481,7 +35035,7 @@ void UScriptHelperClient::EnableReportVoiceSdkEvent(class UGameFrontendHUD* Game
 
 void UScriptHelperClient::EnableNativeDump(int EnableDump)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableNativeDump");
 
@@ -34505,7 +35059,7 @@ void UScriptHelperClient::EnableNativeDump(int EnableDump)
 
 bool UScriptHelperClient::EnableMergeVirtual()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableMergeVirtual");
 
@@ -34530,7 +35084,7 @@ bool UScriptHelperClient::EnableMergeVirtual()
 
 void UScriptHelperClient::EnableLowMemoryDevice(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableLowMemoryDevice");
 
@@ -34555,7 +35109,7 @@ void UScriptHelperClient::EnableLowMemoryDevice(bool bEnable)
 
 void UScriptHelperClient::EnableLocalizationStatus(class UGameFrontendHUD* GameFrontendHUD, bool status)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableLocalizationStatus");
 
@@ -34580,7 +35134,7 @@ void UScriptHelperClient::EnableLocalizationStatus(class UGameFrontendHUD* GameF
 
 bool UScriptHelperClient::EnableLobbyEntry()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableLobbyEntry");
 
@@ -34606,7 +35160,7 @@ bool UScriptHelperClient::EnableLobbyEntry()
 
 void UScriptHelperClient::EnableIosStuckWork(class UGameFrontendHUD* GameFrontendHUD, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableIosStuckWork");
 
@@ -34631,7 +35185,7 @@ void UScriptHelperClient::EnableIosStuckWork(class UGameFrontendHUD* GameFronten
 
 void UScriptHelperClient::EnableDataTunnelReport(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableDataTunnelReport");
 
@@ -34655,7 +35209,7 @@ void UScriptHelperClient::EnableDataTunnelReport(bool InEnable)
 
 void UScriptHelperClient::EnableAutoObjectRefreshStage(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableAutoObjectRefreshStage");
 
@@ -34677,7 +35231,7 @@ void UScriptHelperClient::EnableAutoObjectRefreshStage(bool bEnable)
 
 void UScriptHelperClient::EnableAOSForceAnsiMalloc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableAOSForceAnsiMalloc");
 
@@ -34700,7 +35254,7 @@ void UScriptHelperClient::EnableAOSForceAnsiMalloc()
 
 void UScriptHelperClient::EnableAkAudioSilenceMode(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.EnableAkAudioSilenceMode");
 
@@ -34724,7 +35278,7 @@ void UScriptHelperClient::EnableAkAudioSilenceMode(bool InEnable)
 
 void UScriptHelperClient::DynamicUpdatePakOrderBackUp(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DynamicUpdatePakOrderBackUp");
 
@@ -34748,7 +35302,7 @@ void UScriptHelperClient::DynamicUpdatePakOrderBackUp(const struct FString& File
 
 void UScriptHelperClient::DynamicUpdatePakOrder(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DynamicUpdatePakOrder");
 
@@ -34772,7 +35326,7 @@ void UScriptHelperClient::DynamicUpdatePakOrder(const struct FString& Filename)
 
 void UScriptHelperClient::DumpPhysScene(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DumpPhysScene");
 
@@ -34797,7 +35351,7 @@ void UScriptHelperClient::DumpPhysScene(const struct FString& Filename)
 
 struct FString UScriptHelperClient::DumpPackageMemInfo(TArray<struct FString>* AssetList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DumpPackageMemInfo");
 
@@ -34826,7 +35380,7 @@ struct FString UScriptHelperClient::DumpPackageMemInfo(TArray<struct FString>* A
 
 void UScriptHelperClient::DumpOpenReadCollect(class UGameFrontendHUD* GameFrontendHUD, const struct FString& DumpFilename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DumpOpenReadCollect");
 
@@ -34851,12 +35405,33 @@ void UScriptHelperClient::DumpOpenReadCollect(class UGameFrontendHUD* GameFronte
 
 void UScriptHelperClient::DumpLogFile(bool backup)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DumpLogFile");
 
 	UScriptHelperClient_DumpLogFile_Params params;
 	params.backup = backup;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Client.ScriptHelperClient.DumpConsoleVariables
+// (Final, Native, Static, Public)
+
+void UScriptHelperClient::DumpConsoleVariables()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DumpConsoleVariables");
+
+	UScriptHelperClient_DumpConsoleVariables_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -34876,7 +35451,7 @@ void UScriptHelperClient::DumpLogFile(bool backup)
 
 bool UScriptHelperClient::DoesPackageExist(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DoesPackageExist");
 
@@ -34902,7 +35477,7 @@ bool UScriptHelperClient::DoesPackageExist(const struct FString& Filename)
 
 void UScriptHelperClient::Disconnect(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.Disconnect");
 
@@ -34926,7 +35501,7 @@ void UScriptHelperClient::Disconnect(TScriptInterface<class UClientNetInterface>
 
 void UScriptHelperClient::DisableSysCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DisableSysCache");
 
@@ -34949,7 +35524,7 @@ void UScriptHelperClient::DisableSysCache()
 
 void UScriptHelperClient::DisableRepairResource(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DisableRepairResource");
 
@@ -34971,7 +35546,7 @@ void UScriptHelperClient::DisableRepairResource(class UGameFrontendHUD* GameFron
 
 void UScriptHelperClient::DisableAOSForceAnsiMalloc()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DisableAOSForceAnsiMalloc");
 
@@ -34992,7 +35567,7 @@ void UScriptHelperClient::DisableAOSForceAnsiMalloc()
 
 void UScriptHelperClient::DisableAndroidHardwareAcceleration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DisableAndroidHardwareAcceleration");
 
@@ -35013,11 +35588,32 @@ void UScriptHelperClient::DisableAndroidHardwareAcceleration()
 
 void UScriptHelperClient::DirectToSetting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DirectToSetting");
 
 	UScriptHelperClient_DirectToSetting_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Client.ScriptHelperClient.DirectToMemoryManagement
+// (Final, Native, Static, Public)
+
+void UScriptHelperClient::DirectToMemoryManagement()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DirectToMemoryManagement");
+
+	UScriptHelperClient_DirectToMemoryManagement_Params params;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -35036,7 +35632,7 @@ void UScriptHelperClient::DirectToSetting()
 
 void UScriptHelperClient::DestroyConnector(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DestroyConnector");
 
@@ -35063,7 +35659,7 @@ void UScriptHelperClient::DestroyConnector(TScriptInterface<class UClientNetInte
 
 bool UScriptHelperClient::DeleteFile(const struct FString& fullPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DeleteFile");
 
@@ -35089,7 +35685,7 @@ bool UScriptHelperClient::DeleteFile(const struct FString& fullPath)
 
 void UScriptHelperClient::DeleteDirectory(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DeleteDirectory");
 
@@ -35113,7 +35709,7 @@ void UScriptHelperClient::DeleteDirectory(const struct FString& FilePath)
 
 void UScriptHelperClient::DelayToSetAutoInitFacebookLog(bool IsAutoInit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DelayToSetAutoInitFacebookLog");
 
@@ -35138,7 +35734,7 @@ void UScriptHelperClient::DelayToSetAutoInitFacebookLog(bool IsAutoInit)
 
 void UScriptHelperClient::DelayToInitFacebookSDK(bool IsAutoInit, bool WithLaunchOption)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DelayToInitFacebookSDK");
 
@@ -35161,7 +35757,7 @@ void UScriptHelperClient::DelayToInitFacebookSDK(bool IsAutoInit, bool WithLaunc
 
 void UScriptHelperClient::DelayInitThirdPartSDK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.DelayInitThirdPartSDK");
 
@@ -35184,7 +35780,7 @@ void UScriptHelperClient::DelayInitThirdPartSDK()
 
 struct FString UScriptHelperClient::CSCGetStatInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CSCGetStatInfo");
 
@@ -35211,7 +35807,7 @@ struct FString UScriptHelperClient::CSCGetStatInfo()
 
 class UTexture2D* UScriptHelperClient::CreateQRCodeTexture(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CreateQRCodeTexture");
 
@@ -35238,12 +35834,38 @@ class UTexture2D* UScriptHelperClient::CreateQRCodeTexture(class UGameFrontendHU
 
 void UScriptHelperClient::CreateHapticsEngine(const struct FScriptDelegate& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CreateHapticsEngine");
 
 	UScriptHelperClient_CreateHapticsEngine_Params params;
 	params.Callback = Callback;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
+// Function Client.ScriptHelperClient.CrashSightReportLogInfo
+// (Final, Native, Static, Public)
+// Parameters:
+// struct FString                 MsgType                        (Parm, ZeroConstructor)
+// struct FString                 Info                           (Parm, ZeroConstructor)
+
+void UScriptHelperClient::CrashSightReportLogInfo(const struct FString& MsgType, const struct FString& Info)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CrashSightReportLogInfo");
+
+	UScriptHelperClient_CrashSightReportLogInfo_Params params;
+	params.MsgType = MsgType;
+	params.Info = Info;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -35263,7 +35885,7 @@ void UScriptHelperClient::CreateHapticsEngine(const struct FScriptDelegate& Call
 
 void UScriptHelperClient::CrashSetAppVersion(const struct FString& Version, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CrashSetAppVersion");
 
@@ -35292,7 +35914,7 @@ void UScriptHelperClient::CrashSetAppVersion(const struct FString& Version, TScr
 
 void UScriptHelperClient::CrashPutUserData(const struct FString& Key, const struct FString& Value, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CrashPutUserData");
 
@@ -35324,7 +35946,7 @@ void UScriptHelperClient::CrashPutUserData(const struct FString& Key, const stru
 
 void UScriptHelperClient::CrashPostExceptionFull(int Category, const struct FString& Name, const struct FString& Msg, const struct FString& stack, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CrashPostExceptionFull");
 
@@ -35356,7 +35978,7 @@ void UScriptHelperClient::CrashPostExceptionFull(int Category, const struct FStr
 
 void UScriptHelperClient::CrashPostException(int Category, const struct FString& Reason, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CrashPostException");
 
@@ -35388,7 +36010,7 @@ void UScriptHelperClient::CrashPostException(int Category, const struct FString&
 
 void UScriptHelperClient::CrashLog(int Level, const struct FString& Tag, const struct FString& Log, bool needDump, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CrashLog");
 
@@ -35419,7 +36041,7 @@ void UScriptHelperClient::CrashLog(int Level, const struct FString& Tag, const s
 
 struct FString UScriptHelperClient::ConvertToAbsolutePathForExternalAppForWrite(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConvertToAbsolutePathForExternalAppForWrite");
 
@@ -35446,7 +36068,7 @@ struct FString UScriptHelperClient::ConvertToAbsolutePathForExternalAppForWrite(
 
 struct FString UScriptHelperClient::ConvertToAbsolutePathForExternalAppForRead(const struct FString& FilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConvertToAbsolutePathForExternalAppForRead");
 
@@ -35473,7 +36095,7 @@ struct FString UScriptHelperClient::ConvertToAbsolutePathForExternalAppForRead(c
 
 struct FString UScriptHelperClient::ConvertTMap2JsonStr(TMap<struct FString, struct FString> mapData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConvertTMap2JsonStr");
 
@@ -35500,7 +36122,7 @@ struct FString UScriptHelperClient::ConvertTMap2JsonStr(TMap<struct FString, str
 
 struct FString UScriptHelperClient::ConvertRelativePathToFull(const struct FString& InPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConvertRelativePathToFull");
 
@@ -35527,7 +36149,7 @@ struct FString UScriptHelperClient::ConvertRelativePathToFull(const struct FStri
 
 struct FString UScriptHelperClient::ConvertGamePathToRelativeFilePath(const struct FString& Path)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConvertGamePathToRelativeFilePath");
 
@@ -35551,7 +36173,7 @@ struct FString UScriptHelperClient::ConvertGamePathToRelativeFilePath(const stru
 
 void UScriptHelperClient::ConsumeLocalNotificationLaunchApp()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConsumeLocalNotificationLaunchApp");
 
@@ -35576,7 +36198,7 @@ void UScriptHelperClient::ConsumeLocalNotificationLaunchApp()
 
 struct FString UScriptHelperClient::ConsoleCommand(class UGameFrontendHUD* GameFrontendHUD, const struct FString& Command)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConsoleCommand");
 
@@ -35606,7 +36228,7 @@ struct FString UScriptHelperClient::ConsoleCommand(class UGameFrontendHUD* GameF
 
 void UScriptHelperClient::ConnectToURLWithDNSProxy(const struct FString& ProxyIP, const struct FString& URL, int ConnectTimeOutSeconds, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConnectToURLWithDNSProxy");
 
@@ -35637,7 +36259,7 @@ void UScriptHelperClient::ConnectToURLWithDNSProxy(const struct FString& ProxyIP
 
 void UScriptHelperClient::ConnectToURL(const struct FString& URL, int ConnectTimeOutSeconds, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ConnectToURL");
 
@@ -35665,7 +36287,7 @@ void UScriptHelperClient::ConnectToURL(const struct FString& URL, int ConnectTim
 
 struct FString UScriptHelperClient::ComputerName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ComputerName");
 
@@ -35692,7 +36314,7 @@ struct FString UScriptHelperClient::ComputerName()
 
 bool UScriptHelperClient::CloudVersionPipe_SendDataWithKey(const struct FString& MsgKey, const struct FString& MsgInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloudVersionPipe_SendDataWithKey");
 
@@ -35720,7 +36342,7 @@ bool UScriptHelperClient::CloudVersionPipe_SendDataWithKey(const struct FString&
 
 bool UScriptHelperClient::CloudVersionPipe_SendData(const struct FString& MsgInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloudVersionPipe_SendData");
 
@@ -35747,7 +36369,7 @@ bool UScriptHelperClient::CloudVersionPipe_SendData(const struct FString& MsgInf
 
 bool UScriptHelperClient::CloudVersionPipe_RecvDataTest(const struct FString& MsgInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloudVersionPipe_RecvDataTest");
 
@@ -35773,7 +36395,7 @@ bool UScriptHelperClient::CloudVersionPipe_RecvDataTest(const struct FString& Ms
 
 class UObject* UScriptHelperClient::CloudVersionPipe_PipeHelper()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloudVersionPipe_PipeHelper");
 
@@ -35799,7 +36421,7 @@ class UObject* UScriptHelperClient::CloudVersionPipe_PipeHelper()
 
 bool UScriptHelperClient::CloudVersionPipe_Log(const struct FString& LogInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloudVersionPipe_Log");
 
@@ -35825,7 +36447,7 @@ bool UScriptHelperClient::CloudVersionPipe_Log(const struct FString& LogInfo)
 
 bool UScriptHelperClient::CloudVersionInitDataPipeline()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloudVersionInitDataPipeline");
 
@@ -35848,7 +36470,7 @@ bool UScriptHelperClient::CloudVersionInitDataPipeline()
 
 void UScriptHelperClient::CloseWebView()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloseWebView");
 
@@ -35869,7 +36491,7 @@ void UScriptHelperClient::CloseWebView()
 
 void UScriptHelperClient::CloseVLink()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloseVLink");
 
@@ -35890,7 +36512,7 @@ void UScriptHelperClient::CloseVLink()
 
 void UScriptHelperClient::CloseVideoListDialog()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloseVideoListDialog");
 
@@ -35913,7 +36535,7 @@ void UScriptHelperClient::CloseVideoListDialog()
 
 void UScriptHelperClient::CloseH5WebView(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CloseH5WebView");
 
@@ -35937,7 +36559,7 @@ void UScriptHelperClient::CloseH5WebView(class UGameFrontendHUD* GameFrontendHUD
 
 void UScriptHelperClient::ClipBoardCopy(const struct FString& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClipBoardCopy");
 
@@ -35961,7 +36583,7 @@ void UScriptHelperClient::ClipBoardCopy(const struct FString& Text)
 
 void UScriptHelperClient::ClientKickPlayerFromGame(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClientKickPlayerFromGame");
 
@@ -35985,7 +36607,7 @@ void UScriptHelperClient::ClientKickPlayerFromGame(class UGameFrontendHUD* GameF
 
 void UScriptHelperClient::ClientEnterWarMode(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClientEnterWarMode");
 
@@ -36009,7 +36631,7 @@ void UScriptHelperClient::ClientEnterWarMode(class UGameFrontendHUD* GameFronten
 
 void UScriptHelperClient::ClientConfirmReturnToGame(class UGameFrontendHUD* GameFrontendHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClientConfirmReturnToGame");
 
@@ -36034,7 +36656,7 @@ void UScriptHelperClient::ClientConfirmReturnToGame(class UGameFrontendHUD* Game
 
 void UScriptHelperClient::ClientConfirmMisKill(class UGameFrontendHUD* GameFrontendHUD, int bConfirm)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClientConfirmMisKill");
 
@@ -36057,7 +36679,7 @@ void UScriptHelperClient::ClientConfirmMisKill(class UGameFrontendHUD* GameFront
 
 void UScriptHelperClient::ClearUpdatedSoPatch()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearUpdatedSoPatch");
 
@@ -36078,7 +36700,7 @@ void UScriptHelperClient::ClearUpdatedSoPatch()
 
 void UScriptHelperClient::ClearUnknownRT()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearUnknownRT");
 
@@ -36099,7 +36721,7 @@ void UScriptHelperClient::ClearUnknownRT()
 
 void UScriptHelperClient::ClearSyncLoadCacheSystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearSyncLoadCacheSystem");
 
@@ -36120,7 +36742,7 @@ void UScriptHelperClient::ClearSyncLoadCacheSystem()
 
 void UScriptHelperClient::ClearSluaClassCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearSluaClassCache");
 
@@ -36141,7 +36763,7 @@ void UScriptHelperClient::ClearSluaClassCache()
 
 void UScriptHelperClient::ClearSlateCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearSlateCache");
 
@@ -36162,7 +36784,7 @@ void UScriptHelperClient::ClearSlateCache()
 
 void UScriptHelperClient::ClearNotifications()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearNotifications");
 
@@ -36183,7 +36805,7 @@ void UScriptHelperClient::ClearNotifications()
 
 void UScriptHelperClient::ClearNotice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearNotice");
 
@@ -36204,7 +36826,7 @@ void UScriptHelperClient::ClearNotice()
 
 void UScriptHelperClient::ClearJankStats()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearJankStats");
 
@@ -36225,7 +36847,7 @@ void UScriptHelperClient::ClearJankStats()
 
 void UScriptHelperClient::ClearIGProxyData()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearIGProxyData");
 
@@ -36246,7 +36868,7 @@ void UScriptHelperClient::ClearIGProxyData()
 
 void UScriptHelperClient::ClearHasLoadGameSlotCrashFlag()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearHasLoadGameSlotCrashFlag");
 
@@ -36269,7 +36891,7 @@ void UScriptHelperClient::ClearHasLoadGameSlotCrashFlag()
 
 void UScriptHelperClient::ClearH5WebViewCookie(const struct FString& Domain)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearH5WebViewCookie");
 
@@ -36293,7 +36915,7 @@ void UScriptHelperClient::ClearH5WebViewCookie(const struct FString& Domain)
 
 void UScriptHelperClient::ClearChannelID(TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearChannelID");
 
@@ -36317,7 +36939,7 @@ void UScriptHelperClient::ClearChannelID(TScriptInterface<class UClientNetInterf
 
 void UScriptHelperClient::ClearAllLocalNotifications()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearAllLocalNotifications");
 
@@ -36338,7 +36960,7 @@ void UScriptHelperClient::ClearAllLocalNotifications()
 
 void UScriptHelperClient::ClearAllAudioBanks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ClearAllAudioBanks");
 
@@ -36359,7 +36981,7 @@ void UScriptHelperClient::ClearAllAudioBanks()
 
 void UScriptHelperClient::CheckRegisterGestureConflictWithZoom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckRegisterGestureConflictWithZoom");
 
@@ -36375,6 +36997,31 @@ void UScriptHelperClient::CheckRegisterGestureConflictWithZoom()
 }
 
 
+// Function Client.ScriptHelperClient.CheckMetalLibraryUncompressed
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UScriptHelperClient::CheckMetalLibraryUncompressed()
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckMetalLibraryUncompressed");
+
+	UScriptHelperClient_CheckMetalLibraryUncompressed_Params params;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	static auto defaultObj = StaticClass()->GetDefaultObject();
+	defaultObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Client.ScriptHelperClient.CheckMemorySymbolSource
 // (Final, Native, Static, Public)
 // Parameters:
@@ -36382,7 +37029,7 @@ void UScriptHelperClient::CheckRegisterGestureConflictWithZoom()
 
 int UScriptHelperClient::CheckMemorySymbolSource()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckMemorySymbolSource");
 
@@ -36408,7 +37055,7 @@ int UScriptHelperClient::CheckMemorySymbolSource()
 
 bool UScriptHelperClient::CheckLocalPakContentHash(const struct FString& Filename)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckLocalPakContentHash");
 
@@ -36434,7 +37081,7 @@ bool UScriptHelperClient::CheckLocalPakContentHash(const struct FString& Filenam
 
 bool UScriptHelperClient::CheckLocalizationExist()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckLocalizationExist");
 
@@ -36460,7 +37107,7 @@ bool UScriptHelperClient::CheckLocalizationExist()
 
 TArray<struct FString> UScriptHelperClient::CheckFilesInPakWithResult(TArray<struct FString> Files)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckFilesInPakWithResult");
 
@@ -36487,7 +37134,7 @@ TArray<struct FString> UScriptHelperClient::CheckFilesInPakWithResult(TArray<str
 
 TArray<struct FString> UScriptHelperClient::CheckFilesInPakLite(TArray<struct FString> Files)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckFilesInPakLite");
 
@@ -36514,7 +37161,7 @@ TArray<struct FString> UScriptHelperClient::CheckFilesInPakLite(TArray<struct FS
 
 TArray<struct FString> UScriptHelperClient::CheckFilesInPak(TArray<struct FString> Files)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckFilesInPak");
 
@@ -36541,7 +37188,7 @@ TArray<struct FString> UScriptHelperClient::CheckFilesInPak(TArray<struct FStrin
 
 bool UScriptHelperClient::CheckCanUseUrl(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckCanUseUrl");
 
@@ -36565,7 +37212,7 @@ bool UScriptHelperClient::CheckCanUseUrl(const struct FString& URL)
 
 void UScriptHelperClient::CheckBeforeInitPuffer()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CheckBeforeInitPuffer");
 
@@ -36589,7 +37236,7 @@ void UScriptHelperClient::CheckBeforeInitPuffer()
 
 void UScriptHelperClient::ChangeLocalizationReleaseTestStatus(class UGameFrontendHUD* GameFrontendHUD, bool status)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.ChangeLocalizationReleaseTestStatus");
 
@@ -36614,7 +37261,7 @@ void UScriptHelperClient::ChangeLocalizationReleaseTestStatus(class UGameFronten
 
 int UScriptHelperClient::CentauriSDKInit_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CentauriSDKInit_LuaState");
 
@@ -36639,7 +37286,7 @@ int UScriptHelperClient::CentauriSDKInit_LuaState()
 
 int UScriptHelperClient::CentauriReprovide_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CentauriReprovide_LuaState");
 
@@ -36664,7 +37311,7 @@ int UScriptHelperClient::CentauriReprovide_LuaState()
 
 bool UScriptHelperClient::CanUseHapticsEngine()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CanUseHapticsEngine");
 
@@ -36689,7 +37336,7 @@ bool UScriptHelperClient::CanUseHapticsEngine()
 
 bool UScriptHelperClient::CanEnableLuaClassIndexCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CanEnableLuaClassIndexCache");
 
@@ -36714,7 +37361,7 @@ bool UScriptHelperClient::CanEnableLuaClassIndexCache()
 
 void UScriptHelperClient::CancelLocalNotification(int NotificationID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CancelLocalNotification");
 
@@ -36740,7 +37387,7 @@ void UScriptHelperClient::CancelLocalNotification(int NotificationID)
 
 void UScriptHelperClient::CallIngameFirstTimeTips(class UGameFrontendHUD* GameFrontendHUD, const struct FString& tableName, const struct FString& FunctionName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CallIngameFirstTimeTips");
 
@@ -36764,7 +37411,7 @@ void UScriptHelperClient::CallIngameFirstTimeTips(class UGameFrontendHUD* GameFr
 
 void UScriptHelperClient::CallEngineGC()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CallEngineGC");
 
@@ -36787,7 +37434,7 @@ void UScriptHelperClient::CallEngineGC()
 
 void UScriptHelperClient::CacheH5WebView(const struct FString& ModuleName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.CacheH5WebView");
 
@@ -36820,7 +37467,7 @@ void UScriptHelperClient::CacheH5WebView(const struct FString& ModuleName)
 
 void UScriptHelperClient::BqBqShareToFriend(const struct FString& targetUrl, int act, const struct FString& OpenID, const struct FString& Title, const struct FString& Desc, const struct FString& msdkExtInfo, const struct FString& imgUrl, const struct FString& previewText, const struct FString& gameTag, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.BqBqShareToFriend");
 
@@ -36861,7 +37508,7 @@ void UScriptHelperClient::BqBqShareToFriend(const struct FString& targetUrl, int
 
 void UScriptHelperClient::BqBqShare(const struct FString& _imgPath, const struct FString& _descShare, const struct FString& _titleShare, int _shareScene, const struct FString& _imgUrl, const struct FString& _url, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.BqBqShare");
 
@@ -36896,7 +37543,7 @@ void UScriptHelperClient::BqBqShare(const struct FString& _imgPath, const struct
 
 void UScriptHelperClient::BqBqAddFriend(const struct FString& OpenID, const struct FString& Desc, const struct FString& Message, TScriptInterface<class UClientNetInterface>* ClientNetInterface)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.BqBqAddFriend");
 
@@ -36926,7 +37573,7 @@ void UScriptHelperClient::BqBqAddFriend(const struct FString& OpenID, const stru
 
 void UScriptHelperClient::BindMotionDetectedDelegate(class ASTExtraPlayerController* PlayerController, class UScreenInput* InScreenInput)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.BindMotionDetectedDelegate");
 
@@ -36949,7 +37596,7 @@ void UScriptHelperClient::BindMotionDetectedDelegate(class ASTExtraPlayerControl
 
 void UScriptHelperClient::AskForNotificationPermission()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AskForNotificationPermission");
 
@@ -36973,7 +37620,7 @@ void UScriptHelperClient::AskForNotificationPermission()
 
 bool UScriptHelperClient::AppendForcedKeepODPaks(TArray<struct FString> Filenames)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AppendForcedKeepODPaks");
 
@@ -36999,7 +37646,7 @@ bool UScriptHelperClient::AppendForcedKeepODPaks(TArray<struct FString> Filename
 
 bool UScriptHelperClient::AndroidShouldShowPermissionRationale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AndroidShouldShowPermissionRationale");
 
@@ -37024,7 +37671,7 @@ bool UScriptHelperClient::AndroidShouldShowPermissionRationale()
 
 bool UScriptHelperClient::AndroidCheckPermission()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AndroidCheckPermission");
 
@@ -37049,7 +37696,7 @@ bool UScriptHelperClient::AndroidCheckPermission()
 
 void UScriptHelperClient::AllocVirMem(int64_t XMiB)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AllocVirMem");
 
@@ -37071,7 +37718,7 @@ void UScriptHelperClient::AllocVirMem(int64_t XMiB)
 
 void UScriptHelperClient::AkAudio_UnloadInitBank()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AkAudio_UnloadInitBank");
 
@@ -37092,7 +37739,7 @@ void UScriptHelperClient::AkAudio_UnloadInitBank()
 
 void UScriptHelperClient::AkAudio_UnloadAllFilePackages()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AkAudio_UnloadAllFilePackages");
 
@@ -37115,7 +37762,7 @@ void UScriptHelperClient::AkAudio_UnloadAllFilePackages()
 
 void UScriptHelperClient::AkAudio_StopAllSounds(bool bShouldStopUISounds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AkAudio_StopAllSounds");
 
@@ -37137,7 +37784,7 @@ void UScriptHelperClient::AkAudio_StopAllSounds(bool bShouldStopUISounds)
 
 void UScriptHelperClient::AkAudio_LoadInitBank()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AkAudio_LoadInitBank");
 
@@ -37160,7 +37807,7 @@ void UScriptHelperClient::AkAudio_LoadInitBank()
 
 void UScriptHelperClient::AkAudio_Flush(class UWorld* WorldToFlush)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AkAudio_Flush");
 
@@ -37182,7 +37829,7 @@ void UScriptHelperClient::AkAudio_Flush(class UWorld* WorldToFlush)
 
 void UScriptHelperClient::AkAudio_ClearBanks()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AkAudio_ClearBanks");
 
@@ -37210,7 +37857,7 @@ void UScriptHelperClient::AkAudio_ClearBanks()
 
 bool UScriptHelperClient::AddStreamingLevel(class UWorld* World, const struct FString& SubLevel, bool bShouldBeLoaded, bool bShouldBeVisible, bool bShouldBlockOnLoad)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddStreamingLevel");
 
@@ -37244,7 +37891,7 @@ bool UScriptHelperClient::AddStreamingLevel(class UWorld* World, const struct FS
 
 void UScriptHelperClient::AddOnScreenDebugMessage(const struct FString& Message, int Key, float TimeToDisplay, const struct FVector2D& TextScale, struct FColor* Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddOnScreenDebugMessage");
 
@@ -37275,7 +37922,7 @@ void UScriptHelperClient::AddOnScreenDebugMessage(const struct FString& Message,
 
 int UScriptHelperClient::AddMemoryLogSize(int b_size)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddMemoryLogSize");
 
@@ -37303,7 +37950,7 @@ int UScriptHelperClient::AddMemoryLogSize(int b_size)
 
 void UScriptHelperClient::AddKnownMissingPackage(class UObject* BindObj, bool bReplace, struct FString* PackageName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddKnownMissingPackage");
 
@@ -37332,7 +37979,7 @@ void UScriptHelperClient::AddKnownMissingPackage(class UObject* BindObj, bool bR
 
 void UScriptHelperClient::AddCrashContextType(int Type, const struct FString& KeyString)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddCrashContextType");
 
@@ -37360,7 +38007,7 @@ void UScriptHelperClient::AddCrashContextType(int Type, const struct FString& Ke
 
 void UScriptHelperClient::AddCrashContextData(int Key, const struct FString& Val, bool bAppendTimeStamp, int reportLevel)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddCrashContextData");
 
@@ -37389,7 +38036,7 @@ void UScriptHelperClient::AddCrashContextData(int Key, const struct FString& Val
 
 void UScriptHelperClient::AddAttachFileString(const struct FString& Type, bool bClear, const struct FString& strinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddAttachFileString");
 
@@ -37417,7 +38064,7 @@ void UScriptHelperClient::AddAttachFileString(const struct FString& Type, bool b
 
 void UScriptHelperClient::AddAttachDataString(const struct FString& Type, bool bClear, const struct FString& strinfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperClient.AddAttachDataString");
 
@@ -37445,7 +38092,7 @@ void UScriptHelperClient::AddAttachDataString(const struct FString& Type, bool b
 
 TArray<unsigned char> UScriptHelperEngine::TestLz4Decompress(TArray<unsigned char> Source, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.TestLz4Decompress");
 
@@ -37473,7 +38120,7 @@ TArray<unsigned char> UScriptHelperEngine::TestLz4Decompress(TArray<unsigned cha
 
 TArray<unsigned char> UScriptHelperEngine::TestLz4Compress(TArray<unsigned char> Source)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.TestLz4Compress");
 
@@ -37497,7 +38144,7 @@ TArray<unsigned char> UScriptHelperEngine::TestLz4Compress(TArray<unsigned char>
 
 void UScriptHelperEngine::StopTGPA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.StopTGPA");
 
@@ -37518,7 +38165,7 @@ void UScriptHelperEngine::StopTGPA()
 
 void UScriptHelperEngine::StartTGPA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.StartTGPA");
 
@@ -37544,7 +38191,7 @@ void UScriptHelperEngine::StartTGPA()
 
 struct FString UScriptHelperEngine::ReplaceEmoji(const struct FString& Content, int MaxEmojiNum, const struct FString& SpecialCharacter)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.ReplaceEmoji");
 
@@ -37570,7 +38217,7 @@ struct FString UScriptHelperEngine::ReplaceEmoji(const struct FString& Content, 
 
 void UScriptHelperEngine::PrepareTGPA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.PrepareTGPA");
 
@@ -37593,7 +38240,7 @@ void UScriptHelperEngine::PrepareTGPA()
 
 int UScriptHelperEngine::IsSupportTGPA()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.IsSupportTGPA");
 
@@ -37618,7 +38265,7 @@ int UScriptHelperEngine::IsSupportTGPA()
 
 bool UScriptHelperEngine::IsSupportADPF()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.IsSupportADPF");
 
@@ -37643,7 +38290,7 @@ bool UScriptHelperEngine::IsSupportADPF()
 
 bool UScriptHelperEngine::IsLowMemoryDevice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.IsLowMemoryDevice");
 
@@ -37668,7 +38315,7 @@ bool UScriptHelperEngine::IsLowMemoryDevice()
 
 bool UScriptHelperEngine::Is64BitVersion()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.Is64BitVersion");
 
@@ -37693,7 +38340,7 @@ bool UScriptHelperEngine::Is64BitVersion()
 
 int UScriptHelperEngine::GetThermalStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.GetThermalStatus");
 
@@ -37718,7 +38365,7 @@ int UScriptHelperEngine::GetThermalStatus()
 
 int UScriptHelperEngine::GetThermal15sAfter()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.GetThermal15sAfter");
 
@@ -37743,7 +38390,7 @@ int UScriptHelperEngine::GetThermal15sAfter()
 
 float UScriptHelperEngine::GetMemoryUsedVirtualInKB()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.GetMemoryUsedVirtualInKB");
 
@@ -37768,7 +38415,7 @@ float UScriptHelperEngine::GetMemoryUsedVirtualInKB()
 
 float UScriptHelperEngine::GetMemoryUsedPhysicalInKB()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ScriptHelperEngine.GetMemoryUsedPhysicalInKB");
 
@@ -37791,7 +38438,7 @@ float UScriptHelperEngine::GetMemoryUsedPhysicalInKB()
 
 void USDKCallbackHelper::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SDKCallbackHelper.Init");
 
@@ -37814,7 +38461,7 @@ void USDKCallbackHelper::Init()
 
 class USDKCallbackHelper* USDKCallbackHelper::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SDKCallbackHelper.GetInstance");
 
@@ -37840,7 +38487,7 @@ class USDKCallbackHelper* USDKCallbackHelper::GetInstance()
 
 void USettingCustomPanel::StoreWeakWidget(const struct FString& Key, class UWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.StoreWeakWidget");
 
@@ -37863,7 +38510,7 @@ void USettingCustomPanel::StoreWeakWidget(const struct FString& Key, class UWidg
 
 void USettingCustomPanel::SetSelectedImageOriginEffect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.SetSelectedImageOriginEffect");
 
@@ -37884,7 +38531,7 @@ void USettingCustomPanel::SetSelectedImageOriginEffect()
 
 void USettingCustomPanel::SetSelectedImageFlashEffect()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.SetSelectedImageFlashEffect");
 
@@ -37907,7 +38554,7 @@ void USettingCustomPanel::SetSelectedImageFlashEffect()
 
 void USettingCustomPanel::SetDisplayState(ESCPDisplayState State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.SetDisplayState");
 
@@ -37931,7 +38578,7 @@ void USettingCustomPanel::SetDisplayState(ESCPDisplayState State)
 
 bool USettingCustomPanel::RestoreInBound()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.RestoreInBound");
 
@@ -37954,7 +38601,7 @@ bool USettingCustomPanel::RestoreInBound()
 
 void USettingCustomPanel::ResetMaxScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.ResetMaxScale");
 
@@ -37978,7 +38625,7 @@ void USettingCustomPanel::ResetMaxScale()
 
 bool USettingCustomPanel::IsSquareFlashEffectAssetName(const struct FString& InAssetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.IsSquareFlashEffectAssetName");
 
@@ -37996,33 +38643,6 @@ bool USettingCustomPanel::IsSquareFlashEffectAssetName(const struct FString& InA
 }
 
 
-// Function Client.SettingCustomPanel.IsOffsetInBoundary
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
-// Parameters:
-// struct FVector2D               Offset                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-
-bool USettingCustomPanel::IsOffsetInBoundary(const struct FVector2D& Offset)
-{
-	static UFunction *pFunc = nullptr;
-	if (!pFunc)
-		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.IsOffsetInBoundary");
-
-	USettingCustomPanel_IsOffsetInBoundary_Params params;
-	params.Offset = Offset;
-
-	auto flags = pFunc->FunctionFlags;
-	pFunc->FunctionFlags |= 0x400;
-
-	UObject *currentObj = (UObject *) this;
-	currentObj->ProcessEvent(pFunc, &params);
-
-	pFunc->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function Client.SettingCustomPanel.IsInvisible
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -38030,7 +38650,7 @@ bool USettingCustomPanel::IsOffsetInBoundary(const struct FVector2D& Offset)
 
 bool USettingCustomPanel::IsInvisible()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.IsInvisible");
 
@@ -38056,7 +38676,7 @@ bool USettingCustomPanel::IsInvisible()
 
 bool USettingCustomPanel::IsCircleFlashEffectAssetName(const struct FString& InAssetName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.IsCircleFlashEffectAssetName");
 
@@ -38083,7 +38703,7 @@ bool USettingCustomPanel::IsCircleFlashEffectAssetName(const struct FString& InA
 
 class UWidget* USettingCustomPanel::GetWidgetByType(class UWidget* RootWidget, class UClass* WidgetType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetWidgetByType");
 
@@ -38111,7 +38731,7 @@ class UWidget* USettingCustomPanel::GetWidgetByType(class UWidget* RootWidget, c
 
 class UWidget* USettingCustomPanel::GetWeakWidget(const struct FString& Key)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetWeakWidget");
 
@@ -38137,7 +38757,7 @@ class UWidget* USettingCustomPanel::GetWeakWidget(const struct FString& Key)
 
 class UImage* USettingCustomPanel::GetSelectedImage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetSelectedImage");
 
@@ -38162,7 +38782,7 @@ class UImage* USettingCustomPanel::GetSelectedImage()
 
 class UWidget* USettingCustomPanel::GetParentWidget()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetParentWidget");
 
@@ -38188,7 +38808,7 @@ class UWidget* USettingCustomPanel::GetParentWidget()
 
 class UWidget* USettingCustomPanel::GetNamedWidgetFromOwner(const struct FString& Prefix)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetNamedWidgetFromOwner");
 
@@ -38214,7 +38834,7 @@ class UWidget* USettingCustomPanel::GetNamedWidgetFromOwner(const struct FString
 
 float USettingCustomPanel::GetMaxScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetMaxScale");
 
@@ -38239,7 +38859,7 @@ float USettingCustomPanel::GetMaxScale()
 
 class UImage* USettingCustomPanel::GetInvalidImage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetInvalidImage");
 
@@ -38265,7 +38885,7 @@ class UImage* USettingCustomPanel::GetInvalidImage()
 
 struct FMargin USettingCustomPanel::GetDistanceToBound(const struct FVector2D& Bias)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetDistanceToBound");
 
@@ -38292,7 +38912,7 @@ struct FMargin USettingCustomPanel::GetDistanceToBound(const struct FVector2D& B
 
 struct FVector2D USettingCustomPanel::GetCenterPositionInScreenSpace(class UWidget* FullScreenWidget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetCenterPositionInScreenSpace");
 
@@ -38318,7 +38938,7 @@ struct FVector2D USettingCustomPanel::GetCenterPositionInScreenSpace(class UWidg
 
 class UWidget* USettingCustomPanel::GetBorder_RealSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.GetBorder_RealSize");
 
@@ -38343,7 +38963,7 @@ class UWidget* USettingCustomPanel::GetBorder_RealSize()
 
 void USettingCustomPanel::FlashHighlight(float Seconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.FlashHighlight");
 
@@ -38369,7 +38989,7 @@ void USettingCustomPanel::FlashHighlight(float Seconds)
 
 struct FVector2D USettingCustomPanel::ConvertCenterPositionFromScreenSpace(class UWidget* FullScreenWidget, const struct FVector2D& SSPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.ConvertCenterPositionFromScreenSpace");
 
@@ -38398,7 +39018,7 @@ struct FVector2D USettingCustomPanel::ConvertCenterPositionFromScreenSpace(class
 
 struct FVector2D USettingCustomPanel::ClampOffset(const struct FVector2D& Offset, const struct FVector2D& Bias)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.ClampOffset");
 
@@ -38423,7 +39043,7 @@ struct FVector2D USettingCustomPanel::ClampOffset(const struct FVector2D& Offset
 
 void USettingCustomPanel::CalculateMaxScale()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingCustomPanel.CalculateMaxScale");
 
@@ -38448,7 +39068,7 @@ void USettingCustomPanel::CalculateMaxScale()
 
 bool USettingSubsystem::UpdateCustomSetting(const struct FString& InSlotName, class USaveGame* InSaveGame)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.UpdateCustomSetting");
 
@@ -38475,7 +39095,7 @@ bool USettingSubsystem::UpdateCustomSetting(const struct FString& InSlotName, cl
 
 void USettingSubsystem::UnregisterUserSettingDelegate(int Handle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.UnregisterUserSettingDelegate");
 
@@ -38501,7 +39121,7 @@ void USettingSubsystem::UnregisterUserSettingDelegate(int Handle)
 
 bool USettingSubsystem::SetUserSettings_String(const struct FString& PropertyName, const struct FString& Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.SetUserSettings_String");
 
@@ -38530,7 +39150,7 @@ bool USettingSubsystem::SetUserSettings_String(const struct FString& PropertyNam
 
 bool USettingSubsystem::SetUserSettings_Int(const struct FString& PropertyName, int Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.SetUserSettings_Int");
 
@@ -38559,7 +39179,7 @@ bool USettingSubsystem::SetUserSettings_Int(const struct FString& PropertyName, 
 
 bool USettingSubsystem::SetUserSettings_Float(const struct FString& PropertyName, float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.SetUserSettings_Float");
 
@@ -38589,7 +39209,7 @@ bool USettingSubsystem::SetUserSettings_Float(const struct FString& PropertyName
 
 bool USettingSubsystem::SetUserSettings_Bool(const struct FString& PropertyName, bool Value, bool IngoreSave)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.SetUserSettings_Bool");
 
@@ -38619,7 +39239,7 @@ bool USettingSubsystem::SetUserSettings_Bool(const struct FString& PropertyName,
 
 int USettingSubsystem::RegisterUserSettingsDelegate_Int(const struct FString& PropertyName, const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.RegisterUserSettingsDelegate_Int");
 
@@ -38648,7 +39268,7 @@ int USettingSubsystem::RegisterUserSettingsDelegate_Int(const struct FString& Pr
 
 int USettingSubsystem::RegisterUserSettingsDelegate_Float(const struct FString& PropertyName, const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.RegisterUserSettingsDelegate_Float");
 
@@ -38677,7 +39297,7 @@ int USettingSubsystem::RegisterUserSettingsDelegate_Float(const struct FString& 
 
 int USettingSubsystem::RegisterUserSettingsDelegate_Bool(const struct FString& PropertyName, const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.RegisterUserSettingsDelegate_Bool");
 
@@ -38704,7 +39324,7 @@ int USettingSubsystem::RegisterUserSettingsDelegate_Bool(const struct FString& P
 
 void USettingSubsystem::RegisterUserSettingsDelegate(const struct FScriptDelegate& Delegate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.RegisterUserSettingsDelegate");
 
@@ -38726,7 +39346,7 @@ void USettingSubsystem::RegisterUserSettingsDelegate(const struct FScriptDelegat
 
 void USettingSubsystem::RefreshSettingDataForReport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.RefreshSettingDataForReport");
 
@@ -38747,7 +39367,7 @@ void USettingSubsystem::RefreshSettingDataForReport()
 
 void USettingSubsystem::OnReportSettingConfigStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.OnReportSettingConfigStart");
 
@@ -38768,7 +39388,7 @@ void USettingSubsystem::OnReportSettingConfigStart()
 
 void USettingSubsystem::OnRefreshReportSettingConfig()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.OnRefreshReportSettingConfig");
 
@@ -38792,7 +39412,7 @@ void USettingSubsystem::OnRefreshReportSettingConfig()
 
 class USaveGame* USettingSubsystem::GetUserSettingsByDelegate(const struct FString& LayoutName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetUserSettingsByDelegate");
 
@@ -38819,7 +39439,7 @@ class USaveGame* USettingSubsystem::GetUserSettingsByDelegate(const struct FStri
 
 struct FString USettingSubsystem::GetUserSettings_String(const struct FString& PropertyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetUserSettings_String");
 
@@ -38846,7 +39466,7 @@ struct FString USettingSubsystem::GetUserSettings_String(const struct FString& P
 
 int USettingSubsystem::GetUserSettings_Int(const struct FString& PropertyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetUserSettings_Int");
 
@@ -38873,7 +39493,7 @@ int USettingSubsystem::GetUserSettings_Int(const struct FString& PropertyName)
 
 float USettingSubsystem::GetUserSettings_Float(const struct FString& PropertyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetUserSettings_Float");
 
@@ -38900,7 +39520,7 @@ float USettingSubsystem::GetUserSettings_Float(const struct FString& PropertyNam
 
 bool USettingSubsystem::GetUserSettings_Bool(const struct FString& PropertyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetUserSettings_Bool");
 
@@ -38926,7 +39546,7 @@ bool USettingSubsystem::GetUserSettings_Bool(const struct FString& PropertyName)
 
 class USaveGame* USettingSubsystem::GetUserSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetUserSettings");
 
@@ -38952,7 +39572,7 @@ class USaveGame* USettingSubsystem::GetUserSettings()
 
 struct FString USettingSubsystem::GetUserLanguageSettingsProperty_String(const struct FString& PropertyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetUserLanguageSettingsProperty_String");
 
@@ -38978,7 +39598,7 @@ struct FString USettingSubsystem::GetUserLanguageSettingsProperty_String(const s
 
 class UEffectSettingMgr* USettingSubsystem::GetEffectSettingMgr()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetEffectSettingMgr");
 
@@ -39004,7 +39624,7 @@ class UEffectSettingMgr* USettingSubsystem::GetEffectSettingMgr()
 
 class USaveGame* USettingSubsystem::GetCustomSetting(const struct FString& InSlotName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.GetCustomSetting");
 
@@ -39028,7 +39648,7 @@ class USaveGame* USettingSubsystem::GetCustomSetting(const struct FString& InSlo
 
 void USettingSubsystem::FinishModifyUserSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.FinishModifyUserSettings");
 
@@ -39049,7 +39669,7 @@ void USettingSubsystem::FinishModifyUserSettings()
 
 void USettingSubsystem::ClearSettingDataForReport()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.ClearSettingDataForReport");
 
@@ -39070,7 +39690,7 @@ void USettingSubsystem::ClearSettingDataForReport()
 
 void USettingSubsystem::ClearCustomSetting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.ClearCustomSetting");
 
@@ -39091,7 +39711,7 @@ void USettingSubsystem::ClearCustomSetting()
 
 void USettingSubsystem::CheckLocalizationLanguage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.CheckLocalizationLanguage");
 
@@ -39117,7 +39737,7 @@ void USettingSubsystem::CheckLocalizationLanguage()
 
 bool USettingSubsystem::CheckChangeWithCache(class UObject* Source, class UProperty* Property, const struct FString& PropertyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.CheckChangeWithCache");
 
@@ -39147,7 +39767,7 @@ bool USettingSubsystem::CheckChangeWithCache(class UObject* Source, class UPrope
 
 void USettingSubsystem::CacheRegisterValue(class UObject* Source, class UProperty* Property, const struct FString& PropertyName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.CacheRegisterValue");
 
@@ -39171,7 +39791,7 @@ void USettingSubsystem::CacheRegisterValue(class UObject* Source, class UPropert
 
 void USettingSubsystem::BeginModifyUserSettings()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.BeginModifyUserSettings");
 
@@ -39195,7 +39815,7 @@ void USettingSubsystem::BeginModifyUserSettings()
 
 void USettingSubsystem::AddCustomSetting(const struct FString& InSlotName, class USaveGame* InSaveGame)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SettingSubsystem.AddCustomSetting");
 
@@ -39220,7 +39840,7 @@ void USettingSubsystem::AddCustomSetting(const struct FString& InSlotName, class
 
 void USoundTools::StopConversionByUser(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.StopConversionByUser");
 
@@ -39244,7 +39864,7 @@ void USoundTools::StopConversionByUser(int Index)
 
 void USoundTools::SaveWavInIOS(const struct FString& GameFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.SaveWavInIOS");
 
@@ -39268,7 +39888,7 @@ void USoundTools::SaveWavInIOS(const struct FString& GameFilePath)
 
 void USoundTools::SaveToAndroidPath(const struct FString& GameFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.SaveToAndroidPath");
 
@@ -39295,7 +39915,7 @@ void USoundTools::SaveToAndroidPath(const struct FString& GameFilePath)
 
 int USoundTools::GetSizeOfWwiseAudioToWav(const struct FString& EventName, const struct FString& BankName, const struct FString& OutFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.GetSizeOfWwiseAudioToWav");
 
@@ -39324,7 +39944,7 @@ int USoundTools::GetSizeOfWwiseAudioToWav(const struct FString& EventName, const
 
 float USoundTools::GetConversionPercent(int Index)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.GetConversionPercent");
 
@@ -39353,7 +39973,7 @@ float USoundTools::GetConversionPercent(int Index)
 
 int USoundTools::ConvertWwiseAudioToWavSync(const struct FString& EventName, const struct FString& BankName, const struct FString& OutFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.ConvertWwiseAudioToWavSync");
 
@@ -39384,7 +40004,7 @@ int USoundTools::ConvertWwiseAudioToWavSync(const struct FString& EventName, con
 
 int USoundTools::ConvertWwiseAudioToWav(const struct FString& EventName, const struct FString& BankName, const struct FString& OutFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.ConvertWwiseAudioToWav");
 
@@ -39412,7 +40032,7 @@ int USoundTools::ConvertWwiseAudioToWav(const struct FString& EventName, const s
 
 bool USoundTools::CanWwiseAudioToWav()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.SoundTools.CanWwiseAudioToWav");
 
@@ -39440,7 +40060,7 @@ bool USoundTools::CanWwiseAudioToWav()
 
 void USTExtraClientUtils::GetWidgetHandleAsyncWithCallBack(class UObject* WorldContext, const struct FString& ModuleName, const struct FString& WidgetKey, const struct FScriptDelegate& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.STExtraClientUtils.GetWidgetHandleAsyncWithCallBack");
 
@@ -39470,7 +40090,7 @@ void USTExtraClientUtils::GetWidgetHandleAsyncWithCallBack(class UObject* WorldC
 
 class UUAEUserWidget* USTExtraClientUtils::GetDynamicWidgetHandle(class UObject* WorldContext, const struct FString& ModuleName, const struct FString& WidetKey)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.STExtraClientUtils.GetDynamicWidgetHandle");
 
@@ -39498,7 +40118,7 @@ class UUAEUserWidget* USTExtraClientUtils::GetDynamicWidgetHandle(class UObject*
 
 class USTExtraClientUIBPUtils* USTExtraClientUtils::GetBPUtils()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.STExtraClientUtils.GetBPUtils");
 
@@ -39525,7 +40145,7 @@ class USTExtraClientUIBPUtils* USTExtraClientUtils::GetBPUtils()
 
 int USTExtraClientUtils::AsyncLoadAssetInstWithCallback(const struct FString& InPath, const struct FScriptDelegate& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.STExtraClientUtils.AsyncLoadAssetInstWithCallback");
 
@@ -39553,7 +40173,7 @@ int USTExtraClientUtils::AsyncLoadAssetInstWithCallback(const struct FString& In
 
 void USTExtraClientUIBPUtils::OnAsyncAssetLoaded(const struct FSoftObjectPath& InSoftPath, int RequestIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.STExtraClientUIBPUtils.OnAsyncAssetLoaded");
 
@@ -39580,7 +40200,7 @@ void USTExtraClientUIBPUtils::OnAsyncAssetLoaded(const struct FSoftObjectPath& I
 
 int USTExtraClientUIBPUtils::AsyncLoadAssetInstWithCallback(const struct FString& InPath, const struct FScriptDelegate& Callback)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.STExtraClientUIBPUtils.AsyncLoadAssetInstWithCallback");
 
@@ -39607,7 +40227,7 @@ int USTExtraClientUIBPUtils::AsyncLoadAssetInstWithCallback(const struct FString
 
 void UTPerfPlat::SetQuality(int Quality)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TPerfPlat.SetQuality");
 
@@ -39633,7 +40253,7 @@ void UTPerfPlat::SetQuality(int Quality)
 
 void UTPerfPlat::requestResourceGuarantee(int Condition, int LoadType, int applyType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TPerfPlat.requestResourceGuarantee");
 
@@ -39660,7 +40280,7 @@ void UTPerfPlat::requestResourceGuarantee(int Condition, int LoadType, int apply
 
 void UTPerfPlat::PostGameStatusToTMFPIS(int Key, const struct FString& Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TPerfPlat.PostGameStatusToTMFPIS");
 
@@ -39685,7 +40305,7 @@ void UTPerfPlat::PostGameStatusToTMFPIS(int Key, const struct FString& Value)
 
 int UTPerfPlat::GetDeviceLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TPerfPlat.GetDeviceLevel");
 
@@ -39712,7 +40332,7 @@ int UTPerfPlat::GetDeviceLevel()
 
 void UTranslator::TranslateV2(int Channel, int ID, const struct FString& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.TranslateV2");
 
@@ -39741,7 +40361,7 @@ void UTranslator::TranslateV2(int Channel, int ID, const struct FString& Text)
 
 void UTranslator::Translate(const struct FString& URL, const struct FString& Verb, TMap<struct FString, struct FString> Headers, const struct FString& Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.Translate");
 
@@ -39769,7 +40389,7 @@ void UTranslator::Translate(const struct FString& URL, const struct FString& Ver
 
 void UTranslator::PostMsg(const struct FString& URL, const struct FString& Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.PostMsg");
 
@@ -39795,7 +40415,7 @@ void UTranslator::PostMsg(const struct FString& URL, const struct FString& Conte
 
 void UTranslator::OnTranslateV2(bool Success, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.OnTranslateV2");
 
@@ -39822,7 +40442,7 @@ void UTranslator::OnTranslateV2(bool Success, const struct FString& Data)
 
 void UTranslator::OnTranslate__DelegateSignature(bool IsSuccess, const struct FString& LanguageFrom, const struct FString& Translation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.Translator.OnTranslate__DelegateSignature");
 
@@ -39848,7 +40468,7 @@ void UTranslator::OnTranslate__DelegateSignature(bool IsSuccess, const struct FS
 
 void UTranslator::OnTranslate(bool Success, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.OnTranslate");
 
@@ -39874,7 +40494,7 @@ void UTranslator::OnTranslate(bool Success, const struct FString& Data)
 
 void UTranslator::OnGetAccessTokenV2(bool Success, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.OnGetAccessTokenV2");
 
@@ -39900,7 +40520,7 @@ void UTranslator::OnGetAccessTokenV2(bool Success, const struct FString& Data)
 
 void UTranslator::OnGetAccessToken__DelegateSignature(bool IsSuccess, const struct FString& Token)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.Translator.OnGetAccessToken__DelegateSignature");
 
@@ -39925,7 +40545,7 @@ void UTranslator::OnGetAccessToken__DelegateSignature(bool IsSuccess, const stru
 
 void UTranslator::OnGetAccessToken(bool Success, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.OnGetAccessToken");
 
@@ -39951,7 +40571,7 @@ void UTranslator::OnGetAccessToken(bool Success, const struct FString& Data)
 
 void UTranslator::OnDetectV2(bool Success, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.OnDetectV2");
 
@@ -39973,19 +40593,19 @@ void UTranslator::OnDetectV2(bool Success, const struct FString& Data)
 // (Public, Delegate)
 // Parameters:
 // bool                           IsSuccess                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 from                           (Parm, ZeroConstructor)
-// struct FString                 to                             (Parm, ZeroConstructor)
+// struct FString                 From                           (Parm, ZeroConstructor)
+// struct FString                 To                             (Parm, ZeroConstructor)
 
-void UTranslator::OnDetect__DelegateSignature(bool IsSuccess, const struct FString& from, const struct FString& to)
+void UTranslator::OnDetect__DelegateSignature(bool IsSuccess, const struct FString& From, const struct FString& To)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.Translator.OnDetect__DelegateSignature");
 
 	UTranslator_OnDetect__DelegateSignature_Params params;
 	params.IsSuccess = IsSuccess;
-	params.from = from;
-	params.to = to;
+	params.From = From;
+	params.To = To;
 
 	auto flags = pFunc->FunctionFlags;
 
@@ -40004,7 +40624,7 @@ void UTranslator::OnDetect__DelegateSignature(bool IsSuccess, const struct FStri
 
 void UTranslator::OnDetect(bool Success, const struct FString& Data)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.OnDetect");
 
@@ -40029,7 +40649,7 @@ void UTranslator::OnDetect(bool Success, const struct FString& Data)
 
 bool UTranslator::HasTranslating()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.HasTranslating");
 
@@ -40058,7 +40678,7 @@ bool UTranslator::HasTranslating()
 
 void UTranslator::GetAccessToken(bool bForceGet, const struct FString& URL, const struct FString& Verb, TMap<struct FString, struct FString> Headers, const struct FString& Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.GetAccessToken");
 
@@ -40089,7 +40709,7 @@ void UTranslator::GetAccessToken(bool bForceGet, const struct FString& URL, cons
 
 void UTranslator::Detect(const struct FString& URL, const struct FString& Verb, TMap<struct FString, struct FString> Headers, const struct FString& Content)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.Translator.Detect");
 
@@ -40116,7 +40736,7 @@ void UTranslator::Detect(const struct FString& URL, const struct FString& Verb, 
 
 int UTssManager::SendSkdData_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.SendSkdData_LuaState");
 
@@ -40141,7 +40761,7 @@ int UTssManager::SendSkdData_LuaState()
 
 int UTssManager::SendEigeninfoData_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.SendEigeninfoData_LuaState");
 
@@ -40166,7 +40786,7 @@ int UTssManager::SendEigeninfoData_LuaState()
 
 uint32_t UTssManager::SaveSendEigeninfoCode_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.SaveSendEigeninfoCode_LuaState");
 
@@ -40191,7 +40811,7 @@ uint32_t UTssManager::SaveSendEigeninfoCode_LuaState()
 
 int UTssManager::OnRecvData_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.OnRecvData_LuaState");
 
@@ -40218,7 +40838,7 @@ int UTssManager::OnRecvData_LuaState()
 
 uint32_t UTssManager::InvokeSDKIoctl(int Command, const struct FString& InCmdData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.InvokeSDKIoctl");
 
@@ -40245,7 +40865,7 @@ uint32_t UTssManager::InvokeSDKIoctl(int Command, const struct FString& InCmdDat
 
 int UTssManager::GetUserTag4Lua_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.GetUserTag4Lua_LuaState");
 
@@ -40270,7 +40890,7 @@ int UTssManager::GetUserTag4Lua_LuaState()
 
 int UTssManager::GetDeviceFeature_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.GetDeviceFeature_LuaState");
 
@@ -40295,7 +40915,7 @@ int UTssManager::GetDeviceFeature_LuaState()
 
 int UTssManager::EigenArrayObfuscationVerify_LuaState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.TssManager.EigenArrayObfuscationVerify_LuaState");
 
@@ -40320,7 +40940,7 @@ int UTssManager::EigenArrayObfuscationVerify_LuaState()
 
 void UUTRichTextBlock::SetWrapTextAt(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.SetWrapTextAt");
 
@@ -40344,7 +40964,7 @@ void UUTRichTextBlock::SetWrapTextAt(float Val)
 
 void UUTRichTextBlock::SetText(const struct FText& InText)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.SetText");
 
@@ -40368,7 +40988,7 @@ void UUTRichTextBlock::SetText(const struct FText& InText)
 
 void UUTRichTextBlock::SetGameFrontendHUD(class UGameFrontendHUD* InHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.SetGameFrontendHUD");
 
@@ -40392,7 +41012,7 @@ void UUTRichTextBlock::SetGameFrontendHUD(class UGameFrontendHUD* InHUD)
 
 void UUTRichTextBlock::SetFont(const struct FSlateFontInfo& InFontInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.SetFont");
 
@@ -40416,7 +41036,7 @@ void UUTRichTextBlock::SetFont(const struct FSlateFontInfo& InFontInfo)
 
 void UUTRichTextBlock::SetColorAndOpacity(const struct FSlateColor& InColorAndOpacity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.SetColorAndOpacity");
 
@@ -40440,7 +41060,7 @@ void UUTRichTextBlock::SetColorAndOpacity(const struct FSlateColor& InColorAndOp
 
 void UUTRichTextBlock::OnHyperlinkClickedEvent__DelegateSignature(const struct FMetaDataHolder& MetaDataHolder)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.UTRichTextBlock.OnHyperlinkClickedEvent__DelegateSignature");
 
@@ -40463,7 +41083,7 @@ void UUTRichTextBlock::OnHyperlinkClickedEvent__DelegateSignature(const struct F
 
 TArray<struct FVector2D> UUTRichTextBlock::GetViewSizes()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.GetViewSizes");
 
@@ -40488,7 +41108,7 @@ TArray<struct FVector2D> UUTRichTextBlock::GetViewSizes()
 
 struct FText UUTRichTextBlock::GetText()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.GetText");
 
@@ -40513,7 +41133,7 @@ struct FText UUTRichTextBlock::GetText()
 
 struct FVector2D UUTRichTextBlock::EstimateDesiredSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UTRichTextBlock.EstimateDesiredSize");
 
@@ -40534,11 +41154,11 @@ struct FVector2D UUTRichTextBlock::EstimateDesiredSize()
 // Function Client.AEVarButton.SetTouchMethod
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EButtonTouchMethod> InTouchMethod                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EButtonTouchMethod> InTouchMethod                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void UAEVarButton::SetTouchMethod(TEnumAsByte<enum EButtonTouchMethod> InTouchMethod)
+void UAEVarButton::SetTouchMethod(TEnumAsByte<EButtonTouchMethod> InTouchMethod)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AEVarButton.SetTouchMethod");
 
@@ -40562,7 +41182,7 @@ void UAEVarButton::SetTouchMethod(TEnumAsByte<enum EButtonTouchMethod> InTouchMe
 
 void UAEVarButton::SetStyle(const struct FButtonStyle& InStyle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AEVarButton.SetStyle");
 
@@ -40586,7 +41206,7 @@ void UAEVarButton::SetStyle(const struct FButtonStyle& InStyle)
 
 void UAEVarButton::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AEVarButton.SetColorAndOpacity");
 
@@ -40606,11 +41226,11 @@ void UAEVarButton::SetColorAndOpacity(const struct FLinearColor& InColorAndOpaci
 // Function Client.AEVarButton.SetClickMethod
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EButtonClickMethod> InClickMethod                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EButtonClickMethod> InClickMethod                  (Parm, ZeroConstructor, IsPlainOldData)
 
-void UAEVarButton::SetClickMethod(TEnumAsByte<enum EButtonClickMethod> InClickMethod)
+void UAEVarButton::SetClickMethod(TEnumAsByte<EButtonClickMethod> InClickMethod)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AEVarButton.SetClickMethod");
 
@@ -40634,7 +41254,7 @@ void UAEVarButton::SetClickMethod(TEnumAsByte<enum EButtonClickMethod> InClickMe
 
 void UAEVarButton::SetBackgroundColor(const struct FLinearColor& InBackgroundColor)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AEVarButton.SetBackgroundColor");
 
@@ -40658,7 +41278,7 @@ void UAEVarButton::SetBackgroundColor(const struct FLinearColor& InBackgroundCol
 
 bool UAEVarButton::IsPressed()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.AEVarButton.IsPressed");
 
@@ -40683,7 +41303,7 @@ bool UAEVarButton::IsPressed()
 
 void UReuseFallC::SoftReload(int __ItemCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.SoftReload");
 
@@ -40707,7 +41327,7 @@ void UReuseFallC::SoftReload(int __ItemCount)
 
 void UReuseFallC::SetTopMargin(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.SetTopMargin");
 
@@ -40731,7 +41351,7 @@ void UReuseFallC::SetTopMargin(float Val)
 
 void UReuseFallC::SetScrollOffset(float NewScrollOffset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.SetScrollOffset");
 
@@ -40756,7 +41376,7 @@ void UReuseFallC::SetScrollOffset(float NewScrollOffset)
 
 void UReuseFallC::SetItemSize(int __Idx, float __Size)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.SetItemSize");
 
@@ -40781,7 +41401,7 @@ void UReuseFallC::SetItemSize(int __Idx, float __Size)
 
 void UReuseFallC::SetItemFullStyle(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.SetItemFullStyle");
 
@@ -40806,7 +41426,7 @@ void UReuseFallC::SetItemFullStyle(int idx)
 
 bool UReuseFallC::SetCurItemClass(const struct FString& StrName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.SetCurItemClass");
 
@@ -40825,12 +41445,36 @@ bool UReuseFallC::SetCurItemClass(const struct FString& StrName)
 }
 
 
+// Function Client.ReuseFallC.SetBottomMargin
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                          Val                            (Parm, ZeroConstructor, IsPlainOldData)
+
+void UReuseFallC::SetBottomMargin(float Val)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.SetBottomMargin");
+
+	UReuseFallC_SetBottomMargin_Params params;
+	params.Val = Val;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+}
+
+
 // Function Client.ReuseFallC.ScrollToStart
 // (Final, Native, Public, BlueprintCallable)
 
 void UReuseFallC::ScrollToStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.ScrollToStart");
 
@@ -40851,7 +41495,7 @@ void UReuseFallC::ScrollToStart()
 
 void UReuseFallC::ScrollToEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.ScrollToEnd");
 
@@ -40872,7 +41516,7 @@ void UReuseFallC::ScrollToEnd()
 
 void UReuseFallC::ResetCurItemClassToDefault()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.ResetCurItemClassToDefault");
 
@@ -40895,7 +41539,7 @@ void UReuseFallC::ResetCurItemClassToDefault()
 
 void UReuseFallC::Reload(int __ItemCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.Reload");
 
@@ -40919,7 +41563,7 @@ void UReuseFallC::Reload(int __ItemCount)
 
 void UReuseFallC::RefreshOne(int __Idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.RefreshOne");
 
@@ -40941,7 +41585,7 @@ void UReuseFallC::RefreshOne(int __Idx)
 
 void UReuseFallC::Refresh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.Refresh");
 
@@ -40965,7 +41609,7 @@ void UReuseFallC::Refresh()
 
 void UReuseFallC::OnUpdateItemDelegate__DelegateSignature(class UUserWidget* Widget, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseFallC.OnUpdateItemDelegate__DelegateSignature");
 
@@ -40987,7 +41631,7 @@ void UReuseFallC::OnUpdateItemDelegate__DelegateSignature(class UUserWidget* Wid
 
 void UReuseFallC::OnTouchFinishDelegate__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseFallC.OnTouchFinishDelegate__DelegateSignature");
 
@@ -41007,7 +41651,7 @@ void UReuseFallC::OnTouchFinishDelegate__DelegateSignature()
 
 void UReuseFallC::OnTouchFinishCallback()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.OnTouchFinishCallback");
 
@@ -41030,7 +41674,7 @@ void UReuseFallC::OnTouchFinishCallback()
 
 void UReuseFallC::OnOverscrollStateDelegate__DelegateSignature(EReuseFallOverscrollState State)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseFallC.OnOverscrollStateDelegate__DelegateSignature");
 
@@ -41054,7 +41698,7 @@ void UReuseFallC::OnOverscrollStateDelegate__DelegateSignature(EReuseFallOverscr
 
 void UReuseFallC::OnHideItemDelegate__DelegateSignature(class UUserWidget* Widget, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseFallC.OnHideItemDelegate__DelegateSignature");
 
@@ -41079,7 +41723,7 @@ void UReuseFallC::OnHideItemDelegate__DelegateSignature(class UUserWidget* Widge
 
 void UReuseFallC::OnCreateItemDelegate__DelegateSignature(class UUserWidget* Widget, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseFallC.OnCreateItemDelegate__DelegateSignature");
 
@@ -41103,7 +41747,7 @@ void UReuseFallC::OnCreateItemDelegate__DelegateSignature(class UUserWidget* Wid
 
 void UReuseFallC::OnBeforeNewItemDelegate__DelegateSignature(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseFallC.OnBeforeNewItemDelegate__DelegateSignature");
 
@@ -41127,7 +41771,7 @@ void UReuseFallC::OnBeforeNewItemDelegate__DelegateSignature(int idx)
 
 void UReuseFallC::OnAfterNewItemDelegate__DelegateSignature(class UUserWidget* Widget, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseFallC.OnAfterNewItemDelegate__DelegateSignature");
 
@@ -41152,7 +41796,7 @@ void UReuseFallC::OnAfterNewItemDelegate__DelegateSignature(class UUserWidget* W
 
 void UReuseFallC::JumpByIdx(int __Idx, bool bImmedia)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.JumpByIdx");
 
@@ -41177,7 +41821,7 @@ void UReuseFallC::JumpByIdx(int __Idx, bool bImmedia)
 
 struct FVector2D UReuseFallC::GetViewSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.GetViewSize");
 
@@ -41202,7 +41846,7 @@ struct FVector2D UReuseFallC::GetViewSize()
 
 float UReuseFallC::GetScrollOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.GetScrollOffset");
 
@@ -41227,7 +41871,7 @@ float UReuseFallC::GetScrollOffset()
 
 class UScrollBox* UReuseFallC::GetScrollBox()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.GetScrollBox");
 
@@ -41252,7 +41896,7 @@ class UScrollBox* UReuseFallC::GetScrollBox()
 
 EReuseFallOverscrollState UReuseFallC::GetOverscrollState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.GetOverscrollState");
 
@@ -41277,7 +41921,7 @@ EReuseFallOverscrollState UReuseFallC::GetOverscrollState()
 
 struct FVector2D UReuseFallC::GetContentSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.GetContentSize");
 
@@ -41300,7 +41944,7 @@ struct FVector2D UReuseFallC::GetContentSize()
 
 void UReuseFallC::ClearItemSizeAll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.ClearItemSizeAll");
 
@@ -41323,7 +41967,7 @@ void UReuseFallC::ClearItemSizeAll()
 
 void UReuseFallC::ClearItemSize(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.ClearItemSize");
 
@@ -41345,7 +41989,7 @@ void UReuseFallC::ClearItemSize(int idx)
 
 void UReuseFallC::ClearItemFullStyle()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.ClearItemFullStyle");
 
@@ -41366,7 +42010,7 @@ void UReuseFallC::ClearItemFullStyle()
 
 void UReuseFallC::Clear()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseFallC.Clear");
 
@@ -41389,7 +42033,7 @@ void UReuseFallC::Clear()
 
 void UReuseListC::SetTitleSlotAutoSize(bool as)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.SetTitleSlotAutoSize");
 
@@ -41413,7 +42057,7 @@ void UReuseListC::SetTitleSlotAutoSize(bool as)
 
 void UReuseListC::SetTitleSize(int sz)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.SetTitleSize");
 
@@ -41437,7 +42081,7 @@ void UReuseListC::SetTitleSize(int sz)
 
 void UReuseListC::SetScrollOffset(float NewScrollOffset)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.SetScrollOffset");
 
@@ -41459,7 +42103,7 @@ void UReuseListC::SetScrollOffset(float NewScrollOffset)
 
 void UReuseListC::ScrollToStart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.ScrollToStart");
 
@@ -41480,7 +42124,7 @@ void UReuseListC::ScrollToStart()
 
 void UReuseListC::ScrollToEnd()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.ScrollToEnd");
 
@@ -41508,7 +42152,7 @@ void UReuseListC::ScrollToEnd()
 
 void UReuseListC::Reset(class UClass* __ItemClass, EReuseListStyle __Style, int __ItemWidth, int __ItemHeight, int __PaddingX, int __PaddingY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.Reset");
 
@@ -41537,7 +42181,7 @@ void UReuseListC::Reset(class UClass* __ItemClass, EReuseListStyle __Style, int 
 
 void UReuseListC::Reload(int __ItemCount)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.Reload");
 
@@ -41561,7 +42205,7 @@ void UReuseListC::Reload(int __ItemCount)
 
 void UReuseListC::RefreshParam(const struct FString& _Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.RefreshParam");
 
@@ -41586,7 +42230,7 @@ void UReuseListC::RefreshParam(const struct FString& _Param)
 
 void UReuseListC::RefreshOneParam(int __Idx, const struct FString& _Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.RefreshOneParam");
 
@@ -41611,7 +42255,7 @@ void UReuseListC::RefreshOneParam(int __Idx, const struct FString& _Param)
 
 void UReuseListC::RefreshOne(int __Idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.RefreshOne");
 
@@ -41633,7 +42277,7 @@ void UReuseListC::RefreshOne(int __Idx)
 
 void UReuseListC::Refresh()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.Refresh");
 
@@ -41658,7 +42302,7 @@ void UReuseListC::Refresh()
 
 void UReuseListC::OnUpdateItemParamDelegate__DelegateSignature(class UUserWidget* Widget, int idx, const struct FString& Param)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseListC.OnUpdateItemParamDelegate__DelegateSignature");
 
@@ -41684,7 +42328,7 @@ void UReuseListC::OnUpdateItemParamDelegate__DelegateSignature(class UUserWidget
 
 void UReuseListC::OnUpdateItemDelegate__DelegateSignature(class UUserWidget* Widget, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseListC.OnUpdateItemDelegate__DelegateSignature");
 
@@ -41709,7 +42353,7 @@ void UReuseListC::OnUpdateItemDelegate__DelegateSignature(class UUserWidget* Wid
 
 void UReuseListC::OnScrollItemDelegate__DelegateSignature(int BeginIdx, int EndIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseListC.OnScrollItemDelegate__DelegateSignature");
 
@@ -41733,7 +42377,7 @@ void UReuseListC::OnScrollItemDelegate__DelegateSignature(int BeginIdx, int EndI
 
 void UReuseListC::OnCreateItemDelegate__DelegateSignature(class UUserWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReuseListC.OnCreateItemDelegate__DelegateSignature");
 
@@ -41757,7 +42401,7 @@ void UReuseListC::OnCreateItemDelegate__DelegateSignature(class UUserWidget* Wid
 
 void UReuseListC::JumpByIdxStyle(int __Idx, EReuseListJumpStyle __Style)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.JumpByIdxStyle");
 
@@ -41782,7 +42426,7 @@ void UReuseListC::JumpByIdxStyle(int __Idx, EReuseListJumpStyle __Style)
 
 void UReuseListC::JumpByIdx(int __Idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.JumpByIdx");
 
@@ -41806,7 +42450,7 @@ void UReuseListC::JumpByIdx(int __Idx)
 
 struct FVector2D UReuseListC::GetViewSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetViewSize");
 
@@ -41831,7 +42475,7 @@ struct FVector2D UReuseListC::GetViewSize()
 
 float UReuseListC::GetScrollOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetScrollOffset");
 
@@ -41856,7 +42500,7 @@ float UReuseListC::GetScrollOffset()
 
 int UReuseListC::GetPaddingY()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetPaddingY");
 
@@ -41881,7 +42525,7 @@ int UReuseListC::GetPaddingY()
 
 int UReuseListC::GetPaddingX()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetPaddingX");
 
@@ -41906,7 +42550,7 @@ int UReuseListC::GetPaddingX()
 
 int UReuseListC::GetItemWidthAndPaddingX()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetItemWidthAndPaddingX");
 
@@ -41931,7 +42575,7 @@ int UReuseListC::GetItemWidthAndPaddingX()
 
 int UReuseListC::GetItemWidth()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetItemWidth");
 
@@ -41956,7 +42600,7 @@ int UReuseListC::GetItemWidth()
 
 int UReuseListC::GetItemHeightAndPaddingY()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetItemHeightAndPaddingY");
 
@@ -41981,7 +42625,7 @@ int UReuseListC::GetItemHeightAndPaddingY()
 
 int UReuseListC::GetItemHeight()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetItemHeight");
 
@@ -42006,7 +42650,7 @@ int UReuseListC::GetItemHeight()
 
 struct FVector2D UReuseListC::GetContentSize()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetContentSize");
 
@@ -42031,7 +42675,7 @@ struct FVector2D UReuseListC::GetContentSize()
 
 void UReuseListC::GetAllWidgetItems(TArray<class UUserWidget*>* ResultItemList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.GetAllWidgetItems");
 
@@ -42058,7 +42702,7 @@ void UReuseListC::GetAllWidgetItems(TArray<class UUserWidget*>* ResultItemList)
 
 class UUserWidget* UReuseListC::FindItem(int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.FindItem");
 
@@ -42082,7 +42726,7 @@ class UUserWidget* UReuseListC::FindItem(int idx)
 
 void UReuseListC::Clear()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReuseListC.Clear");
 
@@ -42105,7 +42749,7 @@ void UReuseListC::Clear()
 
 void UReusePageC::SetAutoPlayRate(float Rate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.SetAutoPlayRate");
 
@@ -42129,7 +42773,7 @@ void UReusePageC::SetAutoPlayRate(float Rate)
 
 void UReusePageC::SelectPage(int __Idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.SelectPage");
 
@@ -42153,7 +42797,7 @@ void UReusePageC::SelectPage(int __Idx)
 
 void UReusePageC::Reload(int __Count)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.Reload");
 
@@ -42177,7 +42821,7 @@ void UReusePageC::Reload(int __Count)
 
 void UReusePageC::Play(bool bPlay)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.Play");
 
@@ -42202,7 +42846,7 @@ void UReusePageC::Play(bool bPlay)
 
 void UReusePageC::OnUpdateItemDelegate__DelegateSignature(class UUserWidget* Widget, int idx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReusePageC.OnUpdateItemDelegate__DelegateSignature");
 
@@ -42226,7 +42870,7 @@ void UReusePageC::OnUpdateItemDelegate__DelegateSignature(class UUserWidget* Wid
 
 void UReusePageC::OnPageChangedDelegate__DelegateSignature(int PageIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReusePageC.OnPageChangedDelegate__DelegateSignature");
 
@@ -42249,7 +42893,7 @@ void UReusePageC::OnPageChangedDelegate__DelegateSignature(int PageIdx)
 
 void UReusePageC::OnEndScrollDelegate__DelegateSignature(int PageIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReusePageC.OnEndScrollDelegate__DelegateSignature");
 
@@ -42272,7 +42916,7 @@ void UReusePageC::OnEndScrollDelegate__DelegateSignature(int PageIdx)
 
 void UReusePageC::OnEndDragDelegate__DelegateSignature(int PageIdx)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReusePageC.OnEndDragDelegate__DelegateSignature");
 
@@ -42295,7 +42939,7 @@ void UReusePageC::OnEndDragDelegate__DelegateSignature(int PageIdx)
 
 void UReusePageC::OnCreateItemDelegate__DelegateSignature(class UUserWidget* Widget)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReusePageC.OnCreateItemDelegate__DelegateSignature");
 
@@ -42316,7 +42960,7 @@ void UReusePageC::OnCreateItemDelegate__DelegateSignature(class UUserWidget* Wid
 
 void UReusePageC::OnBeginDragDelegate__DelegateSignature()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.ReusePageC.OnBeginDragDelegate__DelegateSignature");
 
@@ -42336,7 +42980,7 @@ void UReusePageC::OnBeginDragDelegate__DelegateSignature()
 
 void UReusePageC::MovePrePage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.MovePrePage");
 
@@ -42357,7 +43001,7 @@ void UReusePageC::MovePrePage()
 
 void UReusePageC::MoveNextPage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.MoveNextPage");
 
@@ -42380,7 +43024,7 @@ void UReusePageC::MoveNextPage()
 
 bool UReusePageC::IsDraging()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.IsDraging");
 
@@ -42405,7 +43049,7 @@ bool UReusePageC::IsDraging()
 
 int UReusePageC::GetPageCount()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.GetPageCount");
 
@@ -42430,7 +43074,7 @@ int UReusePageC::GetPageCount()
 
 int UReusePageC::GetPage()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.GetPage");
 
@@ -42455,7 +43099,7 @@ int UReusePageC::GetPage()
 
 float UReusePageC::GetOffset()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.GetOffset");
 
@@ -42480,7 +43124,7 @@ float UReusePageC::GetOffset()
 
 float UReusePageC::GetAutoPlayRate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.GetAutoPlayRate");
 
@@ -42506,7 +43150,7 @@ float UReusePageC::GetAutoPlayRate()
 
 void UReusePageC::GetAllItems(bool OnlyVisible, TArray<class UUserWidget*>* ResultItemList)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.GetAllItems");
 
@@ -42531,7 +43175,7 @@ void UReusePageC::GetAllItems(bool OnlyVisible, TArray<class UUserWidget*>* Resu
 
 void UReusePageC::ClearCache()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.ReusePageC.ClearCache");
 
@@ -42554,7 +43198,7 @@ void UReusePageC::ClearCache()
 
 void UUDPPingCollector::TickUDPPing(float DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.TickUDPPing");
 
@@ -42581,7 +43225,7 @@ void UUDPPingCollector::TickUDPPing(float DeltaTime)
 
 void UUDPPingCollector::setUDPPingServerAddress(const struct FString& ServerIP, const struct FString& ServerPort, int ZoneID, int WaterMarkType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.setUDPPingServerAddress");
 
@@ -42610,7 +43254,7 @@ void UUDPPingCollector::setUDPPingServerAddress(const struct FString& ServerIP, 
 
 void UUDPPingCollector::SetPingSystemControlFlag(int TakeEffectModule, int ThreadReportTlog, int EpollReportTlog)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.SetPingSystemControlFlag");
 
@@ -42638,7 +43282,7 @@ void UUDPPingCollector::SetPingSystemControlFlag(int TakeEffectModule, int Threa
 
 void UUDPPingCollector::PingServer(const struct FString& address, float Timeout, int WaterMarkType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.PingServer");
 
@@ -42664,7 +43308,7 @@ void UUDPPingCollector::PingServer(const struct FString& address, float Timeout,
 
 void UUDPPingCollector::OnPostSwitchGameStatus(const struct FString& MapName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.OnPostSwitchGameStatus");
 
@@ -42691,7 +43335,7 @@ void UUDPPingCollector::OnPostSwitchGameStatus(const struct FString& MapName)
 
 void UUDPPingCollector::OnPingServerResultDelegate__DelegateSignature(const struct FString& address, int IsSuccess, float Time, int PingSystemType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.UDPPingCollector.OnPingServerResultDelegate__DelegateSignature");
 
@@ -42717,7 +43361,7 @@ void UUDPPingCollector::OnPingServerResultDelegate__DelegateSignature(const stru
 
 bool UUDPPingCollector::IsChooingZoneAccess()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.IsChooingZoneAccess");
 
@@ -42742,7 +43386,7 @@ bool UUDPPingCollector::IsChooingZoneAccess()
 
 bool UUDPPingCollector::isAllZoneHasPingValue()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.isAllZoneHasPingValue");
 
@@ -42771,7 +43415,7 @@ bool UUDPPingCollector::isAllZoneHasPingValue()
 
 void UUDPPingCollector::Init(float MinPingintervalTime, float pingintervalTime, float pingTimeoutSecond, float normalDelayMilliSecond, float maxAutoChooseZoneDelayMilliSecond)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.Init");
 
@@ -42800,7 +43444,7 @@ void UUDPPingCollector::Init(float MinPingintervalTime, float pingintervalTime, 
 
 float UUDPPingCollector::GetZoneServerDelay(const struct FString& ServerAddress)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.GetZoneServerDelay");
 
@@ -42826,7 +43470,7 @@ float UUDPPingCollector::GetZoneServerDelay(const struct FString& ServerAddress)
 
 int UUDPPingCollector::GetMinDealyAddress()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.GetMinDealyAddress");
 
@@ -42852,7 +43496,7 @@ int UUDPPingCollector::GetMinDealyAddress()
 
 void UUDPPingCollector::ChoosingZone(int ZoneID, const struct FString& AddrIP)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.UDPPingCollector.ChoosingZone");
 
@@ -42875,7 +43519,7 @@ void UUDPPingCollector::ChoosingZone(int ZoneID, const struct FString& AddrIP)
 
 void UVibrateSystemManager::StopVibrate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.StopVibrate");
 
@@ -42898,7 +43542,7 @@ void UVibrateSystemManager::StopVibrate()
 
 void UVibrateSystemManager::SetVibrationLoopTime(const struct FString& InLoopTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.SetVibrationLoopTime");
 
@@ -42923,7 +43567,7 @@ void UVibrateSystemManager::SetVibrationLoopTime(const struct FString& InLoopTim
 
 void UVibrateSystemManager::PostVibrateTriggerActionDirectly(int SpesifyID, int Amplitude)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.PostVibrateTriggerActionDirectly");
 
@@ -42951,7 +43595,7 @@ void UVibrateSystemManager::PostVibrateTriggerActionDirectly(int SpesifyID, int 
 
 void UVibrateSystemManager::PostVibrateTriggerAction(const struct FVibrateTriggerAction& Action, bool bCheckGate, bool bCheckInterval, int SpesifyID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.PostVibrateTriggerAction");
 
@@ -42978,7 +43622,7 @@ void UVibrateSystemManager::PostVibrateTriggerAction(const struct FVibrateTrigge
 
 void UVibrateSystemManager::PlayVibrateEntity(const struct FVibrateEntity& Entity)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.PlayVibrateEntity");
 
@@ -43002,7 +43646,7 @@ void UVibrateSystemManager::PlayVibrateEntity(const struct FVibrateEntity& Entit
 
 void UVibrateSystemManager::ModifyWeaponVibrationSwitch(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyWeaponVibrationSwitch");
 
@@ -43026,7 +43670,7 @@ void UVibrateSystemManager::ModifyWeaponVibrationSwitch(bool Val)
 
 void UVibrateSystemManager::ModifyWeaponVibrationLevel(int InVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyWeaponVibrationLevel");
 
@@ -43050,7 +43694,7 @@ void UVibrateSystemManager::ModifyWeaponVibrationLevel(int InVal)
 
 void UVibrateSystemManager::ModifyVehicleVibrationSwitch(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyVehicleVibrationSwitch");
 
@@ -43074,7 +43718,7 @@ void UVibrateSystemManager::ModifyVehicleVibrationSwitch(bool Val)
 
 void UVibrateSystemManager::ModifyVehicleVibrationLevel(int InVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyVehicleVibrationLevel");
 
@@ -43098,7 +43742,7 @@ void UVibrateSystemManager::ModifyVehicleVibrationLevel(int InVal)
 
 void UVibrateSystemManager::ModifyVehicleSoundUIVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyVehicleSoundUIVibrateSetting");
 
@@ -43122,7 +43766,7 @@ void UVibrateSystemManager::ModifyVehicleSoundUIVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyVehicleEngineVibrationSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyVehicleEngineVibrationSetting");
 
@@ -43146,7 +43790,7 @@ void UVibrateSystemManager::ModifyVehicleEngineVibrationSetting(bool Val)
 
 void UVibrateSystemManager::ModifyVehicleCrashVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyVehicleCrashVibrateSetting");
 
@@ -43170,7 +43814,7 @@ void UVibrateSystemManager::ModifyVehicleCrashVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyVehicleBeHitVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyVehicleBeHitVibrateSetting");
 
@@ -43194,7 +43838,7 @@ void UVibrateSystemManager::ModifyVehicleBeHitVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifySoundUIVibrationSwitch(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifySoundUIVibrationSwitch");
 
@@ -43218,7 +43862,7 @@ void UVibrateSystemManager::ModifySoundUIVibrationSwitch(bool Val)
 
 void UVibrateSystemManager::ModifySoundUIVibrationLevel(int InVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifySoundUIVibrationLevel");
 
@@ -43242,7 +43886,7 @@ void UVibrateSystemManager::ModifySoundUIVibrationLevel(int InVal)
 
 void UVibrateSystemManager::ModifySemiAutoWeaponVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifySemiAutoWeaponVibrateSetting");
 
@@ -43266,7 +43910,7 @@ void UVibrateSystemManager::ModifySemiAutoWeaponVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyOtherWeaponVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyOtherWeaponVibrateSetting");
 
@@ -43290,7 +43934,7 @@ void UVibrateSystemManager::ModifyOtherWeaponVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyGlassBrokenSoundUIVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyGlassBrokenSoundUIVibrateSetting");
 
@@ -43314,7 +43958,7 @@ void UVibrateSystemManager::ModifyGlassBrokenSoundUIVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyFootstepSoundUIVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyFootstepSoundUIVibrateSetting");
 
@@ -43338,7 +43982,7 @@ void UVibrateSystemManager::ModifyFootstepSoundUIVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyFireShotSoundUIVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyFireShotSoundUIVibrateSetting");
 
@@ -43362,7 +44006,7 @@ void UVibrateSystemManager::ModifyFireShotSoundUIVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyEntireVibrationSwitch(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyEntireVibrationSwitch");
 
@@ -43386,7 +44030,7 @@ void UVibrateSystemManager::ModifyEntireVibrationSwitch(bool Val)
 
 void UVibrateSystemManager::ModifyEntireVibrationLevel(int InValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyEntireVibrationLevel");
 
@@ -43410,7 +44054,7 @@ void UVibrateSystemManager::ModifyEntireVibrationLevel(int InValue)
 
 void UVibrateSystemManager::ModifyCharacterVibrationSwitch(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyCharacterVibrationSwitch");
 
@@ -43434,7 +44078,7 @@ void UVibrateSystemManager::ModifyCharacterVibrationSwitch(bool Val)
 
 void UVibrateSystemManager::ModifyCharacterVibrationLevel(int InVal)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyCharacterVibrationLevel");
 
@@ -43458,7 +44102,7 @@ void UVibrateSystemManager::ModifyCharacterVibrationLevel(int InVal)
 
 void UVibrateSystemManager::ModifyCharacterSwimVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyCharacterSwimVibrateSetting");
 
@@ -43482,7 +44126,7 @@ void UVibrateSystemManager::ModifyCharacterSwimVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyCharacterFallVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyCharacterFallVibrateSetting");
 
@@ -43506,7 +44150,7 @@ void UVibrateSystemManager::ModifyCharacterFallVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyCharacterClimbVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyCharacterClimbVibrateSetting");
 
@@ -43530,7 +44174,7 @@ void UVibrateSystemManager::ModifyCharacterClimbVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyCharacterBeHitVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyCharacterBeHitVibrateSetting");
 
@@ -43554,7 +44198,7 @@ void UVibrateSystemManager::ModifyCharacterBeHitVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyBoltWeaponVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyBoltWeaponVibrateSetting");
 
@@ -43578,7 +44222,7 @@ void UVibrateSystemManager::ModifyBoltWeaponVibrateSetting(bool Val)
 
 void UVibrateSystemManager::ModifyAutoWeaponVibrateSetting(bool Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ModifyAutoWeaponVibrateSetting");
 
@@ -43621,7 +44265,7 @@ void UVibrateSystemManager::ModifyAutoWeaponVibrateSetting(bool Val)
 
 void UVibrateSystemManager::LoadUserSettingData(int inCharacterVibrationLevel, int inWeaponVibrationLevel, int inVehicleVibrationLevel, int inSoundUIVibrationLevel, bool binCharacterBeHitVibrate, bool binCharacterClimbVibrate, bool binCharacterFallVibrate, bool binCharacterSwimVibrate, bool binVehicleEngineVibrate, bool binVehicleBeHitVibrate, bool binVehicleCrashVibrate, bool binFootstepSoundUIVibrate, bool binFireShotSoundUIVibrate, bool binGlassBrokenSoundUIVibrate, bool binVehicleSoundUIVibrate, int inEntireVibrationLevel, bool binAutoWeaponVibrate, bool binSemiAutoWeaponVibrate, bool binBoltWeaponVibrate, bool binOtherWeaponVibrate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.LoadUserSettingData");
 
@@ -43664,7 +44308,7 @@ void UVibrateSystemManager::LoadUserSettingData(int inCharacterVibrationLevel, i
 
 void UVibrateSystemManager::InvalidateVibrateEntityByEventType(EVibrateTriggerEventType EventType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.InvalidateVibrateEntityByEventType");
 
@@ -43686,7 +44330,7 @@ void UVibrateSystemManager::InvalidateVibrateEntityByEventType(EVibrateTriggerEv
 
 void UVibrateSystemManager::InitUserSetting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.InitUserSetting");
 
@@ -43707,7 +44351,7 @@ void UVibrateSystemManager::InitUserSetting()
 
 void UVibrateSystemManager::InitSystem()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.InitSystem");
 
@@ -43728,7 +44372,7 @@ void UVibrateSystemManager::InitSystem()
 
 void UVibrateSystemManager::HandleApplicationWillTerminate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.HandleApplicationWillTerminate");
 
@@ -43749,7 +44393,7 @@ void UVibrateSystemManager::HandleApplicationWillTerminate()
 
 void UVibrateSystemManager::HandleApplicationWillEnterBackground()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.HandleApplicationWillEnterBackground");
 
@@ -43770,7 +44414,7 @@ void UVibrateSystemManager::HandleApplicationWillEnterBackground()
 
 void UVibrateSystemManager::HandleApplicationWillDeactivate()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.HandleApplicationWillDeactivate");
 
@@ -43791,7 +44435,7 @@ void UVibrateSystemManager::HandleApplicationWillDeactivate()
 
 void UVibrateSystemManager::HandleApplicationHasReactivated()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.HandleApplicationHasReactivated");
 
@@ -43812,7 +44456,7 @@ void UVibrateSystemManager::HandleApplicationHasReactivated()
 
 void UVibrateSystemManager::HandleApplicationHasEnteredForeground()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.HandleApplicationHasEnteredForeground");
 
@@ -43837,7 +44481,7 @@ void UVibrateSystemManager::HandleApplicationHasEnteredForeground()
 
 class UVibrateSystemManager* UVibrateSystemManager::GetInstance(class UObject* WorldContext, bool bAutoCreate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.GetInstance");
 
@@ -43864,7 +44508,7 @@ class UVibrateSystemManager* UVibrateSystemManager::GetInstance(class UObject* W
 
 int UVibrateSystemManager::GetEntireVibrationLevel()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.GetEntireVibrationLevel");
 
@@ -43889,7 +44533,7 @@ int UVibrateSystemManager::GetEntireVibrationLevel()
 
 struct FString UVibrateSystemManager::GetCurrentPlayingVibrationDebugInfo()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.GetCurrentPlayingVibrationDebugInfo");
 
@@ -43915,7 +44559,7 @@ struct FString UVibrateSystemManager::GetCurrentPlayingVibrationDebugInfo()
 
 int UVibrateSystemManager::GetAmplitudeByAlpha(float Alpha)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.GetAmplitudeByAlpha");
 
@@ -43939,7 +44583,7 @@ int UVibrateSystemManager::GetAmplitudeByAlpha(float Alpha)
 
 void UVibrateSystemManager::ClearVibratePath2Json()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ClearVibratePath2Json");
 
@@ -43960,7 +44604,7 @@ void UVibrateSystemManager::ClearVibratePath2Json()
 
 void UVibrateSystemManager::ClearAllVibration()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ClearAllVibration");
 
@@ -43984,7 +44628,7 @@ void UVibrateSystemManager::ClearAllVibration()
 
 bool UVibrateSystemManager::CheckShootWeaponTypeVibrateGate(class ASTExtraWeapon* Weapon)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.CheckShootWeaponTypeVibrateGate");
 
@@ -44010,7 +44654,7 @@ bool UVibrateSystemManager::CheckShootWeaponTypeVibrateGate(class ASTExtraWeapon
 
 void UVibrateSystemManager::CheckAndCopyFilesToSavedDir(class UVibrateSystemManager* Mgr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.CheckAndCopyFilesToSavedDir");
 
@@ -44034,7 +44678,7 @@ void UVibrateSystemManager::CheckAndCopyFilesToSavedDir(class UVibrateSystemMana
 
 void UVibrateSystemManager::ActiveInGameVibration(bool Inactive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VibrateSystemManager.ActiveInGameVibration");
 
@@ -44058,7 +44702,7 @@ void UVibrateSystemManager::ActiveInGameVibration(bool Inactive)
 
 void UVoiceSDKInterface::UploadRecordFile(bool InPermanent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.UploadRecordFile");
 
@@ -44085,7 +44729,7 @@ void UVoiceSDKInterface::UploadRecordFile(bool InPermanent)
 
 int UVoiceSDKInterface::UploadRecordedFile(const struct FString& InFilePath, int InTimeout, bool InPermanent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.UploadRecordedFile");
 
@@ -44118,7 +44762,7 @@ int UVoiceSDKInterface::UploadRecordedFile(const struct FString& InFilePath, int
 
 int UVoiceSDKInterface::UpdateVoiceCoordinate(const struct FString& InRoomName, int64_t X, int64_t Y, int64_t Z, int64_t Radius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.UpdateVoiceCoordinate");
 
@@ -44146,7 +44790,7 @@ int UVoiceSDKInterface::UpdateVoiceCoordinate(const struct FString& InRoomName, 
 
 void UVoiceSDKInterface::TestMic()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.TestMic");
 
@@ -44169,7 +44813,7 @@ void UVoiceSDKInterface::TestMic()
 
 bool UVoiceSDKInterface::TeamSpeakerEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.TeamSpeakerEnable");
 
@@ -44194,7 +44838,7 @@ bool UVoiceSDKInterface::TeamSpeakerEnable()
 
 bool UVoiceSDKInterface::TeamMicphoneEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.TeamMicphoneEnable");
 
@@ -44219,7 +44863,7 @@ bool UVoiceSDKInterface::TeamMicphoneEnable()
 
 void UVoiceSDKInterface::SwitchMode(ECharacterMainType CharMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SwitchMode");
 
@@ -44241,7 +44885,7 @@ void UVoiceSDKInterface::SwitchMode(ECharacterMainType CharMode)
 
 void UVoiceSDKInterface::SwitchMicphoneWhenCorpsMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SwitchMicphoneWhenCorpsMode");
 
@@ -44264,7 +44908,7 @@ void UVoiceSDKInterface::SwitchMicphoneWhenCorpsMode()
 
 int UVoiceSDKInterface::StopRecording()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.StopRecording");
 
@@ -44287,7 +44931,7 @@ int UVoiceSDKInterface::StopRecording()
 
 void UVoiceSDKInterface::StopRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.StopRecord");
 
@@ -44308,7 +44952,7 @@ void UVoiceSDKInterface::StopRecord()
 
 void UVoiceSDKInterface::StopPlayRecordFile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.StopPlayRecordFile");
 
@@ -44329,7 +44973,7 @@ void UVoiceSDKInterface::StopPlayRecordFile()
 
 void UVoiceSDKInterface::StopInterphone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.StopInterphone");
 
@@ -44354,7 +44998,7 @@ void UVoiceSDKInterface::StopInterphone()
 
 int UVoiceSDKInterface::StartRecording(const struct FString& InFilePath, bool InNotVoip)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.StartRecording");
 
@@ -44379,7 +45023,7 @@ int UVoiceSDKInterface::StartRecording(const struct FString& InFilePath, bool In
 
 void UVoiceSDKInterface::StartRecord()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.StartRecord");
 
@@ -44400,7 +45044,7 @@ void UVoiceSDKInterface::StartRecord()
 
 void UVoiceSDKInterface::StartInterphone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.StartInterphone");
 
@@ -44421,7 +45065,7 @@ void UVoiceSDKInterface::StartInterphone()
 
 void UVoiceSDKInterface::ShowOpenSpeakerAtFirstMsg()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ShowOpenSpeakerAtFirstMsg");
 
@@ -44442,7 +45086,7 @@ void UVoiceSDKInterface::ShowOpenSpeakerAtFirstMsg()
 
 void UVoiceSDKInterface::ShowCorpsModeCannotUseLBSVoice()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ShowCorpsModeCannotUseLBSVoice");
 
@@ -44465,7 +45109,7 @@ void UVoiceSDKInterface::ShowCorpsModeCannotUseLBSVoice()
 
 void UVoiceSDKInterface::SetVoiceServer(const struct FString& ServerInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetVoiceServer");
 
@@ -44489,7 +45133,7 @@ void UVoiceSDKInterface::SetVoiceServer(const struct FString& ServerInfo)
 
 void UVoiceSDKInterface::SetVoiceSDKSupportBackgroundChat(bool isSupportBGChat)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetVoiceSDKSupportBackgroundChat");
 
@@ -44513,7 +45157,7 @@ void UVoiceSDKInterface::SetVoiceSDKSupportBackgroundChat(bool isSupportBGChat)
 
 void UVoiceSDKInterface::SetVoiceSDKChatServiceEnable(bool IsEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetVoiceSDKChatServiceEnable");
 
@@ -44537,7 +45181,7 @@ void UVoiceSDKInterface::SetVoiceSDKChatServiceEnable(bool IsEnable)
 
 void UVoiceSDKInterface::SetVoiceMode(int Type)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetVoiceMode");
 
@@ -44562,7 +45206,7 @@ void UVoiceSDKInterface::SetVoiceMode(int Type)
 
 int UVoiceSDKInterface::SetUserInfo(const struct FString& InUserInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetUserInfo");
 
@@ -44588,7 +45232,7 @@ int UVoiceSDKInterface::SetUserInfo(const struct FString& InUserInfo)
 
 void UVoiceSDKInterface::SetTransSecInfo(const struct FString& InTransSecInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetTransSecInfo");
 
@@ -44612,7 +45256,7 @@ void UVoiceSDKInterface::SetTransSecInfo(const struct FString& InTransSecInfo)
 
 void UVoiceSDKInterface::SetSpeakerVolum(float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetSpeakerVolum");
 
@@ -44636,7 +45280,7 @@ void UVoiceSDKInterface::SetSpeakerVolum(float Value)
 
 void UVoiceSDKInterface::SetSpeakerStatus(bool flag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetSpeakerStatus");
 
@@ -44662,7 +45306,7 @@ void UVoiceSDKInterface::SetSpeakerStatus(bool flag)
 
 int UVoiceSDKInterface::SetServerUrl(int InUrlType, const struct FString& InURL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetServerUrl");
 
@@ -44691,7 +45335,7 @@ int UVoiceSDKInterface::SetServerUrl(int InUrlType, const struct FString& InURL)
 
 int UVoiceSDKInterface::SetServerInfo(const struct FString& URL, const struct FString& InDefaultIpSvr)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetServerInfo");
 
@@ -44718,7 +45362,7 @@ int UVoiceSDKInterface::SetServerInfo(const struct FString& URL, const struct FS
 
 void UVoiceSDKInterface::SetRoomOperationTimeout(int InTimeout)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetRoomOperationTimeout");
 
@@ -44743,7 +45387,7 @@ void UVoiceSDKInterface::SetRoomOperationTimeout(int InTimeout)
 
 int UVoiceSDKInterface::SetResourePath(const struct FString& InResourcePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetResourePath");
 
@@ -44769,7 +45413,7 @@ int UVoiceSDKInterface::SetResourePath(const struct FString& InResourcePath)
 
 void UVoiceSDKInterface::SetReportBufferTime(int nTimeSec)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetReportBufferTime");
 
@@ -44794,7 +45438,7 @@ void UVoiceSDKInterface::SetReportBufferTime(int nTimeSec)
 
 void UVoiceSDKInterface::SetPlayerVolume(const struct FString& InPlayerId, int InVol)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetPlayerVolume");
 
@@ -44819,7 +45463,7 @@ void UVoiceSDKInterface::SetPlayerVolume(const struct FString& InPlayerId, int I
 
 int UVoiceSDKInterface::SetNotify()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetNotify");
 
@@ -44845,7 +45489,7 @@ int UVoiceSDKInterface::SetNotify()
 
 int UVoiceSDKInterface::SetMode(int InGVMode)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetMode");
 
@@ -44871,7 +45515,7 @@ int UVoiceSDKInterface::SetMode(int InGVMode)
 
 void UVoiceSDKInterface::SetMicphoneVolum(float Value)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetMicphoneVolum");
 
@@ -44895,7 +45539,7 @@ void UVoiceSDKInterface::SetMicphoneVolum(float Value)
 
 void UVoiceSDKInterface::SetMicphoneStatus(bool flag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetMicphoneStatus");
 
@@ -44912,6 +45556,33 @@ void UVoiceSDKInterface::SetMicphoneStatus(bool flag)
 }
 
 
+// Function Client.VoiceSDKInterface.SetMagicVoiceMsgType
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 InMagicType                    (Parm, ZeroConstructor)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UVoiceSDKInterface::SetMagicVoiceMsgType(const struct FString& InMagicType)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetMagicVoiceMsgType");
+
+	UVoiceSDKInterface_SetMagicVoiceMsgType_Params params;
+	params.InMagicType = InMagicType;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Client.VoiceSDKInterface.SetLbsVoiceRadius
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -44919,7 +45590,7 @@ void UVoiceSDKInterface::SetMicphoneStatus(bool flag)
 
 void UVoiceSDKInterface::SetLbsVoiceRadius(float Radius)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetLbsVoiceRadius");
 
@@ -44943,7 +45614,7 @@ void UVoiceSDKInterface::SetLbsVoiceRadius(float Radius)
 
 void UVoiceSDKInterface::SetLbsRoomEnableStatus(bool flag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetLbsRoomEnableStatus");
 
@@ -44968,7 +45639,7 @@ void UVoiceSDKInterface::SetLbsRoomEnableStatus(bool flag)
 
 int UVoiceSDKInterface::SetKwsModelPath(const struct FString& KwsPath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetKwsModelPath");
 
@@ -44994,7 +45665,7 @@ int UVoiceSDKInterface::SetKwsModelPath(const struct FString& KwsPath)
 
 void UVoiceSDKInterface::SetGameFrontendHUD(class UGameFrontendHUD* InHUD)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetGameFrontendHUD");
 
@@ -45019,7 +45690,7 @@ void UVoiceSDKInterface::SetGameFrontendHUD(class UGameFrontendHUD* InHUD)
 
 void UVoiceSDKInterface::SetFeature(int8_t InFeature, bool Inactive)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetFeature");
 
@@ -45046,7 +45717,7 @@ void UVoiceSDKInterface::SetFeature(int8_t InFeature, bool Inactive)
 
 int UVoiceSDKInterface::SetDeliverData(int Len, TArray<unsigned char>* pbuf)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetDeliverData");
 
@@ -45078,7 +45749,7 @@ int UVoiceSDKInterface::SetDeliverData(int Len, TArray<unsigned char>* pbuf)
 
 int UVoiceSDKInterface::SetAppInfo(const struct FString& InAppId, const struct FString& InAppKey, const struct FString& InOpenid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetAppInfo");
 
@@ -45106,7 +45777,7 @@ int UVoiceSDKInterface::SetAppInfo(const struct FString& InAppId, const struct F
 
 void UVoiceSDKInterface::SetAllVoiceStatus(bool flag)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.SetAllVoiceStatus");
 
@@ -45128,7 +45799,7 @@ void UVoiceSDKInterface::SetAllVoiceStatus(bool flag)
 
 void UVoiceSDKInterface::RSTSStopRecording()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.RSTSStopRecording");
 
@@ -45144,6 +45815,45 @@ void UVoiceSDKInterface::RSTSStopRecording()
 }
 
 
+// Function Client.VoiceSDKInterface.RSTSStartRecording
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// int                            InSrcLang                      (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<int>                    InTargetLangs                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// int                            InTargetLangCnt                (Parm, ZeroConstructor, IsPlainOldData)
+// int                            InTransType                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            InTimeoutMS                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 InRecordFilePath               (Parm, ZeroConstructor)
+// struct FString                 InSrcLangStr                   (Parm, ZeroConstructor)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UVoiceSDKInterface::RSTSStartRecording(int InSrcLang, TArray<int> InTargetLangs, int InTargetLangCnt, int InTransType, int InTimeoutMS, const struct FString& InRecordFilePath, const struct FString& InSrcLangStr)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.RSTSStartRecording");
+
+	UVoiceSDKInterface_RSTSStartRecording_Params params;
+	params.InSrcLang = InSrcLang;
+	params.InTargetLangs = InTargetLangs;
+	params.InTargetLangCnt = InTargetLangCnt;
+	params.InTransType = InTransType;
+	params.InTimeoutMS = InTimeoutMS;
+	params.InRecordFilePath = InRecordFilePath;
+	params.InSrcLangStr = InSrcLangStr;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function Client.VoiceSDKInterface.RSTSSpeechToText
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -45153,7 +45863,7 @@ void UVoiceSDKInterface::RSTSStopRecording()
 
 int UVoiceSDKInterface::RSTSSpeechToText(int InSrcLang, const struct FString& InExtraInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.RSTSSpeechToText");
 
@@ -45178,7 +45888,7 @@ int UVoiceSDKInterface::RSTSSpeechToText(int InSrcLang, const struct FString& In
 
 void UVoiceSDKInterface::ResetWhenLogOut()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ResetWhenLogOut");
 
@@ -45203,7 +45913,7 @@ void UVoiceSDKInterface::ResetWhenLogOut()
 
 bool UVoiceSDKInterface::ReportPlayers(const struct FString& InExtraInfo, TArray<struct FString> InOpenids)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ReportPlayers");
 
@@ -45234,7 +45944,7 @@ bool UVoiceSDKInterface::ReportPlayers(const struct FString& InExtraInfo, TArray
 
 int UVoiceSDKInterface::ReportFileForAbroad(const struct FString& InFilePath, bool InTranslate, bool InChangeVoice, int InTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ReportFileForAbroad");
 
@@ -45263,7 +45973,7 @@ int UVoiceSDKInterface::ReportFileForAbroad(const struct FString& InFilePath, bo
 
 void UVoiceSDKInterface::RecoverPlayersVolume(int InVol)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.RecoverPlayersVolume");
 
@@ -45285,7 +45995,7 @@ void UVoiceSDKInterface::RecoverPlayersVolume(int InVol)
 
 void UVoiceSDKInterface::ReactiveLbsStatus()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ReactiveLbsStatus");
 
@@ -45309,7 +46019,7 @@ void UVoiceSDKInterface::ReactiveLbsStatus()
 
 int UVoiceSDKInterface::QuitVoiceRoom(const struct FString& InRoomName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.QuitVoiceRoom");
 
@@ -45333,7 +46043,7 @@ int UVoiceSDKInterface::QuitVoiceRoom(const struct FString& InRoomName)
 
 void UVoiceSDKInterface::QuitRoom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.QuitRoom");
 
@@ -45357,7 +46067,7 @@ void UVoiceSDKInterface::QuitRoom()
 
 bool UVoiceSDKInterface::QuitLbsRoom(bool needReenterLbs)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.QuitLbsRoom");
 
@@ -45383,7 +46093,7 @@ bool UVoiceSDKInterface::QuitLbsRoom(bool needReenterLbs)
 
 void UVoiceSDKInterface::QuitCommonRoom(const struct FString& InRoomName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.QuitCommonRoom");
 
@@ -45407,7 +46117,7 @@ void UVoiceSDKInterface::QuitCommonRoom(const struct FString& InRoomName)
 
 int UVoiceSDKInterface::Poll()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.Poll");
 
@@ -45433,7 +46143,7 @@ int UVoiceSDKInterface::Poll()
 
 int UVoiceSDKInterface::PlayRecordFileV2(const struct FString& InFileID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.PlayRecordFileV2");
 
@@ -45460,7 +46170,7 @@ int UVoiceSDKInterface::PlayRecordFileV2(const struct FString& InFileID)
 
 int UVoiceSDKInterface::PlayRecordedFile(const struct FString& InDownloadInFilePath)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.PlayRecordedFile");
 
@@ -45486,7 +46196,7 @@ int UVoiceSDKInterface::PlayRecordedFile(const struct FString& InDownloadInFileP
 
 int UVoiceSDKInterface::OpenVoiceSpeaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenVoiceSpeaker");
 
@@ -45511,7 +46221,7 @@ int UVoiceSDKInterface::OpenVoiceSpeaker()
 
 int UVoiceSDKInterface::OpenVoiceMic()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenVoiceMic");
 
@@ -45536,7 +46246,7 @@ int UVoiceSDKInterface::OpenVoiceMic()
 
 void UVoiceSDKInterface::OpenTeamSpeakerOnly(bool ShowTips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenTeamSpeakerOnly");
 
@@ -45561,7 +46271,7 @@ void UVoiceSDKInterface::OpenTeamSpeakerOnly(bool ShowTips)
 
 int UVoiceSDKInterface::OpenTeamMicphoneOnly(bool ShowTips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenTeamMicphoneOnly");
 
@@ -45587,7 +46297,7 @@ int UVoiceSDKInterface::OpenTeamMicphoneOnly(bool ShowTips)
 
 int UVoiceSDKInterface::OpenTeamInterphone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenTeamInterphone");
 
@@ -45612,7 +46322,7 @@ int UVoiceSDKInterface::OpenTeamInterphone()
 
 int UVoiceSDKInterface::OpenSpeaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenSpeaker");
 
@@ -45635,7 +46345,7 @@ int UVoiceSDKInterface::OpenSpeaker()
 
 void UVoiceSDKInterface::OpenMicAndSpeakerAfterJoinLbsRoom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenMicAndSpeakerAfterJoinLbsRoom");
 
@@ -45658,7 +46368,7 @@ void UVoiceSDKInterface::OpenMicAndSpeakerAfterJoinLbsRoom()
 
 int UVoiceSDKInterface::OpenMic()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenMic");
 
@@ -45681,7 +46391,7 @@ int UVoiceSDKInterface::OpenMic()
 
 void UVoiceSDKInterface::OpenIngameSpeaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenIngameSpeaker");
 
@@ -45704,7 +46414,7 @@ void UVoiceSDKInterface::OpenIngameSpeaker()
 
 int UVoiceSDKInterface::OpenIngameMicphone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenIngameMicphone");
 
@@ -45729,7 +46439,7 @@ int UVoiceSDKInterface::OpenIngameMicphone()
 
 void UVoiceSDKInterface::OpenAllSpeaker(bool ShowTips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenAllSpeaker");
 
@@ -45754,7 +46464,7 @@ void UVoiceSDKInterface::OpenAllSpeaker(bool ShowTips)
 
 int UVoiceSDKInterface::OpenAllMicphone(bool ShowTips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenAllMicphone");
 
@@ -45780,7 +46490,7 @@ int UVoiceSDKInterface::OpenAllMicphone(bool ShowTips)
 
 int UVoiceSDKInterface::OpenAllInterphone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OpenAllInterphone");
 
@@ -45805,7 +46515,7 @@ int UVoiceSDKInterface::OpenAllInterphone()
 
 void UVoiceSDKInterface::OnRoomTypeChanged(const struct FString& itemtext)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OnRoomTypeChanged");
 
@@ -45827,7 +46537,7 @@ void UVoiceSDKInterface::OnRoomTypeChanged(const struct FString& itemtext)
 
 void UVoiceSDKInterface::OnResume()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OnResume");
 
@@ -45848,7 +46558,7 @@ void UVoiceSDKInterface::OnResume()
 
 void UVoiceSDKInterface::OnPause()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OnPause");
 
@@ -45873,7 +46583,7 @@ void UVoiceSDKInterface::OnPause()
 
 void UVoiceSDKInterface::OnDeliverData(TArray<unsigned char> pbuf, int Len, const struct FString& OpenID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.OnDeliverData");
 
@@ -45899,7 +46609,7 @@ void UVoiceSDKInterface::OnDeliverData(TArray<unsigned char> pbuf, int Len, cons
 
 bool UVoiceSDKInterface::LbsSpeakerEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.LbsSpeakerEnable");
 
@@ -45924,7 +46634,7 @@ bool UVoiceSDKInterface::LbsSpeakerEnable()
 
 bool UVoiceSDKInterface::LbsMicphoneEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.LbsMicphoneEnable");
 
@@ -45950,7 +46660,7 @@ bool UVoiceSDKInterface::LbsMicphoneEnable()
 
 int UVoiceSDKInterface::JoinTeamRoom(const struct FString& InRoomName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.JoinTeamRoom");
 
@@ -45977,7 +46687,7 @@ int UVoiceSDKInterface::JoinTeamRoom(const struct FString& InRoomName)
 
 void UVoiceSDKInterface::JoinRoom(const struct FString& room, const struct FString& userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.JoinRoom");
 
@@ -46003,7 +46713,7 @@ void UVoiceSDKInterface::JoinRoom(const struct FString& room, const struct FStri
 
 int UVoiceSDKInterface::JoinRangeRoom(const struct FString& InRoomName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.JoinRangeRoom");
 
@@ -46030,7 +46740,7 @@ int UVoiceSDKInterface::JoinRangeRoom(const struct FString& InRoomName)
 
 void UVoiceSDKInterface::JoinLbsRoom(const struct FString& lbsRoom, const struct FString& userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.JoinLbsRoom");
 
@@ -46055,7 +46765,7 @@ void UVoiceSDKInterface::JoinLbsRoom(const struct FString& lbsRoom, const struct
 
 void UVoiceSDKInterface::JoinCommonRoom(const struct FString& InRoomName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.JoinCommonRoom");
 
@@ -46079,7 +46789,7 @@ void UVoiceSDKInterface::JoinCommonRoom(const struct FString& InRoomName)
 
 bool UVoiceSDKInterface::IsVoiceSDKEnable()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.IsVoiceSDKEnable");
 
@@ -46106,7 +46816,7 @@ bool UVoiceSDKInterface::IsVoiceSDKEnable()
 
 bool UVoiceSDKInterface::IsVoiceRoomHasSpeakDataInLastSeconds(int InRoomType, int InDeltaSeconds)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.IsVoiceRoomHasSpeakDataInLastSeconds");
 
@@ -46133,7 +46843,7 @@ bool UVoiceSDKInterface::IsVoiceRoomHasSpeakDataInLastSeconds(int InRoomType, in
 
 bool UVoiceSDKInterface::IsTeamInterphoneOpenned()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.IsTeamInterphoneOpenned");
 
@@ -46158,7 +46868,7 @@ bool UVoiceSDKInterface::IsTeamInterphoneOpenned()
 
 bool UVoiceSDKInterface::IsSpeaking()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.IsSpeaking");
 
@@ -46183,7 +46893,7 @@ bool UVoiceSDKInterface::IsSpeaking()
 
 bool UVoiceSDKInterface::IsLbsInterphoneOpenned()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.IsLbsInterphoneOpenned");
 
@@ -46208,7 +46918,7 @@ bool UVoiceSDKInterface::IsLbsInterphoneOpenned()
 
 bool UVoiceSDKInterface::IsInterphoneMode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.IsInterphoneMode");
 
@@ -46233,7 +46943,7 @@ bool UVoiceSDKInterface::IsInterphoneMode()
 
 bool UVoiceSDKInterface::IsEnableCivilFile()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.IsEnableCivilFile");
 
@@ -46262,7 +46972,7 @@ bool UVoiceSDKInterface::IsEnableCivilFile()
 
 int UVoiceSDKInterface::Invoke(uint32_t InCmd, uint32_t InParam1, uint32_t InParam2, const struct FString& InExterInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.Invoke");
 
@@ -46291,7 +47001,7 @@ int UVoiceSDKInterface::Invoke(uint32_t InCmd, uint32_t InParam1, uint32_t InPar
 
 void UVoiceSDKInterface::InstallSystemAudioEventListener(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.InstallSystemAudioEventListener");
 
@@ -46315,7 +47025,7 @@ void UVoiceSDKInterface::InstallSystemAudioEventListener(bool InEnable)
 
 void UVoiceSDKInterface::InitVoiceSDKComponent(const struct FString& userID)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.InitVoiceSDKComponent");
 
@@ -46339,7 +47049,7 @@ void UVoiceSDKInterface::InitVoiceSDKComponent(const struct FString& userID)
 
 int UVoiceSDKInterface::InitVoiceSDK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.InitVoiceSDK");
 
@@ -46362,7 +47072,7 @@ int UVoiceSDKInterface::InitVoiceSDK()
 
 void UVoiceSDKInterface::Init()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.Init");
 
@@ -46385,7 +47095,7 @@ void UVoiceSDKInterface::Init()
 
 bool UVoiceSDKInterface::HaveTeamRoom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.HaveTeamRoom");
 
@@ -46410,7 +47120,7 @@ bool UVoiceSDKInterface::HaveTeamRoom()
 
 bool UVoiceSDKInterface::HaveLbsRoom()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.HaveLbsRoom");
 
@@ -46435,7 +47145,7 @@ bool UVoiceSDKInterface::HaveLbsRoom()
 
 float UVoiceSDKInterface::GetVoiceLength()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetVoiceLength");
 
@@ -46460,7 +47170,7 @@ float UVoiceSDKInterface::GetVoiceLength()
 
 struct FString UVoiceSDKInterface::GetTeamRoomName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetTeamRoomName");
 
@@ -46486,7 +47196,7 @@ struct FString UVoiceSDKInterface::GetTeamRoomName()
 
 int UVoiceSDKInterface::GetRoomStatus(const struct FString& InRoomName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetRoomStatus");
 
@@ -46516,7 +47226,7 @@ int UVoiceSDKInterface::GetRoomStatus(const struct FString& InRoomName)
 
 int UVoiceSDKInterface::GetRoomMemberVoiceData(const struct FString& InOpenid, int InIndexType, int DataType, bool OnlyIncludeLatest)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetRoomMemberVoiceData");
 
@@ -46546,7 +47256,7 @@ int UVoiceSDKInterface::GetRoomMemberVoiceData(const struct FString& InOpenid, i
 
 int UVoiceSDKInterface::GetRoomMemberId(const struct FString& InOpenid)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetRoomMemberId");
 
@@ -46573,7 +47283,7 @@ int UVoiceSDKInterface::GetRoomMemberId(const struct FString& InOpenid)
 
 int UVoiceSDKInterface::GetPlayerVolume(const struct FString& InPlayerId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetPlayerVolume");
 
@@ -46599,7 +47309,7 @@ int UVoiceSDKInterface::GetPlayerVolume(const struct FString& InPlayerId)
 
 int UVoiceSDKInterface::GetMicState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetMicState");
 
@@ -46625,7 +47335,7 @@ int UVoiceSDKInterface::GetMicState()
 
 struct FString UVoiceSDKInterface::GetLocalRecordFilePath(const struct FString& InFileName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetLocalRecordFilePath");
 
@@ -46651,7 +47361,7 @@ struct FString UVoiceSDKInterface::GetLocalRecordFilePath(const struct FString& 
 
 struct FString UVoiceSDKInterface::GetLbsRoomName()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetLbsRoomName");
 
@@ -46674,7 +47384,7 @@ struct FString UVoiceSDKInterface::GetLbsRoomName()
 
 void UVoiceSDKInterface::GetAuthKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetAuthKey");
 
@@ -46697,7 +47407,7 @@ void UVoiceSDKInterface::GetAuthKey()
 
 int UVoiceSDKInterface::GetAudioDeviceConnectionState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.GetAudioDeviceConnectionState");
 
@@ -46723,7 +47433,7 @@ int UVoiceSDKInterface::GetAudioDeviceConnectionState()
 
 void UVoiceSDKInterface::ForbidTeammateVoiceById(int memberID, bool IsEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ForbidTeammateVoiceById");
 
@@ -46751,7 +47461,7 @@ void UVoiceSDKInterface::ForbidTeammateVoiceById(int memberID, bool IsEnable)
 
 int UVoiceSDKInterface::ForbidMemberVoice(int InMember, bool InEnable, const struct FString& InRoomName)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ForbidMemberVoice");
 
@@ -46780,7 +47490,7 @@ int UVoiceSDKInterface::ForbidMemberVoice(int InMember, bool InEnable, const str
 
 void UVoiceSDKInterface::ForbidLbsMemberVoiceById(int memberID, bool IsEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ForbidLbsMemberVoiceById");
 
@@ -46806,7 +47516,7 @@ void UVoiceSDKInterface::ForbidLbsMemberVoiceById(int memberID, bool IsEnable)
 
 void UVoiceSDKInterface::EnableVoiceSdk(class UGameFrontendHUD* GameFrontendHUD, bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableVoiceSdk");
 
@@ -46833,7 +47543,7 @@ void UVoiceSDKInterface::EnableVoiceSdk(class UGameFrontendHUD* GameFrontendHUD,
 
 int UVoiceSDKInterface::EnableVoiceRoomMicrophone(const struct FString& InRoomName, bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableVoiceRoomMicrophone");
 
@@ -46860,7 +47570,7 @@ int UVoiceSDKInterface::EnableVoiceRoomMicrophone(const struct FString& InRoomNa
 
 void UVoiceSDKInterface::EnableVoiceChat(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableVoiceChat");
 
@@ -46887,7 +47597,7 @@ void UVoiceSDKInterface::EnableVoiceChat(bool InEnable)
 
 int UVoiceSDKInterface::EnableRSTSSubtitle(bool InEnable, int InSrcLang, const struct FString& InExtInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableRSTSSubtitle");
 
@@ -46917,7 +47627,7 @@ int UVoiceSDKInterface::EnableRSTSSubtitle(bool InEnable, int InSrcLang, const s
 
 int UVoiceSDKInterface::EnableRoomSpeaker(const struct FString& InRoomName, bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableRoomSpeaker");
 
@@ -46945,7 +47655,7 @@ int UVoiceSDKInterface::EnableRoomSpeaker(const struct FString& InRoomName, bool
 
 int UVoiceSDKInterface::EnableReportForAbroad(bool InIsWholeRoundaudit)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableReportForAbroad");
 
@@ -46974,7 +47684,7 @@ int UVoiceSDKInterface::EnableReportForAbroad(bool InIsWholeRoundaudit)
 
 bool UVoiceSDKInterface::EnableReportALLAbroad(bool InEnable, bool InWithEncryption, int InTimeout)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableReportALLAbroad");
 
@@ -46982,6 +47692,33 @@ bool UVoiceSDKInterface::EnableReportALLAbroad(bool InEnable, bool InWithEncrypt
 	params.InEnable = InEnable;
 	params.InWithEncryption = InWithEncryption;
 	params.InTimeout = InTimeout;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.VoiceSDKInterface.EnableRecvMagicVoice
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           InEnable                       (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UVoiceSDKInterface::EnableRecvMagicVoice(bool InEnable)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableRecvMagicVoice");
+
+	UVoiceSDKInterface_EnableRecvMagicVoice_Params params;
+	params.InEnable = InEnable;
 
 	auto flags = pFunc->FunctionFlags;
 	pFunc->FunctionFlags |= 0x400;
@@ -47003,11 +47740,40 @@ bool UVoiceSDKInterface::EnableReportALLAbroad(bool InEnable, bool InWithEncrypt
 
 int UVoiceSDKInterface::EnableMultiRoom(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableMultiRoom");
 
 	UVoiceSDKInterface_EnableMultiRoom_Params params;
+	params.InEnable = InEnable;
+
+	auto flags = pFunc->FunctionFlags;
+	pFunc->FunctionFlags |= 0x400;
+
+	UObject *currentObj = (UObject *) this;
+	currentObj->ProcessEvent(pFunc, &params);
+
+	pFunc->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Client.VoiceSDKInterface.EnableMagicVoice
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FString                 InMagicType                    (Parm, ZeroConstructor)
+// bool                           InEnable                       (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+
+int UVoiceSDKInterface::EnableMagicVoice(const struct FString& InMagicType, bool InEnable)
+{
+	static UFunction *pFunc = 0;
+	if (!pFunc)
+		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableMagicVoice");
+
+	UVoiceSDKInterface_EnableMagicVoice_Params params;
+	params.InMagicType = InMagicType;
 	params.InEnable = InEnable;
 
 	auto flags = pFunc->FunctionFlags;
@@ -47029,7 +47795,7 @@ int UVoiceSDKInterface::EnableMultiRoom(bool InEnable)
 
 void UVoiceSDKInterface::EnableLog(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableLog");
 
@@ -47054,7 +47820,7 @@ void UVoiceSDKInterface::EnableLog(bool InEnable)
 
 int UVoiceSDKInterface::EnableKws(bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableKws");
 
@@ -47081,7 +47847,7 @@ int UVoiceSDKInterface::EnableKws(bool bEnable)
 
 int UVoiceSDKInterface::EnableCivilFile(bool Enable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableCivilFile");
 
@@ -47107,7 +47873,7 @@ int UVoiceSDKInterface::EnableCivilFile(bool Enable)
 
 void UVoiceSDKInterface::EnableBluetoothSCO(bool InEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.EnableBluetoothSCO");
 
@@ -47133,7 +47899,7 @@ void UVoiceSDKInterface::EnableBluetoothSCO(bool InEnable)
 
 int UVoiceSDKInterface::DownloadRecordFileV2(const struct FString& InFileID, bool InPermanent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.DownloadRecordFileV2");
 
@@ -47164,7 +47930,7 @@ int UVoiceSDKInterface::DownloadRecordFileV2(const struct FString& InFileID, boo
 
 int UVoiceSDKInterface::DownloadRecordedFile(const struct FString& InFileID, const struct FString& InDownloadInFilePath, int InTimeout, bool InPermanent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.DownloadRecordedFile");
 
@@ -47191,7 +47957,7 @@ int UVoiceSDKInterface::DownloadRecordedFile(const struct FString& InFileID, con
 
 void UVoiceSDKInterface::CommonTestMic()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CommonTestMic");
 
@@ -47214,7 +47980,7 @@ void UVoiceSDKInterface::CommonTestMic()
 
 int UVoiceSDKInterface::CloseVoiceSpeaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseVoiceSpeaker");
 
@@ -47239,7 +48005,7 @@ int UVoiceSDKInterface::CloseVoiceSpeaker()
 
 int UVoiceSDKInterface::CloseVoiceMic()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseVoiceMic");
 
@@ -47262,7 +48028,7 @@ int UVoiceSDKInterface::CloseVoiceMic()
 
 void UVoiceSDKInterface::CloseSpeaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseSpeaker");
 
@@ -47283,7 +48049,7 @@ void UVoiceSDKInterface::CloseSpeaker()
 
 void UVoiceSDKInterface::CloseMic()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseMic");
 
@@ -47304,7 +48070,7 @@ void UVoiceSDKInterface::CloseMic()
 
 void UVoiceSDKInterface::CloseIngameSpeaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseIngameSpeaker");
 
@@ -47325,7 +48091,7 @@ void UVoiceSDKInterface::CloseIngameSpeaker()
 
 void UVoiceSDKInterface::CloseIngameMicphone()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseIngameMicphone");
 
@@ -47348,7 +48114,7 @@ void UVoiceSDKInterface::CloseIngameMicphone()
 
 void UVoiceSDKInterface::CloseAllSpeaker(bool ShowTips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseAllSpeaker");
 
@@ -47372,7 +48138,7 @@ void UVoiceSDKInterface::CloseAllSpeaker(bool ShowTips)
 
 void UVoiceSDKInterface::CloseAllMicphone(bool ShowTips)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CloseAllMicphone");
 
@@ -47396,7 +48162,7 @@ void UVoiceSDKInterface::CloseAllMicphone(bool ShowTips)
 
 int UVoiceSDKInterface::CheckDeviceMuteState()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CheckDeviceMuteState");
 
@@ -47419,7 +48185,7 @@ int UVoiceSDKInterface::CheckDeviceMuteState()
 
 void UVoiceSDKInterface::CheckAndEnableRoomSpeaker()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.CheckAndEnableRoomSpeaker");
 
@@ -47440,7 +48206,7 @@ void UVoiceSDKInterface::CheckAndEnableRoomSpeaker()
 
 void UVoiceSDKInterface::ChatShowAgeRestrictionMsgInLobby()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ChatShowAgeRestrictionMsgInLobby");
 
@@ -47461,7 +48227,7 @@ void UVoiceSDKInterface::ChatShowAgeRestrictionMsgInLobby()
 
 void UVoiceSDKInterface::ChatShowAgeRestrictionMsgInFighting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ChatShowAgeRestrictionMsgInFighting");
 
@@ -47482,7 +48248,7 @@ void UVoiceSDKInterface::ChatShowAgeRestrictionMsgInFighting()
 
 void UVoiceSDKInterface::ChatShowAgeRestrictionMsgInChat()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ChatShowAgeRestrictionMsgInChat");
 
@@ -47503,7 +48269,7 @@ void UVoiceSDKInterface::ChatShowAgeRestrictionMsgInChat()
 
 void UVoiceSDKInterface::ChatRequestPrivacyInSetting()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ChatRequestPrivacyInSetting");
 
@@ -47524,7 +48290,7 @@ void UVoiceSDKInterface::ChatRequestPrivacyInSetting()
 
 void UVoiceSDKInterface::ChatRequestPrivacyInGame()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ChatRequestPrivacyInGame");
 
@@ -47547,7 +48313,7 @@ void UVoiceSDKInterface::ChatRequestPrivacyInGame()
 
 int UVoiceSDKInterface::ApplyMessageKey()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.ApplyMessageKey");
 
@@ -47573,7 +48339,7 @@ int UVoiceSDKInterface::ApplyMessageKey()
 
 void UVoiceSDKInterface::AlwaysDisableRoomMic(const struct FString& InRoomName, bool WithClear)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.VoiceSDKInterface.AlwaysDisableRoomMic");
 
@@ -47600,7 +48366,7 @@ void UVoiceSDKInterface::AlwaysDisableRoomMic(const struct FString& InRoomName, 
 
 void AWeaponDIYCaptureActor::ResizeRT(class UTextureRenderTarget2D* RenderTarget, int Width, int Height)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WeaponDIYCaptureActor.ResizeRT");
 
@@ -47627,7 +48393,7 @@ void AWeaponDIYCaptureActor::ResizeRT(class UTextureRenderTarget2D* RenderTarget
 
 void UWINSDKFBWebLogin::OnWINSDKHttpResponed__DelegateSignature(bool requestSucc, const struct FString& txtContent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.WINSDKFBWebLogin.OnWINSDKHttpResponed__DelegateSignature");
 
@@ -47651,7 +48417,7 @@ void UWINSDKFBWebLogin::OnWINSDKHttpResponed__DelegateSignature(bool requestSucc
 
 void UWINSDKFBWebLogin::OnUrlChanged__DelegateSignature(const struct FText& Text)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("DelegateFunction Client.WINSDKFBWebLogin.OnUrlChanged__DelegateSignature");
 
@@ -47674,7 +48440,7 @@ void UWINSDKFBWebLogin::OnUrlChanged__DelegateSignature(const struct FText& Text
 
 void UWINSDKFBWebLogin::LoadURL(const struct FString& NewURL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WINSDKFBWebLogin.LoadURL");
 
@@ -47698,7 +48464,7 @@ void UWINSDKFBWebLogin::LoadURL(const struct FString& NewURL)
 
 void UWINSDKFBWebLogin::DoHttpRequest(const struct FString& URL)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WINSDKFBWebLogin.DoHttpRequest");
 
@@ -47722,7 +48488,7 @@ void UWINSDKFBWebLogin::DoHttpRequest(const struct FString& URL)
 
 void UWINWebSocketServer::Tick(int DeltaTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WINWebSocketServer.Tick");
 
@@ -47744,7 +48510,7 @@ void UWINWebSocketServer::Tick(int DeltaTime)
 
 void UWINWebSocketServer::Stop()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WINWebSocketServer.Stop");
 
@@ -47767,7 +48533,7 @@ void UWINWebSocketServer::Stop()
 
 void UWINWebSocketServer::Start(int InPort)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WINWebSocketServer.Start");
 
@@ -47791,7 +48557,7 @@ void UWINWebSocketServer::Start(int InPort)
 
 void UWINWebSocketServer::Send(const struct FString& InMsg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WINWebSocketServer.Send");
 
@@ -47815,7 +48581,7 @@ void UWINWebSocketServer::Send(const struct FString& InMsg)
 
 class UWINWebSocketServer* UWINWebSocketServer::GetInstance()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function Client.WINWebSocketServer.GetInstance");
 

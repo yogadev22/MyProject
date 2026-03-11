@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function KantanChartsUMG.KantanChart.SetUpdateTickRate
 // (Final, Native, Public, BlueprintCallable)
@@ -15,7 +15,7 @@ namespace SDK
 
 void UKantanChart::SetUpdateTickRate(float InRate)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChart.SetUpdateTickRate");
 
@@ -39,7 +39,7 @@ void UKantanChart::SetUpdateTickRate(float InRate)
 
 void UKantanChart::SetMargins(const struct FMargin& InMargins)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChart.SetMargins");
 
@@ -63,7 +63,7 @@ void UKantanChart::SetMargins(const struct FMargin& InMargins)
 
 void UKantanChart::SetChartTitlePadding(const struct FMargin& InPadding)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChart.SetChartTitlePadding");
 
@@ -87,7 +87,7 @@ void UKantanChart::SetChartTitlePadding(const struct FMargin& InPadding)
 
 void UKantanChart::SetChartTitle(const struct FText& InTitle)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChart.SetChartTitle");
 
@@ -112,7 +112,7 @@ void UKantanChart::SetChartTitle(const struct FText& InTitle)
 
 void UKantanCategoryChart::AddCategoryStyleOverride(const struct FName& CategoryId, const struct FLinearColor& Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCategoryChart.AddCategoryStyleOverride");
 
@@ -137,7 +137,7 @@ void UKantanCategoryChart::AddCategoryStyleOverride(const struct FName& Category
 
 void UKantanBarChartBase::SetValueAxisConfig(const struct FCartesianAxisConfig& InCfg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanBarChartBase.SetValueAxisConfig");
 
@@ -161,7 +161,7 @@ void UKantanBarChartBase::SetValueAxisConfig(const struct FCartesianAxisConfig& 
 
 void UKantanBarChartBase::SetOrientation(EKantanBarChartOrientation InOrientation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanBarChartBase.SetOrientation");
 
@@ -185,7 +185,7 @@ void UKantanBarChartBase::SetOrientation(EKantanBarChartOrientation InOrientatio
 
 void UKantanBarChartBase::SetMaxBarValue(float InMaxValue)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanBarChartBase.SetMaxBarValue");
 
@@ -209,7 +209,7 @@ void UKantanBarChartBase::SetMaxBarValue(float InMaxValue)
 
 void UKantanBarChartBase::SetLabelPosition(EKantanBarLabelPosition InPosition)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanBarChartBase.SetLabelPosition");
 
@@ -233,7 +233,7 @@ void UKantanBarChartBase::SetLabelPosition(EKantanBarLabelPosition InPosition)
 
 void UKantanBarChartBase::SetExtentsDisplay(EKantanBarValueExtents InExtents)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanBarChartBase.SetExtentsDisplay");
 
@@ -257,7 +257,7 @@ void UKantanBarChartBase::SetExtentsDisplay(EKantanBarValueExtents InExtents)
 
 void UKantanBarChartBase::SetBarToGapRatio(float InRatio)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanBarChartBase.SetBarToGapRatio");
 
@@ -282,7 +282,7 @@ void UKantanBarChartBase::SetBarToGapRatio(float InRatio)
 
 bool UBarChart::SetDatasource(class UObject* InDatasource)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.BarChart.SetDatasource");
 
@@ -308,7 +308,7 @@ bool UBarChart::SetDatasource(class UObject* InDatasource)
 
 void UKantanCartesianChartBase::SetYAxisConfig(const struct FCartesianAxisConfig& InCfg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.SetYAxisConfig");
 
@@ -332,7 +332,7 @@ void UKantanCartesianChartBase::SetYAxisConfig(const struct FCartesianAxisConfig
 
 void UKantanCartesianChartBase::SetXAxisConfig(const struct FCartesianAxisConfig& InCfg)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.SetXAxisConfig");
 
@@ -357,7 +357,7 @@ void UKantanCartesianChartBase::SetXAxisConfig(const struct FCartesianAxisConfig
 
 void UKantanCartesianChartBase::SetPlotScaleByRange(const struct FCartesianAxisRange& InRangeX, const struct FCartesianAxisRange& InRangeY)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.SetPlotScaleByRange");
 
@@ -383,7 +383,7 @@ void UKantanCartesianChartBase::SetPlotScaleByRange(const struct FCartesianAxisR
 
 void UKantanCartesianChartBase::SetPlotScale(const struct FVector2D& inScale, const struct FVector2D& InFocalCoords)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.SetPlotScale");
 
@@ -404,11 +404,11 @@ void UKantanCartesianChartBase::SetPlotScale(const struct FVector2D& inScale, co
 // Function KantanChartsUMG.KantanCartesianChartBase.SetDataPointSize
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TEnumAsByte<enum EKantanDataPointSize> InSize                         (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EKantanDataPointSize> InSize                         (Parm, ZeroConstructor, IsPlainOldData)
 
-void UKantanCartesianChartBase::SetDataPointSize(TEnumAsByte<enum EKantanDataPointSize> InSize)
+void UKantanCartesianChartBase::SetDataPointSize(TEnumAsByte<EKantanDataPointSize> InSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.SetDataPointSize");
 
@@ -432,7 +432,7 @@ void UKantanCartesianChartBase::SetDataPointSize(TEnumAsByte<enum EKantanDataPoi
 
 void UKantanCartesianChartBase::SetAxisTitlePadding(const struct FMargin& InPadding)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.SetAxisTitlePadding");
 
@@ -457,7 +457,7 @@ void UKantanCartesianChartBase::SetAxisTitlePadding(const struct FMargin& InPadd
 
 void UKantanCartesianChartBase::EnableSeries(const struct FName& ID, bool bEnable)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.EnableSeries");
 
@@ -484,7 +484,7 @@ void UKantanCartesianChartBase::EnableSeries(const struct FName& ID, bool bEnabl
 
 void UKantanCartesianChartBase::ConfigureSeries(const struct FName& ID, bool bDrawPoints, bool bDrawLines)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.ConfigureSeries");
 
@@ -512,7 +512,7 @@ void UKantanCartesianChartBase::ConfigureSeries(const struct FName& ID, bool bDr
 
 void UKantanCartesianChartBase::AddSeriesStyleOverride(const struct FName& SeriesId, class UKantanPointStyle* PointStyle, const struct FLinearColor& Color)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanCartesianChartBase.AddSeriesStyleOverride");
 
@@ -539,7 +539,7 @@ void UKantanCartesianChartBase::AddSeriesStyleOverride(const struct FName& Serie
 
 bool UCartesianPlot::SetDatasource(class UObject* InDatasource)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.CartesianPlot.SetDatasource");
 
@@ -565,7 +565,7 @@ bool UCartesianPlot::SetDatasource(class UObject* InDatasource)
 
 void UKantanChartLegend::SetSeriesPadding(const struct FMargin& InPadding)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChartLegend.SetSeriesPadding");
 
@@ -589,7 +589,7 @@ void UKantanChartLegend::SetSeriesPadding(const struct FMargin& InPadding)
 
 void UKantanChartLegend::SetMargins(const struct FMargin& InMargins)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChartLegend.SetMargins");
 
@@ -613,7 +613,7 @@ void UKantanChartLegend::SetMargins(const struct FMargin& InMargins)
 
 void UKantanChartLegend::SetFontSize(int InFontSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChartLegend.SetFontSize");
 
@@ -637,7 +637,7 @@ void UKantanChartLegend::SetFontSize(int InFontSize)
 
 void UKantanChartLegend::SetChart(class UKantanCartesianChartBase* InChart)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChartLegend.SetChart");
 
@@ -661,7 +661,7 @@ void UKantanChartLegend::SetChart(class UKantanCartesianChartBase* InChart)
 
 void UKantanChartLegend::SetBackground(const struct FSlateBrush& InBrush)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.KantanChartLegend.SetBackground");
 
@@ -687,7 +687,7 @@ void UKantanChartLegend::SetBackground(const struct FSlateBrush& InBrush)
 
 void USimpleBarChart::BP_UpdateCategoryValue(const struct FName& ID, float Value, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleBarChart.BP_UpdateCategoryValue");
 
@@ -716,7 +716,7 @@ void USimpleBarChart::BP_UpdateCategoryValue(const struct FName& ID, float Value
 
 void USimpleBarChart::BP_RemoveCategory(const struct FName& ID, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleBarChart.BP_RemoveCategory");
 
@@ -741,7 +741,7 @@ void USimpleBarChart::BP_RemoveCategory(const struct FName& ID, bool* bSuccess)
 
 void USimpleBarChart::BP_RemoveAllCategories()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleBarChart.BP_RemoveAllCategories");
 
@@ -766,7 +766,7 @@ void USimpleBarChart::BP_RemoveAllCategories()
 
 void USimpleBarChart::BP_AddCategoryWithId(const struct FName& ID, const struct FText& Name, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleBarChart.BP_AddCategoryWithId");
 
@@ -795,7 +795,7 @@ void USimpleBarChart::BP_AddCategoryWithId(const struct FName& ID, const struct 
 
 void USimpleBarChart::BP_AddCategory(const struct FText& Name, struct FName* CatId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleBarChart.BP_AddCategory");
 
@@ -823,7 +823,7 @@ void USimpleBarChart::BP_AddCategory(const struct FText& Name, struct FName* Cat
 
 void USimpleCartesianPlot::BP_RemoveSeries(const struct FName& ID, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleCartesianPlot.BP_RemoveSeries");
 
@@ -848,7 +848,7 @@ void USimpleCartesianPlot::BP_RemoveSeries(const struct FName& ID, bool* bSucces
 
 void USimpleCartesianPlot::BP_RemoveAllSeries()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleCartesianPlot.BP_RemoveAllSeries");
 
@@ -876,7 +876,7 @@ void USimpleCartesianPlot::BP_RemoveAllSeries()
 
 void USimpleCartesianPlot::BP_AddSeriesWithId(const struct FName& ID, const struct FText& Name, bool bEnabled, bool bShowPoints, bool bShowLines, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleCartesianPlot.BP_AddSeriesWithId");
 
@@ -911,7 +911,7 @@ void USimpleCartesianPlot::BP_AddSeriesWithId(const struct FName& ID, const stru
 
 void USimpleCartesianPlot::BP_AddSeries(const struct FText& Name, bool bEnabled, bool bShowPoints, bool bShowLines, struct FName* SeriesId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleCartesianPlot.BP_AddSeries");
 
@@ -943,7 +943,7 @@ void USimpleCartesianPlot::BP_AddSeries(const struct FText& Name, bool bEnabled,
 
 void USimpleCartesianPlot::BP_AddDatapoint(const struct FName& SeriesId, const struct FVector2D& Point, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleCartesianPlot.BP_AddDatapoint");
 
@@ -972,7 +972,7 @@ void USimpleCartesianPlot::BP_AddDatapoint(const struct FName& SeriesId, const s
 
 void USimpleTimeSeriesPlot::BP_RemoveSeries(const struct FName& ID, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleTimeSeriesPlot.BP_RemoveSeries");
 
@@ -997,7 +997,7 @@ void USimpleTimeSeriesPlot::BP_RemoveSeries(const struct FName& ID, bool* bSucce
 
 void USimpleTimeSeriesPlot::BP_RemoveAllSeries()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleTimeSeriesPlot.BP_RemoveAllSeries");
 
@@ -1025,7 +1025,7 @@ void USimpleTimeSeriesPlot::BP_RemoveAllSeries()
 
 void USimpleTimeSeriesPlot::BP_AddSeriesWithId(const struct FName& ID, const struct FText& Name, bool bEnabled, bool bShowPoints, bool bShowLines, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleTimeSeriesPlot.BP_AddSeriesWithId");
 
@@ -1060,7 +1060,7 @@ void USimpleTimeSeriesPlot::BP_AddSeriesWithId(const struct FName& ID, const str
 
 void USimpleTimeSeriesPlot::BP_AddSeries(const struct FText& Name, bool bEnabled, bool bShowPoints, bool bShowLines, struct FName* SeriesId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleTimeSeriesPlot.BP_AddSeries");
 
@@ -1092,7 +1092,7 @@ void USimpleTimeSeriesPlot::BP_AddSeries(const struct FText& Name, bool bEnabled
 
 void USimpleTimeSeriesPlot::BP_AddDatapointNow(const struct FName& SeriesId, float Value, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleTimeSeriesPlot.BP_AddDatapointNow");
 
@@ -1122,7 +1122,7 @@ void USimpleTimeSeriesPlot::BP_AddDatapointNow(const struct FName& SeriesId, flo
 
 void USimpleTimeSeriesPlot::BP_AddDatapoint(const struct FName& SeriesId, const struct FVector2D& Point, bool* bSuccess)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.SimpleTimeSeriesPlot.BP_AddDatapoint");
 
@@ -1151,7 +1151,7 @@ void USimpleTimeSeriesPlot::BP_AddDatapoint(const struct FName& SeriesId, const 
 
 bool UTimeSeriesPlot::SetDatasource(class UObject* InDatasource)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function KantanChartsUMG.TimeSeriesPlot.SetDatasource");
 

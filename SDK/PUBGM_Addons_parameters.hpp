@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function Addons.AdditiveCurveMoveObj.LeaveAdditiveCurveMove
 struct UAdditiveCurveMoveObj_LeaveAdditiveCurveMove_Params
@@ -471,8 +471,8 @@ struct ABioVehicleBase_K2_UpdateCustomMovement_Params
 // Function Addons.BioVehicleBase.K2_OnMovementModeChanged
 struct ABioVehicleBase_K2_OnMovementModeChanged_Params
 {
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PrevCustomMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -544,6 +544,11 @@ struct ABioVehicleBase_HandleOnRiderAnimInstanceActive_Params
 	class UAnimInstance*                               ActivedAnimInstance;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Addons.BioVehicleBase.HandleOnOpenPawnCollision
+struct ABioVehicleBase_HandleOnOpenPawnCollision_Params
+{
+};
+
 // Function Addons.BioVehicleBase.HandleOnClientBeenTamed
 struct ABioVehicleBase_HandleOnClientBeenTamed_Params
 {
@@ -595,7 +600,7 @@ struct ABioVehicleBase_GetPlayerLookAtRotation_Params
 struct ABioVehicleBase_GetMountMontage_Params
 {
 	class ASTExtraBaseCharacter*                       Player;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMountFromDirection>              FromDirection;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+	TEnumAsByte<EMountFromDirection>                   FromDirection;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 	struct FMountMontagePair                           ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
@@ -603,7 +608,7 @@ struct ABioVehicleBase_GetMountMontage_Params
 struct ABioVehicleBase_GetMountFromDirection_Params
 {
 	struct FVector                                     CheckedLocation;                                          // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EMountFromDirection>              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EMountFromDirection>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.BioVehicleBase.GetInVehicleLocalPlayer
@@ -622,7 +627,7 @@ struct ABioVehicleBase_GetFollowTarget_Params
 struct ABioVehicleBase_GetDisMountMontage_Params
 {
 	class ASTExtraBaseCharacter*                       Player;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMountFromDirection>              FromDirection;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+	TEnumAsByte<EMountFromDirection>                   FromDirection;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 	struct FMountMontagePair                           ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
@@ -766,7 +771,7 @@ struct ABioVehicleBase_CacheInitialMeshOffset_Params
 struct ABioVehicleBase_BroadCastPlayMountMontage_Params
 {
 	class ASTExtraPlayerCharacter*                     Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMountFromDirection>              MountFromDirection;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMountFromDirection>                   MountFromDirection;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.BioVehicleBase.BroadCastPlayingRandomIdleAnim
@@ -779,6 +784,14 @@ struct ABioVehicleBase_BroadCastPlayingRandomIdleAnim_Params
 struct ABioVehicleBase_BpHandleDeviceLevel_Params
 {
 	int                                                DeviceLevel;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.BioVehicleBase.BlowUpBioVehicle
+struct ABioVehicleBase_BlowUpBioVehicle_Params
+{
+	struct FVector                                     LaunchVel;                                                // (Parm, IsPlainOldData)
+	class AActor*                                      HitActor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	class UPrimitiveComponent*                         HitComp;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // Function Addons.BioVehicleBase.ActiveRagDoll
@@ -1226,7 +1239,7 @@ struct UAnimSequenceBoneTransformData_GetSequenceBoneTransform_Params
 struct UAnimUtilBlueprintFunctions_MirrorVector_Params
 {
 	struct FVector                                     V;                                                        // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum EAxis>                            MirrorAxis;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAxis>                                 MirrorAxis;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -1234,7 +1247,7 @@ struct UAnimUtilBlueprintFunctions_MirrorVector_Params
 struct UAnimUtilBlueprintFunctions_MirrorQuat_Params
 {
 	struct FRotator                                    Q;                                                        // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<enum EAxis>                            MirrorAxis;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAxis>                                 MirrorAxis;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
@@ -1341,6 +1354,97 @@ struct UAvatarMergeUnit_OnAvatarAllMeshLoaded_Params
 {
 };
 
+// Function Addons.AxisLockedSpringArmComponent.SetRotationAxisInheritance
+struct UAxisLockedSpringArmComponent_SetRotationAxisInheritance_Params
+{
+	bool                                               bInInheritPitch;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInInheritYaw;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInInheritRoll;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.SetPositionLagAxisLockType
+struct UAxisLockedSpringArmComponent_SetPositionLagAxisLockType_Params
+{
+	EAxisLockType                                      NewAxisLockType;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.SetInheritYaw
+struct UAxisLockedSpringArmComponent_SetInheritYaw_Params
+{
+	bool                                               bInherit;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.SetInheritRoll
+struct UAxisLockedSpringArmComponent_SetInheritRoll_Params
+{
+	bool                                               bInherit;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.SetInheritPitch
+struct UAxisLockedSpringArmComponent_SetInheritPitch_Params
+{
+	bool                                               bInherit;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.SetAxisLockType
+struct UAxisLockedSpringArmComponent_SetAxisLockType_Params
+{
+	EAxisLockType                                      NewAxisLockType;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.SetAbsoluteRotationOverride
+struct UAxisLockedSpringArmComponent_SetAbsoluteRotationOverride_Params
+{
+	struct FRotator                                    NewAbsoluteRotation;                                      // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.ProcessRotationAxisControl
+struct UAxisLockedSpringArmComponent_ProcessRotationAxisControl_Params
+{
+	struct FRotator                                    InRotation;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.ProcessPositionLagAxisLock
+struct UAxisLockedSpringArmComponent_ProcessPositionLagAxisLock_Params
+{
+	struct FVector                                     CurrentLoc;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FVector                                     TargetLoc;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	float                                              DeltaTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              LagSpeed;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.IsInheritingYaw
+struct UAxisLockedSpringArmComponent_IsInheritingYaw_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.IsInheritingRoll
+struct UAxisLockedSpringArmComponent_IsInheritingRoll_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.IsInheritingPitch
+struct UAxisLockedSpringArmComponent_IsInheritingPitch_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.GetPositionLagAxisLockType
+struct UAxisLockedSpringArmComponent_GetPositionLagAxisLockType_Params
+{
+	EAxisLockType                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.AxisLockedSpringArmComponent.GetAxisLockType
+struct UAxisLockedSpringArmComponent_GetAxisLockType_Params
+{
+	EAxisLockType                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Addons.BeamEffectMoveActor.SetBeamEffectData
 struct ABeamEffectMoveActor_SetBeamEffectData_Params
 {
@@ -1426,7 +1530,7 @@ struct UBioVehicleMovementComponent_SetNeedLerpRequestedVelocity_Params
 // Function Addons.BioVehicleMovementComponent.SetMovementMode
 struct UBioVehicleMovementComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -1481,6 +1585,16 @@ struct UBioVehicleMovementComponent_SetAvoidanceEnabled_Params
 struct UBioVehicleMovementComponent_SetAcceptInput_Params
 {
 	bool                                               bIsAccept;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.BioVehicleMovementComponent.ServerStartBlowUpCharacter
+struct UBioVehicleMovementComponent_ServerStartBlowUpCharacter_Params
+{
+	float                                              TimeStamp;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                BlowID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector_NetQuantize10                       LaunchVel;                                                // (Parm)
+	class AActor*                                      HitActor;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	class UPrimitiveComponent*                         HitComponent;                                             // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // Function Addons.BioVehicleMovementComponent.ServerSetThrottleInput
@@ -1733,6 +1847,12 @@ struct UBioVehicleMovementComponent_IsInSpecialMove_Params
 
 // Function Addons.BioVehicleMovementComponent.IsComponentTickLocked
 struct UBioVehicleMovementComponent_IsComponentTickLocked_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.BioVehicleMovementComponent.IsBeingBlew
+struct UBioVehicleMovementComponent_IsBeingBlew_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -2252,7 +2372,7 @@ struct UBioBaseFlyComponent_StartLanding_Params
 // Function Addons.BioBaseFlyComponent.SetMovementMode
 struct UBioBaseFlyComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2339,7 +2459,7 @@ struct UBioFlyMovementComponentBase_StartTakingOff_Params
 // Function Addons.BioFlyMovementComponentBase.SetMovementMode
 struct UBioFlyMovementComponentBase_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2416,7 +2536,7 @@ struct UBioSpecialMoveCompBase_OnSpecialMoveEnd_Params
 struct UBioSpecialMoveCompBase_OnMovementModeChangedDelegate_Params
 {
 	class ABioVehicleBase*                             Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2738,7 +2858,7 @@ struct UBioVehicleAvoidObstacleComponent_ServerAvoidObstacle_Params
 struct UBioVehicleAvoidObstacleComponent_OnMovementModeChangedDelegate_Params
 {
 	class ABioVehicleBase*                             Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2787,7 +2907,7 @@ struct UBioVehicleAvoidObstacleComponent_ClientUpdatePrecipiceInfo_Params
 struct UBioVehicleGroundDust_HandleOnMovementChanged_Params
 {
 	class ABioVehicleBase*                             BioVehicle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -2919,7 +3039,7 @@ struct UBioVehicleStateComponent_AllowState_Params
 struct UBioVehicleWaterSplash_OnEnterWater_Params
 {
 	class ABioVehicleBase*                             BioVehicle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -3021,7 +3141,7 @@ struct UBlanketDanceComponent_OnRep_BlanketDanceData_Params
 // Function Addons.BlanketDanceComponent.OnEnterNewDanceState
 struct UBlanketDanceComponent_OnEnterNewDanceState_Params
 {
-	TEnumAsByte<enum EBlanketDanceState>               NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBlanketDanceState>                    NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.BlanketDanceComponent.BroadCastFaceLookAtPlayer
@@ -3074,7 +3194,7 @@ struct UBlanketMovementComponent_SetServerDiveDirection_Params
 // Function Addons.BlanketMovementComponent.SetMovementMode
 struct UBlanketMovementComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -3313,7 +3433,7 @@ struct UBoardMoveAnimInstance_RegisterEvents_Params
 struct UBoardMoveAnimInstance_OnMovementModeChange_Params
 {
 	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -3416,7 +3536,7 @@ struct UBoardMoveObj_OnProcessLanded_Params
 struct UBoardMoveObj_OnPostAnimMovementModeChange_Params
 {
 	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -3538,13 +3658,13 @@ struct UBroomRiderAnimInstance_OnBeginFlying_Params
 // Function Addons.BroomRiderAnimInstance.HandlePlayerWeaponStateChanged
 struct UBroomRiderAnimInstance_HandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.BroomPassengerAnimInstance.BpHandlePlayerWeaponStateChanged
 struct UBroomPassengerAnimInstance_BpHandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.BroomVehicle.StopAllBlanketSfx
@@ -3640,7 +3760,7 @@ struct ABroomVehicle_HandleOnBroomDash_Params
 struct ABroomVehicle_GetMountFromDirection_Params
 {
 	struct FVector                                     CheckedLocation;                                          // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EMountFromDirection>              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EMountFromDirection>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.BroomVehicle.GetBroomRiders
@@ -3690,7 +3810,7 @@ struct ABroomVehicle_BpHandlePreExitVehicle_Params
 {
 	class ASTExtraBaseCharacter*                       Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	ESTExtraVehicleSeatType                            SeatType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMountFromDirection>              Direction;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMountFromDirection>                   Direction;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Duration;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -3709,7 +3829,7 @@ struct UBroomVehicleMovementComponent_StartFlyingDash_Params
 // Function Addons.BroomVehicleMovementComponent.SetMovementMode
 struct UBroomVehicleMovementComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -4032,7 +4152,7 @@ struct UCamelRiderAnimInstance_HandleTimeSwordActived_Params
 // Function Addons.CamelRiderAnimInstance.HandlePlayerWeaponStateChanged
 struct UCamelRiderAnimInstance_HandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.CamelRiderAnimInstance.HandleOnRiderTimeSwordTypeChanged
@@ -4283,6 +4403,21 @@ struct UCameraModifier_MechaCombineSmooth_ActiveMechaSmoothModifier_Params
 	class ASTExtraBaseCharacter*                       OwnerPlayer;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              LerpTime;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCameraModifier_MechaCombineSmooth*          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.CoeingLibrary.MarkBioVehicleDropSpeed
+struct UCoeingLibrary_MarkBioVehicleDropSpeed_Params
+{
+	class ABioVehicleBase*                             PtrVehicle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     CallerName;                                               // (Parm, ZeroConstructor)
+};
+
+// Function Addons.CoeingLibrary.MarkBioVehicleAbnormalJump
+struct UCoeingLibrary_MarkBioVehicleAbnormalJump_Params
+{
+	class ABioVehicleBase*                             PtrVehicle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              JumpZVelocity;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     CallerName;                                               // (Parm, ZeroConstructor)
 };
 
 // Function Addons.ControllableDashMoveObj.LeaveControllableDashMove
@@ -4742,7 +4877,7 @@ struct AHorseVehicle_BpHandlePreExitVehicle_Params
 {
 	class ASTExtraBaseCharacter*                       Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	ESTExtraVehicleSeatType                            SeatType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMountFromDirection>              Direction;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMountFromDirection>                   Direction;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Duration;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -7044,6 +7179,22 @@ struct UFlowerWingMoveObj_GetCurMoveState_Params
 	EFlowerWingMoveState                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Addons.FlyingArmorCharacterAnimInstance.OnFlowerAnimInstanceUpdate
+struct UFlyingArmorCharacterAnimInstance_OnFlowerAnimInstanceUpdate_Params
+{
+	class UAnimInstance*                               AnimInstance;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.FlyingArmorCharacterAnimInstance.OnAsyncLoadAssetDone
+struct UFlyingArmorCharacterAnimInstance_OnAsyncLoadAssetDone_Params
+{
+};
+
+// Function Addons.FlyingArmorCharacterAnimInstance.AsyncLoadAsset
+struct UFlyingArmorCharacterAnimInstance_AsyncLoadAsset_Params
+{
+};
+
 // Function Addons.FlyingArmorMoveObj.SetRisingInput
 struct UFlyingArmorMoveObj_SetRisingInput_Params
 {
@@ -7084,7 +7235,7 @@ struct UFlyingCloudMoveObj_StopFly_Params
 // Function Addons.FlyingCloudMoveObj.SetState
 struct UFlyingCloudMoveObj_SetState_Params
 {
-	TEnumAsByte<enum EFlyCloudState>                   FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFlyCloudState>                        FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.FlyingCloudMoveObj.SetPitchLimit
@@ -7102,7 +7253,7 @@ struct UFlyingCloudMoveObj_SetForceNotClientMode_Params
 // Function Addons.FlyingCloudMoveObj.RealSetState
 struct UFlyingCloudMoveObj_RealSetState_Params
 {
-	TEnumAsByte<enum EFlyCloudState>                   FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFlyCloudState>                        FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ForceChange;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -7115,14 +7266,14 @@ struct UFlyingCloudMoveObj_GetDistanceToLand_Params
 // Function Addons.FlyingCloudMoveObj.GetCustomMoveStateByFlyState
 struct UFlyingCloudMoveObj_GetCustomMoveStateByFlyState_Params
 {
-	TEnumAsByte<enum EFlyCloudState>                   FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFlyCloudState>                        FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.FlyingCloudMoveObj.GetCurrentFlyState
 struct UFlyingCloudMoveObj_GetCurrentFlyState_Params
 {
-	TEnumAsByte<enum EFlyCloudState>                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<EFlyCloudState>                        ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.FlyingCloudMoveObj.EnterFly
@@ -7133,7 +7284,7 @@ struct UFlyingCloudMoveObj_EnterFly_Params
 // Function Addons.FlyingCloudMoveObj.DoubleTerminalFlySetState
 struct UFlyingCloudMoveObj_DoubleTerminalFlySetState_Params
 {
-	TEnumAsByte<enum EFlyCloudState>                   FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFlyCloudState>                        FlyState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ForceChange;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -7241,7 +7392,7 @@ struct UFrostDragonMovementComponent_StartLanding_Params
 // Function Addons.FrostDragonMovementComponent.SetMovementMode
 struct UFrostDragonMovementComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -7358,7 +7509,7 @@ struct UHorseRiderAnimInstance_OnHorseShocked_Params
 // Function Addons.HorseRiderAnimInstance.HandlePlayerWeaponStateChanged
 struct UHorseRiderAnimInstance_HandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.HorseRiderAnimInstance.HandleOnHorseSuddenStop
@@ -7418,7 +7569,7 @@ struct UHorsePassengerAnimInstance_HandleOnPreExit_Params
 // Function Addons.HorsePassengerAnimInstance.BpHandlePlayerWeaponStateChanged
 struct UHorsePassengerAnimInstance_BpHandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.HorsePassengerAnimInstance.BpHandleOnPreExit
@@ -7664,7 +7815,7 @@ struct AHoveringMecha_StateToString_Params
 // Function Addons.HoveringMecha.SetWeaponState
 struct AHoveringMecha_SetWeaponState_Params
 {
-	TEnumAsByte<enum EMechaWeaponState>                InState;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMechaWeaponState>                     InState;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.HoveringMecha.SetEnterVehicleDistance
@@ -7676,8 +7827,8 @@ struct AHoveringMecha_SetEnterVehicleDistance_Params
 // Function Addons.HoveringMecha.SetCollisionResponseForBody
 struct AHoveringMecha_SetCollisionResponseForBody_Params
 {
-	TEnumAsByte<enum ECollisionChannel>                Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionResponse>               NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionResponse>                    NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -7755,7 +7906,7 @@ struct AHoveringMecha_GetInVehicleLocalPlayer_Params
 // Function Addons.HoveringMecha.GetCombineState
 struct AHoveringMecha_GetCombineState_Params
 {
-	TEnumAsByte<enum ECombineState>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECombineState>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.HoveringMecha.GetCombinedVehicle
@@ -7993,6 +8144,12 @@ struct UHoveringVehicleMovementComponent_CalculateHoverSimulation_Params
 	struct FVector                                     OwnerLoc;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	float                                              DeltaTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.JumpPackMoveObj.StartJump
+struct UJumpPackMoveObj_StartJump_Params
+{
+	struct FVector2D                                   InJumpDir;                                                // (Parm, IsPlainOldData)
 };
 
 // Function Addons.LadderMovementComponent.StartPhaseMoving
@@ -8335,7 +8492,7 @@ struct ATyrannosaurusRexVehicle_OnTRexHPCHanged_Params
 // Function Addons.TyrannosaurusRexVehicle.OnRoarFinished
 struct ATyrannosaurusRexVehicle_OnRoarFinished_Params
 {
-	TEnumAsByte<enum EBioVehicleSkillStopReason>       Reason;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EBioVehicleSkillStopReason>            Reason;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.TyrannosaurusRexVehicle.OnRep_bIsRoaring
@@ -8658,7 +8815,7 @@ struct UMechaSeatComponent_CombineVehicleSeats_Params
 // Function Addons.MechaCombineInterface.GetCombineState
 struct UMechaCombineInterface_GetCombineState_Params
 {
-	TEnumAsByte<enum ECombineState>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECombineState>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.MechaCombineInterface.GetCombinedVehicle
@@ -8791,7 +8948,7 @@ struct UMechaSmoothAttachComponent_K2_ProcessCombine_Params
 // Function Addons.MechaSmoothAttachComponent.K2_OnRep_CombineState
 struct UMechaSmoothAttachComponent_K2_OnRep_CombineState_Params
 {
-	TEnumAsByte<enum ECombineState>                    OldCombineState;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECombineState>                         OldCombineState;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.MechaSmoothAttachComponent.K2_OnRep_CombinedOtherMecha
@@ -8884,8 +9041,8 @@ struct UMechaSmoothAttachComponent_ClientDrawDebugBox_Params
 // Function Addons.MechaSmoothAttachComponent.ClientDrawDebugArrow
 struct UMechaSmoothAttachComponent_ClientDrawDebugArrow_Params
 {
-	struct FVector                                     from;                                                     // (Parm, IsPlainOldData)
-	struct FVector                                     to;                                                       // (Parm, IsPlainOldData)
+	struct FVector                                     From;                                                     // (Parm, IsPlainOldData)
+	struct FVector                                     To;                                                       // (Parm, IsPlainOldData)
 	struct FColor                                      Color;                                                    // (Parm, IsPlainOldData)
 	float                                              Duration;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Thickness;                                                // (Parm, ZeroConstructor, IsPlainOldData)
@@ -8959,7 +9116,7 @@ struct AMechaVehicle_ShouldApplyVehicleImpulse_Params
 // Function Addons.MechaVehicle.SetWeaponState
 struct AMechaVehicle_SetWeaponState_Params
 {
-	TEnumAsByte<enum EMechaWeaponState>                InState;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMechaWeaponState>                     InState;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.MechaVehicle.ProcessAirGlidingLanded
@@ -9110,7 +9267,7 @@ struct AMechaVehicle_GetHeight_Params
 // Function Addons.MechaVehicle.GetCombineState
 struct AMechaVehicle_GetCombineState_Params
 {
-	TEnumAsByte<enum ECombineState>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECombineState>                         ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.MechaVehicle.GetCombinedVehicle
@@ -9468,17 +9625,6 @@ struct UMultiLinkActorMoveComponent_AddTail_Params
 	class AActor*                                      TailActor;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function Addons.MultipleJumpMoveObj.OnNotAllowMultipleJumpEvent
-struct UMultipleJumpMoveObj_OnNotAllowMultipleJumpEvent_Params
-{
-	int                                                JumpCount;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Addons.MultipleJumpMoveObj.OnMultipleJump
-struct UMultipleJumpMoveObj_OnMultipleJump_Params
-{
-};
-
 // Function Addons.MysticPlantCheckActorCallCreateUtils.GetBPUtils
 struct UMysticPlantCheckActorCallCreateUtils_GetBPUtils_Params
 {
@@ -9503,6 +9649,43 @@ struct UMysticPlantCheckActorCallCreateBPUtils_GetCreateSkillItemType_Params
 	struct FCreateSkillItemInfo                        ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
+// Function Addons.NitroThrusterAnimInstance.StopAnimMontage
+struct UNitroThrusterAnimInstance_StopAnimMontage_Params
+{
+	class UAnimMontage*                                InMontage;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.NitroThrusterAnimInstance.PlayAnimMontage
+struct UNitroThrusterAnimInstance_PlayAnimMontage_Params
+{
+	class UAnimMontage*                                InMontage;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       Section;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InPlayRate;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.NitroThrusterAnimInstance.HandleNitroBoostStateChanged
+struct UNitroThrusterAnimInstance_HandleNitroBoostStateChanged_Params
+{
+	bool                                               bIsNitroBoosting;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.OBHttpComponent.UploadAPIContent
+struct UOBHttpComponent_UploadAPIContent_Params
+{
+};
+
+// Function Addons.OBHttpComponent.SetDataCenterURL
+struct UOBHttpComponent_SetDataCenterURL_Params
+{
+	struct FString                                     URL;                                                      // (Parm, ZeroConstructor)
+};
+
+// Function Addons.OBHttpComponent.SetAPIContentID
+struct UOBHttpComponent_SetAPIContentID_Params
+{
+	uint64_t                                           InID;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Addons.OBHttpComponent.ServerGetBackPackInfo
 struct UOBHttpComponent_ServerGetBackPackInfo_Params
 {
@@ -9511,6 +9694,19 @@ struct UOBHttpComponent_ServerGetBackPackInfo_Params
 
 // Function Addons.OBHttpComponent.ServerGetAllPlayerThrowInfo
 struct UOBHttpComponent_ServerGetAllPlayerThrowInfo_Params
+{
+};
+
+// Function Addons.OBHttpComponent.SerializeAPIContent
+struct UOBHttpComponent_SerializeAPIContent_Params
+{
+	struct FString                                     CmdStr;                                                   // (Parm, ZeroConstructor)
+	struct FString                                     ContentStr;                                               // (Parm, ZeroConstructor)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.OBHttpComponent.PreUploadAPI
+struct UOBHttpComponent_PreUploadAPI_Params
 {
 };
 
@@ -9543,6 +9739,12 @@ struct UOBHttpComponent_PostCustomInfo_Params
 {
 	struct FString                                     UrlName;                                                  // (Parm, ZeroConstructor)
 	TMap<struct FString, struct FString>               Params;                                                   // (Parm, OutParm, ZeroConstructor)
+};
+
+// Function Addons.OBHttpComponent.OnUploadAPIResponse
+struct UOBHttpComponent_OnUploadAPIResponse_Params
+{
+	int                                                Result;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.OBHttpComponent.OnRep_RealTimeAPIList
@@ -9874,7 +10076,7 @@ struct UOceanVehicleMovementComponent_SetServerDiveDirection_Params
 // Function Addons.OceanVehicleMovementComponent.SetMovementMode
 struct UOceanVehicleMovementComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -10167,7 +10369,7 @@ struct UPandaDriverAnimInstance_OnHorseShocked_Params
 // Function Addons.PandaDriverAnimInstance.HandlePlayerWeaponStateChanged
 struct UPandaDriverAnimInstance_HandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.PandaDriverAnimInstance.HandleOnSuddenStop
@@ -10623,7 +10825,7 @@ struct UPenguinCartMovementComponent_GetCurrentMaxAllowedSpeed_Params
 // Function Addons.PenguinRocketAnimInstance.HandleWeaponState
 struct UPenguinRocketAnimInstance_HandleWeaponState_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            InState;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 InState;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.PenguinRocketAnimInstance.HandleOnWeaponReloadEnd
@@ -10676,13 +10878,13 @@ struct UPenguinRocketMoveObj_OnLeavePenguinRocketState_Params
 struct UPenguinRocketMoveObj_OnLanding_Params
 {
 	struct FVector                                     EnterVelocity;                                            // (Parm, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PreviousMovementMode;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PreviousMovementMode;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.PenguinRocketMoveObj.OnFlyPoseHeightTypeChanged
 struct UPenguinRocketMoveObj_OnFlyPoseHeightTypeChanged_Params
 {
-	TEnumAsByte<enum EFlyHeightType>                   NewType;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFlyHeightType>                        NewType;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.PenguinRocketMoveObj.OnEnterPenguinRocketState
@@ -10721,7 +10923,7 @@ struct UPenguinRocketMoveObj_BpSpecialMoveSetCharacterOwner_Params
 // Function Addons.PenguinRocketMoveObj.BpOnMovementModeChanged
 struct UPenguinRocketMoveObj_BpOnMovementModeChanged_Params
 {
-	TEnumAsByte<enum EMovementMode>                    PreviousMovementMode;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PreviousMovementMode;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -11099,7 +11301,7 @@ struct UPterosaurMovementComponent_SetServerDiveDirection_Params
 // Function Addons.PterosaurMovementComponent.SetMovementMode
 struct UPterosaurMovementComponent_SetMovementMode_Params
 {
-	TEnumAsByte<enum EMovementMode>                    NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         NewMovementMode;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      NewCustomMode;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -11242,6 +11444,38 @@ struct UPterosaurMovementComponent_CalculateDivingVelocity_Params
 	float                                              DeltaTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Addons.QuadcopterDrone.SetMoveSpeedScale
+struct AQuadcopterDrone_SetMoveSpeedScale_Params
+{
+	float                                              InMoveSpeedScale;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.QuadcopterDrone.SetMaxTravelDistanceScale
+struct AQuadcopterDrone_SetMaxTravelDistanceScale_Params
+{
+	float                                              InMaxTravelDistanceScale;                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.QuadcopterDrone.OnDistanceLimitReached
+struct AQuadcopterDrone_OnDistanceLimitReached_Params
+{
+};
+
+// Function Addons.QuadcopterDrone.GetDisToLand
+struct AQuadcopterDrone_GetDisToLand_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.QuadcopterDroneMovementComponent.ServerUpdateInput
+struct UQuadcopterDroneMovementComponent_ServerUpdateInput_Params
+{
+	float                                              ForwardInput;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              RightInput;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              UpInput;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              NowControllerRationYaw;                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Addons.RaptorMovementComponent.GetWalkingAccResistance
 struct URaptorMovementComponent_GetWalkingAccResistance_Params
 {
@@ -11323,7 +11557,7 @@ struct URegionOverlapComponent_GetOverlappingActors_Params
 	TArray<class AActor*>                              OverlappingActors;                                        // (Parm, OutParm, ZeroConstructor)
 	class UClass*                                      ClassFilter;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bForceQuery;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ECollisionChannel>                CollisionChannel;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionChannel>                     CollisionChannel;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.ReindeerBioVehicle.TryAttachToOtherVehicle
@@ -11532,7 +11766,7 @@ struct UScorpionAnimInstance_StopMechaMontage_Params
 // Function Addons.ScorpionCharacterAnimInstance.HandlePlayerWeaponStateChanged
 struct UScorpionCharacterAnimInstance_HandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.ScorpionVehicle.StopAllBlanketSfx
@@ -12062,7 +12296,7 @@ struct USplineMoveObj_SpecialMoveSetCharacterOwner_Params
 // Function Addons.SplineMoveObj.SetSplineMoveState
 struct USplineMoveObj_SetSplineMoveState_Params
 {
-	TEnumAsByte<enum ECustomMovmentMode>               InMoveState;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECustomMovmentMode>                    InMoveState;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.SplineMoveObj.SetSpline
@@ -12088,7 +12322,7 @@ struct USplineMoveObj_PlayMoveSound_Params
 struct USplineMoveObj_PlayerLeaveSpline_Params
 {
 	class USplineComponent*                            InSpline;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    InMovementMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         InMovementMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.SplineMoveObj.PlayerEnterSpline
@@ -12116,6 +12350,11 @@ struct USplineMoveObj_OnSplineMoveHit_Params
 	struct FHitResult                                  Hit;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
+// Function Addons.SplineMoveObj.OnSplineMoveFalling
+struct USplineMoveObj_OnSplineMoveFalling_Params
+{
+};
+
 // Function Addons.SplineMoveObj.OnSpecialMoveCharacterJump
 struct USplineMoveObj_OnSpecialMoveCharacterJump_Params
 {
@@ -12132,6 +12371,11 @@ struct USplineMoveObj_OnSimulateCharStateChanged_Params
 struct USplineMoveObj_OnPlayerRespawn_Params
 {
 	class AUAEPlayerController*                        PC;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.SplineMoveObj.OnPlayerLeaveSplineState
+struct USplineMoveObj_OnPlayerLeaveSplineState_Params
+{
 };
 
 // Function Addons.SplineMoveObj.OnPawnStateInterrupted
@@ -12179,7 +12423,7 @@ struct USplineMoveObj_HandleBeginTouchScreen_Params
 // Function Addons.SplineMoveObj.GetSplineMoveState
 struct USplineMoveObj_GetSplineMoveState_Params
 {
-	TEnumAsByte<enum ECustomMovmentMode>               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	TEnumAsByte<ECustomMovmentMode>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function Addons.SplineMoveObj.GetProjectionLocationOnSpline
@@ -12521,6 +12765,18 @@ struct USTBuffAction_AttrModifier_OnEnd_Params
 {
 };
 
+// Function Addons.STBuffAction_AttrModifier.OnDestroy
+struct USTBuffAction_AttrModifier_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffAction_AttrModifier.OnBuffUpdate
+struct USTBuffAction_AttrModifier_OnBuffUpdate_Params
+{
+	int                                                BuffID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Addons.STBuffAction_AttrModifier.GetAttrModify
 struct USTBuffAction_AttrModifier_GetAttrModify_Params
 {
@@ -12594,6 +12850,22 @@ struct USTBuffAction_CameraTracker_OnEnd_Params
 {
 };
 
+// Function Addons.STBuffAction_ChangeBuffLevel.OnResetExecute
+struct USTBuffAction_ChangeBuffLevel_OnResetExecute_Params
+{
+	bool                                               IgnoreEnd;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffAction_ChangeBuffLevel.OnExecute
+struct USTBuffAction_ChangeBuffLevel_OnExecute_Params
+{
+};
+
+// Function Addons.STBuffAction_ChangeBuffLevel.OnEnd
+struct USTBuffAction_ChangeBuffLevel_OnEnd_Params
+{
+};
+
 // Function Addons.STBuffAction_ChangeGravityScale.OnTick
 struct USTBuffAction_ChangeGravityScale_OnTick_Params
 {
@@ -12650,6 +12922,12 @@ struct USTBuffAction_Cooldown_OnEnd_Params
 {
 };
 
+// Function Addons.STBuffAction_CustomCondDamage.OnResetExecute
+struct USTBuffAction_CustomCondDamage_OnResetExecute_Params
+{
+	bool                                               IgnoreEnd;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Addons.STBuffAction_CustomCondDamage.OnExecute
 struct USTBuffAction_CustomCondDamage_OnExecute_Params
 {
@@ -12673,6 +12951,14 @@ struct USTBuffAction_CustomCondDamage_GetCustomTypeDamageData_Params
 	class AActor*                                      VictimActor;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCustomDamageableInfo*                       uCustomDamageInfo;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FBACustomTypeDamageData                     OutData;                                                  // (Parm, OutParm)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffAction_CustomCondDamage.GetCustomSelfHpDamageData
+struct USTBuffAction_CustomCondDamage_GetCustomSelfHpDamageData_Params
+{
+	class UCustomDamageableInfo*                       uCustomDamageInfo;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FBACustomHpDamageData                       OutData;                                                  // (Parm, OutParm)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -13110,6 +13396,21 @@ struct USTBuffAction_HangInAir_OnEnd_Params
 {
 };
 
+// Function Addons.STBuffAction_HideCrossHair.OnInitialize
+struct USTBuffAction_HideCrossHair_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffAction_HideCrossHair.OnExecute
+struct USTBuffAction_HideCrossHair_OnExecute_Params
+{
+};
+
+// Function Addons.STBuffAction_HideCrossHair.OnEnd
+struct USTBuffAction_HideCrossHair_OnEnd_Params
+{
+};
+
 // Function Addons.STBuffAction_InGameUIMsg.OnExecute
 struct USTBuffAction_InGameUIMsg_OnExecute_Params
 {
@@ -13247,6 +13548,21 @@ struct USTBuffAction_MultiAttrModifier_OnEnd_Params
 struct USTBuffAction_MultiAttrModifier_GetAttrModify_Params
 {
 	class UAttrModifyComponent*                        ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function Addons.STBuffAction_MultipleJump.PreDoJump
+struct USTBuffAction_MultipleJump_PreDoJump_Params
+{
+};
+
+// Function Addons.STBuffAction_MultipleJump.OnExecute
+struct USTBuffAction_MultipleJump_OnExecute_Params
+{
+};
+
+// Function Addons.STBuffAction_MultipleJump.OnEnd
+struct USTBuffAction_MultipleJump_OnEnd_Params
+{
 };
 
 // Function Addons.STBuffAction_OverridePeojectile.OnPlayerProjectileInit
@@ -13589,6 +13905,13 @@ struct USTBuffAction_SetMoveable_OnEnd_Params
 {
 };
 
+// Function Addons.STBuffAction_SetNewCD.OnInitOneSkill
+struct USTBuffAction_SetNewCD_OnInitOneSkill_Params
+{
+	int                                                InSkillID;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInit;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Addons.STBuffAction_SetRecoveryPrompt.OnTick
 struct USTBuffAction_SetRecoveryPrompt_OnTick_Params
 {
@@ -13603,6 +13926,13 @@ struct USTBuffAction_SetRecoveryPrompt_OnExecute_Params
 // Function Addons.STBuffAction_SetRecoveryPrompt.OnEnd
 struct USTBuffAction_SetRecoveryPrompt_OnEnd_Params
 {
+};
+
+// Function Addons.STBuffAction_SetSkillBlackboard.OnInitOneSkill
+struct USTBuffAction_SetSkillBlackboard_OnInitOneSkill_Params
+{
+	int                                                InSkillID;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInit;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.STBuffAction_SpawnActor.OnInitialize
@@ -13811,6 +14141,45 @@ struct USTBuffAction_WeaponAttrModifier_AfterAttrModify_Params
 	struct FBAWeaponAttrModifyConfig                   AttrModifyCfg;                                            // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
+// Function Addons.STBuffAction_WeaponAttrModifierForbid.OnNewWeapon
+struct USTBuffAction_WeaponAttrModifierForbid_OnNewWeapon_Params
+{
+	class ASTExtraWeapon*                              Weapon;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffAction_WeaponAttrModifierForbid.OnInitialize
+struct USTBuffAction_WeaponAttrModifierForbid_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffAction_WeaponAttrModifierForbid.OnExecute
+struct USTBuffAction_WeaponAttrModifierForbid_OnExecute_Params
+{
+};
+
+// Function Addons.STBuffAction_WeaponAttrModifierForbid.OnEnd
+struct USTBuffAction_WeaponAttrModifierForbid_OnEnd_Params
+{
+};
+
+// Function Addons.STBuffAction_WeaponAttrModifierForbid.OnDestroy
+struct USTBuffAction_WeaponAttrModifierForbid_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffAction_WeaponAttrModifierForbid.IsValidWeapon
+struct USTBuffAction_WeaponAttrModifierForbid_IsValidWeapon_Params
+{
+	class ASTExtraShootWeapon*                         ShootWeapon;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffAction_WeaponAttrModifierForbid.HandleAllWeapons
+struct USTBuffAction_WeaponAttrModifierForbid_HandleAllWeapons_Params
+{
+	bool                                               Forbid;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Addons.STBuffAction_WeaponBreakthrough.UnDoBreakthroughIDForAllWeapon
 struct USTBuffAction_WeaponBreakthrough_UnDoBreakthroughIDForAllWeapon_Params
 {
@@ -13927,17 +14296,6 @@ struct USTBuffCondition_HeightGround_CheckIsTrue_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function Addons.STBuffCondition_InPoisonFog.OnInitialize
-struct USTBuffCondition_InPoisonFog_OnInitialize_Params
-{
-};
-
-// Function Addons.STBuffCondition_InPoisonFog.CheckIsTrue
-struct USTBuffCondition_InPoisonFog_CheckIsTrue_Params
-{
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
 // Function Addons.STBuffCondition_IsAI.CheckIsTrue
 struct USTBuffCondition_IsAI_CheckIsTrue_Params
 {
@@ -13956,10 +14314,21 @@ struct USTBuffCondition_IsCDOK_CheckIsTrue_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function Addons.STBuffCondition_IsHasBuff.CheckIsTrue
-struct USTBuffCondition_IsHasBuff_CheckIsTrue_Params
+// Function Addons.STBuffCondition_IsHasBuff.OnRemoveBuff
+struct USTBuffCondition_IsHasBuff_OnRemoveBuff_Params
 {
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	int                                                BuffID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_IsHasBuff.OnAddBuff
+struct USTBuffCondition_IsHasBuff_OnAddBuff_Params
+{
+	int                                                BuffID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               IsExist;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      Causer;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.STBuffCondition_IsHealthOn.OnInitialize
@@ -14056,6 +14425,15 @@ struct USTBuffCondition_IsKeepInState_OnTakeDamageEvent_Params
 	class AController*                                 Controller;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                DamageType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_IsKeepInState.OnPreTakeDamage
+struct USTBuffCondition_IsKeepInState_OnPreTakeDamage_Params
+{
+	float                                              Damage;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FDamageEvent                                DamageEvent;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+	class AActor*                                      Victim;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.STBuffCondition_IsKeepInState.OnInitialize
@@ -14157,8 +14535,6 @@ struct USTBuffCondition_IsKill_CheckIsTrue_Params
 struct USTBuffCondition_IsKillSomeOne_OnRealDeathEvent_Params
 {
 	class AActor*                                      Victim;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	class UActorComponent*                             BuffComponent;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.STBuffCondition_IsKillSomeOne.OnNearDeathEvent
@@ -14188,7 +14564,7 @@ struct USTBuffCondition_IsKillSomeOne_CheckIsTrue_Params
 struct USTBuffCondition_IsLanded_OnMovementChanged_Params
 {
 	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -14204,6 +14580,22 @@ struct USTBuffCondition_IsLanded_OnDestroy_Params
 
 // Function Addons.STBuffCondition_IsLanded.CheckIsTrue
 struct USTBuffCondition_IsLanded_CheckIsTrue_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_IsMoveDistance.OnInitialize
+struct USTBuffCondition_IsMoveDistance_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffCondition_IsMoveDistance.OnDestroy
+struct USTBuffCondition_IsMoveDistance_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffCondition_IsMoveDistance.CheckIsTrue
+struct USTBuffCondition_IsMoveDistance_CheckIsTrue_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -14226,6 +14618,11 @@ struct USTBuffCondition_IsNearDeath_OnInitialize_Params
 
 // Function Addons.STBuffCondition_IsNearDeath.OnDestroy
 struct USTBuffCondition_IsNearDeath_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffCondition_IsNearDeath.IsLeaveNearDeath
+struct USTBuffCondition_IsNearDeath_IsLeaveNearDeath_Params
 {
 };
 
@@ -14378,6 +14775,13 @@ struct USTBuffCondition_IsStartRescue_IsStartRescue_Params
 	bool                                               bIsStart;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
+// Function Addons.STBuffCondition_IsStartRescue.IsStartBeRescued
+struct USTBuffCondition_IsStartRescue_IsStartBeRescued_Params
+{
+	class AActor*                                      RescueCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsStart;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function Addons.STBuffCondition_IsStartRescue.CheckIsTrue
 struct USTBuffCondition_IsStartRescue_CheckIsTrue_Params
 {
@@ -14410,7 +14814,7 @@ struct USTBuffCondition_IsWeaponEquip_IsUnEquipWeapon_Params
 struct USTBuffCondition_IsWeaponEquip_IsEquipWeapon_Params
 {
 	class ASTExtraWeapon*                              Weapon;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           Slot;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                Slot;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.STBuffCondition_IsWeaponEquip.CheckIsTrue
@@ -14484,7 +14888,7 @@ struct USTBuffCondition_LayerSpecific_CheckIsTrue_Params
 struct USTBuffCondition_MovementMode_OnMovementChanged_Params
 {
 	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum EMovementMode>                    PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -14548,8 +14952,8 @@ struct USTBuffCondition_PlayerState_CheckIsTrue_Params
 // Function Addons.STBuffCondition_PoseStateChange.OnPlayerPoseChange
 struct USTBuffCondition_PoseStateChange_OnPlayerPoseChange_Params
 {
-	TEnumAsByte<enum ESTEPoseState>                    LastPose;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<enum ESTEPoseState>                    NewPose;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         LastPose;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         NewPose;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.STBuffCondition_PoseStateChange.OnInitialize
@@ -14568,6 +14972,12 @@ struct USTBuffCondition_PoseStateChange_CheckIsTrue_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Addons.STBuffCondition_Probability.CheckIsTrue
+struct USTBuffCondition_Probability_CheckIsTrue_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
 // Function Addons.STBuffCondition_PropertyLimit.OnInitialize
 struct USTBuffCondition_PropertyLimit_OnInitialize_Params
 {
@@ -14575,6 +14985,30 @@ struct USTBuffCondition_PropertyLimit_OnInitialize_Params
 
 // Function Addons.STBuffCondition_PropertyLimit.CheckIsTrue
 struct USTBuffCondition_PropertyLimit_CheckIsTrue_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_BooleanShared.CheckIsTrue
+struct USTBuffCondition_BooleanShared_CheckIsTrue_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_FloatShared.CheckIsTrue
+struct USTBuffCondition_FloatShared_CheckIsTrue_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_Int32Shared.CheckIsTrue
+struct USTBuffCondition_Int32Shared_CheckIsTrue_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_UInt8Shared.CheckIsTrue
+struct USTBuffCondition_UInt8Shared_CheckIsTrue_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -14598,6 +15032,12 @@ struct USTBuffCondition_Timer_OnInitialize_Params
 
 // Function Addons.STBuffCondition_Timer.CheckIsTrue
 struct USTBuffCondition_Timer_CheckIsTrue_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffCondition_TriggerCount.CheckIsTrue
+struct USTBuffCondition_TriggerCount_CheckIsTrue_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
@@ -14666,6 +15106,401 @@ struct USTBuffCondition_WeaponType_OnInitialize_Params
 struct USTBuffCondition_WeaponType_CheckIsTrue_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_AddBuff.OnRemoveBuff
+struct USTBuffEvent_AddBuff_OnRemoveBuff_Params
+{
+	int                                                BuffID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_AddBuff.OnInitialize
+struct USTBuffEvent_AddBuff_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_AddBuff.OnDestroy
+struct USTBuffEvent_AddBuff_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_AddBuff.OnAddBuff
+struct USTBuffEvent_AddBuff_OnAddBuff_Params
+{
+	int                                                BuffID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               IsExist;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      Causer;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_BuffUpdateEvent.OnInitialize
+struct USTBuffEvent_BuffUpdateEvent_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_BuffUpdateEvent.OnDestroy
+struct USTBuffEvent_BuffUpdateEvent_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_BuffUpdateEvent.OnBuffUpdate
+struct USTBuffEvent_BuffUpdateEvent_OnBuffUpdate_Params
+{
+	int                                                BuffID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_Delay.OnInitialize
+struct USTBuffEvent_Delay_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_Delay.OnDestroy
+struct USTBuffEvent_Delay_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_Delay.OnDelay
+struct USTBuffEvent_Delay_OnDelay_Params
+{
+};
+
+// Function Addons.STBuffEvent_EnterNearDeath.OnInitialize
+struct USTBuffEvent_EnterNearDeath_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_EnterNearDeath.OnEnterNearDeath
+struct USTBuffEvent_EnterNearDeath_OnEnterNearDeath_Params
+{
+	bool                                               bEnter;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_EnterNearDeath.OnDestroy
+struct USTBuffEvent_EnterNearDeath_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_EnterVehicle.OnInitialize
+struct USTBuffEvent_EnterVehicle_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_EnterVehicle.OnEnterVehicle
+struct USTBuffEvent_EnterVehicle_OnEnterVehicle_Params
+{
+	bool                                               IsEnter;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      Vehicle;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_EnterVehicle.OnDestroy
+struct USTBuffEvent_EnterVehicle_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_InCombat.OnOutOfCombat
+struct USTBuffEvent_InCombat_OnOutOfCombat_Params
+{
+};
+
+// Function Addons.STBuffEvent_ItemOperation.OnInitialize
+struct USTBuffEvent_ItemOperation_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_ItemOperation.OnDestroy
+struct USTBuffEvent_ItemOperation_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_ItemOperation.HandleItemCountChanged
+struct USTBuffEvent_ItemOperation_HandleItemCountChanged_Params
+{
+	struct FItemDefineID                               DefineID;                                                 // (Parm)
+	EBattleItemOperationType                           InOperationType;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Count;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_KillSomeOne.OnKnockDownOtherPlayer
+struct USTBuffEvent_KillSomeOne_OnKnockDownOtherPlayer_Params
+{
+	class ASTExtraBaseCharacter*                       Victim;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_KillSomeOne.OnKillSomeOneEvent
+struct USTBuffEvent_KillSomeOne_OnKillSomeOneEvent_Params
+{
+	class AActor*                                      Victim;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_KillSomeOne.OnInitialize
+struct USTBuffEvent_KillSomeOne_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_KillSomeOne.OnDestroy
+struct USTBuffEvent_KillSomeOne_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_MoveDistance.OnInitialize
+struct USTBuffEvent_MoveDistance_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_MoveDistance.OnDestroy
+struct USTBuffEvent_MoveDistance_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_MoveDistance.CheckMoveDistance
+struct USTBuffEvent_MoveDistance_CheckMoveDistance_Params
+{
+};
+
+// Function Addons.STBuffEvent_MovementModeChanged.OnMovementModeChanged
+struct USTBuffEvent_MovementModeChanged_OnMovementModeChanged_Params
+{
+	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EMovementMode>                         PrevMovementMode;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      PreviousCustomMode;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_MovementModeChanged.OnInitialize
+struct USTBuffEvent_MovementModeChanged_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_MovementModeChanged.OnDestroy
+struct USTBuffEvent_MovementModeChanged_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_PawnState.OnPawnStateLeave
+struct USTBuffEvent_PawnState_OnPawnStateLeave_Params
+{
+	EPawnState                                         PawnState;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_PawnState.OnPawnStateEnter
+struct USTBuffEvent_PawnState_OnPawnStateEnter_Params
+{
+	EPawnState                                         PawnState;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_PawnState.OnInitialize
+struct USTBuffEvent_PawnState_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_PawnState.OnDestroy
+struct USTBuffEvent_PawnState_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_PoseChange.OnPlayerPoseChange
+struct USTBuffEvent_PoseChange_OnPlayerPoseChange_Params
+{
+	TEnumAsByte<ESTEPoseState>                         LastPose;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESTEPoseState>                         NewPose;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_PoseChange.OnInitialize
+struct USTBuffEvent_PoseChange_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_PoseChange.OnDestroy
+struct USTBuffEvent_PoseChange_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_PushDamage.OnPushDamage
+struct USTBuffEvent_PushDamage_OnPushDamage_Params
+{
+	float                                              Damage;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FDamageEvent                                DamageEvent;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      DamagedActor;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FExtraDamageInfo                            ExtraDamageInfo;                                          // (ConstParm, Parm, OutParm, ReferenceParm)
+};
+
+// Function Addons.STBuffEvent_PushDamage.OnInitialize
+struct USTBuffEvent_PushDamage_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_PushDamage.OnDestroy
+struct USTBuffEvent_PushDamage_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_RescueFinish.RescueFinish
+struct USTBuffEvent_RescueFinish_RescueFinish_Params
+{
+	class UActorComponent*                             BuffComponent;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	int                                                InstID;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_RescueFinish.OnInitialize
+struct USTBuffEvent_RescueFinish_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_RescueFinish.OnDestroy
+struct USTBuffEvent_RescueFinish_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_SkillDoCoolDown.OnSkillDoCoolDownEvent
+struct USTBuffEvent_SkillDoCoolDown_OnSkillDoCoolDownEvent_Params
+{
+	int                                                InSkillID;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                InCDIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_SkillDoCoolDown.OnInitialize
+struct USTBuffEvent_SkillDoCoolDown_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_SkillDoCoolDown.OnDestroy
+struct USTBuffEvent_SkillDoCoolDown_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_SkillStartEvent.OnSkillStartEvent
+struct USTBuffEvent_SkillStartEvent_OnSkillStartEvent_Params
+{
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_SkillStartEvent.OnInitialize
+struct USTBuffEvent_SkillStartEvent_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_SkillStartEvent.OnDestroy
+struct USTBuffEvent_SkillStartEvent_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_SkillStopEvent.OnSkillStopEvent
+struct USTBuffEvent_SkillStopEvent_OnSkillStopEvent_Params
+{
+	int                                                SkillID;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	EUTSkillStopReason                                 StopReason;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_SkillStopEvent.OnInitialize
+struct USTBuffEvent_SkillStopEvent_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_SkillStopEvent.OnDestroy
+struct USTBuffEvent_SkillStopEvent_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_StartFire.OnInitialize
+struct USTBuffEvent_StartFire_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_StartFire.OnDestroy
+struct USTBuffEvent_StartFire_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_StartFire.OnCharacterStartFire
+struct USTBuffEvent_StartFire_OnCharacterStartFire_Params
+{
+	class ASTExtraWeapon*                              Weapon;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class ASTExtraBaseCharacter*                       Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_StartRescue.OnInitialize
+struct USTBuffEvent_StartRescue_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_StartRescue.OnDestroy
+struct USTBuffEvent_StartRescue_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_StartRescue.IsStartRescue
+struct USTBuffEvent_StartRescue_IsStartRescue_Params
+{
+	class AActor*                                      BeRescue;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsStart;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_StartRescue.IsStartBeRescued
+struct USTBuffEvent_StartRescue_IsStartBeRescued_Params
+{
+	class AActor*                                      RescueCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsStart;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_TakeDamage.OnTakeDamage
+struct USTBuffEvent_TakeDamage_OnTakeDamage_Params
+{
+	float                                              Damage;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FDamageEvent                                DamageEvent;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+	class AActor*                                      DamagedActor;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      DamageCauser;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FExtraDamageInfo                            ExtraDamageInfo;                                          // (ConstParm, Parm, OutParm, ReferenceParm)
+};
+
+// Function Addons.STBuffEvent_TakeDamage.OnInitialize
+struct USTBuffEvent_TakeDamage_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_TakeDamage.OnDestroy
+struct USTBuffEvent_TakeDamage_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_VehicleAvatarChanged.OnInitialize
+struct USTBuffEvent_VehicleAvatarChanged_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_VehicleAvatarChanged.OnDestroy
+struct USTBuffEvent_VehicleAvatarChanged_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_VehicleAvatarChanged.OnAvatarChanged
+struct USTBuffEvent_VehicleAvatarChanged_OnAvatarChanged_Params
+{
+};
+
+// Function Addons.STBuffEvent_WeaponEquip.OnInitialize
+struct USTBuffEvent_WeaponEquip_OnInitialize_Params
+{
+};
+
+// Function Addons.STBuffEvent_WeaponEquip.OnDestroy
+struct USTBuffEvent_WeaponEquip_OnDestroy_Params
+{
+};
+
+// Function Addons.STBuffEvent_WeaponEquip.IsUnEquipWeapon
+struct USTBuffEvent_WeaponEquip_IsUnEquipWeapon_Params
+{
+	class ASTExtraWeapon*                              Weapon;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.STBuffEvent_WeaponEquip.IsEquipWeapon
+struct USTBuffEvent_WeaponEquip_IsEquipWeapon_Params
+{
+	class ASTExtraWeapon*                              Weapon;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                Slot;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.STDestructionComponent.Simple_ServerInitalFragments
@@ -15192,7 +16027,7 @@ struct ATPlanSyncOBDataActor_GetTPlanPlayerInfo_Params
 // Function Addons.TigerDriverAnimInstance.HandlePlayerWeaponStateChanged
 struct UTigerDriverAnimInstance_HandlePlayerWeaponStateChanged_Params
 {
-	TEnumAsByte<enum EFreshWeaponStateType>            NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EFreshWeaponStateType>                 NewState;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.TigerPassengerAnimInstance.HandleOnPreExit
@@ -16045,7 +16880,7 @@ struct UUAESkillAction_JumpByStages_Diving_Params
 // Function Addons.UAESkillAction_JumpPhaseWithState.HandleChangeCurrentUsingWeapon
 struct UUAESkillAction_JumpPhaseWithState_HandleChangeCurrentUsingWeapon_Params
 {
-	TEnumAsByte<enum ESurviveWeaponPropSlot>           TargetChangeSlot;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESurviveWeaponPropSlot>                TargetChangeSlot;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.UAESkillAction_Log.UndoAction_Internal
@@ -16094,6 +16929,13 @@ struct UUAESkillAction_PlayMontage_IsArmed_OnAsyncLoadAnimResFinished_Params
 struct UUAESkillAction_PlayMontage_Pose_IsArmed_OnAsyncLoadAnimResFinished_Params
 {
 	struct FPlayMontageAsyncloadParams                 LoadParams;                                               // (Parm)
+};
+
+// Function Addons.AESkillAction_PlayMontageWithEndAction.OnMontageEnded
+struct UAESkillAction_PlayMontageWithEndAction_OnMontageEnded_Params
+{
+	class UAnimMontage*                                Montage;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bInterrupted;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Addons.UAESkillAction_SetCameraData.ResetCameraData
@@ -16291,6 +17133,11 @@ struct UUTSkillAppearance_SimpleParticleSystem_RealDoActionWrapper_Params
 	class UUTSkillManagerComponent*                    SkillManagerComponent;                                    // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
+// Function Addons.UTSkillAppearance_SimpleParticleSystem.HandleCreateParticleFail
+struct UUTSkillAppearance_SimpleParticleSystem_HandleCreateParticleFail_Params
+{
+};
+
 // Function Addons.UTSkillAppearance_SkillWarning.UndoAction_Internal
 struct UUTSkillAppearance_SkillWarning_UndoAction_Internal_Params
 {
@@ -16373,8 +17220,8 @@ struct UVehicleAvatarComponentAircraft_CollectLoadRes_Params
 	TArray<struct FSoftObjectPath>                     AssetRefArray;                                            // (Parm, OutParm, ZeroConstructor)
 };
 
-// Function Addons.VehicleHitBioVHComponent.UpdateBlockVehicleShapes
-struct UVehicleHitBioVHComponent_UpdateBlockVehicleShapes_Params
+// Function Addons.VehicleHitBioVHComponent.UpdateMuteVehicleShapes
+struct UVehicleHitBioVHComponent_UpdateMuteVehicleShapes_Params
 {
 	float                                              DeltaTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -16396,8 +17243,8 @@ struct UVehicleHitBioVHComponent_ServerRPC_KnockAwayCharacter_Params
 	class UPrimitiveComponent*                         SelfComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
-// Function Addons.VehicleHitBioVHComponent.RegisterBlockVehicleShapes
-struct UVehicleHitBioVHComponent_RegisterBlockVehicleShapes_Params
+// Function Addons.VehicleHitBioVHComponent.RegisterMuteVehicleShapes
+struct UVehicleHitBioVHComponent_RegisterMuteVehicleShapes_Params
 {
 };
 
@@ -16421,8 +17268,8 @@ struct UVehicleHitBioVHComponent_OnPhysVHHitBioTriggered_Params
 	struct FTriggerEvent                               TriggerEvent;                                             // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
-// Function Addons.VehicleHitBioVHComponent.OnBlockShapeTriggered
-struct UVehicleHitBioVHComponent_OnBlockShapeTriggered_Params
+// Function Addons.VehicleHitBioVHComponent.OnMutePhysVehicleTriggered
+struct UVehicleHitBioVHComponent_OnMutePhysVehicleTriggered_Params
 {
 	class AActor*                                      Other;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	class UPrimitiveComponent*                         OtherComp;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
@@ -16456,14 +17303,6 @@ struct UVehicleHitBioVHComponent_MulticastRPC_KnockAwayVehicle_Params
 {
 	class ASTExtraVehicleBase*                         OtherVehicle;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     Vel;                                                      // (Parm, IsPlainOldData)
-};
-
-// Function Addons.VehicleHitBioVHComponent.MulticastRPC_KnockAwayCharacter
-struct UVehicleHitBioVHComponent_MulticastRPC_KnockAwayCharacter_Params
-{
-	class ASTExtraBaseCharacter*                       OtherCharacter;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Vel;                                                      // (Parm, IsPlainOldData)
-	struct FVector                                     HitPoint;                                                 // (Parm, IsPlainOldData)
 };
 
 // Function Addons.VehicleHitBioVHComponent.MulticastRPC_KnockAwayBioVehicle
@@ -16556,6 +17395,245 @@ struct AVehicleLODlimitActor_OnVehicleBeginPlay_Params
 
 // Function Addons.VehicleLODlimitActor.OnUpdateSeatGUI
 struct AVehicleLODlimitActor_OnUpdateSeatGUI_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.UpdatePassengerCameraData
+struct UVehicleNitroBoostComponent_UpdatePassengerCameraData_Params
+{
+	float                                              ElapsedTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.UpdateNitroBoostCamera
+struct UVehicleNitroBoostComponent_UpdateNitroBoostCamera_Params
+{
+	float                                              ElapsedTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.UpdateNitroAppearance
+struct UVehicleNitroBoostComponent_UpdateNitroAppearance_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.UpdateCameraShake
+struct UVehicleNitroBoostComponent_UpdateCameraShake_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              ElapsedTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.UpdateCameraEffect
+struct UVehicleNitroBoostComponent_UpdateCameraEffect_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              ElapsedTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.TickProcessInput
+struct UVehicleNitroBoostComponent_TickProcessInput_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.TickGainNitroEnergy
+struct UVehicleNitroBoostComponent_TickGainNitroEnergy_Params
+{
+	float                                              DeltaTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.SwitchPassengerCameraData
+struct UVehicleNitroBoostComponent_SwitchPassengerCameraData_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	class ASTExtraPlayerCharacter*                     InChar;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.SwitchNitroBoostDriftSetUp
+struct UVehicleNitroBoostComponent_SwitchNitroBoostDriftSetUp_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.SwitchNitroBoostCamera
+struct UVehicleNitroBoostComponent_SwitchNitroBoostCamera_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.SwitchAllPassengerCameraData
+struct UVehicleNitroBoostComponent_SwitchAllPassengerCameraData_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.StartNitroBoostInternal
+struct UVehicleNitroBoostComponent_StartNitroBoostInternal_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.StartNitroBoost
+struct UVehicleNitroBoostComponent_StartNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.ShouldEndNitroBoost
+struct UVehicleNitroBoostComponent_ShouldEndNitroBoost_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.SetNitrogen
+struct UVehicleNitroBoostComponent_SetNitrogen_Params
+{
+	float                                              InNitrogen;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.ServerRPC_StartNitroBoost
+struct UVehicleNitroBoostComponent_ServerRPC_StartNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.ServerRPC_EndNitroBoost
+struct UVehicleNitroBoostComponent_ServerRPC_EndNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.PerformNitroBoost
+struct UVehicleNitroBoostComponent_PerformNitroBoost_Params
+{
+	float                                              ElapsedTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              DeltaTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnVisualAssetLoaded
+struct UVehicleNitroBoostComponent_OnVisualAssetLoaded_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnStartNitroBoost
+struct UVehicleNitroBoostComponent_OnStartNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnRep_NetNitrogen
+struct UVehicleNitroBoostComponent_OnRep_NetNitrogen_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnRep_NetNitroBoostState
+struct UVehicleNitroBoostComponent_OnRep_NetNitroBoostState_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnRep_EnableNitroBoost
+struct UVehicleNitroBoostComponent_OnRep_EnableNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnNitroBoostTick
+struct UVehicleNitroBoostComponent_OnNitroBoostTick_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnEndNitroBoost
+struct UVehicleNitroBoostComponent_OnEndNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnClientExitFromVehicle
+struct UVehicleNitroBoostComponent_OnClientExitFromVehicle_Params
+{
+	class ASTExtraPlayerCharacter*                     Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	ESTExtraVehicleSeatType                            SeatType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.OnClientDriverChange
+struct UVehicleNitroBoostComponent_OnClientDriverChange_Params
+{
+	class ASTExtraBaseCharacter*                       LastDriver;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class ASTExtraBaseCharacter*                       NewDriver;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.LuaShouldEndNitroBoost
+struct UVehicleNitroBoostComponent_LuaShouldEndNitroBoost_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.LuaOnVisualAssetLoaded
+struct UVehicleNitroBoostComponent_LuaOnVisualAssetLoaded_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.LuaOnStartNitroBoost
+struct UVehicleNitroBoostComponent_LuaOnStartNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.LuaOnNitroBoostEnabled
+struct UVehicleNitroBoostComponent_LuaOnNitroBoostEnabled_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.LuaOnEndNitroBoost
+struct UVehicleNitroBoostComponent_LuaOnEndNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.LuaCheckCanNitroBoost
+struct UVehicleNitroBoostComponent_LuaCheckCanNitroBoost_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.IsNitroBoosting
+struct UVehicleNitroBoostComponent_IsNitroBoosting_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.HasNitroBoostAbility
+struct UVehicleNitroBoostComponent_HasNitroBoostAbility_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.FailedNitroBoost
+struct UVehicleNitroBoostComponent_FailedNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.EndNitroBoost
+struct UVehicleNitroBoostComponent_EndNitroBoost_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.EnableNitroBoostAbility
+struct UVehicleNitroBoostComponent_EnableNitroBoostAbility_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.ConstructNitroBoostDriftSetup
+struct UVehicleNitroBoostComponent_ConstructNitroBoostDriftSetup_Params
+{
+};
+
+// Function Addons.VehicleNitroBoostComponent.CheckCanNitroBoost
+struct UVehicleNitroBoostComponent_CheckCanNitroBoost_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.CanEnableNitroBoost
+struct UVehicleNitroBoostComponent_CanEnableNitroBoost_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Addons.VehicleNitroBoostComponent.CacheNitroBoostPowerData
+struct UVehicleNitroBoostComponent_CacheNitroBoostPowerData_Params
 {
 };
 

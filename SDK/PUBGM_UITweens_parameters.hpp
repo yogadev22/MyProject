@@ -1,21 +1,21 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function UITweens.TweenManager.TweenScale
 struct UTweenManager_TweenScale_Params
 {
 	class UWidget*                                     Widget;                                                   // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FVector2D                                   from;                                                     // (Parm, IsPlainOldData)
-	struct FVector2D                                   to;                                                       // (Parm, IsPlainOldData)
+	struct FVector2D                                   From;                                                     // (Parm, IsPlainOldData)
+	struct FVector2D                                   To;                                                       // (Parm, IsPlainOldData)
 	float                                              Timespan;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -24,8 +24,8 @@ struct UTweenManager_TweenScale_Params
 struct UTweenManager_TweenPosition_Params
 {
 	class UWidget*                                     Widget;                                                   // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FVector2D                                   from;                                                     // (Parm, IsPlainOldData)
-	struct FVector2D                                   to;                                                       // (Parm, IsPlainOldData)
+	struct FVector2D                                   From;                                                     // (Parm, IsPlainOldData)
+	struct FVector2D                                   To;                                                       // (Parm, IsPlainOldData)
 	float                                              Timespan;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -34,8 +34,8 @@ struct UTweenManager_TweenPosition_Params
 struct UTweenManager_TweenAlpha_Params
 {
 	class UWidget*                                     Widget;                                                   // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	float                                              from;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              to;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              From;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              To;                                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Timespan;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };

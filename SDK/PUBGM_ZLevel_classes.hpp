@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class ZLevel.ZLevelData
 // 0x00F0 (0x05A0 - 0x04B0)
@@ -16,7 +16,7 @@ public:
 	struct FGameLevelDesc                              LevelDesc;                                                // 0x04B0(0x0018) (Edit)
 	TArray<struct FString>                             TargetClassPaths;                                         // 0x04C8(0x0010) (Edit, ZeroConstructor)
 	struct FString                                     LeveDirectorFilePath;                                     // 0x04D8(0x0010) (Edit, ZeroConstructor)
-	TEnumAsByte<enum ELevelEndCondType>                EndCondType;                                              // 0x04E8(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ELevelEndCondType>                     EndCondType;                                              // 0x04E8(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x04E9(0x0007) MISSED OFFSET
 	struct FString                                     EndCondPar;                                               // 0x04F0(0x0010) (Edit, ZeroConstructor)
 	bool                                               IsLastLevel;                                              // 0x0500(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
@@ -36,7 +36,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ZLevel.ZLevelData");
 		return pStaticClass;
@@ -56,7 +56,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ZLevel.ZSpotSceneComponent");
 		return pStaticClass;
@@ -75,7 +75,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ZLevel.ZMonsterRoadPoint");
 		return pStaticClass;
@@ -98,7 +98,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ZLevel.ZMonsterSpot");
 		return pStaticClass;
@@ -117,7 +117,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ZLevel.ZMonsterSpotGroup");
 		return pStaticClass;
@@ -139,7 +139,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ZLevel.ZPVECircle");
 		return pStaticClass;
@@ -158,7 +158,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class ZLevel.ZPVERelifePoint");
 		return pStaticClass;

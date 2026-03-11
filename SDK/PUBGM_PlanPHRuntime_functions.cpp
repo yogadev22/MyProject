@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PlanPHRuntime.BinFileHelper.Init
 // (Final, Native, Public, BlueprintCallable)
@@ -17,7 +17,7 @@ namespace SDK
 
 int UBinFileHelper::Init(int z4BufferSize, int zeroListSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.BinFileHelper.Init");
 
@@ -44,7 +44,7 @@ int UBinFileHelper::Init(int z4BufferSize, int zeroListSize)
 
 void UMapBarrierWidget::SetMapStructureData(TArray<struct FStructureData> InMapStructureData)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.MapBarrierWidget.SetMapStructureData");
 
@@ -68,7 +68,7 @@ void UMapBarrierWidget::SetMapStructureData(TArray<struct FStructureData> InMapS
 
 void UMapBarrierWidget::SetMapMidPoint(struct FVector2D* InMapMidPoint)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.MapBarrierWidget.SetMapMidPoint");
 
@@ -94,7 +94,7 @@ void UMapBarrierWidget::SetMapMidPoint(struct FVector2D* InMapMidPoint)
 
 void UMapBarrierWidget::SetLevelBoundExtent(int InLevelBoundExtent)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.MapBarrierWidget.SetLevelBoundExtent");
 
@@ -118,7 +118,7 @@ void UMapBarrierWidget::SetLevelBoundExtent(int InLevelBoundExtent)
 
 void UMapBarrierWidget::SetGridSize(float InGridSize)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.MapBarrierWidget.SetGridSize");
 
@@ -142,7 +142,7 @@ void UMapBarrierWidget::SetGridSize(float InGridSize)
 
 void APlanPH_GameMode::HandleNavigationInfo(class AController* Controller)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameMode.HandleNavigationInfo");
 
@@ -167,7 +167,7 @@ void APlanPH_GameMode::HandleNavigationInfo(class AController* Controller)
 
 class ASTExtraPlayerStart* APlanPH_GameMode::GetPlayerStart(int LandId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameMode.GetPlayerStart");
 
@@ -194,7 +194,7 @@ class ASTExtraPlayerStart* APlanPH_GameMode::GetPlayerStart(int LandId)
 
 void APlanPH_GameMode::DSPlayerKickOut(uint64_t UID, const struct FName& PlayerType, const struct FString& ExitReason)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameMode.DSPlayerKickOut");
 
@@ -218,7 +218,7 @@ void APlanPH_GameMode::DSPlayerKickOut(uint64_t UID, const struct FName& PlayerT
 
 void APlanPH_GameState::OnRep_PartyDanceLeadInfo_5()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameState.OnRep_PartyDanceLeadInfo_5");
 
@@ -239,7 +239,7 @@ void APlanPH_GameState::OnRep_PartyDanceLeadInfo_5()
 
 void APlanPH_GameState::OnRep_PartyDanceLeadInfo_4()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameState.OnRep_PartyDanceLeadInfo_4");
 
@@ -260,7 +260,7 @@ void APlanPH_GameState::OnRep_PartyDanceLeadInfo_4()
 
 void APlanPH_GameState::OnRep_PartyDanceLeadInfo_3()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameState.OnRep_PartyDanceLeadInfo_3");
 
@@ -281,7 +281,7 @@ void APlanPH_GameState::OnRep_PartyDanceLeadInfo_3()
 
 void APlanPH_GameState::OnRep_PartyDanceLeadInfo_2()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameState.OnRep_PartyDanceLeadInfo_2");
 
@@ -304,7 +304,7 @@ void APlanPH_GameState::OnRep_PartyDanceLeadInfo_2()
 
 void APlanPH_GameState::LuaOnRep_PartyDanceLeadInfo(int LandId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameState.LuaOnRep_PartyDanceLeadInfo");
 
@@ -332,7 +332,7 @@ void APlanPH_GameState::LuaOnRep_PartyDanceLeadInfo(int LandId)
 
 void APlanPH_GameState::ChangePartyLeadInfo(int LandId, bool bOccupied, int BeginTime, int EndTime, const struct FString& PlayerUID, bool bIsWedding)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_GameState.ChangePartyLeadInfo");
 
@@ -362,7 +362,7 @@ void APlanPH_GameState::ChangePartyLeadInfo(int LandId, bool bOccupied, int Begi
 
 void APlanPH_PlayerState::RequestPaintDecal(int DecalId, const struct FTransform& TargetTransform)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_PlayerState.RequestPaintDecal");
 
@@ -385,7 +385,7 @@ void APlanPH_PlayerState::RequestPaintDecal(int DecalId, const struct FTransform
 
 void APlanPH_PlayerState::OnRep_LandId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_PlayerState.OnRep_LandId");
 
@@ -406,7 +406,7 @@ void APlanPH_PlayerState::OnRep_LandId()
 
 void APlanPH_PlayerState::InitLandId()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_PlayerState.InitLandId");
 
@@ -429,7 +429,7 @@ void APlanPH_PlayerState::InitLandId()
 
 bool APlanPH_PlayerState::CanPaintDecal(int DecalId)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPH_PlayerState.CanPaintDecal");
 
@@ -455,7 +455,7 @@ bool APlanPH_PlayerState::CanPaintDecal(int DecalId)
 
 void UPlanPHCustomStaticMeshComponent::BPPreSetStaticMesh(class UStaticMesh* NewMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHCustomStaticMeshComponent.BPPreSetStaticMesh");
 
@@ -478,7 +478,7 @@ void UPlanPHCustomStaticMeshComponent::BPPreSetStaticMesh(class UStaticMesh* New
 
 void UPlanPHCustomStaticMeshComponent::BPPostSetStaticMesh(class UStaticMesh* NewMesh)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHCustomStaticMeshComponent.BPPostSetStaticMesh");
 
@@ -502,7 +502,7 @@ void UPlanPHCustomStaticMeshComponent::BPPostSetStaticMesh(class UStaticMesh* Ne
 
 void APlanPHDoor::Refresh_DoorCollisionChanel(class UStaticMeshComponent* StaticMeshComponent, bool bEnableCollision)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHDoor.Refresh_DoorCollisionChanel");
 
@@ -528,7 +528,7 @@ void APlanPHDoor::Refresh_DoorCollisionChanel(class UStaticMeshComponent* Static
 
 void APlanPHDoor::DoorAniFinish(class UStaticMeshComponent* InDoorCheckBox, bool Bright)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHDoor.DoorAniFinish");
 
@@ -555,7 +555,7 @@ void APlanPHDoor::DoorAniFinish(class UStaticMeshComponent* InDoorCheckBox, bool
 
 float UPlanPHGameplayStatics::SpinEvaluate(float S, float T)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHGameplayStatics.SpinEvaluate");
 
@@ -585,7 +585,7 @@ float UPlanPHGameplayStatics::SpinEvaluate(float S, float T)
 
 bool UPlanPHGameplayStatics::SetPlayerMovementBlendTime(class ASTExtraPlayerCharacter* PlayerChar, int nType, float BlendTime)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHGameplayStatics.SetPlayerMovementBlendTime");
 
@@ -614,7 +614,7 @@ bool UPlanPHGameplayStatics::SetPlayerMovementBlendTime(class ASTExtraPlayerChar
 
 void UPlanPHGameplayStatics::GetActorBound(class AActor* Actor, struct FVector* Size)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHGameplayStatics.GetActorBound");
 
@@ -642,7 +642,7 @@ void UPlanPHGameplayStatics::GetActorBound(class AActor* Actor, struct FVector* 
 
 void UPlanPHGameplayStatics::ChangeLightChannel(class UPrimitiveComponent* InComponent, int InChannelBitMask)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHGameplayStatics.ChangeLightChannel");
 
@@ -668,7 +668,7 @@ void UPlanPHGameplayStatics::ChangeLightChannel(class UPrimitiveComponent* InCom
 
 void APlanPHHomeArea::UpdateEditableArea(const struct FIntVector& InMinGridIndexXYZ, const struct FIntVector& InMaxGridIndexXYZ)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHHomeArea.UpdateEditableArea");
 
@@ -693,7 +693,7 @@ void APlanPHHomeArea::UpdateEditableArea(const struct FIntVector& InMinGridIndex
 
 void UPlanPHHomeAreaVisualizationComponent::ShowGrids(bool InBShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHHomeAreaVisualizationComponent.ShowGrids");
 
@@ -718,7 +718,7 @@ void UPlanPHHomeAreaVisualizationComponent::ShowGrids(bool InBShow)
 
 bool UPlanPHMapData::RemovePlayerItem(class ASTExtraPlayerCharacter* PlayerCharacterItem)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHMapData.RemovePlayerItem");
 
@@ -748,7 +748,7 @@ bool UPlanPHMapData::RemovePlayerItem(class ASTExtraPlayerCharacter* PlayerChara
 
 bool UPlanPHMapData::AddPlayerItem(class ASTExtraPlayerCharacter* PlayerCharacterItem, class UWidget* PlayerInfoBPItem, class UWidget* PlayerInfoRotWidgetItem, const struct FVector& OffsetLocation)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHMapData.AddPlayerItem");
 
@@ -775,7 +775,7 @@ bool UPlanPHMapData::AddPlayerItem(class ASTExtraPlayerCharacter* PlayerCharacte
 
 void APlanPHSpectatorPawn::OnSpectatorRestart()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHSpectatorPawn.OnSpectatorRestart");
 
@@ -797,7 +797,7 @@ void APlanPHSpectatorPawn::OnSpectatorRestart()
 
 void APlanPHSpectatorPawn::MoveRight(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHSpectatorPawn.MoveRight");
 
@@ -821,7 +821,7 @@ void APlanPHSpectatorPawn::MoveRight(float Val)
 
 void APlanPHSpectatorPawn::MoveForward(float Val)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHSpectatorPawn.MoveForward");
 
@@ -845,7 +845,7 @@ void APlanPHSpectatorPawn::MoveForward(float Val)
 
 void UPlanPHVisualGridComponent::ShowGrids(bool InBShow)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHVisualGridComponent.ShowGrids");
 
@@ -867,7 +867,7 @@ void UPlanPHVisualGridComponent::ShowGrids(bool InBShow)
 
 void UPlanPHVisualGridComponent::RefreshGrids()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function PlanPHRuntime.PlanPHVisualGridComponent.RefreshGrids");
 

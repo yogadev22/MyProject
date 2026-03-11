@@ -1,14 +1,14 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Parameters
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.GetInstance
 struct UBP_PandoraPickerLibraryLibrary_GetInstance_Params
@@ -49,7 +49,7 @@ struct UBP_PandoraPickerLibraryLibrary_BP_OpenImageLibraryWithOrg_Params
 	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     SecretKey;                                                // (Parm, ZeroConstructor)
-	struct FString                                     savedPath;                                                // (Parm, ZeroConstructor)
+	struct FString                                     SavedPath;                                                // (Parm, ZeroConstructor)
 };
 
 // Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_OpenImageLibraryVideo
@@ -64,7 +64,7 @@ struct UBP_PandoraPickerLibraryLibrary_BP_OpenImageLibraryNoCut_Params
 	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     SecretKey;                                                // (Parm, ZeroConstructor)
-	struct FString                                     savedPath;                                                // (Parm, ZeroConstructor)
+	struct FString                                     SavedPath;                                                // (Parm, ZeroConstructor)
 };
 
 // Function PandoraPickerPlugin.BP_PandoraPickerLibraryLibrary.BP_OpenImageLibrary
@@ -73,7 +73,7 @@ struct UBP_PandoraPickerLibraryLibrary_BP_OpenImageLibrary_Params
 	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     SecretKey;                                                // (Parm, ZeroConstructor)
-	struct FString                                     savedPath;                                                // (Parm, ZeroConstructor)
+	struct FString                                     SavedPath;                                                // (Parm, ZeroConstructor)
 };
 
 }

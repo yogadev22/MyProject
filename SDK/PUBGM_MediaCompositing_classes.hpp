@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class MediaCompositing.MediaPlane
 // 0x0008 (0x04B8 - 0x04B0)
@@ -17,7 +17,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MediaCompositing.MediaPlane");
 		return pStaticClass;
@@ -27,16 +27,15 @@ public:
 
 
 // Class MediaCompositing.MediaPlaneComponent
-// 0x00D0 (0x09F0 - 0x0920)
+// 0x00C0 (0x09F0 - 0x0930)
 class UMediaPlaneComponent : public UPrimitiveComponent
 {
 public:
-	struct FMediaPlaneParameters                       Plane;                                                    // 0x0920(0x0038) (Edit)
-	unsigned char                                      UnknownData00[0x98];                                      // 0x0958(0x0098) MISSED OFFSET
+	unsigned char                                      UnknownData00[0xC0];                                      // 0x0930(0x00C0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MediaCompositing.MediaPlaneComponent");
 		return pStaticClass;
@@ -50,14 +49,14 @@ public:
 
 
 // Class MediaCompositing.MediaPlaneFrustumComponent
-// 0x0000 (0x0920 - 0x0920)
+// 0x0000 (0x0930 - 0x0930)
 class UMediaPlaneFrustumComponent : public UPrimitiveComponent
 {
 public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MediaCompositing.MediaPlaneFrustumComponent");
 		return pStaticClass;
@@ -83,7 +82,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MediaCompositing.MovieSceneMediaSection");
 		return pStaticClass;
@@ -100,7 +99,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class MediaCompositing.MovieSceneMediaTrack");
 		return pStaticClass;

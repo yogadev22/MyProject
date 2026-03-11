@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class BlockyLua.Blocky3DVarWidget
 // 0x0068 (0x02C8 - 0x0260)
@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.Blocky3DVarWidget");
 		return pStaticClass;
@@ -52,7 +52,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyBlockDisplayWidget");
 		return pStaticClass;
@@ -72,7 +72,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyBlockDisplayWidget_Custom");
 		return pStaticClass;
@@ -80,7 +80,7 @@ public:
 
 
 	void UpdateName(const struct FString& Name);
-	void Init(TEnumAsByte<enum ECustomBlockType> Type);
+	void Init(TEnumAsByte<ECustomBlockType> Type);
 };
 
 
@@ -92,7 +92,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyBlockDisplayWidget_Preset");
 		return pStaticClass;
@@ -116,7 +116,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyBlockDisplayWidget_Variable");
 		return pStaticClass;
@@ -143,7 +143,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyBlockListWidget");
 		return pStaticClass;
@@ -163,7 +163,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyBlockWindowWidget");
 		return pStaticClass;
@@ -188,7 +188,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyBooleanWidget");
 		return pStaticClass;
@@ -216,7 +216,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyCategoryItemWidget");
 		return pStaticClass;
@@ -227,6 +227,7 @@ public:
 	void OnScroll();
 	void OnClick();
 	void InitWithItemObject(class UBlockyCategoryItemObject* Item);
+	void InitTextToShow();
 };
 
 
@@ -245,7 +246,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyCategoryWidget");
 		return pStaticClass;
@@ -270,7 +271,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyColorPickerWidget");
 		return pStaticClass;
@@ -328,7 +329,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyEditor");
 		return pStaticClass;
@@ -373,7 +374,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyEnumWidget");
 		return pStaticClass;
@@ -396,7 +397,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyFloatWidget");
 		return pStaticClass;
@@ -422,14 +423,14 @@ public:
 	bool                                               IsOnTouch;                                                // 0x02D8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsMoveGraphOnly;                                          // 0x02D9(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x02DA(0x0006) MISSED OFFSET
-	struct FScriptDelegate                             OnAsyncLoadBinCompletedHandle;                            // 0x02E0(0x0016) (Edit, BlueprintVisible, ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             OnAsyncLoadBinCompletedHandle;                            // 0x02E0(0x0010) (Edit, BlueprintVisible, ZeroConstructor, InstancedReference)
 	class UDeleteBlockUI*                              DeleteBlockUI;                                            // 0x02F0(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               IsShowSaveTemplate;                                       // 0x02F8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x7];                                       // 0x02F9(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyGraphWidget");
 		return pStaticClass;
@@ -531,7 +532,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyGroupItemWidget");
 		return pStaticClass;
@@ -550,7 +551,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyGroupWidget");
 		return pStaticClass;
@@ -575,7 +576,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyIntegerWidget");
 		return pStaticClass;
@@ -601,7 +602,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLogItemWidget");
 		return pStaticClass;
@@ -631,7 +632,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLogWidget");
 		return pStaticClass;
@@ -672,7 +673,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLuaLoopScrollBase");
 		return pStaticClass;
@@ -716,7 +717,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLuaLoopScrollBase_MultiItem");
 		return pStaticClass;
@@ -757,7 +758,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLuaLoopScrollBox");
 		return pStaticClass;
@@ -780,7 +781,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLuaLoopScrollBox_MultiItem");
 		return pStaticClass;
@@ -807,7 +808,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLuaLoopScrollGrid");
 		return pStaticClass;
@@ -831,7 +832,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyMenuItemWidget");
 		return pStaticClass;
@@ -841,6 +842,7 @@ public:
 	void SetSelected(bool IsSelected);
 	void OnClick();
 	void InitWithItemObject(class UBlockyMenuItemObject* Item);
+	void InitTextToShow();
 };
 
 
@@ -855,7 +857,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyMenuWidget");
 		return pStaticClass;
@@ -880,7 +882,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyPresetItemWidget");
 		return pStaticClass;
@@ -908,7 +910,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyPresetWidget");
 		return pStaticClass;
@@ -935,7 +937,7 @@ class UBlockyRichTextBlock : public UTextLayoutWidget
 {
 public:
 	struct FText                                       Text;                                                     // 0x0128(0x0018) (Edit)
-	struct FScriptDelegate                             TextDelegate;                                             // 0x0140(0x0016) (ZeroConstructor, InstancedReference)
+	struct FScriptDelegate                             TextDelegate;                                             // 0x0140(0x0010) (ZeroConstructor, InstancedReference)
 	struct FSlateFontInfo                              Font;                                                     // 0x0150(0x0058) (Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FLinearColor                                Color;                                                    // 0x01A8(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData)
 	TArray<class URichTextBlockDecorator*>             Decorators;                                               // 0x01B8(0x0010) (Edit, ExportObject, ZeroConstructor)
@@ -943,7 +945,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyRichTextBlock");
 		return pStaticClass;
@@ -998,7 +1000,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockySearchResultPanel");
 		return pStaticClass;
@@ -1034,7 +1036,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockySearchResults_GraphItemWidget");
 		return pStaticClass;
@@ -1063,7 +1065,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockySearchResults_GraphWidget");
 		return pStaticClass;
@@ -1091,7 +1093,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockySearchResultsTab");
 		return pStaticClass;
@@ -1128,7 +1130,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockySearchWidget");
 		return pStaticClass;
@@ -1185,7 +1187,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockySelectFromSceneWidget");
 		return pStaticClass;
@@ -1215,7 +1217,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyStringWidget");
 		return pStaticClass;
@@ -1245,7 +1247,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.CustomizeEditableText");
 		return pStaticClass;
@@ -1255,7 +1257,7 @@ public:
 	void SetNewText(const struct FText& InText);
 	void ReceiveCheckStringResultProcess(bool Result, const struct FString& ValidString, const struct FCheckStringHandleData& Data);
 	void OpenKeyBoard();
-	void OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<enum ETextCommit> CommitMethod, int SerialId);
+	void OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<ETextCommit> CommitMethod, int SerialId);
 	struct FText GetValidText();
 };
 
@@ -1276,7 +1278,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.CustomizeEditableTextBox");
 		return pStaticClass;
@@ -1285,7 +1287,7 @@ public:
 
 	void SetNewText(const struct FText& InText);
 	void ReceiveCheckStringResultProcess(bool Result, const struct FString& ValidString, const struct FCheckStringHandleData& Data);
-	void OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<enum ETextCommit> CommitMethod, int SerialId);
+	void OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<ETextCommit> CommitMethod, int SerialId);
 	struct FText GetValidText();
 };
 
@@ -1306,7 +1308,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.CustomizeMultiLineEditableTextBox");
 		return pStaticClass;
@@ -1315,9 +1317,9 @@ public:
 
 	void SetNewText(const struct FText& InText);
 	void ReceiveCheckStringResultProcess(bool Result, const struct FString& ValidString, const struct FCheckStringHandleData& Data);
-	void OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<enum ETextCommit> CommitMethod, int SerialId);
+	void OnMultiLineEditableTextBoxCommittedWithSerialIdEvent__DelegateSignature(const struct FText& CommittedText, TEnumAsByte<ETextCommit> CommitMethod, int SerialId);
 	struct FText GetValidText();
-	void CheckStringValidProcess(const struct FText& InText, TEnumAsByte<enum ETextCommit> CommitMethod);
+	void CheckStringValidProcess(const struct FText& InText, TEnumAsByte<ETextCommit> CommitMethod);
 };
 
 
@@ -1335,7 +1337,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.DeleteBlockUI");
 		return pStaticClass;
@@ -1358,7 +1360,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyAutoScrollBox");
 		return pStaticClass;
@@ -1396,7 +1398,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLoopScrollBase");
 		return pStaticClass;
@@ -1439,7 +1441,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLoopScrollBox");
 		return pStaticClass;
@@ -1464,7 +1466,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class BlockyLua.BlockyLoopScrollGrid");
 		return pStaticClass;

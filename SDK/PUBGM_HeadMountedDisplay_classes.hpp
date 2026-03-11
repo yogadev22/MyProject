@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Classes
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Class HeadMountedDisplay.HeadMountedDisplayFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -16,7 +16,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HeadMountedDisplay.HeadMountedDisplayFunctionLibrary");
 		return pStaticClass;
@@ -24,12 +24,12 @@ public:
 
 
 	static void SetWorldToMetersScale(class UObject* WorldContext, float NewScale);
-	static void SetTrackingOrigin(TEnumAsByte<enum EHMDTrackingOrigin> Origin);
+	static void SetTrackingOrigin(TEnumAsByte<EHMDTrackingOrigin> Origin);
 	static void SetSpectatorScreenTexture(class UTexture* InTexture);
 	static void SetSpectatorScreenModeTexturePlusEyeLayout(const struct FVector2D& EyeRectMin, const struct FVector2D& EyeRectMax, const struct FVector2D& TextureRectMin, const struct FVector2D& TextureRectMax, bool bDrawEyeFirst, bool bClearBlack);
 	static void SetSpectatorScreenMode(ESpectatorScreenMode Mode);
 	static void SetClippingPlanes(float Near, float Far);
-	static void ResetOrientationAndPosition(float Yaw, TEnumAsByte<enum EOrientPositionSelector> Options);
+	static void ResetOrientationAndPosition(float Yaw, TEnumAsByte<EOrientPositionSelector> Options);
 	static bool IsSpectatorScreenModeControllable();
 	static bool IsInLowPersistenceMode();
 	static bool IsHeadMountedDisplayEnabled();
@@ -38,12 +38,12 @@ public:
 	static float GetWorldToMetersScale(class UObject* WorldContext);
 	static void GetVRFocusState(bool* bUseFocus, bool* bHasFocus);
 	static void GetTrackingSensorParameters(int Index, struct FRotator* Rotation, float* LeftFOV, float* RightFOV, float* TopFOV, struct FVector* Origin, float* Distance, float* NearPlane, float* FarPlane, bool* IsActive, float* BottomFOV);
-	static TEnumAsByte<enum EHMDTrackingOrigin> GetTrackingOrigin();
+	static TEnumAsByte<EHMDTrackingOrigin> GetTrackingOrigin();
 	static float GetScreenPercentage();
 	static void GetPositionalTrackingCameraParameters(struct FVector* CameraOrigin, struct FRotator* CameraRotation, float* HFOV, float* VFOV, float* CameraDistance, float* NearPlane, float* FarPlane);
 	static void GetOrientationAndPosition(struct FRotator* DeviceRotation, struct FVector* DevicePosition);
 	static int GetNumOfTrackingSensors();
-	static TEnumAsByte<enum EHMDWornState> GetHMDWornState();
+	static TEnumAsByte<EHMDWornState> GetHMDWornState();
 	static struct FName GetHMDDeviceName();
 	static void EnableLowPersistenceMode(bool bEnable);
 	static bool EnableHMD(bool bEnable);
@@ -51,19 +51,15 @@ public:
 
 
 // Class HeadMountedDisplay.MotionControllerComponent
-// 0x0060 (0x0980 - 0x0920)
+// 0x0060 (0x0990 - 0x0930)
 class UMotionControllerComponent : public UPrimitiveComponent
 {
 public:
-	int                                                playerIndex;                                              // 0x0920(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EControllerHand                                    Hand;                                                     // 0x0924(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      bDisableLowLatencyUpdate : 1;                             // 0x0925(0x0001) (Edit, BlueprintVisible)
-	ETrackingStatus                                    CurrentTrackingStatus;                                    // 0x0926(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x59];                                      // 0x0927(0x0059) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x60];                                      // 0x0930(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HeadMountedDisplay.MotionControllerComponent");
 		return pStaticClass;
@@ -82,7 +78,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary");
 		return pStaticClass;
@@ -121,7 +117,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-        static UClass *pStaticClass = nullptr;
+        static UClass *pStaticClass = 0;
         if (!pStaticClass)
             pStaticClass = UObject::FindClass("Class HeadMountedDisplay.VRNotificationsComponent");
 		return pStaticClass;

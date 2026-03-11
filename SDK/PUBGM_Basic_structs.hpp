@@ -1,12 +1,12 @@
 #pragma once
 
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Enums
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Enum Basic.EAttrOperator
 enum class EAttrOperator : uint8_t
@@ -312,6 +312,62 @@ enum class ESkillPropSubType : uint8_t
 };
 
 
+// Enum Basic.EBuffTriggerInactiveExecuteType
+enum class EBuffTriggerInactiveExecuteType : uint8_t
+{
+	EBuffTriggerInactiveExecuteType__None = 0,
+	EBuffTriggerInactiveExecuteType__Disabled = 1,
+	EBuffTriggerInactiveExecuteType__DisabledEnd = 2,
+	EBuffTriggerInactiveExecuteType__EBuffTriggerInactiveExecuteType_MAX = 3
+};
+
+
+// Enum Basic.EBuffTriggerActiveExecuteType
+enum class EBuffTriggerActiveExecuteType : uint8_t
+{
+	EBuffTriggerActiveExecuteType__Enabled = 0,
+	EBuffTriggerActiveExecuteType__ReAction = 1,
+	EBuffTriggerActiveExecuteType__EBuffTriggerActiveExecuteType_MAX = 2
+};
+
+
+// Enum Basic.EBuffSharedType
+enum class EBuffSharedType : uint8_t
+{
+	EBuffSharedType__None          = 0,
+	EBuffSharedType__Target        = 1,
+	EBuffSharedType__Boolean       = 2,
+	EBuffSharedType__UInt8         = 3,
+	EBuffSharedType__Float         = 4,
+	EBuffSharedType__Int32         = 5,
+	EBuffSharedType__Vector        = 6,
+	EBuffSharedType__Rotator       = 7,
+	EBuffSharedType__Name          = 8,
+	EBuffSharedType__String        = 9,
+	EBuffSharedType__EBuffSharedType_MAX = 10
+};
+
+
+// Enum Basic.EBuffTriggerState
+enum class EBuffTriggerState : uint8_t
+{
+	EBuffTriggerState__None        = 0,
+	EBuffTriggerState__Inactive    = 1,
+	EBuffTriggerState__Activated   = 2,
+	EBuffTriggerState__End         = 3,
+	EBuffTriggerState__EBuffTriggerState_MAX = 4
+};
+
+
+// Enum Basic.EBuffTriggerType
+enum class EBuffTriggerType : uint8_t
+{
+	EBuffTriggerType__Instant      = 0,
+	EBuffTriggerType__Sustained    = 1,
+	EBuffTriggerType__EBuffTriggerType_MAX = 2
+};
+
+
 // Enum Basic.EDeviceLevel
 enum class EDeviceLevel : uint8_t
 {
@@ -361,6 +417,15 @@ enum class EBuffConditionExecuteTimeType : uint8_t
 	EBuffConditionExecuteTimeType__FirstTime = 0,
 	EBuffConditionExecuteTimeType__EveryTime = 1,
 	EBuffConditionExecuteTimeType__EBuffConditionExecuteTimeType_MAX = 2
+};
+
+
+// Enum Basic.EBuffConditionFalseExecuteTypeNew
+enum class EBuffConditionFalseExecuteTypeNew : uint8_t
+{
+	EBuffConditionFalseExecuteTypeNew__None = 0,
+	EBuffConditionFalseExecuteTypeNew__EndAction = 1,
+	EBuffConditionFalseExecuteTypeNew__EBuffConditionFalseExecuteTypeNew_MAX = 2
 };
 
 
@@ -561,6 +626,18 @@ enum class ELostConnectionToDSReason : uint8_t
 };
 
 
+// Enum Basic.ECommonCompare
+enum class ECommonCompare : uint8_t
+{
+	ECommonCompare__Greater        = 0,
+	ECommonCompare__Equal          = 1,
+	ECommonCompare__Less           = 2,
+	ECommonCompare__GreaterOrEqual = 3,
+	ECommonCompare__LessOrEqual    = 4,
+	ECommonCompare__ECommonCompare_MAX = 5
+};
+
+
 // Enum Basic.EAngleRotationDirectionType
 enum class EAngleRotationDirectionType : uint8_t
 {
@@ -572,9 +649,9 @@ enum class EAngleRotationDirectionType : uint8_t
 
 
 
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Script Structs
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // ScriptStruct Basic.AnimListData
 // 0x0010
@@ -977,10 +1054,26 @@ struct FConditionIndex
 struct FBuffCheckConditionWrapperItem
 {
 	struct FConditionIndex                             ConditionIndex;                                           // 0x0000(0x0004) (Edit, BlueprintVisible)
-	EBuffConditionInitializeType                       InitializeType;                                           // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffConditionTrueExecuteType                      TrueExecType;                                             // 0x0005(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	EBuffConditionFalseExecuteType                     FalseExecType;                                            // 0x0006(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1];                                       // 0x0007(0x0001) MISSED OFFSET
+	EBuffConditionFalseExecuteType                     FalseExecType;                                            // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
+	EBuffConditionFalseExecuteTypeNew                  FalseActionType;                                          // 0x0005(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
+};
+
+// ScriptStruct Basic.TriggerIndex
+// 0x0004
+struct FTriggerIndex
+{
+	int                                                Index;                                                    // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct Basic.BuffTriggerWrapperItem
+// 0x0008
+struct FBuffTriggerWrapperItem
+{
+	struct FTriggerIndex                               TriggerIndex;                                             // 0x0000(0x0004) (Edit, BlueprintVisible)
+	EBuffTriggerActiveExecuteType                      ActiveExecuteType;                                        // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	EBuffTriggerInactiveExecuteType                    InactiveExecuteType;                                      // 0x0005(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
 };
 
 // ScriptStruct Basic.BuffConditionActionItem
@@ -1028,6 +1121,15 @@ struct FBuffIncNetArray
 {
 	TArray<struct FBuffNetArrayUnit>                   IncArray;                                                 // 0x0000(0x0010) (ZeroConstructor)
 	unsigned char                                      UnknownData00[0x10];                                      // 0x0010(0x0010) MISSED OFFSET
+};
+
+// ScriptStruct Basic.BuffReplaceData
+// 0x0008
+struct FBuffReplaceData
+{
+	int                                                ID;                                                       // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               bBuffInst;                                                // 0x0004(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
 };
 
 // ScriptStruct Basic.StringMap
@@ -1090,6 +1192,16 @@ struct FPendingRegionNetworkObject
 	class UObject*                                     RegionObject;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
 	struct FRegionID                                   OldRegionID;                                              // 0x0008(0x000C)
 	struct FRegionID                                   NewRegionID;                                              // 0x0014(0x000C)
+};
+
+// ScriptStruct Basic.RPCShareSerializationFunctionPresetConfig
+// 0x0030
+struct FRPCShareSerializationFunctionPresetConfig
+{
+	struct FSoftClassPath                              ClassPath;                                                // 0x0000(0x0018) (Edit)
+	struct FString                                     FunctionName;                                             // 0x0018(0x0010) (Edit, ZeroConstructor)
+	bool                                               bEligible;                                                // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct Basic.BattleItemSpectatingData
@@ -1426,18 +1538,80 @@ struct FSTBuffInstancedItem
 	unsigned char                                      UnknownData01[0x5F];                                      // 0x0061(0x005F) MISSED OFFSET
 };
 
-// ScriptStruct Basic.BuffActionShared
-// 0x0001
-struct FBuffActionShared
+// ScriptStruct Basic.BuffShared
+// 0x0008
+struct FBuffShared
 {
-	unsigned char                                      UnknownData00[0x1];                                       // 0x0000(0x0001) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
+};
+
+// ScriptStruct Basic.BuffStringShared
+// 0x0010 (0x0018 - 0x0008)
+struct FBuffStringShared : public FBuffShared
+{
+	struct FString                                     Value;                                                    // 0x0008(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct Basic.BuffNameShared
+// 0x0008 (0x0010 - 0x0008)
+struct FBuffNameShared : public FBuffShared
+{
+	struct FName                                       Value;                                                    // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct Basic.BuffRotatorShared
+// 0x0010 (0x0018 - 0x0008)
+struct FBuffRotatorShared : public FBuffShared
+{
+	struct FRotator                                    Value;                                                    // 0x0008(0x000C) (IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0014(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct Basic.BuffVectorShared
+// 0x0010 (0x0018 - 0x0008)
+struct FBuffVectorShared : public FBuffShared
+{
+	struct FVector                                     Value;                                                    // 0x0008(0x000C) (IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0014(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct Basic.BuffInt32Shared
+// 0x0008 (0x0010 - 0x0008)
+struct FBuffInt32Shared : public FBuffShared
+{
+	int                                                Value;                                                    // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct Basic.BuffFloatShared
+// 0x0008 (0x0010 - 0x0008)
+struct FBuffFloatShared : public FBuffShared
+{
+	float                                              Value;                                                    // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x000C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct Basic.BuffUInt8Shared
+// 0x0008 (0x0010 - 0x0008)
+struct FBuffUInt8Shared : public FBuffShared
+{
+	unsigned char                                      Value;                                                    // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
+};
+
+// ScriptStruct Basic.BuffBooleanShared
+// 0x0008 (0x0010 - 0x0008)
+struct FBuffBooleanShared : public FBuffShared
+{
+	bool                                               Value;                                                    // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct Basic.BuffTargetShared
-// 0x000F (0x0010 - 0x0001)
-struct FBuffTargetShared : public FBuffActionShared
+// 0x0010 (0x0018 - 0x0008)
+struct FBuffTargetShared : public FBuffShared
 {
-	TArray<TWeakObjectPtr<class AActor>>               Actors;                                                   // 0x0000(0x0010) (ZeroConstructor)
+	TArray<TWeakObjectPtr<class AActor>>               Actors;                                                   // 0x0008(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct Basic.MultiStringMap

@@ -1,12 +1,12 @@
-// PUBG_VNG -64bit (4.2.0) SDK by BangJO [Z] DM @isar_hackJO To Buy Tool SDK
+// Pubg Mobile Battelgrounds By HaMa && SDK_Dumper (4.3.0) SDK by HaMa && SDK_Dumper
 
-#include "PUBGM_BangJO.hpp"
+#include "../SDK.hpp"
 
 namespace SDK
 {
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 //Functions
-//---------------------By BangJO---------------------------
+//--------------------------------By HaMa && SDK_Dumper-------------------------------------------
 
 // Function CosHelper.CosBase.GetContent
 // (Native, Public, BlueprintCallable, BlueprintPure, Const)
@@ -15,7 +15,7 @@ namespace SDK
 
 TArray<unsigned char> UCosBase::GetContent()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosBase.GetContent");
 
@@ -45,7 +45,7 @@ TArray<unsigned char> UCosBase::GetContent()
 
 class UCosRequest* UCosHelperBlueprintLibrary::UploadFileMemory(class UCosHelper* CosHelper, TArray<unsigned char> FileMemoryBuffer, const struct FString& URIPathName, const struct FString& URLParameters, const struct FScriptDelegate& OnCosRequestCompleted)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosHelperBlueprintLibrary.UploadFileMemory");
 
@@ -80,7 +80,7 @@ class UCosRequest* UCosHelperBlueprintLibrary::UploadFileMemory(class UCosHelper
 
 class UCosRequest* UCosHelperBlueprintLibrary::UploadFile(class UCosHelper* CosHelper, const struct FString& FilePathName, const struct FString& URIPathName, const struct FString& URLParameters, const struct FScriptDelegate& OnCosRequestCompleted)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosHelperBlueprintLibrary.UploadFile");
 
@@ -111,7 +111,7 @@ class UCosRequest* UCosHelperBlueprintLibrary::UploadFile(class UCosHelper* CosH
 
 struct FCosHelperInitializeInfo UCosHelperBlueprintLibrary::InitCosInfo(const struct FString& Section)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosHelperBlueprintLibrary.InitCosInfo");
 
@@ -142,7 +142,7 @@ struct FCosHelperInitializeInfo UCosHelperBlueprintLibrary::InitCosInfo(const st
 
 class UCosRequest* UCosHelperBlueprintLibrary::GetFileInfo(class UCosHelper* CosHelper, const struct FString& URIPathName, const struct FString& URLParameters, int FileInfoType, const struct FScriptDelegate& OnCosRequestCompleted)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosHelperBlueprintLibrary.GetFileInfo");
 
@@ -177,7 +177,7 @@ class UCosRequest* UCosHelperBlueprintLibrary::GetFileInfo(class UCosHelper* Cos
 
 class UCosRequest* UCosHelperBlueprintLibrary::DownloadFile(class UCosHelper* CosHelper, const struct FString& URIPathName, const struct FString& URLParameters, const struct FString& SavedPathName, const struct FScriptDelegate& OnCosRequestCompleted)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosHelperBlueprintLibrary.DownloadFile");
 
@@ -207,7 +207,7 @@ class UCosRequest* UCosHelperBlueprintLibrary::DownloadFile(class UCosHelper* Co
 
 void UCosHelperBlueprintLibrary::DestroyCosHelper(class UCosHelper* CosHelper)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosHelperBlueprintLibrary.DestroyCosHelper");
 
@@ -232,7 +232,7 @@ void UCosHelperBlueprintLibrary::DestroyCosHelper(class UCosHelper* CosHelper)
 
 class UCosHelper* UCosHelperBlueprintLibrary::ConstructCosHelper(const struct FCosHelperInitializeInfo& InitializeInfo)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosHelperBlueprintLibrary.ConstructCosHelper");
 
@@ -258,7 +258,7 @@ class UCosHelper* UCosHelperBlueprintLibrary::ConstructCosHelper(const struct FC
 
 bool UCosResponse::IsOK()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosResponse.IsOK");
 
@@ -283,7 +283,7 @@ bool UCosResponse::IsOK()
 
 int UCosResponse::GetResponseCode()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosResponse.GetResponseCode");
 
@@ -308,7 +308,7 @@ int UCosResponse::GetResponseCode()
 
 struct FString UCosResponse::GetRequestURL()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosResponse.GetRequestURL");
 
@@ -334,7 +334,7 @@ struct FString UCosResponse::GetRequestURL()
 
 struct FString UCosResponse::GetFileInfo(ECosHelperFileInfoType InFileInfoType)
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosResponse.GetFileInfo");
 
@@ -360,7 +360,7 @@ struct FString UCosResponse::GetFileInfo(ECosHelperFileInfoType InFileInfoType)
 
 struct FString UCosResponse::GetContentAsString()
 {
-	static UFunction *pFunc = nullptr;
+	static UFunction *pFunc = 0;
 	if (!pFunc)
 		pFunc  = UObject::FindObject<UFunction>("Function CosHelper.CosResponse.GetContentAsString");
 
