@@ -14,7 +14,6 @@
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_android.h"
 #include "imgui/imgui_impl_opengl3.h"
-#include "obfuscate.h"
 #include "SDK.hpp"
 #include <cstring>
 #include <string.h>
