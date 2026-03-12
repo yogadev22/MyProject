@@ -1,6 +1,6 @@
 #include <android/log.h>
 #include <dlfcn.h>
-#include "ELF64/elf.h"
+#include <elf.h>
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <sys/system_properties.h>
