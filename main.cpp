@@ -29,6 +29,7 @@
 #include <chrono>
 #include "obfuscate.h"
 #include "patch/MemoryPatch.h"
+#include "fake_dlfcn.h"
 
 using namespace SDK;
 
@@ -702,7 +703,7 @@ void *main_thread(void *) {
 	FName::GNames = ((TNameEntryArray * (*)()) (UE4 + 0x83de2d4))();
     UObject::GUObjectArray = (FUObjectArray *) (UE4 + 0xe74e0f0);
 	
-    A64HookFunction((void *) (UE4 + 0xc9fcdb0), (void *) _eglSwapBuffers, (void **) &orig_eglSwapBuffers);
+    A64HookFunction((void *) dlsym_ex(dlopen_ex("libEGL.so", 0), "eglSwapBuffers"), (void *) _eglSwapBuffers, (void **) &orig_eglSwapBuffers);
 	return NULL;
 }
 
